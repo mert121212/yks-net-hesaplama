@@ -28,11 +28,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly',
             priority: 0.3,
         },
-        {
-            url: `${baseUrl}/tyt-net-hesaplama`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.9,
-        },
     ]
 }

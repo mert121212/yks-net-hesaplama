@@ -362,7 +362,6 @@ export default function HomePage() {
                             <ul className="space-y-2 text-sm text-gray-400">
                                 <li><Link href="/geri-sayim" className="hover:text-white transition-colors">YKS Geri Sayım</Link></li>
                                 <li><Link href="/yks-rehberi" className="hover:text-white transition-colors">YKS Rehberi</Link></li>
-                                <li><Link href="/tyt-net-hesaplama" className="hover:text-white transition-colors">TYT Net</Link></li>
                             </ul>
                         </div>
                     </div>
