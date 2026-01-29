@@ -70,3 +70,11 @@ declare global {
         gtag: (...args: any[]) => void
     }
 }
+// Netlify deployment tracking
+export const trackDeployment = () => {
+    event({
+        action: 'site_deployed',
+        category: 'Technical',
+        label: 'netlify_deployment',
+    })
+}

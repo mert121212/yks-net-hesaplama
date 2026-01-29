@@ -45,14 +45,14 @@ export const metadata: Metadata = {
         address: false,
         telephone: false,
     },
-    metadataBase: new URL('https://yks-net-hesaplama.vercel.app'),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://yks-net-hesaplama.netlify.app'),
     alternates: {
         canonical: '/',
     },
     openGraph: {
         title: 'YKS Net Hesaplama 2026 | TYT AYT YDT Puan Hesaplama Aracı',
         description: 'YKS 2026 net hesaplama aracı ile TYT, AYT ve YDT netlerinizi hesaplayın. Üniversite puanlarınızı öğrenin. Ücretsiz ve hızlı hesaplama sistemi.',
-        url: 'https://yks-net-hesaplama.vercel.app',
+        url: process.env.NEXT_PUBLIC_SITE_URL || 'https://yks-net-hesaplama.netlify.app',
         siteName: 'YKS Net Hesaplama',
         locale: 'tr_TR',
         type: 'website',
