@@ -4,7 +4,7 @@ export default function StructuredData() {
         "@type": "WebApplication",
         "name": "YKS Net Hesaplama",
         "description": "YKS 2026 net hesaplama aracı ile TYT, AYT ve YDT netlerinizi hesaplayın. Üniversite puanlarınızı öğrenin.",
-        "url": "https://yks-net-hesaplama.vercel.app",
+        "url": "https://yksnethesapla.netlify.app",
         "applicationCategory": "EducationalApplication",
         "operatingSystem": "Web Browser",
         "offers": {
@@ -20,7 +20,7 @@ export default function StructuredData() {
         "publisher": {
             "@type": "Organization",
             "name": "YKS Net Hesaplama",
-            "url": "https://yks-net-hesaplama.vercel.app"
+            "url": "https://yksnethesapla.netlify.app"
         },
         "inLanguage": "tr-TR",
         "keywords": [
@@ -39,7 +39,7 @@ export default function StructuredData() {
             "YKS Geri Sayım",
             "SAY EA SÖZ DİL Puan Hesaplama"
         ],
-        "screenshot": "https://yks-net-hesaplama.vercel.app/og-image.png"
+        "screenshot": "https://yksnethesapla.netlify.app/og-image.png"
     }
 
     const faqData = {
