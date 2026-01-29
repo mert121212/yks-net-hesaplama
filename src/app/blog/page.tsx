@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Calculator, Calendar, BookOpen, TrendingUp } from 'lucide-react'
+import { Calculator, Calendar, BookOpen } from 'lucide-react'
 
 const blogPosts = [
     {
