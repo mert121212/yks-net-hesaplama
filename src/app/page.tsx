@@ -9,6 +9,7 @@ import TYTSection from '@/components/TYTSection'
 import AYTSection from '@/components/AYTSection'
 import YDTSection from '@/components/YDTSection'
 import CountdownTimer from '@/components/CountdownTimer'
+import StructuredData from '@/components/StructuredData'
 
 export default function HomePage() {
     const [tytScores, setTytScores] = useState<TYTScores>({
@@ -70,6 +71,7 @@ export default function HomePage() {
 
     return (
         <div className="min-h-screen">
+            <StructuredData />
             {/* Header */}
             <header className="bg-white shadow-sm border-b">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -91,6 +93,9 @@ export default function HomePage() {
                                 <Link href="/geri-sayim" className="text-gray-600 hover:text-primary-600 transition-colors">
                                     Geri Sayım
                                 </Link>
+                                <Link href="/yks-rehberi" className="text-gray-600 hover:text-primary-600 transition-colors">
+                                    Rehber
+                                </Link>
                             </nav>
                         </div>
                     </div>
@@ -100,26 +105,29 @@ export default function HomePage() {
             {/* Hero Section */}
             <section className="bg-gradient-to-r from-primary-600 to-primary-700 text-white py-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold mb-4">
-                        YKS Net ve Puan Hesaplama Aracı
-                    </h2>
+                    <h1 className="text-4xl font-bold mb-4">
+                        YKS Net ve Puan Hesaplama Aracı 2026
+                    </h1>
                     <p className="text-xl text-primary-100 mb-8 max-w-3xl mx-auto">
                         TYT, AYT ve YDT netlerinizi hesaplayın, üniversite puanlarınızı öğrenin.
-                        Hızlı, doğru ve güncel hesaplama sistemi.
+                        Hızlı, doğru ve güncel hesaplama sistemi ile YKS 2026'ya hazırlanın.
                     </p>
-                    <div className="flex flex-wrap justify-center gap-6 text-sm">
+                    <div className="flex flex-wrap justify-center gap-6 text-sm mb-6">
                         <div className="flex items-center space-x-2">
                             <BookOpen className="h-5 w-5" />
-                            <span>TYT Hesaplama</span>
+                            <span>TYT Net Hesaplama</span>
                         </div>
                         <div className="flex items-center space-x-2">
                             <Target className="h-5 w-5" />
-                            <span>AYT Hesaplama</span>
+                            <span>AYT Net Hesaplama</span>
                         </div>
                         <div className="flex items-center space-x-2">
                             <TrendingUp className="h-5 w-5" />
-                            <span>Puan Hesaplama</span>
+                            <span>Üniversite Puan Hesaplama</span>
                         </div>
+                    </div>
+                    <div className="text-sm text-primary-200">
+                        <p>✓ Ücretsiz YKS hesaplama aracı ✓ SAY, EA, SÖZ, DİL puanları ✓ 2026 YKS için güncel</p>
                     </div>
                 </div>
             </section>
@@ -249,21 +257,56 @@ export default function HomePage() {
             {/* Footer */}
             <footer className="bg-gray-900 text-white py-12 mt-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center">
-                        <div className="flex items-center justify-center space-x-3 mb-4">
-                            <Calculator className="h-8 w-8 text-primary-400" />
-                            <h3 className="text-xl font-bold">YKS Net Hesaplama</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                        <div className="md:col-span-2">
+                            <div className="flex items-center space-x-3 mb-4">
+                                <Calculator className="h-8 w-8 text-primary-400" />
+                                <h3 className="text-xl font-bold">YKS Net Hesaplama</h3>
+                            </div>
+                            <p className="text-gray-400 mb-4">
+                                YKS 2026 sınavına hazırlanan öğrenciler için geliştirilmiş ücretsiz net hesaplama aracı.
+                                TYT, AYT ve YDT netlerinizi hesaplayın, üniversite puanlarınızı öğrenin.
+                            </p>
+                            <div className="text-sm text-gray-500">
+                                <p>🎯 SAY, EA, SÖZ, DİL puan hesaplama</p>
+                                <p>📊 Gerçek zamanlı net hesaplama</p>
+                                <p>⏰ YKS 2026 geri sayım</p>
+                            </div>
                         </div>
-                        <p className="text-gray-400 mb-4">
-                            YKS sınavına hazırlanan öğrenciler için geliştirilmiş net hesaplama aracı
-                        </p>
+
+                        <div>
+                            <h4 className="font-semibold mb-4">Hesaplama Araçları</h4>
+                            <ul className="space-y-2 text-sm text-gray-400">
+                                <li><Link href="/#hesaplama" className="hover:text-white transition-colors">TYT Net Hesaplama</Link></li>
+                                <li><Link href="/#hesaplama" className="hover:text-white transition-colors">AYT Net Hesaplama</Link></li>
+                                <li><Link href="/#hesaplama" className="hover:text-white transition-colors">YDT Net Hesaplama</Link></li>
+                                <li><Link href="/#sonuclar" className="hover:text-white transition-colors">Puan Hesaplama</Link></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 className="font-semibold mb-4">YKS 2026</h4>
+                            <ul className="space-y-2 text-sm text-gray-400">
+                                <li><Link href="/geri-sayim" className="hover:text-white transition-colors">YKS Geri Sayım</Link></li>
+                                <li><Link href="/" className="hover:text-white transition-colors">Sınav Tarihleri</Link></li>
+                                <li><Link href="/" className="hover:text-white transition-colors">Başvuru Rehberi</Link></li>
+                                <li><Link href="/" className="hover:text-white transition-colors">Puan Türleri</Link></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="border-t border-gray-800 pt-8 text-center">
                         <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400 mb-4">
                             <Link href="/" className="hover:text-white transition-colors">Ana Sayfa</Link>
                             <Link href="/geri-sayim" className="hover:text-white transition-colors">Geri Sayım</Link>
+                            <Link href="/yks-rehberi" className="hover:text-white transition-colors">YKS Rehberi</Link>
                             <Link href="/#hesaplama" className="hover:text-white transition-colors">Net Hesaplama</Link>
                         </div>
                         <p className="text-sm text-gray-500">
                             © 2026 YKS Net Hesaplama. Tüm hakları saklıdır. • Geliştirici: Mert Çalışkan
+                        </p>
+                        <p className="text-xs text-gray-600 mt-2">
+                            YKS, TYT, AYT, YDT net hesaplama ve üniversite puan hesaplama aracı. ÖSYM resmi sitesi değildir.
                         </p>
                     </div>
                 </div>
