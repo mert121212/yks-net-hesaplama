@@ -110,6 +110,7 @@ export default function RootLayout({
                 <link rel="manifest" href="/site.webmanifest" />
                 <meta name="theme-color" content="#3b82f6" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="google-adsense-account" content="ca-pub-5194383766905175" />
             </head>
             <body className={inter.className}>
                 <GoogleAnalytics GA_MEASUREMENT_ID={GA_MEASUREMENT_ID} />

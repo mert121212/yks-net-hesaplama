@@ -373,6 +373,7 @@ export default function HomePage() {
                             <Link href="/" className="hover:text-white transition-colors">Ana Sayfa</Link>
                             <Link href="/geri-sayim" className="hover:text-white transition-colors">Geri Sayım</Link>
                             <Link href="/yks-rehberi" className="hover:text-white transition-colors">YKS Rehberi</Link>
+                            <Link href="/privacy" className="hover:text-white transition-colors">Gizlilik Politikası</Link>
                             <Link href="/#hesaplama" className="hover:text-white transition-colors">Net Hesaplama</Link>
                         </div>
                         <p className="text-sm text-gray-500">
