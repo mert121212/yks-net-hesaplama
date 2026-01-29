@@ -12,6 +12,7 @@ export default function GoogleAnalytics({ GA_MEASUREMENT_ID }: GoogleAnalyticsPr
             <Script
                 strategy="afterInteractive"
                 src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+                async
             />
             <Script
                 id="google-analytics"
@@ -21,10 +22,7 @@ export default function GoogleAnalytics({ GA_MEASUREMENT_ID }: GoogleAnalyticsPr
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}', {
-              page_title: document.title,
-              page_location: window.location.href,
-            });
+            gtag('config', '${GA_MEASUREMENT_ID}');
           `,
                 }}
             />
