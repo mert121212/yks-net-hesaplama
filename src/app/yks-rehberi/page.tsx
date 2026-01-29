@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useEffect } from 'react'
 import { Calculator, BookOpen, Target, TrendingUp, CheckCircle } from 'lucide-react'
 import { trackGuideView } from '@/lib/gtag'
+import AdBanner from '@/components/AdBanner'
 
 export default function YKSRehberiPage() {
     useEffect(() => {
@@ -192,6 +193,16 @@ export default function YKSRehberiPage() {
                         </div>
                     </div>
                 </section>
+
+                {/* Ad Banner */}
+                <div className="flex justify-center mb-8">
+                    <AdBanner
+                        adSlot="3344556677"
+                        adFormat="horizontal"
+                        className="max-w-3xl w-full"
+                        style={{ display: 'block', textAlign: 'center', minHeight: '90px' }}
+                    />
+                </div>
 
                 {/* Puan Türleri */}
                 <section id="puan-turleri" className="bg-white rounded-xl shadow-lg p-8 mb-8">

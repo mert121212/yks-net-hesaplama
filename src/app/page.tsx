@@ -11,6 +11,7 @@ import AYTSection from '@/components/AYTSection'
 import YDTSection from '@/components/YDTSection'
 import CountdownTimer from '@/components/CountdownTimer'
 import StructuredData from '@/components/StructuredData'
+import AdBanner from '@/components/AdBanner'
 
 export default function HomePage() {
     const [tytScores, setTytScores] = useState<TYTScores>({
@@ -171,6 +172,18 @@ export default function HomePage() {
                 </div>
             </section>
 
+            {/* Top Banner Ad */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                <div className="flex justify-center">
+                    <AdBanner
+                        adSlot="1234567890"
+                        adFormat="horizontal"
+                        className="max-w-4xl w-full"
+                        style={{ display: 'block', textAlign: 'center', minHeight: '90px' }}
+                    />
+                </div>
+            </div>
+
             {/* Main Content */}
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -289,9 +302,30 @@ export default function HomePage() {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Sidebar Ad */}
+                        <div className="card">
+                            <AdBanner
+                                adSlot="0987654321"
+                                adFormat="rectangle"
+                                style={{ display: 'block', textAlign: 'center', minHeight: '250px' }}
+                            />
+                        </div>
                     </div>
                 </div>
             </main>
+
+            {/* Bottom Banner Ad */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div className="flex justify-center">
+                    <AdBanner
+                        adSlot="1122334455"
+                        adFormat="horizontal"
+                        className="max-w-4xl w-full"
+                        style={{ display: 'block', textAlign: 'center', minHeight: '90px' }}
+                    />
+                </div>
+            </div>
 
             {/* Footer */}
             <footer className="bg-gray-900 text-white py-12 mt-16">

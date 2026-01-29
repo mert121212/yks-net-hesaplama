@@ -1,10 +1,14 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
+import GoogleAdsense from '@/components/GoogleAdsense'
 import { GA_MEASUREMENT_ID } from '@/lib/gtag'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
+
+// AdSense Client ID
+const ADSENSE_CLIENT_ID = 'ca-pub-5194383766905175'
 
 export const metadata: Metadata = {
     title: {
@@ -106,6 +110,7 @@ export default function RootLayout({
             </head>
             <body className={inter.className}>
                 <GoogleAnalytics GA_MEASUREMENT_ID={GA_MEASUREMENT_ID} />
+                <GoogleAdsense ADSENSE_CLIENT_ID={ADSENSE_CLIENT_ID} />
                 <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
                     {children}
                 </div>

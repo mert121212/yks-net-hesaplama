@@ -37,3 +37,12 @@
         @apply text-lg font-semibold text-gray-800 mb-4;
     }
 }
+
+/* AdSense Styles */
+.adsense-container {
+    @apply my-4 flex justify-center;
+}
+
+.adsense-container .adsbygoogle {
+    @apply rounded-lg overflow-hidden border border-gray-200;
+}

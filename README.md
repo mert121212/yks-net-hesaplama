@@ -95,6 +95,7 @@ npm start
 ## 📊 Analytics ve SEO
 
 - **Google Analytics 4**: Kullanıcı davranışı takibi
+- **Google AdSense**: Reklam geliri optimizasyonu
 - **Event Tracking**: Net hesaplama, puan hesaplama, sayfa görüntüleme
 - **SEO Optimizasyonu**: Meta etiketler, structured data, sitemap
 - **Performance Monitoring**: Core Web Vitals takibi
@@ -108,6 +109,23 @@ npm start
 ```env
 NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
 ```
+
+### Google AdSense Kurulumu
+
+1. [Google AdSense](https://www.google.com/adsense/) hesabı oluşturun
+2. Site'inizi ekleyin ve onay bekleyin
+3. Publisher ID'yi kopyalayın (ca-pub-XXXXXXXXXX)
+4. `.env.local` dosyasına ekleyin:
+```env
+NEXT_PUBLIC_ADSENSE_CLIENT_ID=ca-pub-XXXXXXXXXX
+```
+
+### Reklam Alanları
+
+- **Header Banner**: Ana sayfa üst banner
+- **Sidebar Ad**: Sonuçlar bölümü yan reklam
+- **Footer Banner**: Sayfa alt banner
+- **Content Ads**: İçerik arası reklamlar
 
 ### Tracked Events
 

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { Clock, Calendar, BookOpen, Target, TrendingUp, Coffee, Brain, Heart } from 'lucide-react'
 import Link from 'next/link'
 import { trackCountdownView } from '@/lib/gtag'
+import AdBanner from '@/components/AdBanner'
 
 export default function GeriSayimPage() {
     const [timeLeft, setTimeLeft] = useState({
@@ -262,6 +263,16 @@ export default function GeriSayimPage() {
                                     </div>
                                 ))}
                             </div>
+                        </div>
+
+                        {/* Ad Banner */}
+                        <div className="flex justify-center mb-8">
+                            <AdBanner
+                                adSlot="2233445566"
+                                adFormat="horizontal"
+                                className="max-w-2xl w-full"
+                                style={{ display: 'block', textAlign: 'center', minHeight: '90px' }}
+                            />
                         </div>
 
                         {/* Quick Actions */}
