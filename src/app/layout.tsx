@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
+import { GA_MEASUREMENT_ID } from '@/lib/gtag'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -103,6 +105,7 @@ export default function RootLayout({
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </head>
             <body className={inter.className}>
+                <GoogleAnalytics GA_MEASUREMENT_ID={GA_MEASUREMENT_ID} />
                 <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
                     {children}
                 </div>

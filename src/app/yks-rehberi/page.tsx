@@ -1,6 +1,9 @@
-import type { Metadata } from 'next'
+'use client'
+
 import Link from 'next/link'
+import { useEffect } from 'react'
 import { Calculator, BookOpen, Target, Clock, TrendingUp, Users, Award, CheckCircle } from 'lucide-react'
+import { trackGuideView } from '@/lib/gtag'
 
 export const metadata: Metadata = {
     title: 'YKS Rehberi 2026 | Net Hesaplama ve Puan Hesaplama Kılavuzu',
@@ -9,6 +12,11 @@ export const metadata: Metadata = {
 }
 
 export default function YKSRehberiPage() {
+    useEffect(() => {
+        // Analytics tracking
+        trackGuideView('yks_rehberi_main')
+    }, [])
+
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
             {/* Header */}

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Clock, Calendar, BookOpen, Target, TrendingUp, Coffee, Brain, Heart } from 'lucide-react'
 import Link from 'next/link'
+import { trackCountdownView } from '@/lib/gtag'
 
 export default function GeriSayimPage() {
     const [timeLeft, setTimeLeft] = useState({
@@ -16,6 +17,10 @@ export default function GeriSayimPage() {
 
     useEffect(() => {
         setMounted(true)
+
+        // Analytics tracking
+        trackCountdownView()
+
         // 2026 YKS tarihi (yaklaşık) - Haziran ayının ikinci haftası
         const yksDate = new Date('2026-06-13T10:00:00')
 

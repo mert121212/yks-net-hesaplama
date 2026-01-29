@@ -28,12 +28,22 @@ YKS (Yükseköğretim Kurumları Sınavı) için geliştirilmiş modern, hızlı
 npm install
 ```
 
-2. Geliştirme sunucusunu başlatın:
+2. Environment variables ayarlayın:
+```bash
+cp .env.local.example .env.local
+```
+
+`.env.local` dosyasını düzenleyin:
+```env
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+```
+
+3. Geliştirme sunucusunu başlatın:
 ```bash
 npm run dev
 ```
 
-3. Tarayıcınızda `http://localhost:3000` adresini açın.
+4. Tarayıcınızda `http://localhost:3000` adresini açın.
 
 ## 🏗️ Proje Yapısı
 
@@ -82,7 +92,29 @@ npm run build
 npm start
 ```
 
-## 📄 Lisans
+## 📊 Analytics ve SEO
+
+- **Google Analytics 4**: Kullanıcı davranışı takibi
+- **Event Tracking**: Net hesaplama, puan hesaplama, sayfa görüntüleme
+- **SEO Optimizasyonu**: Meta etiketler, structured data, sitemap
+- **Performance Monitoring**: Core Web Vitals takibi
+
+### Google Analytics Kurulumu
+
+1. [Google Analytics](https://analytics.google.com) hesabı oluşturun
+2. Yeni property oluşturun (GA4)
+3. Measurement ID'yi kopyalayın (G-XXXXXXXXXX)
+4. `.env.local` dosyasına ekleyin:
+```env
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+```
+
+### Tracked Events
+
+- `net_calculation`: TYT/AYT/YDT net hesaplama
+- `score_calculation`: SAY/EA/SÖZ/DİL puan hesaplama  
+- `countdown_view`: Geri sayım sayfası görüntüleme
+- `guide_view`: Rehber sayfası görüntüleme
 
 Bu proje MIT lisansı altında lisanslanmıştır.
 
@@ -97,3 +129,7 @@ Bu proje MIT lisansı altında lisanslanmıştır.
 ## 📞 İletişim
 
 Sorularınız için issue açabilir veya pull request gönderebilirsiniz.
+
+## 📄 Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır.

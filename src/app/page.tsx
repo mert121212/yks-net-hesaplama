@@ -1,10 +1,11 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Calculator, BookOpen, Target, TrendingUp } from 'lucide-react'
 import Link from 'next/link'
 import { TYTScores, AYTScores, YDTScores } from '@/types/yks'
 import { calculateYKSScores } from '@/utils/yksCalculator'
+import { trackNetCalculation, trackScoreCalculation } from '@/lib/gtag'
 import TYTSection from '@/components/TYTSection'
 import AYTSection from '@/components/AYTSection'
 import YDTSection from '@/components/YDTSection'
@@ -68,6 +69,44 @@ export default function HomePage() {
     }
 
     const results = calculateYKSScores(tytScores, aytScores, ydtScores)
+
+    // Analytics tracking için useEffect
+    useEffect(() => {
+        // TYT net hesaplama tracking
+        if (results.nets.tyt.toplam > 0) {
+            trackNetCalculation('TYT', results.nets.tyt.toplam)
+        }
+    }, [results.nets.tyt.toplam])
+
+    useEffect(() => {
+        // AYT net hesaplama tracking
+        if (results.nets.ayt.toplam > 0) {
+            trackNetCalculation('AYT', results.nets.ayt.toplam)
+        }
+    }, [results.nets.ayt.toplam])
+
+    useEffect(() => {
+        // YDT net hesaplama tracking
+        if (results.nets.ydt.ydt > 0) {
+            trackNetCalculation('YDT', results.nets.ydt.ydt)
+        }
+    }, [results.nets.ydt.ydt])
+
+    useEffect(() => {
+        // Puan hesaplama tracking
+        if (results.points.say > 0) {
+            trackScoreCalculation('SAY', results.points.say)
+        }
+        if (results.points.ea > 0) {
+            trackScoreCalculation('EA', results.points.ea)
+        }
+        if (results.points.soz > 0) {
+            trackScoreCalculation('SOZ', results.points.soz)
+        }
+        if (results.points.dil > 0) {
+            trackScoreCalculation('DIL', results.points.dil)
+        }
+    }, [results.points])
 
     return (
         <div className="min-h-screen">
