@@ -29,4 +29,4 @@
 [context.production.environment]
   NEXT_PUBLIC_GA_MEASUREMENT_ID = "G-QGBM88EMH5"
   NEXT_PUBLIC_ADSENSE_CLIENT_ID = "ca-pub-5194383766905175"
-  NEXT_PUBLIC_SITE_URL = "https://yks-net-hesaplama.netlify.app"
+  NEXT_PUBLIC_SITE_URL = "https://yksnethesapla.netlify.app"
