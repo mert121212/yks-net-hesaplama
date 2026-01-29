@@ -12,7 +12,6 @@ import YDTSection from '@/components/YDTSection'
 import CountdownTimer from '@/components/CountdownTimer'
 import StructuredData from '@/components/StructuredData'
 import AdBanner from '@/components/AdBanner'
-import SocialShare from '@/components/SocialShare'
 
 export default function HomePage() {
     const [tytScores, setTytScores] = useState<TYTScores>({
@@ -124,7 +123,6 @@ export default function HomePage() {
 
                         <div className="flex items-center space-x-6">
                             <CountdownTimer />
-                            <SocialShare />
                             <nav className="hidden md:flex space-x-6">
                                 <a href="#hesaplama" className="text-gray-600 hover:text-primary-600 transition-colors">
                                     Hesaplama
@@ -137,9 +135,6 @@ export default function HomePage() {
                                 </Link>
                                 <Link href="/yks-rehberi" className="text-gray-600 hover:text-primary-600 transition-colors">
                                     Rehber
-                                </Link>
-                                <Link href="/blog" className="text-gray-600 hover:text-primary-600 transition-colors">
-                                    Blog
                                 </Link>
                             </nav>
                         </div>
@@ -367,7 +362,6 @@ export default function HomePage() {
                             <ul className="space-y-2 text-sm text-gray-400">
                                 <li><Link href="/geri-sayim" className="hover:text-white transition-colors">YKS Geri Sayım</Link></li>
                                 <li><Link href="/yks-rehberi" className="hover:text-white transition-colors">YKS Rehberi</Link></li>
-                                <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
                                 <li><Link href="/tyt-net-hesaplama" className="hover:text-white transition-colors">TYT Net</Link></li>
                             </ul>
                         </div>
