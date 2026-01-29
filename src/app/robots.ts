@@ -8,5 +8,6 @@ export default function robots(): MetadataRoute.Robots {
             disallow: '/private/',
         },
         sitemap: 'https://yks-net-hesaplama.vercel.app/sitemap.xml',
+        host: 'https://yks-net-hesaplama.vercel.app',
     }
 }

@@ -119,6 +119,10 @@ NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
 ```env
 NEXT_PUBLIC_ADSENSE_CLIENT_ID=ca-pub-XXXXXXXXXX
 ```
+5. `public/ads.txt` dosyası otomatik oluşturulur:
+```
+google.com, pub-5194383766905175, DIRECT, f08c47fec0942fa0
+```
 
 ### Reklam Alanları
 

@@ -86,6 +86,9 @@ export const metadata: Metadata = {
     },
     verification: {
         google: 'google-site-verification-code', // Google Search Console'dan alınacak
+        other: {
+            'google-adsense-account': 'ca-pub-5194383766905175',
+        },
     },
     category: 'education',
     classification: 'YKS Net Hesaplama Aracı',
