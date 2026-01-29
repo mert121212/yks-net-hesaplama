@@ -85,7 +85,7 @@ export const metadata: Metadata = {
         },
     },
     verification: {
-        google: 'google-site-verification-code', // Google Search Console'dan alınacak
+        google: 'google70c0c8b7abc1c3fb', // Google Search Console doğrulama kodu
         other: {
             'google-adsense-account': 'ca-pub-5194383766905175',
         },

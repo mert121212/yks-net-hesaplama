@@ -6,6 +6,11 @@
   NEXT_PRIVATE_TARGET = "server"
 
 [[redirects]]
+  from = "/google70c0c8b7abc1c3fb.html"
+  to = "/google70c0c8b7abc1c3fb.html"
+  status = 200
+
+[[redirects]]
   from = "/ads.txt"
   to = "/ads.txt"
   status = 200
