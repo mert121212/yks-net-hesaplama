@@ -2,14 +2,8 @@
 
 import Link from 'next/link'
 import { useEffect } from 'react'
-import { Calculator, BookOpen, Target, Clock, TrendingUp, Users, Award, CheckCircle } from 'lucide-react'
+import { Calculator, BookOpen, Target, TrendingUp, CheckCircle } from 'lucide-react'
 import { trackGuideView } from '@/lib/gtag'
-
-export const metadata: Metadata = {
-    title: 'YKS Rehberi 2026 | Net Hesaplama ve Puan Hesaplama Kılavuzu',
-    description: 'YKS 2026 için kapsamlı rehber. Net hesaplama nasıl yapılır, puan türleri nelerdir, TYT AYT YDT hakkında bilmeniz gerekenler.',
-    keywords: 'YKS rehberi, net hesaplama rehberi, YKS 2026 kılavuzu, TYT AYT YDT rehberi, üniversite sınavı rehberi',
-}
 
 export default function YKSRehberiPage() {
     useEffect(() => {
