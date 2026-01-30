@@ -9,24 +9,18 @@ import { calculateYKSScores } from '@/utils/yksCalculator'
 
 // Lazy load components with better loading states
 const TYTSection = dynamic(() => import('@/components/TYTSection'), {
-    loading: () => <div className="card animate-pulse h-64 bg-gray-200 rounded-xl"></div>,
-    ssr: false
+    loading: () => <div className="card animate-pulse h-64 bg-gray-200 rounded-xl"></div>
 })
 const AYTSection = dynamic(() => import('@/components/AYTSection'), {
-    loading: () => <div className="card animate-pulse h-64 bg-gray-200 rounded-xl"></div>,
-    ssr: false
+    loading: () => <div className="card animate-pulse h-64 bg-gray-200 rounded-xl"></div>
 })
 const YDTSection = dynamic(() => import('@/components/YDTSection'), {
-    loading: () => <div className="card animate-pulse h-64 bg-gray-200 rounded-xl"></div>,
-    ssr: false
+    loading: () => <div className="card animate-pulse h-64 bg-gray-200 rounded-xl"></div>
 })
 const CountdownTimer = dynamic(() => import('@/components/CountdownTimer'), {
-    loading: () => <div className="animate-pulse h-10 w-32 bg-gray-200 rounded"></div>,
-    ssr: false
+    loading: () => <div className="animate-pulse h-10 w-32 bg-gray-200 rounded"></div>
 })
-const StructuredData = dynamic(() => import('@/components/StructuredData'), {
-    ssr: false
-})
+const StructuredData = dynamic(() => import('@/components/StructuredData'))
 
 // Memoized components for better performance
 const Header = memo(function Header({ countdownTimer }: { countdownTimer: React.ReactNode }) {
