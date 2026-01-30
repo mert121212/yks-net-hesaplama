@@ -1,16 +1,26 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { Calculator, BookOpen, Target, TrendingUp } from 'lucide-react'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
 import { TYTScores, AYTScores, YDTScores } from '@/types/yks'
 import { calculateYKSScores } from '@/utils/yksCalculator'
-import { trackNetCalculation, trackScoreCalculation } from '@/lib/gtag'
-import TYTSection from '@/components/TYTSection'
-import AYTSection from '@/components/AYTSection'
-import YDTSection from '@/components/YDTSection'
-import CountdownTimer from '@/components/CountdownTimer'
-import StructuredData from '@/components/StructuredData'
+
+// Lazy load components
+const TYTSection = dynamic(() => import('@/components/TYTSection'), {
+    loading: () => <div className="card animate-pulse h-64 bg-gray-200"></div>
+})
+const AYTSection = dynamic(() => import('@/components/AYTSection'), {
+    loading: () => <div className="card animate-pulse h-64 bg-gray-200"></div>
+})
+const YDTSection = dynamic(() => import('@/components/YDTSection'), {
+    loading: () => <div className="card animate-pulse h-64 bg-gray-200"></div>
+})
+const CountdownTimer = dynamic(() => import('@/components/CountdownTimer'), {
+    loading: () => <div className="animate-pulse h-10 w-32 bg-gray-200 rounded"></div>
+})
+const StructuredData = dynamic(() => import('@/components/StructuredData'))
 import AdBanner from '@/components/AdBanner'
 
 export default function HomePage() {
@@ -70,44 +80,6 @@ export default function HomePage() {
     }
 
     const results = calculateYKSScores(tytScores, aytScores, ydtScores)
-
-    // Analytics tracking için useEffect
-    useEffect(() => {
-        // TYT net hesaplama tracking
-        if (results.nets.tyt.toplam > 0) {
-            trackNetCalculation('TYT', results.nets.tyt.toplam)
-        }
-    }, [results.nets.tyt.toplam])
-
-    useEffect(() => {
-        // AYT net hesaplama tracking
-        if (results.nets.ayt.toplam > 0) {
-            trackNetCalculation('AYT', results.nets.ayt.toplam)
-        }
-    }, [results.nets.ayt.toplam])
-
-    useEffect(() => {
-        // YDT net hesaplama tracking
-        if (results.nets.ydt.ydt > 0) {
-            trackNetCalculation('YDT', results.nets.ydt.ydt)
-        }
-    }, [results.nets.ydt.ydt])
-
-    useEffect(() => {
-        // Puan hesaplama tracking
-        if (results.points.say > 0) {
-            trackScoreCalculation('SAY', results.points.say)
-        }
-        if (results.points.ea > 0) {
-            trackScoreCalculation('EA', results.points.ea)
-        }
-        if (results.points.soz > 0) {
-            trackScoreCalculation('SOZ', results.points.soz)
-        }
-        if (results.points.dil > 0) {
-            trackScoreCalculation('DIL', results.points.dil)
-        }
-    }, [results.points])
 
     return (
         <div className="min-h-screen">
@@ -189,20 +161,26 @@ export default function HomePage() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {/* Sol Kolon - Hesaplama Formu */}
                     <div className="lg:col-span-2 space-y-8" id="hesaplama">
-                        <TYTSection
-                            scores={tytScores}
-                            onScoreChange={handleTYTScoreChange}
-                        />
+                        <Suspense fallback={<div className="card animate-pulse h-64 bg-gray-200"></div>}>
+                            <TYTSection
+                                scores={tytScores}
+                                onScoreChange={handleTYTScoreChange}
+                            />
+                        </Suspense>
 
-                        <AYTSection
-                            scores={aytScores}
-                            onScoreChange={handleAYTScoreChange}
-                        />
+                        <Suspense fallback={<div className="card animate-pulse h-64 bg-gray-200"></div>}>
+                            <AYTSection
+                                scores={aytScores}
+                                onScoreChange={handleAYTScoreChange}
+                            />
+                        </Suspense>
 
-                        <YDTSection
-                            scores={ydtScores}
-                            onScoreChange={handleYDTScoreChange}
-                        />
+                        <Suspense fallback={<div className="card animate-pulse h-64 bg-gray-200"></div>}>
+                            <YDTSection
+                                scores={ydtScores}
+                                onScoreChange={handleYDTScoreChange}
+                            />
+                        </Suspense>
                     </div>
 
                     {/* Sağ Kolon - Sonuçlar */}

@@ -1,8 +1,5 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import GoogleAnalytics from '@/components/GoogleAnalytics'
-import GoogleAdsense from '@/components/GoogleAdsense'
-import { GA_MEASUREMENT_ID } from '@/lib/gtag'
 import './globals.css'
 
 const inter = Inter({
@@ -111,11 +108,14 @@ export default function RootLayout({
                     __html: `
                         .card{background-color:#fff;border-radius:0.75rem;box-shadow:0 10px 15px -3px rgba(0,0,0,0.1);padding:2rem}
                         .section-title{font-size:1.5rem;font-weight:700;color:#111827;margin-bottom:1.5rem}
-                        .subsection-title{font-size:1.125rem;font-weight:600;color:#374151;margin-bottom:1rem}
+                        .subsection-title{font-size:1.125rem;font-weight:600;color:#1f2937;margin-bottom:1rem}
                         .bg-gradient-to-br{background-image:linear-gradient(to bottom right,#dbeafe,#e0e7ff)}
-                        .bg-primary-600{background-color:#2563eb}
-                        .text-primary-600{color:#2563eb}
-                        .hover\\:bg-primary-700:hover{background-color:#1d4ed8}
+                        .bg-primary-600{background-color:#1d4ed8}
+                        .text-primary-600{color:#1d4ed8}
+                        .hover\\:bg-primary-700:hover{background-color:#1e40af}
+                        .text-gray-600{color:#374151}
+                        .text-primary-100{color:#dbeafe}
+                        .text-primary-200{color:#bfdbfe}
                     `
                 }} />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -132,11 +132,9 @@ export default function RootLayout({
                 <meta name="google-adsense-account" content="ca-pub-5194383766905175" />
             </head>
             <body className={inter.className}>
-                {GA_MEASUREMENT_ID && <GoogleAnalytics GA_MEASUREMENT_ID={GA_MEASUREMENT_ID} />}
                 <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
                     {children}
                 </div>
-                {ADSENSE_CLIENT_ID && <GoogleAdsense ADSENSE_CLIENT_ID={ADSENSE_CLIENT_ID} />}
             </body>
         </html>
     )
