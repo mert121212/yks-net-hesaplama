@@ -5,11 +5,10 @@ import './globals.css'
 const inter = Inter({
     subsets: ['latin'],
     display: 'swap',
-    preload: true
+    preload: true,
+    variable: '--font-inter',
+    fallback: ['system-ui', 'arial']
 })
-
-// AdSense Client ID - sadece production'da yükle
-const ADSENSE_CLIENT_ID = process.env.NODE_ENV === 'production' ? 'ca-pub-5194383766905175' : null
 
 export const metadata: Metadata = {
     title: {
@@ -86,7 +85,7 @@ export const metadata: Metadata = {
         },
     },
     verification: {
-        google: 'google70c0c8b7abc1c3fb', // Google Search Console doğrulama kodu
+        google: 'google70c0c8b7abc1c3fb',
         other: {
             'google-adsense-account': 'ca-pub-5194383766905175',
         },
@@ -102,22 +101,8 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="tr">
+        <html lang="tr" className={inter.variable}>
             <head>
-                <style dangerouslySetInnerHTML={{
-                    __html: `
-                        .card{background-color:#fff;border-radius:0.75rem;box-shadow:0 10px 15px -3px rgba(0,0,0,0.1);padding:2rem}
-                        .section-title{font-size:1.5rem;font-weight:700;color:#111827;margin-bottom:1.5rem}
-                        .subsection-title{font-size:1.125rem;font-weight:600;color:#1f2937;margin-bottom:1rem}
-                        .bg-gradient-to-br{background-image:linear-gradient(to bottom right,#dbeafe,#e0e7ff)}
-                        .bg-primary-600{background-color:#1d4ed8}
-                        .text-primary-600{color:#1d4ed8}
-                        .hover\\:bg-primary-700:hover{background-color:#1e40af}
-                        .text-gray-600{color:#374151}
-                        .text-primary-100{color:#dbeafe}
-                        .text-primary-200{color:#bfdbfe}
-                    `
-                }} />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                 <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
@@ -130,8 +115,28 @@ export default function RootLayout({
                 <meta name="theme-color" content="#3b82f6" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="google-adsense-account" content="ca-pub-5194383766905175" />
+                <style dangerouslySetInnerHTML={{
+                    __html: `
+                        *,*::before,*::after{box-sizing:border-box}
+                        html{line-height:1.15;-webkit-text-size-adjust:100%}
+                        body{margin:0;font-family:var(--font-inter),system-ui,arial;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+                        .card{background-color:#fff;border-radius:0.75rem;box-shadow:0 10px 15px -3px rgba(0,0,0,0.1);padding:2rem}
+                        .section-title{font-size:1.5rem;font-weight:700;color:#111827;margin-bottom:1.5rem}
+                        .subsection-title{font-size:1.125rem;font-weight:600;color:#1f2937;margin-bottom:1rem}
+                        .bg-gradient-to-br{background-image:linear-gradient(to bottom right,#dbeafe,#e0e7ff)}
+                        .bg-primary-600{background-color:#1d4ed8}
+                        .text-primary-600{color:#1d4ed8}
+                        .hover\\:bg-primary-700:hover{background-color:#1e40af}
+                        .text-gray-600{color:#374151}
+                        .text-primary-100{color:#dbeafe}
+                        .text-primary-200{color:#bfdbfe}
+                        .min-h-screen{min-height:100vh}
+                        .animate-pulse{animation:pulse 2s cubic-bezier(0.4,0,0.6,1) infinite}
+                        @keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+                    `
+                }} />
             </head>
-            <body className={inter.className}>
+            <body className={`${inter.className} antialiased`}>
                 <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
                     {children}
                 </div>
