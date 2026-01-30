@@ -172,8 +172,8 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* Top Banner Ad */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            {/* Top Banner Ad - Disabled for performance */}
+            {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                 <div className="flex justify-center">
                     <AdBanner
                         adSlot="1234567890"
@@ -182,7 +182,7 @@ export default function HomePage() {
                         style={{ display: 'block', textAlign: 'center', minHeight: '90px' }}
                     />
                 </div>
-            </div>
+            </div> */}
 
             {/* Main Content */}
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -303,8 +303,8 @@ export default function HomePage() {
                             </div>
                         </div>
 
-                        {/* Sidebar Ad */}
-                        <div className="card">
+                        {/* Sidebar Ad - Disabled for performance */}
+                        {/* <div className="card">
                             <div className="min-h-[250px] flex items-center justify-center bg-gray-100 rounded">
                                 <AdBanner
                                     adSlot="0987654321"
@@ -312,13 +312,13 @@ export default function HomePage() {
                                     style={{ display: 'block', textAlign: 'center', minHeight: '250px' }}
                                 />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </main>
 
-            {/* Bottom Banner Ad */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            {/* Bottom Banner Ad - Disabled for performance */}
+            {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="flex justify-center">
                     <AdBanner
                         adSlot="1122334455"
@@ -327,7 +327,7 @@ export default function HomePage() {
                         style={{ display: 'block', textAlign: 'center', minHeight: '90px' }}
                     />
                 </div>
-            </div>
+            </div> */}
 
             {/* Footer */}
             <footer className="bg-gray-900 text-white py-12 mt-16">

@@ -11,8 +11,8 @@ const inter = Inter({
     preload: true
 })
 
-// AdSense Client ID
-const ADSENSE_CLIENT_ID = 'ca-pub-5194383766905175'
+// AdSense Client ID - sadece production'da yükle
+const ADSENSE_CLIENT_ID = process.env.NODE_ENV === 'production' ? 'ca-pub-5194383766905175' : null
 
 export const metadata: Metadata = {
     title: {
@@ -107,6 +107,17 @@ export default function RootLayout({
     return (
         <html lang="tr">
             <head>
+                <style dangerouslySetInnerHTML={{
+                    __html: `
+                        .card{background-color:#fff;border-radius:0.75rem;box-shadow:0 10px 15px -3px rgba(0,0,0,0.1);padding:2rem}
+                        .section-title{font-size:1.5rem;font-weight:700;color:#111827;margin-bottom:1.5rem}
+                        .subsection-title{font-size:1.125rem;font-weight:600;color:#374151;margin-bottom:1rem}
+                        .bg-gradient-to-br{background-image:linear-gradient(to bottom right,#dbeafe,#e0e7ff)}
+                        .bg-primary-600{background-color:#2563eb}
+                        .text-primary-600{color:#2563eb}
+                        .hover\\:bg-primary-700:hover{background-color:#1d4ed8}
+                    `
+                }} />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                 <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
@@ -121,11 +132,11 @@ export default function RootLayout({
                 <meta name="google-adsense-account" content="ca-pub-5194383766905175" />
             </head>
             <body className={inter.className}>
-                <GoogleAnalytics GA_MEASUREMENT_ID={GA_MEASUREMENT_ID} />
-                <GoogleAdsense ADSENSE_CLIENT_ID={ADSENSE_CLIENT_ID} />
+                {GA_MEASUREMENT_ID && <GoogleAnalytics GA_MEASUREMENT_ID={GA_MEASUREMENT_ID} />}
                 <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
                     {children}
                 </div>
+                {ADSENSE_CLIENT_ID && <GoogleAdsense ADSENSE_CLIENT_ID={ADSENSE_CLIENT_ID} />}
             </body>
         </html>
     )

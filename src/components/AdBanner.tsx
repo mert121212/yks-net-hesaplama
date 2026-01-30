@@ -30,11 +30,14 @@ export default function AdBanner({
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    setIsVisible(true)
+                    // 1 saniye gecikme ekle
+                    setTimeout(() => {
+                        setIsVisible(true)
+                    }, 1000)
                     observer.disconnect()
                 }
             },
-            { threshold: 0.1 }
+            { threshold: 0.1, rootMargin: '100px' }
         )
 
         if (adRef.current) {

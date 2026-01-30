@@ -6,6 +6,7 @@ const nextConfig = {
     poweredByHeader: false,
     experimental: {
         optimizeCss: true,
+        optimizePackageImports: ['lucide-react'],
     },
     images: {
         domains: [],
@@ -15,9 +16,28 @@ const nextConfig = {
     compiler: {
         removeConsole: process.env.NODE_ENV === 'production',
     },
+    // Bundle analyzer için
+    webpack: (config, { isServer }) => {
+        if (!isServer) {
+            config.resolve.fallback = {
+                ...config.resolve.fallback,
+                fs: false,
+            }
+        }
+        return config
+    },
     // SEO ve performans optimizasyonu için
     async headers() {
         return [
+            {
+                source: '/_next/static/(.*)',
+                headers: [
+                    {
+                        key: 'Cache-Control',
+                        value: 'public, max-age=31536000, immutable',
+                    },
+                ],
+            },
             {
                 source: '/(.*)',
                 headers: [
@@ -32,19 +52,6 @@ const nextConfig = {
                     {
                         key: 'X-XSS-Protection',
                         value: '1; mode=block',
-                    },
-                    {
-                        key: 'Cache-Control',
-                        value: 'public, max-age=31536000, immutable',
-                    },
-                ],
-            },
-            {
-                source: '/api/(.*)',
-                headers: [
-                    {
-                        key: 'Cache-Control',
-                        value: 'no-cache, no-store, must-revalidate',
                     },
                 ],
             },
