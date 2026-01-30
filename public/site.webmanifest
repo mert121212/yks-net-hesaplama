@@ -7,21 +7,25 @@
     "background_color": "#ffffff",
     "theme_color": "#3b82f6",
     "orientation": "portrait-primary",
+    "scope": "/",
     "icons": [
         {
             "src": "/favicon-16x16.png",
             "sizes": "16x16",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any"
         },
         {
             "src": "/favicon-32x32.png",
             "sizes": "32x32",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any"
         },
         {
             "src": "/apple-touch-icon.png",
             "sizes": "180x180",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any maskable"
         }
     ],
     "categories": [
@@ -29,5 +33,32 @@
         "productivity"
     ],
     "lang": "tr",
-    "dir": "ltr"
+    "dir": "ltr",
+    "prefer_related_applications": false,
+    "shortcuts": [
+        {
+            "name": "Net Hesaplama",
+            "short_name": "Hesapla",
+            "description": "YKS net hesaplama aracı",
+            "url": "/#hesaplama",
+            "icons": [
+                {
+                    "src": "/favicon-32x32.png",
+                    "sizes": "32x32"
+                }
+            ]
+        },
+        {
+            "name": "Geri Sayım",
+            "short_name": "Sayaç",
+            "description": "YKS 2026 geri sayım",
+            "url": "/geri-sayim",
+            "icons": [
+                {
+                    "src": "/favicon-32x32.png",
+                    "sizes": "32x32"
+                }
+            ]
+        }
+    ]
 }

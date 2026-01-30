@@ -6,28 +6,17 @@ const nextConfig = {
     poweredByHeader: false,
     experimental: {
         optimizePackageImports: ['lucide-react'],
-        turbo: {
-            rules: {
-                '*.svg': {
-                    loaders: ['@svgr/webpack'],
-                    as: '*.js',
-                },
-            },
-        },
         serverComponentsExternalPackages: [],
-        optimizeServerReact: true,
     },
     images: {
-        domains: [],
+        remotePatterns: [],
         formats: ['image/webp', 'image/avif'],
         minimumCacheTTL: 31536000,
-        dangerouslyAllowSVG: true,
-        contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+        dangerouslyAllowSVG: false,
     },
     // Performance optimizasyonu
     compiler: {
         removeConsole: process.env.NODE_ENV === 'production',
-        styledComponents: false,
     },
     // Bundle analyzer ve optimizasyon için
     webpack: (config, { isServer, dev }) => {
@@ -117,6 +106,14 @@ const nextConfig = {
                     {
                         key: 'Referrer-Policy',
                         value: 'strict-origin-when-cross-origin',
+                    },
+                    {
+                        key: 'Content-Security-Policy',
+                        value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://pagead2.googlesyndication.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com; frame-src 'self' https://googleads.g.doubleclick.net;",
+                    },
+                    {
+                        key: 'Permissions-Policy',
+                        value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()',
                     },
                 ],
             },

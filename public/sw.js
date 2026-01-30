@@ -1,11 +1,9 @@
-const CACHE_NAME = 'yks-net-hesaplama-v1';
+const CACHE_NAME = 'yks-net-hesaplama-v2';
 const urlsToCache = [
     '/',
     '/geri-sayim',
     '/yks-rehberi',
     '/privacy',
-    '/_next/static/css/',
-    '/_next/static/js/',
 ];
 
 // Install event
@@ -15,18 +13,49 @@ self.addEventListener('install', (event) => {
             .then((cache) => {
                 return cache.addAll(urlsToCache);
             })
+            .then(() => {
+                return self.skipWaiting();
+            })
     );
 });
 
-// Fetch event
+// Fetch event with modern approach
 self.addEventListener('fetch', (event) => {
+    // Only cache GET requests
+    if (event.request.method !== 'GET') {
+        return;
+    }
+
+    // Skip cross-origin requests
+    if (!event.request.url.startsWith(self.location.origin)) {
+        return;
+    }
+
     event.respondWith(
         caches.match(event.request)
             .then((response) => {
                 // Return cached version or fetch from network
-                return response || fetch(event.request);
-            }
-            )
+                if (response) {
+                    return response;
+                }
+
+                return fetch(event.request).then((response) => {
+                    // Don't cache non-successful responses
+                    if (!response || response.status !== 200 || response.type !== 'basic') {
+                        return response;
+                    }
+
+                    // Clone the response
+                    const responseToCache = response.clone();
+
+                    caches.open(CACHE_NAME)
+                        .then((cache) => {
+                            cache.put(event.request, responseToCache);
+                        });
+
+                    return response;
+                });
+            })
     );
 });
 
@@ -41,6 +70,8 @@ self.addEventListener('activate', (event) => {
                     }
                 })
             );
+        }).then(() => {
+            return self.clients.claim();
         })
     );
 });
