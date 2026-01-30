@@ -2,11 +2,20 @@
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
-    experimental: {},
+    compress: true,
+    poweredByHeader: false,
+    experimental: {
+        optimizeCss: true,
+    },
     images: {
         domains: [],
+        formats: ['image/webp', 'image/avif'],
     },
-    // SEO optimizasyonu için
+    // Performance optimizasyonu
+    compiler: {
+        removeConsole: process.env.NODE_ENV === 'production',
+    },
+    // SEO ve performans optimizasyonu için
     async headers() {
         return [
             {
@@ -23,6 +32,19 @@ const nextConfig = {
                     {
                         key: 'X-XSS-Protection',
                         value: '1; mode=block',
+                    },
+                    {
+                        key: 'Cache-Control',
+                        value: 'public, max-age=31536000, immutable',
+                    },
+                ],
+            },
+            {
+                source: '/api/(.*)',
+                headers: [
+                    {
+                        key: 'Cache-Control',
+                        value: 'no-cache, no-store, must-revalidate',
                     },
                 ],
             },

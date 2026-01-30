@@ -305,11 +305,13 @@ export default function HomePage() {
 
                         {/* Sidebar Ad */}
                         <div className="card">
-                            <AdBanner
-                                adSlot="0987654321"
-                                adFormat="rectangle"
-                                style={{ display: 'block', textAlign: 'center', minHeight: '250px' }}
-                            />
+                            <div className="min-h-[250px] flex items-center justify-center bg-gray-100 rounded">
+                                <AdBanner
+                                    adSlot="0987654321"
+                                    adFormat="rectangle"
+                                    style={{ display: 'block', textAlign: 'center', minHeight: '250px' }}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

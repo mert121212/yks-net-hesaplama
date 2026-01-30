@@ -5,7 +5,11 @@ import GoogleAdsense from '@/components/GoogleAdsense'
 import { GA_MEASUREMENT_ID } from '@/lib/gtag'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+    subsets: ['latin'],
+    display: 'swap',
+    preload: true
+})
 
 // AdSense Client ID
 const ADSENSE_CLIENT_ID = 'ca-pub-5194383766905175'
@@ -103,6 +107,10 @@ export default function RootLayout({
     return (
         <html lang="tr">
             <head>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+                <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+                <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
