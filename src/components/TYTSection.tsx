@@ -39,11 +39,13 @@ export default function TYTSection({ scores, onScoreChange }: TYTSectionProps) {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
                     {Object.entries(TYT_SUBJECTS).map(([key, subject]) => {
                         const score = scores[key as keyof TYTScores]
-                        const net = Math.max(0, score.dogru - (score.yanlis / 4))
+                        const net = score.dogru - (score.yanlis / 4)
                         return (
                             <div key={key} className="text-center">
                                 <div className="font-medium text-primary-800">{subject.label}</div>
-                                <div className="text-lg font-bold text-primary-600">{net.toFixed(2)}</div>
+                                <div className={`text-lg font-bold ${net < 0 ? 'text-red-600' : 'text-primary-600'}`}>
+                                    {net.toFixed(2)}
+                                </div>
                             </div>
                         )
                     })}

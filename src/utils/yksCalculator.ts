@@ -31,7 +31,7 @@ const YDT_QUESTIONS = {
 // Net hesaplama fonksiyonu
 export function calculateNet(dogru: number, yanlis: number): number {
     const net = dogru - (yanlis / 4)
-    return Math.max(0, Math.round(net * 100) / 100)
+    return Math.round(net * 100) / 100 // Eksi netlere izin ver
 }
 
 // TYT net hesaplama

@@ -50,7 +50,7 @@ export default function ScoreInput({
         onYanlisChange(value)
     }
 
-    const net = Math.max(0, dogru - (yanlis / 4))
+    const net = dogru - (yanlis / 4)
     const totalAnswered = dogru + yanlis
     const remaining = maxQuestions - totalAnswered
 
@@ -108,7 +108,9 @@ export default function ScoreInput({
             <div className="flex justify-between items-center text-sm">
                 <div className="flex space-x-4">
                     <span className="text-gray-600">
-                        Net: <span className="font-semibold text-primary-600">{net.toFixed(2)}</span>
+                        Net: <span className={`font-semibold ${net < 0 ? 'text-red-600' : 'text-primary-600'}`}>
+                            {net.toFixed(2)}
+                        </span>
                     </span>
                     <span className="text-gray-600">
                         Boş: <span className="font-medium">{remaining}</span>
