@@ -127,16 +127,61 @@ export function calculateUniversityScores(
 }
 
 // Tahmini sıralama hesaplama (2025 verilerine göre yaklaşık)
+// Gerçek YKS sıralama dağılımına daha yakın formüller
 export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil'): number {
-    // Yaklaşık formüller (gerçek verilerle güncellenebilir)
+    // Puan aralıklarına göre daha gerçekçi sıralama tahmini
+    // 2024-2025 YKS verilerine dayalı yaklaşık değerler
+
+    if (score < 150) return 2000000 // Çok düşük puan
+
     const rankFormulas = {
-        say: (s: number) => Math.max(1, Math.round(Math.exp(13.5 - s / 80))),
-        ea: (s: number) => Math.max(1, Math.round(Math.exp(13.2 - s / 75))),
-        soz: (s: number) => Math.max(1, Math.round(Math.exp(12.8 - s / 70))),
-        dil: (s: number) => Math.max(1, Math.round(Math.exp(11.5 - s / 65)))
+        say: (s: number) => {
+            if (s >= 550) return Math.round(100 + (560 - s) * 50) // Tıp seviyesi
+            if (s >= 500) return Math.round(500 + (550 - s) * 100) // Üst mühendislik
+            if (s >= 450) return Math.round(5500 + (500 - s) * 200) // Orta mühendislik
+            if (s >= 400) return Math.round(15500 + (450 - s) * 400) // Alt mühendislik
+            if (s >= 350) return Math.round(35500 + (400 - s) * 800)
+            if (s >= 300) return Math.round(75500 + (350 - s) * 1500)
+            if (s >= 250) return Math.round(150500 + (300 - s) * 2500)
+            if (s >= 200) return Math.round(275500 + (250 - s) * 4000)
+            return Math.round(475500 + (200 - s) * 8000)
+        },
+        ea: (s: number) => {
+            if (s >= 530) return Math.round(150 + (540 - s) * 50) // Üst hukuk
+            if (s >= 480) return Math.round(650 + (530 - s) * 100) // Orta hukuk/işletme
+            if (s >= 430) return Math.round(5650 + (480 - s) * 200) // Alt hukuk/işletme
+            if (s >= 380) return Math.round(15650 + (430 - s) * 400)
+            if (s >= 330) return Math.round(35650 + (380 - s) * 800)
+            if (s >= 280) return Math.round(75650 + (330 - s) * 1500)
+            if (s >= 230) return Math.round(150650 + (280 - s) * 2500)
+            if (s >= 180) return Math.round(275650 + (230 - s) * 4000)
+            return Math.round(475650 + (180 - s) * 8000)
+        },
+        soz: (s: number) => {
+            if (s >= 520) return Math.round(200 + (530 - s) * 50) // Üst hukuk (sözel)
+            if (s >= 470) return Math.round(700 + (520 - s) * 100) // Orta hukuk/psikoloji
+            if (s >= 420) return Math.round(5700 + (470 - s) * 200) // Alt hukuk/edebiyat
+            if (s >= 370) return Math.round(15700 + (420 - s) * 400)
+            if (s >= 320) return Math.round(35700 + (370 - s) * 800)
+            if (s >= 270) return Math.round(75700 + (320 - s) * 1500)
+            if (s >= 220) return Math.round(150700 + (270 - s) * 2500)
+            if (s >= 170) return Math.round(275700 + (220 - s) * 4000)
+            return Math.round(475700 + (170 - s) * 8000)
+        },
+        dil: (s: number) => {
+            if (s >= 510) return Math.round(150 + (520 - s) * 50) // Üst dil bölümleri
+            if (s >= 460) return Math.round(650 + (510 - s) * 80) // Orta dil bölümleri
+            if (s >= 410) return Math.round(4650 + (460 - s) * 150) // Alt dil bölümleri
+            if (s >= 360) return Math.round(12150 + (410 - s) * 300)
+            if (s >= 310) return Math.round(27150 + (360 - s) * 600)
+            if (s >= 260) return Math.round(57150 + (310 - s) * 1200)
+            if (s >= 210) return Math.round(117150 + (260 - s) * 2000)
+            if (s >= 160) return Math.round(217150 + (210 - s) * 3500)
+            return Math.round(392150 + (160 - s) * 7000)
+        }
     }
 
-    return rankFormulas[field](score)
+    return Math.max(1, rankFormulas[field](score))
 }
 
 // Ana hesaplama fonksiyonu
