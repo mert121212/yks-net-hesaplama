@@ -17,6 +17,12 @@ const AYTSection = dynamic(() => import('@/components/AYTSection'), {
 const YDTSection = dynamic(() => import('@/components/YDTSection'), {
     loading: () => <div className="card animate-pulse h-64 bg-gray-200 rounded-xl"></div>
 })
+const OBPInput = dynamic(() => import('@/components/OBPInput'), {
+    loading: () => <div className="card animate-pulse h-32 bg-gray-200 rounded-xl"></div>
+})
+const UniversityRecommendations = dynamic(() => import('@/components/UniversityRecommendations'), {
+    loading: () => <div className="card animate-pulse h-96 bg-gray-200 rounded-xl"></div>
+})
 const CountdownTimer = dynamic(() => import('@/components/CountdownTimer'), {
     loading: () => <div className="animate-pulse h-10 w-32 bg-gray-200 rounded"></div>
 })
@@ -275,6 +281,8 @@ export default function HomePage() {
         ydt: { dogru: 0, yanlis: 0 }
     })
 
+    const [obp, setObp] = useState<number>(0)
+
     const handleTYTScoreChange = (subject: keyof TYTScores, field: 'dogru' | 'yanlis', value: number) => {
         setTytScores(prev => ({
             ...prev,
@@ -305,7 +313,7 @@ export default function HomePage() {
         }))
     }
 
-    const results = calculateYKSScores(tytScores, aytScores, ydtScores)
+    const results = calculateYKSScores(tytScores, aytScores, ydtScores, obp)
 
     return (
         <div className="min-h-screen">
@@ -346,11 +354,25 @@ export default function HomePage() {
                                 onScoreChange={handleYDTScoreChange}
                             />
                         </Suspense>
+
+                        <Suspense fallback={<div className="card animate-pulse h-32 bg-gray-200 rounded-xl"></div>}>
+                            <OBPInput
+                                obp={obp}
+                                onObpChange={setObp}
+                            />
+                        </Suspense>
                     </div>
 
                     {/* Sağ Kolon - Sonuçlar */}
                     <div className="space-y-6" id="sonuclar">
                         <ResultsPanel results={results} />
+
+                        <Suspense fallback={<div className="card animate-pulse h-96 bg-gray-200 rounded-xl"></div>}>
+                            <UniversityRecommendations
+                                estimatedRanks={results.estimatedRanks}
+                                points={results.points}
+                            />
+                        </Suspense>
                     </div>
                 </div>
             </main>
