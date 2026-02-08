@@ -20,9 +20,6 @@ const YDTSection = dynamic(() => import('@/components/YDTSection'), {
 const OBPInput = dynamic(() => import('@/components/OBPInput'), {
     loading: () => <div className="card animate-pulse h-32 bg-gray-200 rounded-xl"></div>
 })
-const UniversityRecommendations = dynamic(() => import('@/components/UniversityRecommendations'), {
-    loading: () => <div className="card animate-pulse h-96 bg-gray-200 rounded-xl"></div>
-})
 const CountdownTimer = dynamic(() => import('@/components/CountdownTimer'), {
     loading: () => <div className="animate-pulse h-10 w-32 bg-gray-200 rounded"></div>
 })
@@ -96,6 +93,23 @@ const HeroSection = memo(function HeroSection() {
 })
 
 const ResultsPanel = memo(function ResultsPanel({ results, onShowUniversities }: { results: any, onShowUniversities: () => void }) {
+    const handleNavigateToUniversities = () => {
+        if (!results.estimatedRanks) return
+
+        const params = new URLSearchParams({
+            say: results.points.say.toString(),
+            ea: results.points.ea.toString(),
+            soz: results.points.soz.toString(),
+            dil: results.points.dil.toString(),
+            sayRank: results.estimatedRanks.say?.toString() || '0',
+            eaRank: results.estimatedRanks.ea?.toString() || '0',
+            sozRank: results.estimatedRanks.soz?.toString() || '0',
+            dilRank: results.estimatedRanks.dil?.toString() || '0',
+        })
+
+        window.location.href = `/universiteler?${params.toString()}`
+    }
+
     return (
         <div className="card sticky-results">
             <h2 className="section-title">Sonuçlar</h2>
@@ -227,7 +241,7 @@ const ResultsPanel = memo(function ResultsPanel({ results, onShowUniversities }:
 
             {/* Üniversite Önerileri Butonu */}
             <button
-                onClick={onShowUniversities}
+                onClick={handleNavigateToUniversities}
                 className="w-full bg-gradient-to-r from-primary-600 to-primary-700 text-white py-3 px-4 rounded-lg font-semibold hover:from-primary-700 hover:to-primary-800 transition-all shadow-md hover:shadow-lg"
             >
                 🎓 Kazanabileceğim Bölümleri Göster
@@ -323,7 +337,6 @@ export default function HomePage() {
     })
 
     const [obp, setObp] = useState<number>(0)
-    const [showUniversities, setShowUniversities] = useState<boolean>(false)
 
     const handleTYTScoreChange = (subject: keyof TYTScores, field: 'dogru' | 'yanlis', value: number) => {
         setTytScores(prev => ({
@@ -355,7 +368,15 @@ export default function HomePage() {
         }))
     }
 
-    const results = calculateYKSScores(tytScores, aytScores, ydtScores, obp)
+    // Herhangi bir değer girilmiş mi kontrol et
+    const hasAnyInput = () => {
+        const tytHasInput = Object.values(tytScores).some(s => s.dogru > 0 || s.yanlis > 0)
+        const aytHasInput = Object.values(aytScores).some(s => s.dogru > 0 || s.yanlis > 0)
+        const ydtHasInput = ydtScores.ydt.dogru > 0 || ydtScores.ydt.yanlis > 0
+        return tytHasInput || aytHasInput || ydtHasInput || obp > 0
+    }
+
+    const results = hasAnyInput() ? calculateYKSScores(tytScores, aytScores, ydtScores, obp) : null
 
     return (
         <div className="min-h-screen">
@@ -407,18 +428,21 @@ export default function HomePage() {
 
                     {/* Sağ Kolon - Sonuçlar */}
                     <div className="space-y-6" id="sonuclar">
-                        <ResultsPanel
-                            results={results}
-                            onShowUniversities={() => setShowUniversities(true)}
-                        />
-
-                        {showUniversities && (
-                            <Suspense fallback={<div className="card animate-pulse h-96 bg-gray-200 rounded-xl"></div>}>
-                                <UniversityRecommendations
-                                    estimatedRanks={results.estimatedRanks}
-                                    points={results.points}
-                                />
-                            </Suspense>
+                        {results ? (
+                            <ResultsPanel
+                                results={results}
+                                onShowUniversities={() => { }}
+                            />
+                        ) : (
+                            <div className="card">
+                                <h2 className="section-title">Sonuçlar</h2>
+                                <div className="text-center py-12">
+                                    <Calculator className="h-16 w-16 text-gray-300 mx-auto mb-4" />
+                                    <p className="text-gray-500">
+                                        Hesaplama yapmak için lütfen doğru ve yanlış sayılarını girin.
+                                    </p>
+                                </div>
+                            </div>
                         )}
                     </div>
                 </div>
