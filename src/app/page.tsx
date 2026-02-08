@@ -286,6 +286,8 @@ const Footer = memo(function Footer() {
                         <ul className="space-y-2 text-sm text-gray-400">
                             <li><Link href="/geri-sayim" className="hover:text-white transition-colors">YKS Geri Sayım</Link></li>
                             <li><Link href="/yks-rehberi" className="hover:text-white transition-colors">YKS Rehberi</Link></li>
+                            <li><Link href="/sss" className="hover:text-white transition-colors">Sıkça Sorulan Sorular</Link></li>
+                            <li><Link href="/universiteler" className="hover:text-white transition-colors">Üniversiteler</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -295,6 +297,7 @@ const Footer = memo(function Footer() {
                         <Link href="/" className="hover:text-white transition-colors">Ana Sayfa</Link>
                         <Link href="/geri-sayim" className="hover:text-white transition-colors">Geri Sayım</Link>
                         <Link href="/yks-rehberi" className="hover:text-white transition-colors">YKS Rehberi</Link>
+                        <Link href="/sss" className="hover:text-white transition-colors">SSS</Link>
                         <Link href="/privacy" className="hover:text-white transition-colors">Gizlilik Politikası</Link>
                         <Link href="/#hesaplama" className="hover:text-white transition-colors">Net Hesaplama</Link>
                     </div>
