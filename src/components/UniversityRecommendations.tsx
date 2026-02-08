@@ -1,9 +1,8 @@
 'use client'
 
-import { useState } from 'react'
-import { GraduationCap, MapPin, Users, TrendingUp } from 'lucide-react'
+import { useState, useMemo } from 'react'
+import { GraduationCap, MapPin, Users, TrendingUp, Search, Filter } from 'lucide-react'
 import { getMatchingPrograms } from '@/data/universities'
-import { FieldType } from '@/types/yks'
 
 interface UniversityRecommendationsProps {
     estimatedRanks?: {
@@ -22,6 +21,9 @@ interface UniversityRecommendationsProps {
 
 export default function UniversityRecommendations({ estimatedRanks, points }: UniversityRecommendationsProps) {
     const [selectedField, setSelectedField] = useState<'say' | 'ea' | 'soz' | 'dil'>('say')
+    const [searchQuery, setSearchQuery] = useState('')
+    const [selectedCity, setSelectedCity] = useState<string>('all')
+    const [universityType, setUniversityType] = useState<'all' | 'devlet' | 'vakif'>('all')
 
     if (!estimatedRanks) {
         return null
@@ -29,7 +31,44 @@ export default function UniversityRecommendations({ estimatedRanks, points }: Un
 
     const currentRank = estimatedRanks[selectedField]
     const currentScore = points[selectedField]
-    const programs = currentRank ? getMatchingPrograms(currentRank, selectedField, 15) : []
+    const allPrograms = currentRank ? getMatchingPrograms(currentRank, selectedField, 500) : []
+
+    // Filtreleme
+    const filteredPrograms = useMemo(() => {
+        return allPrograms.filter(program => {
+            // Arama filtresi
+            if (searchQuery) {
+                const query = searchQuery.toLowerCase()
+                const matchesSearch =
+                    program.program.toLowerCase().includes(query) ||
+                    program.university.toLowerCase().includes(query) ||
+                    program.city.toLowerCase().includes(query)
+                if (!matchesSearch) return false
+            }
+
+            // Şehir filtresi
+            if (selectedCity !== 'all' && program.city !== selectedCity) {
+                return false
+            }
+
+            // Üniversite tipi filtresi
+            if (universityType !== 'all') {
+                const isVakif = program.university.includes('(Vakıf)') ||
+                    program.university.includes('(Özel)') ||
+                    program.university.includes('Vakıf')
+                if (universityType === 'vakif' && !isVakif) return false
+                if (universityType === 'devlet' && isVakif) return false
+            }
+
+            return true
+        })
+    }, [allPrograms, searchQuery, selectedCity, universityType])
+
+    // Benzersiz şehirler
+    const cities = useMemo(() => {
+        const citySet = new Set(allPrograms.map(p => p.city))
+        return Array.from(citySet).sort()
+    }, [allPrograms])
 
     const fieldNames = {
         say: 'SAY (Sayısal)',
@@ -52,8 +91,8 @@ export default function UniversityRecommendations({ estimatedRanks, points }: Un
                         key={field}
                         onClick={() => setSelectedField(field)}
                         className={`px-4 py-2 rounded-lg font-medium transition-colors ${selectedField === field
-                                ? 'bg-primary-600 text-white'
-                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                            ? 'bg-primary-600 text-white'
+                            : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                             }`}
                     >
                         {fieldNames[field]}
@@ -77,13 +116,70 @@ export default function UniversityRecommendations({ estimatedRanks, points }: Un
                 </div>
             </div>
 
+            {/* Filtreler */}
+            <div className="bg-gray-50 rounded-lg p-4 mb-6 space-y-4">
+                <div className="flex items-center gap-2 mb-3">
+                    <Filter className="h-5 w-5 text-gray-600" />
+                    <h3 className="font-semibold text-gray-900">Filtreler</h3>
+                </div>
+
+                {/* Arama */}
+                <div className="relative">
+                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                    <input
+                        type="text"
+                        placeholder="Bölüm veya üniversite ara..."
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    />
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {/* Şehir Filtresi */}
+                    <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                            Şehir
+                        </label>
+                        <select
+                            value={selectedCity}
+                            onChange={(e) => setSelectedCity(e.target.value)}
+                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                        >
+                            <option value="all">Tüm Şehirler</option>
+                            {cities.map(city => (
+                                <option key={city} value={city}>{city}</option>
+                            ))}
+                        </select>
+                    </div>
+
+                    {/* Üniversite Tipi */}
+                    <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                            Üniversite Tipi
+                        </label>
+                        <select
+                            value={universityType}
+                            onChange={(e) => setUniversityType(e.target.value as 'all' | 'devlet' | 'vakif')}
+                            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                        >
+                            <option value="all">Tümü</option>
+                            <option value="devlet">Devlet</option>
+                            <option value="vakif">Vakıf</option>
+                        </select>
+                    </div>
+                </div>
+
+                {/* Sonuç Sayısı */}
+                <div className="text-sm text-gray-600">
+                    <strong>{filteredPrograms.length}</strong> bölüm bulundu
+                </div>
+            </div>
+
             {/* Üniversite Listesi */}
-            {programs.length > 0 ? (
-                <div className="space-y-3">
-                    <p className="text-sm text-gray-600 mb-4">
-                        2025 taban puanlarına göre kazanma şansınız yüksek olan {programs.length} bölüm:
-                    </p>
-                    {programs.map((program, index) => (
+            {filteredPrograms.length > 0 ? (
+                <div className="space-y-3 max-h-[800px] overflow-y-auto">
+                    {filteredPrograms.slice(0, 50).map((program, index) => (
                         <div
                             key={index}
                             className="border border-gray-200 rounded-lg p-4 hover:border-primary-300 hover:shadow-md transition-all"
@@ -130,14 +226,19 @@ export default function UniversityRecommendations({ estimatedRanks, points }: Un
                             )}
                         </div>
                     ))}
+                    {filteredPrograms.length > 50 && (
+                        <div className="text-center py-4 text-sm text-gray-600">
+                            İlk 50 sonuç gösteriliyor. Daha spesifik aramak için filtreleri kullanın.
+                        </div>
+                    )}
                 </div>
             ) : (
                 <div className="text-center py-8 bg-gray-50 rounded-lg">
                     <p className="text-gray-600">
-                        Bu puan aralığında gösterebileceğimiz bölüm bulunmamaktadır.
+                        Filtrelere uygun bölüm bulunamadı.
                     </p>
                     <p className="text-sm text-gray-500 mt-2">
-                        Daha fazla net yaparak puanınızı yükseltebilirsiniz.
+                        Filtreleri değiştirerek tekrar deneyin.
                     </p>
                 </div>
             )}

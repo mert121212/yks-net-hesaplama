@@ -95,7 +95,7 @@ const HeroSection = memo(function HeroSection() {
     )
 })
 
-const ResultsPanel = memo(function ResultsPanel({ results }: { results: any }) {
+const ResultsPanel = memo(function ResultsPanel({ results, onShowUniversities }: { results: any, onShowUniversities: () => void }) {
     return (
         <div className="card sticky-results">
             <h2 className="section-title">Sonuçlar</h2>
@@ -170,7 +170,7 @@ const ResultsPanel = memo(function ResultsPanel({ results }: { results: any }) {
             </div>
 
             {/* Üniversite Puanları */}
-            <div>
+            <div className="mb-6">
                 <h3 className="subsection-title">Üniversite Puanları</h3>
                 <div className="space-y-2">
                     <div className="flex justify-between">
@@ -191,6 +191,47 @@ const ResultsPanel = memo(function ResultsPanel({ results }: { results: any }) {
                     </div>
                 </div>
             </div>
+
+            {/* Tahmini Sıralamalar */}
+            {results.estimatedRanks && (
+                <div className="mb-6">
+                    <h3 className="subsection-title">Tahmini Sıralamalar</h3>
+                    <div className="space-y-2 text-sm">
+                        <div className="flex justify-between">
+                            <span>SAY:</span>
+                            <span className="font-semibold text-green-600">
+                                {results.estimatedRanks.say?.toLocaleString('tr-TR')}
+                            </span>
+                        </div>
+                        <div className="flex justify-between">
+                            <span>EA:</span>
+                            <span className="font-semibold text-blue-600">
+                                {results.estimatedRanks.ea?.toLocaleString('tr-TR')}
+                            </span>
+                        </div>
+                        <div className="flex justify-between">
+                            <span>SÖZ:</span>
+                            <span className="font-semibold text-purple-600">
+                                {results.estimatedRanks.soz?.toLocaleString('tr-TR')}
+                            </span>
+                        </div>
+                        <div className="flex justify-between">
+                            <span>DİL:</span>
+                            <span className="font-semibold text-orange-600">
+                                {results.estimatedRanks.dil?.toLocaleString('tr-TR')}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* Üniversite Önerileri Butonu */}
+            <button
+                onClick={onShowUniversities}
+                className="w-full bg-gradient-to-r from-primary-600 to-primary-700 text-white py-3 px-4 rounded-lg font-semibold hover:from-primary-700 hover:to-primary-800 transition-all shadow-md hover:shadow-lg"
+            >
+                🎓 Kazanabileceğim Bölümleri Göster
+            </button>
         </div>
     )
 })
@@ -282,6 +323,7 @@ export default function HomePage() {
     })
 
     const [obp, setObp] = useState<number>(0)
+    const [showUniversities, setShowUniversities] = useState<boolean>(false)
 
     const handleTYTScoreChange = (subject: keyof TYTScores, field: 'dogru' | 'yanlis', value: number) => {
         setTytScores(prev => ({
@@ -365,14 +407,19 @@ export default function HomePage() {
 
                     {/* Sağ Kolon - Sonuçlar */}
                     <div className="space-y-6" id="sonuclar">
-                        <ResultsPanel results={results} />
+                        <ResultsPanel
+                            results={results}
+                            onShowUniversities={() => setShowUniversities(true)}
+                        />
 
-                        <Suspense fallback={<div className="card animate-pulse h-96 bg-gray-200 rounded-xl"></div>}>
-                            <UniversityRecommendations
-                                estimatedRanks={results.estimatedRanks}
-                                points={results.points}
-                            />
-                        </Suspense>
+                        {showUniversities && (
+                            <Suspense fallback={<div className="card animate-pulse h-96 bg-gray-200 rounded-xl"></div>}>
+                                <UniversityRecommendations
+                                    estimatedRanks={results.estimatedRanks}
+                                    points={results.points}
+                                />
+                            </Suspense>
+                        )}
                     </div>
                 </div>
             </main>
