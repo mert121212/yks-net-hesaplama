@@ -65,6 +65,23 @@ export interface ScoreCalculationResult {
     tytScore: number
     aytScore: number
     ydtScore: number
+    obp?: number
+    estimatedRanks?: {
+        say?: number
+        ea?: number
+        soz?: number
+        dil?: number
+    }
+}
+
+export interface UniversityProgram {
+    university: string
+    program: string
+    city: string
+    field: FieldType
+    minScore: number
+    minRank: number
+    quota: number
 }
 
 export type ExamType = 'TYT' | 'AYT' | 'YDT'

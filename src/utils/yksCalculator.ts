@@ -93,14 +93,18 @@ export function calculateYDTNets(scores: YDTScores): NetScores['ydt'] {
     }
 }
 
-// Üniversite puanları hesaplama (basitleştirilmiş)
+// Üniversite puanları hesaplama (OBP dahil)
 export function calculateUniversityScores(
     tytNets: NetScores['tyt'],
     aytNets: NetScores['ayt'],
-    ydtNets: NetScores['ydt']
+    ydtNets: NetScores['ydt'],
+    obp: number = 0
 ): UniversityScore {
+    // OBP'nin etkisi: 0.12 katsayısı ile
+    const obpContribution = obp * 0.12
+
     // Bu katsayılar yaklaşık değerlerdir, gerçek hesaplama daha karmaşıktır
-    const tytBase = tytNets.toplam * 3.3
+    const tytBase = (tytNets.toplam * 3.3) + obpContribution
 
     const sayScore = tytBase + (aytNets.matematik * 3.3) + (aytNets.fizik * 3.3) +
         (aytNets.kimya * 3.3) + (aytNets.biyoloji * 3.3)
@@ -115,18 +119,32 @@ export function calculateUniversityScores(
     const dilScore = tytBase + (ydtNets.ydt * 3.3)
 
     return {
-        say: Math.max(0, Math.round(sayScore * 100) / 100),
-        ea: Math.max(0, Math.round(eaScore * 100) / 100),
-        soz: Math.max(0, Math.round(sozScore * 100) / 100),
-        dil: Math.max(0, Math.round(dilScore * 100) / 100)
+        say: Math.max(100, Math.round(sayScore * 100) / 100),
+        ea: Math.max(100, Math.round(eaScore * 100) / 100),
+        soz: Math.max(100, Math.round(sozScore * 100) / 100),
+        dil: Math.max(100, Math.round(dilScore * 100) / 100)
     }
+}
+
+// Tahmini sıralama hesaplama (2025 verilerine göre yaklaşık)
+export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil'): number {
+    // Yaklaşık formüller (gerçek verilerle güncellenebilir)
+    const rankFormulas = {
+        say: (s: number) => Math.max(1, Math.round(Math.exp(13.5 - s / 80))),
+        ea: (s: number) => Math.max(1, Math.round(Math.exp(13.2 - s / 75))),
+        soz: (s: number) => Math.max(1, Math.round(Math.exp(12.8 - s / 70))),
+        dil: (s: number) => Math.max(1, Math.round(Math.exp(11.5 - s / 65)))
+    }
+
+    return rankFormulas[field](score)
 }
 
 // Ana hesaplama fonksiyonu
 export function calculateYKSScores(
     tytScores: TYTScores,
     aytScores: AYTScores,
-    ydtScores: YDTScores
+    ydtScores: YDTScores,
+    obp: number = 0
 ): ScoreCalculationResult {
     const tytNets = calculateTYTNets(tytScores)
     const aytNets = calculateAYTNets(aytScores)
@@ -138,14 +156,24 @@ export function calculateYKSScores(
         ydt: ydtNets
     }
 
-    const points = calculateUniversityScores(tytNets, aytNets, ydtNets)
+    const points = calculateUniversityScores(tytNets, aytNets, ydtNets, obp)
+
+    // Tahmini sıralamalar
+    const estimatedRanks = {
+        say: estimateRank(points.say, 'say'),
+        ea: estimateRank(points.ea, 'ea'),
+        soz: estimateRank(points.soz, 'soz'),
+        dil: estimateRank(points.dil, 'dil')
+    }
 
     return {
         nets,
         points,
         tytScore: tytNets.toplam,
         aytScore: aytNets.toplam,
-        ydtScore: ydtNets.ydt
+        ydtScore: ydtNets.ydt,
+        obp,
+        estimatedRanks
     }
 }
 
