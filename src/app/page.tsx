@@ -24,6 +24,9 @@ const CountdownTimer = dynamic(() => import('@/components/CountdownTimer'), {
     loading: () => <div className="animate-pulse h-10 w-32 bg-gray-200 rounded"></div>
 })
 const StructuredData = dynamic(() => import('@/components/StructuredData'))
+const SEOContent = dynamic(() => import('@/components/SEOContent'), {
+    loading: () => <div className="animate-pulse h-96 bg-gray-100"></div>
+})
 
 // Memoized components for better performance
 const Header = memo(function Header({ countdownTimer }: { countdownTimer: React.ReactNode }) {
@@ -33,7 +36,7 @@ const Header = memo(function Header({ countdownTimer }: { countdownTimer: React.
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center space-x-3">
                         <Calculator className="h-8 w-8 text-primary-600" />
-                        <h1 className="text-xl font-bold text-gray-900">YKS Net Hesaplama</h1>
+                        <div className="text-xl font-bold text-gray-900">YKS Net Hesaplama</div>
                     </div>
 
                     <div className="flex items-center space-x-6">
@@ -450,6 +453,10 @@ export default function HomePage() {
                     </div>
                 </div>
             </main>
+
+            <Suspense fallback={<div className="h-96"></div>}>
+                <SEOContent />
+            </Suspense>
 
             <Footer />
         </div>

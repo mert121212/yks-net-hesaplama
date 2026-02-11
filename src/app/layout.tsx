@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         default: 'YKS Net Hesaplama 2026 | TYT AYT YDT Puan Hesaplama Aracı',
         template: '%s | YKS Net Hesaplama'
     },
-    description: 'YKS 2026 net hesaplama aracı ile TYT, AYT ve YDT netlerinizi hesaplayın. Üniversite puanlarınızı öğrenin. SAY, EA, SÖZ, DİL puan hesaplama. Ücretsiz ve hızlı YKS hesaplama sistemi.',
+    description: 'YKS 2026 net ve puan hesaplama aracı. TYT, AYT, YDT netlerinizi hesaplayın, üniversite puanlarınızı öğrenin. SAY, EA, SÖZ, DİL hesaplama - Ücretsiz.',
     keywords: [
         'YKS net hesaplama',
         'YKS 2026',

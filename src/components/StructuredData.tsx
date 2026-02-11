@@ -4,7 +4,7 @@ export default function StructuredData() {
         "@type": "WebApplication",
         "name": "YKS Net Hesaplama",
         "description": "YKS 2026 net hesaplama aracı ile TYT, AYT ve YDT netlerinizi hesaplayın. Üniversite puanlarınızı öğrenin.",
-        "url": "https://yksnethesapla.netlify.app",
+        "url": "https://yks-net-hesaplama.netlify.app",
         "applicationCategory": "EducationalApplication",
         "operatingSystem": "Web Browser",
         "offers": {
@@ -20,7 +20,7 @@ export default function StructuredData() {
         "publisher": {
             "@type": "Organization",
             "name": "YKS Net Hesaplama",
-            "url": "https://yksnethesapla.netlify.app"
+            "url": "https://yks-net-hesaplama.netlify.app"
         },
         "inLanguage": "tr-TR",
         "keywords": [
@@ -39,7 +39,26 @@ export default function StructuredData() {
             "YKS Geri Sayım",
             "SAY EA SÖZ DİL Puan Hesaplama"
         ],
-        "screenshot": "https://yksnethesapla.netlify.app/og-image.png"
+        "screenshot": "https://yks-net-hesaplama.netlify.app/og-image.png"
+    }
+
+    const breadcrumbData = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Ana Sayfa",
+                "item": "https://yks-net-hesaplama.netlify.app"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "YKS Net Hesaplama",
+                "item": "https://yks-net-hesaplama.netlify.app/#hesaplama"
+            }
+        ]
     }
 
     const faqData = {
@@ -86,6 +105,10 @@ export default function StructuredData() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
             />
             <script
                 type="application/ld+json"
