@@ -242,10 +242,10 @@ export default function GeriSayimPage() {
                         </div>
 
                         {/* Study Tips */}
-                        <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+                        <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
                             <div className="flex items-center mb-6">
                                 <Brain className="h-8 w-8 text-indigo-600 mr-3" />
-                                <h2 className="text-2xl font-bold text-gray-900">Bu Dönemde Yapılacaklar</h2>
+                                <h2 className="text-2xl font-bold text-gray-900">YKS'ye Ne Kadar Kaldı - Bu Dönemde Yapılacaklar</h2>
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -257,6 +257,62 @@ export default function GeriSayimPage() {
                                         <span className="text-gray-800">{tip}</span>
                                     </div>
                                 ))}
+                            </div>
+                        </div>
+
+                        {/* YKS Hazırlık Süreci */}
+                        <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                            <h2 className="text-2xl font-bold text-gray-900 mb-6">YKS Hazırlık Süreci Nasıl Olmalı?</h2>
+                            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
+                                <p>
+                                    YKS'ye hazırlanırken zamanı doğru yönetmek çok önemlidir. Sınava {totalDays} gün kaldı ve
+                                    bu süreyi en verimli şekilde değerlendirmelisiniz. Düzenli çalışma programı oluşturun,
+                                    her gün belirli saatlerde ders çalışın ve kendinize mola verin.
+                                </p>
+                                <p>
+                                    TYT ve AYT konularını dengeli bir şekilde çalışın. Zayıf olduğunuz konulara daha fazla
+                                    zaman ayırın ama güçlü olduğunuz konuları da ihmal etmeyin. Düzenli deneme sınavları
+                                    çözerek kendinizi test edin ve eksiklerinizi belirleyin.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Motivasyon ve Başarı İpuçları */}
+                        <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                            <h2 className="text-2xl font-bold text-gray-900 mb-6">YKS Motivasyon ve Başarı İpuçları</h2>
+
+                            <div className="space-y-6">
+                                <div>
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Düzenli Çalışma Alışkanlığı</h3>
+                                    <p className="text-gray-700">
+                                        Her gün aynı saatlerde çalışmaya başlayın. Beyin belirli saatlerde çalışmaya alıştığında
+                                        veriminiz artar. Sabah erken saatler genellikle en verimli çalışma saatleridir.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Sağlıklı Yaşam</h3>
+                                    <p className="text-gray-700">
+                                        Düzenli uyku, sağlıklı beslenme ve hafif egzersiz başarınızı doğrudan etkiler.
+                                        Günde en az 7-8 saat uyuyun, bol su için ve düzenli öğün atlamamaya özen gösterin.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Stres Yönetimi</h3>
+                                    <p className="text-gray-700">
+                                        Sınav stresi doğaldır ama kontrol altında tutulmalıdır. Nefes egzersizleri yapın,
+                                        hobilerle ilgilenin ve ailenizle kaliteli zaman geçirin. Kendinize güvenin!
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Hedef Belirleme</h3>
+                                    <p className="text-gray-700">
+                                        Gerçekçi hedefler belirleyin ve bu hedeflere ulaşmak için adım adım ilerleyin.
+                                        Küçük başarıları kutlayın ve motivasyonunuzu yüksek tutun. Başarı bir süreçtir!
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
