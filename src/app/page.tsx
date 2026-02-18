@@ -95,7 +95,17 @@ const HeroSection = memo(function HeroSection() {
     )
 })
 
-const ResultsPanel = memo(function ResultsPanel({ results, onShowUniversities }: { results: any, onShowUniversities: () => void }) {
+const ResultsPanel = memo(function ResultsPanel({
+    results,
+    onShowUniversities,
+    previouslyPlaced = false,
+    previousYearScore = 0
+}: {
+    results: any,
+    onShowUniversities: () => void,
+    previouslyPlaced?: boolean,
+    previousYearScore?: number
+}) {
     const handleNavigateToUniversities = () => {
         if (!results.estimatedRanks) return
 
@@ -189,6 +199,25 @@ const ResultsPanel = memo(function ResultsPanel({ results, onShowUniversities }:
             {/* Üniversite Puanları */}
             <div className="mb-6">
                 <h3 className="subsection-title">Üniversite Puanları</h3>
+
+                {/* Geçen Yıl Puanı Uyarısı */}
+                {previouslyPlaced && previousYearScore > 0 && (
+                    <div className="mb-4 p-3 bg-amber-50 border border-amber-200 rounded-lg">
+                        <p className="text-xs text-amber-800 font-medium mb-2">
+                            📌 Geçen Yılki Puanınız: {previousYearScore.toFixed(2)}
+                        </p>
+                        {(results.points.say < previousYearScore ||
+                            results.points.ea < previousYearScore ||
+                            results.points.soz < previousYearScore ||
+                            results.points.dil < previousYearScore) && (
+                                <p className="text-xs text-amber-700">
+                                    ⚠️ Bazı puanlarınız geçen yılki puanınızdan düşük.
+                                    Yerleştirmede geçen yılki puanınız baz alınacaktır.
+                                </p>
+                            )}
+                    </div>
+                )}
+
                 <div className="space-y-2">
                     <div className="flex justify-between">
                         <span>SAY:</span>
@@ -345,6 +374,8 @@ export default function HomePage() {
     const [obp, setObp] = useState<number>(0)
     const [obpHalved, setObpHalved] = useState<boolean>(false)
     const [obpMesleki, setObpMesleki] = useState<boolean>(false)
+    const [previouslyPlaced, setPreviouslyPlaced] = useState<boolean>(false)
+    const [previousYearScore, setPreviousYearScore] = useState<number>(0)
 
     const handleTYTScoreChange = (subject: keyof TYTScores, field: 'dogru' | 'yanlis', value: number) => {
         setTytScores(prev => ({
@@ -434,6 +465,10 @@ export default function HomePage() {
                                 onObpHalvedChange={setObpHalved}
                                 obpMesleki={obpMesleki}
                                 onObpMeslekiChange={setObpMesleki}
+                                previouslyPlaced={previouslyPlaced}
+                                onPreviouslyPlacedChange={setPreviouslyPlaced}
+                                previousYearScore={previousYearScore}
+                                onPreviousYearScoreChange={setPreviousYearScore}
                             />
                         </Suspense>
                     </div>
@@ -444,6 +479,8 @@ export default function HomePage() {
                             <ResultsPanel
                                 results={results}
                                 onShowUniversities={() => { }}
+                                previouslyPlaced={previouslyPlaced}
+                                previousYearScore={previousYearScore}
                             />
                         ) : (
                             <div className="card">

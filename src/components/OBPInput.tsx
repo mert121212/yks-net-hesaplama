@@ -7,6 +7,10 @@ interface OBPInputProps {
     onObpHalvedChange?: (value: boolean) => void
     obpMesleki?: boolean
     onObpMeslekiChange?: (value: boolean) => void
+    previouslyPlaced?: boolean
+    onPreviouslyPlacedChange?: (value: boolean) => void
+    previousYearScore?: number
+    onPreviousYearScoreChange?: (value: number) => void
 }
 
 export default function OBPInput({
@@ -15,7 +19,11 @@ export default function OBPInput({
     obpHalved = false,
     onObpHalvedChange,
     obpMesleki = false,
-    onObpMeslekiChange
+    onObpMeslekiChange,
+    previouslyPlaced = false,
+    onPreviouslyPlacedChange,
+    previousYearScore = 0,
+    onPreviousYearScoreChange
 }: OBPInputProps) {
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = parseFloat(e.target.value) || 0
@@ -66,6 +74,51 @@ export default function OBPInput({
                 <div className="mt-6 space-y-4">
                     <h3 className="text-sm font-semibold text-gray-700 mb-3">OBP Katsayı Seçenekleri</h3>
 
+                    {/* Geçen Yıl Yerleştim */}
+                    <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg">
+                        <label className="flex items-start space-x-3 cursor-pointer">
+                            <input
+                                type="checkbox"
+                                checked={previouslyPlaced}
+                                onChange={(e) => onPreviouslyPlacedChange?.(e.target.checked)}
+                                className="mt-1 h-4 w-4 text-amber-600 focus:ring-amber-500 border-gray-300 rounded"
+                            />
+                            <div className="flex-1">
+                                <p className="text-sm font-medium text-gray-900">
+                                    Geçen Yıl Bir Bölüme Yerleştim
+                                </p>
+                                <p className="text-xs text-gray-600 mt-1">
+                                    Önceki yıl YKS ile bir programa yerleştiyseniz bu seçeneği işaretleyin.
+                                    Geçen yılki puanınızı girmeniz gerekecek.
+                                </p>
+                            </div>
+                        </label>
+
+                        {previouslyPlaced && (
+                            <div className="mt-4 pl-7">
+                                <label className="block text-sm font-medium text-gray-700 mb-2">
+                                    Geçen Yılki Puanınız
+                                </label>
+                                <input
+                                    type="number"
+                                    min="100"
+                                    max="600"
+                                    step="0.01"
+                                    value={previousYearScore || ''}
+                                    onChange={(e) => onPreviousYearScoreChange?.(parseFloat(e.target.value) || 0)}
+                                    className="input-field text-lg max-w-xs"
+                                    placeholder="Örn: 450.50"
+                                />
+                                {previousYearScore > 0 && (
+                                    <p className="text-xs text-amber-700 mt-2">
+                                        ⚠️ Geçen yılki puanınızdan daha düşük puan alırsanız,
+                                        geçen yılki puanınız baz alınacaktır.
+                                    </p>
+                                )}
+                            </div>
+                        )}
+                    </div>
+
                     {/* Yarıya Düşürme */}
                     <label className="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">
                         <input
@@ -76,11 +129,11 @@ export default function OBPInput({
                         />
                         <div className="flex-1">
                             <p className="text-sm font-medium text-gray-900">
-                                Daha Önce Yerleştiğim İçin Katsayı Yarıya Düşsün
+                                OBP Katsayısı Yarıya Düşsün (0.06)
                             </p>
                             <p className="text-xs text-gray-600 mt-1">
-                                Önceki sene YKS puanları ile bir yükseköğretim programına yerleştiyseniz ve
-                                OBP katsayısının 0.06'ya düşürülmesini istiyorsanız bu seçeneği işaretleyin.
+                                Daha önce yerleştiyseniz ve OBP katsayısının 0.12'den 0.06'ya düşürülmesini
+                                istiyorsanız bu seçeneği işaretleyin.
                             </p>
                         </div>
                     </label>
