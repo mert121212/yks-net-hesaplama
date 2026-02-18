@@ -98,13 +98,19 @@ export function calculateUniversityScores(
     tytNets: NetScores['tyt'],
     aytNets: NetScores['ayt'],
     ydtNets: NetScores['ydt'],
-    obp: number = 0
+    obp: number = 0,
+    obpHalved: boolean = false,
+    obpMesleki: boolean = false
 ): UniversityScore {
-    // OBP'nin etkisi: 0.12 katsayısı ile
-    const obpContribution = obp * 0.12
+    // OBP katsayısı: Normal 0.12, yarıya düşürülmüşse 0.06
+    const obpKatsayi = obpHalved ? 0.06 : 0.12
+    const obpContribution = obp * obpKatsayi
+
+    // Mesleki lise ek puanı: 0.06 katsayısı ile
+    const meslekiEkPuan = obpMesleki ? obp * 0.06 : 0
 
     // Bu katsayılar yaklaşık değerlerdir, gerçek hesaplama daha karmaşıktır
-    const tytBase = (tytNets.toplam * 3.3) + obpContribution
+    const tytBase = (tytNets.toplam * 3.3) + obpContribution + meslekiEkPuan
 
     const sayScore = tytBase + (aytNets.matematik * 3.3) + (aytNets.fizik * 3.3) +
         (aytNets.kimya * 3.3) + (aytNets.biyoloji * 3.3)
@@ -189,7 +195,9 @@ export function calculateYKSScores(
     tytScores: TYTScores,
     aytScores: AYTScores,
     ydtScores: YDTScores,
-    obp: number = 0
+    obp: number = 0,
+    obpHalved: boolean = false,
+    obpMesleki: boolean = false
 ): ScoreCalculationResult {
     const tytNets = calculateTYTNets(tytScores)
     const aytNets = calculateAYTNets(aytScores)
@@ -201,7 +209,7 @@ export function calculateYKSScores(
         ydt: ydtNets
     }
 
-    const points = calculateUniversityScores(tytNets, aytNets, ydtNets, obp)
+    const points = calculateUniversityScores(tytNets, aytNets, ydtNets, obp, obpHalved, obpMesleki)
 
     // Tahmini sıralamalar
     const estimatedRanks = {

@@ -343,6 +343,8 @@ export default function HomePage() {
     })
 
     const [obp, setObp] = useState<number>(0)
+    const [obpHalved, setObpHalved] = useState<boolean>(false)
+    const [obpMesleki, setObpMesleki] = useState<boolean>(false)
 
     const handleTYTScoreChange = (subject: keyof TYTScores, field: 'dogru' | 'yanlis', value: number) => {
         setTytScores(prev => ({
@@ -382,7 +384,7 @@ export default function HomePage() {
         return tytHasInput || aytHasInput || ydtHasInput || obp > 0
     }
 
-    const results = hasAnyInput() ? calculateYKSScores(tytScores, aytScores, ydtScores, obp) : null
+    const results = hasAnyInput() ? calculateYKSScores(tytScores, aytScores, ydtScores, obp, obpHalved, obpMesleki) : null
 
     return (
         <div className="min-h-screen">
@@ -428,6 +430,10 @@ export default function HomePage() {
                             <OBPInput
                                 obp={obp}
                                 onObpChange={setObp}
+                                obpHalved={obpHalved}
+                                onObpHalvedChange={setObpHalved}
+                                obpMesleki={obpMesleki}
+                                onObpMeslekiChange={setObpMesleki}
                             />
                         </Suspense>
                     </div>
