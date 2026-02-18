@@ -17,8 +17,8 @@ export default function GeriSayimPage() {
     useEffect(() => {
         setMounted(true)
 
-        // 2026 YKS tarihi - TYT: 14 Haziran 2026, AYT: 15 Haziran 2026
-        const yksDate = new Date('2026-06-14T10:00:00')
+        // 2026 YKS tarihi - TYT: 20 Haziran 2026, AYT: 21 Haziran 2026
+        const yksDate = new Date('2026-06-20T10:00:00')
 
         const updateTimer = () => {
             const now = new Date().getTime()
