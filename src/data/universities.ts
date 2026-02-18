@@ -435,8 +435,11 @@ export function getMatchingPrograms(rank: number, field: 'say' | 'ea' | 'soz' | 
         dil: 'DIL'
     }
 
+    // Kullanıcının sıralaması programın minimum sıralamasından küçük veya eşit olmalı
+    // Yani kullanıcı daha iyi sıralamada olmalı
+    // %20 tolerans: Kullanıcı sıralaması biraz daha kötü olsa bile göster
     return universityPrograms
-        .filter(p => p.field === fieldMap[field] && p.minRank <= rank * 1.2) // %20 tolerans
+        .filter(p => p.field === fieldMap[field] && rank <= p.minRank * 1.2)
         .sort((a, b) => b.minScore - a.minScore)
         .slice(0, limit)
 }
