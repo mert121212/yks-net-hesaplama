@@ -16,8 +16,8 @@ export default function CountdownTimer() {
 
     useEffect(() => {
         setMounted(true)
-        // 2026 YKS tarihi (yaklaşık) - Haziran ayının ikinci haftası
-        const yksDate = new Date('2026-06-13T10:00:00')
+        // 2026 YKS tarihi - TYT: 14 Haziran 2026, AYT: 15 Haziran 2026
+        const yksDate = new Date('2026-06-14T10:00:00')
 
         const updateTimer = () => {
             const now = new Date().getTime()
