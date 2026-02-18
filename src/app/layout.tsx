@@ -46,14 +46,14 @@ export const metadata: Metadata = {
         address: false,
         telephone: false,
     },
-    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://yksnethesapla.com'),
+    metadataBase: new URL('https://yksnethesapla.com'),
     alternates: {
         canonical: '/',
     },
     openGraph: {
         title: 'YKS Net Hesaplama 2026 | TYT AYT YDT Puan Hesaplama Aracı',
         description: 'YKS 2026 net hesaplama aracı ile TYT, AYT ve YDT netlerinizi hesaplayın. Üniversite puanlarınızı öğrenin. Ücretsiz ve hızlı hesaplama sistemi.',
-        url: process.env.NEXT_PUBLIC_SITE_URL || 'https://yksnethesapla.com',
+        url: 'https://yksnethesapla.com',
         siteName: 'YKS Net Hesaplama',
         locale: 'tr_TR',
         type: 'website',
