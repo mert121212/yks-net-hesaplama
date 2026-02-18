@@ -86,12 +86,12 @@ export default function YKSRehberiPage() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div>
                                     <h4 className="font-semibold text-blue-900 mb-2">TYT Sınavı</h4>
-                                    <p className="text-blue-800">13 Haziran 2026 (Cumartesi)</p>
+                                    <p className="text-blue-800">20 Haziran 2026 (Cumartesi)</p>
                                     <p className="text-sm text-blue-700">Saat: 10:15 - 12:45</p>
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-blue-900 mb-2">AYT Sınavı</h4>
-                                    <p className="text-blue-800">14 Haziran 2026 (Pazar)</p>
+                                    <p className="text-blue-800">21 Haziran 2026 (Pazar)</p>
                                     <p className="text-sm text-blue-700">Saat: 10:15 - 12:45</p>
                                 </div>
                             </div>
