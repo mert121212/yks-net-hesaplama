@@ -42,6 +42,58 @@ export default function StructuredData() {
         "screenshot": "https://yksnethesapla.com/og-image.png"
     }
 
+    const howToData = {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "YKS Net Hesaplama Nasıl Yapılır?",
+        "description": "YKS sınavında aldığınız doğru ve yanlış sayılarını kullanarak net hesaplama yapın ve üniversite puanlarınızı öğrenin.",
+        "image": "https://yksnethesapla.com/og-image.png",
+        "totalTime": "PT5M",
+        "estimatedCost": {
+            "@type": "MonetaryAmount",
+            "currency": "TRY",
+            "value": "0"
+        },
+        "tool": [
+            {
+                "@type": "HowToTool",
+                "name": "YKS Net Hesaplama Aracı"
+            }
+        ],
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "TYT Netlerini Girin",
+                "text": "TYT sınavında aldığınız Türkçe, Matematik, Sosyal Bilimler ve Fen Bilimleri derslerinden doğru ve yanlış sayılarınızı girin.",
+                "position": 1
+            },
+            {
+                "@type": "HowToStep",
+                "name": "AYT Netlerini Girin",
+                "text": "AYT sınavında aldığınız Matematik, Fizik, Kimya, Biyoloji, Edebiyat, Tarih, Coğrafya, Felsefe ve Din Kültürü derslerinden doğru ve yanlış sayılarınızı girin.",
+                "position": 2
+            },
+            {
+                "@type": "HowToStep",
+                "name": "YDT Netlerini Girin (Opsiyonel)",
+                "text": "Yabancı Dil Testi'ne girdiyseniz, YDT'den aldığınız doğru ve yanlış sayılarını girin.",
+                "position": 3
+            },
+            {
+                "@type": "HowToStep",
+                "name": "OBP'nizi Girin",
+                "text": "Ortaöğretim Başarı Puanınızı (lise diploma notunuzu) 0-100 arasında girin. Gerekirse OBP katsayı seçeneklerini işaretleyin.",
+                "position": 4
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Sonuçlarınızı Görün",
+                "text": "Sistem otomatik olarak TYT, AYT ve YDT netlerinizi hesaplar. SAY, EA, SÖZ ve DİL puan türlerinden aldığınız puanları ve tahmini sıralamalarınızı görüntüleyin.",
+                "position": 5
+            }
+        ]
+    }
+
     const breadcrumbData = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -105,6 +157,10 @@ export default function StructuredData() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(howToData) }}
             />
             <script
                 type="application/ld+json"
