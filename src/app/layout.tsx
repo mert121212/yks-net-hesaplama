@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Link from 'next/link'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 import './globals.css'
 
 const inter = Inter({
@@ -149,45 +150,11 @@ export default function RootLayout({
             </head>
             <body className={`${inter.className} antialiased`}>
                 <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col">
+                    <Navbar />
                     <main className="flex-grow">
                         {children}
                     </main>
-                    <footer className="bg-white border-t border-gray-200 mt-12">
-                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                                <div>
-                                    <h3 className="text-lg font-semibold text-gray-900 mb-4">YKS Net Hesaplama</h3>
-                                    <p className="text-gray-600 text-sm">
-                                        YKS 2026 için en doğru net ve puan hesaplama aracı. TYT, AYT ve YDT netlerinizi hesaplayın.
-                                    </p>
-                                </div>
-                                <div>
-                                    <h3 className="text-lg font-semibold text-gray-900 mb-4">Hızlı Linkler</h3>
-                                    <ul className="space-y-2">
-                                        <li><Link href="/" className="text-gray-600 hover:text-blue-600 text-sm">Ana Sayfa</Link></li>
-                                        <li><Link href="/geri-sayim" className="text-gray-600 hover:text-blue-600 text-sm">YKS Geri Sayım</Link></li>
-                                        <li><Link href="/yks-rehberi" className="text-gray-600 hover:text-blue-600 text-sm">YKS Rehberi</Link></li>
-                                        <li><Link href="/universiteler" className="text-gray-600 hover:text-blue-600 text-sm">Üniversiteler</Link></li>
-                                        <li><Link href="/sss" className="text-gray-600 hover:text-blue-600 text-sm">Sık Sorulan Sorular</Link></li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h3 className="text-lg font-semibold text-gray-900 mb-4">Kurumsal</h3>
-                                    <ul className="space-y-2">
-                                        <li><Link href="/hakkimizda" className="text-gray-600 hover:text-blue-600 text-sm">Hakkımızda</Link></li>
-                                        <li><Link href="/iletisim" className="text-gray-600 hover:text-blue-600 text-sm">İletişim</Link></li>
-                                        <li><Link href="/kullanim-kosullari" className="text-gray-600 hover:text-blue-600 text-sm">Kullanım Koşulları</Link></li>
-                                        <li><Link href="/privacy" className="text-gray-600 hover:text-blue-600 text-sm">Gizlilik Politikası</Link></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="border-t border-gray-200 mt-8 pt-8 text-center">
-                                <p className="text-gray-600 text-sm">
-                                    © {new Date().getFullYear()} YKS Net Hesaplama. Tüm hakları saklıdır.
-                                </p>
-                            </div>
-                        </div>
-                    </footer>
+                    <Footer />
                 </div>
             </body>
         </html>

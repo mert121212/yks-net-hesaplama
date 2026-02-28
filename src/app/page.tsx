@@ -29,43 +29,15 @@ const SEOContent = dynamic(() => import('@/components/SEOContent'), {
 })
 
 // Memoized components for better performance
-const Header = memo(function Header({ countdownTimer }: { countdownTimer: React.ReactNode }) {
-    return (
-        <header className="bg-white shadow-sm border-b">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-16">
-                    <div className="flex items-center space-x-3">
-                        <Calculator className="h-8 w-8 text-primary-600" />
-                        <div className="text-xl font-bold text-gray-900">YKS Net Hesaplama</div>
-                    </div>
-
-                    <div className="flex items-center space-x-6">
-                        {countdownTimer}
-                        <nav className="hidden md:flex space-x-6">
-                            <a href="#hesaplama" className="text-gray-600 hover:text-primary-600 transition-colors">
-                                Hesaplama
-                            </a>
-                            <a href="#sonuclar" className="text-gray-600 hover:text-primary-600 transition-colors">
-                                Sonuçlar
-                            </a>
-                            <Link href="/geri-sayim" className="text-gray-600 hover:text-primary-600 transition-colors">
-                                Geri Sayım
-                            </Link>
-                            <Link href="/yks-rehberi" className="text-gray-600 hover:text-primary-600 transition-colors">
-                                Rehber
-                            </Link>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
-    )
-})
-
 const HeroSection = memo(function HeroSection() {
     return (
         <section className="hero-section text-white py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div className="mb-6">
+                    <Suspense fallback={<div className="animate-pulse h-12 w-48 bg-blue-400 rounded mx-auto"></div>}>
+                        <CountdownTimer />
+                    </Suspense>
+                </div>
                 <h1 className="text-4xl font-bold mb-4">
                     YKS Net ve Puan Hesaplama Aracı 2026
                 </h1>
@@ -282,69 +254,6 @@ const ResultsPanel = memo(function ResultsPanel({
     )
 })
 
-const Footer = memo(function Footer() {
-    return (
-        <footer className="bg-gray-900 text-white py-12 mt-16">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                    <div className="md:col-span-2">
-                        <div className="flex items-center space-x-3 mb-4">
-                            <Calculator className="h-8 w-8 text-primary-400" />
-                            <h3 className="text-xl font-bold">YKS Net Hesaplama</h3>
-                        </div>
-                        <p className="text-gray-400 mb-4">
-                            YKS 2026 sınavına hazırlanan öğrenciler için geliştirilmiş ücretsiz net hesaplama aracı.
-                            TYT, AYT ve YDT netlerinizi hesaplayın, üniversite puanlarınızı öğrenin.
-                        </p>
-                        <div className="text-sm text-gray-500">
-                            <p>🎯 SAY, EA, SÖZ, DİL puan hesaplama</p>
-                            <p>📊 Gerçek zamanlı net hesaplama</p>
-                            <p>⏰ YKS 2026 geri sayım</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h4 className="font-semibold mb-4">Hesaplama Araçları</h4>
-                        <ul className="space-y-2 text-sm text-gray-400">
-                            <li><Link href="/#hesaplama" className="hover:text-white transition-colors">TYT Net Hesaplama</Link></li>
-                            <li><Link href="/#hesaplama" className="hover:text-white transition-colors">AYT Net Hesaplama</Link></li>
-                            <li><Link href="/#hesaplama" className="hover:text-white transition-colors">YDT Net Hesaplama</Link></li>
-                            <li><Link href="/#sonuclar" className="hover:text-white transition-colors">Puan Hesaplama</Link></li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h4 className="font-semibold mb-4">YKS 2026</h4>
-                        <ul className="space-y-2 text-sm text-gray-400">
-                            <li><Link href="/geri-sayim" className="hover:text-white transition-colors">YKS Geri Sayım</Link></li>
-                            <li><Link href="/yks-rehberi" className="hover:text-white transition-colors">YKS Rehberi</Link></li>
-                            <li><Link href="/sss" className="hover:text-white transition-colors">Sıkça Sorulan Sorular</Link></li>
-                            <li><Link href="/universiteler" className="hover:text-white transition-colors">Üniversiteler</Link></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div className="border-t border-gray-800 pt-8 text-center">
-                    <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400 mb-4">
-                        <Link href="/" className="hover:text-white transition-colors">Ana Sayfa</Link>
-                        <Link href="/geri-sayim" className="hover:text-white transition-colors">Geri Sayım</Link>
-                        <Link href="/yks-rehberi" className="hover:text-white transition-colors">YKS Rehberi</Link>
-                        <Link href="/sss" className="hover:text-white transition-colors">SSS</Link>
-                        <Link href="/privacy" className="hover:text-white transition-colors">Gizlilik Politikası</Link>
-                        <Link href="/#hesaplama" className="hover:text-white transition-colors">Net Hesaplama</Link>
-                    </div>
-                    <p className="text-sm text-gray-500">
-                        © 2026 YKS Net Hesaplama. Tüm hakları saklıdır. • Geliştirici: Mert Çalışkan
-                    </p>
-                    <p className="text-xs text-gray-600 mt-2">
-                        YKS, TYT, AYT, YDT net hesaplama ve üniversite puan hesaplama aracı. ÖSYM resmi sitesi değildir.
-                    </p>
-                </div>
-            </div>
-        </footer>
-    )
-})
-
 export default function HomePage() {
     const [tytScores, setTytScores] = useState<TYTScores>({
         turkce: { dogru: 0, yanlis: 0 },
@@ -423,12 +332,6 @@ export default function HomePage() {
                 <StructuredData />
             </Suspense>
 
-            <Header countdownTimer={
-                <Suspense fallback={<div className="animate-pulse h-10 w-32 bg-gray-200 rounded"></div>}>
-                    <CountdownTimer />
-                </Suspense>
-            } />
-
             <HeroSection />
 
             {/* Main Content */}
@@ -500,8 +403,6 @@ export default function HomePage() {
             <Suspense fallback={<div className="h-96"></div>}>
                 <SEOContent />
             </Suspense>
-
-            <Footer />
         </div>
     )
 }
