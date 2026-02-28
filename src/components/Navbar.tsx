@@ -25,17 +25,14 @@ export default function Navbar() {
                         <Link href="/blog" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
                             Blog
                         </Link>
-                        <Link href="/geri-sayim" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-                            Geri Sayım
-                        </Link>
                         <Link href="/yks-rehberi" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
                             YKS Rehberi
                         </Link>
-                        <Link href="/universiteler" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-                            Üniversiteler
-                        </Link>
                         <Link href="/sss" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
                             SSS
+                        </Link>
+                        <Link href="/geri-sayim" className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all font-medium shadow-md">
+                            ⏰ Geri Sayım
                         </Link>
                     </div>
 
@@ -72,13 +69,6 @@ export default function Navbar() {
                                 Blog
                             </Link>
                             <Link
-                                href="/geri-sayim"
-                                className="px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors font-medium"
-                                onClick={() => setMobileMenuOpen(false)}
-                            >
-                                Geri Sayım
-                            </Link>
-                            <Link
                                 href="/yks-rehberi"
                                 className="px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors font-medium"
                                 onClick={() => setMobileMenuOpen(false)}
@@ -86,18 +76,18 @@ export default function Navbar() {
                                 YKS Rehberi
                             </Link>
                             <Link
-                                href="/universiteler"
-                                className="px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors font-medium"
-                                onClick={() => setMobileMenuOpen(false)}
-                            >
-                                Üniversiteler
-                            </Link>
-                            <Link
                                 href="/sss"
                                 className="px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors font-medium"
                                 onClick={() => setMobileMenuOpen(false)}
                             >
                                 SSS
+                            </Link>
+                            <Link
+                                href="/geri-sayim"
+                                className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all font-medium"
+                                onClick={() => setMobileMenuOpen(false)}
+                            >
+                                ⏰ Geri Sayım
                             </Link>
                         </div>
                     </div>
