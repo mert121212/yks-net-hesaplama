@@ -25,10 +25,10 @@ export default function IletisimPage() {
                                 Sorularınız için bize e-posta gönderebilirsiniz
                             </p>
                             <a
-                                href="mailto:info@yksnethesaplama.com"
+                                href="mailto:mertcaliskan36065d@gmail.com"
                                 className="text-blue-600 hover:text-blue-800 font-medium"
                             >
-                                info@yksnethesaplama.com
+                                mertcaliskan36065d@gmail.com
                             </a>
                         </div>
 

@@ -24,7 +24,7 @@ export default function HakkimizdaPage() {
                                 hazırlık sürecinde yardımcı olmak amacıyla oluşturulmuş ücretsiz bir eğitim platformudur.
                             </p>
                             <p>
-                                2024 yılında kurulan platformumuz, öğrencilerin sınav performanslarını takip etmelerini,
+                                2026 yılında kurulan platformumuz, öğrencilerin sınav performanslarını takip etmelerini,
                                 hedef üniversitelerini belirlemelerini ve başarı şanslarını değerlendirmelerini kolaylaştırmayı
                                 amaçlamaktadır.
                             </p>
@@ -93,7 +93,7 @@ export default function HakkimizdaPage() {
                                 </div>
                                 <div className="bg-purple-50 p-4 rounded-lg">
                                     <h3 className="font-semibold text-purple-900 mb-2">✓ Güncel</h3>
-                                    <p className="text-sm">2025 YKS verilerine göre güncellenmiş</p>
+                                    <p className="text-sm">2026 YKS verilerine göre güncellenmiş</p>
                                 </div>
                                 <div className="bg-green-50 p-4 rounded-lg">
                                     <h3 className="font-semibold text-green-900 mb-2">✓ Kolay Kullanım</h3>
@@ -115,7 +115,7 @@ export default function HakkimizdaPage() {
                             </p>
                             <div className="mt-4 p-4 bg-gray-50 rounded-lg">
                                 <p className="text-sm">
-                                    <strong>E-posta:</strong> info@yksnethesaplama.com
+                                    <strong>E-posta:</strong> mertcaliskan36065d@gmail.com
                                 </p>
                                 <p className="text-sm mt-2">
                                     <a href="/iletisim" className="text-blue-600 hover:text-blue-800 underline">
