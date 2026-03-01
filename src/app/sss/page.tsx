@@ -146,9 +146,9 @@ export default function SSS() {
 
     return (
         <div className="min-h-screen bg-gray-50">
-            {/* Header */}
-            <header className="bg-white shadow-sm border-b">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            {/* Main Content */}
+            <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div className="mb-4">
                     <Link
                         href="/"
                         className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 transition-colors"
@@ -157,10 +157,6 @@ export default function SSS() {
                         <span className="font-medium">Ana Sayfaya Dön</span>
                     </Link>
                 </div>
-            </header>
-
-            {/* Main Content */}
-            <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 {/* Page Header */}
                 <div className="text-center mb-12">
                     <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">

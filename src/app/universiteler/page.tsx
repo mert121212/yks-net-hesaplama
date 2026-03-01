@@ -36,21 +36,17 @@ function UniversityPageContent() {
 
     return (
         <div className="min-h-screen bg-gray-50">
-            {/* Header */}
-            <header className="bg-white shadow-sm border-b">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            {/* Main Content */}
+            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div className="mb-4">
                     <Link
                         href="/"
-                        className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 transition-colors"
+                        className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 transition-colors mb-4"
                     >
                         <ArrowLeft className="h-5 w-5" />
                         <span className="font-medium">Ana Sayfaya Dön</span>
                     </Link>
                 </div>
-            </header>
-
-            {/* Main Content */}
-            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="mb-8">
                     <h1 className="text-3xl font-bold text-gray-900 mb-2">
                         Kazanabileceğiniz Üniversiteler ve Bölümler
