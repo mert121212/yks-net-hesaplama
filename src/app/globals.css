@@ -82,11 +82,6 @@
 }
 
 /* Critical CSS for above-the-fold content */
-.hero-section {
-    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
-    will-change: transform;
-}
-
 .sticky-results {
     position: sticky;
     top: 1rem;

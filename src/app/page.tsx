@@ -32,36 +32,20 @@ const SEOContent = dynamic(() => import('@/components/SEOContent'), {
 // Memoized components for better performance
 const HeroSection = memo(function HeroSection() {
     return (
-        <section className="hero-section text-white py-16">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <div className="mb-6">
-                    <Suspense fallback={<div className="animate-pulse h-12 w-48 bg-blue-400 rounded mx-auto"></div>}>
-                        <CountdownTimer />
-                    </Suspense>
-                </div>
-                <h1 className="text-4xl font-bold mb-4">
-                    YKS Net ve Puan Hesaplama Aracı 2026
-                </h1>
-                <p className="text-xl text-primary-100 mb-8 max-w-3xl mx-auto">
-                    TYT, AYT ve YDT netlerinizi hesaplayın, üniversite puanlarınızı öğrenin.
-                    Hızlı, doğru ve güncel hesaplama sistemi ile YKS 2026'ya hazırlanın.
-                </p>
-                <div className="flex flex-wrap justify-center gap-6 text-sm mb-6">
-                    <div className="flex items-center space-x-2">
-                        <BookOpen className="h-5 w-5" />
-                        <span>TYT Net Hesaplama</span>
+        <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-8 sm:py-12">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center">
+                    <div className="mb-4">
+                        <Suspense fallback={<div className="animate-pulse h-10 w-40 bg-blue-400 rounded mx-auto"></div>}>
+                            <CountdownTimer />
+                        </Suspense>
                     </div>
-                    <div className="flex items-center space-x-2">
-                        <Target className="h-5 w-5" />
-                        <span>AYT Net Hesaplama</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                        <TrendingUp className="h-5 w-5" />
-                        <span>Üniversite Puan Hesaplama</span>
-                    </div>
-                </div>
-                <div className="text-sm text-primary-200">
-                    <p>✓ Ücretsiz YKS hesaplama aracı ✓ SAY, EA, SÖZ, DİL puanları ✓ 2026 YKS için güncel</p>
+                    <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3">
+                        YKS Net Hesaplama 2026
+                    </h1>
+                    <p className="text-base sm:text-lg text-blue-100 max-w-2xl mx-auto">
+                        TYT, AYT ve YDT netlerinizi hesaplayın. Hızlı, doğru ve ücretsiz.
+                    </p>
                 </div>
             </div>
         </section>
