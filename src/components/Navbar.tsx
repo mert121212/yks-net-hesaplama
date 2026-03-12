@@ -12,9 +12,17 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-                        <Calculator className="h-8 w-8 text-blue-600" />
-                        <span className="text-xl font-bold text-gray-900">YKS Net Hesaplama</span>
+                    <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity group">
+                        <div className="relative">
+                            <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg blur-sm opacity-50 group-hover:opacity-75 transition-opacity"></div>
+                            <div className="relative bg-gradient-to-br from-blue-600 to-purple-600 p-2 rounded-lg">
+                                <Calculator className="h-5 w-5 text-white" />
+                            </div>
+                        </div>
+                        <div className="flex flex-col leading-tight">
+                            <span className="text-lg font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">YKS</span>
+                            <span className="text-xs text-gray-600 font-medium -mt-1">Net Hesaplama</span>
+                        </div>
                     </Link>
 
                     {/* Desktop Menu */}
