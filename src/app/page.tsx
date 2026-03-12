@@ -6,6 +6,7 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import { TYTScores, AYTScores, YDTScores } from '@/types/yks'
 import { calculateYKSScores } from '@/utils/yksCalculator'
+import ShareResults from '@/components/ShareResults'
 
 // Lazy load components with better loading states
 const TYTSection = dynamic(() => import('@/components/TYTSection'), {
@@ -250,6 +251,19 @@ const ResultsPanel = memo(function ResultsPanel({
             >
                 🎓 Kazanabileceğim Bölümleri Göster
             </button>
+
+            {/* Paylaşım Butonu */}
+            <ShareResults
+                tytNet={results.nets.tyt.toplam}
+                aytNet={results.nets.ayt.toplam}
+                ydtNet={results.nets.ydt.ydt}
+                scoreType={
+                    results.points.say >= Math.max(results.points.ea, results.points.soz, results.points.dil) ? 'SAY' :
+                        results.points.ea >= Math.max(results.points.soz, results.points.dil) ? 'EA' :
+                            results.points.soz >= results.points.dil ? 'SÖZ' : 'DİL'
+                }
+                totalScore={Math.max(results.points.say, results.points.ea, results.points.soz, results.points.dil)}
+            />
         </div>
     )
 })
