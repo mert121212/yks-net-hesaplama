@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Share2, Twitter, MessageCircle, Instagram, Download, Check } from 'lucide-react'
+import { Share2, Twitter, MessageCircle, Copy, Check } from 'lucide-react'
 
 interface ShareResultsProps {
     tytNet: number
@@ -23,16 +23,14 @@ ${ydtNet > 0 ? `🌍 YDT: ${ydtNet.toFixed(2)} net\n` : ''}🎯 ${scoreType} Pua
 Sen de hesapla 👉 yksnethesapla.com
 #YKS2026 #NetHesaplama #YKSHazırlık`
 
-    const shareUrl = 'https://yksnethesapla.com'
-
     const handleWhatsAppShare = () => {
         const url = `https://wa.me/?text=${encodeURIComponent(shareText)}`
-        window.open(url, '_blank')
+        window.open(url, '_blank', 'noopener,noreferrer')
     }
 
     const handleTwitterShare = () => {
         const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`
-        window.open(url, '_blank')
+        window.open(url, '_blank', 'noopener,noreferrer')
     }
 
     const handleCopyText = async () => {
@@ -45,72 +43,30 @@ Sen de hesapla 👉 yksnethesapla.com
         }
     }
 
-    const handleDownloadImage = () => {
-        // Canvas ile görsel oluştur
-        const canvas = document.createElement('canvas')
-        canvas.width = 1080
-        canvas.height = 1080
-        const ctx = canvas.getContext('2d')
-
-        if (!ctx) return
-
-        // Gradient arka plan
-        const gradient = ctx.createLinearGradient(0, 0, 1080, 1080)
-        gradient.addColorStop(0, '#3b82f6')
-        gradient.addColorStop(1, '#8b5cf6')
-        ctx.fillStyle = gradient
-        ctx.fillRect(0, 0, 1080, 1080)
-
-        // Beyaz kart
-        ctx.fillStyle = 'white'
-        ctx.roundRect(80, 200, 920, 680, 30)
-        ctx.fill()
-
-        // Başlık
-        ctx.fillStyle = '#1e293b'
-        ctx.font = 'bold 60px Inter, sans-serif'
-        ctx.textAlign = 'center'
-        ctx.fillText('YKS 2026 Netlerim', 540, 320)
-
-        // Netler
-        ctx.font = '48px Inter, sans-serif'
-        ctx.fillStyle = '#475569'
-        ctx.fillText(`📚 TYT: ${tytNet.toFixed(2)} net`, 540, 420)
-        ctx.fillText(`📊 AYT: ${aytNet.toFixed(2)} net`, 540, 500)
-        if (ydtNet > 0) {
-            ctx.fillText(`🌍 YDT: ${ydtNet.toFixed(2)} net`, 540, 580)
+    const handleNativeShare = async () => {
+        // Mobilde native share API kullan
+        if (navigator.share) {
+            try {
+                await navigator.share({
+                    title: 'YKS 2026 Netlerim',
+                    text: shareText,
+                    url: 'https://yksnethesapla.com'
+                })
+            } catch (err) {
+                if ((err as Error).name !== 'AbortError') {
+                    console.error('Paylaşım başarısız:', err)
+                }
+            }
+        } else {
+            // PC'de menüyü göster
+            setShowShareMenu(!showShareMenu)
         }
-
-        // Puan
-        ctx.font = 'bold 56px Inter, sans-serif'
-        ctx.fillStyle = '#3b82f6'
-        ctx.fillText(`🎯 ${scoreType}: ${totalScore.toFixed(2)}`, 540, ydtNet > 0 ? 700 : 640)
-
-        // Alt bilgi
-        ctx.font = '40px Inter, sans-serif'
-        ctx.fillStyle = '#64748b'
-        ctx.fillText('Sen de hesapla 👉', 540, 820)
-
-        ctx.font = 'bold 44px Inter, sans-serif'
-        ctx.fillStyle = '#3b82f6'
-        ctx.fillText('yksnethesapla.com', 540, 880)
-
-        // İndir
-        canvas.toBlob((blob) => {
-            if (!blob) return
-            const url = URL.createObjectURL(blob)
-            const a = document.createElement('a')
-            a.href = url
-            a.download = 'yks-netlerim.png'
-            a.click()
-            URL.revokeObjectURL(url)
-        })
     }
 
     return (
         <div className="mt-6 relative">
             <button
-                onClick={() => setShowShareMenu(!showShareMenu)}
+                onClick={handleNativeShare}
                 className="w-full bg-gradient-to-r from-green-500 to-emerald-600 text-white py-4 px-6 rounded-xl font-semibold hover:from-green-600 hover:to-emerald-700 transition-all duration-200 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
             >
                 <Share2 className="w-5 h-5" />
@@ -118,55 +74,54 @@ Sen de hesapla 👉 yksnethesapla.com
             </button>
 
             {showShareMenu && (
-                <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-2xl border border-gray-200 p-4 z-10 animate-in fade-in slide-in-from-top-2 duration-200">
-                    <div className="grid grid-cols-2 gap-3">
+                <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-2xl border border-gray-200 p-4 z-50">
+                    <div className="space-y-2">
                         <button
                             onClick={handleWhatsAppShare}
-                            className="flex items-center gap-2 p-3 rounded-lg hover:bg-green-50 transition-colors border border-gray-200"
+                            className="w-full flex items-center gap-3 p-4 rounded-lg hover:bg-green-50 transition-colors border border-gray-200"
                         >
-                            <MessageCircle className="w-5 h-5 text-green-600" />
-                            <span className="text-sm font-medium text-gray-700">WhatsApp</span>
+                            <MessageCircle className="w-6 h-6 text-green-600" />
+                            <span className="font-medium text-gray-700">WhatsApp'ta Paylaş</span>
                         </button>
 
                         <button
                             onClick={handleTwitterShare}
-                            className="flex items-center gap-2 p-3 rounded-lg hover:bg-blue-50 transition-colors border border-gray-200"
+                            className="w-full flex items-center gap-3 p-4 rounded-lg hover:bg-blue-50 transition-colors border border-gray-200"
                         >
-                            <Twitter className="w-5 h-5 text-blue-500" />
-                            <span className="text-sm font-medium text-gray-700">Twitter</span>
-                        </button>
-
-                        <button
-                            onClick={handleDownloadImage}
-                            className="flex items-center gap-2 p-3 rounded-lg hover:bg-purple-50 transition-colors border border-gray-200"
-                        >
-                            <Download className="w-5 h-5 text-purple-600" />
-                            <span className="text-sm font-medium text-gray-700">Görsel İndir</span>
+                            <Twitter className="w-6 h-6 text-blue-500" />
+                            <span className="font-medium text-gray-700">Twitter'da Paylaş</span>
                         </button>
 
                         <button
                             onClick={handleCopyText}
-                            className="flex items-center gap-2 p-3 rounded-lg hover:bg-gray-50 transition-colors border border-gray-200"
+                            className="w-full flex items-center gap-3 p-4 rounded-lg hover:bg-gray-50 transition-colors border border-gray-200"
                         >
                             {copied ? (
                                 <>
-                                    <Check className="w-5 h-5 text-green-600" />
-                                    <span className="text-sm font-medium text-green-600">Kopyalandı!</span>
+                                    <Check className="w-6 h-6 text-green-600" />
+                                    <span className="font-medium text-green-600">Kopyalandı!</span>
                                 </>
                             ) : (
                                 <>
-                                    <Instagram className="w-5 h-5 text-pink-600" />
-                                    <span className="text-sm font-medium text-gray-700">Metni Kopyala</span>
+                                    <Copy className="w-6 h-6 text-gray-600" />
+                                    <span className="font-medium text-gray-700">Metni Kopyala</span>
                                 </>
                             )}
                         </button>
                     </div>
 
-                    <div className="mt-3 p-3 bg-gray-50 rounded-lg">
-                        <p className="text-xs text-gray-600 leading-relaxed whitespace-pre-line">
+                    <div className="mt-4 p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
+                        <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-line font-medium">
                             {shareText}
                         </p>
                     </div>
+
+                    <button
+                        onClick={() => setShowShareMenu(false)}
+                        className="mt-3 w-full text-sm text-gray-500 hover:text-gray-700 py-2"
+                    >
+                        Kapat
+                    </button>
                 </div>
             )}
         </div>
