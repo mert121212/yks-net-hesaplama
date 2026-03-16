@@ -149,7 +149,7 @@ export default function RootLayout({
                 }} />
             </head>
             <body className={`${inter.className} antialiased`}>
-                <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col">
+                <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-950 dark:to-gray-900 flex flex-col">
                     <Navbar />
                     <main className="flex-grow">
                         {children}

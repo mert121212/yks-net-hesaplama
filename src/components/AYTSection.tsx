@@ -58,9 +58,9 @@ export default function AYTSection({ scores, onScoreChange }: AYTSectionProps) {
                         />
                     ))}
                 </div>
-                <div className="mt-4 p-3 bg-green-50 rounded-lg">
+                <div className="mt-4 p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
                     <div className="text-center">
-                        <span className="text-sm font-medium text-green-800">Sayısal Net Toplam: </span>
+                        <span className="text-sm font-medium text-green-800 dark:text-green-300">Sayısal Net Toplam: </span>
                         <span className="text-lg font-bold text-green-600">{sayisalNet.toFixed(2)}</span>
                     </div>
                 </div>
@@ -82,28 +82,28 @@ export default function AYTSection({ scores, onScoreChange }: AYTSectionProps) {
                         />
                     ))}
                 </div>
-                <div className="mt-4 p-3 bg-purple-50 rounded-lg">
+                <div className="mt-4 p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
                     <div className="text-center">
-                        <span className="text-sm font-medium text-purple-800">Sözel Net Toplam: </span>
+                        <span className="text-sm font-medium text-purple-800 dark:text-purple-300">Sözel Net Toplam: </span>
                         <span className="text-lg font-bold text-purple-600">{sozelNet.toFixed(2)}</span>
                     </div>
                 </div>
             </div>
 
             {/* AYT Özet */}
-            <div className="p-4 bg-primary-50 rounded-lg">
-                <h3 className="font-semibold text-primary-900 mb-3">AYT Özet</h3>
+            <div className="p-4 bg-primary-50 dark:bg-primary-900/20 rounded-lg">
+                <h3 className="font-semibold text-primary-900 dark:text-primary-300 mb-3">AYT Özet</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
                     <div>
-                        <div className="text-sm font-medium text-green-800">Sayısal</div>
+                        <div className="text-sm font-medium text-green-800 dark:text-green-300">Sayısal</div>
                         <div className="text-xl font-bold text-green-600">{sayisalNet.toFixed(2)}</div>
                     </div>
                     <div>
-                        <div className="text-sm font-medium text-purple-800">Sözel</div>
+                        <div className="text-sm font-medium text-purple-800 dark:text-purple-300">Sözel</div>
                         <div className="text-xl font-bold text-purple-600">{sozelNet.toFixed(2)}</div>
                     </div>
                     <div>
-                        <div className="text-sm font-medium text-primary-800">Toplam</div>
+                        <div className="text-sm font-medium text-primary-800 dark:text-primary-300">Toplam</div>
                         <div className="text-xl font-bold text-primary-600">{toplamNet.toFixed(2)}</div>
                     </div>
                 </div>
