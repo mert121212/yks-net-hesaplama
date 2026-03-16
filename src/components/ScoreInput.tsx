@@ -55,17 +55,17 @@ export default function ScoreInput({
     const remaining = maxQuestions - totalAnswered
 
     return (
-        <div className="bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-primary-300 dark:hover:border-primary-500 transition-colors">
+        <div className="bg-white rounded-lg p-4 border border-gray-200 hover:border-primary-300 transition-colors">
             <div className="flex items-center justify-between mb-3">
-                <h3 className="font-medium text-gray-900 dark:text-gray-100">{label}</h3>
-                <span className="text-sm text-gray-500 dark:text-gray-400">
+                <h3 className="font-medium text-gray-900">{label}</h3>
+                <span className="text-sm text-gray-500">
                     {maxQuestions} soru
                 </span>
             </div>
 
             <div className="grid grid-cols-2 gap-3 mb-3">
                 <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                    <label className="block text-sm font-medium text-gray-700 mb-1">
                         Doğru
                     </label>
                     <input
@@ -75,7 +75,7 @@ export default function ScoreInput({
                         value={dogru || ''}
                         onChange={handleDogruChange}
                         disabled={disabled}
-                        className={`input-field ${errors.dogru ? 'border-red-500' : ''} ${disabled ? 'bg-gray-100 dark:bg-gray-700 cursor-not-allowed' : ''
+                        className={`input-field ${errors.dogru ? 'border-red-500' : ''} ${disabled ? 'bg-gray-100 cursor-not-allowed' : ''
                             }`}
                         placeholder="0"
                     />
@@ -85,7 +85,7 @@ export default function ScoreInput({
                 </div>
 
                 <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                    <label className="block text-sm font-medium text-gray-700 mb-1">
                         Yanlış
                     </label>
                     <input
@@ -95,7 +95,7 @@ export default function ScoreInput({
                         value={yanlis || ''}
                         onChange={handleYanlisChange}
                         disabled={disabled}
-                        className={`input-field ${errors.yanlis ? 'border-red-500' : ''} ${disabled ? 'bg-gray-100 dark:bg-gray-700 cursor-not-allowed' : ''
+                        className={`input-field ${errors.yanlis ? 'border-red-500' : ''} ${disabled ? 'bg-gray-100 cursor-not-allowed' : ''
                             }`}
                         placeholder="0"
                     />
@@ -107,16 +107,16 @@ export default function ScoreInput({
 
             <div className="flex justify-between items-center text-sm">
                 <div className="flex space-x-4">
-                    <span className="text-gray-600 dark:text-gray-400">
+                    <span className="text-gray-600">
                         Net: <span className={`font-semibold ${net < 0 ? 'text-red-600' : 'text-primary-600'}`}>
                             {net.toFixed(2)}
                         </span>
                     </span>
-                    <span className="text-gray-600 dark:text-gray-400">
+                    <span className="text-gray-600">
                         Boş: <span className="font-medium">{remaining}</span>
                     </span>
                 </div>
-                <div className="text-xs text-gray-500 dark:text-gray-500">
+                <div className="text-xs text-gray-500">
                     {totalAnswered}/{maxQuestions}
                 </div>
             </div>

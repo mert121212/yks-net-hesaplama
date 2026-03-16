@@ -76,7 +76,7 @@ export default function SEOContent() {
             </section>
 
             {/* YKS 2026 Bilgileri */}
-            <section className="card bg-gradient-to-r from-primary-50 to-blue-50 dark:from-primary-900/20 dark:to-blue-900/20">
+            <section className="card bg-gradient-to-r from-primary-50 to-blue-50">
                 <div className="flex items-center gap-3 mb-6">
                     <Award className="h-8 w-8 text-primary-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
@@ -207,8 +207,8 @@ export default function SEOContent() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
                         <h3 className="font-semibold text-lg mb-4 text-gray-900">Net Hesaplama Formülü</h3>
-                        <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-4 mb-4">
-                            <p className="text-blue-800 dark:text-blue-300 font-mono text-lg font-bold text-center">
+                        <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-4">
+                            <p className="text-blue-800 font-mono text-lg font-bold text-center">
                                 Net = Doğru − (Yanlış ÷ 4)
                             </p>
                         </div>
@@ -217,8 +217,8 @@ export default function SEOContent() {
                             <p><span className="font-semibold">Örnek 2:</span> 28 doğru, 12 yanlış → 28 − (12÷4) = 28 − 3 = <span className="font-bold text-green-600">25 net</span></p>
                             <p><span className="font-semibold">Örnek 3:</span> 40 doğru, 0 yanlış → 40 − 0 = <span className="font-bold text-green-600">40 net</span></p>
                         </div>
-                        <div className="mt-4 p-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg">
-                            <p className="text-sm text-amber-800 dark:text-amber-300">
+                        <div className="mt-4 p-3 bg-amber-50 border border-amber-200 rounded-lg">
+                            <p className="text-sm text-amber-800">
                                 💡 <span className="font-semibold">İpucu:</span> Boş bırakılan sorular net hesaplamasını etkilemez. Sadece yanlış cevaplar 0.25 net düşürür.
                             </p>
                         </div>
@@ -226,19 +226,19 @@ export default function SEOContent() {
                     <div>
                         <h3 className="font-semibold text-lg mb-4 text-gray-900">TYT Puan Hesaplama</h3>
                         <div className="space-y-3 text-sm text-gray-700">
-                            <div className="flex justify-between items-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                            <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
                                 <span className="font-medium">Türkçe (40 soru)</span>
                                 <span className="text-blue-600 font-semibold">Katsayı: 1.333</span>
                             </div>
-                            <div className="flex justify-between items-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                            <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
                                 <span className="font-medium">Matematik (40 soru)</span>
                                 <span className="text-blue-600 font-semibold">Katsayı: 1.333</span>
                             </div>
-                            <div className="flex justify-between items-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                            <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
                                 <span className="font-medium">Sosyal Bilimler (20 soru)</span>
                                 <span className="text-blue-600 font-semibold">Katsayı: 1.000</span>
                             </div>
-                            <div className="flex justify-between items-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                            <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
                                 <span className="font-medium">Fen Bilimleri (20 soru)</span>
                                 <span className="text-blue-600 font-semibold">Katsayı: 1.000</span>
                             </div>
@@ -335,12 +335,12 @@ export default function SEOContent() {
                             a: 'Hedef bölümünüze göre puan türü belirlenir. Mühendislik/Tıp için SAY, Hukuk/İktisat için EA, Edebiyat/Tarih için SÖZ, Yabancı Dil bölümleri için DİL puanı gerekir.'
                         },
                     ].map((item, i) => (
-                        <details key={i} className="group border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
-                            <summary className="flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 font-medium text-gray-900 dark:text-gray-100">
+                        <details key={i} className="group border border-gray-200 rounded-xl overflow-hidden">
+                            <summary className="flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50 font-medium text-gray-900">
                                 {item.q}
                                 <span className="text-gray-400 group-open:rotate-180 transition-transform text-xl">▾</span>
                             </summary>
-                            <div className="px-4 pb-4 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                            <div className="px-4 pb-4 text-gray-600 text-sm leading-relaxed">
                                 {item.a}
                             </div>
                         </details>
@@ -365,7 +365,7 @@ export default function SEOContent() {
                         { href: '/blog/universite-tercih-stratejileri', title: 'Tercih Stratejileri', desc: 'Üniversite tercihinde dikkat edilmesi gerekenler' },
                         { href: '/blog/yks-hazirlik-programi', title: 'YKS Hazırlık Programı', desc: 'Etkili çalışma programı nasıl oluşturulur?' },
                     ].map((item, i) => (
-                        <Link key={i} href={item.href} className="p-4 border border-gray-200 dark:border-gray-700 rounded-xl hover:border-blue-300 dark:hover:border-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all group">
+                        <Link key={i} href={item.href} className="p-4 border border-gray-200 rounded-xl hover:border-blue-300 hover:bg-blue-50 transition-all group">
                             <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 mb-1 text-sm">{item.title}</h3>
                             <p className="text-xs text-gray-500">{item.desc}</p>
                         </Link>
