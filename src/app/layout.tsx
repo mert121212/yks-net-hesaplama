@@ -132,6 +132,16 @@ export default function RootLayout({
                         *,*::before,*::after{box-sizing:border-box}
                         html{line-height:1.15;-webkit-text-size-adjust:100%}
                         body{margin:0;font-family:var(--font-inter),system-ui,arial;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+                        .card{background-color:#fff;border-radius:0.75rem;box-shadow:0 10px 15px -3px rgba(0,0,0,0.1);padding:2rem}
+                        .section-title{font-size:1.5rem;font-weight:700;color:#111827;margin-bottom:1.5rem}
+                        .subsection-title{font-size:1.125rem;font-weight:600;color:#1f2937;margin-bottom:1rem}
+                        .bg-gradient-to-br{background-image:linear-gradient(to bottom right,#dbeafe,#e0e7ff)}
+                        .bg-primary-600{background-color:#1d4ed8}
+                        .text-primary-600{color:#1d4ed8}
+                        .hover\\:bg-primary-700:hover{background-color:#1e40af}
+                        .text-gray-600{color:#374151}
+                        .text-primary-100{color:#dbeafe}
+                        .text-primary-200{color:#bfdbfe}
                         .min-h-screen{min-height:100vh}
                         .animate-pulse{animation:pulse 2s cubic-bezier(0.4,0,0.6,1) infinite}
                         @keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
@@ -139,7 +149,7 @@ export default function RootLayout({
                 }} />
             </head>
             <body className={`${inter.className} antialiased`}>
-                <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:bg-gray-900 flex flex-col">
+                <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-950 dark:to-gray-900 flex flex-col">
                     <Navbar />
                     <main className="flex-grow">
                         {children}
