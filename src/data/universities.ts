@@ -1,774 +1,3939 @@
-import { UniversityProgram } from '@/types/yks'
+import { UniversityProgram, FieldType } from '@/types/yks'
 
-// 2025 YKS taban puanları ve sıralamaları - Kapsamlı Türkiye Üniversiteleri Veritabanı
-// Not: Bu veriler 2025 YKS verilerine dayalı tahmini değerlerdir
+// 2025 YKS taban puanları - YÖKAtlas (14.03.2026)
 export const universityPrograms: UniversityProgram[] = [
-    // ============================================
-    // SAY (Sayısal) - TIP FAKÜLTELERİ
-    // ============================================
-    { university: 'Hacettepe Üniversitesi', program: 'Tıp Fakültesi', city: 'Ankara', field: 'SAY', minScore: 560, minRank: 2666, quota: 180 },
-    { university: 'İstanbul Üniversitesi', program: 'Tıp Fakültesi', city: 'İstanbul', field: 'SAY', minScore: 555, minRank: 2798, quota: 200 },
-    { university: 'Ankara Üniversitesi', program: 'Tıp Fakültesi', city: 'Ankara', field: 'SAY', minScore: 550, minRank: 1823, quota: 190 },
-    { university: 'Gazi Üniversitesi', program: 'Tıp Fakültesi', city: 'Ankara', field: 'SAY', minScore: 545, minRank: 1876, quota: 170 },
-    { university: 'Ege Üniversitesi', program: 'Tıp Fakültesi', city: 'İzmir', field: 'SAY', minScore: 540, minRank: 411, quota: 180 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'Tıp Fakültesi', city: 'İzmir', field: 'SAY', minScore: 535, minRank: 10496, quota: 160 },
-    { university: 'Marmara Üniversitesi', program: 'Tıp Fakültesi', city: 'İstanbul', field: 'SAY', minScore: 530, minRank: 7675, quota: 150 },
-    { university: 'Çukurova Üniversitesi', program: 'Tıp Fakültesi', city: 'Adana', field: 'SAY', minScore: 525, minRank: 8115, quota: 140 },
-    { university: 'Erciyes Üniversitesi', program: 'Tıp Fakültesi', city: 'Kayseri', field: 'SAY', minScore: 520, minRank: 5939, quota: 130 },
-    { university: 'Selçuk Üniversitesi', program: 'Tıp Fakültesi', city: 'Konya', field: 'SAY', minScore: 515, minRank: 22501, quota: 140 },
-    { university: 'Uludağ Üniversitesi', program: 'Tıp Fakültesi', city: 'Bursa', field: 'SAY', minScore: 510, minRank: 18053, quota: 130 },
-    { university: 'Ondokuz Mayıs Üniversitesi', program: 'Tıp Fakültesi', city: 'Samsun', field: 'SAY', minScore: 505, minRank: 24365, quota: 120 },
-    { university: 'Pamukkale Üniversitesi', program: 'Tıp Fakültesi', city: 'Denizli', field: 'SAY', minScore: 500, minRank: 26306, quota: 110 },
-    { university: 'Süleyman Demirel Üniversitesi', program: 'Tıp Fakültesi', city: 'Isparta', field: 'SAY', minScore: 495, minRank: 35784, quota: 100 },
-    { university: 'Fırat Üniversitesi', program: 'Tıp Fakültesi', city: 'Elazığ', field: 'SAY', minScore: 490, minRank: 49959, quota: 110 },
-    { university: 'Atatürk Üniversitesi', program: 'Tıp Fakültesi', city: 'Erzurum', field: 'SAY', minScore: 485, minRank: 44470, quota: 120 },
-    { university: 'İnönü Üniversitesi', program: 'Tıp Fakültesi', city: 'Malatya', field: 'SAY', minScore: 480, minRank: 36307, quota: 100 },
-    { university: 'Dicle Üniversitesi', program: 'Tıp Fakültesi', city: 'Diyarbakır', field: 'SAY', minScore: 475, minRank: 76912, quota: 110 },
-    { university: 'Gaziantep Üniversitesi', program: 'Tıp Fakültesi', city: 'Gaziantep', field: 'SAY', minScore: 470, minRank: 71926, quota: 100 },
-    { university: 'Akdeniz Üniversitesi', program: 'Tıp Fakültesi', city: 'Antalya', field: 'SAY', minScore: 505, minRank: 24904, quota: 130 },
-    { university: 'Karadeniz Teknik Üniversitesi', program: 'Tıp Fakültesi', city: 'Trabzon', field: 'SAY', minScore: 490, minRank: 50766, quota: 110 },
-    { university: 'Cumhuriyet Üniversitesi', program: 'Tıp Fakültesi', city: 'Sivas', field: 'SAY', minScore: 475, minRank: 69680, quota: 95 },
-    { university: 'Trakya Üniversitesi', program: 'Tıp Fakültesi', city: 'Edirne', field: 'SAY', minScore: 485, minRank: 41057, quota: 100 },
-    { university: 'Afyonkarahisar Sağlık Bilimleri Üniversitesi', program: 'Tıp Fakültesi', city: 'Afyonkarahisar', field: 'SAY', minScore: 465, minRank: 68560, quota: 90 },
-    { university: 'Adıyaman Üniversitesi', program: 'Tıp Fakültesi', city: 'Adıyaman', field: 'SAY', minScore: 460, minRank: 62425, quota: 85 },
-    { university: 'Balıkesir Üniversitesi', program: 'Tıp Fakültesi', city: 'Balıkesir', field: 'SAY', minScore: 470, minRank: 70388, quota: 95 },
-    { university: 'Bülent Ecevit Üniversitesi', program: 'Tıp Fakültesi', city: 'Zonguldak', field: 'SAY', minScore: 465, minRank: 61228, quota: 90 },
-    { university: 'Düzce Üniversitesi', program: 'Tıp Fakültesi', city: 'Düzce', field: 'SAY', minScore: 460, minRank: 79623, quota: 85 },
-    { university: 'Harran Üniversitesi', program: 'Tıp Fakültesi', city: 'Şanlıurfa', field: 'SAY', minScore: 455, minRank: 107486, quota: 90 },
-    { university: 'Kahramanmaraş Sütçü İmam Üniversitesi', program: 'Tıp Fakültesi', city: 'Kahramanmaraş', field: 'SAY', minScore: 465, minRank: 58436, quota: 95 },
-    { university: 'Kırıkkale Üniversitesi', program: 'Tıp Fakültesi', city: 'Kırıkkale', field: 'SAY', minScore: 460, minRank: 79078, quota: 85 },
-    { university: 'Kocaeli Üniversitesi', program: 'Tıp Fakültesi', city: 'Kocaeli', field: 'SAY', minScore: 480, minRank: 34908, quota: 110 },
-    { university: 'Manisa Celal Bayar Üniversitesi', program: 'Tıp Fakültesi', city: 'Manisa', field: 'SAY', minScore: 475, minRank: 66861, quota: 100 },
-    { university: 'Mersin Üniversitesi', program: 'Tıp Fakültesi', city: 'Mersin', field: 'SAY', minScore: 475, minRank: 67604, quota: 105 },
-    { university: 'Muğla Sıtkı Koçman Üniversitesi', program: 'Tıp Fakültesi', city: 'Muğla', field: 'SAY', minScore: 470, minRank: 70751, quota: 95 },
-    { university: 'Necmettin Erbakan Üniversitesi', program: 'Tıp Fakültesi', city: 'Konya', field: 'SAY', minScore: 480, minRank: 37637, quota: 100 },
-    { university: 'Ordu Üniversitesi', program: 'Tıp Fakültesi', city: 'Ordu', field: 'SAY', minScore: 460, minRank: 83578, quota: 85 },
-    { university: 'Recep Tayyip Erdoğan Üniversitesi', program: 'Tıp Fakültesi', city: 'Rize', field: 'SAY', minScore: 465, minRank: 78622, quota: 90 },
-    { university: 'Sakarya Üniversitesi', program: 'Tıp Fakültesi', city: 'Sakarya', field: 'SAY', minScore: 475, minRank: 76819, quota: 100 },
-    { university: 'Sivas Cumhuriyet Üniversitesi', program: 'Tıp Fakültesi', city: 'Sivas', field: 'SAY', minScore: 470, minRank: 69479, quota: 95 },
-    { university: 'Tekirdağ Namık Kemal Üniversitesi', program: 'Tıp Fakültesi', city: 'Tekirdağ', field: 'SAY', minScore: 470, minRank: 75971, quota: 90 },
-    { university: 'Yüzüncü Yıl Üniversitesi', program: 'Tıp Fakültesi', city: 'Van', field: 'SAY', minScore: 455, minRank: 86373, quota: 95 },
-
-    // ============================================
-    // SAY - BİLGİSAYAR MÜHENDİSLİĞİ
-    // ============================================
-    { university: 'Boğaziçi Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 550, minRank: 1935, quota: 80 },
-    { university: 'ODTÜ', program: 'Bilgisayar Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 545, minRank: 2255, quota: 120 },
-    { university: 'İTÜ', program: 'Bilgisayar Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 540, minRank: 1410, quota: 100 },
-    { university: 'Bilkent Üniversitesi (Vakıf)', program: 'Bilgisayar Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 535, minRank: 9102, quota: 70 },
-    { university: 'Koç Üniversitesi (Vakıf)', program: 'Bilgisayar Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 530, minRank: 11172, quota: 60 },
-    { university: 'Sabancı Üniversitesi (Vakıf)', program: 'Bilgisayar Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 525, minRank: 6227, quota: 65 },
-    { university: 'Hacettepe Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 520, minRank: 6135, quota: 95 },
-    { university: 'Yıldız Teknik Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 510, minRank: 29863, quota: 140 },
-    { university: 'Ankara Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 505, minRank: 20522, quota: 100 },
-    { university: 'İzmir Yüksek Teknoloji Enstitüsü', program: 'Bilgisayar Mühendisliği', city: 'İzmir', field: 'SAY', minScore: 500, minRank: 23970, quota: 80 },
-    { university: 'Gebze Teknik Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Kocaeli', field: 'SAY', minScore: 495, minRank: 40854, quota: 90 },
-    { university: 'Ege Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'İzmir', field: 'SAY', minScore: 490, minRank: 35593, quota: 110 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'İzmir', field: 'SAY', minScore: 485, minRank: 34518, quota: 100 },
-    { university: 'Gazi Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 480, minRank: 38676, quota: 120 },
-    { university: 'Marmara Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 475, minRank: 55229, quota: 110 },
-    { university: 'Erciyes Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Kayseri', field: 'SAY', minScore: 460, minRank: 73396, quota: 90 },
-    { university: 'Selçuk Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Konya', field: 'SAY', minScore: 455, minRank: 99714, quota: 100 },
-    { university: 'Sakarya Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Sakarya', field: 'SAY', minScore: 450, minRank: 98415, quota: 95 },
-    { university: 'Kocaeli Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Kocaeli', field: 'SAY', minScore: 445, minRank: 99921, quota: 100 },
-    { university: 'Eskişehir Teknik Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Eskişehir', field: 'SAY', minScore: 440, minRank: 110292, quota: 85 },
-    { university: 'Akdeniz Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Antalya', field: 'SAY', minScore: 455, minRank: 94845, quota: 95 },
-    { university: 'Atatürk Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Erzurum', field: 'SAY', minScore: 440, minRank: 96681, quota: 85 },
-    { university: 'Çukurova Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Adana', field: 'SAY', minScore: 450, minRank: 114382, quota: 90 },
-    { university: 'Fırat Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Elazığ', field: 'SAY', minScore: 435, minRank: 135121, quota: 80 },
-    { university: 'Karadeniz Teknik Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Trabzon', field: 'SAY', minScore: 445, minRank: 108632, quota: 85 },
-    { university: 'Ondokuz Mayıs Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Samsun', field: 'SAY', minScore: 445, minRank: 97481, quota: 90 },
-    { university: 'Pamukkale Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Denizli', field: 'SAY', minScore: 440, minRank: 87268, quota: 85 },
-    { university: 'Süleyman Demirel Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Isparta', field: 'SAY', minScore: 440, minRank: 87010, quota: 80 },
-    { university: 'Uludağ Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Bursa', field: 'SAY', minScore: 450, minRank: 107103, quota: 95 },
-    { university: 'Yeditepe Üniversitesi (Vakıf)', program: 'Bilgisayar Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 480, minRank: 42691, quota: 70 },
-    { university: 'Bahçeşehir Üniversitesi (Vakıf)', program: 'Bilgisayar Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 470, minRank: 80873, quota: 75 },
-    { university: 'İstanbul Teknik Üniversitesi', program: 'Yazılım Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 530, minRank: 7815, quota: 80 },
-    { university: 'ODTÜ', program: 'Yazılım Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 535, minRank: 4768, quota: 90 },
-    { university: 'Hacettepe Üniversitesi', program: 'Yazılım Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 510, minRank: 19959, quota: 85 },
-
-    // ============================================
-    // SAY - ELEKTRİK-ELEKTRONİK MÜHENDİSLİĞİ
-    // ============================================
-    { university: 'Boğaziçi Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 535, minRank: 11981, quota: 90 },
-    { university: 'ODTÜ', program: 'Elektrik-Elektronik Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 530, minRank: 3634, quota: 110 },
-    { university: 'İTÜ', program: 'Elektrik-Elektronik Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 525, minRank: 5990, quota: 100 },
-    { university: 'Bilkent Üniversitesi (Vakıf)', program: 'Elektrik-Elektronik Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 520, minRank: 11657, quota: 75 },
-    { university: 'Hacettepe Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 510, minRank: 28064, quota: 90 },
-    { university: 'Yıldız Teknik Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 500, minRank: 24883, quota: 130 },
-    { university: 'Gazi Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 470, minRank: 78616, quota: 110 },
-    { university: 'Ege Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'İzmir', field: 'SAY', minScore: 480, minRank: 44776, quota: 100 },
-    { university: 'İzmir Yüksek Teknoloji Enstitüsü', program: 'Elektrik-Elektronik Mühendisliği', city: 'İzmir', field: 'SAY', minScore: 490, minRank: 53134, quota: 85 },
-    { university: 'Gebze Teknik Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'Kocaeli', field: 'SAY', minScore: 485, minRank: 46468, quota: 90 },
-    { university: 'Kocaeli Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'Kocaeli', field: 'SAY', minScore: 435, minRank: 117785, quota: 95 },
-    { university: 'Sakarya Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'Sakarya', field: 'SAY', minScore: 440, minRank: 98029, quota: 90 },
-
-    // ============================================
-    // SAY - MAKİNE MÜHENDİSLİĞİ
-    // ============================================
-    { university: 'İTÜ', program: 'Makine Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 520, minRank: 10875, quota: 120 },
-    { university: 'ODTÜ', program: 'Makine Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 515, minRank: 22792, quota: 130 },
-    { university: 'Boğaziçi Üniversitesi', program: 'Makine Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 510, minRank: 25823, quota: 85 },
-    { university: 'Yıldız Teknik Üniversitesi', program: 'Makine Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 490, minRank: 46288, quota: 140 },
-    { university: 'Gazi Üniversitesi', program: 'Makine Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 465, minRank: 68752, quota: 120 },
-    { university: 'Ege Üniversitesi', program: 'Makine Mühendisliği', city: 'İzmir', field: 'SAY', minScore: 475, minRank: 59591, quota: 110 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'Makine Mühendisliği', city: 'İzmir', field: 'SAY', minScore: 470, minRank: 61027, quota: 105 },
-    { university: 'Erciyes Üniversitesi', program: 'Makine Mühendisliği', city: 'Kayseri', field: 'SAY', minScore: 445, minRank: 89110, quota: 95 },
-    { university: 'Selçuk Üniversitesi', program: 'Makine Mühendisliği', city: 'Konya', field: 'SAY', minScore: 440, minRank: 94051, quota: 100 },
-    { university: 'Uludağ Üniversitesi', program: 'Makine Mühendisliği', city: 'Bursa', field: 'SAY', minScore: 445, minRank: 98564, quota: 105 },
-    { university: 'Kocaeli Üniversitesi', program: 'Makine Mühendisliği', city: 'Kocaeli', field: 'SAY', minScore: 435, minRank: 116445, quota: 110 },
-    { university: 'Sakarya Üniversitesi', program: 'Makine Mühendisliği', city: 'Sakarya', field: 'SAY', minScore: 435, minRank: 116440, quota: 100 },
-
-    // ============================================
-    // SAY - İNŞAAT MÜHENDİSLİĞİ
-    // ============================================
-    { university: 'İTÜ', program: 'İnşaat Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 510, minRank: 19193, quota: 130 },
-    { university: 'ODTÜ', program: 'İnşaat Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 505, minRank: 12549, quota: 140 },
-    { university: 'Boğaziçi Üniversitesi', program: 'İnşaat Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 500, minRank: 18193, quota: 80 },
-    { university: 'Yıldız Teknik Üniversitesi', program: 'İnşaat Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 480, minRank: 52279, quota: 150 },
-    { university: 'Gazi Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 455, minRank: 107041, quota: 130 },
-    { university: 'Ege Üniversitesi', program: 'İnşaat Mühendisliği', city: 'İzmir', field: 'SAY', minScore: 465, minRank: 64979, quota: 120 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'İnşaat Mühendisliği', city: 'İzmir', field: 'SAY', minScore: 460, minRank: 69298, quota: 115 },
-    { university: 'Karadeniz Teknik Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Trabzon', field: 'SAY', minScore: 435, minRank: 130019, quota: 100 },
-    { university: 'Selçuk Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Konya', field: 'SAY', minScore: 430, minRank: 115606, quota: 110 },
-    { university: 'Uludağ Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Bursa', field: 'SAY', minScore: 435, minRank: 144077, quota: 115 },
-
-    // ============================================
-    // SAY - ENDÜSTRİ MÜHENDİSLİĞİ
-    // ============================================
-    { university: 'Boğaziçi Üniversitesi', program: 'Endüstri Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 530, minRank: 7968, quota: 75 },
-    { university: 'ODTÜ', program: 'Endüstri Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 525, minRank: 10702, quota: 90 },
-    { university: 'İTÜ', program: 'Endüstri Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 520, minRank: 7967, quota: 85 },
-    { university: 'Yıldız Teknik Üniversitesi', program: 'Endüstri Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 495, minRank: 36756, quota: 120 },
-    { university: 'Gazi Üniversitesi', program: 'Endüstri Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 470, minRank: 70606, quota: 100 },
-    { university: 'Eskişehir Osmangazi Üniversitesi', program: 'Endüstri Mühendisliği', city: 'Eskişehir', field: 'SAY', minScore: 445, minRank: 110111, quota: 90 },
-    { university: 'Kocaeli Üniversitesi', program: 'Endüstri Mühendisliği', city: 'Kocaeli', field: 'SAY', minScore: 440, minRank: 86703, quota: 95 },
-    { university: 'Sakarya Üniversitesi', program: 'Endüstri Mühendisliği', city: 'Sakarya', field: 'SAY', minScore: 440, minRank: 106832, quota: 90 },
-
-    // ============================================
-    // SAY - MİMARLIK
-    // ============================================
-    { university: 'İTÜ', program: 'Mimarlık', city: 'İstanbul', field: 'SAY', minScore: 525, minRank: 9473, quota: 100 },
-    { university: 'ODTÜ', program: 'Mimarlık', city: 'Ankara', field: 'SAY', minScore: 520, minRank: 3263, quota: 110 },
-    { university: 'Yıldız Teknik Üniversitesi', program: 'Mimarlık', city: 'İstanbul', field: 'SAY', minScore: 495, minRank: 46383, quota: 130 },
-    { university: 'Gazi Üniversitesi', program: 'Mimarlık', city: 'Ankara', field: 'SAY', minScore: 475, minRank: 58963, quota: 110 },
-    { university: 'Mimar Sinan Güzel Sanatlar Üniversitesi', program: 'Mimarlık', city: 'İstanbul', field: 'SAY', minScore: 510, minRank: 15949, quota: 95 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'Mimarlık', city: 'İzmir', field: 'SAY', minScore: 480, minRank: 49220, quota: 100 },
-    { university: 'Selçuk Üniversitesi', program: 'Mimarlık', city: 'Konya', field: 'SAY', minScore: 455, minRank: 96335, quota: 95 },
-    { university: 'Uludağ Üniversitesi', program: 'Mimarlık', city: 'Bursa', field: 'SAY', minScore: 460, minRank: 68624, quota: 90 },
-    { university: 'Karadeniz Teknik Üniversitesi', program: 'Mimarlık', city: 'Trabzon', field: 'SAY', minScore: 450, minRank: 99925, quota: 85 },
-
-    // ============================================
-    // SAY - DİŞ HEKİMLİĞİ
-    // ============================================
-    { university: 'Hacettepe Üniversitesi', program: 'Diş Hekimliği', city: 'Ankara', field: 'SAY', minScore: 540, minRank: 1512, quota: 80 },
-    { university: 'İstanbul Üniversitesi', program: 'Diş Hekimliği', city: 'İstanbul', field: 'SAY', minScore: 535, minRank: 7989, quota: 90 },
-    { university: 'Ankara Üniversitesi', program: 'Diş Hekimliği', city: 'Ankara', field: 'SAY', minScore: 530, minRank: 11274, quota: 85 },
-    { university: 'Ege Üniversitesi', program: 'Diş Hekimliği', city: 'İzmir', field: 'SAY', minScore: 525, minRank: 5829, quota: 80 },
-    { university: 'Gazi Üniversitesi', program: 'Diş Hekimliği', city: 'Ankara', field: 'SAY', minScore: 520, minRank: 9350, quota: 75 },
-    { university: 'Marmara Üniversitesi', program: 'Diş Hekimliği', city: 'İstanbul', field: 'SAY', minScore: 515, minRank: 27867, quota: 70 },
-    { university: 'Selçuk Üniversitesi', program: 'Diş Hekimliği', city: 'Konya', field: 'SAY', minScore: 500, minRank: 28425, quota: 75 },
-    { university: 'Atatürk Üniversitesi', program: 'Diş Hekimliği', city: 'Erzurum', field: 'SAY', minScore: 490, minRank: 42817, quota: 70 },
-    { university: 'Dicle Üniversitesi', program: 'Diş Hekimliği', city: 'Diyarbakır', field: 'SAY', minScore: 480, minRank: 44351, quota: 65 },
-
-    // ============================================
-    // SAY - ECZACILIK
-    // ============================================
-    { university: 'Hacettepe Üniversitesi', program: 'Eczacılık', city: 'Ankara', field: 'SAY', minScore: 530, minRank: 8615, quota: 100 },
-    { university: 'İstanbul Üniversitesi', program: 'Eczacılık', city: 'İstanbul', field: 'SAY', minScore: 525, minRank: 6818, quota: 110 },
-    { university: 'Ankara Üniversitesi', program: 'Eczacılık', city: 'Ankara', field: 'SAY', minScore: 520, minRank: 8255, quota: 105 },
-    { university: 'Ege Üniversitesi', program: 'Eczacılık', city: 'İzmir', field: 'SAY', minScore: 515, minRank: 20074, quota: 100 },
-    { university: 'Gazi Üniversitesi', program: 'Eczacılık', city: 'Ankara', field: 'SAY', minScore: 510, minRank: 20038, quota: 95 },
-    { university: 'Marmara Üniversitesi', program: 'Eczacılık', city: 'İstanbul', field: 'SAY', minScore: 505, minRank: 27712, quota: 90 },
-    { university: 'Anadolu Üniversitesi', program: 'Eczacılık', city: 'Eskişehir', field: 'SAY', minScore: 495, minRank: 53744, quota: 85 },
-    { university: 'Erciyes Üniversitesi', program: 'Eczacılık', city: 'Kayseri', field: 'SAY', minScore: 485, minRank: 34694, quota: 80 },
-
-    // ============================================
-    // SAY - VETERİNERLİK
-    // ============================================
-    { university: 'Ankara Üniversitesi', program: 'Veterinerlik', city: 'Ankara', field: 'SAY', minScore: 510, minRank: 14646, quota: 120 },
-    { university: 'İstanbul Üniversitesi', program: 'Veterinerlik', city: 'İstanbul', field: 'SAY', minScore: 505, minRank: 15633, quota: 110 },
-    { university: 'Selçuk Üniversitesi', program: 'Veterinerlik', city: 'Konya', field: 'SAY', minScore: 490, minRank: 54959, quota: 100 },
-    { university: 'Uludağ Üniversitesi', program: 'Veterinerlik', city: 'Bursa', field: 'SAY', minScore: 485, minRank: 44330, quota: 95 },
-    { university: 'Fırat Üniversitesi', program: 'Veterinerlik', city: 'Elazığ', field: 'SAY', minScore: 470, minRank: 57448, quota: 90 },
-    { university: 'Kafkas Üniversitesi', program: 'Veterinerlik', city: 'Kars', field: 'SAY', minScore: 460, minRank: 74892, quota: 85 },
-
-    // ============================================
-    // EA (Eşit Ağırlık) - HUKUK FAKÜLTELERİ
-    // ============================================
-    { university: 'Ankara Üniversitesi', program: 'Hukuk Fakültesi', city: 'Ankara', field: 'EA', minScore: 535, minRank: 11064, quota: 200 },
-    { university: 'İstanbul Üniversitesi', program: 'Hukuk Fakültesi', city: 'İstanbul', field: 'EA', minScore: 530, minRank: 3425, quota: 220 },
-    { university: 'Gazi Üniversitesi', program: 'Hukuk Fakültesi', city: 'Ankara', field: 'EA', minScore: 520, minRank: 10992, quota: 180 },
-    { university: 'Marmara Üniversitesi', program: 'Hukuk Fakültesi', city: 'İstanbul', field: 'EA', minScore: 515, minRank: 24611, quota: 190 },
-    { university: 'Galatasaray Üniversitesi', program: 'Hukuk Fakültesi', city: 'İstanbul', field: 'EA', minScore: 525, minRank: 10987, quota: 120 },
-    { university: 'Hacettepe Üniversitesi', program: 'Hukuk Fakültesi', city: 'Ankara', field: 'EA', minScore: 520, minRank: 3426, quota: 170 },
-    { university: 'Ege Üniversitesi', program: 'Hukuk Fakültesi', city: 'İzmir', field: 'EA', minScore: 510, minRank: 15838, quota: 180 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'Hukuk Fakültesi', city: 'İzmir', field: 'EA', minScore: 505, minRank: 26355, quota: 170 },
-    { university: 'Selçuk Üniversitesi', program: 'Hukuk Fakültesi', city: 'Konya', field: 'EA', minScore: 490, minRank: 47395, quota: 160 },
-    { university: 'Erciyes Üniversitesi', program: 'Hukuk Fakültesi', city: 'Kayseri', field: 'EA', minScore: 485, minRank: 48561, quota: 150 },
-    { university: 'Çukurova Üniversitesi', program: 'Hukuk Fakültesi', city: 'Adana', field: 'EA', minScore: 480, minRank: 32891, quota: 140 },
-    { university: 'Uludağ Üniversitesi', program: 'Hukuk Fakültesi', city: 'Bursa', field: 'EA', minScore: 475, minRank: 62673, quota: 150 },
-    { university: 'Ondokuz Mayıs Üniversitesi', program: 'Hukuk Fakültesi', city: 'Samsun', field: 'EA', minScore: 470, minRank: 62074, quota: 140 },
-    { university: 'Akdeniz Üniversitesi', program: 'Hukuk Fakültesi', city: 'Antalya', field: 'EA', minScore: 465, minRank: 74683, quota: 130 },
-    { university: 'Sakarya Üniversitesi', program: 'Hukuk Fakültesi', city: 'Sakarya', field: 'EA', minScore: 460, minRank: 62264, quota: 120 },
-    { university: 'Kocaeli Üniversitesi', program: 'Hukuk Fakültesi', city: 'Kocaeli', field: 'EA', minScore: 455, minRank: 85197, quota: 115 },
-    { university: 'Dicle Üniversitesi', program: 'Hukuk Fakültesi', city: 'Diyarbakır', field: 'EA', minScore: 450, minRank: 98169, quota: 110 },
-    { university: 'Atatürk Üniversitesi', program: 'Hukuk Fakültesi', city: 'Erzurum', field: 'EA', minScore: 450, minRank: 90377, quota: 105 },
-    { university: 'Süleyman Demirel Üniversitesi', program: 'Hukuk Fakültesi', city: 'Isparta', field: 'EA', minScore: 455, minRank: 87412, quota: 100 },
-    { university: 'Karadeniz Teknik Üniversitesi', program: 'Hukuk Fakültesi', city: 'Trabzon', field: 'EA', minScore: 455, minRank: 102797, quota: 110 },
-
-    // ============================================
-    // EA - İKTİSAT
-    // ============================================
-    { university: 'Boğaziçi Üniversitesi', program: 'İktisat', city: 'İstanbul', field: 'EA', minScore: 530, minRank: 6296, quota: 90 },
-    { university: 'ODTÜ', program: 'İktisat', city: 'Ankara', field: 'EA', minScore: 525, minRank: 7702, quota: 100 },
-    { university: 'Bilkent Üniversitesi (Vakıf)', program: 'İktisat', city: 'Ankara', field: 'EA', minScore: 520, minRank: 11214, quota: 70 },
-    { university: 'Koç Üniversitesi (Vakıf)', program: 'İktisat', city: 'İstanbul', field: 'EA', minScore: 515, minRank: 17576, quota: 60 },
-    { university: 'Sabancı Üniversitesi (Vakıf)', program: 'İktisat', city: 'İstanbul', field: 'EA', minScore: 510, minRank: 15779, quota: 65 },
-    { university: 'Hacettepe Üniversitesi', program: 'İktisat', city: 'Ankara', field: 'EA', minScore: 510, minRank: 14490, quota: 85 },
-    { university: 'İstanbul Üniversitesi', program: 'İktisat', city: 'İstanbul', field: 'EA', minScore: 505, minRank: 18311, quota: 100 },
-    { university: 'Ankara Üniversitesi', program: 'İktisat', city: 'Ankara', field: 'EA', minScore: 500, minRank: 17611, quota: 95 },
-    { university: 'Ege Üniversitesi', program: 'İktisat', city: 'İzmir', field: 'EA', minScore: 495, minRank: 51988, quota: 90 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'İktisat', city: 'İzmir', field: 'EA', minScore: 490, minRank: 38504, quota: 85 },
-    { university: 'Marmara Üniversitesi', program: 'İktisat', city: 'İstanbul', field: 'EA', minScore: 485, minRank: 36882, quota: 95 },
-    { university: 'Gazi Üniversitesi', program: 'İktisat', city: 'Ankara', field: 'EA', minScore: 475, minRank: 71640, quota: 80 },
-    { university: 'Uludağ Üniversitesi', program: 'İktisat', city: 'Bursa', field: 'EA', minScore: 465, minRank: 66214, quota: 75 },
-    { university: 'Akdeniz Üniversitesi', program: 'İktisat', city: 'Antalya', field: 'EA', minScore: 460, minRank: 84999, quota: 70 },
-
-    // ============================================
-    // EA - İŞLETME
-    // ============================================
-    { university: 'Boğaziçi Üniversitesi', program: 'İşletme', city: 'İstanbul', field: 'EA', minScore: 535, minRank: 9327, quota: 100 },
-    { university: 'ODTÜ', program: 'İşletme', city: 'Ankara', field: 'EA', minScore: 530, minRank: 10919, quota: 110 },
-    { university: 'Koç Üniversitesi (Vakıf)', program: 'İşletme', city: 'İstanbul', field: 'EA', minScore: 525, minRank: 7026, quota: 70 },
-    { university: 'Sabancı Üniversitesi (Vakıf)', program: 'İşletme', city: 'İstanbul', field: 'EA', minScore: 520, minRank: 3805, quota: 75 },
-    { university: 'İstanbul Üniversitesi', program: 'İşletme', city: 'İstanbul', field: 'EA', minScore: 510, minRank: 23902, quota: 120 },
-    { university: 'Ankara Üniversitesi', program: 'İşletme', city: 'Ankara', field: 'EA', minScore: 505, minRank: 21359, quota: 110 },
-    { university: 'Hacettepe Üniversitesi', program: 'İşletme', city: 'Ankara', field: 'EA', minScore: 515, minRank: 21142, quota: 95 },
-    { university: 'Ege Üniversitesi', program: 'İşletme', city: 'İzmir', field: 'EA', minScore: 500, minRank: 27580, quota: 100 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'İşletme', city: 'İzmir', field: 'EA', minScore: 495, minRank: 48750, quota: 95 },
-    { university: 'Marmara Üniversitesi', program: 'İşletme', city: 'İstanbul', field: 'EA', minScore: 490, minRank: 53988, quota: 110 },
-    { university: 'Gazi Üniversitesi', program: 'İşletme', city: 'Ankara', field: 'EA', minScore: 480, minRank: 33333, quota: 100 },
-    { university: 'Çukurova Üniversitesi', program: 'İşletme', city: 'Adana', field: 'EA', minScore: 470, minRank: 80866, quota: 90 },
-    { university: 'Akdeniz Üniversitesi', program: 'İşletme', city: 'Antalya', field: 'EA', minScore: 475, minRank: 82892, quota: 95 },
-    { university: 'Uludağ Üniversitesi', program: 'İşletme', city: 'Bursa', field: 'EA', minScore: 470, minRank: 68562, quota: 90 },
-    { university: 'Sakarya Üniversitesi', program: 'İşletme', city: 'Sakarya', field: 'EA', minScore: 460, minRank: 60862, quota: 85 },
-    { university: 'Kocaeli Üniversitesi', program: 'İşletme', city: 'Kocaeli', field: 'EA', minScore: 455, minRank: 102906, quota: 90 },
-
-    // ============================================
-    // EA - SİYASET BİLİMİ VE KAMU YÖNETİMİ
-    // ============================================
-    { university: 'Ankara Üniversitesi', program: 'Siyaset Bilimi ve Kamu Yönetimi', city: 'Ankara', field: 'EA', minScore: 515, minRank: 22469, quota: 100 },
-    { university: 'ODTÜ', program: 'Siyaset Bilimi ve Kamu Yönetimi', city: 'Ankara', field: 'EA', minScore: 510, minRank: 28003, quota: 90 },
-    { university: 'Boğaziçi Üniversitesi', program: 'Siyaset Bilimi ve Uluslararası İlişkiler', city: 'İstanbul', field: 'EA', minScore: 520, minRank: 4052, quota: 80 },
-    { university: 'İstanbul Üniversitesi', program: 'Siyaset Bilimi ve Kamu Yönetimi', city: 'İstanbul', field: 'EA', minScore: 500, minRank: 27155, quota: 95 },
-    { university: 'Gazi Üniversitesi', program: 'Siyaset Bilimi ve Kamu Yönetimi', city: 'Ankara', field: 'EA', minScore: 485, minRank: 49799, quota: 85 },
-    { university: 'Marmara Üniversitesi', program: 'Siyaset Bilimi ve Kamu Yönetimi', city: 'İstanbul', field: 'EA', minScore: 480, minRank: 37460, quota: 90 },
-    { university: 'Ege Üniversitesi', program: 'Siyaset Bilimi ve Kamu Yönetimi', city: 'İzmir', field: 'EA', minScore: 470, minRank: 56798, quota: 80 },
-
-    // ============================================
-    // EA - ULUSLARARASI İLİŞKİLER
-    // ============================================
-    { university: 'Bilkent Üniversitesi (Vakıf)', program: 'Uluslararası İlişkiler', city: 'Ankara', field: 'EA', minScore: 525, minRank: 10215, quota: 75 },
-    { university: 'Koç Üniversitesi (Vakıf)', program: 'Uluslararası İlişkiler', city: 'İstanbul', field: 'EA', minScore: 520, minRank: 11582, quota: 65 },
-    { university: 'ODTÜ', program: 'Uluslararası İlişkiler', city: 'Ankara', field: 'EA', minScore: 515, minRank: 26573, quota: 85 },
-    { university: 'Ankara Üniversitesi', program: 'Uluslararası İlişkiler', city: 'Ankara', field: 'EA', minScore: 510, minRank: 17970, quota: 90 },
-    { university: 'Galatasaray Üniversitesi', program: 'Uluslararası İlişkiler', city: 'İstanbul', field: 'EA', minScore: 515, minRank: 19284, quota: 70 },
-    { university: 'İstanbul Üniversitesi', program: 'Uluslararası İlişkiler', city: 'İstanbul', field: 'EA', minScore: 500, minRank: 19102, quota: 85 },
-    { university: 'Marmara Üniversitesi', program: 'Uluslararası İlişkiler', city: 'İstanbul', field: 'EA', minScore: 490, minRank: 47660, quota: 80 },
-
-    // ============================================
-    // SÖZ (Sözel) - HUKUK FAKÜLTELERİ
-    // ============================================
-    { university: 'Ankara Üniversitesi', program: 'Hukuk Fakültesi', city: 'Ankara', field: 'SOZ', minScore: 520, minRank: 3145, quota: 200 },
-    { university: 'İstanbul Üniversitesi', program: 'Hukuk Fakültesi', city: 'İstanbul', field: 'SOZ', minScore: 515, minRank: 27904, quota: 220 },
-    { university: 'Gazi Üniversitesi', program: 'Hukuk Fakültesi', city: 'Ankara', field: 'SOZ', minScore: 505, minRank: 21610, quota: 180 },
-    { university: 'Marmara Üniversitesi', program: 'Hukuk Fakültesi', city: 'İstanbul', field: 'SOZ', minScore: 500, minRank: 16117, quota: 190 },
-    { university: 'Galatasaray Üniversitesi', program: 'Hukuk Fakültesi', city: 'İstanbul', field: 'SOZ', minScore: 510, minRank: 22755, quota: 120 },
-    { university: 'Hacettepe Üniversitesi', program: 'Hukuk Fakültesi', city: 'Ankara', field: 'SOZ', minScore: 505, minRank: 28710, quota: 170 },
-    { university: 'Ege Üniversitesi', program: 'Hukuk Fakültesi', city: 'İzmir', field: 'SOZ', minScore: 495, minRank: 43382, quota: 180 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'Hukuk Fakültesi', city: 'İzmir', field: 'SOZ', minScore: 490, minRank: 33628, quota: 170 },
-    { university: 'Selçuk Üniversitesi', program: 'Hukuk Fakültesi', city: 'Konya', field: 'SOZ', minScore: 475, minRank: 77683, quota: 160 },
-    { university: 'Erciyes Üniversitesi', program: 'Hukuk Fakültesi', city: 'Kayseri', field: 'SOZ', minScore: 470, minRank: 60219, quota: 150 },
-    { university: 'Çukurova Üniversitesi', program: 'Hukuk Fakültesi', city: 'Adana', field: 'SOZ', minScore: 465, minRank: 77737, quota: 140 },
-    { university: 'Uludağ Üniversitesi', program: 'Hukuk Fakültesi', city: 'Bursa', field: 'SOZ', minScore: 460, minRank: 58821, quota: 150 },
-
-    // ============================================
-    // SÖZ - PSİKOLOJİ
-    // ============================================
-    { university: 'Boğaziçi Üniversitesi', program: 'Psikoloji', city: 'İstanbul', field: 'SOZ', minScore: 515, minRank: 28358, quota: 70 },
-    { university: 'ODTÜ', program: 'Psikoloji', city: 'Ankara', field: 'SOZ', minScore: 510, minRank: 18888, quota: 80 },
-    { university: 'İstanbul Üniversitesi', program: 'Psikoloji', city: 'İstanbul', field: 'SOZ', minScore: 505, minRank: 25030, quota: 100 },
-    { university: 'Hacettepe Üniversitesi', program: 'Psikoloji', city: 'Ankara', field: 'SOZ', minScore: 500, minRank: 27666, quota: 90 },
-    { university: 'Ankara Üniversitesi', program: 'Psikoloji', city: 'Ankara', field: 'SOZ', minScore: 495, minRank: 50635, quota: 95 },
-    { university: 'Ege Üniversitesi', program: 'Psikoloji', city: 'İzmir', field: 'SOZ', minScore: 490, minRank: 47584, quota: 85 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'Psikoloji', city: 'İzmir', field: 'SOZ', minScore: 485, minRank: 44495, quota: 80 },
-    { university: 'Marmara Üniversitesi', program: 'Psikoloji', city: 'İstanbul', field: 'SOZ', minScore: 480, minRank: 41653, quota: 90 },
-    { university: 'Gazi Üniversitesi', program: 'Psikoloji', city: 'Ankara', field: 'SOZ', minScore: 470, minRank: 58908, quota: 85 },
-    { university: 'Çukurova Üniversitesi', program: 'Psikoloji', city: 'Adana', field: 'SOZ', minScore: 460, minRank: 60062, quota: 75 },
-    { university: 'Uludağ Üniversitesi', program: 'Psikoloji', city: 'Bursa', field: 'SOZ', minScore: 455, minRank: 107002, quota: 70 },
-    { university: 'Akdeniz Üniversitesi', program: 'Psikoloji', city: 'Antalya', field: 'SOZ', minScore: 460, minRank: 75010, quota: 75 },
-
-    // ============================================
-    // SÖZ - SİYASET BİLİMİ VE KAMU YÖNETİMİ
-    // ============================================
-    { university: 'Ankara Üniversitesi', program: 'Siyaset Bilimi ve Kamu Yönetimi', city: 'Ankara', field: 'SOZ', minScore: 500, minRank: 15777, quota: 100 },
-    { university: 'ODTÜ', program: 'Siyaset Bilimi ve Kamu Yönetimi', city: 'Ankara', field: 'SOZ', minScore: 495, minRank: 37012, quota: 90 },
-    { university: 'Boğaziçi Üniversitesi', program: 'Siyaset Bilimi ve Uluslararası İlişkiler', city: 'İstanbul', field: 'SOZ', minScore: 505, minRank: 20504, quota: 80 },
-    { university: 'İstanbul Üniversitesi', program: 'Siyaset Bilimi ve Kamu Yönetimi', city: 'İstanbul', field: 'SOZ', minScore: 485, minRank: 37612, quota: 95 },
-    { university: 'Gazi Üniversitesi', program: 'Siyaset Bilimi ve Kamu Yönetimi', city: 'Ankara', field: 'SOZ', minScore: 470, minRank: 58149, quota: 85 },
-
-    // ============================================
-    // SÖZ - İLETİŞİM FAKÜLTESİ
-    // ============================================
-    { university: 'Ankara Üniversitesi', program: 'İletişim Fakültesi', city: 'Ankara', field: 'SOZ', minScore: 485, minRank: 33319, quota: 120 },
-    { university: 'İstanbul Üniversitesi', program: 'İletişim Fakültesi', city: 'İstanbul', field: 'SOZ', minScore: 480, minRank: 30451, quota: 130 },
-    { university: 'Gazi Üniversitesi', program: 'İletişim Fakültesi', city: 'Ankara', field: 'SOZ', minScore: 470, minRank: 68254, quota: 110 },
-    { university: 'Ege Üniversitesi', program: 'İletişim Fakültesi', city: 'İzmir', field: 'SOZ', minScore: 475, minRank: 70448, quota: 100 },
-    { university: 'Marmara Üniversitesi', program: 'İletişim Fakültesi', city: 'İstanbul', field: 'SOZ', minScore: 465, minRank: 78671, quota: 120 },
-    { university: 'Anadolu Üniversitesi', program: 'İletişim Bilimleri Fakültesi', city: 'Eskişehir', field: 'SOZ', minScore: 460, minRank: 69259, quota: 140 },
-    { university: 'Selçuk Üniversitesi', program: 'İletişim Fakültesi', city: 'Konya', field: 'SOZ', minScore: 450, minRank: 85662, quota: 100 },
-    { university: 'Erciyes Üniversitesi', program: 'İletişim Fakültesi', city: 'Kayseri', field: 'SOZ', minScore: 445, minRank: 106998, quota: 95 },
-
-    // ============================================
-    // SÖZ - TÜRK DİLİ VE EDEBİYATI
-    // ============================================
-    { university: 'İstanbul Üniversitesi', program: 'Türk Dili ve Edebiyatı', city: 'İstanbul', field: 'SOZ', minScore: 475, minRank: 61953, quota: 90 },
-    { university: 'Ankara Üniversitesi', program: 'Türk Dili ve Edebiyatı', city: 'Ankara', field: 'SOZ', minScore: 470, minRank: 84039, quota: 85 },
-    { university: 'Gazi Üniversitesi', program: 'Türk Dili ve Edebiyatı', city: 'Ankara', field: 'SOZ', minScore: 460, minRank: 67544, quota: 80 },
-    { university: 'Ege Üniversitesi', program: 'Türk Dili ve Edebiyatı', city: 'İzmir', field: 'SOZ', minScore: 455, minRank: 85014, quota: 75 },
-    { university: 'Hacettepe Üniversitesi', program: 'Türk Dili ve Edebiyatı', city: 'Ankara', field: 'SOZ', minScore: 465, minRank: 76182, quota: 70 },
-    { university: 'Marmara Üniversitesi', program: 'Türk Dili ve Edebiyatı', city: 'İstanbul', field: 'SOZ', minScore: 450, minRank: 85084, quota: 80 },
-    { university: 'Selçuk Üniversitesi', program: 'Türk Dili ve Edebiyatı', city: 'Konya', field: 'SOZ', minScore: 440, minRank: 93741, quota: 75 },
-
-    // ============================================
-    // SÖZ - TARİH
-    // ============================================
-    { university: 'İstanbul Üniversitesi', program: 'Tarih', city: 'İstanbul', field: 'SOZ', minScore: 470, minRank: 63922, quota: 100 },
-    { university: 'Ankara Üniversitesi', program: 'Tarih', city: 'Ankara', field: 'SOZ', minScore: 465, minRank: 80276, quota: 95 },
-    { university: 'Hacettepe Üniversitesi', program: 'Tarih', city: 'Ankara', field: 'SOZ', minScore: 460, minRank: 67786, quota: 80 },
-    { university: 'Ege Üniversitesi', program: 'Tarih', city: 'İzmir', field: 'SOZ', minScore: 450, minRank: 111632, quota: 85 },
-    { university: 'Gazi Üniversitesi', program: 'Tarih', city: 'Ankara', field: 'SOZ', minScore: 455, minRank: 114238, quota: 90 },
-    { university: 'Marmara Üniversitesi', program: 'Tarih', city: 'İstanbul', field: 'SOZ', minScore: 445, minRank: 90418, quota: 85 },
-
-    // ============================================
-    // SÖZ - SOSYOLOJİ
-    // ============================================
-    { university: 'Boğaziçi Üniversitesi', program: 'Sosyoloji', city: 'İstanbul', field: 'SOZ', minScore: 500, minRank: 18206, quota: 65 },
-    { university: 'ODTÜ', program: 'Sosyoloji', city: 'Ankara', field: 'SOZ', minScore: 490, minRank: 36573, quota: 75 },
-    { university: 'İstanbul Üniversitesi', program: 'Sosyoloji', city: 'İstanbul', field: 'SOZ', minScore: 480, minRank: 45672, quota: 90 },
-    { university: 'Ankara Üniversitesi', program: 'Sosyoloji', city: 'Ankara', field: 'SOZ', minScore: 475, minRank: 63623, quota: 85 },
-    { university: 'Hacettepe Üniversitesi', program: 'Sosyoloji', city: 'Ankara', field: 'SOZ', minScore: 470, minRank: 79366, quota: 80 },
-    { university: 'Ege Üniversitesi', program: 'Sosyoloji', city: 'İzmir', field: 'SOZ', minScore: 460, minRank: 65178, quota: 75 },
-    { university: 'Marmara Üniversitesi', program: 'Sosyoloji', city: 'İstanbul', field: 'SOZ', minScore: 455, minRank: 111706, quota: 80 },
-
-    // ============================================
-    // DİL (Dil) - İNGİLİZ DİLİ VE EDEBİYATI
-    // ============================================
-    { university: 'Boğaziçi Üniversitesi', program: 'İngiliz Dili ve Edebiyatı', city: 'İstanbul', field: 'DIL', minScore: 510, minRank: 25359, quota: 60 },
-    { university: 'ODTÜ', program: 'İngiliz Dili ve Edebiyatı', city: 'Ankara', field: 'DIL', minScore: 505, minRank: 26218, quota: 70 },
-    { university: 'Bilkent Üniversitesi (Vakıf)', program: 'İngiliz Dili ve Edebiyatı', city: 'Ankara', field: 'DIL', minScore: 505, minRank: 13186, quota: 50 },
-    { university: 'Hacettepe Üniversitesi', program: 'İngiliz Dili ve Edebiyatı', city: 'Ankara', field: 'DIL', minScore: 495, minRank: 43855, quota: 75 },
-    { university: 'İstanbul Üniversitesi', program: 'İngiliz Dili ve Edebiyatı', city: 'İstanbul', field: 'DIL', minScore: 490, minRank: 47342, quota: 85 },
-    { university: 'Ankara Üniversitesi', program: 'İngiliz Dili ve Edebiyatı', city: 'Ankara', field: 'DIL', minScore: 485, minRank: 33914, quota: 80 },
-    { university: 'Yıldız Teknik Üniversitesi', program: 'İngiliz Dili ve Edebiyatı', city: 'İstanbul', field: 'DIL', minScore: 485, minRank: 47738, quota: 75 },
-    { university: 'Ege Üniversitesi', program: 'İngiliz Dili ve Edebiyatı', city: 'İzmir', field: 'DIL', minScore: 480, minRank: 51842, quota: 80 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'İngiliz Dili ve Edebiyatı', city: 'İzmir', field: 'DIL', minScore: 475, minRank: 73984, quota: 70 },
-    { university: 'Gazi Üniversitesi', program: 'İngiliz Dili ve Edebiyatı', city: 'Ankara', field: 'DIL', minScore: 470, minRank: 64006, quota: 85 },
-    { university: 'Marmara Üniversitesi', program: 'İngiliz Dili ve Edebiyatı', city: 'İstanbul', field: 'DIL', minScore: 465, minRank: 71861, quota: 80 },
-    { university: 'Çukurova Üniversitesi', program: 'İngiliz Dili ve Edebiyatı', city: 'Adana', field: 'DIL', minScore: 455, minRank: 89275, quota: 70 },
-    { university: 'Selçuk Üniversitesi', program: 'İngiliz Dili ve Edebiyatı', city: 'Konya', field: 'DIL', minScore: 450, minRank: 90249, quota: 65 },
-    { university: 'Uludağ Üniversitesi', program: 'İngiliz Dili ve Edebiyatı', city: 'Bursa', field: 'DIL', minScore: 455, minRank: 101590, quota: 70 },
-
-    // ============================================
-    // DİL - MÜTERCİM TERCÜMANLIK (İNGİLİZCE)
-    // ============================================
-    { university: 'Boğaziçi Üniversitesi', program: 'Mütercim Tercümanlık (İngilizce)', city: 'İstanbul', field: 'DIL', minScore: 500, minRank: 16606, quota: 55 },
-    { university: 'Hacettepe Üniversitesi', program: 'Mütercim Tercümanlık (İngilizce)', city: 'Ankara', field: 'DIL', minScore: 500, minRank: 23444, quota: 80 },
-    { university: 'Ankara Üniversitesi', program: 'Mütercim Tercümanlık (İngilizce)', city: 'Ankara', field: 'DIL', minScore: 495, minRank: 36194, quota: 90 },
-    { university: 'İstanbul Üniversitesi', program: 'Mütercim Tercümanlık (İngilizce)', city: 'İstanbul', field: 'DIL', minScore: 485, minRank: 45907, quota: 85 },
-    { university: 'Yıldız Teknik Üniversitesi', program: 'Mütercim Tercümanlık (İngilizce)', city: 'İstanbul', field: 'DIL', minScore: 480, minRank: 49606, quota: 75 },
-    { university: 'Ege Üniversitesi', program: 'Mütercim Tercümanlık (İngilizce)', city: 'İzmir', field: 'DIL', minScore: 475, minRank: 83652, quota: 70 },
-    { university: 'Gazi Üniversitesi', program: 'Mütercim Tercümanlık (İngilizce)', city: 'Ankara', field: 'DIL', minScore: 465, minRank: 62303, quota: 80 },
-    { university: 'Marmara Üniversitesi', program: 'Mütercim Tercümanlık (İngilizce)', city: 'İstanbul', field: 'DIL', minScore: 460, minRank: 70432, quota: 75 },
-    { university: 'Selçuk Üniversitesi', program: 'Mütercim Tercümanlık (İngilizce)', city: 'Konya', field: 'DIL', minScore: 445, minRank: 95832, quota: 70 },
-
-    // ============================================
-    // DİL - ALMAN DİLİ VE EDEBİYATI
-    // ============================================
-    { university: 'İstanbul Üniversitesi', program: 'Alman Dili ve Edebiyatı', city: 'İstanbul', field: 'DIL', minScore: 475, minRank: 73348, quota: 70 },
-    { university: 'Ankara Üniversitesi', program: 'Alman Dili ve Edebiyatı', city: 'Ankara', field: 'DIL', minScore: 470, minRank: 62423, quota: 65 },
-    { university: 'Hacettepe Üniversitesi', program: 'Alman Dili ve Edebiyatı', city: 'Ankara', field: 'DIL', minScore: 480, minRank: 51701, quota: 60 },
-    { university: 'Ege Üniversitesi', program: 'Alman Dili ve Edebiyatı', city: 'İzmir', field: 'DIL', minScore: 465, minRank: 79183, quota: 55 },
-    { university: 'Marmara Üniversitesi', program: 'Alman Dili ve Edebiyatı', city: 'İstanbul', field: 'DIL', minScore: 460, minRank: 77134, quota: 60 },
-
-    // ============================================
-    // DİL - FRANSIZ DİLİ VE EDEBİYATI
-    // ============================================
-    { university: 'İstanbul Üniversitesi', program: 'Fransız Dili ve Edebiyatı', city: 'İstanbul', field: 'DIL', minScore: 475, minRank: 68332, quota: 65 },
-    { university: 'Ankara Üniversitesi', program: 'Fransız Dili ve Edebiyatı', city: 'Ankara', field: 'DIL', minScore: 470, minRank: 67124, quota: 60 },
-    { university: 'Hacettepe Üniversitesi', program: 'Fransız Dili ve Edebiyatı', city: 'Ankara', field: 'DIL', minScore: 480, minRank: 46091, quota: 55 },
-    { university: 'Galatasaray Üniversitesi', program: 'Fransız Dili ve Edebiyatı', city: 'İstanbul', field: 'DIL', minScore: 485, minRank: 48939, quota: 50 },
-    { university: 'Ege Üniversitesi', program: 'Fransız Dili ve Edebiyatı', city: 'İzmir', field: 'DIL', minScore: 465, minRank: 71940, quota: 55 },
-
-    // ============================================
-    // DİL - DİĞER DİLLER
-    // ============================================
-    { university: 'Ankara Üniversitesi', program: 'İspanyol Dili ve Edebiyatı', city: 'Ankara', field: 'DIL', minScore: 470, minRank: 55018, quota: 50 },
-    { university: 'İstanbul Üniversitesi', program: 'İspanyol Dili ve Edebiyatı', city: 'İstanbul', field: 'DIL', minScore: 465, minRank: 59297, quota: 55 },
-    { university: 'Hacettepe Üniversitesi', program: 'İspanyol Dili ve Edebiyatı', city: 'Ankara', field: 'DIL', minScore: 475, minRank: 55126, quota: 45 },
-    { university: 'Ankara Üniversitesi', program: 'Rus Dili ve Edebiyatı', city: 'Ankara', field: 'DIL', minScore: 465, minRank: 74398, quota: 50 },
-    { university: 'İstanbul Üniversitesi', program: 'Rus Dili ve Edebiyatı', city: 'İstanbul', field: 'DIL', minScore: 460, minRank: 57718, quota: 55 },
-    { university: 'Ankara Üniversitesi', program: 'Arap Dili ve Edebiyatı', city: 'Ankara', field: 'DIL', minScore: 460, minRank: 79798, quota: 55 },
-    { university: 'İstanbul Üniversitesi', program: 'Arap Dili ve Edebiyatı', city: 'İstanbul', field: 'DIL', minScore: 465, minRank: 68286, quota: 60 },
-    { university: 'Ankara Üniversitesi', program: 'Çin Dili ve Edebiyatı', city: 'Ankara', field: 'DIL', minScore: 470, minRank: 74110, quota: 45 },
-    { university: 'Ankara Üniversitesi', program: 'Japon Dili ve Edebiyatı', city: 'Ankara', field: 'DIL', minScore: 470, minRank: 81344, quota: 40 },
-    { university: 'Ankara Üniversitesi', program: 'Kore Dili ve Edebiyatı', city: 'Ankara', field: 'DIL', minScore: 470, minRank: 71889, quota: 40 },
-
-    // ============================================
-    // BÖLGESEL VE DÜŞÜK PUANLI ÜNİVERSİTELER
-    // Orta ve alt seviye öğrenciler için
-    // ============================================
-
-    // Bölgesel Üniversiteler - SAY
-    { university: 'Ağrı İbrahim Çeçen Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Ağrı', field: 'SAY', minScore: 380, minRank: 186123, quota: 60 },
-    { university: 'Ağrı İbrahim Çeçen Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Ağrı', field: 'SAY', minScore: 370, minRank: 215244, quota: 70 },
-    { university: 'Ağrı İbrahim Çeçen Üniversitesi', program: 'Hemşirelik', city: 'Ağrı', field: 'SAY', minScore: 350, minRank: 209362, quota: 50 },
-    { university: 'Aksaray Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Aksaray', field: 'SAY', minScore: 385, minRank: 190943, quota: 65 },
-    { university: 'Aksaray Üniversitesi', program: 'Makine Mühendisliği', city: 'Aksaray', field: 'SAY', minScore: 375, minRank: 227862, quota: 70 },
-    { university: 'Aksaray Üniversitesi', program: 'Hemşirelik', city: 'Aksaray', field: 'SAY', minScore: 355, minRank: 223979, quota: 55 },
-    { university: 'Amasya Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'Amasya', field: 'SAY', minScore: 380, minRank: 195117, quota: 60 },
-    { university: 'Amasya Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Amasya', field: 'SAY', minScore: 370, minRank: 233707, quota: 65 },
-    { university: 'Amasya Üniversitesi', program: 'Hemşirelik', city: 'Amasya', field: 'SAY', minScore: 352, minRank: 224516, quota: 50 },
-    { university: 'Ardahan Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Ardahan', field: 'SAY', minScore: 375, minRank: 216710, quota: 55 },
-    { university: 'Ardahan Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Ardahan', field: 'SAY', minScore: 365, minRank: 212232, quota: 60 },
-    { university: 'Artvin Çoruh Üniversitesi', program: 'Orman Mühendisliği', city: 'Artvin', field: 'SAY', minScore: 370, minRank: 217521, quota: 65 },
-    { university: 'Artvin Çoruh Üniversitesi', program: 'Hemşirelik', city: 'Artvin', field: 'SAY', minScore: 348, minRank: 216083, quota: 45 },
-    { university: 'Bartın Üniversitesi', program: 'Orman Endüstri Mühendisliği', city: 'Bartın', field: 'SAY', minScore: 368, minRank: 206873, quota: 60 },
-    { university: 'Bartın Üniversitesi', program: 'Hemşirelik', city: 'Bartın', field: 'SAY', minScore: 350, minRank: 218492, quota: 50 },
-    { university: 'Bayburt Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Bayburt', field: 'SAY', minScore: 365, minRank: 209112, quota: 55 },
-    { university: 'Bayburt Üniversitesi', program: 'Hemşirelik', city: 'Bayburt', field: 'SAY', minScore: 345, minRank: 228608, quota: 45 },
-    { university: 'Bilecik Şeyh Edebali Üniversitesi', program: 'Makine Mühendisliği', city: 'Bilecik', field: 'SAY', minScore: 378, minRank: 212472, quota: 65 },
-    { university: 'Bilecik Şeyh Edebali Üniversitesi', program: 'Hemşirelik', city: 'Bilecik', field: 'SAY', minScore: 353, minRank: 213568, quota: 50 },
-    { university: 'Bingöl Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Bingöl', field: 'SAY', minScore: 368, minRank: 211353, quota: 60 },
-    { university: 'Bingöl Üniversitesi', program: 'Hemşirelik', city: 'Bingöl', field: 'SAY', minScore: 347, minRank: 211906, quota: 45 },
-    { university: 'Bitlis Eren Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Bitlis', field: 'SAY', minScore: 365, minRank: 211463, quota: 55 },
-    { university: 'Bitlis Eren Üniversitesi', program: 'Hemşirelik', city: 'Bitlis', field: 'SAY', minScore: 345, minRank: 217911, quota: 45 },
-    { university: 'Çankırı Karatekin Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Çankırı', field: 'SAY', minScore: 382, minRank: 178637, quota: 60 },
-    { university: 'Çankırı Karatekin Üniversitesi', program: 'Hemşirelik', city: 'Çankırı', field: 'SAY', minScore: 351, minRank: 209833, quota: 50 },
-    { university: 'Giresun Üniversitesi', program: 'Deniz Bilimleri ve Teknolojisi Mühendisliği', city: 'Giresun', field: 'SAY', minScore: 372, minRank: 230895, quota: 55 },
-    { university: 'Giresun Üniversitesi', program: 'Hemşirelik', city: 'Giresun', field: 'SAY', minScore: 349, minRank: 218466, quota: 48 },
-    { university: 'Gümüşhane Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Gümüşhane', field: 'SAY', minScore: 370, minRank: 232386, quota: 60 },
-    { university: 'Gümüşhane Üniversitesi', program: 'Hemşirelik', city: 'Gümüşhane', field: 'SAY', minScore: 346, minRank: 220507, quota: 45 },
-    { university: 'Hakkari Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Hakkari', field: 'SAY', minScore: 363, minRank: 227556, quota: 50 },
-    { university: 'Hakkari Üniversitesi', program: 'Hemşirelik', city: 'Hakkari', field: 'SAY', minScore: 343, minRank: 224806, quota: 40 },
-    { university: 'Iğdır Üniversitesi', program: 'Ziraat Mühendisliği', city: 'Iğdır', field: 'SAY', minScore: 365, minRank: 228104, quota: 55 },
-    { university: 'Iğdır Üniversitesi', program: 'Hemşirelik', city: 'Iğdır', field: 'SAY', minScore: 344, minRank: 219858, quota: 42 },
-    { university: 'Karabük Üniversitesi', program: 'Makine Mühendisliği', city: 'Karabük', field: 'SAY', minScore: 385, minRank: 202438, quota: 70 },
-    { university: 'Karabük Üniversitesi', program: 'Hemşirelik', city: 'Karabük', field: 'SAY', minScore: 356, minRank: 208749, quota: 55 },
-    { university: 'Karaman Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Karaman', field: 'SAY', minScore: 380, minRank: 190020, quota: 60 },
-    { university: 'Karaman Üniversitesi', program: 'Hemşirelik', city: 'Karaman', field: 'SAY', minScore: 352, minRank: 230382, quota: 50 },
-    { university: 'Kastamonu Üniversitesi', program: 'Orman Mühendisliği', city: 'Kastamonu', field: 'SAY', minScore: 375, minRank: 220320, quota: 65 },
-    { university: 'Kastamonu Üniversitesi', program: 'Hemşirelik', city: 'Kastamonu', field: 'SAY', minScore: 354, minRank: 215159, quota: 52 },
-
-    // Bölgesel Üniversiteler - EA
-    { university: 'Ağrı İbrahim Çeçen Üniversitesi', program: 'İşletme', city: 'Ağrı', field: 'EA', minScore: 360, minRank: 223655, quota: 80 },
-    { university: 'Ağrı İbrahim Çeçen Üniversitesi', program: 'İktisat', city: 'Ağrı', field: 'EA', minScore: 355, minRank: 214746, quota: 70 },
-    { university: 'Aksaray Üniversitesi', program: 'İşletme', city: 'Aksaray', field: 'EA', minScore: 365, minRank: 232626, quota: 85 },
-    { university: 'Aksaray Üniversitesi', program: 'İktisat', city: 'Aksaray', field: 'EA', minScore: 358, minRank: 212161, quota: 75 },
-    { university: 'Amasya Üniversitesi', program: 'İşletme', city: 'Amasya', field: 'EA', minScore: 368, minRank: 223145, quota: 80 },
-    { university: 'Amasya Üniversitesi', program: 'İktisat', city: 'Amasya', field: 'EA', minScore: 360, minRank: 222265, quota: 70 },
-    { university: 'Ardahan Üniversitesi', program: 'İşletme', city: 'Ardahan', field: 'EA', minScore: 358, minRank: 227377, quota: 75 },
-    { university: 'Artvin Çoruh Üniversitesi', program: 'İşletme', city: 'Artvin', field: 'EA', minScore: 360, minRank: 217408, quota: 70 },
-    { university: 'Bartın Üniversitesi', program: 'İşletme', city: 'Bartın', field: 'EA', minScore: 363, minRank: 227674, quota: 75 },
-    { university: 'Bayburt Üniversitesi', program: 'İşletme', city: 'Bayburt', field: 'EA', minScore: 356, minRank: 206419, quota: 70 },
-    { university: 'Bilecik Şeyh Edebali Üniversitesi', program: 'İşletme', city: 'Bilecik', field: 'EA', minScore: 366, minRank: 212571, quota: 80 },
-    { university: 'Bingöl Üniversitesi', program: 'İşletme', city: 'Bingöl', field: 'EA', minScore: 359, minRank: 232861, quota: 75 },
-    { university: 'Bitlis Eren Üniversitesi', program: 'İşletme', city: 'Bitlis', field: 'EA', minScore: 357, minRank: 206459, quota: 70 },
-    { university: 'Çankırı Karatekin Üniversitesi', program: 'İşletme', city: 'Çankırı', field: 'EA', minScore: 364, minRank: 234560, quota: 78 },
-    { university: 'Giresun Üniversitesi', program: 'İşletme', city: 'Giresun', field: 'EA', minScore: 362, minRank: 226084, quota: 75 },
-    { university: 'Gümüşhane Üniversitesi', program: 'İşletme', city: 'Gümüşhane', field: 'EA', minScore: 360, minRank: 233581, quota: 72 },
-    { university: 'Karabük Üniversitesi', program: 'İşletme', city: 'Karabük', field: 'EA', minScore: 370, minRank: 208246, quota: 85 },
-    { university: 'Karaman Üniversitesi', program: 'İşletme', city: 'Karaman', field: 'EA', minScore: 365, minRank: 217803, quota: 80 },
-    { university: 'Kastamonu Üniversitesi', program: 'İşletme', city: 'Kastamonu', field: 'EA', minScore: 367, minRank: 210364, quota: 82 },
-
-    // Bölgesel Üniversiteler - SOZ
-    { university: 'Ağrı İbrahim Çeçen Üniversitesi', program: 'Türkçe Öğretmenliği', city: 'Ağrı', field: 'SOZ', minScore: 365, minRank: 231051, quota: 70 },
-    { university: 'Ağrı İbrahim Çeçen Üniversitesi', program: 'Sosyoloji', city: 'Ağrı', field: 'SOZ', minScore: 355, minRank: 219726, quota: 60 },
-    { university: 'Aksaray Üniversitesi', program: 'Türkçe Öğretmenliği', city: 'Aksaray', field: 'SOZ', minScore: 368, minRank: 232237, quota: 75 },
-    { university: 'Aksaray Üniversitesi', program: 'Sosyoloji', city: 'Aksaray', field: 'SOZ', minScore: 358, minRank: 212231, quota: 65 },
-    { university: 'Amasya Üniversitesi', program: 'Türkçe Öğretmenliği', city: 'Amasya', field: 'SOZ', minScore: 370, minRank: 219514, quota: 78 },
-    { university: 'Amasya Üniversitesi', program: 'Tarih', city: 'Amasya', field: 'SOZ', minScore: 360, minRank: 209204, quota: 60 },
-    { university: 'Ardahan Üniversitesi', program: 'Türkçe Öğretmenliği', city: 'Ardahan', field: 'SOZ', minScore: 363, minRank: 232292, quota: 65 },
-    { university: 'Artvin Çoruh Üniversitesi', program: 'Sosyal Bilgiler Öğretmenliği', city: 'Artvin', field: 'SOZ', minScore: 362, minRank: 227940, quota: 70 },
-    { university: 'Bartın Üniversitesi', program: 'Türkçe Öğretmenliği', city: 'Bartın', field: 'SOZ', minScore: 366, minRank: 216748, quota: 72 },
-    { university: 'Bayburt Üniversitesi', program: 'Türkçe Öğretmenliği', city: 'Bayburt', field: 'SOZ', minScore: 361, minRank: 207226, quota: 65 },
-    { university: 'Bilecik Şeyh Edebali Üniversitesi', program: 'Türkçe Öğretmenliği', city: 'Bilecik', field: 'SOZ', minScore: 369, minRank: 221298, quota: 75 },
-    { university: 'Bingöl Üniversitesi', program: 'Türkçe Öğretmenliği', city: 'Bingöl', field: 'SOZ', minScore: 364, minRank: 234579, quota: 68 },
-    { university: 'Bitlis Eren Üniversitesi', program: 'Türkçe Öğretmenliği', city: 'Bitlis', field: 'SOZ', minScore: 362, minRank: 215048, quota: 65 },
-    { university: 'Çankırı Karatekin Üniversitesi', program: 'Türkçe Öğretmenliği', city: 'Çankırı', field: 'SOZ', minScore: 367, minRank: 226801, quota: 73 },
-    { university: 'Giresun Üniversitesi', program: 'Türkçe Öğretmenliği', city: 'Giresun', field: 'SOZ', minScore: 365, minRank: 233225, quota: 70 },
-    { university: 'Gümüşhane Üniversitesi', program: 'Türkçe Öğretmenliği', city: 'Gümüşhane', field: 'SOZ', minScore: 363, minRank: 233259, quota: 68 },
-    { university: 'Karabük Üniversitesi', program: 'Türkçe Öğretmenliği', city: 'Karabük', field: 'SOZ', minScore: 372, minRank: 226158, quota: 80 },
-    { university: 'Karaman Üniversitesi', program: 'Türkçe Öğretmenliği', city: 'Karaman', field: 'SOZ', minScore: 368, minRank: 212249, quota: 75 },
-    { university: 'Kastamonu Üniversitesi', program: 'Türkçe Öğretmenliği', city: 'Kastamonu', field: 'SOZ', minScore: 370, minRank: 228906, quota: 77 },
-
-    // Vakıf Üniversiteleri - Orta Seviye
-    { university: 'İstanbul Aydın Üniversitesi (Vakıf)', program: 'Bilgisayar Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 370, minRank: 205269, quota: 60 },
-    { university: 'İstanbul Aydın Üniversitesi (Vakıf)', program: 'İşletme', city: 'İstanbul', field: 'EA', minScore: 365, minRank: 234647, quota: 80 },
-    { university: 'İstanbul Gelişim Üniversitesi (Vakıf)', program: 'Bilgisayar Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 368, minRank: 229965, quota: 55 },
-    { university: 'İstanbul Gelişim Üniversitesi (Vakıf)', program: 'İşletme', city: 'İstanbul', field: 'EA', minScore: 363, minRank: 223914, quota: 75 },
-    { university: 'Beykent Üniversitesi (Vakıf)', program: 'Bilgisayar Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 365, minRank: 206297, quota: 50 },
-    { university: 'Beykent Üniversitesi (Vakıf)', program: 'İşletme', city: 'İstanbul', field: 'EA', minScore: 360, minRank: 207783, quota: 70 },
-    { university: 'Haliç Üniversitesi (Vakıf)', program: 'Bilgisayar Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 372, minRank: 208140, quota: 55 },
-    { university: 'Haliç Üniversitesi (Vakıf)', program: 'İşletme', city: 'İstanbul', field: 'EA', minScore: 367, minRank: 210023, quota: 75 },
-    { university: 'Maltepe Üniversitesi (Vakıf)', program: 'Bilgisayar Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 375, minRank: 221719, quota: 58 },
-    { university: 'Maltepe Üniversitesi (Vakıf)', program: 'İşletme', city: 'İstanbul', field: 'EA', minScore: 370, minRank: 216832, quota: 78 },
-    { university: 'Atılım Üniversitesi (Vakıf)', program: 'Bilgisayar Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 395, minRank: 193731, quota: 65 },
-    { university: 'Atılım Üniversitesi (Vakıf)', program: 'İşletme', city: 'Ankara', field: 'EA', minScore: 385, minRank: 204806, quota: 80 },
-    { university: 'Çankaya Üniversitesi (Vakıf)', program: 'Bilgisayar Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 390, minRank: 180051, quota: 60 },
-    { university: 'Çankaya Üniversitesi (Vakıf)', program: 'İşletme', city: 'Ankara', field: 'EA', minScore: 380, minRank: 181108, quota: 75 },
-
-    // ============================================
-    // SAY - OTOMOTİV MÜHENDİSLİĞİ
-    // ============================================
-    { university: 'Uludağ Üniversitesi', program: 'Otomotiv Mühendisliği', city: 'Bursa', field: 'SAY', minScore: 400, minRank: 153877, quota: 90 },
-    { university: 'Kocaeli Üniversitesi', program: 'Otomotiv Mühendisliği', city: 'Kocaeli', field: 'SAY', minScore: 395, minRank: 201068, quota: 85 },
-    { university: 'Sakarya Üniversitesi', program: 'Otomotiv Mühendisliği', city: 'Sakarya', field: 'SAY', minScore: 390, minRank: 197704, quota: 80 },
-    { university: 'Gazi Üniversitesi', program: 'Otomotiv Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 420, minRank: 123368, quota: 95 },
-    { university: 'Pamukkale Üniversitesi', program: 'Otomotiv Mühendisliği', city: 'Denizli', field: 'SAY', minScore: 385, minRank: 204251, quota: 75 },
-    { university: 'Afyon Kocatepe Üniversitesi', program: 'Otomotiv Mühendisliği', city: 'Afyonkarahisar', field: 'SAY', minScore: 380, minRank: 187831, quota: 70 },
-    { university: 'Düzce Üniversitesi', program: 'Otomotiv Mühendisliği', city: 'Düzce', field: 'SAY', minScore: 375, minRank: 215072, quota: 65 },
-    { university: 'Bolu Abant İzzet Baysal Üniversitesi', program: 'Otomotiv Mühendisliği', city: 'Bolu', field: 'SAY', minScore: 380, minRank: 196939, quota: 70 },
-    { university: 'Manisa Celal Bayar Üniversitesi', program: 'Otomotiv Mühendisliği', city: 'Manisa', field: 'SAY', minScore: 385, minRank: 187601, quota: 75 },
-    { university: 'Karabük Üniversitesi', program: 'Otomotiv Mühendisliği', city: 'Karabük', field: 'SAY', minScore: 390, minRank: 177323, quota: 80 },
-    { university: 'Tokat Gaziosmanpaşa Üniversitesi', program: 'Otomotiv Mühendisliği', city: 'Tokat', field: 'SAY', minScore: 370, minRank: 234134, quota: 60 },
-    { university: 'Kırıkkale Üniversitesi', program: 'Otomotiv Mühendisliği', city: 'Kırıkkale', field: 'SAY', minScore: 375, minRank: 223983, quota: 65 },
-    { university: 'Aksaray Üniversitesi', program: 'Otomotiv Mühendisliği', city: 'Aksaray', field: 'SAY', minScore: 365, minRank: 223999, quota: 60 },
-    { university: 'Çankırı Karatekin Üniversitesi', program: 'Otomotiv Mühendisliği', city: 'Çankırı', field: 'SAY', minScore: 370, minRank: 223417, quota: 65 },
-    { university: 'Bursa Teknik Üniversitesi', program: 'Otomotiv Mühendisliği', city: 'Bursa', field: 'SAY', minScore: 405, minRank: 153404, quota: 85 },
-    // ============================================
-    // BİLGİSAYAR MÜHENDİSLİĞİ - EK ÜNİVERSİTELER
-    // ============================================
-    { university: 'İstanbul Teknik Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 510, minRank: 18099, quota: 150 },
-    { university: 'Orta Doğu Teknik Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 525, minRank: 5248, quota: 100 },
-    { university: 'Mersin Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Mersin', field: 'SAY', minScore: 440, minRank: 109712, quota: 60 },
-    { university: 'Gaziantep Üniversitesi', program: 'Bilgisayar Mühendisliği', city: 'Gaziantep', field: 'SAY', minScore: 435, minRank: 122666, quota: 55 },
-    // ============================================
-    // ELEKTRİK-ELEKTRONİK MÜHENDİSLİĞİ
-    // ============================================
-    { university: 'Orta Doğu Teknik Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 520, minRank: 5556, quota: 110 },
-    { university: 'İstanbul Teknik Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 505, minRank: 20912, quota: 130 },
-    { university: 'Ankara Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 490, minRank: 51233, quota: 80 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'İzmir', field: 'SAY', minScore: 470, minRank: 61184, quota: 70 },
-    { university: 'Erciyes Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'Kayseri', field: 'SAY', minScore: 450, minRank: 93456, quota: 65 },
-    { university: 'Selçuk Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'Konya', field: 'SAY', minScore: 445, minRank: 91869, quota: 60 },
-    { university: 'Akdeniz Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'Antalya', field: 'SAY', minScore: 450, minRank: 109506, quota: 60 },
-    { university: 'Çukurova Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'Adana', field: 'SAY', minScore: 445, minRank: 85099, quota: 55 },
-    { university: 'Fırat Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'Elazığ', field: 'SAY', minScore: 425, minRank: 120348, quota: 50 },
-    { university: 'Atatürk Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'Erzurum', field: 'SAY', minScore: 420, minRank: 132622, quota: 55 },
-    { university: 'Karadeniz Teknik Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'Trabzon', field: 'SAY', minScore: 430, minRank: 138971, quota: 60 },
-    { university: 'Gaziantep Üniversitesi', program: 'Elektrik-Elektronik Mühendisliği', city: 'Gaziantep', field: 'SAY', minScore: 430, minRank: 133480, quota: 55 },
-
-    // ============================================
-    // MAKİNE MÜHENDİSLİĞİ
-    // ============================================
-    { university: 'Orta Doğu Teknik Üniversitesi', program: 'Makine Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 515, minRank: 21946, quota: 120 },
-    { university: 'İstanbul Teknik Üniversitesi', program: 'Makine Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 500, minRank: 14016, quota: 140 },
-    { university: 'Hacettepe Üniversitesi', program: 'Makine Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 495, minRank: 46167, quota: 90 },
-    { university: 'Gebze Teknik Üniversitesi', program: 'Makine Mühendisliği', city: 'Kocaeli', field: 'SAY', minScore: 485, minRank: 37860, quota: 95 },
-    { university: 'Akdeniz Üniversitesi', program: 'Makine Mühendisliği', city: 'Antalya', field: 'SAY', minScore: 445, minRank: 94292, quota: 70 },
-    { university: 'Çukurova Üniversitesi', program: 'Makine Mühendisliği', city: 'Adana', field: 'SAY', minScore: 440, minRank: 91543, quota: 65 },
-    { university: 'Fırat Üniversitesi', program: 'Makine Mühendisliği', city: 'Elazığ', field: 'SAY', minScore: 420, minRank: 126746, quota: 60 },
-    { university: 'Atatürk Üniversitesi', program: 'Makine Mühendisliği', city: 'Erzurum', field: 'SAY', minScore: 415, minRank: 170241, quota: 65 },
-    { university: 'Karadeniz Teknik Üniversitesi', program: 'Makine Mühendisliği', city: 'Trabzon', field: 'SAY', minScore: 425, minRank: 123946, quota: 70 },
-    { university: 'Gaziantep Üniversitesi', program: 'Makine Mühendisliği', city: 'Gaziantep', field: 'SAY', minScore: 425, minRank: 139545, quota: 65 },
-    { university: 'Pamukkale Üniversitesi', program: 'Makine Mühendisliği', city: 'Denizli', field: 'SAY', minScore: 435, minRank: 135742, quota: 60 },
-
-    // ============================================
-    // İNŞAAT MÜHENDİSLİĞİ
-    // ============================================
-    { university: 'Orta Doğu Teknik Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 510, minRank: 14775, quota: 110 },
-    { university: 'İstanbul Teknik Üniversitesi', program: 'İnşaat Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 495, minRank: 32829, quota: 130 },
-    { university: 'Hacettepe Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 490, minRank: 49375, quota: 85 },
-    { university: 'Erciyes Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Kayseri', field: 'SAY', minScore: 440, minRank: 101553, quota: 70 },
-    { university: 'Kocaeli Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Kocaeli', field: 'SAY', minScore: 450, minRank: 96581, quota: 75 },
-    { university: 'Sakarya Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Sakarya', field: 'SAY', minScore: 445, minRank: 110595, quota: 70 },
-    { university: 'Akdeniz Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Antalya', field: 'SAY', minScore: 440, minRank: 112854, quota: 65 },
-    { university: 'Çukurova Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Adana', field: 'SAY', minScore: 435, minRank: 130680, quota: 60 },
-    { university: 'Fırat Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Elazığ', field: 'SAY', minScore: 415, minRank: 161873, quota: 55 },
-    { university: 'Atatürk Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Erzurum', field: 'SAY', minScore: 410, minRank: 159008, quota: 60 },
-    { university: 'Gaziantep Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Gaziantep', field: 'SAY', minScore: 420, minRank: 124273, quota: 60 },
-    { university: 'Pamukkale Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Denizli', field: 'SAY', minScore: 430, minRank: 135809, quota: 55 },
-    { university: 'Süleyman Demirel Üniversitesi', program: 'İnşaat Mühendisliği', city: 'Isparta', field: 'SAY', minScore: 425, minRank: 141174, quota: 50 },
-
-    // ============================================
-    // ENDÜSTRİ MÜHENDİSLİĞİ
-    // ============================================
-    { university: 'Orta Doğu Teknik Üniversitesi', program: 'Endüstri Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 520, minRank: 3415, quota: 95 },
-    { university: 'İstanbul Teknik Üniversitesi', program: 'Endüstri Mühendisliği', city: 'İstanbul', field: 'SAY', minScore: 505, minRank: 29407, quota: 110 },
-    { university: 'Hacettepe Üniversitesi', program: 'Endüstri Mühendisliği', city: 'Ankara', field: 'SAY', minScore: 500, minRank: 17944, quota: 75 },
-    { university: 'Ege Üniversitesi', program: 'Endüstri Mühendisliği', city: 'İzmir', field: 'SAY', minScore: 475, minRank: 55701, quota: 70 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'Endüstri Mühendisliği', city: 'İzmir', field: 'SAY', minScore: 470, minRank: 61209, quota: 65 },
-    { university: 'Erciyes Üniversitesi', program: 'Endüstri Mühendisliği', city: 'Kayseri', field: 'SAY', minScore: 450, minRank: 92310, quota: 60 },
-    { university: 'Selçuk Üniversitesi', program: 'Endüstri Mühendisliği', city: 'Konya', field: 'SAY', minScore: 445, minRank: 98978, quota: 55 },
-    { university: 'Akdeniz Üniversitesi', program: 'Endüstri Mühendisliği', city: 'Antalya', field: 'SAY', minScore: 450, minRank: 107298, quota: 55 },
-    { university: 'Çukurova Üniversitesi', program: 'Endüstri Mühendisliği', city: 'Adana', field: 'SAY', minScore: 445, minRank: 99588, quota: 50 },
-    { university: 'Gaziantep Üniversitesi', program: 'Endüstri Mühendisliği', city: 'Gaziantep', field: 'SAY', minScore: 440, minRank: 99350, quota: 50 },
-
-    // ============================================
-    // HEMŞİRELİK
-    // ============================================
-    { university: 'Hacettepe Üniversitesi', program: 'Hemşirelik', city: 'Ankara', field: 'SAY', minScore: 480, minRank: 44631, quota: 120 },
-    { university: 'İstanbul Üniversitesi', program: 'Hemşirelik', city: 'İstanbul', field: 'SAY', minScore: 475, minRank: 65705, quota: 130 },
-    { university: 'Ankara Üniversitesi', program: 'Hemşirelik', city: 'Ankara', field: 'SAY', minScore: 470, minRank: 73834, quota: 110 },
-    { university: 'Ege Üniversitesi', program: 'Hemşirelik', city: 'İzmir', field: 'SAY', minScore: 465, minRank: 75005, quota: 100 },
-    { university: 'Marmara Üniversitesi', program: 'Hemşirelik', city: 'İstanbul', field: 'SAY', minScore: 460, minRank: 61447, quota: 95 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'Hemşirelik', city: 'İzmir', field: 'SAY', minScore: 455, minRank: 107038, quota: 90 },
-    { university: 'Gazi Üniversitesi', program: 'Hemşirelik', city: 'Ankara', field: 'SAY', minScore: 450, minRank: 87083, quota: 100 },
-    { university: 'Akdeniz Üniversitesi', program: 'Hemşirelik', city: 'Antalya', field: 'SAY', minScore: 445, minRank: 94550, quota: 85 },
-    { university: 'Erciyes Üniversitesi', program: 'Hemşirelik', city: 'Kayseri', field: 'SAY', minScore: 440, minRank: 98072, quota: 80 },
-    { university: 'Selçuk Üniversitesi', program: 'Hemşirelik', city: 'Konya', field: 'SAY', minScore: 435, minRank: 129441, quota: 75 },
-    { university: 'Çukurova Üniversitesi', program: 'Hemşirelik', city: 'Adana', field: 'SAY', minScore: 430, minRank: 126807, quota: 70 },
-    { university: 'Ondokuz Mayıs Üniversitesi', program: 'Hemşirelik', city: 'Samsun', field: 'SAY', minScore: 425, minRank: 119823, quota: 75 },
-    { university: 'Atatürk Üniversitesi', program: 'Hemşirelik', city: 'Erzurum', field: 'SAY', minScore: 420, minRank: 141238, quota: 70 },
-    { university: 'Karadeniz Teknik Üniversitesi', program: 'Hemşirelik', city: 'Trabzon', field: 'SAY', minScore: 425, minRank: 120378, quota: 75 },
-    { university: 'Fırat Üniversitesi', program: 'Hemşirelik', city: 'Elazığ', field: 'SAY', minScore: 415, minRank: 174394, quota: 65 },
-    { university: 'Dicle Üniversitesi', program: 'Hemşirelik', city: 'Diyarbakır', field: 'SAY', minScore: 410, minRank: 165401, quota: 70 },
-    { university: 'Gaziantep Üniversitesi', program: 'Hemşirelik', city: 'Gaziantep', field: 'SAY', minScore: 420, minRank: 127913, quota: 75 },
-    { university: 'Pamukkale Üniversitesi', program: 'Hemşirelik', city: 'Denizli', field: 'SAY', minScore: 425, minRank: 121115, quota: 70 },
-    { university: 'Kocaeli Üniversitesi', program: 'Hemşirelik', city: 'Kocaeli', field: 'SAY', minScore: 435, minRank: 144403, quota: 80 },
-    { university: 'Sakarya Üniversitesi', program: 'Hemşirelik', city: 'Sakarya', field: 'SAY', minScore: 430, minRank: 123618, quota: 75 },
-    { university: 'Mersin Üniversitesi', program: 'Hemşirelik', city: 'Mersin', field: 'SAY', minScore: 425, minRank: 134411, quota: 70 },
-
-    // ============================================
-    // FİZYOTERAPİ VE REHABİLİTASYON
-    // ============================================
-    { university: 'Hacettepe Üniversitesi', program: 'Fizyoterapi ve Rehabilitasyon', city: 'Ankara', field: 'SAY', minScore: 490, minRank: 35925, quota: 60 },
-    { university: 'İstanbul Üniversitesi', program: 'Fizyoterapi ve Rehabilitasyon', city: 'İstanbul', field: 'SAY', minScore: 485, minRank: 37578, quota: 65 },
-    { university: 'Ankara Üniversitesi', program: 'Fizyoterapi ve Rehabilitasyon', city: 'Ankara', field: 'SAY', minScore: 480, minRank: 41117, quota: 55 },
-    { university: 'Ege Üniversitesi', program: 'Fizyoterapi ve Rehabilitasyon', city: 'İzmir', field: 'SAY', minScore: 475, minRank: 80838, quota: 50 },
-    { university: 'Marmara Üniversitesi', program: 'Fizyoterapi ve Rehabilitasyon', city: 'İstanbul', field: 'SAY', minScore: 470, minRank: 82399, quota: 55 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'Fizyoterapi ve Rehabilitasyon', city: 'İzmir', field: 'SAY', minScore: 465, minRank: 75372, quota: 50 },
-    { university: 'Gazi Üniversitesi', program: 'Fizyoterapi ve Rehabilitasyon', city: 'Ankara', field: 'SAY', minScore: 460, minRank: 64245, quota: 60 },
-    { university: 'Akdeniz Üniversitesi', program: 'Fizyoterapi ve Rehabilitasyon', city: 'Antalya', field: 'SAY', minScore: 455, minRank: 85725, quota: 45 },
-    { university: 'Pamukkale Üniversitesi', program: 'Fizyoterapi ve Rehabilitasyon', city: 'Denizli', field: 'SAY', minScore: 450, minRank: 95614, quota: 50 },
-    { university: 'Erciyes Üniversitesi', program: 'Fizyoterapi ve Rehabilitasyon', city: 'Kayseri', field: 'SAY', minScore: 445, minRank: 102764, quota: 45 },
-    { university: 'Selçuk Üniversitesi', program: 'Fizyoterapi ve Rehabilitasyon', city: 'Konya', field: 'SAY', minScore: 440, minRank: 93236, quota: 40 },
-    { university: 'Çukurova Üniversitesi', program: 'Fizyoterapi ve Rehabilitasyon', city: 'Adana', field: 'SAY', minScore: 435, minRank: 144174, quota: 45 },
-    { university: 'Ondokuz Mayıs Üniversitesi', program: 'Fizyoterapi ve Rehabilitasyon', city: 'Samsun', field: 'SAY', minScore: 430, minRank: 139463, quota: 40 },
-    { university: 'Atatürk Üniversitesi', program: 'Fizyoterapi ve Rehabilitasyon', city: 'Erzurum', field: 'SAY', minScore: 425, minRank: 144813, quota: 40 },
-    { university: 'Karadeniz Teknik Üniversitesi', program: 'Fizyoterapi ve Rehabilitasyon', city: 'Trabzon', field: 'SAY', minScore: 430, minRank: 115349, quota: 45 },
-
-    // ============================================
-    // MATEMATİK ÖĞRETMENLİĞİ
-    // ============================================
-    { university: 'Hacettepe Üniversitesi', program: 'İlköğretim Matematik Öğretmenliği', city: 'Ankara', field: 'SAY', minScore: 470, minRank: 65930, quota: 80 },
-    { university: 'Gazi Üniversitesi', program: 'İlköğretim Matematik Öğretmenliği', city: 'Ankara', field: 'SAY', minScore: 465, minRank: 67002, quota: 90 },
-    { university: 'Marmara Üniversitesi', program: 'İlköğretim Matematik Öğretmenliği', city: 'İstanbul', field: 'SAY', minScore: 460, minRank: 59664, quota: 85 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'İlköğretim Matematik Öğretmenliği', city: 'İzmir', field: 'SAY', minScore: 455, minRank: 109614, quota: 75 },
-    { university: 'Ege Üniversitesi', program: 'İlköğretim Matematik Öğretmenliği', city: 'İzmir', field: 'SAY', minScore: 450, minRank: 98409, quota: 70 },
-    { university: 'Ankara Üniversitesi', program: 'İlköğretim Matematik Öğretmenliği', city: 'Ankara', field: 'SAY', minScore: 455, minRank: 111791, quota: 75 },
-    { university: 'Erciyes Üniversitesi', program: 'İlköğretim Matematik Öğretmenliği', city: 'Kayseri', field: 'SAY', minScore: 440, minRank: 104501, quota: 65 },
-    { university: 'Selçuk Üniversitesi', program: 'İlköğretim Matematik Öğretmenliği', city: 'Konya', field: 'SAY', minScore: 435, minRank: 142390, quota: 70 },
-    { university: 'Akdeniz Üniversitesi', program: 'İlköğretim Matematik Öğretmenliği', city: 'Antalya', field: 'SAY', minScore: 445, minRank: 101555, quota: 65 },
-    { university: 'Çukurova Üniversitesi', program: 'İlköğretim Matematik Öğretmenliği', city: 'Adana', field: 'SAY', minScore: 430, minRank: 120196, quota: 60 },
-    { university: 'Ondokuz Mayıs Üniversitesi', program: 'İlköğretim Matematik Öğretmenliği', city: 'Samsun', field: 'SAY', minScore: 425, minRank: 127884, quota: 65 },
-    { university: 'Atatürk Üniversitesi', program: 'İlköğretim Matematik Öğretmenliği', city: 'Erzurum', field: 'SAY', minScore: 420, minRank: 127245, quota: 60 },
-    { university: 'Karadeniz Teknik Üniversitesi', program: 'İlköğretim Matematik Öğretmenliği', city: 'Trabzon', field: 'SAY', minScore: 425, minRank: 132919, quota: 65 },
-    { university: 'Fırat Üniversitesi', program: 'İlköğretim Matematik Öğretmenliği', city: 'Elazığ', field: 'SAY', minScore: 415, minRank: 157227, quota: 55 },
-    { university: 'Gaziantep Üniversitesi', program: 'İlköğretim Matematik Öğretmenliği', city: 'Gaziantep', field: 'SAY', minScore: 420, minRank: 138336, quota: 60 },
-
-    // ============================================
-    // FEN BİLGİSİ ÖĞRETMENLİĞİ
-    // ============================================
-    { university: 'Hacettepe Üniversitesi', program: 'Fen Bilgisi Öğretmenliği', city: 'Ankara', field: 'SAY', minScore: 465, minRank: 73166, quota: 75 },
-    { university: 'Gazi Üniversitesi', program: 'Fen Bilgisi Öğretmenliği', city: 'Ankara', field: 'SAY', minScore: 460, minRank: 79326, quota: 85 },
-    { university: 'Marmara Üniversitesi', program: 'Fen Bilgisi Öğretmenliği', city: 'İstanbul', field: 'SAY', minScore: 455, minRank: 111347, quota: 80 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'Fen Bilgisi Öğretmenliği', city: 'İzmir', field: 'SAY', minScore: 450, minRank: 110971, quota: 70 },
-    { university: 'Ege Üniversitesi', program: 'Fen Bilgisi Öğretmenliği', city: 'İzmir', field: 'SAY', minScore: 445, minRank: 111503, quota: 65 },
-    { university: 'Ankara Üniversitesi', program: 'Fen Bilgisi Öğretmenliği', city: 'Ankara', field: 'SAY', minScore: 450, minRank: 111096, quota: 70 },
-    { university: 'Erciyes Üniversitesi', program: 'Fen Bilgisi Öğretmenliği', city: 'Kayseri', field: 'SAY', minScore: 435, minRank: 136643, quota: 60 },
-    { university: 'Selçuk Üniversitesi', program: 'Fen Bilgisi Öğretmenliği', city: 'Konya', field: 'SAY', minScore: 430, minRank: 144944, quota: 65 },
-    { university: 'Akdeniz Üniversitesi', program: 'Fen Bilgisi Öğretmenliği', city: 'Antalya', field: 'SAY', minScore: 440, minRank: 91986, quota: 60 },
-    { university: 'Çukurova Üniversitesi', program: 'Fen Bilgisi Öğretmenliği', city: 'Adana', field: 'SAY', minScore: 425, minRank: 128523, quota: 55 },
-    { university: 'Ondokuz Mayıs Üniversitesi', program: 'Fen Bilgisi Öğretmenliği', city: 'Samsun', field: 'SAY', minScore: 420, minRank: 131841, quota: 60 },
-    { university: 'Atatürk Üniversitesi', program: 'Fen Bilgisi Öğretmenliği', city: 'Erzurum', field: 'SAY', minScore: 415, minRank: 146042, quota: 55 },
-    { university: 'Karadeniz Teknik Üniversitesi', program: 'Fen Bilgisi Öğretmenliği', city: 'Trabzon', field: 'SAY', minScore: 420, minRank: 120189, quota: 60 },
-    { university: 'Fırat Üniversitesi', program: 'Fen Bilgisi Öğretmenliği', city: 'Elazığ', field: 'SAY', minScore: 410, minRank: 172748, quota: 50 },
-    { university: 'Gaziantep Üniversitesi', program: 'Fen Bilgisi Öğretmenliği', city: 'Gaziantep', field: 'SAY', minScore: 415, minRank: 157079, quota: 55 },
-
-    // ============================================
-    // PSİKOLOJİ
-    // ============================================
-    { university: 'Boğaziçi Üniversitesi', program: 'Psikoloji', city: 'İstanbul', field: 'EA', minScore: 510, minRank: 26224, quota: 60 },
-    { university: 'Orta Doğu Teknik Üniversitesi', program: 'Psikoloji', city: 'Ankara', field: 'EA', minScore: 505, minRank: 24425, quota: 75 },
-    { university: 'Hacettepe Üniversitesi', program: 'Psikoloji', city: 'Ankara', field: 'EA', minScore: 500, minRank: 12659, quota: 70 },
-    { university: 'İstanbul Üniversitesi', program: 'Psikoloji', city: 'İstanbul', field: 'EA', minScore: 495, minRank: 45252, quota: 80 },
-    { university: 'Ankara Üniversitesi', program: 'Psikoloji', city: 'Ankara', field: 'EA', minScore: 490, minRank: 52596, quota: 75 },
-    { university: 'Ege Üniversitesi', program: 'Psikoloji', city: 'İzmir', field: 'EA', minScore: 485, minRank: 52044, quota: 70 },
-    { university: 'Marmara Üniversitesi', program: 'Psikoloji', city: 'İstanbul', field: 'EA', minScore: 480, minRank: 41367, quota: 75 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'Psikoloji', city: 'İzmir', field: 'EA', minScore: 475, minRank: 60950, quota: 65 },
-    { university: 'Gazi Üniversitesi', program: 'Psikoloji', city: 'Ankara', field: 'EA', minScore: 470, minRank: 66264, quota: 70 },
-    { university: 'Akdeniz Üniversitesi', program: 'Psikoloji', city: 'Antalya', field: 'EA', minScore: 465, minRank: 57345, quota: 60 },
-    { university: 'Erciyes Üniversitesi', program: 'Psikoloji', city: 'Kayseri', field: 'EA', minScore: 460, minRank: 61628, quota: 55 },
-    { university: 'Selçuk Üniversitesi', program: 'Psikoloji', city: 'Konya', field: 'EA', minScore: 455, minRank: 86519, quota: 60 },
-    { university: 'Çukurova Üniversitesi', program: 'Psikoloji', city: 'Adana', field: 'EA', minScore: 450, minRank: 112267, quota: 55 },
-    { university: 'Ondokuz Mayıs Üniversitesi', program: 'Psikoloji', city: 'Samsun', field: 'EA', minScore: 445, minRank: 90445, quota: 50 },
-    { university: 'Atatürk Üniversitesi', program: 'Psikoloji', city: 'Erzurum', field: 'EA', minScore: 440, minRank: 98785, quota: 50 },
-
-    // ============================================
-    // SOSYOLOJİ
-    // ============================================
-    { university: 'Orta Doğu Teknik Üniversitesi', program: 'Sosyoloji', city: 'Ankara', field: 'SOZ', minScore: 485, minRank: 34668, quota: 60 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'Sosyoloji', city: 'İzmir', field: 'SOZ', minScore: 455, minRank: 109762, quota: 50 },
-    { university: 'Gazi Üniversitesi', program: 'Sosyoloji', city: 'Ankara', field: 'SOZ', minScore: 450, minRank: 103763, quota: 55 },
-    { university: 'Akdeniz Üniversitesi', program: 'Sosyoloji', city: 'Antalya', field: 'SOZ', minScore: 445, minRank: 98619, quota: 45 },
-    { university: 'Erciyes Üniversitesi', program: 'Sosyoloji', city: 'Kayseri', field: 'SOZ', minScore: 440, minRank: 97308, quota: 50 },
-    { university: 'Selçuk Üniversitesi', program: 'Sosyoloji', city: 'Konya', field: 'SOZ', minScore: 435, minRank: 129495, quota: 45 },
-    { university: 'Çukurova Üniversitesi', program: 'Sosyoloji', city: 'Adana', field: 'SOZ', minScore: 430, minRank: 122692, quota: 40 },
-    { university: 'Ondokuz Mayıs Üniversitesi', program: 'Sosyoloji', city: 'Samsun', field: 'SOZ', minScore: 425, minRank: 135113, quota: 45 },
-    { university: 'Atatürk Üniversitesi', program: 'Sosyoloji', city: 'Erzurum', field: 'SOZ', minScore: 420, minRank: 128781, quota: 40 },
-
-    // ============================================
-    // İNGİLİZCE ÖĞRETMENLİĞİ
-    // ============================================
-    { university: 'Boğaziçi Üniversitesi', program: 'İngilizce Öğretmenliği', city: 'İstanbul', field: 'DIL', minScore: 490, minRank: 37247, quota: 50 },
-    { university: 'Hacettepe Üniversitesi', program: 'İngilizce Öğretmenliği', city: 'Ankara', field: 'DIL', minScore: 485, minRank: 53694, quota: 60 },
-    { university: 'Orta Doğu Teknik Üniversitesi', program: 'İngilizce Öğretmenliği', city: 'Ankara', field: 'DIL', minScore: 480, minRank: 41855, quota: 55 },
-    { university: 'Gazi Üniversitesi', program: 'İngilizce Öğretmenliği', city: 'Ankara', field: 'DIL', minScore: 475, minRank: 58780, quota: 70 },
-    { university: 'Marmara Üniversitesi', program: 'İngilizce Öğretmenliği', city: 'İstanbul', field: 'DIL', minScore: 470, minRank: 63605, quota: 65 },
-    { university: 'Ankara Üniversitesi', program: 'İngilizce Öğretmenliği', city: 'Ankara', field: 'DIL', minScore: 465, minRank: 56994, quota: 60 },
-    { university: 'Dokuz Eylül Üniversitesi', program: 'İngilizce Öğretmenliği', city: 'İzmir', field: 'DIL', minScore: 460, minRank: 68651, quota: 55 },
-    { university: 'Ege Üniversitesi', program: 'İngilizce Öğretmenliği', city: 'İzmir', field: 'DIL', minScore: 455, minRank: 105016, quota: 50 },
-    { university: 'Akdeniz Üniversitesi', program: 'İngilizce Öğretmenliği', city: 'Antalya', field: 'DIL', minScore: 450, minRank: 94085, quota: 55 },
-    { university: 'Erciyes Üniversitesi', program: 'İngilizce Öğretmenliği', city: 'Kayseri', field: 'DIL', minScore: 445, minRank: 106228, quota: 50 },
-    { university: 'Selçuk Üniversitesi', program: 'İngilizce Öğretmenliği', city: 'Konya', field: 'DIL', minScore: 440, minRank: 102704, quota: 55 },
-    { university: 'Çukurova Üniversitesi', program: 'İngilizce Öğretmenliği', city: 'Adana', field: 'DIL', minScore: 435, minRank: 144606, quota: 50 },
-    { university: 'Ondokuz Mayıs Üniversitesi', program: 'İngilizce Öğretmenliği', city: 'Samsun', field: 'DIL', minScore: 430, minRank: 117188, quota: 45 },
-    { university: 'Atatürk Üniversitesi', program: 'İngilizce Öğretmenliği', city: 'Erzurum', field: 'DIL', minScore: 425, minRank: 123412, quota: 50 },
-    { university: 'Karadeniz Teknik Üniversitesi', program: 'İngilizce Öğretmenliği', city: 'Trabzon', field: 'DIL', minScore: 430, minRank: 137025, quota: 45 },
+  {
+    "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 551.13,
+    "minRank": 38,
+    "quota": 10
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 550.89,
+    "minRank": 43,
+    "quota": 6
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 547.69,
+    "minRank": 113,
+    "quota": 18
+  },
+  {
+    "university": "ACIBADEM MEHMET ALİ AYDINLAR ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 545.27,
+    "minRank": 210,
+    "quota": 6
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Elektrik-Elektronik Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 544.03,
+    "minRank": 281,
+    "quota": 15
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 543.7,
+    "minRank": 299,
+    "quota": 42
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Elektrik-Elektronik Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 542.69,
+    "minRank": 373,
+    "quota": 42
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Endüstri Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 538.55,
+    "minRank": 708,
+    "quota": 17
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Fizik",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 537.68,
+    "minRank": 809,
+    "quota": 7
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Matematik",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 535.06,
+    "minRank": 1137,
+    "quota": 6
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 534.82,
+    "minRank": 1169,
+    "quota": 175
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 534.57,
+    "minRank": 1204,
+    "quota": 110
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Makine Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 534.45,
+    "minRank": 1226,
+    "quota": 12
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 533.47,
+    "minRank": 1391,
+    "quota": 65
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 533.14,
+    "minRank": 1435,
+    "quota": 105
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 533.05,
+    "minRank": 1448,
+    "quota": 80
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Elektrik-Elektronik Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 532.88,
+    "minRank": 1484,
+    "quota": 150
+  },
+  {
+    "university": "ÖZYEĞİN ÜNİVERSİTESİ",
+    "program": "Pilotaj",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 531.76,
+    "minRank": 1657,
+    "quota": 7
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Yapay Zeka ve Veri Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 529.88,
+    "minRank": 1947,
+    "quota": 30
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Elektrik-Elektronik Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 529.6,
+    "minRank": 1993,
+    "quota": 75
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Moleküler Biyoloji ve Genetik",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 529.37,
+    "minRank": 2045,
+    "quota": 6
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Kimya-Biyoloji Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 529.36,
+    "minRank": 2047,
+    "quota": 5
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Endüstri Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 529.35,
+    "minRank": 2050,
+    "quota": 50
+  },
+  {
+    "university": "ESKİŞEHİR TEKNİK ÜNİVERSİTESİ",
+    "program": "Pilotaj",
+    "city": "Eski̇şehi̇r",
+    "field": "SAY",
+    "minScore": 529.12,
+    "minRank": 2090,
+    "quota": 5
+  },
+  {
+    "university": "SABANCI ÜNİVERSİTESİ",
+    "program": "Mühendislik ve Doğa Bilimleri Programları",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 529.12,
+    "minRank": 2093,
+    "quota": 81
+  },
+  {
+    "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 529.04,
+    "minRank": 2106,
+    "quota": 7
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Elektronik ve Haberleşme Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 528.92,
+    "minRank": 2126,
+    "quota": 50
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Endüstri Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 528.59,
+    "minRank": 2189,
+    "quota": 42
+  },
+  {
+    "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 528.36,
+    "minRank": 2225,
+    "quota": 13
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Uçak Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 528.31,
+    "minRank": 2235,
+    "quota": 50
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Makine Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 527.65,
+    "minRank": 2358,
+    "quota": 26
+  },
+  {
+    "university": "TÜRK HAVA KURUMU ÜNİVERSİTESİ",
+    "program": "Pilotaj",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 527.54,
+    "minRank": 2387,
+    "quota": 2
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Havacılık ve Uzay Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 527.45,
+    "minRank": 2406,
+    "quota": 70
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Ekonomi",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 527.4,
+    "minRank": 69,
+    "quota": 19
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 526.79,
+    "minRank": 2548,
+    "quota": 11
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 526.7,
+    "minRank": 2562,
+    "quota": 65
+  },
+  {
+    "university": "ÖZYEĞİN ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 526.43,
+    "minRank": 2615,
+    "quota": 10
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Endüstri Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 525.78,
+    "minRank": 2741,
+    "quota": 55
+  },
+  {
+    "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
+    "program": "Elektrik-Elektronik Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 525.57,
+    "minRank": 2772,
+    "quota": 13
+  },
+  {
+    "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
+    "program": "Pilotaj",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 525.14,
+    "minRank": 2876,
+    "quota": 5
+  },
+  {
+    "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
+    "program": "Pilotaj",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 523.84,
+    "minRank": 3146,
+    "quota": 2
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Makine Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 523.3,
+    "minRank": 3264,
+    "quota": 120
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 522.49,
+    "minRank": 3456,
+    "quota": 65
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Fizik",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 522.39,
+    "minRank": 3490,
+    "quota": 19
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Matematik Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 522.36,
+    "minRank": 3495,
+    "quota": 40
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Makine Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 521.95,
+    "minRank": 3596,
+    "quota": 65
+  },
+  {
+    "university": "KTO KARATAY ÜNİVERSİTESİ",
+    "program": "Pilotaj",
+    "city": "Konya",
+    "field": "SAY",
+    "minScore": 521.56,
+    "minRank": 3704,
+    "quota": 5
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Endüstri Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 521.49,
+    "minRank": 3730,
+    "quota": 50
+  },
+  {
+    "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
+    "program": "Yapay Zeka Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 521.22,
+    "minRank": 3795,
+    "quota": 9
+  },
+  {
+    "university": "ATILIM ÜNİVERSİTESİ",
+    "program": "Pilotaj",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 520.9,
+    "minRank": 3862,
+    "quota": 3
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Uzay Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 520.37,
+    "minRank": 3988,
+    "quota": 50
+  },
+  {
+    "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
+    "program": "Makine Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 520.06,
+    "minRank": 4068,
+    "quota": 10
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Siber Güvenlik Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 518.51,
+    "minRank": 4492,
+    "quota": 30
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 517.8,
+    "minRank": 165,
+    "quota": 23
+  },
+  {
+    "university": "GAZİ ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 517.64,
+    "minRank": 4766,
+    "quota": 300
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Bilişim Sistemleri ve Teknolojileri",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 517.61,
+    "minRank": 4773,
+    "quota": 12
+  },
+  {
+    "university": "ÖZYEĞİN ÜNİVERSİTESİ",
+    "program": "Yapay Zeka ve Veri Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 517.59,
+    "minRank": 4778,
+    "quota": 6
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İzmi̇r",
+    "field": "SAY",
+    "minScore": 516.36,
+    "minRank": 5118,
+    "quota": 320
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Kimya",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 515.29,
+    "minRank": 5442,
+    "quota": 8
+  },
+  {
+    "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
+    "program": "Endüstri Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 515.26,
+    "minRank": 5452,
+    "quota": 10
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Matematik",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 514.15,
+    "minRank": 5805,
+    "quota": 19
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "İşletme Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 514.08,
+    "minRank": 5821,
+    "quota": 65
+  },
+  {
+    "university": "BAŞKENT ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 513.72,
+    "minRank": 5916,
+    "quota": 13
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 513.7,
+    "minRank": 5923,
+    "quota": 120
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 513.12,
+    "minRank": 6086,
+    "quota": 220
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Makine Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 513.03,
+    "minRank": 6106,
+    "quota": 150
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Elektrik Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 512.97,
+    "minRank": 6124,
+    "quota": 40
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Elektrik-Elektronik Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 512.92,
+    "minRank": 6141,
+    "quota": 85
+  },
+  {
+    "university": "İSTANBUL NİŞANTAŞI ÜNİVERSİTESİ",
+    "program": "Pilotaj",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 512.77,
+    "minRank": 6191,
+    "quota": 6
+  },
+  {
+    "university": "BEZM-İ ÂLEM VAKIF ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 512.65,
+    "minRank": 6232,
+    "quota": 17
+  },
+  {
+    "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 511.82,
+    "minRank": 6494,
+    "quota": 195
+  },
+  {
+    "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
+    "program": "Pilotaj",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 511.54,
+    "minRank": 6589,
+    "quota": 9
+  },
+  {
+    "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 511.46,
+    "minRank": 6620,
+    "quota": 11
+  },
+  {
+    "university": "ÖZYEĞİN ÜNİVERSİTESİ",
+    "program": "Elektrik-Elektronik Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 511.12,
+    "minRank": 6715,
+    "quota": 11
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 510.78,
+    "minRank": 253,
+    "quota": 21
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Metalurji ve Malzeme Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 510.26,
+    "minRank": 7000,
+    "quota": 60
+  },
+  {
+    "university": "İSTİNYE ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 510.2,
+    "minRank": 7019,
+    "quota": 9
+  },
+  {
+    "university": "GALATASARAY ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 509.93,
+    "minRank": 7113,
+    "quota": 30
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Moleküler Biyoloji ve Genetik",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 509.8,
+    "minRank": 7158,
+    "quota": 11
+  },
+  {
+    "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 509.2,
+    "minRank": 7346,
+    "quota": 90
+  },
+  {
+    "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 509.09,
+    "minRank": 7395,
+    "quota": 100
+  },
+  {
+    "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İzmi̇r",
+    "field": "SAY",
+    "minScore": 508.97,
+    "minRank": 7447,
+    "quota": 280
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Veri Bilimi ve Analitiği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 508.72,
+    "minRank": 7542,
+    "quota": 30
+  },
+  {
+    "university": "SABANCI ÜNİVERSİTESİ",
+    "program": "Yönetim Bilimleri Programları",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 508.29,
+    "minRank": 290,
+    "quota": 27
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Kimya Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 507.94,
+    "minRank": 7818,
+    "quota": 50
+  },
+  {
+    "university": "GALATASARAY ÜNİVERSİTESİ",
+    "program": "Endüstri Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 507.59,
+    "minRank": 7934,
+    "quota": 35
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 507.5,
+    "minRank": 7972,
+    "quota": 8
+  },
+  {
+    "university": "LOKMAN HEKİM ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 507.49,
+    "minRank": 7975,
+    "quota": 8
+  },
+  {
+    "university": "AKDENİZ ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Antalya",
+    "field": "SAY",
+    "minScore": 507.48,
+    "minRank": 7981,
+    "quota": 310
+  },
+  {
+    "university": "ANKARA MEDİPOL ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 506.61,
+    "minRank": 8321,
+    "quota": 12
+  },
+  {
+    "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
+    "program": "Yapay Zeka ve Veri Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 506.34,
+    "minRank": 8423,
+    "quota": 35
+  },
+  {
+    "university": "ÖZYEĞİN ÜNİVERSİTESİ",
+    "program": "Endüstri Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 506.26,
+    "minRank": 8463,
+    "quota": 14
+  },
+  {
+    "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
+    "program": "Malzeme Bilimi ve Nanoteknoloji Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 505.62,
+    "minRank": 8704,
+    "quota": 6
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Yapay Zeka Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 505.29,
+    "minRank": 8836,
+    "quota": 45
+  },
+  {
+    "university": "UFUK ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 505.27,
+    "minRank": 8842,
+    "quota": 7
+  },
+  {
+    "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Eski̇şehi̇r",
+    "field": "SAY",
+    "minScore": 505.24,
+    "minRank": 8855,
+    "quota": 260
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Kimya Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 505.07,
+    "minRank": 8924,
+    "quota": 60
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 504.02,
+    "minRank": 376,
+    "quota": 20
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "İktisat",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 503.6,
+    "minRank": 387,
+    "quota": 17
+  },
+  {
+    "university": "ÇUKUROVA ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Adana",
+    "field": "SAY",
+    "minScore": 503.36,
+    "minRank": 9624,
+    "quota": 210
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Uluslararası İlişkiler",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 503.21,
+    "minRank": 398,
+    "quota": 13
+  },
+  {
+    "university": "İSTANBUL MEDENİYET ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 502.98,
+    "minRank": 9787,
+    "quota": 198
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "İstatistik",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 502.97,
+    "minRank": 9793,
+    "quota": 40
+  },
+  {
+    "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Bursa",
+    "field": "SAY",
+    "minScore": 502.94,
+    "minRank": 9803,
+    "quota": 230
+  },
+  {
+    "university": "TÜRK HAVA KURUMU ÜNİVERSİTESİ",
+    "program": "Uçak Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 502.5,
+    "minRank": 9999,
+    "quota": 7
+  },
+  {
+    "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
+    "program": "Matematik Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 502.16,
+    "minRank": 10143,
+    "quota": 75
+  },
+  {
+    "university": "GALATASARAY ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 502.13,
+    "minRank": 426,
+    "quota": 35
+  },
+  {
+    "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Samsun",
+    "field": "SAY",
+    "minScore": 502.01,
+    "minRank": 10218,
+    "quota": 170
+  },
+  {
+    "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
+    "program": "Endüstri Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 501.91,
+    "minRank": 10264,
+    "quota": 55
+  },
+  {
+    "university": "ÖZYEĞİN ÜNİVERSİTESİ",
+    "program": "Makine Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 501.87,
+    "minRank": 10287,
+    "quota": 10
+  },
+  {
+    "university": "SABANCI ÜNİVERSİTESİ",
+    "program": "Sanat ve Sosyal Bilimler Programları",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 501.85,
+    "minRank": 430,
+    "quota": 27
+  },
+  {
+    "university": "YÜKSEK İHTİSAS ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 501.69,
+    "minRank": 10350,
+    "quota": 13
+  },
+  {
+    "university": "ANTALYA BİLİM ÜNİVERSİTESİ",
+    "program": "Pilotaj",
+    "city": "Antalya",
+    "field": "SAY",
+    "minScore": 501.64,
+    "minRank": 10365,
+    "quota": 3
+  },
+  {
+    "university": "ATILIM ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 501.53,
+    "minRank": 10409,
+    "quota": 8
+  },
+  {
+    "university": "BİRUNİ ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 500.16,
+    "minRank": 10981,
+    "quota": 13
+  },
+  {
+    "university": "MALTEPE ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 499.51,
+    "minRank": 11280,
+    "quota": 3
+  },
+  {
+    "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İzmi̇r",
+    "field": "SAY",
+    "minScore": 499.2,
+    "minRank": 11420,
+    "quota": 215
+  },
+  {
+    "university": "SELÇUK ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Konya",
+    "field": "SAY",
+    "minScore": 498.92,
+    "minRank": 11536,
+    "quota": 230
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Metalurji ve Malzeme Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 498.73,
+    "minRank": 11623,
+    "quota": 45
+  },
+  {
+    "university": "ÜSKÜDAR ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 498.42,
+    "minRank": 11775,
+    "quota": 8
+  },
+  {
+    "university": "KOCAELİ ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Kocaeli̇",
+    "field": "SAY",
+    "minScore": 497.91,
+    "minRank": 12009,
+    "quota": 260
+  },
+  {
+    "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 497.78,
+    "minRank": 12073,
+    "quota": 55
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 497.61,
+    "minRank": 522,
+    "quota": 10
+  },
+  {
+    "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
+    "program": "Elektronik ve Haberleşme Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 497.39,
+    "minRank": 12260,
+    "quota": 100
+  },
+  {
+    "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 497.34,
+    "minRank": 12288,
+    "quota": 15
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 497.1,
+    "minRank": 12408,
+    "quota": 14
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Matematik",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 497.01,
+    "minRank": 12452,
+    "quota": 50
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Kimya Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 496.82,
+    "minRank": 12541,
+    "quota": 50
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Çeviribilimi",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 496.55,
+    "minRank": 1220,
+    "quota": 40
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 495.95,
+    "minRank": 12980,
+    "quota": 20
+  },
+  {
+    "university": "ERCİYES ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Kayseri̇",
+    "field": "SAY",
+    "minScore": 495.94,
+    "minRank": 12983,
+    "quota": 280
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Gemi İnşaatı ve Gemi Makineleri Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 495.88,
+    "minRank": 13012,
+    "quota": 40
+  },
+  {
+    "university": "MERSİN ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Mersi̇n",
+    "field": "SAY",
+    "minScore": 495.82,
+    "minRank": 13043,
+    "quota": 230
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 495.76,
+    "minRank": 578,
+    "quota": 80
+  },
+  {
+    "university": "PAMUKKALE ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Deni̇zli̇",
+    "field": "SAY",
+    "minScore": 495.2,
+    "minRank": 13350,
+    "quota": 250
+  },
+  {
+    "university": "ÇANAKKALE ONSEKİZ MART ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Çanakkale",
+    "field": "SAY",
+    "minScore": 494.95,
+    "minRank": 13467,
+    "quota": 180
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "İktisat",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 494.65,
+    "minRank": 598,
+    "quota": 90
+  },
+  {
+    "university": "İSTANBUL ATLAS ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 494.23,
+    "minRank": 13830,
+    "quota": 10
+  },
+  {
+    "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 494.12,
+    "minRank": 616,
+    "quota": 14
+  },
+  {
+    "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
+    "program": "Kontrol ve Otomasyon Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 493.86,
+    "minRank": 14037,
+    "quota": 55
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 493.82,
+    "minRank": 624,
+    "quota": 13
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Makine Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 493.68,
+    "minRank": 14114,
+    "quota": 75
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Sosyoloji",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 493.61,
+    "minRank": 631,
+    "quota": 4
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Endüstri Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 493.44,
+    "minRank": 14236,
+    "quota": 75
+  },
+  {
+    "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 493.17,
+    "minRank": 14380,
+    "quota": 10
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 492.63,
+    "minRank": 657,
+    "quota": 23
+  },
+  {
+    "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
+    "program": "Elektrik-Elektronik Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 492.62,
+    "minRank": 14694,
+    "quota": 50
+  },
+  {
+    "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 492.08,
+    "minRank": 14967,
+    "quota": 15
+  },
+  {
+    "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
+    "program": "Uçak Mühendisliği",
+    "city": "Kocaeli̇",
+    "field": "SAY",
+    "minScore": 490.99,
+    "minRank": 15576,
+    "quota": 65
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Fizik",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 490.66,
+    "minRank": 15756,
+    "quota": 80
+  },
+  {
+    "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "İzmi̇r",
+    "field": "SAY",
+    "minScore": 490.61,
+    "minRank": 15791,
+    "quota": 95
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Mimarlık",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 490.55,
+    "minRank": 15834,
+    "quota": 9
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 490.45,
+    "minRank": 15895,
+    "quota": 90
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 489.63,
+    "minRank": 1636,
+    "quota": 40
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Dilbilimi",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 489.52,
+    "minRank": 1646,
+    "quota": 40
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 488.77,
+    "minRank": 788,
+    "quota": 50
+  },
+  {
+    "university": "İZMİR TINAZTEPE ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İzmi̇r",
+    "field": "SAY",
+    "minScore": 488.26,
+    "minRank": 17128,
+    "quota": 10
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "İnşaat Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 487.92,
+    "minRank": 17323,
+    "quota": 50
+  },
+  {
+    "university": "DEMİROĞLU BİLİM ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 486.68,
+    "minRank": 18101,
+    "quota": 11
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 486.37,
+    "minRank": 18272,
+    "quota": 85
+  },
+  {
+    "university": "ÖZYEĞİN ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 485.72,
+    "minRank": 898,
+    "quota": 7
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Fizik",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 485.49,
+    "minRank": 18856,
+    "quota": 50
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Uluslararası Ticaret",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 485.02,
+    "minRank": 945,
+    "quota": 30
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 484.94,
+    "minRank": 19192,
+    "quota": 80
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Endüstri Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 484.91,
+    "minRank": 19211,
+    "quota": 15
+  },
+  {
+    "university": "ÖZYEĞİN ÜNİVERSİTESİ",
+    "program": "Ekonomi",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 484.39,
+    "minRank": 964,
+    "quota": 9
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 484.34,
+    "minRank": 2042,
+    "quota": 40
+  },
+  {
+    "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
+    "program": "Endüstri Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 484.16,
+    "minRank": 19704,
+    "quota": 55
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Moleküler Biyoloji ve Genetik",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 483.77,
+    "minRank": 19937,
+    "quota": 40
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Uluslararası İlişkiler",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 481.65,
+    "minRank": 1050,
+    "quota": 18
+  },
+  {
+    "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
+    "program": "İktisat",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 481.64,
+    "minRank": 1051,
+    "quota": 7
+  },
+  {
+    "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 481.53,
+    "minRank": 1056,
+    "quota": 7
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Moleküler Biyoloji ve Genetik",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 481.03,
+    "minRank": 21622,
+    "quota": 50
+  },
+  {
+    "university": "ÖZYEĞİN ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 480.03,
+    "minRank": 1115,
+    "quota": 11
+  },
+  {
+    "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "Kocaeli̇",
+    "field": "SAY",
+    "minScore": 480,
+    "minRank": 22294,
+    "quota": 95
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 479.73,
+    "minRank": 2426,
+    "quota": 50
+  },
+  {
+    "university": "ÖZYEĞİN ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 478.66,
+    "minRank": 1181,
+    "quota": 13
+  },
+  {
+    "university": "GALATASARAY ÜNİVERSİTESİ",
+    "program": "Fransız Dili ve Edebiyatı",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 478.45,
+    "minRank": 2565,
+    "quota": 35
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 477.56,
+    "minRank": 2659,
+    "quota": 60
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Felsefe",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 477.25,
+    "minRank": 1234,
+    "quota": 6
+  },
+  {
+    "university": "GALATASARAY ÜNİVERSİTESİ",
+    "program": "İktisat",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 476.31,
+    "minRank": 1282,
+    "quota": 30
+  },
+  {
+    "university": "GALATASARAY ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 475.83,
+    "minRank": 1303,
+    "quota": 30
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 475.32,
+    "minRank": 1337,
+    "quota": 60
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 474.76,
+    "minRank": 1367,
+    "quota": 60
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 474.67,
+    "minRank": 2968,
+    "quota": 40
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "İktisat",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 474.43,
+    "minRank": 1380,
+    "quota": 80
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Siyaset Bilimi ve Uluslararası İlişkiler",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 474.17,
+    "minRank": 1397,
+    "quota": 80
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Ekonomi",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 471.36,
+    "minRank": 1550,
+    "quota": 35
+  },
+  {
+    "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
+    "program": "Yapay Zeka Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 470.97,
+    "minRank": 28682,
+    "quota": 8
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 470.82,
+    "minRank": 3410,
+    "quota": 60
+  },
+  {
+    "university": "ÖZYEĞİN ÜNİVERSİTESİ",
+    "program": "Uluslararası Ticaret ve İşletmecilik",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 470.22,
+    "minRank": 1618,
+    "quota": 14
+  },
+  {
+    "university": "TED ÜNİVERSİTESİ",
+    "program": "Yazılım Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 470.07,
+    "minRank": 29359,
+    "quota": 5
+  },
+  {
+    "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
+    "program": "Uluslararası Girişimcilik",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 469.9,
+    "minRank": 1632,
+    "quota": 3
+  },
+  {
+    "university": "ÖZYEĞİN ÜNİVERSİTESİ",
+    "program": "Uluslararası Finans",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 469.54,
+    "minRank": 1655,
+    "quota": 6
+  },
+  {
+    "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "İzmi̇r",
+    "field": "SAY",
+    "minScore": 469.47,
+    "minRank": 29827,
+    "quota": 11
+  },
+  {
+    "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 469.39,
+    "minRank": 29897,
+    "quota": 10
+  },
+  {
+    "university": "GALATASARAY ÜNİVERSİTESİ",
+    "program": "Uluslararası İlişkiler",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 468.98,
+    "minRank": 1688,
+    "quota": 30
+  },
+  {
+    "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 468.29,
+    "minRank": 3742,
+    "quota": 40
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 467.16,
+    "minRank": 1832,
+    "quota": 40
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Siyaset Bilimi ve Kamu Yönetimi",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 466.72,
+    "minRank": 1852,
+    "quota": 18
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 466.3,
+    "minRank": 1873,
+    "quota": 10
+  },
+  {
+    "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
+    "program": "Yazılım Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 465.57,
+    "minRank": 32862,
+    "quota": 14
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Uluslararası İlişkiler",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 465.1,
+    "minRank": 1969,
+    "quota": 65
+  },
+  {
+    "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
+    "program": "Siyaset Bilimi ve Uluslararası İlişkiler",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 464.73,
+    "minRank": 1996,
+    "quota": 7
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 464.54,
+    "minRank": 4210,
+    "quota": 60
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 464.28,
+    "minRank": 2041,
+    "quota": 14
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Ekonomi",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 464.24,
+    "minRank": 2046,
+    "quota": 7
+  },
+  {
+    "university": "ÖZYEĞİN ÜNİVERSİTESİ",
+    "program": "Uluslararası İlişkiler",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 463.99,
+    "minRank": 2069,
+    "quota": 8
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Turizm İşletmeciliği",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 463.7,
+    "minRank": 2096,
+    "quota": 30
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 463.09,
+    "minRank": 2140,
+    "quota": 60
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 461.94,
+    "minRank": 2226,
+    "quota": 13
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 461.84,
+    "minRank": 2233,
+    "quota": 200
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 461.62,
+    "minRank": 2247,
+    "quota": 1
+  },
+  {
+    "university": "GAZİ ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 461.56,
+    "minRank": 4651,
+    "quota": 60
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Turizm ve Otel İşletmeciliği",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 461.41,
+    "minRank": 2272,
+    "quota": 5
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "İngiliz Dilbilimi",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 461.02,
+    "minRank": 4739,
+    "quota": 65
+  },
+  {
+    "university": "ÖZYEĞİN ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 460.72,
+    "minRank": 2329,
+    "quota": 11
+  },
+  {
+    "university": "ÖZYEĞİN ÜNİVERSİTESİ",
+    "program": "Havacılık Yönetimi",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 460.67,
+    "minRank": 2336,
+    "quota": 6
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 460.29,
+    "minRank": 4858,
+    "quota": 50
+  },
+  {
+    "university": "GALATASARAY ÜNİVERSİTESİ",
+    "program": "Siyaset Bilimi",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 459.92,
+    "minRank": 2400,
+    "quota": 35
+  },
+  {
+    "university": "ÇANKAYA ÜNİVERSİTESİ",
+    "program": "Bilgisayar Mühendisliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 459.64,
+    "minRank": 37692,
+    "quota": 12
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Küresel Siyaset ve Uluslararası İlişkiler",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 459.58,
+    "minRank": 2438,
+    "quota": 1
+  },
+  {
+    "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 457.95,
+    "minRank": 2579,
+    "quota": 9
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık",
+    "city": "İzmi̇r",
+    "field": "DIL",
+    "minScore": 457.63,
+    "minRank": 5276,
+    "quota": 70
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 457.16,
+    "minRank": 2654,
+    "quota": 13
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 457.02,
+    "minRank": 5373,
+    "quota": 50
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Siyaset Bilimi ve Kamu Yönetimi",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 456.9,
+    "minRank": 2683,
+    "quota": 80
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Amerikan Kültürü ve Edebiyatı",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 456.43,
+    "minRank": 5465,
+    "quota": 65
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Sosyoloji",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 455.45,
+    "minRank": 2836,
+    "quota": 30
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Grafik Tasarımı",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 454.31,
+    "minRank": 2951,
+    "quota": 4
+  },
+  {
+    "university": "ANADOLU ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Eski̇şehi̇r",
+    "field": "DIL",
+    "minScore": 450.9,
+    "minRank": 6386,
+    "quota": 50
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 450.82,
+    "minRank": 6399,
+    "quota": 70
+  },
+  {
+    "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
+    "program": "Ekonomi",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 450.33,
+    "minRank": 3389,
+    "quota": 10
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 450.3,
+    "minRank": 6487,
+    "quota": 90
+  },
+  {
+    "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
+    "program": "Fransızca Mütercim ve Tercümanlık",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 450.09,
+    "minRank": 6525,
+    "quota": 55
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Siyaset Bilimi ve Uluslararası İlişkiler",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 449.29,
+    "minRank": 3520,
+    "quota": 3
+  },
+  {
+    "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 449.21,
+    "minRank": 3532,
+    "quota": 40
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Fransızca Mütercim ve Tercümanlık",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 449,
+    "minRank": 6736,
+    "quota": 65
+  },
+  {
+    "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık",
+    "city": "İzmi̇r",
+    "field": "DIL",
+    "minScore": 448.09,
+    "minRank": 6910,
+    "quota": 60
+  },
+  {
+    "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 447.86,
+    "minRank": 3681,
+    "quota": 16
+  },
+  {
+    "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "İzmi̇r",
+    "field": "DIL",
+    "minScore": 446.84,
+    "minRank": 7159,
+    "quota": 50
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Uluslararası Finans",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 446.55,
+    "minRank": 3866,
+    "quota": 5
+  },
+  {
+    "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
+    "program": "İktisat",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 446.54,
+    "minRank": 3868,
+    "quota": 60
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 445.99,
+    "minRank": 3946,
+    "quota": 50
+  },
+  {
+    "university": "GALATASARAY ÜNİVERSİTESİ",
+    "program": "Sosyoloji",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 445.67,
+    "minRank": 4000,
+    "quota": 25
+  },
+  {
+    "university": "AKDENİZ ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Antalya",
+    "field": "DIL",
+    "minScore": 445.09,
+    "minRank": 7545,
+    "quota": 40
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Sinoloji",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 444.59,
+    "minRank": 7651,
+    "quota": 30
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
+    "program": "İngilizce Öğretmenliği",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 444.44,
+    "minRank": 7678,
+    "quota": 50
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı",
+    "city": "İzmi̇r",
+    "field": "DIL",
+    "minScore": 444.25,
+    "minRank": 7712,
+    "quota": 80
+  },
+  {
+    "university": "ÖZYEĞİN ÜNİVERSİTESİ",
+    "program": "Otel Yöneticiliği",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 443.99,
+    "minRank": 4292,
+    "quota": 4
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Uluslararası Ticaret ve İşletmecilik",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 443.06,
+    "minRank": 4451,
+    "quota": 13
+  },
+  {
+    "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 442.97,
+    "minRank": 4470,
+    "quota": 50
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 441.65,
+    "minRank": 4745,
+    "quota": 250
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Almanca Mütercim ve Tercümanlık",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 441.59,
+    "minRank": 8297,
+    "quota": 65
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 441.51,
+    "minRank": 4785,
+    "quota": 12
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 441.11,
+    "minRank": 4871,
+    "quota": 60
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Rehberlik ve Psikolojik Danışmanlık",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 441.03,
+    "minRank": 4889,
+    "quota": 30
+  },
+  {
+    "university": "ANKARA HACI BAYRAM VELİ ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 440.87,
+    "minRank": 4930,
+    "quota": 200
+  },
+  {
+    "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Bursa",
+    "field": "DIL",
+    "minScore": 440.36,
+    "minRank": 8567,
+    "quota": 50
+  },
+  {
+    "university": "ALTINBAŞ ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 439.92,
+    "minRank": 5130,
+    "quota": 3
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Amerikan Kültürü ve Edebiyatı",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 439.8,
+    "minRank": 8695,
+    "quota": 65
+  },
+  {
+    "university": "İBN HALDUN ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 439.67,
+    "minRank": 5182,
+    "quota": 15
+  },
+  {
+    "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 438.04,
+    "minRank": 5565,
+    "quota": 22
+  },
+  {
+    "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 437.68,
+    "minRank": 5650,
+    "quota": 15
+  },
+  {
+    "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
+    "program": "Ekonomi",
+    "city": "İzmi̇r",
+    "field": "EA",
+    "minScore": 437.57,
+    "minRank": 5684,
+    "quota": 6
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Uluslararası İşletme Yönetimi",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 437.2,
+    "minRank": 5771,
+    "quota": 4
+  },
+  {
+    "university": "BAŞKENT ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 437.15,
+    "minRank": 5788,
+    "quota": 23
+  },
+  {
+    "university": "KADİR HAS ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 437.04,
+    "minRank": 5817,
+    "quota": 9
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Felsefe",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 436.55,
+    "minRank": 5949,
+    "quota": 35
+  },
+  {
+    "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
+    "program": "İktisat",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 436.37,
+    "minRank": 6005,
+    "quota": 40
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 436.01,
+    "minRank": 6097,
+    "quota": 40
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Japon Dili ve Edebiyatı",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 435.9,
+    "minRank": 9639,
+    "quota": 50
+  },
+  {
+    "university": "ÇANAKKALE ONSEKİZ MART ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Çanakkale",
+    "field": "DIL",
+    "minScore": 435.81,
+    "minRank": 9664,
+    "quota": 50
+  },
+  {
+    "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 435.47,
+    "minRank": 6242,
+    "quota": 100
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Fransız Dili ve Edebiyatı",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 435.32,
+    "minRank": 9789,
+    "quota": 65
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Amerikan Kültürü ve Edebiyatı",
+    "city": "İzmi̇r",
+    "field": "DIL",
+    "minScore": 435.09,
+    "minRank": 9852,
+    "quota": 60
+  },
+  {
+    "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 434.74,
+    "minRank": 6459,
+    "quota": 80
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Sosyoloji",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 434.39,
+    "minRank": 6573,
+    "quota": 40
+  },
+  {
+    "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Samsun",
+    "field": "DIL",
+    "minScore": 433.55,
+    "minRank": 10238,
+    "quota": 50
+  },
+  {
+    "university": "ANKARA SOSYAL BİLİMLER ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 433.4,
+    "minRank": 6906,
+    "quota": 50
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Çin Dili ve Edebiyatı",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 433.38,
+    "minRank": 10298,
+    "quota": 40
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Elektronik Ticaret ve Yönetimi",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 433.16,
+    "minRank": 6975,
+    "quota": 8
+  },
+  {
+    "university": "KADİR HAS ÜNİVERSİTESİ",
+    "program": "Ekonomi",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 433.05,
+    "minRank": 7010,
+    "quota": 4
+  },
+  {
+    "university": "KOCAELİ ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Kocaeli̇",
+    "field": "DIL",
+    "minScore": 432.94,
+    "minRank": 10415,
+    "quota": 40
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "İspanyol Dili ve Edebiyatı",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 432.94,
+    "minRank": 10410,
+    "quota": 45
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Amerikan Kültürü ve Edebiyatı",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 432.93,
+    "minRank": 10420,
+    "quota": 85
+  },
+  {
+    "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
+    "program": "Ekonomi ve Finans",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 432.56,
+    "minRank": 7197,
+    "quota": 10
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Fransızca Mütercim ve Tercümanlık",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 432.46,
+    "minRank": 10543,
+    "quota": 55
+  },
+  {
+    "university": "TED ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 432.45,
+    "minRank": 7236,
+    "quota": 11
+  },
+  {
+    "university": "MEF ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 431.83,
+    "minRank": 7454,
+    "quota": 13
+  },
+  {
+    "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 431.55,
+    "minRank": 10808,
+    "quota": 60
+  },
+  {
+    "university": "BURSA TEKNİK ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık",
+    "city": "Bursa",
+    "field": "DIL",
+    "minScore": 430.78,
+    "minRank": 11044,
+    "quota": 30
+  },
+  {
+    "university": "AKDENİZ ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı",
+    "city": "Antalya",
+    "field": "DIL",
+    "minScore": 430.69,
+    "minRank": 11070,
+    "quota": 70
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 430.61,
+    "minRank": 7904,
+    "quota": 75
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "İspanyol Dili ve Edebiyatı",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 430.6,
+    "minRank": 11099,
+    "quota": 55
+  },
+  {
+    "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İzmi̇r",
+    "field": "EA",
+    "minScore": 430.22,
+    "minRank": 8056,
+    "quota": 200
+  },
+  {
+    "university": "KADİR HAS ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 429.82,
+    "minRank": 8216,
+    "quota": 10
+  },
+  {
+    "university": "BAŞKENT ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 429.68,
+    "minRank": 8270,
+    "quota": 4
+  },
+  {
+    "university": "ANKARA SOSYAL BİLİMLER ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 429.54,
+    "minRank": 11389,
+    "quota": 60
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Almanca Mütercim ve Tercümanlık",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 429.48,
+    "minRank": 11412,
+    "quota": 50
+  },
+  {
+    "university": "ÇUKUROVA ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Adana",
+    "field": "DIL",
+    "minScore": 429.43,
+    "minRank": 11430,
+    "quota": 50
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "İç Mimarlık ve Çevre Tasarımı",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 428.64,
+    "minRank": 8697,
+    "quota": 14
+  },
+  {
+    "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 427.56,
+    "minRank": 9149,
+    "quota": 12
+  },
+  {
+    "university": "ÇANKAYA ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 427.45,
+    "minRank": 9202,
+    "quota": 24
+  },
+  {
+    "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Muğla",
+    "field": "DIL",
+    "minScore": 427.3,
+    "minRank": 12042,
+    "quota": 50
+  },
+  {
+    "university": "ANKARA MEDİPOL ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 427.25,
+    "minRank": 9305,
+    "quota": 18
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Almanca Mütercim ve Tercümanlık",
+    "city": "İzmi̇r",
+    "field": "DIL",
+    "minScore": 427.01,
+    "minRank": 12124,
+    "quota": 65
+  },
+  {
+    "university": "İSTANBUL MEDENİYET ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 426.99,
+    "minRank": 9430,
+    "quota": 80
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Fransızca Mütercim ve Tercümanlık",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 426.92,
+    "minRank": 12150,
+    "quota": 40
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Alman Dili ve Edebiyatı",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 426.79,
+    "minRank": 12187,
+    "quota": 65
+  },
+  {
+    "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 426.64,
+    "minRank": 9589,
+    "quota": 23
+  },
+  {
+    "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İzmi̇r",
+    "field": "EA",
+    "minScore": 426.37,
+    "minRank": 9715,
+    "quota": 22
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "İktisat",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 426.24,
+    "minRank": 9782,
+    "quota": 70
+  },
+  {
+    "university": "ANKARA HACI BAYRAM VELİ ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 426.06,
+    "minRank": 12433,
+    "quota": 70
+  },
+  {
+    "university": "ANADOLU ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Eski̇şehi̇r",
+    "field": "EA",
+    "minScore": 425.96,
+    "minRank": 9923,
+    "quota": 200
+  },
+  {
+    "university": "MERSİN ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Mersi̇n",
+    "field": "DIL",
+    "minScore": 425.71,
+    "minRank": 12542,
+    "quota": 50
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Kore Dili ve Edebiyatı",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 425.42,
+    "minRank": 12631,
+    "quota": 30
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 425.32,
+    "minRank": 10244,
+    "quota": 60
+  },
+  {
+    "university": "PAMUKKALE ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Deni̇zli̇",
+    "field": "DIL",
+    "minScore": 425.32,
+    "minRank": 12663,
+    "quota": 50
+  },
+  {
+    "university": "İZMİR DEMOKRASİ ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "İzmi̇r",
+    "field": "DIL",
+    "minScore": 425.28,
+    "minRank": 12676,
+    "quota": 30
+  },
+  {
+    "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
+    "program": "Ekonomi",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 425.08,
+    "minRank": 10363,
+    "quota": 14
+  },
+  {
+    "university": "ERCİYES ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Kayseri̇",
+    "field": "DIL",
+    "minScore": 424.55,
+    "minRank": 12950,
+    "quota": 40
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Kamu Yönetimi",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 424.54,
+    "minRank": 10639,
+    "quota": 3
+  },
+  {
+    "university": "BALIKESİR ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Balikesi̇r",
+    "field": "DIL",
+    "minScore": 424.11,
+    "minRank": 13081,
+    "quota": 40
+  },
+  {
+    "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
+    "program": "Amerikan Kültürü ve Edebiyatı",
+    "city": "İzmi̇r",
+    "field": "DIL",
+    "minScore": 423.97,
+    "minRank": 13130,
+    "quota": 85
+  },
+  {
+    "university": "NECMETTİN ERBAKAN ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Konya",
+    "field": "DIL",
+    "minScore": 423.94,
+    "minRank": 13145,
+    "quota": 40
+  },
+  {
+    "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
+    "program": "Uluslararası Ticaret ve İşletmecilik",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 423.91,
+    "minRank": 10986,
+    "quota": 12
+  },
+  {
+    "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
+    "program": "Siyaset Bilimi ve Uluslararası İlişkiler",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 423.74,
+    "minRank": 11082,
+    "quota": 40
+  },
+  {
+    "university": "MALTEPE ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 423.64,
+    "minRank": 11134,
+    "quota": 5
+  },
+  {
+    "university": "AKDENİZ ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Antalya",
+    "field": "EA",
+    "minScore": 423.63,
+    "minRank": 11141,
+    "quota": 100
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Fransız Dili ve Edebiyatı",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 422.86,
+    "minRank": 13498,
+    "quota": 60
+  },
+  {
+    "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Eski̇şehi̇r",
+    "field": "EA",
+    "minScore": 422.81,
+    "minRank": 11550,
+    "quota": 70
+  },
+  {
+    "university": "AYDIN ADNAN MENDERES ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Aydin",
+    "field": "DIL",
+    "minScore": 422.49,
+    "minRank": 13619,
+    "quota": 50
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Kore Dili ve Edebiyatı",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 422.48,
+    "minRank": 13621,
+    "quota": 45
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Dilbilimi",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 422.05,
+    "minRank": 13760,
+    "quota": 60
+  },
+  {
+    "university": "SÜLEYMAN DEMİREL ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Isparta",
+    "field": "DIL",
+    "minScore": 421.83,
+    "minRank": 13826,
+    "quota": 30
+  },
+  {
+    "university": "MEF ÜNİVERSİTESİ",
+    "program": "Ekonomi",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 421.82,
+    "minRank": 12138,
+    "quota": 3
+  },
+  {
+    "university": "ÖZYEĞİN ÜNİVERSİTESİ",
+    "program": "İç Mimarlık ve Çevre Tasarımı",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 421.71,
+    "minRank": 12206,
+    "quota": 5
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Lojistik Yönetimi",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 421.7,
+    "minRank": 12221,
+    "quota": 7
+  },
+  {
+    "university": "KADİR HAS ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 421.7,
+    "minRank": 12215,
+    "quota": 7
+  },
+  {
+    "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık",
+    "city": "Muğla",
+    "field": "DIL",
+    "minScore": 421.38,
+    "minRank": 13961,
+    "quota": 50
+  },
+  {
+    "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
+    "program": "Uluslararası Finans",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 421.36,
+    "minRank": 12433,
+    "quota": 7
+  },
+  {
+    "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Bursa",
+    "field": "EA",
+    "minScore": 421.17,
+    "minRank": 12546,
+    "quota": 100
+  },
+  {
+    "university": "ALANYA ALAADDİN KEYKUBAT ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Antalya",
+    "field": "DIL",
+    "minScore": 420.74,
+    "minRank": 14144,
+    "quota": 40
+  },
+  {
+    "university": "SELÇUK ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Konya",
+    "field": "EA",
+    "minScore": 420.7,
+    "minRank": 12792,
+    "quota": 100
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Alman Dili ve Edebiyatı",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 420.07,
+    "minRank": 14344,
+    "quota": 60
+  },
+  {
+    "university": "BOLU ABANT İZZET BAYSAL ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Bolu",
+    "field": "DIL",
+    "minScore": 419.9,
+    "minRank": 14400,
+    "quota": 40
+  },
+  {
+    "university": "ATILIM ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 419.79,
+    "minRank": 13324,
+    "quota": 25
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Dilbilimi",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 419.68,
+    "minRank": 14471,
+    "quota": 50
+  },
+  {
+    "university": "MEF ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 419.68,
+    "minRank": 13403,
+    "quota": 5
+  },
+  {
+    "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 419.64,
+    "minRank": 13430,
+    "quota": 15
+  },
+  {
+    "university": "DİCLE ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Di̇yarbakir",
+    "field": "DIL",
+    "minScore": 419.33,
+    "minRank": 14592,
+    "quota": 30
+  },
+  {
+    "university": "ANKARA SOSYAL BİLİMLER ÜNİVERSİTESİ",
+    "program": "Japonca Mütercim ve Tercümanlık",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 419,
+    "minRank": 14685,
+    "quota": 45
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "İtalyan Dili ve Edebiyatı",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 418.89,
+    "minRank": 14709,
+    "quota": 55
+  },
+  {
+    "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "İzmi̇r",
+    "field": "EA",
+    "minScore": 418.66,
+    "minRank": 14062,
+    "quota": 10
+  },
+  {
+    "university": "SAKARYA ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Sakarya",
+    "field": "DIL",
+    "minScore": 418.62,
+    "minRank": 14797,
+    "quota": 40
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Uluslararası İlişkiler",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 418.6,
+    "minRank": 14097,
+    "quota": 70
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Fransız Dili ve Edebiyatı",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 418.57,
+    "minRank": 14817,
+    "quota": 55
+  },
+  {
+    "university": "GALATASARAY ÜNİVERSİTESİ",
+    "program": "Felsefe",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 418.33,
+    "minRank": 14257,
+    "quota": 30
+  },
+  {
+    "university": "GAZİANTEP ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Gazi̇antep",
+    "field": "DIL",
+    "minScore": 418.26,
+    "minRank": 14915,
+    "quota": 45
+  },
+  {
+    "university": "KOCAELİ ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Kocaeli̇",
+    "field": "EA",
+    "minScore": 417.88,
+    "minRank": 14522,
+    "quota": 120
+  },
+  {
+    "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 417.72,
+    "minRank": 14612,
+    "quota": 12
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 417.68,
+    "minRank": 14646,
+    "quota": 40
+  },
+  {
+    "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 417.5,
+    "minRank": 14749,
+    "quota": 13
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 417.22,
+    "minRank": 14959,
+    "quota": 60
+  },
+  {
+    "university": "ÇANAKKALE ONSEKİZ MART ÜNİVERSİTESİ",
+    "program": "Japonca Öğretmenliği",
+    "city": "Çanakkale",
+    "field": "DIL",
+    "minScore": 417.18,
+    "minRank": 15285,
+    "quota": 30
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Siyaset Bilimi ve Uluslararası İlişkiler",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 417.16,
+    "minRank": 14998,
+    "quota": 30
+  },
+  {
+    "university": "GAZİ ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 417.03,
+    "minRank": 15089,
+    "quota": 50
+  },
+  {
+    "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İzmi̇r",
+    "field": "EA",
+    "minScore": 416.98,
+    "minRank": 15132,
+    "quota": 60
+  },
+  {
+    "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık",
+    "city": "Samsun",
+    "field": "DIL",
+    "minScore": 416.96,
+    "minRank": 15362,
+    "quota": 40
+  },
+  {
+    "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "İzmi̇r",
+    "field": "EA",
+    "minScore": 416.59,
+    "minRank": 15352,
+    "quota": 12
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Fransızca Öğretmenliği",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 416.52,
+    "minRank": 15520,
+    "quota": 40
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 416.38,
+    "minRank": 15472,
+    "quota": 100
+  },
+  {
+    "university": "İSTANBUL TİCARET ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 415.97,
+    "minRank": 15762,
+    "quota": 5
+  },
+  {
+    "university": "TRAKYA ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Edi̇rne",
+    "field": "DIL",
+    "minScore": 415.8,
+    "minRank": 15765,
+    "quota": 50
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Alman Dili ve Edebiyatı",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 415.44,
+    "minRank": 15890,
+    "quota": 55
+  },
+  {
+    "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 415.44,
+    "minRank": 16147,
+    "quota": 12
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Alman Dili ve Edebiyatı",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 415.03,
+    "minRank": 16028,
+    "quota": 50
+  },
+  {
+    "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
+    "program": "Siyaset Bilimi ve Uluslararası İlişkiler",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 414.98,
+    "minRank": 16459,
+    "quota": 10
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Rus Dili ve Edebiyatı",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 414.71,
+    "minRank": 16118,
+    "quota": 55
+  },
+  {
+    "university": "ERCİYES ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Kayseri̇",
+    "field": "EA",
+    "minScore": 414.4,
+    "minRank": 16883,
+    "quota": 100
+  },
+  {
+    "university": "ÇUKUROVA ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Adana",
+    "field": "EA",
+    "minScore": 414.36,
+    "minRank": 16915,
+    "quota": 100
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Rus Dili ve Edebiyatı",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 414.14,
+    "minRank": 16336,
+    "quota": 35
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "İtalyan Dili ve Edebiyatı",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 413.68,
+    "minRank": 16490,
+    "quota": 55
+  },
+  {
+    "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
+    "program": "İç Mimarlık ve Çevre Tasarımı",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 413.08,
+    "minRank": 17857,
+    "quota": 5
+  },
+  {
+    "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
+    "program": "Ekonomi ve Finans",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 412.81,
+    "minRank": 18047,
+    "quota": 15
+  },
+  {
+    "university": "NEVŞEHİR HACI BEKTAŞ VELİ ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Nevşehi̇r",
+    "field": "DIL",
+    "minScore": 412.74,
+    "minRank": 16823,
+    "quota": 50
+  },
+  {
+    "university": "BALIKESİR ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Balikesi̇r",
+    "field": "EA",
+    "minScore": 412.61,
+    "minRank": 18185,
+    "quota": 50
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Sosyoloji",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 412.48,
+    "minRank": 18282,
+    "quota": 5
+  },
+  {
+    "university": "AFYON KOCATEPE ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Afyonkarahi̇sar",
+    "field": "DIL",
+    "minScore": 412.38,
+    "minRank": 16954,
+    "quota": 40
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "İzmi̇r",
+    "field": "EA",
+    "minScore": 412.11,
+    "minRank": 18557,
+    "quota": 50
+  },
+  {
+    "university": "SAKARYA ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık",
+    "city": "Sakarya",
+    "field": "DIL",
+    "minScore": 411.95,
+    "minRank": 17103,
+    "quota": 60
+  },
+  {
+    "university": "DÜZCE ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Düzce",
+    "field": "DIL",
+    "minScore": 411.73,
+    "minRank": 17187,
+    "quota": 40
+  },
+  {
+    "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı",
+    "city": "Muğla",
+    "field": "DIL",
+    "minScore": 411.34,
+    "minRank": 17350,
+    "quota": 70
+  },
+  {
+    "university": "PAMUKKALE ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Deni̇zli̇",
+    "field": "EA",
+    "minScore": 411.31,
+    "minRank": 19177,
+    "quota": 50
+  },
+  {
+    "university": "MANİSA CELÂL BAYAR ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık",
+    "city": "Mani̇sa",
+    "field": "DIL",
+    "minScore": 411.2,
+    "minRank": 17416,
+    "quota": 50
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 410.99,
+    "minRank": 19449,
+    "quota": 45
+  },
+  {
+    "university": "SAKARYA ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Sakarya",
+    "field": "EA",
+    "minScore": 410.91,
+    "minRank": 19503,
+    "quota": 100
+  },
+  {
+    "university": "İZMİR DEMOKRASİ ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İzmi̇r",
+    "field": "EA",
+    "minScore": 410.78,
+    "minRank": 19599,
+    "quota": 60
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "İktisat",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 410.48,
+    "minRank": 19829,
+    "quota": 75
+  },
+  {
+    "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı",
+    "city": "İzmi̇r",
+    "field": "DIL",
+    "minScore": 410.42,
+    "minRank": 17674,
+    "quota": 40
+  },
+  {
+    "university": "KADİR HAS ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 410.32,
+    "minRank": 19981,
+    "quota": 12
+  },
+  {
+    "university": "TRABZON ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Trabzon",
+    "field": "DIL",
+    "minScore": 409.98,
+    "minRank": 17837,
+    "quota": 50
+  },
+  {
+    "university": "İZMİR BAKIRÇAY ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "İzmi̇r",
+    "field": "EA",
+    "minScore": 409.64,
+    "minRank": 20547,
+    "quota": 100
+  },
+  {
+    "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
+    "program": "Lojistik Yönetimi",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 409.4,
+    "minRank": 20753,
+    "quota": 7
+  },
+  {
+    "university": "BOLU ABANT İZZET BAYSAL ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Bolu",
+    "field": "EA",
+    "minScore": 409.2,
+    "minRank": 20927,
+    "quota": 60
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Fransızca Öğretmenliği",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 409.2,
+    "minRank": 18134,
+    "quota": 45
+  },
+  {
+    "university": "BURDUR MEHMET AKİF ERSOY ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği",
+    "city": "Burdur",
+    "field": "DIL",
+    "minScore": 408.92,
+    "minRank": 18229,
+    "quota": 50
+  },
+  {
+    "university": "YAŞAR ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri",
+    "city": "İzmi̇r",
+    "field": "EA",
+    "minScore": 408.45,
+    "minRank": 21596,
+    "quota": 7
+  },
+  {
+    "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Samsun",
+    "field": "EA",
+    "minScore": 407.89,
+    "minRank": 22084,
+    "quota": 75
+  },
+  {
+    "university": "KIRIKKALE ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Kirikkale",
+    "field": "EA",
+    "minScore": 407.05,
+    "minRank": 22837,
+    "quota": 100
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "İşletme",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 406.84,
+    "minRank": 23031,
+    "quota": 60
+  },
+  {
+    "university": "NECMETTİN ERBAKAN ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Konya",
+    "field": "EA",
+    "minScore": 405.66,
+    "minRank": 24135,
+    "quota": 90
+  },
+  {
+    "university": "İZMİR DEMOKRASİ ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı",
+    "city": "İzmi̇r",
+    "field": "DIL",
+    "minScore": 405.57,
+    "minRank": 19483,
+    "quota": 50
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Rehberlik ve Psikolojik Danışmanlık",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 405.57,
+    "minRank": 24223,
+    "quota": 5
+  },
+  {
+    "university": "SÜLEYMAN DEMİREL ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Isparta",
+    "field": "EA",
+    "minScore": 405.48,
+    "minRank": 24296,
+    "quota": 100
+  },
+  {
+    "university": "GAZİANTEP ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Gazi̇antep",
+    "field": "EA",
+    "minScore": 404.43,
+    "minRank": 25313,
+    "quota": 100
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Politika ve Ekonomi",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 404.18,
+    "minRank": 25521,
+    "quota": 40
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Siyaset Bilimi ve Kamu Yönetimi",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 403.52,
+    "minRank": 26203,
+    "quota": 50
+  },
+  {
+    "university": "YALOVA ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Yalova",
+    "field": "EA",
+    "minScore": 402.82,
+    "minRank": 26939,
+    "quota": 120
+  },
+  {
+    "university": "ANKARA SOSYAL BİLİMLER ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 402.73,
+    "minRank": 27025,
+    "quota": 60
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Felsefe",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 402.71,
+    "minRank": 27053,
+    "quota": 40
+  },
+  {
+    "university": "TEKİRDAĞ NAMIK KEMAL ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Teki̇rdağ",
+    "field": "EA",
+    "minScore": 402.35,
+    "minRank": 27449,
+    "quota": 100
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "İktisat",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 401.63,
+    "minRank": 28189,
+    "quota": 120
+  },
+  {
+    "university": "ATATÜRK ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Erzurum",
+    "field": "EA",
+    "minScore": 401.61,
+    "minRank": 28223,
+    "quota": 100
+  },
+  {
+    "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "İzmi̇r",
+    "field": "EA",
+    "minScore": 400.98,
+    "minRank": 28901,
+    "quota": 50
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Rehberlik ve Psikolojik Danışmanlık",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 400.4,
+    "minRank": 29540,
+    "quota": 50
+  },
+  {
+    "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri",
+    "city": "İzmi̇r",
+    "field": "EA",
+    "minScore": 397.27,
+    "minRank": 33065,
+    "quota": 80
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Felsefe",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 396.93,
+    "minRank": 33484,
+    "quota": 15
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Arkeoloji",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 396.28,
+    "minRank": 34253,
+    "quota": 4
+  },
+  {
+    "university": "ANADOLU ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "Eski̇şehi̇r",
+    "field": "EA",
+    "minScore": 395.87,
+    "minRank": 34764,
+    "quota": 60
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Sınıf Öğretmenliği",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 394.64,
+    "minRank": 36287,
+    "quota": 50
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Rehberlik ve Psikolojik Danışmanlık",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 393.27,
+    "minRank": 38093,
+    "quota": 35
+  },
+  {
+    "university": "ANKARA HACI BAYRAM VELİ ÜNİVERSİTESİ",
+    "program": "Psikoloji",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 392.49,
+    "minRank": 39174,
+    "quota": 60
+  }
 ]
 
+// Basit eşleşme fonksiyonu: kullanıcı sıralamasına ve alana göre programları getirir
+export function getMatchingPrograms(
+  userRank: number,
+  fieldKey: 'say' | 'ea' | 'soz' | 'dil',
+  limit: number = 500
+): UniversityProgram[] {
+  const fieldMap: Record<typeof fieldKey, FieldType> = {
+    say: 'SAY',
+    ea: 'EA',
+    soz: 'SOZ',
+    dil: 'DIL'
+  }
 
+  const targetField = fieldMap[fieldKey]
 
+  return universityPrograms
+    .filter((program) => {
+      if (program.field !== targetField) return false
 
-// Sıralamaya göre uygun bölümleri getir
-export function getMatchingPrograms(rank: number, field: 'say' | 'ea' | 'soz' | 'dil', limit: number = 500): UniversityProgram[] {
-    const fieldMap = {
-        say: 'SAY',
-        ea: 'EA',
-        soz: 'SOZ',
-        dil: 'DIL'
-    }
-
-    // Kullanıcının sıralaması programın minimum sıralamasından küçük veya eşit olmalı
-    // Yani kullanıcı daha iyi sıralamada olmalı
-    // %20 tolerans: Kullanıcı sıralaması biraz daha kötü olsa bile göster
-    return universityPrograms
-        .filter(p => p.field === fieldMap[field] && rank <= p.minRank * 1.2)
-        .sort((a, b) => b.minScore - a.minScore)
-        .slice(0, limit)
+      // minRank: bölüme giren son kişinin sıralaması.
+      // Kullanıcı sıralaması bu değerden düşük veya eşit ise (daha iyi) mantıken kazanma şansı var.
+      if (typeof program.minRank !== 'number') return false
+      return userRank <= program.minRank
+    })
+    .sort((a, b) => a.minRank - b.minRank)
+    .slice(0, limit)
 }
-
-
