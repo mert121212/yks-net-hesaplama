@@ -125,10 +125,13 @@ export default function GeriSayimPage() {
                 {/* Hero Section */}
                 <div className="text-center mb-8">
                     <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-                        2026 YKS'ye
+                        YKS 2026 Geri Sayım
                     </h1>
-                    <p className="text-lg text-gray-600 mb-6">
-                        Hedeflerine ulaşmak için kalan süre
+                    <p className="text-lg text-gray-600 mb-2">
+                        YKS'ye kaç gün kaldı? Canlı sayaçla takip et.
+                    </p>
+                    <p className="text-sm text-gray-500">
+                        TYT: 20 Haziran 2026 · AYT: 21 Haziran 2026
                     </p>
                 </div>
 
@@ -296,6 +299,53 @@ export default function GeriSayimPage() {
                                 <TrendingUp className="h-8 w-8 text-green-600 mb-3" />
                                 <h3 className="text-base font-bold text-gray-900 mb-2">İlerleme</h3>
                                 <p className="text-gray-600 text-sm">Hedeflerine ne kadar yakınsın?</p>
+                            </div>
+                        </div>
+
+                        {/* SEO Content */}
+                        <div className="mt-12 bg-white rounded-2xl shadow-lg p-8">
+                            <h2 className="text-2xl font-bold text-gray-900 mb-4">YKS 2026 Tarihleri ve Geri Sayım</h2>
+                            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
+                                <p>
+                                    <strong>YKS 2026 sınavı</strong> iki gün olarak uygulanacaktır. <strong>TYT (Temel Yeterlilik Testi) 20 Haziran 2026</strong> tarihinde,
+                                    <strong> AYT (Alan Yeterlilik Testi) ve YDT (Yabancı Dil Testi) ise 21 Haziran 2026</strong> tarihinde yapılacaktır.
+                                    Yukarıdaki geri sayım sayacı, sınava kalan gün, saat, dakika ve saniyeyi canlı olarak göstermektedir.
+                                </p>
+                                <p>
+                                    YKS'ye hazırlanırken zamanı doğru planlamak kritik önem taşır. Kalan süreye göre çalışma programınızı
+                                    düzenleyin: TYT için Türkçe, Matematik, Sosyal Bilimler ve Fen Bilimleri; AYT için ise hedef bölümünüze
+                                    göre Sayısal, Eşit Ağırlık veya Sözel derslerine odaklanın.
+                                </p>
+                            </div>
+
+                            <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                                <div className="p-4 bg-blue-50 rounded-xl">
+                                    <div className="text-lg font-bold text-blue-700">TYT</div>
+                                    <div className="text-sm text-blue-600 font-medium">20 Haziran 2026</div>
+                                    <div className="text-xs text-gray-500 mt-1">120 soru · 135 dakika</div>
+                                </div>
+                                <div className="p-4 bg-green-50 rounded-xl">
+                                    <div className="text-lg font-bold text-green-700">AYT</div>
+                                    <div className="text-sm text-green-600 font-medium">21 Haziran 2026</div>
+                                    <div className="text-xs text-gray-500 mt-1">SAY / EA / SÖZ</div>
+                                </div>
+                                <div className="p-4 bg-orange-50 rounded-xl">
+                                    <div className="text-lg font-bold text-orange-700">YDT</div>
+                                    <div className="text-sm text-orange-600 font-medium">21 Haziran 2026</div>
+                                    <div className="text-xs text-gray-500 mt-1">80 soru · 120 dakika</div>
+                                </div>
+                            </div>
+
+                            <div className="mt-6 flex flex-wrap gap-3">
+                                <Link href="/" className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">
+                                    Net Hesapla
+                                </Link>
+                                <Link href="/blog/yks-net-hesaplama-nasil-yapilir" className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors">
+                                    Net Hesaplama Rehberi
+                                </Link>
+                                <Link href="/sss" className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors">
+                                    Sık Sorulan Sorular
+                                </Link>
                             </div>
                         </div>
                     </>
