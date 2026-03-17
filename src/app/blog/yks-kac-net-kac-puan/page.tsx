@@ -5,6 +5,14 @@ export const metadata: Metadata = {
     title: 'YKS\'de Kaç Net Kaç Puan Eder? 2026 Tablosu | YKS Net Hesaplama',
     description: 'TYT ve AYT\'de kaç net yaparsanız kaç puan alırsınız? Net-puan dönüşüm tablosu ve hesaplama. YKS 2026 için güncel.',
     keywords: 'kaç net kaç puan, yks net puan tablosu, tyt kaç net kaç puan, ayt kaç net kaç puan',
+    alternates: { canonical: 'https://yksnethesapla.com/blog/yks-kac-net-kac-puan' },
+    openGraph: {
+        title: 'YKS\'de Kaç Net Kaç Puan Eder? 2026 Tablosu',
+        description: 'TYT ve AYT\'de kaç net yaparsanız kaç puan alırsınız? Net-puan dönüşüm tablosu.',
+        type: 'article',
+        publishedTime: '2026-02-22',
+        url: 'https://yksnethesapla.com/blog/yks-kac-net-kac-puan',
+    },
 }
 
 export default function YKSKacNetKacPuan() {

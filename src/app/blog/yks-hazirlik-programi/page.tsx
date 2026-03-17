@@ -5,6 +5,14 @@ export const metadata: Metadata = {
     title: 'YKS\'ye Nasıl Hazırlanılır? Çalışma Programı 2026 | YKS Net Hesaplama',
     description: 'Etkili bir YKS hazırlık programı nasıl yapılır? Günlük, haftalık ve aylık çalışma planları, ipuçları ve stratejiler.',
     keywords: 'yks hazırlık, yks çalışma programı, yks nasıl çalışılır, yks ders programı',
+    alternates: { canonical: 'https://yksnethesapla.com/blog/yks-hazirlik-programi' },
+    openGraph: {
+        title: 'YKS\'ye Nasıl Hazırlanılır? Çalışma Programı 2026',
+        description: 'Etkili bir YKS hazırlık programı nasıl yapılır? Günlük, haftalık çalışma planları ve stratejiler.',
+        type: 'article',
+        publishedTime: '2026-02-20',
+        url: 'https://yksnethesapla.com/blog/yks-hazirlik-programi',
+    },
 }
 
 export default function YKSHazirlikProgrami() {

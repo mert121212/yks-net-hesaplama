@@ -5,6 +5,14 @@ export const metadata: Metadata = {
     title: 'AYT Puan Hesaplama: SAY, EA, SÖZ, DİL Puanları 2026 | YKS Net Hesaplama',
     description: 'AYT sınavında SAY, EA, SÖZ ve DİL puanları nasıl hesaplanır? Detaylı formüller, katsayılar ve örneklerle AYT puan hesaplama rehberi.',
     keywords: 'ayt puan hesaplama, say puanı, ea puanı, söz puanı, dil puanı, ayt net hesaplama',
+    alternates: { canonical: 'https://yksnethesapla.com/blog/ayt-puan-hesaplama' },
+    openGraph: {
+        title: 'AYT Puan Hesaplama: SAY, EA, SÖZ, DİL Puanları 2026',
+        description: 'AYT sınavında SAY, EA, SÖZ ve DİL puanları nasıl hesaplanır? Detaylı formüller ve örneklerle rehber.',
+        type: 'article',
+        publishedTime: '2026-02-26',
+        url: 'https://yksnethesapla.com/blog/ayt-puan-hesaplama',
+    },
 }
 
 export default function AYTPuanHesaplama() {

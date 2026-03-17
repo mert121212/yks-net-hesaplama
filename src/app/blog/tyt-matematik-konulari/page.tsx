@@ -5,6 +5,14 @@ export const metadata: Metadata = {
     title: 'TYT Matematik Konuları ve Soru Dağılımı 2026 | YKS Net Hesaplama',
     description: 'TYT Matematik sınavında hangi konular çıkıyor? Konu dağılımı, soru sayıları ve çalışma stratejileri. 2026 YKS için güncel.',
     keywords: 'tyt matematik konuları, tyt matematik soru dağılımı, tyt matematik 2026, yks matematik',
+    alternates: { canonical: 'https://yksnethesapla.com/blog/tyt-matematik-konulari' },
+    openGraph: {
+        title: 'TYT Matematik Konuları ve Soru Dağılımı 2026',
+        description: 'TYT Matematik sınavında hangi konular çıkıyor? Konu dağılımı ve çalışma stratejileri.',
+        type: 'article',
+        publishedTime: '2026-02-19',
+        url: 'https://yksnethesapla.com/blog/tyt-matematik-konulari',
+    },
 }
 
 export default function TYTMatematikKonulari() {

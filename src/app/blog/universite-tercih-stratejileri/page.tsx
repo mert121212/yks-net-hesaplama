@@ -5,6 +5,14 @@ export const metadata: Metadata = {
     title: 'Üniversite Tercih Stratejileri: Doğru Tercih Nasıl Yapılır? 2026',
     description: 'YKS sonrası üniversite tercihi yaparken nelere dikkat etmelisiniz? Tercih stratejileri, ipuçları ve öneriler.',
     keywords: 'üniversite tercih, tercih stratejisi, yks tercih, doğru tercih, üniversite seçimi',
+    alternates: { canonical: 'https://yksnethesapla.com/blog/universite-tercih-stratejileri' },
+    openGraph: {
+        title: 'Üniversite Tercih Stratejileri: Doğru Tercih Nasıl Yapılır?',
+        description: 'YKS sonrası üniversite tercihi yaparken nelere dikkat etmelisiniz? Tercih stratejileri ve ipuçları.',
+        type: 'article',
+        publishedTime: '2026-02-21',
+        url: 'https://yksnethesapla.com/blog/universite-tercih-stratejileri',
+    },
 }
 
 export default function UniversiteTercihStratejileri() {

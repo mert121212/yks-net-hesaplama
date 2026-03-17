@@ -5,6 +5,14 @@ export const metadata: Metadata = {
     title: 'OBP (Ortaöğretim Başarı Puanı) Nedir? Nasıl Hesaplanır? 2026',
     description: 'Lise diploma notunuzun YKS puanınıza etkisi nedir? OBP hesaplama formülü ve örnekleri. OBP nedir, nasıl hesaplanır?',
     keywords: 'obp nedir, obp hesaplama, ortaöğretim başarı puanı, diploma notu, yks obp',
+    alternates: { canonical: 'https://yksnethesapla.com/blog/obp-hesaplama' },
+    openGraph: {
+        title: 'OBP (Ortaöğretim Başarı Puanı) Nedir? Nasıl Hesaplanır?',
+        description: 'Lise diploma notunuzun YKS puanınıza etkisi nedir? OBP hesaplama formülü ve örnekleri.',
+        type: 'article',
+        publishedTime: '2026-02-24',
+        url: 'https://yksnethesapla.com/blog/obp-hesaplama',
+    },
 }
 
 export default function OBPHesaplama() {

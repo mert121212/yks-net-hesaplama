@@ -5,6 +5,14 @@ export const metadata: Metadata = {
     title: 'YKS Edebiyat Konuları ve Çalışma Taktikleri 2026',
     description: 'TYT ve AYT Edebiyat konuları nelerdir? Etkili çalışma yöntemleri ve ipuçları. 2026 YKS için güncel rehber.',
     keywords: 'yks edebiyat konuları, tyt edebiyat, ayt edebiyat, edebiyat çalışma',
+    alternates: { canonical: 'https://yksnethesapla.com/blog/yks-edebiyat-konulari' },
+    openGraph: {
+        title: 'YKS Edebiyat Konuları ve Çalışma Taktikleri 2026',
+        description: 'TYT ve AYT Edebiyat konuları nelerdir? Etkili çalışma yöntemleri ve ipuçları.',
+        type: 'article',
+        publishedTime: '2026-02-17',
+        url: 'https://yksnethesapla.com/blog/yks-edebiyat-konulari',
+    },
 }
 
 export default function YKSEdebiyatKonulari() {

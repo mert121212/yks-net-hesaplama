@@ -5,6 +5,14 @@ export const metadata: Metadata = {
     title: 'AYT Matematik Konuları: SAY Öğrencileri İçin Rehber 2026',
     description: 'AYT Matematik sınavına nasıl hazırlanılır? Tüm konular, formüller ve çözüm teknikleri. SAY öğrencileri için detaylı rehber.',
     keywords: 'ayt matematik konuları, ayt matematik 2026, say matematik, yks matematik',
+    alternates: { canonical: 'https://yksnethesapla.com/blog/ayt-matematik-konulari' },
+    openGraph: {
+        title: 'AYT Matematik Konuları: SAY Öğrencileri İçin Rehber 2026',
+        description: 'AYT Matematik sınavına nasıl hazırlanılır? Tüm konular ve çözüm teknikleri.',
+        type: 'article',
+        publishedTime: '2026-02-18',
+        url: 'https://yksnethesapla.com/blog/ayt-matematik-konulari',
+    },
 }
 
 export default function AYTMatematikKonulari() {

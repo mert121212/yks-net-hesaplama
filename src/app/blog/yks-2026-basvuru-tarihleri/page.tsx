@@ -5,6 +5,14 @@ export const metadata: Metadata = {
     title: 'YKS 2026 Başvuru Tarihleri ve Takvimi | YKS Net Hesaplama',
     description: 'YKS 2026 başvuru tarihleri, sınav tarihleri ve sonuç açıklama tarihleri. Tüm önemli tarihler ve YKS takvimi.',
     keywords: 'yks 2026 tarihleri, yks başvuru tarihleri, yks sınav tarihi, yks sonuç tarihi',
+    alternates: { canonical: 'https://yksnethesapla.com/blog/yks-2026-basvuru-tarihleri' },
+    openGraph: {
+        title: 'YKS 2026 Başvuru Tarihleri ve Takvimi',
+        description: 'YKS 2026 başvuru tarihleri, sınav tarihleri ve sonuç açıklama tarihleri. Tüm önemli tarihler.',
+        type: 'article',
+        publishedTime: '2026-02-23',
+        url: 'https://yksnethesapla.com/blog/yks-2026-basvuru-tarihleri',
+    },
 }
 
 export default function YKS2026BasvuruTarihleri() {

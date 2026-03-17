@@ -5,6 +5,14 @@ export const metadata: Metadata = {
     title: 'TYT Net Hesaplama: Adım Adım Kılavuz 2026 | YKS Net Hesaplama',
     description: 'TYT sınavında net hesaplama nasıl yapılır? Türkçe, Matematik, Fen ve Sosyal netlerinizi doğru hesaplayın. Formüller ve örneklerle detaylı rehber.',
     keywords: 'tyt net hesaplama, tyt net hesaplama 2026, tyt türkçe net, tyt matematik net, tyt fen net, tyt sosyal net',
+    alternates: { canonical: 'https://yksnethesapla.com/blog/tyt-net-hesaplama-rehberi' },
+    openGraph: {
+        title: 'TYT Net Hesaplama: Adım Adım Kılavuz 2026',
+        description: 'TYT sınavında net hesaplama nasıl yapılır? Türkçe, Matematik, Fen ve Sosyal netlerinizi doğru hesaplayın.',
+        type: 'article',
+        publishedTime: '2026-02-27',
+        url: 'https://yksnethesapla.com/blog/tyt-net-hesaplama-rehberi',
+    },
 }
 
 export default function TYTNetHesaplamaRehberi() {

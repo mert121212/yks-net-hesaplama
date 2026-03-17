@@ -5,6 +5,14 @@ export const metadata: Metadata = {
     title: 'YKS Puan Türleri: SAY, EA, SÖZ, DİL Nedir? 2026 | YKS Net Hesaplama',
     description: 'YKS\'de 4 farklı puan türü var. SAY, EA, SÖZ ve DİL puan türlerini detaylı inceleyin ve size uygun olanı seçin.',
     keywords: 'yks puan türleri, say puanı, ea puanı, söz puanı, dil puanı, puan türü seçimi',
+    alternates: { canonical: 'https://yksnethesapla.com/blog/yks-puan-turleri' },
+    openGraph: {
+        title: 'YKS Puan Türleri: SAY, EA, SÖZ, DİL Nedir? 2026',
+        description: 'YKS\'de 4 farklı puan türü var. SAY, EA, SÖZ ve DİL puan türlerini detaylı inceleyin.',
+        type: 'article',
+        publishedTime: '2026-02-25',
+        url: 'https://yksnethesapla.com/blog/yks-puan-turleri',
+    },
 }
 
 export default function YKSPuanTurleri() {
