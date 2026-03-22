@@ -42,7 +42,7 @@ export default function SSS() {
                 },
                 {
                     q: 'OBP nedir ve nasıl hesaplanır?',
-                    a: 'OBP (Ortaöğretim Başarı Puanı), lise diploma notunuzun 5\'e bölünmesiyle bulunur ve 0-100 arası bir değerdir. YKS puanınıza 0.12 katsayısıyla eklenir. Örneğin 85 OBP: 85 × 0.12 = 10.2 puan katkı sağlar.'
+                    a: 'OBP (Ortaöğretim Başarı Puanı), lise diploma notunuzun YKS puanınıza katkısıdır. Diploma notunuz (0-100) önce 5 ile çarpılarak gerçek OBP\'ye (0-500) dönüştürülür, ardından 0.12 katsayısıyla çarpılır. Örneğin diploma notunuz 85 ise: 85 × 5 = 425 OBP, 425 × 0.12 = 51 puan katkı sağlar. Diploma notu 100 ise maksimum 60 puan katkı alırsınız.'
                 },
                 {
                     q: 'SAY, EA, SÖZ, DİL puanları nedir?',

@@ -67,12 +67,12 @@ export default function YKSRehberiPage() {
                                 <div>
                                     <h4 className="font-semibold text-blue-900 mb-2">TYT Sınavı</h4>
                                     <p className="text-blue-800">20 Haziran 2026 (Cumartesi)</p>
-                                    <p className="text-sm text-blue-700">Saat: 10:15 - 12:45</p>
+                                    <p className="text-sm text-blue-700">Saat: 10:15 - 13:00 (165 dakika)</p>
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-blue-900 mb-2">AYT Sınavı</h4>
                                     <p className="text-blue-800">21 Haziran 2026 (Pazar)</p>
-                                    <p className="text-sm text-blue-700">Saat: 10:15 - 12:45</p>
+                                    <p className="text-sm text-blue-700">Saat: 10:15 - 13:15 (180 dakika)</p>
                                 </div>
                             </div>
                         </div>
@@ -286,42 +286,43 @@ export default function YKSRehberiPage() {
                         <div className="bg-blue-50 p-6 rounded-lg">
                             <h3 className="text-xl font-semibold text-blue-900 mb-4">SAY Puanı</h3>
                             <p className="text-blue-800 mb-4">Sayısal bölümler için kullanılır.</p>
-                            <h4 className="font-semibold text-blue-900 mb-2">Ağırlıklar:</h4>
+                            <h4 className="font-semibold text-blue-900 mb-2">Kullanılan Testler:</h4>
                             <ul className="text-blue-800 space-y-1">
-                                <li>• TYT: %40</li>
-                                <li>• AYT Matematik: %30</li>
-                                <li>• AYT Fen: %30</li>
+                                <li>• TYT (tüm dersler)</li>
+                                <li>• AYT Matematik</li>
+                                <li>• AYT Fizik, Kimya, Biyoloji</li>
                             </ul>
                         </div>
 
                         <div className="bg-green-50 p-6 rounded-lg">
                             <h3 className="text-xl font-semibold text-green-900 mb-4">EA Puanı</h3>
                             <p className="text-green-800 mb-4">Eşit ağırlık bölümleri için kullanılır.</p>
-                            <h4 className="font-semibold text-green-900 mb-2">Ağırlıklar:</h4>
+                            <h4 className="font-semibold text-green-900 mb-2">Kullanılan Testler:</h4>
                             <ul className="text-green-800 space-y-1">
-                                <li>• TYT: %40</li>
-                                <li>• AYT Matematik: %30</li>
-                                <li>• AYT Türkçe: %30</li>
+                                <li>• TYT (tüm dersler)</li>
+                                <li>• AYT Matematik</li>
+                                <li>• AYT Edebiyat, Tarih-1, Coğrafya-1</li>
                             </ul>
                         </div>
 
                         <div className="bg-purple-50 p-6 rounded-lg">
                             <h3 className="text-xl font-semibold text-purple-900 mb-4">SÖZ Puanı</h3>
                             <p className="text-purple-800 mb-4">Sözel bölümler için kullanılır.</p>
-                            <h4 className="font-semibold text-purple-900 mb-2">Ağırlıklar:</h4>
+                            <h4 className="font-semibold text-purple-900 mb-2">Kullanılan Testler:</h4>
                             <ul className="text-purple-800 space-y-1">
-                                <li>• TYT: %40</li>
-                                <li>• AYT Türkçe: %60</li>
+                                <li>• TYT (tüm dersler)</li>
+                                <li>• AYT Edebiyat, Tarih, Coğrafya</li>
+                                <li>• AYT Felsefe, Din Kültürü</li>
                             </ul>
                         </div>
 
                         <div className="bg-orange-50 p-6 rounded-lg">
                             <h3 className="text-xl font-semibold text-orange-900 mb-4">DİL Puanı</h3>
                             <p className="text-orange-800 mb-4">Yabancı dil bölümleri için kullanılır.</p>
-                            <h4 className="font-semibold text-orange-900 mb-2">Ağırlıklar:</h4>
+                            <h4 className="font-semibold text-orange-900 mb-2">Kullanılan Testler:</h4>
                             <ul className="text-orange-800 space-y-1">
-                                <li>• TYT: %40</li>
-                                <li>• YDT: %60</li>
+                                <li>• TYT (tüm dersler)</li>
+                                <li>• YDT (Yabancı Dil Testi)</li>
                             </ul>
                         </div>
                     </div>

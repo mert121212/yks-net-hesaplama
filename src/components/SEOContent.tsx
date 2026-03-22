@@ -161,10 +161,10 @@ export default function SEOContent() {
                                 <span className="text-green-600 text-sm font-bold">✓</span>
                             </div>
                             <div>
-                                <h4 className="font-semibold text-gray-900 mb-1">Üniversite Önerileri</h4>
+                                <h4 className="font-semibold text-gray-900 mb-1">Tahmini Sıralama</h4>
                                 <p className="text-sm text-gray-600">
-                                    Puanınıza göre kazanabileceğiniz 314+ üniversite programını görün.
-                                    Filtreleme ve arama özellikleri.
+                                    Puanınıza göre tahmini YKS sıralamanızı görün.
+                                    Gerçek sıralama verilerine dayalı interpolasyon.
                                 </p>
                             </div>
                         </div>
@@ -243,7 +243,7 @@ export default function SEOContent() {
                                 <span className="text-blue-600 font-semibold">Katsayı: 1.000</span>
                             </div>
                         </div>
-                        <p className="text-xs text-gray-500 mt-3">* TYT taban puanı 100 üzerine hesaplanır. Minimum 150 puan gereklidir.</p>
+                        <p className="text-xs text-gray-500 mt-3">* Katsayılar tahminidir. ÖSYM kesin katsayıları açıklamaz; gerçek puanlar her yıl değişir.</p>
                     </div>
                 </div>
             </section>

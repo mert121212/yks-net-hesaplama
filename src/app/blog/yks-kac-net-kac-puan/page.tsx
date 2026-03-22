@@ -53,102 +53,103 @@ export default function YKSKacNetKacPuan() {
                             </p>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">TYT Net-Puan Tablosu</h2>
+                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">TYT Net ve Puan İlişkisi</h2>
+
+                        <div className="bg-amber-50 border-l-4 border-amber-500 p-6 my-6 rounded-lg">
+                            <h3 className="font-bold text-amber-900 mb-2">⚠️ Önemli Bilgi</h3>
+                            <p className="text-gray-700">
+                                TYT tek başına bir yerleştirme puanı üretmez. SAY, EA, SÖZ ve DİL puanları
+                                TYT <strong>ve</strong> AYT netlerinin birlikte hesaplanmasıyla oluşur.
+                                Aşağıdaki tablo, TYT netinin nihai puana katkısını gösterir; gerçek puanınız
+                                AYT netlerinize de bağlıdır.
+                            </p>
+                        </div>
 
                         <div className="overflow-x-auto my-8">
                             <table className="min-w-full bg-white border border-gray-300 rounded-lg">
                                 <thead className="bg-blue-100">
                                     <tr>
-                                        <th className="px-6 py-3 text-left font-semibold border-b">TYT Net</th>
-                                        <th className="px-6 py-3 text-left font-semibold border-b">Tahmini Puan</th>
+                                        <th className="px-6 py-3 text-left font-semibold border-b">TYT Toplam Net</th>
+                                        <th className="px-6 py-3 text-left font-semibold border-b">TYT Katkısı (tahmini)</th>
                                         <th className="px-6 py-3 text-left font-semibold border-b">Seviye</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr className="border-b bg-green-50">
-                                        <td className="px-6 py-4">100-120 net</td>
-                                        <td className="px-6 py-4 font-semibold">480-500</td>
+                                        <td className="px-6 py-4">110-120 net</td>
+                                        <td className="px-6 py-4 font-semibold">~210-220 puan katkı</td>
                                         <td className="px-6 py-4 text-green-700">Mükemmel</td>
                                     </tr>
                                     <tr className="border-b">
-                                        <td className="px-6 py-4">90-100 net</td>
-                                        <td className="px-6 py-4 font-semibold">450-480</td>
+                                        <td className="px-6 py-4">90-110 net</td>
+                                        <td className="px-6 py-4 font-semibold">~190-210 puan katkı</td>
                                         <td className="px-6 py-4 text-green-600">Çok İyi</td>
                                     </tr>
                                     <tr className="border-b bg-blue-50">
-                                        <td className="px-6 py-4">80-90 net</td>
-                                        <td className="px-6 py-4 font-semibold">420-450</td>
+                                        <td className="px-6 py-4">70-90 net</td>
+                                        <td className="px-6 py-4 font-semibold">~170-190 puan katkı</td>
                                         <td className="px-6 py-4 text-blue-700">İyi</td>
                                     </tr>
                                     <tr className="border-b">
-                                        <td className="px-6 py-4">70-80 net</td>
-                                        <td className="px-6 py-4 font-semibold">390-420</td>
-                                        <td className="px-6 py-4 text-blue-600">İyi</td>
-                                    </tr>
-                                    <tr className="border-b bg-yellow-50">
-                                        <td className="px-6 py-4">60-70 net</td>
-                                        <td className="px-6 py-4 font-semibold">360-390</td>
+                                        <td className="px-6 py-4">50-70 net</td>
+                                        <td className="px-6 py-4 font-semibold">~150-170 puan katkı</td>
                                         <td className="px-6 py-4 text-yellow-700">Orta</td>
                                     </tr>
-                                    <tr className="border-b">
-                                        <td className="px-6 py-4">50-60 net</td>
-                                        <td className="px-6 py-4 font-semibold">330-360</td>
-                                        <td className="px-6 py-4 text-yellow-600">Orta</td>
-                                    </tr>
-                                    <tr className="border-b bg-orange-50">
-                                        <td className="px-6 py-4">40-50 net</td>
-                                        <td className="px-6 py-4 font-semibold">300-330</td>
-                                        <td className="px-6 py-4 text-orange-700">Geliştirilmeli</td>
-                                    </tr>
                                     <tr>
-                                        <td className="px-6 py-4">30-40 net</td>
-                                        <td className="px-6 py-4 font-semibold">270-300</td>
-                                        <td className="px-6 py-4 text-orange-600">Geliştirilmeli</td>
+                                        <td className="px-6 py-4">30-50 net</td>
+                                        <td className="px-6 py-4 font-semibold">~130-150 puan katkı</td>
+                                        <td className="px-6 py-4 text-orange-700">Geliştirilmeli</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
+                        <p className="text-xs text-gray-500 mb-8">* Baz puan (100) + TYT katkısı + OBP katkısı = AYT olmadan temel puan. Nihai puan AYT netlerinize göre değişir.</p>
 
                         <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">SAY Puanı Net-Puan Tablosu</h2>
+                        <p className="text-gray-700 mb-4">
+                            Aşağıdaki tablo, TYT tam net (120) + OBP katkısı olmadan, yalnızca AYT SAY netine göre
+                            tahmini SAY puanlarını gösterir. Gerçek puanınız TYT netlerinize ve OBP'nize göre değişir.
+                        </p>
 
                         <div className="overflow-x-auto my-8">
                             <table className="min-w-full bg-white border border-gray-300 rounded-lg">
                                 <thead className="bg-green-100">
                                     <tr>
-                                        <th className="px-6 py-3 text-left font-semibold border-b">AYT Net (SAY)</th>
-                                        <th className="px-6 py-3 text-left font-semibold border-b">Tahmini SAY Puanı</th>
+                                        <th className="px-6 py-3 text-left font-semibold border-b">AYT SAY Net (toplam)</th>
+                                        <th className="px-6 py-3 text-left font-semibold border-b">Tahmini SAY Puanı*</th>
                                         <th className="px-6 py-3 text-left font-semibold border-b">Hedef Bölümler</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr className="border-b bg-green-50">
                                         <td className="px-6 py-4">70-80 net</td>
-                                        <td className="px-6 py-4 font-semibold">520-560</td>
+                                        <td className="px-6 py-4 font-semibold">~460-500</td>
                                         <td className="px-6 py-4 text-sm">Tıp (İyi Üniversiteler)</td>
                                     </tr>
                                     <tr className="border-b">
-                                        <td className="px-6 py-4">60-70 net</td>
-                                        <td className="px-6 py-4 font-semibold">480-520</td>
+                                        <td className="px-6 py-4">55-70 net</td>
+                                        <td className="px-6 py-4 font-semibold">~410-460</td>
                                         <td className="px-6 py-4 text-sm">Mühendislik (İyi Üniversiteler)</td>
                                     </tr>
                                     <tr className="border-b bg-blue-50">
-                                        <td className="px-6 py-4">50-60 net</td>
-                                        <td className="px-6 py-4 font-semibold">440-480</td>
+                                        <td className="px-6 py-4">40-55 net</td>
+                                        <td className="px-6 py-4 font-semibold">~360-410</td>
                                         <td className="px-6 py-4 text-sm">Mühendislik (Orta Üniversiteler)</td>
                                     </tr>
                                     <tr className="border-b">
-                                        <td className="px-6 py-4">40-50 net</td>
-                                        <td className="px-6 py-4 font-semibold">400-440</td>
-                                        <td className="px-6 py-4 text-sm">Mühendislik, Fen Fakülteleri</td>
+                                        <td className="px-6 py-4">25-40 net</td>
+                                        <td className="px-6 py-4 font-semibold">~310-360</td>
+                                        <td className="px-6 py-4 text-sm">Fen Fakülteleri</td>
                                     </tr>
                                     <tr>
-                                        <td className="px-6 py-4">30-40 net</td>
-                                        <td className="px-6 py-4 font-semibold">360-400</td>
-                                        <td className="px-6 py-4 text-sm">Fen Fakülteleri, MYO</td>
+                                        <td className="px-6 py-4">10-25 net</td>
+                                        <td className="px-6 py-4 font-semibold">~260-310</td>
+                                        <td className="px-6 py-4 text-sm">MYO, Açık Öğretim</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
+                        <p className="text-xs text-gray-500 mb-8">* TYT ~100 net varsayımıyla tahmini değerlerdir. ÖSYM kesin katsayıları açıklamaz.</p>
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-12 text-center text-white">
                             <h2 className="text-3xl font-bold mb-4">Kendi Puanınızı Hesaplayın!</h2>

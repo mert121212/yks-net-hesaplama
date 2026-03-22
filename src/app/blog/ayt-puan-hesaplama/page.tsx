@@ -101,60 +101,33 @@ export default function AYTPuanHesaplama() {
                             </div>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">AYT Puan Hesaplama Formülü</h2>
+                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">AYT Puan Nasıl Hesaplanır?</h2>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            AYT puanı, TYT puanı ve AYT ham puanının birleştirilmesiyle hesaplanır. Her puan türü için
-                            farklı katsayılar kullanılır.
+                            YKS puanı, TYT ve AYT ham puanlarının ÖSYM tarafından belirlenen katsayılarla çarpılıp
+                            toplanmasıyla oluşur. OBP (Ortaöğretim Başarı Puanı) da bu puana eklenir.
                         </p>
 
-                        <div className="bg-gray-100 p-6 rounded-lg my-6">
-                            <h3 className="font-bold text-gray-900 mb-4">Genel Formül:</h3>
-                            <p className="text-lg text-gray-800 mb-2">
-                                YKS Puanı = (TYT Puanı × 0.4) + (AYT Ham Puanı × 0.6)
-                            </p>
-                            <p className="text-sm text-gray-600">
-                                * OBP (Ortaöğretim Başarı Puanı) bu hesaba eklenir
+                        <div className="bg-amber-50 border-l-4 border-amber-500 p-6 my-6 rounded-lg">
+                            <h3 className="font-bold text-amber-900 mb-2">⚠️ Önemli Uyarı</h3>
+                            <p className="text-amber-800">
+                                ÖSYM, puan hesaplamada standart sapma normalizasyonu kullanır ve kesin katsayıları
+                                kamuoyuyla paylaşmaz. Bu nedenle internet üzerinde dolaşan sabit katsayı tabloları
+                                (örn. "AYT Mat katsayısı 5") gerçeği yansıtmaz. Puanlar her yıl sınava giren
+                                adayların performansına göre değişir. Hesaplama aracımız gerçek sonuçlara yakın
+                                bir <strong>tahmin</strong> üretir; kesin değildir.
                             </p>
                         </div>
 
-                        <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">SAY Puanı Katsayıları</h3>
-                        <div className="overflow-x-auto my-6">
-                            <table className="min-w-full bg-white border border-gray-300 rounded-lg">
-                                <thead className="bg-green-100">
-                                    <tr>
-                                        <th className="px-6 py-3 text-left text-gray-900 font-semibold border-b">Ders</th>
-                                        <th className="px-6 py-3 text-left text-gray-900 font-semibold border-b">Katsayı</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b"><td className="px-6 py-4">TYT Matematik</td><td className="px-6 py-4 font-semibold">3</td></tr>
-                                    <tr className="border-b"><td className="px-6 py-4">TYT Fen</td><td className="px-6 py-4 font-semibold">3</td></tr>
-                                    <tr className="border-b"><td className="px-6 py-4">AYT Matematik</td><td className="px-6 py-4 font-semibold">5</td></tr>
-                                    <tr className="border-b"><td className="px-6 py-4">AYT Fizik</td><td className="px-6 py-4 font-semibold">5</td></tr>
-                                    <tr className="border-b"><td className="px-6 py-4">AYT Kimya</td><td className="px-6 py-4 font-semibold">4</td></tr>
-                                    <tr><td className="px-6 py-4">AYT Biyoloji</td><td className="px-6 py-4 font-semibold">4</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">EA Puanı Katsayıları</h3>
-                        <div className="overflow-x-auto my-6">
-                            <table className="min-w-full bg-white border border-gray-300 rounded-lg">
-                                <thead className="bg-blue-100">
-                                    <tr>
-                                        <th className="px-6 py-3 text-left text-gray-900 font-semibold border-b">Ders</th>
-                                        <th className="px-6 py-3 text-left text-gray-900 font-semibold border-b">Katsayı</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b"><td className="px-6 py-4">TYT Matematik</td><td className="px-6 py-4 font-semibold">3</td></tr>
-                                    <tr className="border-b"><td className="px-6 py-4">TYT Türkçe</td><td className="px-6 py-4 font-semibold">3</td></tr>
-                                    <tr className="border-b"><td className="px-6 py-4">AYT Matematik</td><td className="px-6 py-4 font-semibold">4</td></tr>
-                                    <tr className="border-b"><td className="px-6 py-4">AYT Edebiyat</td><td className="px-6 py-4 font-semibold">4</td></tr>
-                                    <tr className="border-b"><td className="px-6 py-4">AYT Tarih-1</td><td className="px-6 py-4 font-semibold">3</td></tr>
-                                    <tr><td className="px-6 py-4">AYT Coğrafya-1</td><td className="px-6 py-4 font-semibold">3</td></tr>
-                                </tbody>
-                            </table>
+                        <div className="bg-gray-50 p-6 rounded-lg my-6">
+                            <h3 className="font-bold text-gray-900 mb-4">Genel Yapı:</h3>
+                            <ul className="space-y-2 text-gray-700">
+                                <li>• TYT puanı tüm puan türlerini etkiler</li>
+                                <li>• SAY puanı: TYT + AYT Matematik + AYT Fen dersleri</li>
+                                <li>• EA puanı: TYT + AYT Matematik + AYT Edebiyat/Tarih/Coğrafya</li>
+                                <li>• SÖZ puanı: TYT + AYT Sözel dersler (Edebiyat, Tarih, Coğrafya, Felsefe, Din)</li>
+                                <li>• DİL puanı: TYT + YDT</li>
+                                <li>• OBP (diploma notu × 5 × 0.12) tüm puan türlerine eklenir</li>
+                            </ul>
                         </div>
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-12 text-center text-white">
