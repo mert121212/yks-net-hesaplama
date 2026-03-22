@@ -29,9 +29,10 @@ const YDT_QUESTIONS = {
 }
 
 // Net hesaplama fonksiyonu
+// Eksi net puan hesaplamada 0 olarak kabul edilir (ÖSYM davranışı)
 export function calculateNet(dogru: number, yanlis: number): number {
     const net = dogru - (yanlis / 4)
-    return Math.round(net * 100) / 100
+    return Math.round(Math.max(0, net) * 100) / 100
 }
 
 // TYT net hesaplama
@@ -347,11 +348,14 @@ export function calculateYKSScores(
 
     const points = calculateUniversityScores(tytNets, aytNets, ydtNets, obp, obpHalved, obpMesleki)
 
+    // YDT: hiç giriş yapılmamışsa DİL puanı hesaplanmaz
+    const ydtHesaplandi = ydtScores.ydt.dogru > 0 || ydtScores.ydt.yanlis > 0
+
     const estimatedRanks = {
         say: estimateRank(points.say, 'say'),
         ea: estimateRank(points.ea, 'ea'),
         soz: estimateRank(points.soz, 'soz'),
-        dil: estimateRank(points.dil, 'dil')
+        dil: ydtHesaplandi ? estimateRank(points.dil, 'dil') : undefined
     }
 
     return {
@@ -360,6 +364,7 @@ export function calculateYKSScores(
         tytScore: tytNets.toplam,
         aytScore: aytNets.toplam,
         ydtScore: ydtNets.ydt,
+        ydtHesaplandi,
         obp,
         estimatedRanks
     }

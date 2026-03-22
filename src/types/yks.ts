@@ -70,6 +70,7 @@ export interface ScoreCalculationResult {
     tytScore: number
     aytScore: number
     ydtScore: number
+    ydtHesaplandi: boolean
     obp?: number
     estimatedRanks?: {
         say?: number

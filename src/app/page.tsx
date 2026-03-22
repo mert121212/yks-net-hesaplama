@@ -175,7 +175,9 @@ const ResultsPanel = memo(function ResultsPanel({
                     </div>
                     <div className="flex justify-between">
                         <span>DİL:</span>
-                        <span className="font-semibold text-orange-600">{results.points.dil.toFixed(2)}</span>
+                        <span className="font-semibold text-orange-600">
+                            {results.ydtHesaplandi ? results.points.dil.toFixed(2) : 'Hesaplanmadı'}
+                        </span>
                     </div>
                 </div>
             </div>
@@ -211,7 +213,9 @@ const ResultsPanel = memo(function ResultsPanel({
                         <div className="flex justify-between">
                             <span>DİL:</span>
                             <span className="font-semibold text-orange-600">
-                                {results.estimatedRanks.dil?.toLocaleString('tr-TR')}
+                                {results.ydtHesaplandi
+                                    ? results.estimatedRanks.dil?.toLocaleString('tr-TR')
+                                    : 'Hesaplanmadı'}
                             </span>
                         </div>
                     </div>
