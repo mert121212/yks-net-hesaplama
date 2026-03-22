@@ -108,7 +108,11 @@ export default function OBPInput({
                                 max="600"
                                 step="0.01"
                                 value={previousYearScore || ''}
-                                onChange={(e) => onPreviousYearScoreChange?.(parseFloat(e.target.value) || 0)}
+                                onChange={(e) => {
+                                    const val = parseFloat(e.target.value) || 0
+                                    if (val >= 0 && val <= 600) onPreviousYearScoreChange?.(val)
+                                }}
+                                onWheel={(e) => e.currentTarget.blur()}
                                 className="input-field text-lg max-w-xs"
                                 placeholder="Örn: 450.50"
                             />
