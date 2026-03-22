@@ -31,7 +31,7 @@ const YDT_QUESTIONS = {
 // Net hesaplama fonksiyonu
 export function calculateNet(dogru: number, yanlis: number): number {
     const net = dogru - (yanlis / 4)
-    return Math.round(net * 100) / 100 // Eksi netlere izin ver
+    return Math.round(net * 100) / 100
 }
 
 // TYT net hesaplama
@@ -87,17 +87,18 @@ export function calculateAYTNets(scores: AYTScores): NetScores['ayt'] {
 // YDT net hesaplama
 export function calculateYDTNets(scores: YDTScores): NetScores['ydt'] {
     const ydtNet = calculateNet(scores.ydt.dogru, scores.ydt.yanlis)
-
-    return {
-        ydt: ydtNet
-    }
+    return { ydt: ydtNet }
 }
 
 // Üniversite puanları hesaplama (OBP dahil)
 // ÖNEMLİ NOT: ÖSYM'nin gerçek puan formülü standart sapma normalizasyonu içerir
 // ve her yıl sınava giren adayların performansına göre değişir.
 // Bu hesaplama, gerçek sonuçlara yakın bir TAHMİN üretir; kesin değildir.
-// Referans: 2025 YKS SAY birincisi ~500 puan (tam net ile)
+//
+// Katsayı dengesi:
+//   TYT: 120 soru → katsayı 1.33 → tam net katkısı ≈ 160
+//   AYT: 80 soru  → katsayı 3.0  → tam net katkısı ≈ 240
+//   Baz puan: 100 → Toplam max ham puan ≈ 500 ✓
 export function calculateUniversityScores(
     tytNets: NetScores['tyt'],
     aytNets: NetScores['ayt'],
@@ -107,82 +108,82 @@ export function calculateUniversityScores(
     obpMesleki: boolean = false
 ): UniversityScore {
     // OBP katkısı:
-    // ÖSYM'de diploma notu (0-100) önce 5 ile çarpılarak 500 üzerinden OBP'ye dönüştürülür.
-    // Sonra OBP * 0.12 (normal) veya OBP * 0.06 (yarıya düşürülmüş) puana eklenir.
-    const obpGercek = obp * 5 // diploma notu → gerçek OBP (0-500)
+    // Diploma notu (0-100) → OBP (0-500): diploma * 5
+    // Puan katkısı: OBP * 0.12 (normal) veya OBP * 0.06 (yarıya düşürülmüş)
+    const obpGercek = obp * 5
     const obpKatsayi = obpHalved ? 0.06 : 0.12
     const obpContribution = obpGercek * obpKatsayi
-    // Mesleki lise ek puanı: OBP * 0.06
     const meslekiEkPuan = obpMesleki ? obpGercek * 0.06 : 0
 
-    // --- TYT katkısı ---
-    // Ampirik katsayılar: 2025 YKS referans noktalarına göre kalibre edilmiştir.
-    // TYT tam net (120) → ~120 puan katkısı → katsayı 1.0 per net
+    // TYT katkısı — katsayı 1.33 (TYT'nin %40 ağırlığını doğru yansıtır)
+    const TYT_KATSAYI = 1.33
     const tytKatkisi =
-        (tytNets.turkce * 1.0) +
-        (tytNets.matematik * 1.0) +
-        (tytNets.sosyal * 1.0) +
-        (tytNets.fen * 1.0)
+        (tytNets.turkce * TYT_KATSAYI) +
+        (tytNets.matematik * TYT_KATSAYI) +
+        (tytNets.sosyal * TYT_KATSAYI) +
+        (tytNets.fen * TYT_KATSAYI)
 
-    // Baz puan: minimum puan
     const bazPuan = 100
 
-    const tytBase = bazPuan + tytKatkisi + obpContribution + meslekiEkPuan
+    // Ham puan (OBP hariç) 500 ile sınırlandırılır
+    // AYT katsayısı 3.0 — her puan türü sadece kendi branş netlerini kullanır
 
-    // --- SAY puanı ---
-    // AYT SAY tam net (80) → ~280 katkı → katsayı 3.5 per net
-    // Kontrol: TYT 120 + AYT 80 → 100 + 120 + 280 = 500 ≈ 2025 gerçek max ✓
+    // --- SAY puanı (Matematik + Fizik + Kimya + Biyoloji) ---
     const sayAYT =
-        (aytNets.matematik * 3.5) +
-        (aytNets.fizik * 3.5) +
-        (aytNets.kimya * 3.5) +
-        (aytNets.biyoloji * 3.5)
-    const sayScore = tytBase + sayAYT
+        (aytNets.matematik * 3.0) +
+        (aytNets.fizik * 3.0) +
+        (aytNets.kimya * 3.0) +
+        (aytNets.biyoloji * 3.0)
+    const sayHam = Math.min(bazPuan + tytKatkisi + sayAYT, 500)
+    const sayScore = sayHam + obpContribution + meslekiEkPuan
 
-    // --- EA puanı ---
-    // AYT EA tam net (80) → ~280 katkı
+    // --- EA puanı (Matematik + Edebiyat + Tarih-1 + Coğrafya-1) ---
     const eaAYT =
-        (aytNets.matematik * 3.5) +
-        (aytNets.edebiyat * 3.5) +
-        (aytNets.tarih1 * 3.5) +
-        (aytNets.cografya1 * 3.5)
-    const eaScore = tytBase + eaAYT
+        (aytNets.matematik * 3.0) +
+        (aytNets.edebiyat * 3.0) +
+        (aytNets.tarih1 * 3.0) +
+        (aytNets.cografya1 * 3.0)
+    const eaHam = Math.min(bazPuan + tytKatkisi + eaAYT, 500)
+    const eaScore = eaHam + obpContribution + meslekiEkPuan
 
-    // --- SÖZ puanı ---
-    // SÖZ'de 7 ders var (toplam max ~80 net), katsayı 3.5
+    // --- SÖZ puanı (Edebiyat + Tarih-1 + Coğrafya-1 + Tarih-2 + Coğrafya-2 + Felsefe + Din) ---
     const sozAYT =
-        (aytNets.edebiyat * 3.5) +
-        (aytNets.tarih1 * 3.5) +
-        (aytNets.cografya1 * 3.5) +
-        (aytNets.tarih2 * 3.5) +
-        (aytNets.cografya2 * 3.5) +
-        (aytNets.felsefe * 3.5) +
-        (aytNets.din * 3.5)
-    const sozScore = tytBase + sozAYT
+        (aytNets.edebiyat * 3.0) +
+        (aytNets.tarih1 * 3.0) +
+        (aytNets.cografya1 * 3.0) +
+        (aytNets.tarih2 * 3.0) +
+        (aytNets.cografya2 * 3.0) +
+        (aytNets.felsefe * 3.0) +
+        (aytNets.din * 3.0)
+    const sozHam = Math.min(bazPuan + tytKatkisi + sozAYT, 500)
+    const sozScore = sozHam + obpContribution + meslekiEkPuan
 
-    // --- DİL puanı ---
-    // YDT 80 soru tam net → ~280 katkı
-    const dilScore = tytBase + (ydtNets.ydt * 3.5)
+    // --- DİL puanı (YDT) ---
+    const dilHam = Math.min(bazPuan + tytKatkisi + (ydtNets.ydt * 3.0), 500)
+    const dilScore = dilHam + obpContribution + meslekiEkPuan
 
-    return {
+    const result: UniversityScore = {
         say: Math.max(100, Math.round(sayScore * 100) / 100),
         ea: Math.max(100, Math.round(eaScore * 100) / 100),
         soz: Math.max(100, Math.round(sozScore * 100) / 100),
-        dil: Math.max(100, Math.round(dilScore * 100) / 100)
+        dil: Math.max(100, Math.round(dilScore * 100) / 100),
+        // Ham puanlar (OBP öncesi) — kullanıcıya ayrıca gösterilebilir
+        sayHam: Math.round(sayHam * 100) / 100,
+        eaHam: Math.round(eaHam * 100) / 100,
+        sozHam: Math.round(sozHam * 100) / 100,
+        dilHam: Math.round(dilHam * 100) / 100,
     }
+    return result
 }
 
 // Tahmini sıralama hesaplama
 // 2025 YKS gerçek sıralama verilerine dayalı interpolasyon tablosu
-// Referans noktaları: 2025 YKS gerçek sonuçlarından
-// - SAY birincisi: ~500 puan → sıralama 1
-// - SAY 494 puan → sıralama ~14.000 (gerçek veri)
 // Not: Tahmindir, gerçek sıralama sınav yılına ve adayların performansına göre değişir
 export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil'): number {
     if (score < 150) return 2500000
 
     // [puan, sıralama] çiftleri — 2025 YKS gerçek verilerinden kalibre edilmiştir
-    // Lineer interpolasyon ile ara değerler hesaplanır
+    // Orta/düşük puan aralıklarına ek referans noktaları eklenerek yığılma riski azaltıldı
     const tables: Record<string, [number, number][]> = {
         say: [
             [500, 1],
@@ -194,13 +195,22 @@ export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil')
             [400, 225000],
             [380, 310000],
             [360, 410000],
+            [345, 470000],
             [340, 520000],
+            [330, 575000],
             [320, 640000],
+            [310, 705000],
             [300, 770000],
+            [290, 835000],
             [280, 900000],
+            [275, 935000],
+            [270, 965000],
             [260, 1030000],
+            [250, 1095000],
             [240, 1160000],
+            [230, 1225000],
             [220, 1290000],
+            [210, 1355000],
             [200, 1420000],
             [180, 1580000],
             [160, 1750000],
@@ -216,13 +226,22 @@ export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil')
             [400, 165000],
             [380, 240000],
             [360, 330000],
+            [345, 380000],
             [340, 430000],
+            [330, 485000],
             [320, 540000],
+            [310, 600000],
             [300, 660000],
+            [290, 722000],
             [280, 785000],
+            [275, 847000],
+            [270, 847000],
             [260, 910000],
+            [250, 975000],
             [240, 1040000],
+            [230, 1105000],
             [220, 1170000],
+            [210, 1240000],
             [200, 1310000],
             [180, 1470000],
             [160, 1650000],
@@ -238,13 +257,21 @@ export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil')
             [395, 155000],
             [375, 225000],
             [355, 310000],
+            [340, 357000],
             [335, 405000],
+            [325, 457000],
             [315, 510000],
+            [305, 565000],
             [295, 620000],
+            [285, 680000],
             [275, 740000],
+            [265, 800000],
             [255, 860000],
+            [245, 922000],
             [235, 985000],
+            [225, 1047000],
             [215, 1110000],
+            [205, 1180000],
             [195, 1250000],
             [175, 1400000],
             [155, 1580000],
@@ -261,11 +288,17 @@ export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil')
             [360, 98000],
             [340, 135000],
             [320, 180000],
+            [310, 207000],
             [300, 235000],
+            [290, 267000],
             [280, 300000],
+            [270, 337000],
             [260, 375000],
+            [250, 417000],
             [240, 460000],
+            [230, 507000],
             [220, 555000],
+            [210, 607000],
             [200, 660000],
             [180, 775000],
             [160, 910000],
@@ -275,15 +308,12 @@ export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil')
 
     const table = tables[field]
 
-    // Tablonun üstündeyse en iyi sıralamayı döndür
     if (score >= table[0][0]) return table[0][1]
-    // Tablonun altındaysa en kötü sıralamayı döndür
     if (score <= table[table.length - 1][0]) {
         const last = table[table.length - 1]
         return Math.min(2500000, last[1] + (last[0] - score) * 15000)
     }
 
-    // Lineer interpolasyon
     for (let i = 0; i < table.length - 1; i++) {
         const [highScore, highRank] = table[i]
         const [lowScore, lowRank] = table[i + 1]
@@ -317,7 +347,6 @@ export function calculateYKSScores(
 
     const points = calculateUniversityScores(tytNets, aytNets, ydtNets, obp, obpHalved, obpMesleki)
 
-    // Tahmini sıralamalar
     const estimatedRanks = {
         say: estimateRank(points.say, 'say'),
         ea: estimateRank(points.ea, 'ea'),

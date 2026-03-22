@@ -57,6 +57,11 @@ export interface UniversityScore {
     ea: number
     soz: number
     dil: number
+    // Ham puanlar (OBP katkısı eklenmeden önceki yerleştirme puanı)
+    sayHam?: number
+    eaHam?: number
+    sozHam?: number
+    dilHam?: number
 }
 
 export interface ScoreCalculationResult {
