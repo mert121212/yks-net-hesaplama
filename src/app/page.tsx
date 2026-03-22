@@ -117,9 +117,17 @@ const ResultsPanel = memo(function ResultsPanel({
                         <span className="font-semibold">{results.nets.ayt.edebiyat.toFixed(2)}</span>
                     </div>
                     <hr className="my-2" />
-                    <div className="flex justify-between text-base font-bold text-green-600">
-                        <span>AYT Toplam:</span>
-                        <span>{results.nets.ayt.toplam.toFixed(2)}</span>
+                    <div className="flex justify-between text-sm font-bold text-green-600">
+                        <span>SAY Neti (Mat+Fen):</span>
+                        <span>{(results.nets.ayt.matematik + results.nets.ayt.fizik + results.nets.ayt.kimya + results.nets.ayt.biyoloji).toFixed(2)}</span>
+                    </div>
+                    <div className="flex justify-between text-sm font-bold text-blue-600">
+                        <span>EA Neti (Mat+Ede+Sos1):</span>
+                        <span>{(results.nets.ayt.matematik + results.nets.ayt.edebiyat + results.nets.ayt.tarih1 + results.nets.ayt.cografya1).toFixed(2)}</span>
+                    </div>
+                    <div className="flex justify-between text-sm font-bold text-purple-600">
+                        <span>SÖZ Neti (Ede+Sos):</span>
+                        <span>{(results.nets.ayt.edebiyat + results.nets.ayt.tarih1 + results.nets.ayt.cografya1 + results.nets.ayt.tarih2 + results.nets.ayt.cografya2 + results.nets.ayt.felsefe + results.nets.ayt.din).toFixed(2)}</span>
                     </div>
                 </div>
             </div>
@@ -225,7 +233,13 @@ const ResultsPanel = memo(function ResultsPanel({
             {/* Paylaşım Butonu */}
             <ShareResults
                 tytNet={results.nets.tyt.toplam}
-                aytNet={results.nets.ayt.toplam}
+                aytNet={
+                    results.points.say >= Math.max(results.points.ea, results.points.soz, results.points.dil)
+                        ? results.nets.ayt.matematik + results.nets.ayt.fizik + results.nets.ayt.kimya + results.nets.ayt.biyoloji
+                        : results.points.ea >= Math.max(results.points.soz, results.points.dil)
+                            ? results.nets.ayt.matematik + results.nets.ayt.edebiyat + results.nets.ayt.tarih1 + results.nets.ayt.cografya1
+                            : results.nets.ayt.edebiyat + results.nets.ayt.tarih1 + results.nets.ayt.cografya1 + results.nets.ayt.tarih2 + results.nets.ayt.cografya2 + results.nets.ayt.felsefe + results.nets.ayt.din
+                }
                 ydtNet={results.nets.ydt.ydt}
                 scoreType={
                     results.points.say >= Math.max(results.points.ea, results.points.soz, results.points.dil) ? 'SAY' :
