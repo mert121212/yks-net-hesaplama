@@ -41,13 +41,15 @@ export default function ScoreInput({
     }
 
     const handleDogruChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const value = parseInt(e.target.value) || 0
+        const raw = parseInt(e.target.value) || 0
+        const value = Math.min(Math.max(0, raw), maxQuestions)
         validateInput('dogru', value)
         onDogruChange(value)
     }
 
     const handleYanlisChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const value = parseInt(e.target.value) || 0
+        const raw = parseInt(e.target.value) || 0
+        const value = Math.min(Math.max(0, raw), maxQuestions)
         validateInput('yanlis', value)
         onYanlisChange(value)
     }
