@@ -49,7 +49,7 @@ export default function TYTMatematikKonulari() {
                             <h3 className="font-bold text-blue-900 mb-3">📊 Genel Bilgiler</h3>
                             <ul className="space-y-2 text-gray-700">
                                 <li>• <strong>Toplam Soru:</strong> 40 soru</li>
-                                <li>• <strong>Süre:</strong> Yaklaşık 50 dakika (toplam 135 dakika içinde)</li>
+                                <li>• <strong>Süre:</strong> Yaklaşık 55 dakika (toplam 165 dakika içinde)</li>
                                 <li>• <strong>Zorluk:</strong> Orta seviye</li>
                                 <li>• <strong>Hedef:</strong> 30+ net iyi sayılır</li>
                             </ul>

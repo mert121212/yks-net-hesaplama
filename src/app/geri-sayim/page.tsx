@@ -322,7 +322,7 @@ export default function GeriSayimPage() {
                                 <div className="p-4 bg-blue-50 rounded-xl">
                                     <div className="text-lg font-bold text-blue-700">TYT</div>
                                     <div className="text-sm text-blue-600 font-medium">20 Haziran 2026</div>
-                                    <div className="text-xs text-gray-500 mt-1">120 soru · 135 dakika</div>
+                                    <div className="text-xs text-gray-500 mt-1">120 soru · 165 dakika</div>
                                 </div>
                                 <div className="p-4 bg-green-50 rounded-xl">
                                     <div className="text-lg font-bold text-green-700">AYT</div>

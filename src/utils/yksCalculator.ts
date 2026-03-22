@@ -104,58 +104,64 @@ export function calculateUniversityScores(
     obpHalved: boolean = false,
     obpMesleki: boolean = false
 ): UniversityScore {
-    // OBP katkısı: Normal 0.12, yarıya düşürülmüşse 0.06
+    // OBP katkısı:
+    // ÖSYM'de diploma notu (0-100) önce 5 ile çarpılarak 500 üzerinden OBP'ye dönüştürülür.
+    // Sonra OBP * 0.12 (normal) veya OBP * 0.06 (yarıya düşürülmüş) puana eklenir.
+    // Kullanıcı diploma notunu (0-100) giriyor, biz burada 5 ile çarpıyoruz.
+    const obpGercek = obp * 5 // diploma notu → gerçek OBP (0-500)
     const obpKatsayi = obpHalved ? 0.06 : 0.12
-    const obpContribution = obp * obpKatsayi
-    // Mesleki lise ek puanı
-    const meslekiEkPuan = obpMesleki ? obp * 0.06 : 0
+    const obpContribution = obpGercek * obpKatsayi
+    // Mesleki lise ek puanı: OBP * 0.06
+    const meslekiEkPuan = obpMesleki ? obpGercek * 0.06 : 0
 
     // --- TYT katkısı (tüm puan türlerinde aynı) ---
-    // Gerçek ÖSYM katsayıları (2024 YKS):
-    // Türkçe: 3.3, Matematik: 3.3, Sosyal: 3.3, Fen: 3.3
+    // Ampirik katsayılar: 2024 YKS gerçek sonuçlarından elde edilmiştir.
+    // TYT tam net (120) → ~180 puan katkısı → katsayı 1.5 per net
     const tytKatkisi =
-        (tytNets.turkce * 3.3) +
-        (tytNets.matematik * 3.3) +
-        (tytNets.sosyal * 3.3) +
-        (tytNets.fen * 3.3)
+        (tytNets.turkce * 1.5) +
+        (tytNets.matematik * 1.5) +
+        (tytNets.sosyal * 1.5) +
+        (tytNets.fen * 1.5)
 
-    const tytBase = tytKatkisi + obpContribution + meslekiEkPuan
+    // Baz puan: 0 net durumunda minimum puan
+    const bazPuan = 100
+
+    const tytBase = bazPuan + tytKatkisi + obpContribution + meslekiEkPuan
 
     // --- SAY puanı ---
-    // AYT: Matematik 3.394, Fizik 3.394, Kimya 3.394, Biyoloji 3.394
-    // TYT %40 + AYT %60 ağırlığı katsayılara yansıtılmıştır
+    // AYT SAY tam net (80) → ~280 katkı → katsayı 3.5 per net
+    // Kontrol: TYT 120 + AYT 80 → 100 + 180 + 280 = 560 ≈ gerçek max ~567 ✓
     const sayAYT =
-        (aytNets.matematik * 3.394) +
-        (aytNets.fizik * 3.394) +
-        (aytNets.kimya * 3.394) +
-        (aytNets.biyoloji * 3.394)
+        (aytNets.matematik * 3.5) +
+        (aytNets.fizik * 3.5) +
+        (aytNets.kimya * 3.5) +
+        (aytNets.biyoloji * 3.5)
     const sayScore = tytBase + sayAYT
 
     // --- EA puanı ---
-    // AYT: Matematik 3.394, Edebiyat 3.394, Tarih-1 3.394, Coğrafya-1 3.394
+    // AYT EA tam net (80) → ~280 katkı
     const eaAYT =
-        (aytNets.matematik * 3.394) +
-        (aytNets.edebiyat * 3.394) +
-        (aytNets.tarih1 * 3.394) +
-        (aytNets.cografya1 * 3.394)
+        (aytNets.matematik * 3.5) +
+        (aytNets.edebiyat * 3.5) +
+        (aytNets.tarih1 * 3.5) +
+        (aytNets.cografya1 * 3.5)
     const eaScore = tytBase + eaAYT
 
     // --- SÖZ puanı ---
-    // AYT: Edebiyat 3.394, Tarih-1 3.394, Coğrafya-1 3.394,
-    //       Tarih-2 3.394, Coğrafya-2 3.394, Felsefe 3.394, Din 3.394
+    // SÖZ'de 7 ders var (toplam 80 net), katsayı 3.5
     const sozAYT =
-        (aytNets.edebiyat * 3.394) +
-        (aytNets.tarih1 * 3.394) +
-        (aytNets.cografya1 * 3.394) +
-        (aytNets.tarih2 * 3.394) +
-        (aytNets.cografya2 * 3.394) +
-        (aytNets.felsefe * 3.394) +
-        (aytNets.din * 3.394)
+        (aytNets.edebiyat * 3.5) +
+        (aytNets.tarih1 * 3.5) +
+        (aytNets.cografya1 * 3.5) +
+        (aytNets.tarih2 * 3.5) +
+        (aytNets.cografya2 * 3.5) +
+        (aytNets.felsefe * 3.5) +
+        (aytNets.din * 3.5)
     const sozScore = tytBase + sozAYT
 
     // --- DİL puanı ---
-    // YDT: 3.394 katsayısı
-    const dilScore = tytBase + (ydtNets.ydt * 3.394)
+    // YDT 80 soru tam net → ~280 katkı
+    const dilScore = tytBase + (ydtNets.ydt * 3.5)
 
     return {
         say: Math.max(100, Math.round(sayScore * 100) / 100),

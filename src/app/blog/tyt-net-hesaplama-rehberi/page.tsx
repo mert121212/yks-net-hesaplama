@@ -90,7 +90,7 @@ export default function TYTNetHesaplamaRehberi() {
                                     <tr>
                                         <td className="px-6 py-4 text-gray-900 font-bold">TOPLAM</td>
                                         <td className="px-6 py-4 text-gray-900 font-bold">120 soru</td>
-                                        <td className="px-6 py-4 text-gray-900 font-bold">135 dakika</td>
+                                        <td className="px-6 py-4 text-gray-900 font-bold">165 dakika</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -172,7 +172,7 @@ export default function TYTNetHesaplamaRehberi() {
                             <div className="bg-gray-50 p-6 rounded-lg">
                                 <h3 className="font-bold text-gray-900 mb-2">1. Zaman Yönetimi</h3>
                                 <p className="text-gray-700">
-                                    TYT'de 120 soru için 135 dakikanız var. Her soru için ortalama 1 dakika ayırın.
+                                    TYT'de 120 soru için 165 dakikanız var. Her soru için ortalama 1 dakika ayırın.
                                     Takıldığınız soruları işaretleyip geçin, sonra dönün.
                                 </p>
                             </div>

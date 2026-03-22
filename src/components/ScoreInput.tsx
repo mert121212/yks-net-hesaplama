@@ -23,16 +23,18 @@ export default function ScoreInput({
 }: ScoreInputProps) {
     const [errors, setErrors] = useState<{ dogru?: string; yanlis?: string }>({})
 
-    const validateInput = (type: 'dogru' | 'yanlis', value: number) => {
-        const otherValue = type === 'dogru' ? yanlis : dogru
-        const newErrors = { ...errors }
+    const validateInput = (type: 'dogru' | 'yanlis', value: number, otherVal?: number) => {
+        const otherValue = otherVal !== undefined ? otherVal : (type === 'dogru' ? yanlis : dogru)
+        const newErrors: { dogru?: string; yanlis?: string } = {}
 
-        if (value < 0) {
-            newErrors[type] = 'Negatif olamaz'
-        } else if (value + otherValue > maxQuestions) {
+        // Doğru için kontrol
+        const d = type === 'dogru' ? value : dogru
+        const y = type === 'yanlis' ? value : yanlis
+
+        if (d < 0) newErrors.dogru = 'Negatif olamaz'
+        if (y < 0) newErrors.yanlis = 'Negatif olamaz'
+        if (d + y > maxQuestions) {
             newErrors[type] = `Toplam ${maxQuestions}'ı geçemez`
-        } else {
-            delete newErrors[type]
         }
 
         setErrors(newErrors)
@@ -74,6 +76,7 @@ export default function ScoreInput({
                         max={maxQuestions}
                         value={dogru || ''}
                         onChange={handleDogruChange}
+                        onWheel={(e) => e.currentTarget.blur()}
                         disabled={disabled}
                         className={`input-field ${errors.dogru ? 'border-red-500' : ''} ${disabled ? 'bg-gray-100 cursor-not-allowed' : ''
                             }`}
@@ -94,6 +97,7 @@ export default function ScoreInput({
                         max={maxQuestions}
                         value={yanlis || ''}
                         onChange={handleYanlisChange}
+                        onWheel={(e) => e.currentTarget.blur()}
                         disabled={disabled}
                         className={`input-field ${errors.yanlis ? 'border-red-500' : ''} ${disabled ? 'bg-gray-100 cursor-not-allowed' : ''
                             }`}

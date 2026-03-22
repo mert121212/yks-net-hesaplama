@@ -87,7 +87,7 @@ export default function SEOContent() {
                     <div>
                         <h3 className="font-semibold text-lg mb-3 text-gray-900">TYT (Temel Yeterlilik Testi)</h3>
                         <ul className="space-y-2 text-sm">
-                            <li>• Toplam 120 soru (135 dakika)</li>
+                            <li>• Toplam 120 soru (165 dakika)</li>
                             <li>• Türkçe: 40 soru</li>
                             <li>• Matematik: 40 soru</li>
                             <li>• Sosyal Bilimler: 20 soru</li>

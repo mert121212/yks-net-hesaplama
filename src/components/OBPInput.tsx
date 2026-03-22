@@ -55,6 +55,7 @@ export default function OBPInput({
                     step="0.01"
                     value={obp || ''}
                     onChange={handleChange}
+                    onWheel={(e) => e.currentTarget.blur()}
                     className="input-field text-lg"
                     placeholder="Örn: 85.50"
                 />
@@ -62,8 +63,11 @@ export default function OBPInput({
                 {obp > 0 && (
                     <div className="mt-3 p-3 bg-green-50 rounded-lg">
                         <p className="text-sm text-green-800">
-                            OBP Katkısı: <span className="font-bold">+{(obp * (obpHalved ? 0.06 : 0.12)).toFixed(2)}</span> puan
-                            {obpMesleki && <span className="ml-2">(+{(obp * 0.06).toFixed(2)} mesleki ek puan)</span>}
+                            OBP Katkısı: <span className="font-bold">+{(obp * 5 * (obpHalved ? 0.06 : 0.12)).toFixed(2)}</span> puan
+                            {obpMesleki && <span className="ml-2">(+{(obp * 5 * 0.06).toFixed(2)} mesleki ek puan)</span>}
+                        </p>
+                        <p className="text-xs text-green-700 mt-1">
+                            Diploma notu {obp} → OBP: {(obp * 5).toFixed(0)} × {obpHalved ? '0.06' : '0.12'} = {(obp * 5 * (obpHalved ? 0.06 : 0.12)).toFixed(2)} puan
                         </p>
                     </div>
                 )}
