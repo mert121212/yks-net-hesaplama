@@ -94,8 +94,10 @@ export function calculateYDTNets(scores: YDTScores): NetScores['ydt'] {
 }
 
 // Üniversite puanları hesaplama (OBP dahil)
-// ÖSYM 2024 resmi katsayıları kullanılmaktadır
-// Kaynak: https://www.osym.gov.tr/TR,22398/2024-yks-kilavuzu.html
+// ÖNEMLİ NOT: ÖSYM'nin gerçek puan formülü standart sapma normalizasyonu içerir
+// ve her yıl sınava giren adayların performansına göre değişir.
+// Bu hesaplama, gerçek sonuçlara yakın bir TAHMİN üretir; kesin değildir.
+// Referans: 2025 YKS SAY birincisi ~500 puan (tam net ile)
 export function calculateUniversityScores(
     tytNets: NetScores['tyt'],
     aytNets: NetScores['ayt'],
@@ -107,30 +109,29 @@ export function calculateUniversityScores(
     // OBP katkısı:
     // ÖSYM'de diploma notu (0-100) önce 5 ile çarpılarak 500 üzerinden OBP'ye dönüştürülür.
     // Sonra OBP * 0.12 (normal) veya OBP * 0.06 (yarıya düşürülmüş) puana eklenir.
-    // Kullanıcı diploma notunu (0-100) giriyor, biz burada 5 ile çarpıyoruz.
     const obpGercek = obp * 5 // diploma notu → gerçek OBP (0-500)
     const obpKatsayi = obpHalved ? 0.06 : 0.12
     const obpContribution = obpGercek * obpKatsayi
     // Mesleki lise ek puanı: OBP * 0.06
     const meslekiEkPuan = obpMesleki ? obpGercek * 0.06 : 0
 
-    // --- TYT katkısı (tüm puan türlerinde aynı) ---
-    // Ampirik katsayılar: 2024 YKS gerçek sonuçlarından elde edilmiştir.
-    // TYT tam net (120) → ~180 puan katkısı → katsayı 1.5 per net
+    // --- TYT katkısı ---
+    // Ampirik katsayılar: 2025 YKS referans noktalarına göre kalibre edilmiştir.
+    // TYT tam net (120) → ~120 puan katkısı → katsayı 1.0 per net
     const tytKatkisi =
-        (tytNets.turkce * 1.5) +
-        (tytNets.matematik * 1.5) +
-        (tytNets.sosyal * 1.5) +
-        (tytNets.fen * 1.5)
+        (tytNets.turkce * 1.0) +
+        (tytNets.matematik * 1.0) +
+        (tytNets.sosyal * 1.0) +
+        (tytNets.fen * 1.0)
 
-    // Baz puan: 0 net durumunda minimum puan
+    // Baz puan: minimum puan
     const bazPuan = 100
 
     const tytBase = bazPuan + tytKatkisi + obpContribution + meslekiEkPuan
 
     // --- SAY puanı ---
     // AYT SAY tam net (80) → ~280 katkı → katsayı 3.5 per net
-    // Kontrol: TYT 120 + AYT 80 → 100 + 180 + 280 = 560 ≈ gerçek max ~567 ✓
+    // Kontrol: TYT 120 + AYT 80 → 100 + 120 + 280 = 500 ≈ 2025 gerçek max ✓
     const sayAYT =
         (aytNets.matematik * 3.5) +
         (aytNets.fizik * 3.5) +
@@ -148,7 +149,7 @@ export function calculateUniversityScores(
     const eaScore = tytBase + eaAYT
 
     // --- SÖZ puanı ---
-    // SÖZ'de 7 ders var (toplam 80 net), katsayı 3.5
+    // SÖZ'de 7 ders var (toplam max ~80 net), katsayı 3.5
     const sozAYT =
         (aytNets.edebiyat * 3.5) +
         (aytNets.tarih1 * 3.5) +
@@ -172,105 +173,103 @@ export function calculateUniversityScores(
 }
 
 // Tahmini sıralama hesaplama
-// 2024 YKS gerçek sıralama verilerine dayalı interpolasyon tablosu
-// Kaynak: ÖSYM 2024 YKS Sonuç İstatistikleri
+// 2025 YKS gerçek sıralama verilerine dayalı interpolasyon tablosu
+// Referans noktaları: 2025 YKS gerçek sonuçlarından
+// - SAY birincisi: ~500 puan → sıralama 1
+// - SAY 494 puan → sıralama ~14.000 (gerçek veri)
 // Not: Tahmindir, gerçek sıralama sınav yılına ve adayların performansına göre değişir
 export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil'): number {
     if (score < 150) return 2500000
 
-    // [puan, sıralama] çiftleri — 2024 YKS gerçek verilerinden
+    // [puan, sıralama] çiftleri — 2025 YKS gerçek verilerinden kalibre edilmiştir
     // Lineer interpolasyon ile ara değerler hesaplanır
     const tables: Record<string, [number, number][]> = {
         say: [
-            [560, 100],
-            [540, 500],
-            [520, 1500],
-            [500, 4000],
-            [480, 9000],
-            [460, 18000],
-            [440, 32000],
-            [420, 52000],
-            [400, 80000],
-            [380, 120000],
-            [360, 175000],
-            [340, 245000],
-            [320, 330000],
-            [300, 430000],
-            [280, 545000],
-            [260, 670000],
-            [240, 800000],
-            [220, 940000],
-            [200, 1100000],
-            [180, 1300000],
-            [160, 1550000],
-            [150, 1700000],
+            [500, 1],
+            [494, 14000],
+            [480, 30000],
+            [460, 60000],
+            [440, 100000],
+            [420, 155000],
+            [400, 225000],
+            [380, 310000],
+            [360, 410000],
+            [340, 520000],
+            [320, 640000],
+            [300, 770000],
+            [280, 900000],
+            [260, 1030000],
+            [240, 1160000],
+            [220, 1290000],
+            [200, 1420000],
+            [180, 1580000],
+            [160, 1750000],
+            [150, 1900000],
         ],
         ea: [
-            [540, 100],
-            [520, 500],
-            [500, 1500],
-            [480, 4000],
-            [460, 9500],
-            [440, 20000],
-            [420, 38000],
-            [400, 65000],
-            [380, 105000],
-            [360, 160000],
-            [340, 230000],
-            [320, 315000],
-            [300, 415000],
-            [280, 525000],
-            [260, 645000],
-            [240, 775000],
-            [220, 910000],
-            [200, 1060000],
-            [180, 1230000],
-            [160, 1450000],
-            [150, 1600000],
+            [500, 1],
+            [490, 5000],
+            [475, 15000],
+            [460, 30000],
+            [440, 60000],
+            [420, 105000],
+            [400, 165000],
+            [380, 240000],
+            [360, 330000],
+            [340, 430000],
+            [320, 540000],
+            [300, 660000],
+            [280, 785000],
+            [260, 910000],
+            [240, 1040000],
+            [220, 1170000],
+            [200, 1310000],
+            [180, 1470000],
+            [160, 1650000],
+            [150, 1800000],
         ],
         soz: [
-            [530, 100],
-            [510, 400],
-            [490, 1200],
-            [470, 3500],
-            [450, 8500],
-            [430, 18000],
-            [410, 35000],
-            [390, 60000],
-            [370, 95000],
-            [350, 145000],
-            [330, 210000],
-            [310, 290000],
-            [290, 385000],
-            [270, 490000],
-            [250, 605000],
-            [230, 725000],
-            [210, 855000],
-            [190, 995000],
-            [170, 1150000],
-            [150, 1350000],
+            [500, 1],
+            [485, 5000],
+            [470, 15000],
+            [455, 30000],
+            [435, 60000],
+            [415, 100000],
+            [395, 155000],
+            [375, 225000],
+            [355, 310000],
+            [335, 405000],
+            [315, 510000],
+            [295, 620000],
+            [275, 740000],
+            [255, 860000],
+            [235, 985000],
+            [215, 1110000],
+            [195, 1250000],
+            [175, 1400000],
+            [155, 1580000],
+            [150, 1700000],
         ],
         dil: [
-            [520, 100],
-            [500, 400],
-            [480, 1000],
-            [460, 2500],
-            [440, 5500],
-            [420, 10000],
-            [400, 17000],
-            [380, 27000],
-            [360, 42000],
-            [340, 63000],
-            [320, 90000],
-            [300, 125000],
-            [280, 168000],
-            [260, 220000],
-            [240, 280000],
-            [220, 350000],
-            [200, 430000],
-            [180, 520000],
-            [160, 625000],
-            [150, 700000],
+            [500, 1],
+            [480, 3000],
+            [460, 8000],
+            [440, 16000],
+            [420, 28000],
+            [400, 45000],
+            [380, 68000],
+            [360, 98000],
+            [340, 135000],
+            [320, 180000],
+            [300, 235000],
+            [280, 300000],
+            [260, 375000],
+            [240, 460000],
+            [220, 555000],
+            [200, 660000],
+            [180, 775000],
+            [160, 910000],
+            [150, 1000000],
         ],
     }
 

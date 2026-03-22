@@ -1,8 +1,7 @@
 'use client'
 
 import { useState, Suspense, memo } from 'react'
-import { Calculator, BookOpen, Target, TrendingUp } from 'lucide-react'
-import Link from 'next/link'
+import { Calculator } from 'lucide-react'
 import dynamic from 'next/dynamic'
 import { TYTScores, AYTScores, YDTScores } from '@/types/yks'
 import { calculateYKSScores } from '@/utils/yksCalculator'
@@ -54,32 +53,13 @@ const HeroSection = memo(function HeroSection() {
 
 const ResultsPanel = memo(function ResultsPanel({
     results,
-    onShowUniversities,
     previouslyPlaced = false,
     previousYearScore = 0
 }: {
     results: any,
-    onShowUniversities: () => void,
     previouslyPlaced?: boolean,
     previousYearScore?: number
 }) {
-    const handleNavigateToUniversities = () => {
-        if (!results.estimatedRanks) return
-
-        const params = new URLSearchParams({
-            say: results.points.say.toString(),
-            ea: results.points.ea.toString(),
-            soz: results.points.soz.toString(),
-            dil: results.points.dil.toString(),
-            sayRank: results.estimatedRanks.say?.toString() || '0',
-            eaRank: results.estimatedRanks.ea?.toString() || '0',
-            sozRank: results.estimatedRanks.soz?.toString() || '0',
-            dilRank: results.estimatedRanks.dil?.toString() || '0',
-        })
-
-        window.location.href = `/universiteler?${params.toString()}`
-    }
-
     return (
         <div className="card sticky-results">
             <h2 className="section-title">Sonuçlar</h2>
@@ -156,6 +136,11 @@ const ResultsPanel = memo(function ResultsPanel({
             {/* Üniversite Puanları */}
             <div className="mb-6">
                 <h3 className="subsection-title">Üniversite Puanları</h3>
+                <div className="mb-3 p-2 bg-yellow-50 border border-yellow-200 rounded-lg">
+                    <p className="text-xs text-yellow-800">
+                        ⚠️ Bu puanlar tahminidir. ÖSYM'nin gerçek formülü standart sapma normalizasyonu içerdiğinden kesin sonuç sınav sonrasında açıklanır.
+                    </p>
+                </div>
 
                 {/* Geçen Yıl Puanı Uyarısı */}
                 {previouslyPlaced && previousYearScore > 0 && (
@@ -199,6 +184,11 @@ const ResultsPanel = memo(function ResultsPanel({
             {results.estimatedRanks && (
                 <div className="mb-6">
                     <h3 className="subsection-title">Tahmini Sıralamalar</h3>
+                    <div className="mb-3 p-2 bg-yellow-50 border border-yellow-200 rounded-lg">
+                        <p className="text-xs text-yellow-800">
+                            ⚠️ Sıralamalar 2025 YKS verilerine göre tahmindir, ±%20 sapma olabilir.
+                        </p>
+                    </div>
                     <div className="space-y-2 text-sm">
                         <div className="flex justify-between">
                             <span>SAY:</span>
@@ -227,14 +217,6 @@ const ResultsPanel = memo(function ResultsPanel({
                     </div>
                 </div>
             )}
-
-            {/* Üniversite Önerileri Butonu */}
-            <button
-                onClick={handleNavigateToUniversities}
-                className="w-full bg-gradient-to-r from-primary-600 to-primary-700 text-white py-3 px-4 rounded-lg font-semibold hover:from-primary-700 hover:to-primary-800 transition-all shadow-md hover:shadow-lg"
-            >
-                🎓 Kazanabileceğim Bölümleri Göster
-            </button>
 
             {/* Paylaşım Butonu */}
             <ShareResults
@@ -379,7 +361,6 @@ export default function HomePage() {
                         {results ? (
                             <ResultsPanel
                                 results={results}
-                                onShowUniversities={() => { }}
                                 previouslyPlaced={previouslyPlaced}
                                 previousYearScore={previousYearScore}
                             />
