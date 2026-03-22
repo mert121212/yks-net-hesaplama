@@ -51,11 +51,6 @@ export default function Footer() {
                                     Puan Hesaplama
                                 </Link>
                             </li>
-                            <li>
-                                <Link href="/universiteler" className="text-gray-400 hover:text-white transition-colors">
-                                    Üniversite Önerileri
-                                </Link>
-                            </li>
                         </ul>
                     </div>
 
@@ -84,11 +79,6 @@ export default function Footer() {
                             <li>
                                 <Link href="/sss" className="text-gray-400 hover:text-white transition-colors">
                                     Sık Sorulan Sorular
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/universiteler" className="text-gray-400 hover:text-white transition-colors">
-                                    Üniversiteler
                                 </Link>
                             </li>
                         </ul>

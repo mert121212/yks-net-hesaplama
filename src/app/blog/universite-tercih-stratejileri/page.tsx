@@ -189,9 +189,6 @@ export default function UniversiteTercihStratejileri() {
                                 <Link href="/blog/yks-puan-turleri" className="p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
                                     <p className="font-semibold text-blue-900">YKS Puan Türleri →</p>
                                 </Link>
-                                <Link href="/universiteler" className="p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
-                                    <p className="font-semibold text-purple-900">Üniversiteler →</p>
-                                </Link>
                             </div>
                         </div>
                     </div>
