@@ -42,14 +42,14 @@ export default function ScoreInput({
 
     const handleDogruChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const raw = parseInt(e.target.value) || 0
-        const value = Math.min(Math.max(0, raw), maxQuestions)
+        const value = Math.min(Math.max(0, raw), maxQuestions - yanlis)
         validateInput('dogru', value)
         onDogruChange(value)
     }
 
     const handleYanlisChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const raw = parseInt(e.target.value) || 0
-        const value = Math.min(Math.max(0, raw), maxQuestions)
+        const value = Math.min(Math.max(0, raw), maxQuestions - dogru)
         validateInput('yanlis', value)
         onYanlisChange(value)
     }
@@ -75,7 +75,7 @@ export default function ScoreInput({
                     <input
                         type="number"
                         min="0"
-                        max={maxQuestions}
+                        max={maxQuestions - yanlis}
                         value={dogru || ''}
                         onChange={handleDogruChange}
                         onWheel={(e) => e.currentTarget.blur()}
@@ -96,7 +96,7 @@ export default function ScoreInput({
                     <input
                         type="number"
                         min="0"
-                        max={maxQuestions}
+                        max={maxQuestions - dogru}
                         value={yanlis || ''}
                         onChange={handleYanlisChange}
                         onWheel={(e) => e.currentTarget.blur()}
