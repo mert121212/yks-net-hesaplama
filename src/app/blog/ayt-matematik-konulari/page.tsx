@@ -52,7 +52,7 @@ export default function AYTMatematikKonulari() {
                                 <li>• <strong>Süre:</strong> Yaklaşık 60 dakika</li>
                                 <li>• <strong>Zorluk:</strong> Yüksek seviye</li>
                                 <li>• <strong>Hedef:</strong> 25+ net çok iyi sayılır</li>
-                                <li>• <strong>Katsayı:</strong> SAY puanında en yüksek (5.0)</li>
+                                <li>• <strong>Puan Türü:</strong> SAY puanının en kritik dersi</li>
                             </ul>
                         </div>
 

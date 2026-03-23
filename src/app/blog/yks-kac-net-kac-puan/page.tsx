@@ -77,33 +77,33 @@ export default function YKSKacNetKacPuan() {
                                 <tbody>
                                     <tr className="border-b bg-green-50">
                                         <td className="px-6 py-4">110-120 net</td>
-                                        <td className="px-6 py-4 font-semibold">~210-220 puan katkı</td>
+                                        <td className="px-6 py-4 font-semibold">~146-160 puan katkı</td>
                                         <td className="px-6 py-4 text-green-700">Mükemmel</td>
                                     </tr>
                                     <tr className="border-b">
                                         <td className="px-6 py-4">90-110 net</td>
-                                        <td className="px-6 py-4 font-semibold">~190-210 puan katkı</td>
+                                        <td className="px-6 py-4 font-semibold">~120-146 puan katkı</td>
                                         <td className="px-6 py-4 text-green-600">Çok İyi</td>
                                     </tr>
                                     <tr className="border-b bg-blue-50">
                                         <td className="px-6 py-4">70-90 net</td>
-                                        <td className="px-6 py-4 font-semibold">~170-190 puan katkı</td>
+                                        <td className="px-6 py-4 font-semibold">~93-120 puan katkı</td>
                                         <td className="px-6 py-4 text-blue-700">İyi</td>
                                     </tr>
                                     <tr className="border-b">
                                         <td className="px-6 py-4">50-70 net</td>
-                                        <td className="px-6 py-4 font-semibold">~150-170 puan katkı</td>
+                                        <td className="px-6 py-4 font-semibold">~67-93 puan katkı</td>
                                         <td className="px-6 py-4 text-yellow-700">Orta</td>
                                     </tr>
                                     <tr>
                                         <td className="px-6 py-4">30-50 net</td>
-                                        <td className="px-6 py-4 font-semibold">~130-150 puan katkı</td>
+                                        <td className="px-6 py-4 font-semibold">~40-67 puan katkı</td>
                                         <td className="px-6 py-4 text-orange-700">Geliştirilmeli</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-xs text-gray-500 mb-8">* Baz puan (100) + TYT katkısı + OBP katkısı = AYT olmadan temel puan. Nihai puan AYT netlerinize göre değişir.</p>
+                        <p className="text-xs text-gray-500 mb-8">* Baz puan (100) + TYT katkısı (net × 1.33) + OBP katkısı = AYT olmadan temel puan. Nihai puan AYT netlerinize göre değişir.</p>
 
                         <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">SAY Puanı Net-Puan Tablosu</h2>
                         <p className="text-gray-700 mb-4">
