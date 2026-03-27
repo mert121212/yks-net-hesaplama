@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-    title: 'Üniversite Tercih Stratejileri: Doğru Tercih Nasıl Yapılır? 2026',
-    description: 'YKS sonrası üniversite tercihi yaparken nelere dikkat etmelisiniz? Tercih stratejileri, ipuçları ve öneriler.',
-    keywords: 'üniversite tercih, tercih stratejisi, yks tercih, doğru tercih, üniversite seçimi',
+    title: 'Üniversite Tercih Stratejileri 2026: YÖK Atlas, 24 Tercih Matrisi ve OBP Uyarısı',
+    description: 'Doğru tercih nasıl yapılır? YÖK Atlas kullanımı, 24 tercih matrisi, yerleştirme algoritması ve OBP kırılması uyarısı. 2026 YKS tercih rehberi.',
+    keywords: 'üniversite tercih stratejisi, yök atlas, tercih matrisi, yks tercih 2026, obp kırılması, yerleştirme algoritması',
     alternates: { canonical: 'https://yksnethesapla.com/blog/universite-tercih-stratejileri' },
     openGraph: {
-        title: 'Üniversite Tercih Stratejileri: Doğru Tercih Nasıl Yapılır?',
-        description: 'YKS sonrası üniversite tercihi yaparken nelere dikkat etmelisiniz? Tercih stratejileri ve ipuçları.',
+        title: 'Üniversite Tercih Stratejileri 2026: YÖK Atlas ve 24 Tercih Matrisi',
+        description: 'Doğru tercih nasıl yapılır? YÖK Atlas, tercih matrisi ve OBP kırılması uyarısı.',
         type: 'article',
         publishedTime: '2026-02-21',
         url: 'https://yksnethesapla.com/blog/universite-tercih-stratejileri',
@@ -32,154 +32,117 @@ export default function UniversiteTercihStratejileri() {
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Tercih</span>
                             <time className="text-gray-600">21 Şubat 2026</time>
-                            <span className="text-gray-600">• 9 dakika okuma</span>
+                            <span className="text-gray-600">• 10 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            Üniversite Tercih Stratejileri
+                            Üniversite Tercih Stratejileri 2026
                         </h1>
+                        <p className="text-xl text-gray-700">
+                            Puanınız cebinizdeki paradır, tercih ise bu parayı en kârlı şekilde harcamaktır.
+                            Doğru strateji olmadan en yüksek puan bile boşa gidebilir.
+                        </p>
                     </header>
 
                     <div className="prose prose-lg max-w-none">
-                        <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                            YKS'de başarılı olmak yeterli değil, doğru tercihi yapmak da çok önemli.
-                            İşte size yardımcı olacak stratejiler.
+
+                        <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">Yerleştirme Algoritması Nasıl Çalışır?</h2>
+                        <p className="text-gray-700 mb-4">
+                            Önce yaygın bir yanlışı düzeltelim: <strong>&quot;Puanı düşük olanı üst sıraya yazınca puanı yüksek olanın önüne geçilir&quot;</strong> — bu tamamen yanlıştır.
                         </p>
-
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Tercih Yapmadan Önce</h2>
-
-                        <div className="space-y-6 my-8">
-                            <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg">
-                                <h3 className="font-bold text-blue-900 mb-3">1. Kendinizi Tanıyın</h3>
-                                <ul className="space-y-2 text-gray-700">
-                                    <li>✓ Hangi dersleri seviyorsunuz?</li>
-                                    <li>✓ Hangi konularda yeteneklisiniz?</li>
-                                    <li>✓ Gelecekte ne yapmak istiyorsunuz?</li>
-                                    <li>✓ Hangi çalışma ortamını tercih edersiniz?</li>
-                                </ul>
-                            </div>
-
-                            <div className="bg-green-50 border-l-4 border-green-600 p-6 rounded-lg">
-                                <h3 className="font-bold text-green-900 mb-3">2. Bölümleri Araştırın</h3>
-                                <ul className="space-y-2 text-gray-700">
-                                    <li>✓ Bölümde neler öğrenilir?</li>
-                                    <li>✓ İş imkanları nelerdir?</li>
-                                    <li>✓ Mezuniyet sonrası maaş beklentisi?</li>
-                                    <li>✓ Hangi sektörlerde çalışılır?</li>
-                                </ul>
-                            </div>
-
-                            <div className="bg-purple-50 border-l-4 border-purple-600 p-6 rounded-lg">
-                                <h3 className="font-bold text-purple-900 mb-3">3. Üniversiteleri Karşılaştırın</h3>
-                                <ul className="space-y-2 text-gray-700">
-                                    <li>✓ Üniversitenin akademik başarısı</li>
-                                    <li>✓ Kampüs imkanları</li>
-                                    <li>✓ Şehir yaşam kalitesi</li>
-                                    <li>✓ Barınma olanakları</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Tercih Stratejileri</h2>
-
-                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-8 text-white">
-                            <h3 className="text-2xl font-bold mb-4">🎯 Altın Kural</h3>
-                            <p className="text-xl text-blue-100">
-                                "Önce bölüm, sonra üniversite" yaklaşımını benimseyin.
-                                Sevmediğiniz bir bölümde iyi bir üniversitede okumaktansa,
-                                sevdiğiniz bölümde orta bir üniversitede okumak daha iyidir.
+                        <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-lg mb-6">
+                            <h3 className="font-bold text-green-900 mb-2">✅ Gerçek Algoritma</h3>
+                            <p className="text-gray-700 text-sm">
+                                ÖSYM sistemi her adayı <strong>kendi listesindeki en üst tercihten başlayarak</strong> yerleştirmeye çalışır.
+                                Bir programa yerleştiğinizde alt tercihleriniz otomatik iptal olur.
+                                Listenizin sırası sadece <strong>sizin</strong> hangi programa önce yerleşeceğinizi belirler;
+                                başka adayların sıralamasını etkilemez.
                             </p>
                         </div>
 
-                        <div className="space-y-6 my-8">
-                            <div className="bg-gray-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-gray-900 mb-3">📊 Tercih Listesi Nasıl Olmalı?</h3>
-                                <div className="space-y-3 text-gray-700">
-                                    <p><strong>İlk 5-10 Tercih:</strong> Hayalinizdeki bölümler (biraz riskli)</p>
-                                    <p><strong>Orta 10-15 Tercih:</strong> Gerçekçi tercihler (puanınıza uygun)</p>
-                                    <p><strong>Son 5-10 Tercih:</strong> Güvenli tercihler (kesin tutacak)</p>
-                                </div>
+                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">YÖK Atlas ile Güncel 2026 Verileri</h2>
+                        <p className="text-gray-700 mb-4">
+                            Tercih yapmadan önce <strong>YÖK Atlas</strong> (yokatlas.yok.gov.tr) ve
+                            <strong> Lisans Atlası</strong> araçlarını kullanın:
+                        </p>
+                        <div className="space-y-3 my-6">
+                            <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                                <h3 className="font-bold text-blue-900 mb-1">Adım 1 — Bölüm Ara</h3>
+                                <p className="text-gray-700 text-sm">YÖK Atlas&apos;ta hedef bölümünüzü aratın. Son 3 yılın taban puanlarını ve sıralamalarını görün.</p>
                             </div>
-
-                            <div className="bg-yellow-50 border-l-4 border-yellow-600 p-6 rounded-lg">
-                                <h3 className="font-bold text-yellow-900 mb-3">⚠️ Yapılmaması Gerekenler</h3>
-                                <ul className="space-y-2 text-gray-700">
-                                    <li>❌ Sadece üniversite adına bakarak tercih yapmak</li>
-                                    <li>❌ Ailenin baskısıyla istemediğiniz bölümü seçmek</li>
-                                    <li>❌ İş imkanlarını araştırmadan tercih yapmak</li>
-                                    <li>❌ Taban puanına çok yakın tercih yapmak</li>
-                                    <li>❌ Çok az tercih yapmak (en az 20-24 tercih yapın)</li>
-                                </ul>
+                            <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                                <h3 className="font-bold text-blue-900 mb-1">Adım 2 — Kontenjan Kontrolü</h3>
+                                <p className="text-gray-700 text-sm">Bölümün kontenjanı artmışsa taban puan düşer; azalmışsa yükselir. Bu trendi mutlaka inceleyin.</p>
+                            </div>
+                            <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                                <h3 className="font-bold text-blue-900 mb-1">Adım 3 — Mezun İstatistikleri</h3>
+                                <p className="text-gray-700 text-sm">Lisans Atlası&apos;nda mezunların istihdam oranlarını ve ortalama maaşlarını karşılaştırın.</p>
                             </div>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Bölüm Seçim Kriterleri</h2>
-
-                        <div className="grid md:grid-cols-2 gap-6 my-8">
-                            <div className="bg-blue-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-blue-900 mb-3">💼 İş İmkanları</h3>
-                                <p className="text-gray-700 text-sm">
-                                    Mezuniyet sonrası iş bulma oranı yüksek mi?
-                                    Hangi sektörlerde çalışma imkanı var?
-                                </p>
-                            </div>
-
-                            <div className="bg-green-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-green-900 mb-3">💰 Maaş Beklentisi</h3>
-                                <p className="text-gray-700 text-sm">
-                                    Ortalama başlangıç maaşı ne kadar?
-                                    Kariyer ilerledikçe maaş artışı nasıl?
-                                </p>
-                            </div>
-
-                            <div className="bg-purple-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-purple-900 mb-3">📚 Eğitim Kalitesi</h3>
-                                <p className="text-gray-700 text-sm">
-                                    Üniversitenin akademik kadrosu güçlü mü?
-                                    Laboratuvar ve teknik donanım yeterli mi?
-                                </p>
-                            </div>
-
-                            <div className="bg-orange-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-orange-900 mb-3">🌍 Yurtdışı İmkanları</h3>
-                                <p className="text-gray-700 text-sm">
-                                    Erasmus ve değişim programları var mı?
-                                    Yurtdışında çalışma imkanı nasıl?
-                                </p>
-                            </div>
+                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">24 Tercih Matrisi</h2>
+                        <p className="text-gray-700 mb-4">
+                            24 tercih hakkınızı üç gruba bölün:
+                        </p>
+                        <div className="overflow-x-auto my-6">
+                            <table className="min-w-full bg-white border border-gray-300 rounded-lg">
+                                <thead className="bg-purple-50">
+                                    <tr>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Tercih Sırası</th>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Strateji</th>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Açıklama</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b">
+                                        <td className="px-5 py-3 font-bold text-purple-700">1 – 6</td>
+                                        <td className="px-5 py-3 font-medium">Hayal</td>
+                                        <td className="px-5 py-3 text-sm text-gray-700">&quot;Gelmez ama olsa harika olur&quot; — puanınızın 10-20 puan üstündeki programlar</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="px-5 py-3 font-bold text-blue-700">7 – 18</td>
+                                        <td className="px-5 py-3 font-medium">Gerçekçi</td>
+                                        <td className="px-5 py-3 text-sm text-gray-700">&quot;Gelme ihtimali çok yüksek&quot; — puanınıza ±5 puan aralığındaki programlar</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="px-5 py-3 font-bold text-green-700">19 – 24</td>
+                                        <td className="px-5 py-3 font-medium">Sigorta</td>
+                                        <td className="px-5 py-3 text-sm text-gray-700">&quot;Açıkta kalmamak için&quot; — puanınızın 15-30 puan altındaki, kesin tutacak programlar</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
 
-                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-12 text-center text-white">
-                            <h2 className="text-3xl font-bold mb-4">Puanınızı Hesaplayın!</h2>
-                            <p className="text-xl mb-6 text-blue-100">
-                                Hangi bölümlere yerleşebileceğinizi öğrenin
+                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">⚠️ OBP Kırılması: Tercih Yapıp Gitmemenin Bedeli</h2>
+                        <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg mb-6">
+                            <p className="text-gray-700">
+                                Bir programa yerleşip <strong>kayıt yaptırırsanız</strong>, gelecek yıl tekrar sınava girerseniz
+                                OBP katsayınız <strong>0,12&apos;den 0,06&apos;ya düşer.</strong> Bu, diploma notu 85 olan bir aday için
+                                yaklaşık <strong>25 puan kayıp</strong> demektir. Tercih yaparken bu riski göz önünde bulundurun;
+                                &quot;sırf yerleşeyim&quot; diye istemediğiniz bir programa kayıt yaptırmayın.
                             </p>
+                        </div>
+
+                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
+                            <h2 className="text-3xl font-bold mb-4">Puanınızı ve Sıralamanızı Hesaplayın</h2>
+                            <p className="text-xl mb-6 text-blue-100">Hangi bölümlere yerleşebileceğinizi öğrenin</p>
                             <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
                                 Hesapla →
                             </Link>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Sık Sorulan Sorular</h2>
-
-                        <div className="space-y-6 my-8">
-                            <div className="bg-gray-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-gray-900 mb-2">❓ Kaç tercih yapmalıyım?</h3>
-                                <p className="text-gray-700">
-                                    En az 20-24 tercih yapmanızı öneririz. Daha fazla tercih, daha fazla şans demektir.
-                                </p>
+                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Sıkça Sorulan Sorular</h2>
+                        <div className="space-y-4 my-6">
+                            <div className="border-b pb-4">
+                                <h3 className="font-bold text-gray-900 mb-2">Kaç tercih yapmalıyım?</h3>
+                                <p className="text-gray-700 text-sm">Tüm 24 hakkınızı kullanın. Boş bırakmak açıkta kalma riskini artırır.</p>
                             </div>
-
-                            <div className="bg-gray-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-gray-900 mb-2">❓ Tercih sırasını değiştirebilir miyim?</h3>
-                                <p className="text-gray-700">
-                                    Evet, tercih süresi bitene kadar istediğiniz kadar değişiklik yapabilirsiniz.
-                                </p>
+                            <div className="border-b pb-4">
+                                <h3 className="font-bold text-gray-900 mb-2">Tercih sırasını değiştirebilir miyim?</h3>
+                                <p className="text-gray-700 text-sm">Evet, tercih süresi bitene kadar istediğiniz kadar değişiklik yapabilirsiniz.</p>
                             </div>
-
-                            <div className="bg-gray-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-gray-900 mb-2">❓ Bölüm mü üniversite mi önemli?</h3>
-                                <p className="text-gray-700">
-                                    Genellikle bölüm daha önemlidir. Sevmediğiniz bir bölümde başarılı olamazsınız.
-                                </p>
+                            <div className="pb-4">
+                                <h3 className="font-bold text-gray-900 mb-2">Bölüm mü üniversite mi önemli?</h3>
+                                <p className="text-gray-700 text-sm">Genellikle bölüm daha önemlidir. Sevmediğiniz bir bölümde başarılı olmak çok zordur.</p>
                             </div>
                         </div>
 
@@ -188,6 +151,9 @@ export default function UniversiteTercihStratejileri() {
                             <div className="grid md:grid-cols-2 gap-4">
                                 <Link href="/blog/yks-puan-turleri" className="p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
                                     <p className="font-semibold text-blue-900">YKS Puan Türleri →</p>
+                                </Link>
+                                <Link href="/blog/obp-hesaplama" className="p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
+                                    <p className="font-semibold text-green-900">OBP Hesaplama →</p>
                                 </Link>
                             </div>
                         </div>

@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-    title: 'YKS\'ye Nasıl Hazırlanılır? Çalışma Programı 2026 | YKS Net Hesaplama',
-    description: 'Etkili bir YKS hazırlık programı nasıl yapılır? Günlük, haftalık ve aylık çalışma planları, ipuçları ve stratejiler.',
-    keywords: 'yks hazırlık, yks çalışma programı, yks nasıl çalışılır, yks ders programı',
+    title: 'YKS Hazırlık Programı 2026: Pomodoro, Feynman ve Ebbinghaus Teknikleri',
+    description: 'Bilimsel öğrenme yöntemleriyle YKS hazırlığı. Pomodoro 2.0, Feynman tekniği, Ebbinghaus unutma eğrisi ve MEB kaynakları. 2026 YKS için güncel rehber.',
+    keywords: 'yks hazırlık programı, pomodoro tekniği, feynman tekniği, ebbinghaus, yks çalışma 2026, meb kaynakları',
     alternates: { canonical: 'https://yksnethesapla.com/blog/yks-hazirlik-programi' },
     openGraph: {
-        title: 'YKS\'ye Nasıl Hazırlanılır? Çalışma Programı 2026',
-        description: 'Etkili bir YKS hazırlık programı nasıl yapılır? Günlük, haftalık çalışma planları ve stratejiler.',
+        title: 'YKS Hazırlık Programı 2026: Bilimsel Öğrenme Teknikleri',
+        description: 'Pomodoro 2.0, Feynman tekniği ve Ebbinghaus unutma eğrisiyle YKS hazırlığı.',
         type: 'article',
         publishedTime: '2026-02-20',
         url: 'https://yksnethesapla.com/blog/yks-hazirlik-programi',
@@ -35,110 +35,138 @@ export default function YKSHazirlikProgrami() {
                             <span className="text-gray-600">• 10 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            YKS'ye Nasıl Hazırlanılır?
+                            YKS Hazırlık Programı 2026: Bilimsel Öğrenme Teknikleri
                         </h1>
+                        <p className="text-xl text-gray-700">
+                            &quot;Çok çalış&quot; demek yetmez. Nasıl öğrenildiği, ne kadar çalışıldığından daha önemlidir.
+                            İşte bilim destekli 2026 YKS hazırlık rehberi.
+                        </p>
                     </header>
 
                     <div className="prose prose-lg max-w-none">
-                        <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                            YKS'ye hazırlanmak uzun bir maraton. Doğru strateji ve düzenli çalışma ile başarıya ulaşabilirsiniz.
+
+                        <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">1. Pomodoro 2.0: İleri Seviye Odak Tekniği</h2>
+                        <p className="text-gray-700 mb-4">
+                            Klasik Pomodoro (25 dakika çalış / 5 dakika mola) başlangıç için iyidir.
+                            Ancak YKS gibi uzun soluklu bir sınavda <strong>50/10 tekniği</strong> daha verimlidir:
                         </p>
-
-                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-8 text-white">
-                            <h2 className="text-3xl font-bold mb-4">📚 Günlük Çalışma Programı</h2>
-                            <div className="space-y-3 text-blue-100">
-                                <p>• <strong>Sabah (07:00-12:00):</strong> En verimli saatler - Zor konular</p>
-                                <p>• <strong>Öğle (13:00-17:00):</strong> Orta zorluk - Tekrar ve pekiştirme</p>
-                                <p>• <strong>Akşam (19:00-22:00):</strong> Kolay konular - Test çözme</p>
-                            </div>
-                        </div>
-
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Haftalık Program Örneği</h2>
-
-                        <div className="overflow-x-auto my-8">
+                        <div className="overflow-x-auto my-6">
                             <table className="min-w-full bg-white border border-gray-300 rounded-lg">
-                                <thead className="bg-blue-100">
+                                <thead className="bg-green-50">
                                     <tr>
-                                        <th className="px-6 py-3 text-left font-semibold border-b">Gün</th>
-                                        <th className="px-6 py-3 text-left font-semibold border-b">Sabah</th>
-                                        <th className="px-6 py-3 text-left font-semibold border-b">Öğleden Sonra</th>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Teknik</th>
+                                        <th className="px-5 py-3 text-center font-semibold border-b">Çalışma</th>
+                                        <th className="px-5 py-3 text-center font-semibold border-b">Mola</th>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Uygun Durum</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr className="border-b">
-                                        <td className="px-6 py-4 font-semibold">Pazartesi</td>
-                                        <td className="px-6 py-4">Matematik</td>
-                                        <td className="px-6 py-4">Fizik</td>
+                                        <td className="px-5 py-3 font-medium">Klasik Pomodoro</td>
+                                        <td className="px-5 py-3 text-center">25 dk</td>
+                                        <td className="px-5 py-3 text-center">5 dk</td>
+                                        <td className="px-5 py-3 text-sm">Yeni konu öğrenme</td>
                                     </tr>
-                                    <tr className="border-b bg-gray-50">
-                                        <td className="px-6 py-4 font-semibold">Salı</td>
-                                        <td className="px-6 py-4">Türkçe</td>
-                                        <td className="px-6 py-4">Edebiyat</td>
-                                    </tr>
-                                    <tr className="border-b">
-                                        <td className="px-6 py-4 font-semibold">Çarşamba</td>
-                                        <td className="px-6 py-4">Matematik</td>
-                                        <td className="px-6 py-4">Kimya</td>
-                                    </tr>
-                                    <tr className="border-b bg-gray-50">
-                                        <td className="px-6 py-4 font-semibold">Perşembe</td>
-                                        <td className="px-6 py-4">Tarih</td>
-                                        <td className="px-6 py-4">Coğrafya</td>
-                                    </tr>
-                                    <tr className="border-b">
-                                        <td className="px-6 py-4 font-semibold">Cuma</td>
-                                        <td className="px-6 py-4">Biyoloji</td>
-                                        <td className="px-6 py-4">Deneme Sınavı</td>
-                                    </tr>
-                                    <tr className="border-b bg-gray-50">
-                                        <td className="px-6 py-4 font-semibold">Cumartesi</td>
-                                        <td className="px-6 py-4" colSpan={2}>Tam Deneme Sınavı</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="px-6 py-4 font-semibold">Pazar</td>
-                                        <td className="px-6 py-4" colSpan={2}>Dinlenme / Hafif Tekrar</td>
+                                    <tr className="bg-green-50">
+                                        <td className="px-5 py-3 font-bold text-green-700">Pomodoro 2.0</td>
+                                        <td className="px-5 py-3 text-center font-bold">50 dk</td>
+                                        <td className="px-5 py-3 text-center font-bold">10 dk</td>
+                                        <td className="px-5 py-3 text-sm">Soru çözme, deneme</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Başarı İçin 10 Altın Kural</h2>
-
-                        <div className="grid md:grid-cols-2 gap-4 my-8">
-                            {[
-                                { num: 1, title: "Düzenli Çalış", desc: "Her gün aynı saatte çalışmaya başla" },
-                                { num: 2, title: "Hedef Belirle", desc: "Günlük, haftalık ve aylık hedefler koy" },
-                                { num: 3, title: "Deneme Çöz", desc: "Haftada en az 2 deneme sınavı çöz" },
-                                { num: 4, title: "Mola Ver", desc: "Her 50 dakikada 10 dakika mola ver" },
-                                { num: 5, title: "Sağlıklı Yaşa", desc: "Düzenli uyku, sağlıklı beslenme" },
-                                { num: 6, title: "Tekrar Yap", desc: "Öğrendiklerini düzenli tekrar et" },
-                                { num: 7, title: "Soru Çöz", desc: "Bol bol soru çöz, pratik yap" },
-                                { num: 8, title: "Analiz Et", desc: "Yanlışlarını analiz et, not al" },
-                                { num: 9, title: "Motivasyon", desc: "Kendini motive et, pes etme" },
-                                { num: 10, title: "Sosyalleş", desc: "Hafta sonu arkadaşlarınla vakit geçir" },
-                            ].map((rule) => (
-                                <div key={rule.num} className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-600">
-                                    <div className="flex items-start">
-                                        <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">
-                                            {rule.num}
-                                        </div>
-                                        <div>
-                                            <h3 className="font-bold text-gray-900 mb-1">{rule.title}</h3>
-                                            <p className="text-sm text-gray-700">{rule.desc}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
+                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">2. Feynman Tekniği: Kalıcı Öğrenmenin Sırrı</h2>
+                        <p className="text-gray-700 mb-4">
+                            Nobel ödüllü fizikçi Richard Feynman&apos;ın geliştirdiği bu yöntem,
+                            <strong> Active Recall</strong> (aktif hatırlama) prensibine dayanır:
+                        </p>
+                        <div className="space-y-3 my-6">
+                            <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                                <p className="font-bold text-blue-900 mb-1">Adım 1 — Konuyu Öğren</p>
+                                <p className="text-gray-700 text-sm">Herhangi bir kaynaktan konuyu çalışın.</p>
+                            </div>
+                            <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                                <p className="font-bold text-blue-900 mb-1">Adım 2 — Hiç Bilmeyene Anlat</p>
+                                <p className="text-gray-700 text-sm">Kitabı kapatın. Konuyu 10 yaşında birine anlatır gibi kağıda yazın veya sesli anlatın.</p>
+                            </div>
+                            <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                                <p className="font-bold text-blue-900 mb-1">Adım 3 — Boşlukları Bul</p>
+                                <p className="text-gray-700 text-sm">Takıldığınız yerler gerçek eksiklerinizdir. O kısımlara geri dönün.</p>
+                            </div>
+                            <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+                                <p className="font-bold text-blue-900 mb-1">Adım 4 — Sadeleştir</p>
+                                <p className="text-gray-700 text-sm">Anlatımınızı daha da basitleştirin. Gerçekten anladığınızda her şeyi sade anlatabilirsiniz.</p>
+                            </div>
                         </div>
 
-                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-12 text-center text-white">
-                            <h2 className="text-3xl font-bold mb-4">Geri Sayımı Takip Et!</h2>
-                            <p className="text-xl mb-6 text-blue-100">
-                                YKS'ye kalan süreyi görün, motivasyonunu koru
-                            </p>
+                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">3. Ebbinghaus Unutma Eğrisi: Neden Tekrar Şart?</h2>
+                        <p className="text-gray-700 mb-4">
+                            Alman psikolog Hermann Ebbinghaus&apos;un araştırmasına göre, öğrenilen bilginin
+                            <strong> %70&apos;i 24 saat içinde unutulur</strong>. Bunu önlemenin tek yolu düzenli tekrardır:
+                        </p>
+                        <div className="overflow-x-auto my-6">
+                            <table className="min-w-full bg-white border border-gray-300 rounded-lg">
+                                <thead className="bg-purple-50">
+                                    <tr>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Tekrar Zamanı</th>
+                                        <th className="px-5 py-3 text-center font-semibold border-b">Hatırlama Oranı</th>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Ne Yapmalı?</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b"><td className="px-5 py-3">Öğrenme günü</td><td className="px-5 py-3 text-center font-bold text-green-700">%100</td><td className="px-5 py-3 text-sm">Konuyu öğren</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3">1 gün sonra</td><td className="px-5 py-3 text-center font-bold text-yellow-700">%30</td><td className="px-5 py-3 text-sm">Kısa tekrar (10 dk)</td></tr>
+                                    <tr className="border-b"><td className="px-5 py-3">1 hafta sonra</td><td className="px-5 py-3 text-center font-bold text-orange-700">%20</td><td className="px-5 py-3 text-sm">Soru çözerek tekrar</td></tr>
+                                    <tr><td className="px-5 py-3">1 ay sonra</td><td className="px-5 py-3 text-center font-bold text-red-700">%10</td><td className="px-5 py-3 text-sm">Deneme sınavıyla pekiştir</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">4. Sorular Nereden Gelir? MEB Kaynakları</h2>
+                        <p className="text-gray-700 mb-4">
+                            ÖSYM soruları MEB müfredatına dayanır. Bu nedenle en güvenilir kaynaklar resmi platformlardır:
+                        </p>
+                        <div className="space-y-3 my-6">
+                            <div className="bg-amber-50 p-4 rounded-lg border-l-4 border-amber-500">
+                                <h3 className="font-bold text-amber-900 mb-1">OGM Materyal (ogmmateryal.meb.gov.tr)</h3>
+                                <p className="text-gray-700 text-sm">MEB&apos;in resmi ders kitapları ve çalışma materyalleri. Konu sınırlarını buradan öğrenin.</p>
+                            </div>
+                            <div className="bg-amber-50 p-4 rounded-lg border-l-4 border-amber-500">
+                                <h3 className="font-bold text-amber-900 mb-1">EBA Akademik Destek (eba.gov.tr)</h3>
+                                <p className="text-gray-700 text-sm">Video anlatımlar, soru bankaları ve konu özetleri. Ücretsiz ve resmi kaynak.</p>
+                            </div>
+                        </div>
+
+                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
+                            <h2 className="text-3xl font-bold mb-4">Geri Sayımı Takip Et</h2>
+                            <p className="text-xl mb-6 text-blue-100">YKS 2026&apos;ya kalan süreyi görün, motivasyonunu koru</p>
                             <Link href="/geri-sayim" className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
                                 Geri Sayım →
                             </Link>
+                        </div>
+
+                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Haftalık Program Örneği</h2>
+                        <div className="overflow-x-auto my-6">
+                            <table className="min-w-full bg-white border border-gray-300 rounded-lg">
+                                <thead className="bg-blue-50">
+                                    <tr>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Gün</th>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Sabah</th>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Öğleden Sonra</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Pazartesi</td><td className="px-5 py-3">Matematik (yeni konu)</td><td className="px-5 py-3">Fizik</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Salı</td><td className="px-5 py-3">Türkçe</td><td className="px-5 py-3">Edebiyat</td></tr>
+                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Çarşamba</td><td className="px-5 py-3">Matematik (tekrar)</td><td className="px-5 py-3">Kimya</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Perşembe</td><td className="px-5 py-3">Tarih</td><td className="px-5 py-3">Coğrafya</td></tr>
+                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Cuma</td><td className="px-5 py-3">Biyoloji</td><td className="px-5 py-3">Deneme analizi</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Cumartesi</td><td className="px-5 py-3" colSpan={2}>Tam TYT veya AYT Denemesi</td></tr>
+                                    <tr><td className="px-5 py-3 font-medium">Pazar</td><td className="px-5 py-3" colSpan={2}>Dinlenme + Hafif Ebbinghaus Tekrarı</td></tr>
+                                </tbody>
+                            </table>
                         </div>
 
                         <div className="border-t pt-8 mt-12">
