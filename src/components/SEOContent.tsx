@@ -11,24 +11,19 @@ export default function SEOContent() {
                 <div className="flex items-center gap-3 mb-6">
                     <Calculator className="h-8 w-8 text-primary-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
-                        YKS Net Hesaplama Nasıl Yapılır?
+                        YKS Net Hesaplama: 2026 ÖSYM Standartlarına Uygun Analiz
                     </h2>
                 </div>
                 <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
                     <p>
-                        YKS net hesaplama, Yükseköğretim Kurumları Sınavı'nda (YKS) başarılı olmanın ilk adımıdır.
-                        Net hesaplama formülü oldukça basittir: Doğru cevap sayısından, yanlış cevap sayısının dörtte biri çıkarılır.
-                        Örneğin, 30 doğru ve 8 yanlış cevabınız varsa, netiniz 30 - (8÷4) = 28 olur.
+                        2026 YKS hazırlık sürecinde hedeflerinize ne kadar yakın olduğunuzu bilmek stratejik bir zorunluluktur.
+                        Sitemiz, ÖSYM&apos;nin güncel katsayı verilerini ve standart sapma projeksiyonlarını kullanarak
+                        en gerçekçi TYT, AYT ve YDT net hesaplama sonuçlarını sunar. Sadece netlerinizi değil,
+                        yerleştirme puanınızı (Y-SAY, Y-EA, Y-SÖZ) ve tahmini sıralamanızı saniyeler içinde öğrenin.
                     </p>
                     <p>
-                        2026 YKS sınavında başarılı olmak için TYT (Temel Yeterlilik Testi), AYT (Alan Yeterlilik Testi)
-                        ve YDT (Yabancı Dil Testi) netlerinizi doğru hesaplamanız çok önemlidir. Sitemiz, bu hesaplamaları
-                        otomatik olarak yaparak size zaman kazandırır ve hata riskini ortadan kaldırır.
-                    </p>
-                    <p>
-                        YKS net hesaplama aracımız ile TYT'de Türkçe, Matematik, Sosyal Bilimler ve Fen Bilimleri;
-                        AYT'de ise alanınıza göre Matematik, Fizik, Kimya, Biyoloji, Edebiyat, Tarih, Coğrafya, Felsefe
-                        ve Din Kültürü derslerinden netlerinizi hesaplayabilirsiniz.
+                        Hesaplamalarınız sunucularımıza gönderilmez; tüm işlemler cihazınızda yerel olarak yapılır.
+                        Bu hem gizliliğinizi korur hem de internet bağlantısı olmadan da çalışmanızı sağlar.
                     </p>
                 </div>
             </section>
@@ -80,9 +75,18 @@ export default function SEOContent() {
                 <div className="flex items-center gap-3 mb-6">
                     <Award className="h-8 w-8 text-primary-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
-                        YKS 2026 Hakkında Bilmeniz Gerekenler
+                        YKS&apos;de Baraj Puanı Var mı? 0,5 Net Şartı Nedir?
                     </h2>
                 </div>
+                <div className="mb-4 p-4 bg-green-50 border border-green-200 rounded-lg">
+                    <p className="text-green-800 text-sm font-medium">
+                        ✅ 2022 yılı itibarıyla YKS&apos;de baraj puanı uygulaması tamamen kaldırılmıştır.
+                        &quot;150 veya 180 puan barajı&quot; artık geçerli değildir.
+                    </p>
+                </div>
+                <p className="text-gray-700 mb-4 text-sm">
+                    Ancak puanınızın hesaplanması için <strong>0,5 Net Kuralı</strong> geçerlidir:
+                </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
                     <div>
                         <h3 className="font-semibold text-lg mb-3 text-gray-900">TYT (Temel Yeterlilik Testi)</h3>
@@ -92,7 +96,7 @@ export default function SEOContent() {
                             <li>• Matematik: 40 soru</li>
                             <li>• Sosyal Bilimler: 20 soru</li>
                             <li>• Fen Bilimleri: 20 soru</li>
-                            <li>• Minimum 150 puan gerekli</li>
+                            <li className="text-blue-700 font-medium">• 0,5 net şartı: Türkçe veya Matematik&apos;ten</li>
                         </ul>
                     </div>
                     <div>
@@ -102,7 +106,7 @@ export default function SEOContent() {
                             <li>• Eşit Ağırlık: Matematik, Edebiyat, Tarih, Coğrafya</li>
                             <li>• Sözel: Edebiyat, Tarih, Coğrafya, Felsefe, Din</li>
                             <li>• Dil: YDT (80 soru yabancı dil)</li>
-                            <li>• Alan seçimine göre farklı testler</li>
+                            <li className="text-blue-700 font-medium">• 0,5 net şartı: İlgili puan türünün testlerinden</li>
                         </ul>
                     </div>
                 </div>
@@ -315,20 +319,20 @@ export default function SEOContent() {
                             a: 'Net hesaplama formülü: Net = Doğru − (Yanlış ÷ 4). Örneğin 30 doğru, 8 yanlış yaparsanız netiniz 30 − 2 = 28 olur. Boş bırakılan sorular hesaplamayı etkilemez.'
                         },
                         {
-                            q: 'TYT\'de kaç net yapmalıyım?',
-                            a: 'Devlet üniversitelerine yerleşmek için genellikle TYT\'de 70-80 net yapmanız önerilir. Prestijli bölümler için 90+ net gerekebilir. Minimum 150 TYT puanı şartı vardır.'
+                            q: 'TYT\'de baraj puanı var mı?',
+                            a: '2022 yılından itibaren TYT\'de baraj puanı uygulaması kaldırılmıştır. Puanınızın hesaplanması için Türkçe veya Matematik testinden en az 0,5 net yapmanız yeterlidir.'
                         },
                         {
                             q: 'AYT\'de kaç net yapmalıyım?',
-                            a: 'Hedef bölümünüze göre değişir. Tıp için SAY\'da 150+ net, mühendislik için 80-120 net, hukuk için EA\'da 100+ net yapmanız önerilir.'
+                            a: 'Hedef bölümünüze göre değişir. Tıp için SAY\'da 150+ net (ilk 50.000 sırası şartı), mühendislik için 80-120 net, hukuk için EA\'da 100+ net (ilk 125.000 sırası şartı) yapmanız önerilir.'
                         },
                         {
                             q: 'OBP (Ortaöğretim Başarı Puanı) nedir?',
-                            a: 'OBP, lise diploma notunuzun YKS puanına katkısıdır. Diploma notunuz 100 üzerinden hesaplanır ve YKS puanınıza %12 oranında eklenir. Yüksek OBP sıralamanızı olumlu etkiler.'
+                            a: 'OBP, lise diploma notunuzun YKS puanına katkısıdır. Formül: Diploma Notu × 0,6 = Puan Katkısı. Diploma notu 100 ise maksimum 60 puan katkı alırsınız. Geçen yıl yerleşenler için katsayı yarıya düşer (puan kırılması).'
                         },
                         {
                             q: 'YKS 2026 ne zaman?',
-                            a: 'YKS 2026 sınavı Haziran 2026\'da yapılacaktır. TYT birinci gün, AYT ve YDT ikinci gün uygulanır. Kesin tarihler için ÖSYM\'nin resmi sitesini takip edin.'
+                            a: 'TYT 20 Haziran 2026 (Cumartesi), AYT ve YDT 21 Haziran 2026 (Pazar) tarihinde yapılması planlanmaktadır. Kesin tarihler için ÖSYM\'nin resmi sitesini takip edin.'
                         },
                         {
                             q: 'Puan türü nasıl seçilir?',

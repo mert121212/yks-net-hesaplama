@@ -4,97 +4,93 @@ import { ArrowLeft, HelpCircle, ChevronDown } from 'lucide-react'
 
 export const metadata: Metadata = {
     title: 'Sıkça Sorulan Sorular (SSS) - YKS Net Hesaplama 2026',
-    description: 'YKS net hesaplama, puan hesaplama, üniversite tercihleri ve sıralama hakkında sıkça sorulan sorular ve cevapları.',
-    keywords: 'yks sss, net hesaplama sss, puan hesaplama soruları, yks soruları, tyt ayt sorular',
+    description: 'YKS net hesaplama, 0,5 net şartı, baraj bilgisi, OBP kırılması, başarı sırası barajları ve 2026 sınav takvimi hakkında sıkça sorulan sorular.',
+    keywords: 'yks sss, net hesaplama sss, 0.5 net şartı, baraj puanı, obp kırılması, başarı sırası barajı, yks 2026',
 }
 
 export default function SSS() {
     const faqCategories = [
         {
-            category: 'Net Hesaplama',
+            category: 'Net ve Puan Hesaplama',
             icon: '🧮',
             questions: [
                 {
                     q: 'Net nasıl hesaplanır?',
-                    a: 'Net hesaplama formülü: Doğru sayısı - (Yanlış sayısı ÷ 4). Örneğin 30 doğru 8 yanlış yaparsanız: 30 - (8÷4) = 30 - 2 = 28 net olur.'
+                    a: 'Net hesaplama formülü: Doğru sayısı − (Yanlış sayısı ÷ 4). Örneğin 30 doğru 8 yanlış yaparsanız: 30 − (8÷4) = 28 net olur. Boş bırakılan sorular hesaplamayı etkilemez.'
                 },
                 {
                     q: 'Negatif net olur mu?',
-                    a: 'Evet, negatif net olabilir. Eğer yanlış sayınız doğru sayınızın 4 katından fazlaysa netiniz eksi olur. Örneğin 2 doğru 15 yanlış: 2 - (15÷4) = 2 - 3.75 = -1.75 net.'
+                    a: 'Evet. Yanlış sayınızın dörtte biri doğru sayınızdan fazlaysa netiniz eksiye düşer. Örneğin 2 doğru, 12 yanlış: 2 − (12÷4) = −1 net. Hesaplama motorumuz negatif netleri 0 olarak işler.'
+                },
+                {
+                    q: 'Standart sapma puanımı nasıl etkiler?',
+                    a: 'Sınavın zorluk derecesine göre her yıl katsayılar küçük değişimler gösterir. Türkiye ortalamasının düşük olduğu testlerde (genellikle Matematik ve Fen) yapacağınız netler, standart sapma nedeniyle size daha yüksek puan getirebilir.'
+                },
+                {
+                    q: 'OBP (Diploma Notu) puanı ne kadar etkiler?',
+                    a: 'Diploma notunuz 0,6 katsayısı ile çarpılarak puanınıza eklenir (Diploma Notu × 5 = OBP → OBP × 0,12 = Katkı). Diploma notu 100 olan aday 60 puan, 70 olan aday 42 puan katkı alır.'
                 },
                 {
                     q: 'Boş bıraktığım sorular nete etki eder mi?',
                     a: 'Hayır, boş bıraktığınız sorular net hesaplamasına dahil edilmez. Sadece doğru ve yanlış cevaplar hesaplamaya katılır.'
-                },
-                {
-                    q: 'TYT\'de kaç net yapmalıyım?',
-                    a: 'TYT\'de toplam 120 soru vardır. Üniversite kazanmak için minimum 150 puan almanız gerekir, bu da yaklaşık 40-50 net civarı demektir. Ancak iyi bir bölüm için 80+ net hedeflemelisiniz.'
                 }
             ]
         },
         {
-            category: 'Puan Hesaplama',
-            icon: '📊',
+            category: 'Baraj ve 0,5 Net Kuralı',
+            icon: '⚠️',
             questions: [
                 {
-                    q: 'YKS puanı nasıl hesaplanır?',
-                    a: 'YKS puanı TYT ve AYT netlerinizin katsayılarla çarpılıp toplanmasıyla hesaplanır. Her alan (SAY, EA, SÖZ, DİL) için farklı katsayılar kullanılır. Ayrıca OBP (Ortaöğretim Başarı Puanı) 0.12 katsayısıyla eklenir.'
+                    q: 'TYT\'de baraj puanı var mı?',
+                    a: '2022 yılından itibaren TYT\'de 150 puan barajı uygulaması tamamen kaldırılmıştır. Puanınızın hesaplanması için Türkçe veya Matematik testinden en az 0,5 net yapmanız yeterlidir.'
                 },
                 {
-                    q: 'OBP nedir ve nasıl hesaplanır?',
-                    a: 'OBP (Ortaöğretim Başarı Puanı), lise diploma notunuzun YKS puanınıza katkısıdır. Diploma notunuz (0-100) önce 5 ile çarpılarak gerçek OBP\'ye (0-500) dönüştürülür, ardından 0.12 katsayısıyla çarpılır. Örneğin diploma notunuz 85 ise: 85 × 5 = 425 OBP, 425 × 0.12 = 51 puan katkı sağlar. Diploma notu 100 ise maksimum 60 puan katkı alırsınız.'
+                    q: '0,5 net şartı nedir?',
+                    a: 'TYT puanı için Türkçe veya Temel Matematik\'ten en az 0,5 net yapmanız gerekir. AYT puanı için ilgili puan türünün testlerinden (örn. SAY için Matematik veya Fen) en az 0,5 net şarttır. Bu şart sağlanmazsa puan hesaplanmaz.'
                 },
                 {
-                    q: 'SAY, EA, SÖZ, DİL puanları nedir?',
-                    a: 'SAY (Sayısal): Mühendislik, tıp, fen bilimleri için. EA (Eşit Ağırlık): İktisat, işletme, hukuk için. SÖZ (Sözel): Edebiyat, tarih, psikoloji için. DİL: Yabancı dil bölümleri için kullanılır.'
-                },
-                {
-                    q: 'Minimum kaç puan almalıyım?',
-                    a: 'Herhangi bir üniversiteye yerleşebilmek için minimum 150 puan almanız gerekir. Ancak tercih ettiğiniz bölümün taban puanına göre bu değişir.'
+                    q: 'Puan kırılması (OBP Kesintisi) nedir?',
+                    a: 'Bir önceki yıl YKS ile bir yükseköğretim programına yerleşen adayların OBP katsayısı yarıya düşer (0,12 yerine 0,06). Diploma notu 85 olan bir aday için bu yaklaşık 25 puan kayıp demektir.'
                 }
             ]
         },
         {
-            category: 'Sıralama ve Yerleştirme',
+            category: 'Tercih ve Yerleştirme',
             icon: '🎯',
             questions: [
                 {
-                    q: 'Tahmini sıralama ne kadar doğru?',
-                    a: 'Sitemizde gösterilen tahmini sıralamalar 2024-2025 YKS verilerine dayalı yaklaşık değerlerdir. Gerçek sıralamanız ÖSYM tarafından açıklanacak resmi sonuçlarda belli olacaktır.'
+                    q: 'Tahmini sıralamalar ne kadar güvenilir?',
+                    a: 'Sitemizdeki sıralama motoru, 2023, 2024 ve 2025 yılındaki yığılma verilerini ve aday sayılarını baz alarak "en yakın ihtimali" hesaplar. Ancak resmi sonuçlar sadece ÖSYM tarafından açıklanır.'
                 },
                 {
-                    q: 'Hangi üniversiteleri kazanabilirim?',
-                    a: 'Puanınızı hesapladıktan sonra "Kazanabileceğiniz Üniversiteler" butonuna tıklayarak tahmini sıralamanıza göre kazanma şansınız yüksek olan bölümleri görebilirsiniz.'
+                    q: 'Başarı sırası barajı nedir?',
+                    a: 'Bazı bölümlere girmek için sadece puan yetmez; belli bir sıralama içinde olmanız şarttır. Tıp için ilk 50.000, Hukuk için ilk 125.000, Mimarlık için ilk 250.000, Mühendislik için ilk 300.000 sırası şartı aranır (2025 verileri).'
                 },
                 {
                     q: 'Taban puanlar her yıl değişir mi?',
                     a: 'Evet, taban puanlar her yıl o bölüme yerleşen son kişinin puanına göre belirlenir. Kontenjan, tercih sayısı ve adayların başarısına göre değişiklik gösterir.'
-                },
-                {
-                    q: 'Sıralamam taban puandan yüksek ama kazanamadım, neden?',
-                    a: 'Yerleştirme sadece puana değil, tercih sıranıza ve kontenjan durumuna da bağlıdır. Bir bölümü üst sıralarda tercih etmezseniz kontenjan dolduğunda yerleşemeyebilirsiniz.'
                 }
             ]
         },
         {
-            category: 'Sınav Hakkında',
-            icon: '📝',
+            category: '2026 Sınav Takvimi',
+            icon: '📅',
             questions: [
                 {
-                    q: '2026 YKS ne zaman?',
-                    a: '2026 YKS sınavı Haziran ayında yapılacaktır. TYT ve AYT sınavları farklı günlerde gerçekleştirilir. Kesin tarihler ÖSYM tarafından açıklanacaktır.'
+                    q: '2026 YKS ne zaman yapılacak?',
+                    a: 'ÖSYM takvimine göre TYT 20 Haziran 2026 (Cumartesi), AYT ve YDT 21 Haziran 2026 (Pazar) tarihinde yapılması planlanmaktadır. Güncel geri sayım aracımızı sayfamızın üst kısmında bulabilirsiniz.'
                 },
                 {
                     q: 'TYT\'de kaç soru var?',
-                    a: 'TYT\'de toplam 120 soru vardır: Türkçe 40, Matematik 40, Sosyal Bilimler 20, Fen Bilimleri 20 soru.'
+                    a: 'TYT\'de toplam 120 soru vardır: Türkçe 40, Matematik 40, Sosyal Bilimler 20, Fen Bilimleri 20 soru. Toplam süre 165 dakikadır.'
                 },
                 {
                     q: 'AYT\'de kaç soru var?',
-                    a: 'AYT\'de toplam 80 soru vardır. Sayısal için: Matematik 40, Fizik 14, Kimya 13, Biyoloji 13. Sözel için: Edebiyat 24, Tarih-1 10, Coğrafya-1 6, Tarih-2 11, Coğrafya-2 11, Felsefe 12, Din 6 soru.'
+                    a: 'AYT\'de toplam 80 soru vardır. Sayısal: Matematik 40, Fizik 14, Kimya 13, Biyoloji 13. Sözel: Edebiyat 24, Tarih-1 10, Coğrafya-1 6, Tarih-2 11, Coğrafya-2 11, Felsefe 12, Din 6 soru.'
                 },
                 {
                     q: 'YDT nedir?',
-                    a: 'YDT (Yabancı Dil Testi), yabancı dil bölümlerine başvuracak adaylar için yapılan 80 soruluk bir testtir. İngilizce, Almanca, Fransızca, Arapça, Rusça dillerinden birini seçebilirsiniz.'
+                    a: 'YDT (Yabancı Dil Testi), yabancı dil bölümlerine başvuracak adaylar için yapılan 80 soruluk bir testtir. İngilizce, Almanca, Fransızca, Arapça dillerinden birini seçebilirsiniz.'
                 }
             ]
         },
@@ -104,41 +100,19 @@ export default function SSS() {
             questions: [
                 {
                     q: 'Hesaplamalarım kaydediliyor mu?',
-                    a: 'Hayır, gizliliğiniz için hesaplamalarınız sunucularımızda saklanmaz. Tüm hesaplamalar tarayıcınızda yapılır. Sayfayı yenilediğinizde verileriniz silinir.'
+                    a: 'Hayır. Hesaplamalarınız sunucularımıza gönderilmez; tüm işlemler cihazınızda yerel olarak yapılır. Gizliliğiniz tam anlamıyla korunur.'
                 },
                 {
                     q: 'Mobil cihazdan kullanabilir miyim?',
                     a: 'Evet, sitemiz tüm cihazlarda (telefon, tablet, bilgisayar) sorunsuz çalışacak şekilde tasarlanmıştır.'
                 },
                 {
-                    q: 'Üniversite listesinde aradığım bölüm yok, neden?',
-                    a: 'Veritabanımızda 314 popüler üniversite programı bulunmaktadır. Tüm bölümler eklenmemiş olabilir. 2026 YKS sonuçları açıklandıktan sonra veritabanımız güncellenecektir.'
-                },
-                {
-                    q: 'Filtreleme nasıl çalışır?',
-                    a: 'Üniversite önerileri sayfasında arama kutusu, şehir filtresi ve üniversite tipi (Devlet/Vakıf) filtrelerini kullanarak size uygun bölümleri bulabilirsiniz.'
-                }
-            ]
-        },
-        {
-            category: 'Genel Sorular',
-            icon: '❓',
-            questions: [
-                {
                     q: 'Bu site ücretsiz mi?',
-                    a: 'Evet, sitemiz tamamen ücretsizdir ve ücretsiz kalacaktır. Tüm öğrencilerin kullanımına açıktır.'
-                },
-                {
-                    q: 'Verileriniz ne kadar güncel?',
-                    a: 'Üniversite taban puanları ve sıralama verileri 2024-2025 YKS verilerine dayanmaktadır. 2026 YKS sonuçları açıklandıktan sonra güncellenecektir.'
+                    a: 'Evet, sitemiz tamamen ücretsizdir ve ücretsiz kalacaktır. Kayıt gerektirmez, tüm öğrencilerin kullanımına açıktır.'
                 },
                 {
                     q: 'Hesaplamalar ÖSYM ile aynı mı?',
-                    a: 'Hesaplama formüllerimiz ÖSYM\'nin kullandığı formüllere dayanmaktadır, ancak kesin sonuçlar için ÖSYM\'nin resmi hesaplama aracını kullanmalısınız.'
-                },
-                {
-                    q: 'Geri bildirimde bulunabilir miyim?',
-                    a: 'Evet, önerileriniz ve geri bildirimleriniz için bizimle iletişime geçebilirsiniz. Sitenizi sürekli geliştirmeye çalışıyoruz.'
+                    a: 'Hesaplama formüllerimiz ÖSYM\'nin kullandığı formüllere dayanmaktadır. Ancak ÖSYM standart sapma normalizasyonu kullandığından kesin sonuçlar için ÖSYM\'nin resmi aracını kullanmalısınız. Sitemiz gerçekçi bir tahmin sunar.'
                 }
             ]
         }
