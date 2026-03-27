@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-    title: 'YKS\'de Kaç Net Kaç Puan Eder? 2026 Tablosu | YKS Net Hesaplama',
-    description: 'TYT ve AYT\'de kaç net yaparsanız kaç puan alırsınız? Net-puan dönüşüm tablosu ve hesaplama. YKS 2026 için güncel.',
-    keywords: 'kaç net kaç puan, yks net puan tablosu, tyt kaç net kaç puan, ayt kaç net kaç puan',
+    title: 'YKS\'de Kaç Net Kaç Puan Eder? Ham Puan ve Yerleştirme Puanı Farkı 2026',
+    description: 'TYT ve AYT\'de kaç net yaparsanız kaç puan alırsınız? Ham puan ile yerleştirme puanı farkı, net getirisi ve SAY puan tablosu. YKS 2026 için güncel analiz.',
+    keywords: 'kaç net kaç puan, yks net puan tablosu, tyt kaç net kaç puan, ayt kaç net kaç puan, ham puan, yerleştirme puanı',
     alternates: { canonical: 'https://yksnethesapla.com/blog/yks-kac-net-kac-puan' },
     openGraph: {
         title: 'YKS\'de Kaç Net Kaç Puan Eder? 2026 Tablosu',
@@ -35,15 +35,42 @@ export default function YKSKacNetKacPuan() {
                             <span className="text-gray-600">• 6 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            YKS'de Kaç Net Kaç Puan Eder? 2026
+                            YKS&apos;de Kaç Net Kaç Puan Eder? Ham Puan ve Yerleştirme Puanı Farkı
                         </h1>
                     </header>
 
                     <div className="prose prose-lg max-w-none">
                         <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                            YKS'de net sayınız ile puan arasındaki ilişki her yıl değişir. Sınavın zorluğu,
-                            öğrenci sayısı ve diğer faktörler puanları etkiler. İşte genel bir rehber.
+                            Birçok aday &quot;50 net yaptım, kaç puan gelir?&quot; diye sorar. Ancak YKS&apos;de iki farklı puan türü
+                            vardır: <strong>Ham Puan</strong> ve <strong>Yerleştirme Puanı.</strong> Bu farkı bilmeden
+                            yapılan hesaplamalar yanıltıcı olabilir.
                         </p>
+
+                        <div className="grid md:grid-cols-2 gap-6 my-8">
+                            <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg">
+                                <h3 className="font-bold text-blue-900 mb-2">Ham Puan Nedir?</h3>
+                                <p className="text-gray-700 text-sm">
+                                    Sadece netlerinizin katsayılarla çarpılmasıyla elde edilen puandır.
+                                    Taban 100 puan + netlerin getirisi. <strong>Maksimum 500 puan.</strong>
+                                </p>
+                            </div>
+                            <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded-lg">
+                                <h3 className="font-bold text-green-900 mb-2">Yerleştirme Puanı Nedir?</h3>
+                                <p className="text-gray-700 text-sm">
+                                    Ham puanınıza OBP&apos;nin eklenmiş halidir. Üniversite tercihleri
+                                    yerleştirme puanı ve başarı sırasına göre yapılır.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="bg-gray-50 border-l-4 border-gray-400 p-5 rounded-lg mb-8">
+                            <h3 className="font-bold text-gray-900 mb-2">Net Getirisi (Tahmini)</h3>
+                            <ul className="text-gray-700 text-sm space-y-1">
+                                <li>• 1 TYT Neti: <strong>~1,33 puan</strong></li>
+                                <li>• 1 AYT Neti: <strong>~3,00 puan</strong></li>
+                                <li>• Standart Sapma: Türkiye genelinde az kişinin çözdüğü sorular biraz daha fazla puan getirebilir.</li>
+                            </ul>
+                        </div>
 
                         <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
                             <h3 className="font-bold text-blue-900 mb-3">💡 Önemli Not</h3>

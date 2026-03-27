@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-    title: 'AYT Puan Hesaplama: SAY, EA, SÖZ, DİL Puanları 2026 | YKS Net Hesaplama',
-    description: 'AYT sınavında SAY, EA, SÖZ ve DİL puanları nasıl hesaplanır? Detaylı formüller, katsayılar ve örneklerle AYT puan hesaplama rehberi.',
-    keywords: 'ayt puan hesaplama, say puanı, ea puanı, söz puanı, dil puanı, ayt net hesaplama',
+    title: '2026 AYT Puan Hesaplama: SAY, EA, SÖZ ve DİL Rehberi | YKS Net Hesaplama',
+    description: 'AYT sınavında SAY, EA, SÖZ ve DİL puanları nasıl hesaplanır? 0,5 net şartı, katsayı mantığı, başarı sırası barajları ve puan türü seçimi rehberi.',
+    keywords: 'ayt puan hesaplama, say puanı, ea puanı, söz puanı, dil puanı, ayt net hesaplama, başarı sırası barajı',
     alternates: { canonical: 'https://yksnethesapla.com/blog/ayt-puan-hesaplama' },
     openGraph: {
-        title: 'AYT Puan Hesaplama: SAY, EA, SÖZ, DİL Puanları 2026',
-        description: 'AYT sınavında SAY, EA, SÖZ ve DİL puanları nasıl hesaplanır? Detaylı formüller ve örneklerle rehber.',
+        title: '2026 AYT Puan Hesaplama: SAY, EA, SÖZ ve DİL Rehberi',
+        description: 'AYT sınavında SAY, EA, SÖZ ve DİL puanları nasıl hesaplanır? Katsayı mantığı ve başarı sırası barajları.',
         type: 'article',
         publishedTime: '2026-02-26',
         url: 'https://yksnethesapla.com/blog/ayt-puan-hesaplama',
@@ -30,189 +30,170 @@ export default function AYTPuanHesaplama() {
 
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
-                            <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
-                                AYT
-                            </span>
+                            <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">AYT</span>
                             <time className="text-gray-600">26 Şubat 2026</time>
                             <span className="text-gray-600">• 7 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            AYT Puan Hesaplama: SAY, EA, SÖZ, DİL Puanları
+                            2026 AYT Puan Hesaplama: SAY, EA, SÖZ ve DİL Rehberi
                         </h1>
                         <p className="text-xl text-gray-600">
-                            AYT sınavında SAY, EA, SÖZ ve DİL puanları nasıl hesaplanır? Detaylı formüller ve örneklerle öğrenin.
+                            AYT, yerleştirme puanınızın yaklaşık %60&apos;ını oluşturur. Puan türlerine göre
+                            netlerin getirisini bilmek stratejik bir avantaj sağlar.
                         </p>
                     </header>
 
                     <div className="prose prose-lg max-w-none">
-                        <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">AYT Nedir?</h2>
-                        <p className="text-gray-700 leading-relaxed mb-6">
-                            AYT (Alan Yeterlilik Testi), YKS'nin ikinci oturumudur ve öğrencilerin seçtikleri alana göre
-                            farklı derslerden sorular içerir. AYT'ye girebilmek için TYT'den en az 150 puan almanız gerekir.
-                            AYT'de 4 farklı puan türü vardır: SAY, EA, SÖZ ve DİL.
+
+                        <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">AYT Puanı Nasıl Hesaplanır?</h2>
+                        <p className="text-gray-700 mb-4">
+                            AYT puanınız hesaplanırken 4 yanlışın 1 doğruyu götürdüğü net sayınız temel alınır:
                         </p>
+                        <div className="bg-gray-100 p-5 rounded-lg mb-6 text-center">
+                            <p className="text-xl font-bold text-gray-900">Net = Doğru − (Yanlış ÷ 4)</p>
+                        </div>
+
+                        <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-lg mb-6">
+                            <h3 className="font-bold text-amber-900 mb-2">⚠️ Kritik Uyarı: Baraj Bilgisi</h3>
+                            <p className="text-gray-700">
+                                2022&apos;den itibaren TYT&apos;deki 150 puan barajı <strong>kaldırılmıştır.</strong> Ancak
+                                AYT puanınızın hesaplanabilmesi için ilgili testlerden toplamda en az
+                                <strong> 0,5 net</strong> yapmış olmanız gerekir.
+                            </p>
+                        </div>
+
+                        <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-lg mb-8">
+                            <h3 className="font-bold text-amber-900 mb-2">⚠️ Katsayı Notu</h3>
+                            <p className="text-gray-700">
+                                ÖSYM, puan hesaplamada standart sapma normalizasyonu kullanır ve kesin katsayıları
+                                kamuoyuyla paylaşmaz. İnternette dolaşan sabit katsayı tabloları gerçeği yansıtmaz.
+                                Hesaplama aracımız gerçek sonuçlara yakın bir <strong>tahmin</strong> üretir.
+                            </p>
+                        </div>
+
+                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Puan Türlerine Göre Test Ağırlıkları</h2>
+                        <div className="overflow-x-auto my-6">
+                            <table className="min-w-full bg-white border border-gray-300 rounded-lg">
+                                <thead className="bg-purple-50">
+                                    <tr>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Puan Türü</th>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Temel Testler</th>
+                                        <th className="px-5 py-3 text-center font-semibold border-b">AYT Katkı Oranı</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b">
+                                        <td className="px-5 py-4 font-medium text-green-700">SAY</td>
+                                        <td className="px-5 py-4 text-sm">Mat + Fizik + Kimya + Biyo</td>
+                                        <td className="px-5 py-4 text-center font-bold">~%60</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="px-5 py-4 font-medium text-blue-700">EA</td>
+                                        <td className="px-5 py-4 text-sm">Mat + Edb + Tar-1 + Coğ-1</td>
+                                        <td className="px-5 py-4 text-center font-bold">~%60</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="px-5 py-4 font-medium text-purple-700">SÖZ</td>
+                                        <td className="px-5 py-4 text-sm">Edb + Sos-1 + Sos-2</td>
+                                        <td className="px-5 py-4 text-center font-bold">~%60</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="px-5 py-4 font-medium text-orange-700">DİL</td>
+                                        <td className="px-5 py-4 text-sm">YDT (80 soru)</td>
+                                        <td className="px-5 py-4 text-center font-bold">~%60</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
                         <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">4 Puan Türü ve Soru Dağılımı</h2>
-
-                        <div className="grid md:grid-cols-2 gap-6 my-8">
+                        <div className="grid md:grid-cols-2 gap-6 my-6">
                             <div className="bg-green-50 border-l-4 border-green-600 p-6 rounded-lg">
-                                <h3 className="text-xl font-bold text-green-900 mb-4">🔬 SAY (Sayısal)</h3>
-                                <ul className="space-y-2 text-gray-700">
+                                <h3 className="text-xl font-bold text-green-900 mb-3">🔬 SAY (Sayısal)</h3>
+                                <ul className="space-y-1 text-gray-700 text-sm">
                                     <li>• Matematik: 40 soru</li>
                                     <li>• Fizik: 14 soru</li>
                                     <li>• Kimya: 13 soru</li>
                                     <li>• Biyoloji: 13 soru</li>
-                                    <li className="font-bold text-green-800">Toplam: 80 soru</li>
                                 </ul>
+                                <p className="text-xs text-gray-500 mt-3">Bölümler: Tıp, Mühendislik, Eczacılık, Mimarlık</p>
                             </div>
-
                             <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg">
-                                <h3 className="text-xl font-bold text-blue-900 mb-4">⚖️ EA (Eşit Ağırlık)</h3>
-                                <ul className="space-y-2 text-gray-700">
+                                <h3 className="text-xl font-bold text-blue-900 mb-3">⚖️ EA (Eşit Ağırlık)</h3>
+                                <ul className="space-y-1 text-gray-700 text-sm">
                                     <li>• Matematik: 40 soru</li>
                                     <li>• Edebiyat: 24 soru</li>
                                     <li>• Tarih-1: 10 soru</li>
                                     <li>• Coğrafya-1: 6 soru</li>
-                                    <li className="font-bold text-blue-800">Toplam: 80 soru</li>
                                 </ul>
+                                <p className="text-xs text-gray-500 mt-3">Bölümler: Hukuk, İktisat, İşletme, Uluslararası İlişkiler</p>
                             </div>
-
                             <div className="bg-purple-50 border-l-4 border-purple-600 p-6 rounded-lg">
-                                <h3 className="text-xl font-bold text-purple-900 mb-4">📚 SÖZ (Sözel)</h3>
-                                <ul className="space-y-2 text-gray-700">
+                                <h3 className="text-xl font-bold text-purple-900 mb-3">📚 SÖZ (Sözel)</h3>
+                                <ul className="space-y-1 text-gray-700 text-sm">
                                     <li>• Edebiyat: 24 soru</li>
-                                    <li>• Tarih-1: 10 soru</li>
-                                    <li>• Coğrafya-1: 6 soru</li>
-                                    <li>• Tarih-2: 11 soru</li>
-                                    <li>• Coğrafya-2: 11 soru</li>
-                                    <li>• Felsefe: 12 soru</li>
-                                    <li>• Din Kültürü: 6 soru</li>
-                                    <li className="font-bold text-purple-800">Toplam: 80 soru</li>
+                                    <li>• Tarih-1 &amp; 2: 21 soru</li>
+                                    <li>• Coğrafya-1 &amp; 2: 17 soru</li>
+                                    <li>• Felsefe: 12 soru, Din: 6 soru</li>
                                 </ul>
+                                <p className="text-xs text-gray-500 mt-3">Bölümler: Türk Dili, Tarih, Psikoloji, Sosyoloji</p>
                             </div>
-
                             <div className="bg-orange-50 border-l-4 border-orange-600 p-6 rounded-lg">
-                                <h3 className="text-xl font-bold text-orange-900 mb-4">🌍 DİL (Yabancı Dil)</h3>
-                                <ul className="space-y-2 text-gray-700">
-                                    <li>• Yabancı Dil: 80 soru</li>
-                                    <li className="text-sm">(İngilizce, Almanca, Fransızca, Arapça)</li>
-                                    <li className="font-bold text-orange-800">Toplam: 80 soru</li>
+                                <h3 className="text-xl font-bold text-orange-900 mb-3">🌍 DİL (Yabancı Dil)</h3>
+                                <ul className="space-y-1 text-gray-700 text-sm">
+                                    <li>• YDT: 80 soru</li>
+                                    <li>• (İngilizce, Almanca, Fransızca, Arapça)</li>
                                 </ul>
+                                <p className="text-xs text-gray-500 mt-3">Bölümler: İngilizce Öğretmenliği, Mütercim-Tercümanlık</p>
                             </div>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">AYT Puan Nasıl Hesaplanır?</h2>
-                        <p className="text-gray-700 leading-relaxed mb-6">
-                            YKS puanı, TYT ve AYT ham puanlarının ÖSYM tarafından belirlenen katsayılarla çarpılıp
-                            toplanmasıyla oluşur. OBP (Ortaöğretim Başarı Puanı) da bu puana eklenir.
+                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Başarı Sırası Barajları</h2>
+                        <p className="text-gray-700 mb-4">
+                            Bazı bölümlere girmek için sadece puan yetmez; belli bir sıralama içinde olmanız şarttır.
+                            Bu barajlar ÖSYM kılavuzunda her yıl güncellenir:
                         </p>
-
-                        <div className="bg-amber-50 border-l-4 border-amber-500 p-6 my-6 rounded-lg">
-                            <h3 className="font-bold text-amber-900 mb-2">⚠️ Önemli Uyarı</h3>
-                            <p className="text-amber-800">
-                                ÖSYM, puan hesaplamada standart sapma normalizasyonu kullanır ve kesin katsayıları
-                                kamuoyuyla paylaşmaz. Bu nedenle internet üzerinde dolaşan sabit katsayı tabloları
-                                (örn. "AYT Mat katsayısı 5") gerçeği yansıtmaz. Puanlar her yıl sınava giren
-                                adayların performansına göre değişir. Hesaplama aracımız gerçek sonuçlara yakın
-                                bir <strong>tahmin</strong> üretir; kesin değildir.
-                            </p>
+                        <div className="overflow-x-auto my-6">
+                            <table className="min-w-full bg-white border border-gray-300 rounded-lg">
+                                <thead className="bg-red-50">
+                                    <tr>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Bölüm</th>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Puan Türü</th>
+                                        <th className="px-5 py-3 text-center font-semibold border-b">Başarı Sırası Şartı</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b"><td className="px-5 py-3">Tıp</td><td className="px-5 py-3">SAY</td><td className="px-5 py-3 text-center font-bold text-red-700">İlk 50.000</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3">Hukuk</td><td className="px-5 py-3">EA</td><td className="px-5 py-3 text-center font-bold text-red-700">İlk 125.000</td></tr>
+                                    <tr className="border-b"><td className="px-5 py-3">Mimarlık</td><td className="px-5 py-3">SAY</td><td className="px-5 py-3 text-center font-bold text-orange-700">İlk 250.000</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3">Mühendislik</td><td className="px-5 py-3">SAY</td><td className="px-5 py-3 text-center font-bold text-orange-700">İlk 300.000</td></tr>
+                                    <tr><td className="px-5 py-3">Öğretmenlik</td><td className="px-5 py-3">SAY/EA/SÖZ</td><td className="px-5 py-3 text-center font-bold text-orange-700">İlk 300.000</td></tr>
+                                </tbody>
+                            </table>
                         </div>
+                        <p className="text-xs text-gray-500 mb-6">* Kesin baraj değerleri için ÖSYM kılavuzunu kontrol edin. Yukarıdaki değerler 2025 verilerine dayanmaktadır.</p>
 
-                        <div className="bg-gray-50 p-6 rounded-lg my-6">
-                            <h3 className="font-bold text-gray-900 mb-4">Genel Yapı:</h3>
-                            <ul className="space-y-2 text-gray-700">
-                                <li>• TYT puanı tüm puan türlerini etkiler</li>
-                                <li>• SAY puanı: TYT + AYT Matematik + AYT Fen dersleri</li>
-                                <li>• EA puanı: TYT + AYT Matematik + AYT Edebiyat/Tarih/Coğrafya</li>
-                                <li>• SÖZ puanı: TYT + AYT Sözel dersler (Edebiyat, Tarih, Coğrafya, Felsefe, Din)</li>
-                                <li>• DİL puanı: TYT + YDT</li>
-                                <li>• OBP (diploma notu × 5 × 0.12) tüm puan türlerine eklenir</li>
-                            </ul>
-                        </div>
-
-                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-12 text-center text-white">
-                            <h2 className="text-3xl font-bold mb-4">
-                                AYT Puanınızı Hemen Hesaplayın!
-                            </h2>
-                            <p className="text-xl mb-6 text-blue-100">
-                                SAY, EA, SÖZ ve DİL puanlarınızı anında öğrenin
-                            </p>
-                            <Link
-                                href="/"
-                                className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg"
-                            >
+                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
+                            <h2 className="text-3xl font-bold mb-4">AYT Puanınızı Hemen Hesaplayın</h2>
+                            <p className="text-xl mb-6 text-blue-100">SAY, EA, SÖZ ve DİL puanlarınızı anında öğrenin</p>
+                            <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
                                 Ücretsiz Hesapla →
                             </Link>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Hangi Puan Türünü Seçmeliyim?</h2>
-
-                        <div className="space-y-6 my-8">
-                            <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
-                                <h3 className="font-bold text-green-900 mb-2">SAY (Sayısal) - Kimler Seçmeli?</h3>
-                                <p className="text-gray-700 mb-3">
-                                    Matematik ve fen bilimlerinde güçlüyseniz SAY tercih edin.
-                                </p>
-                                <p className="text-sm text-gray-600">
-                                    <strong>Bölümler:</strong> Mühendislik, Tıp, Diş Hekimliği, Eczacılık, Mimarlık, Veterinerlik
-                                </p>
+                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Sıkça Sorulan Sorular</h2>
+                        <div className="space-y-4 my-6">
+                            <div className="border-b pb-4">
+                                <h3 className="font-bold text-gray-900 mb-2">Birden fazla puan türüyle başvurabilir miyim?</h3>
+                                <p className="text-gray-700 text-sm">Evet. Tercih sırasında farklı puan türlerinden bölümler seçebilirsiniz.</p>
                             </div>
-
-                            <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
-                                <h3 className="font-bold text-blue-900 mb-2">EA (Eşit Ağırlık) - Kimler Seçmeli?</h3>
-                                <p className="text-gray-700 mb-3">
-                                    Hem sayısal hem sözel derslerde dengeli iseniz EA tercih edin.
-                                </p>
-                                <p className="text-sm text-gray-600">
-                                    <strong>Bölümler:</strong> İktisat, İşletme, Hukuk, Siyaset Bilimi, Uluslararası İlişkiler
-                                </p>
+                            <div className="border-b pb-4">
+                                <h3 className="font-bold text-gray-900 mb-2">AYT&apos;de kaç net iyi sayılır?</h3>
+                                <p className="text-gray-700 text-sm">SAY için 50+ net, EA için 45+ net, SÖZ için 40+ net iyi sayılır. Hedef bölümünüze göre değişir.</p>
                             </div>
-
-                            <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-600">
-                                <h3 className="font-bold text-purple-900 mb-2">SÖZ (Sözel) - Kimler Seçmeli?</h3>
-                                <p className="text-gray-700 mb-3">
-                                    Edebiyat, tarih ve sosyal bilimlerde güçlüyseniz SÖZ tercih edin.
-                                </p>
-                                <p className="text-sm text-gray-600">
-                                    <strong>Bölümler:</strong> Türk Dili, Tarih, Felsefe, Psikoloji, Sosyoloji, Gazetecilik
-                                </p>
-                            </div>
-
-                            <div className="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-600">
-                                <h3 className="font-bold text-orange-900 mb-2">DİL (Yabancı Dil) - Kimler Seçmeli?</h3>
-                                <p className="text-gray-700 mb-3">
-                                    Yabancı dilde çok güçlüyseniz DİL tercih edin.
-                                </p>
-                                <p className="text-sm text-gray-600">
-                                    <strong>Bölümler:</strong> İngilizce Öğretmenliği, Mütercim-Tercümanlık, Amerikan Kültürü
-                                </p>
-                            </div>
-                        </div>
-
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Sık Sorulan Sorular</h2>
-
-                        <div className="space-y-6 my-8">
-                            <div className="bg-gray-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-gray-900 mb-2">❓ Birden fazla puan türü ile başvurabilir miyim?</h3>
-                                <p className="text-gray-700">
-                                    Evet! Tercih sırasında farklı puan türlerinden bölümler seçebilirsiniz. Örneğin hem SAY
-                                    hem EA bölümlerine başvurabilirsiniz.
-                                </p>
-                            </div>
-
-                            <div className="bg-gray-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-gray-900 mb-2">❓ AYT'de kaç net iyi sayılır?</h3>
-                                <p className="text-gray-700">
-                                    SAY için 50+ net, EA için 45+ net, SÖZ için 40+ net iyi sayılır. Ancak hedef bölümünüze
-                                    göre değişir.
-                                </p>
-                            </div>
-
-                            <div className="bg-gray-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-gray-900 mb-2">❓ TYT'den düşük puan alsam AYT'ye girebilir miyim?</h3>
-                                <p className="text-gray-700">
-                                    TYT'den en az 150 puan almanız gerekir. Aksi takdirde AYT puanınız hesaplanmaz.
-                                </p>
+                            <div className="pb-4">
+                                <h3 className="font-bold text-gray-900 mb-2">TYT&apos;den düşük puan alsam AYT&apos;ye girebilir miyim?</h3>
+                                <p className="text-gray-700 text-sm">2022&apos;den itibaren TYT barajı kaldırılmıştır. İlgili testlerden 0,5 net yapmanız yeterlidir.</p>
                             </div>
                         </div>
 
@@ -221,11 +202,9 @@ export default function AYTPuanHesaplama() {
                             <div className="grid md:grid-cols-2 gap-4">
                                 <Link href="/blog/yks-puan-turleri" className="p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
                                     <p className="font-semibold text-blue-900">YKS Puan Türleri →</p>
-                                    <p className="text-sm text-gray-700">SAY, EA, SÖZ, DİL detaylı</p>
                                 </Link>
                                 <Link href="/blog/tyt-net-hesaplama-rehberi" className="p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
                                     <p className="font-semibold text-green-900">TYT Net Hesaplama →</p>
-                                    <p className="text-sm text-gray-700">TYT netlerinizi hesaplayın</p>
                                 </Link>
                             </div>
                         </div>

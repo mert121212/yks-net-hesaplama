@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-    title: 'OBP (Ortaöğretim Başarı Puanı) Nedir? Nasıl Hesaplanır? 2026',
-    description: 'Lise diploma notunuzun YKS puanınıza etkisi nedir? OBP hesaplama formülü ve örnekleri. OBP nedir, nasıl hesaplanır?',
-    keywords: 'obp nedir, obp hesaplama, ortaöğretim başarı puanı, diploma notu, yks obp',
+    title: 'OBP Nedir? 2026 Ortaöğretim Başarı Puanı Hesaplama ve Puan Kırılması',
+    description: 'OBP hesaplama formülü, puan kırılması durumu ve meslek lisesi ek puanı. Diploma notunuzun YKS puanınıza +30 ile +60 puan arasında nasıl katkı sağladığını öğrenin.',
+    keywords: 'obp nedir, obp hesaplama, ortaöğretim başarı puanı, diploma notu, yks obp, puan kırılması',
     alternates: { canonical: 'https://yksnethesapla.com/blog/obp-hesaplama' },
     openGraph: {
-        title: 'OBP (Ortaöğretim Başarı Puanı) Nedir? Nasıl Hesaplanır?',
-        description: 'Lise diploma notunuzun YKS puanınıza etkisi nedir? OBP hesaplama formülü ve örnekleri.',
+        title: 'OBP Nedir? 2026 Ortaöğretim Başarı Puanı Hesaplama ve Puan Kırılması',
+        description: 'OBP hesaplama formülü ve puan kırılması durumu. Diploma notunuzun YKS puanınıza etkisi.',
         type: 'article',
         publishedTime: '2026-02-24',
         url: 'https://yksnethesapla.com/blog/obp-hesaplama',
@@ -35,113 +35,97 @@ export default function OBPHesaplama() {
                             <span className="text-gray-600">• 5 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            OBP Nedir? Nasıl Hesaplanır?
+                            OBP Nedir? 2026 Ortaöğretim Başarı Puanı Hesaplama
                         </h1>
+                        <p className="text-xl text-gray-700">
+                            OBP, lise hayatınız boyunca verdiğiniz emeklerin YKS sonucunuza
+                            +30 ile +60 puan arasında katkı sağlamasıdır.
+                        </p>
                     </header>
 
                     <div className="prose prose-lg max-w-none">
-                        <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                            OBP (Ortaöğretim Başarı Puanı), lise diploma notunuzun YKS puanınıza katkısıdır.
-                            YKS puanınızın %12'sini oluşturur ve doğru hesaplanması çok önemlidir.
-                        </p>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">OBP Nedir?</h2>
-                        <p className="text-gray-700 leading-relaxed mb-6">
-                            OBP, lise eğitiminiz boyunca aldığınız notların ortalamasının YKS puanınıza eklenmesidir.
-                            Bu sistem, sadece sınav gününüzün değil, 4 yıllık çalışmanızın da değerlendirilmesini sağlar.
+                        <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">OBP Nasıl Hesaplanır?</h2>
+                        <p className="text-gray-700 mb-4">
+                            Diploma notunuz önce 5 ile çarpılır, ardından çıkan sonuç 0,12 katsayısı ile
+                            ham puanınıza eklenir:
                         </p>
-
-                        <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
-                            <h3 className="font-bold text-blue-900 mb-3">📊 OBP Hesaplama Formülü</h3>
-                            <div className="bg-white p-4 rounded-lg my-4">
-                                <p className="text-2xl font-bold text-gray-900 text-center">
-                                    OBP = Diploma Notu × 5
-                                </p>
-                            </div>
-                            <p className="text-sm text-gray-700">
-                                Örnek: Diploma notunuz 85 ise → OBP = 85 × 5 = 425 puan
-                            </p>
+                        <div className="bg-gray-100 p-5 rounded-lg mb-6 text-center">
+                            <p className="text-xl font-bold text-gray-900">OBP Katkısı = Diploma Notu × 0,6</p>
+                            <p className="text-sm text-gray-600 mt-2">(Diploma Notu × 5 = OBP → OBP × 0,12 = Katkı)</p>
                         </div>
 
                         <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">OBP Örnekleri</h2>
-
-                        <div className="space-y-4 my-8">
-                            <div className="bg-green-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-green-900 mb-2">Örnek 1: Yüksek Diploma Notu</h3>
-                                <p className="text-gray-700 mb-2">Diploma Notu: 90</p>
-                                <p className="text-gray-700 mb-2">OBP = 90 × 5 = <strong className="text-green-700">450 puan</strong></p>
-                                <p className="text-sm text-gray-600">YKS puanınıza 450 × 0.12 = 54 puan eklenir</p>
+                        <div className="space-y-4 my-6">
+                            <div className="bg-green-50 p-5 rounded-lg border-l-4 border-green-500">
+                                <h3 className="font-bold text-green-900 mb-2">Yüksek Diploma Notu (90)</h3>
+                                <p className="text-gray-700 text-sm">OBP = 90 × 5 = 450 → Katkı = 450 × 0,12 = <strong className="text-green-700">+54 puan</strong></p>
                             </div>
-
-                            <div className="bg-blue-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-blue-900 mb-2">Örnek 2: Orta Diploma Notu</h3>
-                                <p className="text-gray-700 mb-2">Diploma Notu: 75</p>
-                                <p className="text-gray-700 mb-2">OBP = 75 × 5 = <strong className="text-blue-700">375 puan</strong></p>
-                                <p className="text-sm text-gray-600">YKS puanınıza 375 × 0.12 = 45 puan eklenir</p>
+                            <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-500">
+                                <h3 className="font-bold text-blue-900 mb-2">Orta Diploma Notu (75)</h3>
+                                <p className="text-gray-700 text-sm">OBP = 75 × 5 = 375 → Katkı = 375 × 0,12 = <strong className="text-blue-700">+45 puan</strong></p>
                             </div>
-
-                            <div className="bg-orange-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-orange-900 mb-2">Örnek 3: Düşük Diploma Notu</h3>
-                                <p className="text-gray-700 mb-2">Diploma Notu: 60</p>
-                                <p className="text-gray-700 mb-2">OBP = 60 × 5 = <strong className="text-orange-700">300 puan</strong></p>
-                                <p className="text-sm text-gray-600">YKS puanınıza 300 × 0.12 = 36 puan eklenir</p>
+                            <div className="bg-orange-50 p-5 rounded-lg border-l-4 border-orange-500">
+                                <h3 className="font-bold text-orange-900 mb-2">Düşük Diploma Notu (60)</h3>
+                                <p className="text-gray-700 text-sm">OBP = 60 × 5 = 300 → Katkı = 300 × 0,12 = <strong className="text-orange-700">+36 puan</strong></p>
                             </div>
                         </div>
 
-                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-12 text-center text-white">
-                            <h2 className="text-3xl font-bold mb-4">OBP'nizi Hesaplayın!</h2>
-                            <p className="text-xl mb-6 text-blue-100">
-                                Diploma notunuzu girerek OBP'nizi öğrenin
+                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">⚠️ Puan Kırılması Durumu</h2>
+                        <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg mb-6">
+                            <p className="text-gray-700">
+                                Eğer geçen yıl bir yükseköğretim programına yerleştiyseniz (tercih yapıp kazandıysanız),
+                                bu yıl OBP katsayınız <strong>0,12&apos;den 0,06&apos;ya düşer.</strong> Bu da yaklaşık
+                                <strong> 20–30 puan kaybetmeniz</strong> demektir.
                             </p>
+                        </div>
+                        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-5 rounded-lg mb-8">
+                            <p className="text-yellow-900 text-sm">
+                                <strong>Örnek:</strong> Diploma notu 85 olan ve geçen yıl yerleşen bir aday:
+                                Normal katkı = 85 × 0,6 = 51 puan. Kırılmış katkı = 85 × 0,3 = 25,5 puan.
+                                Fark: yaklaşık 25,5 puan kayıp.
+                            </p>
+                        </div>
+
+                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
+                            <h2 className="text-3xl font-bold mb-4">OBP&apos;nizi Hesaplayın</h2>
+                            <p className="text-xl mb-6 text-blue-100">Diploma notunuzu girerek OBP katkınızı ve toplam puanınızı öğrenin</p>
                             <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
                                 Hesapla →
                             </Link>
                         </div>
 
                         <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Özel Durumlar</h2>
-
-                        <div className="space-y-6 my-8">
-                            <div className="bg-gray-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-gray-900 mb-2">📌 Meslek Lisesi Mezunları</h3>
-                                <p className="text-gray-700">
-                                    Meslek lisesi mezunları, kendi alanlarındaki bölümlere başvururken OBP'lerinin
-                                    tamamını kullanabilirler. Diğer alanlara başvururken OBP'nin yarısı hesaba katılır.
+                        <div className="space-y-4 my-6">
+                            <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-gray-400">
+                                <h3 className="font-bold text-gray-900 mb-2">Meslek Lisesi Mezunları</h3>
+                                <p className="text-gray-700 text-sm">
+                                    Meslek lisesi mezunları kendi alanlarındaki ilgili programlara başvururken
+                                    ek puan avantajından yararlanabilir. Diğer alanlara başvururken standart OBP uygulanır.
+                                    Detaylar için ÖSYM kılavuzunu inceleyin.
                                 </p>
                             </div>
-
-                            <div className="bg-gray-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-gray-900 mb-2">📌 Daha Önce Yerleşenler</h3>
-                                <p className="text-gray-700">
-                                    Daha önce bir programa yerleşip kayıt yaptıranlar, o yılki puanlarını kullanabilirler.
-                                    Yeni sınavda daha düşük puan alsalar bile eski puanları geçerlidir.
-                                </p>
-                            </div>
-
-                            <div className="bg-gray-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-gray-900 mb-2">📌 Açık Lise Mezunları</h3>
-                                <p className="text-gray-700">
-                                    Açık lise mezunları da OBP hesaplamasından yararlanır. Diploma notları aynı
-                                    formülle hesaplanır.
+                            <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-gray-400">
+                                <h3 className="font-bold text-gray-900 mb-2">Açık Lise Mezunları</h3>
+                                <p className="text-gray-700 text-sm">
+                                    Açık lise mezunları da OBP hesaplamasından yararlanır. Diploma notları aynı formülle hesaplanır.
                                 </p>
                             </div>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Sık Sorulan Sorular</h2>
-
-                        <div className="space-y-6 my-8">
-                            <div className="bg-gray-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-gray-900 mb-2">❓ OBP'yi artırabilir miyim?</h3>
-                                <p className="text-gray-700">
-                                    Hayır, mezun olduktan sonra OBP'nizi değiştiremezsiniz. Ancak lise öğrencisiyseniz
-                                    notlarınızı yükselterek OBP'nizi artırabilirsiniz.
-                                </p>
+                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Sıkça Sorulan Sorular</h2>
+                        <div className="space-y-4 my-6">
+                            <div className="border-b pb-4">
+                                <h3 className="font-bold text-gray-900 mb-2">OBP&apos;yi artırabilir miyim?</h3>
+                                <p className="text-gray-700 text-sm">Mezun olduktan sonra OBP&apos;nizi değiştiremezsiniz. Lise öğrencisiyseniz notlarınızı yükselterek artırabilirsiniz.</p>
                             </div>
-
-                            <div className="bg-gray-50 p-6 rounded-lg">
-                                <h3 className="font-bold text-gray-900 mb-2">❓ OBP zorunlu mu?</h3>
-                                <p className="text-gray-700">
-                                    Evet, OBP otomatik olarak hesaplanır ve YKS puanınıza eklenir. Reddedemezsiniz.
-                                </p>
+                            <div className="border-b pb-4">
+                                <h3 className="font-bold text-gray-900 mb-2">OBP zorunlu mu?</h3>
+                                <p className="text-gray-700 text-sm">Evet, OBP otomatik olarak hesaplanır ve YKS puanınıza eklenir. Reddedemezsiniz.</p>
+                            </div>
+                            <div className="pb-4">
+                                <h3 className="font-bold text-gray-900 mb-2">Ham puan ile yerleştirme puanı arasındaki fark nedir?</h3>
+                                <p className="text-gray-700 text-sm">Ham puan, sadece netlerinizden gelen puandır (max 500). Yerleştirme puanı ise ham puana OBP katkısının eklenmiş halidir.</p>
                             </div>
                         </div>
 
