@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
-    title: 'Kullanım Koşulları | YKS Net Hesaplama',
-    description: 'YKS Net Hesaplama platformu kullanım koşulları, hizmet şartları ve sorumluluk reddi.',
+    title: 'Kullanım Koşulları | YKS Net Hesaplama - yksnethesapla.com',
+    description: 'yksnethesapla.com kullanım koşulları, sorumluluk reddi ve hizmet şartları. ÖSYM ile resmi bağı bulunmayan bağımsız bir platform.',
+    alternates: { canonical: 'https://yksnethesapla.com/kullanim-kosullari' },
 }
 
 export default function KullanimKosullariPage() {
@@ -16,6 +18,16 @@ export default function KullanimKosullariPage() {
                     <p className="text-center text-gray-600 mb-8">
                         Son Güncelleme: 21 Şubat 2026
                     </p>
+
+                    {/* Resmi kurum değildir uyarısı */}
+                    <div className="bg-amber-50 border-2 border-amber-300 rounded-xl p-6 mb-10">
+                        <h2 className="text-lg font-bold text-amber-900 mb-2">⚠️ Önemli Hatırlatma</h2>
+                        <p className="text-amber-800 text-sm">
+                            <strong>yksnethesapla.com</strong>, Ölçme, Seçme ve Yerleştirme Merkezi (ÖSYM) veya
+                            Yükseköğretim Kurulu (YÖK) ile resmi bir bağı bulunmayan, bağımsız bir dijital araçtır.
+                            Sitede sunulan veriler resmi belge niteliği taşımaz.
+                        </p>
+                    </div>
 
                     <div className="space-y-8 text-gray-700 leading-relaxed">
                         <section>
@@ -59,7 +71,7 @@ export default function KullanimKosullariPage() {
                                     <strong> yalnızca bilgilendirme amaçlıdır</strong> ve kesin sonuçları garanti etmez.
                                 </p>
                             </div>
-                            <ul className="list-disc list-inside space-y-2 ml-4">
+                            <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
                                 <li>
                                     Puan ve sıralama tahminleri geçmiş yıl verilerine dayanmaktadır ve
                                     gerçek sonuçlardan farklılık gösterebilir
@@ -68,12 +80,21 @@ export default function KullanimKosullariPage() {
                                     Üniversite taban puanları ve kontenjanlar her yıl değişiklik gösterebilir
                                 </li>
                                 <li>
-                                    Resmi başvurularınızı yapmadan önce ÖSYM'nin resmi web sitesini kontrol ediniz
+                                    Resmi başvurularınızı yapmadan önce ÖSYM&apos;nin resmi web sitesini kontrol ediniz
                                 </li>
                                 <li>
                                     Platform, kullanıcıların kararlarından ve sonuçlarından sorumlu değildir
                                 </li>
                             </ul>
+                            <div className="bg-gray-50 border-l-4 border-gray-400 p-4 rounded-lg text-sm">
+                                <p className="font-semibold text-gray-800 mb-1">Teknik Not — Hesaplama Doğruluğu</p>
+                                <p className="text-gray-700">
+                                    Puan hesaplamaları, ÖSYM tarafından geçmiş yıllarda yayınlanan katsayılar ve
+                                    standart sapma verileri kullanılarak simüle edilmektedir. Gerçek sınav sonuçları;
+                                    o yıl sınava giren aday sayısı, soruların zorluk katsayısı ve genel başarı
+                                    ortalamasına göre değişkenlik gösterebilir.
+                                </p>
+                            </div>
                         </section>
 
                         <section>
@@ -112,14 +133,19 @@ export default function KullanimKosullariPage() {
                             </h2>
                             <p className="mb-4">
                                 Kişisel verilerinizin işlenmesi ve korunması hakkında detaylı bilgi için
-                                <a href="/privacy" className="text-blue-600 hover:text-blue-800 underline ml-1">
+                                <Link href="/privacy" className="text-blue-600 hover:text-blue-800 underline ml-1">
                                     Gizlilik Politikası
-                                </a> sayfamızı inceleyiniz.
+                                </Link> sayfamızı inceleyiniz.
                             </p>
-                            <p>
-                                Platform, kullanıcıların girdiği verileri yalnızca hizmet sunmak amacıyla
-                                kullanır ve üçüncü şahıslarla paylaşmaz.
-                            </p>
+                            <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded-lg text-sm">
+                                <p className="font-semibold text-green-800 mb-1">Teknik Not — Veri Güvenliği</p>
+                                <p className="text-gray-700">
+                                    Platformumuz <strong>client-side</strong> (kullanıcı taraflı) çalışma prensibine
+                                    sahiptir. Girdiğiniz doğru/yanlış sayıları ve net verileri sunucularımıza
+                                    iletilmez, yalnızca tarayıcınızda işlenir. Bu yaklaşım KVKK uyumu açısından
+                                    tam koruma sağlar.
+                                </p>
+                            </div>
                         </section>
 
                         <section>
@@ -197,11 +223,11 @@ export default function KullanimKosullariPage() {
                                 Kullanım koşulları hakkında sorularınız için bizimle iletişime geçebilirsiniz:
                             </p>
                             <div className="bg-gray-50 p-4 rounded-lg">
-                                <p><strong>E-posta:</strong> info@yksnethesaplama.com</p>
+                                <p><strong>E-posta:</strong> mertcaliskan36065d@gmail.com</p>
                                 <p className="mt-2">
-                                    <a href="/iletisim" className="text-blue-600 hover:text-blue-800 underline">
+                                    <Link href="/iletisim" className="text-blue-600 hover:text-blue-800 underline">
                                         İletişim sayfasını ziyaret edin →
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
                         </section>
