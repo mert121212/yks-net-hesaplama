@@ -6,7 +6,7 @@ export default function CountdownTimer() {
     const [t, setT] = useState<{ d: number, h: number, m: number, s: number } | null>(null)
 
     useEffect(() => {
-        const target = 1750413600000 // 2026-06-20T10:00:00 UTC+3 timestamp
+        const target = 1781938800000 // 2026-06-20T10:00:00+03:00 (Türkiye saati)
 
         const calc = () => {
             const diff = target - Date.now()
