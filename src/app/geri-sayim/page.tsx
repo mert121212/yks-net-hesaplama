@@ -1,6 +1,9 @@
 import Link from 'next/link'
 import CountdownTimer from '@/components/CountdownTimer'
 
+// Günde bir kez yeniden hesapla
+export const revalidate = 86400
+
 // Motivasyon ve ipuçları — static, JS yok
 function getMotivation(days: number) {
     if (days > 180) return 'Harika! Yeterli zamanın var. Düzenli çalışmaya devam et! 📚'
@@ -19,11 +22,15 @@ function getStudyTips(days: number) {
 // Server-side hesaplama — build anında statik
 function getDaysLeft() {
     const yksDate = new Date('2026-06-20T10:00:00')
-    return Math.max(0, Math.floor((yksDate.getTime() - Date.now()) / 86400000))
+    const now = new Date()
+    return Math.max(0, Math.floor((yksDate.getTime() - now.getTime()) / 86400000))
 }
 
+// Sabit değerler — her deploy'da güncellenir, runtime'da değişmez
+const DAYS_LEFT = getDaysLeft()
+
 export default function GeriSayimPage() {
-    const days = getDaysLeft()
+    const days = DAYS_LEFT
     const motivation = getMotivation(days)
     const tips = getStudyTips(days)
 
