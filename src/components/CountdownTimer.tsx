@@ -1,8 +1,18 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import { Clock, Calendar, Target, Heart, Brain, Coffee, TrendingUp, BookOpen } from 'lucide-react'
+import { useState, useEffect, lazy, Suspense } from 'react'
+import dynamic from 'next/dynamic'
 import Link from 'next/link'
+
+// İkonları lazy load — ilk paint'i bloklamaz
+const Clock = dynamic(() => import('lucide-react').then(m => ({ default: m.Clock })), { ssr: false })
+const Calendar = dynamic(() => import('lucide-react').then(m => ({ default: m.Calendar })), { ssr: false })
+const Target = dynamic(() => import('lucide-react').then(m => ({ default: m.Target })), { ssr: false })
+const Heart = dynamic(() => import('lucide-react').then(m => ({ default: m.Heart })), { ssr: false })
+const Brain = dynamic(() => import('lucide-react').then(m => ({ default: m.Brain })), { ssr: false })
+const Coffee = dynamic(() => import('lucide-react').then(m => ({ default: m.Coffee })), { ssr: false })
+const TrendingUp = dynamic(() => import('lucide-react').then(m => ({ default: m.TrendingUp })), { ssr: false })
+const BookOpen = dynamic(() => import('lucide-react').then(m => ({ default: m.BookOpen })), { ssr: false })
 
 export default function CountdownTimer() {
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
