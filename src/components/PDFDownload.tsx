@@ -17,7 +17,17 @@ interface Props {
 }
 
 const f2 = (n: number) => n.toFixed(2)
-const fRank = (n?: number) => n ? n.toLocaleString('tr-TR') : '—'
+const fRank = (n?: number) => n ? n.toLocaleString('tr-TR') : '-'
+
+// jsPDF helvetica fontu Türkçe karakterleri desteklemez
+// ASCII karşılıklarına dönüştür
+const tr = (s: string) =>
+    s.replace(/ğ/g, 'g').replace(/Ğ/g, 'G')
+        .replace(/ü/g, 'u').replace(/Ü/g, 'U')
+        .replace(/ş/g, 's').replace(/Ş/g, 'S')
+        .replace(/ı/g, 'i').replace(/İ/g, 'I')
+        .replace(/ö/g, 'o').replace(/Ö/g, 'O')
+        .replace(/ç/g, 'c').replace(/Ç/g, 'C')
 
 export default function PDFDownload({ results }: Props) {
     const [loading, setLoading] = useState(false)
@@ -102,10 +112,10 @@ export default function PDFDownload({ results }: Props) {
             pdf.setFontSize(8)
             pdf.setFont('helvetica', 'normal')
             pdf.setTextColor(80, 80, 80)
-            pdf.text('Ölçme, Seçme ve Yerleştirme Merkezi', margin, y + 12.5)
+            pdf.text(tr('Ölçme, Seçme ve Yerleştirme Merkezi'), margin, y + 12.5)
 
             pdf.setFontSize(8)
-            pdf.text('YKS 2026 Tahmini Sonuç Belgesi', W - margin, y + 8, { align: 'right' })
+            pdf.text(tr('YKS 2026 Tahmini Sonuç Belgesi'), W - margin, y + 8, { align: 'right' })
             pdf.text(tarih, W - margin, y + 12.5, { align: 'right' })
 
             y += 18
@@ -113,24 +123,24 @@ export default function PDFDownload({ results }: Props) {
             pdf.setFontSize(12)
             pdf.setFont('helvetica', 'bold')
             pdf.setTextColor(0, 48, 135)
-            pdf.text('YKS 2026 — TAHMİNİ PUAN VE SIRALAMA RAPORU', W / 2, y, { align: 'center' })
+            pdf.text(tr('YKS 2026 — TAHMİNİ PUAN VE SIRALAMA RAPORU'), W / 2, y, { align: 'center' })
             y += 5
 
             pdf.setFontSize(7.5)
             pdf.setFont('helvetica', 'normal')
             pdf.setTextColor(197, 48, 48)
-            pdf.text('⚠ Bu belge yksnethesapla.com tarafından üretilmiş TAHMİNİ bir sonuçtur. Resmi ÖSYM belgesi değildir.', W / 2, y, { align: 'center' })
+            pdf.text(tr('⚠ Bu belge yksnethesapla.com tarafından üretilmiş TAHMİNİ bir sonuçtur. Resmi ÖSYM belgesi değildir.'), W / 2, y, { align: 'center' })
             pdf.setTextColor(0, 0, 0)
             y += 8
 
             // ── TYT ────────────────────────────────────────────────────────
-            sectionHeader('TYT (Temel Yeterlilik Testi) — Net Sonuçları')
-            const tytCols = [{ label: 'Ders', w: colW - 30 }, { label: 'Net', w: 30 }]
+            sectionHeader(tr('TYT (Temel Yeterlilik Testi) — Net Sonuçları'))
+            const tytCols = [{ label: tr('Ders'), w: colW - 30 }, { label: 'Net', w: 30 }]
             tableHeader(tytCols)
             const tytData = [
-                ['Türkçe', f2(results.nets.tyt.turkce)],
+                [tr('Türkçe'), f2(results.nets.tyt.turkce)],
                 ['Matematik', f2(results.nets.tyt.matematik)],
-                ['Sosyal Bilimler', f2(results.nets.tyt.sosyal)],
+                [tr('Sosyal Bilimler'), f2(results.nets.tyt.sosyal)],
                 ['Fen Bilimleri', f2(results.nets.tyt.fen)],
             ]
             tytData.forEach(([d, n], i) => tableRow([{ text: d, w: colW - 30 }, { text: n, w: 30, bold: true }], i % 2 !== 0))
@@ -142,47 +152,47 @@ export default function PDFDownload({ results }: Props) {
             pdf.rect(margin, y, colW, 6.5)
             pdf.line(margin + colW - 30, y, margin + colW - 30, y + 6.5)
             pdf.setFont('helvetica', 'bold'); pdf.setFontSize(8.5); pdf.setTextColor(0, 0, 0)
-            pdf.text('TYT TOPLAM NET', margin + 2, y + 4.5)
+            pdf.text(tr('TYT TOPLAM NET'), margin + 2, y + 4.5)
             pdf.text(f2(results.nets.tyt.toplam), margin + colW - 28, y + 4.5)
             y += 10
 
             // ── AYT ────────────────────────────────────────────────────────
-            sectionHeader('AYT (Alan Yeterlilik Testi) — Net Sonuçları')
+            sectionHeader(tr('AYT (Alan Yeterlilik Testi) — Net Sonuçları'))
             tableHeader(tytCols)
             const aytData = [
                 ['Matematik', f2(results.nets.ayt.matematik)],
                 ['Fizik', f2(results.nets.ayt.fizik)],
                 ['Kimya', f2(results.nets.ayt.kimya)],
                 ['Biyoloji', f2(results.nets.ayt.biyoloji)],
-                ['Edebiyat', f2(results.nets.ayt.edebiyat)],
+                [tr('Edebiyat'), f2(results.nets.ayt.edebiyat)],
                 ['Tarih-1', f2(results.nets.ayt.tarih1)],
-                ['Coğrafya-1', f2(results.nets.ayt.cografya1)],
+                [tr('Cografya-1'), f2(results.nets.ayt.cografya1)],
                 ['Tarih-2', f2(results.nets.ayt.tarih2)],
-                ['Coğrafya-2', f2(results.nets.ayt.cografya2)],
+                [tr('Cografya-2'), f2(results.nets.ayt.cografya2)],
                 ['Felsefe', f2(results.nets.ayt.felsefe)],
-                ['Din Kültürü', f2(results.nets.ayt.din)],
+                ['Din', f2(results.nets.ayt.din)],
             ]
             aytData.forEach(([d, n], i) => tableRow([{ text: d, w: colW - 30 }, { text: n, w: 30, bold: true }], i % 2 !== 0))
             y += 6
 
             // ── PUANLAR ────────────────────────────────────────────────────
-            sectionHeader('Tahmini Yerleştirme Puanları ve Sıralamalar')
+            sectionHeader(tr('Tahmini Yerleştirme Puanları ve Sıralamalar'))
             const c1 = 50, c2 = 35, c3 = 40, c4 = colW - c1 - c2 - c3
             tableHeader([
-                { label: 'Puan Türü', w: c1 },
+                { label: tr('Puan Türü'), w: c1 },
                 { label: 'Ham Puan', w: c2 },
-                { label: 'Yerleştirme Puanı', w: c3 },
-                { label: 'Tahmini Sıralama', w: c4 },
+                { label: tr('Yerleştirme Puanı'), w: c3 },
+                { label: tr('Tahmini Sıralama'), w: c4 },
             ])
             const scoreData = [
-                { label: 'SAY (Sayısal)', ham: results.points.sayHam ?? results.points.say, puan: results.points.say, rank: results.estimatedRanks?.say },
-                { label: 'EA (Eşit Ağırlık)', ham: results.points.eaHam ?? results.points.ea, puan: results.points.ea, rank: results.estimatedRanks?.ea },
-                { label: 'SÖZ (Sözel)', ham: results.points.sozHam ?? results.points.soz, puan: results.points.soz, rank: results.estimatedRanks?.soz },
-                { label: 'DİL (Yabancı Dil)', ham: results.points.dilHam ?? results.points.dil, puan: results.points.dil, rank: results.ydtHesaplandi ? results.estimatedRanks?.dil : undefined },
+                { label: tr('SAY (Sayısal)'), ham: results.points.sayHam ?? results.points.say, puan: results.points.say, rank: results.estimatedRanks?.say },
+                { label: tr('EA (Esit Agirlik)'), ham: results.points.eaHam ?? results.points.ea, puan: results.points.ea, rank: results.estimatedRanks?.ea },
+                { label: tr('SOZ (Sozel)'), ham: results.points.sozHam ?? results.points.soz, puan: results.points.soz, rank: results.estimatedRanks?.soz },
+                { label: tr('DIL (Yabanci Dil)'), ham: results.points.dilHam ?? results.points.dil, puan: results.points.dil, rank: results.ydtHesaplandi ? results.estimatedRanks?.dil : undefined },
             ]
             scoreData.forEach(({ label, ham, puan, rank }, i) => {
-                const isDil = label.startsWith('DİL')
-                const rankStr = !results.ydtHesaplandi && isDil ? 'Hesaplanmadı' : fRank(rank)
+                const isDil = label.startsWith('DIL')
+                const rankStr = !results.ydtHesaplandi && isDil ? tr('Hesaplanmadı') : fRank(rank)
                 tableRow([
                     { text: label, w: c1, bold: true },
                     { text: f2(ham), w: c2 },
@@ -200,9 +210,9 @@ export default function PDFDownload({ results }: Props) {
                 pdf.setDrawColor(195, 208, 240)
                 pdf.roundedRect(margin, y, colW, 8, 1, 1, 'FD')
                 pdf.setFont('helvetica', 'bold'); pdf.setFontSize(8.5); pdf.setTextColor(0, 0, 0)
-                pdf.text('OBP Bilgisi:', margin + 3, y + 5.2)
+                pdf.text(tr('OBP Bilgisi:'), margin + 3, y + 5.2)
                 pdf.setFont('helvetica', 'normal')
-                pdf.text(`Diploma Notu: ${obp}  →  OBP: ${(obp * 5).toFixed(0)}  →  Puan Katkısı: +${(obp * 5 * 0.12).toFixed(2)}`, margin + 28, y + 5.2)
+                pdf.text(tr(`Diploma Notu: ${obp}  ->  OBP: ${(obp * 5).toFixed(0)}  ->  Puan Katkisi: +${(obp * 5 * 0.12).toFixed(2)}`), margin + 28, y + 5.2)
                 y += 12
             }
 
@@ -213,9 +223,9 @@ export default function PDFDownload({ results }: Props) {
             pdf.line(margin, y, W - margin, y)
             y += 4
             pdf.setFont('helvetica', 'normal'); pdf.setFontSize(7); pdf.setTextColor(120, 120, 120)
-            pdf.text('Bu belge yksnethesapla.com tarafından üretilmiştir. ÖSYM ile resmi bir bağı bulunmamaktadır.', W / 2, y, { align: 'center' })
+            pdf.text(tr('Bu belge yksnethesapla.com tarafından üretilmiştir. ÖSYM ile resmi bir bağı bulunmamaktadır.'), W / 2, y, { align: 'center' })
             y += 4
-            pdf.text('Tahmini sonuçlar 2025 YKS verilerine dayalı logaritmik interpolasyon ile hesaplanmıştır.  |  Resmi sonuçlar için: osym.gov.tr', W / 2, y, { align: 'center' })
+            pdf.text(tr('Tahmini sonuclar 2025 YKS verilerine dayali logaritmik interpolasyon ile hesaplanmistir.  |  Resmi sonuclar icin: osym.gov.tr'), W / 2, y, { align: 'center' })
 
             pdf.save('YKS-2026-Tahmin-Sonucum.pdf')
         } catch (e) {
