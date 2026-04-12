@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-interface PDFDownloadProps {
+interface Props {
     results: {
         nets: {
             tyt: { turkce: number; matematik: number; sosyal: number; fen: number; toplam: number }
@@ -16,83 +16,118 @@ interface PDFDownloadProps {
     }
 }
 
-export default function PDFDownload({ results }: PDFDownloadProps) {
+const fmt = (n: number) => n.toFixed(2)
+const fmtRank = (n?: number) => n ? n.toLocaleString('tr-TR') : '—'
+
+export default function PDFDownload({ results }: Props) {
     const [loading, setLoading] = useState(false)
 
     const handleDownload = async () => {
         setLoading(true)
         try {
-            const html2pdf = (await import('html2pdf.js')).default
-            const element = document.getElementById('pdf-content')
-            if (!element) return
+            const [{ default: jsPDF }, { default: html2canvas }] = await Promise.all([
+                import('jspdf'),
+                import('html2canvas'),
+            ])
 
-            // Geçici olarak görünür yap
-            element.style.display = 'block'
-            element.style.position = 'fixed'
-            element.style.left = '-9999px'
-            element.style.top = '0'
-            element.style.width = '794px' // A4 genişliği px
+            const el = document.getElementById('pdf-print-area')
+            if (!el) return
 
-            await html2pdf().set({
-                margin: [15, 15, 15, 15],
-                filename: 'YKS-2026-Tahmin-Sonucum.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2, useCORS: true, logging: false },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-            }).from(element).save()
+            const canvas = await html2canvas(el, {
+                scale: 2,
+                useCORS: true,
+                backgroundColor: '#ffffff',
+                logging: false,
+            })
 
-            // Geri gizle
-            element.style.display = 'none'
-            element.style.position = ''
-            element.style.left = ''
-            element.style.top = ''
-            element.style.width = ''
+            const imgData = canvas.toDataURL('image/jpeg', 0.95)
+            const pdf = new jsPDF({ unit: 'mm', format: 'a4', orientation: 'portrait' })
+            const pageW = pdf.internal.pageSize.getWidth()
+            const pageH = pdf.internal.pageSize.getHeight()
+            const margin = 10
+            const imgW = pageW - margin * 2
+            const imgH = (canvas.height * imgW) / canvas.width
+
+            let y = margin
+            let remaining = imgH
+
+            while (remaining > 0) {
+                const sliceH = Math.min(remaining, pageH - margin * 2)
+                const srcY = (imgH - remaining) * (canvas.height / imgH)
+                const srcH = sliceH * (canvas.height / imgH)
+
+                const sliceCanvas = document.createElement('canvas')
+                sliceCanvas.width = canvas.width
+                sliceCanvas.height = srcH
+                const ctx = sliceCanvas.getContext('2d')!
+                ctx.drawImage(canvas, 0, srcY, canvas.width, srcH, 0, 0, canvas.width, srcH)
+
+                if (y > margin) { pdf.addPage(); y = margin }
+                pdf.addImage(sliceCanvas.toDataURL('image/jpeg', 0.95), 'JPEG', margin, y, imgW, sliceH)
+                remaining -= sliceH
+                y += sliceH
+            }
+
+            pdf.save('YKS-2026-Tahmin-Sonucum.pdf')
+        } catch (e) {
+            console.error('PDF hatası:', e)
         } finally {
             setLoading(false)
         }
     }
 
     const now = new Date()
-    const tarih = now.toLocaleDateString('tr-TR', { day: '2-digit', month: '2-digit', year: 'numeric' })
+    const tarih = now.toLocaleDateString('tr-TR')
     const saat = now.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' })
-
-    const fmt = (n: number) => n.toFixed(2)
-    const fmtRank = (n?: number) => n ? n.toLocaleString('tr-TR') : '—'
+    const obp = results.obp ?? 0
 
     return (
         <div className="mt-4">
-            {/* Gizli PDF içeriği */}
-            <div id="pdf-content" style={{ display: 'none', fontFamily: 'Arial, sans-serif', padding: '20px', background: '#fff', color: '#000' }}>
+            {/* PDF içeriği — her zaman DOM'da, görünür */}
+            <div
+                id="pdf-print-area"
+                style={{
+                    position: 'absolute',
+                    left: '-9999px',
+                    top: 0,
+                    width: '794px',
+                    background: '#fff',
+                    fontFamily: 'Arial, sans-serif',
+                    fontSize: '11px',
+                    color: '#000',
+                    padding: '24px',
+                }}
+            >
                 {/* Başlık */}
-                <div style={{ borderBottom: '3px solid #003087', paddingBottom: '12px', marginBottom: '16px' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                <div style={{ borderBottom: '3px solid #003087', paddingBottom: '10px', marginBottom: '14px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div>
-                            <div style={{ fontSize: '20px', fontWeight: 'bold', color: '#003087' }}>ÖSYM</div>
-                            <div style={{ fontSize: '11px', color: '#555' }}>Ölçme, Seçme ve Yerleştirme Merkezi</div>
+                            <div style={{ fontSize: '22px', fontWeight: 'bold', color: '#003087', letterSpacing: '2px' }}>ÖSYM</div>
+                            <div style={{ fontSize: '10px', color: '#555' }}>Ölçme, Seçme ve Yerleştirme Merkezi</div>
                         </div>
                         <div style={{ textAlign: 'right', fontSize: '10px', color: '#555' }}>
                             <div>YKS 2026 Tahmini Sonuç Belgesi</div>
                             <div>{tarih} — {saat}</div>
                         </div>
                     </div>
-                    <div style={{ marginTop: '10px', fontSize: '14px', fontWeight: 'bold', color: '#003087', textAlign: 'center' }}>
+                    <div style={{ marginTop: '10px', textAlign: 'center', fontSize: '13px', fontWeight: 'bold', color: '#003087' }}>
                         YKS 2026 — TAHMİNİ PUAN VE SIRALAMA RAPORU
                     </div>
-                    <div style={{ fontSize: '9px', color: '#e53e3e', textAlign: 'center', marginTop: '4px' }}>
+                    <div style={{ textAlign: 'center', fontSize: '9px', color: '#c53030', marginTop: '3px' }}>
                         ⚠ Bu belge yksnethesapla.com tarafından üretilmiş TAHMİNİ bir sonuçtur. Resmi ÖSYM belgesi değildir.
                     </div>
                 </div>
 
-                {/* TYT Netleri */}
+                {/* TYT */}
                 <div style={{ marginBottom: '14px' }}>
-                    <div style={{ background: '#003087', color: '#fff', padding: '5px 10px', fontSize: '11px', fontWeight: 'bold', marginBottom: '6px' }}>
+                    <div style={{ background: '#003087', color: '#fff', padding: '4px 10px', fontSize: '11px', fontWeight: 'bold', marginBottom: '4px' }}>
                         TYT (Temel Yeterlilik Testi) — Net Sonuçları
                     </div>
                     <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '10px' }}>
                         <thead>
                             <tr style={{ background: '#e8edf5' }}>
-                                <th style={{ border: '1px solid #ccc', padding: '5px 8px', textAlign: 'left' }}>Ders</th>
-                                <th style={{ border: '1px solid #ccc', padding: '5px 8px', textAlign: 'center' }}>Net</th>
+                                <th style={{ border: '1px solid #bbb', padding: '4px 8px', textAlign: 'left' }}>Ders</th>
+                                <th style={{ border: '1px solid #bbb', padding: '4px 8px', textAlign: 'center', width: '80px' }}>Net</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -101,30 +136,30 @@ export default function PDFDownload({ results }: PDFDownloadProps) {
                                 ['Matematik', results.nets.tyt.matematik],
                                 ['Sosyal Bilimler', results.nets.tyt.sosyal],
                                 ['Fen Bilimleri', results.nets.tyt.fen],
-                            ].map(([ders, net], i) => (
-                                <tr key={i} style={{ background: i % 2 === 0 ? '#fff' : '#f7f9fc' }}>
-                                    <td style={{ border: '1px solid #ccc', padding: '4px 8px' }}>{ders}</td>
-                                    <td style={{ border: '1px solid #ccc', padding: '4px 8px', textAlign: 'center', fontWeight: 'bold' }}>{fmt(net as number)}</td>
+                            ].map(([d, n], i) => (
+                                <tr key={i} style={{ background: i % 2 === 0 ? '#fff' : '#f5f7fb' }}>
+                                    <td style={{ border: '1px solid #bbb', padding: '3px 8px' }}>{d}</td>
+                                    <td style={{ border: '1px solid #bbb', padding: '3px 8px', textAlign: 'center', fontWeight: 'bold' }}>{fmt(n as number)}</td>
                                 </tr>
                             ))}
                             <tr style={{ background: '#dbeafe', fontWeight: 'bold' }}>
-                                <td style={{ border: '1px solid #ccc', padding: '4px 8px' }}>TYT TOPLAM NET</td>
-                                <td style={{ border: '1px solid #ccc', padding: '4px 8px', textAlign: 'center' }}>{fmt(results.nets.tyt.toplam)}</td>
+                                <td style={{ border: '1px solid #bbb', padding: '4px 8px' }}>TYT TOPLAM NET</td>
+                                <td style={{ border: '1px solid #bbb', padding: '4px 8px', textAlign: 'center' }}>{fmt(results.nets.tyt.toplam)}</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                {/* AYT Netleri */}
+                {/* AYT */}
                 <div style={{ marginBottom: '14px' }}>
-                    <div style={{ background: '#003087', color: '#fff', padding: '5px 10px', fontSize: '11px', fontWeight: 'bold', marginBottom: '6px' }}>
+                    <div style={{ background: '#003087', color: '#fff', padding: '4px 10px', fontSize: '11px', fontWeight: 'bold', marginBottom: '4px' }}>
                         AYT (Alan Yeterlilik Testi) — Net Sonuçları
                     </div>
                     <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '10px' }}>
                         <thead>
                             <tr style={{ background: '#e8edf5' }}>
-                                <th style={{ border: '1px solid #ccc', padding: '5px 8px', textAlign: 'left' }}>Ders</th>
-                                <th style={{ border: '1px solid #ccc', padding: '5px 8px', textAlign: 'center' }}>Net</th>
+                                <th style={{ border: '1px solid #bbb', padding: '4px 8px', textAlign: 'left' }}>Ders</th>
+                                <th style={{ border: '1px solid #bbb', padding: '4px 8px', textAlign: 'center', width: '80px' }}>Net</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -140,28 +175,28 @@ export default function PDFDownload({ results }: PDFDownloadProps) {
                                 ['Coğrafya-2', results.nets.ayt.cografya2],
                                 ['Felsefe', results.nets.ayt.felsefe],
                                 ['Din Kültürü', results.nets.ayt.din],
-                            ].map(([ders, net], i) => (
-                                <tr key={i} style={{ background: i % 2 === 0 ? '#fff' : '#f7f9fc' }}>
-                                    <td style={{ border: '1px solid #ccc', padding: '4px 8px' }}>{ders}</td>
-                                    <td style={{ border: '1px solid #ccc', padding: '4px 8px', textAlign: 'center', fontWeight: 'bold' }}>{fmt(net as number)}</td>
+                            ].map(([d, n], i) => (
+                                <tr key={i} style={{ background: i % 2 === 0 ? '#fff' : '#f5f7fb' }}>
+                                    <td style={{ border: '1px solid #bbb', padding: '3px 8px' }}>{d}</td>
+                                    <td style={{ border: '1px solid #bbb', padding: '3px 8px', textAlign: 'center', fontWeight: 'bold' }}>{fmt(n as number)}</td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
                 </div>
 
-                {/* Puanlar ve Sıralamalar */}
+                {/* Puanlar */}
                 <div style={{ marginBottom: '14px' }}>
-                    <div style={{ background: '#003087', color: '#fff', padding: '5px 10px', fontSize: '11px', fontWeight: 'bold', marginBottom: '6px' }}>
+                    <div style={{ background: '#003087', color: '#fff', padding: '4px 10px', fontSize: '11px', fontWeight: 'bold', marginBottom: '4px' }}>
                         Tahmini Yerleştirme Puanları ve Sıralamalar
                     </div>
                     <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '10px' }}>
                         <thead>
                             <tr style={{ background: '#e8edf5' }}>
-                                <th style={{ border: '1px solid #ccc', padding: '5px 8px', textAlign: 'left' }}>Puan Türü</th>
-                                <th style={{ border: '1px solid #ccc', padding: '5px 8px', textAlign: 'center' }}>Ham Puan</th>
-                                <th style={{ border: '1px solid #ccc', padding: '5px 8px', textAlign: 'center' }}>Yerleştirme Puanı</th>
-                                <th style={{ border: '1px solid #ccc', padding: '5px 8px', textAlign: 'center' }}>Tahmini Sıralama</th>
+                                <th style={{ border: '1px solid #bbb', padding: '4px 8px', textAlign: 'left' }}>Puan Türü</th>
+                                <th style={{ border: '1px solid #bbb', padding: '4px 8px', textAlign: 'center' }}>Ham Puan</th>
+                                <th style={{ border: '1px solid #bbb', padding: '4px 8px', textAlign: 'center' }}>Yerleştirme Puanı</th>
+                                <th style={{ border: '1px solid #bbb', padding: '4px 8px', textAlign: 'center' }}>Tahmini Sıralama</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -171,12 +206,12 @@ export default function PDFDownload({ results }: PDFDownloadProps) {
                                 { label: 'SÖZ (Sözel)', ham: results.points.sozHam ?? results.points.soz, puan: results.points.soz, rank: results.estimatedRanks?.soz },
                                 { label: 'DİL (Yabancı Dil)', ham: results.points.dilHam ?? results.points.dil, puan: results.points.dil, rank: results.ydtHesaplandi ? results.estimatedRanks?.dil : undefined },
                             ].map(({ label, ham, puan, rank }, i) => (
-                                <tr key={i} style={{ background: i % 2 === 0 ? '#fff' : '#f7f9fc' }}>
-                                    <td style={{ border: '1px solid #ccc', padding: '4px 8px', fontWeight: 'bold' }}>{label}</td>
-                                    <td style={{ border: '1px solid #ccc', padding: '4px 8px', textAlign: 'center' }}>{fmt(ham)}</td>
-                                    <td style={{ border: '1px solid #ccc', padding: '4px 8px', textAlign: 'center', fontWeight: 'bold', color: '#003087' }}>{fmt(puan)}</td>
-                                    <td style={{ border: '1px solid #ccc', padding: '4px 8px', textAlign: 'center', color: '#c53030' }}>
-                                        {results.ydtHesaplandi || label !== 'DİL (Yabancı Dil)' ? fmtRank(rank) : 'Hesaplanmadı'}
+                                <tr key={i} style={{ background: i % 2 === 0 ? '#fff' : '#f5f7fb' }}>
+                                    <td style={{ border: '1px solid #bbb', padding: '4px 8px', fontWeight: 'bold' }}>{label}</td>
+                                    <td style={{ border: '1px solid #bbb', padding: '4px 8px', textAlign: 'center' }}>{fmt(ham)}</td>
+                                    <td style={{ border: '1px solid #bbb', padding: '4px 8px', textAlign: 'center', fontWeight: 'bold', color: '#003087' }}>{fmt(puan)}</td>
+                                    <td style={{ border: '1px solid #bbb', padding: '4px 8px', textAlign: 'center', color: '#c53030' }}>
+                                        {!results.ydtHesaplandi && label === 'DİL (Yabancı Dil)' ? 'Hesaplanmadı' : fmtRank(rank)}
                                     </td>
                                 </tr>
                             ))}
@@ -184,26 +219,23 @@ export default function PDFDownload({ results }: PDFDownloadProps) {
                     </table>
                 </div>
 
-                {/* OBP */}
-                {(results.obp ?? 0) > 0 && (
-                    <div style={{ marginBottom: '14px', fontSize: '10px', background: '#f0f4ff', border: '1px solid #c3d0f0', padding: '8px 12px', borderRadius: '4px' }}>
-                        <strong>OBP Bilgisi:</strong> Diploma Notu: {results.obp} → OBP: {((results.obp ?? 0) * 5).toFixed(0)} → Puan Katkısı: +{((results.obp ?? 0) * 5 * 0.12).toFixed(2)}
+                {obp > 0 && (
+                    <div style={{ marginBottom: '12px', fontSize: '10px', background: '#f0f4ff', border: '1px solid #c3d0f0', padding: '7px 12px', borderRadius: '4px' }}>
+                        <strong>OBP Bilgisi:</strong> Diploma Notu: {obp} → OBP: {(obp * 5).toFixed(0)} → Puan Katkısı: +{(obp * 5 * 0.12).toFixed(2)}
                     </div>
                 )}
 
-                {/* Alt bilgi */}
-                <div style={{ borderTop: '2px solid #003087', paddingTop: '10px', fontSize: '8px', color: '#777', textAlign: 'center' }}>
+                <div style={{ borderTop: '2px solid #003087', paddingTop: '8px', fontSize: '8px', color: '#888', textAlign: 'center' }}>
                     <div>Bu belge yksnethesapla.com tarafından üretilmiştir. ÖSYM ile resmi bir bağı bulunmamaktadır.</div>
-                    <div>Tahmini sonuçlar 2025 YKS verilerine dayalı logaritmik interpolasyon ile hesaplanmıştır.</div>
-                    <div style={{ marginTop: '4px' }}>Resmi sonuçlar için: osym.gov.tr</div>
+                    <div>Tahmini sonuçlar 2025 YKS verilerine dayalı logaritmik interpolasyon ile hesaplanmıştır. Resmi sonuçlar için: osym.gov.tr</div>
                 </div>
             </div>
 
-            {/* İndirme butonu */}
+            {/* Buton */}
             <button
                 onClick={handleDownload}
                 disabled={loading}
-                className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-blue-700 hover:bg-blue-800 disabled:bg-blue-400 text-white font-semibold rounded-lg transition-colors text-sm"
+                className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-blue-700 hover:bg-blue-800 disabled:bg-blue-400 text-white font-semibold rounded-lg transition-colors text-sm mt-2"
             >
                 {loading ? (
                     <>
