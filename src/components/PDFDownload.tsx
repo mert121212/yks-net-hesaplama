@@ -26,6 +26,13 @@ export default function PDFDownload({ results }: PDFDownloadProps) {
             const element = document.getElementById('pdf-content')
             if (!element) return
 
+            // Geçici olarak görünür yap
+            element.style.display = 'block'
+            element.style.position = 'fixed'
+            element.style.left = '-9999px'
+            element.style.top = '0'
+            element.style.width = '794px' // A4 genişliği px
+
             await html2pdf().set({
                 margin: [15, 15, 15, 15],
                 filename: 'YKS-2026-Tahmin-Sonucum.pdf',
@@ -33,6 +40,13 @@ export default function PDFDownload({ results }: PDFDownloadProps) {
                 html2canvas: { scale: 2, useCORS: true, logging: false },
                 jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
             }).from(element).save()
+
+            // Geri gizle
+            element.style.display = 'none'
+            element.style.position = ''
+            element.style.left = ''
+            element.style.top = ''
+            element.style.width = ''
         } finally {
             setLoading(false)
         }
