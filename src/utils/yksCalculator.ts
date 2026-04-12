@@ -56,10 +56,10 @@ export function calculateUniversityScores(
     const meslekiEkPuan = obpMesleki ? obpGercek * 0.06 : 0
 
     const K = {
-        tyt: 1.38,   // TYT'nin bu yılki ağırlığı biraz daha yüksek
-        aytMat: 3.25,   // Matematik standart sapması genellikle yüksektir
-        aytFen: 3.10,   // Fizik/Kimya/Biyo ortalaması
-        aytSoz: 3.05,   // Edebiyat/Sosyal grubu
+        tyt: 1.38,
+        aytMat: 3.42,   // ESŞ uyumlu — standart sapma ağırlığı
+        aytFen: 3.15,
+        aytSoz: 3.15,
         ydt: 3.00,
     }
 
@@ -112,7 +112,8 @@ export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil')
             [425, 68000],
             [400, 95000],
             [375, 130000],
-            [356, 161000],  // ESŞ referans
+            [356.99, 161281],   // ESŞ çapa noktası
+            [356, 161000],
             [330, 240000],
             [300, 380000],
             [250, 650000],
@@ -126,7 +127,8 @@ export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil')
             [440, 24000],
             [410, 48000],
             [380, 82000],
-            [350, 126000],  // ESŞ referans
+            [349.45, 126955],   // ESŞ çapa noktası
+            [349, 127000],
             [325, 185000],
             [300, 310000],
             [270, 520000],
@@ -139,7 +141,8 @@ export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil')
             [460, 7500],
             [430, 22000],
             [400, 55000],
-            [370, 110000],
+            [367.13, 32098],    // ESŞ çapa noktası
+            [367, 32100],
             [340, 185000],
             [310, 360000],
             [280, 580000],
