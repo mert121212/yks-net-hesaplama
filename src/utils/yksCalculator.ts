@@ -97,8 +97,9 @@ export function calculateUniversityScores(
     }
 }
 
-// --- SIRALAMA TAHMİNİ (YIĞILMA ODAKLI TABLO) ---
-// ESŞ referans noktaları dahil, 2025 YKS yerleştirme verilerine göre kalibre edilmiştir
+// --- SIRALAMA TAHMİNİ (LOGARİTMİK İNTERPOLASYON) ---
+// Logaritmik interpolasyon: yığılma bölgelerinde (300-400 puan) doğrusal yöntemden
+// çok daha isabetli sonuç verir. ESŞ çapa noktaları dahil.
 export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil'): number {
     if (score < 150) return 2500000
 
@@ -112,8 +113,7 @@ export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil')
             [425, 68000],
             [400, 95000],
             [375, 130000],
-            [356.99, 161281],   // ESŞ çapa noktası
-            [356, 161000],
+            [356.99, 161281],   // ESŞ çapa
             [330, 240000],
             [300, 380000],
             [250, 650000],
@@ -124,11 +124,10 @@ export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil')
             [530, 400],
             [500, 2500],
             [470, 9000],
-            [440, 24000],
+            [450, 24000],
             [410, 48000],
-            [380, 82000],
-            [349.45, 126955],   // ESŞ çapa noktası
-            [349, 127000],
+            [400, 82000],
+            [349.45, 126955],   // ESŞ çapa
             [325, 185000],
             [300, 310000],
             [270, 520000],
@@ -137,12 +136,11 @@ export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil')
         soz: [
             [560, 1],
             [520, 300],
-            [490, 1800],
+            [500, 1800],
             [460, 7500],
-            [430, 22000],
+            [450, 22000],
             [400, 55000],
-            [367.13, 32098],    // ESŞ çapa noktası
-            [367, 32100],
+            [367.13, 32098],    // ESŞ çapa
             [340, 185000],
             [310, 360000],
             [280, 580000],
@@ -164,13 +162,17 @@ export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil')
 
     const table = tables[field]
     if (score >= table[0][0]) return table[0][1]
+    if (score <= table[table.length - 1][0]) return 2500000
 
     for (let i = 0; i < table.length - 1; i++) {
-        const [highScore, highRank] = table[i]
-        const [lowScore, lowRank] = table[i + 1]
-        if (score <= highScore && score >= lowScore) {
-            const ratio = (highScore - score) / (highScore - lowScore)
-            return Math.round(highRank + ratio * (lowRank - highRank))
+        const [x1, y1] = table[i]
+        const [x2, y2] = table[i + 1]
+        if (score <= x1 && score >= x2) {
+            // Logaritmik interpolasyon — yığılma bölgelerinde doğrusal yöntemden isabetli
+            const logY1 = Math.log(y1)
+            const logY2 = Math.log(y2)
+            const logY = logY2 + ((score - x2) / (x1 - x2)) * (logY1 - logY2)
+            return Math.round(Math.exp(logY))
         }
     }
 

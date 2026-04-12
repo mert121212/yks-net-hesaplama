@@ -7,6 +7,8 @@ import { TYTScores, AYTScores, YDTScores } from '@/types/yks'
 import { calculateYKSScores } from '@/utils/yksCalculator'
 import ShareResults from '@/components/ShareResults'
 
+const PDFDownload = dynamic(() => import('@/components/PDFDownload'), { ssr: false })
+
 const TYTSection = dynamic(() => import('@/components/TYTSection'), {
     loading: () => <div className="card animate-pulse h-64 bg-gray-200 rounded-xl" />,
     ssr: false,
@@ -147,6 +149,7 @@ const ResultsPanel = memo(function ResultsPanel({
                 scoreType={scoreType}
                 totalScore={maxScore}
             />
+            <PDFDownload results={results} />
         </div>
     )
 })
