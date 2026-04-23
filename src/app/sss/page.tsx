@@ -8,6 +8,18 @@ export const metadata: Metadata = {
     keywords: 'yks sss, net hesaplama sss, 0.5 net şartı, baraj puanı, obp kırılması, başarı sırası barajı, yks 2026',
 }
 
+const sssFaqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        { "@type": "Question", "name": "TYT'de baraj puanı var mı?", "acceptedAnswer": { "@type": "Answer", "text": "2022 yılından itibaren TYT'de 150 puan barajı uygulaması tamamen kaldırılmıştır. Türkçe veya Matematik testinden en az 0,5 net yapmanız yeterlidir." } },
+        { "@type": "Question", "name": "0,5 net şartı nedir?", "acceptedAnswer": { "@type": "Answer", "text": "TYT puanı için Türkçe veya Temel Matematik'ten en az 0,5 net yapmanız gerekir. Bu şart sağlanmazsa puan hesaplanmaz." } },
+        { "@type": "Question", "name": "OBP nedir?", "acceptedAnswer": { "@type": "Answer", "text": "OBP (Ortaöğretim Başarı Puanı), lise diploma notunuzun YKS puanına katkısıdır. Formül: Diploma Notu × 0,6 = Puan Katkısı. Diploma notu 100 ise maksimum 60 puan katkı alırsınız." } },
+        { "@type": "Question", "name": "Puan kırılması nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Bir önceki yıl YKS ile bir yükseköğretim programına yerleşen adayların OBP katsayısı yarıya düşer (0,12 yerine 0,06). Bu yaklaşık 20-30 puan kayıp demektir." } },
+        { "@type": "Question", "name": "YKS 2026 ne zaman?", "acceptedAnswer": { "@type": "Answer", "text": "TYT 20 Haziran 2026 Cumartesi, AYT ve YDT 21 Haziran 2026 Pazar günü yapılacaktır." } },
+        { "@type": "Question", "name": "Hesaplamalarım kaydediliyor mu?", "acceptedAnswer": { "@type": "Answer", "text": "Hayır. Hesaplamalarınız sunucularımıza gönderilmez; tüm işlemler cihazınızda yerel olarak yapılır." } }
+    ]
+}
 export default function SSS() {
     const faqCategories = [
         {
@@ -120,6 +132,7 @@ export default function SSS() {
 
     return (
         <div className="min-h-screen bg-gray-50">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sssFaqSchema) }} />
             {/* Main Content */}
             <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="mb-4">

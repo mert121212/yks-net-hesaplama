@@ -35,8 +35,36 @@ export default function GeriSayimPage() {
     const motivation = getMotivation(days)
     const tips = getStudyTips(days)
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "YKS 2026 ne zaman?",
+                "acceptedAnswer": { "@type": "Answer", "text": "YKS 2026 sınavı iki gün olarak yapılacaktır. TYT 20 Haziran 2026 Cumartesi, AYT ve YDT 21 Haziran 2026 Pazar günü uygulanacaktır." }
+            },
+            {
+                "@type": "Question",
+                "name": "YKS'ye kaç gün kaldı?",
+                "acceptedAnswer": { "@type": "Answer", "text": `YKS 2026 sınavına ${days} gün kaldı. TYT 20 Haziran 2026, AYT 21 Haziran 2026 tarihinde yapılacaktır.` }
+            },
+            {
+                "@type": "Question",
+                "name": "TYT sınavı saat kaçta başlıyor?",
+                "acceptedAnswer": { "@type": "Answer", "text": "TYT sınavı 20 Haziran 2026 Cumartesi günü saat 10:15'te başlamaktadır. Toplam süre 165 dakikadır." }
+            },
+            {
+                "@type": "Question",
+                "name": "AYT sınavı ne zaman?",
+                "acceptedAnswer": { "@type": "Answer", "text": "AYT (Alan Yeterlilik Testi) sınavı 21 Haziran 2026 Pazar günü saat 10:15'te başlamaktadır. Toplam süre 180 dakikadır." }
+            }
+        ]
+    }
+
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
                 {/* H1 */}
