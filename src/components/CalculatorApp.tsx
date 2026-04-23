@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, memo } from 'react'
+import { useState, useEffect, memo } from 'react'
 import { Calculator } from 'lucide-react'
 import dynamic from 'next/dynamic'
 import { TYTScores, AYTScores, YDTScores } from '@/types/yks'
@@ -154,25 +154,46 @@ const ResultsPanel = memo(function ResultsPanel({
     )
 })
 
+const STORAGE_KEY = 'yks_scores_v1'
+
+function loadFromStorage() {
+    if (typeof window === 'undefined') return null
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null') } catch { return null }
+}
+
+function saveToStorage(data: object) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)) } catch { }
+}
+
 export default function CalculatorApp() {
-    const [tytScores, setTytScores] = useState<TYTScores>({
+    const defaultTYT: TYTScores = {
         turkce: { dogru: 0, yanlis: 0 }, matematik: { dogru: 0, yanlis: 0 },
         sosyal: { dogru: 0, yanlis: 0 }, fen: { dogru: 0, yanlis: 0 },
-    })
-    const [aytScores, setAytScores] = useState<AYTScores>({
+    }
+    const defaultAYT: AYTScores = {
         matematik: { dogru: 0, yanlis: 0 }, fizik: { dogru: 0, yanlis: 0 },
         kimya: { dogru: 0, yanlis: 0 }, biyoloji: { dogru: 0, yanlis: 0 },
         edebiyat: { dogru: 0, yanlis: 0 }, tarih1: { dogru: 0, yanlis: 0 },
         cografya1: { dogru: 0, yanlis: 0 }, tarih2: { dogru: 0, yanlis: 0 },
         cografya2: { dogru: 0, yanlis: 0 }, felsefe: { dogru: 0, yanlis: 0 },
         din: { dogru: 0, yanlis: 0 },
-    })
-    const [ydtScores, setYdtScores] = useState<YDTScores>({ ydt: { dogru: 0, yanlis: 0 } })
-    const [obp, setObp] = useState(0)
-    const [obpHalved, setObpHalved] = useState(false)
-    const [obpMesleki, setObpMesleki] = useState(false)
-    const [previouslyPlaced, setPreviouslyPlaced] = useState(false)
-    const [previousYearScore, setPreviousYearScore] = useState(0)
+    }
+
+    const saved = loadFromStorage()
+
+    const [tytScores, setTytScores] = useState<TYTScores>(saved?.tyt ?? defaultTYT)
+    const [aytScores, setAytScores] = useState<AYTScores>(saved?.ayt ?? defaultAYT)
+    const [ydtScores, setYdtScores] = useState<YDTScores>(saved?.ydt ?? { ydt: { dogru: 0, yanlis: 0 } })
+    const [obp, setObp] = useState<number>(saved?.obp ?? 0)
+    const [obpHalved, setObpHalved] = useState<boolean>(saved?.obpHalved ?? false)
+    const [obpMesleki, setObpMesleki] = useState<boolean>(saved?.obpMesleki ?? false)
+    const [previouslyPlaced, setPreviouslyPlaced] = useState<boolean>(saved?.previouslyPlaced ?? false)
+    const [previousYearScore, setPreviousYearScore] = useState<number>(saved?.previousYearScore ?? 0)
+
+    // Her değişiklikte localStorage'a kaydet
+    useEffect(() => {
+        saveToStorage({ tyt: tytScores, ayt: aytScores, ydt: ydtScores, obp, obpHalved, obpMesleki, previouslyPlaced, previousYearScore })
+    }, [tytScores, aytScores, ydtScores, obp, obpHalved, obpMesleki, previouslyPlaced, previousYearScore])
 
     const handleTYT = (s: keyof TYTScores, f: 'dogru' | 'yanlis', v: number) =>
         setTytScores(p => ({ ...p, [s]: { ...p[s], [f]: v } }))
