@@ -93,6 +93,7 @@ export default function Footer() {
                 <div className="border-t border-gray-800 pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                         <p className="text-sm text-gray-400">© {new Date().getFullYear()} YKS Net Hesaplama. Tüm hakları saklıdır.</p>
+                        <p className="text-xs text-gray-500 mt-1">Geliştirici: <a href="https://github.com/mert121212" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Mert Çalışkan</a></p>
                         <div className="flex flex-wrap justify-center gap-4 text-xs text-gray-500">
                             <span>YKS Net Hesaplama</span><span>•</span><span>TYT AYT YDT</span><span>•</span><span>Puan Hesaplama</span>
                         </div>

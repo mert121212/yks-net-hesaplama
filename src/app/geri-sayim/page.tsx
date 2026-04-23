@@ -8,7 +8,8 @@ export const revalidate = 86400
 function getMotivation(days: number) {
     if (days > 180) return 'Harika! Yeterli zamanın var. Düzenli çalışmaya devam et! 📚'
     if (days > 90) return 'Son dönemece giriyorsun! Tempo artırma zamanı! 🚀'
-    if (days > 30) return 'Son ay! Tüm gücünle çalış, başarı çok yakın! 💪'
+    if (days > 60) return 'Son 2 ay! Çalışma temponuzu artırın, hedef yaklaşıyor! 💪'
+    if (days > 30) return 'Son ay! Tüm gücünle çalış, başarı çok yakın! 🔥'
     if (days > 7) return 'Son hafta! Sakin kal ve kendine güven! 🌟'
     return 'Sınav çok yakın! Dinlen ve kendine güven! ✨'
 }

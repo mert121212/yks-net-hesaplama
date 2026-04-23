@@ -8,28 +8,36 @@ import { calculateYKSScores } from '@/utils/yksCalculator'
 import ShareResults from '@/components/ShareResults'
 
 const PDFDownload = dynamic(() => import('@/components/PDFDownload'), { ssr: false })
+const TYTSection = dynamic(() => import('@/components/TYTSection'), { loading: () => <div className="card animate-pulse h-64 bg-gray-200 rounded-xl" />, ssr: false })
+const AYTSection = dynamic(() => import('@/components/AYTSection'), { loading: () => <div className="card animate-pulse h-64 bg-gray-200 rounded-xl" />, ssr: false })
+const YDTSection = dynamic(() => import('@/components/YDTSection'), { loading: () => <div className="card animate-pulse h-64 bg-gray-200 rounded-xl" />, ssr: false })
+const OBPInput = dynamic(() => import('@/components/OBPInput'), { loading: () => <div className="card animate-pulse h-32 bg-gray-200 rounded-xl" />, ssr: false })
 
-const TYTSection = dynamic(() => import('@/components/TYTSection'), {
-    loading: () => <div className="card animate-pulse h-64 bg-gray-200 rounded-xl" />,
-    ssr: false,
-})
-const AYTSection = dynamic(() => import('@/components/AYTSection'), {
-    loading: () => <div className="card animate-pulse h-64 bg-gray-200 rounded-xl" />,
-    ssr: false,
-})
-const YDTSection = dynamic(() => import('@/components/YDTSection'), {
-    loading: () => <div className="card animate-pulse h-64 bg-gray-200 rounded-xl" />,
-    ssr: false,
-})
-const OBPInput = dynamic(() => import('@/components/OBPInput'), {
-    loading: () => <div className="card animate-pulse h-32 bg-gray-200 rounded-xl" />,
-    ssr: false,
-})
+// localStorage
+const STORAGE_KEY = 'yks_scores_v1'
+function loadSaved() {
+    if (typeof window === 'undefined') return null
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null') } catch { return null }
+}
+function persist(data: object) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)) } catch { }
+}
+
+const DEFAULT_TYT: TYTScores = {
+    turkce: { dogru: 0, yanlis: 0 }, matematik: { dogru: 0, yanlis: 0 },
+    sosyal: { dogru: 0, yanlis: 0 }, fen: { dogru: 0, yanlis: 0 },
+}
+const DEFAULT_AYT: AYTScores = {
+    matematik: { dogru: 0, yanlis: 0 }, fizik: { dogru: 0, yanlis: 0 },
+    kimya: { dogru: 0, yanlis: 0 }, biyoloji: { dogru: 0, yanlis: 0 },
+    edebiyat: { dogru: 0, yanlis: 0 }, tarih1: { dogru: 0, yanlis: 0 },
+    cografya1: { dogru: 0, yanlis: 0 }, tarih2: { dogru: 0, yanlis: 0 },
+    cografya2: { dogru: 0, yanlis: 0 }, felsefe: { dogru: 0, yanlis: 0 },
+    din: { dogru: 0, yanlis: 0 },
+}
 
 const ResultsPanel = memo(function ResultsPanel({
-    results,
-    previouslyPlaced = false,
-    previousYearScore = 0,
+    results, previouslyPlaced = false, previousYearScore = 0,
 }: {
     results: ReturnType<typeof calculateYKSScores>
     previouslyPlaced?: boolean
@@ -38,60 +46,46 @@ const ResultsPanel = memo(function ResultsPanel({
     const sayNet = results.nets.ayt.matematik + results.nets.ayt.fizik + results.nets.ayt.kimya + results.nets.ayt.biyoloji
     const eaNet = results.nets.ayt.matematik + results.nets.ayt.edebiyat + results.nets.ayt.tarih1 + results.nets.ayt.cografya1
     const sozNet = results.nets.ayt.edebiyat + results.nets.ayt.tarih1 + results.nets.ayt.cografya1 + results.nets.ayt.tarih2 + results.nets.ayt.cografya2 + results.nets.ayt.felsefe + results.nets.ayt.din
-
     const maxScore = Math.max(results.points.say, results.points.ea, results.points.soz, results.points.dil)
-    const scoreType =
-        results.points.say === maxScore ? 'SAY' :
-            results.points.ea === maxScore ? 'EA' :
-                results.points.soz === maxScore ? 'SÖZ' : 'DİL'
+    const scoreType = results.points.say === maxScore ? 'SAY' : results.points.ea === maxScore ? 'EA' : results.points.soz === maxScore ? 'SÖZ' : 'DİL'
     const activeNet = scoreType === 'SAY' ? sayNet : scoreType === 'EA' ? eaNet : scoreType === 'SÖZ' ? sozNet : results.nets.ydt.ydt
 
     return (
         <div className="card sticky-results">
             <h2 className="section-title">Sonuçlar</h2>
 
-            {/* TYT */}
             <div className="mb-6">
                 <h3 className="subsection-title">TYT Netleri</h3>
                 <div className="space-y-2 text-sm">
                     {(['turkce', 'matematik', 'sosyal', 'fen'] as const).map(k => (
                         <div key={k} className="flex justify-between">
-                            <span className="capitalize">{k === 'turkce' ? 'Türkçe' : k === 'matematik' ? 'Matematik' : k === 'sosyal' ? 'Sosyal' : 'Fen'}:</span>
+                            <span>{k === 'turkce' ? 'Türkçe' : k === 'matematik' ? 'Matematik' : k === 'sosyal' ? 'Sosyal' : 'Fen'}:</span>
                             <span className="font-semibold">{results.nets.tyt[k].toFixed(2)}</span>
                         </div>
                     ))}
                     <hr className="my-2" />
                     <div className="flex justify-between text-base font-bold text-blue-600">
-                        <span>TYT Toplam:</span>
-                        <span>{results.nets.tyt.toplam.toFixed(2)}</span>
+                        <span>TYT Toplam:</span><span>{results.nets.tyt.toplam.toFixed(2)}</span>
                     </div>
                 </div>
             </div>
 
-            {/* AYT */}
             <div className="mb-6">
                 <h3 className="subsection-title">AYT Netleri</h3>
                 <div className="space-y-2 text-sm">
                     {(['matematik', 'fizik', 'kimya', 'biyoloji', 'edebiyat'] as const).map(k => (
                         <div key={k} className="flex justify-between">
-                            <span className="capitalize">{k.charAt(0).toUpperCase() + k.slice(1)}:</span>
+                            <span>{k.charAt(0).toUpperCase() + k.slice(1)}:</span>
                             <span className="font-semibold">{results.nets.ayt[k].toFixed(2)}</span>
                         </div>
                     ))}
                     <hr className="my-2" />
-                    <div className="flex justify-between text-sm font-bold text-green-600">
-                        <span>SAY Neti (Mat+Fen):</span><span>{sayNet.toFixed(2)}</span>
-                    </div>
-                    <div className="flex justify-between text-sm font-bold text-blue-600">
-                        <span>EA Neti (Mat+Ede+Sos1):</span><span>{eaNet.toFixed(2)}</span>
-                    </div>
-                    <div className="flex justify-between text-sm font-bold text-purple-600">
-                        <span>SÖZ Neti (Ede+Sos):</span><span>{sozNet.toFixed(2)}</span>
-                    </div>
+                    <div className="flex justify-between text-sm font-bold text-green-600"><span>SAY Neti (Mat+Fen):</span><span>{sayNet.toFixed(2)}</span></div>
+                    <div className="flex justify-between text-sm font-bold text-blue-600"><span>EA Neti (Mat+Ede+Sos1):</span><span>{eaNet.toFixed(2)}</span></div>
+                    <div className="flex justify-between text-sm font-bold text-purple-600"><span>SÖZ Neti (Ede+Sos):</span><span>{sozNet.toFixed(2)}</span></div>
                 </div>
             </div>
 
-            {/* YDT */}
             <div className="mb-6">
                 <h3 className="subsection-title">YDT Neti</h3>
                 <div className="flex justify-between font-bold text-orange-600">
@@ -99,11 +93,10 @@ const ResultsPanel = memo(function ResultsPanel({
                 </div>
             </div>
 
-            {/* Puanlar */}
             <div className="mb-6">
                 <h3 className="subsection-title">Üniversite Puanları</h3>
                 <div className="mb-3 p-2 bg-yellow-50 border border-yellow-200 rounded-lg">
-                    <p className="text-xs text-yellow-800">⚠️ Tahmini puanlardır. ÖSYM standart sapma normalizasyonu kullandığından kesin sonuç sınav sonrasında açıklanır.</p>
+                    <p className="text-xs text-yellow-800">⚠️ Tahmini puanlardır. Kesin sonuç sınav sonrasında ÖSYM tarafından açıklanır.</p>
                 </div>
                 {previouslyPlaced && previousYearScore > 0 && (
                     <div className="mb-3 p-2 bg-amber-50 border border-amber-200 rounded-lg">
@@ -115,14 +108,11 @@ const ResultsPanel = memo(function ResultsPanel({
                     <div className="flex justify-between"><span>EA:</span><span className="font-semibold text-blue-600">{results.points.ea.toFixed(2)}</span></div>
                     <div className="flex justify-between"><span>SÖZ:</span><span className="font-semibold text-purple-600">{results.points.soz.toFixed(2)}</span></div>
                     <div className="flex justify-between"><span>DİL:</span>
-                        <span className="font-semibold text-orange-600">
-                            {results.ydtHesaplandi ? results.points.dil.toFixed(2) : 'Hesaplanmadı'}
-                        </span>
+                        <span className="font-semibold text-orange-600">{results.ydtHesaplandi ? results.points.dil.toFixed(2) : 'Hesaplanmadı'}</span>
                     </div>
                 </div>
             </div>
 
-            {/* Sıralamalar */}
             {results.estimatedRanks && (
                 <div className="mb-6">
                     <h3 className="subsection-title">Tahmini Sıralamalar</h3>
@@ -134,65 +124,35 @@ const ResultsPanel = memo(function ResultsPanel({
                         <div className="flex justify-between"><span>EA:</span><span className="font-semibold text-blue-600">{results.estimatedRanks.ea?.toLocaleString('tr-TR')}</span></div>
                         <div className="flex justify-between"><span>SÖZ:</span><span className="font-semibold text-purple-600">{results.estimatedRanks.soz?.toLocaleString('tr-TR')}</span></div>
                         <div className="flex justify-between"><span>DİL:</span>
-                            <span className="font-semibold text-orange-600">
-                                {results.ydtHesaplandi ? results.estimatedRanks.dil?.toLocaleString('tr-TR') : 'Hesaplanmadı'}
-                            </span>
+                            <span className="font-semibold text-orange-600">{results.ydtHesaplandi ? results.estimatedRanks.dil?.toLocaleString('tr-TR') : 'Hesaplanmadı'}</span>
                         </div>
                     </div>
                 </div>
             )}
 
-            <ShareResults
-                tytNet={results.nets.tyt.toplam}
-                aytNet={activeNet}
-                ydtNet={results.nets.ydt.ydt}
-                scoreType={scoreType}
-                totalScore={maxScore}
-            />
+            <ShareResults tytNet={results.nets.tyt.toplam} aytNet={activeNet} ydtNet={results.nets.ydt.ydt} scoreType={scoreType} totalScore={maxScore} />
             <PDFDownload results={results} />
         </div>
     )
 })
 
-const STORAGE_KEY = 'yks_scores_v1'
-
-function loadFromStorage() {
-    if (typeof window === 'undefined') return null
-    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null') } catch { return null }
-}
-
-function saveToStorage(data: object) {
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)) } catch { }
-}
-
 export default function CalculatorApp() {
-    const defaultTYT: TYTScores = {
-        turkce: { dogru: 0, yanlis: 0 }, matematik: { dogru: 0, yanlis: 0 },
-        sosyal: { dogru: 0, yanlis: 0 }, fen: { dogru: 0, yanlis: 0 },
-    }
-    const defaultAYT: AYTScores = {
-        matematik: { dogru: 0, yanlis: 0 }, fizik: { dogru: 0, yanlis: 0 },
-        kimya: { dogru: 0, yanlis: 0 }, biyoloji: { dogru: 0, yanlis: 0 },
-        edebiyat: { dogru: 0, yanlis: 0 }, tarih1: { dogru: 0, yanlis: 0 },
-        cografya1: { dogru: 0, yanlis: 0 }, tarih2: { dogru: 0, yanlis: 0 },
-        cografya2: { dogru: 0, yanlis: 0 }, felsefe: { dogru: 0, yanlis: 0 },
-        din: { dogru: 0, yanlis: 0 },
-    }
+    // lazy initializer — sadece ilk render'da localStorage okur, TBT'yi etkilemez
+    const [tytScores, setTytScores] = useState<TYTScores>(() => loadSaved()?.tyt ?? DEFAULT_TYT)
+    const [aytScores, setAytScores] = useState<AYTScores>(() => loadSaved()?.ayt ?? DEFAULT_AYT)
+    const [ydtScores, setYdtScores] = useState<YDTScores>(() => loadSaved()?.ydt ?? { ydt: { dogru: 0, yanlis: 0 } })
+    const [obp, setObp] = useState<number>(() => loadSaved()?.obp ?? 0)
+    const [obpHalved, setObpHalved] = useState<boolean>(() => loadSaved()?.obpHalved ?? false)
+    const [obpMesleki, setObpMesleki] = useState<boolean>(() => loadSaved()?.obpMesleki ?? false)
+    const [previouslyPlaced, setPreviouslyPlaced] = useState<boolean>(() => loadSaved()?.previouslyPlaced ?? false)
+    const [previousYearScore, setPreviousYearScore] = useState<number>(() => loadSaved()?.previousYearScore ?? 0)
 
-    const saved = loadFromStorage()
-
-    const [tytScores, setTytScores] = useState<TYTScores>(saved?.tyt ?? defaultTYT)
-    const [aytScores, setAytScores] = useState<AYTScores>(saved?.ayt ?? defaultAYT)
-    const [ydtScores, setYdtScores] = useState<YDTScores>(saved?.ydt ?? { ydt: { dogru: 0, yanlis: 0 } })
-    const [obp, setObp] = useState<number>(saved?.obp ?? 0)
-    const [obpHalved, setObpHalved] = useState<boolean>(saved?.obpHalved ?? false)
-    const [obpMesleki, setObpMesleki] = useState<boolean>(saved?.obpMesleki ?? false)
-    const [previouslyPlaced, setPreviouslyPlaced] = useState<boolean>(saved?.previouslyPlaced ?? false)
-    const [previousYearScore, setPreviousYearScore] = useState<number>(saved?.previousYearScore ?? 0)
-
-    // Her değişiklikte localStorage'a kaydet
+    // Debounced persist — her tuş vuruşunda değil, 500ms sonra kaydeder
     useEffect(() => {
-        saveToStorage({ tyt: tytScores, ayt: aytScores, ydt: ydtScores, obp, obpHalved, obpMesleki, previouslyPlaced, previousYearScore })
+        const id = setTimeout(() => {
+            persist({ tyt: tytScores, ayt: aytScores, ydt: ydtScores, obp, obpHalved, obpMesleki, previouslyPlaced, previousYearScore })
+        }, 500)
+        return () => clearTimeout(id)
     }, [tytScores, aytScores, ydtScores, obp, obpHalved, obpMesleki, previouslyPlaced, previousYearScore])
 
     const handleTYT = (s: keyof TYTScores, f: 'dogru' | 'yanlis', v: number) =>
@@ -204,14 +164,12 @@ export default function CalculatorApp() {
 
     const hasInput = Object.values(tytScores).some(s => s.dogru > 0 || s.yanlis > 0)
         || Object.values(aytScores).some(s => s.dogru > 0 || s.yanlis > 0)
-        || ydtScores.ydt.dogru > 0 || ydtScores.ydt.yanlis > 0
-        || obp > 0
+        || ydtScores.ydt.dogru > 0 || ydtScores.ydt.yanlis > 0 || obp > 0
 
     const results = hasInput ? calculateYKSScores(tytScores, aytScores, ydtScores, obp, obpHalved, obpMesleki) : null
 
     return (
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Form */}
             <div className="lg:col-span-2 space-y-8" id="hesaplama">
                 <TYTSection scores={tytScores} onScoreChange={handleTYT} />
                 <AYTSection scores={aytScores} onScoreChange={handleAYT} />
@@ -224,8 +182,6 @@ export default function CalculatorApp() {
                     previousYearScore={previousYearScore} onPreviousYearScoreChange={setPreviousYearScore}
                 />
             </div>
-
-            {/* Sonuçlar */}
             <div id="sonuclar">
                 {results ? (
                     <ResultsPanel results={results} previouslyPlaced={previouslyPlaced} previousYearScore={previousYearScore} />
