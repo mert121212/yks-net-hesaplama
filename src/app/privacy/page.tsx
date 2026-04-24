@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: 'Gizlilik Politikası | YKS Net Hesaplama - yksnethesapla.com',
     description: 'yksnethesapla.com gizlilik politikası. KVKK uyumu, Google AdSense çerez bildirimi, client-side veri işleme ve kullanıcı hakları.',
     alternates: { canonical: 'https://yksnethesapla.com/privacy' },
-    robots: { index: false, follow: true },
+    robots: { index: true, follow: true },
 }
 
 export default function PrivacyPage() {

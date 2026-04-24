@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: 'Kullanım Koşulları | YKS Net Hesaplama - yksnethesapla.com',
     description: 'yksnethesapla.com kullanım koşulları, sorumluluk reddi ve hizmet şartları. ÖSYM ile resmi bağı bulunmayan bağımsız bir platform.',
     alternates: { canonical: 'https://yksnethesapla.com/kullanim-kosullari' },
-    robots: { index: false, follow: true },
+    robots: { index: true, follow: true },
 }
 
 export default function KullanimKosullariPage() {
