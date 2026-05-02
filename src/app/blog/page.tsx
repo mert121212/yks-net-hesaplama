@@ -9,6 +9,22 @@ export const metadata: Metadata = {
 
 const blogPosts = [
     {
+        id: 'yks-yigilma-tehlikesi',
+        title: 'YKS\'de "Yığılma" Tehlikesi: Yüz Binlerce Rakibi Nasıl Geçersin?',
+        excerpt: 'Puanın iyi gelir ama sıralama beklediğinden kötü çıkar. Yığılma nedir, neden olur ve nasıl aşılır?',
+        date: '2026-05-02',
+        category: 'Strateji',
+        readTime: '6 dakika',
+    },
+    {
+        id: 'tyt-kesin-cikan-konular',
+        title: 'TYT\'de Zaman Kazanmanın Sırrı: Kesin Çıkacak "Altın" Konular',
+        excerpt: 'Her şeyi bilmek değil, neyin daha çok sorulduğunu bilmek seni öne geçirir. TYT\'de altın konular.',
+        date: '2026-05-02',
+        category: 'TYT',
+        readTime: '7 dakika',
+    },
+    {
         id: 'tyt-net-artirma-taktikleri',
         title: 'TYT\'de 60-70 Net Bandına Sıkışanlar: Bu Kısır Döngüden Nasıl Çıkılır?',
         excerpt: 'Haftalardır aynı netler, aynı hayal kırıklığı. 60-70 net bandından çıkıp 80-90\'lara fırlamanın gerçek yolları.',
