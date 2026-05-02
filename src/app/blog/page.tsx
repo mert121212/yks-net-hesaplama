@@ -9,6 +9,22 @@ export const metadata: Metadata = {
 
 const blogPosts = [
     {
+        id: 'tyt-net-artirma-taktikleri',
+        title: 'TYT\'de 60-70 Net Bandına Sıkışanlar: Bu Kısır Döngüden Nasıl Çıkılır?',
+        excerpt: 'Haftalardır aynı netler, aynı hayal kırıklığı. 60-70 net bandından çıkıp 80-90\'lara fırlamanın gerçek yolları.',
+        date: '2026-05-02',
+        category: 'TYT',
+        readTime: '5 dakika',
+    },
+    {
+        id: 'yks-1-net-kac-kisi-atar',
+        title: 'YKS\'de 1 Net Bile Neden Binlerce Kişi Attırır? (OBP ve Standart Sapma Gerçeği)',
+        excerpt: 'OBP sıralamayı nasıl etkiler, standart sapma nedir? YKS\'de 1 netin gerçek değerini öğren.',
+        date: '2026-05-02',
+        category: 'Strateji',
+        readTime: '6 dakika',
+    },
+    {
         id: 'yks-net-hesaplama-nasil-yapilir',
         title: 'YKS Net Hesaplama Nasıl Yapılır? 2026 Güncel Rehber',
         excerpt: 'YKS net hesaplama işlemini adım adım öğrenin. TYT, AYT ve YDT netlerinizi doğru hesaplayarak üniversite puanınızı öğrenin.',
