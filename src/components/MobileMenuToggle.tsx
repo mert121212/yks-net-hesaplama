@@ -8,6 +8,8 @@ const links = [
     { href: '/blog', label: 'Blog' },
     { href: '/yks-rehberi', label: 'YKS Rehberi' },
     { href: '/sss', label: 'SSS' },
+    { href: '/hakkimizda', label: 'Hakkımızda' },
+    { href: '/iletisim', label: 'İletişim' },
 ]
 
 export default function MobileMenuToggle() {

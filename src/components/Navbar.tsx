@@ -31,6 +31,8 @@ export default function Navbar() {
                             { href: '/blog', label: 'Blog' },
                             { href: '/yks-rehberi', label: 'YKS Rehberi' },
                             { href: '/sss', label: 'SSS' },
+                            { href: '/hakkimizda', label: 'Hakkımızda' },
+                            { href: '/iletisim', label: 'İletişim' },
                         ].map(({ href, label }) => (
                             <Link key={href} href={href} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
                                 {label}
