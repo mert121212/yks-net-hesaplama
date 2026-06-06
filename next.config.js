@@ -6,7 +6,6 @@ const nextConfig = {
     poweredByHeader: false,
     experimental: {
         optimizePackageImports: ['lucide-react'],
-        serverComponentsExternalPackages: [],
     },
     images: {
         remotePatterns: [],

@@ -1,7 +1,23 @@
-'use client'
-
-import { BookOpen, Calculator, TrendingUp, Target, Award, Users } from 'lucide-react'
+// Server component — 'use client' kaldırıldı, lucide ikonları da kaldırıldı
 import Link from 'next/link'
+
+// Inline SVG yardımcısı — lucide-react bundle'ı yok
+function Icon({ d, className = 'h-8 w-8' }: { d: string; className?: string }) {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d={d} />
+        </svg>
+    )
+}
+
+const ICONS = {
+    calc: 'M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z',
+    book: 'M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253',
+    target: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z',
+    trend: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6',
+    award: 'M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z',
+    users: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0',
+}
 
 export default function SEOContent() {
     return (
@@ -9,7 +25,7 @@ export default function SEOContent() {
             {/* YKS Net Hesaplama Nedir */}
             <section className="card">
                 <div className="flex items-center gap-3 mb-6">
-                    <Calculator className="h-8 w-8 text-primary-600" />
+                    <Icon d={ICONS.calc} className="h-8 w-8 text-primary-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
                         YKS Net Hesaplama: 2026 ÖSYM Standartlarına Uygun Analiz
                     </h2>
@@ -33,7 +49,7 @@ export default function SEOContent() {
                 <div className="card hover:shadow-lg transition-shadow">
                     <div className="flex items-center gap-3 mb-4">
                         <div className="p-3 bg-primary-100 rounded-lg">
-                            <BookOpen className="h-6 w-6 text-primary-600" />
+                            <Icon d={ICONS.book} className="h-6 w-6 text-primary-600" />
                         </div>
                         <h3 className="text-lg font-semibold text-gray-900">TYT Net Hesaplama</h3>
                     </div>
@@ -46,7 +62,7 @@ export default function SEOContent() {
                 <div className="card hover:shadow-lg transition-shadow">
                     <div className="flex items-center gap-3 mb-4">
                         <div className="p-3 bg-green-100 rounded-lg">
-                            <Target className="h-6 w-6 text-green-600" />
+                            <Icon d={ICONS.target} className="h-6 w-6 text-green-600" />
                         </div>
                         <h3 className="text-lg font-semibold text-gray-900">AYT Puan Hesaplama</h3>
                     </div>
@@ -59,7 +75,7 @@ export default function SEOContent() {
                 <div className="card hover:shadow-lg transition-shadow">
                     <div className="flex items-center gap-3 mb-4">
                         <div className="p-3 bg-blue-100 rounded-lg">
-                            <TrendingUp className="h-6 w-6 text-blue-600" />
+                            <Icon d={ICONS.trend} className="h-6 w-6 text-blue-600" />
                         </div>
                         <h3 className="text-lg font-semibold text-gray-900">Üniversite Puanı</h3>
                     </div>
@@ -73,7 +89,7 @@ export default function SEOContent() {
             {/* YKS 2026 Bilgileri */}
             <section className="card bg-gradient-to-r from-primary-50 to-blue-50">
                 <div className="flex items-center gap-3 mb-6">
-                    <Award className="h-8 w-8 text-primary-600" />
+                    <Icon d={ICONS.award} className="h-8 w-8 text-primary-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
                         YKS&apos;de Baraj Puanı Var mı? 0,5 Net Şartı Nedir?
                     </h2>
@@ -115,7 +131,7 @@ export default function SEOContent() {
             {/* Neden Bizi Seçmelisiniz */}
             <section className="card">
                 <div className="flex items-center gap-3 mb-6">
-                    <Users className="h-8 w-8 text-primary-600" />
+                    <Icon d={ICONS.users} className="h-8 w-8 text-primary-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
                         Neden YKS Net Hesaplama Aracımızı Kullanmalısınız?
                     </h2>
@@ -203,7 +219,7 @@ export default function SEOContent() {
             {/* Net Hesaplama Formülleri */}
             <section className="card">
                 <div className="flex items-center gap-3 mb-6">
-                    <Calculator className="h-8 w-8 text-green-600" />
+                    <Icon d={ICONS.calc} className="h-8 w-8 text-green-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
                         YKS Net Hesaplama Formülleri
                     </h2>
@@ -255,7 +271,7 @@ export default function SEOContent() {
             {/* Puan Türleri */}
             <section className="card">
                 <div className="flex items-center gap-3 mb-6">
-                    <Target className="h-8 w-8 text-purple-600" />
+                    <Icon d={ICONS.target} className="h-8 w-8 text-purple-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
                         YKS Puan Türleri: SAY, EA, SÖZ, DİL
                     </h2>
@@ -307,7 +323,7 @@ export default function SEOContent() {
             {/* Sık Sorulan Sorular */}
             <section className="card">
                 <div className="flex items-center gap-3 mb-6">
-                    <BookOpen className="h-8 w-8 text-blue-600" />
+                    <Icon d={ICONS.book} className="h-8 w-8 text-blue-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
                         YKS Net Hesaplama Hakkında Sık Sorulan Sorular
                     </h2>
@@ -355,7 +371,7 @@ export default function SEOContent() {
             {/* Blog Linkleri */}
             <section className="card">
                 <div className="flex items-center gap-3 mb-6">
-                    <TrendingUp className="h-8 w-8 text-indigo-600" />
+                    <Icon d={ICONS.trend} className="h-8 w-8 text-indigo-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
                         YKS Hazırlık Rehberleri
                     </h2>

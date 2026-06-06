@@ -19,6 +19,12 @@ function loadSaved() {
     if (typeof window === 'undefined') return null
     try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null') } catch { return null }
 }
+// Sadece bir kez okur — tüm state'ler bu değeri paylaşır
+let _cachedSave: ReturnType<typeof loadSaved> = undefined as unknown as ReturnType<typeof loadSaved>
+function getCachedSave() {
+    if (_cachedSave === undefined) _cachedSave = loadSaved()
+    return _cachedSave
+}
 function persist(data: object) {
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)) } catch { }
 }
@@ -138,14 +144,14 @@ const ResultsPanel = memo(function ResultsPanel({
 
 export default function CalculatorApp() {
     // lazy initializer — sadece ilk render'da localStorage okur, TBT'yi etkilemez
-    const [tytScores, setTytScores] = useState<TYTScores>(() => loadSaved()?.tyt ?? DEFAULT_TYT)
-    const [aytScores, setAytScores] = useState<AYTScores>(() => loadSaved()?.ayt ?? DEFAULT_AYT)
-    const [ydtScores, setYdtScores] = useState<YDTScores>(() => loadSaved()?.ydt ?? { ydt: { dogru: 0, yanlis: 0 } })
-    const [obp, setObp] = useState<number>(() => loadSaved()?.obp ?? 0)
-    const [obpHalved, setObpHalved] = useState<boolean>(() => loadSaved()?.obpHalved ?? false)
-    const [obpMesleki, setObpMesleki] = useState<boolean>(() => loadSaved()?.obpMesleki ?? false)
-    const [previouslyPlaced, setPreviouslyPlaced] = useState<boolean>(() => loadSaved()?.previouslyPlaced ?? false)
-    const [previousYearScore, setPreviousYearScore] = useState<number>(() => loadSaved()?.previousYearScore ?? 0)
+    const [tytScores, setTytScores] = useState<TYTScores>(() => getCachedSave()?.tyt ?? DEFAULT_TYT)
+    const [aytScores, setAytScores] = useState<AYTScores>(() => getCachedSave()?.ayt ?? DEFAULT_AYT)
+    const [ydtScores, setYdtScores] = useState<YDTScores>(() => getCachedSave()?.ydt ?? { ydt: { dogru: 0, yanlis: 0 } })
+    const [obp, setObp] = useState<number>(() => getCachedSave()?.obp ?? 0)
+    const [obpHalved, setObpHalved] = useState<boolean>(() => getCachedSave()?.obpHalved ?? false)
+    const [obpMesleki, setObpMesleki] = useState<boolean>(() => getCachedSave()?.obpMesleki ?? false)
+    const [previouslyPlaced, setPreviouslyPlaced] = useState<boolean>(() => getCachedSave()?.previouslyPlaced ?? false)
+    const [previousYearScore, setPreviousYearScore] = useState<number>(() => getCachedSave()?.previousYearScore ?? 0)
 
     // Debounced persist — her tuş vuruşunda değil, 500ms sonra kaydeder
     useEffect(() => {
