@@ -2,41 +2,34 @@
 
 import { useState, useEffect } from 'react'
 
+const TARGET = 1781938800000 // 2026-06-20T10:00:00+03:00
+
+function calcTime() {
+    const diff = TARGET - Date.now()
+    if (diff <= 0) return { d: 0, h: 0, m: 0, s: 0 }
+    return {
+        d: Math.floor(diff / 86400000),
+        h: Math.floor((diff % 86400000) / 3600000),
+        m: Math.floor((diff % 3600000) / 60000),
+        s: Math.floor((diff % 60000) / 1000),
+    }
+}
+
 export default function CountdownTimer() {
-    const [t, setT] = useState<{ d: number, h: number, m: number, s: number } | null>(null)
+    // Başlangıç değeri hemen hesapla — null yok, CLS yok
+    const [t, setT] = useState(calcTime)
 
     useEffect(() => {
-        const target = 1781938800000 // 2026-06-20T10:00:00+03:00 (Türkiye saati)
-
-        const calc = () => {
-            const diff = target - Date.now()
-            if (diff <= 0) { setT({ d: 0, h: 0, m: 0, s: 0 }); return }
-            setT({
-                d: Math.floor(diff / 86400000),
-                h: Math.floor((diff % 86400000) / 3600000),
-                m: Math.floor((diff % 3600000) / 60000),
-                s: Math.floor((diff % 60000) / 1000),
-            })
-        }
-
-        calc()
-        const id = setInterval(calc, 1000)
+        const id = setInterval(() => setT(calcTime()), 1000)
         return () => clearInterval(id)
     }, [])
 
-    const items = t
-        ? [
-            { v: t.d, label: 'GÜN', c: 'border-blue-500 text-blue-600' },
-            { v: String(t.h).padStart(2, '0'), label: 'SAAT', c: 'border-indigo-500 text-indigo-600' },
-            { v: String(t.m).padStart(2, '0'), label: 'DAKİKA', c: 'border-purple-500 text-purple-600' },
-            { v: String(t.s).padStart(2, '0'), label: 'SANİYE', c: 'border-green-500 text-green-600' },
-        ]
-        : [
-            { v: '--', label: 'GÜN', c: 'border-gray-200 text-gray-300' },
-            { v: '--', label: 'SAAT', c: 'border-gray-200 text-gray-300' },
-            { v: '--', label: 'DAKİKA', c: 'border-gray-200 text-gray-300' },
-            { v: '--', label: 'SANİYE', c: 'border-gray-200 text-gray-300' },
-        ]
+    const items = [
+        { v: t.d, label: 'GÜN', c: 'border-blue-500 text-blue-600' },
+        { v: String(t.h).padStart(2, '0'), label: 'SAAT', c: 'border-indigo-500 text-indigo-600' },
+        { v: String(t.m).padStart(2, '0'), label: 'DAKİKA', c: 'border-purple-500 text-purple-600' },
+        { v: String(t.s).padStart(2, '0'), label: 'SANİYE', c: 'border-green-500 text-green-600' },
+    ]
 
     return (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">

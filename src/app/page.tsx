@@ -1,7 +1,9 @@
 import { Suspense } from 'react'
 import dynamic from 'next/dynamic'
+import StructuredData from '@/components/StructuredData'
+import SEOContent from '@/components/SEOContent'
 
-// Sadece client gerektiren bileşenler lazy load
+// Sadece client gerektiren bileşen lazy load
 const CalculatorApp = dynamic(() => import('@/components/CalculatorApp'), {
     loading: () => (
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -13,11 +15,6 @@ const CalculatorApp = dynamic(() => import('@/components/CalculatorApp'), {
         </div>
     ),
     ssr: false,
-})
-
-const StructuredData = dynamic(() => import('@/components/StructuredData'), { ssr: true })
-const SEOContent = dynamic(() => import('@/components/SEOContent'), {
-    loading: () => <div className="h-96" />,
 })
 
 export default function HomePage() {
@@ -54,10 +51,8 @@ export default function HomePage() {
                 </Suspense>
             </main>
 
-            {/* SEO içeriği — static */}
-            <Suspense fallback={<div className="h-96" />}>
-                <SEOContent />
-            </Suspense>
+            {/* SEO içeriği — static, direct import */}
+            <SEOContent />
         </div>
     )
 }
