@@ -74,6 +74,8 @@ export default function ScoreInput({
                     </label>
                     <input
                         type="number"
+                        inputMode="numeric"
+                        pattern="[0-9]*"
                         min="0"
                         max={maxQuestions - yanlis}
                         value={dogru || ''}
@@ -95,6 +97,8 @@ export default function ScoreInput({
                     </label>
                     <input
                         type="number"
+                        inputMode="numeric"
+                        pattern="[0-9]*"
                         min="0"
                         max={maxQuestions - dogru}
                         value={yanlis || ''}
