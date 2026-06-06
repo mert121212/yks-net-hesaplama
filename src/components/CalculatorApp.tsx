@@ -168,6 +168,21 @@ export default function CalculatorApp() {
     const handleYDT = (s: keyof YDTScores, f: 'dogru' | 'yanlis', v: number) =>
         setYdtScores(p => ({ ...p, [s]: { ...p[s], [f]: v } }))
 
+    const resetTYT = () => setTytScores(DEFAULT_TYT)
+    const resetAYT = () => setAytScores(DEFAULT_AYT)
+    const resetYDT = () => setYdtScores({ ydt: { dogru: 0, yanlis: 0 } })
+    const resetAll = () => {
+        setTytScores(DEFAULT_TYT)
+        setAytScores(DEFAULT_AYT)
+        setYdtScores({ ydt: { dogru: 0, yanlis: 0 } })
+        setObp(0)
+        setObpHalved(false)
+        setObpMesleki(false)
+        setPreviouslyPlaced(false)
+        setPreviousYearScore(0)
+        try { localStorage.removeItem(STORAGE_KEY) } catch { }
+    }
+
     const hasInput = Object.values(tytScores).some(s => s.dogru > 0 || s.yanlis > 0)
         || Object.values(aytScores).some(s => s.dogru > 0 || s.yanlis > 0)
         || ydtScores.ydt.dogru > 0 || ydtScores.ydt.yanlis > 0 || obp > 0
@@ -177,9 +192,9 @@ export default function CalculatorApp() {
     return (
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-8" id="hesaplama">
-                <TYTSection scores={tytScores} onScoreChange={handleTYT} />
-                <AYTSection scores={aytScores} onScoreChange={handleAYT} />
-                <YDTSection scores={ydtScores} onScoreChange={handleYDT} />
+                <TYTSection scores={tytScores} onScoreChange={handleTYT} onReset={resetTYT} />
+                <AYTSection scores={aytScores} onScoreChange={handleAYT} onReset={resetAYT} />
+                <YDTSection scores={ydtScores} onScoreChange={handleYDT} onReset={resetYDT} />
                 <OBPInput
                     obp={obp} onObpChange={setObp}
                     obpHalved={obpHalved} onObpHalvedChange={setObpHalved}
@@ -187,6 +202,17 @@ export default function CalculatorApp() {
                     previouslyPlaced={previouslyPlaced} onPreviouslyPlacedChange={setPreviouslyPlaced}
                     previousYearScore={previousYearScore} onPreviousYearScoreChange={setPreviousYearScore}
                 />
+                <div className="flex justify-end">
+                    <button
+                        onClick={resetAll}
+                        className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-red-600 hover:text-red-700 bg-red-50 hover:bg-red-100 border border-red-200 hover:border-red-300 rounded-lg transition-colors"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                        </svg>
+                        Tüm Netleri Sıfırla
+                    </button>
+                </div>
             </div>
             <div id="sonuclar">
                 {results ? (

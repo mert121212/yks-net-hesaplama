@@ -6,14 +6,23 @@ import ScoreInput from './ScoreInput'
 interface YDTSectionProps {
     scores: YDTScores
     onScoreChange: (subject: keyof YDTScores, field: 'dogru' | 'yanlis', value: number) => void
+    onReset: () => void
 }
 
-export default function YDTSection({ scores, onScoreChange }: YDTSectionProps) {
+export default function YDTSection({ scores, onScoreChange, onReset }: YDTSectionProps) {
     const ydtNet = Math.max(0, scores.ydt.dogru - (scores.ydt.yanlis / 4))
 
     return (
         <div className="card">
-            <h2 className="section-title">YDT (Yabancı Dil Testi)</h2>
+            <div className="flex items-center justify-between mb-6">
+                <h2 className="section-title mb-0">YDT (Yabancı Dil Testi)</h2>
+                <button
+                    onClick={onReset}
+                    className="text-xs text-red-500 hover:text-red-700 border border-red-200 hover:border-red-400 px-3 py-1 rounded-lg transition-colors"
+                >
+                    YDT Sıfırla
+                </button>
+            </div>
 
             <div className="mb-6">
                 <ScoreInput

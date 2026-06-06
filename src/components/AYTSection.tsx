@@ -6,6 +6,7 @@ import ScoreInput from './ScoreInput'
 interface AYTSectionProps {
     scores: AYTScores
     onScoreChange: (subject: keyof AYTScores, field: 'dogru' | 'yanlis', value: number) => void
+    onReset: () => void
 }
 
 const AYT_SUBJECTS = {
@@ -22,7 +23,7 @@ const AYT_SUBJECTS = {
     din: { label: 'Din Kültürü ve Ahlak Bilgisi', questions: 6, category: 'Sözel' }
 }
 
-export default function AYTSection({ scores, onScoreChange }: AYTSectionProps) {
+export default function AYTSection({ scores, onScoreChange, onReset }: AYTSectionProps) {
     const sayisalSubjects = Object.entries(AYT_SUBJECTS).filter(([_, subject]) => subject.category === 'Sayısal')
     const sozelSubjects = Object.entries(AYT_SUBJECTS).filter(([_, subject]) => subject.category === 'Sözel')
 
@@ -40,7 +41,15 @@ export default function AYTSection({ scores, onScoreChange }: AYTSectionProps) {
 
     return (
         <div className="card">
-            <h2 className="section-title">AYT (Alan Yeterlilik Testi)</h2>
+            <div className="flex items-center justify-between mb-6">
+                <h2 className="section-title mb-0">AYT (Alan Yeterlilik Testi)</h2>
+                <button
+                    onClick={onReset}
+                    className="text-xs text-red-500 hover:text-red-700 border border-red-200 hover:border-red-400 px-3 py-1 rounded-lg transition-colors"
+                >
+                    AYT Sıfırla
+                </button>
+            </div>
 
             {/* Sayısal Bölüm */}
             <div className="mb-8">

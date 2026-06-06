@@ -6,6 +6,7 @@ import ScoreInput from './ScoreInput'
 interface TYTSectionProps {
     scores: TYTScores
     onScoreChange: (subject: keyof TYTScores, field: 'dogru' | 'yanlis', value: number) => void
+    onReset: () => void
 }
 
 const TYT_SUBJECTS = {
@@ -15,10 +16,18 @@ const TYT_SUBJECTS = {
     fen: { label: 'Fen Bilimleri', questions: 20 }
 }
 
-export default function TYTSection({ scores, onScoreChange }: TYTSectionProps) {
+export default function TYTSection({ scores, onScoreChange, onReset }: TYTSectionProps) {
     return (
         <div className="card">
-            <h2 className="section-title">TYT (Temel Yeterlilik Testi)</h2>
+            <div className="flex items-center justify-between mb-6">
+                <h2 className="section-title mb-0">TYT (Temel Yeterlilik Testi)</h2>
+                <button
+                    onClick={onReset}
+                    className="text-xs text-red-500 hover:text-red-700 border border-red-200 hover:border-red-400 px-3 py-1 rounded-lg transition-colors"
+                >
+                    TYT Sıfırla
+                </button>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {Object.entries(TYT_SUBJECTS).map(([key, subject]) => (
