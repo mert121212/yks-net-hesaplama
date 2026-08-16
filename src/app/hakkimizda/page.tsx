@@ -28,54 +28,47 @@ export default function HakkimizdaPage() {
                         {/* Vizyon */}
                         <section>
                             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                                YKS Net Hesaplama: Geleceğinizi Verilerle Planlayın
+                                Biz Kimiz ve Neden Buradayız?
                             </h2>
                             <p className="mb-4">
-                                Eğitim hayatının en kritik dönemeçlerinden biri olan YKS sürecinde adayların en büyük
-                                ihtiyacı doğru ve güncel veriye ulaşmaktır. <strong>yksnethesapla.com</strong>,
-                                2027 sınav atmosferine uygun olarak karmaşık katsayıları ve değişen sınav yönetmeliklerini
-                                (0,5 net kuralı, barajların kaldırılması vb.) basit, hızlı ve tamamen ücretsiz bir
-                                arayüzle öğrencilerin hizmetine sunmak amacıyla kurulmuştur.
+                                Sınava hazırlık zaten yeterince stresli bir süreç. Üstüne bir de "Acaba netlerimle nereye girerim?", "Şu 0,5 net kuralı beni vurur mu?" veya "OBP kırılırsa halim ne olur?" gibi kafa kurcalayan yüzlerce soruyla boğuştuğunuzu biliyoruz. Çünkü zamanında aynı yollardan biz de geçtik. 
+                            </p>
+                            <p className="mb-4">
+                                İnternette net hesaplama siteleri aradığınızda genelde karşınıza her yeri reklam dolu, güncellenmemiş, eski katsayılarla çalışan veya sadece tıklanma uğruna yalan yanlış sonuçlar gösteren siteler çıkıyor. İşte <strong>yksnethesapla.com</strong> tam olarak bu duruma sinirlenip kolları sıvadığımız bir projedir. 
                             </p>
                             <p>
-                                Platformumuz, hem web teknolojileri alanında uzman yazılımcılar hem de sınav sistemine
-                                hâkim eğitim gönüllüleri tarafından hayata geçirilmiştir. Amacımız, dijital kirliliğin
-                                içinde öğrencilere en sade ve ÖSYM standartlarında bir hesaplama deneyimi sunmaktır.
+                                Amacımız; 2027 sınav maratonuna uygun, arkasında gerçekten öğrencilerin halinden anlayan bir ekibin olduğu, sade, reklamsız (veya en azından sizi boğmayan) ve en önemlisi <strong>ÖSYM mantığına sadık</strong> bir hesaplama motorunu tamamen ücretsiz olarak sunmaktır.
                             </p>
                         </section>
 
                         {/* Neden biz */}
                         <section>
                             <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                                Neden yksnethesapla.com?
+                                Bizi Diğerlerinden Ayıran Şeyler Neler?
                             </h2>
                             <div className="grid md:grid-cols-2 gap-4">
                                 <div className="bg-blue-50 p-5 rounded-xl border-l-4 border-blue-500">
-                                    <h3 className="font-bold text-blue-900 mb-2">📊 Güncel Veri Seti</h3>
+                                    <h3 className="font-bold text-blue-900 mb-2">📊 Gerçekçi Veriler</h3>
                                     <p className="text-sm text-gray-700">
-                                        2027 YKS katsayıları ve son 3 yılın yığılma verilerine dayalı sıralama algoritması.
-                                        Her yıl güncellenen referans noktaları.
+                                        Eski yılların yığılma oranlarını ve son açıklanan YKS katsayılarını birebir baz alıyoruz. Sizi sahte umutlarla şişirmiyor, acı da olsa en gerçekçi tabloyu önünüze koyuyoruz.
                                     </p>
                                 </div>
                                 <div className="bg-green-50 p-5 rounded-xl border-l-4 border-green-500">
-                                    <h3 className="font-bold text-green-900 mb-2">✅ 0,5 Net Denetimi</h3>
+                                    <h3 className="font-bold text-green-900 mb-2">✅ Uyanık Algoritma</h3>
                                     <p className="text-sm text-gray-700">
-                                        Puanınızın hesaplanıp hesaplanmayacağını belirleyen kritik 0,5 net şartını
-                                        otomatik olarak kontrol ederiz.
+                                        "Matematik ve fenden en az 0,5 net çıkarma" gibi herkesin son anda fark edip yıkıldığı o meşhur kuralları bizim sistemimiz otomatik kontrol eder ve sizi uyarır.
                                     </p>
                                 </div>
                                 <div className="bg-purple-50 p-5 rounded-xl border-l-4 border-purple-500">
-                                    <h3 className="font-bold text-purple-900 mb-2">🔒 Veri Gizliliği</h3>
+                                    <h3 className="font-bold text-purple-900 mb-2">🔒 Netleriniz Sadece Sizde Kalır</h3>
                                     <p className="text-sm text-gray-700">
-                                        Privacy-First yaklaşımıyla girdiğiniz netler ve puanlar sunucularımızda
-                                        saklanmaz; tüm işlem tarayıcınızda gerçekleşir.
+                                        Girdiğiniz netler, puanlar veya diploma notunuz hiçbir sunucumuza kaydedilmez. Her şey sadece o an kendi bilgisayarınızda veya telefonunuzda hesaplanır.
                                     </p>
                                 </div>
                                 <div className="bg-orange-50 p-5 rounded-xl border-l-4 border-orange-500">
-                                    <h3 className="font-bold text-orange-900 mb-2">📚 Kapsamlı Rehberlik</h3>
+                                    <h3 className="font-bold text-orange-900 mb-2">📚 Öğrenci Dostu Rehberlik</h3>
                                     <p className="text-sm text-gray-700">
-                                        Sadece bir hesap makinesi değil; derinlemesine YKS blog içerikleri ve
-                                        rehberlerle tam bir eğitim portalı.
+                                        Blog yazılarımızı yazarken resmi ve sıkıcı bir dil kullanmıyoruz. Lise koridorlarında veya kütüphanede konuştuğunuz dilde, işinize yarayacak net taktikler veriyoruz.
                                     </p>
                                 </div>
                             </div>
@@ -84,20 +77,14 @@ export default function HakkimizdaPage() {
                         {/* Teknik altyapı */}
                         <section>
                             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                                Teknik Altyapı ve Güvenilirlik
+                                Puanları ve Sıralamaları Nasıl Hesaplıyoruz?
                             </h2>
                             <p className="mb-4">
-                                Sitemizde sunulan tahmini sıralamalar ve puanlar; geçmiş yılların (2023, 2024 ve 2025)
-                                resmi yerleştirme sonuçları baz alınarak hazırlanan matematiksel interpolasyon
-                                modelleriyle hesaplanır. Geliştirdiğimiz algoritma, aday sayısındaki değişimleri ve
-                                sınavın muhtemel zorluk derecesini analiz ederek en yakın sonucu vermeyi hedefler.
+                                Sitemizde gördüğünüz puanlar rastgele sayılar değildir. Son 3 yılın (2023, 2024 ve 2025) ÖSYM resmi yerleştirme raporlarındaki dağılımları alıyoruz. Geliştirdiğimiz motor; sınava giren kişi sayısındaki artışı, tahmini yığılma bölgelerini ve derslerin ağırlık oranlarını harmanlayarak size en yakın "tahmini" sonucu veriyor.
                             </p>
                             <div className="bg-gray-50 p-5 rounded-xl border-l-4 border-gray-400">
                                 <p className="text-sm text-gray-700">
-                                    <strong>Önemli Not:</strong> ÖSYM, puan hesaplamada standart sapma normalizasyonu
-                                    kullanır ve kesin katsayıları kamuoyuyla paylaşmaz. Bu nedenle sitemizin ürettiği
-                                    sonuçlar gerçekçi bir <strong>tahmindir</strong>; kesin değildir. Resmi sonuçlar
-                                    için her zaman ÖSYM&apos;nin açıklamalarını takip edin.
+                                    <strong>Küçük Bir Uyarı:</strong> ÖSYM'nin puanları nasıl hesapladığını (o meşhur standart sapmayı) sınav bitip herkesin ortalaması belli olmadan dünyanın en iyi algoritması bile %100 bilemez. O yüzden sitemizin verdiği sonuçlara "Büyük ihtimalle böyle olacak" gözüyle bakın ama tercih yaparken mutlaka resmi ÖSYM sonuç belgenizi bekleyin.
                                 </p>
                             </div>
                         </section>

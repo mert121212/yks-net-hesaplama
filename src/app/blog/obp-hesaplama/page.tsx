@@ -49,14 +49,14 @@ export default function OBPHesaplamaRehberi() {
 
                     <div className="prose prose-lg prose-blue max-w-none text-slate-700 mt-8">
                         <p className="lead">
-                            YKS'ye sadece test çözmek olarak bakıyorsanız, büyük resmi kaçırıyorsunuz demektir. Ham puanınız ne kadar yüksek olursa olsun, üniversite kapısından girmenizi sağlayacak olan şey <strong>Y-Puan (Yerleştirme Puanı)</strong>dır. Ve bu puanın %11 ila %12'sini doğrudan lise diploma notunuz belirler.
+                            YKS'ye sadece harıl harıl test çözmek olarak bakıyorsanız, maalesef büyük resmi fena halde kaçırıyorsunuz demektir. Sınavda ham puanınız ne kadar yüksek gelirse gelsin, o üniversitenin kapısından içeri girmenizi sağlayacak asıl şey <strong>Y-Puan (Yerleştirme Puanı)</strong>dır. Ve tahmin edin bu puanın yaklaşık %12'sini ne oluşturuyor? Evet, lisede hocalara şirin gözükerek (veya gerçekten çok çalışarak) aldığınız Diploma Notunuz. Gelin şu OBP'nin matematiksel gücüne daha yakından bakalım.
                         </p>
 
                         <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
-                            OBP Temel Hesaplama Formülü
+                            Kafaları Karıştırmayan OBP Hesaplama Formülü
                         </h2>
                         <p>
-                            ÖSYM sisteminde lise mezuniyet notunuz (100 üzerinden) doğrudan puana eklenmez. Önce 5 ile çarpılarak 500 üzerinden bir puana dönüştürülür, ardından yerleştirme katsayısı olan <strong>0.12</strong> ile çarpılır.
+                            ÖSYM sistemi aslında diploma notunuzu doğrudan puana eklemiyor, araya ufak bir matematiksel işlem sokuyor. Lise mezuniyet notunuz (yani o 100 üzerinden olan karnenizdeki sayı) önce 5 ile çarpılıp 500'lük sisteme çevriliyor. Sonra da yerleştirme katsayısı olan <strong>0.12</strong> ile çarpılıyor. "Hocam bu çok uzun, bana kısa yolunu söyle" diyenler için şöyle bir formülümüz var:
                         </p>
                         
                         <div className="bg-slate-900 rounded-xl p-6 my-8 text-center shadow-lg not-prose">
@@ -72,14 +72,14 @@ export default function OBPHesaplamaRehberi() {
                                     <tr>
                                         <th className="px-6 py-4 border-b">Diploma Notu</th>
                                         <th className="px-6 py-4 border-b text-center">Çarpan</th>
-                                        <th className="px-6 py-4 border-b text-center">Eklenen Ek Puan</th>
+                                        <th className="px-6 py-4 border-b text-center">Eklenen Toplam Puan</th>
                                     </tr>
                                 </thead>
                                 <tbody className="bg-white divide-y divide-slate-100">
                                     <tr className="hover:bg-slate-50 transition-colors">
                                         <td className="px-6 py-4 font-medium text-slate-900">100</td>
                                         <td className="px-6 py-4 text-center">x 0.6</td>
-                                        <td className="px-6 py-4 text-center text-emerald-600 font-bold">+ 60 Puan (Maksimum)</td>
+                                        <td className="px-6 py-4 text-center text-emerald-600 font-bold">+ 60 Puan (Kral)</td>
                                     </tr>
                                     <tr className="hover:bg-slate-50 transition-colors">
                                         <td className="px-6 py-4 font-medium text-slate-900">90</td>
@@ -101,39 +101,42 @@ export default function OBPHesaplamaRehberi() {
                         </div>
 
                         <p>
-                            Görüldüğü üzere, diploma notu 90 olan bir öğrenci, diploma notu 70 olan bir öğrenciye göre sınava girmeden <strong>12 puan öndedir.</strong> Bu 12 puan, AYT'de yaklaşık 4 matematik netine veya TYT'de 9 Türkçe netine eşdeğerdir!
+                            Yukarıdaki tabloya bakınca işin rengi belli oluyor. Diploma notu 90 olan bir arkadaş, diploma notu 70 olan bir rakibine sınava girmeden tam <strong>12 puan</strong> fark atıyor. "Ne olacak 12 puandan?" demeyin. O 12 puan, AYT sınavında ter dökerek çözeceğiniz neredeyse 4 tane çok zor matematik sorusuna veya TYT'de paragrafta boğulacağınız 9 Türkçe sorusuna denk geliyor. Yani lisede yatanlar, üniversite sınavında o farkı kapatmak için fazlasıyla mesai yapmak zorunda.
                         </p>
 
                         <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
-                            Kırık OBP (Yarıya Düşen Puan) Kabusu
+                            Mezunların Korkulu Rüyası: Kırık OBP Meselesi
                         </h2>
                         <p>
-                            Eğer geçen yıl YKS'ye girip bir yükseköğretim programına <strong>yerleştiyseniz</strong> (açıköğretim dahi olsa, kayıt yaptırmamış bile olsanız), bu yıl sınava girdiğinizde OBP katsayınız yarı yarıya düşer.
+                            Eğer geçen yıl YKS sınavına girip puanınızla bir üniversite programına <strong>yerleştiyseniz</strong> (bu açıköğretim bile olabilir, hatta gidip kayıt yaptırmamış bile olabilirsiniz hiç fark etmez), bu yıl tekrar şansınızı denediğinizde ÖSYM size çok ciddi bir fatura keser. OBP katsayınız anında yarı yarıya tırpanlanır.
                         </p>
                         
                         <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl my-6 not-prose">
                             <h3 className="text-base font-bold text-red-900 uppercase tracking-wider mb-2 flex items-center">
                                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-                                Kırık OBP Hesabı
+                                Kırık OBP Ne Kadar Acıtır?
                             </h3>
                             <p className="text-sm text-red-800">
-                                Normalde formül <code>Diploma Notu × 0.6</code> iken, kırık OBP durumunda formül <code>Diploma Notu × 0.3</code> olur.
-                                Yani diploma notunuz 90 ise, normalde alacağınız 54 puan yerine <strong>sadece 27 puan</strong> alırsınız. Kaybınız tam 27 puandır (Yaklaşık 9 AYT Matematik neti).
+                                Normal şartlarda formülümüz neydi? <code>Diploma Notu × 0.6</code>. Eğer Kırık OBP yemişseniz bu formül acımasızca <code>Diploma Notu × 0.3</code> oluyor.
+                                Şöyle anlatalım: Diploma notunuz 90. Normalde 54 puan cukka yapacakken <strong>sadece 27 puan</strong> alıyorsunuz. Uçup giden tam 27 puan var. Yani rakiplerinize durduk yere 9 tane AYT Matematik neti hediye ettiniz bile.
                             </p>
                         </div>
 
-                        <ul className="list-disc pl-6 space-y-2">
-                            <li><strong>Kırık OBP uygulanmayan durumlar:</strong> Sınava girip tercih yapmamak, tercih yapıp hiçbir yere yerleşememek, yetenek sınavıyla bir yere yerleşmek (özel yetenek hariç bazı istisnalar).</li>
+                        <p className="font-semibold text-slate-900 mb-2">Hangi durumlarda Kırık OBP uygulanmaz?</p>
+                        <ul className="list-disc pl-6 space-y-2 mb-8">
+                            <li>Sınava girdiniz ama tercih listesi vermediniz (Kurtuldunuz).</li>
+                            <li>Tercih listesi verdiniz ama sıralamanız yetmediği için hiçbir yere yerleşemediniz (Yine kurtuldunuz).</li>
+                            <li>Sadece özel yetenek sınavıyla bir yere girdiyseniz (Bazı istisnalar var ama genelde kurtuluyorsunuz).</li>
                         </ul>
 
                         <div className="relative overflow-hidden bg-slate-900 rounded-2xl p-8 my-12 text-center border border-slate-800 shadow-2xl not-prose">
                             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500"></div>
-                            <h3 className="text-2xl font-bold mb-4 text-white">Diploma Notunuz Sizi Nereye Taşıyacak?</h3>
+                            <h3 className="text-2xl font-bold mb-4 text-white">Diploma Notun Seni Vezir Mi Edecek Rezil Mi?</h3>
                             <p className="text-slate-300 mb-6 max-w-2xl mx-auto text-sm">
-                                Gelişmiş simülatörümüze deneme netlerinizi ve diploma notunuzu girerek, Y-Puan (Yerleştirme) sıralamanızda OBP'nin sizi kaç bin kişi öne (veya arkaya) atacağını anında görün.
+                                Kafanda kurup durduğuna değmez. Simülatörümüze deneme netlerini ve o çok güvendiğin (ya da korktuğun) diploma notunu gir. Y-Puan sıralamanda OBP'nin seni kaç bin kişi öne zıplatacağını veya kaç bin kişi geriye atacağını hemen gör.
                             </p>
                             <Link href="/" className="inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-slate-900 bg-white rounded-lg hover:bg-slate-50 transition-all shadow-lg hover:shadow-xl focus:ring-4 focus:ring-slate-500 focus:outline-none">
-                                OBP ve Sıralama Hesapla →
+                                OBP ve Sıralamanı Hemen Test Et →
                             </Link>
                         </div>
                     </div>
