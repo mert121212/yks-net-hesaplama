@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { Calculator, BookOpen, Target, TrendingUp, CheckCircle, Clock, Users, Award } from 'lucide-react'
 
 export const metadata: Metadata = {
-    title: '2026 YKS Rehberi: Puan Hesaplama, Soru Dağılımı ve Başarı Stratejileri',
-    description: 'YKS 2026 sınavı için kapsamlı rehber. TYT AYT net hesaplama, puan türleri, OBP etkisi, baraj bilgisi ve başarı stratejileri. Güncel ve doğru bilgilerle hazırlanın.',
-    keywords: 'YKS 2026 rehberi, YKS net hesaplama, TYT net hesaplama, AYT net hesaplama, YKS puan hesaplama, OBP hesaplama, YKS başarı stratejileri',
+    title: '2027 YKS Rehberi: Puan Hesaplama, Soru Dağılımı ve Başarı Stratejileri',
+    description: 'YKS 2027 sınavı için kapsamlı rehber. TYT AYT net hesaplama, puan türleri, OBP etkisi, baraj bilgisi ve başarı stratejileri. Güncel ve doğru bilgilerle hazırlanın.',
+    keywords: 'YKS 2027 rehberi, YKS net hesaplama, TYT net hesaplama, AYT net hesaplama, YKS puan hesaplama, OBP hesaplama, YKS başarı stratejileri',
 }
 
 export default function YKSRehberiPage() {
@@ -15,11 +15,11 @@ export default function YKSRehberiPage() {
                 {/* Hero */}
                 <div className="text-center mb-12">
                     <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                        2026 YKS Rehberi
+                        2027 YKS Rehberi
                     </h1>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
                         Puan hesaplama mantığı, güncel sınav yapısı ve başarıya giden stratejik adımlar.
-                        2026 YKS sınavına hazırlanırken ihtiyacınız olan tüm doğru bilgiler burada.
+                        2027 YKS sınavına hazırlanırken ihtiyacınız olan tüm doğru bilgiler burada.
                     </p>
                     <Link
                         href="/"
@@ -36,7 +36,7 @@ export default function YKSRehberiPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
                             <a href="#puan-hesaplama" className="block text-primary-600 hover:text-primary-700">1. YKS Puanı Nasıl Hesaplanır?</a>
-                            <a href="#soru-dagilimi" className="block text-primary-600 hover:text-primary-700">2. 2026 Soru Dağılımı ve Test Yapısı</a>
+                            <a href="#soru-dagilimi" className="block text-primary-600 hover:text-primary-700">2. 2027 Soru Dağılımı ve Test Yapısı</a>
                             <a href="#obp" className="block text-primary-600 hover:text-primary-700">3. OBP Etkisi</a>
                             <a href="#baraj" className="block text-primary-600 hover:text-primary-700">4. Baraj Puanı Hakkında Doğru Bilgi</a>
                         </div>
@@ -116,7 +116,7 @@ export default function YKSRehberiPage() {
                 <section id="soru-dagilimi" className="bg-white rounded-xl shadow-lg p-8 mb-12">
                     <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
                         <BookOpen className="h-8 w-8 text-blue-600 mr-3" />
-                        2. 2026 YKS Soru Dağılımı ve Test Yapısı
+                        2. 2027 YKS Soru Dağılımı ve Test Yapısı
                     </h2>
                     <p className="text-gray-600 mb-6">
                         Sınav üç ana oturumdan oluşur. Her oturumun aday üzerindeki etkisi ve soru ağırlığı farklıdır.
@@ -293,7 +293,7 @@ export default function YKSRehberiPage() {
                 <section id="stratejiler" className="bg-white rounded-xl shadow-lg p-8 mb-12">
                     <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
                         <Clock className="h-8 w-8 text-indigo-600 mr-3" />
-                        6. 2026 YKS Başarı Stratejileri
+                        6. 2027 YKS Başarı Stratejileri
                     </h2>
                     <div className="space-y-4">
                         <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-500">

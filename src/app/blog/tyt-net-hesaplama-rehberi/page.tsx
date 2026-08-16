@@ -1,16 +1,17 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
-    title: 'TYT Net Hesaplama Rehberi 2026: Adım Adım Kılavuz | YKS Net Hesaplama',
-    description: 'TYT sınavında net hesaplama nasıl yapılır? 0,5 net şartı, soru dağılımı, süre yönetimi ve stratejik ipuçları. 2026 YKS sistemine uygun güncel rehber.',
-    keywords: 'tyt net hesaplama, tyt net hesaplama 2026, tyt türkçe net, tyt matematik net, tyt fen net, tyt sosyal net, tyt baraj',
+    title: 'TYT Net Hesaplama Rehberi 2027: Adım Adım Kılavuz | YKS Net Hesaplama',
+    description: 'TYT sınavında net hesaplama nasıl yapılır? 0,5 net şartı, soru dağılımı, süre yönetimi ve stratejik ipuçları. 2027 YKS sistemine uygun güncel rehber.',
+    keywords: 'tyt net hesaplama, tyt net hesaplama 2027, tyt türkçe net, tyt matematik net, tyt fen net, tyt sosyal net, tyt baraj',
     alternates: { canonical: 'https://yksnethesapla.com/blog/tyt-net-hesaplama-rehberi' },
     openGraph: {
-        title: 'TYT Net Hesaplama Rehberi 2026: Adım Adım Kılavuz',
+        title: 'TYT Net Hesaplama Rehberi 2027: Adım Adım Kılavuz',
         description: 'TYT sınavında net hesaplama nasıl yapılır? 0,5 net şartı, soru dağılımı ve stratejik ipuçları.',
         type: 'article',
-        publishedTime: '2026-02-27',
+        publishedTime: '2027-02-27',
         url: 'https://yksnethesapla.com/blog/tyt-net-hesaplama-rehberi',
     },
 }
@@ -31,17 +32,20 @@ export default function TYTNetHesaplamaRehberi() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">TYT</span>
-                            <time className="text-gray-600">27 Şubat 2026</time>
+                            <time className="text-gray-600">27 Şubat 2027</time>
                             <span className="text-gray-600">• 6 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            TYT Net Hesaplama Rehberi 2026: Adım Adım Kılavuz
+                            TYT Net Hesaplama Rehberi 2027: Adım Adım Kılavuz
                         </h1>
                         <p className="text-xl text-gray-600">
                             TYT net hesaplama sadece bir matematik işlemi değil, sınav stratejinizi belirleyen
-                            en önemli veridir. 2026 YKS sistemine uygun güncel bilgilerle hazırlanın.
+                            en önemli veridir. 2027 YKS sistemine uygun güncel bilgilerle hazırlanın.
                         </p>
                     </header>
+
+                    <AuthorProfile />
+
 
                     <div className="prose prose-lg max-w-none">
 
@@ -62,7 +66,7 @@ export default function TYTNetHesaplamaRehberi() {
                         <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-lg mb-6">
                             <h3 className="font-bold text-amber-900 mb-2">⚠️ Pek Çok Adayın Gözden Kaçırdığı Detay</h3>
                             <p className="text-gray-700">
-                                2026 YKS kurallarına göre TYT puanınızın hesaplanabilmesi için
+                                2027 YKS kurallarına göre TYT puanınızın hesaplanabilmesi için
                                 <strong> Türkçe veya Temel Matematik</strong> testlerinin herhangi birinden
                                 en az <strong>0,5 net</strong> yapmış olmanız gerekir.
                                 Bu iki testten de sıfır veya eksi net yaparsanız, Fen veya Sosyal&apos;de

@@ -1,16 +1,17 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
-    title: 'TYT\'de Kesin Çıkacak "Altın" Konular 2026 | Zaman Kazanmanın Sırrı',
+    title: 'TYT\'de Kesin Çıkacak "Altın" Konular 2027 | Zaman Kazanmanın Sırrı',
     description: 'TYT matematik en çok çıkan konular, TYT Türkçe kesin çıkan konular. YKS son aylar ne çalışmalı? Enerjini doğru yere harca, netlerini hızla artır.',
-    keywords: 'tyt matematik en çok çıkan konular, tyt türkçe kesin çıkan konular, yks son aylar ne çalışmalı, tyt konuları 2026, yks net hesapla',
+    keywords: 'tyt matematik en çok çıkan konular, tyt türkçe kesin çıkan konular, yks son aylar ne çalışmalı, tyt konuları 2027, yks net hesapla',
     alternates: { canonical: 'https://yksnethesapla.com/blog/tyt-kesin-cikan-konular' },
     openGraph: {
-        title: 'TYT\'de Kesin Çıkacak "Altın" Konular 2026',
+        title: 'TYT\'de Kesin Çıkacak "Altın" Konular 2027',
         description: 'TYT\'de en çok soru çıkan konular ve zaman kazanma stratejisi. Enerjini doğru yere harca.',
         type: 'article',
-        publishedTime: '2026-05-02',
+        publishedTime: '2027-05-02',
         url: 'https://yksnethesapla.com/blog/tyt-kesin-cikan-konular',
     },
 }
@@ -31,7 +32,7 @@ export default function TYTKesinCikanKonular() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">TYT</span>
-                            <time className="text-gray-600">2 Mayıs 2026</time>
+                            <time className="text-gray-600">2 Mayıs 2027</time>
                             <span className="text-gray-600">• 7 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -41,6 +42,9 @@ export default function TYTKesinCikanKonular() {
                             Her şeyi bilmek değil, neyin daha çok sorulduğunu bilmek seni öne geçirir.
                         </p>
                     </header>
+
+                    <AuthorProfile />
+
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
 
@@ -138,7 +142,7 @@ export default function TYTKesinCikanKonular() {
                         </p>
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
-                            <h3 className="text-2xl font-bold mb-3">2026 YKS Net ve Sıralama Hesaplama</h3>
+                            <h3 className="text-2xl font-bold mb-3">2027 YKS Net ve Sıralama Hesaplama</h3>
                             <p className="text-blue-100 mb-6">
                                 Yeni netlerinin seni kaçıncı sıraya taşıdığını hemen öğren.
                             </p>

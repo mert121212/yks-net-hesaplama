@@ -28,7 +28,7 @@ export default function Footer() {
                             <span className="text-xl font-bold">YKS Net Hesaplama</span>
                         </div>
                         <p className="text-gray-400 text-sm mb-4">
-                            YKS 2026 için en doğru net ve puan hesaplama aracı. Ücretsiz, hızlı ve güvenilir.
+                            YKS 2027 için en doğru net ve puan hesaplama aracı. Ücretsiz, hızlı ve güvenilir.
                         </p>
                         <a href="mailto:mertcaliskan36065d@gmail.com" className="text-sm text-gray-400 hover:text-blue-400 transition-colors">
                             İletişim
@@ -53,11 +53,11 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* YKS 2026 */}
+                    {/* YKS 2027 */}
                     <div>
                         <h3 className="text-lg font-semibold mb-4 flex items-center">
                             <Icon d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                            YKS 2026
+                            YKS 2027
                         </h3>
                         <ul className="space-y-2 text-sm">
                             {[

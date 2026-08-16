@@ -27,12 +27,12 @@ export default function SEOContent() {
                 <div className="flex items-center gap-3 mb-6">
                     <Icon d={ICONS.calc} className="h-8 w-8 text-primary-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
-                        YKS Net Hesaplama: 2026 ÖSYM Standartlarına Uygun Analiz
+                        YKS Net Hesaplama: 2027 ÖSYM Standartlarına Uygun Analiz
                     </h2>
                 </div>
                 <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
                     <p>
-                        2026 YKS hazırlık sürecinde hedeflerinize ne kadar yakın olduğunuzu bilmek stratejik bir zorunluluktur.
+                        2027 YKS hazırlık sürecinde hedeflerinize ne kadar yakın olduğunuzu bilmek stratejik bir zorunluluktur.
                         Sitemiz, ÖSYM&apos;nin güncel katsayı verilerini ve standart sapma projeksiyonlarını kullanarak
                         en gerçekçi TYT, AYT ve YDT net hesaplama sonuçlarını sunar. Sadece netlerinizi değil,
                         yerleştirme puanınızı (Y-SAY, Y-EA, Y-SÖZ) ve tahmini sıralamanızı saniyeler içinde öğrenin.
@@ -86,7 +86,7 @@ export default function SEOContent() {
                 </div>
             </section>
 
-            {/* YKS 2026 Bilgileri */}
+            {/* YKS 2027 Bilgileri */}
             <section className="card bg-gradient-to-r from-primary-50 to-blue-50">
                 <div className="flex items-center gap-3 mb-6">
                     <Icon d={ICONS.award} className="h-8 w-8 text-primary-600" />
@@ -169,7 +169,7 @@ export default function SEOContent() {
                             <div>
                                 <h4 className="font-semibold text-gray-900 mb-1">Güncel ve Doğru</h4>
                                 <p className="text-sm text-gray-600">
-                                    2026 YKS için güncellenmiş formüller ve katsayılar.
+                                    2027 YKS için güncellenmiş formüller ve katsayılar.
                                     ÖSYM standartlarına uygun hesaplama.
                                 </p>
                             </div>
@@ -347,8 +347,8 @@ export default function SEOContent() {
                             a: 'OBP, lise diploma notunuzun YKS puanına katkısıdır. Formül: Diploma Notu × 0,6 = Puan Katkısı. Diploma notu 100 ise maksimum 60 puan katkı alırsınız. Geçen yıl yerleşenler için katsayı yarıya düşer (puan kırılması).'
                         },
                         {
-                            q: 'YKS 2026 ne zaman?',
-                            a: 'TYT 20 Haziran 2026 (Cumartesi), AYT ve YDT 21 Haziran 2026 (Pazar) tarihinde yapılması planlanmaktadır. Kesin tarihler için ÖSYM\'nin resmi sitesini takip edin.'
+                            q: 'YKS 2027 ne zaman?',
+                            a: 'TYT 20 Haziran 2027 (Cumartesi), AYT ve YDT 21 Haziran 2027 (Pazar) tarihinde yapılması planlanmaktadır. Kesin tarihler için ÖSYM\'nin resmi sitesini takip edin.'
                         },
                         {
                             q: 'Puan türü nasıl seçilir?',
@@ -396,7 +396,7 @@ export default function SEOContent() {
             {/* CTA Section */}
             <section className="card bg-gradient-to-r from-primary-600 to-blue-600 text-white text-center">
                 <h2 className="text-3xl font-bold mb-4">
-                    YKS 2026'ya Hazır mısınız?
+                    YKS 2027'ya Hazır mısınız?
                 </h2>
                 <p className="text-lg text-primary-100 mb-6 max-w-2xl mx-auto">
                     Hemen yukarıdaki hesaplama aracını kullanarak TYT ve AYT netlerinizi hesaplayın,

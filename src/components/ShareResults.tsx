@@ -15,13 +15,13 @@ export default function ShareResults({ tytNet, aytNet, ydtNet, scoreType, totalS
     const [copied, setCopied] = useState(false)
     const [showShareMenu, setShowShareMenu] = useState(false)
 
-    const shareText = `🎓 YKS 2026 Netlerim:
+    const shareText = `🎓 YKS 2027 Netlerim:
 📚 TYT: ${tytNet.toFixed(2)} net
 📊 AYT: ${aytNet.toFixed(2)} net
 ${ydtNet > 0 ? `🌍 YDT: ${ydtNet.toFixed(2)} net\n` : ''}🎯 ${scoreType} Puanım: ${totalScore.toFixed(2)}
 
 Sen de hesapla 👉 yksnethesapla.com
-#YKS2026 #NetHesaplama #YKSHazırlık`
+#YKS2027 #NetHesaplama #YKSHazırlık`
 
     const handleWhatsAppShare = () => {
         const url = `https://wa.me/?text=${encodeURIComponent(shareText)}`
@@ -48,7 +48,7 @@ Sen de hesapla 👉 yksnethesapla.com
         if (navigator.share) {
             try {
                 await navigator.share({
-                    title: 'YKS 2026 Netlerim',
+                    title: 'YKS 2027 Netlerim',
                     text: shareText,
                     url: 'https://yksnethesapla.com'
                 })

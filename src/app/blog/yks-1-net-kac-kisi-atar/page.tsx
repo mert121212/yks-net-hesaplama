@@ -1,16 +1,17 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
-    title: 'YKS\'de 1 Net Neden Binlerce Kişi Attırır? OBP ve Standart Sapma 2026',
+    title: 'YKS\'de 1 Net Neden Binlerce Kişi Attırır? OBP ve Standart Sapma 2027',
     description: 'YKS\'de 1 net gerçekten önemli mi? OBP sıralamayı nasıl etkiler, standart sapma nedir, okul puanı YKS\'yi nasıl etkiler? Tüm gerçekler bu yazıda.',
     keywords: 'yks 1 net kaç kişi atar, obp sıralamayı nasıl etkiler, okul puanı yks, yks sıralama hesaplama, standart sapma yks',
     alternates: { canonical: 'https://yksnethesapla.com/blog/yks-1-net-kac-kisi-atar' },
     openGraph: {
-        title: 'YKS\'de 1 Net Neden Binlerce Kişi Attırır? OBP ve Standart Sapma 2026',
+        title: 'YKS\'de 1 Net Neden Binlerce Kişi Attırır? OBP ve Standart Sapma 2027',
         description: 'OBP sıralamayı nasıl etkiler, standart sapma nedir? YKS\'de 1 netin gerçek değeri.',
         type: 'article',
-        publishedTime: '2026-05-02',
+        publishedTime: '2027-05-02',
         url: 'https://yksnethesapla.com/blog/yks-1-net-kac-kisi-atar',
     },
 }
@@ -31,7 +32,7 @@ export default function YKS1NetKacKisiAtar() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Strateji</span>
-                            <time className="text-gray-600">2 Mayıs 2026</time>
+                            <time className="text-gray-600">2 Mayıs 2027</time>
                             <span className="text-gray-600">• 6 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -41,6 +42,9 @@ export default function YKS1NetKacKisiAtar() {
                             &quot;Aman bir net bile çok önemli!&quot; — Bu gerçekten doğru mu, yoksa abartı mı?
                         </p>
                     </header>
+
+                    <AuthorProfile />
+
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
 
@@ -130,7 +134,7 @@ export default function YKS1NetKacKisiAtar() {
                             <p className="text-blue-100 mb-6">
                                 Okul puanının seni geriye mi atacağını yoksa öne mi çekeceğini anında görmek için
                                 YKS Sıralama ve Net Hesaplama motorumuzu kullanabilirsin. OBP&apos;ni ve tahmini
-                                netlerini gir, 2026 sistemiyle nerede durduğunu hemen öğren.
+                                netlerini gir, 2027 sistemiyle nerede durduğunu hemen öğren.
                             </p>
                             <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors">
                                 YKS Sıralama Hesapla →

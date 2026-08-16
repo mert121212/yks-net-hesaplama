@@ -1,16 +1,17 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
-    title: 'YKS\'de Kaç Net Kaç Puan Eder? Ham Puan ve Yerleştirme Puanı Farkı 2026',
-    description: 'TYT ve AYT\'de kaç net yaparsanız kaç puan alırsınız? Ham puan ile yerleştirme puanı farkı, net getirisi ve SAY puan tablosu. YKS 2026 için güncel analiz.',
+    title: 'YKS\'de Kaç Net Kaç Puan Eder? Ham Puan ve Yerleştirme Puanı Farkı 2027',
+    description: 'TYT ve AYT\'de kaç net yaparsanız kaç puan alırsınız? Ham puan ile yerleştirme puanı farkı, net getirisi ve SAY puan tablosu. YKS 2027 için güncel analiz.',
     keywords: 'kaç net kaç puan, yks net puan tablosu, tyt kaç net kaç puan, ayt kaç net kaç puan, ham puan, yerleştirme puanı',
     alternates: { canonical: 'https://yksnethesapla.com/blog/yks-kac-net-kac-puan' },
     openGraph: {
-        title: 'YKS\'de Kaç Net Kaç Puan Eder? 2026 Tablosu',
+        title: 'YKS\'de Kaç Net Kaç Puan Eder? 2027 Tablosu',
         description: 'TYT ve AYT\'de kaç net yaparsanız kaç puan alırsınız? Net-puan dönüşüm tablosu.',
         type: 'article',
-        publishedTime: '2026-02-22',
+        publishedTime: '2027-02-22',
         url: 'https://yksnethesapla.com/blog/yks-kac-net-kac-puan',
     },
 }
@@ -31,13 +32,16 @@ export default function YKSKacNetKacPuan() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Rehber</span>
-                            <time className="text-gray-600">22 Şubat 2026</time>
+                            <time className="text-gray-600">22 Şubat 2027</time>
                             <span className="text-gray-600">• 6 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                             YKS&apos;de Kaç Net Kaç Puan Eder? Ham Puan ve Yerleştirme Puanı Farkı
                         </h1>
                     </header>
+
+                    <AuthorProfile />
+
 
                     <div className="prose prose-lg max-w-none">
                         <p className="text-xl text-gray-700 leading-relaxed mb-8">

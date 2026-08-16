@@ -28,7 +28,7 @@ export default function HomePage() {
             <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-8 sm:py-12">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3">
-                        YKS Net Hesaplama 2026
+                        YKS Net Hesaplama 2027
                     </h1>
                     <p className="text-base sm:text-lg text-blue-100 max-w-2xl mx-auto">
                         TYT, AYT ve YDT netlerinizi hesaplayın. Hızlı, doğru ve ücretsiz.

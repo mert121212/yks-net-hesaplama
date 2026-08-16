@@ -1,16 +1,17 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
-    title: 'YKS Hazırlık Programı 2026: Pomodoro, Feynman ve Ebbinghaus Teknikleri',
-    description: 'Bilimsel öğrenme yöntemleriyle YKS hazırlığı. Pomodoro 2.0, Feynman tekniği, Ebbinghaus unutma eğrisi ve MEB kaynakları. 2026 YKS için güncel rehber.',
-    keywords: 'yks hazırlık programı, pomodoro tekniği, feynman tekniği, ebbinghaus, yks çalışma 2026, meb kaynakları',
+    title: 'YKS Hazırlık Programı 2027: Pomodoro, Feynman ve Ebbinghaus Teknikleri',
+    description: 'Bilimsel öğrenme yöntemleriyle YKS hazırlığı. Pomodoro 2.0, Feynman tekniği, Ebbinghaus unutma eğrisi ve MEB kaynakları. 2027 YKS için güncel rehber.',
+    keywords: 'yks hazırlık programı, pomodoro tekniği, feynman tekniği, ebbinghaus, yks çalışma 2027, meb kaynakları',
     alternates: { canonical: 'https://yksnethesapla.com/blog/yks-hazirlik-programi' },
     openGraph: {
-        title: 'YKS Hazırlık Programı 2026: Bilimsel Öğrenme Teknikleri',
+        title: 'YKS Hazırlık Programı 2027: Bilimsel Öğrenme Teknikleri',
         description: 'Pomodoro 2.0, Feynman tekniği ve Ebbinghaus unutma eğrisiyle YKS hazırlığı.',
         type: 'article',
-        publishedTime: '2026-02-20',
+        publishedTime: '2027-02-20',
         url: 'https://yksnethesapla.com/blog/yks-hazirlik-programi',
     },
 }
@@ -31,17 +32,20 @@ export default function YKSHazirlikProgrami() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Hazırlık</span>
-                            <time className="text-gray-600">20 Şubat 2026</time>
+                            <time className="text-gray-600">20 Şubat 2027</time>
                             <span className="text-gray-600">• 10 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            YKS Hazırlık Programı 2026: Bilimsel Öğrenme Teknikleri
+                            YKS Hazırlık Programı 2027: Bilimsel Öğrenme Teknikleri
                         </h1>
                         <p className="text-xl text-gray-700">
                             &quot;Çok çalış&quot; demek yetmez. Nasıl öğrenildiği, ne kadar çalışıldığından daha önemlidir.
-                            İşte bilim destekli 2026 YKS hazırlık rehberi.
+                            İşte bilim destekli 2027 YKS hazırlık rehberi.
                         </p>
                     </header>
+
+                    <AuthorProfile />
+
 
                     <div className="prose prose-lg max-w-none">
 
@@ -141,7 +145,7 @@ export default function YKSHazirlikProgrami() {
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
                             <h2 className="text-3xl font-bold mb-4">Geri Sayımı Takip Et</h2>
-                            <p className="text-xl mb-6 text-blue-100">YKS 2026&apos;ya kalan süreyi görün, motivasyonunu koru</p>
+                            <p className="text-xl mb-6 text-blue-100">YKS 2027&apos;ya kalan süreyi görün, motivasyonunu koru</p>
                             <Link href="/geri-sayim" className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
                                 Geri Sayım →
                             </Link>

@@ -3,7 +3,7 @@ export default function StructuredData() {
         "@context": "https://schema.org",
         "@type": "WebApplication",
         "name": "YKS Net Hesaplama",
-        "description": "YKS 2026 net hesaplama aracı ile TYT, AYT ve YDT netlerinizi hesaplayın. Üniversite puanlarınızı öğrenin.",
+        "description": "YKS 2027 net hesaplama aracı ile TYT, AYT ve YDT netlerinizi hesaplayın. Üniversite puanlarınızı öğrenin.",
         "url": "https://yksnethesapla.com",
         "applicationCategory": "EducationalApplication",
         "operatingSystem": "Web Browser",
@@ -29,7 +29,7 @@ export default function StructuredData() {
             "AYT net hesaplama",
             "YDT net hesaplama",
             "üniversite puan hesaplama",
-            "YKS 2026"
+            "YKS 2027"
         ],
         "featureList": [
             "TYT Net Hesaplama",
@@ -127,10 +127,10 @@ export default function StructuredData() {
             },
             {
                 "@type": "Question",
-                "name": "YKS 2026 ne zaman?",
+                "name": "YKS 2027 ne zaman?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "YKS 2026 sınavı iki gün olarak yapılacaktır. TYT (Temel Yeterlilik Testi) 20 Haziran 2026 Cumartesi, AYT (Alan Yeterlilik Testi) ve YDT (Yabancı Dil Testi) 21 Haziran 2026 Pazar günü uygulanacaktır."
+                    "text": "YKS 2027 sınavı iki gün olarak yapılacaktır. TYT (Temel Yeterlilik Testi) 20 Haziran 2027 Cumartesi, AYT (Alan Yeterlilik Testi) ve YDT (Yabancı Dil Testi) 21 Haziran 2027 Pazar günü uygulanacaktır."
                 }
             },
             {
@@ -178,7 +178,7 @@ export default function StructuredData() {
                 "name": "YKS'ye kaç gün kaldı?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "YKS 2026 sınavına kalan süreyi canlı olarak yksnethesapla.com/geri-sayim adresindeki geri sayım sayfamızdan takip edebilirsiniz. TYT 20 Haziran 2026, AYT 21 Haziran 2026 tarihinde yapılacaktır."
+                    "text": "YKS 2027 sınavına kalan süreyi canlı olarak yksnethesapla.com/geri-sayim adresindeki geri sayım sayfamızdan takip edebilirsiniz. TYT 20 Haziran 2027, AYT 21 Haziran 2027 tarihinde yapılacaktır."
                 }
             }
         ]

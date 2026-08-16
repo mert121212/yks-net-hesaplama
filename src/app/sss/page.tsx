@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { ArrowLeft, HelpCircle, ChevronDown } from 'lucide-react'
 
 export const metadata: Metadata = {
-    title: 'Sıkça Sorulan Sorular (SSS) - YKS Net Hesaplama 2026',
-    description: 'YKS net hesaplama, 0,5 net şartı, baraj bilgisi, OBP kırılması, başarı sırası barajları ve 2026 sınav takvimi hakkında sıkça sorulan sorular.',
-    keywords: 'yks sss, net hesaplama sss, 0.5 net şartı, baraj puanı, obp kırılması, başarı sırası barajı, yks 2026',
+    title: 'Sıkça Sorulan Sorular (SSS) - YKS Net Hesaplama 2027',
+    description: 'YKS net hesaplama, 0,5 net şartı, baraj bilgisi, OBP kırılması, başarı sırası barajları ve 2027 sınav takvimi hakkında sıkça sorulan sorular.',
+    keywords: 'yks sss, net hesaplama sss, 0.5 net şartı, baraj puanı, obp kırılması, başarı sırası barajı, yks 2027',
 }
 
 const sssFaqSchema = {
@@ -16,7 +16,7 @@ const sssFaqSchema = {
         { "@type": "Question", "name": "0,5 net şartı nedir?", "acceptedAnswer": { "@type": "Answer", "text": "TYT puanı için Türkçe veya Temel Matematik'ten en az 0,5 net yapmanız gerekir. Bu şart sağlanmazsa puan hesaplanmaz." } },
         { "@type": "Question", "name": "OBP nedir?", "acceptedAnswer": { "@type": "Answer", "text": "OBP (Ortaöğretim Başarı Puanı), lise diploma notunuzun YKS puanına katkısıdır. Formül: Diploma Notu × 0,6 = Puan Katkısı. Diploma notu 100 ise maksimum 60 puan katkı alırsınız." } },
         { "@type": "Question", "name": "Puan kırılması nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Bir önceki yıl YKS ile bir yükseköğretim programına yerleşen adayların OBP katsayısı yarıya düşer (0,12 yerine 0,06). Bu yaklaşık 20-30 puan kayıp demektir." } },
-        { "@type": "Question", "name": "YKS 2026 ne zaman?", "acceptedAnswer": { "@type": "Answer", "text": "TYT 20 Haziran 2026 Cumartesi, AYT ve YDT 21 Haziran 2026 Pazar günü yapılacaktır." } },
+        { "@type": "Question", "name": "YKS 2027 ne zaman?", "acceptedAnswer": { "@type": "Answer", "text": "TYT 20 Haziran 2027 Cumartesi, AYT ve YDT 21 Haziran 2027 Pazar günü yapılacaktır." } },
         { "@type": "Question", "name": "Hesaplamalarım kaydediliyor mu?", "acceptedAnswer": { "@type": "Answer", "text": "Hayır. Hesaplamalarınız sunucularımıza gönderilmez; tüm işlemler cihazınızda yerel olarak yapılır." } }
     ]
 }
@@ -85,12 +85,12 @@ export default function SSS() {
             ]
         },
         {
-            category: '2026 Sınav Takvimi',
+            category: '2027 Sınav Takvimi',
             icon: '📅',
             questions: [
                 {
-                    q: '2026 YKS ne zaman yapılacak?',
-                    a: 'ÖSYM takvimine göre TYT 20 Haziran 2026 (Cumartesi), AYT ve YDT 21 Haziran 2026 (Pazar) tarihinde yapılması planlanmaktadır. Güncel geri sayım aracımızı sayfamızın üst kısmında bulabilirsiniz.'
+                    q: '2027 YKS ne zaman yapılacak?',
+                    a: 'ÖSYM takvimine göre TYT 20 Haziran 2027 (Cumartesi), AYT ve YDT 21 Haziran 2027 (Pazar) tarihinde yapılması planlanmaktadır. Güncel geri sayım aracımızı sayfamızın üst kısmında bulabilirsiniz.'
                 },
                 {
                     q: 'TYT\'de kaç soru var?',

@@ -1,16 +1,17 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
-    title: 'AYT Matematik Konuları 2026: LTİ, Fonksiyonlar ve Eleme Sınavı Rehberi',
-    description: 'AYT Matematik\'te Limit, Türev, İntegral (LTİ) ve Fonksiyonlar nasıl çalışılır? SAY öğrencileri için 2026 ÖSYM güncel konu rehberi ve strateji.',
-    keywords: 'ayt matematik konuları, ayt matematik 2026, limit türev integral, fonksiyonlar, say matematik, yks matematik',
+    title: 'AYT Matematik Konuları 2027: LTİ, Fonksiyonlar ve Eleme Sınavı Rehberi',
+    description: 'AYT Matematik\'te Limit, Türev, İntegral (LTİ) ve Fonksiyonlar nasıl çalışılır? SAY öğrencileri için 2027 ÖSYM güncel konu rehberi ve strateji.',
+    keywords: 'ayt matematik konuları, ayt matematik 2027, limit türev integral, fonksiyonlar, say matematik, yks matematik',
     alternates: { canonical: 'https://yksnethesapla.com/blog/ayt-matematik-konulari' },
     openGraph: {
-        title: 'AYT Matematik Konuları 2026: LTİ, Fonksiyonlar ve Eleme Sınavı Rehberi',
+        title: 'AYT Matematik Konuları 2027: LTİ, Fonksiyonlar ve Eleme Sınavı Rehberi',
         description: 'AYT Matematik\'te LTİ ve Fonksiyonlar nasıl çalışılır? SAY öğrencileri için güncel rehber.',
         type: 'article',
-        publishedTime: '2026-02-18',
+        publishedTime: '2027-02-18',
         url: 'https://yksnethesapla.com/blog/ayt-matematik-konulari',
     },
 }
@@ -30,20 +31,23 @@ export default function AYTMatematikKonulari() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">AYT</span>
-                            <time className="text-gray-600">18 Şubat 2026</time>
+                            <time className="text-gray-600">18 Şubat 2027</time>
                             <span className="text-gray-600">• 9 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            AYT Matematik Konuları 2026: LTİ, Fonksiyonlar ve Eleme Sınavı Rehberi
+                            AYT Matematik Konuları 2027: LTİ, Fonksiyonlar ve Eleme Sınavı Rehberi
                         </h1>
                         <p className="text-xl text-gray-700">
                             AYT Matematik bir &quot;bilgi sınavı&quot;dır, TYT ise &quot;hız sınavı&quot;. Bu farkı kavramadan
                             hazırlanan adaylar, bildikleri soruları bile çözemeden çıkar.
                         </p>
                     </header>
+
+                    <AuthorProfile />
+
                     <div className="prose prose-lg max-w-none">
                         <div className="bg-purple-50 border-l-4 border-purple-600 p-6 my-6">
-                            <h3 className="font-bold text-purple-900 mb-3">📊 2026 Genel Bilgiler</h3>
+                            <h3 className="font-bold text-purple-900 mb-3">📊 2027 Genel Bilgiler</h3>
                             <ul className="space-y-1 text-gray-700 text-sm">
                                 <li>• <strong>Toplam Soru:</strong> 40 soru</li>
                                 <li>• <strong>Süre:</strong> ~60 dakika (180 dakika içinde)</li>

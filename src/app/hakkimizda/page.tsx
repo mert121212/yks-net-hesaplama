@@ -33,7 +33,7 @@ export default function HakkimizdaPage() {
                             <p className="mb-4">
                                 Eğitim hayatının en kritik dönemeçlerinden biri olan YKS sürecinde adayların en büyük
                                 ihtiyacı doğru ve güncel veriye ulaşmaktır. <strong>yksnethesapla.com</strong>,
-                                2026 sınav atmosferine uygun olarak karmaşık katsayıları ve değişen sınav yönetmeliklerini
+                                2027 sınav atmosferine uygun olarak karmaşık katsayıları ve değişen sınav yönetmeliklerini
                                 (0,5 net kuralı, barajların kaldırılması vb.) basit, hızlı ve tamamen ücretsiz bir
                                 arayüzle öğrencilerin hizmetine sunmak amacıyla kurulmuştur.
                             </p>
@@ -53,7 +53,7 @@ export default function HakkimizdaPage() {
                                 <div className="bg-blue-50 p-5 rounded-xl border-l-4 border-blue-500">
                                     <h3 className="font-bold text-blue-900 mb-2">📊 Güncel Veri Seti</h3>
                                     <p className="text-sm text-gray-700">
-                                        2026 YKS katsayıları ve son 3 yılın yığılma verilerine dayalı sıralama algoritması.
+                                        2027 YKS katsayıları ve son 3 yılın yığılma verilerine dayalı sıralama algoritması.
                                         Her yıl güncellenen referans noktaları.
                                     </p>
                                 </div>

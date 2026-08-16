@@ -1,144 +1,140 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
-    title: 'OBP Nedir? 2026 Ortaöğretim Başarı Puanı Hesaplama ve Puan Kırılması',
-    description: 'OBP hesaplama formülü, puan kırılması durumu ve meslek lisesi ek puanı. Diploma notunuzun YKS puanınıza +30 ile +60 puan arasında nasıl katkı sağladığını öğrenin.',
-    keywords: 'obp nedir, obp hesaplama, ortaöğretim başarı puanı, diploma notu, yks obp, puan kırılması',
+    title: 'OBP Nedir ve Nasıl Hesaplanır? Kırık OBP ve Katsayı Analizi 2027',
+    description: 'YKS 2027 OBP hesaplama sistemi. Lise diploma notunun YKS yerleştirme puanına etkisi, kırık OBP cezası ve okul birinciliği avantajları.',
+    keywords: 'obp nedir, obp nasıl hesaplanır, obp hesaplama 2027, kırık obp nedir, diploma notu yks etkisi, okul birinciliği kontenjanı',
     alternates: { canonical: 'https://yksnethesapla.com/blog/obp-hesaplama' },
     openGraph: {
-        title: 'OBP Nedir? 2026 Ortaöğretim Başarı Puanı Hesaplama ve Puan Kırılması',
-        description: 'OBP hesaplama formülü ve puan kırılması durumu. Diploma notunuzun YKS puanınıza etkisi.',
+        title: 'OBP Nedir ve Nasıl Hesaplanır? Kırık OBP ve Katsayı Analizi 2027',
+        description: 'Lise diploma notunun YKS yerleştirme puanına etkisinin teknik analizi.',
         type: 'article',
-        publishedTime: '2026-02-24',
+        publishedTime: '2027-02-24',
+        modifiedTime: '2027-08-16',
         url: 'https://yksnethesapla.com/blog/obp-hesaplama',
     },
 }
 
-export default function OBPHesaplama() {
+export default function OBPHesaplamaRehberi() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
+        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
-                <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-                    <nav className="mb-8 text-sm text-gray-600">
-                        <Link href="/" className="hover:text-blue-600">Ana Sayfa</Link>
-                        {' > '}
-                        <Link href="/blog" className="hover:text-blue-600">Blog</Link>
-                        {' > '}
-                        <span className="text-gray-900">OBP Hesaplama</span>
+                <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-slate-100">
+                    <nav className="mb-8 text-sm text-slate-500 font-medium flex items-center space-x-2">
+                        <Link href="/" className="hover:text-blue-600 transition-colors">Ana Sayfa</Link>
+                        <span>›</span>
+                        <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
+                        <span>›</span>
+                        <span className="text-slate-900">Teknik Rehber</span>
                     </nav>
 
-                    <header className="mb-8">
-                        <div className="flex items-center gap-4 mb-4">
-                            <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Rehber</span>
-                            <time className="text-gray-600">24 Şubat 2026</time>
-                            <span className="text-gray-600">• 5 dakika okuma</span>
+                    <header className="mb-10">
+                        <div className="flex flex-wrap items-center gap-3 mb-5">
+                            <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-bold tracking-wide uppercase">YKS Puanlama</span>
+                            <time className="text-slate-500 text-sm font-medium">Son Güncelleme: 16 Ağustos 2027</time>
+                            <span className="text-slate-400">•</span>
+                            <span className="text-slate-500 text-sm font-medium">Okuma Süresi: 6 dk</span>
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            OBP Nedir? 2026 Ortaöğretim Başarı Puanı Hesaplama
+                        <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6 leading-tight">
+                            OBP (Ortaöğretim Başarı Puanı) Nedir? 2027 Yerleştirme Sisteminde OBP Analizi
                         </h1>
-                        <p className="text-xl text-gray-700">
-                            OBP, lise hayatınız boyunca verdiğiniz emeklerin YKS sonucunuza
-                            +30 ile +60 puan arasında katkı sağlamasıdır.
+                        <p className="text-xl text-slate-600 font-medium leading-relaxed">
+                            Birçok adayın sınav salonundan çıktıktan sonra fark ettiği, yerleştirme sıralamasını en az AYT kadar etkileyen faktör: Lise Diploma Notu. OBP'nin matematiksel gücünü keşfedin.
                         </p>
                     </header>
 
-                    <div className="prose prose-lg max-w-none">
+                    <AuthorProfile />
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">OBP Nasıl Hesaplanır?</h2>
-                        <p className="text-gray-700 mb-4">
-                            Diploma notunuz önce 5 ile çarpılır, ardından çıkan sonuç 0,12 katsayısı ile
-                            ham puanınıza eklenir:
+                    <div className="prose prose-lg prose-blue max-w-none text-slate-700 mt-8">
+                        <p className="lead">
+                            YKS'ye sadece test çözmek olarak bakıyorsanız, büyük resmi kaçırıyorsunuz demektir. Ham puanınız ne kadar yüksek olursa olsun, üniversite kapısından girmenizi sağlayacak olan şey <strong>Y-Puan (Yerleştirme Puanı)</strong>dır. Ve bu puanın %11 ila %12'sini doğrudan lise diploma notunuz belirler.
                         </p>
-                        <div className="bg-gray-100 p-5 rounded-lg mb-6 text-center">
-                            <p className="text-xl font-bold text-gray-900">OBP Katkısı = Diploma Notu × 0,6</p>
-                            <p className="text-sm text-gray-600 mt-2">(Diploma Notu × 5 = OBP → OBP × 0,12 = Katkı)</p>
-                        </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">OBP Örnekleri</h2>
-                        <div className="space-y-4 my-6">
-                            <div className="bg-green-50 p-5 rounded-lg border-l-4 border-green-500">
-                                <h3 className="font-bold text-green-900 mb-2">Yüksek Diploma Notu (90)</h3>
-                                <p className="text-gray-700 text-sm">OBP = 90 × 5 = 450 → Katkı = 450 × 0,12 = <strong className="text-green-700">+54 puan</strong></p>
-                            </div>
-                            <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-500">
-                                <h3 className="font-bold text-blue-900 mb-2">Orta Diploma Notu (75)</h3>
-                                <p className="text-gray-700 text-sm">OBP = 75 × 5 = 375 → Katkı = 375 × 0,12 = <strong className="text-blue-700">+45 puan</strong></p>
-                            </div>
-                            <div className="bg-orange-50 p-5 rounded-lg border-l-4 border-orange-500">
-                                <h3 className="font-bold text-orange-900 mb-2">Düşük Diploma Notu (60)</h3>
-                                <p className="text-gray-700 text-sm">OBP = 60 × 5 = 300 → Katkı = 300 × 0,12 = <strong className="text-orange-700">+36 puan</strong></p>
-                            </div>
-                        </div>
-
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">⚠️ Puan Kırılması Durumu</h2>
-                        <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg mb-6">
-                            <p className="text-gray-700">
-                                Eğer geçen yıl bir yükseköğretim programına yerleştiyseniz (tercih yapıp kazandıysanız),
-                                bu yıl OBP katsayınız <strong>0,12&apos;den 0,06&apos;ya düşer.</strong> Bu da yaklaşık
-                                <strong> 20–30 puan kaybetmeniz</strong> demektir.
-                            </p>
-                        </div>
-                        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-5 rounded-lg mb-8">
-                            <p className="text-yellow-900 text-sm">
-                                <strong>Örnek:</strong> Diploma notu 85 olan ve geçen yıl yerleşen bir aday:
-                                Normal katkı = 85 × 0,6 = 51 puan. Kırılmış katkı = 85 × 0,3 = 25,5 puan.
-                                Fark: yaklaşık 25,5 puan kayıp.
+                        <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
+                            OBP Temel Hesaplama Formülü
+                        </h2>
+                        <p>
+                            ÖSYM sisteminde lise mezuniyet notunuz (100 üzerinden) doğrudan puana eklenmez. Önce 5 ile çarpılarak 500 üzerinden bir puana dönüştürülür, ardından yerleştirme katsayısı olan <strong>0.12</strong> ile çarpılır.
+                        </p>
+                        
+                        <div className="bg-slate-900 rounded-xl p-6 my-8 text-center shadow-lg not-prose">
+                            <p className="text-sm text-slate-400 mb-2 uppercase tracking-wider font-semibold">Kestirme Formül</p>
+                            <p className="text-2xl font-bold text-white font-mono">
+                                Diploma Notu × 0.6 = OBP Katkısı
                             </p>
                         </div>
 
-                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
-                            <h2 className="text-3xl font-bold mb-4">OBP&apos;nizi Hesaplayın</h2>
-                            <p className="text-xl mb-6 text-blue-100">Diploma notunuzu girerek OBP katkınızı ve toplam puanınızı öğrenin</p>
-                            <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
-                                Hesapla →
+                        <div className="overflow-x-auto my-8 not-prose rounded-xl shadow-sm border border-slate-200">
+                            <table className="w-full text-left text-sm text-slate-600">
+                                <thead className="bg-slate-50 text-slate-900 font-semibold uppercase text-xs">
+                                    <tr>
+                                        <th className="px-6 py-4 border-b">Diploma Notu</th>
+                                        <th className="px-6 py-4 border-b text-center">Çarpan</th>
+                                        <th className="px-6 py-4 border-b text-center">Eklenen Ek Puan</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="bg-white divide-y divide-slate-100">
+                                    <tr className="hover:bg-slate-50 transition-colors">
+                                        <td className="px-6 py-4 font-medium text-slate-900">100</td>
+                                        <td className="px-6 py-4 text-center">x 0.6</td>
+                                        <td className="px-6 py-4 text-center text-emerald-600 font-bold">+ 60 Puan (Maksimum)</td>
+                                    </tr>
+                                    <tr className="hover:bg-slate-50 transition-colors">
+                                        <td className="px-6 py-4 font-medium text-slate-900">90</td>
+                                        <td className="px-6 py-4 text-center">x 0.6</td>
+                                        <td className="px-6 py-4 text-center text-emerald-600 font-bold">+ 54 Puan</td>
+                                    </tr>
+                                    <tr className="hover:bg-slate-50 transition-colors">
+                                        <td className="px-6 py-4 font-medium text-slate-900">80</td>
+                                        <td className="px-6 py-4 text-center">x 0.6</td>
+                                        <td className="px-6 py-4 text-center text-emerald-600 font-bold">+ 48 Puan</td>
+                                    </tr>
+                                    <tr className="hover:bg-slate-50 transition-colors">
+                                        <td className="px-6 py-4 font-medium text-slate-900">60</td>
+                                        <td className="px-6 py-4 text-center">x 0.6</td>
+                                        <td className="px-6 py-4 text-center text-amber-600 font-bold">+ 36 Puan</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>
+                            Görüldüğü üzere, diploma notu 90 olan bir öğrenci, diploma notu 70 olan bir öğrenciye göre sınava girmeden <strong>12 puan öndedir.</strong> Bu 12 puan, AYT'de yaklaşık 4 matematik netine veya TYT'de 9 Türkçe netine eşdeğerdir!
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
+                            Kırık OBP (Yarıya Düşen Puan) Kabusu
+                        </h2>
+                        <p>
+                            Eğer geçen yıl YKS'ye girip bir yükseköğretim programına <strong>yerleştiyseniz</strong> (açıköğretim dahi olsa, kayıt yaptırmamış bile olsanız), bu yıl sınava girdiğinizde OBP katsayınız yarı yarıya düşer.
+                        </p>
+                        
+                        <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl my-6 not-prose">
+                            <h3 className="text-base font-bold text-red-900 uppercase tracking-wider mb-2 flex items-center">
+                                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                                Kırık OBP Hesabı
+                            </h3>
+                            <p className="text-sm text-red-800">
+                                Normalde formül <code>Diploma Notu × 0.6</code> iken, kırık OBP durumunda formül <code>Diploma Notu × 0.3</code> olur.
+                                Yani diploma notunuz 90 ise, normalde alacağınız 54 puan yerine <strong>sadece 27 puan</strong> alırsınız. Kaybınız tam 27 puandır (Yaklaşık 9 AYT Matematik neti).
+                            </p>
+                        </div>
+
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li><strong>Kırık OBP uygulanmayan durumlar:</strong> Sınava girip tercih yapmamak, tercih yapıp hiçbir yere yerleşememek, yetenek sınavıyla bir yere yerleşmek (özel yetenek hariç bazı istisnalar).</li>
+                        </ul>
+
+                        <div className="relative overflow-hidden bg-slate-900 rounded-2xl p-8 my-12 text-center border border-slate-800 shadow-2xl not-prose">
+                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500"></div>
+                            <h3 className="text-2xl font-bold mb-4 text-white">Diploma Notunuz Sizi Nereye Taşıyacak?</h3>
+                            <p className="text-slate-300 mb-6 max-w-2xl mx-auto text-sm">
+                                Gelişmiş simülatörümüze deneme netlerinizi ve diploma notunuzu girerek, Y-Puan (Yerleştirme) sıralamanızda OBP'nin sizi kaç bin kişi öne (veya arkaya) atacağını anında görün.
+                            </p>
+                            <Link href="/" className="inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-slate-900 bg-white rounded-lg hover:bg-slate-50 transition-all shadow-lg hover:shadow-xl focus:ring-4 focus:ring-slate-500 focus:outline-none">
+                                OBP ve Sıralama Hesapla →
                             </Link>
-                        </div>
-
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Özel Durumlar</h2>
-                        <div className="space-y-4 my-6">
-                            <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-gray-400">
-                                <h3 className="font-bold text-gray-900 mb-2">Meslek Lisesi Mezunları</h3>
-                                <p className="text-gray-700 text-sm">
-                                    Meslek lisesi mezunları kendi alanlarındaki ilgili programlara başvururken
-                                    ek puan avantajından yararlanabilir. Diğer alanlara başvururken standart OBP uygulanır.
-                                    Detaylar için ÖSYM kılavuzunu inceleyin.
-                                </p>
-                            </div>
-                            <div className="bg-gray-50 p-5 rounded-lg border-l-4 border-gray-400">
-                                <h3 className="font-bold text-gray-900 mb-2">Açık Lise Mezunları</h3>
-                                <p className="text-gray-700 text-sm">
-                                    Açık lise mezunları da OBP hesaplamasından yararlanır. Diploma notları aynı formülle hesaplanır.
-                                </p>
-                            </div>
-                        </div>
-
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Sıkça Sorulan Sorular</h2>
-                        <div className="space-y-4 my-6">
-                            <div className="border-b pb-4">
-                                <h3 className="font-bold text-gray-900 mb-2">OBP&apos;yi artırabilir miyim?</h3>
-                                <p className="text-gray-700 text-sm">Mezun olduktan sonra OBP&apos;nizi değiştiremezsiniz. Lise öğrencisiyseniz notlarınızı yükselterek artırabilirsiniz.</p>
-                            </div>
-                            <div className="border-b pb-4">
-                                <h3 className="font-bold text-gray-900 mb-2">OBP zorunlu mu?</h3>
-                                <p className="text-gray-700 text-sm">Evet, OBP otomatik olarak hesaplanır ve YKS puanınıza eklenir. Reddedemezsiniz.</p>
-                            </div>
-                            <div className="pb-4">
-                                <h3 className="font-bold text-gray-900 mb-2">Ham puan ile yerleştirme puanı arasındaki fark nedir?</h3>
-                                <p className="text-gray-700 text-sm">Ham puan, sadece netlerinizden gelen puandır (max 500). Yerleştirme puanı ise ham puana OBP katkısının eklenmiş halidir.</p>
-                            </div>
-                        </div>
-
-                        <div className="border-t pt-8 mt-12">
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">İlgili Makaleler</h3>
-                            <div className="grid md:grid-cols-2 gap-4">
-                                <Link href="/blog/yks-net-hesaplama-nasil-yapilir" className="p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
-                                    <p className="font-semibold text-blue-900">YKS Net Hesaplama →</p>
-                                </Link>
-                                <Link href="/blog/ayt-puan-hesaplama" className="p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
-                                    <p className="font-semibold text-purple-900">AYT Puan Hesaplama →</p>
-                                </Link>
-                            </div>
                         </div>
                     </div>
                 </div>

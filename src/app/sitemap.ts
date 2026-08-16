@@ -89,7 +89,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.7,
         },
         {
-            url: `${baseUrl}/blog/yks-2026-basvuru-tarihleri`,
+            url: `${baseUrl}/blog/yks-2027-basvuru-tarihleri`,
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.6,

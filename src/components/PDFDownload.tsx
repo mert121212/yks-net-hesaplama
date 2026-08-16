@@ -115,7 +115,7 @@ export default function PDFDownload({ results }: Props) {
             pdf.text(tr('Ölçme, Seçme ve Yerleştirme Merkezi'), margin, y + 12.5)
 
             pdf.setFontSize(8)
-            pdf.text(tr('YKS 2026 Tahmini Sonuç Belgesi'), W - margin, y + 8, { align: 'right' })
+            pdf.text(tr('YKS 2027 Tahmini Sonuç Belgesi'), W - margin, y + 8, { align: 'right' })
             pdf.text(tarih, W - margin, y + 12.5, { align: 'right' })
 
             y += 18
@@ -123,7 +123,7 @@ export default function PDFDownload({ results }: Props) {
             pdf.setFontSize(12)
             pdf.setFont('helvetica', 'bold')
             pdf.setTextColor(0, 48, 135)
-            pdf.text(tr('YKS 2026 — TAHMİNİ PUAN VE SIRALAMA RAPORU'), W / 2, y, { align: 'center' })
+            pdf.text(tr('YKS 2027 — TAHMİNİ PUAN VE SIRALAMA RAPORU'), W / 2, y, { align: 'center' })
             y += 5
 
             pdf.setFontSize(7.5)
@@ -227,7 +227,7 @@ export default function PDFDownload({ results }: Props) {
             y += 4
             pdf.text(tr('Tahmini sonuclar 2025 YKS verilerine dayali logaritmik interpolasyon ile hesaplanmistir.  |  Resmi sonuclar icin: osym.gov.tr'), W / 2, y, { align: 'center' })
 
-            pdf.save('YKS-2026-Tahmin-Sonucum.pdf')
+            pdf.save('YKS-2027-Tahmin-Sonucum.pdf')
         } catch (e) {
             console.error('PDF hatası:', e)
         } finally {

@@ -15,13 +15,13 @@ const inter = Inter({
 
 export const metadata: Metadata = {
     title: {
-        default: 'YKS Net Hesaplama 2026 | TYT AYT YDT Puan Hesaplama Aracı',
+        default: 'YKS Net Hesaplama 2027 | TYT AYT YDT Puan Hesaplama Aracı',
         template: '%s | YKS Net Hesaplama'
     },
-    description: 'YKS 2026 net ve puan hesaplama aracı. TYT, AYT, YDT netlerinizi hesaplayın, SAY EA SÖZ DİL puanlarınızı öğrenin. Ücretsiz, hızlı ve doğru hesaplama.',
+    description: 'YKS 2027 net ve puan hesaplama aracı. TYT, AYT, YDT netlerinizi hesaplayın, SAY EA SÖZ DİL puanlarınızı öğrenin. Ücretsiz, hızlı ve doğru hesaplama.',
     keywords: [
         'YKS net hesaplama',
-        'YKS 2026',
+        'YKS 2027',
         'TYT net hesaplama',
         'AYT net hesaplama',
         'YDT net hesaplama',
@@ -53,8 +53,8 @@ export const metadata: Metadata = {
         canonical: '/',
     },
     openGraph: {
-        title: 'YKS Net Hesaplama 2026 | TYT AYT YDT Puan Hesaplama Aracı',
-        description: 'YKS 2026 net hesaplama aracı ile TYT, AYT ve YDT netlerinizi hesaplayın. Üniversite puanlarınızı öğrenin. Ücretsiz ve hızlı hesaplama sistemi.',
+        title: 'YKS Net Hesaplama 2027 | TYT AYT YDT Puan Hesaplama Aracı',
+        description: 'YKS 2027 net hesaplama aracı ile TYT, AYT ve YDT netlerinizi hesaplayın. Üniversite puanlarınızı öğrenin. Ücretsiz ve hızlı hesaplama sistemi.',
         url: 'https://yksnethesapla.com',
         siteName: 'YKS Net Hesaplama',
         locale: 'tr_TR',
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'YKS Net Hesaplama 2026 | TYT AYT YDT Puan Hesaplama',
+        title: 'YKS Net Hesaplama 2027 | TYT AYT YDT Puan Hesaplama',
         description: 'YKS net hesaplama aracı ile TYT, AYT ve YDT netlerinizi hesaplayın. Üniversite puanlarınızı öğrenin.',
         images: ['/og-image.svg'],
     },

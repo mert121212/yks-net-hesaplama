@@ -1,16 +1,17 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
-    title: 'TYT Türkçe ve AYT Edebiyat Konuları 2026: Nokta Atışı Rehber',
-    description: 'TYT\'de sadece Anlam ve Dil Bilgisi çıkar. AYT Edebiyat\'ta Cumhuriyet Dönemi, edebi sanatlar ve yazar-eser kartları. 0,5 net şartı ve 2026 ÖSYM güncel rehber.',
-    keywords: 'yks edebiyat konuları, tyt türkçe, ayt edebiyat 2026, cumhuriyet dönemi edebiyatı, edebi sanatlar, yazar eser',
+    title: 'TYT Türkçe ve AYT Edebiyat Konuları 2027: Nokta Atışı Rehber',
+    description: 'TYT\'de sadece Anlam ve Dil Bilgisi çıkar. AYT Edebiyat\'ta Cumhuriyet Dönemi, edebi sanatlar ve yazar-eser kartları. 0,5 net şartı ve 2027 ÖSYM güncel rehber.',
+    keywords: 'yks edebiyat konuları, tyt türkçe, ayt edebiyat 2027, cumhuriyet dönemi edebiyatı, edebi sanatlar, yazar eser',
     alternates: { canonical: 'https://yksnethesapla.com/blog/yks-edebiyat-konulari' },
     openGraph: {
-        title: 'TYT Türkçe ve AYT Edebiyat Konuları 2026: Nokta Atışı Rehber',
+        title: 'TYT Türkçe ve AYT Edebiyat Konuları 2027: Nokta Atışı Rehber',
         description: 'TYT Türkçe ve AYT Edebiyat konuları, Cumhuriyet Dönemi şifresi ve edebi sanatlar rehberi.',
         type: 'article',
-        publishedTime: '2026-02-17',
+        publishedTime: '2027-02-17',
         url: 'https://yksnethesapla.com/blog/yks-edebiyat-konulari',
     },
 }
@@ -30,17 +31,20 @@ export default function YKSEdebiyatKonulari() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Dersler</span>
-                            <time className="text-gray-600">17 Şubat 2026</time>
+                            <time className="text-gray-600">17 Şubat 2027</time>
                             <span className="text-gray-600">• 8 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            TYT Türkçe ve AYT Edebiyat Konuları 2026: Nokta Atışı Rehber
+                            TYT Türkçe ve AYT Edebiyat Konuları 2027: Nokta Atışı Rehber
                         </h1>
                         <p className="text-xl text-gray-700">
                             &quot;YKS Edebiyat&quot; diye tek bir ders yoktur. TYT&apos;de Türkçe, AYT&apos;de Edebiyat ayrı sınavlardır
                             ve tamamen farklı konular içerir. Bu ayrımı bilmeden çalışmak zaman kaybıdır.
                         </p>
                     </header>
+
+                    <AuthorProfile />
+
                     <div className="prose prose-lg max-w-none">
 
                         <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">TYT Türkçe: Sadece Anlam ve Dil Bilgisi</h2>
@@ -77,7 +81,7 @@ export default function YKSEdebiyatKonulari() {
                             </p>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">AYT Edebiyat: Konu Dağılımı 2026</h2>
+                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">AYT Edebiyat: Konu Dağılımı 2027</h2>
                         <div className="overflow-x-auto my-6">
                             <table className="min-w-full bg-white border border-gray-300 rounded-lg">
                                 <thead className="bg-purple-50">

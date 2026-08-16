@@ -1,21 +1,22 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
-    title: 'YKS 2026 Başvuru Tarihleri, Takvimi ve Başvuru Adımları',
-    description: 'YKS 2026 başvuru tarihleri, sınav tarihleri, sonuç açıklama ve tercih takvimi. AİS üzerinden nasıl başvurulur? Sınav günü hazırlık listesi.',
-    keywords: 'yks 2026 tarihleri, yks başvuru tarihleri, yks sınav tarihi, yks sonuç tarihi, ais başvuru',
-    alternates: { canonical: 'https://yksnethesapla.com/blog/yks-2026-basvuru-tarihleri' },
+    title: 'YKS 2027 Başvuru Tarihleri, Takvimi ve Başvuru Adımları',
+    description: 'YKS 2027 başvuru tarihleri, sınav tarihleri, sonuç açıklama ve tercih takvimi. AİS üzerinden nasıl başvurulur? Sınav günü hazırlık listesi.',
+    keywords: 'yks 2027 tarihleri, yks başvuru tarihleri, yks sınav tarihi, yks sonuç tarihi, ais başvuru',
+    alternates: { canonical: 'https://yksnethesapla.com/blog/yks-2027-basvuru-tarihleri' },
     openGraph: {
-        title: 'YKS 2026 Başvuru Tarihleri, Takvimi ve Başvuru Adımları',
-        description: 'YKS 2026 başvuru tarihleri ve sınav takvimi. AİS üzerinden nasıl başvurulur?',
+        title: 'YKS 2027 Başvuru Tarihleri, Takvimi ve Başvuru Adımları',
+        description: 'YKS 2027 başvuru tarihleri ve sınav takvimi. AİS üzerinden nasıl başvurulur?',
         type: 'article',
-        publishedTime: '2026-02-23',
-        url: 'https://yksnethesapla.com/blog/yks-2026-basvuru-tarihleri',
+        publishedTime: '2027-02-23',
+        url: 'https://yksnethesapla.com/blog/yks-2027-basvuru-tarihleri',
     },
 }
 
-export default function YKS2026BasvuruTarihleri() {
+export default function YKS2027BasvuruTarihleri() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
@@ -25,23 +26,26 @@ export default function YKS2026BasvuruTarihleri() {
                         {' > '}
                         <Link href="/blog" className="hover:text-blue-600">Blog</Link>
                         {' > '}
-                        <span className="text-gray-900">YKS 2026 Başvuru Tarihleri</span>
+                        <span className="text-gray-900">YKS 2027 Başvuru Tarihleri</span>
                     </nav>
 
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">Takvim</span>
-                            <time className="text-gray-600">23 Şubat 2026</time>
+                            <time className="text-gray-600">23 Şubat 2027</time>
                             <span className="text-gray-600">• 4 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            YKS 2026 Başvuru Tarihleri ve Takvimi
+                            YKS 2027 Başvuru Tarihleri ve Takvimi
                         </h1>
                         <p className="text-xl text-gray-700">
                             Tarihleri kaçırmak, bir yılınızın kaybına neden olabilir. ÖSYM tarafından
-                            açıklanan (tahmini) 2026 YKS takvimi aşağıdadır.
+                            açıklanan (tahmini) 2027 YKS takvimi aşağıdadır.
                         </p>
                     </header>
+
+                    <AuthorProfile />
+
 
                     <div className="prose prose-lg max-w-none">
 
@@ -55,14 +59,14 @@ export default function YKS2026BasvuruTarihleri() {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Başvuru Süreci</td><td className="px-5 py-3">15 Mart – 5 Nisan 2026</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Geç Başvuru Günü</td><td className="px-5 py-3">15–16 Nisan 2026</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Sınav Giriş Belgesi</td><td className="px-5 py-3">10 Haziran 2026</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium text-blue-700">TYT Sınavı</td><td className="px-5 py-3 font-bold">20 Haziran 2026 (Cumartesi) – 10:15</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium text-purple-700">AYT / YDT Sınavı</td><td className="px-5 py-3 font-bold">21 Haziran 2026 (Pazar) – 10:15</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Sonuç Açıklama</td><td className="px-5 py-3">15 Temmuz 2026 (tahmini)</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Tercih Dönemi</td><td className="px-5 py-3">20 Temmuz – 5 Ağustos 2026 (tahmini)</td></tr>
-                                    <tr><td className="px-5 py-3 font-medium">Yerleştirme Sonuçları</td><td className="px-5 py-3">25 Ağustos 2026 (tahmini)</td></tr>
+                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Başvuru Süreci</td><td className="px-5 py-3">15 Mart – 5 Nisan 2027</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Geç Başvuru Günü</td><td className="px-5 py-3">15–16 Nisan 2027</td></tr>
+                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Sınav Giriş Belgesi</td><td className="px-5 py-3">10 Haziran 2027</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium text-blue-700">TYT Sınavı</td><td className="px-5 py-3 font-bold">20 Haziran 2027 (Cumartesi) – 10:15</td></tr>
+                                    <tr className="border-b"><td className="px-5 py-3 font-medium text-purple-700">AYT / YDT Sınavı</td><td className="px-5 py-3 font-bold">21 Haziran 2027 (Pazar) – 10:15</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Sonuç Açıklama</td><td className="px-5 py-3">15 Temmuz 2027 (tahmini)</td></tr>
+                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Tercih Dönemi</td><td className="px-5 py-3">20 Temmuz – 5 Ağustos 2027 (tahmini)</td></tr>
+                                    <tr><td className="px-5 py-3 font-medium">Yerleştirme Sonuçları</td><td className="px-5 py-3">25 Ağustos 2027 (tahmini)</td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -95,7 +99,7 @@ export default function YKS2026BasvuruTarihleri() {
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
                             <h2 className="text-3xl font-bold mb-4">Geri Sayımı Takip Edin</h2>
-                            <p className="text-xl mb-6 text-blue-100">YKS 2026&apos;ya kalan süreyi canlı takip edin</p>
+                            <p className="text-xl mb-6 text-blue-100">YKS 2027&apos;ya kalan süreyi canlı takip edin</p>
                             <Link href="/geri-sayim" className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
                                 Geri Sayım →
                             </Link>

@@ -1,58 +1,59 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
     title: 'YKS Blog | YKS Hazırlık Rehberleri ve İpuçları',
-    description: 'YKS 2026 hazırlık rehberleri, üniversite tercih ipuçları, sınav stratejileri ve daha fazlası. TYT, AYT, YDT konularında detaylı makaleler.',
+    description: 'YKS 2027 hazırlık rehberleri, üniversite tercih ipuçları, sınav stratejileri ve daha fazlası. TYT, AYT, YDT konularında detaylı makaleler.',
     keywords: 'yks blog, yks hazırlık, tyt hazırlık, ayt hazırlık, üniversite tercih, yks ipuçları',
 }
 
 const blogPosts = [
     {
         id: 'yks-yigilma-tehlikesi',
-        title: 'YKS\'de "Yığılma" Tehlikesi: Yüz Binlerce Rakibi Nasıl Geçersin?',
-        excerpt: 'Puanın iyi gelir ama sıralama beklediğinden kötü çıkar. Yığılma nedir, neden olur ve nasıl aşılır?',
-        date: '2026-05-02',
+        title: 'YKS\'de Yığılma Tehlikesi (2027): Standart Sapma ve Sıralama Analizi',
+        excerpt: 'Yığılma nedir ve nasıl aşılır? Standart sapma ve 3 milyon aday arasından sıyrılmak için uygulamanız gereken test stratejileri.',
+        date: '2027-05-02',
         category: 'Strateji',
-        readTime: '6 dakika',
+        readTime: '8 dakika',
     },
     {
         id: 'tyt-kesin-cikan-konular',
         title: 'TYT\'de Zaman Kazanmanın Sırrı: Kesin Çıkacak "Altın" Konular',
         excerpt: 'Her şeyi bilmek değil, neyin daha çok sorulduğunu bilmek seni öne geçirir. TYT\'de altın konular.',
-        date: '2026-05-02',
+        date: '2027-05-02',
         category: 'TYT',
         readTime: '7 dakika',
     },
     {
         id: 'tyt-net-artirma-taktikleri',
-        title: 'TYT\'de 60-70 Net Bandına Sıkışanlar: Bu Kısır Döngüden Nasıl Çıkılır?',
-        excerpt: 'Haftalardır aynı netler, aynı hayal kırıklığı. 60-70 net bandından çıkıp 80-90\'lara fırlamanın gerçek yolları.',
-        date: '2026-05-02',
+        title: 'TYT\'de 60-70 Net Bandına Sıkışanlar İçin Veri Odaklı Çıkış Yolu',
+        excerpt: 'ÖSYM yerleştirme verilerine göre TYT net artırmanın kanıtlanmış yöntemleri. 60-70 net bandından kurtulmak.',
+        date: '2027-05-02',
         category: 'TYT',
-        readTime: '5 dakika',
+        readTime: '7 dakika',
     },
     {
         id: 'yks-1-net-kac-kisi-atar',
         title: 'YKS\'de 1 Net Bile Neden Binlerce Kişi Attırır? (OBP ve Standart Sapma Gerçeği)',
         excerpt: 'OBP sıralamayı nasıl etkiler, standart sapma nedir? YKS\'de 1 netin gerçek değerini öğren.',
-        date: '2026-05-02',
+        date: '2027-05-02',
         category: 'Strateji',
         readTime: '6 dakika',
     },
     {
         id: 'yks-net-hesaplama-nasil-yapilir',
-        title: 'YKS Net Hesaplama Nasıl Yapılır? 2026 Güncel Rehber',
-        excerpt: 'YKS net hesaplama işlemini adım adım öğrenin. TYT, AYT ve YDT netlerinizi doğru hesaplayarak üniversite puanınızı öğrenin.',
-        date: '2026-02-28',
+        title: 'YKS Net Hesaplama Nasıl Yapılır? (ÖSYM Katsayı Verileriyle)',
+        excerpt: 'YKS 2027 net hesaplama formülleri, 0.5 net kuralının akademik analizi ve ham/yerleştirme puanı hesaplama.',
+        date: '2027-02-28',
         category: 'Rehber',
-        readTime: '8 dakika',
+        readTime: '9 dakika',
     },
     {
         id: 'tyt-net-hesaplama-rehberi',
-        title: 'TYT Net Hesaplama: Adım Adım Kılavuz 2026',
+        title: 'TYT Net Hesaplama: Adım Adım Kılavuz 2027',
         excerpt: 'TYT sınavında net hesaplama nasıl yapılır? Türkçe, Matematik, Fen ve Sosyal netlerinizi doğru hesaplayın.',
-        date: '2026-02-27',
+        date: '2027-02-27',
         category: 'TYT',
         readTime: '6 dakika',
     },
@@ -60,7 +61,7 @@ const blogPosts = [
         id: 'ayt-puan-hesaplama',
         title: 'AYT Puan Hesaplama: SAY, EA, SÖZ, DİL Puanları',
         excerpt: 'AYT sınavında SAY, EA, SÖZ ve DİL puanları nasıl hesaplanır? Detaylı formüller ve örneklerle öğrenin.',
-        date: '2026-02-26',
+        date: '2027-02-26',
         category: 'AYT',
         readTime: '7 dakika',
     },
@@ -68,39 +69,39 @@ const blogPosts = [
         id: 'yks-puan-turleri',
         title: 'YKS Puan Türleri: SAY, EA, SÖZ, DİL Nedir?',
         excerpt: 'YKS\'de 4 farklı puan türü var. SAY, EA, SÖZ ve DİL puan türlerini detaylı inceleyin ve size uygun olanı seçin.',
-        date: '2026-02-25',
+        date: '2027-02-25',
         category: 'Rehber',
         readTime: '5 dakika',
     },
     {
         id: 'obp-hesaplama',
-        title: 'OBP (Ortaöğretim Başarı Puanı) Nedir? Nasıl Hesaplanır?',
-        excerpt: 'Lise diploma notunuzun YKS puanınıza etkisi nedir? OBP hesaplama formülü ve örnekleri.',
-        date: '2026-02-24',
+        title: 'OBP Nedir ve Nasıl Hesaplanır? Kırık OBP ve Katsayı Analizi 2027',
+        excerpt: 'Lise diploma notunun YKS yerleştirme puanına etkisi, kırık OBP cezası ve okul birinciliği avantajları.',
+        date: '2027-02-24',
         category: 'Rehber',
-        readTime: '5 dakika',
+        readTime: '6 dakika',
     },
     {
-        id: 'yks-2026-basvuru-tarihleri',
-        title: 'YKS 2026 Başvuru Tarihleri ve Takvimi',
-        excerpt: 'YKS 2026 başvuru tarihleri, sınav tarihleri ve sonuç açıklama tarihleri. Tüm önemli tarihler burada.',
-        date: '2026-02-23',
+        id: 'yks-2027-basvuru-tarihleri',
+        title: 'YKS 2027 Başvuru Tarihleri ve Takvimi',
+        excerpt: 'YKS 2027 başvuru tarihleri, sınav tarihleri ve sonuç açıklama tarihleri. Tüm önemli tarihler burada.',
+        date: '2027-02-23',
         category: 'Takvim',
         readTime: '4 dakika',
     },
     {
         id: 'yks-kac-net-kac-puan',
-        title: 'YKS\'de Kaç Net Kaç Puan Eder? 2026 Tablosu',
+        title: 'YKS\'de Kaç Net Kaç Puan Eder? 2027 Tablosu',
         excerpt: 'TYT ve AYT\'de kaç net yaparsanız kaç puan alırsınız? Net-puan dönüşüm tablosu ve hesaplama.',
-        date: '2026-02-22',
+        date: '2027-02-22',
         category: 'Rehber',
         readTime: '6 dakika',
     },
     {
         id: 'universite-tercih-stratejileri',
-        title: 'Üniversite Tercih Stratejileri: Doğru Tercih Nasıl Yapılır?',
-        excerpt: 'YKS sonrası üniversite tercihi yaparken nelere dikkat etmelisiniz? Tercih stratejileri ve ipuçları.',
-        date: '2026-02-21',
+        title: 'Üniversite Tercih Stratejileri 2027: 24 Tercih Hakkı Nasıl Kullanılır?',
+        excerpt: 'YKS 2027 tercih dönemi için bilimsel tercih robotu mantığı. Ölü tercih yapmamak ve altın oran analizi.',
+        date: '2027-02-21',
         category: 'Tercih',
         readTime: '9 dakika',
     },
@@ -108,15 +109,15 @@ const blogPosts = [
         id: 'yks-hazirlik-programi',
         title: 'YKS\'ye Nasıl Hazırlanılır? Çalışma Programı',
         excerpt: 'Etkili bir YKS hazırlık programı nasıl yapılır? Günlük, haftalık ve aylık çalışma planları.',
-        date: '2026-02-20',
+        date: '2027-02-20',
         category: 'Hazırlık',
         readTime: '10 dakika',
     },
     {
         id: 'tyt-matematik-konulari',
-        title: 'TYT Matematik Konuları ve Soru Dağılımı 2026',
+        title: 'TYT Matematik Konuları ve Soru Dağılımı 2027',
         excerpt: 'TYT Matematik sınavında hangi konular çıkıyor? Konu dağılımı ve çalışma stratejileri.',
-        date: '2026-02-19',
+        date: '2027-02-19',
         category: 'TYT',
         readTime: '7 dakika',
     },
@@ -124,7 +125,7 @@ const blogPosts = [
         id: 'ayt-matematik-konulari',
         title: 'AYT Matematik Konuları: SAY Öğrencileri İçin Rehber',
         excerpt: 'AYT Matematik sınavına nasıl hazırlanılır? Tüm konular, formüller ve çözüm teknikleri.',
-        date: '2026-02-18',
+        date: '2027-02-18',
         category: 'AYT',
         readTime: '8 dakika',
     },
@@ -132,7 +133,7 @@ const blogPosts = [
         id: 'yks-edebiyat-konulari',
         title: 'YKS Edebiyat Konuları ve Çalışma Taktikleri',
         excerpt: 'TYT ve AYT Edebiyat konuları nelerdir? Etkili çalışma yöntemleri ve ipuçları.',
-        date: '2026-02-17',
+        date: '2027-02-17',
         category: 'Dersler',
         readTime: '7 dakika',
     },
@@ -158,7 +159,7 @@ export default function BlogPage() {
                             ✓ Ücretsiz İçerik
                         </span>
                         <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full font-medium">
-                            🎯 2026 Güncel
+                            🎯 2027 Güncel
                         </span>
                     </div>
                 </div>
@@ -294,13 +295,13 @@ export default function BlogPage() {
                     <div className="bg-white rounded-xl p-8 shadow-lg">
                         <h2 className="text-2xl font-bold text-gray-900 mb-4">YKS Blog Hakkında</h2>
                         <p className="text-gray-700 mb-4">
-                            YKS Net Hesaplama blog sayfamızda, YKS 2026 sınavına hazırlanan öğrenciler için
+                            YKS Net Hesaplama blog sayfamızda, YKS 2027 sınavına hazırlanan öğrenciler için
                             hazırladığımız kapsamlı rehberler, ipuçları ve stratejileri bulabilirsiniz.
                             TYT net hesaplama, AYT puan hesaplama, üniversite tercih stratejileri ve daha
                             fazlası hakkında detaylı makaleler.
                         </p>
                         <p className="text-gray-700 mb-4">
-                            Tüm içeriklerimiz ücretsiz ve 2026 YKS sınavı için günceldir. Düzenli olarak
+                            Tüm içeriklerimiz ücretsiz ve 2027 YKS sınavı için günceldir. Düzenli olarak
                             yeni makaleler ekliyoruz. YKS hazırlık sürecinizde başarılar dileriz!
                         </p>
                         <div className="flex flex-wrap gap-2 mt-6">

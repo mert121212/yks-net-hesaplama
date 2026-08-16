@@ -1,16 +1,17 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
-    title: '2026 AYT Puan Hesaplama: SAY, EA, SÖZ ve DİL Rehberi | YKS Net Hesaplama',
+    title: '2027 AYT Puan Hesaplama: SAY, EA, SÖZ ve DİL Rehberi | YKS Net Hesaplama',
     description: 'AYT sınavında SAY, EA, SÖZ ve DİL puanları nasıl hesaplanır? 0,5 net şartı, katsayı mantığı, başarı sırası barajları ve puan türü seçimi rehberi.',
     keywords: 'ayt puan hesaplama, say puanı, ea puanı, söz puanı, dil puanı, ayt net hesaplama, başarı sırası barajı',
     alternates: { canonical: 'https://yksnethesapla.com/blog/ayt-puan-hesaplama' },
     openGraph: {
-        title: '2026 AYT Puan Hesaplama: SAY, EA, SÖZ ve DİL Rehberi',
+        title: '2027 AYT Puan Hesaplama: SAY, EA, SÖZ ve DİL Rehberi',
         description: 'AYT sınavında SAY, EA, SÖZ ve DİL puanları nasıl hesaplanır? Katsayı mantığı ve başarı sırası barajları.',
         type: 'article',
-        publishedTime: '2026-02-26',
+        publishedTime: '2027-02-26',
         url: 'https://yksnethesapla.com/blog/ayt-puan-hesaplama',
     },
 }
@@ -31,17 +32,20 @@ export default function AYTPuanHesaplama() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">AYT</span>
-                            <time className="text-gray-600">26 Şubat 2026</time>
+                            <time className="text-gray-600">26 Şubat 2027</time>
                             <span className="text-gray-600">• 7 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            2026 AYT Puan Hesaplama: SAY, EA, SÖZ ve DİL Rehberi
+                            2027 AYT Puan Hesaplama: SAY, EA, SÖZ ve DİL Rehberi
                         </h1>
                         <p className="text-xl text-gray-600">
                             AYT, yerleştirme puanınızın yaklaşık %60&apos;ını oluşturur. Puan türlerine göre
                             netlerin getirisini bilmek stratejik bir avantaj sağlar.
                         </p>
                     </header>
+
+                    <AuthorProfile />
+
 
                     <div className="prose prose-lg max-w-none">
 
