@@ -16,13 +16,28 @@ function calcTime() {
 }
 
 export default function CountdownTimer() {
-    // Başlangıç değeri hemen hesapla — null yok, CLS yok
-    const [t, setT] = useState(calcTime)
+    const [t, setT] = useState({ d: 0, h: 0, m: 0, s: 0 })
+    const [mounted, setMounted] = useState(false)
 
     useEffect(() => {
+        setMounted(true)
+        setT(calcTime())
         const id = setInterval(() => setT(calcTime()), 1000)
         return () => clearInterval(id)
     }, [])
+
+    if (!mounted) {
+        return (
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                {['GÜN', 'SAAT', 'DAKİKA', 'SANİYE'].map(label => (
+                    <div key={label} className="bg-white rounded-xl shadow-md p-4 text-center border-l-4 border-gray-200 opacity-50">
+                        <div className="text-3xl md:text-4xl font-bold mb-1 text-gray-300">00</div>
+                        <div className="text-gray-400 font-medium text-xs tracking-widest">{label}</div>
+                    </div>
+                ))}
+            </div>
+        )
+    }
 
     const items = [
         { v: t.d, label: 'GÜN', c: 'border-blue-500 text-blue-600' },
