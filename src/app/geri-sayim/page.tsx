@@ -22,7 +22,7 @@ function getStudyTips(days: number) {
 
 // Server-side hesaplama — build anında statik
 function getDaysLeft() {
-    const yksDate = new Date('2027-06-20T10:00:00')
+    const yksDate = new Date('2027-06-19T10:15:00') // TYT 19 Haziran 2027
     const now = new Date()
     return Math.max(0, Math.floor((yksDate.getTime() - now.getTime()) / 86400000))
 }
@@ -42,22 +42,22 @@ export default function GeriSayimPage() {
             {
                 "@type": "Question",
                 "name": "YKS 2027 ne zaman?",
-                "acceptedAnswer": { "@type": "Answer", "text": "YKS 2027 sınavı iki gün olarak yapılacaktır. TYT 20 Haziran 2027 Cumartesi, AYT ve YDT 21 Haziran 2027 Pazar günü uygulanacaktır." }
+                "acceptedAnswer": { "@type": "Answer", "text": "YKS 2027 sınavı iki gün olarak yapılacaktır. TYT 19 Haziran 2027 Cumartesi, AYT ve YDT 20 Haziran 2027 Pazar günü uygulanacaktır." }
             },
             {
                 "@type": "Question",
                 "name": "YKS'ye kaç gün kaldı?",
-                "acceptedAnswer": { "@type": "Answer", "text": `YKS 2027 sınavına ${days} gün kaldı. TYT 20 Haziran 2027, AYT 21 Haziran 2027 tarihinde yapılacaktır.` }
+                "acceptedAnswer": { "@type": "Answer", "text": `YKS 2027 sınavına ${days} gün kaldı. TYT 19 Haziran 2027, AYT 20 Haziran 2027 tarihinde yapılacaktır.` }
             },
             {
                 "@type": "Question",
                 "name": "TYT sınavı saat kaçta başlıyor?",
-                "acceptedAnswer": { "@type": "Answer", "text": "TYT sınavı 20 Haziran 2027 Cumartesi günü saat 10:15'te başlamaktadır. Toplam süre 165 dakikadır." }
+                "acceptedAnswer": { "@type": "Answer", "text": "TYT sınavı 19 Haziran 2027 Cumartesi günü saat 10:15'te başlamaktadır. Toplam süre 165 dakikadır." }
             },
             {
                 "@type": "Question",
                 "name": "AYT sınavı ne zaman?",
-                "acceptedAnswer": { "@type": "Answer", "text": "AYT (Alan Yeterlilik Testi) sınavı 21 Haziran 2027 Pazar günü saat 10:15'te başlamaktadır. Toplam süre 180 dakikadır." }
+                "acceptedAnswer": { "@type": "Answer", "text": "AYT (Alan Yeterlilik Testi) sınavı 20 Haziran 2027 Pazar günü saat 10:15'te başlamaktadır. Toplam süre 180 dakikadır." }
             }
         ]
     }
@@ -76,7 +76,7 @@ export default function GeriSayimPage() {
                         YKS 2027 sınavına kalan süreyi canlı olarak takip edin.
                     </p>
                     <p className="text-sm text-gray-500">
-                        TYT: 20 Haziran 2027 (Cumartesi) · AYT &amp; YDT: 21 Haziran 2027 (Pazar)
+                        TYT: 19 Haziran 2027 (Cumartesi) · AYT &amp; YDT: 20 Haziran 2027 (Pazar)
                     </p>
                 </div>
 
@@ -140,8 +140,8 @@ export default function GeriSayimPage() {
                 <div className="bg-white rounded-2xl shadow-lg p-8">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">YKS 2027 Tarihleri ve Hazırlık Rehberi</h2>
                     <p className="text-gray-700 mb-4">
-                        <strong>TYT (Temel Yeterlilik Testi) 20 Haziran 2027</strong> Cumartesi,
-                        <strong> AYT ve YDT 21 Haziran 2027</strong> Pazar günü yapılacaktır.
+                        <strong>TYT (Temel Yeterlilik Testi) 19 Haziran 2027</strong> Cumartesi,
+                        <strong> AYT ve YDT 20 Haziran 2027</strong> Pazar günü yapılacaktır.
                     </p>
                     <p className="text-gray-700 mb-6">
                         TYT için Türkçe, Matematik, Sosyal Bilimler ve Fen Bilimleri; AYT için hedef bölümünüze göre
@@ -150,17 +150,17 @@ export default function GeriSayimPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center mb-6">
                         <div className="p-4 bg-blue-50 rounded-xl">
                             <div className="text-lg font-bold text-blue-700">TYT</div>
-                            <div className="text-sm text-blue-600 font-medium">20 Haziran 2027</div>
+                            <div className="text-sm text-blue-600 font-medium">19 Haziran 2027</div>
                             <div className="text-xs text-gray-500 mt-1">120 soru · 165 dakika</div>
                         </div>
                         <div className="p-4 bg-green-50 rounded-xl">
                             <div className="text-lg font-bold text-green-700">AYT</div>
-                            <div className="text-sm text-green-600 font-medium">21 Haziran 2027</div>
+                            <div className="text-sm text-green-600 font-medium">20 Haziran 2027</div>
                             <div className="text-xs text-gray-500 mt-1">SAY / EA / SÖZ · 80 soru</div>
                         </div>
                         <div className="p-4 bg-orange-50 rounded-xl">
                             <div className="text-lg font-bold text-orange-700">YDT</div>
-                            <div className="text-sm text-orange-600 font-medium">21 Haziran 2027</div>
+                            <div className="text-sm text-orange-600 font-medium">20 Haziran 2027</div>
                             <div className="text-xs text-gray-500 mt-1">80 soru · 120 dakika</div>
                         </div>
                     </div>

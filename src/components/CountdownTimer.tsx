@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 
-const TARGET = 1781938800000 // 2027-06-20T10:00:00+03:00
+const TARGET = 1781853300000 // 2027-06-19T10:15:00+03:00
 
 function calcTime() {
     const diff = TARGET - Date.now()
