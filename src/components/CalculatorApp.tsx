@@ -123,7 +123,7 @@ const ResultsPanel = memo(function ResultsPanel({
                 <div className="mb-6">
                     <h3 className="subsection-title">Tahmini Sıralamalar</h3>
                     <div className="mb-2 p-2 bg-yellow-50 border border-yellow-200 rounded-lg">
-                        <p className="text-xs text-yellow-800">⚠️ 2025 YKS verilerine göre tahmindir, ±%20 sapma olabilir.</p>
+                        <p className="text-xs text-yellow-800">⚠️ 2026 YKS ÖSYM resmi verilerine göre tahmindir, yığılmalara göre sapma olabilir.</p>
                     </div>
                     <div className="space-y-2 text-sm">
                         <div className="flex justify-between"><span>SAY:</span><span className="font-semibold text-green-600">{results.estimatedRanks.say?.toLocaleString('tr-TR')}</span></div>
