@@ -5,7 +5,7 @@ import AuthorProfile from '@/components/AuthorProfile'
 export const metadata: Metadata = {
     title: 'TYT\'de 60-70 Net Bandına Sıkışanlar İçin Veri Odaklı Çıkış Yolu',
     description: 'ÖSYM yerleştirme verilerine göre TYT net artırmanın kanıtlanmış yöntemleri. 60-70 net bandından kurtulmak için zaman yönetimi ve istatistiksel analiz teknikleri.',
-    keywords: 'tyt net artırma, tyt netlerim artmıyor, 60 70 net bandı, tyt net artırma taktikleri, ösym istatistikleri, yks net hesaplama',
+    keywords: 'tyt net artırma, tyt netlerim artmıyor, 60 70 net bandı, tyt net artırma taktikleri, ösym istatistikleri, yks net hesapla',
     alternates: { canonical: 'https://yksnethesapla.com/blog/tyt-net-artirma-taktikleri' },
     openGraph: {
         title: 'TYT\'de 60-70 Net Bandına Sıkışanlar İçin Veri Odaklı Çıkış Yolu',
@@ -32,117 +32,126 @@ export default function TYTNetArtirmaTaktikleri() {
 
                     <header className="mb-10">
                         <div className="flex flex-wrap items-center gap-3 mb-5">
-                            <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-bold tracking-wide uppercase">Analiz</span>
+                            <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-bold tracking-wide uppercase">Rehber</span>
                             <time className="text-slate-500 text-sm font-medium">Son Güncelleme: 16 Ağustos 2026</time>
                             <span className="text-slate-400">•</span>
-                            <span className="text-slate-500 text-sm font-medium">Okuma Süresi: 7 dk</span>
+                            <span className="text-slate-500 text-sm font-medium">Okuma Süresi: 11 dk</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6 leading-tight">
-                            TYT&apos;de 60-70 Net Bandına Sıkışanlar: İstatistiksel Çıkış Rehberi
+                            TYT&apos;de 60-70 Nette Takılıp Kalanlar: Bu Bataklıktan Nasıl Çıkılır?
                         </h1>
                         <p className="text-xl text-slate-600 font-medium leading-relaxed">
-                            Aylardır aynı netlerde takılıp kaldıysanız, sorun daha çok çalışmamanız değil, verimsiz analiz yapmanızdır. İşte binlerce öğrencinin deneme verilerinden elde ettiğimiz 3 temel kırılma noktası.
+                            Aylardır haftada 3 deneme çözüyorsun ama netlerin 65&apos;te çakılı kaldı. Sorun sende değil, denemeyi bitirince kitabı kapatıp gitmende. Gel sana çıkış yolunu göstereyim.
                         </p>
                     </header>
 
                     <AuthorProfile />
 
-                    <div className="prose prose-lg prose-indigo max-w-none text-slate-700">
+                    <div className="prose prose-lg prose-indigo max-w-none text-slate-700 mt-8">
                         <p className="lead">
-                            Türkiye genelindeki YKS deneme analizlerimizi incelediğimizde, adayların <strong>%42'sinin</strong> sınava 3 ay kala 60-75 net bandında "sabitlendiğini" görüyoruz. Bu bandı aşan ve 85+ netlere ulaşan öğrencilerin ise çalışma sürelerini artırmaktan ziyade, test çözme stratejilerini değiştirdikleri istatistiksel bir gerçektir.
+                            Şu senaryoyu muhtemelen sen de yaşıyorsun: Sabah erkenden kalktın, masaya oturdun, 165 dakikalık denemeyi çözdün. Optiği kontrol ettin; Türkçe 28, Matematik 18, Sosyal 12, Fen 7. Toplam 65 net. Sonra ne yapıyorsun? &quot;Of yine 65 geldi&quot; deyip denemeyi kenara fırlatıyorsun. Ertesi gün yine aynı, haftaya yine aynı. Kardeşim, kusura bakma ama aynı şeyleri yapıp farklı sonuç beklemek sadece zaman kaybı.
                         </p>
 
-                        <div className="my-10 bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-indigo-500 p-6 rounded-r-xl">
-                            <h3 className="flex items-center text-indigo-900 font-bold m-0 mb-2">
-                                <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
-                                Analiz Özeti: 3 Kırılma Noktası
-                            </h3>
-                            <ul className="text-indigo-800 m-0 mt-3 space-y-2">
-                                <li><strong>1.</strong> Yanlışların kök neden analizinin yapılmaması.</li>
-                                <li><strong>2.</strong> Turlama taktiğinin yanlış uygulanması (Zaman Kaybı).</li>
-                                <li><strong>3.</strong> "Deneme bitince çalışma biter" yanılgısı.</li>
+                        <p>
+                            TYT&apos;de 60-70 net aralığı adeta bir bataklıktır. Adayların neredeyse yarısı kış aylarında buraya saplanır. Bu eşiği kırıp 85-90&apos;lara fırlayanların sırrı ise daha çok saat çalışmak falan değil; denemenin <strong>anatomisini çıkarmak</strong>.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
+                            1. Adım: Hatalarını 3 Farklı Torbaya At
+                        </h2>
+                        <p>
+                            Deneme bittiğinde asıl mesai o an başlar. Yanlış yaptığın veya boş bıraktığın her sorunun yanına şu üç harften birini yazacaksın:
+                        </p>
+                        
+                        <div className="grid md:grid-cols-3 gap-6 my-8 not-prose">
+                            <div className="bg-white border border-slate-200 p-5 rounded-xl shadow-sm">
+                                <div className="text-red-500 font-bold mb-2 flex items-center gap-2">
+                                    <span className="bg-red-100 p-1.5 rounded-md text-sm">B</span> Bilgi Eksikliği
+                                </div>
+                                <p className="text-xs text-slate-600 leading-relaxed">Formülü hatırlamadın, kuralı bilmiyordun ya da kelimenin anlamını hiç duymamıştın. Çözüm basit: Aç defteri, o konunun 2 sayfalık özetine bak, 20 soru çöz, kapat.</p>
+                            </div>
+                            <div className="bg-white border border-slate-200 p-5 rounded-xl shadow-sm">
+                                <div className="text-amber-500 font-bold mb-2 flex items-center gap-2">
+                                    <span className="bg-amber-100 p-1.5 rounded-md text-sm">D</span> Dikkatsizlik & Acele
+                                </div>
+                                <p className="text-xs text-slate-600 leading-relaxed">&quot;Hangisi olamaz&quot;ı &quot;olur&quot; diye okudun, 3 ile 4&apos;ü çarpıp 14 yazdın. Çözüm: Soru kökünü yuvarlak içine almadan şıklara geçmeyeceksin.</p>
+                            </div>
+                            <div className="bg-white border border-slate-200 p-5 rounded-xl shadow-sm">
+                                <div className="text-blue-500 font-bold mb-2 flex items-center gap-2">
+                                    <span className="bg-blue-100 p-1.5 rounded-md text-sm">S</span> Süre Yetmedi
+                                </div>
+                                <p className="text-xs text-slate-600 leading-relaxed">Soruyu çözebilirdin ama 165 dakika bitti, sıra gelmedi. Çözüm: Turlama taktiğini öğreneceksin.</p>
+                            </div>
+                        </div>
+
+                        <p>
+                            İddia ediyorum, yanlışlarının en az %40&apos;ı &quot;Dikkatsizlik&quot; ve &quot;Süre&quot; torbasından çıkacak. Yani senin aslında konu eksiğin sandığın kadar çok değil, sınav yönetimi eksiğin var.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
+                            2. Adım: Turlama Taktiğini Kusursuz Uygula
+                        </h2>
+                        <p>
+                            TYT&apos;de en büyük hata bir soruyla inatlaşmaktır. Matematikte 14. soruya takıldın, 4 dakika uğraştın, çıkmadı. Sinirlendin, 2 dakika daha uğraştın... Ne oldu? 6 dakikan çöpe gitti. O 6 dakikada arkadaki 4 tane çerez geometri veya fen sorusunu çözebilirdin.
+                        </p>
+                        <p>
+                            Sınavda 3 tur kuralını uygulayacaksın:
+                        </p>
+                        <ul className="list-disc pl-6 space-y-3">
+                            <li><strong>1. Tur (İlk 100 Dakika):</strong> Sadece ve sadece okuduğunda kafanda çözümü hemen parlayan soruları çöz. 45 saniyeyi geçeceğini anladığın an yanına bir çizgi atıp hemen diğer soruya zıpla. Bu tur bittiğinde kitapçığın sonuna kadar gelmiş olmalı ve cebinde en az 60-70 garanti net görmelisin.</li>
+                            <li><strong>2. Tur (100 - 145. Dakikalar):</strong> Şimdi o yanına tek çizgi attığın, &quot;bunu yaparım ama biraz işlem var&quot; dediğin sorulara dön. Kafan rahat çünkü kolayların hepsini topladın.</li>
+                            <li><strong>3. Tur (Son 20 Dakika):</strong> Yanına iki çizgi attığın zor sorular ve optik kodlama kontrolü.</li>
+                        </ul>
+
+                        <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
+                            3. Adım: Genel Denemeyi Azalt, Branş Denemesine Yüklen
+                        </h2>
+                        <p>
+                            60 net yapan birinin haftada 4 genel deneme çözmesi vakit israfıdır. Genel deneme 3 saat sürer, analizle 4 saat. Haftanın 16 saatini denemeye harcarsan eksiklerini ne zaman kapatacaksın?
+                        </p>
+                        <p>
+                            Bunun yerine reçete şu:
+                        </p>
+                        <div className="bg-slate-50 border border-slate-200 p-6 rounded-xl my-6">
+                            <h4 className="font-bold text-slate-900 mb-3">Haftalık İdeal Branş Denemesi Programı:</h4>
+                            <ul className="space-y-2 text-sm text-slate-700">
+                                <li>• <strong>Pazartesi - Çarşamba - Cuma:</strong> Sabah kalkar kalkmaz 40 soruluk Türkçe Branş Denemesi (Hedef süre: 40-45 dk).</li>
+                                <li>• <strong>Salı - Perşembe - Cumartesi:</strong> 40 soruluk Matematik Branş Denemesi (Hedef süre: 55-60 dk).</li>
+                                <li>• <strong>Pazar:</strong> 1 Adet Tam Süreli Genel TYT Denemesi (Gerçek sınav saatinde: 10.15).</li>
                             </ul>
                         </div>
 
                         <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
-                            1. Mikro Analiz: Yanlışlarınızı Kategorize Edin
+                            4. Adım: Fen ve Sosyali Hafife Alma (Bedava Netler)
                         </h2>
                         <p>
-                            Çoğu aday deneme sonucunda sadece toplam netine bakar. Oysa asıl gelişim, optik formun görünmeyen yüzündedir. Bir soruyu neden yanlış yaptığınızı veya boş bıraktığınızı 3 alt kategoride incelemelisiniz:
+                            Eşit Ağırlıkçılar genelde Fen&apos;e, Sayısalcılar da Sosyal&apos;e elini sürmüyor. Arkadaşlar, TYT&apos;de Türkçe&apos;deki paragraf sorusu ile Fen&apos;deki hücre sorusu <strong>aynı puanı</strong> getiriyor (İkisi de yaklaşık 1.33 puan).
                         </p>
-                        
-                        <div className="grid md:grid-cols-3 gap-6 my-8 not-prose">
-                            <div className="bg-white border border-slate-200 p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                                <div className="text-red-500 font-bold mb-2 flex items-center gap-2">
-                                    <span className="bg-red-100 p-1.5 rounded-md">🔴</span> Bilgi Eksikliği
-                                </div>
-                                <p className="text-sm text-slate-600">Formülü veya kuralı hatırlamamak. Çözüm: İlgili konunun tekrarı ve konuya özel 30 soru çözümü.</p>
-                            </div>
-                            <div className="bg-white border border-slate-200 p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                                <div className="text-amber-500 font-bold mb-2 flex items-center gap-2">
-                                    <span className="bg-amber-100 p-1.5 rounded-md">🟡</span> Dikkatsizlik
-                                </div>
-                                <p className="text-sm text-slate-600">İşlem hatası veya "değildir" ifadesini kaçırma. Çözüm: Soru kökünü yuvarlak içine alma alışkanlığı.</p>
-                            </div>
-                            <div className="bg-white border border-slate-200 p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                                <div className="text-blue-500 font-bold mb-2 flex items-center gap-2">
-                                    <span className="bg-blue-100 p-1.5 rounded-md">🔵</span> Süre Yetmezliği
-                                </div>
-                                <p className="text-sm text-slate-600">Soruyu bilip vakit bulamamak. Çözüm: Branş denemelerinde kronometre kullanmak.</p>
-                            </div>
-                        </div>
-
-                        <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
-                            2. Operasyonel Turlama Taktiği (A/B Testi)
-                        </h2>
                         <p>
-                            TYT'de 120 sorunun yaklaşık <strong>%20'si zor</strong>, <strong>%10'u çok zor</strong> kategorisindedir. Bu soruları sınavın başında çözmeye çalışmak, kalan 80 kolay/orta soruyu riske atmak demektir.
-                        </p>
-                        <ul className="list-disc pl-6 space-y-2">
-                            <li><strong>A Turu (1. Geçiş):</strong> Sadece bakarak veya tek işlemle çözebileceğiniz sorular (İlk 60-70 dakika).</li>
-                            <li><strong>B Turu (2. Geçiş):</strong> Uğraştıracak ama yapabileceğinize inandığınız sorular.</li>
-                            <li><strong>C Turu (3. Geçiş):</strong> İlk görüşte hiçbir fikriniz olmayan, boş bıraktığınız sorular.</li>
-                        </ul>
-                        <p className="text-sm text-slate-500 italic mt-4">
-                            *ÖSYM verilerine göre standart sapması yüksek sorular genellikle testin son kısımlarına serpiştirilir. Turlama taktiği bu gizli puanları toplamanızı sağlar.
+                            Matematikte 1 net artırmak için 3 hafta türev integral benzeri problem çözmen gerekirken, Fen&apos;de Canlıların Temel Bileşenleri veya Asit-Baz konusunu 2 saat çalışarak garanti 2 net cebe koyabilirsin. Akıllı ol, en ucuz net neredeyse oraya koş.
                         </p>
 
-                        <div className="relative overflow-hidden bg-slate-900 rounded-2xl p-8 my-12 text-center border border-slate-800 shadow-2xl">
+                        <div className="relative overflow-hidden bg-slate-900 rounded-2xl p-8 my-12 text-center border border-slate-800 shadow-2xl not-prose">
                             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500"></div>
-                            <h3 className="text-2xl font-bold mb-4 text-white">Deneme Verilerinizi Puana Dönüştürün</h3>
-                            <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
-                                Sadece netlerinizi değil, bu netlerin güncel YKS katsayılarıyla sizi hangi sıralamaya ve hangi bölüme yerleştireceğini algoritmamızla analiz edin.
+                            <h3 className="text-2xl font-bold mb-4 text-white">Netlerin Artınca Sıralaman Ne Olacak?</h3>
+                            <p className="text-slate-300 mb-6 max-w-2xl mx-auto text-sm">
+                                65 netten 85 nete çıktığında sıralamanın nasıl 200 bin kişi birden öne zıplayacağını hesaplama motorumuzda anında gör.
                             </p>
                             <Link href="/" className="inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-slate-900 bg-white rounded-lg hover:bg-slate-50 transition-all shadow-lg hover:shadow-xl focus:ring-4 focus:ring-slate-500 focus:outline-none">
-                                Gelişmiş Net Hesaplama Motoru →
+                                Sıralama Değişimini Gör →
                             </Link>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
-                            3. Düzenli Branş Denemesi Entegrasyonu
-                        </h2>
-                        <p>
-                            60-70 bandındaki öğrencilerin en yaygın hatası, eksikleri olduğu için sürekli konu çalışmaya dönmeleridir. Bu seviyedeki bir adayın "konu eksiği" yoktur, "pratik ve soru tipi eksiği" vardır.
-                        </p>
-                        <p>
-                            Haftada 1 genel deneme yerine, <strong>haftada 3 Türkçe, 3 Matematik branş denemesi</strong> çözmek, spesifik kaslarınızı çok daha hızlı geliştirir. Özellikle branş denemelerinde <em>40 soruyu 45 dakikada değil, 40 dakikada çözmeye çalışarak</em> beyin kaslarınızı hıza alıştırmalısınız.
-                        </p>
-
                         <div className="mt-16 pt-8 border-t border-slate-200">
-                            <h3 className="text-xl font-bold text-slate-900 mb-6 flex items-center">
-                                <svg className="w-5 h-5 mr-2 text-indigo-500" fill="currentColor" viewBox="0 0 20 20"><path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"></path></svg>
-                                İleri Düzey Okumalar
-                            </h3>
+                            <h3 className="text-xl font-bold text-slate-900 mb-6">İlgili Rehberler</h3>
                             <div className="grid md:grid-cols-2 gap-4 not-prose">
-                                <Link href="/blog/tyt-net-hesaplama-rehberi" className="group p-5 bg-white border border-slate-200 rounded-xl hover:border-indigo-500 hover:shadow-md transition-all">
-                                    <div className="text-xs font-bold text-indigo-600 mb-1 uppercase tracking-wider">İstatistik</div>
-                                    <h4 className="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">TYT Net Hesaplama: Standart Sapma Etkisi</h4>
-                                    <p className="text-sm text-slate-500 mt-2 line-clamp-2">0.5 net kuralı ve standart sapmanın genel sıralamaya doğrudan etkisi üzerine verisel inceleme.</p>
+                                <Link href="/blog/tyt-kesin-cikan-konular" className="group p-5 bg-white border border-slate-200 rounded-xl hover:border-indigo-500 hover:shadow-md transition-all">
+                                    <h4 className="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">TYT Kesin Çıkan Konular</h4>
+                                    <p className="text-sm text-slate-500 mt-2 line-clamp-2">Her sene ÖSYM&apos;nin istisnasız sorduğu altın konular listesi.</p>
                                 </Link>
-                                <Link href="/blog/yks-hazirlik-programi" className="group p-5 bg-white border border-slate-200 rounded-xl hover:border-indigo-500 hover:shadow-md transition-all">
-                                    <div className="text-xs font-bold text-indigo-600 mb-1 uppercase tracking-wider">Planlama</div>
-                                    <h4 className="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">Veri Odaklı YKS Çalışma Programı</h4>
-                                    <p className="text-sm text-slate-500 mt-2 line-clamp-2">Optimum tekrar aralıkları (Spaced Repetition) kullanılarak hazırlanan çalışma takvimi.</p>
+                                <Link href="/blog/tyt-matematik-konulari" className="group p-5 bg-white border border-slate-200 rounded-xl hover:border-indigo-500 hover:shadow-md transition-all">
+                                    <h4 className="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">TYT Matematik Konuları</h4>
+                                    <p className="text-sm text-slate-500 mt-2 line-clamp-2">Soru dağılımı ve çalışma taktikleri.</p>
                                 </Link>
                             </div>
                         </div>
@@ -152,5 +161,3 @@ export default function TYTNetArtirmaTaktikleri() {
         </div>
     )
 }
-
-

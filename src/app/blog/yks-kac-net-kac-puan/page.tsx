@@ -33,203 +33,85 @@ export default function YKSKacNetKacPuan() {
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Rehber</span>
                             <time className="text-gray-600">22 Şubat 2026</time>
-                            <span className="text-gray-600">• 6 dakika okuma</span>
+                            <span className="text-gray-600">• 10 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            YKS&apos;de Kaç Net Kaç Puan Eder? Ham Puan ve Yerleştirme Puanı Farkı
+                            YKS&apos;de Kaç Net Kaç Puan Eder? Gerçekçi Net - Puan Tablosu
                         </h1>
+                        <p className="text-xl text-gray-600">
+                            &quot;Şu kadar net yapsam kaç puan alırım?&quot; sorusunun arkasındaki matematik. Ham puan ile OBP&apos;li yerleştirme puanının farkları ve bölüm hedefleri.
+                        </p>
                     </header>
 
                     <AuthorProfile />
 
-
-                    <div className="prose prose-lg max-w-none">
-                        <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                            Birçok aday &quot;50 net yaptım, kaç puan gelir?&quot; diye sorar. Ancak YKS&apos;de iki farklı puan türü
-                            vardır: <strong>Ham Puan</strong> ve <strong>Yerleştirme Puanı.</strong> Bu farkı bilmeden
-                            yapılan hesaplamalar yanıltıcı olabilir.
+                    <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
+                        <p className="text-lg leading-relaxed">
+                            Her deneme sınavından sonra arkadaşlar arasında dönen klasik sohbet: &quot;Ben 70 net yaptım, 350 gelir mi?&quot; ya da &quot;Tıp için kaç net lazım?&quot;. YKS&apos;de puan hesaplamak tek bir formülle olmuyor çünkü ÖSYM sınavın genel zorluğuna göre <strong>standart sapma</strong> uyguluyor. Yine de geçmiş yılların katsayı ortalamalarına bakarak çok net ve gerçekçi tahminler yapabiliriz.
                         </p>
 
-                        <div className="grid md:grid-cols-2 gap-6 my-8">
-                            <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg">
-                                <h3 className="font-bold text-blue-900 mb-2">Ham Puan Nedir?</h3>
-                                <p className="text-gray-700 text-sm">
-                                    Sadece netlerinizin katsayılarla çarpılmasıyla elde edilen puandır.
-                                    Taban 100 puan + netlerin getirisi. <strong>Maksimum 500 puan.</strong>
-                                </p>
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                            Ham Puan vs Yerleştirme Puanı: Aradaki Fark Ne?
+                        </h2>
+                        <div className="grid md:grid-cols-2 gap-6 my-6">
+                            <div className="bg-slate-50 border border-slate-200 p-6 rounded-xl">
+                                <h3 className="font-bold text-slate-900 text-lg mb-2">Ham Puan (Sınav Puanı)</h3>
+                                <p className="text-sm text-slate-600">ÖSYM&apos;nin verdiği 100 taban puanın üstüne TYT ve AYT netlerinizin katsayılarla çarpılıp eklenmesiyle oluşur. <strong>Tavanı 500 puandır</strong>. OBP (okul puanı) bu puana dahil değildir.</p>
                             </div>
-                            <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded-lg">
-                                <h3 className="font-bold text-green-900 mb-2">Yerleştirme Puanı Nedir?</h3>
-                                <p className="text-gray-700 text-sm">
-                                    Ham puanınıza OBP&apos;nin eklenmiş halidir. Üniversite tercihleri
-                                    yerleştirme puanı ve başarı sırasına göre yapılır.
-                                </p>
+                            <div className="bg-indigo-50 border border-indigo-200 p-6 rounded-xl">
+                                <h3 className="font-bold text-indigo-900 text-lg mb-2">Y-Puan (Yerleştirme Puanı)</h3>
+                                <p className="text-sm text-indigo-800">Ham puanınızın üstüne lise diploma notunuzdan gelen OBP&apos;nin (maksimum 60 puan) eklenmiş halidir. <strong>Tavanı 560 puandır</strong>. Tercihler sadece bu puanla yapılır!</p>
                             </div>
                         </div>
 
-                        <div className="bg-gray-50 border-l-4 border-gray-400 p-5 rounded-lg mb-8">
-                            <h3 className="font-bold text-gray-900 mb-2">Net Getirisi (Tahmini)</h3>
-                            <ul className="text-gray-700 text-sm space-y-1">
-                                <li>• 1 TYT Neti: <strong>~1,33 puan</strong></li>
-                                <li>• 1 AYT Neti: <strong>~3,00 puan</strong></li>
-                                <li>• Standart Sapma: Türkiye genelinde az kişinin çözdüğü sorular biraz daha fazla puan getirebilir.</li>
-                            </ul>
-                        </div>
-
-                        <div className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8">
-                            <h3 className="font-bold text-blue-900 mb-3">💡 Önemli Not</h3>
-                            <p className="text-gray-700">
-                                Aşağıdaki tablolar tahmini değerlerdir. Gerçek puanlar sınavın zorluğuna göre
-                                değişebilir. Kesin puanınızı öğrenmek için hesaplama aracımızı kullanın.
-                            </p>
-                        </div>
-
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">TYT Net ve Puan İlişkisi</h2>
-
-                        <div className="bg-amber-50 border-l-4 border-amber-500 p-6 my-6 rounded-lg">
-                            <h3 className="font-bold text-amber-900 mb-2">⚠️ Önemli Bilgi</h3>
-                            <p className="text-gray-700">
-                                TYT tek başına bir yerleştirme puanı üretmez. SAY, EA, SÖZ ve DİL puanları
-                                TYT <strong>ve</strong> AYT netlerinin birlikte hesaplanmasıyla oluşur.
-                                Aşağıdaki tablo, TYT netinin nihai puana katkısını gösterir; gerçek puanınız
-                                AYT netlerinize de bağlıdır.
-                            </p>
-                        </div>
-
-                        <div className="overflow-x-auto my-8">
-                            <table className="min-w-full bg-white border border-gray-300 rounded-lg">
-                                <thead className="bg-blue-100">
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                            TYT Netlerine Göre Tahmini Puan Katkısı
+                        </h2>
+                        <div className="overflow-x-auto my-6">
+                            <table className="min-w-full bg-white border border-gray-300 rounded-lg text-sm">
+                                <thead className="bg-blue-50">
                                     <tr>
-                                        <th className="px-6 py-3 text-left font-semibold border-b">TYT Toplam Net</th>
-                                        <th className="px-6 py-3 text-left font-semibold border-b">TYT Katkısı (tahmini)</th>
-                                        <th className="px-6 py-3 text-left font-semibold border-b">Seviye</th>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">TYT Toplam Net</th>
+                                        <th className="px-5 py-3 text-center font-semibold border-b">Tahmini Ham TYT Puanı</th>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Seviye & Yorum</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr className="border-b bg-green-50">
-                                        <td className="px-6 py-4">110-120 net</td>
-                                        <td className="px-6 py-4 font-semibold">~146-160 puan katkı</td>
-                                        <td className="px-6 py-4 text-green-700">Mükemmel</td>
-                                    </tr>
-                                    <tr className="border-b">
-                                        <td className="px-6 py-4">90-110 net</td>
-                                        <td className="px-6 py-4 font-semibold">~120-146 puan katkı</td>
-                                        <td className="px-6 py-4 text-green-600">Çok İyi</td>
-                                    </tr>
-                                    <tr className="border-b bg-blue-50">
-                                        <td className="px-6 py-4">70-90 net</td>
-                                        <td className="px-6 py-4 font-semibold">~93-120 puan katkı</td>
-                                        <td className="px-6 py-4 text-blue-700">İyi</td>
-                                    </tr>
-                                    <tr className="border-b">
-                                        <td className="px-6 py-4">50-70 net</td>
-                                        <td className="px-6 py-4 font-semibold">~67-93 puan katkı</td>
-                                        <td className="px-6 py-4 text-yellow-700">Orta</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="px-6 py-4">30-50 net</td>
-                                        <td className="px-6 py-4 font-semibold">~40-67 puan katkı</td>
-                                        <td className="px-6 py-4 text-orange-700">Geliştirilmeli</td>
-                                    </tr>
+                                    <tr className="border-b bg-green-50"><td className="px-5 py-3 font-bold text-slate-900">100 – 115 Net</td><td className="px-5 py-3 text-center font-bold text-emerald-700">430 – 480 Puan</td><td>İlk 10.000 (Zirve Seviye)</td></tr>
+                                    <tr className="border-b"><td className="px-5 py-3 font-bold text-slate-900">85 – 100 Net</td><td className="px-5 py-3 text-center font-bold text-blue-700">380 – 430 Puan</td><td>Çok İyi (Tıp, Hukuk, İyi Müh.)</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-bold text-slate-900">70 – 85 Net</td><td className="px-5 py-3 text-center font-bold text-indigo-700">330 – 380 Puan</td><td>İyi (Devlet Üniversiteleri)</td></tr>
+                                    <tr className="border-b"><td className="px-5 py-3 font-bold text-slate-900">50 – 70 Net</td><td className="px-5 py-3 text-center font-bold text-amber-700">270 – 330 Puan</td><td>Orta Segment (Yığılma Bölgesi)</td></tr>
+                                    <tr><td className="px-5 py-3 font-bold text-slate-900">30 – 50 Net</td><td className="px-5 py-3 text-center font-bold text-red-700">200 – 270 Puan</td><td>Geliştirilmeli (Temel Eksik)</td></tr>
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-xs text-gray-500 mb-8">* Baz puan (100) + TYT katkısı (net × 1.33) + OBP katkısı = AYT olmadan temel puan. Nihai puan AYT netlerinize göre değişir.</p>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">SAY Puanı Net-Puan Tablosu</h2>
-                        <p className="text-gray-700 mb-4">
-                            Aşağıdaki tablo, TYT tam net (120) + OBP katkısı olmadan, yalnızca AYT SAY netine göre
-                            tahmini SAY puanlarını gösterir. Gerçek puanınız TYT netlerinize ve OBP'nize göre değişir.
-                        </p>
-
-                        <div className="overflow-x-auto my-8">
-                            <table className="min-w-full bg-white border border-gray-300 rounded-lg">
-                                <thead className="bg-green-100">
-                                    <tr>
-                                        <th className="px-6 py-3 text-left font-semibold border-b">AYT SAY Net (toplam)</th>
-                                        <th className="px-6 py-3 text-left font-semibold border-b">Tahmini SAY Puanı*</th>
-                                        <th className="px-6 py-3 text-left font-semibold border-b">Hedef Bölümler</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b bg-green-50">
-                                        <td className="px-6 py-4">70-80 net</td>
-                                        <td className="px-6 py-4 font-semibold">~460-500</td>
-                                        <td className="px-6 py-4 text-sm">Tıp (İyi Üniversiteler)</td>
-                                    </tr>
-                                    <tr className="border-b">
-                                        <td className="px-6 py-4">55-70 net</td>
-                                        <td className="px-6 py-4 font-semibold">~410-460</td>
-                                        <td className="px-6 py-4 text-sm">Mühendislik (İyi Üniversiteler)</td>
-                                    </tr>
-                                    <tr className="border-b bg-blue-50">
-                                        <td className="px-6 py-4">40-55 net</td>
-                                        <td className="px-6 py-4 font-semibold">~360-410</td>
-                                        <td className="px-6 py-4 text-sm">Mühendislik (Orta Üniversiteler)</td>
-                                    </tr>
-                                    <tr className="border-b">
-                                        <td className="px-6 py-4">25-40 net</td>
-                                        <td className="px-6 py-4 font-semibold">~310-360</td>
-                                        <td className="px-6 py-4 text-sm">Fen Fakülteleri</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="px-6 py-4">10-25 net</td>
-                                        <td className="px-6 py-4 font-semibold">~260-310</td>
-                                        <td className="px-6 py-4 text-sm">MYO, Açık Öğretim</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                            SAY, EA ve SÖZ Puan Türlerinde Hedef Netler
+                        </h2>
+                        <div className="space-y-4 my-6">
+                            <div className="p-5 bg-green-50 border-l-4 border-green-600 rounded-lg">
+                                <h4 className="font-bold text-green-900">Tıp Fakültesi İçin Ortalama Netler:</h4>
+                                <p className="text-sm text-gray-700 mt-1">TYT: 95-105 Net | AYT Mat: 34-38 Net | AYT Fen: 32-37 Net (Toplam ~470+ Yerleştirme Puanı)</p>
+                            </div>
+                            <div className="p-5 bg-blue-50 border-l-4 border-blue-600 rounded-lg">
+                                <h4 className="font-bold text-blue-900">Hukuk Fakültesi İçin Ortalama Netler:</h4>
+                                <p className="text-sm text-gray-700 mt-1">TYT: 75-88 Net | AYT Mat: 24-32 Net | AYT Edebiyat-Sos-1: 30-36 Net (Toplam ~410+ Yerleştirme Puanı)</p>
+                            </div>
+                            <div className="p-5 bg-purple-50 border-l-4 border-purple-600 rounded-lg">
+                                <h4 className="font-bold text-purple-900">Mühendislikler (İyi Devlet Üni.) İçin Ortalama Netler:</h4>
+                                <p className="text-sm text-gray-700 mt-1">TYT: 80-95 Net | AYT Mat: 28-35 Net | AYT Fen: 25-32 Net (Toplam ~420+ Yerleştirme Puanı)</p>
+                            </div>
                         </div>
-                        <p className="text-xs text-gray-500 mb-8">* TYT ~100 net varsayımıyla tahmini değerlerdir. ÖSYM kesin katsayıları açıklamaz.</p>
 
-                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-12 text-center text-white">
-                            <h2 className="text-3xl font-bold mb-4">Kendi Puanınızı Hesaplayın!</h2>
-                            <p className="text-xl mb-6 text-blue-100">
-                                Netlerinizi girerek gerçek puanınızı öğrenin
+                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
+                            <h3 className="text-2xl font-bold mb-3">Kendi Netlerin Kaç Puan Getiriyor?</h3>
+                            <p className="text-blue-100 mb-6">
+                                Deneme sonuçlarını girerek tüm puan türlerini ve tahmini başarı sıranı hemen hesapla.
                             </p>
-                            <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
-                                Hesapla →
+                            <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
+                                Hemen Hesapla →
                             </Link>
-                        </div>
-
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Net Artırma Stratejileri</h2>
-
-                        <div className="space-y-6 my-8">
-                            <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
-                                <h3 className="font-bold text-green-900 mb-2">1. Zayıf Konuları Güçlendir</h3>
-                                <p className="text-gray-700">
-                                    Hangi konularda daha çok yanlış yapıyorsanız o konulara odaklanın.
-                                    1 konuyu tam öğrenmek, 10 konuyu yarım öğrenmekten iyidir.
-                                </p>
-                            </div>
-
-                            <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
-                                <h3 className="font-bold text-blue-900 mb-2">2. Düzenli Deneme Çöz</h3>
-                                <p className="text-gray-700">
-                                    Haftada en az 2 deneme çözün. Zaman yönetimini öğrenin ve
-                                    sınav stresine alışın.
-                                </p>
-                            </div>
-
-                            <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-600">
-                                <h3 className="font-bold text-purple-900 mb-2">3. Yanlışlarını Analiz Et</h3>
-                                <p className="text-gray-700">
-                                    Her deneme sonrası yanlışlarınızı inceleyin. Aynı hataları
-                                    tekrar etmeyin.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="border-t pt-8 mt-12">
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">İlgili Makaleler</h3>
-                            <div className="grid md:grid-cols-2 gap-4">
-                                <Link href="/blog/yks-net-hesaplama-nasil-yapilir" className="p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
-                                    <p className="font-semibold text-blue-900">YKS Net Hesaplama →</p>
-                                </Link>
-                                <Link href="/blog/yks-hazirlik-programi" className="p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
-                                    <p className="font-semibold text-green-900">YKS Hazırlık Programı →</p>
-                                </Link>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -237,5 +119,3 @@ export default function YKSKacNetKacPuan() {
         </div>
     )
 }
-
-

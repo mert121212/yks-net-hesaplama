@@ -3,9 +3,9 @@ import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
-    title: 'YKS Hazırlık Programı 2027: Pomodoro, Feynman ve Ebbinghaus Teknikleri',
-    description: 'Bilimsel öğrenme yöntemleriyle YKS hazırlığı. Pomodoro 2.0, Feynman tekniği, Ebbinghaus unutma eğrisi ve MEB kaynakları. 2027 YKS için güncel rehber.',
-    keywords: 'yks hazırlık programı, pomodoro tekniği, feynman tekniği, ebbinghaus, yks çalışma 2027, meb kaynakları',
+    title: 'YKS Hazırlık Programı 2027: Bilimsel Öğrenme Teknikleri',
+    description: 'Pomodoro tekniği, Feynman metodu ve Ebbinghaus unutma eğrisiyle YKS hazırlığı. Haftalık ve günlük örnek çalışma şablonları.',
+    keywords: 'yks hazırlık programı, yks ders çalışma programı, tyt ayt programı, pomodoro yks, verimli ders çalışma',
     alternates: { canonical: 'https://yksnethesapla.com/blog/yks-hazirlik-programi' },
     openGraph: {
         title: 'YKS Hazırlık Programı 2027: Bilimsel Öğrenme Teknikleri',
@@ -33,143 +33,95 @@ export default function YKSHazirlikProgrami() {
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Hazırlık</span>
                             <time className="text-gray-600">20 Şubat 2026</time>
-                            <span className="text-gray-600">• 10 dakika okuma</span>
+                            <span className="text-gray-600">• 12 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            YKS Hazırlık Programı 2027: Bilimsel Öğrenme Teknikleri
+                            Günde 10 Saat Çalışıp Neti Artmayanlara: Bilimsel YKS Programı
                         </h1>
-                        <p className="text-xl text-gray-700">
-                            "Çok çalış" demek yetmez. Nasıl öğrenildiği, ne kadar çalışıldığından daha önemlidir.
-                            İşte milyonlarca adayın önünüze geçmesini sağlayacak bilim destekli 2027 YKS hazırlık rehberi.
+                        <p className="text-xl text-gray-600">
+                            Masada saatlerce oturup telefona bakarak geçirilen 8 saat değil, odaklanmış 4 saat derece yaptırır. Feynman ve Ebbinghaus ile sürdürülebilir çalışma planı.
                         </p>
                     </header>
 
                     <AuthorProfile />
 
-                    <div className="prose prose-lg max-w-none text-gray-700 mt-8">
-                        <p className="text-lg leading-relaxed mb-6">
-                            Rehberlik hocalarınızın "Günde 10 saat masadan kalkmayacaksın!" veya "Günde 500 soru çözmeyen 
-                            üniversiteyi rüyasında görür" şeklindeki o korkunç tavsiyelerini bir kenara bırakın. 2027 YKS maratonunu, 
-                            masada en çok dirsek çürütenler değil, beyninin nasıl öğrendiğini keşfederek <strong>verimli çalışanlar</strong> kazanacak.
-                        </p>
-                        
-                        <p className="mb-6">
-                            Saatlerce kitaba bakıp hiçbir şey anlamadığınız, ertesi gün çözdüğünüz testte sanki o konuyu 
-                            hayatınızda ilk defa görüyormuş gibi hissettiğiniz o anları düşünün. İşte bu, yanlış çalışma yönteminin 
-                            beyninize kestiği cezadır. Dünya çapında kanıtlanmış bilimsel öğrenme tekniklerini (Pomodoro 2.0, Feynman 
-                            ve Ebbinghaus) YKS sistemine nasıl entegre edeceğinizi adım adım inceleyelim.
+                    <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
+                        <p className="text-lg leading-relaxed">
+                            Her sene binlerce öğrenci aynı hataya düşüyor: Kırtasiyeden rengarenk fosforlu kalemler alınıyor, internetten &quot;günde 14 saat çalışan tıpçının programı&quot; indirilip duvara asılıyor. İlk 3 gün gaza basılıyor, dördüncü gün tükenmişlik sendromu başlıyor ve program çöpe gidiyor.
                         </p>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6 border-b pb-2">
-                            1. Pomodoro 2.0: TYT - AYT İçin İleri Seviye Odaklanma
+                        <p>
+                            Gerçekçi olalım: <strong>En iyi ders çalışma programı, senin gerçekten uygulayabildiğin programdır</strong>. Beynin çalışma fizyolojisine aykırı, robotsu planlar sadece vicdan azabı yaratır. Gel bilimsel olarak kanıtlanmış tekniklerle gerçek bir plan nasıl yapılır bakalım.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                            1. Ebbinghaus Unutma Eğrisini Yenmek (Aralıklı Tekrar)
                         </h2>
-                        
-                        <p className="mb-4">
-                            Klasik Pomodoro tekniğini mutlaka duymuşsunuzdur: 25 dakika çalış, 5 dakika mola ver. Bu teknik, 
-                            ders çalışmaya yeni başlayan veya dikkat süresi çok kısa olan bir öğrenci için harika bir "ısınma" turudur. 
-                            Ancak gerçekçi olalım; YKS'de sizi 165 dakikalık (TYT) ve 180 dakikalık (AYT) devasa seanslar bekliyor.
-                        </p>
-                        
-                        <p className="mb-6">
-                            25 dakikada bir mola veren beyin, sınav anında 40. dakikadan sonra isyan etmeye, odaklanamamaya başlar. 
-                            İşte bu yüzden YKS öğrencileri için <strong>Pomodoro 2.0 (50/10 Kuralı)</strong> hayat kurtarır.
+                        <p>
+                            Alman psikolog Hermann Ebbinghaus&apos;un araştırmalarına göre, yeni öğrendiğin bir bilginin <strong>%70&apos;ini ilk 24 saat içinde</strong> unutursun. 1 ay sonra ise geriye sadece %10-15 kalır. Yani sen bugün 6 saat Fizik çalışıp 1 ay boyunca o konuya hiç bakmazsan, o 6 saatin 5 saati çöp olmuştur.
                         </p>
 
-                        <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 my-6 shadow-sm">
-                            <h3 className="font-bold mb-4 text-xl text-gray-900">Nasıl Uygulanır?</h3>
-                            <ul className="space-y-4">
-                                <li>
-                                    <strong>Aşama 1:</strong> Tam 50 dakika boyunca telefon odanın dışında olacak şekilde konuya 
-                                    veya teste odaklanın. Bu süre zarfında su içmek dışında masadan kalkmak kesinlikle yasak. Sınav
-                                    kondisyonunuz böyle artar.
-                                </li>
-                                <li>
-                                    <strong>Aşama 2:</strong> Telefonun alarmı çaldığında, sorunun tam ortasında bile olsanız kalemi 
-                                    bırakıp 10 dakikalık mola verin. Bu mola, sosyal medyaya girmek için değildir; beynin bilgiyi 
-                                    işlemesi için gözlerinizi dinlendirme ve esneme vakti.
-                                </li>
+                        <div className="bg-slate-50 border border-slate-200 p-6 rounded-xl my-6">
+                            <h4 className="font-bold text-slate-900 mb-3">Altın Tekrar Takvimi:</h4>
+                            <ul className="space-y-2 text-sm text-slate-700">
+                                <li>• <strong>1. Tekrar (Aynı Gün):</strong> Konuyu çalıştıktan 8-10 saat sonra (gece yatmadan önce) 15 dakikalık hızlı özet okuması.</li>
+                                <li>• <strong>2. Tekrar (3 Gün Sonra):</strong> Konuya dair 20 farklı soru çözümü.</li>
+                                <li>• <strong>3. Tekrar (2 Hafta Sonra):</strong> Karışık branş denemesinde o konunun sorularına odaklanma.</li>
+                                <li>• <strong>4. Tekrar (1 Ay Sonra):</strong> Genel deneme analizi.</li>
                             </ul>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6 border-b pb-2">
-                            2. Feynman Tekniği: O Konuyu Gerçekten Anladın mı?
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                            2. Feynman Tekniği: Anlamadığın Yeri Hemen Yakala
                         </h2>
-                        
-                        <p className="mb-4">
-                            Nobel ödüllü efsanevi fizikçi Richard Feynman'ın geliştirdiği bu yöntem, öğrencilerin en çok düştüğü 
-                            "okudum, altını çizdim, anladım" illüzyonunu paramparça eder. Pasif okuma beyni kandırır. Feynman 
-                            tekniği ise sizi aktif öğrenmeye mecbur bırakır.
+                        <p>
+                            Nobel ödüllü fizikçi Richard Feynman&apos;ın meşhur öğrenme metodunu YKS&apos;ye uyarlıyoruz: Bir konuyu (örneğin Hücre Bölünmeleri veya Logaritma) çalıştın. Kitabı kapat. Karşında 10 yaşında bir çocuk varmış gibi o konuyu sıfırdan, en basit cümlelerle sesli olarak anlatmaya çalış.
+                        </p>
+                        <p>
+                            Eğer anlatırken bir noktada takılıp &quot;kem-küm&quot; ediyorsan, bil ki o kısmı anlamamışsın, sadece ezberlemişsin. Kitabı tekrar aç, sadece o tıkandığın 1-2 sayfayı oku ve tekrar anlat. Bu yöntemle konuyu 3 kat daha hızlı kavrarsın.
                         </p>
 
-                        <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl my-8 shadow-sm">
-                            <h3 className="font-bold text-amber-900 mb-2">Feynman'ı YKS'ye Uyarlamak</h3>
-                            <p className="text-amber-800 leading-relaxed mb-3">
-                                Diyelim ki Fizik'ten "Newton'un Hareket Yasaları" konusunu çalıştınız. Kitabı kapatın. Odanızda 
-                                konuyu hiç bilmeyen birisi varmış gibi bu konuyu en basit kelimelerle, günlük hayattan örnekler 
-                                vererek <strong>sesli olarak</strong> ona anlatın.
-                            </p>
-                            <p className="text-amber-800 leading-relaxed font-bold">
-                                Eğer bir yerde takılır, teknik terimlerin arkasına saklanır veya cümleyi bağlayamazsanız; işte 
-                                orası sizin o konudaki kör noktanızdır ve sınavda soru büyük ihtimalle oradan gelir!
-                            </p>
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                            3. 50 + 10 Pomodoro Döngüsü (Odaklanma Kasını Büyüt)
+                        </h2>
+                        <p>
+                            Klasik 25+5 dakikalık Pomodoro YKS için biraz kısadır çünkü YKS sınavları 165 ve 180 dakikadır. Beynini uzun süre odaklanmaya alıştırmak için <strong>50 Dakika Ders + 10 Dakika Mola</strong> döngüsünü uygula.
+                        </p>
+                        <p className="text-sm text-red-700 bg-red-50 p-4 rounded-lg">
+                            <strong>Önemli Kural:</strong> 10 dakikalık molada telefona bakıp Instagram veya TikTok kaydırma! Ekran ışığı beynin dinlenmesini engeller. Balkona çık, su iç, gerinme hareketleri yap ve masaya dön.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                            Örnek Günlük YKS Çalışma Şablonu (Mezun / Evde Hazırlananlar)
+                        </h2>
+                        <div className="overflow-x-auto my-6">
+                            <table className="min-w-full bg-white border border-gray-300 rounded-lg text-sm">
+                                <thead className="bg-blue-50">
+                                    <tr>
+                                        <th className="px-4 py-3 text-left font-semibold border-b">Zaman Dilimi</th>
+                                        <th className="px-4 py-3 text-left font-semibold border-b">Etkinlik</th>
+                                        <th className="px-4 py-3 text-left font-semibold border-b">Açıklama</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b"><td className="px-4 py-3 font-bold">08:30 – 09:30</td><td>Sabah Rutini</td><td>20 Paragraf + 20 Problem çözümü (Zihin açma)</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-4 py-3 font-bold">09:45 – 12:30</td><td>1. Blok: Ağır Konu</td><td>AYT Matematik (LTİ / Trigonometri konu + soru)</td></tr>
+                                    <tr className="border-b"><td className="px-4 py-3 font-bold">12:30 – 13:30</td><td>Öğle Molası</td><td>Yemek ve yürüyüş (Tamamen ders dışı)</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-4 py-3 font-bold">13:30 – 16:00</td><td>2. Blok: Fen / Edebiyat</td><td>AYT Fizik / Kimya veya AYT Edebiyat çalışması</td></tr>
+                                    <tr className="border-b"><td className="px-4 py-3 font-bold">16:15 – 18:00</td><td>3. Blok: TYT Pratik</td><td>Branş Denemesi çözümü ve hata analizi</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-4 py-3 font-bold">19:30 – 21:30</td><td>4. Blok: Günün Tekrarı</td><td>Hata defterini çözme ve ertesi günün planını çıkarma</td></tr>
+                                </tbody>
+                            </table>
                         </div>
-
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6 border-b pb-2">
-                            3. Ebbinghaus Unutma Eğrisi: Acımasız Gerçek
-                        </h2>
-                        
-                        <p className="mb-4">
-                            Bir konuyu harika çalıştınız, bütün testleri full çektiniz. İki hafta sonraki kurumsal denemede 
-                            aynı konudan çıkan soruda kalem oynatamadınız. Neden? Alman psikolog Hermann Ebbinghaus'a göre, insan 
-                            beyni çok iyi öğrendiği bir bilginin bile <strong>%70'ini ilk 24 saat içinde, %90'ını ise 1 hafta 
-                            içinde silip atar.</strong>
-                        </p>
-
-                        <p className="mb-6">
-                            ÖSYM'nin o sevdiği bilgi yüklü AYT konularını Haziran ayına kadar aklınızda tutmanın tek bir sırrı 
-                            vardır: Zeka değil, <strong>sistemli aralıklı tekrardır (Spaced Repetition).</strong> 
-                            Öğrendiğiniz bir konuyu aynı günün akşamı 10 dakika gözden geçirmeli, 1 hafta sonra o konudan 1 test 
-                            çözmeli, 1 ay sonra ise sarmal branş denemeleriyle o konuyu tazelemelisiniz.
-                        </p>
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
-                            <h2 className="text-3xl font-bold mb-4">Gelişiminizi Takip Edin</h2>
-                            <p className="text-xl mb-6 text-blue-100">
-                                Çalışmalarınızın meyvesini verip vermediğini görmek için güncel netlerinizle sıralamanızı hesaplayın.
+                            <h3 className="text-2xl font-bold mb-3">Çalışmalarının Sonucunu Test Et</h3>
+                            <p className="text-blue-100 mb-6">
+                                Deneme netlerini sisteme gir, hedeflediğin üniversiteye kaç net kaldığını hemen gör.
                             </p>
-                            <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
-                                Hemen YKS Sıralamanı Hesapla →
+                            <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
+                                Net Hesapla →
                             </Link>
-                        </div>
-
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6 border-b pb-2">
-                            Örnek Çalışma Programı İskeleti
-                        </h2>
-                        
-                        <p className="mb-4">
-                            Hazır çalışma programları genelde işe yaramaz çünkü herkesin biyolojik saati, okul/dershane 
-                            durumu ve bilgi seviyesi farklıdır. Kendi programınızı yaparken şu iskeleti temel almalısınız:
-                        </p>
-
-                        <ul className="list-disc pl-6 space-y-3 mb-8 text-gray-700">
-                            <li><strong>Pazartesi - Çarşamba - Cuma:</strong> Ağır konuların ve zor derslerin (AYT Matematik, AYT Fizik vb.) çalışıldığı ve konu özetlerinin çıkarıldığı "Yükleme Günleri".</li>
-                            <li><strong>Salı - Perşembe:</strong> Bol soru çözümü yapılan, TYT branş denemelerinin ve "Ebbinghaus (Geçmiş konu tekrarı)" çalışmalarının yapıldığı günler.</li>
-                            <li><strong>Cumartesi:</strong> Sabah 10.15'te gerçek sınav saatinde bir genel deneme çözümü ve öğleden sonra bu denemenin kapsamlı hata analizi. "Hangi soruları dikkatsizlikten, hangilerini bilgi eksikliğinden kaçırdım?"</li>
-                            <li><strong>Pazar:</strong> Eksik tamamlama ve öğleden sonra zihni boşaltmak için tam dinlenme. Zihin dinlenmeden yeni haftaya hazırlanamaz.</li>
-                        </ul>
-
-                        <div className="border-t pt-8 mt-12">
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Sınav Taktikleri İçin Önerilenler</h3>
-                            <div className="grid md:grid-cols-2 gap-4">
-                                <Link href="/blog/tyt-net-artirma-taktikleri" className="p-5 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors border border-blue-200">
-                                    <p className="font-bold text-blue-900 mb-1">TYT Net Artırma Taktikleri →</p>
-                                    <p className="text-sm text-gray-600">Netleriniz 50-60 bandında takılıp kaldıysa yapmanız gerekenler.</p>
-                                </Link>
-                                <Link href="/blog/yks-1-net-kac-kisi-atar" className="p-5 bg-green-50 rounded-xl hover:bg-green-100 transition-colors border border-green-200">
-                                    <p className="font-bold text-green-900 mb-1">1 Netin Gerçek Gücü →</p>
-                                    <p className="text-sm text-gray-600">Standart sapma ve 1 netin YKS sıralamasındaki şok edici etkisi.</p>
-                                </Link>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -177,5 +129,3 @@ export default function YKSHazirlikProgrami() {
         </div>
     )
 }
-
-

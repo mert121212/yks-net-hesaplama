@@ -3,13 +3,13 @@ import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
-    title: 'YKS\'de 1 Net Neden Binlerce Kişi Attırır? OBP ve Standart Sapma 2027',
-    description: 'YKS\'de 1 net gerçekten önemli mi? OBP sıralamayı nasıl etkiler, standart sapma nedir, okul puanı YKS\'yi nasıl etkiler? Tüm gerçekler bu yazıda.',
-    keywords: 'yks 1 net kaç kişi atar, obp sıralamayı nasıl etkiler, okul puanı yks, yks sıralama hesaplama, standart sapma yks',
+    title: 'YKS\'de 1 Net Bile Neden Binlerce Kişi Attırır? (OBP ve Sıralama Analizi)',
+    description: 'YKS 2027 sınavında 1 netin sıralamaya etkisi. Yığılma bölgelerinde tek bir sorunun binlerce adayı nasıl ekarte ettiği ve katsayı analizi.',
+    keywords: 'yks 1 net kaç kişi atar, tyt 1 net sıralama etkisi, ayt 1 net kaç kişi oynatır, yks yığılma, yks sıralama hesaplama',
     alternates: { canonical: 'https://yksnethesapla.com/blog/yks-1-net-kac-kisi-atar' },
     openGraph: {
-        title: 'YKS\'de 1 Net Neden Binlerce Kişi Attırır? OBP ve Standart Sapma 2027',
-        description: 'OBP sıralamayı nasıl etkiler, standart sapma nedir? YKS\'de 1 netin gerçek değeri.',
+        title: 'YKS\'de 1 Net Bile Neden Binlerce Kişi Attırır?',
+        description: 'OBP sıralamayı nasıl etkiler, standart sapma nedir? YKS\'de 1 netin gerçek değerini öğren.',
         type: 'article',
         publishedTime: '2026-05-02',
         url: 'https://yksnethesapla.com/blog/yks-1-net-kac-kisi-atar',
@@ -18,168 +18,116 @@ export const metadata: Metadata = {
 
 export default function YKS1NetKacKisiAtar() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
+        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
-                <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-                    <nav className="mb-8 text-sm text-gray-600">
-                        <Link href="/" className="hover:text-blue-600">Ana Sayfa</Link>
-                        {' > '}
-                        <Link href="/blog" className="hover:text-blue-600">Blog</Link>
-                        {' > '}
-                        <span className="text-gray-900">YKS&apos;de 1 Net Kaç Kişi Attırır?</span>
+                <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-slate-100">
+                    <nav className="mb-8 text-sm text-slate-500 font-medium flex items-center space-x-2">
+                        <Link href="/" className="hover:text-blue-600 transition-colors">Ana Sayfa</Link>
+                        <span>›</span>
+                        <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
+                        <span>›</span>
+                        <span className="text-slate-900">Strateji</span>
                     </nav>
 
-                    <header className="mb-8">
-                        <div className="flex items-center gap-4 mb-4">
-                            <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Strateji</span>
-                            <time className="text-gray-600">2 Mayıs 2026</time>
-                            <span className="text-gray-600">• 9 dakika okuma</span>
+                    <header className="mb-10">
+                        <div className="flex flex-wrap items-center gap-3 mb-5">
+                            <span className="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-bold tracking-wide uppercase">İstatistik</span>
+                            <time className="text-slate-500 text-sm font-medium">Son Güncelleme: 16 Ağustos 2026</time>
+                            <span className="text-slate-400">•</span>
+                            <span className="text-slate-500 text-sm font-medium">Okuma Süresi: 11 dk</span>
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            YKS&apos;de 1 Net Bile Neden Binlerce Kişi Attırır? (OBP ve Standart Sapma Gerçeği)
+                        <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6 leading-tight">
+                            YKS&apos;de 1 Net Bile Neden 15.000 Kişi Attırır? (Rakamlarla Kanıt)
                         </h1>
-                        <p className="text-xl text-gray-600">
-                            "Aman bir net bile çok önemli!" — Bu öğretmen kopyası gerçekten doğru mu, yoksa
-                            sadece sizi motive etmek için uydurulmuş bir abartı mı? YKS sisteminde 1 netin
-                            ne kadar değerli olduğunu rakamlarla inceleyelim.
+                        <p className="text-xl text-slate-600 font-medium leading-relaxed">
+                            &quot;Aman bir sorudan ne olacak&quot; dediğin o tek bir soru, seni hayalindeki üniversitenin kapısından içeri de sokabilir, bir yıl daha mezuna da bırakabilir.
                         </p>
                     </header>
 
                     <AuthorProfile />
 
-                    <div className="prose prose-lg max-w-none text-gray-700 mt-8">
-                        <h2 className="text-3xl font-bold text-gray-900 mt-8 mb-4">Yığılma Bölgesi Nedir ve Neden Tehlikelidir?</h2>
-                        <p className="text-lg leading-relaxed mb-4">
-                            Her yıl yaklaşık 3 milyondan fazla adayın girdiği YKS'de, puanlar tüm yelpazeye eşit olarak dağılmaz.
-                            Özellikle orta seviyedeki adayların oluşturduğu büyük bir "yığılma bölgesi" vardır. Bu bölge, SAY
-                            puan türünde 250.000 ile 50.000 arası, EA puan türünde 300.000 ile 100.000 arası, TYT'de ise
-                            1.5 milyon ile 500.000 arasıdır.
-                        </p>
-                        <p className="text-lg leading-relaxed mb-6">
-                            Yığılma bölgelerinde aynı puana sahip veya virgülden sonraki küsüratlarla birbirinden ayrılan
-                            on binlerce aday bulunur. İşte "1 net binlerce kişi attırır" efsanesi (ki efsane değil gerçektir)
-                            tam olarak bu bölgelerde çalışır.
+                    <div className="prose prose-lg prose-blue max-w-none text-slate-700 mt-8">
+                        <p className="lead">
+                            Deneme çözerken ya da sınav anında yorulup &quot;Aman bu soru da kalsın, 1 sorudan ne çıkar&quot; dediğin oldu mu hiç? Eğer olduysa çok tehlikeli bir sularda yüzüyorsun demektir. Çünkü 3 milyondan fazla adayın girdiği YKS&apos;de 1 net, düşündüğünden çok daha büyük bir deprem yaratır.
                         </p>
 
-                        <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg mb-8">
-                            <h3 className="font-bold text-red-900 mb-2">📊 Yığılma Bölgesinde 1 Netin Etkisi</h3>
-                            <p className="text-gray-800">
-                                Diyelim ki EA puan türünde 315 puan aldınız ve sıralamanız 120.000. Eğer sadece <strong>1 adet AYT Matematik neti</strong> daha
-                                fazla yapsaydınız, puanınız yaklaşık 318'e çıkacaktı. 315 ile 318 puan aralığında yığılma o kadar yoğundur ki, bu
-                                3 puanlık fark sizi 120.000 sıralamadan anında <strong>105.000 sıralamaya</strong> fırlatabilir. Sadece tek bir
-                                soruyu doğru yapmak 15.000 kişiyi elemek demektir!
-                            </p>
-                        </div>
-
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Hangi Testteki 1 Net Daha Değerli? (Standart Sapma Gerçeği)</h2>
-                        <p className="mb-4">
-                            "Her 1 net eşit derecede mi kişi atlatır?" Hayır. ÖSYM'nin puan hesaplama sisteminde testlerin ağırlıkları farklıdır.
-                            Ayrıca Türkiye genelinde yapılma ortalaması düşük olan testlerin (standart sapma etkisi) getirisi biraz daha yüksek olabilir.
+                        <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
+                            Puan Aralıklarına Göre 1 Netin Sıralamaya Etkisi
+                        </h2>
+                        <p>
+                            1 netin sizi kaç kişi öne atacağı, hangi puan bandında olduğunuza göre radikal şekilde değişir:
                         </p>
 
-                        <div className="overflow-x-auto my-6">
-                            <table className="min-w-full bg-white border border-gray-300 rounded-lg">
-                                <thead className="bg-blue-50">
+                        <div className="overflow-x-auto my-6 not-prose">
+                            <table className="min-w-full bg-white border border-slate-200 rounded-xl">
+                                <thead className="bg-slate-50">
                                     <tr>
-                                        <th className="px-5 py-3 text-left font-semibold border-b">Test (1 Net)</th>
-                                        <th className="px-5 py-3 text-center font-semibold border-b">Tahmini Puan Getirisi</th>
-                                        <th className="px-5 py-3 text-left font-semibold border-b">Sıralamaya Etkisi (Yığılma Bölgesinde)</th>
+                                        <th className="px-5 py-3 text-left font-semibold text-slate-900 border-b">Bulunduğun Sıralama Bandı</th>
+                                        <th className="px-5 py-3 text-center font-semibold text-slate-900 border-b">1 Ekstra TYT Netinin Etkisi</th>
+                                        <th className="px-5 py-3 text-center font-semibold text-slate-900 border-b">1 Ekstra AYT Netinin Etkisi</th>
+                                        <th className="px-5 py-3 text-left font-semibold text-slate-900 border-b">Yorum</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">TYT (Herhangi Bir Ders)</td><td className="px-5 py-3 text-center font-bold">~ 1.33 Puan</td><td className="px-5 py-3">3.000 - 5.000 Kişi</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">AYT Matematik</td><td className="px-5 py-3 text-center font-bold text-red-600">~ 3.00 Puan</td><td className="px-5 py-3 font-bold text-red-600">10.000 - 15.000 Kişi</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">AYT Fen (Fiz, Kim, Biy)</td><td className="px-5 py-3 text-center font-bold text-orange-600">~ 2.85 Puan</td><td className="px-5 py-3 text-orange-600">8.000 - 12.000 Kişi</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">AYT Edebiyat</td><td className="px-5 py-3 text-center font-bold text-purple-600">~ 3.00 Puan</td><td className="px-5 py-3 text-purple-600">10.000 - 15.000 Kişi</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">AYT Sosyal</td><td className="px-5 py-3 text-center font-bold text-blue-600">~ 2.80 Puan</td><td className="px-5 py-3 text-blue-600">8.000 - 12.000 Kişi</td></tr>
+                                <tbody className="divide-y divide-slate-100 text-sm">
+                                    <tr>
+                                        <td className="px-5 py-4 font-bold text-slate-900">İlk 10.000 (Zirve)</td>
+                                        <td className="px-5 py-4 text-center font-semibold text-blue-600">~ 200 – 400 Kişi</td>
+                                        <td className="px-5 py-4 text-center font-bold text-emerald-600">~ 500 – 1.000 Kişi</td>
+                                        <td className="px-5 py-4 text-slate-500">Tıp ve Boğaziçi farkı</td>
+                                    </tr>
+                                    <tr className="bg-slate-50">
+                                        <td className="px-5 py-4 font-bold text-slate-900">50.000 – 150.000 (Yığılma Başlangıcı)</td>
+                                        <td className="px-5 py-4 text-center font-semibold text-blue-600">~ 2.500 – 5.000 Kişi</td>
+                                        <td className="px-5 py-4 text-center font-bold text-emerald-600">~ 6.000 – 12.000 Kişi</td>
+                                        <td className="px-5 py-4 text-slate-500">Hukuk ve İyi Mühendislikler</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="px-5 py-4 font-bold text-red-600">150.000 – 350.000 (Ana Yığılma Bölgesi)</td>
+                                        <td className="px-5 py-4 text-center font-semibold text-blue-600 text-base font-bold">~ 5.000 – 8.000 Kişi</td>
+                                        <td className="px-5 py-4 text-center font-bold text-emerald-600 text-base font-bold">~ 12.000 – 18.000 Kişi</td>
+                                        <td className="px-5 py-4 text-red-600 font-bold">🔴 1 Soru = 1 Şehir Değişimi</td>
+                                    </tr>
+                                    <tr className="bg-slate-50">
+                                        <td className="px-5 py-4 font-bold text-slate-900">500.000 – 1.000.000 (Taban Bölge)</td>
+                                        <td className="px-5 py-4 text-center font-semibold text-blue-600">~ 8.000 – 15.000 Kişi</td>
+                                        <td className="px-5 py-4 text-center font-bold text-emerald-600">~ 20.000+ Kişi</td>
+                                        <td className="px-5 py-4 text-slate-500">Ön lisans ve Baraj Geçişi</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-xs text-gray-500 mb-8">* Yukarıdaki veriler yığılmanın yoğun olduğu 100 bin - 300 bin bandı için verilmiş yaklaşık değerlerdir. İlk 10.000'de veya 1 Milyon'dan sonra 1 netin atlatacağı kişi sayısı farklıdır.</p>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Derece Yapanlar İçin 1 Netin Önemi</h2>
-                        <p className="mb-4">
-                            "Yığılma bölgesi"nden çıkıp tepelere (İlk 20.000) geldiğimizde, aday sayısı azaldığı için 1 netin atlatacağı kişi
-                            sayısı düşer. İlk 5.000 içerisindeyseniz 1 AYT neti sizi 15.000 kişi ileri atamaz (çünkü önünüzde o kadar insan yoktur).
-                            Ancak ilk 5.000'de 1 net sizi <strong>1.500 kişi</strong> ileri atar. Bu 1.500 kişi küçük görünse de, tıp fakültesinde
-                            Çapa ile Cerrahpaşa arasındaki, mühendislikte Boğaziçi ile İTÜ arasındaki uçurumu belirler!
+                        <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
+                            AYT Neti Neden TYT&apos;nin İki Katı Değerindedir?
+                        </h2>
+                        <p>
+                            Formüle baktığınızda 1 TYT sorusunun ham puana katkısı yaklaşık <strong>1.33 puan</strong> iken, 1 AYT sorusunun katkısı <strong>yaklaşık 3.00 puandır</strong>. Yani AYT&apos;de yapacağınız tek bir doğru matematik veya fen sorusu, TYT&apos;deki 2.5 soruya denktir.
+                        </p>
+                        <p>
+                            Bu yüzden hazırlık sürecinin son 3-4 ayında zamanınızın en az %65-70&apos;ini AYT konularına ayırmak en mantıklı stratejidir.
                         </p>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">OBP (Okul Puanı) Sıralamayı Nasıl Etkiler?</h2>
-                        <p className="mb-4">
-                            Okul Başarı Puanı (OBP), YKS sonuçları açıklandığında birçok öğrencinin hayallerini yıkan, bazılarını ise
-                            göklerde uçuran en büyük faktördür. OBP, diploma notunuzun 0.6 ile çarpılması (veya 5'e çarpılıp 0.12 ile
-                            çarpılması) ile bulunur.
-                        </p>
-                        
-                        <div className="grid md:grid-cols-2 gap-6 my-8">
-                            <div className="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500">
-                                <h4 className="font-bold text-blue-900 mb-2">Maksimum ve Minimum OBP Getirisi</h4>
-                                <ul className="space-y-2 text-sm text-gray-700">
-                                    <li>Diploma notu <strong>100</strong> olan öğrenciye: 60 puan gelir.</li>
-                                    <li>Diploma notu <strong>85</strong> olan öğrenciye: 51 puan gelir.</li>
-                                    <li>Diploma notu <strong>60</strong> olan öğrenciye: 36 puan gelir.</li>
-                                </ul>
-                            </div>
-                            <div className="bg-purple-50 p-6 rounded-xl border-l-4 border-purple-500">
-                                <h4 className="font-bold text-purple-900 mb-2">Diploma Notları Arasındaki Farkın Puan Karşılığı</h4>
-                                <p className="text-sm text-gray-700">
-                                    Ahmet'in ortalaması 95 (Getirisi 57 puan). Mehmet'in ortalaması 80 (Getirisi 48 puan). 
-                                    Ahmet sınava girmeden Mehmet'e <strong>9 puan fark</strong> atmıştır. Mehmet'in bu farkı kapatması
-                                    için fazladan <strong>3 adet AYT Matematik</strong> sorusu veya <strong>7 adet TYT</strong> sorusu 
-                                    çözmesi gerekir!
-                                </p>
-                            </div>
-                        </div>
-
-                        <h3 className="text-2xl font-bold text-gray-800 mt-8 mb-4">Kırık OBP Felaketi</h3>
-                        <p className="mb-4">
-                            Eğer bir önceki yıl YKS'ye girip tercih yaptıysanız ve bir bölüme <strong>yerleştiyseniz</strong> (kayıt olmasanız bile),
-                            bu yılki sınavda OBP katsayınız yarı yarıya (0.06) düşer. Yani 90 diploma notu olan biri normalde 54 puan alacakken,
-                            kırık OBP yüzünden 27 puan alır.
-                        </p>
-                        <p className="mb-4">
-                            <strong>27 puan kayıp ne demek?</strong> Yaklaşık 9 AYT netini veya 20 TYT netini çöpe atmak demektir. Kırık OBP ile sınava
-                            giren adayların derece yapması matematiksel olarak mucizelere bağlıdır. Bu yüzden tercih yaparken sadece emin olduğunuz
-                            yerleri yazın.
-                        </p>
-
-                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
-                            <h2 className="text-3xl font-bold mb-4">Sıralamanızı Simüle Edin</h2>
-                            <p className="text-xl mb-6 text-blue-100">
-                                1 net fazlasının veya eksiğinin sizi kaç bin geriye attığını canlı olarak test edin!
+                        <div className="relative overflow-hidden bg-slate-900 rounded-2xl p-8 my-12 text-center border border-slate-800 shadow-2xl not-prose">
+                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500"></div>
+                            <h3 className="text-2xl font-bold mb-4 text-white">1 Net Ekleyince Sıralaman Nasıl Oynuyor?</h3>
+                            <p className="text-slate-300 mb-6 max-w-2xl mx-auto text-sm">
+                                Mevcut netlerine sadece 2 ekstra AYT neti ekleyip hesaplama motorumuzda test et. Sıralamanın ne kadar sıçradığını gözlerinle gör.
                             </p>
-                            <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
-                                Hemen Hesapla →
+                            <Link href="/" className="inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-slate-900 bg-white rounded-lg hover:bg-slate-50 transition-all shadow-lg hover:shadow-xl focus:ring-4 focus:ring-slate-500 focus:outline-none">
+                                Simülasyonu Başlat →
                             </Link>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Sonuç: "Aman Boşver" Demeyin</h2>
-                        <p className="mb-4">
-                            "Bu konudan 1 soru çıkıyor çalışmaya değmez" veya "Sınavda 1 soru salladım tutarsa" gibi düşünceler, 
-                            Ağustos ayında sonuç belgeleri açıklandığında büyük pişmanlıklara dönüşür. Sınavda boş bıraktığınız 
-                            veya dikkat hatasıyla kaçırdığınız o tek bir AYT sorusu, 15.000 adayın gerisinde kalmanıza, dolayısıyla
-                            hedeflediğiniz üniversiteye değil, hiç istemediğiniz bir şehre gitmenize neden olabilir.
-                        </p>
-                        <p className="mb-4">
-                            Her denemede, her deneme analizinde, çözemediğiniz o 1 sorunun peşine düşün. O 1 soru, hayatınızı
-                            değiştirecek olan sorudur.
-                        </p>
-
-                        <div className="border-t pt-8 mt-12">
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">İlgili Makaleler</h3>
-                            <div className="grid md:grid-cols-2 gap-4">
-                                <Link href="/blog/yks-kac-net-kac-puan" className="p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
-                                    <p className="font-semibold text-green-900">Kaç Net Kaç Puan Getirir? →</p>
-                                    <p className="text-sm text-gray-600 mt-1">TYT ve AYT Net-Puan dönüşüm tabloları</p>
+                        <div className="mt-16 pt-8 border-t border-slate-200">
+                            <h3 className="text-xl font-bold text-slate-900 mb-6">İlgili Başlıklar</h3>
+                            <div className="grid md:grid-cols-2 gap-4 not-prose">
+                                <Link href="/blog/yks-yigilma-tehlikesi" className="group p-5 bg-white border border-slate-200 rounded-xl hover:border-blue-500 hover:shadow-md transition-all">
+                                    <h4 className="font-bold text-slate-900 group-hover:text-blue-600 transition-colors">YKS Yığılma Analizi →</h4>
+                                    <p className="text-sm text-slate-500 mt-2 line-clamp-2">Orta segmentteki adayların yığılmayı kırma taktikleri.</p>
                                 </Link>
-                                <Link href="/blog/obp-hesaplama" className="p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
-                                    <p className="font-semibold text-blue-900">OBP (Okul Puanı) Hesaplama →</p>
-                                    <p className="text-sm text-gray-600 mt-1">Diploma notunuzun sıralamaya etkisi</p>
-                                </Link>
-                                <Link href="/blog/yks-yigilma-tehlikesi" className="p-4 bg-red-50 rounded-lg hover:bg-red-100 transition-colors">
-                                    <p className="font-semibold text-red-900">Yığılma Bölgeleri ve Tehlikeleri →</p>
-                                    <p className="text-sm text-gray-600 mt-1">Hangi sıralama aralıklarında yığılma olur?</p>
+                                <Link href="/blog/obp-hesaplama" className="group p-5 bg-white border border-slate-200 rounded-xl hover:border-blue-500 hover:shadow-md transition-all">
+                                    <h4 className="font-bold text-slate-900 group-hover:text-blue-600 transition-colors">OBP Hesaplama Rehberi →</h4>
+                                    <p className="text-sm text-slate-500 mt-2 line-clamp-2">Lise diploma notunun sıralamaya etkisi.</p>
                                 </Link>
                             </div>
                         </div>
@@ -189,5 +137,3 @@ export default function YKS1NetKacKisiAtar() {
         </div>
     )
 }
-
-

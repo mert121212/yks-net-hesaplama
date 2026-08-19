@@ -3,13 +3,13 @@ import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
-    title: 'AYT Matematik Konuları 2027: LTİ, Fonksiyonlar ve Eleme Sınavı Rehberi',
-    description: 'AYT Matematik\'te Limit, Türev, İntegral (LTİ) ve Fonksiyonlar nasıl çalışılır? SAY öğrencileri için 2027 ÖSYM güncel konu rehberi ve strateji.',
-    keywords: 'ayt matematik konuları, ayt matematik 2027, limit türev integral, fonksiyonlar, say matematik, yks matematik',
+    title: 'AYT Matematik Konuları ve Soru Dağılımı 2027 | Derece Rehberi',
+    description: '2027 AYT Matematik konuları, LTİ (Limit, Türev, İntegral), Trigonometri soru dağılımı ve SAY/EA için 30+ net yapma taktikleri.',
+    keywords: 'ayt matematik konuları, ayt matematik soru dağılımı, lti nasıl çalışılır, trigonometri taktikleri, ayt matematik 2027',
     alternates: { canonical: 'https://yksnethesapla.com/blog/ayt-matematik-konulari' },
     openGraph: {
-        title: 'AYT Matematik Konuları 2027: LTİ, Fonksiyonlar ve Eleme Sınavı Rehberi',
-        description: 'AYT Matematik\'te LTİ ve Fonksiyonlar nasıl çalışılır? SAY öğrencileri için güncel rehber.',
+        title: 'AYT Matematik Konuları: SAY ve EA İçin Derece Rehberi',
+        description: 'AYT Matematik sınavına nasıl hazırlanılır? Tüm konular, soru sayıları ve çalışma taktikleri.',
         type: 'article',
         publishedTime: '2026-02-18',
         url: 'https://yksnethesapla.com/blog/ayt-matematik-konulari',
@@ -28,156 +28,102 @@ export default function AYTMatematikKonulari() {
                         {' > '}
                         <span className="text-gray-900">AYT Matematik Konuları</span>
                     </nav>
+
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">AYT</span>
                             <time className="text-gray-600">18 Şubat 2026</time>
-                            <span className="text-gray-600">• 10 dakika okuma</span>
+                            <span className="text-gray-600">• 12 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            AYT Matematik Konuları 2027: LTİ, Fonksiyonlar ve Eleme Sınavı Rehberi
+                            AYT Matematik Konuları ve Soru Dağılımı: 30+ Net İçin Stratejik Plan
                         </h1>
-                        <p className="text-xl text-gray-700">
-                            AYT Matematik bir &quot;bilgi sınavı&quot;dır, TYT ise &quot;hız sınavı&quot;. Bu farkı kavramadan
-                            hazırlanan adaylar, bildikleri soruları bile çözemeden sınavdan çıkar. 2027 AYT Matematik
-                            konu dağılımı ve başarı stratejilerini bu rehberde bulabilirsiniz.
+                        <p className="text-xl text-gray-600">
+                            TYT hız sınavıysa, AYT saf bilgi ve derinlik sınavıdır. 40 soruluk testin kalbini oluşturan LTİ ve Trigonometriyi nasıl halledeceğini konuşuyoruz.
                         </p>
                     </header>
 
                     <AuthorProfile />
 
-                    <div className="prose prose-lg max-w-none text-gray-700 mt-8">
+                    <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            YKS sisteminde Eşit Ağırlık (EA) ve Sayısal (SAY) öğrencilerini rakiplerinden ayıran en temel
-                            test AYT Matematiktir. TYT Matematik'te öğrenciler daha çok zaman yönetimi ve problem çözme
-                            pratiği ile savaşırken, AYT Matematik doğrudan formül bilme, teorem uygulama ve analitik
-                            düşünme becerisini ölçer. Bu yüzden AYT Matematik testinde süreden çok <strong>bilgi eksiği</strong>
-                            sorun yaratır.
+                            Açık konuşalım: Hem Sayısalda (SAY) hem de Eşit Ağırlıkta (EA) ilk 50.000&apos;e girmenin tek bir ortak şartı vardır, o da <strong>AYT Matematik testinde 25-30 netin üzerine çıkmaktır</strong>. TYT&apos;de istediğin kadar iyi yap, AYT Matematik netin 15&apos;in altındaysa ilk 50 bin hayal olur.
                         </p>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">AYT Matematik ve TYT Matematik Arasındaki 3 Temel Fark</h2>
-                        <ul className="list-disc list-inside space-y-4 mb-8">
-                            <li><strong>Hız vs Bilgi:</strong> TYT'de soruyu anlamak vakit alır. AYT'de ise soruyu anlarsınız ama formülü veya çözüm yöntemini bilmiyorsanız kaleminizi oynatamazsınız.</li>
-                            <li><strong>Konu Derinliği:</strong> TYT'de konular daha yüzeyseldir (Temel Kavramlar, Oran-Orantı). AYT'de ise her konu kendi içinde bir denizdir (Örn: Türevin geometrik yorumu, İntegralde alan hesabı).</li>
-                            <li><strong>Soru Seçiciliği:</strong> AYT Matematik'te yapılan 1 netin standart sapma getirisi ve puan katkısı, TYT Matematik'ten yaklaşık 2-2.5 kat daha fazladır.</li>
-                        </ul>
-
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">2027 AYT Matematik Konu Dağılımı ve Tahmini Soru Sayıları</h2>
-                        <p className="mb-4">
-                            ÖSYM'nin son yıllardaki sınav analizlerine göre, AYT Matematik'te 40 sorunun (geometri dahil)
-                            dağılımı genellikle aşağıdaki tabloda belirtilen ağırlıklarda olmaktadır.
+                        <p>
+                            AYT Matematik&apos;te süre sorununuz yoktur; 180 dakikalık sürede rahat rahat işlem yapabilirsiniz. Burada tek mesele <strong>konuyu gerçekten derinlemesine bilip bilmediğinizdir</strong>. Formülü ezberleyip geçenler ilk ters köşede elenir, mantığını anlayanlar ise 35+ nete yürür.
                         </p>
 
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                            AYT Matematik Soru Dağılımı Tablosu
+                        </h2>
                         <div className="overflow-x-auto my-6">
                             <table className="min-w-full bg-white border border-gray-300 rounded-lg">
-                                <thead className="bg-blue-50">
+                                <thead className="bg-purple-50">
                                     <tr>
-                                        <th className="px-5 py-3 text-left font-semibold border-b">AYT Matematik Konusu</th>
-                                        <th className="px-5 py-3 text-center font-semibold border-b">Tahmini Soru</th>
-                                        <th className="px-5 py-3 text-left font-semibold border-b">Stratejik Önem</th>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Konu Başlığı</th>
+                                        <th className="px-5 py-3 text-center font-semibold border-b">Soru Sayısı</th>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Kritiklik Derecesi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr className="border-b bg-red-50"><td className="px-5 py-3 font-medium">Limit, Türev ve İntegral (LTİ)</td><td className="px-5 py-3 text-center font-bold text-lg">9-11</td><td className="px-5 py-3 text-red-700">🔴 En Yüksek (Belirleyici)</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Trigonometri</td><td className="px-5 py-3 text-center font-bold">4-5</td><td className="px-5 py-3 text-orange-700">🟠 Yüksek</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Fonksiyonlar (Uygulamalar ve Grafikler)</td><td className="px-5 py-3 text-center font-bold">2-3</td><td className="px-5 py-3 text-orange-700">🟠 Yüksek (Temel Konu)</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Logaritma</td><td className="px-5 py-3 text-center font-bold">2-3</td><td className="px-5 py-3 text-green-700">🟢 Garanti Net Getiren</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Diziler</td><td className="px-5 py-3 text-center font-bold">1-2</td><td className="px-5 py-3 text-green-700">🟢 Garanti Net Getiren</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Olasılık, Permütasyon, Kombinasyon</td><td className="px-5 py-3 text-center font-bold">2-3</td><td className="px-5 py-3 text-yellow-700">🟡 Orta</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">İkinci Dereceden Denklemler ve Eşitsizlikler</td><td className="px-5 py-3 text-center font-bold">2</td><td className="px-5 py-3 text-blue-700">Temel Bilgi</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Parabol</td><td className="px-5 py-3 text-center font-bold">1</td><td className="px-5 py-3 text-blue-700">Temel Bilgi</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Polinomlar</td><td className="px-5 py-3 text-center font-bold">1-2</td><td className="px-5 py-3 text-yellow-700">🟡 Orta</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Temel Kavramlar ve Mantık (TYT Temelli)</td><td className="px-5 py-3 text-center font-bold">2-3</td><td className="px-5 py-3 text-gray-600">Alt Yapı</td></tr>
-                                    <tr><td className="px-5 py-3 font-medium">Geometri (Tüm Konular)</td><td className="px-5 py-3 text-center font-bold">10</td><td className="px-5 py-3 text-purple-700">🟣 Yüksek Önem</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Fonksiyonlar (Bileşke, Ters, Grafikler)</td><td className="px-5 py-3 text-center font-bold">2 - 3</td><td className="px-5 py-3 text-purple-700 font-bold">Anahtar (Her Şeyin Başı)</td></tr>
+                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Polinomlar & 2. Dereceden Denklemler</td><td className="px-5 py-3 text-center font-bold">2 - 3</td><td className="px-5 py-3 text-blue-700">Yüksek</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Parabol & Eşitsizlik Sistemleri</td><td className="px-5 py-3 text-center font-bold">2</td><td className="px-5 py-3 text-blue-700">Orta-Yüksek</td></tr>
+                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Logaritma</td><td className="px-5 py-3 text-center font-bold">2 - 3</td><td className="px-5 py-3 text-green-700 font-bold">Banko Net (Kolay)</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Diziler (Aritmetik & Geometrik Dizi)</td><td className="px-5 py-3 text-center font-bold">1 - 2</td><td className="px-5 py-3 text-green-700 font-bold">Banko Net (Kolay)</td></tr>
+                                    <tr className="border-b bg-yellow-50"><td className="px-5 py-3 font-medium font-bold text-amber-900">TRİGONOMETRİ (Yarım Açı, Denklemler)</td><td className="px-5 py-3 text-center font-bold text-amber-800 text-lg">4 - 5</td><td className="px-5 py-3 text-amber-800 font-bold">🟡 Sınavın %12&apos;si</td></tr>
+                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Limit ve Süreklilik</td><td className="px-5 py-3 text-center font-bold">2 - 3</td><td className="px-5 py-3 text-red-600 font-semibold">LTİ Başlangıcı</td></tr>
+                                    <tr className="border-b bg-red-50"><td className="px-5 py-3 font-medium font-bold text-red-900">TÜREV (Geometrik Yorum, Ekstremum, Grafik)</td><td className="px-5 py-3 text-center font-bold text-red-700 text-lg">4 - 5</td><td className="px-5 py-3 text-red-700 font-bold">🔴 Eleme Bölümü</td></tr>
+                                    <tr className="border-b bg-red-50"><td className="px-5 py-3 font-medium font-bold text-red-900">İNTEGRAL (Belirli İntegral, Alan Hesabı)</td><td className="px-5 py-3 text-center font-bold text-red-700 text-lg">4 - 5</td><td className="px-5 py-3 text-red-700 font-bold">🔴 Zirve Bölümü</td></tr>
+                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Permütasyon, Kombinasyon, Olasılık</td><td className="px-5 py-3 text-center font-bold">2</td><td className="px-5 py-3 text-gray-700">Seçici</td></tr>
+                                    <tr className="border-b bg-blue-50"><td className="px-5 py-3 font-medium font-bold text-blue-900">AYT GEOMETRİ & ANALİTİK (Çember, Analitik, Dönüşüm)</td><td className="px-5 py-3 text-center font-bold text-blue-800 text-lg">9 - 10</td><td className="px-5 py-3 text-blue-800 font-bold">Derece Yaptıran Kısım</td></tr>
                                 </tbody>
                             </table>
                         </div>
 
-                        <div className="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-lg mb-8">
-                            <h3 className="font-bold text-amber-900 mb-2">⚠️ LTİ (Limit, Türev, İntegral) Gerçeği</h3>
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                            LTİ ve Trigonometriyi Bitirmeden Sınava Girilmez
+                        </h2>
+                        <p>
+                            Yukarıdaki tabloya dikkatle bak: <strong>Trigonometri + Limit + Türev + İntegral</strong> dörtlüsünden toplam <strong>14 ila 16 soru</strong> geliyor. 40 sorunun neredeyse %40&apos;ı sadece bu 4 konudan ibaret.
+                        </p>
+                        <p>
+                            Peki bu konulara nasıl çalışacaksın?
+                        </p>
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li><strong>Önce Fonksiyonları Hallet:</strong> Fonksiyon grafiği okuyamayan biri Türev&apos;de de İntegral&apos;de de perişan olur. Önce fonksiyonlar, parabol ve eşitsizlikler tam oturacak.</li>
+                            <li><strong>Logaritma ve Dizileri Cebe Koy:</strong> Her sene 4 soru bu iki konudan gelir ve sorular genellikle formülü doğru uygulamaya dayanır. Buralardan kesinlikle fire vermemelisin.</li>
+                            <li><strong>Türev Geometrik Yorumunu Görselleştir:</strong> Teğetin eğimi = türev mantığını kafana oturtmadan formül ezberleme. Grafikli soruları çözmek için GeoGebra gibi görsel araçlardan bile faydalanabilirsin.</li>
+                        </ul>
+
+                        <div className="bg-purple-50 border-l-4 border-purple-500 p-5 rounded-lg my-6">
+                            <h3 className="font-bold text-purple-900 mb-2">💡 AYT Geometride Analitik Şart</h3>
                             <p className="text-gray-700 text-sm">
-                                Eğer hedefiniz Sayısalda ilk 50.000 veya Eşit Ağırlıkta ilk 30.000 ise, LTİ konularını
-                                es geçme lüksünüz yoktur. Sınavın tam kalbini oluşturan bu 10 soru, sizi binlerce rakibinizin
-                                önüne atacak veya gerisine düşürecektir.
+                                AYT Geometride her sene <strong>Noktanın ve Doğrunun Analitiği</strong> ile <strong>Çemberin Analitiği</strong> konularından en az 3-4 soru gelir. Analitik geometri formüllerini bir kağıda yazıp masanın karşısına as.
                             </p>
                         </div>
-
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Fonksiyonlar: Tüm AYT'nin Temel Taşı</h2>
-                        <p className="mb-4">
-                            Öğrenciler genellikle Limit, Türev ve İntegral konularına büyük bir hevesle başlar ancak bir
-                            süre sonra tıkanırlar. Bunun en büyük sebebi <strong>Fonksiyonlar</strong> konusundaki eksikliklerdir.
-                        </p>
-                        <p className="mb-4">
-                            Fonksiyonlar konusu AYT Matematik'in alfabesidir. Eğer fonksiyon okumayı, fonksiyon grafiklerini
-                            yorumlamayı (ötüleme, simetri alma, mutlak değerini çizme) bilmiyorsanız:
-                        </p>
-                        <ul className="list-disc list-inside space-y-2 mb-6">
-                            <li>Parabol sorularını çözemezsiniz.</li>
-                            <li>Polinomlarda P(x-2) mantığını kuramazsınız.</li>
-                            <li>Türevin geometrik yorumunda grafiğe teğet çizemezsiniz.</li>
-                            <li>İntegralde eğri altında kalan alanı hesaplarken sınırları bulamazsınız.</li>
-                        </ul>
-                        <p className="font-medium text-blue-900 bg-blue-50 p-4 rounded-lg">
-                            Özetle: Fonksiyon bilmeden AYT Matematik çalışılmaz! AYT kampınıza başlamadan önce mutlaka 
-                            en az 1 hafta sadece Fonksiyon Grafikleri ve Uygulamaları konusuna çalışın.
-                        </p>
-
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Trigonometri: Hem Garanti Net Hem De Zorlayıcı</h2>
-                        <p className="mb-4">
-                            Trigonometriden her yıl ortalama 4 veya 5 soru gelir. Bu soruların en az 2 tanesi temel
-                            özdeşlikler, sadeleştirme veya dik üçgende oran bulma gibi klasik ve çözülebilir sorulardır.
-                            Ancak geriye kalan sorular (özellikle toplam-fark formülleri, yarım açı veya trigonometrik
-                            denklemler) analitik düzlemle harmanlanarak oldukça seçici olabilir.
-                        </p>
-                        
-                        <div className="bg-gray-50 border border-gray-200 p-6 rounded-xl my-6">
-                            <h4 className="font-bold text-gray-900 mb-2">Trigonometri Çalışma Taktikleri:</h4>
-                            <ul className="space-y-2 text-sm text-gray-700">
-                                <li><strong>Formül Kağıdı:</strong> Trigonometri tamamen formül ezberidir. Kendi formül kağıdınızı oluşturun ve masanıza asın.</li>
-                                <li><strong>Geometri Temeli:</strong> Trigonometri çözebilmek için temel geometri (özellikle dik üçgen, özel üçgenler ve benzerlik) şarttır.</li>
-                                <li><strong>Birim Çember:</strong> Tüm konunun mantığı birim çemberde yatar. Birim çemberdeki işaretleri ve açıların bölgelere göre davranışını ezberlemeyin, mantığını çizin.</li>
-                            </ul>
-                        </div>
-
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">AYT Geometri: TYT'den Farkı Nedir?</h2>
-                        <p className="mb-4">
-                            AYT Geometri, TYT Geometriye göre çok daha "klasik" sorular içerir. TYT'de katlama, kesme,
-                            döndürme, hikayeleştirme gibi yeni nesil sorular varken, AYT'de ağırlıklı olarak Çember,
-                            Daire, Analitik Geometri ve Katı Cisimler doğrudan bilgi soruları şeklinde karşımıza çıkar.
-                        </p>
-                        <p className="mb-4">
-                            Özellikle <strong>Analitik Geometri</strong> konusundan her yıl banko 3 soru gelmektedir.
-                            Noktanın ve doğrunun analitik incelenmesi, simetri-dönüşüm konuları AYT Geometrinin belkemiğidir.
-                        </p>
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
-                            <h2 className="text-3xl font-bold mb-4">Puanınızı ve Sıralamanızı Öğrenin</h2>
-                            <p className="text-xl mb-6 text-blue-100">
-                                Netlerinizi hesaplayın, hedefinize ne kadar kaldığını anında görün.
+                            <h3 className="text-2xl font-bold mb-3">AYT Netlerini Gir, Sıralamanı Öğren</h3>
+                            <p className="text-blue-100 mb-6">
+                                SAY ve EA puanlarını güncel ÖSYM katsayılarıyla hemen hesapla.
                             </p>
-                            <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg">
+                            <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
                                 Hemen Hesapla →
                             </Link>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Son Taktikler: Fasikül Çözmenin Önemi</h2>
-                        <p className="mb-4">
-                            AYT Matematik, sadece soru bankası çözerek halledilemez. Soru bankalarındaki testler konuyu genel
-                            hatlarıyla tarar. Ancak Limit, Türev, İntegral, Trigonometri, Logaritma, Diziler, Fonksiyonlar ve
-                            Polinomlar için mutlaka <strong>konu fasikülleri</strong> bitirmelisiniz. Apotemi, Acil, Orijinal
-                            gibi yayınların fasikülleri size bir konuyu sıfırdan alıp en zor noktasına kadar öğretir.
-                        </p>
-
-                        <div className="border-t pt-8 mt-12">
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Matematik Çalışanlara Önerilen Makaleler</h3>
+                        <div className="border-t pt-8 mt-10">
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">İlgili Başlıklar</h3>
                             <div className="grid md:grid-cols-2 gap-4">
-                                <Link href="/blog/yks-puan-turleri" className="p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
-                                    <p className="font-semibold text-purple-900">SAY ve EA Puan Türleri →</p>
-                                    <p className="text-sm text-gray-600 mt-1">Matematik netleri sıralamayı ne kadar etkiler?</p>
+                                <Link href="/blog/tyt-matematik-konulari" className="p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
+                                    <p className="font-semibold text-blue-900">TYT Matematik Rehberi →</p>
+                                    <p className="text-xs text-gray-600 mt-1">Temel kavramlar ve problem taktikleri.</p>
                                 </Link>
-                                <Link href="/blog/yks-1-net-kac-kisi-atar" className="p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
-                                    <p className="font-semibold text-blue-900">1 Net Kaç Kişi Attırır? →</p>
-                                    <p className="text-sm text-gray-600 mt-1">AYT Matematikte yapılan 1 netin standart sapma gücü</p>
+                                <Link href="/blog/ayt-puan-hesaplama" className="p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
+                                    <p className="font-semibold text-purple-900">AYT Puan Hesaplama Kılavuzu →</p>
+                                    <p className="text-xs text-gray-600 mt-1">SAY, EA ve SÖZ katsayıları.</p>
                                 </Link>
                             </div>
                         </div>
@@ -187,5 +133,3 @@ export default function AYTMatematikKonulari() {
         </div>
     )
 }
-
-
