@@ -1,9 +1,14 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
+import dynamic from 'next/dynamic'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import './globals.css'
+
+const CookieConsent = dynamic(() => import('@/components/CookieConsent'), {
+    ssr: false,
+})
 
 const inter = Inter({
     subsets: ['latin'],
@@ -61,7 +66,7 @@ export const metadata: Metadata = {
         type: 'website',
         images: [
             {
-                url: '/og-image.svg',
+                url: '/og-image.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'YKS Net Hesaplama - TYT AYT YDT Puan Hesaplama Aracı'
@@ -72,7 +77,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'YKS Net Hesaplama 2027 | TYT AYT YDT Puan Hesaplama',
         description: 'YKS net hesaplama aracı ile TYT, AYT ve YDT netlerinizi hesaplayın. Üniversite puanlarınızı öğrenin.',
-        images: ['/og-image.svg'],
+        images: ['/og-image.jpg'],
     },
     robots: {
         index: true,
@@ -124,6 +129,7 @@ export default function RootLayout({
                     </main>
                     <Footer />
                 </div>
+                <CookieConsent />
 
                 {/* Google Analytics — afterInteractive: ilk paint'i bloklamaz */}
                 <Script

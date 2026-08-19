@@ -16,7 +16,7 @@ export default function PrivacyPage() {
 
                     <header className="text-center mb-10">
                         <h1 className="text-4xl font-bold text-gray-900 mb-3">Gizlilik Politikası</h1>
-                        <p className="text-gray-600">Son Güncelleme: 29 Mart 2027</p>
+                        <p className="text-gray-600">Son Güncelleme: 19 Ağustos 2026</p>
                     </header>
 
                     <div className="space-y-8 text-gray-700 leading-relaxed">
@@ -209,7 +209,7 @@ export default function PrivacyPage() {
 
                         <div className="border-t pt-8">
                             <div className="bg-blue-50 p-5 rounded-xl text-center text-sm text-gray-600">
-                                <p><strong>Son Güncelleme:</strong> 29 Mart 2027</p>
+                                <p><strong>Son Güncelleme:</strong> 19 Ağustos 2026</p>
                                 <p className="mt-1">yksnethesapla.com — Ankara, Türkiye</p>
                             </div>
                         </div>
