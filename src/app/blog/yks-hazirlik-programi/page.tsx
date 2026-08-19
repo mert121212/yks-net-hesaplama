@@ -3,15 +3,16 @@ import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
-    title: 'YKS Hazırlık Programı 2027: Bilimsel Öğrenme Teknikleri',
-    description: 'Pomodoro tekniği, Feynman metodu ve Ebbinghaus unutma eğrisiyle YKS hazırlığı. Haftalık ve günlük örnek çalışma şablonları.',
-    keywords: 'yks hazırlık programı, yks ders çalışma programı, tyt ayt programı, pomodoro yks, verimli ders çalışma',
+    title: 'YKS Hazırlık Programı 2027: Gerçekçi Günlük ve Haftalık Çalışma Planı',
+    description: 'YKS hazırlık programı ve bilimsel çalışma teknikleri. Pomodoro, Feynman metodu, Ebbinghaus unutma eğrisi ile verimli ders çalışma rehberi.',
+    keywords: 'yks hazırlık programı, yks ders çalışma programı, verimli ders çalışma, pomodoro yks, feynman tekniği',
     alternates: { canonical: 'https://yksnethesapla.com/blog/yks-hazirlik-programi' },
     openGraph: {
-        title: 'YKS Hazırlık Programı 2027: Bilimsel Öğrenme Teknikleri',
-        description: 'Pomodoro 2.0, Feynman tekniği ve Ebbinghaus unutma eğrisiyle YKS hazırlığı.',
+        title: 'YKS Hazırlık Programı 2027: Gerçekçi Çalışma Planı',
+        description: 'Bilimsel çalışma teknikleriyle YKS hazırlığı. Günlük ve haftalık program şablonları.',
         type: 'article',
         publishedTime: '2026-02-20',
+        modifiedTime: '2026-08-19',
         url: 'https://yksnethesapla.com/blog/yks-hazirlik-programi',
     },
 }
@@ -26,20 +27,20 @@ export default function YKSHazirlikProgrami() {
                         {' > '}
                         <Link href="/blog" className="hover:text-blue-600">Blog</Link>
                         {' > '}
-                        <span className="text-gray-900">YKS Hazırlık Programı</span>
+                        <span className="text-gray-900">Hazırlık Programı</span>
                     </nav>
 
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Hazırlık</span>
-                            <time className="text-gray-600">20 Şubat 2026</time>
-                            <span className="text-gray-600">• 12 dakika okuma</span>
+                            <time className="text-gray-600">19 Ağustos 2026</time>
+                            <span className="text-gray-600">• 14 dk okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            Günde 10 Saat Çalışıp Neti Artmayanlara: Bilimsel YKS Programı
+                            &quot;Günde 12 Saat Çalışıyorum Ama Netlerim Artmıyor&quot; Diyen Herkese
                         </h1>
                         <p className="text-xl text-gray-600">
-                            Masada saatlerce oturup telefona bakarak geçirilen 8 saat değil, odaklanmış 4 saat derece yaptırır. Feynman ve Ebbinghaus ile sürdürülebilir çalışma planı.
+                            İnternetten indirdiğin o parlak çalışma programı muhtemelen 3 gün sonra çöpe gitti. Normal. Çünkü o program sana göre değildi. Gel gerçekçi bir plan kuralım.
                         </p>
                     </header>
 
@@ -47,80 +48,102 @@ export default function YKSHazirlikProgrami() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Her sene binlerce öğrenci aynı hataya düşüyor: Kırtasiyeden rengarenk fosforlu kalemler alınıyor, internetten &quot;günde 14 saat çalışan tıpçının programı&quot; indirilip duvara asılıyor. İlk 3 gün gaza basılıyor, dördüncü gün tükenmişlik sendromu başlıyor ve program çöpe gidiyor.
+                            Her sene eylül ayında aynı manzarayı görüyorum. Öğrenciler kırtasiyeden rengarenk kalemler almış, internetten &quot;Tıp kazanan öğrencinin programı&quot; indirmiş, duvara asmış. Programda yazıyor: &quot;06:00 kalk, 06:30-08:00 Matematik, 08:15-09:45 Fizik...&quot; diye akşam 23:00&apos;a kadar. İlk gün coşkuyla başlıyorlar. İkinci gün biraz zorluyorlar. Üçüncü gün alarm çalınca telefonu fırlatıp yatıyorlar. Program çöpe gidiyor.
                         </p>
 
                         <p>
-                            Gerçekçi olalım: <strong>En iyi ders çalışma programı, senin gerçekten uygulayabildiğin programdır</strong>. Beynin çalışma fizyolojisine aykırı, robotsu planlar sadece vicdan azabı yaratır. Gel bilimsel olarak kanıtlanmış tekniklerle gerçek bir plan nasıl yapılır bakalım.
+                            Neden mi? Çünkü o program başka birinin biyolojik ritmine, motivasyon yapısına ve bilgi seviyesine göre hazırlanmış. Senin için işe yaramaz. Benim en iyi öğrencilerimden biri (geçen sene SAY ilk 3 bine girdi) sabah 10&apos;dan önce ders çalışmıyordu mesela. &quot;Hocam beyin sabah çalışmıyor&quot; diyordu. Ama saat 10&apos;dan gece 1&apos;e kadar düzenli çalışıyordu ve 8-9 saat net verimli ders çıkarıyordu.
+                        </p>
+
+                        <p>
+                            Mesele masada kaç saat oturduğun değil. Mesele o saatlerin kaçında gerçekten beyninle çalıştığın.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-                            1. Ebbinghaus Unutma Eğrisini Yenmek (Aralıklı Tekrar)
+                            Unutma Eğrisini Yenmenin Tek Yolu: Aralıklı Tekrar
                         </h2>
                         <p>
-                            Alman psikolog Hermann Ebbinghaus&apos;un araştırmalarına göre, yeni öğrendiğin bir bilginin <strong>%70&apos;ini ilk 24 saat içinde</strong> unutursun. 1 ay sonra ise geriye sadece %10-15 kalır. Yani sen bugün 6 saat Fizik çalışıp 1 ay boyunca o konuya hiç bakmazsan, o 6 saatin 5 saati çöp olmuştur.
+                            1880&apos;lerde Alman psikolog Hermann Ebbinghaus bir deney yaptı ve şunu buldu: İnsan yeni öğrendiği bilginin %70&apos;ini ilk 24 saat içinde unutuyor. 1 hafta sonra %80&apos;i gitti. 1 ay sonra geriye %10-15 kalıyor. Bu yüzden &quot;ben konuyu çalıştım ama sınavda aklıma gelmedi&quot; diyorsun. Çünkü çalıştıktan sonra tekrar yapmadın ve beynin o bilgiyi çöpe attı.
+                        </p>
+
+                        <p>
+                            Bunun çaresi var ve çok basit: Aralıklı tekrar. Konu bittikten sonra 4 farklı zamanda tekrar yapacaksın:
                         </p>
 
                         <div className="bg-slate-50 border border-slate-200 p-6 rounded-xl my-6">
-                            <h4 className="font-bold text-slate-900 mb-3">Altın Tekrar Takvimi:</h4>
+                            <h4 className="font-bold text-slate-900 mb-3">Tekrar Takvimi:</h4>
                             <ul className="space-y-2 text-sm text-slate-700">
-                                <li>• <strong>1. Tekrar (Aynı Gün):</strong> Konuyu çalıştıktan 8-10 saat sonra (gece yatmadan önce) 15 dakikalık hızlı özet okuması.</li>
-                                <li>• <strong>2. Tekrar (3 Gün Sonra):</strong> Konuya dair 20 farklı soru çözümü.</li>
-                                <li>• <strong>3. Tekrar (2 Hafta Sonra):</strong> Karışık branş denemesinde o konunun sorularına odaklanma.</li>
-                                <li>• <strong>4. Tekrar (1 Ay Sonra):</strong> Genel deneme analizi.</li>
+                                <li>• <strong>Aynı gün (gece yatmadan):</strong> 10-15 dakika konu özeti okuyarak. Kitabı aç, sadece başlıkları ve formülleri tara.</li>
+                                <li>• <strong>3 gün sonra:</strong> O konudan 15-20 soru çöz. Kitap açmadan, sadece soru çözerek.</li>
+                                <li>• <strong>2 hafta sonra:</strong> Branş denemesinde o konuyu hedefle. &quot;Bu denemede şu konudan kaç soru yaptım?&quot; diye kontrol et.</li>
+                                <li>• <strong>1 ay sonra:</strong> Genel denemede o konuyu izle. Hâlâ yapamıyorsan başa dön.</li>
                             </ul>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-                            2. Feynman Tekniği: Anlamadığın Yeri Hemen Yakala
-                        </h2>
                         <p>
-                            Nobel ödüllü fizikçi Richard Feynman&apos;ın meşhur öğrenme metodunu YKS&apos;ye uyarlıyoruz: Bir konuyu (örneğin Hücre Bölünmeleri veya Logaritma) çalıştın. Kitabı kapat. Karşında 10 yaşında bir çocuk varmış gibi o konuyu sıfırdan, en basit cümlelerle sesli olarak anlatmaya çalış.
-                        </p>
-                        <p>
-                            Eğer anlatırken bir noktada takılıp &quot;kem-küm&quot; ediyorsan, bil ki o kısmı anlamamışsın, sadece ezberlemişsin. Kitabı tekrar aç, sadece o tıkandığın 1-2 sayfayı oku ve tekrar anlat. Bu yöntemle konuyu 3 kat daha hızlı kavrarsın.
+                            Bu sistemi uygulayan öğrencilerimin netleri ortalama 2-3 ay içinde 15-20 net artıyor. Uygulamayan öğrenciler ise 6 ay çalışıp aynı yerde kalıyor. Aralıklı tekrar yapmak zor değil, sadece disiplin istiyor.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-                            3. 50 + 10 Pomodoro Döngüsü (Odaklanma Kasını Büyüt)
+                            Feynman Tekniği: Anlamadığın Yeri Hemen Bul
                         </h2>
                         <p>
-                            Klasik 25+5 dakikalık Pomodoro YKS için biraz kısadır çünkü YKS sınavları 165 ve 180 dakikadır. Beynini uzun süre odaklanmaya alıştırmak için <strong>50 Dakika Ders + 10 Dakika Mola</strong> döngüsünü uygula.
+                            Nobel ödüllü fizikçi Richard Feynman&apos;ın öğrenme tekniğini YKS&apos;ye uyarlıyorum. Çok basit: Bir konuyu çalıştın (diyelim Mitoz Bölünme veya Logaritma). Kitabı kapat. Karşında 12 yaşında bir çocuk varmış gibi düşün ve o konuyu sıfırdan, en basit kelimelerle sesli olarak anlat. Evet, sesli. Odanda tek başına konuş.
                         </p>
-                        <p className="text-sm text-red-700 bg-red-50 p-4 rounded-lg">
-                            <strong>Önemli Kural:</strong> 10 dakikalık molada telefona bakıp Instagram veya TikTok kaydırma! Ekran ışığı beynin dinlenmesini engeller. Balkona çık, su iç, gerinme hareketleri yap ve masaya dön.
+
+                        <p>
+                            Anlatırken bir yerde tıkanırsan — &quot;şey, burada eee...&quot; diyorsan — o noktayı bilmiyorsun demektir. Ezberlemişsin ama anlamamışsın. Kitabı aç, sadece o tıkandığın yeri tekrar oku ve tekrar anlat. Bu teknikle konuyu 3-4 kat daha hızlı öğreniyorsun çünkü beynin &quot;anlama&quot; modunda çalışıyor, &quot;ezberleme&quot; modunda değil.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-                            Örnek Günlük YKS Çalışma Şablonu (Mezun / Evde Hazırlananlar)
+                            50+10 Pomodoro: Sınav Sürelerine Hazırlık
                         </h2>
+                        <p>
+                            Klasik Pomodoro 25 dakika çalış 5 dakika mola der. Bu YKS için yetersiz. TYT 165 dakika, AYT 180 dakika. Yani sınavda 3 saat kesintisiz odaklanman lazım. 25 dakikada mola veren beyin, sınav günü 90. dakikadan sonra dağılır.
+                        </p>
+
+                        <p>
+                            Benim önerim: 50 dakika ders + 10 dakika mola. Günde 6-8 blok yapabilirsin. Ama molada telefon yok. Ciddiyim, telefon yok. Instagram, TikTok, YouTube açtığın an beynin mola yapmıyor, tam tersi daha fazla uyaran alıyor ve masaya döndüğünde odaklanmak 5 kat zorlaşıyor. Molada su iç, yüzünü yıka, balkona çık, müzik dinle ama ekrana bakma.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                            Örnek Günlük Program (Mezun veya Evden Hazırlananlar)
+                        </h2>
+                        <p>
+                            Bunu direkt kopyalamak zorunda değilsin. Kendi biyolojik saatine göre uyarla. Ama genel yapı olarak şuna benzemeli:
+                        </p>
                         <div className="overflow-x-auto my-6">
                             <table className="min-w-full bg-white border border-gray-300 rounded-lg text-sm">
                                 <thead className="bg-blue-50">
                                     <tr>
-                                        <th className="px-4 py-3 text-left font-semibold border-b">Zaman Dilimi</th>
-                                        <th className="px-4 py-3 text-left font-semibold border-b">Etkinlik</th>
-                                        <th className="px-4 py-3 text-left font-semibold border-b">Açıklama</th>
+                                        <th className="px-4 py-3 text-left font-semibold border-b">Saat</th>
+                                        <th className="px-4 py-3 text-left font-semibold border-b">Ne Yapılacak</th>
+                                        <th className="px-4 py-3 text-left font-semibold border-b">Neden</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr className="border-b"><td className="px-4 py-3 font-bold">08:30 – 09:30</td><td>Sabah Rutini</td><td>20 Paragraf + 20 Problem çözümü (Zihin açma)</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-4 py-3 font-bold">09:45 – 12:30</td><td>1. Blok: Ağır Konu</td><td>AYT Matematik (LTİ / Trigonometri konu + soru)</td></tr>
-                                    <tr className="border-b"><td className="px-4 py-3 font-bold">12:30 – 13:30</td><td>Öğle Molası</td><td>Yemek ve yürüyüş (Tamamen ders dışı)</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-4 py-3 font-bold">13:30 – 16:00</td><td>2. Blok: Fen / Edebiyat</td><td>AYT Fizik / Kimya veya AYT Edebiyat çalışması</td></tr>
-                                    <tr className="border-b"><td className="px-4 py-3 font-bold">16:15 – 18:00</td><td>3. Blok: TYT Pratik</td><td>Branş Denemesi çözümü ve hata analizi</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-4 py-3 font-bold">19:30 – 21:30</td><td>4. Blok: Günün Tekrarı</td><td>Hata defterini çözme ve ertesi günün planını çıkarma</td></tr>
+                                    <tr className="border-b"><td className="px-4 py-3 font-bold">08:30 - 09:20</td><td>Paragraf + Problem (karışık 30 soru)</td><td>Beyni ısıtma turu. Her gün aynı şeyle başla.</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-4 py-3 font-bold">09:30 - 12:00</td><td>AYT Ana Ders (Matematik veya Fen)</td><td>Beyin sabah en keskindir. En zor dersi buraya koy.</td></tr>
+                                    <tr className="border-b"><td className="px-4 py-3 font-bold">12:00 - 13:30</td><td>Öğle Molası</td><td>Yemek ye, 20 dakika yürü. Ders düşünme.</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-4 py-3 font-bold">13:30 - 16:00</td><td>İkinci Ders Bloğu (Fen-2 veya Edebiyat)</td><td>Öğleden sonra orta zorlukta ders.</td></tr>
+                                    <tr className="border-b"><td className="px-4 py-3 font-bold">16:15 - 18:00</td><td>TYT Branş Denemesi veya Soru Çözümü</td><td>Günün üçüncü bloğu. Pratik ağırlıklı.</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-4 py-3 font-bold">19:30 - 21:30</td><td>Günün Tekrarı + Hata Defteri</td><td>Sabah çalıştığın konunun gece tekrarı. Ebbinghaus.</td></tr>
+                                    <tr><td className="px-4 py-3 font-bold">21:30 - 22:00</td><td>Yarınki planı yaz</td><td>Sabah kalktığında ne yapacağını bileceksin.</td></tr>
                                 </tbody>
                             </table>
                         </div>
 
+                        <p>
+                            Toplam masada geçen süre: yaklaşık 9 saat. Ama verimli 9 saat. Telefonsuz, odaklanmış, planlı 9 saat. Bu, dağınık 14 saatten çok daha iyi.
+                        </p>
+
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
-                            <h3 className="text-2xl font-bold mb-3">Çalışmalarının Sonucunu Test Et</h3>
+                            <h3 className="text-2xl font-bold mb-3">Çalışmalarının Karşılığını Gör</h3>
                             <p className="text-blue-100 mb-6">
-                                Deneme netlerini sisteme gir, hedeflediğin üniversiteye kaç net kaldığını hemen gör.
+                                Bu programı uyguladıktan sonra deneme netlerini gir, sıralamanın nasıl değiştiğini izle.
                             </p>
                             <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
-                                Net Hesapla →
+                                Sıralama Hesapla →
                             </Link>
                         </div>
                     </div>

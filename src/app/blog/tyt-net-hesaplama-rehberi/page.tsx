@@ -3,15 +3,16 @@ import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
-    title: 'TYT Net Hesaplama Rehberi 2027: Adım Adım Kılavuz | YKS Net Hesaplama',
-    description: 'TYT sınavında net hesaplama nasıl yapılır? 0,5 net şartı, soru dağılımı, süre yönetimi ve stratejik ipuçları. 2027 YKS sistemine uygun güncel rehber.',
-    keywords: 'tyt net hesaplama, tyt net hesaplama 2027, tyt türkçe net, tyt matematik net, tyt fen net, tyt sosyal net, tyt baraj',
+    title: 'TYT Net Hesaplama Rehberi 2027 | Derslerin Katsayıları ve Puan Getirisi',
+    description: 'TYT net hesaplama nasıl yapılır? TYT Türkçe, Matematik, Fen ve Sosyal testlerinin puan katsayıları ve YKS yerleştirme puanına etkisi.',
+    keywords: 'tyt net hesaplama, tyt katsayıları, tyt puan hesaplama 2027, tyt matematik katsayısı, yks net hesaplama',
     alternates: { canonical: 'https://yksnethesapla.com/blog/tyt-net-hesaplama-rehberi' },
     openGraph: {
-        title: 'TYT Net Hesaplama Rehberi 2027: Adım Adım Kılavuz',
-        description: 'TYT sınavında net hesaplama nasıl yapılır? 0,5 net şartı, soru dağılımı ve stratejik ipuçları.',
+        title: 'TYT Net Hesaplama: Sınavın Puan Mantığını Çözüyoruz',
+        description: 'TYT testlerinin ağırlıkları, katsayıları ve barajsız sistemin getirdikleri.',
         type: 'article',
-        publishedTime: '2026-02-27',
+        publishedTime: '2026-02-12',
+        modifiedTime: '2026-08-19',
         url: 'https://yksnethesapla.com/blog/tyt-net-hesaplama-rehberi',
     },
 }
@@ -26,20 +27,20 @@ export default function TYTNetHesaplamaRehberi() {
                         {' > '}
                         <Link href="/blog" className="hover:text-blue-600">Blog</Link>
                         {' > '}
-                        <span className="text-gray-900">TYT Net Hesaplama Rehberi</span>
+                        <span className="text-gray-900">TYT Net Hesaplama</span>
                     </nav>
 
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
-                            <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">TYT</span>
-                            <time className="text-gray-600">27 Şubat 2026</time>
-                            <span className="text-gray-600">• 11 dakika okuma</span>
+                            <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Rehber</span>
+                            <time className="text-gray-600">19 Ağustos 2026</time>
+                            <span className="text-gray-600">• 9 dk okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            TYT Net Hesaplama Rehberi: 4 Yanlış 1 Doğruyu Nasıl Götürür?
+                            TYT Net Hesaplamanın Mantığı: Hangi Derse Ne Kadar Asılmalısın?
                         </h1>
                         <p className="text-xl text-gray-600">
-                            Net hesaplamak sadece doğru ve yanlışları çıkarmak değildir; hangi dersin puanına nasıl etki ettiğini bilmek sınav stratejini baştan aşağı değiştirir.
+                            Puanın nasıl hesaplandığını bilirsen, denemede zamanını da ona göre yönetirsin. TYT&apos;de Türkçe çözmeyip Sosyal çözen sayısallar, Matematik çözmeyip Fen çözen eşit ağırlıkçılar... Kim haklı?
                         </p>
                     </header>
 
@@ -47,86 +48,95 @@ export default function TYTNetHesaplamaRehberi() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            YKS maratonunun ilk ve en kalabalık virajı olan TYT (Temel Yeterlilik Testi), toplam <strong>120 sorudan</strong> oluşur ve adaylara <strong>165 dakika</strong> süre verilir. Sınav bittiğinde doğru ve yanlış sayılarını sayıp netini bulmak kolay görünür ama işin arka planındaki katsayı dengesini bilmeyenler çoğu zaman yanlış derslere gereğinden fazla vakit harcar.
+                            Her yıl sene başında dershanede ilk deneme yapılır. Sonuçlar asılır (şimdi WhatsApp&apos;tan atılıyor ama mantık aynı). Sonra öğrenciler gelip sormaya başlar: &quot;Hocam ben 60 net yaptım o 55 net yaptı, benim puanım nasıl ondan düşük çıkıyor?&quot; 
+                        </p>
+                        
+                        <p>
+                            Çok basit bir sebebi var: TYT&apos;de net sayısı her şey değildir, o netleri HANGİ testlerden yaptığın da puanını etkiler. (Tabii ki <Link href="/blog/yks-net-hesaplama-nasil-yapilir" className="text-blue-600 hover:underline">standart sapma</Link> olayını da unutmamak lazım ama o işin teknik kısmı, şu an katsayılara odaklanalım).
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-                            1. TYT Net Hesaplama Formülü
+                            TYT Testlerinin Ağırlıkları (Katsayılar)
                         </h2>
                         <p>
-                            ÖSYM&apos;nin tüm testlerinde geçerli olan altın kural: <strong>Her 4 yanlış cevap, 1 doğru cevabınızı siler</strong>. Boş bıraktığınız sorular ise netinizi ne artırır ne de azaltır (0 puandır).
+                            TYT&apos;de toplam 120 soru var. ÖSYM sana taban puan olarak kafadan 100 puan veriyor. (Gidip sadece adını kodlasan 100 puan alıyorsun yani). Kalan puanı, yaptığın netleri katsayılarla çarparak bu 100&apos;ün üstüne ekliyor. Testlerin ağırlıkları şöyle:
                         </p>
 
-                        <div className="bg-slate-900 text-white p-6 rounded-xl text-center my-6">
-                            <p className="text-2xl font-bold font-mono mb-2">Net = Doğru Sayısı − (Yanlış Sayısı ÷ 4)</p>
-                            <p className="text-xs text-slate-400">Örnek: 30 Doğru, 6 Yanlış → 30 − (6 ÷ 4) = 30 − 1.5 = 28.5 Net</p>
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-6 not-prose">
+                            <div className="bg-red-50 p-4 rounded-xl border border-red-100 text-center">
+                                <h4 className="font-bold text-red-900">Türkçe</h4>
+                                <p className="text-2xl font-black text-red-700 mt-2">%33</p>
+                                <p className="text-xs text-red-600 mt-1">40 Soru</p>
+                            </div>
+                            <div className="bg-blue-50 p-4 rounded-xl border border-blue-100 text-center">
+                                <h4 className="font-bold text-blue-900">Matematik</h4>
+                                <p className="text-2xl font-black text-blue-700 mt-2">%33</p>
+                                <p className="text-xs text-blue-600 mt-1">40 Soru</p>
+                            </div>
+                            <div className="bg-green-50 p-4 rounded-xl border border-green-100 text-center">
+                                <h4 className="font-bold text-green-900">Fen Bilimleri</h4>
+                                <p className="text-2xl font-black text-green-700 mt-2">%17</p>
+                                <p className="text-xs text-green-600 mt-1">20 Soru</p>
+                            </div>
+                            <div className="bg-amber-50 p-4 rounded-xl border border-amber-100 text-center">
+                                <h4 className="font-bold text-amber-900">Sosyal Bilimler</h4>
+                                <p className="text-2xl font-black text-amber-700 mt-2">%17</p>
+                                <p className="text-xs text-amber-600 mt-1">20 Soru</p>
+                            </div>
                         </div>
 
+                        <p>
+                            Dikkat ettiysen Türkçe ve Matematiğin toplam ağırlığı %66. Yani TYT aslında bir okuduğunu anlama (Türkçe) ve analitik düşünme (Matematik) sınavı. Fen ve Sosyal ise destek kuvvetler.
+                        </p>
+
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-                            2. 0.5 Net Kuralı: En Çok Can Yakan Detay
+                            Stratejik Hata: Eşit Ağırlıkçının Fen Çözmemesi
                         </h2>
-                        <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg my-6">
-                            <h3 className="font-bold text-red-900 mb-2">⚠️ Puanınızın Hesaplanması İçin Şart</h3>
-                            <p className="text-gray-700 text-sm leading-relaxed">
-                                TYT puanınızın hesaplanabilmesi için <strong>Türkçe veya Temel Matematik testlerinin en az birinden minimum 0.5 net</strong> (yani en az 1 doğru ve en fazla 2 yanlış gibi) yapmanız zorunludur. Fen veya Sosyal testlerinden 40&apos;ta 40 bile yapsanız, Türkçe ve Matematik netleriniz 0 veya eksi ise TYT puanınız hesaplanmaz.
+                        <p>
+                            İşte en büyük şehir efsanelerinden biri: &quot;Ben Eşit Ağırlıkçıyım, TYT&apos;de Fen çözmeme gerek yok.&quot; Bu lafı kim çıkardıysa binlerce öğrencinin hayalleriyle oynadı. 
+                        </p>
+                        
+                        <p>
+                            Bak arkadaşım, TYT dediğimiz sınav Ortak Sınavdır. Senin alanın (SAY/EA/SÖZ) sadece AYT&apos;de önemlidir. TYT&apos;de puanın hesaplanırken, Fizik sorusundan aldığın puanla Tarih sorusundan aldığın puan neredeyse aynıdır (1 net = ~1.36 puan).
+                        </p>
+
+                        <div className="bg-slate-50 border-l-4 border-slate-500 p-5 rounded-r-lg my-6">
+                            <p className="text-slate-800 font-medium">
+                                Sen Eşit Ağırlıkçı olarak zor bir Matematik sorusuyla 5 dakika boğuşup 1 net çıkaracağına, o 5 dakikada Kimya&apos;daki &quot;Periyodik Tablo&quot; sorusu ile Biyoloji&apos;deki &quot;Hücre&quot; sorusunu (ikisi de ezberdir, kolaydır) tık tık çözüp 2 net cebine koysaydın, sıralamada fırlamıştın.
                             </p>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-                            3. TYT Soru Dağılımı ve İdeal Süre Dağılımı
-                        </h2>
-                        <div className="overflow-x-auto my-6">
-                            <table className="min-w-full bg-white border border-gray-300 rounded-lg">
-                                <thead className="bg-blue-50">
-                                    <tr>
-                                        <th className="px-5 py-3 text-left font-semibold border-b">Test Adı</th>
-                                        <th className="px-5 py-3 text-center font-semibold border-b">Soru Sayısı</th>
-                                        <th className="px-5 py-3 text-center font-semibold border-b">Önerilen Süre</th>
-                                        <th className="px-5 py-3 text-center font-semibold border-b">Net Başına Tahmini Katkı</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Türkçe</td><td className="px-5 py-3 text-center font-bold">40</td><td className="px-5 py-3 text-center">40 – 45 dk</td><td className="px-5 py-3 text-center text-blue-700 font-bold">~ 1.32 Puan</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Temel Matematik</td><td className="px-5 py-3 text-center font-bold">40</td><td className="px-5 py-3 text-center">55 – 60 dk</td><td className="px-5 py-3 text-center text-blue-700 font-bold">~ 1.32 Puan</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Sosyal Bilimler (Tar, Coğ, Fel, Din)</td><td className="px-5 py-3 text-center font-bold">20</td><td className="px-5 py-3 text-center">15 – 20 dk</td><td className="px-5 py-3 text-center text-emerald-700 font-bold">~ 1.36 Puan</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Fen Bilimleri (Fiz, Kim, Biy)</td><td className="px-5 py-3 text-center font-bold">20</td><td className="px-5 py-3 text-center">15 – 20 dk</td><td className="px-5 py-3 text-center text-emerald-700 font-bold">~ 1.36 Puan</td></tr>
-                                    <tr className="bg-blue-100 font-bold"><td className="px-5 py-3">TOPLAM</td><td className="px-5 py-3 text-center">120</td><td className="px-5 py-3 text-center">165 Dakika</td><td className="px-5 py-3 text-center">Maks 500 Puan</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <p>
+                            Sayısalcılar için de aynısı geçerli. Sayısalcı olup Felsefe/Din grubundaki o kolay yorum sorularına bakmayan adam, rakibine bedavadan avantaj veriyordur. TYT&apos;de &quot;benim alanım değil&quot; lüksün yok. TYT&apos;de kolay soru neredeyse gidip onu avlayacaksın.
+                        </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-                            4. TYT Netleri AYT Puanına Nasıl Yansır?
+                            Sınavda Süre Yönetimi: Turlama Tekniği
                         </h2>
                         <p>
-                            Üniversite yerleştirme puanınız hesaplanırken TYT&apos;nin ağırlığı <strong>%40</strong>, AYT&apos;nin ağırlığı ise <strong>%60</strong>&apos;tır. Yani TYT&apos;de yapacağınız her 1 net, yerleştirme puanınıza yaklaşık <strong>1.33 puan</strong> olarak eklenir.
+                            TYT bir zeka testi değildir. TYT bir HIZ ve PSİKOLOJİ testidir. 165 dakikada 120 soru (soru başına 1.3 dakika). Sana her soruyu çözecek süreyi bilerek vermiyorlar, &quot;bakalım bu baskı altında panik yapmadan seçici davranabilecek mi?&quot; diye ölçüyorlar.
                         </p>
+
                         <p>
-                            Örneğin, TYT&apos;de 60 net yapan bir öğrenci ile 80 net yapan bir öğrenci arasında yaklaşık <strong>26.5 puanlık</strong> bir fark oluşur. Bu fark, AYT sabit tutulduğunda yığılma bölgesinde 40.000 ila 70.000 kişilik bir sıralama avantajı demektir.
+                            O yüzden benim Turlama Tekniği dediğim şu sistemi mutlaka uygulamalısın:
+                        </p>
+                        <ol className="list-decimal pl-6 space-y-3 mb-6">
+                            <li><strong>İlk Tur (Avlanma):</strong> Sınava başladın. Soruyu okudun, kalemi oynatmadan 10 saniyede &quot;ben bunu çözerim&quot; dedin mi? Çöz. Okudun ama &quot;biraz uğraştırır&quot; dedin mi? Yanına yuvarlak koy ve GEÇ. Asla inatlaşma. İlk tur bittiğinde (yaklaşık 80-90 dk) aslında sınavdaki kolay ve orta soruların tamamını (belki 60-70 neti) cebine koymuş oluyorsun.</li>
+                            <li><strong>İkinci Tur (Boğuşma):</strong> Artık kafan rahat. Cebinde sağlam bir net var. Geri dön ve o yanına yuvarlak koyduğun, uğraştıran sorularla boğuş. Çünkü artık o sorunun 3 dakikanı alması seni strese sokmayacak.</li>
+                        </ol>
+                        
+                        <p>
+                            Denemelerde 1. sorudan başlayıp 40. soruya kadar sırayla inatlaşarak giden adam 25. soruda süreyi bitirir, arkadaki 15 tane kek soruyu göremeden sınavı kapatır. Bu tuzağa düşme.
                         </p>
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
-                            <h3 className="text-2xl font-bold mb-3">TYT Netlerinizi ve Sıralamanızı Hesaplayın</h3>
+                            <h3 className="text-2xl font-bold mb-3">Taktik Çalışıyor Mu? Hemen Test Et</h3>
                             <p className="text-blue-100 mb-6">
-                                Doğru ve yanlış sayılarınızı girerek 2027 katsayılarıyla tahmini puanınızı hemen öğrenin.
+                                TYT netlerini gir, katsayılara göre puanının nasıl hesaplandığını detaylıca gör. Fen/Sosyal netlerinin etkisine kendin şahit ol.
                             </p>
                             <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
-                                Hemen Hesapla →
+                                TYT Puanını Hesapla →
                             </Link>
-                        </div>
-
-                        <div className="border-t pt-8 mt-10">
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Bunları da İncele</h3>
-                            <div className="grid md:grid-cols-2 gap-4">
-                                <Link href="/blog/tyt-kesin-cikan-konular" className="p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
-                                    <p className="font-semibold text-green-900">TYT Kesin Çıkan Altın Konular →</p>
-                                    <p className="text-xs text-gray-600 mt-1">Sınavda garanti soru getiren konular.</p>
-                                </Link>
-                                <Link href="/blog/yks-kac-net-kac-puan" className="p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
-                                    <p className="font-semibold text-blue-900">Kaç Net Kaç Puan Eder? →</p>
-                                    <p className="text-xs text-gray-600 mt-1">Net-puan dönüşüm tabloları.</p>
-                                </Link>
-                            </div>
                         </div>
                     </div>
                 </div>

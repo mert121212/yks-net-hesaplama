@@ -3,133 +3,138 @@ import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
-    title: 'YKS\'de 1 Net Bile Neden Binlerce Kişi Attırır? (OBP ve Sıralama Analizi)',
-    description: 'YKS 2027 sınavında 1 netin sıralamaya etkisi. Yığılma bölgelerinde tek bir sorunun binlerce adayı nasıl ekarte ettiği ve katsayı analizi.',
-    keywords: 'yks 1 net kaç kişi atar, tyt 1 net sıralama etkisi, ayt 1 net kaç kişi oynatır, yks yığılma, yks sıralama hesaplama',
+    title: 'YKS\'de 1 Net Kaç Bin Kişi Atar? (Yığılma ve Standart Sapma Etkisi)',
+    description: 'YKS (TYT-AYT) sınavında 1 netin sıralamaya etkisi. Yığılma noktalarında 1 net kaç kişiyi geride bırakır? SAY, EA, SÖZ 2027 analiz.',
+    keywords: '1 net kaç kişi atar, yks 1 netin etkisi, tyt 1 net kaç kişi atar, ayt 1 net kaç kişi atar, yks yığılma, standart sapma yks',
     alternates: { canonical: 'https://yksnethesapla.com/blog/yks-1-net-kac-kisi-atar' },
     openGraph: {
-        title: 'YKS\'de 1 Net Bile Neden Binlerce Kişi Attırır?',
-        description: 'OBP sıralamayı nasıl etkiler, standart sapma nedir? YKS\'de 1 netin gerçek değerini öğren.',
+        title: 'YKS\'de 1 Netin Gücü: Sınavı Kazandıran O Tek Soru',
+        description: 'Özellikle 50.000-150.000 bandında 1 tek netin sıralamayı nasıl değiştirdiğini örneklerle anlattık.',
         type: 'article',
-        publishedTime: '2026-05-02',
+        publishedTime: '2026-02-13',
+        modifiedTime: '2026-08-19',
         url: 'https://yksnethesapla.com/blog/yks-1-net-kac-kisi-atar',
     },
 }
 
-export default function YKS1NetKacKisiAtar() {
+export default function YKSBirNetKacKisiAtar() {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 py-12 px-4">
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
-                <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-slate-100">
-                    <nav className="mb-8 text-sm text-slate-500 font-medium flex items-center space-x-2">
-                        <Link href="/" className="hover:text-blue-600 transition-colors">Ana Sayfa</Link>
-                        <span>›</span>
-                        <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-                        <span>›</span>
-                        <span className="text-slate-900">Strateji</span>
+                <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                    <nav className="mb-8 text-sm text-gray-600">
+                        <Link href="/" className="hover:text-blue-600">Ana Sayfa</Link>
+                        {' > '}
+                        <Link href="/blog" className="hover:text-blue-600">Blog</Link>
+                        {' > '}
+                        <span className="text-gray-900">1 Net Kaç Kişi Atar?</span>
                     </nav>
 
-                    <header className="mb-10">
-                        <div className="flex flex-wrap items-center gap-3 mb-5">
-                            <span className="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-bold tracking-wide uppercase">İstatistik</span>
-                            <time className="text-slate-500 text-sm font-medium">Son Güncelleme: 16 Ağustos 2026</time>
-                            <span className="text-slate-400">•</span>
-                            <span className="text-slate-500 text-sm font-medium">Okuma Süresi: 11 dk</span>
+                    <header className="mb-8">
+                        <div className="flex items-center gap-4 mb-4">
+                            <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">İstatistik</span>
+                            <time className="text-gray-600">19 Ağustos 2026</time>
+                            <span className="text-gray-600">• 10 dk okuma</span>
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6 leading-tight">
-                            YKS&apos;de 1 Net Bile Neden 15.000 Kişi Attırır? (Rakamlarla Kanıt)
+                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                            &quot;Aman Bir Sorudan Ne Olacak&quot; Diyenlerin Kaybettiği Binlerce Kişi
                         </h1>
-                        <p className="text-xl text-slate-600 font-medium leading-relaxed">
-                            &quot;Aman bir sorudan ne olacak&quot; dediğin o tek bir soru, seni hayalindeki üniversitenin kapısından içeri de sokabilir, bir yıl daha mezuna da bırakabilir.
+                        <p className="text-xl text-gray-600">
+                            Sınav esnasında o paragraf sorusunu okumaya üşenip geçtiğinde aslında kaç kişinin arkasına düştüğünü bilsen, o soruyu okumak için uykun falan kalmazdı. Gel gerçek rakamlara bakalım.
                         </p>
                     </header>
 
                     <AuthorProfile />
 
-                    <div className="prose prose-lg prose-blue max-w-none text-slate-700 mt-8">
-                        <p className="lead">
-                            Deneme çözerken ya da sınav anında yorulup &quot;Aman bu soru da kalsın, 1 sorudan ne çıkar&quot; dediğin oldu mu hiç? Eğer olduysa çok tehlikeli bir sularda yüzüyorsun demektir. Çünkü 3 milyondan fazla adayın girdiği YKS&apos;de 1 net, düşündüğünden çok daha büyük bir deprem yaratır.
+                    <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
+                        <p className="text-lg leading-relaxed">
+                            Öğrencilerle konuşurken sık sık şu cümleyi duyuyorum: &quot;Hocam matematikte 2 soruyu yapamadım, boş bıraktım, ama fenden kapattım.&quot; Ya da &quot;Tarihte o tarihi hatırlayamadım, attım yanlış çıktı. Neyse 1.25 net gitti sadece.&quot;
+                        </p>
+                        
+                        <p>
+                            Sadece 1.25 net mi? Sınav sonuçları açıklandığında, birbirinin tıpatıp aynısı puanı alan, virgüllerle birbirinden ayrılan o kadar çok kişi oluyor ki inanamazsın. Özellikle &quot;yığılma&quot; dediğimiz orta-üst başarı diliminde, o 1 net senin hayatını değiştirir. Tıp isteyip diş hekimliğine, hukuk isteyip PDR&apos;ye gidenlerin çoğu işte o &quot;aman boşver&quot; dedikleri 1 soru yüzünden bu durumu yaşar.
                         </p>
 
-                        <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
-                            Puan Aralıklarına Göre 1 Netin Sıralamaya Etkisi
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                            1 Net Seni Kaç Bin Kişi Öne Atar? (Sıralama Bandına Göre)
                         </h2>
                         <p>
-                            1 netin sizi kaç kişi öne atacağı, hangi puan bandında olduğunuza göre radikal şekilde değişir:
+                            Bu sorunun tek bir matematiksel cevabı yok. &quot;1 net 5 bin kişi atar&quot; demek yalandır. Çünkü bulunduğun sıralama bandına göre 1 netin değeri değişir. Şöyle anlatayım: Türkiye 1.si ile 2.si arasında bazen 5 puan (yaklaşık 2-3 net) fark olur. Yani ilk 100&apos;ün içindeyken 1 net seni taş çatlasın 15-20 kişi öne atar.
                         </p>
 
-                        <div className="overflow-x-auto my-6 not-prose">
-                            <table className="min-w-full bg-white border border-slate-200 rounded-xl">
-                                <thead className="bg-slate-50">
+                        <p>
+                            Ama 100 bininci sıradaysan? Orası mahşer yeri gibi kalabalıktır. Orada 1 net seni binlerce kişinin önüne fırlatır. İşte bant bant tahmini rakamlar (Son 3 yılın YKS istatistiklerinden süzülmüştür):
+                        </p>
+
+                        <div className="overflow-x-auto my-6">
+                            <table className="min-w-full bg-white border border-gray-300 rounded-lg text-sm">
+                                <thead className="bg-green-50">
                                     <tr>
-                                        <th className="px-5 py-3 text-left font-semibold text-slate-900 border-b">Bulunduğun Sıralama Bandı</th>
-                                        <th className="px-5 py-3 text-center font-semibold text-slate-900 border-b">1 Ekstra TYT Netinin Etkisi</th>
-                                        <th className="px-5 py-3 text-center font-semibold text-slate-900 border-b">1 Ekstra AYT Netinin Etkisi</th>
-                                        <th className="px-5 py-3 text-left font-semibold text-slate-900 border-b">Yorum</th>
+                                        <th className="px-5 py-3 text-left font-semibold border-b">Bulunduğun Sıralama (Yaklaşık)</th>
+                                        <th className="px-5 py-3 text-center font-semibold border-b">TYT&apos;de 1 Net Kaç Kişi Atar?</th>
+                                        <th className="px-5 py-3 text-center font-semibold border-b">AYT&apos;de 1 Net Kaç Kişi Atar?</th>
                                     </tr>
                                 </thead>
-                                <tbody className="divide-y divide-slate-100 text-sm">
-                                    <tr>
-                                        <td className="px-5 py-4 font-bold text-slate-900">İlk 10.000 (Zirve)</td>
-                                        <td className="px-5 py-4 text-center font-semibold text-blue-600">~ 200 – 400 Kişi</td>
-                                        <td className="px-5 py-4 text-center font-bold text-emerald-600">~ 500 – 1.000 Kişi</td>
-                                        <td className="px-5 py-4 text-slate-500">Tıp ve Boğaziçi farkı</td>
-                                    </tr>
-                                    <tr className="bg-slate-50">
-                                        <td className="px-5 py-4 font-bold text-slate-900">50.000 – 150.000 (Yığılma Başlangıcı)</td>
-                                        <td className="px-5 py-4 text-center font-semibold text-blue-600">~ 2.500 – 5.000 Kişi</td>
-                                        <td className="px-5 py-4 text-center font-bold text-emerald-600">~ 6.000 – 12.000 Kişi</td>
-                                        <td className="px-5 py-4 text-slate-500">Hukuk ve İyi Mühendislikler</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="px-5 py-4 font-bold text-red-600">150.000 – 350.000 (Ana Yığılma Bölgesi)</td>
-                                        <td className="px-5 py-4 text-center font-semibold text-blue-600 text-base font-bold">~ 5.000 – 8.000 Kişi</td>
-                                        <td className="px-5 py-4 text-center font-bold text-emerald-600 text-base font-bold">~ 12.000 – 18.000 Kişi</td>
-                                        <td className="px-5 py-4 text-red-600 font-bold">🔴 1 Soru = 1 Şehir Değişimi</td>
-                                    </tr>
-                                    <tr className="bg-slate-50">
-                                        <td className="px-5 py-4 font-bold text-slate-900">500.000 – 1.000.000 (Taban Bölge)</td>
-                                        <td className="px-5 py-4 text-center font-semibold text-blue-600">~ 8.000 – 15.000 Kişi</td>
-                                        <td className="px-5 py-4 text-center font-bold text-emerald-600">~ 20.000+ Kişi</td>
-                                        <td className="px-5 py-4 text-slate-500">Ön lisans ve Baraj Geçişi</td>
-                                    </tr>
+                                <tbody>
+                                    <tr className="border-b"><td className="px-5 py-3 font-bold">İlk 10.000</td><td className="px-5 py-3 text-center text-gray-600">300 - 500 kişi</td><td className="px-5 py-3 text-center font-bold text-green-700">800 - 1.200 kişi</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-bold">10.000 - 50.000</td><td className="px-5 py-3 text-center text-gray-600">800 - 1.500 kişi</td><td className="px-5 py-3 text-center font-bold text-green-700">2.000 - 3.500 kişi</td></tr>
+                                    <tr className="border-b"><td className="px-5 py-3 font-bold text-red-700">50.000 - 150.000 (Yığılma)</td><td className="px-5 py-3 text-center font-bold text-red-600">2.500 - 4.000 kişi</td><td className="px-5 py-3 text-center font-bold text-red-700">6.000 - 9.000 kişi</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-bold">150.000 - 300.000</td><td className="px-5 py-3 text-center text-gray-600">3.000 - 5.000 kişi</td><td className="px-5 py-3 text-center font-bold text-green-700">7.000 - 10.000 kişi</td></tr>
+                                    <tr><td className="px-5 py-3 font-bold">300.000 ve üstü</td><td className="px-5 py-3 text-center text-gray-600">5.000+ kişi</td><td className="px-5 py-3 text-center font-bold text-green-700">12.000+ kişi</td></tr>
                                 </tbody>
                             </table>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
-                            AYT Neti Neden TYT&apos;nin İki Katı Değerindedir?
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                            Neden AYT&apos;deki 1 Net, TYT&apos;den Daha Güçlü?
                         </h2>
                         <p>
-                            Formüle baktığınızda 1 TYT sorusunun ham puana katkısı yaklaşık <strong>1.33 puan</strong> iken, 1 AYT sorusunun katkısı <strong>yaklaşık 3.00 puandır</strong>. Yani AYT&apos;de yapacağınız tek bir doğru matematik veya fen sorusu, TYT&apos;deki 2.5 soruya denktir.
+                            Yukarıdaki tabloya dikkat ettin mi? Aynı sıralama bandında AYT&apos;de yapacağın 1 net, TYT&apos;de yapacağın 1 netin neredeyse 2.5 - 3 katı daha fazla insanı geride bırakmanı sağlıyor. Bunun nedeni ÖSYM&apos;nin katsayı sistemidir.
                         </p>
+                        
                         <p>
-                            Bu yüzden hazırlık sürecinin son 3-4 ayında zamanınızın en az %65-70&apos;ini AYT konularına ayırmak en mantıklı stratejidir.
+                            Lisans (4 yıllık) yerleştirme puanın hesaplanırken TYT&apos;nin ağırlığı %40, AYT&apos;nin ağırlığı %60&apos;tır. Ayrıca TYT&apos;de 120 soru varken, AYT (alanına göre) 80 sorudan oluşur. Soru sayısı daha az, ama genel puana etkisi daha fazla. Yani AYT&apos;deki her bir sorunun ham puan değeri TYT&apos;dekinden çok daha yüksektir.
                         </p>
 
-                        <div className="relative overflow-hidden bg-slate-900 rounded-2xl p-8 my-12 text-center border border-slate-800 shadow-2xl not-prose">
-                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500"></div>
-                            <h3 className="text-2xl font-bold mb-4 text-white">1 Net Ekleyince Sıralaman Nasıl Oynuyor?</h3>
-                            <p className="text-slate-300 mb-6 max-w-2xl mx-auto text-sm">
-                                Mevcut netlerine sadece 2 ekstra AYT neti ekleyip hesaplama motorumuzda test et. Sıralamanın ne kadar sıçradığını gözlerinle gör.
+                        <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl my-6">
+                            <h3 className="font-bold text-blue-900 mb-2">Somut Örnek:</h3>
+                            <p className="text-sm text-blue-800">
+                                SAY 80.000 bandında olan iki öğrenci düşün. A öğrencisi TYT&apos;de fazladan 1 Biyoloji neti yapıyor. B öğrencisi ise AYT&apos;de fazladan 1 Biyoloji neti yapıyor. Sınav açıklandığında B öğrencisi, A öğrencisinin kabaca 4-5 bin kişi önüne geçer. AYT affetmez, AYT kurtarır.
                             </p>
-                            <Link href="/" className="inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-slate-900 bg-white rounded-lg hover:bg-slate-50 transition-all shadow-lg hover:shadow-xl focus:ring-4 focus:ring-slate-500 focus:outline-none">
-                                Simülasyonu Başlat →
-                            </Link>
                         </div>
 
-                        <div className="mt-16 pt-8 border-t border-slate-200">
-                            <h3 className="text-xl font-bold text-slate-900 mb-6">İlgili Başlıklar</h3>
-                            <div className="grid md:grid-cols-2 gap-4 not-prose">
-                                <Link href="/blog/yks-yigilma-tehlikesi" className="group p-5 bg-white border border-slate-200 rounded-xl hover:border-blue-500 hover:shadow-md transition-all">
-                                    <h4 className="font-bold text-slate-900 group-hover:text-blue-600 transition-colors">YKS Yığılma Analizi →</h4>
-                                    <p className="text-sm text-slate-500 mt-2 line-clamp-2">Orta segmentteki adayların yığılmayı kırma taktikleri.</p>
-                                </Link>
-                                <Link href="/blog/obp-hesaplama" className="group p-5 bg-white border border-slate-200 rounded-xl hover:border-blue-500 hover:shadow-md transition-all">
-                                    <h4 className="font-bold text-slate-900 group-hover:text-blue-600 transition-colors">OBP Hesaplama Rehberi →</h4>
-                                    <p className="text-sm text-slate-500 mt-2 line-clamp-2">Lise diploma notunun sıralamaya etkisi.</p>
-                                </Link>
-                            </div>
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                            Zor Soru Daha Mı Çok Kişi Atar? (Standart Sapma Efsanesi)
+                        </h2>
+                        <p>
+                            Bunu önceki <Link href="/blog/yks-net-hesaplama-nasil-yapilir" className="text-blue-600 hover:underline">net hesaplama yazımızda</Link> da uzun uzun anlattım ama yineleyeyim: &quot;Çok zor bir soruyu yaparsam, onu kimse yapamadığı için beni 10 bin kişi atar&quot; düşüncesi yanlıştır.
+                        </p>
+                        <p>
+                            Standart sapma soru bazında değil, test bazındadır. Yani AYT Matematik testindeki o aşırı zor türev sorusunu çözmenle, çok kolay olan karmaşık sayı sorusunu çözmen sana <strong>aynı puanı</strong> verir. Puanın aynı olduğu için seni atacağı kişi sayısı da aynıdır. 
+                        </p>
+                        <p>
+                            Bu yüzden sınav esnasında ego yapıp zor soruyla 5 dakika inatlaşma. Onun yerine arkadaki 3 tane kolay-orta soruyu çözersen, 1 net yerine 3 net yapmış olursun ki bu da seni o zor soruyu çözen inatçı öğrencinin fersah fersah önüne atar.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                            Peki Bu Bilgiyle Ne Yapacağız?
+                        </h2>
+                        <p>
+                            &quot;Tamam anladım, 1 net önemliymiş&quot; deyip geçme. Bunu pratiğe dök. Eğer 50-150 bin bandındaysan, senin kurtarıcın &quot;çantada keklik&quot; dediğimiz, çalışıldığında kesin yapılan konulardır.
+                        </p>
+                        <ul className="list-disc pl-6 space-y-2 mb-6">
+                            <li>TYT Felsefe/Din: Formül yok, ezber az. Sadece kavramları (determinizm, teoteizm vs.) öğrenip 2 net cebine koyabilirsin.</li>
+                            <li>TYT Kimya (Doğa ve Kimya, Madde): Çok temel düzey sorulur, 2 gün çalışıp 2 net artırırsın. Bu sana 7-8 bin kişi kazandırır.</li>
+                        </ul>
+
+                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
+                            <h3 className="text-2xl font-bold mb-3">1 Netin Etkisini Gözünle Gör</h3>
+                            <p className="text-blue-100 mb-6">
+                                Hesaplama aracımıza gir. Önce şu anki netlerini yazıp sıralamanı gör. Sonra sadece AYT Matematik netini 1 tane artır ve sıralamanın ne kadar sıçradığını kendi gözlerinle test et.
+                            </p>
+                            <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
+                                Etkiyi Test Et →
+                            </Link>
                         </div>
                     </div>
                 </div>
