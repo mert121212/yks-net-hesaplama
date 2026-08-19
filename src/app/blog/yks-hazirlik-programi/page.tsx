@@ -112,25 +112,17 @@ export default function YKSHazirlikProgrami() {
                         <p>
                             Bunu direkt kopyalamak zorunda değilsin. Kendi biyolojik saatine göre uyarla. Ama genel yapı olarak şuna benzemeli:
                         </p>
-                        <div className="overflow-x-auto my-6">
-                            <table className="min-w-full bg-white border border-gray-300 rounded-lg text-sm">
-                                <thead className="bg-blue-50">
-                                    <tr>
-                                        <th className="px-4 py-3 text-left font-semibold border-b">Saat</th>
-                                        <th className="px-4 py-3 text-left font-semibold border-b">Ne Yapılacak</th>
-                                        <th className="px-4 py-3 text-left font-semibold border-b">Neden</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b"><td className="px-4 py-3 font-bold">08:30 - 09:20</td><td>Paragraf + Problem (karışık 30 soru)</td><td>Beyni ısıtma turu. Her gün aynı şeyle başla.</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-4 py-3 font-bold">09:30 - 12:00</td><td>AYT Ana Ders (Matematik veya Fen)</td><td>Beyin sabah en keskindir. En zor dersi buraya koy.</td></tr>
-                                    <tr className="border-b"><td className="px-4 py-3 font-bold">12:00 - 13:30</td><td>Öğle Molası</td><td>Yemek ye, 20 dakika yürü. Ders düşünme.</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-4 py-3 font-bold">13:30 - 16:00</td><td>İkinci Ders Bloğu (Fen-2 veya Edebiyat)</td><td>Öğleden sonra orta zorlukta ders.</td></tr>
-                                    <tr className="border-b"><td className="px-4 py-3 font-bold">16:15 - 18:00</td><td>TYT Branş Denemesi veya Soru Çözümü</td><td>Günün üçüncü bloğu. Pratik ağırlıklı.</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-4 py-3 font-bold">19:30 - 21:30</td><td>Günün Tekrarı + Hata Defteri</td><td>Sabah çalıştığın konunun gece tekrarı. Ebbinghaus.</td></tr>
-                                    <tr><td className="px-4 py-3 font-bold">21:30 - 22:00</td><td>Yarınki planı yaz</td><td>Sabah kalktığında ne yapacağını bileceksin.</td></tr>
-                                </tbody>
-                            </table>
+                        <div className="bg-slate-50 rounded-xl p-6 my-6 border border-slate-200">
+                            <h3 className="font-bold text-slate-900 mb-4 text-lg">Örnek Bir Günün Anatomisi</h3>
+                            <div className="space-y-4">
+                                <p className="text-slate-700"><strong>08:30 - 09:20 (Sabah Isınması):</strong> Güne Paragraf ve Problem (PP rutini) ile başla. Zihni açmanın, o günkü maratona hazırlanmanın en iyi yoludur.</p>
+                                <p className="text-slate-700"><strong>09:30 - 12:00 (Ana Yüklenme):</strong> Sabahları beynin en taze olduğu anlardır. Bu aralığa mutlaka AYT Matematik veya AYT Fen gibi en ağır, en baba dersleri koymalısın.</p>
+                                <p className="text-slate-700"><strong>12:00 - 13:30 (Öğle Molası):</strong> Kitap yüzü görmediğin, yemeğini yiyip tamamen kafa dinlediğin vakit. Bu molayı atlayan öğleden sonra çöker.</p>
+                                <p className="text-slate-700"><strong>13:30 - 16:00 (İkinci Yüklenme):</strong> Öğle mahmurluğu attıktan sonra orta zorluktaki derslere geç. Mesela Edebiyat, Fen-2 veya Tarih çalış.</p>
+                                <p className="text-slate-700"><strong>16:15 - 18:00 (Pratik Zamanı):</strong> Soru çözümü veya TYT branş denemesi. Akşama doğru konu öğrenmek zorlaşır ama test çözmek kolaydır.</p>
+                                <p className="text-slate-700"><strong>19:30 - 21:30 (Ebbinghaus Tekrarı):</strong> Gündüz öğrendiklerinin gece tekrarı. Hata defterine bakma, bugünün özetini çıkarma zamanı.</p>
+                                <p className="text-slate-700"><strong>21:30 - 22:00 (Kapanış):</strong> Ertesi günün planını masaya yazıp bırakırsan, sabah masaya oturduğunda "ne çalışsam" diye düşünmezsin.</p>
+                            </div>
                         </div>
 
                         <p>

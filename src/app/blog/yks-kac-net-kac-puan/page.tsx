@@ -80,24 +80,15 @@ export default function YKSKacNetKacPuan() {
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
                             TYT Net - Puan Tablosu (Yaklaşık Değerler)
                         </h2>
-                        <div className="overflow-x-auto my-6">
-                            <table className="min-w-full bg-white border border-gray-300 rounded-lg text-sm">
-                                <thead className="bg-blue-50">
-                                    <tr>
-                                        <th className="px-5 py-3 text-left font-semibold border-b">TYT Toplam Net</th>
-                                        <th className="px-5 py-3 text-center font-semibold border-b">Tahmini TYT Puanı</th>
-                                        <th className="px-5 py-3 text-center font-semibold border-b">Yaklaşık Sıralama</th>
-                                        <th className="px-5 py-3 text-left font-semibold border-b">Neye Yeter?</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b bg-green-50"><td className="px-5 py-3 font-bold">100 - 115 Net</td><td className="px-5 py-3 text-center font-bold text-emerald-700">430 - 480</td><td className="px-5 py-3 text-center">İlk 10K</td><td className="px-5 py-3">İstanbul Tıp, Boğaziçi seviyesi</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-bold">85 - 100 Net</td><td className="px-5 py-3 text-center font-bold text-blue-700">380 - 430</td><td className="px-5 py-3 text-center">10K - 50K</td><td className="px-5 py-3">İyi devlet üniversiteleri, tıp alt sınır</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-bold">70 - 85 Net</td><td className="px-5 py-3 text-center font-bold text-indigo-700">330 - 380</td><td className="px-5 py-3 text-center">50K - 150K</td><td className="px-5 py-3">Ortalama mühendislikler, hukuk alt sınır</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-bold">50 - 70 Net</td><td className="px-5 py-3 text-center font-bold text-amber-700">270 - 330</td><td className="px-5 py-3 text-center">150K - 500K</td><td className="px-5 py-3">Ana yığılma bölgesi. 2 yıllık / taşra 4 yıllık</td></tr>
-                                    <tr><td className="px-5 py-3 font-bold">30 - 50 Net</td><td className="px-5 py-3 text-center font-bold text-red-700">200 - 270</td><td className="px-5 py-3 text-center">500K+</td><td className="px-5 py-3">Açıköğretim ve ön lisans</td></tr>
-                                </tbody>
-                            </table>
+                        <div className="bg-slate-50 rounded-xl p-6 my-6 border border-slate-200">
+                            <h3 className="font-bold text-slate-900 mb-4 text-lg">Hangi TYT Neti Nereye Götürür?</h3>
+                            <div className="space-y-4">
+                                <p className="text-slate-700"><strong>100 - 115 Net (İlk 10K):</strong> Tahmini 430-480 puan aralığı. İstanbul Tıp, Boğaziçi Mühendislik gibi devler için TYT ayağında olman gereken yer burasıdır.</p>
+                                <p className="text-slate-700"><strong>85 - 100 Net (10K - 50K):</strong> Tahmini 380-430 puan aralığı. İyi devlet üniversitelerinde mühendislik, tıp alt sınırı veya çok iyi hukuk fakültelerine kapı açan bant burası.</p>
+                                <p className="text-slate-700"><strong>70 - 85 Net (50K - 150K):</strong> Tahmini 330-380 puan aralığı. Ortalama mühendislikler, Anadolu'daki hukuk fakülteleri ve iyi sağlık bilimleri bölümleri genelde bu neti ister.</p>
+                                <p className="text-slate-700"><strong>50 - 70 Net (150K - 500K):</strong> Tahmini 270-330 puan aralığı. Burası ana yığılma bölgesi. Taşradaki 4 yıllık bölümler ile iyi 2 yıllık meslek yüksekokullarına giden netler burada döner.</p>
+                                <p className="text-slate-700"><strong>30 - 50 Net (500K+):</strong> Tahmini 200-270 puan aralığı. Genelde açıköğretim ve barajı geçen ön lisans programları için yeterli olan alt limittir.</p>
+                            </div>
                         </div>
 
                         <p>

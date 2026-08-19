@@ -62,27 +62,14 @@ export default function YKSEdebiyatKonulari() {
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
                             AYT Edebiyat Soru Dağılımı
                         </h2>
-                        <div className="overflow-x-auto my-6">
-                            <table className="min-w-full bg-white border border-gray-300 rounded-lg">
-                                <thead className="bg-purple-50">
-                                    <tr>
-                                        <th className="px-5 py-3 text-left font-semibold border-b">Dönem / Konu</th>
-                                        <th className="px-5 py-3 text-center font-semibold border-b">Ortalama Soru</th>
-                                        <th className="px-5 py-3 text-left font-semibold border-b">Benim Yorumum</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Anlam Bilgisi (Paragraf, Cümle Yorumu)</td><td className="px-5 py-3 text-center font-bold">4 - 6</td><td className="px-5 py-3 text-blue-700">Temel netler. Bunları kaçırma, kolay olur genelde.</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Şiir Bilgisi (Kafiye, Redif, Ölçü, Söz Sanatları)</td><td className="px-5 py-3 text-center font-bold">3 - 4</td><td className="px-5 py-3 text-green-700 font-bold">Teknik bilgi. Bir kez öğrenince unutmazsın.</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">İslamiyet Öncesi ve Halk Edebiyatı</td><td className="px-5 py-3 text-center font-bold">2 - 3</td><td className="px-5 py-3">Koşma, mani, destan — bunları bil yeter.</td></tr>
-                                    <tr className="border-b bg-red-50"><td className="px-5 py-3 font-bold text-red-900">Divan Edebiyatı</td><td className="px-5 py-3 text-center font-bold text-red-700 text-lg">4 - 5</td><td className="px-5 py-3 text-red-700 font-bold">En çok soru gelen bölüm. 5 büyük şairi bil: Fuzuli, Baki, Nedim, Nabi, Şeyh Galip.</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Tanzimat (1. ve 2. Dönem)</td><td className="px-5 py-3 text-center font-bold">2 - 3</td><td className="px-5 py-3">Namık Kemal vs Recaizade karşılaştırması sıkça çıkıyor.</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Servet-i Fünun ve Fecr-i Ati</td><td className="px-5 py-3 text-center font-bold">1 - 2</td><td className="px-5 py-3">Tevfik Fikret ve Halit Ziya yeterli.</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Milli Edebiyat</td><td className="px-5 py-3 text-center font-bold">2 - 3</td><td className="px-5 py-3">Ömer Seyfettin, Ziya Gökalp ve Beş Hececiler.</td></tr>
-                                    <tr className="border-b bg-blue-50"><td className="px-5 py-3 font-bold text-blue-900">Cumhuriyet Dönemi (Şiir, Roman, Tiyatro, Hikaye)</td><td className="px-5 py-3 text-center font-bold text-blue-800 text-lg">4 - 6</td><td className="px-5 py-3 text-blue-800 font-bold">En geniş bölüm. Nazım Hikmet, Necip Fazıl, Yaşar Kemal, Orhan Kemal hep çıkıyor.</td></tr>
-                                    <tr><td className="px-5 py-3 font-medium">Edebi Akımlar (Realizm, Romantizm vb.)</td><td className="px-5 py-3 text-center font-bold">1</td><td className="px-5 py-3 text-green-700">1 soru garanti. 10 dakikada öğrenilir.</td></tr>
-                                </tbody>
-                            </table>
+                        <div className="bg-slate-50 rounded-xl p-6 my-6 border border-slate-200">
+                            <h3 className="font-bold text-slate-900 mb-4 text-lg">Dönemlere Göre Soru Analizi</h3>
+                            <div className="space-y-4">
+                                <p className="text-slate-700"><strong>Anlam ve Şiir Bilgisi:</strong> Sınavda yaklaşık 7-10 soru sırf buradan geliyor. Yani paragraf, cümle yorumu, kafiye, redif... Burası kaçırmaman gereken en temel yer.</p>
+                                <p className="text-slate-700"><strong>Divan Edebiyatı:</strong> Her sene 4 veya 5 soru mutlaka çıkıyor. Burada Fuzuli, Baki, Nedim, Nabi ve Şeyh Galip gibi 5 büyük ismi çok iyi bilirsen büyük avantaj sağlarsın.</p>
+                                <p className="text-slate-700"><strong>Tanzimat, Servet-i Fünun ve Milli Edebiyat:</strong> Toplamda 5-8 soruluk bir alan. Namık Kemal, Tevfik Fikret, Ömer Seyfettin gibi dönemin temel isimleri üzerinden ilerler.</p>
+                                <p className="text-slate-700"><strong>Cumhuriyet Dönemi:</strong> Testin en geniş kısmıdır ve genellikle 4-6 soru barındırır. Roman, tiyatro, şiir gibi birçok dala ayrılır. Necip Fazıl, Yaşar Kemal gibi ustaları her sene bir şekilde sorarlar.</p>
+                            </div>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">

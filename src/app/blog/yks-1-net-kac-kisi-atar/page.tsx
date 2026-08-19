@@ -66,23 +66,14 @@ export default function YKSBirNetKacKisiAtar() {
                             Ama 100 bininci sıradaysan? Orası mahşer yeri gibi kalabalıktır. Orada 1 net seni binlerce kişinin önüne fırlatır. İşte bant bant tahmini rakamlar (Son 3 yılın YKS istatistiklerinden süzülmüştür):
                         </p>
 
-                        <div className="overflow-x-auto my-6">
-                            <table className="min-w-full bg-white border border-gray-300 rounded-lg text-sm">
-                                <thead className="bg-green-50">
-                                    <tr>
-                                        <th className="px-5 py-3 text-left font-semibold border-b">Bulunduğun Sıralama (Yaklaşık)</th>
-                                        <th className="px-5 py-3 text-center font-semibold border-b">TYT&apos;de 1 Net Kaç Kişi Atar?</th>
-                                        <th className="px-5 py-3 text-center font-semibold border-b">AYT&apos;de 1 Net Kaç Kişi Atar?</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b"><td className="px-5 py-3 font-bold">İlk 10.000</td><td className="px-5 py-3 text-center text-gray-600">300 - 500 kişi</td><td className="px-5 py-3 text-center font-bold text-green-700">800 - 1.200 kişi</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-bold">10.000 - 50.000</td><td className="px-5 py-3 text-center text-gray-600">800 - 1.500 kişi</td><td className="px-5 py-3 text-center font-bold text-green-700">2.000 - 3.500 kişi</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-bold text-red-700">50.000 - 150.000 (Yığılma)</td><td className="px-5 py-3 text-center font-bold text-red-600">2.500 - 4.000 kişi</td><td className="px-5 py-3 text-center font-bold text-red-700">6.000 - 9.000 kişi</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-bold">150.000 - 300.000</td><td className="px-5 py-3 text-center text-gray-600">3.000 - 5.000 kişi</td><td className="px-5 py-3 text-center font-bold text-green-700">7.000 - 10.000 kişi</td></tr>
-                                    <tr><td className="px-5 py-3 font-bold">300.000 ve üstü</td><td className="px-5 py-3 text-center text-gray-600">5.000+ kişi</td><td className="px-5 py-3 text-center font-bold text-green-700">12.000+ kişi</td></tr>
-                                </tbody>
-                            </table>
+                        <div className="bg-slate-50 rounded-xl p-6 my-6 border border-slate-200">
+                            <h3 className="font-bold text-slate-900 mb-4 text-lg">Hangi Bandta 1 Net Ne Kadar İleri Taşır?</h3>
+                            <div className="space-y-4">
+                                <p className="text-slate-700"><strong>İlk 10.000 içindeyken:</strong> O tepedeki dar grupta TYT neti seni 300-500 kişi, AYT neti ise yaklaşık 1000 kişi öne atıyor. Zaten herkes çok iyi olduğu için farklar küçük ama çok kritiktir.</p>
+                                <p className="text-slate-700"><strong>10.000 ile 50.000 arasındayken:</strong> Burada rekabet kızışıyor. AYT'den kapacağın tek bir net seni 3000 kişiye kadar bir anda sıçratabilir.</p>
+                                <p className="text-slate-700"><strong>50.000 ile 150.000 bandı (Yığılma Bölgesi):</strong> Sınavın asıl mahşer yeri burasıdır. Bu kalabalığın içindeysen, o burun kıvırdığın 1 AYT neti, inan bana seni bir anda 9000 kişinin, bazen daha fazlasının önüne fırlatır.</p>
+                                <p className="text-slate-700"><strong>300.000 ve üstündeyken:</strong> Burada kalabalık çok dağınık olduğu için 1 netin etkisi inanılmazdır. AYT'de fazladan 1 net yapmak seni 12.000-15.000 kişinin önüne bile atabilir.</p>
+                            </div>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">

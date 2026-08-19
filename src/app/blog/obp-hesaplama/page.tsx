@@ -85,27 +85,15 @@ export default function OBPHesaplamaRehberi() {
                         <p>
                             Aşağıdaki tabloyu duvara as. Ciddiyim, yazdır ve masanın üstüne koy. Çünkü bu tablo sana lisedeki her yazılının aslında kaç puan değerinde olduğunu gösteriyor.
                         </p>
-                        <div className="overflow-x-auto my-6 not-prose rounded-xl shadow-sm border border-slate-200">
-                            <table className="w-full text-left text-sm text-slate-600">
-                                <thead className="bg-slate-50 text-slate-900 font-semibold uppercase text-xs">
-                                    <tr>
-                                        <th className="px-6 py-4 border-b">Diploma Notu</th>
-                                        <th className="px-6 py-4 border-b text-center">OBP (500 üzerinden)</th>
-                                        <th className="px-6 py-4 border-b text-center">Puanına Eklenen</th>
-                                        <th className="px-6 py-4 border-b text-center">Bu Ne Kadar Fark Yaratır?</th>
-                                    </tr>
-                                </thead>
-                                <tbody className="bg-white divide-y divide-slate-100">
-                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-slate-900">100</td><td className="px-6 py-4 text-center">500</td><td className="px-6 py-4 text-center text-emerald-600 font-bold">+60.0</td><td className="px-6 py-4 text-center text-slate-500">Altın madalya</td></tr>
-                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-slate-900">95</td><td className="px-6 py-4 text-center">475</td><td className="px-6 py-4 text-center text-emerald-600 font-bold">+57.0</td><td className="px-6 py-4 text-center text-slate-500">Mükemmel</td></tr>
-                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-slate-900">90</td><td className="px-6 py-4 text-center">450</td><td className="px-6 py-4 text-center text-emerald-600 font-bold">+54.0</td><td className="px-6 py-4 text-center text-slate-500">Gayet iyi</td></tr>
-                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-slate-900">85</td><td className="px-6 py-4 text-center">425</td><td className="px-6 py-4 text-center text-blue-600 font-bold">+51.0</td><td className="px-6 py-4 text-center text-slate-500">Ortanın üstü</td></tr>
-                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-slate-900">80</td><td className="px-6 py-4 text-center">400</td><td className="px-6 py-4 text-center text-blue-600 font-bold">+48.0</td><td className="px-6 py-4 text-center text-slate-500">İdare eder</td></tr>
-                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-slate-900">70</td><td className="px-6 py-4 text-center">350</td><td className="px-6 py-4 text-center text-amber-600 font-bold">+42.0</td><td className="px-6 py-4 text-center text-slate-500">Risk bölgesi</td></tr>
-                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-slate-900">60</td><td className="px-6 py-4 text-center">300</td><td className="px-6 py-4 text-center text-red-600 font-bold">+36.0</td><td className="px-6 py-4 text-center text-slate-500">Sıkıntılı</td></tr>
-                                    <tr className="hover:bg-slate-50"><td className="px-6 py-4 font-bold text-slate-900">50</td><td className="px-6 py-4 text-center">250</td><td className="px-6 py-4 text-center text-red-600 font-bold">+30.0</td><td className="px-6 py-4 text-center text-slate-500">Çok zor durum</td></tr>
-                                </tbody>
-                            </table>
+                        <div className="bg-slate-50 rounded-xl p-6 my-6 border border-slate-200">
+                            <h3 className="font-bold text-slate-900 mb-4 text-lg">Hangi Not Kaç Puan Getirir?</h3>
+                            <div className="space-y-4">
+                                <p className="text-slate-700"><strong>Diploma Notu 100:</strong> Mükemmel senaryo. ÖSYM sana en üst sınır olan 60 tam puanı veriyor.</p>
+                                <p className="text-slate-700"><strong>Diploma Notu 90:</strong> Gayet iyi bir ortalama. Puanına tam 54 puan eklenir.</p>
+                                <p className="text-slate-700"><strong>Diploma Notu 80:</strong> Fena sayılmaz. Bu ortalama sana 48 puan kazandırır.</p>
+                                <p className="text-slate-700"><strong>Diploma Notu 70:</strong> Biraz risk bölgesi diyebiliriz. Sana getirisi 42 puandır.</p>
+                                <p className="text-slate-700"><strong>Diploma Notu 60:</strong> İşlerin zorlaştığı yer. Yalnızca 36 puan alabiliyorsun ve rakiplerin seni burada geçmeye başlıyor.</p>
+                            </div>
                         </div>
 
                         <p>

@@ -61,28 +61,15 @@ export default function TYTMatematikKonulari() {
                         <p>
                             Aşağıdaki tablo ÖSYM&apos;nin son 5 yıldaki TYT Matematik sorularını analiz ederek çıkardığım ortalama dağılım. Her sene 1-2 soru oynayabilir ama genel tablo bu şekilde:
                         </p>
-                        <div className="overflow-x-auto my-6">
-                            <table className="min-w-full bg-white border border-gray-300 rounded-lg">
-                                <thead className="bg-blue-50">
-                                    <tr>
-                                        <th className="px-5 py-3 text-left font-semibold border-b">Konu</th>
-                                        <th className="px-5 py-3 text-center font-semibold border-b">Ortalama Soru</th>
-                                        <th className="px-5 py-3 text-left font-semibold border-b">Benim Yorumum</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b bg-red-50"><td className="px-5 py-3 font-bold text-red-900">Problemler (Sayı, Kesir, Yaş, İşçi, Hız, Yüzde, Kar-Zarar, Karışım)</td><td className="px-5 py-3 text-center font-bold text-red-700 text-lg">12 - 14</td><td className="px-5 py-3 text-red-700 font-bold">Sınavın kalbi. Bunu yapan sınavı yapar.</td></tr>
-                                    <tr className="border-b bg-blue-50"><td className="px-5 py-3 font-bold text-blue-900">Geometri (Üçgen, Dörtgen, Çember, Alan-Çevre, Katı Cisim)</td><td className="px-5 py-3 text-center font-bold text-blue-800 text-lg">9 - 10</td><td className="px-5 py-3 text-blue-700 font-bold">Fark yaratan bölüm. 25 net üstü buradan gelir.</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Temel Kavramlar, Sayı Basamakları, Bölünebilme, EBOB-EKOK</td><td className="px-5 py-3 text-center font-bold">4 - 5</td><td className="px-5 py-3">Temel taşlar. Bunlar olmadan problem çözülmez.</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Üslü ve Köklü İfadeler</td><td className="px-5 py-3 text-center font-bold">2 - 3</td><td className="px-5 py-3 text-green-700">Kolay, kısa sürede hallolur. Garanti net.</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Rasyonel Sayılar, Basit Eşitsizlikler</td><td className="px-5 py-3 text-center font-bold">2 - 3</td><td className="px-5 py-3 text-green-700">Bunları da cebine koy.</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Mutlak Değer</td><td className="px-5 py-3 text-center font-bold">1 - 2</td><td className="px-5 py-3 text-orange-700">Tuzaklı çıkabiliyor. Dikkatli ol.</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Kümeler, Mantık</td><td className="px-5 py-3 text-center font-bold">2</td><td className="px-5 py-3 text-green-700">Formülleri bilince rahat.</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Fonksiyonlar</td><td className="px-5 py-3 text-center font-bold">1 - 2</td><td className="px-5 py-3">AYT için de köprü.</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Veri, İstatistik, Sayma</td><td className="px-5 py-3 text-center font-bold">2 - 3</td><td className="px-5 py-3 text-green-700">Grafik okuma soruları genelde kolay olur.</td></tr>
-                                    <tr><td className="px-5 py-3 font-medium">Permütasyon, Kombinasyon, Olasılık</td><td className="px-5 py-3 text-center font-bold">2</td><td className="px-5 py-3 text-red-600">Zor çıkıyor. Eleme sorusu.</td></tr>
-                                </tbody>
-                            </table>
+                        <div className="bg-slate-50 rounded-xl p-6 my-6 border border-slate-200">
+                            <h3 className="font-bold text-slate-900 mb-4 text-lg">Konu Konu Ortalama Soru Analizi</h3>
+                            <div className="space-y-4">
+                                <p className="text-slate-700"><strong>Problemler (12-14 Soru):</strong> Bu işin kalbi. Problemleri yapabilen adam sınavı kazanır, bu kadar net.</p>
+                                <p className="text-slate-700"><strong>Geometri (9-10 Soru):</strong> Farkı yaratan yer burası. Çoğu kişi geometriye bakmaya üşenir. 25 neti geçmek istiyorsan buraya girmek zorundasın.</p>
+                                <p className="text-slate-700"><strong>Temel Kavramlar (4-5 Soru):</strong> Temel taşlarımız. Bunlar olmadan zaten problem falan çözülmüyor.</p>
+                                <p className="text-slate-700"><strong>Üslü ve Köklü İfadeler (2-3 Soru):</strong> Kısa sürede halledilen, genelde garanti net getiren kısımdır.</p>
+                                <p className="text-slate-700"><strong>Fonksiyonlar, Kümeler, Mutlak Değer (4-5 Soru Toplamı):</strong> AYT için köprü görevi gören, formülü bilenin yaptığı yerlerdir.</p>
+                            </div>
                         </div>
 
                         <p>

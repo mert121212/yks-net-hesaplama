@@ -61,29 +61,20 @@ export default function AYTMatematikKonulari() {
                         <p>
                             Bu tabloyu çok iyi incele. Çünkü çalışma planını bu tabloya göre kurman lazım. Hangi konudan kaç soru geliyor, hangisi kolay hangisi zor, hepsini yazdım:
                         </p>
-                        <div className="overflow-x-auto my-6">
-                            <table className="min-w-full bg-white border border-gray-300 rounded-lg">
-                                <thead className="bg-purple-50">
-                                    <tr>
-                                        <th className="px-5 py-3 text-left font-semibold border-b">Konu</th>
-                                        <th className="px-5 py-3 text-center font-semibold border-b">Soru Sayısı</th>
-                                        <th className="px-5 py-3 text-left font-semibold border-b">Durum ve Tavsiyem</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Fonksiyonlar (Bileşke, Ters, Parçalı)</td><td className="px-5 py-3 text-center font-bold">2 - 3</td><td className="px-5 py-3">Her şeyin temeli. Bunu bilmeden türev yapılamaz.</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Polinomlar ve 2. Derece Denklemler</td><td className="px-5 py-3 text-center font-bold">2 - 3</td><td className="px-5 py-3">Bölme algoritması ve kök bulma mutlaka sorulur.</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium">Parabol ve Eşitsizlik Sistemleri</td><td className="px-5 py-3 text-center font-bold">2</td><td className="px-5 py-3">Grafik okuma yeteneği çok önemli burada.</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium text-green-800 font-bold">Logaritma</td><td className="px-5 py-3 text-center font-bold text-green-700">2 - 3</td><td className="px-5 py-3 text-green-700 font-bold">Kolay. 4-5 formülü bil, garanti 2-3 net.</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="px-5 py-3 font-medium text-green-800 font-bold">Diziler (Aritmetik ve Geometrik)</td><td className="px-5 py-3 text-center font-bold text-green-700">1 - 2</td><td className="px-5 py-3 text-green-700 font-bold">Kolay. Genelde klasik soru tipi çıkar.</td></tr>
-                                    <tr className="border-b bg-yellow-50"><td className="px-5 py-3 font-bold text-amber-900">TRİGONOMETRİ</td><td className="px-5 py-3 text-center font-bold text-amber-800 text-lg">4 - 5</td><td className="px-5 py-3 text-amber-800 font-bold">40 sorunun %12&apos;si. Yarım açı ve ters trigonometrik fonksiyonlar sık çıkıyor.</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Limit ve Süreklilik</td><td className="px-5 py-3 text-center font-bold">2 - 3</td><td className="px-5 py-3">Türev&apos;in ön koşulu. Belirsizlik durumlarını çok iyi bil.</td></tr>
-                                    <tr className="border-b bg-red-50"><td className="px-5 py-3 font-bold text-red-900">TÜREV</td><td className="px-5 py-3 text-center font-bold text-red-700 text-lg">4 - 5</td><td className="px-5 py-3 text-red-700 font-bold">En zor bölüm. Geometrik yorum, maksimum-minimum, ilişkili oranlar.</td></tr>
-                                    <tr className="border-b bg-red-50"><td className="px-5 py-3 font-bold text-red-900">İNTEGRAL</td><td className="px-5 py-3 text-center font-bold text-red-700 text-lg">4 - 5</td><td className="px-5 py-3 text-red-700 font-bold">Belirli integral ve alan hesabı her sene çıkıyor. İntegral bilmeyenin SAY yapması çok zor.</td></tr>
-                                    <tr className="border-b"><td className="px-5 py-3 font-medium">Permütasyon, Kombinasyon, Olasılık</td><td className="px-5 py-3 text-center font-bold">2</td><td className="px-5 py-3">Genelde 1&apos;i kolay 1&apos;i zor olur.</td></tr>
-                                    <tr className="bg-blue-50"><td className="px-5 py-3 font-bold text-blue-900">GEOMETRİ ve ANALİTİK GEOMETRİ</td><td className="px-5 py-3 text-center font-bold text-blue-800 text-lg">9 - 10</td><td className="px-5 py-3 text-blue-800 font-bold">Derece yaptıran kısım. Analitik geometri formüllerini çok iyi bil.</td></tr>
-                                </tbody>
-                            </table>
+                        <div className="bg-slate-50 rounded-xl p-6 my-6 border border-slate-200">
+                            <h3 className="font-bold text-slate-900 mb-4 text-lg">Konulara Göre Ortalama Soru Sayıları</h3>
+                            <div className="space-y-4">
+                                <p className="text-slate-700"><strong>Fonksiyonlar (2-3 Soru):</strong> Her şeyin temeli. Bunu bilmeden türev yapılamaz. Bileşke, ters, parçalı fonksiyonları sular seller gibi bilmelisin.</p>
+                                <p className="text-slate-700"><strong>Polinomlar ve 2. Derece Denklemler (2-3 Soru):</strong> Bölme algoritması ve kök bulma mantığı mutlaka sorulur.</p>
+                                <p className="text-slate-700"><strong>Parabol ve Eşitsizlik Sistemleri (2 Soru):</strong> Grafik okuma yeteneğinin en çok test edildiği yer burası.</p>
+                                <p className="text-slate-700"><strong>Logaritma (2-3 Soru):</strong> Kolay kısımdır. Sadece 4-5 tane kuralı var. Kuralı bilen, soruyu alır.</p>
+                                <p className="text-slate-700"><strong>Diziler (1-2 Soru):</strong> Aritmetik ve geometrik diziler genelde klasik soru tipleriyle gelir. Kaçırmaman lazım.</p>
+                                <p className="text-slate-700"><strong>Trigonometri (4-5 Soru):</strong> İşte geldik kırılma noktasına. Sınavın tam yüzde 12'si buradan çıkıyor. Yarım açı ve ters trigonometrik fonksiyonları çok sık soruyorlar.</p>
+                                <p className="text-slate-700"><strong>Limit ve Süreklilik (2-3 Soru):</strong> Türevin ön hazırlığıdır. Belirsizlik durumlarını iyi öğrenmelisin.</p>
+                                <p className="text-slate-700"><strong>Türev (4-5 Soru):</strong> Sınavın en baba konusudur. Geometrik yorum, maksimum-minimum problemleri ve ilişkili oranlar her sene can yakar.</p>
+                                <p className="text-slate-700"><strong>İntegral (4-5 Soru):</strong> Belirli integral ve alan hesabı mutlaka var. İntegral yapamayan birinin sayısalda üst sıralara oynaması çok zordur.</p>
+                                <p className="text-slate-700"><strong>Geometri ve Analitik (9-10 Soru):</strong> Sana dereceyi getirecek olan asıl kısım budur. Formülleri mantığıyla anlarsan inanılmaz rahat edersin.</p>
+                            </div>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
