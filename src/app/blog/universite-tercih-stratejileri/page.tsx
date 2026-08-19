@@ -11,8 +11,8 @@ export const metadata: Metadata = {
         title: 'Üniversite Tercih Stratejileri 2027: Bilimsel Yaklaşım',
         description: 'ÖSYM yerleştirme algoritmalarına göre hatasız tercih listesi oluşturma.',
         type: 'article',
-        publishedTime: '2027-02-21',
-        modifiedTime: '2027-08-16',
+        publishedTime: '2026-02-21',
+        modifiedTime: '2026-08-16',
         url: 'https://yksnethesapla.com/blog/universite-tercih-stratejileri',
     },
 }
@@ -33,7 +33,7 @@ export default function UniversiteTercihStratejileri() {
                     <header className="mb-10">
                         <div className="flex flex-wrap items-center gap-3 mb-5">
                             <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold tracking-wide uppercase">Sistem Analizi</span>
-                            <time className="text-slate-500 text-sm font-medium">Son Güncelleme: 16 Ağustos 2027</time>
+                            <time className="text-slate-500 text-sm font-medium">Son Güncelleme: 16 Ağustos 2026</time>
                             <span className="text-slate-400">•</span>
                             <span className="text-slate-500 text-sm font-medium">Okuma Süresi: 9 dk</span>
                         </div>
@@ -110,3 +110,5 @@ export default function UniversiteTercihStratejileri() {
         </div>
     )
 }
+
+

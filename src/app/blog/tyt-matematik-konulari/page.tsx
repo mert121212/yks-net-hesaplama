@@ -11,7 +11,7 @@ export const metadata: Metadata = {
         title: 'TYT Matematik Konuları 2027: Problemler, Geometri ve Yol Haritası',
         description: 'TYT Matematik\'te hangi konular çıkıyor? Problemler, geometri ve konu öncelik yol haritası.',
         type: 'article',
-        publishedTime: '2027-02-19',
+        publishedTime: '2026-02-19',
         url: 'https://yksnethesapla.com/blog/tyt-matematik-konulari',
     },
 }
@@ -31,7 +31,7 @@ export default function TYTMatematikKonulari() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">TYT</span>
-                            <time className="text-gray-600">19 Şubat 2027</time>
+                            <time className="text-gray-600">19 Şubat 2026</time>
                             <span className="text-gray-600">• 10 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -203,3 +203,5 @@ export default function TYTMatematikKonulari() {
         </div>
     )
 }
+
+

@@ -11,8 +11,8 @@ export const metadata: Metadata = {
         title: 'TYT\'de 60-70 Net Bandına Sıkışanlar İçin Veri Odaklı Çıkış Yolu',
         description: 'ÖSYM istatistikleriyle 60-70 net bandından çıkış rehberi.',
         type: 'article',
-        publishedTime: '2027-05-02',
-        modifiedTime: '2027-08-16',
+        publishedTime: '2026-05-02',
+        modifiedTime: '2026-08-16',
         url: 'https://yksnethesapla.com/blog/tyt-net-artirma-taktikleri',
     },
 }
@@ -33,7 +33,7 @@ export default function TYTNetArtirmaTaktikleri() {
                     <header className="mb-10">
                         <div className="flex flex-wrap items-center gap-3 mb-5">
                             <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-bold tracking-wide uppercase">Analiz</span>
-                            <time className="text-slate-500 text-sm font-medium">Son Güncelleme: 16 Ağustos 2027</time>
+                            <time className="text-slate-500 text-sm font-medium">Son Güncelleme: 16 Ağustos 2026</time>
                             <span className="text-slate-400">•</span>
                             <span className="text-slate-500 text-sm font-medium">Okuma Süresi: 7 dk</span>
                         </div>
@@ -152,3 +152,5 @@ export default function TYTNetArtirmaTaktikleri() {
         </div>
     )
 }
+
+

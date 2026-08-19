@@ -11,7 +11,7 @@ export const metadata: Metadata = {
         title: '2027 AYT Puan Hesaplama: SAY, EA, SÖZ ve DİL Rehberi',
         description: 'AYT sınavında SAY, EA, SÖZ ve DİL puanları nasıl hesaplanır? Katsayı mantığı ve başarı sırası barajları.',
         type: 'article',
-        publishedTime: '2027-02-26',
+        publishedTime: '2026-02-26',
         url: 'https://yksnethesapla.com/blog/ayt-puan-hesaplama',
     },
 }
@@ -32,7 +32,7 @@ export default function AYTPuanHesaplama() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">AYT</span>
-                            <time className="text-gray-600">26 Şubat 2027</time>
+                            <time className="text-gray-600">26 Şubat 2026</time>
                             <span className="text-gray-600">• 7 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -218,3 +218,5 @@ export default function AYTPuanHesaplama() {
         </div>
     )
 }
+
+

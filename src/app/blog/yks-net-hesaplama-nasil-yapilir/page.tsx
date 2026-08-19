@@ -12,8 +12,8 @@ export const metadata: Metadata = {
         title: 'YKS Net Hesaplama Nasıl Yapılır? (ÖSYM Katsayı Verileriyle)',
         description: 'ÖSYM katsayıları ve standart sapma mantığıyla YKS net hesaplama analizi.',
         type: 'article',
-        publishedTime: '2027-02-28',
-        modifiedTime: '2027-08-16',
+        publishedTime: '2026-02-28',
+        modifiedTime: '2026-08-16',
         url: 'https://yksnethesapla.com/blog/yks-net-hesaplama-nasil-yapilir',
     },
 }
@@ -42,7 +42,7 @@ export default function YKSNetHesaplamaRehberi() {
                         <header className="mb-10">
                             <div className="flex flex-wrap items-center gap-3 mb-5">
                                 <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-bold tracking-wide uppercase">Teknik Kılavuz</span>
-                                <time className="text-slate-500 text-sm font-medium">Son Güncelleme: 16 Ağustos 2027</time>
+                                <time className="text-slate-500 text-sm font-medium">Son Güncelleme: 16 Ağustos 2026</time>
                                 <span className="text-slate-400">•</span>
                                 <span className="text-slate-500 text-sm font-medium">Okuma Süresi: 9 dk</span>
                             </div>
@@ -193,3 +193,5 @@ export default function YKSNetHesaplamaRehberi() {
         </>
     )
 }
+
+

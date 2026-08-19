@@ -11,7 +11,7 @@ export const metadata: Metadata = {
         title: 'TYT Net Hesaplama Rehberi 2027: Adım Adım Kılavuz',
         description: 'TYT sınavında net hesaplama nasıl yapılır? 0,5 net şartı, soru dağılımı ve stratejik ipuçları.',
         type: 'article',
-        publishedTime: '2027-02-27',
+        publishedTime: '2026-02-27',
         url: 'https://yksnethesapla.com/blog/tyt-net-hesaplama-rehberi',
     },
 }
@@ -32,7 +32,7 @@ export default function TYTNetHesaplamaRehberi() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">TYT</span>
-                            <time className="text-gray-600">27 Şubat 2027</time>
+                            <time className="text-gray-600">27 Şubat 2026</time>
                             <span className="text-gray-600">• 6 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -263,3 +263,5 @@ export default function TYTNetHesaplamaRehberi() {
         </div>
     )
 }
+
+

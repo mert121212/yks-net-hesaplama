@@ -11,7 +11,7 @@ export const metadata: Metadata = {
         title: 'YKS 2027 Başvuru Tarihleri, Takvimi ve Başvuru Adımları',
         description: 'YKS 2027 başvuru tarihleri ve sınav takvimi. AİS üzerinden nasıl başvurulur?',
         type: 'article',
-        publishedTime: '2027-02-23',
+        publishedTime: '2026-02-23',
         url: 'https://yksnethesapla.com/blog/yks-2027-basvuru-tarihleri',
     },
 }
@@ -32,7 +32,7 @@ export default function YKS2027BasvuruTarihleri() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">Takvim</span>
-                            <time className="text-gray-600">23 Şubat 2027</time>
+                            <time className="text-gray-600">23 Şubat 2026</time>
                             <span className="text-gray-600">• 7 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -372,3 +372,5 @@ export default function YKS2027BasvuruTarihleri() {
         </div>
     )
 }
+
+

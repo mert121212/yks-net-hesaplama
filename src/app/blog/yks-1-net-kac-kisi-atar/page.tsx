@@ -11,7 +11,7 @@ export const metadata: Metadata = {
         title: 'YKS\'de 1 Net Neden Binlerce Kişi Attırır? OBP ve Standart Sapma 2027',
         description: 'OBP sıralamayı nasıl etkiler, standart sapma nedir? YKS\'de 1 netin gerçek değeri.',
         type: 'article',
-        publishedTime: '2027-05-02',
+        publishedTime: '2026-05-02',
         url: 'https://yksnethesapla.com/blog/yks-1-net-kac-kisi-atar',
     },
 }
@@ -32,7 +32,7 @@ export default function YKS1NetKacKisiAtar() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Strateji</span>
-                            <time className="text-gray-600">2 Mayıs 2027</time>
+                            <time className="text-gray-600">2 Mayıs 2026</time>
                             <span className="text-gray-600">• 9 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -189,3 +189,5 @@ export default function YKS1NetKacKisiAtar() {
         </div>
     )
 }
+
+

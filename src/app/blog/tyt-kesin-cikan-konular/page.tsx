@@ -11,7 +11,7 @@ export const metadata: Metadata = {
         title: 'TYT\'de Kesin Çıkacak "Altın" Konular 2027',
         description: 'TYT\'de en çok soru çıkan konular ve zaman kazanma stratejisi. Enerjini doğru yere harca.',
         type: 'article',
-        publishedTime: '2027-05-02',
+        publishedTime: '2026-05-02',
         url: 'https://yksnethesapla.com/blog/tyt-kesin-cikan-konular',
     },
 }
@@ -32,7 +32,7 @@ export default function TYTKesinCikanKonular() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">TYT</span>
-                            <time className="text-gray-600">2 Mayıs 2027</time>
+                            <time className="text-gray-600">2 Mayıs 2026</time>
                             <span className="text-gray-600">• 7 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -168,3 +168,5 @@ export default function TYTKesinCikanKonular() {
         </div>
     )
 }
+
+

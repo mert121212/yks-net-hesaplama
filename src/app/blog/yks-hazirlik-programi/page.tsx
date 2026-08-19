@@ -11,7 +11,7 @@ export const metadata: Metadata = {
         title: 'YKS Hazırlık Programı 2027: Bilimsel Öğrenme Teknikleri',
         description: 'Pomodoro 2.0, Feynman tekniği ve Ebbinghaus unutma eğrisiyle YKS hazırlığı.',
         type: 'article',
-        publishedTime: '2027-02-20',
+        publishedTime: '2026-02-20',
         url: 'https://yksnethesapla.com/blog/yks-hazirlik-programi',
     },
 }
@@ -32,7 +32,7 @@ export default function YKSHazirlikProgrami() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Hazırlık</span>
-                            <time className="text-gray-600">20 Şubat 2027</time>
+                            <time className="text-gray-600">20 Şubat 2026</time>
                             <span className="text-gray-600">• 10 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -177,3 +177,5 @@ export default function YKSHazirlikProgrami() {
         </div>
     )
 }
+
+

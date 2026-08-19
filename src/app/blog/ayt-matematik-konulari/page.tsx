@@ -11,7 +11,7 @@ export const metadata: Metadata = {
         title: 'AYT Matematik Konuları 2027: LTİ, Fonksiyonlar ve Eleme Sınavı Rehberi',
         description: 'AYT Matematik\'te LTİ ve Fonksiyonlar nasıl çalışılır? SAY öğrencileri için güncel rehber.',
         type: 'article',
-        publishedTime: '2027-02-18',
+        publishedTime: '2026-02-18',
         url: 'https://yksnethesapla.com/blog/ayt-matematik-konulari',
     },
 }
@@ -31,7 +31,7 @@ export default function AYTMatematikKonulari() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">AYT</span>
-                            <time className="text-gray-600">18 Şubat 2027</time>
+                            <time className="text-gray-600">18 Şubat 2026</time>
                             <span className="text-gray-600">• 10 dakika okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -187,3 +187,5 @@ export default function AYTMatematikKonulari() {
         </div>
     )
 }
+
+
