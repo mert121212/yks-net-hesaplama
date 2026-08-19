@@ -29,26 +29,23 @@ export default function CookieConsent() {
 
     return (
         <div
-            className="fixed bottom-0 left-0 right-0 z-[9999] bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-2xl px-4 py-5 sm:px-6 animate-slide-up"
+            className="fixed bottom-0 left-0 right-0 z-[9999] bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-2xl px-4 py-4 sm:px-6 animate-slide-up"
             role="dialog"
             aria-label="Çerez onayı"
         >
-            <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                <div className="flex-1 text-sm text-gray-700 leading-relaxed">
-                    <p className="font-semibold text-gray-900 mb-1">🍪 Çerez Bildirimi</p>
+            <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div className="flex-1 text-sm text-gray-600 leading-relaxed">
                     <p>
-                        Sitemiz, deneyiminizi iyileştirmek ve anonim ziyaret istatistikleri toplamak için
-                        Google Analytics ve Google AdSense çerezlerini kullanmaktadır. Hesaplama verileriniz
-                        sunucularımıza gönderilmez.{' '}
+                        Sitemizde kullanıcı deneyimini iyileştirmek, site trafiğini analiz etmek ve temel işlevleri sunmak amacıyla çerezler kullanılmaktadır.{' '}
                         <Link href="/privacy" className="text-blue-600 hover:underline font-medium">
-                            Gizlilik Politikası
+                            Gizlilik ve Çerez Politikası
                         </Link>
                     </p>
                 </div>
-                <div className="flex items-center gap-3 flex-shrink-0">
+                <div className="flex items-center gap-3 flex-shrink-0 w-full sm:w-auto justify-end">
                     <button
                         onClick={reject}
-                        className="px-4 py-2 text-sm font-medium text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
+                        className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
                     >
                         Reddet
                     </button>

@@ -24,7 +24,7 @@ export default function YKSNetHesaplamaRehberi() {
             <BlogArticleSchema
                 title="YKS Net Hesaplama Nasıl Yapılır? (ÖSYM Katsayı Verileriyle)"
                 description="YKS 2027 net hesaplama formülleri, 0.5 net kuralının akademik analizi ve ham/yerleştirme puanı hesaplama standartları."
-                datePublished="2027-02-28"
+                datePublished="2026-02-28"
                 url="https://yksnethesapla.com/blog/yks-net-hesaplama-nasil-yapilir"
                 keywords={['yks net hesaplama', 'tyt net hesaplama', 'ayt net hesaplama', '0.5 net şartı', 'yks puan hesaplama 2027']}
             />
