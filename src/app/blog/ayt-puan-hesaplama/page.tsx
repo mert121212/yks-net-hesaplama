@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
     title: 'AYT Puan Hesaplama 2027 | SAY, EA, SÖZ Katsayıları ve Ağırlıklar',
@@ -12,8 +13,16 @@ export const metadata: Metadata = {
         description: 'AYT netlerinin Sayısal, Eşit Ağırlık ve Sözel puanlarına etkisi.',
         type: 'article',
         publishedTime: '2026-02-09',
-        modifiedTime: '2026-08-19',
+        modifiedTime: '2026-02-12',
         url: 'https://yksnethesapla.com/blog/ayt-puan-hesaplama',
+        images: [
+            {
+                url: '/og-image.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'AYT Puan Hesaplama 2027 | SAY, EA, SÖZ Katsayıları ve Ağırlıklar'
+            }
+        ],
     },
 }
 
@@ -21,6 +30,14 @@ export default function AYTPuanHesaplama() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <BlogArticleSchema 
+                    title="AYT Puan Hesaplama 2027 | SAY, EA, SÖZ Katsayıları ve Ağırlıklar" 
+                    description="AYT puan hesaplama nasıl yapılır? SAY (Sayısal), EA (Eşit Ağırlık) ve SÖZ (Sözel) puan türlerinde derslerin katsayıları ve YKS yerleştirme puanına etkisi."
+                    datePublished="2026-02-09"
+                    dateModified="2026-02-12"
+                    url="https://yksnethesapla.com/blog/ayt-puan-hesaplama"
+                    keywords={['ayt puan hesaplama', 'ayt katsayıları', 'say katsayıları', 'ea katsayıları', 'söz katsayıları', 'yks yerleştirme puanı']}
+                />
                 <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
                     <nav className="mb-8 text-sm text-gray-600">
                         <Link href="/" className="hover:text-blue-600">Ana Sayfa</Link>
@@ -33,7 +50,7 @@ export default function AYTPuanHesaplama() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Rehber</span>
-                            <time className="text-gray-600">19 Ağustos 2026</time>
+                            <time className="text-gray-600" dateTime="2026-02-09">19 Ağustos 2026</time>
                             <span className="text-gray-600">• 9 dk okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

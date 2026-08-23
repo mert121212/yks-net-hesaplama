@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
     title: 'YKS Hazırlık Programı 2027: Gerçekçi Günlük ve Haftalık Çalışma Planı',
@@ -12,8 +13,16 @@ export const metadata: Metadata = {
         description: 'Bilimsel çalışma teknikleriyle YKS hazırlığı. Günlük ve haftalık program şablonları.',
         type: 'article',
         publishedTime: '2026-02-20',
-        modifiedTime: '2026-08-19',
+        modifiedTime: '2026-02-23',
         url: 'https://yksnethesapla.com/blog/yks-hazirlik-programi',
+        images: [
+            {
+                url: '/og-image.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'YKS Hazırlık Programı 2027: Gerçekçi Günlük ve Haftalık Çalışma Planı'
+            }
+        ],
     },
 }
 
@@ -21,6 +30,14 @@ export default function YKSHazirlikProgrami() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <BlogArticleSchema 
+                    title="YKS Hazırlık Programı 2027: Gerçekçi Günlük ve Haftalık Çalışma Planı" 
+                    description="YKS hazırlık programı ve bilimsel çalışma teknikleri. Pomodoro, Feynman metodu, Ebbinghaus unutma eğrisi ile verimli ders çalışma rehberi."
+                    datePublished="2026-02-20"
+                    dateModified="2026-02-23"
+                    url="https://yksnethesapla.com/blog/yks-hazirlik-programi"
+                    keywords={['yks hazırlık programı', 'yks ders çalışma programı', 'verimli ders çalışma', 'pomodoro yks', 'feynman tekniği']}
+                />
                 <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
                     <nav className="mb-8 text-sm text-gray-600">
                         <Link href="/" className="hover:text-blue-600">Ana Sayfa</Link>
@@ -33,7 +50,7 @@ export default function YKSHazirlikProgrami() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Hazırlık</span>
-                            <time className="text-gray-600">19 Ağustos 2026</time>
+                            <time className="text-gray-600" dateTime="2026-02-20">19 Ağustos 2026</time>
                             <span className="text-gray-600">• 14 dk okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

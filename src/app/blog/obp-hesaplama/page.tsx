@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
     title: 'OBP Nedir? Kırık OBP ve Diploma Notu Muhabbeti',
@@ -12,29 +13,60 @@ export const metadata: Metadata = {
         description: 'Diploma notu yüzünden binlerce kişi geriye düşüyor. OBP hesaplama mantığı.',
         type: 'article',
         publishedTime: '2026-02-24',
-        modifiedTime: '2026-08-19',
+        modifiedTime: '2026-02-27',
         url: 'https://yksnethesapla.com/blog/obp-hesaplama',
+        images: [
+            {
+                url: '/og-image.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'OBP Nedir? Kırık OBP ve Diploma Notu Muhabbeti'
+            }
+        ],
     },
 }
 
 export default function OBPHesaplamaRehberi() {
     return (
-        <div className="min-h-screen bg-gray-50 py-10 px-4">
-            <article className="max-w-3xl mx-auto bg-white p-6 md:p-10 rounded-lg shadow-sm">
-                <nav className="mb-6 text-sm text-gray-500">
-                    <Link href="/" className="hover:text-blue-500">Ana Sayfa</Link> / <Link href="/blog" className="hover:text-blue-500">Blog</Link> / <span className="text-gray-800">OBP Muhabbeti</span>
-                </nav>
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
+            <article className="max-w-4xl mx-auto">
+                <BlogArticleSchema 
+                    title="OBP Nedir? Kırık OBP ve Diploma Notu Muhabbeti" 
+                    description="YKS OBP hesaplama. Lise diploma notunun yerleştirme puanına etkisi ve kırık OBP cezası hakkında harbici gerçekler."
+                    datePublished="2026-02-24"
+                    dateModified="2026-02-27"
+                    url="https://yksnethesapla.com/blog/obp-hesaplama"
+                    keywords={['obp nedir', 'obp nasıl hesaplanır', 'obp hesaplama', 'kırık obp', 'diploma notu yks', 'okul birinciliği kontenjanı']}
+                />
+                <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                    <nav className="mb-8 text-sm text-gray-600">
+                        <Link href="/" className="hover:text-blue-600">Ana Sayfa</Link>
+                        {' > '}
+                        <Link href="/blog" className="hover:text-blue-600">Blog</Link>
+                        {' > '}
+                        <span className="text-gray-900">OBP Muhabbeti</span>
+                    </nav>
 
-                <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                    OBP (Diploma Notu) Yüzünden Sınavda Çuvallamak...
-                </h1>
+                    <header className="mb-8">
+                        <div className="flex items-center gap-4 mb-4">
+                            <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Rehber</span>
+                            <time className="text-gray-600" dateTime="2026-02-24">19 Ağustos 2026</time>
+                            <span className="text-gray-600">• 8 dk okuma</span>
+                        </div>
+                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                            OBP (Diploma Notu) Yüzünden Sınavda Çuvallamak...
+                        </h1>
+                        <p className="text-xl text-gray-600">
+                            Lisedeyken "okul sınavları ne ya" diyorduk, sonra sınavda bir yerleştirme geldi ki OBP yüzünden binlerce kişi geriye düştük. Kırık OBP mevzusu ve harbici gerçekler.
+                        </p>
+                    </header>
 
-                <AuthorProfile />
+                    <AuthorProfile />
 
-                <div className="text-gray-800 space-y-5 mt-8 text-lg leading-relaxed">
-                    <p>
-                        Abi lisedeyken hepimiz aynı kafadaydık yalan yok. "Okul sınavları ne ya, ben asıl YKS'de şov yapıcam" falan diyorduk. Sonra sonuçlar bir açıklandı... Baya bildiğin duvara tosladık.
-                    </p>
+                    <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
+                        <p className="text-lg leading-relaxed">
+                            Abi lisedeyken hepimiz aynı kafadaydık yalan yok. "Okul sınavları ne ya, ben asıl YKS'de şov yapıcam" falan diyorduk. Sonra sonuçlar bir açıklandı... Baya bildiğin duvara tosladık.
+                        </p>
                     <p>
                         Geçen sene bi çocuk geldi yanıma. Denemeleri falan fişek gibi, ilk 30 bin garanti gözüyle bakıyoruz. Sonuçlar geldi çocuk 38 bininci olmuş. Niye? Çünkü lisedeki diploma notu 62. Yani lisede yatmış. Aynı neti yapan ama lise ortalaması 88 olan başka bi eleman tam 15 puan daha fazla alıp çocuğun içinden geçmiş. 15 puan diyorum bak... AYT'de 5 tane ekstra matematik sorusu demek bu. Sınav sabahı daha optiği doldurmadan 5 soru geridesin.
                     </p>
@@ -88,6 +120,7 @@ export default function OBPHesaplamaRehberi() {
                     <div className="mt-8 pt-6 border-t border-gray-200">
                         <Link href="/" className="text-blue-600 font-bold hover:underline">Şuradan kendi netlerini ve diploma notunu girip sıralamana ne kadar etki ettiğini hesaplayabilirsin.</Link>
                     </div>
+                </div>
                 </div>
             </article>
         </div>

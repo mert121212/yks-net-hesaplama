@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
     title: 'YKS\'de Kaç Net Kaç Puan Eder? Net-Puan Tablosu ve Bölüm Hedefleri 2027',
@@ -12,8 +13,16 @@ export const metadata: Metadata = {
         description: 'TYT ve AYT\'de kaç net yaparsanız kaç puan alırsınız? Net-puan dönüşüm tablosu.',
         type: 'article',
         publishedTime: '2026-02-22',
-        modifiedTime: '2026-08-19',
+        modifiedTime: '2026-02-25',
         url: 'https://yksnethesapla.com/blog/yks-kac-net-kac-puan',
+        images: [
+            {
+                url: '/og-image.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'YKS\'
+            }
+        ],
     },
 }
 
@@ -21,6 +30,14 @@ export default function YKSKacNetKacPuan() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <BlogArticleSchema 
+                    title="YKS\" 
+                    description="TYT ve AYT\"
+                    datePublished="2026-02-22"
+                    dateModified="2026-02-25"
+                    url="https://yksnethesapla.com/blog/yks-kac-net-kac-puan"
+                    keywords={['kaç net kaç puan', 'yks net puan tablosu', 'tyt kaç net kaç puan', 'ayt kaç net kaç puan', 'tıp kaç net', 'hukuk kaç net']}
+                />
                 <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
                     <nav className="mb-8 text-sm text-gray-600">
                         <Link href="/" className="hover:text-blue-600">Ana Sayfa</Link>
@@ -33,7 +50,7 @@ export default function YKSKacNetKacPuan() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Rehber</span>
-                            <time className="text-gray-600">19 Ağustos 2026</time>
+                            <time className="text-gray-600" dateTime="2026-02-22">19 Ağustos 2026</time>
                             <span className="text-gray-600">• 12 dk okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

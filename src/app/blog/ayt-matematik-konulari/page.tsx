@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
     title: 'AYT Matematik Konuları ve Soru Dağılımı 2027 | Detaylı Rehber',
@@ -12,8 +13,16 @@ export const metadata: Metadata = {
         description: 'AYT Matematik sınavına nasıl hazırlanılır? Tüm konular, soru sayıları ve çalışma önerileri.',
         type: 'article',
         publishedTime: '2026-02-18',
-        modifiedTime: '2026-08-19',
+        modifiedTime: '2026-02-21',
         url: 'https://yksnethesapla.com/blog/ayt-matematik-konulari',
+        images: [
+            {
+                url: '/og-image.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'AYT Matematik Konuları ve Soru Dağılımı 2027 | Detaylı Rehber'
+            }
+        ],
     },
 }
 
@@ -21,6 +30,14 @@ export default function AYTMatematikKonulari() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <BlogArticleSchema 
+                    title="AYT Matematik Konuları ve Soru Dağılımı 2027 | Detaylı Rehber" 
+                    description="AYT Matematik konuları, LTİ (Limit, Türev, İntegral), Trigonometri soru dağılımı ve SAY/EA puan türüne etkisi. 2027 güncel analiz."
+                    datePublished="2026-02-18"
+                    dateModified="2026-02-21"
+                    url="https://yksnethesapla.com/blog/ayt-matematik-konulari"
+                    keywords={['ayt matematik konuları', 'ayt matematik soru dağılımı', 'lti nasıl çalışılır', 'trigonometri', 'ayt matematik 2027']}
+                />
                 <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
                     <nav className="mb-8 text-sm text-gray-600">
                         <Link href="/" className="hover:text-blue-600">Ana Sayfa</Link>
@@ -33,7 +50,7 @@ export default function AYTMatematikKonulari() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">AYT</span>
-                            <time className="text-gray-600">19 Ağustos 2026</time>
+                            <time className="text-gray-600" dateTime="2026-02-18">19 Ağustos 2026</time>
                             <span className="text-gray-600">• 14 dk okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

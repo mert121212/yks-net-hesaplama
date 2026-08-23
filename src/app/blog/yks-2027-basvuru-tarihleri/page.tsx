@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
     title: 'YKS 2027 Başvuru Tarihleri ve Ücreti: Kimse Bu Tarihleri Kaçırmasın',
@@ -12,8 +13,16 @@ export const metadata: Metadata = {
         description: 'YKS başvuru süreci, ücretler ve AİS fotoğraf güncelleme hakkında pratik bilgiler.',
         type: 'article',
         publishedTime: '2026-02-14',
-        modifiedTime: '2026-08-19',
+        modifiedTime: '2026-02-17',
         url: 'https://yksnethesapla.com/blog/yks-2027-basvuru-tarihleri',
+        images: [
+            {
+                url: '/og-image.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'YKS 2027 Başvuru Tarihleri ve Ücreti: Kimse Bu Tarihleri Kaçırmasın'
+            }
+        ],
     },
 }
 
@@ -21,6 +30,14 @@ export default function YKSBasvuruTarihleri() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <BlogArticleSchema 
+                    title="YKS 2027 Başvuru Tarihleri ve Ücreti: Kimse Bu Tarihleri Kaçırmasın" 
+                    description="2027 YKS (TYT-AYT) başvuru tarihleri, geç başvuru günü, sınav ücretleri ve ÖSYM AİS kayıt işlemleri. YKS ne zaman?"
+                    datePublished="2026-02-14"
+                    dateModified="2026-02-17"
+                    url="https://yksnethesapla.com/blog/yks-2027-basvuru-tarihleri"
+                    keywords={['yks 2027 başvuru tarihleri', 'yks başvuru nasıl yapılır', 'yks ücreti 2027', 'geç başvuru yks', 'yks ne zaman']}
+                />
                 <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
                     <nav className="mb-8 text-sm text-gray-600">
                         <Link href="/" className="hover:text-blue-600">Ana Sayfa</Link>
@@ -33,7 +50,7 @@ export default function YKSBasvuruTarihleri() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium">Önemli Tarihler</span>
-                            <time className="text-gray-600">19 Ağustos 2026</time>
+                            <time className="text-gray-600" dateTime="2026-02-14">19 Ağustos 2026</time>
                             <span className="text-gray-600">• 8 dk okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

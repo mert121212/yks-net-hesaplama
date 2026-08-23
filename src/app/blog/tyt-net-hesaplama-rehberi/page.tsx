@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
     title: 'TYT Net Hesaplama Rehberi 2027 | Derslerin Katsayıları ve Puan Getirisi',
@@ -12,8 +13,16 @@ export const metadata: Metadata = {
         description: 'TYT testlerinin ağırlıkları, katsayıları ve barajsız sistemin getirdikleri.',
         type: 'article',
         publishedTime: '2026-02-12',
-        modifiedTime: '2026-08-19',
+        modifiedTime: '2026-02-15',
         url: 'https://yksnethesapla.com/blog/tyt-net-hesaplama-rehberi',
+        images: [
+            {
+                url: '/og-image.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'TYT Net Hesaplama Rehberi 2027 | Derslerin Katsayıları ve Puan Getirisi'
+            }
+        ],
     },
 }
 
@@ -21,6 +30,14 @@ export default function TYTNetHesaplamaRehberi() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <BlogArticleSchema 
+                    title="TYT Net Hesaplama Rehberi 2027 | Derslerin Katsayıları ve Puan Getirisi" 
+                    description="TYT net hesaplama nasıl yapılır? TYT Türkçe, Matematik, Fen ve Sosyal testlerinin puan katsayıları ve YKS yerleştirme puanına etkisi."
+                    datePublished="2026-02-12"
+                    dateModified="2026-02-15"
+                    url="https://yksnethesapla.com/blog/tyt-net-hesaplama-rehberi"
+                    keywords={['tyt net hesaplama', 'tyt katsayıları', 'tyt puan hesaplama 2027', 'tyt matematik katsayısı', 'yks net hesaplama']}
+                />
                 <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
                     <nav className="mb-8 text-sm text-gray-600">
                         <Link href="/" className="hover:text-blue-600">Ana Sayfa</Link>
@@ -33,7 +50,7 @@ export default function TYTNetHesaplamaRehberi() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Rehber</span>
-                            <time className="text-gray-600">19 Ağustos 2026</time>
+                            <time className="text-gray-600" dateTime="2026-02-12">19 Ağustos 2026</time>
                             <span className="text-gray-600">• 9 dk okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

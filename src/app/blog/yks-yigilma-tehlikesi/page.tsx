@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
     title: 'YKS\'de Yığılma Nedir? Orta Sıralamalarda Yığılma Tehlikesi 2027',
@@ -12,8 +13,16 @@ export const metadata: Metadata = {
         description: 'Sınavın kolay olduğu yıllarda ortaya çıkan yığılma kabusu ve bundan kurtulmanın yolları.',
         type: 'article',
         publishedTime: '2026-02-07',
-        modifiedTime: '2026-08-19',
+        modifiedTime: '2026-02-10',
         url: 'https://yksnethesapla.com/blog/yks-yigilma-tehlikesi',
+        images: [
+            {
+                url: '/og-image.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'YKS\'
+            }
+        ],
     },
 }
 
@@ -21,6 +30,14 @@ export default function YKSYigilmaTehlikesi() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <BlogArticleSchema 
+                    title="YKS\" 
+                    description="YKS yığılma nedir, neden olur? 50.000 ile 150.000 sıralama bandındaki yığılma tehlikesi ve bu yığılmadan kurtulma taktikleri."
+                    datePublished="2026-02-07"
+                    dateModified="2026-02-10"
+                    url="https://yksnethesapla.com/blog/yks-yigilma-tehlikesi"
+                    keywords={['yks yığılma nedir', 'yığılma bandı', 'tyt yığılma', 'ayt yığılma', 'yks sıralama yığılması 2027']}
+                />
                 <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
                     <nav className="mb-8 text-sm text-gray-600">
                         <Link href="/" className="hover:text-blue-600">Ana Sayfa</Link>
@@ -33,7 +50,7 @@ export default function YKSYigilmaTehlikesi() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium">Kritik Analiz</span>
-                            <time className="text-gray-600">19 Ağustos 2026</time>
+                            <time className="text-gray-600" dateTime="2026-02-07">19 Ağustos 2026</time>
                             <span className="text-gray-600">• 9 dk okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

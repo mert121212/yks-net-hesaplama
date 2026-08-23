@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowLeft, HelpCircle, ChevronDown } from 'lucide-react'
+
 
 export const metadata: Metadata = {
     title: 'Sıkça Sorulan Sorular (SSS) - YKS Net Hesaplama 2027',
@@ -16,7 +16,7 @@ const sssFaqSchema = {
         { "@type": "Question", "name": "0,5 net şartı nedir?", "acceptedAnswer": { "@type": "Answer", "text": "TYT puanı için Türkçe veya Temel Matematik'ten en az 0,5 net yapmanız gerekir. Bu şart sağlanmazsa puan hesaplanmaz." } },
         { "@type": "Question", "name": "OBP nedir?", "acceptedAnswer": { "@type": "Answer", "text": "OBP (Ortaöğretim Başarı Puanı), lise diploma notunuzun YKS puanına katkısıdır. Formül: Diploma Notu × 0,6 = Puan Katkısı. Diploma notu 100 ise maksimum 60 puan katkı alırsınız." } },
         { "@type": "Question", "name": "Puan kırılması nedir?", "acceptedAnswer": { "@type": "Answer", "text": "Bir önceki yıl YKS ile bir yükseköğretim programına yerleşen adayların OBP katsayısı yarıya düşer (0,12 yerine 0,06). Bu yaklaşık 20-30 puan kayıp demektir." } },
-        { "@type": "Question", "name": "YKS 2027 ne zaman?", "acceptedAnswer": { "@type": "Answer", "text": "TYT 20 Haziran 2027 Cumartesi, AYT ve YDT 21 Haziran 2027 Pazar günü yapılacaktır." } },
+        { "@type": "Question", "name": "YKS 2027 ne zaman?", "acceptedAnswer": { "@type": "Answer", "text": "TYT 19 Haziran 2027 Cumartesi, AYT ve YDT 20 Haziran 2027 Pazar günü yapılacaktır." } },
         { "@type": "Question", "name": "Hesaplamalarım kaydediliyor mu?", "acceptedAnswer": { "@type": "Answer", "text": "Hayır. Hesaplamalarınız sunucularımıza gönderilmez; tüm işlemler cihazınızda yerel olarak yapılır." } }
     ]
 }
@@ -90,7 +90,7 @@ export default function SSS() {
             questions: [
                 {
                     q: '2027 YKS ne zaman yapılacak?',
-                    a: 'ÖSYM takvimine göre TYT 20 Haziran 2027 (Cumartesi), AYT ve YDT 21 Haziran 2027 (Pazar) tarihinde yapılması planlanmaktadır. Güncel geri sayım aracımızı sayfamızın üst kısmında bulabilirsiniz.'
+                    a: 'ÖSYM takvimine göre TYT 19 Haziran 2027 (Cumartesi), AYT ve YDT 20 Haziran 2027 (Pazar) tarihinde yapılması planlanmaktadır. Güncel geri sayım aracımızı sayfamızın üst kısmında bulabilirsiniz.'
                 },
                 {
                     q: 'TYT\'de kaç soru var?',
@@ -140,14 +140,14 @@ export default function SSS() {
                         href="/"
                         className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 transition-colors"
                     >
-                        <ArrowLeft className="h-5 w-5" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
                         <span className="font-medium">Ana Sayfaya Dön</span>
                     </Link>
                 </div>
                 {/* Page Header */}
                 <div className="text-center mb-12">
                     <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-                        <HelpCircle className="h-8 w-8 text-primary-600" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary-600"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
                     </div>
                     <h1 className="text-4xl font-bold text-gray-900 mb-4">
                         Sıkça Sorulan Sorular
@@ -179,7 +179,7 @@ export default function SSS() {
                                             <h3 className="font-semibold text-gray-900 pr-4">
                                                 {faq.q}
                                             </h3>
-                                            <ChevronDown className="h-5 w-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0" />
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0"><path d="m6 9 6 6 6-6"/></svg>
                                         </summary>
                                         <div className="px-4 pb-4 pt-2">
                                             <p className="text-gray-700 leading-relaxed">

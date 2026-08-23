@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
     title: 'TYT\'de Kesin Çıkan Konular 2027 | Nokta Atışı Çalışma Programı',
@@ -12,8 +13,16 @@ export const metadata: Metadata = {
         description: 'Vakti az olanlar ve netini hızlıca artırmak isteyenler için nokta atışı TYT konuları.',
         type: 'article',
         publishedTime: '2026-02-11',
-        modifiedTime: '2026-08-19',
+        modifiedTime: '2026-02-14',
         url: 'https://yksnethesapla.com/blog/tyt-kesin-cikan-konular',
+        images: [
+            {
+                url: '/og-image.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'TYT\'
+            }
+        ],
     },
 }
 
@@ -21,6 +30,14 @@ export default function TYTKesinCikanKonular() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <BlogArticleSchema 
+                    title="TYT\" 
+                    description="TYT Matematik, Türkçe, Fizik, Kimya, Biyoloji ve Tarihte her sene istisnasız sorulan, en çok net getiren kesin çıkan konular listesi 2027."
+                    datePublished="2026-02-11"
+                    dateModified="2026-02-14"
+                    url="https://yksnethesapla.com/blog/tyt-kesin-cikan-konular"
+                    keywords={['tyt kesin çıkan konular', 'tyt en çok çıkan konular', 'tyt matematik çıkan konular', 'tyt türkçe banko konular', 'tyt 2027']}
+                />
                 <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
                     <nav className="mb-8 text-sm text-gray-600">
                         <Link href="/" className="hover:text-blue-600">Ana Sayfa</Link>
@@ -33,7 +50,7 @@ export default function TYTKesinCikanKonular() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium">Özel Analiz</span>
-                            <time className="text-gray-600">19 Ağustos 2026</time>
+                            <time className="text-gray-600" dateTime="2026-02-11">19 Ağustos 2026</time>
                             <span className="text-gray-600">• 12 dk okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

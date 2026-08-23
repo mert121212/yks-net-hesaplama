@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import './globals.css'
+import GoogleAdsense from '@/components/GoogleAdsense'
 
 const CookieConsent = dynamic(() => import('@/components/CookieConsent'), {
     ssr: false,
@@ -130,6 +131,7 @@ export default function RootLayout({
                     <Footer />
                 </div>
                 <CookieConsent />
+                <GoogleAdsense ADSENSE_CLIENT_ID="ca-pub-5194383766905175" />
 
                 {/* Google Analytics — afterInteractive: ilk paint'i bloklamaz */}
                 <Script
