@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
+import YigilmaChart from '@/components/YigilmaChart'
 
 export const metadata: Metadata = {
     title: 'YKS\'de Yığılma Nedir? Orta Sıralamalarda Yığılma Tehlikesi 2027',
@@ -88,6 +89,8 @@ export default function YKSYigilmaTehlikesi() {
                                 Yığılma genellikle en tepe noktada (ilk 10.000) olmaz. En dipte de (1 milyon) olmaz. Yığılmanın ana merkezi, ortalama çalışan öğrencilerin kümelendiği <strong>50.000 ile 150.000 sıralama bandıdır.</strong> (Sayısal ve Eşit Ağırlık için). Bu bantta, sadece <Link href="/blog/yks-1-net-kac-kisi-atar" className="text-blue-600 hover:underline">1 netlik bir fark</Link> seni 5.000 kişi aşağıya veya yukarıya atabilir.
                             </p>
                         </div>
+
+                        <YigilmaChart />
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             Yığılmaya Yakalanmamak İçin Ne Yapmalı?

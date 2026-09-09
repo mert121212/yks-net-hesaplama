@@ -30,9 +30,9 @@ export default function Footer() {
                         <p className="text-gray-400 text-sm mb-4">
                             YKS 2027 için en doğru net ve puan hesaplama aracı. Ücretsiz, hızlı ve güvenilir.
                         </p>
-                        <a href="mailto:mertcaliskan36065d@gmail.com" className="text-sm text-gray-400 hover:text-blue-400 transition-colors">
-                            İletişim
-                        </a>
+                        <Link href="/iletisim" className="text-sm text-gray-400 hover:text-blue-400 transition-colors">
+                            İletişim & Destek →
+                        </Link>
                     </div>
 
                     {/* Hesaplama */}

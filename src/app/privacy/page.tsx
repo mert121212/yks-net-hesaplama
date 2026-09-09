@@ -188,7 +188,7 @@ export default function PrivacyPage() {
                                 Gizlilik politikamızla ilgili her türlü soru, düzeltme talebi veya geri bildirim için:
                             </p>
                             <div className="bg-gray-50 p-4 rounded-lg text-sm space-y-2">
-                                <p><strong>E-posta:</strong> mertcaliskan36065d@gmail.com</p>
+                                <p><strong>E-posta:</strong> iletisim@yksnethesapla.com</p>
                                 <p>
                                     <Link href="/iletisim" className="text-blue-600 hover:underline font-medium">
                                         İletişim formunu kullanın →

@@ -26,7 +26,7 @@ export default function IletisimPage() {
                     {/* İletişim Formu */}
                     <section className="mb-12">
                         <h2 className="text-2xl font-bold text-gray-900 mb-6">Bize Mesaj Gönderin</h2>
-                        <form action="mailto:mertcaliskan36065d@gmail.com" method="post" encType="text/plain" className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <form action="mailto:iletisim@yksnethesapla.com" method="post" encType="text/plain" className="bg-gray-50 p-6 rounded-xl border border-gray-200">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Adınız Soyadınız</label>
@@ -70,17 +70,21 @@ export default function IletisimPage() {
                                 </thead>
                                 <tbody>
                                     <tr className="border-b">
-                                        <td className="px-5 py-4 font-medium">📧 E-Posta</td>
+                                        <td className="px-5 py-4 font-medium">📧 Genel İletişim</td>
                                         <td className="px-5 py-4">
-                                            <a href="mailto:mertcaliskan36065d@gmail.com" className="text-blue-600 hover:underline font-medium">
-                                                mertcaliskan36065d@gmail.com
+                                            <a href="mailto:iletisim@yksnethesapla.com" className="text-blue-600 hover:underline font-medium">
+                                                iletisim@yksnethesapla.com
                                             </a>
                                         </td>
                                         <td className="px-5 py-4 text-sm text-gray-600">24 – 48 Saat</td>
                                     </tr>
                                     <tr className="border-b bg-gray-50">
                                         <td className="px-5 py-4 font-medium">🐛 Teknik Destek</td>
-                                        <td className="px-5 py-4 text-sm text-gray-700">Hata bildirimleri ve bug raporları</td>
+                                        <td className="px-5 py-4">
+                                            <a href="mailto:destek@yksnethesapla.com" className="text-blue-600 hover:underline font-medium">
+                                                destek@yksnethesapla.com
+                                            </a>
+                                        </td>
                                         <td className="px-5 py-4 text-sm text-green-700 font-medium">Öncelikli Yanıt</td>
                                     </tr>
                                     <tr>

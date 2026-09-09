@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
+import QuickNetSimulator from '@/components/QuickNetSimulator'
 
 export const metadata: Metadata = {
     title: 'YKS\'de Kaç Net Kaç Puan Eder? Net-Puan Tablosu ve Bölüm Hedefleri 2027',
@@ -93,6 +94,8 @@ export default function YKSKacNetKacPuan() {
                         <p>
                             Yani diploma notu 90 olan biri, aynı netleri yapan diploma notu 70 olan birinden 12 puan daha fazla yerleştirme puanı alır. Bu 12 puan yığılma bölgesinde 20.000-30.000 kişilik sıralama farkı demek. Detayını <Link href="/blog/obp-hesaplama" className="text-blue-600 hover:underline">OBP yazımızda</Link> anlattık.
                         </p>
+
+                        <QuickNetSimulator />
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
                             TYT Net - Puan Tablosu (Yaklaşık Değerler)

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
+import QuickNetSimulator from '@/components/QuickNetSimulator'
 
 export const metadata: Metadata = {
     title: 'TYT Net Hesaplama Rehberi 2027 | Derslerin Katsayıları ve Puan Getirisi',
@@ -105,6 +106,8 @@ export default function TYTNetHesaplamaRehberi() {
                         <p>
                             Dikkat ettiysen Türkçe ve Matematiğin toplam ağırlığı %66. Yani TYT aslında bir okuduğunu anlama (Türkçe) ve analitik düşünme (Matematik) sınavı. Fen ve Sosyal ise destek kuvvetler.
                         </p>
+
+                        <QuickNetSimulator />
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
                             Stratejik Hata: Eşit Ağırlıkçının Fen Çözmemesi

@@ -99,7 +99,8 @@ export default function HakkimizdaPage() {
                                 Soru, öneri veya teknik destek talepleriniz için bize her zaman ulaşabilirsiniz.
                             </p>
                             <div className="bg-gray-50 p-5 rounded-xl space-y-2 text-sm">
-                                <p><strong>E-posta:</strong> mertcaliskan36065d@gmail.com</p>
+                                <p><strong>Kurumsal E-posta:</strong> iletisim@yksnethesapla.com</p>
+                                <p><strong>Destek:</strong> destek@yksnethesapla.com</p>
                                 <p><strong>Lokasyon:</strong> Ankara, Türkiye</p>
                                 <p>
                                     <Link href="/iletisim" className="text-blue-600 hover:underline font-medium">

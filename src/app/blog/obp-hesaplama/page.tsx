@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
+import InteractiveOBPCalculator from '@/components/InteractiveOBPCalculator'
 
 export const metadata: Metadata = {
     title: 'OBP Nedir ve Nasıl Hesaplanır? Kırık OBP ve Katsayı Analizi 2027',
@@ -71,6 +72,8 @@ export default function OBPHesaplamaRehberi() {
                         <p>
                             OBP, yalnızca geçmişte alınmış notların bir dökümü değildir; sınav salonuna girmeden önce hanenize yazılan hazır bir puan sermayesidir. Bu rehberde OBP&apos;nin tam hesaplama formülünü, katsayı etkisini, kırık OBP kuralını ve sıralamanızı korumak için alabileceğiniz somut önlemleri inceliyoruz.
                         </p>
+
+                        <InteractiveOBPCalculator />
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             OBP Nedir ve ÖSYM Tarafından Nasıl Hesaplanır?

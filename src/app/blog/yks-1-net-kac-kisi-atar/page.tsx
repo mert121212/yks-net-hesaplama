@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
+import QuickNetSimulator from '@/components/QuickNetSimulator'
 
 export const metadata: Metadata = {
     title: 'YKS\'de 1 Net Kaç Bin Kişi Atar? (Yığılma ve Standart Sapma Etkisi)',
@@ -82,6 +83,8 @@ export default function YKSBirNetKacKisiAtar() {
                         <p>
                             Ama 100 bininci sıradaysan? Orası mahşer yeri gibi kalabalıktır. Orada 1 net seni binlerce kişinin önüne fırlatır. İşte bant bant tahmini rakamlar (Son 3 yılın YKS istatistiklerinden süzülmüştür):
                         </p>
+
+                        <QuickNetSimulator />
 
                         <div className="bg-slate-50 rounded-xl p-6 my-6 border border-slate-200">
                             <h3 className="font-bold text-slate-900 mb-4 text-lg">Hangi Bandta 1 Net Ne Kadar İleri Taşır?</h3>
