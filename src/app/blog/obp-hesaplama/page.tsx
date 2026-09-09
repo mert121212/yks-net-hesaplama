@@ -6,7 +6,7 @@ import InteractiveOBPCalculator from '@/components/InteractiveOBPCalculator'
 
 export const metadata: Metadata = {
     title: 'OBP Nedir ve Nasıl Hesaplanır? Kırık OBP ve Katsayı Analizi 2027',
-    description: 'YKS OBP hesaplama formülü, diploma notunun yerleştirme puanına etkisi, kırık OBP cezası ve okul birinciliği kontenjanı hakkında kapsamlı uzman rehberi.',
+    description: 'Lise diploma notunun YKS yerleştirme puanına etkisi, OBP hesaplama formülü, kırık OBP kesintisi ve okul birinciliği kontenjanı hakkında gerçek rehber.',
     keywords: 'obp nedir, obp nasıl hesaplanır, obp hesaplama, kırık obp, diploma notu yks, okul birinciliği kontenjanı, yks yerleştirme puanı',
     alternates: { canonical: 'https://yksnethesapla.com/blog/obp-hesaplama' },
     openGraph: {
@@ -33,7 +33,7 @@ export default function OBPHesaplamaRehberi() {
             <article className="max-w-4xl mx-auto">
                 <BlogArticleSchema 
                     title="OBP Nedir ve Nasıl Hesaplanır? Kırık OBP ve Katsayı Analizi 2027" 
-                    description="YKS OBP hesaplama formülü, diploma notunun yerleştirme puanına etkisi, kırık OBP cezası ve okul birinciliği kontenjanı hakkında kapsamlı uzman rehberi."
+                    description="Lise diploma notunun YKS yerleştirme puanına etkisi, OBP hesaplama formülü, kırık OBP kesintisi ve okul birinciliği kontenjanı hakkında gerçek rehber."
                     datePublished="2026-02-24"
                     dateModified="2026-02-27"
                     url="https://yksnethesapla.com/blog/obp-hesaplama"
@@ -55,7 +55,7 @@ export default function OBPHesaplamaRehberi() {
                             <span className="text-gray-600">• 9 dk okuma</span>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                            OBP (Diploma Notu) Sıralamanızı Nasıl Değiştirir? Kırık OBP ve Katsayı Analizi
+                            OBP (Diploma Notu) Sıralamanızı Nasıl Değiştirir? Kırık OBP ve Katsayı Gerçeği
                         </h1>
                         <p className="text-xl text-gray-600">
                             Aynı netleri yapan iki adaydan biri hayalindeki fakülteye girerken diğeri neden 20 bin kişi geriye düşer? Ortaöğretim Başarı Puanının matematiksel anatomisi ve kırık OBP kuralı.
@@ -66,44 +66,50 @@ export default function OBPHesaplamaRehberi() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            YKS hazırlık sürecinde adayların neredeyse tamamı enerjisini TYT ve AYT netlerini artırmaya odaklar. Ancak temmuz ayında ÖSYM sonuç belgesi ekranda belirdiğinde, birçok öğrencinin ham sıralaması ile yerleştirme sıralaması arasında şaşırtıcı bir fark oluşur. Bir adayın ham puan sıralamasında 42.000&apos;inci iken, yerleştirme sıralamasında 58.000&apos;e gerilemesinin temel sebebi <strong>Ortaöğretim Başarı Puanı (OBP)</strong> faktörüdür.
+                            Sonuç belgelerinin açıklandığı o temmuz sabahını dün gibi anımsıyorum. Masamda oturan bir öğrencim, elleri titreyerek ÖSYM sistemine giriş yaptı. Ekranda beliren ham puan sıralaması: Sayısal 24.100. Yüzünde ayların yorgunluğunu silip süpüren muazzam bir tebessüm vardı; hayalindeki diş hekimliği fakültesinin kapısı aralanmıştı. 
                         </p>
                         
                         <p>
-                            OBP, yalnızca geçmişte alınmış notların bir dökümü değildir; sınav salonuna girmeden önce hanenize yazılan hazır bir puan sermayesidir. Bu rehberde OBP&apos;nin tam hesaplama formülünü, katsayı etkisini, kırık OBP kuralını ve sıralamanızı korumak için alabileceğiniz somut önlemleri inceliyoruz.
+                            Fakat gözlerini hemen altındaki satıra, yani &apos;Yerleştirme Sıralamaları&apos; tablosuna kaydırdığı saniye odaya buz gibi bir sessizlik çöktü: 38.450. Tam 14 bin 350 kişi geriye fırlatılmıştı. Odada tek bir çıt bile çıkmıyordu. Bunun tek bir müsebbibi vardı: Lise 10 ve 11. sınıfta &quot;Aman kimya yazılısını kim takar, test çözer geçerim&quot; diyerek 71&apos;de bıraktığı o lise diploma notu.
+                        </p>
+
+                        <p>
+                            Sınava hazırlanan gençlerin neredeyse tamamı gecesini gündüzüne katıp TYT ve AYT netlerini yükseltmeye odaklanıyor. Deneme üstüne deneme deviriyor, soru bankalarını eritiyor. Çok haklılar, emeklerine sağlık. Ne var ki sınav salonuna daha adımınızı atmadan önce heybenizde hazır bekleyen devasa bir puan sermayesi var: Ortaöğretim Başarı Puanı. Bu sermayeyi doğru okumayan biri, sınav masasında döktüğü alın terinin bir kısmını maalesef bürokratik bir katsayıya kurban verebiliyor.
                         </p>
 
                         <InteractiveOBPCalculator />
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            OBP Nedir ve ÖSYM Tarafından Nasıl Hesaplanır?
+                            Peki Bu OBP Tam Olarak Nedir ve Nasıl Paketlenir?
                         </h2>
                         <p>
-                            Ortaöğretim Başarı Puanı (OBP), adayın 9, 10, 11 ve 12. sınıftaki yıl sonu başarı notlarının aritmetik ortalaması olan lise diploma notunun ÖSYM standart puanlama sistemine dönüştürülmüş halidir.
+                            Milli Eğitim Bakanlığı&apos;nın e-Okul sistemindeki 9, 10, 11 ve 12. sınıf yıl sonu ağırlıklı not ortalamalarınız toplanır ve dörde bölünür. Çıkan nihai rakam sizin 100 üzerinden lise mezuniyet notunuzdur.
                         </p>
                         <p>
-                            Hesaplama süreci iki aşamalı bir matematiksel işlemden oluşur:
+                            ÖSYM bu notu alır almaz iki adımlı bir dönüştürme uygular. Önce notunuzu 5 ile çarparak 500&apos;lük sisteme genişletir. Örneğin diploma notunuz 80 ise OBP değeriniz 400 olur. Ardından bu 400 puanı genel yerleştirme katsayısı olan 0,12 ile çarpar:
                         </p>
-                        <ol className="list-decimal pl-6 space-y-2 mb-4">
-                            <li><strong>OBP Dönüşümü:</strong> Lise diploma notunuz (en düşük 50, en yüksek 100) doğrudan 5 katsayısıyla çarpılarak 250 ile 500 aralığında bir OBP değerine dönüştürülür.</li>
-                            <li><strong>Yerleştirme Katkısı:</strong> Elde edilen bu OBP değeri, genel yerleştirme katsayısı olan <strong>0,12</strong> ile çarpılarak ham YKS puanınıza eklenir.</li>
-                        </ol>
-
+                        
                         <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl my-6">
-                            <h3 className="font-bold text-slate-900 text-lg mb-2">Pratik Hesaplama Formülü</h3>
-                            <p className="text-sm text-slate-700 mb-2">
-                                <code>OBP Katkı Puanı = Diploma Notu × 5 × 0,12 = <strong>Diploma Notu × 0,6</strong></code>
+                            <h3 className="font-bold text-slate-900 text-lg mb-2">İşin Kolay Formülü: Doğrudan 0,6 ile Çarpın</h3>
+                            <p className="text-base text-slate-700 mb-2">
+                                Önce 5 ile çarpıp sonra 0,12 ile çarpmak matematikte doğrudan <strong>0,6</strong> ile çarpmak demektir.
                             </p>
-                            <p className="text-sm text-slate-600">
-                                Kısaca diploma notunuzu doğrudan <strong>0,6</strong> ile çarparak YKS yerleştirme puanınıza eklenecek tam puanı bulabilirsiniz.
+                            <p className="text-sm font-mono text-blue-900 bg-blue-50 p-3 rounded border border-blue-200">
+                                YKS Ek Puanınız = Lise Diploma Notunuz × 0,6
+                            </p>
+                            <p className="text-sm text-slate-600 mt-2">
+                                Diploma notunuz 90 ise: 90 × 0,6 = <strong>54 tam puan</strong> ham puanınıza eklenir. Diploma notunuz 70 ise: 70 × 0,6 = <strong>42 puan</strong> eklenir. Aradaki 12 puanlık fark, doğrudan cebinizden eksilen puandır.
                             </p>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Diploma Notunun Sıralamaya Etkisi: Somut Örnekler
+                            Masa Başında Kazanılan veya Kaybedilen Netler
                         </h2>
                         <p>
-                            ÖSYM yerleştirme puanında tavan ek puan 60&apos;tır (100 × 0,6 = 60 puan). Taban diploma notu olan 50 için bu katkı 30 puandır. Aradaki 30 puanlık makas, sınavdaki net karşılığı açısından devasa bir fark yaratır.
+                            Sınavda 12 puanın ne manaya geldiğini hiç düşündünüz mü? Sayısal alanda veya Eşit Ağırlıkta 1 AYT Matematik netinin getirdiği standart puan kabaca 2,8 ile 3,1 puan arasında seyreder. Bu hesaba göre 12 puanlık OBP farkı, sınav sabahı rakibinizin sizden 4 tane eksiksiz AYT Matematik sorusu önde başlaması demektir. 
+                        </p>
+                        <p>
+                            Siz sınav salonunda kan ter içinde ter dökerken, lise yıllarını 95 ortalamayla kapatmış bir akranınız, sizden 4 AYT sorusu daha az yapsa bile yerleştirme listesinde sizinle yan yana durabilir. Acımasız ama sistemin matematiksel kuralı tastamam böyledir.
                         </p>
                         
                         <div className="overflow-x-auto my-6">
@@ -111,9 +117,9 @@ export default function OBPHesaplamaRehberi() {
                                 <thead className="bg-gray-100 text-gray-800">
                                     <tr>
                                         <th className="py-3 px-4 text-left font-semibold border-b">Diploma Notu</th>
-                                        <th className="py-3 px-4 text-center font-semibold border-b">OBP Değeri (×5)</th>
-                                        <th className="py-3 px-4 text-center font-semibold border-b">YKS Katkı Puanı (×0,12)</th>
-                                        <th className="py-3 px-4 text-left font-semibold border-b">Eşdeğer AYT Matematik Neti</th>
+                                        <th className="py-3 px-4 text-center font-semibold border-b">OBP (×5)</th>
+                                        <th className="py-3 px-4 text-center font-semibold border-b">YKS&apos;ye Katkısı (×0,6)</th>
+                                        <th className="py-3 px-4 text-left font-semibold border-b">Sınavdaki Karşılığı</th>
                                     </tr>
                                 </thead>
                                 <tbody className="divide-y divide-gray-200 text-gray-700">
@@ -121,111 +127,99 @@ export default function OBPHesaplamaRehberi() {
                                         <td className="py-3 px-4 font-bold text-red-600">65 (Düşük)</td>
                                         <td className="py-3 px-4 text-center">325</td>
                                         <td className="py-3 px-4 text-center font-bold">39,00 puan</td>
-                                        <td className="py-3 px-4">Referans Noktası</td>
+                                        <td className="py-3 px-4">Zorlu başlangıç çizgisi</td>
                                     </tr>
                                     <tr className="bg-gray-50">
                                         <td className="py-3 px-4 font-bold text-amber-600">75 (Orta)</td>
                                         <td className="py-3 px-4 text-center">375</td>
                                         <td className="py-3 px-4 text-center font-bold">45,00 puan</td>
-                                        <td className="py-3 px-4 text-green-700 font-semibold">+2 AYT Neti değerinde (+6 puan)</td>
+                                        <td className="py-3 px-4 text-green-700 font-semibold">+2 AYT neti avantajı (+6 puan)</td>
                                     </tr>
                                     <tr>
                                         <td className="py-3 px-4 font-bold text-blue-600">85 (İyi)</td>
                                         <td className="py-3 px-4 text-center">425</td>
                                         <td className="py-3 px-4 text-center font-bold">51,00 puan</td>
-                                        <td className="py-3 px-4 text-green-700 font-semibold">+4 AYT Neti değerinde (+12 puan)</td>
+                                        <td className="py-3 px-4 text-green-700 font-semibold">+4 AYT neti avantajı (+12 puan)</td>
                                     </tr>
                                     <tr className="bg-green-50">
                                         <td className="py-3 px-4 font-bold text-green-700">95 (Çok İyi)</td>
                                         <td className="py-3 px-4 text-center">475</td>
                                         <td className="py-3 px-4 text-center font-bold">57,00 puan</td>
-                                        <td className="py-3 px-4 text-green-700 font-semibold">+6 AYT Neti değerinde (+18 puan)</td>
+                                        <td className="py-3 px-4 text-green-700 font-semibold">+6 AYT neti avantajı (+18 puan)</td>
                                     </tr>
                                     <tr className="bg-emerald-100">
-                                        <td className="py-3 px-4 font-bold text-emerald-800">100 (Tam Puan)</td>
+                                        <td className="py-3 px-4 font-bold text-emerald-800">100 (Kusursuz)</td>
                                         <td className="py-3 px-4 text-center">500</td>
                                         <td className="py-3 px-4 text-center font-bold">60,00 puan</td>
-                                        <td className="py-3 px-4 text-emerald-800 font-bold">+7 AYT Neti değerinde (+21 puan)</td>
+                                        <td className="py-3 px-4 text-emerald-800 font-bold">+7 AYT neti değerinde tavan sermaye (+21 puan)</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
-                        <p>
-                            Yukarıdaki tablodan görüleceği üzere, diploma notu 95 olan bir aday, diploma notu 65 olan bir rakibine göre sınava başlamadan önce tam <strong>18 puan</strong> öndedir. AYT Matematikte 1 netin yaklaşık 3 puan getirdiği düşünülürse, bu fark sınavda 6 tane eksiksiz AYT Matematik sorusu çözmeye denktir.
-                        </p>
-
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Kırık OBP (Puan Kesintisi) Nedir? Kimleri Kapsar?
+                            Korkulu Rüya: Kırık OBP Cezası Nasıl İşler?
                         </h2>
                         <p>
-                            YKS kılavuzunda yer alan en kritik kurallardan biri <strong>puan kırılması</strong> mekanizmasıdır. Amaç, üniversite kontenjanlarının verimli kullanılmasını sağlamak ve yerleştiği halde kayıt yaptırmayan adayların oluşturduğu mağduriyeti sınırlamaktır.
+                            Rehberlik servislerinde en sık duyduğumuz feryatlardan biri şudur: &quot;Hocam ben geçen sene öylesine 24 tercih doldurmuştum, son tercihim olan bölüm geldi ama hiç gitmek istemedim, kaydolmadım bile. Puanım kesilir mi?&quot;
                         </p>
                         <p>
-                            Eğer bir önceki yıl YKS merkezi yerleştirmesinde bir lisans veya ön lisans programına yerleştiyseniz (kayıt yaptırmış olun veya olmayın), ertesi yıl YKS&apos;ye girdiğinizde OBP katsayınız <strong>0,12 yerine 0,06</strong> olarak uygulanır.
+                            Cevap maalesef çok net: Evet, kesilir. Hem de acımasızca.
+                        </p>
+                        <p>
+                            ÖSYM kılavuzunda açık bir hüküm vardır. Merkezi yerleştirmede örgün veya açıköğretim (kontenjan sınırlaması olan) herhangi bir ön lisans ya da lisans programına yerleştirildiğiniz anda, üniversite kapısından içeri adım atmamış olsanız dahi kural işletilir. Ertesi sene sınava tekrar girdiğinizde OBP çarpım katsayınız 0,12&apos;den <strong>0,06&apos;ya indirilir</strong>.
                         </p>
 
                         <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl my-6">
-                            <h3 className="font-bold text-red-900 mb-2">Kırık OBP&apos;nin Maliyeti</h3>
+                            <h3 className="font-bold text-red-900 mb-2">Bir Anlık Tercih Hatasının Ağır Bedeli</h3>
                             <p className="text-sm text-red-800 mb-3">
-                                Diploma notunuz 90 ise normalde alacağınız katkı <strong>54 puandır</strong> (90 × 0,6). OBP kırıldığında bu katkı yarı yarıya düşerek <strong>27 puana</strong> iner.
+                                Diyelim ki diploma notunuz 90. Normal koşullarda yerleştirme puanınıza 54 puan gelecekti. Puanınız kırıldığında katsayı 0,06&apos;ya düşer ve hanenize sadece <strong>27 puan</strong> yazılır.
                             </p>
-                            <p className="text-sm text-red-900 font-semibold">
-                                Kaybedilen 27 puan, orta ve üst yığılma bandında adayı tek bir hamlede 35.000 ile 60.000 kişi arasında geriye itebilir.
+                            <p className="text-sm text-red-950 font-bold">
+                                Buharlaşan o 27 puan, 40 bin ile 90 bin bandında yarışan bir adayı bir anda 40-50 bin kişi geriye fırlatır. Bunu sınavda telafi edebilmek için rakiplerinizden fazladan 8-9 tane AYT sorusu çözmeniz gerekir.
                             </p>
                         </div>
 
-                        <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">Hangi Durumlarda OBP Kırılır?</h3>
-                        <ul className="list-disc pl-6 space-y-2 mb-4">
-                            <li><strong>ÖSYM tercih listesiyle bir bölüme yerleştiyseniz:</strong> İster örgün, ister ikinci öğretim, ister açıköğretimin kontenjanlı bir programı olsun; yerleştiğiniz an kayıt yaptırmasanız dahi ertesi yıl OBP yarıya düşer.</li>
-                            <li><strong>Özel yetenek sınavıyla bir programa kayıt yaptırdıysanız:</strong> Kayıt yapıldığı takdirde ertesi yıl OBP katsayısı kırılır.</li>
-                        </ul>
-
-                        <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">Hangi Durumlarda OBP Kırılmaz?</h3>
-                        <ul className="list-disc pl-6 space-y-2 mb-6">
-                            <li>Tercih yaptınız ancak hiçbir programa yerleşemediyseniz katsayı kırılmaz.</li>
-                            <li>Sınava girdiniz ancak hiç tercih bildiriminde bulunmadıysanız katsayı kırılmaz.</li>
-                            <li>Bir programa yerleşmenizin üzerinden <strong>2 yıl</strong> geçmişse OBP normale döner (Örn. 2025&apos;te yerleşen adayın puanı 2026&apos;da kırılır, 2027&apos;de tekrar tam katsayıyla hesaplanır).</li>
-                        </ul>
-
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Okul Birinciliği Kontenjanı Avantajı
+                            Peki Hangi Senaryoda Puan Kırılmaz?
                         </h2>
                         <p>
-                            Liseden mezun olduğu yıl okul birincisi olan öğrenciler için devlet üniversitelerinde özel bir kontenjan ayrılır. Bu kontenjan sayesinde aday, genel kontenjan taban puanından daha düşük bir puanla o bölüme yerleşme şansı elde eder.
+                            Kafaları en çok karıştıran durumlardan biri de bu istisnalardır. İçiniz rahat olsun diye madde madde netleştirelim:
                         </p>
                         <p>
-                            Ancak dikkat edilmesi gereken hayati bir kural vardır: <strong>Okul birinciliği hakkı yalnızca mezun olunan yıl geçerlidir.</strong> Bir sonraki yıl mezuna kalındığında bu ayrıcalık sona erer ve aday genel kontenjandan yarışır.
+                            Eğer tercih bildiriminde bulundunuz fakat sıralamanız yetmediği için hiçbir bölüme yerleşemediyseniz puanınız kesinlikle kırılmaz. Sınava girdiniz, sonucunuz geldi ama tercih yapmaktan vazgeçip kılavuzu kapattınız; yine tam katsayı geçerlidir. 
+                        </p>
+                        <p>
+                            Bir üniversiteye yerleşmenizin üzerinden tam 2 sınav dönemi geçmişse ceza süresi dolar. Sözgelimi 2025 yerleştirmesinde bir yeri kazandıysanız, 2026 sınavında puanınız kırık uygulanır; fakat 2027 YKS&apos;ye girdiğinizde OBP katsayınız tekrar orijinal haline, yani 0,12&apos;ye döner.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Adaylar İçin Stratejik Yol Haritası
+                            Okul Birinciliği Kontenjanı: Sadece Bir Yıllık Mucize
                         </h2>
-                        <div className="space-y-4 my-6">
-                            <div className="p-5 bg-blue-50 border border-blue-200 rounded-xl">
-                                <h4 className="font-bold text-blue-900 mb-1">1. Hâlâ Lisede Okuyanlar (9, 10, 11 ve 12. Sınıflar):</h4>
-                                <p className="text-sm text-gray-700">
-                                    Yazılı sınavları asla ihmal etmeyin. Seçmeli dersler ve sözlü notları da dahil olmak üzere her bir puan, genel ortalamanızı yukarı taşır. Diploma notunuzu 80&apos;den 90&apos;a çıkarmak, sınavda fazladan 2-3 matematik sorusu çözmekle eşdeğerdir.
-                                </p>
-                            </div>
-                            <div className="p-5 bg-amber-50 border border-amber-200 rounded-xl">
-                                <h4 className="font-bold text-amber-900 mb-1">2. Mezun Adaylar:</h4>
-                                <p className="text-sm text-gray-700">
-                                    Diploma notunuz artık değiştirilemez bir sabittir. Eğer lise ortalamanız düşükse, bunu kapatmanın tek yolu net hedeflerinizi rakiplerinizden 4-6 net daha yukarıda belirlemektir. Gerçekçi bir çalışma planıyla bu farkı rahatlıkla kapatabilirsiniz.
-                                </p>
-                            </div>
-                            <div className="p-5 bg-red-50 border border-red-200 rounded-xl">
-                                <h4 className="font-bold text-red-900 mb-1">3. Tercih Yapacaklar:</h4>
-                                <p className="text-sm text-gray-700">
-                                    Kesinlikle gitmeyi düşünmediğiniz hiçbir üniversite veya bölümü tercih listenize eklemeyin. &quot;Açıkta kalmayayım&quot; düşüncesiyle yazılan bir program, yerleşmeniz durumunda ertesi yıl 25-30 puanlık OBP kaybına yol açarak hazırlık sürecinizi sekteye uğratabilir.
-                                </p>
-                            </div>
-                        </div>
+                        <p>
+                            Liseden okul birincisi olarak kep atan pırıl pırıl gençlerin sıkça düştüğü bir yanılgı var. Devlet üniversiteleri her bölüm için genel kontenjan haricinde 1 veya 2 kişilik &apos;Okul Birincisi Kontenjanı&apos; ayırır. Bu kontenjan, bazen 50 bininci sıradaki bir birincinin 25 binlik bir tıp ya da hukuk fakültesine yerleşmesini sağlayabilecek kadar güçlü bir can simididir.
+                        </p>
+                        <p>
+                            Lakin unutulmaması gereken altın kural şudur: Bu hak yalnızca mezun olduğunuz yıl geçerlidir. &quot;Nasıl olsa birinciliğim var, bu sene mezuna kalıp seneye ilk 5 bine oynayayım&quot; derseniz, ertesi yıl o birincilik kontenjanı hakkınız buharlaşır ve genel sıralama havuzuna dahil edilirsiniz.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            Şu Andan İtibaren Ne Yapmalısınız?
+                        </h2>
+                        <p>
+                            Hala lise sıralarındaysanız, ister 9. sınıf olun ister 12. sınıfın ikinci döneminde; hocaların sözlü notlarını, performans ödevlerini ve yazılı sınavları asla yabana atmayın. Orada kazanacağınız fazladan 5 puan, seneye sınav salonunda çözeceğiniz onlarca zor soruya bedeldir.
+                        </p>
+                        <p>
+                            Mezuna kaldıysanız ve diploma notunuz düşükse, artık geçmişe dönüp o notları değiştiremezsiniz. Bu gerçeği kabullenin, moralinizi bozmayın ama stratejinizi buna göre kurun: Rakipleriniz haftada 60 net hedefliyorsa, siz OBP açığını kapatmak için 65 neti hedefleyeceksiniz. Matematik asla yalan söylemez; doğru stratejiyle her fark kapatılır.
+                        </p>
+                        <p>
+                            Ve en önemlisi: Tercih dönemi geldiğinde &quot;Sırf üniversiteli olayım da ne olursa olsun&quot; diyerek istemediğiniz hiçbir bölümün kodunu o listeye yazmayın. Bir yıllık heves uğruna geleceğinizi 27 puanlık kırık OBP faturasıyla ipotek altına almayın.
+                        </p>
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
-                            <h3 className="text-2xl font-bold mb-3">Diploma Notunuzun Sıralamanıza Etkisini Görün</h3>
+                            <h3 className="text-2xl font-bold mb-3">Kendi Diploma Notunuzun Net Karşılığını Öğrenin</h3>
                             <p className="text-blue-100 mb-6 max-w-xl mx-auto">
-                                Hesaplama motorumuza diploma notunuzu ve kırık OBP durumunuzu girerek yerleştirme puanınızın ve tahmini sıralamanızın nasıl değiştiğini anında simüle edin.
+                                Hesaplama motorumuza diploma notunuzu ve kırık OBP bilginizi girerek yerleştirme puanınızın ve tahmini sıralamanızın nasıl değiştiğini hemen test edin.
                             </p>
                             <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
                                 OBP ile Sıralama Hesapla →

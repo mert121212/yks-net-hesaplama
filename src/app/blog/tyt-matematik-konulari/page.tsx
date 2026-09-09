@@ -2,15 +2,16 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
+import QuickNetSimulator from '@/components/QuickNetSimulator'
 
 export const metadata: Metadata = {
-    title: 'TYT Matematik Konuları ve Soru Dağılımı 2027 | Çalışma Rehberi',
-    description: 'TYT Matematik konuları, soru dağılımları ve seviyene göre çalışma planı. Problemler, geometri ve temel kavramlar detaylı analizi.',
-    keywords: 'tyt matematik konuları, tyt matematik soru dağılımı, tyt matematik nasıl çalışılır, yks matematik 2027',
+    title: 'TYT Matematik Konuları ve Soru Dağılımı 2027 | Kapsamlı Çalışma Rehberi',
+    description: 'TYT Matematik sınavında hangi konudan kaç soru çıkıyor? 0-10, 10-20 ve 30+ net seviyelerine özel taktikler, süre yönetimi ve güncel soru dağılım analizi.',
+    keywords: 'tyt matematik konuları, tyt matematik soru dağılımı 2027, tyt matematik nasıl çalışılır, yks matematik net artırma, tyt geometri',
     alternates: { canonical: 'https://yksnethesapla.com/blog/tyt-matematik-konulari' },
     openGraph: {
-        title: 'TYT Matematik Konuları ve Soru Dağılımı 2027',
-        description: 'TYT Matematik sınavında hangi konular çıkıyor? Konu dağılımı ve çalışma taktikleri.',
+        title: 'TYT Matematik Konuları ve Soru Dağılımı 2027 | Kapsamlı Rehber',
+        description: 'TYT Matematik testini 30+ nete taşıyacak konu analizleri, seviyelere göre çalışma planı ve sınav süresi yönetimi rehberi.',
         type: 'article',
         publishedTime: '2026-02-19',
         modifiedTime: '2026-02-22',
@@ -31,12 +32,12 @@ export default function TYTMatematikKonulari() {
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
                 <BlogArticleSchema 
-                    title="TYT Matematik Konuları ve Soru Dağılımı 2027 | Çalışma Rehberi" 
-                    description="TYT Matematik konuları, soru dağılımları ve seviyene göre çalışma planı. Problemler, geometri ve temel kavramlar detaylı analizi."
+                    title="TYT Matematik Konuları ve Soru Dağılımı 2027 | Kapsamlı Çalışma Rehberi" 
+                    description="TYT Matematik sınavında hangi konudan kaç soru çıkıyor? 0-10, 10-20 ve 30+ net seviyelerine özel taktikler, süre yönetimi ve güncel soru dağılım analizi."
                     datePublished="2026-02-19"
                     dateModified="2026-02-22"
                     url="https://yksnethesapla.com/blog/tyt-matematik-konulari"
-                    keywords={['tyt matematik konuları', 'tyt matematik soru dağılımı', 'tyt matematik nasıl çalışılır', 'yks matematik 2027']}
+                    keywords={['tyt matematik konuları', 'tyt matematik soru dağılımı 2027', 'tyt matematik nasıl çalışılır', 'yks matematik net artırma', 'tyt geometri']}
                 />
                 <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
                     <nav className="mb-8 text-sm text-gray-600">
@@ -44,20 +45,20 @@ export default function TYTMatematikKonulari() {
                         {' > '}
                         <Link href="/blog" className="hover:text-blue-600">Blog</Link>
                         {' > '}
-                        <span className="text-gray-900">TYT Matematik</span>
+                        <span className="text-gray-900">TYT Matematik Konuları ve Rehberi</span>
                     </nav>
 
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
-                            <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">TYT</span>
+                            <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Temel Yeterlilik Testi</span>
                             <time className="text-gray-600" dateTime="2026-02-19">19 Şubat 2026</time>
-                            <span className="text-gray-600">• 14 dk okuma</span>
+                            <span className="text-gray-600">• 15 dk okuma</span>
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            TYT Matematik: 40 Sorudan 30+&apos;unu Yapmanın Reçetesi
+                        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                            TYT Matematik Konuları, Soru Dağılımı ve 30+ Net İçin Sahada Test Edilmiş Çalışma Rehberi
                         </h1>
-                        <p className="text-xl text-gray-600">
-                            Herkese aynı reçete verilmez. Şu an 10 net yapan birinin yapması gerekenlerle 25 net yapanın yapması gerekenler tamamen farklı. Gel sana özel planı çıkaralım.
+                        <p className="text-xl text-gray-600 leading-relaxed">
+                            Formül ezberleyerek TYT Matematik çözülmez. ÖSYM&apos;nin soru felsefesini kavramak, konu dağılımındaki ağırlık merkezlerini görmek ve kendi seviyenize uygun stratejiyi sahaya sürmek zorundasınız.
                         </p>
                     </header>
 
@@ -65,86 +66,216 @@ export default function TYTMatematikKonulari() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Ben yıllardır öğrencilere matematik anlatıyorum ve şunu fark ettim: TYT Matematik sınavından çıkan herkes aynı şeyi söylüyor. &quot;Sorular aslında çok zor değildi ama süre yetmedi.&quot; Bu cümleyi her sene, her sınavdan sonra, yüzlerce kez duydum. Ve her seferinde aynı cevabı veriyorum: &quot;Süre yetmemesi demek, o soruyu çözmek için gereken yolu uzun yoldan gittin demek.&quot;
+                            Her yıl sınav bittiğinde salondan çıkan binlerce adayın ağzından çıkan ilk cümle neredeyse harfi harfine aynıdır: &quot;Hocam sorular aslında çözülemeyecek gibi değildi ama vaktim bitti, geometriye elimi bile süremedim.&quot; Bu serzeniş tesadüf değildir. Çünkü TYT Matematik testi salt bir bilgi sınavı olmaktan çıkalı yıllar oldu. Karşımızdaki test; Türkçe paragrafı okuma hızınızla matematiksel modelleme refleksinizi çarpıştıran, zamana karşı verilen amansız bir kriz yönetimidir.
                         </p>
 
                         <p>
-                            ÖSYM son 3-4 senedir TYT Matematik&apos;te çok ilginç bir şey yapıyor. Klasik &quot;x&apos;i bulun&quot; tipi işlem soruları neredeyse tamamen kalktı. Yerine bir hikaye anlatıyorlar, o hikayenin içinden denklemi kendin kurmanı bekliyorlar. Yani aslında TYT Matematik, kağıt üzerinde bir matematik sınavı ama gerçekte bir &quot;okuduğunu anlama + hızlı modelleme&quot; testi. Bunu anlamayan öğrenci saatlerce formül ezberler ama sınavda o formülleri nereye sokacağını bilemez.
+                            Eğer masanın başına oturup binlerce sayfalık soru bankalarını baştan sona rastgele çözmeye çalışırsanız, birkaç ay sonra 14-18 net bandına çakılıp kalırsınız. Bu tıkanıklığı aşmanın yolu, ÖSYM&apos;nin son 6 yıllık soru eğilimlerini masaya yatırmak ve hangi net basamağında hangi kaldıraçları devreye sokacağınızı bilmektir.
                         </p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-                            Konulara Göre Soru Dağılımı — Son 5 Yılın Ortalaması
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            ÖSYM TYT Matematik Testinde Ne Soruyor? Konu ve Soru Dağılım Haritası
                         </h2>
                         <p>
-                            Aşağıdaki tablo ÖSYM&apos;nin son 5 yıldaki TYT Matematik sorularını analiz ederek çıkardığım ortalama dağılım. Her sene 1-2 soru oynayabilir ama genel tablo bu şekilde:
+                            TYT Matematik testinde toplam 40 soru bulunur. Bu 40 sorunun ortalama 30-31 tanesi temel matematik ve problemlerden, 9-10 tanesi ise geometriden gelir. Son 5 yılın soru dökümü incelendiğinde net bir tablo ortaya çıkar:
                         </p>
-                        <div className="bg-slate-50 rounded-xl p-6 my-6 border border-slate-200">
-                            <h3 className="font-bold text-slate-900 mb-4 text-lg">Konu Konu Ortalama Soru Analizi</h3>
-                            <div className="space-y-4">
-                                <p className="text-slate-700"><strong>Problemler (12-14 Soru):</strong> Bu işin kalbi. Problemleri yapabilen adam sınavı kazanır, bu kadar net.</p>
-                                <p className="text-slate-700"><strong>Geometri (9-10 Soru):</strong> Farkı yaratan yer burası. Çoğu kişi geometriye bakmaya üşenir. 25 neti geçmek istiyorsan buraya girmek zorundasın.</p>
-                                <p className="text-slate-700"><strong>Temel Kavramlar (4-5 Soru):</strong> Temel taşlarımız. Bunlar olmadan zaten problem falan çözülmüyor.</p>
-                                <p className="text-slate-700"><strong>Üslü ve Köklü İfadeler (2-3 Soru):</strong> Kısa sürede halledilen, genelde garanti net getiren kısımdır.</p>
-                                <p className="text-slate-700"><strong>Fonksiyonlar, Kümeler, Mutlak Değer (4-5 Soru Toplamı):</strong> AYT için köprü görevi gören, formülü bilenin yaptığı yerlerdir.</p>
+
+                        <div className="overflow-x-auto my-6">
+                            <table className="min-w-full bg-white border border-gray-200 rounded-lg text-sm text-left">
+                                <thead className="bg-slate-100 text-gray-800 font-semibold border-b">
+                                    <tr>
+                                        <th className="py-3 px-4">Konu Başlığı</th>
+                                        <th className="py-3 px-4">Ortalama Soru</th>
+                                        <th className="py-3 px-4">Soru Tipi & Karakteri</th>
+                                        <th className="py-3 px-4">Önem Derecesi</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-gray-200">
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="py-3 px-4 font-medium text-gray-900">Temel Kavramlar & Sayı Basamakları</td>
+                                        <td className="py-3 px-4 font-semibold text-blue-600">3 - 4 Soru</td>
+                                        <td className="py-3 px-4">Tek-çift sayı yorumları, kutucuk içine sayı yerleştirme mantığı.</td>
+                                        <td className="py-3 px-4 text-emerald-700 font-medium">Hayati (Hızlı Net)</td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="py-3 px-4 font-medium text-gray-900">Rasyonel & Ondalık Sayılar</td>
+                                        <td className="py-3 px-4 font-semibold text-blue-600">1 - 2 Soru</td>
+                                        <td className="py-3 px-4">Pasta dilimi, cetvel veya ölçeklendirme üzerinden görsel modelleme.</td>
+                                        <td className="py-3 px-4 text-emerald-700 font-medium">Garanti Puan</td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="py-3 px-4 font-medium text-gray-900">Basit Eşitsizlikler & Mutlak Değer</td>
+                                        <td className="py-3 px-4 font-semibold text-blue-600">2 - 3 Soru</td>
+                                        <td className="py-3 px-4">Sayı doğrusu üzerinde uzaklık ve günlük hayat sıcaklık/mesafe aralıkları.</td>
+                                        <td className="py-3 px-4 text-amber-700 font-medium">Eleyici Eşik</td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="py-3 px-4 font-medium text-gray-900">Üslü ve Köklü İfadeler</td>
+                                        <td className="py-3 px-4 font-semibold text-blue-600">2 - 3 Soru</td>
+                                        <td className="py-3 px-4">Yaklaşık değer hesaplama, tartı ve boy ölçüm kurguları.</td>
+                                        <td className="py-3 px-4 text-emerald-700 font-medium">Çok Yüksek</td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="py-3 px-4 font-medium text-gray-900">Bölme - Bölünebilme & EBOB - EKOK</td>
+                                        <td className="py-3 px-4 font-semibold text-blue-600">1 - 2 Soru</td>
+                                        <td className="py-3 px-4">Kalan bulma kuralları ve periyodik tekrarlayan olay kurguları.</td>
+                                        <td className="py-3 px-4 text-slate-700">Orta</td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="py-3 px-4 font-medium text-gray-900">Problemler (Tüm Türler)</td>
+                                        <td className="py-3 px-4 font-bold text-red-600">11 - 13 Soru</td>
+                                        <td className="py-3 px-4">Sayı-kesir, yüzde, kâr-zarar, hız, yaş ve tablo-grafik okuma.</td>
+                                        <td className="py-3 px-4 text-red-700 font-bold">Sınavın Omurgası</td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="py-3 px-4 font-medium text-gray-900">Kümeler & Kartezyen Çarpım</td>
+                                        <td className="py-3 px-4 font-semibold text-blue-600">1 Soru</td>
+                                        <td className="py-3 px-4">Venn şeması ve boyalı bölgeyi harflerle ifade etme.</td>
+                                        <td className="py-3 px-4 text-emerald-700 font-medium">Garanti Puan</td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="py-3 px-4 font-medium text-gray-900">Fonksiyonlar</td>
+                                        <td className="py-3 px-4 font-semibold text-blue-600">1 - 2 Soru</td>
+                                        <td className="py-3 px-4">Grafik okuma, bileşke ve ters fonksiyon uygulaması (AYT köprüsü).</td>
+                                        <td className="py-3 px-4 text-indigo-700 font-medium">Kritik Temel</td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="py-3 px-4 font-medium text-gray-900">Mantık / Polinomlar</td>
+                                        <td className="py-3 px-4 font-semibold text-blue-600">1 Soru</td>
+                                        <td className="py-3 px-4">Önermelerin doğruluk değeri veya basit katsayı ilişkileri.</td>
+                                        <td className="py-3 px-4 text-slate-700">Kolay Net</td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="py-3 px-4 font-medium text-gray-900">Veri - İstatistik</td>
+                                        <td className="py-3 px-4 font-semibold text-blue-600">1 Soru</td>
+                                        <td className="py-3 px-4">Medyan (ortanca), mod (tepe değer) ve açıklık hesapları.</td>
+                                        <td className="py-3 px-4 text-emerald-700 font-medium">Kaçırılmayacak 1 Net</td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="py-3 px-4 font-medium text-gray-900">Permütasyon, Kombinasyon, Olasılık</td>
+                                        <td className="py-3 px-4 font-semibold text-blue-600">2 Soru</td>
+                                        <td className="py-3 px-4">Dizilim, seçim ve deneysel/teorik olasılık modelleri.</td>
+                                        <td className="py-3 px-4 text-amber-700 font-medium">Seçici ve Zor</td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50">
+                                        <td className="py-3 px-4 font-bold text-gray-900">Geometri (Üçgen, Dörtgen, Katı Cisim)</td>
+                                        <td className="py-3 px-4 font-bold text-purple-700">9 - 10 Soru</td>
+                                        <td className="py-3 px-4">Katlama, döndürme, benzerlik, çokgenler ve prizma/piramit hacimleri.</td>
+                                        <td className="py-3 px-4 text-purple-700 font-bold">Derece Belirleyici</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            Şu Anki Net Seviyenize Göre Ne Yapmalısınız?
+                        </h2>
+                        <p>
+                            Matematikte herkes aynı kitaptan çalışırsa herkes aynı verimi alamaz. 8 net yapan bir öğrenci ile 24 net yapan bir adayın eksik duyduğu mekanizmalar taban tabana zıttır. Kendinizi dürüstçe değerlendirin ve ait olduğunuz basamağın reçetesini uygulayın:
+                        </p>
+
+                        <div className="space-y-6 my-6">
+                            <div className="p-5 bg-slate-50 border-l-4 border-amber-500 rounded-r-xl">
+                                <h3 className="text-xl font-bold text-gray-900 mb-2">1. Basamak: 0 - 10 Net Arasında Olanlar</h3>
+                                <p className="text-gray-700 mb-3">
+                                    Eğer bu banttaysanız kesinlikle yeni nesil, yarım sayfa süren hikayeli problem kitaplarına saldırmayın. Çünkü sorununuz kavrama zayıflığı değil; işlem akışındaki tereddüttür. Eksi ile eksinin çarpımı, rasyonel sayılarda payda eşitleme veya parantez açarken işaret dağıtma gibi adımlarda beyniniz ekstra enerji tüketiyor demektir.
+                                </p>
+                                <p className="text-gray-700 text-sm font-semibold text-amber-900">
+                                    Somut Görev: Temel 4 işlem hızlandırma föyleri bitirin. Ardından Temel Kavramlar, Rasyonel Sayılar, Basit Eşitsizlikler ve Mutlak Değer konularını tek bir kaynaktan klasik tarzda çözün. Hedefiniz 3 hafta içinde işlem refleksini refleksif hale getirip 15 nete zıplamaktır.
+                                </p>
+                            </div>
+
+                            <div className="p-5 bg-slate-50 border-l-4 border-blue-500 rounded-r-xl">
+                                <h3 className="text-xl font-bold text-gray-900 mb-2">2. Basamak: 10 - 20 Net Bandında Sıkışanlar</h3>
+                                <p className="text-gray-700 mb-3">
+                                    Bu öğrenci grubu konuyu bilir, formülleri hatırlar ama problem sorusunu okuduğunda kafasında denklemi kuramaz. Soruyu baştan sona roman gibi okur, sonra tekrar başa döner. Oysa problem çözmek soru bittikten sonra değil, sorunun ilk cümlesi okunurken başlar.
+                                </p>
+                                <p className="text-gray-700 text-sm font-semibold text-blue-900">
+                                    Somut Görev: Her gün aksatmadan 20 adet rutin olmayan problem sorusu çözün. Soruyu okurken cümle cümle verileri kağıda dökün: &quot;Ahmet&apos;in yaşı = x, Mehmet = x + 4&quot; gibi. Asla sorunun tamamını okuyup sonra karalamaya başlamayın. Ayrıca Veri-İstatistik ve Kümeler gibi garanti 2 net getiren konuları derhal cebe koyun.
+                                </p>
+                            </div>
+
+                            <div className="p-5 bg-slate-50 border-l-4 border-emerald-500 rounded-r-xl">
+                                <h3 className="text-xl font-bold text-gray-900 mb-2">3. Basamak: 20 - 30 Net Aralığında Gezinenler</h3>
+                                <p className="text-gray-700 mb-3">
+                                    Bu aşamada matematik altyapınız sağlamdır ancak 25 netin üzerine çıkamamanızın iki sebebi vardır: Geometriye sırtınızı dönmeniz ve sınav süresini matematik testinde eritmeniz. 40 sorunun 10 tanesi geometridir. Geometriye bakmadan 30 net yapmak neredeyse imkansızdır.
+                                </p>
+                                <p className="text-gray-700 text-sm font-semibold text-emerald-900">
+                                    Somut Görev: Doğruda açı, üçgende açı, özel üçgenler ve benzerlik konularını adeta su gibi öğrenin. Geometride soru görme yeteneği günlük 15 soru çizimiyle 1 ayda oturur. Matematik testine ayırdığınız süreyi 65 dakikayı geçmeyecek şekilde sınırlandırın.
+                                </p>
+                            </div>
+
+                            <div className="p-5 bg-slate-50 border-l-4 border-purple-500 rounded-r-xl">
+                                <h3 className="text-xl font-bold text-gray-900 mb-2">4. Basamak: 30+ Nete Ulaşmak ve Dereceyi Kovalamak</h3>
+                                <p className="text-gray-700 mb-3">
+                                    32-35 net aralığına gelmiş adayların tek derdi dikkat hataları ve sınav komisyonunun &quot;tuzak soru&quot; olarak hazırladığı 2-3 orijinal sorudur. Burada artık konu eksiği aranmaz; sınav psikolojisi ve soru seçme disiplini konuşur.
+                                </p>
+                                <p className="text-gray-700 text-sm font-semibold text-purple-900">
+                                    Somut Görev: Haftada en az 3 adet kaliteli branş denemesi çözün. Deneme bittikten sonra boş bıraktığınız veya yanlış yaptığınız soruları kesip özel bir soru havuzuna atın. Permütasyon, kombinasyon ve katı cisimler gibi uç konuları şansa bırakmayın.
+                                </p>
                             </div>
                         </div>
 
-                        <p>
-                            Tabloya bak, bir gerçek göreceksin: 40 sorunun 22-24 tanesi sadece <strong>Problemler ve Geometri</strong>&apos;den geliyor. Bu iki konuyu halleden biri, diğer konulardan hiçbir şey bilmese bile 22-24 net yapabilir. Ve 22-24 TYT Matematik neti seni sıralamada ciddi bir yere koyar.
-                        </p>
-
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-                            Seviyene Göre Ne Yapmalısın?
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            Turlama Tekniği Olmadan TYT Matematik Çözülmez
                         </h2>
-
-                        <h3 className="text-xl font-bold text-gray-900 mt-6 mb-2">Şu an 0-10 net yapıyorsan:</h3>
                         <p>
-                            Dürüst olacağım: Sorunun soru çözmemekle alakası yok, sorunun temel işlem becerileriyle alakası. Çarpma tablosunda takılıyorsan, kesirlerde zorlanıyorsan, negatif sayılarla işlem yaparken kafan karışıyorsan — problem çözmeye geçmeden önce bunları düzeltmen lazım. Hayır, bu utanılacak bir şey değil. Birçok öğrenci 8. sınıf matematiğini bile tam oturtamadan YKS&apos;ye hazırlanmaya çalışıyor ve tabii ki tıkanıyor.
+                            Sınav esnasında bir geometri sorusuyla inatlaşıp 6 dakikanızı harcadığınız an, sınavı kaybettiniz demektir. Çünkü o 6 dakikada arkada bekleyen 3 tane çerez seviye temel kavram sorusunu okuyacak vaktiniz kalmaz. TYT Matematikte kural basittir:
                         </p>
                         <p>
-                            Reçetem: Her gün 50 tane kolay seviye problem çöz. Evet, 50 tane. &quot;Çok fazla&quot; deme, bunlar kolay sorular, toplamda 1 saat bile sürmez. İşlem hızını artırmak için yapıyorsun bunu. 3 hafta sonra farkı göreceksin.
+                            İlk turda yalnızca ilk 30 saniyesinde çözüm yolunu net gördüğünüz soruları çözün. Çözüm yolu görünmeyen veya işlem kalabalığı hissettiren soruların yanına bir işaret koyup hızla geçin. İlk turda 22-25 soru cepte olduğunda beyninizdeki sınav stresi sıfırlanır; ikinci turda o zor görünen soruların nasıl çözüldüğüne kendiniz bile şaşırırsınız.
                         </p>
 
-                        <h3 className="text-xl font-bold text-gray-900 mt-6 mb-2">10-20 net arasındaysan:</h3>
-                        <p>
-                            Temelin var ama problemlerde denklem kurma aşamasında tıkanıyorsun muhtemelen. Çoğu öğrenci bu aşamada &quot;soruyu okudum, anladım, ama denklem kuramıyorum&quot; diyor. Bunun çözümü her gün en az 20 tane yeni nesil problem çözmek. Ama sadece çözmek değil — çözemediğin soruyu çözüm videosunu izlemeden önce en az 5 dakika kendin uğraş. Beynin o 5 dakikalık zorlanma esnasında yeni sinir bağlantıları kuruyor. Hemen çözüme bakarsan o bağlantı oluşmuyor.
-                        </p>
-
-                        <h3 className="text-xl font-bold text-gray-900 mt-6 mb-2">20-30 net yapıyorsan ve daha yukarı çıkmak istiyorsan:</h3>
-                        <p>
-                            Bu seviyede seni yukarı taşıyacak iki şey var: <strong>Geometri</strong> ve <strong>Süre yönetimi</strong>. Geometri&apos;de özellikle benzerlik, açıortay, çemberde teğet ve alan hesaplamaları konularına odaklan. Bu konulardan her sene mutlaka soru geliyor ve genelde &quot;ya çok iyi biliyorsun 1 dakikada çözersin, ya da hiç bilmiyorsun 5 dakika bakarsın yapamaz geçersin&quot; tipi sorular.
-                        </p>
-                        <p>
-                            Süre yönetimi tarafında ise haftada en az 3 tane 40 soruluk branş denemesi çöz ve her birini 55 dakikada bitirmeye çalış. Sınavda sana soru başına ortalama 1 dakika 22 saniye düşüyor. Her deneme sonrası &quot;hangi soruya kaç dakika harcadım&quot; notunu tut.
-                        </p>
-
-                        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-5 rounded-lg my-6">
-                            <h3 className="font-bold text-yellow-900 mb-2">Yanlış Defteri Tutmayan Öğrenci İlerlemez</h3>
-                            <p className="text-gray-700 text-sm">
-                                Yaptığın her yanlışın fotoğrafını çek ya da soruyu bir deftere yapıştır. Pazar günleri o defterdeki soruları tekrar çöz. Aynı hatayı üst üste 3 kez yapıyorsan, o konuyu bilmiyorsun demektir — geri dön, konu anlatımından tekrar başla. Bu defter seni tanımanın en iyi yolu.
-                            </p>
+                        <div className="my-8">
+                            <QuickNetSimulator />
                         </div>
 
-                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
-                            <h3 className="text-2xl font-bold mb-3">TYT Matematik Netlerinin Puanına Katkısını Hesapla</h3>
-                            <p className="text-blue-100 mb-6">
-                                Şu anki matematik netlerin seni kaçıncı sıraya koyuyor? 5 net daha artırsan sıralaman nasıl değişir?
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            Deneme Analizi Yapmayan Aday Sadece Kendini Kandırır
+                        </h2>
+                        <p>
+                            Denemeyi çözüp sadece &quot;24 doğru 5 yanlış yapmışım, 22.75 netim var&quot; diyerek bir kenara fırlatan aday, bir sonraki denemede de aynı 22.75 neti alacaktır. Çünkü hata analizi yapılmayan deneme, bir öğrenme aracı değil yalnızca boş bir zaman tüketimidir.
+                        </p>
+                        <p>
+                            Her matematik denemesinden sonra şu üç sorunun çetelesini tutun:
+                        </p>
+                        <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                            <li><strong>Bilgi Eksiği mi?</strong> Formülü veya konunun özelliğini mi bilmiyordun? (Hemen konu özetine dön).</li>
+                            <li><strong>Süre Baskısı mı?</strong> Aslında evde tek başına kalsan çözebileceğin bir soru muydu? (Turlama disiplinini gözden geçir).</li>
+                            <li><strong>İşlem / Okuma Hatası mı?</strong> Soru kökündeki &quot;olamaz&quot; ifadesini mi atladın, 4 ile 7&apos;yi toplarken 12 mi yazdın? (Her gün zihinsel odaklanma egzersizi yap).</li>
+                        </ul>
+
+                        <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-8 my-10 text-center text-white shadow-xl">
+                            <h3 className="text-2xl md:text-3xl font-bold mb-3">Mevcut Matematik Netinle Hedefine Ne Kadar Yakınsın?</h3>
+                            <p className="text-blue-100 max-w-xl mx-auto mb-6 text-base md:text-lg">
+                                TYT ve AYT matematik netlerini sistemimize girerek güncel ÖSYM katsayılarıyla ham puanını ve tahmini sıralama bandını saniyeler içinde hesapla.
                             </p>
-                            <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
-                                Hemen Hesapla →
+                            <Link 
+                                href="/" 
+                                className="inline-block bg-white text-blue-700 font-bold px-8 py-3.5 rounded-xl hover:bg-blue-50 transition-all shadow-md hover:shadow-lg text-lg"
+                            >
+                                YKS Puanını ve Sıralamanı Hesapla →
                             </Link>
                         </div>
 
                         <div className="border-t pt-8 mt-10">
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Devamını oku</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler ve Kaynaklar</h3>
                             <div className="grid md:grid-cols-2 gap-4">
-                                <Link href="/blog/ayt-matematik-konulari" className="p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
-                                    <p className="font-semibold text-blue-900">AYT Matematik Konuları →</p>
-                                    <p className="text-xs text-gray-600 mt-1">Limit, Türev, İntegral ve Trigonometri rehberi.</p>
+                                <Link href="/blog/ayt-matematik-konulari" className="p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors border border-blue-100">
+                                    <p className="font-semibold text-blue-900">AYT Matematik Konuları ve Dağılımı →</p>
+                                    <p className="text-xs text-gray-600 mt-1">Limit, Türev, İntegral ve Trigonometriye giden yol haritası.</p>
                                 </Link>
-                                <Link href="/blog/tyt-net-artirma-taktikleri" className="p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
-                                    <p className="font-semibold text-green-900">TYT Net Artırma Taktikleri →</p>
-                                    <p className="text-xs text-gray-600 mt-1">60-70 net bandından nasıl çıkılır?</p>
+                                <Link href="/blog/tyt-kesin-cikan-konular" className="p-4 bg-emerald-50 rounded-xl hover:bg-emerald-100 transition-colors border border-emerald-100">
+                                    <p className="font-semibold text-emerald-900">TYT&apos;de Kesin Çıkan Konular →</p>
+                                    <p className="text-xs text-gray-600 mt-1">ÖSYM&apos;nin her yıl soru havuzunu doldurduğu garanti konular.</p>
+                                </Link>
+                                <Link href="/blog/tyt-net-artirma-taktikleri" className="p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors border border-purple-100">
+                                    <p className="font-semibold text-purple-900">TYT Net Artırma Taktikleri →</p>
+                                    <p className="text-xs text-gray-600 mt-1">60-70 net barajında tıkananlar için pratik çıkış stratejileri.</p>
+                                </Link>
+                                <Link href="/blog/yks-1-net-kac-kisi-atar" className="p-4 bg-amber-50 rounded-xl hover:bg-amber-100 transition-colors border border-amber-100">
+                                    <p className="font-semibold text-amber-900">1 Net Kaç Kişi Öne Geçirir? →</p>
+                                    <p className="text-xs text-gray-600 mt-1">Yığılma bölgelerinde her bir doğru cevabın gerçek sıralama etkisi.</p>
                                 </Link>
                             </div>
                         </div>

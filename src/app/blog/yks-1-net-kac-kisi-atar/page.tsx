@@ -50,101 +50,102 @@ export default function YKSBirNetKacKisiAtar() {
 
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
-                            <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">İstatistik</span>
+                            <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">İstatistik & Gerçekler</span>
                             <time className="text-gray-600" dateTime="2026-02-13">13 Şubat 2026</time>
                             <span className="text-gray-600">• 10 dk okuma</span>
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            &quot;Aman Bir Sorudan Ne Olacak&quot; Diyenlerin Kaybettiği Binlerce Kişi
+                        <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
+                            &quot;Aman Bir Sorudan Ne Çıkar?&quot; Deyip Hayatını Yakanların Hikayesi
                         </h1>
-                        <p className="text-xl text-gray-600">
-                            Sınav esnasında o paragraf sorusunu okumaya üşenip geçtiğinde aslında kaç kişinin arkasına düştüğünü bilsen, o soruyu okumak için uykun falan kalmazdı. Gel gerçek rakamlara bakalım.
+                        <p className="text-lg md:text-xl text-gray-600">
+                            Sınav anında o son paragrafı okumaya üşenip boş geçtiğinde aslında arkana kaç bin kişinin doluştuğunu bilsen, o kağıdı gözünü kırpmadan çözmeye devam ederdin. Rakamlar yalan söylemez.
                         </p>
                     </header>
 
                     <AuthorProfile />
 
-                    <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
-                        <p className="text-lg leading-relaxed">
-                            Öğrencilerle konuşurken sık sık şu cümleyi duyuyorum: &quot;Hocam matematikte 2 soruyu yapamadım, boş bıraktım, ama fenden kapattım.&quot; Ya da &quot;Tarihte o tarihi hatırlayamadım, attım yanlış çıktı. Neyse 1.25 net gitti sadece.&quot;
+                    <div className="prose prose-lg max-w-none text-gray-800 space-y-6 mt-8 leading-relaxed">
+                        <p className="text-lg">
+                            Dershanede deneme biter bitmez koridorda hep aynı muhabbet döner: <em>&quot;Kanka fizikte o iki soruyu yapamadım boş verdim ama neyse fenden bir şekilde toparlarız.&quot;</em> Ya da çocuğun biri çıkar, <em>&quot;Tarihte o padişahı hatırlayamadım salladım tutmadı, alt tarafı 1.25 net gitti ne büyütüyorsunuz&quot;</em> der.
                         </p>
                         
                         <p>
-                            Sadece 1.25 net mi? Sınav sonuçları açıklandığında, birbirinin tıpatıp aynısı puanı alan, virgüllerle birbirinden ayrılan o kadar çok kişi oluyor ki inanamazsın. Özellikle &quot;yığılma&quot; dediğimiz orta-üst başarı diliminde, o 1 net senin hayatını değiştirir. Tıp isteyip diş hekimliğine, hukuk isteyip PDR&apos;ye gidenlerin çoğu işte o &quot;aman boşver&quot; dedikleri 1 soru yüzünden bu durumu yaşar.
+                            Alt tarafı 1.25 net mi?
                         </p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-                            1 Net Seni Kaç Bin Kişi Öne Atar? (Sıralama Bandına Göre)
+                        <p>
+                            Ciddi misin sen? Bak sana çok net bir şey anlatacağım. Temmuzda o sonuç belgesi ekranına baktığında, virgüllerle birbirinden ayrılan, aynı puanı almış ama aralarında koca bir stadyum dolusu insan olan binlerce adayı görünce ne demek istediğimi çok acı bir şekilde anlıyorsun. Tıp fakültesini bir soruyla kaçırıp diş hekimliğine gidenlerin ya da hayalindeki hukuk fakültesini kıl payı kaybedenlerin tamamı, işte sınav salonunda o &quot;Aman boşver be&quot; deyip geçtikleri tek bir soru yüzünden bu kaderi yaşıyor.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-3">
+                            Peki Sahiden 1 Net Kaç Kişi Atar?
                         </h2>
+
                         <p>
-                            Bu sorunun tek bir matematiksel cevabı yok. &quot;1 net 5 bin kişi atar&quot; demek yalandır. Çünkü bulunduğun sıralama bandına göre 1 netin değeri değişir. Şöyle anlatayım: Türkiye 1.si ile 2.si arasında bazen 5 puan (yaklaşık 2-3 net) fark olur. Yani ilk 100&apos;ün içindeyken 1 net seni taş çatlasın 15-20 kişi öne atar.
+                            Bunun tek bir cevabı yok. İnternette sağda solda dolaşan &quot;Bir net adamı beş bin kişi fırlatır&quot; lafları ezbercilikten başka bir şey değil. Çünkü nerede durduğuna göre o tek bir netin gücü yerle bir de edebilir, seni göklere de çıkarabilir.
                         </p>
 
                         <p>
-                            Ama 100 bininci sıradaysan? Orası mahşer yeri gibi kalabalıktır. Orada 1 net seni binlerce kişinin önüne fırlatır. İşte bant bant tahmini rakamlar (Son 3 yılın YKS istatistiklerinden süzülmüştür):
+                            Şöyle düşün: Türkiye birincisi ile ikincisi arasında bazen dört-beş puan oynuyor. Yani sen ilk beş yüzün içindeysen, yaptığın bir tane ekstra net seni taş çatlasın yirmi otuz kişi öne atar. Zaten oradaki herkes canavar gibi, farklar milimetrik.
+                        </p>
+
+                        <p>
+                            Ama gel gelelim o meşhur yetmiş bin, seksen bin bandına...
+                        </p>
+
+                        <p>
+                            Orası tam bir mahşer meydanı. İğne atsan yere düşmüyor. Milyonluk aday havuzunun en sıkışık, nefes alınmayan boğazı orası. İşte tam orada yapacağın tek bir AYT neti, inan bana seni bir anda sekiz bin, bazen on bin kişinin önüne mancınık gibi fırlatır. Bir net diyorum bak. Oturup çözmeye üşendiğin o tek bir trigonometri sorusu, seni bir şehirden başka bir şehre, istemediğin bir taşra fakültesinden büyükşehirdeki köklü bir üniversiteye taşımaya yeter de artar bile.
                         </p>
 
                         <QuickNetSimulator />
 
-                        <div className="bg-slate-50 rounded-xl p-6 my-6 border border-slate-200">
-                            <h3 className="font-bold text-slate-900 mb-4 text-lg">Hangi Bandta 1 Net Ne Kadar İleri Taşır?</h3>
-                            <div className="space-y-4">
-                                <p className="text-slate-700"><strong>İlk 10.000 içindeyken:</strong> O tepedeki dar grupta TYT neti seni 300-500 kişi, AYT neti ise yaklaşık 1000 kişi öne atıyor. Zaten herkes çok iyi olduğu için farklar küçük ama çok kritiktir.</p>
-                                <p className="text-slate-700"><strong>10.000 ile 50.000 arasındayken:</strong> Burada rekabet kızışıyor. AYT'den kapacağın tek bir net seni 3000 kişiye kadar bir anda sıçratabilir.</p>
-                                <p className="text-slate-700"><strong>50.000 ile 150.000 bandı (Yığılma Bölgesi):</strong> Sınavın asıl mahşer yeri burasıdır. Bu kalabalığın içindeysen, o burun kıvırdığın 1 AYT neti, inan bana seni bir anda 9000 kişinin, bazen daha fazlasının önüne fırlatır.</p>
-                                <p className="text-slate-700"><strong>300.000 ve üstündeyken:</strong> Burada kalabalık çok dağınık olduğu için 1 netin etkisi inanılmazdır. AYT'de fazladan 1 net yapmak seni 12.000-15.000 kişinin önüne bile atabilir.</p>
-                            </div>
-                        </div>
-
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-                            Neden AYT&apos;deki 1 Net, TYT&apos;den Daha Güçlü?
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-3">
+                            Sıralama Dilimlerine Göre Tablo Ne Diyor?
                         </h2>
+
                         <p>
-                            Yukarıdaki tabloya dikkat ettin mi? Aynı sıralama bandında AYT&apos;de yapacağın 1 net, TYT&apos;de yapacağın 1 netin neredeyse 2.5 - 3 katı daha fazla insanı geride bırakmanı sağlıyor. Bunun nedeni ÖSYM&apos;nin katsayı sistemidir.
-                        </p>
-                        
-                        <p>
-                            Lisans (4 yıllık) yerleştirme puanın hesaplanırken TYT&apos;nin ağırlığı %40, AYT&apos;nin ağırlığı %60&apos;tır. Ayrıca TYT&apos;de 120 soru varken, AYT (alanına göre) 80 sorudan oluşur. Soru sayısı daha az, ama genel puana etkisi daha fazla. Yani AYT&apos;deki her bir sorunun ham puan değeri TYT&apos;dekinden çok daha yüksektir.
+                            Son üç senenin ÖSYM yığınsal dağılımlarını tek tek inceledik. Çıkan tablo o kadar net ki: İlk on bindeysen, TYT&apos;deki fazladan bir net seni üç yüz ila beş yüz kişi taşırken, AYT&apos;deki netin gücü bin kişiyi buluyor. On bin ile elli bin arasına indiğinde rekabet daha da hırçınlaşıyor; orada tek bir net üç bin kişiyi bir anda ezip geçiyor. 
                         </p>
 
-                        <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl my-6">
-                            <h3 className="font-bold text-blue-900 mb-2">Somut Örnek:</h3>
-                            <p className="text-sm text-blue-800">
-                                SAY 80.000 bandında olan iki öğrenci düşün. A öğrencisi TYT&apos;de fazladan 1 Biyoloji neti yapıyor. B öğrencisi ise AYT&apos;de fazladan 1 Biyoloji neti yapıyor. Sınav açıklandığında B öğrencisi, A öğrencisinin kabaca 4-5 bin kişi önüne geçer. AYT affetmez, AYT kurtarır.
+                        <p>
+                            Ellibin ile yüz elli bin bandına geldiğimizde ise az önce bahsettiğim o devasa yığılma patlıyor. Burada bırak tam bir neti, yapacağın 0.75 netlik bir artış bile listeyi darmadağın ediyor. Yüz elli binden gerideysen zaten kalabalık öyle bir dağılıyor ki, ekstra netler adeta turbo motor etkisi yaratıyor.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-3">
+                            Neden AYT Neti TYT&apos;yi Üçe Katlar?
+                        </h2>
+
+                        <p>
+                            Bunu hala bilmeyen lise son öğrencileri var maalesef. Diyor ki: <em>&quot;Hocam TYT&apos;den üç net artırdım.&quot;</em> Güzel, eline sağlık. Ama AYT&apos;den artıracağın o tek bir net var ya... TYT&apos;deki üç nete bedel neredeyse.
+                        </p>
+
+                        <p>
+                            Sebebi çok açık: Lisans yerleştirme puanının yüzde altmışı doğrudan AYT&apos;den geliyor. Üstüne üstlük TYT&apos;de 120 soru varken, AYT&apos;de alanına göre sadece 80 soru çözüyorsun. Soru sayısı yarı yarıya az ama puan ağırlığı yüzde elli daha fazla! Yani AYT&apos;deki her bir soru, ham puan cetvelinde tam bir altın külçesi değerinde. İki öğrenci düşünelim; biri TYT feninden fazladan bir net çıkarmış olsun, diğeri ise AYT biyolojisinden bir net alsın. Sonuç belgesi geldiğinde AYT&apos;ci olan arkadaş diğeriyle arasına en az dört bin kişilik bir set çeker. AYT affetmez ama çalışan adamı da asla yarı yolda bırakmaz.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-3">
+                            Zor Soru Efsanesini Kafandan Çıkar
+                        </h2>
+
+                        <p>
+                            En çok duyduğum diğer bir safsata: <em>&quot;Hocam şu olimpiyat tarzı aşırı zor türev sorusunu yaparsam kimse çözemediği için bana deli gibi puan gelir değil mi?&quot;</em>
+                        </p>
+
+                        <p>
+                            Gelmez güzel kardeşim, gelmez. ÖSYM&apos;nin standart sapma sistemi soru bazında işlemez, test bazında işler. Yani o sayfayı kaplayan, beynini yakan en zor matematik sorusunun ham puan değeri neyse; testin ilk sayfasındaki o iki satırlık üslü sayı sorusunun puan değeri de tıpatıp aynıdır. Zor soruyu çözdün diye arkana bando takımı takıp sana fazladan beş bin kişi vermiyorlar.
+                        </p>
+
+                        <p>
+                            Bu ne demek biliyor musun? Sınavda bir soruyla inatlaşıp beş dakikanı heba etmek düpedüz intihardır. Bırak o soru orada kalsın. Git arkadaki iki tane kolay soruyu işaretle; hem iki katı puanı cebe indir hem de o inat edenlerin binlerce sıra önüne geç.
+                        </p>
+
+                        <div className="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-800 rounded-3xl p-8 my-10 text-center text-white shadow-xl">
+                            <h3 className="text-2xl font-extrabold mb-2">Senin 1 Netin Kaç Kişiyi Ezip Geçiyor?</h3>
+                            <p className="text-blue-100 mb-6 text-sm max-w-xl mx-auto">
+                                Hemen hesaplayıcımıza gir. Mevcut netlerine sadece +1 AYT neti ekle ve sıralamanın kaç bin basamak yukarı fırladığını canlı canlı gör.
                             </p>
-                        </div>
-
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-                            Zor Soru Daha Mı Çok Kişi Atar? (Standart Sapma Efsanesi)
-                        </h2>
-                        <p>
-                            Bunu önceki <Link href="/blog/yks-net-hesaplama-nasil-yapilir" className="text-blue-600 hover:underline">net hesaplama yazımızda</Link> da uzun uzun anlattım ama yineleyeyim: &quot;Çok zor bir soruyu yaparsam, onu kimse yapamadığı için beni 10 bin kişi atar&quot; düşüncesi yanlıştır.
-                        </p>
-                        <p>
-                            Standart sapma soru bazında değil, test bazındadır. Yani AYT Matematik testindeki o aşırı zor türev sorusunu çözmenle, çok kolay olan karmaşık sayı sorusunu çözmen sana <strong>aynı puanı</strong> verir. Puanın aynı olduğu için seni atacağı kişi sayısı da aynıdır. 
-                        </p>
-                        <p>
-                            Bu yüzden sınav esnasında ego yapıp zor soruyla 5 dakika inatlaşma. Onun yerine arkadaki 3 tane kolay-orta soruyu çözersen, 1 net yerine 3 net yapmış olursun ki bu da seni o zor soruyu çözen inatçı öğrencinin fersah fersah önüne atar.
-                        </p>
-
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-                            Peki Bu Bilgiyle Ne Yapacağız?
-                        </h2>
-                        <p>
-                            &quot;Tamam anladım, 1 net önemliymiş&quot; deyip geçme. Bunu pratiğe dök. Eğer 50-150 bin bandındaysan, senin kurtarıcın &quot;çantada keklik&quot; dediğimiz, çalışıldığında kesin yapılan konulardır.
-                        </p>
-                        <ul className="list-disc pl-6 space-y-2 mb-6">
-                            <li>TYT Felsefe/Din: Formül yok, ezber az. Sadece kavramları (determinizm, teoteizm vs.) öğrenip 2 net cebine koyabilirsin.</li>
-                            <li>TYT Kimya (Doğa ve Kimya, Madde): Çok temel düzey sorulur, 2 gün çalışıp 2 net artırırsın. Bu sana 7-8 bin kişi kazandırır.</li>
-                        </ul>
-
-                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
-                            <h3 className="text-2xl font-bold mb-3">1 Netin Etkisini Gözünle Gör</h3>
-                            <p className="text-blue-100 mb-6">
-                                Hesaplama aracımıza gir. Önce şu anki netlerini yazıp sıralamanı gör. Sonra sadece AYT Matematik netini 1 tane artır ve sıralamanın ne kadar sıçradığını kendi gözlerinle test et.
-                            </p>
-                            <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
-                                Etkiyi Test Et →
+                            <Link href="/" className="inline-block bg-white text-blue-900 px-8 py-3.5 rounded-xl font-black hover:bg-blue-50 transition-all shadow-md hover:scale-105">
+                                1 Netin Gücünü Test Et →
                             </Link>
                         </div>
                     </div>

@@ -5,12 +5,12 @@ import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
     title: 'AYT Puan Hesaplama 2027 | SAY, EA, SÖZ Katsayıları ve Ağırlıklar',
-    description: 'AYT puan hesaplama nasıl yapılır? SAY (Sayısal), EA (Eşit Ağırlık) ve SÖZ (Sözel) puan türlerinde derslerin katsayıları ve YKS yerleştirme puanına etkisi.',
+    description: 'AYT puan hesaplama mantığı: SAY, EA ve SÖZ puan türlerinde test ağırlıkları, 1 AYT netinin TYT karşılığı ve yerleştirme puanına etkisi.',
     keywords: 'ayt puan hesaplama, ayt katsayıları, say katsayıları, ea katsayıları, söz katsayıları, yks yerleştirme puanı',
     alternates: { canonical: 'https://yksnethesapla.com/blog/ayt-puan-hesaplama' },
     openGraph: {
         title: 'AYT Puan Hesaplama: Üniversite Kapısını Açan Gerçek Puan',
-        description: 'AYT netlerinin Sayısal, Eşit Ağırlık ve Sözel puanlarına etkisi.',
+        description: 'AYT netlerinin Sayısal, Eşit Ağırlık ve Sözel puanlarına etkisi ve katsayılar.',
         type: 'article',
         publishedTime: '2026-02-09',
         modifiedTime: '2026-02-12',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
                 url: '/og-image.jpg',
                 width: 1200,
                 height: 630,
-                alt: 'AYT Puan Hesaplama 2027 | SAY, EA, SÖZ Katsayıları ve Ağırlıklar'
+                alt: 'AYT Puan Hesaplama ve Katsayılar'
             }
         ],
     },
@@ -32,7 +32,7 @@ export default function AYTPuanHesaplama() {
             <article className="max-w-4xl mx-auto">
                 <BlogArticleSchema 
                     title="AYT Puan Hesaplama 2027 | SAY, EA, SÖZ Katsayıları ve Ağırlıklar" 
-                    description="AYT puan hesaplama nasıl yapılır? SAY (Sayısal), EA (Eşit Ağırlık) ve SÖZ (Sözel) puan türlerinde derslerin katsayıları ve YKS yerleştirme puanına etkisi."
+                    description="AYT puan hesaplama mantığı: SAY, EA ve SÖZ puan türlerinde test ağırlıkları, 1 AYT netinin TYT karşılığı ve yerleştirme puanına etkisi."
                     datePublished="2026-02-09"
                     dateModified="2026-02-12"
                     url="https://yksnethesapla.com/blog/ayt-puan-hesaplama"
@@ -53,11 +53,11 @@ export default function AYTPuanHesaplama() {
                             <time className="text-gray-600" dateTime="2026-02-09">9 Şubat 2026</time>
                             <span className="text-gray-600">• 9 dk okuma</span>
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                            AYT Puanın Nasıl Hesaplanıyor? (Kazandıran Katsayılar)
+                        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                            AYT Puanınız Nasıl Hesaplanıyor? 1 AYT Neti Neden 2,5 TYT Netine Bedeldir?
                         </h1>
                         <p className="text-xl text-gray-600">
-                            TYT&apos;de herkes her testten sorumluyken, AYT&apos;de puanını sadece senin &quot;alanındaki&quot; testler belirler. Peki ama HANGİ test ne kadar etkili?
+                            Cumartesi günkü sınav için kendini paralayan adayların unuttuğu o büyük matematik: Lisans programlarının kapısını açan yerleştirme puanının yüzde 60&apos;ı pazar günkü kitapçıktan gelir.
                         </p>
                     </header>
 
@@ -65,135 +65,85 @@ export default function AYTPuanHesaplama() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Birçok öğrenci TYT netlerini yüksek tutmak için çırpınırken, AYT&apos;nin aslında yerleştirme puanının %60&apos;ını oluşturduğunu unutuyor. TYT&apos;deki o 1 net için kendini paralarken, AYT&apos;de tek bir soru senin puanına 3 puan birden ekleyebiliyor.
+                            Her yıl kasım veya aralık ayında kütüphaneleri gezerken hep aynı çarpık manzarayı görürüm. Öğrenci sabah 9&apos;dan akşam 17&apos;ye kadar sadece TYT Türkçe paragrafı çözer, TYT problem sorularıyla cebelleşir. &quot;AYT&apos;ye ne zaman başlayacaksın?&quot; diye sorduğumda ise aldığım cevap neredeyse hep aynıdır: &quot;Hocam önce bir TYT&apos;yi 80 nete sabitleyeyim, şubatta AYT&apos;ye geçerim.&quot;
                         </p>
 
                         <p>
-                            Üniversite tercihini yapacağın o gerçek puan (SAY, EA veya SÖZ puanın), TYT&apos;nin %40&apos;ı ile AYT&apos;deki alan testlerinin %60&apos;ının birleşimiyle oluşur. Peki bu %60&apos;lık devasa dilim kendi içinde nasıl dağılıyor? Gel tek tek bakalım.
+                            Bu stratejik intihardan başka bir şey değildir.
+                        </p>
+
+                        <p>
+                            Neden mi? Çünkü 4 yıllık fakültelere yerleşirken kullanılan yerleştirme puanınızın yüzde 40&apos;ı TYT&apos;den, tam <strong>yüzde 60&apos;ı ise AYT&apos;den</strong> gelir. Dahası, matematiksel katsayı hesabına vurduğunuzda TYT&apos;de yapacağınız 1 net hanenize yaklaşık 1,32 puan yazarken; pazar günü AYT Matematik veya Fende yapacağınız tek bir doğru net hanenize tam <strong>3,0 puan</strong> kazandırır! Yani pazar günü çözeceğiniz her bir soru, cumartesi günkü soruların tam iki buçuk katı ağırlığındadır.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            🔬 Sayısal (SAY) Puanı Nasıl Hesaplanır?
+                            Sayısal (SAY) Puanının İç Mimarisi
                         </h2>
                         <p>
-                            Sayısalcıların kaderi AYT Matematik ve AYT Fen testlerinin elindedir. SAY puanı hesaplanırken sadece bu iki testin netleri dikkate alınır. (Edebiyat çözsen de SAY puanına zerre katkısı olmaz).
+                            Sayısal alanda yarışan bir adayın pazar günü muhatap olduğu iki test vardır: 40 soruluk AYT Matematik ve 40 soruluk AYT Fen Bilimleri (14 Fizik, 13 Kimya, 13 Biyoloji).
                         </p>
-                        
-                        <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 my-6">
-                            <h4 className="font-bold text-blue-900 mb-4 text-center">Sayısalda (AYT&apos;nin %60&apos;ı İçindeki) Ağırlıklar</h4>
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                                <div>
-                                    <p className="font-bold text-slate-800">Matematik</p>
-                                    <p className="text-2xl font-black text-blue-600">%50</p>
-                                    <p className="text-xs text-slate-500">40 Soru (1 net ~3.0 p)</p>
-                                </div>
-                                <div>
-                                    <p className="font-bold text-slate-800">Fizik</p>
-                                    <p className="text-2xl font-black text-blue-600">%17</p>
-                                    <p className="text-xs text-slate-500">14 Soru (1 net ~2.8 p)</p>
-                                </div>
-                                <div>
-                                    <p className="font-bold text-slate-800">Kimya</p>
-                                    <p className="text-2xl font-black text-blue-600">%16.5</p>
-                                    <p className="text-xs text-slate-500">13 Soru (1 net ~3.0 p)</p>
-                                </div>
-                                <div>
-                                    <p className="font-bold text-slate-800">Biyoloji</p>
-                                    <p className="text-2xl font-black text-blue-600">%16.5</p>
-                                    <p className="text-xs text-slate-500">13 Soru (1 net ~3.0 p)</p>
-                                </div>
-                            </div>
-                        </div>
-
                         <p>
-                            Gördün mü? SAY Puanının tam YARISI sadece Matematikten geliyor. AYT Matematikteki tek bir netin değeri, TYT&apos;deki bir netin yaklaşık 2.5 katı! Tıp, Diş Hekimliği, Bilgisayar Mühendisliği isteyen bir öğrencinin AYT Matematiği 30&apos;un altına düşürme lüksü yoktur.
+                            Bu 80 soruluk paketin getirisinde en büyük aslan payı Matematiktedir. AYT&apos;nin getirdiği toplam puanın tam yarısı (%50) tek başına Matematikten akar. Geriye kalan yüzde 50 ise Fizik (%17), Kimya (%16,5) ve Biyoloji (%16,5) arasında adilce paylaştırılır.
+                        </p>
+                        <p>
+                            Tıp, Diş Hekimliği veya Bilgisayar Mühendisliği isteyen bir öğrencinin AYT Matematikte 30&apos;un altına düşmesi halinde Fen derslerinde kusursuza yakın yapması gerekir. Kısacası Sayısalda zirveye oynamanın yolu Matematik kalesini düşürmemekten geçer.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            ⚖️ Eşit Ağırlık (EA) Puanı Nasıl Hesaplanır?
+                            Eşit Ağırlık (EA) Puanında Fark Yaratan Gizli Silah
                         </h2>
                         <p>
-                            Eşit ağırlıkçılar (nam-ı diğer TM&apos;ciler), AYT Matematik ve Türk Dili ve Edebiyatı-Sosyal Bilimler-1 testlerini çözerler.
+                            Eşit Ağırlıkçıların (TM grubu) puanı AYT Matematik (40 soru) ile Türk Dili ve Edebiyatı - Sosyal Bilimler-1 testinin (24 Edebiyat, 10 Tarih-1, 6 Coğrafya-1) harmanlanmasıyla oluşur.
                         </p>
-
-                        <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 my-6">
-                            <h4 className="font-bold text-amber-900 mb-4 text-center">Eşit Ağırlıkta (AYT&apos;nin %60&apos;ı İçindeki) Ağırlıklar</h4>
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                                <div>
-                                    <p className="font-bold text-slate-800">Matematik</p>
-                                    <p className="text-2xl font-black text-amber-600">%50</p>
-                                    <p className="text-xs text-slate-500">40 Soru (1 net ~3.0 p)</p>
-                                </div>
-                                <div>
-                                    <p className="font-bold text-slate-800">Edebiyat</p>
-                                    <p className="text-2xl font-black text-amber-600">%30</p>
-                                    <p className="text-xs text-slate-500">24 Soru (1 net ~3.0 p)</p>
-                                </div>
-                                <div>
-                                    <p className="font-bold text-slate-800">Tarih-1</p>
-                                    <p className="text-2xl font-black text-amber-600">%12.5</p>
-                                    <p className="text-xs text-slate-500">10 Soru (1 net ~2.8 p)</p>
-                                </div>
-                                <div>
-                                    <p className="font-bold text-slate-800">Coğrafya-1</p>
-                                    <p className="text-2xl font-black text-amber-600">%7.5</p>
-                                    <p className="text-xs text-slate-500">6 Soru (1 net ~3.3 p)</p>
-                                </div>
-                            </div>
-                        </div>
-
                         <p>
-                            Eşit ağırlıkta Türkiye geneli Matematik ortalaması çok düşük olduğu için, AYT Matematikte yapılan her net, standart sapma ile beraber EA öğrencisini sıralamada adeta uçurur. Hukuk veya Psikoloji isteyen bir EA öğrencisi, Edebiyatı ezberlemeli ama farkı kesinlikle Matematikle atmalıdır.
+                            Burada çok ilginç bir psikolojik dinamik işler: Eşit Ağırlık hazırlanan öğrencilerin büyük kısmı sözel kökenli olduğu için aylarca Edebiyat ezberler. Sınava giren hemen her ciddi EA adayı Edebiyatta 18-22 net bandına rahatlıkla ulaşır. 
+                        </p>
+                        <p>
+                            Peki dereceyi kim yapar? Farkı kim açar? Türkiye geneli AYT Matematik ortalaması 5-6 netlerde sürünürken, masaya oturup AYT Matematikten 22-25 net çıkaran Eşit Ağırlık öğrencisi, standart sapmanın rüzgarını arkasına alarak ilk 5 binin kapısını tekmeleyerek açar. Edebiyat sizin barajınızdır, Matematik ise sizi şampiyon yapan roketinizdir.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            📚 Sözel (SÖZ) Puanı Nasıl Hesaplanır?
+                            Sözel (SÖZ) Puanının Bilgi Yoğunluğu
                         </h2>
                         <p>
-                            Sözelciler için Matematik korkusu AYT&apos;de tamamen biter. Onların sınavı Edebiyat-Sosyal-1 ve Sosyal-2 testleridir. Yani toplam 80 tane ezber ve yorum sorusu.
+                            Sözelciler için AYT tamamen bir okuma ve bilgi fırtınasıdır. Edebiyat-Sosyal-1 (40 soru) ve Sosyal-2 (40 soru) olmak üzere toplam 80 soru çözülür. Tarih, Coğrafya, Felsefe grubu mantık soruları ve Din Kültürü... 
+                        </p>
+                        <p>
+                            Sözel alanda soru kaçırmamak için kavram haritalarını ve kronolojiyi çok iyi oturtmak gerekir. Ancak sözelcilerin gözden kaçırdığı en can alıcı taktik, cumartesi günkü TYT&apos;de yapacakları 5-6 temel matematik netidir. Sözel sıralamasında yarışanların yüzde 85&apos;i matematikten sıfır veya eksi net yaptığı için, o 5 net sizi tek hamlede 30 bin kişinin önüne geçirmeye yeter.
                         </p>
 
-                        <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-6">
-                            <h4 className="font-bold text-emerald-900 mb-4 text-center">Sözelde (AYT&apos;nin %60&apos;ı İçindeki) Ağırlıklar</h4>
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                                <div>
-                                    <p className="font-bold text-slate-800">Edebiyat + Sos-1</p>
-                                    <p className="text-2xl font-black text-emerald-600">%50</p>
-                                    <p className="text-xs text-slate-500">40 Soru</p>
-                                </div>
-                                <div>
-                                    <p className="font-bold text-slate-800">Tarih-2</p>
-                                    <p className="text-2xl font-black text-emerald-600">%14</p>
-                                    <p className="text-xs text-slate-500">11 Soru</p>
-                                </div>
-                                <div>
-                                    <p className="font-bold text-slate-800">Coğrafya-2</p>
-                                    <p className="text-2xl font-black text-emerald-600">%14</p>
-                                    <p className="text-xs text-slate-500">11 Soru</p>
-                                </div>
-                                <div>
-                                    <p className="font-bold text-slate-800">Fels. Grb. + Din</p>
-                                    <p className="text-2xl font-black text-emerald-600">%22</p>
-                                    <p className="text-xs text-slate-500">18 Soru</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl my-8">
-                            <h3 className="font-bold text-red-900 mb-2">Çok Önemli Taktik!</h3>
-                            <p className="text-sm text-red-800">
-                                Sınavda zamanın kalırsa ve SAY/EA/SÖZ puanlarından <strong>birden fazlasının</strong> hesaplanmasını istiyorsan, kendi testini bitirdikten sonra diğer alanın testini de çözebilirsin. Mesela bir Eşit Ağırlık öğrencisi, Matematik ve Edebiyat-Sos-1&apos;i bitirip üzerine Fen çözerse SAY puanı da hesaplanır. Veya Sos-2 çözerse SÖZ puanı hesaplanır. Sınavda önündeki kitapçıkta tüm testler olacak. Süren artarsa bunu mutlaka değerlendir!
-                            </p>
-                        </div>
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            Sınav Salonunda Hayat Kurtaran Taktik: Çift Puan Türü
+                        </h2>
+                        <p>
+                            AYT kitapçığı tek parça halinde masanıza konur. Kitapçığın içinde Matematik de vardır, Fen de, Edebiyat da, Sosyal-2 de. Size toplam 180 dakika süre verilir.
+                        </p>
+                        <p>
+                            Diyelim ki asıl hedefiniz Eşit Ağırlık. Matematik ve Edebiyat testlerinizi 130 dakikada bitirdiniz, kontrollerinizi yaptınız ve önünüzde koca bir 50 dakika kaldı. Kitapçığı kapatıp uyumayın! Açın arkadaki Sosyal-2 testini, yapabildiğiniz Tarih ve Coğrafya sorularını işaretleyin. Böylece hem EA puanınız hesaplanır hem de elinizde sapasağlam bir Sözel puanı oluşur. Tercih dönemi geldiğinde elinizde iki ayrı kozun bulunması size tahmin edemeyeceğiniz kadar büyük bir özgürlük kazandırır.
+                        </p>
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
-                            <h3 className="text-2xl font-bold mb-3">Hesabı Bize Bırak</h3>
-                            <p className="text-blue-100 mb-6">
-                                TYT ve AYT netlerini gir, SAY, EA ve SÖZ yerleştirme puanlarını ve tahmini sıralamalarını tek tıkla gör.
+                            <h3 className="text-2xl font-bold mb-3">AYT Netlerinizin Puan Getirisini Görün</h3>
+                            <p className="text-blue-100 mb-6 max-w-xl mx-auto">
+                                Çözdüğünüz AYT deneme netlerini katsayı motorumuza girin; SAY, EA ve SÖZ puanlarınız ile tahmini sıralama dilimlerinizi tek tıkla inceleyin.
                             </p>
                             <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
-                                Hemen Puanını Hesapla →
+                                AYT Puanını Hesapla →
                             </Link>
+                        </div>
+
+                        <div className="border-t pt-8 mt-10">
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">AYT Başarısı İçin Sıradaki Adımlar</h3>
+                            <div className="grid md:grid-cols-2 gap-4">
+                                <Link href="/blog/ayt-matematik-konulari" className="p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
+                                    <p className="font-semibold text-purple-900">AYT Matematik ve LTİ Rehberi →</p>
+                                    <p className="text-xs text-gray-600 mt-1">Trigonometri ve Türev-İntegral bloklarında net artırma adımları.</p>
+                                </Link>
+                                <Link href="/blog/yks-puan-turleri" className="p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
+                                    <p className="font-semibold text-blue-900">YKS Puan Türleri ve Bölümleri →</p>
+                                    <p className="text-xs text-gray-600 mt-1">Hangi fakültenin hangi puan türüyle öğrenci aldığının tam dökümü.</p>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
