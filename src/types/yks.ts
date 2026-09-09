@@ -53,6 +53,8 @@ export interface NetScores {
 }
 
 export interface UniversityScore {
+    tyt?: number
+    tytHam?: number
     say: number
     ea: number
     soz: number
@@ -73,6 +75,7 @@ export interface ScoreCalculationResult {
     ydtHesaplandi: boolean
     obp?: number
     estimatedRanks?: {
+        tyt?: number
         say?: number
         ea?: number
         soz?: number

@@ -37,6 +37,10 @@ export default function AYTSection({ scores, onScoreChange, onReset }: AYTSectio
 
     const sayisalNet = calculateCategoryNet(sayisalSubjects)
     const sozelNet = calculateCategoryNet(sozelSubjects)
+    const eaNet = Math.max(0, scores.matematik.dogru - scores.matematik.yanlis / 4) +
+        Math.max(0, scores.edebiyat.dogru - scores.edebiyat.yanlis / 4) +
+        Math.max(0, scores.tarih1.dogru - scores.tarih1.yanlis / 4) +
+        Math.max(0, scores.cografya1.dogru - scores.cografya1.yanlis / 4)
     const toplamNet = sayisalNet + sozelNet
 
     return (
@@ -100,18 +104,22 @@ export default function AYTSection({ scores, onScoreChange, onReset }: AYTSectio
 
             {/* AYT Özet */}
             <div className="p-4 bg-primary-50 rounded-lg">
-                <h3 className="font-semibold text-primary-900 mb-3">AYT Özet</h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                <h3 className="font-semibold text-primary-900 mb-3">AYT Özet Netleri</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
                     <div>
-                        <div className="text-sm font-medium text-green-800">Sayısal</div>
+                        <div className="text-sm font-medium text-green-800">Sayısal (Mat+Fen)</div>
                         <div className="text-xl font-bold text-green-600">{sayisalNet.toFixed(2)}</div>
                     </div>
                     <div>
-                        <div className="text-sm font-medium text-purple-800">Sözel</div>
+                        <div className="text-sm font-medium text-blue-800">Eşit Ağırlık (Mat+Sos1)</div>
+                        <div className="text-xl font-bold text-blue-600">{eaNet.toFixed(2)}</div>
+                    </div>
+                    <div>
+                        <div className="text-sm font-medium text-purple-800">Sözel (Sos1+Sos2)</div>
                         <div className="text-xl font-bold text-purple-600">{sozelNet.toFixed(2)}</div>
                     </div>
                     <div>
-                        <div className="text-sm font-medium text-primary-800">Toplam</div>
+                        <div className="text-sm font-medium text-primary-800">AYT Toplam</div>
                         <div className="text-xl font-bold text-primary-600">{toplamNet.toFixed(2)}</div>
                     </div>
                 </div>

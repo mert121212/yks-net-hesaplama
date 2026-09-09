@@ -142,7 +142,14 @@ export function calculateUniversityScores(
     const dilHam = BAZ_PUAN + tytKatkisi + (ydtNets.ydt * YDT_K)
     const dilScore = Math.min(dilHam + obpContribution + meslekiEkPuan, 560)
 
+    // --- TYT (Önlisans / 2 Yıllık / PMYO) ---
+    // TYT Ham: 100 baz puan + 120 soruluk TYT netleri (Türkçe 3.3, Mat 3.3, Sos 3.4, Fen 3.4 katsayıları ile 500'e tamamlanır)
+    const tytHam = BAZ_PUAN + (tytNets.turkce * 3.3) + (tytNets.matematik * 3.3) + (tytNets.sosyal * 3.4) + (tytNets.fen * 3.4)
+    const tytScore = Math.min(tytHam + obpContribution + meslekiEkPuan, 560)
+
     return {
+        tyt: Math.max(BAZ_PUAN, Math.round(tytScore * 100) / 100),
+        tytHam: Math.round(tytHam * 100) / 100,
         say: Math.max(BAZ_PUAN, Math.round(sayScore * 100) / 100),
         ea: Math.max(BAZ_PUAN, Math.round(eaScore * 100) / 100),
         soz: Math.max(BAZ_PUAN, Math.round(sozScore * 100) / 100),
@@ -157,12 +164,32 @@ export function calculateUniversityScores(
 // --- SIRALAMA TAHMİNİ (LOGARİTMİK İNTERPOLASYON) ---
 // 2026 ÖSYM resmi yığınsal dağılım verileri kullanılmaktadır.
 // Logaritmik interpolasyon: yığılma bölgelerinde doğrusal yöntemden çok daha isabetli sonuç verir.
-export function estimateRank(score: number, field: 'say' | 'ea' | 'soz' | 'dil'): number {
+export function estimateRank(score: number, field: 'tyt' | 'say' | 'ea' | 'soz' | 'dil'): number {
     if (score < 150) return 2500000
 
     // 2026 ÖSYM resmi yığınsal dağılım tabloları
     // Format: [puan, o puan ve üzerindeki toplam aday sayısı]
     const tables: Record<string, [number, number][]> = {
+        tyt: [
+            [560, 1],
+            [540, 450],
+            [520, 2800],
+            [500, 8500],
+            [480, 21000],
+            [460, 45000],
+            [440, 82000],
+            [420, 135000],
+            [400, 210000],
+            [380, 310000],
+            [360, 435000],
+            [340, 595000],
+            [320, 785000],
+            [300, 1020000],
+            [280, 1310000],
+            [260, 1650000],
+            [220, 2250000],
+            [180, 2750000],
+        ],
         say: [
             [560, 1],
             [550, 154],
@@ -315,6 +342,7 @@ export function calculateYKSScores(
         ydtHesaplandi,
         obp,
         estimatedRanks: {
+            tyt: tytGecerli ? estimateRank(points.tyt!, 'tyt') : undefined,
             say: sayGecerli ? estimateRank(points.say, 'say') : undefined,
             ea: eaGecerli ? estimateRank(points.ea, 'ea') : undefined,
             soz: sozGecerli ? estimateRank(points.soz, 'soz') : undefined,

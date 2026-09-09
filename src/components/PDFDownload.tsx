@@ -9,8 +9,8 @@ interface Props {
             ayt: { matematik: number; fizik: number; kimya: number; biyoloji: number; edebiyat: number; tarih1: number; cografya1: number; tarih2: number; cografya2: number; felsefe: number; din: number; toplam: number }
             ydt: { ydt: number }
         }
-        points: { say: number; ea: number; soz: number; dil: number; sayHam?: number; eaHam?: number; sozHam?: number; dilHam?: number }
-        estimatedRanks?: { say?: number; ea?: number; soz?: number; dil?: number }
+        points: { say: number; ea: number; soz: number; dil: number; sayHam?: number; eaHam?: number; sozHam?: number; dilHam?: number; tyt?: number; tytHam?: number }
+        estimatedRanks?: { say?: number; ea?: number; soz?: number; dil?: number; tyt?: number }
         ydtHesaplandi: boolean
         obp?: number
     }
@@ -185,6 +185,7 @@ export default function PDFDownload({ results }: Props) {
                 { label: tr('Tahmini Sıralama'), w: c4 },
             ])
             const scoreData = [
+                { label: tr('TYT (Temel Yeterlilik)'), ham: results.points.tytHam ?? results.points.tyt ?? 100, puan: results.points.tyt ?? 100, rank: results.estimatedRanks?.tyt },
                 { label: tr('SAY (Sayısal)'), ham: results.points.sayHam ?? results.points.say, puan: results.points.say, rank: results.estimatedRanks?.say },
                 { label: tr('EA (Esit Agirlik)'), ham: results.points.eaHam ?? results.points.ea, puan: results.points.ea, rank: results.estimatedRanks?.ea },
                 { label: tr('SOZ (Sozel)'), ham: results.points.sozHam ?? results.points.soz, puan: results.points.soz, rank: results.estimatedRanks?.soz },
@@ -225,7 +226,7 @@ export default function PDFDownload({ results }: Props) {
             pdf.setFont('helvetica', 'normal'); pdf.setFontSize(7); pdf.setTextColor(120, 120, 120)
             pdf.text(tr('Bu belge yksnethesapla.com tarafından üretilmiştir. ÖSYM ile resmi bir bağı bulunmamaktadır.'), W / 2, y, { align: 'center' })
             y += 4
-            pdf.text(tr('Tahmini sonuclar 2025 YKS verilerine dayali logaritmik interpolasyon ile hesaplanmistir.  |  Resmi sonuclar icin: osym.gov.tr'), W / 2, y, { align: 'center' })
+            pdf.text(tr('Tahmini sonuclar ÖSYM resmi verilerine dayali logaritmik interpolasyon ile hesaplanmistir.  |  Resmi sonuclar icin: osym.gov.tr'), W / 2, y, { align: 'center' })
 
             pdf.save('YKS-2027-Tahmin-Sonucum.pdf')
         } catch (e) {

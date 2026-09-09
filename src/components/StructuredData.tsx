@@ -39,7 +39,7 @@ export default function StructuredData() {
             "YKS Geri Sayım",
             "SAY EA SÖZ DİL Puan Hesaplama"
         ],
-        "screenshot": "https://yksnethesapla.com/og-image.png"
+        "screenshot": "https://yksnethesapla.com/og-image.jpg"
     }
 
     const howToData = {
@@ -47,7 +47,7 @@ export default function StructuredData() {
         "@type": "HowTo",
         "name": "YKS Net Hesaplama Nasıl Yapılır?",
         "description": "YKS sınavında aldığınız doğru ve yanlış sayılarını kullanarak net hesaplama yapın ve üniversite puanlarınızı öğrenin.",
-        "image": "https://yksnethesapla.com/og-image.png",
+        "image": "https://yksnethesapla.com/og-image.jpg",
         "totalTime": "PT5M",
         "estimatedCost": {
             "@type": "MonetaryAmount",

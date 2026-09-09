@@ -72,7 +72,7 @@ export default function GeriSayimPage() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-            <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
                 {/* H1 */}
                 <div className="text-center mb-8">
@@ -178,7 +178,7 @@ export default function GeriSayimPage() {
                     </div>
                 </div>
 
-            </main>
+            </div>
         </div>
     )
 }

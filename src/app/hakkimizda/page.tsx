@@ -56,7 +56,7 @@ export default function HakkimizdaPage() {
                                 <div className="bg-green-50 p-5 rounded-xl border-l-4 border-green-500">
                                     <h3 className="font-bold text-green-900 mb-2">✅ Uyanık Algoritma</h3>
                                     <p className="text-sm text-gray-700">
-                                        "Matematik ve fenden en az 0,5 net çıkarma" gibi herkesin son anda fark edip yıkıldığı o meşhur kuralları bizim sistemimiz otomatik kontrol eder ve sizi uyarır.
+                                        "Türkçe veya Temel Matematik testinden en az 0,5 net çıkarma" gibi adayların puan hesaplamasını doğrudan etkileyen resmi ÖSYM kurallarını sistemimiz otomatik kontrol eder ve sizi uyarır.
                                     </p>
                                 </div>
                                 <div className="bg-purple-50 p-5 rounded-xl border-l-4 border-purple-500">
@@ -80,7 +80,7 @@ export default function HakkimizdaPage() {
                                 Puanları ve Sıralamaları Nasıl Hesaplıyoruz?
                             </h2>
                             <p className="mb-4">
-                                Sitemizde gördüğünüz puanlar rastgele sayılar değildir. Son 3 yılın (2023, 2024 ve 2025) ÖSYM resmi yerleştirme raporlarındaki dağılımları alıyoruz. Geliştirdiğimiz motor; sınava giren kişi sayısındaki artışı, tahmini yığılma bölgelerini ve derslerin ağırlık oranlarını harmanlayarak size en yakın "tahmini" sonucu veriyor.
+                                Sitemizde gördüğünüz puanlar rastgele sayılar değildir. ÖSYM'nin resmi yerleştirme raporlarındaki yığınsal dağılımları ve standart sapma eğrilerini baz alıyoruz. Geliştirdiğimiz motor; sınava giren kişi sayısındaki artışı, tahmini yığılma bölgelerini ve derslerin katsayılarını harmanlayarak logaritmik interpolasyonla en gerçekçi tahmini sonucu sunar.
                             </p>
                             <div className="bg-gray-50 p-5 rounded-xl border-l-4 border-gray-400">
                                 <p className="text-sm text-gray-700">

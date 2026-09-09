@@ -43,7 +43,7 @@ export default function Footer() {
                         </h3>
                         <ul className="space-y-2 text-sm">
                             {[
-                                { href: '/#hesaplama', label: 'TYT Net Hesaplama' },
+                                { href: '/tyt-net-hesaplama', label: 'TYT Net Hesaplama' },
                                 { href: '/#hesaplama', label: 'AYT Net Hesaplama' },
                                 { href: '/#hesaplama', label: 'YDT Net Hesaplama' },
                                 { href: '/#sonuclar', label: 'Puan Hesaplama' },

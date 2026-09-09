@@ -45,8 +45,8 @@ export default function YDTSection({ scores, onScoreChange, onReset }: YDTSectio
                     <p className="font-medium mb-1">💡 YDT Hakkında:</p>
                     <ul className="space-y-1 text-orange-600">
                         <li>• YDT sadece Dil puanı hesaplamasında kullanılır</li>
-                        <li>• İngilizce, Almanca, Fransızca, Arapça dillerinden birini seçebilirsiniz</li>
-                        <li>• YDT'ye girmek zorunlu değildir</li>
+                        <li>• İngilizce, Almanca, Fransızca, Arapça veya Rusça dillerinden birini seçebilirsiniz</li>
+                        <li>• YDT&apos;ye girmek zorunlu değildir (Sadece Dil puanı isteyen bölümler için geçerlidir)</li>
                     </ul>
                 </div>
             </div>
