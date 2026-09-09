@@ -130,7 +130,7 @@ export default function StructuredData() {
                 "name": "YKS 2027 ne zaman?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "YKS 2027 sınavı iki gün olarak yapılacaktır. TYT (Temel Yeterlilik Testi) 20 Haziran 2027 Cumartesi, AYT (Alan Yeterlilik Testi) ve YDT (Yabancı Dil Testi) 21 Haziran 2027 Pazar günü uygulanacaktır."
+                    "text": "YKS 2027 sınavı iki gün olarak yapılacaktır. TYT (Temel Yeterlilik Testi) 19 Haziran 2027 Cumartesi, AYT (Alan Yeterlilik Testi) ve YDT (Yabancı Dil Testi) 20 Haziran 2027 Pazar günü uygulanacaktır."
                 }
             },
             {
@@ -178,7 +178,7 @@ export default function StructuredData() {
                 "name": "YKS'ye kaç gün kaldı?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "YKS 2027 sınavına kalan süreyi canlı olarak yksnethesapla.com/geri-sayim adresindeki geri sayım sayfamızdan takip edebilirsiniz. TYT 20 Haziran 2027, AYT 21 Haziran 2027 tarihinde yapılacaktır."
+                    "text": "YKS 2027 sınavına kalan süreyi canlı olarak yksnethesapla.com/geri-sayim adresindeki geri sayım sayfamızdan takip edebilirsiniz. TYT 19 Haziran 2027, AYT 20 Haziran 2027 tarihinde yapılacaktır."
                 }
             }
         ]

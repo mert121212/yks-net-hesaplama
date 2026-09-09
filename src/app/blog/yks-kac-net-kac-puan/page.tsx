@@ -31,8 +31,8 @@ export default function YKSKacNetKacPuan() {
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
                 <BlogArticleSchema 
-                    title="YKS\" 
-                    description="TYT ve AYT\"
+                    title="YKS'de Kaç Net Kaç Puan Eder? Net-Puan Tablosu ve Bölüm Hedefleri 2027" 
+                    description="TYT ve AYT'de kaç net kaç puan? Ham puan ve yerleştirme puanı farkı, Tıp, Hukuk, Mühendislik için gereken netler. 2027 güncel analiz."
                     datePublished="2026-02-22"
                     dateModified="2026-02-25"
                     url="https://yksnethesapla.com/blog/yks-kac-net-kac-puan"

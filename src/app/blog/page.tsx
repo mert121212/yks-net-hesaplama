@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import AuthorProfile from '@/components/AuthorProfile'
 
 export const metadata: Metadata = {
     title: 'YKS Blog | YKS Hazırlık Rehberleri ve İpuçları',

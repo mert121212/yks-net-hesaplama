@@ -31,7 +31,7 @@ export default function YKSYigilmaTehlikesi() {
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
                 <BlogArticleSchema 
-                    title="YKS\" 
+                    title="YKS'de Yığılma Tehlikesi (2027): Standart Sapma ve Sıralama Analizi"
                     description="YKS yığılma nedir, neden olur? 50.000 ile 150.000 sıralama bandındaki yığılma tehlikesi ve bu yığılmadan kurtulma taktikleri."
                     datePublished="2026-02-07"
                     dateModified="2026-02-10"

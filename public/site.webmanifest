@@ -1,7 +1,7 @@
 {
-    "name": "YKS Net Hesaplama 2026",
+    "name": "YKS Net Hesaplama 2027",
     "short_name": "YKS Hesaplama",
-    "description": "YKS 2026 net hesaplama aracı ile TYT, AYT ve YDT netlerinizi hesaplayın",
+    "description": "YKS 2027 net hesaplama aracı ile TYT, AYT ve YDT netlerinizi hesaplayın",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
@@ -45,7 +45,7 @@
         {
             "name": "Geri Sayım",
             "short_name": "Sayaç",
-            "description": "YKS 2026 geri sayım",
+            "description": "YKS 2027 geri sayım",
             "url": "/geri-sayim",
             "icons": [
                 {

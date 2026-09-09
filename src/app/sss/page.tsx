@@ -3,9 +3,10 @@ import Link from 'next/link'
 
 
 export const metadata: Metadata = {
-    title: 'Sıkça Sorulan Sorular (SSS) - YKS Net Hesaplama 2027',
-    description: 'YKS net hesaplama, 0,5 net şartı, baraj bilgisi, OBP kırılması, başarı sırası barajları ve 2027 sınav takvimi hakkında sıkça sorulan sorular.',
-    keywords: 'yks sss, net hesaplama sss, 0.5 net şartı, baraj puanı, obp kırılması, başarı sırası barajı, yks 2027',
+    title: 'YKS Sık Sorulan Sorular | YKS 2027 ve Net Hesaplama',
+    description: 'YKS 2027, TYT, AYT, OBP, baraj puanı ve net hesaplama hakkında en çok sorulan soruların detaylı cevapları.',
+    keywords: 'yks sık sorulan sorular, yks sss, tyt sss, ayt sss, yks baraj puanı, obp hesaplama, yks 2027',
+    alternates: { canonical: 'https://yksnethesapla.com/sss' },
 }
 
 const sssFaqSchema = {

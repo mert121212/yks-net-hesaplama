@@ -31,7 +31,7 @@ export default function YKSBirNetKacKisiAtar() {
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
                 <BlogArticleSchema 
-                    title="YKS\" 
+                    title="YKS'de 1 Net Kaç Bin Kişi Atar? (Yığılma ve Standart Sapma Etkisi)"
                     description="YKS (TYT-AYT) sınavında 1 netin sıralamaya etkisi. Yığılma noktalarında 1 net kaç kişiyi geride bırakır? SAY, EA, SÖZ 2027 analiz."
                     datePublished="2026-02-13"
                     dateModified="2026-02-16"

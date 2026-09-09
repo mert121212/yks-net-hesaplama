@@ -31,7 +31,7 @@ export default function TYTKesinCikanKonular() {
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
                 <BlogArticleSchema 
-                    title="TYT\" 
+                    title="TYT'de Zaman Kazanmanın Sırrı: Kesin Çıkacak Altın Konular"
                     description="TYT Matematik, Türkçe, Fizik, Kimya, Biyoloji ve Tarihte her sene istisnasız sorulan, en çok net getiren kesin çıkan konular listesi 2027."
                     datePublished="2026-02-11"
                     dateModified="2026-02-14"

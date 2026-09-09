@@ -348,7 +348,7 @@ export default function SEOContent() {
                         },
                         {
                             q: 'YKS 2027 ne zaman?',
-                            a: 'TYT 20 Haziran 2027 (Cumartesi), AYT ve YDT 21 Haziran 2027 (Pazar) tarihinde yapılması planlanmaktadır. Kesin tarihler için ÖSYM\'nin resmi sitesini takip edin.'
+                            a: 'TYT 19 Haziran 2027 (Cumartesi), AYT ve YDT 20 Haziran 2027 (Pazar) tarihinde yapılması planlanmaktadır. Kesin tarihler için ÖSYM\'nin resmi sitesini takip edin.'
                         },
                         {
                             q: 'Puan türü nasıl seçilir?',

@@ -23,6 +23,39 @@ export default function IletisimPage() {
                         </p>
                     </header>
 
+                    {/* İletişim Formu */}
+                    <section className="mb-12">
+                        <h2 className="text-2xl font-bold text-gray-900 mb-6">Bize Mesaj Gönderin</h2>
+                        <form action="mailto:mertcaliskan36065d@gmail.com" method="post" encType="text/plain" className="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Adınız Soyadınız</label>
+                                    <input type="text" id="name" name="name" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors" placeholder="Adınız" />
+                                </div>
+                                <div>
+                                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">E-Posta Adresiniz</label>
+                                    <input type="email" id="email" name="email" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors" placeholder="ornek@email.com" />
+                                </div>
+                            </div>
+                            <div className="mb-6">
+                                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">Konu</label>
+                                <select id="subject" name="subject" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors bg-white">
+                                    <option value="Teknik Destek / Hata Bildirimi">Teknik Destek / Hata Bildirimi</option>
+                                    <option value="İçerik Önerisi">İçerik Önerisi</option>
+                                    <option value="İş Birliği / Reklam">İş Birliği / Reklam</option>
+                                    <option value="Diğer">Diğer</option>
+                                </select>
+                            </div>
+                            <div className="mb-6">
+                                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Mesajınız</label>
+                                <textarea id="message" name="message" rows={5} required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors resize-y" placeholder="Mesajınızı buraya yazın..."></textarea>
+                            </div>
+                            <button type="submit" className="w-full md:w-auto px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-sm">
+                                Mesajı Gönder
+                            </button>
+                        </form>
+                    </section>
+
                     {/* İletişim kanalları tablosu */}
                     <section className="mb-12">
                         <h2 className="text-2xl font-bold text-gray-900 mb-6">İletişim Kanallarımız</h2>

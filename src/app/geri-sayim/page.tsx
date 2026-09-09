@@ -1,5 +1,12 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import CountdownTimer from '@/components/CountdownTimer'
+
+export const metadata: Metadata = {
+    title: 'YKS 2027 Geri Sayım | YKS\'ye Kaç Gün Kaldı?',
+    description: 'YKS 2027 sınavına kalan süreyi canlı olarak takip edin. TYT 19 Haziran 2027, AYT 20 Haziran 2027.',
+    alternates: { canonical: 'https://yksnethesapla.com/geri-sayim' },
+}
 
 // Günde bir kez yeniden hesapla
 export const revalidate = 86400

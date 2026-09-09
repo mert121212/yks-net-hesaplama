@@ -6,6 +6,7 @@ export const metadata: Metadata = {
     title: '2027 YKS Rehberi: Puan Hesaplama, Soru Dağılımı ve Başarı Stratejileri',
     description: 'YKS 2027 sınavı için kapsamlı rehber. TYT AYT net hesaplama, puan türleri, OBP etkisi, baraj bilgisi ve başarı stratejileri. Güncel ve doğru bilgilerle hazırlanın.',
     keywords: 'YKS 2027 rehberi, YKS net hesaplama, TYT net hesaplama, AYT net hesaplama, YKS puan hesaplama, OBP hesaplama, YKS başarı stratejileri',
+    alternates: { canonical: 'https://yksnethesapla.com/yks-rehberi' },
 }
 
 export default function YKSRehberiPage() {
