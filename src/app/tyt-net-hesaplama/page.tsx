@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     title: 'TYT Net Hesaplama 2027 | Türkçe Matematik Sosyal Fen Netleri',
     description: 'TYT net hesaplama aracı ile Türkçe, Matematik, Sosyal Bilimler ve Fen Bilimleri netlerinizi hesaplayın. YKS 2027 için güncel TYT puan hesaplama.',
     keywords: 'TYT net hesaplama, TYT matematik net, TYT türkçe net, TYT sosyal net, TYT fen net, YKS 2027 TYT',
+    alternates: { canonical: 'https://yksnethesapla.com/tyt-net-hesaplama' },
 }
 
 export default function TYTNetHesaplamaPage(): React.JSX.Element {
@@ -17,7 +18,7 @@ export default function TYTNetHesaplamaPage(): React.JSX.Element {
                     <div className="flex items-center justify-between h-16">
                         <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
                             <Calculator className="h-8 w-8 text-primary-600" />
-                            <h1 className="text-xl font-bold text-gray-900">YKS Net Hesaplama</h1>
+                            <span className="text-xl font-bold text-gray-900">YKS Net Hesaplama</span>
                         </Link>
                         
                         <nav className="hidden md:flex space-x-6">
@@ -117,16 +118,16 @@ export default function TYTNetHesaplamaPage(): React.JSX.Element {
                         </p>
                     </div>
                     <p className="text-gray-600 mb-4">
-                        TYT&apos;de her yanlış cevap, doğru cevaplarınızdan 0.25 puan düşer. 
-                        Boş bıraktığınız sorular puanınızı etkilemez.
+                        TYT&apos;de her 4 yanlış cevap 1 doğru cevabınızı (soru başına 0.25 net) götürür. 
+                        Boş bıraktığınız sorular netinizi etkilemez.
                     </p>
                     
-                    <h3 className="text-xl font-semibold text-gray-900 mb-4">TYT Puan Hesaplama:</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-4">TYT Puan Hesaplama Kuralları:</h3>
                     <ul className="text-gray-600 space-y-2">
-                        <li>• TYT puanı 100-500 arasında değişir</li>
-                        <li>• Minimum 150 TYT puanı gerekir (AYT&apos;ye girebilmek için)</li>
-                        <li>• TYT puanı tüm puan türlerinde kullanılır</li>
-                        <li>• Yerleştirmede %40 ağırlığa sahiptir</li>
+                        <li>• TYT puanı 100 ile 500 arasında hesaplanır</li>
+                        <li>• 2022 yılı itibarıyla 150 puan barajı kaldırılmıştır</li>
+                        <li>• Puan hesaplanması için Türkçe veya Temel Matematik testinden en az 0,5 net yapılması şarttır</li>
+                        <li>• TYT puanı AYT yerleştirme puanına %40 oranında katkı sağlar</li>
                     </ul>
                 </div>
 

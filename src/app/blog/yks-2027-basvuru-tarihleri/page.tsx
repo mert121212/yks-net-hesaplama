@@ -50,7 +50,7 @@ export default function YKSBasvuruTarihleri() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium">Önemli Tarihler</span>
-                            <time className="text-gray-600" dateTime="2026-02-14">19 Ağustos 2026</time>
+                            <time className="text-gray-600" dateTime="2026-02-14">14 Şubat 2026</time>
                             <span className="text-gray-600">• 8 dk okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -138,7 +138,7 @@ export default function YKSBasvuruTarihleri() {
                                 <strong>Kural 1:</strong> Başvuruyu sistemden yapmak yetmez. O parayı yatırmadığın sürece başvurun geçerli sayılmaz. Para yatınca ekranda &quot;Başvuru İşlemi Başarıyla Tamamlanmıştır&quot; yazısını gözünle gör.
                             </p>
                             <p className="text-sm text-amber-800">
-                                <strong>Kural 2:</strong> Eğer lise son sınıftaysan, HES kodun veya diploma notun gibi bilgileri sistem e-Okul&apos;dan kendi çeker. Mezunsan, eğitim bilgilerini mutlaka kontrol et. E-Okul&apos;da hata varsa okuluna gidip düzelttir.
+                                <strong>Kural 2:</strong> Eğer lise son sınıftaysan, kimlik ve eğitim bilgilerinizi sistem e-Okul ve MERNİS üzerinden otomatik çeker. Mezun durumdaysanız, eğitim bilgilerinizin e-Okul ve YÖKSİS üzerinde eksiksiz ve onaylı olduğunu mutlaka kontrol edin; uyumsuzluk varsa mezun olduğunuz okula başvurarak güncelleme yaptırın.
                             </p>
                         </div>
 

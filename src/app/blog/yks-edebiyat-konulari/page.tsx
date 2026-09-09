@@ -50,7 +50,7 @@ export default function YKSEdebiyatKonulari() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Edebiyat</span>
-                            <time className="text-gray-600" dateTime="2026-02-17">19 Ağustos 2026</time>
+                            <time className="text-gray-600" dateTime="2026-02-17">17 Şubat 2026</time>
                             <span className="text-gray-600">• 14 dk okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

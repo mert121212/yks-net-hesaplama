@@ -50,7 +50,7 @@ export default function YKSYigilmaTehlikesi() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium">Kritik Analiz</span>
-                            <time className="text-gray-600" dateTime="2026-02-07">19 Ağustos 2026</time>
+                            <time className="text-gray-600" dateTime="2026-02-07">7 Şubat 2026</time>
                             <span className="text-gray-600">• 9 dk okuma</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

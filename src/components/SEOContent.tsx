@@ -248,19 +248,19 @@ export default function SEOContent() {
                         <div className="space-y-3 text-sm text-gray-700">
                             <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
                                 <span className="font-medium">Türkçe (40 soru)</span>
-                                <span className="text-blue-600 font-semibold">Katsayı: 1.333</span>
+                                <span className="text-blue-600 font-semibold">Katsayı: ~1.32</span>
                             </div>
                             <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
                                 <span className="font-medium">Matematik (40 soru)</span>
-                                <span className="text-blue-600 font-semibold">Katsayı: 1.333</span>
+                                <span className="text-blue-600 font-semibold">Katsayı: ~1.32</span>
                             </div>
                             <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
                                 <span className="font-medium">Sosyal Bilimler (20 soru)</span>
-                                <span className="text-blue-600 font-semibold">Katsayı: 1.000</span>
+                                <span className="text-blue-600 font-semibold">Katsayı: ~1.36</span>
                             </div>
                             <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
                                 <span className="font-medium">Fen Bilimleri (20 soru)</span>
-                                <span className="text-blue-600 font-semibold">Katsayı: 1.000</span>
+                                <span className="text-blue-600 font-semibold">Katsayı: ~1.36</span>
                             </div>
                         </div>
                         <p className="text-xs text-gray-500 mt-3">* Katsayılar tahminidir. ÖSYM kesin katsayıları açıklamaz; gerçek puanlar her yıl değişir.</p>
@@ -340,7 +340,7 @@ export default function SEOContent() {
                         },
                         {
                             q: 'AYT\'de kaç net yapmalıyım?',
-                            a: 'Hedef bölümünüze göre değişir. Tıp için SAY\'da 150+ net (ilk 50.000 sırası şartı), mühendislik için 80-120 net, hukuk için EA\'da 100+ net (ilk 125.000 sırası şartı) yapmanız önerilir.'
+                            a: 'Hedef bölümünüze ve başarı sırası barajına göre değişir. Tıp Fakültesi için SAY alanında toplamda (TYT + AYT) 150+ net (AYT\'de 65+ net ve ilk 50.000 şartı), iyi bir Mühendislik için AYT\'de 45-65 net (ilk 300.000 şartı), Hukuk için EA alanında AYT\'de 45-55 net (ilk 125.000 şartı) hedeflenmelidir.'
                         },
                         {
                             q: 'OBP (Ortaöğretim Başarı Puanı) nedir?',
