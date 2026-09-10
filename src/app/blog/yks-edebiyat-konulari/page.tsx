@@ -51,13 +51,13 @@ export default function YKSEdebiyatKonulari() {
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Edebiyat</span>
                             <time className="text-gray-600" dateTime="2026-02-17">17 Şubat 2026</time>
-                            <span className="text-gray-600">• 14 dk okuma</span>
+                            <span className="text-gray-600">• 9 dk okuma</span>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                            AYT Edebiyat: Yüzlerce Yazar Var Ama ÖSYM Hep Aynı Çekirdeği Soruyor
+                            AYT Edebiyat: Yüzlerce Yazar Var Ama ÖSYM Hep Aynı 30 İsmi Soruyor
                         </h1>
                         <p className="text-xl text-gray-600">
-                            Edebiyat dersini &quot;ezber deryası, aklımda tutamam&quot; diyerek bir kenara itenlere açık bir gerçeği hatırlatalım: 24 soruda 20&apos;nin üstüne çıkmanın yolu binlerce eseri papağan gibi ezberlemek değil, dönemlerin ruhunu çözmektir.
+                            Binlerce eseri ezberlemeye çalışmak yerine dönemlerin ana mantığını ve anahtar yazarları kavramak, 24 soruda 20+ netin tek kestirme yoludur.
                         </p>
                     </header>
 
@@ -65,81 +65,77 @@ export default function YKSEdebiyatKonulari() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Eşit Ağırlık ve Sözel sınıflarının çalışma masalarına baktığınızda genellikle aynı hüzünlü manzarayla karşılaşırsınız: Masanın her yanına yapıştırılmış rengarenk post-itler, kalınlığı ansiklopediyi aratmayan yazar-eser sözlükleri ve &quot;Ben bu yüzlerce adamın hangi kitabını aklımda tutacağım?&quot; diyen çaresiz bakışlar.
+                            Edebiyat çalışan öğrencilerin en sık yaptığı hata, yüzlerce yazar ve binlerce eseri alt alta yazıp ezberlemeye çalışmaktır.
                         </p>
-
                         <p>
-                            İçiniz hemen rahatlasın. Çünkü ÖSYM soru hazırlama komisyonu sizden Şinasi&apos;nin tefrika edilen dördüncü makalesinin yayın gününü ya da Baki&apos;nin üçüncü dereceden akrabasını sormuyor. ÖSYM her sene edebiyatın ana omurgasını oluşturan yaklaşık 30-35 büyük sanatçının karakteristik özelliklerini ve edebi akımların felsefesini yokluyor. 
+                            Üç gün sonra hepsi birbirine karışır. Tanzimat yazarları Servet-i Fünun&apos;a kayar, divan şairlerinin kasideleri birbirine girer.
                         </p>
-
                         <p>
-                            Bunu kavradığınız an, edebiyat sizin için bir kabus olmaktan çıkıp AYT salonunda en hızlı net toplayacağınız güvenli bir limana dönüşür.
+                            Oysa ÖSYM&apos;nin edebiyat soruları sanıldığı kadar dipsiz bir kuyu değildir. Sınav komisyonu her yıl Türk edebiyatının ana omurgasını oluşturan yaklaşık 30-35 büyük yazarın temel özelliklerini ve dönemlerin ruhunu sorar.
+                        </p>
+                        <p>
+                            24 sorunun dağılımını doğru okuduğunuzda, sınavın aslında ne kadar dengeli kurulduğunu görürsünüz:
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            24 Sorunun Haritası: Hangi Bölge Kaç Soru Getiriyor?
+                            24 Sorunun Soru Dağılım Haritası
                         </h2>
-                        <p>
-                            Soru kitapçığını önünüze aldığınızda rastgele sorularla değil, yıllardır milimetrik olarak belirlenmiş şu şablonla karşılaşırsınız:
-                        </p>
 
                         <div className="space-y-4 my-6">
                             <div className="p-5 bg-purple-50 border border-purple-200 rounded-xl">
-                                <h3 className="font-bold text-purple-900 text-lg mb-1">Paragraf ve Anlam Bilgisi (İlk 6 - 8 Soru)</h3>
+                                <h3 className="font-bold text-purple-900 text-lg mb-1">1. Paragraf ve Anlam Bilgisi (İlk 6 Soru)</h3>
                                 <p className="text-sm text-purple-800 leading-relaxed">
-                                    Sınavın bu ilk üçte birlik kısmı edebiyat bilgisi değil, saf anlama kabiliyetidir. TYT Türkçedeki paragraf ve sözcükte anlam sorularının neredeyse aynısıdır. Burada fire vermemek için TYT okuma kondisyonunuzu sağlam tutmanız yeterlidir.
+                                    Sınavın bu ilk bölümü edebiyat bilgisi gerektirmez; tamamen okuduğunu anlama becerisidir. TYT Türkçe paragraf sorularının benzeridir. Düzenli paragraf çözen bir öğrenci bu 6 soruyu firesiz cebe koyar.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-amber-50 border border-amber-200 rounded-xl">
-                                <h3 className="font-bold text-amber-900 text-lg mb-1">Şiir Bilgisi ve Edebi Sanatlar (3 - 4 Soru)</h3>
+                                <h3 className="font-bold text-amber-900 text-lg mb-1">2. Şiir Bilgisi ve Edebi Sanatlar (3-4 Soru)</h3>
                                 <p className="text-sm text-amber-800 leading-relaxed">
-                                    Kafiye, redif, teşbih, istiare, hüsn-i talil ve tecahül-i arif gibi başlıklar. Formülü basittir, kuralları matematiktir. Sanatları ezberlemek yerine verilen dörtlükteki teşhis veya telmihi bulabilen bir aday bu gruptan tam puanla çıkar.
+                                    Kafiye, redif, teşbih, istiare, tezat ve telmih. Kuralları neredeyse matematik gibidir. Ezberlemek yerine verilen beyit ya da dörtlük üzerinde sanatları bulma pratiği yapan öğrenci buradan tam puanla çıkar.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-blue-50 border border-blue-200 rounded-xl">
-                                <h3 className="font-bold text-blue-900 text-lg mb-1">İslamiyet Öncesi, Halk ve Divan Edebiyatı (5 - 6 Soru)</h3>
+                                <h3 className="font-bold text-blue-900 text-lg mb-1">3. İslamiyet Öncesi, Halk ve Divan Edebiyatı (5-6 Soru)</h3>
                                 <p className="text-sm text-blue-800 leading-relaxed">
-                                    Adayların en çok korktuğu ama aslında en istikrarlı bölümdür. Fuzuli, Baki, Nedim, Nabi ve Şeyh Galip... Bu beş büyük ustayı ve gazel, kaside, mesnevi nazım şekillerini derinlemesine kavrayan birinin bu alanda soru kaçırması neredeyse imkansızdır.
+                                    Adayların en çok çekindiği ama en garantili kısımdır. Fuzuli, Baki, Nedim, Nabi ve Şeyh Galip... Bu beş şairi ve gazel, kaside, mesnevi nazım şekillerini sindiren birinin buradan soru kaçırması zordur.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-emerald-50 border border-emerald-200 rounded-xl">
-                                <h3 className="font-bold text-emerald-900 text-lg mb-1">Tanzimat&apos;tan Cumhuriyet&apos;e Roman ve Akımlar (6 - 8 Soru)</h3>
+                                <h3 className="font-bold text-emerald-900 text-lg mb-1">4. Tanzimat&apos;tan Cumhuriyet&apos;e Roman ve Akımlar (7-8 Soru)</h3>
                                 <p className="text-sm text-emerald-800 leading-relaxed">
-                                    Batılılaşma sancıları, Namık Kemal&apos;in vatan sevdası, Servet-i Fünun&apos;un kırılgan melankolisi, Milli Edebiyat&apos;ın Anadolu uyanışı ve nihayet Cumhuriyet dönemi toplumcu gerçekçi yazarları (Yaşar Kemal, Kemal Tahir, Orhan Kemal üçlüsü).
+                                    Batılılaşma teması, Namık Kemal, Recaizade Mahmut Ekrem, Tevfik Fikret, Halit Ziya, Yakup Kadri ve Cumhuriyet dönemi toplumcu gerçekçi romanları.
                                 </p>
                             </div>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Yazarları Ezberlemeyin, Zihninize Çapa Atın
+                            Ezberlemek Yerine Anahtar Kelime Yöntemi
                         </h2>
                         <p>
-                            Bir yazarı yüzlerce eserlik bir listeyle ezberlemeye kalkarsanız iki gün sonra unutursunuz. Yapmanız gereken şey, yazarı tek bir anahtar kavramla zihninize mühürlemektir:
+                            Bir yazarı 20 maddelik bilgi yığınıyla ezberlemeye çalışmayın. Her büyük yazarı tek bir anahtar kavramla zihninize bağlayın:
                         </p>
-                        <p>
-                            Örneğin <strong>Fuzuli</strong> dendiğinde aklınıza tek bir şey gelmelidir: Izdırap ve ilahi aşk. O, acı çekmekten zevk alan, kavuşmayı değil yanmayı dileyen bir aşıktır; Su Kasidesi ve Leyla ile Mecnun onun ruhunun aynasıdır.
-                        </p>
-                        <p>
-                            Buna karşılık <strong>Nedim</strong> tam tersidir: Lale Devri&apos;nin neşesi, Boğaziçi eğlenceleri, helva sohbetleri ve İstanbul Türkçesi. Şarkı nazım biçiminin zirvesidir. Biri size ızdırap şiiri gösterip Nedim diyorsa hemen şüphelenirsiniz.
-                        </p>
-                        <p>
-                            Ya da <strong>Nabi</strong>... Şiirini zevk için değil, öğüt vermek için yazar; oğluna nasihat ettiği Hayriye&apos;sinden didaktik ekolün bayraktarı olduğunu hemen anlarsınız. <strong>Ahmet Haşim</strong> ise gün batımını, kızıl akşamları ve akşamın melankolisini sever; saf şiirin peşinde kelimeleri nota gibi dizer.
-                        </p>
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li><strong>Fuzuli:</strong> Istırap ve ilahi aşk. Kavuşmayı değil yanmayı dileyen şair. (Su Kasidesi, Leyla ile Mecnun).</li>
+                            <li><strong>Nedim:</strong> Lale Devri, İstanbul Türkçesi ve yaşama sevinci. Şarkı türünün ustası.</li>
+                            <li><strong>Nabi:</strong> Didaktik, öğretici şiir. Nasihat ve ahlaki öğüt ekolü.</li>
+                            <li><strong>Ahmet Haşim:</strong> Akşam kızıllığı, melankoli ve saf şiir. Sembolizmin öncüsü.</li>
+                            <li><strong>Halit Ziya Uşaklıgil:</strong> Batılı anlamda ilk modern Türk romanı, realist gözlem ve mensur şiirler.</li>
+                        </ul>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Nasıl Bir Çalışma Rutini Kurmalısınız?
+                            Haftalık Çalışma Düzeni Nasıl Olmalı?
                         </h2>
                         <p>
-                            Edebiyatı her gün saatlerce çalışmak zihni yorar ve bilgileri çorba yapar. Haftada 3 seans yeterlidir. 
+                            Edebiyatı her gün saatlerce çalışmak kafa karışıklığı yaratır. Haftada 3 seans ayırmak fazlasıyla yeterlidir:
                         </p>
                         <p>
-                            Pazartesi günü Divan edebiyatını ele aldıysanız, konuyu çalıştıktan hemen sonra en az 40 soru çözerek bilgiyi tazeleyin. Çarşamba günü Tanzimat ve Servet-i Fünun&apos;u bitirin. Cuma günü Cumhuriyet romanına bakın. Pazar günleri ise mutlaka 24 soruluk karma bir AYT Edebiyat branş denemesi çözün. 
+                            Pazartesi Divan edebiyatını çalışıp hemen ardından 30 soru çözün. Çarşamba Tanzimat ve Servet-i Fünun&apos;a bakın. Cuma günü Cumhuriyet dönemi yazarlarını gözden geçirin. Pazar günü ise mutlaka 24 soruluk bir AYT Edebiyat branş denemesi çözerek haftayı kapatın.
                         </p>
                         <p>
-                            Denemede hangi dönemden yanlış yaptıysanız, hatanızı hemen o gün kapatın. Bir ay içinde netlerinizin 12-14 bandından 20&apos;nin üstüne nasıl tırmandığını hayretle izleyeceksiniz.
+                            Bu tempoyu 1 ay sürdürdüğünüzde, netlerinizin 12-13 bandından 20&apos;nin üzerine çıktığını göreceksiniz.
                         </p>
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">

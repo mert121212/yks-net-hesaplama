@@ -51,13 +51,13 @@ export default function YKSHazirlikProgrami() {
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Hazırlık</span>
                             <time className="text-gray-600" dateTime="2026-02-20">20 Şubat 2026</time>
-                            <span className="text-gray-600">• 14 dk okuma</span>
+                            <span className="text-gray-600">• 9 dk okuma</span>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                            &quot;Günde 11 Saat Masadayım Ama Netlerim Kıpırdamıyor&quot; Diyenlere Gerçekler
+                            &quot;Günde 10 Saat Çalışıyorum Ama Netlerim Artmıyor&quot; Diyenler İçin Gerçekçi Program
                         </h1>
                         <p className="text-xl text-gray-600">
-                            İnternetten indirdiğiniz o şık çizelgeli askeri çalışma programlarının neden üçüncü günde çöpe gittiğini hiç düşündünüz mü? Sahte yorgunluk tuzağı ve zihinsel dayanıklılık planı.
+                            İnternetten indirilen şablon çizelgelerin neden 3. günde çöpe gittiğini ve saat doldurmak yerine net artıran gerçek çalışma mantığını konuşalım.
                         </p>
                     </header>
 
@@ -65,83 +65,65 @@ export default function YKSHazirlikProgrami() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Her yıl sonbaharda aynı trajikomik tiyatroyu izlerim. Öğrenci kırtasiyeden fosforlu kalemleri dizer, internetten &quot;Derece Yapan Öğrencinin Günlük Rutini&quot; başlıklı bir PDF indirir ve odasının duvarına yapıştırır. Programda ne ararsınız vardır: 05.45 uyanış, 06.15-08.00 Türev, 08.15-10.00 Organik Kimya... Akşam 23.30&apos;a kadar nefes alacak tek bir saniye bırakılmamıştır.
-                        </p>
-
-                        <p>
-                            İlk gün muazzam bir heyecanla başlar. İkinci gün omuzlara kurşun gibi bir yorgunluk çöker. Üçüncü gün sabah alarm çaldığında telefon duvara fırlatılır ve o mükemmel plan tarihin tozlu çöplüğüne karışır.
-                        </p>
-
-                        <p>
-                            Kabahat sizde değil. Çünkü bir başkasının biyolojik saatine, zihinsel kapasitesine ve uyku düzenine göre kurgulanmış şablonlar insan doğasına aykırıdır. Geçtiğimiz yıl Sayısalda Türkiye ilk 2 binine giren bir öğrencim sabah saat 10.00&apos;dan önce dersin kapağını bile açamazdı; &quot;Hocam sabahları beynim çalışmıyor, zorlarsam sadece duvara bakıyorum&quot; derdi. Ama saat 11.00 ile gece 01.30 arasında öyle bir odakla çalışırdı ki, masada 13 saat pinekleyen birinin haftalık verimini tek bir günde cebine koyardı.
-                        </p>
-
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Mesele Masada Oturmak Değil, Beyni Terletmektir
-                        </h2>
-                        <p>
-                            Kendinize karşı dürüst olun: Masada geçirdiğiniz o 10 saatin kaç dakikasında eliniz telefona uzanmadı? Kaç sayfa sonra gözleriniz satırlarda kayarken aklınız bambaşka yerlere uçup gitti?
+                            İnternette gördüğünüz o &quot;Günde 14 saat ders çalışan derece öğrencisi&quot; videolarını ya da askeri nizam hazırlanmış saat saat PDF çizelgelerini şimdilik bir kenara bırakın.
                         </p>
                         <p>
-                            Buna sahte çalışma yanılgısı diyoruz. Vücudunuz sandalyede oturduğu ve elinizde kalem olduğu için vicdanınız rahatlıyor; ancak beyniniz arka planda hiçbir bilgiyi uzun süreli belleğe mühürlemiyor. Bu yüzden deneme sınavına girdiğinizde &quot;Yahu ben bu konuyu üç gün önce saatlerce çalıştım ama hiçbir şey hatırlamıyorum&quot; diyerek saçınızı başınızı yoluyorsunuz.
+                            Çünkü o şablon programlar genelde en fazla 3 gün sürer. 4. gün sabah alarm çaldığında yataktan kalkamazsınız ve içinizde derin bir yetersizlik hissi başlar: &quot;Ben disiplinsizim, yapamıyorum.&quot;
+                        </p>
+                        <p>
+                            Sorun sizde falan değil. Sorun, insanın biyolojik ritmine ve gerçek hayata uymayan hayali planlar kurmakta.
+                        </p>
+                        <p>
+                            Masa başında 10 saat oturup günün sonunda sadece 50 test sorusu çözebilen, her 10 dakikada bir elini telefona atan bir adayın yaptığı şey ders çalışmak değil; sadece sandalyede vakit öldürmektir.
+                        </p>
+                        <p>
+                            Gerçekten net artıran sürdürülebilir bir düzen kurmak istiyorsanız, şu 4 temel kuralı masanıza yapıştırın:
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Unutma Canavarını Nasıl Dize Getirirsiniz?
+                            1. Saat Değil, Görev Odaklı Çalışın
                         </h2>
                         <p>
-                            Alman psikolog Hermann Ebbinghaus&apos;un unutma eğrisi araştırması acı bir biyolojik gerçeği ortaya koyar: Öğrendiğiniz yeni bir bilginin yaklaşık yüzde 70&apos;ini ilk 24 saat içinde buharlaştırıp atarsınız. Eğer doğru aralıklarla geri çağırma yapmazsanız, bir ay sonra elinizde sadece koca bir sıfır kalır.
+                            &quot;Bugün 8 saat çalışacağım&quot; demek zihne kaçamak alanı bırakır. Masada oturursunuz ama aklınız başka yerdedir.
                         </p>
                         <p>
-                            Bunu kırmanın yolu gün boyu aynı dersi çalışmak değildir; kademeli hatırlatma halkaları kurmaktır:
+                            Bunun yerine net hedefler koyun: &quot;Bugün Logaritmadan 50 soru bitireceğim, 20 paragraf çözeceğim ve 1 tane Türkçe branş denemesini analiz edeceğim.&quot;
                         </p>
                         <p>
-                            Gündüz yeni öğrendiğiniz bir formülü veya konuyu, gece uyumadan hemen önce sadece 10 dakika gözlerinizle tarayın. Aradan 3 gün geçtikten sonra, konu özetine hiç bakmadan o konudan doğrudan 20 soru çözün. Takıldığınız yerleri hemen kırmızı kalemle işaretleyin. 
-                        </p>
-                        <p>
-                            İki hafta sonra o dersin branş denemesine girdiğinizde o konunun sorularını mikroskop altına alın. Bir bilginin kalıcı belleğe geçmesi için beynin o bilgiyi en az 3-4 kez &quot;zorlanarak&quot; geri çağırması şarttır.
+                            Masadan ne zaman kalkacağınızı saate bakarak değil, önünüzdeki görevi tamamlayarak belirleyin. Bu yöntem zihninizi oyalanmaktan kurtarır ve bitirme disiplini kazandırır.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Feynman Testi: Bilgi mi, Boş Ezber mi?
+                            2. 25 Dakikalık Pomodoro Tuzağı: 50+10 Kuralı
                         </h2>
                         <p>
-                            Fizikçi Richard Feynman&apos;ın meşhur bir kuralı vardır: Eğer bir konuyu 12 yaşındaki bir çocuğa süslü akademik terimler kullanmadan, gündelik hayatın basit örnekleriyle anlatamıyorsanız; siz o konuyu öğrenmemişsinizdir, sadece ezberlemişsinizdir.
+                            İnternette çok popüler olan &quot;25 dakika ders, 5 dakika mola&quot; kuralı genel işler için faydalı olabilir; ancak YKS için son derece sakıncalıdır.
                         </p>
                         <p>
-                            Logaritmayı, fotosentezi ya da Divan edebiyatındaki teşbih sanatını çalıştınız mı? Kitabı hemen kapatın. Odanızda ayağa kalkın ve karşınızda hayali bir öğrenci varmış gibi o konuyu sesli olarak anlatmaya başlayın. Cümlenin ortasında &quot;eee, şey, kural öyleydi işte&quot; dediğiniz an durun. Çünkü tam orada bilgi açığınız var demektir. Kitabı açın, yalnızca o tıkandığınız düğüm noktasını çözün ve tekrar anlatın. Bu yöntemle 1 saatte alacağınız verim, saatlerce video izlemekten katbekat üstündür.
+                            Unutmayın: TYT 165 dakika, AYT ise 180 dakikadır. Sınav salonunda her 25 dakikada bir kalemi bırakıp dinlenme şansınız yok. Beyninizi sürekli 25 dakikada bir ödüllendirilmeye alıştırırsanız, sınav sabahı 40. soruya geldiğinizde zihinsel olarak çökersiniz.
+                        </p>
+                        <p>
+                            Masada en az 50 dakikalık kesintisiz odak blokları kurun: 50 dakika ders, 10 dakika mola. Ancak o 10 dakikada asla sosyal medya ekranına bakmayın. Balkona çıkın, su için, hava alın ama beyninizi yeni görsel uyarıcılarla yormayın.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Klasik 25 Dakikalık Pomodoro Neden YKS&apos;ye Yetmez?
+                            3. Akşamları Yeni Konu Çalışmayın, Soru Çözün
                         </h2>
                         <p>
-                            İnternette herkesin dilinde olan &quot;25 dakika ders, 5 dakika mola&quot; kuralı genel iş verimliliği için harika olabilir; fakat YKS öğrencisi için ölümcül bir tuzaktır.
+                            Günün en zorlu dersini (AYT Matematik, Fizik ya da karmaşık bir Edebiyat dönemini) zihninizin en berrak olduğu saat dilimine yerleştirin.
                         </p>
                         <p>
-                            Unutmayın: TYT 165 dakika, AYT ise tam 180 dakikadır. Sınav salonunda her 25 dakikada bir çay kahve molası verme şansınız yok. Beyninizi 25 dakikada bir ödüllendirilmeye alıştırırsanız, sınav sabahı 50. soruya geldiğinizde zihinsel enerjiniz tükenir, odaklanmanız paramparça olur.
-                        </p>
-                        <p>
-                            Masada en az 50 dakikalık kesintisiz odak blokları kurmak zorundasınız. 50 dakika ders, 10 dakika tam mola. Ancak o 10 dakikalık molada asla Instagram&apos;a, TikTok&apos;a ya da YouTube Shorts&apos;a bakamazsınız. Ekrana baktığınız an beyniniz dinlenmez; aksine saniyeler içinde binlerce yeni görsel uyarıcıya maruz kalarak daha da yorulur. Balkona çıkın, derin nefes alın, su için, esneyin ama o ekrana dokunmayın.
+                            Akşama doğru zihinsel yorgunluk başladığında yeni bir konuyu kavramaya çalışmak akıntıya kürek çekmektir. Akşam saatlerini gün içinde çalıştığınız konulardan test çözmeye ya da branş denemesi atmaya ayırın.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Kişisel Gün Mimarisi: Saate Değil, Enerjinize Odaklanın
+                            4. Gece Yatmadan Önce Yarının Masasını Hazırlayın
                         </h2>
                         <p>
-                            Gününüzü askeri bir saat çizelgesi yerine zihinsel enerji dilimlerine ayırın:
+                            Sabah masaya oturup &quot;Acaba bugün ne çalışsam?&quot; diye 20 dakika düşünmek, günün ilk enerjisini heba etmektir.
                         </p>
                         <p>
-                            <strong>Açılış Fazı:</strong> Güne asla en zor konuyla başlamayın. Zihni ısıtmak için 20 paragraf ve 15 problem çözerek motoru çalıştırın.
-                        </p>
-                        <p>
-                            <strong>Ağır Siklet Fazı:</strong> Zihninizin en berrak olduğu saat dilimini (kiminde sabah 09.30, kiminde öğlen 13.00) günün en çetin dersine ayırın. AYT Matematik, Fizik ya da karmaşık bir Edebiyat konusu burada eritilmelidir.
-                        </p>
-                        <p>
-                            <strong>Soru ve Analiz Fazı:</strong> Akşama doğru zihinsel yorgunluk başladığında yeni konu öğrenmeye çalışmak yerine branş denemesi çözün veya soru bankalarında pratik yapın.
-                        </p>
-                        <p>
-                            <strong>Kapanış Muhasebesi:</strong> Gece yatmadan önce masanızda yarın sabah kalktığınızda ilk çözeceğiniz kitabı açık bırakın. Sabah masaya oturduğunuzda &quot;Acaba bugün ne çalışsam?&quot; kararsızlığı yaşamamak, günün ilk zaferidir.
+                            Gece masadan kalkmadan önce yarın sabah çözeceğiniz ilk kitabı ve testi masanın üstüne açık bırakın. Sabah masaya geçtiğiniz saniye ne yapacağınız belli olsun.
                         </p>
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">

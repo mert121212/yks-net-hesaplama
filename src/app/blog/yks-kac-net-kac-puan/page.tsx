@@ -66,100 +66,94 @@ export default function YKSKacNetKacPuan() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Kütüphanenin mola alanında ya da dershane merdivenlerinde hemen her cumartesi öğleden sonra aynı sahne tekrarlanır. Bir öğrenci elinde optik form çıktısıyla gelir: &quot;Türkçeden 31, Sosyalden 15, Matematikten 23, Fenden 11... Toplam 80 net. Hocam sizce 400 puan gelir mi?&quot; Yan masadan başka biri söze karışır: &quot;Bizim kuzen geçen yıl 78 netle 402 almıştı, kesin gelir rahat ol.&quot;
+                            Deneme sınavından çıkan hemen her adayın aklındaki ilk soru aynıdır:
                         </p>
-
-                        <p>
-                            İşte gençlerin bütün çalışma şevkini ya yalancı bir rehavete sokan ya da yersiz bir paniğe sürükleyen en büyük tuzak tam olarak bu kulaktan dolma kıyaslamadır. 
+                        <p className="border-l-4 border-blue-500 pl-4 italic text-gray-800 font-medium">
+                            — &quot;80 net yaptım, kaç puan gelir? 400&apos;ü görür müyüm?&quot;
                         </p>
-
                         <p>
-                            Neden mi? Çünkü 2021 YKS&apos;sinde 75 net yapan bir öğrenci Türkiye genelinde sevinçten havalara uçup ilk 20 binin kapısını çalarken; soruların nispeten daha rahat çözüldüğü 2022 YKS&apos;sinde aynı 75 net sizi bir anda 70 bininci sıraya geriletebiliyordu. Yani &quot;Şu kadar net şu kadar puan eder&quot; şeklindeki katı kalıplar, sınavın standart sapmasını hesaba katmayan boş bir avuntudur. Yine de son 5 yılın ÖSYM yerleştirme istatistiklerini yan yana koyduğumuzda, önümüzü görmemizi sağlayacak son derece sağlam bir pusula çıkarabiliyoruz.
+                            Bu soruya tereddütsüz tek bir puan söyleyen biri varsa bilin ki sizi yanıltıyordur. Çünkü YKS&apos;de netlerin puana ve sıralamaya dönüşümü her sene sınavın zorluğuna göre baştan yazılır.
+                        </p>
+                        <p>
+                            Örneğin 2021 gibi zor bir sınavda 75 netle ilk 20 binin kapısını açan bir aday, soruların daha rahat çözüldüğü 2022 sınavında aynı 75 netle 65-70 bininci sıraya gerileyebiliyordu. Yine de ÖSYM&apos;nin katsayı mantığını bildiğinizde, elinizdeki netin kabaca hangi başarı bandında durduğunu çok net görebilirsiniz.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             Önce Temel Ayrımı Yapalım: Ham Puan mı, Yerleştirme Puanı mı?
                         </h2>
                         <p>
-                            Adaylar arasında en çok karıştırılan kavramların başında bu ikisi gelir. &quot;Ben 420 puan aldım&quot; diyen bir arkadaşınıza hemen sormanız gerekir: Ham puanın mı 420, yoksa yerleştirme puanın mı?
+                            &quot;Ben 420 puan aldım&quot; diyen birine sormanız gereken ilk şey şudur: Ham puanın mı, yoksa okul puanı eklenmiş yerleştirme puanın mı?
                         </p>
 
                         <div className="grid md:grid-cols-2 gap-6 my-6 not-prose">
                             <div className="bg-slate-50 border border-slate-200 p-6 rounded-xl">
-                                <h3 className="font-bold text-slate-900 text-lg mb-2">Ham Puan (Sınavın Saf Getirisi)</h3>
+                                <h3 className="font-bold text-slate-900 text-lg mb-2">Ham Puan (Sınavın Net Getirisi)</h3>
                                 <p className="text-sm text-slate-600 leading-relaxed">
-                                    ÖSYM&apos;nin her adaya hediye ettiği 100 taban puanın üstüne, TYT ve AYT testlerindeki doğru ve yanlışlarınızdan çıkan netlerin ders katsayılarıyla çarpılıp eklenmesidir. Okul notunuz bu puana zerre kadar dahil edilmez. Tavan puan 500&apos;dür.
+                                    ÖSYM&apos;nin her adaya verdiği 100 taban puanın üzerine testlerden topladığınız netlerin katsayılarla çarpılıp eklenmesidir. Okul notu dahil edilmez. Tavan puan 500&apos;dür.
                                 </p>
                             </div>
                             <div className="bg-indigo-50 border border-indigo-200 p-6 rounded-xl">
                                 <h3 className="font-bold text-indigo-900 text-lg mb-2">Yerleştirme Puanı (Tercih Puanınız)</h3>
                                 <p className="text-sm text-indigo-800 leading-relaxed">
-                                    Ham puanınızın üzerine lise diploma notunuzdan türetilen OBP&apos;nin (en fazla +60 puan) eklenmiş halidir. Tercih listesini hazırlarken üniversitelerin taban puanlarıyla kıyaslayacağınız nihai rakam işte budur. Tavan puan 560&apos;tır.
+                                    Ham puanınızın üzerine lise diploma notunuzdan türetilen OBP&apos;nin (en fazla +60 puan) eklenmiş halidir. Tercih listesi yaparken kullanacağınız nihai rakam budur. Tavan puan 560&apos;tır.
                                 </p>
                             </div>
                         </div>
 
                         <p>
-                            Yani aynı denemede tıpatıp aynı netleri çıkaran iki arkadaştan lise ortalaması 95 olanı, lise ortalaması 70 olan arkadaşına tam 15 puan fark atar. Bu fark, orta sıralarda yarışırken 25 bin kişinin üzerinizden atlayıp geçmesi demektir. Ayrıntılarını merak ediyorsanız <Link href="/blog/obp-hesaplama" className="text-blue-600 font-semibold hover:underline">OBP hesaplama rehberimizden</Link> inceleyebilirsiniz.
+                            Aynı denemede tıpatıp aynı neti yapan iki arkadaştan lise ortalaması 95 olanı, lise ortalaması 70 olan arkadaşına tam 15 puan fark atar. Bu fark, orta sıralarda yarışırken binlerce adayın gerisine düşmek demektir.
                         </p>
 
                         <QuickNetSimulator />
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Hangi TYT Neti Sizi Nereye Taşır? Gerçekçi Bant Analizi
+                            Hangi TYT Neti Sizi Nereye Taşır?
                         </h2>
                         <p>
-                            Sadece TYT&apos;ye girip 2 yıllık ön lisans programı hedefleyenler ya da AYT öncesi moral depolamak isteyenler için net aralıklarının kabaca karşılığı şöyledir:
+                            Genel bir fikir vermesi açısından TYT net aralıklarının ortalama karşılığı şöyledir:
                         </p>
 
                         <div className="space-y-4 my-6">
                             <div className="p-5 bg-emerald-50 border border-emerald-200 rounded-xl">
-                                <h3 className="font-bold text-emerald-900 text-lg mb-1">100 - 115 Net Aralığı (Elit Bölge / İlk 10.000)</h3>
+                                <h3 className="font-bold text-emerald-900 text-lg mb-1">100 - 115 Net Aralığı (İlk 10.000 Hedefi)</h3>
                                 <p className="text-sm text-emerald-800 leading-relaxed">
-                                    Bu bantta hata payı neredeyse sıfıra yakındır. Tahmini ham puanınız 435 ile 480 arasında seyreder. Cerrahpaşa Tıp, Boğaziçi Bilgisayar ya da ODTÜ Elektrik-Elektronik gibi ülkenin en yüksek puanlı lisans programlarını hedefleyenlerin TYT basamağında tutunması gereken güvenli liman burasıdır.
+                                    Hata payının minimum olduğu elit banttır. Ham puan tahminen 435 ile 480 arasında seyreder. Tıp, köklü mühendislikler ve Boğaziçi/ODTÜ gibi hedefler için gereken zemin burasıdır.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-blue-50 border border-blue-200 rounded-xl">
-                                <h3 className="font-bold text-blue-900 text-lg mb-1">85 - 100 Net Aralığı (Yüksek Başarı / 10.000 - 50.000)</h3>
+                                <h3 className="font-bold text-blue-900 text-lg mb-1">85 - 100 Net Aralığı (10.000 - 50.000 Bandı)</h3>
                                 <p className="text-sm text-blue-800 leading-relaxed">
-                                    Tahmini puan karşılığı 380 ile 430 puan civarındadır. Köklü devlet üniversitelerinde saygın mühendislikler, Anadolu&apos;daki tıp fakülteleri ve İstanbul Üniversitesi, Ankara Üniversitesi gibi kalburüstü Hukuk fakültelerine göz kırpan adayların ana omurgası burada kümelenir.
+                                    Puan karşılığı kabaca 380 ile 430 arasındadır. Anadolu&apos;daki tıp fakülteleri, saygın hukuk programları ve iyi mühendislikler için çok sağlam bir basamaktır.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-amber-50 border border-amber-200 rounded-xl">
-                                <h3 className="font-bold text-amber-900 text-lg mb-1">70 - 85 Net Aralığı (Kritik Eşik / 50.000 - 140.000)</h3>
+                                <h3 className="font-bold text-amber-900 text-lg mb-1">70 - 85 Net Aralığı (50.000 - 140.000 Eşiği)</h3>
                                 <p className="text-sm text-amber-800 leading-relaxed">
-                                    Karşılığı 330 ile 380 puan aralığıdır. Burası adeta bir dönüm noktasıdır; AYT netleriniz iyiyse sizi ilk 40 bine fırlatabilir, AYT&apos;de tökezlerseniz 100 binin gerisine itebilir. Hemşirelik, mimarlık, orta ölçekli hukuk fakülteleri ve popüler öğretmenlikler bu net havuzundan beslenir.
+                                    Puan aralığı 330 ile 380 civarındadır. AYT netleriniz güçlüyse sizi çok rahat ilk 40 bine taşıyabilir; AYT zayıf kalırsa geriye düşebilirsiniz. Hemşirelik, mimarlık ve popüler öğretmenlikler bu havuzdadır.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-rose-50 border border-rose-200 rounded-xl">
-                                <h3 className="font-bold text-rose-900 text-lg mb-1">50 - 70 Net Aralığı (Büyük Yığılma Havuzu / 140.000 - 450.000)</h3>
+                                <h3 className="font-bold text-rose-900 text-lg mb-1">50 - 70 Net Aralığı (Geniş Yığılma Bölgesi)</h3>
                                 <p className="text-sm text-rose-800 leading-relaxed">
-                                    Tahmini puan 270 ile 330 arasındadır. Sınava giren yüz binlerce adayın birbirinin nefesini ensesinde hissettiği yer burasıdır. Tek bir fazladan fen ya da sosyal neti, bu bölgede adayı tek hamlede 8-10 bin kişi öne geçirebilir. Taşra üniversitelerindeki 4 yıllık fakülteler ile büyükşehirlerdeki gözde 2 yıllık bölümler (Bilgisayar Programcılığı, İlk ve Acil Yardım vb.) bu netlerle öğrenci alır.
+                                    Puan karşılığı 270 ile 330 arasındadır. Yüz binlerce adayın birbirine en yakın puanları aldığı alandır. Burada yapacağınız ekstra 2-3 net sizi bir anda binlerce sıra ileri taşır.
                                 </p>
                             </div>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Hedef Bölümler İçin Masada Olması Gereken Net Senaryoları
+                            Hedef Bölümler İçin Masada Olması Gereken Netler
                         </h2>
                         <p>
-                            &quot;Hocam bana teorik konuşmayın, ben Tıp istiyorum / Hukuk istiyorum, kaç net yapmam gerek?&quot; diyenler için son yılların kazanan profillerini özetleyelim:
+                            Popüler hedeflere yerleşen adayların ortalama net profili şöyledir:
                         </p>
-                        <p>
-                            <strong>Devlet Tıp Fakültesi İçin:</strong> TYT&apos;de en az 98-103 net bandını yakalamak, AYT tarafında ise Matematikten 34-36, Fen Bilimlerinden 33-35 netin altına düşmemek gerekir. Diploma notunuz 90&apos;ın altındaysa bu netlerin üzerine 2-3 net daha eklemek zorundasınız.
-                        </p>
-                        <p>
-                            <strong>Prestijli Bir Bilgisayar / Yazılım Mühendisliği İçin:</strong> TYT&apos;de 90-95 net, AYT Matematikte 31-33 net, AYT Fende 28-31 net bandı sizi ilk 20-30 bin bandına rahatlıkla sokacaktır.
-                        </p>
-                        <p>
-                            <strong>Devlet Hukuk Fakültesi İçin (Eşit Ağırlık):</strong> TYT&apos;de 80-85 net, AYT Matematikte 25-28 net, AYT Edebiyat-Sosyal-1 testinde ise 32-35 net bandı çok kuvvetli bir sıralama getirmeye yeter de artar bile.
-                        </p>
-                        <p>
-                            Gördüğünüz gibi, hiçbir başarı tesadüf değildir ve hiçbir tekil net tek başına mucize yaratmaz. Önemli olan denemelerdeki dalgalanmalara kapılıp paniklemek değil, eksik kaldığınız dersin kazanımına odaklanarak netlerinizi istikrarlı bir şekilde yukarı çekmektir.
-                        </p>
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li><strong>Devlet Tıp Fakültesi:</strong> TYT&apos;de en az 98-102 net; AYT Matematikte 34-36 net, AYT Fende 33-35 net.</li>
+                            <li><strong>Bilgisayar / Yazılım Mühendisliği (İyi Üniversiteler):</strong> TYT&apos;de 90-95 net; AYT Matematikte 30-33 net, AYT Fende 28-32 net.</li>
+                            <li><strong>Devlet Hukuk Fakültesi (Eşit Ağırlık):</strong> TYT&apos;de 80-85 net; AYT Matematikte 25-28 net, AYT Edebiyat-Sosyal-1 testinde 32-35 net.</li>
+                        </ul>
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
                             <h3 className="text-2xl font-bold mb-3">Kendi Netlerinizin Puanını Canlı Görün</h3>

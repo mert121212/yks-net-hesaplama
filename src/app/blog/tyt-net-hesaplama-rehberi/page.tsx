@@ -52,13 +52,13 @@ export default function TYTNetHesaplamaRehberi() {
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Rehber</span>
                             <time className="text-gray-600" dateTime="2026-02-12">12 Şubat 2026</time>
-                            <span className="text-gray-600">• 9 dk okuma</span>
+                            <span className="text-gray-600">• 8 dk okuma</span>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                            TYT Net Hesaplamanın Mantığı: Hangi Derse Ne Kadar Asılmalısınız?
+                            TYT Net Hesaplama Mantığı: Hangi Derse Ne Kadar Asılmalısın?
                         </h1>
                         <p className="text-xl text-gray-600">
-                            Puanın arka planda nasıl hesaplandığını bilmeyen öğrenci, sınavda en zor soruyla inatlaşıp dakikalarını yakar. Test ağırlıkları, standart puan katsayıları ve süre yönetimi sanatı.
+                            Puanın arka planda nasıl işlendiğini bilmeden sınava giren öğrenci, en kazık soruyla dakikalarını yakar. Test ağırlıkları, standart puan katsayıları ve sınav anı stratejisi.
                         </p>
                     </header>
 
@@ -66,22 +66,33 @@ export default function TYTNetHesaplamaRehberi() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Her yıl kasım veya aralık ayı geldiğinde rehberlik odasının kapısı çalınır ve içeri aynı kafa karışıklığıyla bir öğrenci girer: &quot;Hocam, sınıftaki arkadaşım benden 3 net daha az yaptı ama deneme sonuç belgesinde benden 8 puan yukarıda görünüyor. Bu işte bir yanlışlık yok mu?&quot; 
+                            Deneme sınavı bittiğinde koridorda dönen ilk muhabbet hep aynıdır. Herkes eline kırmızı kalemi alır, doğruları yanlışları sayar ve yanındakine döner:
                         </p>
-                        
+                        <p className="border-l-4 border-blue-500 pl-4 italic text-gray-800 font-medium">
+                            — &quot;Ben 74 net yaptım 348 geldi, sen nasıl 71 netle 353 aldın? Bu optik yanlış okunmuş olmasın?&quot;
+                        </p>
                         <p>
-                            Hayır, sistemde hiçbir hata yok. Çünkü TYT sadece &quot;toplam kaç net yaptım&quot; oyunu değildir; o netleri hangi testlerden ve hangi maliyetle topladığınızın stratejik bir muhasebesidir.
+                            Optikte hata falan yok. Sistem gayet tıkır tıkır çalışıyor. Çünkü ÖSYM toplam nete bakıp sıraya dizmiyor adamı. Hangi dersten kaç net kopardığına, o testin o yılki Türkiye ortalamasına ve soru başına harcadığın dakikanın karşılığına bakar.
                         </p>
 
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            100 Taban Puan: Optiği Boş Veren Bile Alıyor mu?
+                        </h2>
                         <p>
-                            ÖSYM sınav sabahı her adaya 100 puanlık bir taban avans verir. Yani optik formunuza sadece T.C. kimlik numaranızı kodlayıp tek bir soruya dokunmadan çıksanız dahi hanenize 100 taban puan yazılır. İşte asıl yarış, bu 100 puanın üstüne koyacağınız 120 soruluk dağılımda başlar.
+                            Sınav sabahı sıraya oturdun. Optik forma adını, soyadını, T.C. kimlik numaranı kodladın. Kitapçığın kapağını bile açmadan sürenin sonunda kağıdı gözetmene teslim ettin.
+                        </p>
+                        <p>
+                            Sonuç belgende ne yazar biliyor musun? Tam 100 puan.
+                        </p>
+                        <p>
+                            ÖSYM sınava giren her adaya bu 100 puanlık avansı peşin verir. Yarış sıfırdan değil, 100 barajından başlar. Senin asıl kavgan, o 100 puanın üstüne 120 sorudan ne kadar ekleyebileceğinle ilgilidir.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             120 Sorunun Arka Planındaki Yüzdeler
                         </h2>
                         <p>
-                            Sınav kağıdındaki testlerin puana dönüşüm oranları aslında son derece berraktır:
+                            Herkesin kafasını karıştıran katsayı meselesi aslında sanıldığı kadar karmaşık değil. Testlerin TYT puanına katkı payları bellidir:
                         </p>
 
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-6 not-prose">
@@ -112,41 +123,56 @@ export default function TYTNetHesaplamaRehberi() {
                         </div>
 
                         <p>
-                            Gördüğünüz gibi Türkçe ve Temel Matematik, sınavın yüzde 66&apos;sını, yani tam üçte ikisini sırtlar. Fakat burada gözden kaçan muazzam bir detay vardır: Fen ve Sosyal testlerindeki soru başına düşen puan değeri, Türkiye geneli ortalamalar daha düşük olduğu için Matematik veya Türkçeden milimetrik olarak daha bile değerli çıkabilmektedir.
+                            Bakın burada çok net bir matematik var: Türkçe ve Matematik tek başlarına sınavın tam üçte ikisini oluşturur. Ama işin püf noktası şu: Fen ve Sosyal testlerinde Türkiye genel ortalaması daha düşük çıktığı için, bir Fen veya Sosyal neti bazen Matematik netinden milimetrik olarak daha fazla puan getirebilir.
                         </p>
 
                         <QuickNetSimulator />
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            En Pahalı Şehir Efsanesi: &quot;Ben Eşit Ağırlıkçıyım, Fene Bakmam&quot;
+                            Pahalı Hata: &quot;Ben Eşit Ağırlığım / Sözelim, Fene Dokunmam&quot;
                         </h2>
                         <p>
-                            Yıllardır öğrencilerimin zihninden silmeye çalıştığım en zararlı ön yargı tam olarak budur. Bir eşit ağırlık öğrencisi düşünün; aylardır geometri çalışıyor, sınav anında o karmaşık üçgen sorusunu çözmek için tam 6 dakikasını gömüyor. Belki buluyor, belki işlem hatası yapıp yanlış işaretliyor. 
+                            Bu ön yargı yüzünden her sene binlerce derece adayı elindeki avantajı çöpe atıyor.
                         </p>
                         <p>
-                            Halbuki optik formun Fen kısmında, lise 9. sınıf düzeyinde &quot;hangisi saf maddedir?&quot; veya &quot;hücre zarından hangisi geçer?&quot; tarzında, sadece 35 saniyede okunup işaretlenebilecek en az 5-6 tane tertemiz bilgi sorusu bekliyor. O 6 dakikada 3 fen sorusunu cebine koysa, getireceği puan o zor matematik sorusunun tam üç katı olacak!
+                            Bir eşit ağırlık öğrencisini düşünelim. Aylarca çalışmış, geometride o karmaşık üçgen sorusuna takılmış. 4 dakika harcıyor, 5 dakika harcıyor, çıkmıyor. Sinirden eli ayağına dolaşıyor. Belki de sonunda yanlış işaretleyip bir de 0,25 net kaybediyor.
                         </p>
                         <p>
-                            TYT&apos;de alan ayrımı diye bir kural yoktur. TYT ortak barajdır. Sayısalcının çözdüğü Din Kültürü sorusuyla Eşit Ağırlıkçının çözdüğü Fizik sorusu aynı havuzda erir. Sahada kolay soru neredeyse, puan avcısı gibi oraya koşmak zorundasınız.
+                            Aynı çocuğun önündeki kitapçıkta 9. sınıf fen bilgisi soruları duruyor.
+                        </p>
+                        <p>
+                            Örneğin: &quot;Aşağıdakilerden hangisi saf maddedir?&quot; veya temel bir hücre zarı sorusu.
+                        </p>
+                        <p>
+                            Okuyup işaretleme süresi 25 saniye. Getirdiği puan ise o 5 dakika harcanan geometri sorusuyla tamamen aynı!
+                        </p>
+                        <p>
+                            TYT&apos;de alan ayrımı falan yoktur. Sayısalcının çözdüğü felsefe sorusu ile sözelcinin çözdüğü fizik sorusu puan havuzunda eşit değere sahiptir. Soru ayrımı yapan öğrenci, sınav masasında bedava puan bırakır.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Sınav Masasında Hayat Kurtaran Turlama Sanatı
+                            165 Dakikayı Yönetmek: İnatlaşan Kaybeder
                         </h2>
                         <p>
-                            TYT asla bir IQ testi değildir; 165 dakikalık bir stres ve kaynak yönetimi müsabakasıdır. ÖSYM size 120 soruyu sakin sakin düşünerek çözün diye değil, baskı altındayken soğukkanlılıkla seçim yapabilme becerinizi tartmak için o süreyi verir.
+                            TYT bir zeka yarışması değildir. TYT, kısıtlı sürede soğukkanlı kalıp en karlı soruları seçebilme sınavıdır.
                         </p>
                         <p>
-                            Bir soruyu açtınız; paragrafı okudunuz ama zihniniz dağıldı, anlamadınız mı? Asla ikinci kez inatlaşıp aynı cümleyi baştan okumayın. Soru numarasının yanına küçük bir daire koyun ve hemen bir sonrakine geçin. İlk 85-90 dakikayı sadece gördüğünüz an &quot;ben bunu tek hamlede çözerim&quot; dediğiniz kolay ve orta soruları avlamaya ayırın.
+                            Diyelim ki 22. sorudasın. Uzun bir Türkçe paragrafı. Okudun, son cümleye geldin ama zihnin dağıldı, hiçbir şey anlamadın.
                         </p>
                         <p>
-                            Böylece sınavın ilk yarısı bittiğinde heybenizde 65-70 tane tertemiz doğru net birikmiş olur. O andan sonra zihninizdeki o boğucu panik duygusu dağılır; geri kalan 75 dakikayı işaretlediğiniz o uğraştırıcı sorulara rahat bir nefesle ayırabilirsiniz. 1. sorudan başlayıp 40. soruya kadar inatlaşarak giden ve 28. soruda süresi bittiği için arkadaki 12 tane basit problemi hiç göremeyen öğrencilerden olmayın.
+                            Burada yapılan klasik hata: Hemen başa dönüp hırsla aynı metni bir daha okumak. İkinci dakikaya girdin, üçüncü dakikaya girdin... O soruyu doğru çözsen bile kaybettin. Çünkü arkadaki iki tane basit matematik sorusunun süresini o paragrafa kurban ettin.
+                        </p>
+                        <p>
+                            Kural çok net: Bir soru 40-45 saniye içinde sana kendini açmıyorsa, soru numarasının yanına küçük bir yuvarlak koy ve hemen sonraki soruya atla.
+                        </p>
+                        <p>
+                            İlk 80-90 dakikayı sadece ilk bakışta &quot;ben bunu tek hamlede çözerim&quot; dediğin basit ve orta sorulara ayır. Heybene 55-60 neti koyduktan sonra arkana yaslan, bir yudum su iç ve işaretlediğin o uğraştırıcı sorulara dön. Zihnin sakinleştiğinde, o takıldığın soruların yarısının aslında ne kadar kolay olduğunu göreceksin.
                         </p>
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
                             <h3 className="text-2xl font-bold mb-3">Netlerinizin TYT Puanını Canlı Görün</h3>
                             <p className="text-blue-100 mb-6 max-w-xl mx-auto">
-                                Deneme sonuçlarınızı katsayı motorumuza girin; hangi testten kaç puan aldığınızı ve Türkiye geneli tahmini yerinizi anında öğrenin.
+                                Deneme netlerinizi katsayı motorumuza girin; hangi testten kaç puan aldığınızı ve Türkiye geneli tahmini yerinizi anında öğrenin.
                             </p>
                             <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
                                 TYT Puanını Hesapla →

@@ -66,18 +66,23 @@ export default function TYTMatematikKonulari() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Her yıl sınav bittiğinde salondan çıkan binlerce adayın ağzından çıkan ilk cümle neredeyse harfi harfine aynıdır: &quot;Hocam sorular aslında çözülemeyecek gibi değildi ama vaktim bitti, geometriye elimi bile süremedim.&quot; Bu serzeniş tesadüf değildir. Çünkü TYT Matematik testi salt bir bilgi sınavı olmaktan çıkalı yıllar oldu. Karşımızdaki test; Türkçe paragrafı okuma hızınızla matematiksel modelleme refleksinizi çarpıştıran, zamana karşı verilen amansız bir kriz yönetimidir.
+                            Sınavdan çıkan hemen her adayın ilk cümlesi neredeyse aynıdır:
                         </p>
-
+                        <p className="border-l-4 border-blue-500 pl-4 italic text-gray-800 font-medium">
+                            — &quot;Sorular aslında aşırı zor değildi ama süre yetmedi, arkadaki geometriye elimi bile süremedim.&quot;
+                        </p>
                         <p>
-                            Eğer masanın başına oturup binlerce sayfalık soru bankalarını baştan sona rastgele çözmeye çalışırsanız, birkaç ay sonra 14-18 net bandına çakılıp kalırsınız. Bu tıkanıklığı aşmanın yolu, ÖSYM&apos;nin son 6 yıllık soru eğilimlerini masaya yatırmak ve hangi net basamağında hangi kaldıraçları devreye sokacağınızı bilmektir.
+                            Durum tam olarak bu. Çünkü TYT Matematik artık klasik formül ezberleyip x&apos;i bulma sınavı olmaktan çıkalı çok oldu. Karşımızdaki test, uzun metinleri hızlıca okuyup matematik diline çevirme ve dakikaları doğru yönetme mücadelesidir.
+                        </p>
+                        <p>
+                            Soru bankalarını baştan sona rastgele çözerek 15 netin üzerine çıkamazsınız. Önce ÖSYM&apos;nin soru havuzunda ağırlığı nereye verdiğini görmek, ardından da kendi net seviyenize uygun reçeteyi uygulamak zorundasınız.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             ÖSYM TYT Matematik Testinde Ne Soruyor? Konu ve Soru Dağılım Haritası
                         </h2>
                         <p>
-                            TYT Matematik testinde toplam 40 soru bulunur. Bu 40 sorunun ortalama 30-31 tanesi temel matematik ve problemlerden, 9-10 tanesi ise geometriden gelir. Son 5 yılın soru dökümü incelendiğinde net bir tablo ortaya çıkar:
+                            TYT Matematik testinde 40 soru bulunur. Bunun yaklaşık 30-31 tanesi temel matematik ve problemlerden, 9-10 tanesi ise geometriden gelir. Son yılların soru dökümü şöyle:
                         </p>
 
                         <div className="overflow-x-auto my-6">
@@ -217,13 +222,13 @@ export default function TYTMatematikKonulari() {
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Turlama Tekniği Olmadan TYT Matematik Çözülmez
+                            Sınavda İnatlaşan Geometriyi Kaçırır: Turlama Mantığı
                         </h2>
                         <p>
-                            Sınav esnasında bir geometri sorusuyla inatlaşıp 6 dakikanızı harcadığınız an, sınavı kaybettiniz demektir. Çünkü o 6 dakikada arkada bekleyen 3 tane çerez seviye temel kavram sorusunu okuyacak vaktiniz kalmaz. TYT Matematikte kural basittir:
+                            Geometride bir üçgen sorusuna takılıp 5-6 dakika harcadığınız an, sınavın arkasında bekleyen iki tane çerez seviye temel kavram sorusunu göremeden süreniz biter.
                         </p>
                         <p>
-                            İlk turda yalnızca ilk 30 saniyesinde çözüm yolunu net gördüğünüz soruları çözün. Çözüm yolu görünmeyen veya işlem kalabalığı hissettiren soruların yanına bir işaret koyup hızla geçin. İlk turda 22-25 soru cepte olduğunda beyninizdeki sınav stresi sıfırlanır; ikinci turda o zor görünen soruların nasıl çözüldüğüne kendiniz bile şaşırırsınız.
+                            Kuralınız çok basit olmalı: İlk 30-40 saniyede size bir kapı aralamayan sorunun yanına küçük bir yuvarlak koyun ve derhal sonrakine geçin. İlk turda heybeye 20-25 neti koyduktan sonra arkaya yaslanıp o işaretlenen sorulara dönün. Panik bittiği için o uğraştırıcı soruların ne kadar kolay çözüldüğüne şaşıracaksınız.
                         </p>
 
                         <div className="my-8">
@@ -231,18 +236,15 @@ export default function TYTMatematikKonulari() {
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Deneme Analizi Yapmayan Aday Sadece Kendini Kandırır
+                            Her Denemeden Sonra Cevaplamanız Gereken 3 Soru
                         </h2>
                         <p>
-                            Denemeyi çözüp sadece &quot;24 doğru 5 yanlış yapmışım, 22.75 netim var&quot; diyerek bir kenara fırlatan aday, bir sonraki denemede de aynı 22.75 neti alacaktır. Çünkü hata analizi yapılmayan deneme, bir öğrenme aracı değil yalnızca boş bir zaman tüketimidir.
-                        </p>
-                        <p>
-                            Her matematik denemesinden sonra şu üç sorunun çetelesini tutun:
+                            Deneme bittiğinde sadece toplam nete bakmak kimseye bir şey kazandırmaz. Asıl mesele o yanlışların kaynağını tespit etmektir:
                         </p>
                         <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                            <li><strong>Bilgi Eksiği mi?</strong> Formülü veya konunun özelliğini mi bilmiyordun? (Hemen konu özetine dön).</li>
-                            <li><strong>Süre Baskısı mı?</strong> Aslında evde tek başına kalsan çözebileceğin bir soru muydu? (Turlama disiplinini gözden geçir).</li>
-                            <li><strong>İşlem / Okuma Hatası mı?</strong> Soru kökündeki &quot;olamaz&quot; ifadesini mi atladın, 4 ile 7&apos;yi toplarken 12 mi yazdın? (Her gün zihinsel odaklanma egzersizi yap).</li>
+                            <li><strong>Konu eksiği mi?</strong> Formülü veya kuralı mı unuttun? (Hemen konu özetine dönüp 10 dakika tekrar et).</li>
+                            <li><strong>Süre baskısı mı?</strong> Evde tek başına çözsen yapabileceğin bir soru muydu? (Demek ki bir önceki soruda gereksiz inatlaşmışsın).</li>
+                            <li><strong>Dikkatsizlik mi?</strong> Soru kökündeki &quot;olamaz&quot; ifadesini mi kaçırdın, basit bir toplama hatası mı yaptın? (Soru çözerken altını çizerek oku).</li>
                         </ul>
 
                         <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-8 my-10 text-center text-white shadow-xl">

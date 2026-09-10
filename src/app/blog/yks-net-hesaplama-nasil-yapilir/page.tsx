@@ -49,15 +49,15 @@ export default function YKSNetHesaplama() {
 
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
-                            <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Rehber</span>
+                            <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Katsayı ve Formüller</span>
                             <time className="text-gray-600" dateTime="2026-02-15">15 Şubat 2026</time>
-                            <span className="text-gray-600">• 10 dk okuma</span>
+                            <span className="text-gray-600">• 8 dk okuma</span>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                            Denemelerde 305 Alan Bir Öğrenci Gerçek Sınavda Nasıl 350 Puan Alır?
+                            YKS Net Hesaplama Nasıl Yapılır? (4 Yanlış Kuralı ve Puan Efsaneleri)
                         </h1>
                         <p className="text-xl text-gray-600">
-                            Doğrulardan yanlışların dörtte birini düşmek işin en kolay kısmı. Asıl muamma o netlerin ÖSYM algoritmasında nasıl puana dönüştüğü. Standart sapma gerçeği ve soru değeri efsaneleri.
+                            Doğrulardan yanlışların dörtte birini çıkarmak işin en basit kısmı. Asıl karmaşa o netlerin ÖSYM sisteminde nasıl puana dönüştüğünde başlıyor.
                         </p>
                     </header>
 
@@ -65,91 +65,172 @@ export default function YKSNetHesaplama() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Geçen yıl ocak ayının ortasında bir öğrencim elinde deneme karnesiyle odaya girdi. Yüzü kireç gibiydi: &quot;Hocam altı aydır nefes almadan soru çözüyorum, netlerim artıyor ama puanım 310&apos;un üstüne bir türlü çıkmıyor. Olmuyor işte, bırakacağım.&quot;
+                            Her deneme sınavı sonrasında rehberlik odasında dönen değişmez bir diyalog vardır:
+                        </p>
+
+                        <div className="bg-slate-100 border-l-4 border-slate-500 p-4 rounded-r-lg text-slate-800 italic text-base my-4">
+                            &quot;Hocam geçen hafta 70 nete 340 puan vermişti dershanenin sistemi. Bu hafta 73 net yaptım, 332 puan geldi. Netim arttı ama puanım düştü, böyle saçmalık olur mu?&quot;
+                        </div>
+
+                        <p>
+                            Olur. Çünkü piyasadaki deneme kulüplerinin ve yayınevlerinin kullandığı yazılımlar genellikle sabit bir katsayı şablonuyla çalışır. Kimi yayınevi 2021&apos;in aşırı zor katsayılarını baz alır, puanı uçurur. Kimi de 2022&apos;nin kolay sınav verilerini koyar, puanı yerin dibine çeker. 
                         </p>
 
                         <p>
-                            Karnesini önüme çektim. Netlerine baktım: Türkçeden 33 net, Temel Matematikten 24 net, AYT Edebiyattan 19 net çıkarmıştı. &quot;Bak&quot; dedim, &quot;çözdüğün bu kurum denemesinin puanlama yazılımı, soruların aşırı zor olduğu 2021 YKS parametreleriyle çalışıyor. Sen bu netleri şu an gerçek sınavda çıkarsan en az 350 puan alırsın, rahat bir nefes al.&quot;
-                        </p>
-
-                        <p>
-                            Nitekim temmuz sabahı sınav sonuç belgesi geldiğinde yerleştirme puanı 354 çıktı ve öğrencim ilk tercihine yerleşti. 
-                        </p>
-
-                        <p>
-                            Öğrencileri en çok yıpratan şey başarısızlık değil; başarılarını nasıl ölçeceklerini bilmemeleridir. Gelin şu net ve puan hesaplama mekanizmasının röntgenini birlikte çekelim.
+                            Gerçekte ise sistem çok net kurallara dayanır. Gelin 4 yanlış kuralından standart sapmanın iç yüzüne kadar her ayrıntıyı basamak basamak konuşalım.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            4 Yanlış 1 Doğruyu Götürür Kuralı Tam Olarak Nasıl İşler?
+                            1. Formülün Temeli: 4 Yanlış 1 Doğruyu Nasıl Götürür?
                         </h2>
                         <p>
-                            ÖSYM&apos;nin temel kuralı çok yalındır: Her yanlış cevabınız, o testteki doğru sayınızdan 0,25 puan siler. Yani 4 yanlış işaretleme yaptığınızda, alın teriyle çözdüğünüz 1 adet tam doğru cevabınız buharlaşıp uçar.
+                            ÖSYM kılavuzundaki kural gayet açıktır: Her testte adayın doğru cevap sayısından, yanlış cevap sayısının dörtte biri çıkarılır ve o testin ham neti elde edilir.
                         </p>
                         
-                        <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl my-6">
-                            <h3 className="font-bold text-slate-900 text-lg mb-2">Net Hesaplama Formülü</h3>
-                            <p className="text-base text-slate-700 font-mono">
-                                Net Sayısı = Doğru Sayısı - (Yanlış Sayısı ÷ 4)
+                        <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-xl my-6">
+                            <h3 className="font-bold text-blue-950 text-lg mb-2">Resmi Net Formülü</h3>
+                            <p className="text-lg text-blue-900 font-mono font-semibold">
+                                Net = Doğru Sayısı - (Yanlış Sayısı ÷ 4)
                             </p>
-                            <p className="text-sm text-slate-600 mt-2">
-                                Örneğin Matematik testinde 26 doğru ve 6 yanlış yaptıysanız: 6 ÷ 4 = 1,5 doğru gider. Netiniz tam olarak <strong>24,50</strong> olur.
+                            <p className="text-sm text-blue-800 mt-2">
+                                Her 1 yanlış cevap = <strong>-0,25 net</strong> demektir. 
+                                Yani 1 yanlış yaptığınızda aslında sadece o soruyu kaybetmezsiniz; hanenizdeki doğrunun çeyreğini de feda edersiniz.
                             </p>
                         </div>
 
                         <p>
-                            Burada adayların zihnini bulandıran devasa bir şehir efsanesi vardır: &quot;Matematikteki yanlışım Türkçedeki doğrumu siler mi?&quot; Kesinlikle hayır! Her test bağımsız bir adadır. Türkçenin yanlışı Türkçeyi, Kimyanın yanlışı Kimyayı götürür. Hiçbir dersin yanlışı komşu dersin doğrusuna dokunamaz.
+                            Somut bir örnek üzerinden gidelim:
                         </p>
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>TYT Türkçe: 32 Doğru, 8 Yanlış işaretlediniz.</li>
+                            <li>8 ÷ 4 = 2 doğru silinir.</li>
+                            <li>Kalan netiniz: 32 - 2 = <strong>30,00 Net</strong>.</li>
+                        </ul>
+
                         <p>
-                            Ve en önemlisi: Boş bırakılan bir soru size asla ceza puanı getirmez. Hakkında en ufak bir fikriniz olmayan bir soruyu şans eseri sallamak yerine boş bırakmak, her zaman netinizi koruyan en akıllıca hamledir.
+                            Peki 5 yanlış yaparsanız ne olur? 5 ÷ 4 = 1,25 doğru silinir. Küsurlu netler buradan doğar (örneğin 28,75 net).
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Büyük Efsane: &quot;Zor Soru Daha Çok Puan Getirir&quot; Yalanı
+                            2. &quot;Matematik Yanlışım Türkçedeki Doğrumu Siler mi?&quot;
                         </h2>
                         <p>
-                            Sınava hazırlanan gençlerin neredeyse tamamı şu yanılgıya inanır: &quot;TYT Matematik&apos;teki o 5 satırlık karmaşık olasılık sorusunu çözersem bana 5 puan gelir, baştaki basit rasyonel sayı sorusu ise 1 puan getirir.&quot;
+                            Cevap çok net: <strong>Hayır, kesinlikle silemez.</strong>
                         </p>
                         <p>
-                            Bu kocaman bir yalandır. ÖSYM&apos;nin hesaplama algoritmasında <strong>soru bazlı standart sapma yoktur</strong>. Matematik testindeki en kolay 1. soru ile Türkiye&apos;nin sadece yüzde 1&apos;inin çözebildiği o dehşet verici geometri sorusu size kuruşu kuruşuna <strong>aynı puanı</strong> kazandırır!
+                            ÖSYM sisteminde her test kendi kapalı havuzudur. 
                         </p>
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>Türkçe testindeki yanlışlar yalnızca Türkçedeki doğruları götürür.</li>
+                            <li>Matematikteki yanlışlar yalnızca Temel Matematik testini bağlar.</li>
+                            <li>Sosyal Bilimler testinde 0 doğru 5 yanlış yapsanız dahi netiniz en fazla <strong>0,00</strong> olarak kalır, eksiye düşmez ve diğer derslerin doğrularına asla dokunmaz.</li>
+                        </ul>
                         <p>
-                            Standart sapma soru bazında değil, <strong>test bazında</strong> hesaplanır. Yani o yıl Matematik testi Türkiye genelinde felaket derecede zor geçmiş ve ortalama 5 nete düşmüşse; o testin genel standart sapma katsayısı yükselir ve o testten çözdüğünüz her bir net (kolay ya da zor fark etmeksizin) daha değerli hale gelir.
-                        </p>
-                        <p>
-                            Bu yüzden sınav salonunda bir soruyla inatlaşıp 4 dakikanızı gömmeyin. O zor soru için harcayacağınız sürede arkadaki 2 tane basit soruyu çözün; hanenize iki kat daha fazla puan yazdırın.
+                            Dolayısıyla &quot;aman matematikte çok yanlış yaparsam Türkçe netlerim erir&quot; korkusu tamamen asılsızdır.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Derslerin Katsayı Karşılaştırması: Şaşırtıcı Sonuç
+                            3. En Büyük Yanılgı: &quot;Zor Soru Daha Çok Puan Getirir mi?&quot;
                         </h2>
                         <p>
-                            TYT&apos;de Türkçe ve Matematik sorularının getirdiği ham puan yaklaşık 1,32 ile 1,34 puan bandındadır. Fen ve Sosyal testlerinin net başına getirisi ise yaklaşık 1,36 puandır.
+                            Bu, sınava hazırlanan öğrencilerin en az %80&apos;inin inandığı devasa bir şehir efsanesidir. Birçok öğrenci TYT Matematik&apos;teki o yarım sayfalık yeni nesil olasılık sorusunu çözerse 5 puan, baştaki basit işlem sorusunu çözerse 1 puan alacağını zanneder.
                         </p>
                         <p>
-                            Evet, doğru okudunuz. Türkiye genelinde Fen ve Sosyal ortalamaları daha düşük kaldığı için, o testlerdeki tek bir net puan olarak Türkçeden milimetrik olarak daha bile avantajlı olabilmektedir. &quot;Ben Sayısalcıyım Tarihe bakmam&quot; ya da &quot;Ben Eşit Ağırlıkçıyım Kimya çözmem&quot; diyen öğrenciler, bedava puanları masada bırakıp sonra sınav sonucunda hayal kırıklığına uğrarlar.
+                            Gerçek durum şudur: <strong>ÖSYM soru bazlı puanlama yapmaz.</strong>
+                        </p>
+                        <p>
+                            Aynı testin içindeki 1. soru ile 40. sorunun puan değeri kuruşu kuruşuna aynıdır. Türkiye genelinde sadece 500 kişinin doğru yaptığı geometri sorusu ile herkesin 10 saniyede çözdüğü toplama çıkarma sorusu, TYT ham puanınıza birebir aynı katkıyı verir.
+                        </p>
+                        <p>
+                            Standart sapma <strong>soru bazında değil, test bazında</strong> hesaplanır. Yani o yıl Matematik testi Türkiye genelinde çok zor geçmişse ve Türkiye ortalaması 5 nete düşmüşse, Matematik testinin genel katsayısı yükselir. Ama o testin içindeki soruların kendi aralarında puan hiyerarşisi yoktur.
+                        </p>
+                        <p>
+                            Bu gerçeği bilmek sınav stratejinizi doğrudan değiştirir: 1 zor soruyla 5 dakika inatlaşmak yerine, o sürede 3 tane kolay soru çözmek size 3 kat fazla puan kazandırır.
                         </p>
 
-                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
-                            <h3 className="text-2xl font-bold mb-3">Netlerinizi Güncel Katsayılarla Hesaplayın</h3>
-                            <p className="text-blue-100 mb-6 max-w-xl mx-auto">
-                                Deneme doğru ve yanlışlarınızı girin; ÖSYM&apos;nin güncel standart sapma ve katsayı modellerine göre gerçek sınav puanınızı anında görün.
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            4. TYT ve AYT&apos;de Yaklaşık Net Katsayıları Ne Durumda?
+                        </h2>
+                        <p>
+                            ÖSYM her yıl sınav tamamlandıktan sonra adayların ortalama netlerine göre standart sapma hesaplar. Bu nedenle virgülden sonraki küsuratlar yıldan yıla ufak dalgalanmalar gösterir. Ancak genel ortalamalar bize çok net bir çerçeve sunar:
+                        </p>
+
+                        <div className="overflow-x-auto my-6">
+                            <table className="w-full text-left border-collapse border border-gray-200">
+                                <thead className="bg-gray-100 text-gray-800 text-sm">
+                                    <tr>
+                                        <th className="p-3 border">Test</th>
+                                        <th className="p-3 border">Soru Sayısı</th>
+                                        <th className="p-3 border">1 Netin Yaklaşık TYT Puan Değeri</th>
+                                        <th className="p-3 border">Yerleştirmeye Katkısı</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-sm">
+                                    <tr className="border-b">
+                                        <td className="p-3 font-semibold border">TYT Türkçe</td>
+                                        <td className="p-3 border">40</td>
+                                        <td className="p-3 border">~1,32 - 1,34 Puan</td>
+                                        <td className="p-3 border">Tüm puan türlerini etkiler</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-semibold border">TYT Temel Matematik</td>
+                                        <td className="p-3 border">40</td>
+                                        <td className="p-3 border">~1,33 - 1,35 Puan</td>
+                                        <td className="p-3 border">Tüm puan türlerini etkiler</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-semibold border">TYT Sosyal Bilimler</td>
+                                        <td className="p-3 border">20</td>
+                                        <td className="p-3 border">~1,35 - 1,37 Puan</td>
+                                        <td className="p-3 border">Tüm puan türlerini etkiler</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-semibold border">TYT Fen Bilimleri</td>
+                                        <td className="p-3 border">20</td>
+                                        <td className="p-3 border">~1,36 - 1,38 Puan</td>
+                                        <td className="p-3 border">Tüm puan türlerini etkiler</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>
+                            Fark ettiyseniz TYT Fen ve Sosyal netlerinin getirisi en az Türkçe ve Matematik kadardır, hatta Türkiye ortalaması daha düşük kaldığı yıllarda milimetrik olarak daha fazla puan getirir. Bu yüzden &quot;Ben Eşit Ağırlıkçıyım, Fen&apos;e bakmam&quot; ya da &quot;Sayısalcıyım, Tarih ve Coğrafya ile uğraşmam&quot; tavrı, bedava puanları çöpe atmaktan farksızdır.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            5. Bilmediğin Soruyu Sallamalı mısın? (Rasyonel Hesap)
+                        </h2>
+                        <p>
+                            İki şıkka indiremediğiniz hiçbir soruyu rastgele işaretlemeyin. 
+                        </p>
+                        <p>
+                            5 seçenekli bir sınavda körlemesine salladığınızda tutturma ihtimaliniz %20&apos;dir. Kaybetme ihtimaliniz ise %80. Dört defa böyle kumar oynadığınızda istatistiki olarak 1 doğru 3 yanlış yaparsınız ve elinizde kalan net <strong>0,25 net</strong> gibi komik bir rakam olur. Çoğu zaman da 4 yanlış yapıp cepteki 1 tam doğrunuzu kaybedersiniz.
+                        </p>
+                        <p>
+                            Fakat iki şık arasında kaldıysanız, yani ihtimal %50&apos;ye yükselmişse, o zaman mantığınıza en yakın gelen şıkkı işaretlemek uzun vadede beklenen değeri pozitif bir hamledir.
+                        </p>
+
+                        <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-8 my-10 text-center text-white shadow-lg">
+                            <h3 className="text-2xl font-bold mb-3">Doğru ve Yanlışlarınızı Girin, Net Puanınızı Görün</h3>
+                            <p className="text-blue-100 mb-6 max-w-xl mx-auto text-sm">
+                                Gelişmiş hesaplama aracımız, ÖSYM&apos;nin güncel standart sapma algoritmalarını simüle ederek gerçek sınav puanınızı ve tahmini sıralama bandınızı hesaplar.
                             </p>
-                            <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
-                                YKS Net ve Puan Hesapla →
+                            <Link href="/" className="inline-block bg-white text-blue-700 px-8 py-3.5 rounded-xl font-bold hover:bg-blue-50 transition-colors shadow">
+                                YKS Net ve Puanını Hesapla →
                             </Link>
                         </div>
 
                         <div className="border-t pt-8 mt-10">
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">İlginizi Çekebilecek İpuçları</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Sıradaki Okuma Önerileri</h3>
                             <div className="grid md:grid-cols-2 gap-4">
-                                <Link href="/blog/yks-1-net-kac-kisi-atar" className="p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
+                                <Link href="/blog/yks-1-net-kac-kisi-atar" className="p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors border border-blue-100">
                                     <p className="font-semibold text-blue-900">1 Net Kaç Kişi Öne Atar? →</p>
-                                    <p className="text-xs text-gray-600 mt-1">Yığılma bölgelerinde tek bir doğru cevabın inanılmaz etkisi.</p>
+                                    <p className="text-xs text-gray-600 mt-1">Yığılma bölgelerinde tek bir doğru cevabın getirdiği sıra sıçraması.</p>
                                 </Link>
-                                <Link href="/blog/tyt-net-hesaplama-rehberi" className="p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
-                                    <p className="font-semibold text-purple-900">TYT Net Hesaplama Rehberi →</p>
-                                    <p className="text-xs text-gray-600 mt-1">TYT testlerinin ağırlıkları ve turlama stratejisi detayları.</p>
+                                <Link href="/blog/yks-kac-net-kac-puan" className="p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors border border-purple-100">
+                                    <p className="font-semibold text-purple-900">YKS Kaç Net Kaç Puan Getirir? →</p>
+                                    <p className="text-xs text-gray-600 mt-1">300, 400 ve 450 puan hedefleri için gereken gerçek net tabloları.</p>
                                 </Link>
                             </div>
                         </div>

@@ -51,13 +51,13 @@ export default function TYTKesinCikanKonular() {
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium">Özel Analiz</span>
                             <time className="text-gray-600" dateTime="2026-02-11">11 Şubat 2026</time>
-                            <span className="text-gray-600">• 12 dk okuma</span>
+                            <span className="text-gray-600">• 8 dk okuma</span>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                            Vakti Daralan Adaylara Hayat Kurtaran Reçete: ÖSYM&apos;nin Asla Vazgeçemediği TYT Konuları
+                            Vakti Dar Olanlara: TYT&apos;de Her Sene Banko Çıkan Konular
                         </h1>
                         <p className="text-xl text-gray-600">
-                            Müfredatta 80 küsur konu var ama ÖSYM soru havuzunun yarısından fazlasını her sene aynı 25-30 başlıktan doldurur. Sınava 3-4 ay kala netlerinizi roket gibi fırlatacak avcı stratejisi.
+                            Müfredatta onlarca konu başlığı var ama ÖSYM soru kitapçığında her sene aynı garanti başlıklar yer alıyor. Masada puan bırakmak istemeyenler için net odaklı konu haritası.
                         </p>
                     </header>
 
@@ -65,72 +65,77 @@ export default function TYTKesinCikanKonular() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Yıllardır sınav sektöründe çalışan biri olarak size açık açık söyleyeyim: Sınava hazırlanan öğrencilerin en az yüzde 70&apos;i enerjisinin büyük kısmını ÖSYM&apos;nin son 10 yılda neredeyse hiç soru sormadığı konulara gömerek heba eder. Kalın konu anlatım kitabını açar, birinci sayfadan başlar, son sayfaya doğru koşar. Çünkü vicdan rahatlığı ister; &quot;Ben her şeyi gördüm&quot; demek ister.
-                        </p>
-
-                        <p>
-                            Ama gerçek şudur: ÖSYM&apos;nin soru hazırlama komisyonu alışkanlık canavarıdır. TYT&apos;de yıldan yıla değişen soru tipleri olsa da omurga konuları taş gibi sabittir. Sınava kısa süre kaldıysa ve netleriniz hâlâ 45-55 bandında sürünüyorsa, yapmanız gereken şey kitabı kapatıp şu aşağıdaki altın konulara odaklanmaktır.
-                        </p>
-
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            TYT Türkçe: 40 Sorunun 30&apos;unu Getiren Üç Sütun
-                        </h2>
-                        <p>
-                            Türkçe testinde 40 soru vardır ve bunların ezici çoğunluğu dil bilgisi kurallarını ezberlemenizi değil, okuduğunuz metni süzme kapasitenizi yoklar.
+                            Sınava hazırlanırken yapılan en klasik hata, 500 sayfalık konu anlatım kitabını 1. sayfadan açıp sırayla okumaya çalışmaktır.
                         </p>
                         <p>
-                            <strong>Paragrafta Ana Düşünce ve Yardımcı Düşünceler:</strong> Son 7 yılda istisnasız her sınavda 12 ile 14 arası soru bu başlıktan geldi. Paragrafın ilk cümlesinde ya da son cümlesinde gizlenen ana fikri bulmak, destekleyici ifadeleri ayıklamak ve yazarın tavrını sezmek... Bunlar için soru bankası değil, her gece 20 tane ALES ya da KPSS tarzı paragraf sorusu çözmek gerekir. Çünkü bu soruların hızı ancak günlük pratikle kazanılır.
+                            Vicdan rahatlatır, evet. &quot;Ben her konuya baktım&quot; dersiniz. Ama verim açısından tam bir zaman kaybıdır.
                         </p>
                         <p>
-                            <strong>Sözcükte ve Cümlede Anlam:</strong> Her sınavda 6 ile 8 arasında soruyla karşılaşırsınız. Altı çizili sözün cümleye kattığı anlamı bulma, boşluk doldurma ve deyim-atasözü yorumlama soruları bu gruptan gelir. Mantık yürütmeye dayalı sorulardır; ezbere ihtiyaç duymadan çözülebilir.
+                            Çünkü ÖSYM&apos;nin 120 soruluk sınavında bazı konular vardır ki son 7-8 yıldır istisnasız her Haziran ayında masaya konur. Bazı konular da vardır ki 3-4 yılda bir belki tek bir soru gelir.
                         </p>
                         <p>
-                            <strong>Noktalama ve Yazım Kuralları:</strong> Dil bilgisi bölümünün en kârlı 4 sorusu burasıdır. Virgülün nerelerde kullanılamayacağını, &quot;ki&quot; ve &quot;de&quot; bağlacının bitişik mi ayrı mı yazılacağını ve büyük harf kurallarını öğrenmek tek bir akşam sürer; getirisi ise sınav boyunca 4 garantili doğrudur.
+                            Zamanınız kısıtlıysa veya netlerinizi hızlıca 60-70 bandına çekmek istiyorsanız, enerjinizi dağıtmayacaksınız. Önce ÖSYM&apos;nin asla vazgeçmediği bu kemik konuları cebe indireceksiniz:
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            TYT Matematik: 40 Sorudan 20&apos;sini Avlayacak Üç Konu Ailesi
+                            TYT Türkçe: 40 Sorunun 30&apos;unu Sırtlayan 3 Başlık
                         </h2>
                         <p>
-                            Matematik kelimesini duyunca midesi kramp atan öğrencilere müjde: TYT Matematikte 40 sorunun yaklaşık yarısı aslında sadece 3 ana konu şemsiyesinin altında toplanır.
+                            Türkçe testinde başarının sırrı dil bilgisi kurallarını ezberlemekten değil, okuduğunu seri şekilde süzmekten geçer.
                         </p>
                         <p>
-                            <strong>Temel Kavramlar ve Sayı Basamakları:</strong> ÖSYM her sene tek-çift sayı mantığı, ardışık sayılar ve EBOB-EKOK&apos;tan en az 4-5 soru sorar. Bu soruların büyük kısmı işlem değil, mantık sorusudur; harfli ifade verilir ve siz özelliklerinden yola çıkarak çıkarırsınız. Kuralları bir kez çözen öğrenci bunları asla kaçırmaz.
+                            <strong>Paragrafta Ana Düşünce ve Yardımcı Düşünceler (12-14 Soru):</strong> Sınavın en büyük soru bloğudur. Her gün aksatmadan 20 paragraf sorusu çözmek, bu soruları sınav anında rahatça yakalamanızı sağlar.
                         </p>
                         <p>
-                            <strong>Problemler (Sayı, Kesir, Yüzde, Hız, Yaş):</strong> Tam 10 ile 13 arası soru! Matematiğin neredeyse üçte biri tek bir başlık altında toplanır. Günde en az 20 yeni nesil problem çözmeyen bir adayın TYT Matematikten 20 netin üstüne çıkması fiziksel olarak mümkün değildir. Problem çözme hızınız ancak günlük tekrarla gelişir; hafta sonlarına bırakırsanız o kas asla güçlenmez.
+                            <strong>Sözcükte ve Cümlede Anlam (6-8 Soru):</strong> Boşluk doldurma, altı çizili ifadenin anlamı ve cümle tamamlama. Ezber değil, tamamen mantık yürütme sorularıdır.
                         </p>
                         <p>
-                            <strong>Üslü ve Köklü İfadeler:</strong> Kuralları belldir, şıkları standarttır, genelde bir kutu veya tablo verip içine sayı yerleştirmenizi isterler. Biraz pratikle 2-3 soru kolaylıkla alınır.
+                            <strong>Yazım Kuralları ve Noktalama İşaretleri (4 Soru):</strong> Dil bilgisinin en karlı bölümüdür. Virgülün kullanılmadığı yerler, &quot;de/da&quot; ve &quot;ki&quot; yazımı, büyük harf kuralları... Çalışması 1-2 akşam sürer ama sınavda 4 garanti net getirir.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            TYT Fen Bilimleri: Sayısalcı Olmasanız Bile Altın Tepside 9 Net
+                            TYT Matematik: 20 Netin Kapısını Açan Çekirdek Konular
                         </h2>
                         <p>
-                            Eşit Ağırlık ve Sözel öğrencileri bu bölümü okurken lütfen dikkatinizi verin; çünkü burada anlatacağım konular 9. sınıf düzeyinde ve saf ezberdir. Fen formülü çözmeniz gerekmez; sadece kavramları bilmeniz yeterlidir.
+                            Matematikte gözünüz korkmasın. 40 sorunun neredeyse yarısı şu 3 ana başlıktan toplanır:
                         </p>
                         <p>
-                            <strong>Biyoloji - Hücre ve Canlıların Ortak Özellikleri:</strong> Her sene 2 tane banko soru gelir. Mitoz ile Mayozu karşılaştıran basit bir tablo hazırlayın, hücre organellerinin görevlerini bir post-it&apos;e yazıp masanıza yapıştırın. Sabah kahvaltısında her gün göz gezdirin; 2 net cebinizde.
+                            <strong>Problemler (11-13 Soru):</strong> Sayı, kesir, yüzde, hız ve yaş problemleri. Matematiğin omurgasıdır. Günde en az 15 problem çözmeden TYT Matematikte 20 netin üzerine çıkamazsınız.
                         </p>
                         <p>
-                            <strong>Kimya - Madde Özellikleri ve Periyodik Tablo:</strong> Fiziksel ve kimyasal değişim ayrımı, atom modelleri, periyodik tablodaki eğilimler (elektronegatiflik, atom çapı). Bir hafta akşamları 30 dakikalık okumalarla bu netler garanti edilir.
+                            <strong>Temel Kavramlar ve Sayı Basamakları (4-5 Soru):</strong> Tek-çift sayı yorumları, basamak kavramı ve temel bölünebilme kuralları. Soru tiplerini kavradığınızda kaçırılmayacak sorulardır.
                         </p>
                         <p>
-                            <strong>Fizik - Optik ve Isı-Sıcaklık:</strong> TYT Fizikte formül sormazlar; kavram yanılgılarınızı yoklarlar. Isı ile sıcaklığın farkını, yansıma kanunlarını ve günlük hayattaki optik olayları (gökkuşağı oluşumu, aynalarda görüntü) kavrayan öğrenci bu 2-3 soruyu tertemiz alır.
+                            <strong>Üslü ve Köklü Sayılar (2-3 Soru):</strong> Kuralları standarttır; genelde günlük hayattan bir tartı veya cetvel görseli üzerinden yaklaşık değer bulmanız istenir.
                         </p>
 
-                        <div className="bg-slate-50 border-l-4 border-red-500 p-6 rounded-r-xl my-8">
-                            <h3 className="font-bold text-slate-900 mb-2">Peki Diğer Konulara Hiç Mi Bakılmaz?</h3>
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            TYT Fen: Sayısalcı Olmasanız Bile Cepte 6-8 Net
+                        </h2>
+                        <p>
+                            Eşit Ağırlık ve Sözel öğrencileri için fen testindeki 9. sınıf soruları bulunmaz nimettir. Formül gerekmez, temel kavramı bilmek yeterlidir:
+                        </p>
+                        <p>
+                            <strong>Biyoloji - Hücre ve Canlıların Ortak Özellikleri (2 Soru):</strong> Organellerin görevleri, hücre zarı geçişleri ve temel sınıflandırma. 2-3 sayfalık bir özetle bu 2 net cebe konur.
+                        </p>
+                        <p>
+                            <strong>Kimya - Periyodik Tablo ve Maddenin Halleri (2 Soru):</strong> Fiziksel ve kimyasal değişimler, periyodik sistem özellikleri. Çok rahat toplanan netlerdir.
+                        </p>
+                        <p>
+                            <strong>Fizik - Isı, Sıcaklık ve Madde-Özkütle (2 Soru):</strong> Günlük hayat mantığıyla sorulur; ısı ile sıcaklık kavram farkı ve kaldırma kuvveti mantığı.
+                        </p>
+
+                        <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl my-8">
+                            <h3 className="font-bold text-slate-900 mb-2">Peki Diğer Konulara Hiç mi Bakılmayacak?</h3>
                             <p className="text-sm text-slate-700 leading-relaxed">
-                                Hedefiniz ilk 10.000 ise elbette müfredatın tamamına hakim olmanız gerekir. Ancak sıralamanız 80 bin ile 200 bin arasında geziniyorsa ve sınava birkaç ay kaldıysa, önceliğiniz yukarıdaki listeyi eksiksiz tamamlamak olmalıdır. Bu konulardan soru kaçırmayacak düzeye geldikten sonra, kalan vakitinizle ince detay konulara geçebilirsiniz.
+                                Hedefiniz ilk 10.000 ise elbette tüm müfredatı taramanız gerekir. Ancak amacınız önce 60-70 net barajına sağlam basmaksa, önceliğiniz kesinlikle bu kemik liste olmalıdır. Buradaki sorularda fire vermemeye başladıktan sonra kalan zamanınızı detay konulara ayırabilirsiniz.
                             </p>
                         </div>
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
-                            <h3 className="text-2xl font-bold mb-3">Banko Listeyi Tamamladığınızda Kaç Net Yaparsınız?</h3>
+                            <h3 className="text-2xl font-bold mb-3">Bu Konuları Bitirdiğinizde Kaç Net Gelir?</h3>
                             <p className="text-blue-100 mb-6 max-w-xl mx-auto">
-                                Yukarıdaki konuları sağlam tuttuğunuzda elde edeceğiniz tahmini 55-65 neti hesaplama aracımıza girin ve Türkiye genelinde hangi sıralamaya tekabül ettiğini görün.
+                                Garanti konuları tamamlayıp alacağınız tahmini 55-65 neti hesaplama motorumuza girin ve güncel katsayılarla sıralamanızı canlı görün.
                             </p>
                             <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
                                 Tahmini Sıralamanızı Görün →
