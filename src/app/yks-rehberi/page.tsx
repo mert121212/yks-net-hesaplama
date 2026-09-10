@@ -1,10 +1,10 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { Calculator, BookOpen, Target, TrendingUp, CheckCircle, Clock, Users, Award } from 'lucide-react'
+import { Calculator, BookOpen, Target, TrendingUp, CheckCircle, Clock, Award } from 'lucide-react'
 
 export const metadata: Metadata = {
-    title: '2027 YKS Rehberi: Puan Hesaplama, Soru Dağılımı ve Başarı Stratejileri',
-    description: 'YKS 2027 sınavı için kapsamlı rehber. TYT AYT net hesaplama, puan türleri, OBP etkisi, baraj bilgisi ve başarı stratejileri. Güncel ve doğru bilgilerle hazırlanın.',
+    title: '2027 YKS Rehberi: Puan Hesaplama, Soru Dağılımı ve Sınav Stratejileri',
+    description: 'YKS 2027 için kılavuz niteliğinde bağımsız rehber. TYT-AYT katsayıları, 0,5 net kuralı, kırık OBP hesabı, başarı sırası barajları ve turlama taktiği.',
     keywords: 'YKS 2027 rehberi, YKS net hesaplama, TYT net hesaplama, AYT net hesaplama, YKS puan hesaplama, OBP hesaplama, YKS başarı stratejileri',
     alternates: { canonical: 'https://yksnethesapla.com/yks-rehberi' },
 }
@@ -13,376 +13,327 @@ export default function YKSRehberiPage() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                
                 {/* Hero */}
-                <div className="text-center mb-12">
-                    <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                        2027 YKS Rehberi
+                <header className="text-center mb-12">
+                    <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full mb-3">
+                        2027 YKS Hazırlık &amp; Strateji Rehberi
+                    </span>
+                    <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
+                        YKS 2027 Yol Haritası: Puanlar, Katsayılar ve Sınav Masası Gerçekleri
                     </h1>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-                        Puan hesaplama mantığı, güncel sınav yapısı ve başarıya giden stratejik adımlar.
-                        2027 YKS sınavına hazırlanırken ihtiyacınız olan tüm doğru bilgiler burada.
+                    <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+                        ÖSYM kılavuzundaki bürokratik maddeleri bir kenara bırakın. Masada netlerinizi puana, puanınızı da hedeflediğiniz üniversite sıralamasına dönüştürecek tüm kuralları tek sayfada topladık.
                     </p>
                     <Link
                         href="/"
-                        className="inline-flex items-center bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors"
+                        className="inline-flex items-center gap-2 bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-700 transition-all shadow-md hover:shadow-lg"
                     >
-                        <Calculator className="h-5 w-5 mr-2" />
-                        Net Hesaplama Aracını Kullan
+                        <Calculator className="h-5 w-5" />
+                        Net Hesaplama Motorunu Aç →
                     </Link>
-                </div>
+                </header>
 
-                {/* İçindekiler */}
-                <div className="bg-white rounded-xl shadow-lg p-8 mb-12">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-6">İçindekiler</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="space-y-2">
-                            <a href="#puan-hesaplama" className="block text-primary-600 hover:text-primary-700">1. YKS Puanı Nasıl Hesaplanır?</a>
-                            <a href="#soru-dagilimi" className="block text-primary-600 hover:text-primary-700">2. 2027 Soru Dağılımı ve Test Yapısı</a>
-                            <a href="#obp" className="block text-primary-600 hover:text-primary-700">3. OBP Etkisi</a>
-                            <a href="#baraj" className="block text-primary-600 hover:text-primary-700">4. Baraj Puanı Hakkında Doğru Bilgi</a>
-                        </div>
-                        <div className="space-y-2">
-                            <a href="#puan-turleri" className="block text-primary-600 hover:text-primary-700">5. Puan Türleri</a>
-                            <a href="#stratejiler" className="block text-primary-600 hover:text-primary-700">6. Başarı Stratejileri</a>
-                            <a href="#sss" className="block text-primary-600 hover:text-primary-700">7. Sıkça Sorulan Sorular</a>
-                        </div>
+                {/* Hızlı İçindekiler */}
+                <div className="bg-white rounded-2xl shadow-sm border border-gray-200/80 p-6 sm:p-8 mb-10">
+                    <h2 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                        <span>📑</span> Bu Rehberde Neler Var?
+                    </h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                        <a href="#puan-hesaplama" className="p-2.5 rounded-lg bg-gray-50 hover:bg-blue-50 hover:text-blue-700 text-gray-700 font-medium transition-colors">
+                            1. Netler Puana Nasıl Dönüşür? (Formül &amp; 4 Yanlış Kuralı)
+                        </a>
+                        <a href="#soru-dagilimi" className="p-2.5 rounded-lg bg-gray-50 hover:bg-blue-50 hover:text-blue-700 text-gray-700 font-medium transition-colors">
+                            2. TYT ve AYT Soru Dağılımları (Oturumlar)
+                        </a>
+                        <a href="#obp" className="p-2.5 rounded-lg bg-gray-50 hover:bg-blue-50 hover:text-blue-700 text-gray-700 font-medium transition-colors">
+                            3. OBP Çarpanı ve Kırık OBP Felaketi
+                        </a>
+                        <a href="#baraj" className="p-2.5 rounded-lg bg-gray-50 hover:bg-blue-50 hover:text-blue-700 text-gray-700 font-medium transition-colors">
+                            4. Baraj Puanı Kalktı mı? (0,5 Net Kuralı)
+                        </a>
+                        <a href="#baraj-siralama" className="p-2.5 rounded-lg bg-gray-50 hover:bg-blue-50 hover:text-blue-700 text-gray-700 font-medium transition-colors">
+                            5. Tıp, Hukuk ve Mühendislik Başarı Sırası Şartı
+                        </a>
+                        <a href="#stratejiler" className="p-2.5 rounded-lg bg-gray-50 hover:bg-blue-50 hover:text-blue-700 text-gray-700 font-medium transition-colors">
+                            6. Masada Kazandıran 4 Taktik
+                        </a>
                     </div>
                 </div>
 
                 {/* 1. Puan Hesaplama */}
-                <section id="puan-hesaplama" className="bg-white rounded-xl shadow-lg p-8 mb-12">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-                        <Calculator className="h-8 w-8 text-primary-600 mr-3" />
+                <section id="puan-hesaplama" className="bg-white rounded-2xl shadow-sm border border-gray-200/80 p-6 sm:p-8 mb-10">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                        <Calculator className="h-7 w-7 text-blue-600" />
                         1. YKS Puanı Nasıl Hesaplanır?
                     </h2>
-                    <p className="text-gray-600 mb-6 text-lg">
-                        YKS puanı hesaplanırken temel kural, netlerinizin katsayılarla çarpılması ve üzerine
-                        OBP (Ortaöğretim Başarı Puanı) eklenmesidir. Standart sapma her yıl değişse de
-                        temel net hesaplama formülü sabittir.
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                        Sınavdan çıktığınızda yaptığınız ilk hata doğru ve yanlışları alt alta toplayıp ortalama bir sayı uydurmaktır. ÖSYM sisteminde işlem iki basamakta yürür: Önce ham netiniz bulunur, ardından her testin o yılki standart sapma katsayısıyla çarpılıp 100 taban puanının üzerine eklenir.
                     </p>
 
-                    <h3 className="text-xl font-semibold text-gray-900 mb-4">Net Hesaplama Formülü</h3>
-                    <div className="bg-gray-50 p-6 rounded-lg mb-6 text-center">
-                        <p className="font-mono text-xl font-bold text-gray-800">
-                            Net = Doğru Sayısı − (Yanlış Sayısı ÷ 4)
+                    <div className="bg-slate-900 text-white rounded-xl p-5 my-6 text-center">
+                        <span className="text-xs text-slate-400 uppercase tracking-wider block mb-1">ÖSYM Net Formülü</span>
+                        <p className="font-mono text-xl sm:text-2xl font-bold text-emerald-400">
+                            Ham Net = Doğru Sayısı − (Yanlış Sayısı ÷ 4)
                         </p>
-                    </div>
-                    <div className="bg-yellow-50 border-l-4 border-yellow-500 p-5 rounded-lg mb-6">
-                        <p className="text-yellow-900 font-medium">
-                            Önemli Not: Puanınızın hesaplanabilmesi için ilgili testlerin en az birinden
-                            0,5 net yapmış olmanız gerekmektedir.
+                        <p className="text-xs text-slate-400 mt-2">
+                            Her yanlış tam olarak 0,25 doğruyu siler. 4 yanlış yaparsanız 1 tam doğrunuz yok sayılır.
                         </p>
                     </div>
 
-                    <h3 className="text-xl font-semibold text-gray-900 mb-4">Örnek Net Hesaplamaları</h3>
+                    <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg text-amber-950 text-sm mb-6">
+                        <strong>Boş Bırakmanın Önemi:</strong> Cevabından emin olmadığınız bir soruda rastgele 5 şıktan birini sallamak yerine boş bırakırsanız hanenizden 0,25 net eksilmez. Yığılma bölgesinde tek bir 0,25 net bazen 1.500 kişinin önünüze geçmesini engeller.
+                    </div>
+
+                    <h3 className="text-lg font-bold text-gray-900 mb-3">Gerçekçi Net Tablosu Örneği</h3>
                     <div className="overflow-x-auto">
-                        <table className="w-full border-collapse border border-gray-300 rounded-lg">
-                            <thead className="bg-gray-50">
+                        <table className="w-full text-sm border-collapse border border-gray-200 rounded-lg">
+                            <thead className="bg-gray-50 text-gray-800">
                                 <tr>
-                                    <th className="border border-gray-300 p-3 text-left">Ders</th>
-                                    <th className="border border-gray-300 p-3 text-center">Doğru</th>
-                                    <th className="border border-gray-300 p-3 text-center">Yanlış</th>
-                                    <th className="border border-gray-300 p-3 text-center">Boş</th>
-                                    <th className="border border-gray-300 p-3 text-center">Net</th>
+                                    <th className="border p-3 text-left">Test</th>
+                                    <th className="border p-3 text-center">Doğru</th>
+                                    <th className="border p-3 text-center">Yanlış</th>
+                                    <th className="border p-3 text-center">Boş</th>
+                                    <th className="border p-3 text-center">Giden Doğru</th>
+                                    <th className="border p-3 text-center font-bold text-blue-600">Ham Net</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td className="border border-gray-300 p-3 font-medium">TYT Matematik</td>
-                                    <td className="border border-gray-300 p-3 text-center">30</td>
-                                    <td className="border border-gray-300 p-3 text-center">8</td>
-                                    <td className="border border-gray-300 p-3 text-center">2</td>
-                                    <td className="border border-gray-300 p-3 text-center font-bold text-green-600">28</td>
+                                <tr className="border-b">
+                                    <td className="border p-3 font-semibold">TYT Türkçe (40)</td>
+                                    <td className="border p-3 text-center">31</td>
+                                    <td className="border p-3 text-center">8</td>
+                                    <td className="border p-3 text-center">1</td>
+                                    <td className="border p-3 text-center text-red-500">-2,00</td>
+                                    <td className="border p-3 text-center font-bold text-emerald-600">29,00</td>
                                 </tr>
-                                <tr className="bg-gray-50">
-                                    <td className="border border-gray-300 p-3 font-medium">TYT Türkçe</td>
-                                    <td className="border border-gray-300 p-3 text-center">25</td>
-                                    <td className="border border-gray-300 p-3 text-center">12</td>
-                                    <td className="border border-gray-300 p-3 text-center">3</td>
-                                    <td className="border border-gray-300 p-3 text-center font-bold text-green-600">22</td>
+                                <tr className="border-b bg-gray-50">
+                                    <td className="border p-3 font-semibold">TYT Matematik (40)</td>
+                                    <td className="border p-3 text-center">22</td>
+                                    <td className="border p-3 text-center">6</td>
+                                    <td className="border p-3 text-center">12</td>
+                                    <td className="border p-3 text-center text-red-500">-1,50</td>
+                                    <td className="border p-3 text-center font-bold text-emerald-600">20,50</td>
                                 </tr>
                                 <tr>
-                                    <td className="border border-gray-300 p-3 font-medium">AYT Matematik</td>
-                                    <td className="border border-gray-300 p-3 text-center">20</td>
-                                    <td className="border border-gray-300 p-3 text-center">16</td>
-                                    <td className="border border-gray-300 p-3 text-center">4</td>
-                                    <td className="border border-gray-300 p-3 text-center font-bold text-green-600">16</td>
+                                    <td className="border p-3 font-semibold">AYT Matematik (40)</td>
+                                    <td className="border p-3 text-center">26</td>
+                                    <td className="border p-3 text-center">4</td>
+                                    <td className="border p-3 text-center">10</td>
+                                    <td className="border p-3 text-center text-red-500">-1,00</td>
+                                    <td className="border p-3 text-center font-bold text-emerald-600">25,00</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </section>
 
-                {/* 2. Soru Dağılımı */}
-                <section id="soru-dagilimi" className="bg-white rounded-xl shadow-lg p-8 mb-12">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-                        <BookOpen className="h-8 w-8 text-blue-600 mr-3" />
-                        2. 2027 YKS Soru Dağılımı ve Test Yapısı
+                {/* 2. Soru Dağılımı ve Oturumlar */}
+                <section id="soru-dagilimi" className="bg-white rounded-2xl shadow-sm border border-gray-200/80 p-6 sm:p-8 mb-10">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                        <BookOpen className="h-7 w-7 text-indigo-600" />
+                        2. 2027 Soru Dağılımı ve Oturum Yapısı
                     </h2>
-                    <p className="text-gray-600 mb-6">
-                        Sınav üç ana oturumdan oluşur. Her oturumun aday üzerindeki etkisi ve soru ağırlığı farklıdır.
+                    <p className="text-gray-700 leading-relaxed mb-6">
+                        YKS tek bir sınav değil; 2 güne yayılmış 3 farklı oturumdan oluşur. Hangi oturumun katsayısının nereye etki ettiğini bilmeden ders çalışmak gözü kapalı ok atmaya benzer.
                     </p>
 
-                    <h3 className="text-xl font-semibold text-gray-900 mb-4">TYT (Temel Yeterlilik Testi)</h3>
-                    <p className="text-gray-600 mb-4">Tüm adayların girmesi zorunlu olan ilk oturumdur. 165 dakika sürer.</p>
-                    <div className="overflow-x-auto mb-8">
-                        <table className="w-full border-collapse border border-gray-300 rounded-lg">
-                            <thead className="bg-blue-50">
-                                <tr>
-                                    <th className="border border-gray-300 p-3 text-left">Ders</th>
-                                    <th className="border border-gray-300 p-3 text-center">Soru Sayısı</th>
-                                    <th className="border border-gray-300 p-3 text-left">Önemli Konular</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td className="border border-gray-300 p-3 font-medium">Türkçe</td>
-                                    <td className="border border-gray-300 p-3 text-center font-bold">40</td>
-                                    <td className="border border-gray-300 p-3">Paragraf Analizi, Dil Bilgisi</td>
-                                </tr>
-                                <tr className="bg-gray-50">
-                                    <td className="border border-gray-300 p-3 font-medium">Matematik</td>
-                                    <td className="border border-gray-300 p-3 text-center font-bold">40</td>
-                                    <td className="border border-gray-300 p-3">Sayılar, Problemler, Geometri</td>
-                                </tr>
-                                <tr>
-                                    <td className="border border-gray-300 p-3 font-medium">Sosyal Bilimler</td>
-                                    <td className="border border-gray-300 p-3 text-center font-bold">20</td>
-                                    <td className="border border-gray-300 p-3">Tarih, Coğrafya, Felsefe, Din</td>
-                                </tr>
-                                <tr className="bg-gray-50">
-                                    <td className="border border-gray-300 p-3 font-medium">Fen Bilimleri</td>
-                                    <td className="border border-gray-300 p-3 text-center font-bold">20</td>
-                                    <td className="border border-gray-300 p-3">Fizik, Kimya, Biyoloji</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <div className="space-y-6">
+                        <div className="border border-blue-200 rounded-xl p-5 bg-blue-50/40">
+                            <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2 mb-3">
+                                <h3 className="text-lg font-bold text-blue-950">1. Oturum: TYT (Temel Yeterlilik Testi)</h3>
+                                <span className="text-xs bg-blue-200 text-blue-900 font-semibold px-2.5 py-1 rounded-md self-start sm:self-auto">
+                                    120 Soru · 165 Dakika · Cumartesi 10:15
+                                </span>
+                            </div>
+                            <p className="text-sm text-gray-700 mb-3">
+                                Alanınız ne olursa olsun (Sayısal, Sözel, EA veya Dil) herkes bu sınava girmek zorundadır. Yerleştirme puanına etkisi %40&apos;tır.
+                            </p>
+                            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-medium text-gray-800">
+                                <div className="bg-white p-2.5 rounded-lg border text-center">Türkçe: <strong>40 Soru</strong></div>
+                                <div className="bg-white p-2.5 rounded-lg border text-center">Matematik: <strong>40 Soru</strong></div>
+                                <div className="bg-white p-2.5 rounded-lg border text-center">Sosyal: <strong>20 Soru</strong></div>
+                                <div className="bg-white p-2.5 rounded-lg border text-center">Fen: <strong>20 Soru</strong></div>
+                            </div>
+                        </div>
 
-                    <h3 className="text-xl font-semibold text-gray-900 mb-4">AYT (Alan Yeterlilik Testi)</h3>
-                    <p className="text-gray-600 mb-4">Kendi alanında uzmanlaşmak isteyen adayların girdiği ikinci oturumdur. 180 dakika sürer.</p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-                        <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-500">
-                            <h4 className="font-semibold text-blue-900 mb-3">Sayısal (SAY)</h4>
-                            <ul className="text-sm text-blue-800 space-y-1">
-                                <li>• Matematik: 40 soru</li>
-                                <li>• Fizik: 14 soru</li>
-                                <li>• Kimya: 13 soru</li>
-                                <li>• Biyoloji: 13 soru</li>
+                        <div className="border border-purple-200 rounded-xl p-5 bg-purple-50/40">
+                            <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2 mb-3">
+                                <h3 className="text-lg font-bold text-purple-950">2. Oturum: AYT (Alan Yeterlilik Testi)</h3>
+                                <span className="text-xs bg-purple-200 text-purple-900 font-semibold px-2.5 py-1 rounded-md self-start sm:self-auto">
+                                    160 Soru (80 Çözülür) · 180 Dakika · Pazar 10:15
+                                </span>
+                            </div>
+                            <p className="text-sm text-gray-700 mb-3">
+                                Yerleştirme puanına %60 etki eden asıl belirleyici sınavdır. Kitapçıkta 4 test bulunur fakat her aday kendi alanındaki 80 soruyu çözer:
+                            </p>
+                            <ul className="text-xs sm:text-sm text-gray-800 space-y-2">
+                                <li>• <strong>Sayısal (SAY):</strong> Matematik (40) + Fen Bilimleri (Fizik 14, Kimya 13, Biyoloji 13 = 40 Soru)</li>
+                                <li>• <strong>Eşit Ağırlık (EA):</strong> Matematik (40) + Edebiyat-Sosyal-1 (Edebiyat 24, Tarih-1 10, Coğrafya-1 6 = 40 Soru)</li>
+                                <li>• <strong>Sözel (SÖZ):</strong> Edebiyat-Sosyal-1 (40) + Sosyal Bilimler-2 (Tarih-2 11, Coğ-2 11, Felsefe 12, Din 6 = 40 Soru)</li>
                             </ul>
                         </div>
-                        <div className="bg-green-50 p-5 rounded-lg border-l-4 border-green-500">
-                            <h4 className="font-semibold text-green-900 mb-3">Eşit Ağırlık (EA)</h4>
-                            <ul className="text-sm text-green-800 space-y-1">
-                                <li>• Matematik: 40 soru</li>
-                                <li>• Türk Dili ve Ed.: 24 soru</li>
-                                <li>• Tarih-1: 10 soru</li>
-                                <li>• Coğrafya-1: 6 soru</li>
-                            </ul>
-                        </div>
-                        <div className="bg-purple-50 p-5 rounded-lg border-l-4 border-purple-500">
-                            <h4 className="font-semibold text-purple-900 mb-3">Sözel (SÖZ)</h4>
-                            <ul className="text-sm text-purple-800 space-y-1">
-                                <li>• Türk Dili ve Ed.: 24 soru</li>
-                                <li>• Tarih-1: 10 soru</li>
-                                <li>• Coğrafya-1: 6 soru</li>
-                                <li>• Tarih-2, Coğ-2, Felsefe, Din: 40 soru</li>
-                            </ul>
+
+                        <div className="border border-amber-200 rounded-xl p-5 bg-amber-50/40">
+                            <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2 mb-2">
+                                <h3 className="text-lg font-bold text-amber-950">3. Oturum: YDT (Yabancı Dil Testi)</h3>
+                                <span className="text-xs bg-amber-200 text-amber-900 font-semibold px-2.5 py-1 rounded-md self-start sm:self-auto">
+                                    80 Soru · 120 Dakika · Pazar 15:45
+                                </span>
+                            </div>
+                            <p className="text-sm text-gray-700">
+                                İngilizce, Almanca, Fransızca, Rusça veya Arapça dillerinden birinden girilir. Dil puanıyla öğrenci alan bölümler için TYT (%40) + YDT (%60) formülüyle puan üretilir.
+                            </p>
                         </div>
                     </div>
                 </section>
 
                 {/* 3. OBP */}
-                <section id="obp" className="bg-white rounded-xl shadow-lg p-8 mb-12">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-                        <TrendingUp className="h-8 w-8 text-green-600 mr-3" />
-                        3. OBP (Ortaöğretim Başarı Puanı) Etkisi
+                <section id="obp" className="bg-white rounded-2xl shadow-sm border border-gray-200/80 p-6 sm:p-8 mb-10">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                        <TrendingUp className="h-7 w-7 text-emerald-600" />
+                        3. OBP (Diploma Notu) ve Kırık OBP Gerçeği
                     </h2>
-                    <p className="text-gray-600 mb-6 text-lg">
-                        Diploma notunuz, YKS yerleştirme puanınızı doğrudan etkiler. Diploma notunuz 5 ile
-                        çarpılarak OBP&apos;ye dönüştürülür ve bu puanın 0,12 katsayısı yerleştirme puanınıza eklenir.
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                        Lisede aldığınız 4 yıllık diploma notu çöpe gitmez; doğrudan ÖSYM yerleştirme puanınıza eklenir. Hesaplama basittir:
                     </p>
-                    <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-lg mb-6">
-                        <h3 className="font-semibold text-green-900 mb-3">Örnek Hesaplama</h3>
-                        <p className="text-green-800 mb-2">Diploma notu: <strong>80</strong></p>
-                        <p className="text-green-800 mb-2">OBP = 80 × 5 = <strong>400</strong></p>
-                        <p className="text-green-800">Yerleştirme puanına katkı = 400 × 0,12 = <strong>+48 puan</strong></p>
+                    <div className="bg-gray-50 border rounded-xl p-4 text-sm text-gray-800 space-y-2 mb-4 font-mono">
+                        <p>1. Adım: Diploma Notu × 5 = OBP (Örn: 84 × 5 = 420)</p>
+                        <p>2. Adım: OBP × 0,12 = Yerleştirme Puanına Ek (Örn: 420 × 0,12 = <strong>+50,4 Puan</strong>)</p>
                     </div>
-                    <div className="bg-blue-50 p-5 rounded-lg">
-                        <p className="text-blue-900 text-sm">
-                            <strong>Not:</strong> Geçen yıl bir bölüme yerleşmiş adaylar için OBP katkısı yarıya düşürülür (katsayı 0,06).
-                            Meslek lisesi mezunları kendi alanlarındaki programlara başvururken ek puan avantajından yararlanabilir.
-                        </p>
+
+                    <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg text-red-950 text-sm my-4">
+                        <strong>⚠️ Kırık OBP Tuzağı:</strong> Bir önceki yıl YKS ile bir üniversite programına (merkezi yerleştirmeyle 2 veya 4 yıllık örgün ya da açıköğretim kontenjanlı) yerleştiyseniz, bu yıl sınava girdiğinizde katsayınız 0,12 yerine <strong>0,06</strong> ile çarpılır.
+                        <br />
+                        Örneğin yukarıdaki 50,4 puanınız 25,2 puana iner. Kaybettiğiniz 25 puan, yoğun yığılma bölgesinde sizi <strong>35 bin ila 50 bin kişi</strong> geriye fırlatır!
                     </div>
                 </section>
 
-                {/* 4. Baraj */}
-                <section id="baraj" className="bg-white rounded-xl shadow-lg p-8 mb-12">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-                        <Target className="h-8 w-8 text-red-600 mr-3" />
-                        4. Baraj Puanı Hakkında Doğru Bilgi
+                {/* 4. Baraj ve 0,5 Net */}
+                <section id="baraj" className="bg-white rounded-2xl shadow-sm border border-gray-200/80 p-6 sm:p-8 mb-10">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                        <Target className="h-7 w-7 text-red-600" />
+                        4. Baraj Puanı Kalktı mı? 0,5 Net Kuralı Nedir?
                     </h2>
-                    <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg mb-6">
-                        <h3 className="font-semibold text-red-900 mb-3">⚠️ Yaygın Yanlış Bilgi</h3>
-                        <p className="text-red-800">
-                            Birçok kaynakta hâlâ yer alan <strong>&quot;150 veya 180 baraj puanı&quot;</strong> bilgisi artık geçerli değildir.
-                            2022 yılında yapılan düzenleme ile TYT ve AYT&apos;de baraj puanı uygulaması <strong>tamamen kaldırılmıştır.</strong>
-                        </p>
-                    </div>
-                    <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-lg mb-6">
-                        <h3 className="font-semibold text-green-900 mb-3">✅ Güncel Durum</h3>
-                        <p className="text-green-800">
-                            Puanınızın hesaplanması için sadece testlerin herhangi birinden <strong>0,5 net</strong> yapmanız yeterlidir.
-                            Baraj puanı olmadan da AYT&apos;ye girebilir ve puan alabilirsiniz.
-                        </p>
-                    </div>
-                    <div className="bg-yellow-50 border-l-4 border-yellow-500 p-5 rounded-lg">
-                        <p className="text-yellow-900 text-sm">
-                            <strong>Dikkat:</strong> Tıp, Hukuk, Mimarlık gibi bazı bölümler için hâlâ
-                            &quot;Başarı Sırası Barajı&quot; uygulanmaktadır (örn. Hukuk için ilk 125.000 sırası şartı).
-                            Bu bölümlere başvurmadan önce ÖSYM kılavuzunu kontrol edin.
-                        </p>
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                        Eski yıllardaki &quot;TYT&apos;de 150 barajı, AYT&apos;de 180 barajı&quot; kuralı 2022&apos;de tamamen yürürlükten kalktı. Yani artık puanı hesaplanan her aday tercih yapma hakkına sahip.
+                    </p>
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                        Ancak sistemde hâlâ <strong>0,5 Net Şartı</strong> geçerlidir. TYT puanınızın hesaplanabilmesi için:
+                    </p>
+                    <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 text-blue-950 text-sm font-medium mb-4">
+                        ✓ Türkçe testinden en az 0,5 net VEYA Temel Matematik testinden en az 0,5 net çıkarmalısınız. İkisinden de sıfır çekerseniz sistem puanınızı üretmez.
                     </div>
                 </section>
 
-                {/* 5. Puan Türleri */}
-                <section id="puan-turleri" className="bg-white rounded-xl shadow-lg p-8 mb-12">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-                        <Award className="h-8 w-8 text-yellow-600 mr-3" />
-                        5. YKS Puan Türleri
+                {/* 5. Başarı Sırası Barajı */}
+                <section id="baraj-siralama" className="bg-white rounded-2xl shadow-sm border border-gray-200/80 p-6 sm:p-8 mb-10">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                        <Award className="h-7 w-7 text-yellow-600" />
+                        5. Bölüm Bazlı Başarı Sırası Barajları
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
-                            <h3 className="text-xl font-semibold text-blue-900 mb-3">SAY Puanı</h3>
-                            <p className="text-blue-800 mb-3 text-sm">Mühendislik, Tıp, Fen Fakülteleri için kullanılır.</p>
-                            <ul className="text-blue-800 space-y-1 text-sm">
-                                <li>• TYT (tüm dersler)</li>
-                                <li>• AYT Matematik</li>
-                                <li>• AYT Fizik, Kimya, Biyoloji</li>
-                            </ul>
-                        </div>
-                        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
-                            <h3 className="text-xl font-semibold text-green-900 mb-3">EA Puanı</h3>
-                            <p className="text-green-800 mb-3 text-sm">Hukuk, İktisat, İşletme gibi bölümler için kullanılır.</p>
-                            <ul className="text-green-800 space-y-1 text-sm">
-                                <li>• TYT (tüm dersler)</li>
-                                <li>• AYT Matematik</li>
-                                <li>• AYT Edebiyat, Tarih-1, Coğrafya-1</li>
-                            </ul>
-                        </div>
-                        <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
-                            <h3 className="text-xl font-semibold text-purple-900 mb-3">SÖZ Puanı</h3>
-                            <p className="text-purple-800 mb-3 text-sm">Edebiyat, Tarih, Sosyoloji gibi bölümler için kullanılır.</p>
-                            <ul className="text-purple-800 space-y-1 text-sm">
-                                <li>• TYT (tüm dersler)</li>
-                                <li>• AYT Edebiyat, Tarih-1 &amp; 2, Coğrafya-1 &amp; 2</li>
-                                <li>• AYT Felsefe, Din Kültürü</li>
-                            </ul>
-                        </div>
-                        <div className="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-500">
-                            <h3 className="text-xl font-semibold text-orange-900 mb-3">DİL Puanı</h3>
-                            <p className="text-orange-800 mb-3 text-sm">Yabancı Dil bölümleri için kullanılır.</p>
-                            <ul className="text-orange-800 space-y-1 text-sm">
-                                <li>• TYT (tüm dersler)</li>
-                                <li>• YDT (Yabancı Dil Testi — 80 soru)</li>
-                            </ul>
-                        </div>
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                        Genel puan barajı kalkmış olsa da YÖK belirli kritik meslek gruplarına sıralama barajı koymuştur. İstediğiniz kadar yüksek puan alın; bu sıralamanın 1 kişi gerisinde kalsanız dahi o bölümü tercih listenize yazamazsınız:
+                    </p>
+                    <div className="overflow-x-auto">
+                        <table className="w-full text-sm border-collapse border border-gray-200">
+                            <thead className="bg-gray-100 text-gray-800">
+                                <tr>
+                                    <th className="border p-3 text-left">Bölüm</th>
+                                    <th className="border p-3 text-center">Puan Türü</th>
+                                    <th className="border p-3 text-center">Gereken Minimum Sıralama</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr className="border-b">
+                                    <td className="border p-3 font-semibold">Tıp Fakültesi</td>
+                                    <td className="border p-3 text-center">SAY</td>
+                                    <td className="border p-3 text-center font-bold text-red-600">İlk 50.000</td>
+                                </tr>
+                                <tr className="border-b bg-gray-50">
+                                    <td className="border p-3 font-semibold">Diş Hekimliği</td>
+                                    <td className="border p-3 text-center">SAY</td>
+                                    <td className="border p-3 text-center font-bold text-red-600">İlk 80.000</td>
+                                </tr>
+                                <tr className="border-b">
+                                    <td className="border p-3 font-semibold">Eczacılık</td>
+                                    <td className="border p-3 text-center">SAY</td>
+                                    <td className="border p-3 text-center font-bold text-red-600">İlk 100.000</td>
+                                </tr>
+                                <tr className="border-b bg-gray-50">
+                                    <td className="border p-3 font-semibold">Hukuk Fakültesi</td>
+                                    <td className="border p-3 text-center">EA</td>
+                                    <td className="border p-3 text-center font-bold text-red-600">İlk 125.000</td>
+                                </tr>
+                                <tr className="border-b">
+                                    <td className="border p-3 font-semibold">Mimarlık</td>
+                                    <td className="border p-3 text-center">SAY</td>
+                                    <td className="border p-3 text-center font-bold text-red-600">İlk 250.000</td>
+                                </tr>
+                                <tr className="border-b bg-gray-50">
+                                    <td className="border p-3 font-semibold">Mühendislik Programları (Orman, Ziraat vb. hariç)</td>
+                                    <td className="border p-3 text-center">SAY</td>
+                                    <td className="border p-3 text-center font-bold text-red-600">İlk 300.000</td>
+                                </tr>
+                                <tr>
+                                    <td className="border p-3 font-semibold">Öğretmenlik Programları (PDR dahil)</td>
+                                    <td className="border p-3 text-center">İlgili Puan</td>
+                                    <td className="border p-3 text-center font-bold text-red-600">İlk 300.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </section>
 
-                {/* 6. Stratejiler */}
-                <section id="stratejiler" className="bg-white rounded-xl shadow-lg p-8 mb-12">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-                        <Clock className="h-8 w-8 text-indigo-600 mr-3" />
-                        6. 2027 YKS Başarı Stratejileri
+                {/* 6. Masada Kazandıran Stratejiler */}
+                <section id="stratejiler" className="bg-white rounded-2xl shadow-sm border border-gray-200/80 p-6 sm:p-8 mb-10">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                        <Clock className="h-7 w-7 text-emerald-600" />
+                        6. Masada Kazandıran 4 Strateji
                     </h2>
-                    <div className="space-y-4">
-                        <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-500">
-                            <h3 className="font-semibold text-blue-900 mb-2">Paragraf Rutini</h3>
-                            <p className="text-blue-800 text-sm">
-                                Her gün en az 20 paragraf sorusu çözmek, sadece Türkçe değil Matematik sorularını
-                                anlama hızınızı da artırır.
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
+                        <div className="bg-blue-50/60 p-4 rounded-xl border border-blue-200">
+                            <h3 className="font-bold text-blue-900 mb-1">1. Turlama Taktiği (Süre Kontrolü)</h3>
+                            <p>
+                                TYT&apos;de 120 soruya 165 dakika verilir (soru başına 82 saniye). 1 dakikada çözemediğiniz soruyla inatlaşmayın. Soru numarasına bir nokta koyup hemen diğerine geçin; ilk turda tüm kolay soruları cebe atın.
                             </p>
                         </div>
-                        <div className="bg-green-50 p-5 rounded-lg border-l-4 border-green-500">
-                            <h3 className="font-semibold text-green-900 mb-2">AYT Matematik Farkı</h3>
-                            <p className="text-green-800 text-sm">
-                                Yerleştirme puanında en kritik testlerden biri AYT Matematiktir.
-                                Konu eksiklerinizi erken bitirmeye odaklanın; son aylarda soru çözme hızına geçin.
+                        <div className="bg-purple-50/60 p-4 rounded-xl border border-purple-200">
+                            <h3 className="font-bold text-purple-900 mb-1">2. AYT Ağırlığı Faktörü</h3>
+                            <p>
+                                TYT&apos;de 5 net artırmak için haftalarca uğraşmanız gerekirken, AYT&apos;de formül ve mekanizma öğrenerek 2 haftada 5-8 net artırabilirsiniz. Son aylarda çalışma saatinizin en az %65&apos;ini AYT&apos;ye ayırın.
                             </p>
                         </div>
-                        <div className="bg-purple-50 p-5 rounded-lg border-l-4 border-purple-500">
-                            <h3 className="font-semibold text-purple-900 mb-2">Deneme Analizi</h3>
-                            <p className="text-purple-800 text-sm">
-                                Net hesaplamaktan daha önemlisi, denemede yaptığınız yanlışların nedenini bulmaktır.
-                                Aynı hatayı iki kez yapmamak için hata defteri tutun.
+                        <div className="bg-emerald-50/60 p-4 rounded-xl border border-emerald-200">
+                            <h3 className="font-bold text-emerald-900 mb-1">3. Hata Defteri Tutun</h3>
+                            <p>
+                                Doğru çözdüğünüz sorular size yeni bir şey öğretmez. Netleri sıçratan tek şey denemede yanlış yaptığınız sorulardır. O soruları kesip bir deftere yapıştırın ve haftada bir baştan çözün.
                             </p>
                         </div>
-                        <div className="bg-orange-50 p-5 rounded-lg border-l-4 border-orange-500">
-                            <h3 className="font-semibold text-orange-900 mb-2">Süre ve Turlama Taktiği</h3>
-                            <p className="text-orange-800 text-sm">
-                                TYT&apos;de 120 soru için 165 dakikanız var (soru başına ortalama 82 saniye). AYT&apos;de ise 80 soru için 180 dakika verilir (soru başına 135 saniye). Takıldığınız soruyla inatlaşmayın; turlama taktiğiyle yanına küçük bir işaret koyup hemen bir sonrakine geçin.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                {/* 7. SSS */}
-                <section id="sss" className="bg-white rounded-xl shadow-lg p-8 mb-12">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-                        <CheckCircle className="h-8 w-8 text-green-600 mr-3" />
-                        7. Sıkça Sorulan Sorular
-                    </h2>
-                    <div className="space-y-6">
-                        <div className="border-b pb-5">
-                            <h3 className="font-semibold text-gray-900 mb-2">TYT puanı kaç yıl geçerli?</h3>
-                            <p className="text-gray-600 text-sm">
-                                TYT puanının bir sonraki yıl kullanılması uygulaması kaldırılmıştır.
-                                Alınan puan sadece o yıl için geçerlidir.
-                            </p>
-                        </div>
-                        <div className="border-b pb-5">
-                            <h3 className="font-semibold text-gray-900 mb-2">Meslek lisesi ek puanı devam ediyor mu?</h3>
-                            <p className="text-gray-600 text-sm">
-                                Kendi alanındaki ilgili programlara yerleşen adaylar için ek puan uygulaması
-                                belirli şartlar dahilinde devam etmektedir. Detaylar için ÖSYM kılavuzunu inceleyin.
-                            </p>
-                        </div>
-                        <div className="border-b pb-5">
-                            <h3 className="font-semibold text-gray-900 mb-2">AYT&apos;ye girmek için TYT&apos;den kaç puan almak gerekiyor?</h3>
-                            <p className="text-gray-600 text-sm">
-                                2022 yılından itibaren TYT baraj puanı uygulaması kaldırılmıştır.
-                                Herhangi bir testten 0,5 net yapmanız puan hesaplanması için yeterlidir.
-                            </p>
-                        </div>
-                        <div>
-                            <h3 className="font-semibold text-gray-900 mb-2">En doğru sıralama tahmini nasıl yapılır?</h3>
-                            <p className="text-gray-600 text-sm">
-                                Sınavın zorluk derecesi her yıl değiştiği için netlerinizle en gerçekçi tahmini
-                                yapmak için{' '}
-                                <Link href="/" className="text-primary-600 hover:underline font-medium">
-                                    Net Hesaplama Aracımızı
-                                </Link>{' '}
-                                kullanabilirsiniz.
+                        <div className="bg-amber-50/60 p-4 rounded-xl border border-amber-200">
+                            <h3 className="font-bold text-amber-900 mb-1">4. Günlük Paragraf ve Problem Rutini</h3>
+                            <p>
+                                TYT Türkçe&apos;de 24 soru paragraftan, TYT Matematik&apos;te 12 soru problemlerden gelir. Yani sınavın neredeyse 36 sorusu (üçte biri) okuduğunu anlama hızınıza bakar. Her sabah ilk iş bu iki dersten 15&apos;er soru çözün.
                             </p>
                         </div>
                     </div>
                 </section>
 
                 {/* CTA */}
-                <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-xl shadow-lg p-8 text-white text-center">
-                    <h2 className="text-2xl font-bold mb-4">Puanınızı Hemen Hesaplayın</h2>
-                    <p className="text-primary-100 mb-6">
-                        Netlerinizi girerek SAY, EA, SÖZ ve DİL puanlarınızı ve tahmini sıralamanızı anında öğrenin.
+                <div className="bg-gradient-to-r from-blue-700 to-indigo-800 rounded-2xl shadow-lg p-8 text-white text-center">
+                    <h2 className="text-2xl font-bold mb-3">Deneme Sonucunuzu Hemen Test Edin</h2>
+                    <p className="text-blue-100 text-sm max-w-xl mx-auto mb-6">
+                        Doğru ve yanlışlarınızı girin; güncel ÖSYM katsayılarıyla ham puanınızı, OBP katkınızı ve tahmini başarı sıranızı saniyeler içinde görün.
                     </p>
                     <Link
                         href="/"
-                        className="inline-flex items-center bg-white text-primary-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors"
+                        className="inline-flex items-center gap-2 bg-white text-blue-900 font-bold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors shadow-md text-sm"
                     >
-                        <Calculator className="h-5 w-5 mr-2" />
-                        Net Hesaplama Aracını Kullan
+                        <Calculator className="h-5 w-5" />
+                        Ücretsiz Net Hesaplayıcıya Git →
                     </Link>
                 </div>
+
             </div>
         </div>
     )

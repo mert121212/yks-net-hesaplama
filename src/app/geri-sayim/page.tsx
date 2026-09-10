@@ -3,44 +3,23 @@ import Link from 'next/link'
 import CountdownTimer from '@/components/CountdownTimer'
 
 export const metadata: Metadata = {
-    title: 'YKS 2027 Geri Sayım | YKS\'ye Kaç Gün Kaldı?',
-    description: 'YKS 2027 sınavına kalan süreyi canlı olarak takip edin. TYT 19 Haziran 2027, AYT 20 Haziran 2027.',
+    title: 'YKS 2027 Geri Sayım | Sınava Kaç Gün Kaldı?',
+    description: '2027 YKS sınavına kalan gün, saat ve dakikayı canlı takip edin. TYT 19 Haziran 2027, AYT ve YDT 20 Haziran 2027.',
     alternates: { canonical: 'https://yksnethesapla.com/geri-sayim' },
 }
 
-// Günde bir kez yeniden hesapla
 export const revalidate = 86400
 
-// Motivasyon ve ipuçları — static, JS yok
-function getMotivation(days: number) {
-    if (days > 180) return 'Harika! Yeterli zamanın var. Düzenli çalışmaya devam et! 📚'
-    if (days > 90) return 'Son dönemece giriyorsun! Tempo artırma zamanı! 🚀'
-    if (days > 60) return 'Son 2 ay! Çalışma temponuzu artırın, hedef yaklaşıyor! 💪'
-    if (days > 30) return 'Son ay! Tüm gücünle çalış, başarı çok yakın! 🔥'
-    if (days > 7) return 'Son hafta! Sakin kal ve kendine güven! 🌟'
-    return 'Sınav çok yakın! Dinlen ve kendine güven! ✨'
-}
-
-function getStudyTips(days: number) {
-    if (days > 90) return ['Günlük çalışma programı oluştur', 'Temel konuları pekiştir', 'Düzenli deneme sınavları çöz', 'Eksik konuları belirle']
-    if (days > 30) return ['Deneme sınavlarını artır', 'Zayıf konulara odaklan', 'Zaman yönetimini geliştir', 'Stres yönetimi öğren']
-    return ['Son tekrarları yap', 'Sınav stratejini belirle', 'Sağlıklı beslen ve düzenli uyu', 'Kendine güven!']
-}
-
-// Server-side hesaplama — build anında statik
 function getDaysLeft() {
-    const yksDate = new Date('2027-06-19T10:15:00') // TYT 19 Haziran 2027
+    const yksDate = new Date('2027-06-19T10:15:00')
     const now = new Date()
     return Math.max(0, Math.floor((yksDate.getTime() - now.getTime()) / 86400000))
 }
 
-// Sabit değerler — her deploy'da güncellenir, runtime'da değişmez
 const DAYS_LEFT = getDaysLeft()
 
 export default function GeriSayimPage() {
     const days = DAYS_LEFT
-    const motivation = getMotivation(days)
-    const tips = getStudyTips(days)
 
     const faqSchema = {
         "@context": "https://schema.org",
@@ -48,134 +27,98 @@ export default function GeriSayimPage() {
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "YKS 2027 ne zaman?",
-                "acceptedAnswer": { "@type": "Answer", "text": "YKS 2027 sınavı iki gün olarak yapılacaktır. TYT 19 Haziran 2027 Cumartesi, AYT ve YDT 20 Haziran 2027 Pazar günü uygulanacaktır." }
+                "name": "YKS 2027 ne zaman yapılacak?",
+                "acceptedAnswer": { "@type": "Answer", "text": "TYT oturumu 19 Haziran 2027 Cumartesi günü saat 10:15'te; AYT ve YDT oturumları ise 20 Haziran 2027 Pazar günü yapılacaktır." }
             },
             {
                 "@type": "Question",
-                "name": "YKS'ye kaç gün kaldı?",
-                "acceptedAnswer": { "@type": "Answer", "text": `YKS 2027 sınavına ${days} gün kaldı. TYT 19 Haziran 2027, AYT 20 Haziran 2027 tarihinde yapılacaktır.` }
-            },
-            {
-                "@type": "Question",
-                "name": "TYT sınavı saat kaçta başlıyor?",
-                "acceptedAnswer": { "@type": "Answer", "text": "TYT sınavı 19 Haziran 2027 Cumartesi günü saat 10:15'te başlamaktadır. Toplam süre 165 dakikadır." }
-            },
-            {
-                "@type": "Question",
-                "name": "AYT sınavı ne zaman?",
-                "acceptedAnswer": { "@type": "Answer", "text": "AYT (Alan Yeterlilik Testi) sınavı 20 Haziran 2027 Pazar günü saat 10:15'te başlamaktadır. Toplam süre 180 dakikadır." }
+                "name": "YKS 2027'ye kaç gün kaldı?",
+                "acceptedAnswer": { "@type": "Answer", "text": `YKS 2027 sınavına yaklaşık ${days} gün bulunmaktadır.` }
             }
         ]
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-12 px-4">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div className="max-w-4xl mx-auto">
 
                 {/* H1 */}
-                <div className="text-center mb-8">
-                    <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-                        2027 YKS Sayaç | YKS&apos;ye Kaç Gün Kaldı? | YKS Ne Zaman
+                <header className="text-center mb-10">
+                    <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full mb-3">
+                        Canlı Sınav Sayacı
+                    </span>
+                    <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-3">
+                        YKS 2027 Geri Sayım: Sınava Kaç Gün Kaldı?
                     </h1>
-                    <p className="text-lg text-gray-600 mb-2">
-                        YKS 2027 sınavına kalan süreyi canlı olarak takip edin.
+                    <p className="text-gray-600 text-base md:text-lg max-w-xl mx-auto">
+                        TYT: 19 Haziran 2027 Cumartesi (10:15) · AYT: 20 Haziran 2027 Pazar (10:15)
                     </p>
-                    <p className="text-sm text-gray-500">
-                        TYT: 19 Haziran 2027 (Cumartesi) · AYT &amp; YDT: 20 Haziran 2027 (Pazar)
-                    </p>
+                </header>
+
+                {/* Sayaç */}
+                <div className="mb-10">
+                    <CountdownTimer />
                 </div>
 
-                {/* Sadece sayaç client-side */}
-                <CountdownTimer />
-
-                {/* Özet — static */}
-                <div className="grid grid-cols-3 gap-4 mb-8">
-                    <div className="bg-white rounded-lg shadow-md p-4 text-center">
-                        <div className="text-xl font-bold text-blue-600">{Math.floor(days / 30)}</div>
-                        <div className="text-gray-500 text-xs">Ay</div>
+                {/* Süre Özeti */}
+                <div className="grid grid-cols-3 gap-4 mb-10">
+                    <div className="bg-white rounded-2xl shadow-sm border border-gray-200/80 p-5 text-center">
+                        <div className="text-2xl sm:text-3xl font-black text-blue-600 mb-1">{Math.floor(days / 30)}</div>
+                        <div className="text-gray-500 text-xs sm:text-sm font-medium">Kalan Ay</div>
                     </div>
-                    <div className="bg-white rounded-lg shadow-md p-4 text-center">
-                        <div className="text-xl font-bold text-purple-600">{Math.floor(days / 7)}</div>
-                        <div className="text-gray-500 text-xs">Hafta</div>
+                    <div className="bg-white rounded-2xl shadow-sm border border-gray-200/80 p-5 text-center">
+                        <div className="text-2xl sm:text-3xl font-black text-purple-600 mb-1">{Math.floor(days / 7)}</div>
+                        <div className="text-gray-500 text-xs sm:text-sm font-medium">Kalan Hafta</div>
                     </div>
-                    <div className="bg-white rounded-lg shadow-md p-4 text-center">
-                        <div className="text-xl font-bold text-green-600">{days * 24}</div>
-                        <div className="text-gray-500 text-xs">Saat</div>
-                    </div>
-                </div>
-
-                {/* Motivasyon — static */}
-                <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-6 text-white text-center mb-8">
-                    <p className="text-lg font-medium text-blue-100">{motivation}</p>
-                </div>
-
-                {/* Yapılacaklar — static */}
-                <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
-                    <h2 className="text-xl font-bold text-gray-900 mb-4">Bu Dönemde Yapılacaklar</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                        {tips.map((tip, i) => (
-                            <div key={i} className="flex items-center gap-3 p-3 bg-indigo-50 rounded-lg">
-                                <div className="w-6 h-6 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">{i + 1}</div>
-                                <span className="text-gray-800 text-sm">{tip}</span>
-                            </div>
-                        ))}
+                    <div className="bg-white rounded-2xl shadow-sm border border-gray-200/80 p-5 text-center">
+                        <div className="text-2xl sm:text-3xl font-black text-emerald-600 mb-1">{days}</div>
+                        <div className="text-gray-500 text-xs sm:text-sm font-medium">Kalan Gün</div>
                     </div>
                 </div>
 
-                {/* Hızlı linkler — static */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
-                    <Link href="/" className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+                {/* Bu Dönemde Ne Yapılmalı? */}
+                <div className="bg-white rounded-2xl shadow-sm border border-gray-200/80 p-6 sm:p-8 mb-10">
+                    <h2 className="text-xl font-bold text-gray-900 mb-4">
+                        Kalan Zamanı Verimli Yönetmek İçin 4 Kural
+                    </h2>
+                    <div className="space-y-4 text-sm text-gray-700 leading-relaxed">
+                        <div className="p-4 rounded-xl bg-blue-50/60 border border-blue-100">
+                            <strong className="text-blue-950 block mb-1">1. Gün Saymayı Bırakıp Görev Saymaya Başlayın:</strong>
+                            Takvimdeki güne odaklanıp panik yapmak yerine masadaki somut hedefe odaklanın. &quot;Bugün 15 problem + 1 Fen branş denemesi&quot; gibi ölçülebilir görevler stresinizi azaltır.
+                        </div>
+                        <div className="p-4 rounded-xl bg-purple-50/60 border border-purple-100">
+                            <strong className="text-purple-950 block mb-1">2. 10:15 Rutinini Biyolojik Saatinize İşleyin:</strong>
+                            Hafta sonu denemelerinizi mutlaka gerçek sınav saati olan 10:15&apos;te başlatın. Beyninizin odaklanma eğrisi bu saat aralığına önceden şartlanmalıdır.
+                        </div>
+                        <div className="p-4 rounded-xl bg-emerald-50/60 border border-emerald-100">
+                            <strong className="text-emerald-950 block mb-1">3. Deneme Analizini Asla Atlamayın:</strong>
+                            Denemeyi çözdükten sonra yanlış soruların çözümünü öğrenmeden masadan kalkmayın. Gerçek sınavda karşınıza çıkacak olanlar, daha önce yanlış yaptığınız soru kalıplarıdır.
+                        </div>
+                        <div className="p-4 rounded-xl bg-amber-50/60 border border-amber-100">
+                            <strong className="text-amber-950 block mb-1">4. Net Artışı İçin AYT Omurgasını Kurun:</strong>
+                            TYT kondisyonunuzu korurken kalan enerjinizin en az %65&apos;ini doğrudan puan getiren AYT Matematik ve Fen/Edebiyat konularına yönlendirin.
+                        </div>
+                    </div>
+                </div>
+
+                {/* Hızlı Linkler */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+                    <Link href="/" className="bg-white rounded-xl p-5 border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all group">
                         <span className="text-2xl mb-2 block">🧮</span>
-                        <h3 className="font-bold text-gray-900 text-sm mb-1">Net Hesaplama</h3>
-                        <p className="text-gray-500 text-xs">TYT, AYT ve YDT netlerini hesapla</p>
+                        <h3 className="font-bold text-gray-900 text-sm group-hover:text-blue-600 mb-1">Net Hesaplama</h3>
+                        <p className="text-gray-500 text-xs">Güncel deneme netlerini gir ve sıralamanı gör</p>
                     </Link>
-                    <div className="bg-white rounded-lg shadow-md p-4">
-                        <span className="text-2xl mb-2 block">☕</span>
-                        <h3 className="font-bold text-gray-900 text-sm mb-1">Mola Zamanı</h3>
-                        <p className="text-gray-500 text-xs">Düzenli molalar veriyor musun?</p>
-                    </div>
-                    <div className="bg-white rounded-lg shadow-md p-4">
-                        <span className="text-2xl mb-2 block">📈</span>
-                        <h3 className="font-bold text-gray-900 text-sm mb-1">İlerleme</h3>
-                        <p className="text-gray-500 text-xs">Hedeflerine ne kadar yakınsın?</p>
-                    </div>
-                </div>
-
-                {/* SEO içeriği — static */}
-                <div className="bg-white rounded-2xl shadow-lg p-8">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">YKS 2027 Tarihleri ve Hazırlık Rehberi</h2>
-                    <p className="text-gray-700 mb-4">
-                        <strong>TYT (Temel Yeterlilik Testi) 19 Haziran 2027</strong> Cumartesi,
-                        <strong> AYT ve YDT 20 Haziran 2027</strong> Pazar günü yapılacaktır.
-                    </p>
-                    <p className="text-gray-700 mb-6">
-                        TYT için Türkçe, Matematik, Sosyal Bilimler ve Fen Bilimleri; AYT için hedef bölümünüze göre
-                        Sayısal, Eşit Ağırlık veya Sözel derslerine odaklanın.
-                    </p>
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center mb-6">
-                        <div className="p-4 bg-blue-50 rounded-xl">
-                            <div className="text-lg font-bold text-blue-700">TYT</div>
-                            <div className="text-sm text-blue-600 font-medium">19 Haziran 2027</div>
-                            <div className="text-xs text-gray-500 mt-1">120 soru · 165 dakika</div>
-                        </div>
-                        <div className="p-4 bg-green-50 rounded-xl">
-                            <div className="text-lg font-bold text-green-700">AYT</div>
-                            <div className="text-sm text-green-600 font-medium">20 Haziran 2027</div>
-                            <div className="text-xs text-gray-500 mt-1">SAY / EA / SÖZ · 80 soru</div>
-                        </div>
-                        <div className="p-4 bg-orange-50 rounded-xl">
-                            <div className="text-lg font-bold text-orange-700">YDT</div>
-                            <div className="text-sm text-orange-600 font-medium">20 Haziran 2027</div>
-                            <div className="text-xs text-gray-500 mt-1">80 soru · 120 dakika</div>
-                        </div>
-                    </div>
-                    <div className="flex flex-wrap gap-3">
-                        <Link href="/" className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">Net Hesapla</Link>
-                        <Link href="/blog/yks-net-hesaplama-nasil-yapilir" className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors">Net Hesaplama Rehberi</Link>
-                        <Link href="/sss" className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors">Sık Sorulan Sorular</Link>
-                    </div>
+                    <Link href="/blog/yks-son-3-ay-calisma-plani" className="bg-white rounded-xl p-5 border border-gray-200 hover:border-purple-400 hover:shadow-md transition-all group">
+                        <span className="text-2xl mb-2 block">📅</span>
+                        <h3 className="font-bold text-gray-900 text-sm group-hover:text-purple-600 mb-1">Son 3 Ay Planı</h3>
+                        <p className="text-gray-500 text-xs">Sınava yaklaşırken netleri zirveye çıkarma stratejisi</p>
+                    </Link>
+                    <Link href="/blog/tyt-turkce-paragraf-teknikleri" className="bg-white rounded-xl p-5 border border-gray-200 hover:border-emerald-400 hover:shadow-md transition-all group">
+                        <span className="text-2xl mb-2 block">⚡</span>
+                        <h3 className="font-bold text-gray-900 text-sm group-hover:text-emerald-600 mb-1">Paragraf Taktikleri</h3>
+                        <p className="text-gray-500 text-xs">24 paragraf sorusunda süreyi yarıya indirme</p>
+                    </Link>
                 </div>
 
             </div>
