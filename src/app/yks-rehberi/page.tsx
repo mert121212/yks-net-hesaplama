@@ -319,10 +319,9 @@ export default function YKSRehberiPage() {
                             </p>
                         </div>
                         <div className="bg-orange-50 p-5 rounded-lg border-l-4 border-orange-500">
-                            <h3 className="font-semibold text-orange-900 mb-2">Zaman Yönetimi</h3>
+                            <h3 className="font-semibold text-orange-900 mb-2">Süre ve Turlama Taktiği</h3>
                             <p className="text-orange-800 text-sm">
-                                TYT&apos;de soru başına ortalama 45 saniye, AYT&apos;de 90 saniye hedefleyin.
-                                Emin olmadığınız soruları işaretleyip geçin, sona bırakın.
+                                TYT&apos;de 120 soru için 165 dakikanız var (soru başına ortalama 82 saniye). AYT&apos;de ise 80 soru için 180 dakika verilir (soru başına 135 saniye). Takıldığınız soruyla inatlaşmayın; turlama taktiğiyle yanına küçük bir işaret koyup hemen bir sonrakine geçin.
                             </p>
                         </div>
                     </div>
