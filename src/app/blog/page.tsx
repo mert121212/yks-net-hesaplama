@@ -9,6 +9,30 @@ export const metadata: Metadata = {
 
 const blogPosts = [
     {
+        id: 'tyt-turkce-paragraf-teknikleri',
+        title: 'TYT Türkçe Paragraf Çözme Teknikleri: 40 Sorunun 24\'ü Buradan Gelir',
+        excerpt: 'Paragraf sorularında süre yönetimi, ilk-son cümle eleme taktiği ve tersine okuma yöntemiyle 30+ nete ulaşma rehberi.',
+        date: '2026-09-10',
+        category: 'TYT',
+        readTime: '12 dakika',
+    },
+    {
+        id: 'yks-son-3-ay-calisma-plani',
+        title: 'YKS Son 3 Ay Çalışma Programı: Netleri Zirveye Taşıma Stratejisi',
+        excerpt: 'Sınava 3 ay kala konu çalışma bırakılıp deneme sistemine nasıl geçilir? Haftalık görev planı ve son 90 gün yol haritası.',
+        date: '2026-09-10',
+        category: 'Strateji',
+        readTime: '11 dakika',
+    },
+    {
+        id: 'sifirdan-tyt-matematik-calisma-rehberi',
+        title: 'Sıfırdan TYT Matematik Nasıl Çalışılır? Temelden 20+ Nete Yol Haritası',
+        excerpt: 'Matematik temeli olmayanlar için adım adım rehber: İşlem yeteneğinden problemlere ön koşul konu sırası ve 3 dakika kuralı.',
+        date: '2026-09-10',
+        category: 'TYT',
+        readTime: '12 dakika',
+    },
+    {
         id: 'obp-hesaplama',
         title: 'OBP (Diploma Notu) Sıralamanızı Nasıl Değiştirir? Kırık OBP ve Katsayı Analizi',
         excerpt: 'Lise diploma notunun YKS yerleştirme puanına etkisi, kırık OBP kesintisi ve okul birinciliği kontenjanı hakkında kapsamlı analiz.',
