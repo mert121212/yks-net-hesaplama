@@ -378,12 +378,12 @@ export default function SEOContent() {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {[
-                        { href: '/blog/tyt-net-hesaplama-rehberi', title: 'TYT Net Hesaplama Rehberi', desc: 'TYT\'de başarılı olmak için net hesaplama stratejileri' },
-                        { href: '/blog/ayt-puan-hesaplama', title: 'AYT Puan Hesaplama', desc: 'SAY, EA, SÖZ puan hesaplama yöntemleri' },
-                        { href: '/blog/yks-puan-turleri', title: 'YKS Puan Türleri', desc: 'Hangi puan türü hangi bölüm için geçerli?' },
-                        { href: '/blog/obp-hesaplama', title: 'OBP Hesaplama', desc: 'Diploma notunuzun YKS\'ye etkisi nasıl hesaplanır?' },
-                        { href: '/blog/universite-tercih-stratejileri', title: 'Tercih Stratejileri', desc: 'Üniversite tercihinde dikkat edilmesi gerekenler' },
-                        { href: '/blog/yks-hazirlik-programi', title: 'YKS Hazırlık Programı', desc: 'Etkili çalışma programı nasıl oluşturulur?' },
+                        { href: '/blog/tyt-turkce-paragraf-teknikleri', title: 'TYT Türkçe Paragraf Teknikleri', desc: '40 sorunun 24\'ünde süreyi yarıya indiren 5 somut taktik' },
+                        { href: '/blog/yks-son-3-ay-calisma-plani', title: 'YKS Son 3 Ay Çalışma Programı', desc: 'Sınava son 90 gün kala netleri zirveye taşıma stratejisi' },
+                        { href: '/blog/sifirdan-tyt-matematik-calisma-rehberi', title: 'Sıfırdan TYT Matematik Rehberi', desc: 'Temeli olmayanlar için 0 netten 20 nete adım adım plan' },
+                        { href: '/blog/tyt-kesin-cikan-konular', title: 'TYT\'de Kesin Çıkan Konular', desc: 'Son 7 yılın ÖSYM analizlerine göre garanti soru listesi' },
+                        { href: '/blog/tyt-net-artirma-taktikleri', title: 'TYT Net Artırma Taktikleri', desc: 'Plato evresini kırmak için 3 radikal rehberlik adımı' },
+                        { href: '/blog/obp-hesaplama', title: 'OBP ve Katsayı Analizi', desc: 'Diploma notunuzun YKS sıralamasına etkisi ve kırık OBP' },
                     ].map((item, i) => (
                         <Link key={i} href={item.href} className="p-4 border border-gray-200 rounded-xl hover:border-blue-300 hover:bg-blue-50 transition-all group">
                             <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 mb-1 text-sm">{item.title}</h3>
@@ -396,7 +396,7 @@ export default function SEOContent() {
             {/* CTA Section */}
             <section className="card bg-gradient-to-r from-primary-600 to-blue-600 text-white text-center">
                 <h2 className="text-3xl font-bold mb-4">
-                    YKS 2027'ya Hazır mısınız?
+                    YKS 2027'ye Hazır mısınız?
                 </h2>
                 <p className="text-lg text-primary-100 mb-6 max-w-2xl mx-auto">
                     Hemen yukarıdaki hesaplama aracını kullanarak TYT ve AYT netlerinizi hesaplayın,

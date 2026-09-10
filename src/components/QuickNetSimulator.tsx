@@ -20,7 +20,7 @@ const SUBJECTS: Record<string, SubjectMeta> = {
 }
 
 const SCORE_BANDS = [
-    { label: '300 - 350 Puan (En Yoğun Yığılma)', multiplier: 7800, desc: 'Adayların en sıkışık olduğu bölge. Her 1 net adeta bir tramplen etkisi yaratır.' },
+    { label: '300 - 350 Puan (En Yoğun Yığılma)', multiplier: 7800, desc: 'Adayların en sıkışık olduğu bölge. Her 1 net tramplen etkisi yaratarak sıralamayı binlerce kişi öne taşır.' },
     { label: '350 - 400 Puan (Orta-Üst Rekabet)', multiplier: 5200, desc: 'İyi lisans programlarının kapı eşiği. 1 net binlerce adayı geride bırakır.' },
     { label: '400 - 450 Puan (İlk 50.000 / Tıp & Hukuk)', multiplier: 2900, desc: 'Yüksek puan barajı. Netler zorlaşır, her soru derece belirler.' },
     { label: '450 - 500 Puan (İlk 10.000 / Zirve Derece)', multiplier: 850, desc: 'Zirve bölgesi. Az aday bulunur ama her net sıralamada yüzlerce sıra oynatır.' },

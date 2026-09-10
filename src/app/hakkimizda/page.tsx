@@ -89,6 +89,32 @@ export default function HakkimizdaPage() {
                             </div>
                         </section>
 
+                        {/* Editöryel Ekip ve E-E-A-T */}
+                        <section>
+                            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                                Künye ve İçerik Standartlarımız
+                            </h2>
+                            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-6">
+                                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-4">
+                                    <div className="w-14 h-14 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center text-white font-bold text-xl shadow-md">
+                                        MÇ
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg font-bold text-gray-900">Mert Çalışkan</h3>
+                                        <p className="text-sm text-blue-600 font-medium">Kurucu &amp; Eğitim Veri Analisti</p>
+                                    </div>
+                                </div>
+                                <p className="text-sm text-gray-700 leading-relaxed mb-4">
+                                    ÖSYM resmi yerleştirme verileri, standart sapma katsayıları ve sınav yığınsal dağılımları üzerine bağımsız matematiksel simülasyon modelleri geliştirmektedir. Sitemizdeki tüm hesaplama algoritmaları ve rehberlik içerikleri doğrudan resmi ÖSYM verilerine dayandırılarak güncellenir ve test edilir.
+                                </p>
+                                <div className="flex flex-wrap gap-2 text-xs">
+                                    <span className="bg-white border border-gray-200 px-3 py-1 rounded-md text-gray-700 font-medium">✓ Resmi ÖSYM Kılavuzu Doğrulaması</span>
+                                    <span className="bg-white border border-gray-200 px-3 py-1 rounded-md text-gray-700 font-medium">✓ Bağımsız &amp; Ücretsiz Eğitim Aracı</span>
+                                    <span className="bg-white border border-gray-200 px-3 py-1 rounded-md text-gray-700 font-medium">✓ Client-Side Gizlilik Prensibi</span>
+                                </div>
+                            </div>
+                        </section>
+
                         {/* İletişim */}
                         <section>
                             <h2 className="text-2xl font-bold text-gray-900 mb-4">

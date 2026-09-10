@@ -98,8 +98,8 @@ export default function SSS() {
                     a: 'TYT\'de toplam 120 soru vardır: Türkçe 40, Matematik 40, Sosyal Bilimler 20, Fen Bilimleri 20 soru. Toplam süre 165 dakikadır.'
                 },
                 {
-                    q: 'AYT\'de kaç soru var?',
-                    a: 'AYT\'de toplam 80 soru vardır. Sayısal: Matematik 40, Fizik 14, Kimya 13, Biyoloji 13. Sözel: Edebiyat 24, Tarih-1 10, Coğrafya-1 6, Tarih-2 11, Coğrafya-2 11, Felsefe 12, Din 6 soru.'
+                    q: 'AYT\'de kaç soru var ve kaç soru çözülmeli?',
+                    a: 'AYT kitapçığında 4 ayrı testte toplam 160 soru bulunur (Matematik 40, Fen 40, Edebiyat-Sosyal-1 40, Sosyal-2 40). Her aday kendi puan türüne göre 80 soru çözer: Sayısal öğrencisi Matematik ve Fen (80 soru); Eşit Ağırlık öğrencisi Matematik ve Edebiyat-Sosyal-1 (80 soru); Sözel öğrencisi Edebiyat-Sosyal-1 ve Sosyal-2 (80 soru) çözer. Süre 180 dakikadır.'
                 },
                 {
                     q: 'YDT nedir?',
