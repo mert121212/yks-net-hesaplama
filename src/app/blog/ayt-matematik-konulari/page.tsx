@@ -65,79 +65,79 @@ export default function AYTMatematikKonulari() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            TYT denemesinde 90 neti görüp pazar günkü AYT denemesinde 15 nette takılı kalan bir adayın yaşadığı kafa karışıklığı çok doğaldır.
+                            Cumartesi günü TYT&apos;de 85 net yapıp havalara uçan, ertesi gün AYT denemesine girince 14 netle masadan kalkan öğrencinin yüz ifadesini iyi bilirim. Resmen duvara toslamış gibi olur. &quot;Hocam ben dün ne yaptım, bugün ne yapıyorum?&quot; der.
                         </p>
                         <p>
-                            Çünkü iki sınavın ölçtüğü şey birbirinden tamamen farklı.
+                            Çok normal. Çünkü iki sınavın dünyası bambaşka.
                         </p>
                         <p>
-                            TYT bir hız ve dikkat sınavıdır; soru başına ortalama 1 dakikanız vardır. AYT ise sabır ve derinlik sınavıdır. 180 dakikalık süreniz vardır; acele etmeniz gerekmez. Ama karşınıza çıkan soru, formül ezberinden ziyade konunun mantığını ne kadar içselleştirdiğinizi tartar.
+                            TYT hızdır, panik kontrolüdür, soruyu gördüğün an pratik zekayla hamle yapmaktır. Ama AYT öyle değil. AYT sabır ister, derinlik ister. Sana 180 dakika verir; &quot;Al kardeşim, süren bol, otur düşün ama sakın beni hafife alma&quot; der. AYT&apos;de şansa veya hızlı okumaya yer yoktur. Formülü bilmek de yetmez; o formülün nereden çıktığını anlamadıysan ÖSYM seni ters köşe yapar.
                         </p>
                         <p>
-                            Eğer AYT Matematikte 25 netin üzerine çıkmak istiyorsanız, önünüzdeki 40 sorunun mantıksal dağılımını çok iyi bilmelisiniz:
+                            Sayısalcı ya da Eşit Ağırlıkçı olman fark etmez; 25 netin üstüne zıplamak istiyorsan önündeki 40 sorunun haritasını gözün kapalı bilmen lazım:
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            40 Sorunun Konu Anatomisi
+                            40 Sorunun Konu Anatomisi: Nereden Ne Gelir?
                         </h2>
 
                         <div className="space-y-4 my-6">
                             <div className="p-5 bg-blue-50 border border-blue-200 rounded-xl">
-                                <h3 className="font-bold text-blue-900 text-lg mb-1">1. Temel Omurga: Fonksiyonlar ve Polinomlar (İlk 6-8 Soru)</h3>
-                                <p className="text-sm text-blue-800 leading-relaxed">
-                                    Fonksiyonlar, Polinomlar, 2. Derece Denklemler ve Parabol. Burası binanın temelidir. Fonksiyon grafiğini okuyamayan, tepe noktasını yorumlayamayan bir öğrencinin türevin geometrik yorumunu çözmesi imkansızdır. Bu gruptaki soruları kayıpsız geçmek zorundasınız.
+                                <h3 className="font-bold text-blue-950 text-lg mb-1">1. Giriş Kapısı: Fonksiyonlar ve Parabol (İlk 6-8 Soru)</h3>
+                                <p className="text-sm text-blue-900 leading-relaxed">
+                                    Fonksiyon grafiği okuyamayan birinin AYT Matematik yapma şansı sıfırdır. Ciddiyim, sıfır. Parabolün tepe noktasını, simetri eksenini, bileşke fonksiyonu adın gibi bileceksin. Çünkü birazdan göreceğin o devasa Türev ve İntegral konuları, tamamen fonksiyon diliyle konuşur. Bu ilk 6-8 soruda fire veren yarışa 1-0 geride başlar.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-emerald-50 border border-emerald-200 rounded-xl">
-                                <h3 className="font-bold text-emerald-900 text-lg mb-1">2. Cepteki Puanlar: Logaritma ve Diziler (4-5 Soru)</h3>
-                                <p className="text-sm text-emerald-800 leading-relaxed">
-                                    AYT&apos;nin kuralları en net, sürprizi en az olan bölgesidir. Logaritmanın temel özelliklerini ve aritmetik/geometrik dizi formüllerini sindirmiş bir aday, bu 4-5 soruyu fire vermeden cebe koyar. Buradan soru kaçırmak sınav masasında puan hediye etmektir.
+                                <h3 className="font-bold text-emerald-950 text-lg mb-1">2. Sınavın İkramı: Logaritma ve Diziler (4-5 Soru)</h3>
+                                <p className="text-sm text-emerald-900 leading-relaxed">
+                                    AYT&apos;nin en dürüst, en az sürpriz barındıran yeridir. Logaritmanın temel 5-6 özelliğini ve aritmetik/geometrik dizi formüllerini kafana yazmışsan, bu 4 soruyu 8 dakikada çözer cebe atarsın. Buradan soru kaçıran öğrenci resmen masada rakibine puan hediye ediyordur.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-purple-50 border border-purple-200 rounded-xl">
-                                <h3 className="font-bold text-purple-900 text-lg mb-1">3. Kader Belirleyen Blok: Trigonometri ve LTİ (14-16 Soru)</h3>
-                                <p className="text-sm text-purple-800 leading-relaxed">
-                                    4-5 soru Trigonometri, 2-3 soru Limit, 4-5 soru Türev ve 4 soru İntegral. Sınavın üçte birinden fazlası tek başına bu dörtlüden gelir. Dereceye oynayan öğrenciyle ortalama sırada kalan adayı ayıran yer tam burasıdır.
+                                <h3 className="font-bold text-purple-950 text-lg mb-1">3. Ölüm Kalım Bölgesi: Trigonometri ve LTİ (14-16 Soru)</h3>
+                                <p className="text-sm text-purple-900 leading-relaxed">
+                                    İşte dananın kuyruğunun koptuğu yer. 4 soru Trigonometri, 2-3 soru Limit-Süreklilik, 4 soru Türev, 4 soru İntegral. Sınavın neredeyse yarısı! Tıp, Hukuk, ODTÜ veya İTÜ hayali kuran biri burayı pas geçemez. Buradaki soruları çözen ilk 30 bine girer; kaçan ise 100 bin bandına razı olur.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-amber-50 border border-amber-200 rounded-xl">
-                                <h3 className="font-bold text-amber-900 text-lg mb-1">4. Geometri ve Analitik (10 Soru)</h3>
-                                <p className="text-sm text-amber-800 leading-relaxed">
-                                    Noktanın ve doğrunun analitiği, çember analitiği ve katı cisimler. Çoğu öğrenci cebirle boğuşmaktan geometriye bakmaz bile. Oysa analitik geometri formülünü oturtan öğrenci burada çok rahat net toplar.
+                                <h3 className="font-bold text-amber-950 text-lg mb-1">4. Gizli Maden: Analitik Geometri ve Katı Cisimler (10 Soru)</h3>
+                                <p className="text-sm text-amber-900 leading-relaxed">
+                                    Çoğu aday cebirle uğraşmaktan yorulup geometriye hiç bakmaz bile. Oysa doğrunun ve çemberin analitiği tamamen formül yerine koymadır. TYT geometrisi gibi &quot;görme yeteneği&quot; gerektirmez; denklemi yazarsın, tıkır tıkır çıkar. 10 sorunun en az 6&apos;sını cebe koymak işten bile değildir.
                                 </p>
                             </div>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Limit, Türev, İntegral Bloğuna Hangi Sırayla Çalışmalı?
+                            LTİ Çıkmazı: Hangi Sırayla Çalışırsan Tıkanmazsın?
                         </h2>
                         <p>
-                            Öğrencilerin yaptığı en büyük hata, fonksiyon ve trigonometri temeli zayıfken hemen gidip bir Türev fasikülü çözmeye çalışmaktır.
+                            Öğrencide şöyle bir heves görüyorum: Kırtasiyeye gidiyor, &quot;Bana en zor Türev fasikülünü ver abi&quot; diyor. Masaya oturuyor, 2. sayfada kalemi bırakıyor. Niye? Çünkü fonksiyon grafiği bilmiyor, trigonometrik yarım açı formülünü hatırlamıyor.
                         </p>
                         <p>
-                            Böyle yaparsanız 3 gün sonra tıkanırsınız. Türev dediğiniz şey aslında bir fonksiyonun anlık değişim hızı, yani teğetinin eğimidir. Eğim ise doğrudan analitik geometridir.
+                            Türev dediğin şey bir fonksiyonun teğetinin eğimidir arkadaşım. Eğim bilmiyorsan türevi nasıl yapacaksın?
                         </p>
                         <p>
-                            Sıralamayı asla bozmayın:
+                            Sırayı bozma, akıntıya karşı kürek çekme:
                         </p>
                         <ol className="list-decimal pl-6 space-y-2">
-                            <li>Önce Fonksiyon grafikleri ve Trigonometriyi sağlamlaştırın.</li>
-                            <li>Ardından Limit ve Süreklilik konusunu bitirin.</li>
-                            <li>Limit zihninizde oturduğunda Türev son derece mantıklı gelmeye başlar.</li>
-                            <li>Türevi tam kavradığınızda ise İntegral, onun ters işlemi olarak kendiliğinden oturur.</li>
+                            <li><strong>Önce Fonksiyon ve Trigonometri:</strong> Bu ikisi sağlamsa arkana yaslanabilirsin.</li>
+                            <li><strong>Limit ve Süreklilik:</strong> Zaten kısa konudur, mantığı kaptın mı 3 günde biter.</li>
+                            <li><strong>Türev:</strong> Türevin kurallarını ezberleme; geometrik yorumunu kafanda canlandır. Teğet denklemini kurmayı öğren.</li>
+                            <li><strong>İntegral:</strong> Türevin tersi olduğunu anladığın an integral bir canavar olmaktan çıkar, eğlenceli bir bulmacaya dönüşür.</li>
                         </ol>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Ne Zaman Branş Denemesine Geçilmeli?
+                            Ne Zaman AYT Branş Denemesine Geçmeli?
                         </h2>
                         <p>
-                            AYT Matematik tek bir kaynaktan soru çözerek bitmez. Konuyu öğrendikten sonra en az iki farklı zorluk seviyesindeki kitaptan tarama yapmalısınız.
+                            &quot;Tüm konularım bitmeden deneme çözmem&quot; inadını bırak. Mart ayına geldiğinde konularının %75-80&apos;i bittiyse haftada 2 tane AYT Matematik branş denemesini masaya koyacaksın.
                         </p>
                         <p>
-                            Bahar aylarına gelindiğinde konu eksiklerinizin en az %80&apos;i tamamlanmış olmalıdır. Ardından haftada 2 adet 40 soruluk AYT Matematik branş denemesi çözmeye başlamalısınız. Denemede hangi konuda tökezlediğinizi görüp sadece o konunun fasikülünden 30-40 soru çözmek, netinizi 15&apos;lerden 30&apos;un üzerine çıkaracak en garantili yöntemdir.
+                            Denemede türevin maksimum-minimum probleminde mi patladın? Hemen o akşam fasikülü açıp sadece o alt başlıktan 30 soru çözeceksin. AYT neti öyle 500 sayfa baştan okunarak değil; denemede düşülen çukurların tek tek kapatılmasıyla 15&apos;ten 32&apos;ye çıkarılır.
                         </p>
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">

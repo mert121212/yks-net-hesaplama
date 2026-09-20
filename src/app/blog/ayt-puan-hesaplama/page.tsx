@@ -65,91 +65,78 @@ export default function AYTPuanHesaplama() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            YKS hazırlık sürecinde her kış şahit olduğumuz değişmez bir tablo vardır: Öğrenci kasım, aralık, hatta ocak ayına kadar günün 8 saatini yalnızca TYT Türkçe paragrafına ve TYT problemlerine ayırır. &quot;AYT&apos;ye ne zaman başlayacaksın?&quot; dediğinizde de genelde aynı yanıt gelir:
-                        </p>
-
-                        <div className="bg-slate-100 border-l-4 border-slate-500 p-4 rounded-r-lg text-slate-800 italic text-base my-4">
-                            &quot;Hocam önce TYT&apos;de bir 75-80 neti göreyim, içim rahatlasın. Sonra AYT&apos;ye asılırım.&quot;
-                        </div>
-
-                        <p>
-                            Bu yaklaşım, sınav matematiğini tamamen yanlış okumaktır.
+                            Her yıl Ocak ayında rehberlik servisine gelen öğrencilerle aynı diyaloğu yaşarım. Çocuk masaya oturur, elinde 65 TYT neti: <em>&quot;Hocam ben TYT&apos;de 80 neti görmeden AYT&apos;ye başlayamam, içim elvermiyor.&quot;</em>
                         </p>
 
                         <p>
-                            Çünkü 4 yıllık lisans programlarına (Tıp, Mühendislik, Hukuk, Psikoloji vb.) yerleşirken kullanılan puanın %40&apos;ı TYT&apos;den, tam <strong>%60&apos;ı ise pazar günkü AYT&apos;den</strong> gelir.
+                            Gözünü seveyim yapma şunu. Bu, YKS&apos;deki en büyük intihardır.
+                        </p>
+
+                        <p>
+                            Neden biliyor musun? Çünkü 4 yıllık bir üniversiteye (Tıp, Hukuk, Mühendislik, Psikoloji, Mimarlık fark etmez) yerleşirken seni o kapıdan sokacak olan puanın %40&apos;ı TYT&apos;den, <strong>tam %60&apos;ı ise Pazar günkü AYT&apos;den</strong> gelir. Sen cumartesi günkü sınav için 8 ay boyunca yırtınıyorsun ama asıl kararın verileceği pazar gününü son 2 aya sıkıştırıyorsun. Tam bir akıl tutulması.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Matematiksel Gerçek: 1 AYT Neti = ~2,3 - 2,5 TYT Neti
+                            Masanın Üstündeki Matematik: 1 AYT Neti = 2.5 TYT Neti
                         </h2>
                         <p>
-                            Katsayıları alt alta koyduğunuzda tablo çok nettir:
+                            Katsayıları alt alta yazıp hesap makinesine basalım, gözünle gör:
                         </p>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>TYT&apos;de çözdüğünüz 1 net, yerleştirme puanınıza yaklaşık <strong>1,32 - 1,35 puan</strong> kazandırır.</li>
-                            <li>Pazar günü kendi alanınızda yapacağınız 1 AYT neti ise yaklaşık <strong>3,00 - 3,20 puan</strong> getirir.</li>
+                            <li>Cumartesi günü TYT&apos;de kan ter içinde çözdüğün 1 net, puanına yaklaşık <strong>1.32 - 1.34 puan</strong> ekler.</li>
+                            <li>Pazar günü kendi alanında çözeceğin tek 1 AYT neti ise hanene tam <strong>3.00 - 3.20 puan</strong> yazar!</li>
                         </ul>
                         <p>
-                            Yani cumartesi günkü sınavda 5 net kaybetmiş bir aday, pazar günü AYT&apos;de sadece 2 net fazla yaparak o açığı kuruşu kuruşuna kapatabilir. Cumartesi günü kötü geçen bir TYT yüzünden moral bozup pazar gününü çöpe atmak bu yüzden yapılabilecek en büyük yanlıştır.
+                            Bunun Türkçesi ne demek? Cumartesi günü TYT Türkçe&apos;de süren yetmedi ve 5 net eksik yaptın diye kriz geçirmene hiç gerek yok. Pazar günü AYT&apos;de fazladan yapacağın 2 tane doğru cevap, o kaybettiğin 5 neti siler süpürür, seni üstüne bir de kâra geçirir. Cumartesi çıkışında &quot;sınavım kötü geçti&quot; diye ağlayıp Pazar günkü AYT&apos;ye moralsiz giren öğrenci kendi ayağına sıkar.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            SAY (Sayısal) Puanının Ağırlık Dağılımı
+                            SAY (Sayısal): Krallık AYT Matematik&apos;te
                         </h2>
                         <p>
-                            Sayısal öğrencisi pazar günü 40 Matematik ve 40 Fen Bilimleri (14 Fizik, 13 Kimya, 13 Biyoloji) çözer.
+                            Sayısalcı pazar günü 40 Matematik, 40 Fen (Fizik, Kimya, Biyoloji) çözer.
                         </p>
                         <p>
-                            Bu 80 sorunun puan dağılımında en büyük ağırlık tek başına Matematiktedir:
+                            Burada çok net bir hiyerarşi var: 40 soruluk AYT Matematik, SAY puanının neredeyse yarısını tek başına taşır. Net başına yaklaşık 3.0 puan gelir. Fende Fizik neti ~2.9 puan, Kimya ~3.05, Biyoloji ~2.95 civarındadır.
                         </p>
-                        <ul className="list-disc pl-6 space-y-2">
-                            <li><strong>AYT Matematik (40 soru):</strong> Sayısal puanının AYT payının tam %50&apos;sini tek başına sırtlar (Net başına ~3,0 puan).</li>
-                            <li><strong>AYT Fizik (14 soru):</strong> Net başına yaklaşık 2,85 - 3,00 puan.</li>
-                            <li><strong>AYT Kimya (13 soru):</strong> Net başına yaklaşık 3,00 - 3,10 puan.</li>
-                            <li><strong>AYT Biyoloji (13 soru):</strong> Net başına yaklaşık 2,90 - 3,05 puan.</li>
-                        </ul>
                         <p>
-                            Tıp ya da iyi bir mühendislik hedefleyen bir öğrenci, AYT Matematikte 30 netin üzerine çıkmadığı sürece bu hedefini sadece Fen netleriyle kurtarmakta çok zorlanır.
+                            İstediğin kadar Feni fulle; AYT Matematik&apos;te 28-30 net bandını aşamadığın sürece ilk 30 bindeki devlet tıp fakülteleri ya da iyi mühendislikler hayal olarak kalır. Sayısalın şahı AYT Matematiktir.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            EA (Eşit Ağırlık) Puanında Sıralamayı Belirleyen Ders
+                            EA (Eşit Ağırlık): Hukukun Kapısını Edebiyat Değil, Matematik Açar
                         </h2>
                         <p>
-                            Eşit Ağırlık puanı, AYT Matematik (40 soru) ile Türk Dili ve Edebiyatı - Sosyal Bilimler-1 (40 soru) testlerinden oluşur:
+                            Eşit Ağırlıkçıların en büyük yanılgısı sürekli Edebiyat ezberlemektir.
                         </p>
-                        <ul className="list-disc pl-6 space-y-2">
-                            <li>24 Edebiyat</li>
-                            <li>10 Tarih-1</li>
-                            <li>6 Coğrafya-1</li>
-                            <li>40 Temel/İleri Matematik</li>
-                        </ul>
                         <p>
-                            Eşit Ağırlıkta derece yapmak isteyen hemen her ciddi aday Edebiyatta 18-22 net bandını yakalar. Farkı açan yer neresidir? Tabii ki AYT Matematik. Türkiye genelinde Eşit Ağırlıkçıların AYT Matematik ortalaması 5-7 net civarındadır. Masaya oturup AYT Matematikten 24-28 net çıkaran bir Eşit Ağırlık öğrencisi, ilk 5 bin - 10 bin aralığına çok rahat tırmanır.
+                            İyi bir hukuk veya psikoloji hedefleyen hemen her EA öğrencisi Edebiyatta 18-22 neti zaten yapar. Orada kimse kimseye fark atamaz. Asıl fark nerede açılır? Tabii ki AYT Matematikte!
+                        </p>
+                        <p>
+                            Türkiye genelinde Eşit Ağırlık adaylarının AYT Matematik ortalaması kaç biliyor musun? Sadece 5-6 net. Sen o masaya oturup AYT Matematikten 22-25 net çıkardığın an, Türkiye&apos;de ilk 5 binin kapısını tekmeleyerek açarsın. Edebiyat seni yarışta tutar; dereceyi sana getirecek olan Matematiktir.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            SÖZ (Sözel) Puanında Dikkat Edilmesi Gereken Ayrıntı
+                            SÖZ (Sözel): Gizli Silahın TYT Matematik
                         </h2>
                         <p>
-                            Sözelciler Edebiyat-Sosyal-1 (40 soru) ve Sosyal-2 (40 soru) olmak üzere toplam 80 soru çözer. Sosyal-2 testinde Tarih-2 (11 soru), Coğrafya-2 (11 soru), Felsefe Grubu (12 soru) ve Din Kültürü (6 soru) yer alır.
+                            Sözelciler Edebiyat-Sosyal-1 ve Sosyal-2 testlerinden toplam 80 soru çözer. Kavram bilgisi, tarih dönemleri, coğrafya haritaları havada uçuşur.
                         </p>
                         <p>
-                            Sözel alanda soru kaçırmamak için kavram ve dönem bilgisine hakim olmak şarttır. Fakat sözel adaylarının gözden kaçırdığı en kritik hamle: Cumartesi günkü TYT&apos;de yapılacak 5-8 temel matematik neti, sözel sıralamasında on binlerce adayın bir anda önüne geçmenizi sağlar.
+                            Ama sözelcilerin %90&apos;ının kaçırdığı dev bir açık kapı var: Cumartesi günkü TYT&apos;de yapacağın <strong>sadece 6-7 temel matematik neti</strong>, seni Türkiye&apos;deki tüm sözelcilerin %95&apos;inin önüne fırlatır. Çünkü rakiplerin matematikten tamamen kaçıyor. O boşluğu kullanan sözelci derece yapar.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Sınav Salonunda Pratik Taktik: Çift Puan Türü
+                            Sınav Salonu Taktiği: 50 Dakikan Kaldıysa Sakın Uyumaya Kalkma!
                         </h2>
                         <p>
-                            AYT sınavında size tek bir kitapçık verilir ve süre 180 dakikadır. Kitapçığın içinde tüm testler bulunur.
+                            AYT&apos;de süre 180 dakika ve testlerin hepsi tek kitapçıkta.
                         </p>
                         <p>
-                            Diyelim ki asıl hedefiniz Eşit Ağırlık. Kendi testlerinizi (Matematik ve Edebiyat-Sosyal-1) 130 dakikada bitirdiniz ve önünüzde 50 dakika boş vakit kaldı. Kalemi bırakıp beklemek yerine, arkadaki Sosyal-2 testini açıp yapabildiğiniz Tarih ve Coğrafya sorularını işaretleyin. 
+                            Diyelim ki Eşit Ağırlıkçısın. Matematik ve Edebiyat-Sosyal-1 testlerini 130 dakikada bitirdin. Masada boş boş oturup tavanı izleyen veya kafayı sıraya koyup uyuyan adaylar görüyorum. Yapma!
                         </p>
                         <p>
-                            Bu hamle sizin Eşit Ağırlık puanınızı bir milim bile düşürmez; fakat tercih dönemi geldiğinde cebinizde sürpriz ve güçlü bir Sözel puanının da bulunmasını sağlar.
+                            Aç arkadaki Sosyal-2 testini. Tarih-2 ve Coğrafya-2&apos;de yapabildiğin 10-15 soruyu işaretle. Bu işaretlemeler senin Eşit Ağırlık puanından tek bir kuruş bile eksiltmez. Ama tercih dönemi geldiğinde elinde canavar gibi ikinci bir Sözel puanı bulunur. İki biletle çekilişe katılmak varken niye tek biletle yetinesin?
                         </p>
 
                         <div className="bg-gradient-to-r from-purple-600 to-indigo-700 rounded-2xl p-8 my-10 text-center text-white shadow-lg">

@@ -65,84 +65,83 @@ export default function YKSBasvuruTarihleri() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Her yıl binlerce öğrencinin yaptığı en tehlikeli hata, sınav başvurusunu son güne, hatta son saatlere bırakmaktır. Son saatlerde banka sunucularında yaşanan yoğunluklar veya sistem kesintileri, bir yıllık emeğin tehlikeye girmesine yol açabilir.
+                            Her yıl Mart ayında rehberlik odasına gözyaşları içinde gelen en az iki öğrenci olur: <em>&quot;Hocam gece 23:45&apos;te ödemeyi yapacaktım, banka kartı onay kodu göndermedi, sistem kapandı! Ne yapacağım ben şimdi?&quot;</em>
                         </p>
 
                         <p>
-                            ÖSYM süre konusunda tamamen katıdır. Belirlenen tarih ve saat dolduğu anda sistem kapanır. Bu yüzden başvuru takvimini şimdiden bilmek ve ilk günlerde işlemi tamamlamak en sağlıklı yoldur.
+                            İşte o an insanın kalbi parçalanır. Çocuk 10 ay boyunca sabah 7&apos;de kütüphaneye gitmiş, binlerce soru çözmüş ama basit bir başvuru ihmali yüzünden 1 koca yılı heba olma noktasına gelmiş.
+                        </p>
+
+                        <p>
+                            ÖSYM sistemiyle şaka olmaz; merhamet, rica ya da torpil işlemez. Saat 23:59 dediyse, 00:00&apos;da kepenk iner. Bir yıllık emeğini riske atmak istemiyorsan başvuru sürecinin adımlarını ve o görünmez tuzakları çok iyi bilmelisin:
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            ÖSYM YKS Takvim Çerçevesi
+                            ÖSYM YKS Takvimi: 3 Kritik Eşik
                         </h2>
                         <p>
-                            ÖSYM resmi takvimi her yıl kış döneminde ilan eder. Yıllara göre değişmeyen temel süreç dağılımı şöyledir:
+                            ÖSYM takviminin değişmeyen ritmi şudur; bu tarihleri telefonunun alarmına kaydet:
                         </p>
 
                         <div className="space-y-4 my-6">
                             <div className="p-5 bg-blue-50 border border-blue-200 rounded-xl">
-                                <h3 className="font-bold text-blue-900 text-lg mb-1">Şubat Başı - Mart Başı: Standart Başvuru Dönemi</h3>
-                                <p className="text-sm text-blue-800 leading-relaxed">
-                                    Yaklaşık 3-4 haftalık bu ana süreçte adaylar ÖSYM AİS üzerinden oturumlarını seçer ve sınav ücretini yatırır. Başvurunuzu ilk hafta içinde tamamlamak en stressiz yöntemdir.
+                                <h3 className="font-bold text-blue-950 text-lg mb-1">1. Şubat Başı - Mart Başı: Standart Başvuru</h3>
+                                <p className="text-sm text-blue-900 leading-relaxed">
+                                    Ana başvuru penceresidir (yaklaşık 3-4 hafta sürer). ÖSYM AİS üzerinden oturumlarını seçersin, ücretini yatırırsın. Kuralın şu olmalı: Başvuru açıldığı ilk 3 gün içinde işlemini bitir, kafanı rahatlatıp dersine dön.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-amber-50 border border-amber-200 rounded-xl">
-                                <h3 className="font-bold text-amber-900 text-lg mb-1">Mart Ortası: Geç Başvuru Günleri</h3>
-                                <p className="text-sm text-amber-800 leading-relaxed">
-                                    Normal süreyi kaçıran adaylar için açılan 2-3 günlük telafi penceresidir. Fakat sınav ücreti %50 zamlı ödenir ve sınav yeri açısından uzak merkezlere atanma riski doğar.
+                                <h3 className="font-bold text-amber-950 text-lg mb-1">2. Mart Ortası: Geç Başvuru Günleri (Acil Durum Kapısı)</h3>
+                                <p className="text-sm text-amber-900 leading-relaxed">
+                                    Normal tarihi kaçıranlar için açılan 2-3 günlük telafi kapısıdır. Ama öyle bedava değil: Sınav ücreti <strong>%50 zamlı</strong> ödenir ve sınav yeri olarak seni ikamet ettiğin yerin çok uzağındaki bir ilçeye atayabilirler.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-emerald-50 border border-emerald-200 rounded-xl">
-                                <h3 className="font-bold text-emerald-900 text-lg mb-1">Haziran Ortası: Büyük Sınav Hafta Sonu</h3>
-                                <p className="text-sm text-emerald-800 leading-relaxed">
-                                    Cumartesi sabahı 10.15&apos;te TYT, Pazar sabahı 10.15&apos;te AYT ve Pazar öğleden sonra 15.45&apos;te YDT uygulanır. Kapıların 10.00&apos;da kapandığını ve 10.01&apos;de gelen hiçbir adayın içeri alınmadığını unutmayın.
+                                <h3 className="font-bold text-emerald-950 text-lg mb-1">3. Haziran Ortası: Büyük Sınav Hafta Sonu</h3>
+                                <p className="text-sm text-emerald-900 leading-relaxed">
+                                    Cumartesi 10:15 TYT, Pazar 10:15 AYT ve Pazar 15:45 YDT. <strong>Saat 10:00&apos;da bina kapıları kapanır!</strong> 10:01&apos;de kapıda olsan bile içeri alınmazsın; kapıda ağlayan öğrencilerin videolarını her sene haberlerde görmüşsündür. Sınav yerine en geç 09:15&apos;te varacak şekilde yola çık.
                                 </p>
                             </div>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            e-Devlet ile AİS Üzerinden 4 Adımda Başvuru
+                            e-Devlet ile Evden 5 Dakikada Başvuru
                         </h2>
                         <p>
-                            Yeni nesil çipli kimlik kartınız ve e-Devlet şifreniz varsa okulunuza ya da sınav merkezine gitmeden evinizden başvurabilirsiniz:
+                            Eskisi gibi liselere veya ÖSYM merkezlerine gidip sıra bekleme devri bitti. Çipli kimliğin ve e-Devlet şifren varsa yatağından bile başvurabilirsin:
                         </p>
 
                         <ol className="list-decimal pl-6 space-y-3">
-                            <li>
-                                <strong>AİS Sistemine Giriş:</strong> ais.osym.gov.tr adresine girip &quot;e-Devlet ile Kayıt Ol / Giriş Yap&quot; butonunu kullanın.
-                            </li>
-                            <li>
-                                <strong>Bilgilerin Kontrolü:</strong> Kimlik ve eğitim bilgilerinizin doğruluğunu teyit edin. Fotoğrafınızın güncel olması zorunludur; eski fotoğraflı kimlikler sınav sabahı sorun yaratabilir.
-                            </li>
-                            <li>
-                                <strong>Oturum Seçimi:</strong> TYT oturumu tüm adaylar için zorunludur. 4 yıllık lisans fakültesi hedefliyorsanız AYT oturumunu, dil bölümleri istiyorsanız YDT oturumunu mutlaka işaretleyin.
-                            </li>
-                            <li>
-                                <strong>Ödeme ve Onay:</strong> Başvuru formunu kaydettikten sonra ÖSYM Ödemeler Sistemi üzerinden banka kartı veya kredi kartıyla ödemenizi yapın.
-                            </li>
+                            <li><strong>AİS&apos;e Giriş:</strong> ais.osym.gov.tr adresine git, &quot;e-Devlet ile Giriş Yap&quot; butonuna bas.</li>
+                            <li><strong>Kimlik ve Fotoğraf Kontrolü:</strong> Fotoğrafının güncel olduğundan emin ol. Çok eski, tanınmayacak durumdaysa kimlik yenilemen gerekebilir.</li>
+                            <li><strong>Oturumları Seç:</strong> TYT zaten herkes için zorunlu. 4 yıllık fakülte istiyorsan AYT&apos;yi mutlaka işaretle. Dilciysen YDT&apos;yi de seç.</li>
+                            <li><strong>Ödeme:</strong> Formu kaydettikten sonra ÖSYM Ödemeler sayfasına geçip banka veya kredi kartıyla ödemeni yap.</li>
                         </ol>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            En Sık Yapılan Hata: &quot;Kaydettim, Bitti Sandım&quot;
+                            En Tehlikeli Tuzak: &quot;Kaydettim Bitti&quot; Zannetmek
                         </h2>
                         <p>
-                            Her yıl yüzlerce aday formu sisteme kaydedip &quot;başvurum tamamlandı&quot; zannederek ödemeyi unutur. 
+                            Adayların en çok yandığı nokta şurası: Çocuk formu dolduruyor, alttaki &quot;Kaydet&quot; butonuna basıyor. Ekranda &quot;Başvurunuz kaydedildi&quot; yazısını görünce &quot;Tamamdır, hallettim&quot; deyip sekmeyi kapatıyor.
                         </p>
                         <p>
-                            ÖSYM kurallarına göre sınav ücreti yatırılmayan hiçbir başvuru geçerli sayılmaz. Ödeme yaptıktan sonra mutlaka AİS ekranına tekrar girip <strong>&quot;Başvuru Durumu: Ödendi ve Onaylandı&quot;</strong> yeşil ibaresini gözünüzle görün ve başvuru kayıt belgenizi PDF olarak saklayın.
+                            Ödemeyi yapmayı unutuyor!
+                        </p>
+                        <p>
+                            ÖSYM kılavuzu çok açık: <strong>Ücreti yatırılmayan hiçbir başvuru geçerli sayılmaz.</strong> Ödemeni yaptıktan sonra AİS sayfasına tekrar gir; o ekranda yeşil renkle <strong>&quot;Başvuru Durumu: Ödendi ve Onaylandı&quot;</strong> yazısını kendi gözlerinle görmeden rahat nefes alma. Başvuru kayıt belgenin de çıktısını veya PDF&apos;ini mutlaka sakla.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Geç Başvuru Gününün Gizli Tehlikesi
+                            Geç Başvuru Rahatlığına Sakın Güvenme
                         </h2>
                         <p>
-                            &quot;Kaçırırsam nasıl olsa geç başvuru var&quot; rahatlığı ciddi sorunlara yol açabilir:
+                            &quot;Aman nasıl olsa Mart&apos;ta geç başvuru var, sonra hallederim&quot; diyenler iki büyük tokat yer:
                         </p>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>Sınav ücreti <strong>%50 artırımlı</strong> tahsil edilir.</li>
-                            <li>Normal başvuru döneminde kendi ilçenizdeki tüm sınav binalarının kontenjanları dolmuş olabilir. Bu durumda ÖSYM sizi ikamet ettiğiniz yerden çok daha uzak bir ilçeye ya da komşu ile sınav merkezi olarak atayabilir.</li>
+                            <li>Cebinden %50 daha fazla para çıkar (örneğin oturum başı normalde 300 TL ise 450 TL ödersin).</li>
+                            <li>Daha da kötüsü: Kendi ilçendeki tüm okulların kontenjanı dolduğu için, ÖSYM seni evinden 2 saat uzaklıktaki bir ilçeye hatta yan ile sınav yeri olarak verebilir. Sınav sabahı 06:00&apos;da yollara düşmek istemiyorsan işini vaktinde yap.</li>
                         </ul>
 
                         <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-8 my-10 text-center text-white shadow-lg">

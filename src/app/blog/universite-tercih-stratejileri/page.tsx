@@ -65,82 +65,87 @@ export default function UniversiteTercihStratejileri() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            YKS sürecinde en çok üzüldüğümüz şey; sınavda çok iyi netler yapıp tercih döneminde yapılan basit kural hataları yüzünden istemediği bir yere yerleşen veya tamamen açıkta kalan öğrencilerdir.
+                            Ağustos ayında tercih danışmanlığı yaparken en çok içimi yakan şey ne biliyor musun? Çocuk 12 ay boyunca gecesini gündüzüne katmış, Türkiye&apos;de ilk 40 bine girmiş. Sonra tercih ekranında komşusunun veya akrabasının &quot;abi puanlar düşecekmiş&quot; lafına kanıp öyle bir hata yapıyor ki; ya hiç istemediği bir şehrin istemediği bir bölümüne yerleşiyor ya da açıkta kalıyor.
                         </p>
 
                         <p>
-                            ÖSYM yerleştirme sistemi duygulardan tamamen arınmış bir algoritmayla çalışır. Tercih formuna yazdığınız 24 satır, yukarıdan aşağıya tek tek taranır. Sistem, puanınızın yettiği ilk satıra sizi yerleştirir ve alttaki tercihlerinize asla dönüp bakmaz.
+                            ÖSYM yerleştirme robotunda vicdan, acıma duygusu ya da esneklik yoktur. Kodları girersin, &quot;Kaydet&quot; butonuna basarsın. Sistem 1. sıradan başlar, puanının yettiği ilk yere seni şak diye yerleştirir. Altında ne varmış, senin asıl hayalin neymiş dönüp bakmaz bile.
                         </p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            1. Altın Kural: Puanla Değil, Sıralamayla Tercih Yapılır
-                        </h2>
                         <p>
-                            Tercih döneminin en büyük hatası, eldeki puana bakarak geçmiş yılların puan tabanlarıyla eşleştirme yapmaktır.
-                        </p>
-                        <p>
-                            Sınavın zor olduğu bir yılda 430 puanla Türkiye 8 bincisi olabilirsiniz. Sınavın kolay olduğu bir yılda ise aynı 430 puan sizi 50 bininci sıraya atabilir. Puanlar sınavın zorluğuna göre 20-40 puan dalgalanır; ancak bölümlerin <strong>başarı sıralamaları</strong> çok daha dengeli ve öngörülebilirdir. Kontenjanlarda olağanüstü bir artış ya da azalma yoksa, geçen yıl 35 binle kapatan bir bölüm bu yıl da yaklaşık 32 bin ile 38 bin bandında kapatacaktır. Tercih listenizi kurarken elinizdeki tek pusula başarı sıranız olmalıdır.
+                            Eline o 24 satırlık tercih hakkını aldığında hayatının kumarını oynamak istemiyorsan şu 4 gerçeği aklına kazı:
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            2. &apos;Ölü Tercih&apos; Nedir, Ne Değildir?
+                            1. Puanla Tercih Yapan Yanar: Pusulan Sadece Sıralama Olacak
                         </h2>
                         <p>
-                            Adaylar arasında kulaktan kulağa yayılan bir yanlış inanış vardır: &quot;Daha düşük sıralamalı yeri üst sıraya yazarsan ölü tercih olur.&quot;
+                            Her yıl aynı terane: &quot;Hocam geçen sene burası 420 ile almış, benim puanım 425 kesin girerim.&quot;
                         </p>
                         <p>
-                            İşin gerçeği şudur: Siz 45 binlik bir bölümü 35 binlik bir bölümden daha çok seviyor ve okumak istiyorsanız, onu üst sıraya yazmanız en doğal hakkınızdır. 
+                            Giremezsin kardeşim, öyle bir garanti yok! 
                         </p>
                         <p>
-                            Asıl tehlikeli ölü tercih iki şekilde oluşur:
+                            Sınav o sene kolay geldiyse ve herkes yüksek puan aldıysa, geçen senenin 420 puanı bu senenin 390 puanına denk gelebilir. Puan sınavın zorluğuna göre 30-40 puan aşağı yukarı oynar. Ama <strong>başarı sıralaması</strong> öyle değildir. Kontenjanlarda dev bir deprem olmadıysa, geçen sene 45 binle kapatan bir bölüm bu sene de en fazla 42 bin - 48 bin bandında oynar. Tercih listesi hazırlarken puan sütununu elinle kapat, sadece başarı sırasına bak.
                         </p>
-                        <ul className="list-disc pl-6 space-y-2">
-                            <li>
-                                <strong>Gelmeyecek yeri araya sıkıştırmak:</strong> Kendi sıranız 70 bin iken; 2. sıraya 75 binlik yeri yazıp, 3. sıraya 30 binlik bölümü yazarsanız o 3. sıradaki tercih fiilen ölüdür. Çünkü sistem 75 binlik yere sizi zaten yerleştirir ve 3. sırayı asla kontrol etmez.
-                            </li>
-                            <li>
-                                <strong>Pişmanlık doğuracak sıralama:</strong> Daha az istediğiniz bir bölümü, sadece puanı daha yüksek diye üst sıraya yazarsanız ve orası gelirse; alttaki asıl hayaliniz olan bölüme puanınız yetse dahi giremezsiniz.
-                            </li>
-                        </ul>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            3. 24 Tercihi 3 Kademeli Güvenlik Katmanına Bölün
+                            2. &apos;Ölü Tercih&apos; Efsanesi: Kimse Sana Puan Sırası Dayatamaz
                         </h2>
                         <p>
-                            Tercih listeniz bir piramit gibi dengeli kurulmalıdır. Örneğin Sayısalda <strong>50.000</strong> sıralama elde eden bir aday için örnek şablon:
+                            Adayların kafasını en çok bulandıran şehir efsanesi şudur: <em>&quot;40 binlik yeri 35 binliğin üstüne yazarsan tercihin ölür.&quot;</em>
+                        </p>
+                        <p>
+                            Külliyen yalan.
+                        </p>
+                        <p>
+                            Sen İzmir&apos;deki 50 binlik bir bölümü, İstanbul&apos;daki 40 binlik bölümden daha çok seviyorsan; canın orada okumak istiyorsa 50 binliği 1. sıraya yazarsın. ÖSYM sana &quot;Niye yüksek puanlı yeri alta yazdın?&quot; demez.
+                        </p>
+                        <p>
+                            Asıl ölü tercih nedir biliyor musun? Sıralaman 80 bindir. Sen 2. sıraya 85 binlik garanti bir yeri yazarsın, 3. sıraya ise hayalin olan 40 binlik yeri sıkıştırırsın. İşte o 3. tercih resmen çöptür! Çünkü sistem 2. tercihteki 85 binlik yere seni zaten yerleştirir; 3. sıradaki 40 binlik hayaline bakmaya tenezzül bile etmez. Sıralamanı her zaman <strong>en çok istediğinden en az istediğine doğru</strong> yapacaksın.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            3. 24 Tercihi 3 Emniyet Katmanına Böl
+                        </h2>
+                        <p>
+                            Tüm tercihleri kendi sıralamana yığarsan ya da sadece çok yüksek yerleri yazarsan açıkta kalırsın. Diyelim ki Sayısalda <strong>60.000</strong> oldun. Listen şöyle nefes almalı:
                         </p>
 
                         <div className="space-y-4 my-6">
                             <div className="p-5 bg-emerald-50 border border-emerald-200 rounded-xl">
-                                <h3 className="font-bold text-emerald-950 text-lg mb-1">1. Katman: Cesur Tercihler (1 - 5. Tercihler)</h3>
+                                <h3 className="font-bold text-emerald-950 text-lg mb-1">1. Katman: Rüya & Hayal Bölgesi (1 - 5. Tercihler)</h3>
                                 <p className="text-sm text-emerald-900 leading-relaxed">
-                                    Sıralamanızın %20 - %30 yukarısından başlayın (35.000 - 45.000 aralığı). &quot;Nasıl olsa gelmez&quot; demeyin. Kontenjan genişlemesi veya talep düşüşü olursa ilk tercihlerinizde bu sürpriz şansı yakalayabilirsiniz.
+                                    Sıralamanın %20-30 üstünden başla (40.000 - 52.000 aralığı). &quot;Bana gelmez&quot; deme, yaz gitsin. Kontenjan artar, talep azalır, piyango sana vurabilir. Burası bedava hayal kurma hakkındır.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-blue-50 border border-blue-200 rounded-xl">
-                                <h3 className="font-bold text-blue-950 text-lg mb-1">2. Katman: Asıl Omurga (6 - 18. Tercihler)</h3>
+                                <h3 className="font-bold text-blue-950 text-lg mb-1">2. Katman: Asıl Meydan Savaşı (6 - 18. Tercihler)</h3>
                                 <p className="text-sm text-blue-900 leading-relaxed">
-                                    Sıralamanızın çevresindeki ana hedef bölgenizdir (45.000 - 65.000 aralığı). Buradaki bölümleri dizerken taban puanlarına değil, kendi istek önceliğinize göre sıralayın.
+                                    Senin gerçek ligin burası (52.000 - 75.000 aralığı). Muhtemelen bu aralıktaki yerlerden birine yerleşeceksin. Buraya yazacağın her bölümü tek tek araştırmış olmalısın; kampüsü nerededir, yurt imkanı var mıdır, akademisyenleri kimdir?
                                 </p>
                             </div>
 
                             <div className="p-5 bg-slate-100 border border-slate-300 rounded-xl">
-                                <h3 className="font-bold text-slate-900 text-lg mb-1">3. Katman: Emniyet Kemeri (19 - 24. Tercihler)</h3>
+                                <h3 className="font-bold text-slate-900 text-lg mb-1">3. Katman: Can Simidi (19 - 24. Tercihler)</h3>
                                 <p className="text-sm text-slate-800 leading-relaxed">
-                                    Eğer bu yıl mezuna kalmak istemiyor ve mutlaka üniversiteye gitmek istiyorsanız, sıralamanızın %30 - %40 gerisine inin (65.000 - 80.000 aralığı). Bu katman sizi olası bir yığılma ya da bölüm patlamasında açıkta kalmaktan korur.
+                                    &quot;Ben mezuna kalamam, bir yıl daha bu stresi çekemem, mutlaka üniversiteli olmam lazım&quot; diyorsan 80.000 - 95.000 bandına kadar ineceksin. Bu katman seni Türkiye genelindeki beklenmedik yığılmalardan koruyan çelik zırhındır.
                                 </p>
                             </div>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            4. Kırık OBP Riski: &quot;Nasıl Olsa Gelmez&quot; Demeyin
+                            4. Kırık OBP Felaketi: Gitmeyeceğin Yeri Listeye Sokma!
                         </h2>
                         <p>
-                            Listenizin son sıralarına sırf boş kalmasın diye &quot;gelirse de gitmem&quot; dediğiniz tek bir üniversiteyi bile yazmayın.
+                            Tercih listesinin en altına &quot;Aman 24 satır dolsun, zaten gelmez&quot; diyerek istemediğin bir taşra üniversitesini yazarsan ne olur biliyor musun?
                         </p>
                         <p>
-                            Çünkü o bölüm geldiği an, kayıt yaptırsanız da yaptırmasanız da bir sonraki yıl sınava girdiğinizde <strong>OBP&apos;niz tam yarı yarıya kesilir</strong>. Bu da yaklaşık 25-30 ham puan, yani sıralamada 30-40 bin kişilik devasa bir geriye düşüş anlamına gelir. Gitmeyeceğiniz yeri listeye sokmamak en temel kuraldır.
+                            Sistem oraya seni yerleştirir. Sen &quot;Ben gitmeyeceğim, seneye tekrar hazırlanırım&quot; dersin. Ama ÖSYM der ki: <em>&quot;Sen bir kontenjanı yaktın, cezalısın.&quot;</em>
+                        </p>
+                        <p>
+                            Ertesi sene sınava girdiğinde <strong>OBP puanın tam yarı yarıya kesilir</strong>. Yani elinden 25-30 ham puan çekip alınır. 30 puan ne demek? Sınavda tam 40 bin kişi geriye düşmek demek. Gitmeyeceğin hiçbir bölümü, ailen ne kadar baskı yaparsa yapsın o listeye asla yazma.
                         </p>
 
                         <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-8 my-10 text-center text-white shadow-lg">

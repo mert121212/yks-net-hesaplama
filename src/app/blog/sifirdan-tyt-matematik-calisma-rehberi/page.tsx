@@ -65,55 +65,62 @@ export default function SifirdanTytMatematikRehberi() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            YKS hazırlığında öğrencileri en çok yıpratan ders tartışmasız matematiktir. Eşit ağırlıkçısı da, sözelcisi de, hatta fen lisesi mezunu olmayan birçok sayısal öğrencisi bile &quot;temelim yok&quot; kaygısıyla masaya oturur.
+                            Geçen sene rehberlik odasına ağlayarak gelen bir kız öğrenci vardı. Adı Elif. Deneme sınavında TYT Matematik: 2 doğru, 14 yanlış. Kağıdı masaya fırlattı ve dedi ki: &quot;Hocam ben bu hayatta matematik yapamayacağım, kabul ettim artık.&quot;
                         </p>
 
                         <p>
-                            İşin aslı şu: Matematikte &quot;temel&quot; dediğimiz şey roket bilimi değildir. 4 temel işlem, eksi-artı işaret kuralları, parantez dağıtma ve basit bir bilinmeyenli denklem çözme becerisidir. Bu 4 unsura sahip olan herkes, sistemli bir çalışmayla TYT&apos;de 20 netin üzerine rahatlıkla çıkar.
+                            Elif&apos;e bir şey söyledim o gün. Aynı şeyi şimdi sana da söylüyorum.
+                        </p>
+
+                        <p>
+                            Matematik yeteneği diye bir şey yok. Ciddiyim. Var olan şey doğru sırayla, doğru seviyeden başlamak. Elif&apos;in tek problemi 9. sınıf matematiğindeki delik yüzünden 11. sınıf konularına dalmasıydı — tabii ki çözemezdi. Temeli olmayan bina çöker. Haziran&apos;da sınava girdiğinde 19 net yaptı. 2 netten 19 nete. Sihir değil, sıralama meselesi.
                         </p>
 
                         <div className="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-r-lg text-amber-950 text-sm my-6">
-                            <strong>Önemli Teşhis:</strong> Birçok öğrenci orta veya zor seviye bir soru bankası açıp ilk testte takılınca &quot;ben matematikten anlamıyorum&quot; diyerek kitabı kapatır. Hata öğrencide değil, seviyesine uygun olmayan kaynaktan ve yanlış konu sırasından başlamasındadır.
+                            <strong>Tanıdık geldi mi?</strong> Arkadaşın sana &quot;şu kitap çok iyi&quot; diye ileri seviye bir soru bankası verdi. Açtın, ilk testte 3 tanesini bile yapamadın. Kitabı kapattın, &quot;ben matematikten anlamıyorum&quot; dedin. Hata sende değil — o kitap senin seviyene uygun değildi. Hepsi bu.
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Matematik Çalışırken Düşülen 3 Büyük Hata
+                            Sıfırdan Başlayanların Yaptığı 3 Klasik Hata
                         </h2>
 
                         <p>
-                            Sıfırdan başlarken enerjinizi tüketen bu 3 tuzağı bilmeniz ve hemen terk etmeniz gerekir:
+                            Bunları bilmezsen 3 ay boşa gider. Abartmıyorum, resmen 3 ay.
                         </p>
 
                         <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-2">
-                            1. Soru Çözüm Videosu İzleme Tuzağı (Pasif Öğrenme)
+                            1. YouTube&apos;da Soru Çözümü İzleyip &quot;Anladım&quot; Demek
                         </h3>
                         <p>
-                            Elinize kahvenizi alıp YouTube&apos;da hocanın soru çözüşünü film izler gibi izlersiniz. Hoca x&apos;i bu tarafa atar, çarpanlara ayırır ve cevabı bulur. Kafanızla onaylarsınız: &quot;Aha tamam anladım, ne kadar kolaymış.&quot;
+                            Koltuğa yaslanmışsın, elinde çay. Hocanın çözüm videosu açık. Adam x&apos;i öbür tarafa atıyor, çarpanlarına ayırıyor, cevap C şıkkı. Sen kafanla onaylıyorsun: &quot;He tamam, mantıklı.&quot;
                         </p>
                         <p>
-                            Kitabı önünüze alıp benzer soruyu tek başınıza çözmeye çalıştığınızda ise kalem oynamaz. Çünkü izlerken beyniniz sadece onaylayıcıdır, üretici değil. <strong>Matematik izlenerek değil, hata yaparak öğrenilir.</strong> Kalemi elinize alıp kağıdı karalamadıkça asla öğrenemezsiniz.
+                            Sonra kitabı açıyorsun, benzer soruyu çözmeye çalışıyorsun. Kalem havada. Hiçbir şey gelmiyor. Niye? Çünkü izlerken beynin sadece &quot;evet doğru&quot; diyor, kendisi üretmiyor. Film izlemekle senaryo yazmak aynı şey mi? Değil.
                         </p>
-
-                        <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-2">
-                            2. Direkt &quot;Yeni Nesil&quot; Hikayeli Sorularla Başlamak
-                        </h3>
                         <p>
-                            ÖSYM son yıllarda uzun metinli, şekilli hikaye soruları soruyor diye ilk günden bu sorulara saldırmak intihardır. Bir binanın temeli atılmadan çatısı monte edilmez. Önce klasik tarzda <em>2x + 5 = 17</em> denklemini saniyeler içinde çözebilecek hız ve refleks kazanacaksınız; ardından o denklemin hikayeleştirilmiş versiyonuna geçeceksiniz.
+                            <strong>Kural basit: Kalemi eline almadan, kağıdı karalamadan, yanlış yapıp sinirlenip tekrar denemeden matematik öğrenilmez.</strong> Nokta.
                         </p>
 
                         <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-2">
-                            3. Günlük 100 Soru Çözme Baskısı
+                            2. Daha İlk Hafta &quot;Yeni Nesil&quot; Soruya Dalma
                         </h3>
                         <p>
-                            Matematiği sıfır olan birine &quot;günde 80 soru çöz&quot; demek o öğrenciyi 3 gün sonra masadan soğutmaktır. Başlangıçta <strong>15 kaliteli, anlayarak, analiz ederek çözülmüş soru</strong>, göz ucuyla sallanmış 70 sorudan katbekat değerlidir.
+                            ÖSYM artık hikayeli, uzun metinli sorular soruyor — doğru. Ama daha <em>2x + 5 = 17</em> denklemini refleks gibi çözemiyorsan, o 8 satırlık problem sorusunun karşısında donarsin. Bina yapıyorsun düşün: temeli atmadan çatı mı koyarsın? Önce klasik soru, sonra yeni nesil. Sırayı bozma.
+                        </p>
+
+                        <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-2">
+                            3. &quot;Günde 100 Soru Çözeceğim&quot; Yalanı
+                        </h3>
+                        <p>
+                            Temeli sıfır olan biri günde 80 soru çözmeye kalkarsa ne olur? Üç gün dayanır, dördüncü gün masadan kalkar bir daha oturmaz. Başlangıçta <strong>15 soru yeter</strong>. Ama o 15 sorunun her birini anlayarak, niye yanlış yaptığını analiz ederek çöz. Göz ucuyla geçiştirilmiş 70 soru, dikkatlice çözülmüş 15 sorunun yanında hiçbir şeydir.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Adım Adım Çalışma Sırası (Ön Koşul Mantığı)
+                            Hangi Konudan Başlamalı? (Sırayı Bozarsan Çökersin)
                         </h2>
 
                         <p>
-                            Matematik kümülatif (birikimli) bir derstir. Rasyonel sayıları bilmeyen biri mutlak değer yapamaz; çarpanlara ayırma bilmeyen biri ikinci dereceden denklem veya fonksiyon çözemez. Bu yüzden konular rastgele değil, ön koşul sırasına göre gidilmelidir.
+                            Matematik birikimli bir ders — her konu bir öncekinin üstüne biner. Rasyonel sayıları bilmeden mutlak değer yapamazsın. Çarpanlara ayırmayı öğrenmeden fonksiyon çözemezsin. Bu yüzden &quot;en çok soru çıkan konudan başlayayım&quot; deme. Aşağıdaki sırayı takip et, atlama.
                         </p>
 
                         <div className="overflow-x-auto my-6">

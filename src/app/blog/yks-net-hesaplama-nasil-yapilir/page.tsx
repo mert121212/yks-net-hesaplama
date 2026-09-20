@@ -65,26 +65,30 @@ export default function YKSNetHesaplama() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Her deneme sınavı sonrasında rehberlik odasında dönen değişmez bir diyalog vardır:
+                            Her pazartesi sabahı dershanenin panosunun önünde aynı dram yaşanır:
                         </p>
 
-                        <div className="bg-slate-100 border-l-4 border-slate-500 p-4 rounded-r-lg text-slate-800 italic text-base my-4">
-                            &quot;Hocam geçen hafta 70 nete 340 puan vermişti dershanenin sistemi. Bu hafta 73 net yaptım, 332 puan geldi. Netim arttı ama puanım düştü, böyle saçmalık olur mu?&quot;
+                        <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg text-amber-950 italic text-base my-4">
+                            &quot;Hocam geçen hafta 68 nete 335 puan vermişti deneme. Bu hafta 72 net yaptım, 328 puan geldi! Netim 4 tane arttı ama puanım düştü, bu sistem benimle kafa mı buluyor?&quot;
                         </div>
 
                         <p>
-                            Olur. Çünkü piyasadaki deneme kulüplerinin ve yayınevlerinin kullandığı yazılımlar genellikle sabit bir katsayı şablonuyla çalışır. Kimi yayınevi 2021&apos;in aşırı zor katsayılarını baz alır, puanı uçurur. Kimi de 2022&apos;nin kolay sınav verilerini koyar, puanı yerin dibine çeker. 
+                            Kimse seninle kafa bulmuyor kardeşim.
                         </p>
 
                         <p>
-                            Gerçekte ise sistem çok net kurallara dayanır. Gelin 4 yanlış kuralından standart sapmanın iç yüzüne kadar her ayrıntıyı basamak basamak konuşalım.
+                            Piyasadaki deneme kulüplerinin yarısı sınav puanını kafasına göre hesaplar. Kimi gider 2021&apos;in o kriz sınavının katsayılarını basar, puanı göklere çıkarır; kimi de 2022&apos;nin kolay sınavına göre hesaplar, moralini sıfıra indirir.
+                        </p>
+
+                        <p>
+                            Asıl gerçeği bilmek istiyorsan, gel şu 4 yanlış kuralından &quot;zor soru daha çok puan getirir&quot; yalanına kadar her şeyi bir bir masaya yatıralım.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            1. Formülün Temeli: 4 Yanlış 1 Doğruyu Nasıl Götürür?
+                            1. 4 Yanlış 1 Doğruyu Nasıl Yer? (O Çeyrek Puan Can Yakar)
                         </h2>
                         <p>
-                            ÖSYM kılavuzundaki kural gayet açıktır: Her testte adayın doğru cevap sayısından, yanlış cevap sayısının dörtte biri çıkarılır ve o testin ham neti elde edilir.
+                            ÖSYM&apos;nin kuralı nettir: Her derste doğru sayından, yaptığın yanlış sayısının dörtte biri çıkarılır. 
                         </p>
                         
                         <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-xl my-6">
@@ -92,60 +96,50 @@ export default function YKSNetHesaplama() {
                             <p className="text-lg text-blue-900 font-mono font-semibold">
                                 Net = Doğru Sayısı - (Yanlış Sayısı ÷ 4)
                             </p>
-                            <p className="text-sm text-blue-800 mt-2">
-                                Her 1 yanlış cevap = <strong>-0,25 net</strong> demektir. 
-                                Yani 1 yanlış yaptığınızda aslında sadece o soruyu kaybetmezsiniz; hanenizdeki doğrunun çeyreğini de feda edersiniz.
+                            <p className="text-sm text-blue-900 mt-2">
+                                Her 1 yanlış cevap = <strong>-0.25 net</strong> demektir. Yani bilmeden salladığın her yanlış soru, sadece o soruyu yakmakla kalmaz; alnının teriyle çözdüğün başka bir sorunun da çeyreğini gasp eder.
                             </p>
                         </div>
 
                         <p>
-                            Somut bir örnek üzerinden gidelim:
+                            Hemen somut bakalım:
                         </p>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>TYT Türkçe: 32 Doğru, 8 Yanlış işaretlediniz.</li>
-                            <li>8 ÷ 4 = 2 doğru silinir.</li>
-                            <li>Kalan netiniz: 32 - 2 = <strong>30,00 Net</strong>.</li>
+                            <li>TYT Türkçe&apos;de 33 doğru, 7 yanlış yaptın diyelim.</li>
+                            <li>7 ÷ 4 = 1.75 doğru silinir.</li>
+                            <li>Kalan netin: 33 - 1.75 = <strong>31.25 Net</strong>. O küsurlar işte bu çeyrek kayıplardan gelir.</li>
                         </ul>
 
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            2. &quot;Matematikte Çok Yanlış Yaparsam Türkçe Netim Gider mi?&quot;
+                        </h2>
                         <p>
-                            Peki 5 yanlış yaparsanız ne olur? 5 ÷ 4 = 1,25 doğru silinir. Küsurlu netler buradan doğar (örneğin 28,75 net).
+                            Korkma: <strong>Asla ve kat&apos;a gitmez!</strong>
+                        </p>
+                        <p>
+                            ÖSYM her testi kendi içinde ayrı bir havuz olarak görür. Türkçedeki yanlış Türkçeyi yer, matematikteki yanlış matematiği yer. Matematikten 0 doğru 20 yanlış yapsan bile netin eksiye düşmez; en dip olarak <strong>0.00</strong> yazılır. Türkçedeki 35 netine kimse elini süremez.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            2. &quot;Matematik Yanlışım Türkçedeki Doğrumu Siler mi?&quot;
+                            3. En Büyük Şehir Efsanesi: &quot;Zor Soru Daha Çok Puan Getirir&quot;
                         </h2>
                         <p>
-                            Cevap çok net: <strong>Hayır, kesinlikle silemez.</strong>
+                            Sınava hazırlananların en az %85&apos;inin inandığı devasa bir yalandır bu.
                         </p>
                         <p>
-                            ÖSYM sisteminde her test kendi kapalı havuzudur. 
-                        </p>
-                        <ul className="list-disc pl-6 space-y-2">
-                            <li>Türkçe testindeki yanlışlar yalnızca Türkçedeki doğruları götürür.</li>
-                            <li>Matematikteki yanlışlar yalnızca Temel Matematik testini bağlar.</li>
-                            <li>Sosyal Bilimler testinde 0 doğru 5 yanlış yapsanız dahi netiniz en fazla <strong>0,00</strong> olarak kalır, eksiye düşmez ve diğer derslerin doğrularına asla dokunmaz.</li>
-                        </ul>
-                        <p>
-                            Dolayısıyla &quot;aman matematikte çok yanlış yaparsam Türkçe netlerim erir&quot; korkusu tamamen asılsızdır.
-                        </p>
-
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            3. En Büyük Yanılgı: &quot;Zor Soru Daha Çok Puan Getirir mi?&quot;
-                        </h2>
-                        <p>
-                            Bu, sınava hazırlanan öğrencilerin en az %80&apos;inin inandığı devasa bir şehir efsanesidir. Birçok öğrenci TYT Matematik&apos;teki o yarım sayfalık yeni nesil olasılık sorusunu çözerse 5 puan, baştaki basit işlem sorusunu çözerse 1 puan alacağını zanneder.
+                            Öğrenci zanneder ki TYT Matematik&apos;teki o 1 sayfa süren yeni nesil problem 5 puan getirir; ilk sayfadaki &quot;a + b toplamı kaçtır&quot; sorusu 1 puan getirir.
                         </p>
                         <p>
-                            Gerçek durum şudur: <strong>ÖSYM soru bazlı puanlama yapmaz.</strong>
+                            <strong>Hayır, koca bir hayır!</strong>
                         </p>
                         <p>
-                            Aynı testin içindeki 1. soru ile 40. sorunun puan değeri kuruşu kuruşuna aynıdır. Türkiye genelinde sadece 500 kişinin doğru yaptığı geometri sorusu ile herkesin 10 saniyede çözdüğü toplama çıkarma sorusu, TYT ham puanınıza birebir aynı katkıyı verir.
+                            Aynı testin içindeki 1. soru ile 40. sorunun puan değeri kuruşu kuruşuna aynıdır. Türkiye genelinde sadece 200 dahinin çözdüğü o kütük geometri sorusu ile ilkokul çocuğunun çözeceği rasyonel sayı sorusu, sınav puanına <strong>tıpatıp aynı puanı</strong> ekler.
                         </p>
                         <p>
-                            Standart sapma <strong>soru bazında değil, test bazında</strong> hesaplanır. Yani o yıl Matematik testi Türkiye genelinde çok zor geçmişse ve Türkiye ortalaması 5 nete düşmüşse, Matematik testinin genel katsayısı yükselir. Ama o testin içindeki soruların kendi aralarında puan hiyerarşisi yoktur.
+                            Standart sapma soru bazında değil; <strong>test bazında</strong> hesaplanır. Yani Matematik genel olarak tüm Türkiye&apos;ye zor gelmişse, Matematik testinin genel çarpanı artar. Ama testin kendi içinde sorular arasında sınıf ayrımı yoktur.
                         </p>
                         <p>
-                            Bu gerçeği bilmek sınav stratejinizi doğrudan değiştirir: 1 zor soruyla 5 dakika inatlaşmak yerine, o sürede 3 tane kolay soru çözmek size 3 kat fazla puan kazandırır.
+                            Bu ne anlama geliyor biliyor musun? Bir zor soruyla 6 dakika inatlaşıp canını çıkaracağına, arkadaki 3 tane tek satırlık çerez soruyu çözmek sana tam 3 kat daha fazla puan kazandırır! Akıllı adam egosuyla değil, puan hesabıyla soru çözer.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
@@ -195,20 +189,20 @@ export default function YKSNetHesaplama() {
                         </div>
 
                         <p>
-                            Fark ettiyseniz TYT Fen ve Sosyal netlerinin getirisi en az Türkçe ve Matematik kadardır, hatta Türkiye ortalaması daha düşük kaldığı yıllarda milimetrik olarak daha fazla puan getirir. Bu yüzden &quot;Ben Eşit Ağırlıkçıyım, Fen&apos;e bakmam&quot; ya da &quot;Sayısalcıyım, Tarih ve Coğrafya ile uğraşmam&quot; tavrı, bedava puanları çöpe atmaktan farksızdır.
+                            Fark ettiysen Fen ve Sosyal netlerinin getirisi en az Türkçe ve Matematik kadardır; hatta bazen milimetrik olarak daha fazladır. &quot;Ben EA&apos;cıyım Fene bakmam&quot; demek, cebindeki parayı yere saçmakla aynı şeydir.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            5. Bilmediğin Soruyu Sallamalı mısın? (Rasyonel Hesap)
+                            5. Bilmediğin Soruyu Sallamalı mısın? (Kumarbazın Matematiksel Sonu)
                         </h2>
                         <p>
-                            İki şıkka indiremediğiniz hiçbir soruyu rastgele işaretlemeyin. 
+                            İki şıkka indiremediğin hiçbir soruyu sakın işaretleme.
                         </p>
                         <p>
-                            5 seçenekli bir sınavda körlemesine salladığınızda tutturma ihtimaliniz %20&apos;dir. Kaybetme ihtimaliniz ise %80. Dört defa böyle kumar oynadığınızda istatistiki olarak 1 doğru 3 yanlış yaparsınız ve elinizde kalan net <strong>0,25 net</strong> gibi komik bir rakam olur. Çoğu zaman da 4 yanlış yapıp cepteki 1 tam doğrunuzu kaybedersiniz.
+                            5 şıklı bir testte rastgele sallarsan tutturma şansın sadece %20&apos;dir. Kaybetme şansın ise %80! Bu şekilde 4 soru salladığında istatistik affetmez: 1 doğru 3 yanlış yaparsın, elinde kalan net <strong>0.25 net</strong> gibi komik bir kırıntı olur. Hatta çoğu zaman 4 yanlış yapıp cepteki 1 tam doğrundan olursun.
                         </p>
                         <p>
-                            Fakat iki şık arasında kaldıysanız, yani ihtimal %50&apos;ye yükselmişse, o zaman mantığınıza en yakın gelen şıkkı işaretlemek uzun vadede beklenen değeri pozitif bir hamledir.
+                            Ama iki şıkkı eledin, geriye sadece 2 seçenek kaldı; yani şansın %50-%50 mi oldu? İşte o zaman mantığına en çok yatanı işaretle. Çünkü orada olasılık matematiği senin lehine çalışır.
                         </p>
 
                         <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-8 my-10 text-center text-white shadow-lg">

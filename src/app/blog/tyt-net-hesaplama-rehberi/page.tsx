@@ -66,33 +66,36 @@ export default function TYTNetHesaplamaRehberi() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Deneme sınavı bittiğinde koridorda dönen ilk muhabbet hep aynıdır. Herkes eline kırmızı kalemi alır, doğruları yanlışları sayar ve yanındakine döner:
+                            Dershane koridorunda pazar öğleden sonra kırmızı kalemler havada uçuşur. Masanın bir ucunda oturan çocuk isyandadır:
                         </p>
-                        <p className="border-l-4 border-blue-500 pl-4 italic text-gray-800 font-medium">
-                            — &quot;Ben 74 net yaptım 348 geldi, sen nasıl 71 netle 353 aldın? Bu optik yanlış okunmuş olmasın?&quot;
+                        <p className="border-l-4 border-amber-500 pl-4 italic text-gray-800 font-medium bg-amber-50/70 py-2 rounded-r">
+                            — &quot;Kanka delireceğim ya! Ben 74 net çıkardım 346 geldi, yan sınıftaki çocuk 71 netle 352 aldı. Bu optik okuyucu kesin kafayı yedi.&quot;
                         </p>
                         <p>
-                            Optikte hata falan yok. Sistem gayet tıkır tıkır çalışıyor. Çünkü ÖSYM toplam nete bakıp sıraya dizmiyor adamı. Hangi dersten kaç net kopardığına, o testin o yılki Türkiye ortalamasına ve soru başına harcadığın dakikanın karşılığına bakar.
+                            Optik falan kafayı yemedi.
+                        </p>
+                        <p>
+                            Çünkü ÖSYM bakkal gibi &quot;tüm doğruları topla, yanlışları çıkar, düz hesapla geç&quot; demez. Testin o yılki Türkiye genelindeki zorluğu, standart sapması ve soru başına aldığın puanın ağırlığı devreye girer. 
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            100 Taban Puan: Optiği Boş Veren Bile Alıyor mu?
+                            100 Taban Puan: Sıfır Çeken Bile Bu Puanı Alıyor mu?
                         </h2>
                         <p>
-                            Sınav sabahı sıraya oturdun. Optik forma adını, soyadını, T.C. kimlik numaranı kodladın. Kitapçığın kapağını bile açmadan sürenin sonunda kağıdı gözetmene teslim ettin.
+                            Evet, alıyor.
                         </p>
                         <p>
-                            Sonuç belgende ne yazar biliyor musun? Tam 100 puan.
+                            Sınav sabahı sınıfa girdin. Kitapçığı açtın, optiğe adını kodladın ama tek bir soru bile çözmeden uyudun. Sonuç belgende ne yazar? Aynen öyle: 100 puan.
                         </p>
                         <p>
-                            ÖSYM sınava giren her adaya bu 100 puanlık avansı peşin verir. Yarış sıfırdan değil, 100 barajından başlar. Senin asıl kavgan, o 100 puanın üstüne 120 sorudan ne kadar ekleyebileceğinle ilgilidir.
+                            ÖSYM yarışa katılan herkese bu 100 puanlık avansı peşinen verir. Senin asıl kavgan, o 100 puanın üstüne o 120 sorudan ne kadar ganimet toplayabileceğindir.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            120 Sorunun Arka Planındaki Yüzdeler
+                            120 Sorunun Perde Arkasındaki Gerçek Yüzdeler
                         </h2>
                         <p>
-                            Herkesin kafasını karıştıran katsayı meselesi aslında sanıldığı kadar karmaşık değil. Testlerin TYT puanına katkı payları bellidir:
+                            Kafan hiç karışmasın. TYT pastasındaki dilimlerin dağılımı kabaca şöyledir:
                         </p>
 
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-6 not-prose">
@@ -123,50 +126,38 @@ export default function TYTNetHesaplamaRehberi() {
                         </div>
 
                         <p>
-                            Bakın burada çok net bir matematik var: Türkçe ve Matematik tek başlarına sınavın tam üçte ikisini oluşturur. Ama işin püf noktası şu: Fen ve Sosyal testlerinde Türkiye genel ortalaması daha düşük çıktığı için, bir Fen veya Sosyal neti bazen Matematik netinden milimetrik olarak daha fazla puan getirebilir.
+                            Şu tabloya iyi bak: Türkçe ve Matematik tek başına sınavın %66&apos;sını sırtlıyor. Ama asıl bomba nerede biliyor musun? Fen ve Sosyal testlerinde! Türkiye genelinde Fen ortalaması yerlerde süründüğü için, bazen basit bir Fizik sorusundan gelen standart sapma puanı, Matematik sorusundan bile milimetrik olarak daha fazla olabiliyor.
                         </p>
 
                         <QuickNetSimulator />
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Pahalı Hata: &quot;Ben Eşit Ağırlığım / Sözelim, Fene Dokunmam&quot;
+                            En Pahalı Hata: &quot;Ben Eşit Ağırlığım, Fen Çözmem&quot; Kibri
                         </h2>
                         <p>
-                            Bu ön yargı yüzünden her sene binlerce derece adayı elindeki avantajı çöpe atıyor.
+                            Bu saçma sapan kibir yüzünden her sene on binlerce Eşit Ağırlıkçı ve Sözelci ilk 20 bin hayalini çöpe atıyor.
                         </p>
                         <p>
-                            Bir eşit ağırlık öğrencisini düşünelim. Aylarca çalışmış, geometride o karmaşık üçgen sorusuna takılmış. 4 dakika harcıyor, 5 dakika harcıyor, çıkmıyor. Sinirden eli ayağına dolaşıyor. Belki de sonunda yanlış işaretleyip bir de 0,25 net kaybediyor.
+                            Gözünün önüne getir: Çocuk geometride bir katlama sorusuna takılmış. 4 dakika uğraşıyor, 5 dakika uğraşıyor. Çıkmıyor. Eli ayağı titriyor, en son sallayıp yanlış yapıyor ve -0.25 nete düşüyor.
                         </p>
                         <p>
-                            Aynı çocuğun önündeki kitapçıkta 9. sınıf fen bilgisi soruları duruyor.
+                            Halbuki aynı kitapçığın arka kapağında ne var? 9. sınıf Kimya sorusu: &quot;Aşağıdakilerden hangisi karışımdır?&quot;
                         </p>
                         <p>
-                            Örneğin: &quot;Aşağıdakilerden hangisi saf maddedir?&quot; veya temel bir hücre zarı sorusu.
-                        </p>
-                        <p>
-                            Okuyup işaretleme süresi 25 saniye. Getirdiği puan ise o 5 dakika harcanan geometri sorusuyla tamamen aynı!
-                        </p>
-                        <p>
-                            TYT&apos;de alan ayrımı falan yoktur. Sayısalcının çözdüğü felsefe sorusu ile sözelcinin çözdüğü fizik sorusu puan havuzunda eşit değere sahiptir. Soru ayrımı yapan öğrenci, sınav masasında bedava puan bırakır.
+                            Okuyup işaretleme süresi: 15 saniye. Getirdiği puan: O 5 dakika boğuştuğun geometri sorusuyla tamamen aynı! TYT&apos;de soru ayrımı yapan, kolay soruyu hor görüp zor soruyla kavga eden adam sınavı kaybeder. TYT&apos;de alan ayrımı yoktur; her net aynı kasaya girer.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            165 Dakikayı Yönetmek: İnatlaşan Kaybeder
+                            165 Dakikayı Kurtaran Altın Taktik
                         </h2>
                         <p>
-                            TYT bir zeka yarışması değildir. TYT, kısıtlı sürede soğukkanlı kalıp en karlı soruları seçebilme sınavıdır.
+                            TYT bir dahi arama yarışması değil. Kısıtlı sürede paniklemeden en ucuz ve en çok neti toplayabilme sanatıdır.
                         </p>
                         <p>
-                            Diyelim ki 22. sorudasın. Uzun bir Türkçe paragrafı. Okudun, son cümleye geldin ama zihnin dağıldı, hiçbir şey anlamadın.
+                            Paragrafı okudun, son cümleye geldin ama aklın uçtu gitti, hiçbir şey anlamadın mı? Sakın inatlaşıp aynı paragrafı ikinci kez okuma!
                         </p>
                         <p>
-                            Burada yapılan klasik hata: Hemen başa dönüp hırsla aynı metni bir daha okumak. İkinci dakikaya girdin, üçüncü dakikaya girdin... O soruyu doğru çözsen bile kaybettin. Çünkü arkadaki iki tane basit matematik sorusunun süresini o paragrafa kurban ettin.
-                        </p>
-                        <p>
-                            Kural çok net: Bir soru 40-45 saniye içinde sana kendini açmıyorsa, soru numarasının yanına küçük bir yuvarlak koy ve hemen sonraki soruya atla.
-                        </p>
-                        <p>
-                            İlk 80-90 dakikayı sadece ilk bakışta &quot;ben bunu tek hamlede çözerim&quot; dediğin basit ve orta sorulara ayır. Heybene 55-60 neti koyduktan sonra arkana yaslan, bir yudum su iç ve işaretlediğin o uğraştırıcı sorulara dön. Zihnin sakinleştiğinde, o takıldığın soruların yarısının aslında ne kadar kolay olduğunu göreceksin.
+                            Hemen o sorunun yanına küçük bir yıldız koy ve sonraki soruya atla. İlk 80 dakikada sadece tek bakışta çözebildiğin kek soruları süpür. Cebe 50-60 neti koyduktan sonra arkana yaslan, suyunu iç ve o yıldızlı sorulara dön. Panik bittiği için zihninin o soruları nasıl şakır şakır çözdüğüne kendin bile şaşıracaksın.
                         </p>
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">

@@ -68,7 +68,7 @@ export default function YKSRehberiPage() {
                         1. YKS Puanı Nasıl Hesaplanır?
                     </h2>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        Sınavdan çıktığınızda yaptığınız ilk hata doğru ve yanlışları alt alta toplayıp ortalama bir sayı uydurmaktır. ÖSYM sisteminde işlem iki basamakta yürür: Önce ham netiniz bulunur, ardından her testin o yılki standart sapma katsayısıyla çarpılıp 100 taban puanının üzerine eklenir.
+                        Sınavdan çıktığında arkadaşlarınla hemen ayaküstü hesap yapmaya başlarsın: &quot;Benim 65 doğrum var, 15 yanlışım var, 320 puan gelir herhalde.&quot; Gelmez öyle kafadan hesapla. ÖSYM&apos;nin puanlama çarkı iki aşamada döner: Önce doğrularından yanlışların çeyreği kesilip ham netin çıkarılır; sonra bu netler o seneki Türkiye ortalaması ve standart sapmayla çarpılıp 100 taban puanının üstüne eklenir.
                     </p>
 
                     <div className="bg-slate-900 text-white rounded-xl p-5 my-6 text-center">
@@ -77,12 +77,12 @@ export default function YKSRehberiPage() {
                             Ham Net = Doğru Sayısı − (Yanlış Sayısı ÷ 4)
                         </p>
                         <p className="text-xs text-slate-400 mt-2">
-                            Her yanlış tam olarak 0,25 doğruyu siler. 4 yanlış yaparsanız 1 tam doğrunuz yok sayılır.
+                            Her yanlış tam olarak 0.25 doğruyu yer. 4 kez sallayıp tutturamazsan, alnının teriyle yaptığın 1 tam doğrun buhar olur uçar.
                         </p>
                     </div>
 
                     <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg text-amber-950 text-sm mb-6">
-                        <strong>Boş Bırakmanın Önemi:</strong> Cevabından emin olmadığınız bir soruda rastgele 5 şıktan birini sallamak yerine boş bırakırsanız hanenizden 0,25 net eksilmez. Yığılma bölgesinde tek bir 0,25 net bazen 1.500 kişinin önünüze geçmesini engeller.
+                        <strong>Boş Bırakmanın Değeri:</strong> İki şıkka indiremediğin soruda kumar oynama, boş bırak. O boş bıraktığın soru sana hiçbir şey kaybettirmez. Ama yanlış işaretlersen gidecek olan o 0.25 net, yığılma bölgesinde tam 2.000 kişinin arkasına düşmen demektir.
                     </div>
 
                     <h3 className="text-lg font-bold text-gray-900 mb-3">Gerçekçi Net Tablosu Örneği</h3>
@@ -195,7 +195,7 @@ export default function YKSRehberiPage() {
                         3. OBP (Diploma Notu) ve Kırık OBP Gerçeği
                     </h2>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        Lisede aldığınız 4 yıllık diploma notu çöpe gitmez; doğrudan ÖSYM yerleştirme puanınıza eklenir. Hesaplama basittir:
+                        Lisede 4 yıl boyunca aldığın o yazılı notları ve sözlüler sınav sabahı buharlaşmaz; doğrudan ÖSYM yerleştirme puanının üstüne balyoz gibi iner. Matematik çok basittir:
                     </p>
                     <div className="bg-gray-50 border rounded-xl p-4 text-sm text-gray-800 space-y-2 mb-4 font-mono">
                         <p>1. Adım: Diploma Notu × 5 = OBP (Örn: 84 × 5 = 420)</p>
@@ -203,9 +203,9 @@ export default function YKSRehberiPage() {
                     </div>
 
                     <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg text-red-950 text-sm my-4">
-                        <strong>⚠️ Kırık OBP Tuzağı:</strong> Bir önceki yıl YKS ile bir üniversite programına (merkezi yerleştirmeyle 2 veya 4 yıllık örgün ya da açıköğretim kontenjanlı) yerleştiyseniz, bu yıl sınava girdiğinizde katsayınız 0,12 yerine <strong>0,06</strong> ile çarpılır.
+                        <strong>⚠️ Kırık OBP Faciası:</strong> Geçen sene bir bölüme yerleştin ama gitmedin ya da kaydolup bıraktın diyelim. Bu sene sınava girdiğinde ÖSYM sana ceza keser: OBP katsayın 0.12 yerine <strong>0.06&apos;ya</strong> düşer!
                         <br />
-                        Örneğin yukarıdaki 50,4 puanınız 25,2 puana iner. Kaybettiğiniz 25 puan, yoğun yığılma bölgesinde sizi <strong>35 bin ila 50 bin kişi</strong> geriye fırlatır!
+                        Yani yukarıdaki 50.4 puanın çat diye 25.2 puana iner. Kaybettiğin o 25 puan ne demek biliyor musun? Sınavda tam <strong>35 bin ila 50 bin kişi</strong> geriye fırlatılmak demek! Gitmeyeceğin yeri asla listeye yazma.
                     </div>
                 </section>
 
@@ -216,13 +216,13 @@ export default function YKSRehberiPage() {
                         4. Baraj Puanı Kalktı mı? 0,5 Net Kuralı Nedir?
                     </h2>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        Eski yıllardaki &quot;TYT&apos;de 150 barajı, AYT&apos;de 180 barajı&quot; kuralı 2022&apos;de tamamen yürürlükten kalktı. Yani artık puanı hesaplanan her aday tercih yapma hakkına sahip.
+                        Eski yıllardaki o meşhur &quot;TYT&apos;de 150 barajı, AYT&apos;de 180 barajı&quot; hikayesi 2022&apos;de tarihe karıştı. Artık puanı hesaplanan her adayın tercih yapma hakkı var.
                     </p>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        Ancak sistemde hâlâ <strong>0,5 Net Şartı</strong> geçerlidir. TYT puanınızın hesaplanabilmesi için:
+                        Ama dur, hemen sevinme. Sistemde hala can yakan bir <strong>0.5 Net Kuralı</strong> var:
                     </p>
                     <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 text-blue-950 text-sm font-medium mb-4">
-                        ✓ Türkçe testinden en az 0,5 net VEYA Temel Matematik testinden en az 0,5 net çıkarmalısınız. İkisinden de sıfır çekerseniz sistem puanınızı üretmez.
+                        ✓ TYT puanının hesaplanabilmesi için Türkçe veya Matematik testinden en az 0.5 net (yani en az 1 doğru) çıkarmalısın. Sosyali ve Feni fullesen bile Türkçe ve Matematik ikisi birden sıfırsa ÖSYM puanını hesaplamaz, seni sistemden eler.
                     </div>
                 </section>
 
@@ -289,31 +289,31 @@ export default function YKSRehberiPage() {
                 <section id="stratejiler" className="bg-white rounded-2xl shadow-sm border border-gray-200/80 p-6 sm:p-8 mb-10">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
                         <Clock className="h-7 w-7 text-emerald-600" />
-                        6. Masada Kazandıran 4 Strateji
+                        6. Masada Kazandıran 4 Hayati Strateji
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
                         <div className="bg-blue-50/60 p-4 rounded-xl border border-blue-200">
-                            <h3 className="font-bold text-blue-900 mb-1">1. Turlama Taktiği (Süre Kontrolü)</h3>
+                            <h3 className="font-bold text-blue-900 mb-1">1. Turlama Taktiği (Süreyle İnatlaşma)</h3>
                             <p>
-                                TYT&apos;de 120 soruya 165 dakika verilir (soru başına 82 saniye). 1 dakikada çözemediğiniz soruyla inatlaşmayın. Soru numarasına bir nokta koyup hemen diğerine geçin; ilk turda tüm kolay soruları cebe atın.
+                                TYT&apos;de soru başına ortalama 82 saniyen var. Bir soruya 1.5 dakikadan fazla gömdüysen o soruyu bilsen bile zarardasın. Hemen yanına bir nokta koy ve geç. Arkadaki çerez soruları toplayıp kafan rahatlayınca geri dön.
                             </p>
                         </div>
                         <div className="bg-purple-50/60 p-4 rounded-xl border border-purple-200">
-                            <h3 className="font-bold text-purple-900 mb-1">2. AYT Ağırlığı Faktörü</h3>
+                            <h3 className="font-bold text-purple-900 mb-1">2. AYT Ağırlığı Gerçeği</h3>
                             <p>
-                                TYT&apos;de 5 net artırmak için haftalarca uğraşmanız gerekirken, AYT&apos;de formül ve mekanizma öğrenerek 2 haftada 5-8 net artırabilirsiniz. Son aylarda çalışma saatinizin en az %65&apos;ini AYT&apos;ye ayırın.
+                                TYT&apos;de 3 net artırmak için haftalarca ter dökersin; ama AYT&apos;de öğreneceğin tek bir mekanizma (Logaritma veya Fotosentez) sana 2 günde +1.25 net kazandırır. Son 3 ay vaktinin en az %65&apos;ini AYT&apos;ye ayır.
                             </p>
                         </div>
                         <div className="bg-emerald-50/60 p-4 rounded-xl border border-emerald-200">
-                            <h3 className="font-bold text-emerald-900 mb-1">3. Hata Defteri Tutun</h3>
+                            <h3 className="font-bold text-emerald-900 mb-1">3. Hata Defteri Tut</h3>
                             <p>
-                                Doğru çözdüğünüz sorular size yeni bir şey öğretmez. Netleri sıçratan tek şey denemede yanlış yaptığınız sorulardır. O soruları kesip bir deftere yapıştırın ve haftada bir baştan çözün.
+                                Doğru yaptığın sorular sana bir şey öğretmez; onlar zaten cepte. Seni üniversiteye sokacak olan, denemelerde boş bıraktığın ya da yanlış yaptığın o 20 sorudur. O soruları kes, bir deftere yapıştır ve her pazar göz gezdir.
                             </p>
                         </div>
                         <div className="bg-amber-50/60 p-4 rounded-xl border border-amber-200">
-                            <h3 className="font-bold text-amber-900 mb-1">4. Günlük Paragraf ve Problem Rutini</h3>
+                            <h3 className="font-bold text-amber-900 mb-1">4. Sabah Rutini (Paragraf &amp; Problem)</h3>
                             <p>
-                                TYT Türkçe&apos;de 24 soru paragraftan, TYT Matematik&apos;te 12 soru problemlerden gelir. Yani sınavın neredeyse 36 sorusu (üçte biri) okuduğunu anlama hızınıza bakar. Her sabah ilk iş bu iki dersten 15&apos;er soru çözün.
+                                TYT&apos;nin 40&apos;a yakın sorusu doğrudan uzun metin anlama ve denklem kurma refleksidir. Sabah masaya oturduğunda başka hiçbir şeye bakmadan 20 paragraf + 15 problem çöz. Zihnin bu tempoya 3 haftada alışır.
                             </p>
                         </div>
                     </div>

@@ -58,7 +58,7 @@ export default function TYTMatematikKonulari() {
                             TYT Matematik Konuları, Soru Dağılımı ve 30+ Net İçin Sahada Test Edilmiş Çalışma Rehberi
                         </h1>
                         <p className="text-xl text-gray-600 leading-relaxed">
-                            Formül ezberleyerek TYT Matematik çözülmez. ÖSYM&apos;nin soru felsefesini kavramak, konu dağılımındaki ağırlık merkezlerini görmek ve kendi seviyenize uygun stratejiyi sahaya sürmek zorundasınız.
+                            Formül ezberlemek TYT Matematik&apos;te seni en fazla 8-10 nete götürür. ÖSYM artık &quot;şu formülü yaz x&apos;i bul&quot; demiyor; sana bir hayat hikayesi anlatıyor, o hikayenin içindeki matematiği senin çekip çıkarmanı bekliyor.
                         </p>
                     </header>
 
@@ -66,23 +66,23 @@ export default function TYTMatematikKonulari() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Sınavdan çıkan hemen her adayın ilk cümlesi neredeyse aynıdır:
+                            Haziran&apos;da sınav salonundan çıkan 10 öğrenciden 9&apos;unun kurduğu ilk cümle ne biliyor musun?
                         </p>
-                        <p className="border-l-4 border-blue-500 pl-4 italic text-gray-800 font-medium">
-                            — &quot;Sorular aslında aşırı zor değildi ama süre yetmedi, arkadaki geometriye elimi bile süremedim.&quot;
-                        </p>
-                        <p>
-                            Durum tam olarak bu. Çünkü TYT Matematik artık klasik formül ezberleyip x&apos;i bulma sınavı olmaktan çıkalı çok oldu. Karşımızdaki test, uzun metinleri hızlıca okuyup matematik diline çevirme ve dakikaları doğru yönetme mücadelesidir.
+                        <p className="border-l-4 border-amber-500 pl-4 italic text-gray-800 font-medium bg-amber-50/60 py-2 rounded-r">
+                            — &quot;Hocam sorular çözülmeyecek gibi değildi aslında... Ama süre öyle bir uçtu ki, arkadaki 10 geometri sorusuna göz ucuyla bile bakamadım.&quot;
                         </p>
                         <p>
-                            Soru bankalarını baştan sona rastgele çözerek 15 netin üzerine çıkamazsınız. Önce ÖSYM&apos;nin soru havuzunda ağırlığı nereye verdiğini görmek, ardından da kendi net seviyenize uygun reçeteyi uygulamak zorundasınız.
+                            Klasik manzara. Hiç şaşmaz. Çünkü TYT Matematik bir bilgi yarışması değil; süreye ve stres seviyene karşı oynadığın bir satranç maçı. 
+                        </p>
+                        <p>
+                            Kalın soru bankalarını masaya dizip 1. sayfadan 400. sayfaya kadar sırayla çözmeye kalkışırsan Kasım ayında tükenirsin. Akıllı adam ne yapar? ÖSYM&apos;nin son 6 yılda masaya koyduğu 240 soruyu açar, &quot;Bu adamlar nereden vuruyor?&quot; diye bakar ve kendi seviyesine göre rota çizer.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            ÖSYM TYT Matematik Testinde Ne Soruyor? Konu ve Soru Dağılım Haritası
+                            ÖSYM TYT Matematik&apos;te Ne Soruyor? Gerçek Soru Dağılım Haritası
                         </h2>
                         <p>
-                            TYT Matematik testinde 40 soru bulunur. Bunun yaklaşık 30-31 tanesi temel matematik ve problemlerden, 9-10 tanesi ise geometriden gelir. Son yılların soru dökümü şöyle:
+                            Toplam 40 soru var. Kabaca 30 tanesi temel matematik ile problemler, kalan 10 tanesi ise geometri. Kafandaki o &quot;her konudan bir soru çıkar&quot; masalını unut. Dağılım hiç de eşit değil:
                         </p>
 
                         <div className="overflow-x-auto my-6">
@@ -173,62 +173,62 @@ export default function TYTMatematikKonulari() {
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Şu Anki Net Seviyenize Göre Ne Yapmalısınız?
+                            Şu Anki Netine Göre Acil Eylem Planı
                         </h2>
                         <p>
-                            Matematikte herkes aynı kitaptan çalışırsa herkes aynı verimi alamaz. 8 net yapan bir öğrenci ile 24 net yapan bir adayın eksik duyduğu mekanizmalar taban tabana zıttır. Kendinizi dürüstçe değerlendirin ve ait olduğunuz basamağın reçetesini uygulayın:
+                            Rehberlikte gördüğüm en büyük saçmalık şudur: 7 net yapan çocukla 26 net yapan çocuğa aynı ödev verilir. Olmaz, yürümez o iş. 7 net yapan adamın eksiği işlem refleksidir; 26 net yapanınki ise süre yönetimi ve geometri korkusudur. Kendine dürüst ol, hangi gruptasın seç:
                         </p>
 
                         <div className="space-y-6 my-6">
                             <div className="p-5 bg-slate-50 border-l-4 border-amber-500 rounded-r-xl">
-                                <h3 className="text-xl font-bold text-gray-900 mb-2">1. Basamak: 0 - 10 Net Arasında Olanlar</h3>
+                                <h3 className="text-xl font-bold text-gray-900 mb-2">1. Grup: 0 - 10 Net Arasında Boğuşanlar</h3>
                                 <p className="text-gray-700 mb-3">
-                                    Eğer bu banttaysanız kesinlikle yeni nesil, yarım sayfa süren hikayeli problem kitaplarına saldırmayın. Çünkü sorununuz kavrama zayıflığı değil; işlem akışındaki tereddüttür. Eksi ile eksinin çarpımı, rasyonel sayılarda payda eşitleme veya parantez açarken işaret dağıtma gibi adımlarda beyniniz ekstra enerji tüketiyor demektir.
+                                    Lütfen rica ediyorum, o yarım sayfalık &quot;yeni nesil&quot; problem kitaplarını hemen masadan kaldır. Neden biliyor musun? Çünkü senin derdin soruyu anlamamak değil; eksiyle eksiyi çarparken duraksaman, payda eşitlerken 20 saniye kaybetmen. Beynin dört işlemde ekstra efor harcarken yeni nesil sorunun kurgusuna odaklanamazsın.
                                 </p>
-                                <p className="text-gray-700 text-sm font-semibold text-amber-900">
-                                    Somut Görev: Temel 4 işlem hızlandırma föyleri bitirin. Ardından Temel Kavramlar, Rasyonel Sayılar, Basit Eşitsizlikler ve Mutlak Değer konularını tek bir kaynaktan klasik tarzda çözün. Hedefiniz 3 hafta içinde işlem refleksini refleksif hale getirip 15 nete zıplamaktır.
+                                <p className="text-gray-700 text-sm font-semibold text-amber-950">
+                                    Reçete: Önce temel 4 işlem refleksini hızlandır. Rasyonel sayılar, tek-çift sayılar, basit eşitsizlikler ve mutlak değeri klasik sorularla hallet. 3 hafta sadece buna çalış, netin doğrudan 15&apos;e fırlayacak.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-slate-50 border-l-4 border-blue-500 rounded-r-xl">
-                                <h3 className="text-xl font-bold text-gray-900 mb-2">2. Basamak: 10 - 20 Net Bandında Sıkışanlar</h3>
+                                <h3 className="text-xl font-bold text-gray-900 mb-2">2. Grup: 10 - 20 Net Arasında Takılıp Kalanlar</h3>
                                 <p className="text-gray-700 mb-3">
-                                    Bu öğrenci grubu konuyu bilir, formülleri hatırlar ama problem sorusunu okuduğunda kafasında denklemi kuramaz. Soruyu baştan sona roman gibi okur, sonra tekrar başa döner. Oysa problem çözmek soru bittikten sonra değil, sorunun ilk cümlesi okunurken başlar.
+                                    Konuları biliyorsun. Biri formülü sorduğunda çatır çatır söylüyorsun. Ama denemede problem sorusunu açtığında kilitleniyorsun. Soruyu baştan sona bir gazete haberi gibi okuyup bitiriyorsun, sonra kalemi kağıda koyup &quot;ben ne okudum az önce?&quot; diyorsun.
                                 </p>
-                                <p className="text-gray-700 text-sm font-semibold text-blue-900">
-                                    Somut Görev: Her gün aksatmadan 20 adet rutin olmayan problem sorusu çözün. Soruyu okurken cümle cümle verileri kağıda dökün: &quot;Ahmet&apos;in yaşı = x, Mehmet = x + 4&quot; gibi. Asla sorunun tamamını okuyup sonra karalamaya başlamayın. Ayrıca Veri-İstatistik ve Kümeler gibi garanti 2 net getiren konuları derhal cebe koyun.
+                                <p className="text-gray-700 text-sm font-semibold text-blue-950">
+                                    Reçete: Soruyu parça parça oku. İlk cümleyi okudun mu? Hemen kenara yaz: &quot;Babanın yaşı = 3x&quot;. İkinci cümleyi okudun mu? &quot;Çocuk = x&quot;. Soru bitmeden denklem masada hazır olmalı. Ayrıca her sabah kahvaltıdan önce 15 problem çözmeyi ibadet gibi yap.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-slate-50 border-l-4 border-emerald-500 rounded-r-xl">
-                                <h3 className="text-xl font-bold text-gray-900 mb-2">3. Basamak: 20 - 30 Net Aralığında Gezinenler</h3>
+                                <h3 className="text-xl font-bold text-gray-900 mb-2">3. Grup: 20 - 30 Net Bandına Gelip Tıkananlar</h3>
                                 <p className="text-gray-700 mb-3">
-                                    Bu aşamada matematik altyapınız sağlamdır ancak 25 netin üzerine çıkamamanızın iki sebebi vardır: Geometriye sırtınızı dönmeniz ve sınav süresini matematik testinde eritmeniz. 40 sorunun 10 tanesi geometridir. Geometriye bakmadan 30 net yapmak neredeyse imkansızdır.
+                                    Buradaki öğrencilerin %90&apos;ının tek bir ortak günahı vardır: Geometriye bakmamak. &quot;Hocam ben geometri yapamıyorum, matematikten 28 yaparım yeter.&quot; Yetmez arkadaşım, derece istiyorsan yetmez. 40 sorunun 10 tanesi geometri. Geometriyi çöpe atarak 35 nete ulaşamazsın.
                                 </p>
-                                <p className="text-gray-700 text-sm font-semibold text-emerald-900">
-                                    Somut Görev: Doğruda açı, üçgende açı, özel üçgenler ve benzerlik konularını adeta su gibi öğrenin. Geometride soru görme yeteneği günlük 15 soru çizimiyle 1 ayda oturur. Matematik testine ayırdığınız süreyi 65 dakikayı geçmeyecek şekilde sınırlandırın.
+                                <p className="text-gray-700 text-sm font-semibold text-emerald-950">
+                                    Reçete: Üçgende açılar, özel üçgenler (3-4-5, 30-60-90) ve benzerlik. Bu üç konuyu bitir, geometriden anında +4 net kazanırsın. Geometri çizim yeteneğidir; her gün 10 soru çöz, gözün 2 haftada şekilleri görmeye başlar.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-slate-50 border-l-4 border-purple-500 rounded-r-xl">
-                                <h3 className="text-xl font-bold text-gray-900 mb-2">4. Basamak: 30+ Nete Ulaşmak ve Dereceyi Kovalamak</h3>
+                                <h3 className="text-xl font-bold text-gray-900 mb-2">4. Grup: 30+ Net Yapıp Derece Arayanlar</h3>
                                 <p className="text-gray-700 mb-3">
-                                    32-35 net aralığına gelmiş adayların tek derdi dikkat hataları ve sınav komisyonunun &quot;tuzak soru&quot; olarak hazırladığı 2-3 orijinal sorudur. Burada artık konu eksiği aranmaz; sınav psikolojisi ve soru seçme disiplini konuşur.
+                                    Bu seviyede konu eksiği falan kalmamıştır. Kaybettiğin 3-4 net nereden gidiyor? Ya soru kökündeki &quot;daima&quot; kelimesini atladın ya da işlem yaparken 7 kere 8&apos;e 54 dedin. Bir de ÖSYM&apos;nin bilerek hazırladığı o 2 tane eleyici tuzak soru.
                                 </p>
-                                <p className="text-gray-700 text-sm font-semibold text-purple-900">
-                                    Somut Görev: Haftada en az 3 adet kaliteli branş denemesi çözün. Deneme bittikten sonra boş bıraktığınız veya yanlış yaptığınız soruları kesip özel bir soru havuzuna atın. Permütasyon, kombinasyon ve katı cisimler gibi uç konuları şansa bırakmayın.
+                                <p className="text-gray-700 text-sm font-semibold text-purple-950">
+                                    Reçete: Konu çalışmayı tamamen bırak. Haftada 4 branş denemesi çöz, sadece yapamadığın soruların mantığını cımbızla ayıkla. Permütasyon, kombinasyon ve olasılık olasılıklarını artık şansa bırakma.
                                 </p>
                             </div>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Sınavda İnatlaşan Geometriyi Kaçırır: Turlama Mantığı
+                            Sorularla İnatlaşma: Altın Turlama Kuralı
                         </h2>
                         <p>
-                            Geometride bir üçgen sorusuna takılıp 5-6 dakika harcadığınız an, sınavın arkasında bekleyen iki tane çerez seviye temel kavram sorusunu göremeden süreniz biter.
+                            Bir problem sorusuna 4 dakika gömdün. Çıkmadı. Sinirlendin, &quot;ben bunu nasıl yapamam&quot; dedin, 2 dakika daha harcadın. Sonuç? Yanlış çıktı. Ve o 6 dakika yüzünden arka sayfadaki 3 tane tek satırlık çerez soruyu göremeden süre bitti.
                         </p>
                         <p>
-                            Kuralınız çok basit olmalı: İlk 30-40 saniyede size bir kapı aralamayan sorunun yanına küçük bir yuvarlak koyun ve derhal sonrakine geçin. İlk turda heybeye 20-25 neti koyduktan sonra arkaya yaslanıp o işaretlenen sorulara dönün. Panik bittiği için o uğraştırıcı soruların ne kadar kolay çözüldüğüne şaşıracaksınız.
+                            Bunu yapma. Soruyu okudun, 40 saniyede aklına bir yöntem gelmedi mi? Yanına küçük bir yıldız koy ve hemen geç. Bütün testi tara, cepteki 22-25 neti garantiye al. Sonra geri dön o yıldızlı sorulara. Kafandaki panik bittiği için beyninin o soruları nasıl çatır çatır çözdüğüne kendin bile inanamayacaksın.
                         </p>
 
                         <div className="my-8">
@@ -236,15 +236,15 @@ export default function TYTMatematikKonulari() {
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Her Denemeden Sonra Cevaplamanız Gereken 3 Soru
+                            Deneme Bitti, Kitapçığı Kapatmadan Önce Şu 3 Şeyi Sor
                         </h2>
                         <p>
-                            Deneme bittiğinde sadece toplam nete bakmak kimseye bir şey kazandırmaz. Asıl mesele o yanlışların kaynağını tespit etmektir:
+                            Denemeyi çözüp sadece &quot;23 doğru 6 yanlış&quot; diye kenara atmak vakit kaybıdır. Yanlışlarına bakarken kendine dürüst ol:
                         </p>
                         <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                            <li><strong>Konu eksiği mi?</strong> Formülü veya kuralı mı unuttun? (Hemen konu özetine dönüp 10 dakika tekrar et).</li>
-                            <li><strong>Süre baskısı mı?</strong> Evde tek başına çözsen yapabileceğin bir soru muydu? (Demek ki bir önceki soruda gereksiz inatlaşmışsın).</li>
-                            <li><strong>Dikkatsizlik mi?</strong> Soru kökündeki &quot;olamaz&quot; ifadesini mi kaçırdın, basit bir toplama hatası mı yaptın? (Soru çözerken altını çizerek oku).</li>
+                            <li><strong>Bilgi eksikliği mi?</strong> Kuralı bilmediğin için mi gitti? O zaman hemen o konudan 20 soru çöz.</li>
+                            <li><strong>Süre paniği mi?</strong> Son 15 dakikada telaştan mı salladın? Turlama taktiğini geliştirmen lazım.</li>
+                            <li><strong>Dikkatsizlik mi?</strong> &quot;Hangisi kesinlikle doğrudur&quot; sorusunda aksi örneği düşünmedin mi? Soru köklerinin altını fosforlu kalemle çiz.</li>
                         </ul>
 
                         <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-8 my-10 text-center text-white shadow-xl">

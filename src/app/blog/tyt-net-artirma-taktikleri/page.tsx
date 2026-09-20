@@ -65,78 +65,79 @@ export default function TYTNetArtirma() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            TYT hazırlığında en sık rastlanan tuzak şudur: 35 netten 60 nete çıkarken işe yarayan yöntemlerin, 60&apos;tan 85&apos;e çıkarken de yeteceğini zannetmek.
+                            Buna camiada <strong>&quot;62 Net Laneti&quot;</strong> derler. Kasım&apos;da girersin 63 gelir. Ocak&apos;ta girersin 61 gelir. Mart&apos;ta girersin 64 gelir. Masanın başında günde 7 saat ders çalışıyorsundur, soru bankalarını bitirmişsindir ama o ibre bir türlü 75&apos;e vurmaz. İnsanın içini kemiren o hissi çok iyi bilirim: <em>&quot;Acaba bende mi bir gerizekalılık var?&quot;</em>
                         </p>
 
                         <p>
-                            Yetmez. Çünkü 50-60 nete kadar eksik konuları çalışıp formül ezberleyerek rahatlıkla gelirsiniz. Fakat iş 70 barajını aşıp 80&apos;lerin üzerine yerleşmeye geldiğinde oyunun kuralları tamamen değişir. Artık konu eksiğinizden ziyade hız, dikkat yönetimi ve sınav anında kriz çözme beceriniz test edilir.
+                            Yok kardeşim, sende hiçbir sorun yok.
                         </p>
 
                         <p>
-                            Eğer haftalardır aynı net bandında patinaj çekiyorsanız, şu 4 somut adımı hemen devreye almanız gerekiyor:
+                            Sorun şurada: 30 netten 60 nete çıkarken kullandığın alet çantasıyla, 65&apos;ten 85&apos;e çıkamazsın. 60 nete kadar konu anlatımı dinleyip soru çözmek işe yarar çünkü bilgi eksiktir. Ama 65&apos;in üzerine çıktığın an oyunun adı değişir: Artık bilgi değil; hız, sınav psikolojisi ve turlama disiplini yarışır.
                         </p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            1. Denemeyi Çözüp Kenara Atmayı Bırakın (Hata Defteri)
-                        </h2>
                         <p>
-                            Pazar günü denemeden çıkıp sadece toplam nete bakmak, sonra da o kitapçığı masanın altına fırlatmak, o 165 dakikalık emeği çöpe atmak demektir.
-                        </p>
-                        <p>
-                            Denemenin asıl faydası doğru yaptığınız 65 soruda değil; boş bıraktığınız ya da yanlış yaptığınız o 25 soruda saklıdır.
-                        </p>
-                        <p>
-                            Yapılacak işlem çok net: Kendinize kalın bir defter edinin. Denemede yapamadığınız veya sallayıp şans eseri tutturduğunuz soruları makasla kesin, o deftere yapıştırın. Altına video çözümünden ya da hocanızdan öğrendiğiniz püf noktayı kendi cümlelerinizle 1-2 satır yazın.
-                        </p>
-                        <p>
-                            Her yeni denemeye girmeden önce yarım saat bu defteri karıştırın. İnanın bana, sınav yayınlarının da ÖSYM&apos;nin de soru kalıpları sonsuz değil. Aynı soru tipinde üçüncü kez tongaya düşmemeye başladığınız an netlerinizin zıpladığını göreceksiniz.
+                            Haftalardır aynı yerde patinaj çekmekten delirmek üzereysen şu 4 taktiği hemen yarın sabah hayatına sok:
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            2. Sabah Rutini: Paragraf ve Problem Kondisyonu
+                            1. O Deneme Kitapçığını Masanın Altına Fırlatmayı Kes!
                         </h2>
                         <p>
-                            TYT kitapçığındaki 120 sorunun yaklaşık 45 tanesi doğrudan uzun paragraflar ve yeni nesil problemlerden oluşur. Yani sınavın üçte birinden fazlası tamamen okuduğunu anlama ve değişken kurma hızınızdır.
+                            Denemeden çıkıp optiği okutuyorsun. Sonuç: 64.25. Surat asılıyor, kitapçığı çantanın en dibine tıkıyorsun ve bir daha yüzüne bakmıyorsun.
                         </p>
                         <p>
-                            Bunu akşam kafanız yorgunken çözdüğünüz 10 test sorusuyla geliştiremezsiniz.
+                            En büyük hatan bu işte.
+                        </p>
+                        <p>
+                            O denemede doğru yaptığın 65 soru seni üniversiteye sokmayacak; onlar zaten bildiğin şeyler. Seni dereceye sokacak olan şey, <strong>yapamadığın o 22 soru ile sallayıp tutturduğun o 6 soru</strong>.
+                        </p>
+                        <p>
+                            Hemen yarın kırtasiyeden telli kalın bir defter al. Yapamadığın soruları makasla kes, o deftere yapıştır. Altına video çözümünden hocanın kullandığı kilit cümleyi kendi el yazınla yaz. Her yeni denemeden önceki 30 dakikanı bu defteri karıştırarak geçir. İnan bana, soru tipleri uzaydan gelmiyor; ÖSYM dönüp dolaşıp aynı mantığı soruyor. Kendi hatalarınla yüzleştiğin an netlerin kendiliğinden 75&apos;e tırmanır.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            2. Sabah Rutini: 20 Paragraf + 15 Problem (Pazarlıksız)
+                        </h2>
+                        <p>
+                            TYT kitapçığında tam 120 soru var. Bunun neredeyse 45 tanesi ne biliyor musun? Uzun paragraflar ve hikayeli problemler. Yani sınavın neredeyse %40&apos;ı sadece okuduğunu hızlı anlama ve denklem kurma kondisyonudur.
+                        </p>
+                        <p>
+                            Bunu gece kafan kazan gibiyken yatakta çözdüğün 10 soruyla geliştiremezsin.
                         </p>
 
                         <div className="bg-slate-900 text-white p-6 rounded-xl my-6 not-prose border border-slate-800 shadow-md">
-                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Pazarlıksız Sabah Kuralı</h3>
+                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Her Sabah İstisnasız Uygula:</h3>
                             <p className="text-sm text-slate-300 leading-relaxed">
-                                Sabah masaya oturduğunuzda ilk işiniz kronometreyi açıp 20 paragraf ve 15 problem çözmek olsun. Hedef: En fazla 40-45 dakika.
+                                Sabah gözünü açtın, kahveni aldın, masaya oturdun. Başka hiçbir derse bakmadan kronometreyi bas: <strong>20 paragraf + 15 problem</strong>. Süre sınırı: En geç 42 dakika. Bunu 21 gün aralıksız yap; denemede Türkçe ve Matematik sürenin nasıl 20 dakika kısaldığına inanamayacaksın.
                             </p>
                         </div>
 
-                        <p>
-                            Bunu 3 hafta aksatmadan uyguladığınızda, deneme sınavında paragrafların arasında kaybolmadığınızı ve matematik problemlerinde denklemi çok daha seri kurduğunuzu fark edeceksiniz.
-                        </p>
-
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            3. Genel Denemeyi Azaltın, Branş Denemesine Yüklenin
+                            3. Genel Deneme Yorgunluğu Yerine &quot;Nokta Atışı&quot; Branş Denemesi
                         </h2>
                         <p>
-                            Haftada 3-4 tane genel TYT denemesine girmek öğrenciyi yıpratır; eksik konuları toparlayacak ne vakit ne de takat bırakır.
+                            Haftada 4 tane genel TYT denemesine giren öğrenciler görüyorum. Çocuk perişan, ruhunu teslim etmiş. Genel deneme çözmekten konu tekrarı yapmaya dermanı kalmamış.
                         </p>
                         <p>
-                            Bunun yerine branş denemelerine odaklanın.
+                            Genel denemeyi haftada 2 ile sınırla. Kalan günlerde branş denemesi çöz:
                         </p>
-                        <p>
-                            Sosyalde 10-11 nette mi takıldınız? Alın bir Sosyal branş denemesi, günde 2 deneme çözün. Ama süreyi ÖSYM&apos;den 3-4 dakika daha kısa tutun. Matematikte 18-22 aralığında mısınız? Haftada 3 gün tek başına Matematik branş denemesi atın ve sadece boş bıraktığınız soruların üzerine gidin.
-                        </p>
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>Sosyalde 9-10 nette misin? Aç bir Sosyal branş denemesi, 12 dakikada çöz, yanlışlarına bak. Günde 2 adet çözsen haftada 140 sosyal sorusu tararsın; netin anında 16&apos;ya fırlar.</li>
+                            <li>Fende fizik formüllerini mi karıştırıyorsun? Sadece Fen branş denemesiyle eksik konuları teşhis et.</li>
+                        </ul>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            4. Soruyla İnatlaşma Egosunu Bırakın
+                            4. Sorularla İnatlaşma Egosunu Çöpe At
                         </h2>
                         <p>
-                            65 nette takılı kalan adayların en belirgin özelliği, denemede çözemediği bir soruya takılıp 4-5 dakikasını heba etmesidir. &quot;Ben bu konuyu haftalarca çalıştım, nasıl yapamam&quot; diyerek soruyla kavga eder.
+                            &quot;Ben fonksiyonları 3 hafta boyunca çalıştım, bu soruyu çözmeden bu sayfayı çevirmem!&quot;
                         </p>
                         <p>
-                            Sınav masasında ego olmaz. Bir soru 45 saniye içinde size bir yol göstermiyorsa yanına küçük bir yuvarlak koyun ve hemen sonrakine geçin.
+                            İşte sınavı kaybettiren kafa yapısı bu. Bir soruyla 5 dakika inatlaştın mı bittin. Soru zor olabilir, tuzak olabilir veya o an senin kafan basmamış olabilir. Sınav masasında ego yapan adamı ÖSYM fena hırpalar.
                         </p>
                         <p>
-                            Arkadaki sayfalarda sizi bekleyen tereyağından kıl çeker gibi kolay 2-3 problem olabilir. O inat yüzünden o kek soruları hiç görememek, sınavdaki en büyük kayıptır.
+                            Kural çok net: Soruyu okudun, 35-40 saniye geçti ve hala kafanda bir ışık yanmadı mı? Yanına bir yuvarlak koy ve hemen sonraki soruya uç. Arkada seni bekleyen 15 saniyelik kek sorular var. Önce onları topla, puanları çantaya at; o uğraştırıcı soruya sınavın sonunda dönersin.
                         </p>
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">

@@ -65,77 +65,77 @@ export default function YKSEdebiyatKonulari() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Edebiyat çalışan öğrencilerin en sık yaptığı hata, yüzlerce yazar ve binlerce eseri alt alta yazıp ezberlemeye çalışmaktır.
+                            Odasının duvarlarını renkli post-it&apos;lerle kaplayan, binlerce yazar-eser ezberlemeye çalışıp iki hafta sonra <em>&quot;Mai ve Siyah kimindi ya, Nabizade Nazım mıydı?&quot;</em> diye saçını başını yolan öğrenci gördün mü? Muhtemelen kendinden bahsediyorum.
                         </p>
                         <p>
-                            Üç gün sonra hepsi birbirine karışır. Tanzimat yazarları Servet-i Fünun&apos;a kayar, divan şairlerinin kasideleri birbirine girer.
+                            Sakin ol. Kalemi usulca masaya bırak.
                         </p>
                         <p>
-                            Oysa ÖSYM&apos;nin edebiyat soruları sanıldığı kadar dipsiz bir kuyu değildir. Sınav komisyonu her yıl Türk edebiyatının ana omurgasını oluşturan yaklaşık 30-35 büyük yazarın temel özelliklerini ve dönemlerin ruhunu sorar.
+                            Sana çok net bir sır vereyim: ÖSYM Türk edebiyatı kütüphanesini önüne koyup rastgele soru sormaz. Soru komisyonunun her yıl dönüp dolaşıp yokladığı yaklaşık 30-35 tane &quot;vazgeçilmez&quot; isim vardır. Geriye kalan yüzlerce yazar ise sadece şıklarda kafa karıştırmak için meze olarak kullanılır.
                         </p>
                         <p>
-                            24 sorunun dağılımını doğru okuduğunuzda, sınavın aslında ne kadar dengeli kurulduğunu görürsünüz:
+                            24 soruluk AYT Edebiyat testinde 20+ nete ulaşmak istiyorsan her şeyi ezberlemeyi bırakacaksın; sınavın oyun planını deşifre edeceksin:
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            24 Sorunun Soru Dağılım Haritası
+                            24 Sorunun Röntgeni: Puanlar Nereye Saklanmış?
                         </h2>
 
                         <div className="space-y-4 my-6">
                             <div className="p-5 bg-purple-50 border border-purple-200 rounded-xl">
-                                <h3 className="font-bold text-purple-900 text-lg mb-1">1. Paragraf ve Anlam Bilgisi (İlk 6 Soru)</h3>
-                                <p className="text-sm text-purple-800 leading-relaxed">
-                                    Sınavın bu ilk bölümü edebiyat bilgisi gerektirmez; tamamen okuduğunu anlama becerisidir. TYT Türkçe paragraf sorularının benzeridir. Düzenli paragraf çözen bir öğrenci bu 6 soruyu firesiz cebe koyar.
+                                <h3 className="font-bold text-purple-950 text-lg mb-1">1. TYT İkramı: Paragraf ve Anlam (İlk 6 Soru)</h3>
+                                <p className="text-sm text-purple-900 leading-relaxed">
+                                    Sınav kağıdını açtığında karşına çıkan ilk 6 soruda tek bir yazar adı bile geçmez. Bildiğin TYT paragraf ve sözcükte anlam sorusudur. Edebiyat testi diye kasmana gerek yok. Eğer TYT&apos;de düzenli paragraf çözüyorsan bu 6 neti 7 dakikada cebe atar, arkana bile bakmazsın.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-amber-50 border border-amber-200 rounded-xl">
-                                <h3 className="font-bold text-amber-900 text-lg mb-1">2. Şiir Bilgisi ve Edebi Sanatlar (3-4 Soru)</h3>
-                                <p className="text-sm text-amber-800 leading-relaxed">
-                                    Kafiye, redif, teşbih, istiare, tezat ve telmih. Kuralları neredeyse matematik gibidir. Ezberlemek yerine verilen beyit ya da dörtlük üzerinde sanatları bulma pratiği yapan öğrenci buradan tam puanla çıkar.
+                                <h3 className="font-bold text-amber-950 text-lg mb-1">2. Şiir Matematiği ve Edebi Sanatlar (3-4 Soru)</h3>
+                                <p className="text-sm text-amber-900 leading-relaxed">
+                                    Kafiye örgüsü, redif bulma, teşbih, istiare, hüsn-i talil... Bak, bu kısım bildiğin matematik gibidir. Yorum yoktur; kuralı bilirsen 20 saniyede çözersin. Kelime kökünü ayır, ek aynı görevde mi bak; aynıysa redif, kökteki ses benzerliği kafiye. Formülü kaptığında buradan soru kaçırman imkansız.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-blue-50 border border-blue-200 rounded-xl">
-                                <h3 className="font-bold text-blue-900 text-lg mb-1">3. İslamiyet Öncesi, Halk ve Divan Edebiyatı (5-6 Soru)</h3>
-                                <p className="text-sm text-blue-800 leading-relaxed">
-                                    Adayların en çok çekindiği ama en garantili kısımdır. Fuzuli, Baki, Nedim, Nabi ve Şeyh Galip... Bu beş şairi ve gazel, kaside, mesnevi nazım şekillerini sindiren birinin buradan soru kaçırması zordur.
+                                <h3 className="font-bold text-blue-950 text-lg mb-1">3. Korkulu Rüya Ama En Garanti Bölge: Divan ve Halk Şiiri (5-6 Soru)</h3>
+                                <p className="text-sm text-blue-900 leading-relaxed">
+                                    Öğrenciler Arapça-Farsça tamlamaları görünce hemen paniğe kapılır. Gerek yok! ÖSYM sana gazelin 15 beytini ezbere soramaz. Baki&apos;nin dünya zevkini, Fuzuli&apos;nin aşk acısını, Nedim&apos;in Lale Devri şenliğini, Nabi&apos;nin dede gibi nasihat vermesini bil; soru kökündeki iki kelimeden şairi anında yakalarsın.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-emerald-50 border border-emerald-200 rounded-xl">
-                                <h3 className="font-bold text-emerald-900 text-lg mb-1">4. Tanzimat&apos;tan Cumhuriyet&apos;e Roman ve Akımlar (7-8 Soru)</h3>
-                                <p className="text-sm text-emerald-800 leading-relaxed">
-                                    Batılılaşma teması, Namık Kemal, Recaizade Mahmut Ekrem, Tevfik Fikret, Halit Ziya, Yakup Kadri ve Cumhuriyet dönemi toplumcu gerçekçi romanları.
+                                <h3 className="font-bold text-emerald-950 text-lg mb-1">4. Roman, Akımlar ve Cumhuriyet Dönemi (7-8 Soru)</h3>
+                                <p className="text-sm text-emerald-900 leading-relaxed">
+                                    Tanzimat&apos;taki yanlış Batılılaşma karikatürleri (Felatun Bey, Bihruz Bey), Servet-i Fünun&apos;un bunalımlı aydınları ve Cumhuriyet&apos;in Anadolu köylüsünü anlatan toplumcu gerçekçileri (Yaşar Kemal, Kemal Tahir, Orhan Kemal). Ana karakterleri ve eserin ana çatışmasını bilen öğrenci burada şov yapar.
                                 </p>
                             </div>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Ezberlemek Yerine Anahtar Kelime Yöntemi
+                            Edebiyat Ezberlenmez, &quot;Dedikodusu&quot; Yapılır: Kodlama Taktikleri
                         </h2>
                         <p>
-                            Bir yazarı 20 maddelik bilgi yığınıyla ezberlemeye çalışmayın. Her büyük yazarı tek bir anahtar kavramla zihninize bağlayın:
+                            Yazarın hayatını ansiklopedi gibi okumayı bırak. Her yazarı hafızana tek bir ayırt edici &quot;lakap&quot; ya da sahneyle kazı:
                         </p>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li><strong>Fuzuli:</strong> Istırap ve ilahi aşk. Kavuşmayı değil yanmayı dileyen şair. (Su Kasidesi, Leyla ile Mecnun).</li>
-                            <li><strong>Nedim:</strong> Lale Devri, İstanbul Türkçesi ve yaşama sevinci. Şarkı türünün ustası.</li>
-                            <li><strong>Nabi:</strong> Didaktik, öğretici şiir. Nasihat ve ahlaki öğüt ekolü.</li>
-                            <li><strong>Ahmet Haşim:</strong> Akşam kızıllığı, melankoli ve saf şiir. Sembolizmin öncüsü.</li>
-                            <li><strong>Halit Ziya Uşaklıgil:</strong> Batılı anlamda ilk modern Türk romanı, realist gözlem ve mensur şiirler.</li>
+                            <li><strong>Fuzuli:</strong> Istırap adamı. Adam sevgilisine kavuşmak istemiyor, &quot;Aman kavuşursam aşkın büyüsü bozulur, ben acımdan razıyım&quot; diyor. Su Kasidesi ve Leyla vü Mecnun deyince akla başka isim gelemez.</li>
+                            <li><strong>Nedim:</strong> Zevk-ü sefa adamı. &quot;Gülelim, oynayalım, kam alalım dünyadan&quot; diyen, Lale Devri&apos;nin Sadabad eğlencelerini şarkı formunda şakıyan adam.</li>
+                            <li><strong>Nabi:</strong> Akıl hocası. Didaktik, hikemi şiirin babası. Oğluna öğüt vermek için yazdığı Hayriye&apos;yi ÖSYM çok sever.</li>
+                            <li><strong>Ahmet Haşim:</strong> Akşamcı, göl kenarında hüzünlenen sembolist. &quot;Şiirde anlam aramak bülbülü eti için öldürmeye benzer&quot; aforizmasının sahibi. Saf şiir deyince ilk akla gelen.</li>
+                            <li><strong>Halit Ziya:</strong> Türk romanının mimarı. Cümleleri uzundur, Fransızca cümle yapısını Türkçeye sokmuştur. Mai ve Siyah ile Aşk-ı Memnu&apos;nun babası.</li>
                         </ul>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Haftalık Çalışma Düzeni Nasıl Olmalı?
+                            Edebiyatta Neti Uçuran Haftalık Ritim
                         </h2>
                         <p>
-                            Edebiyatı her gün saatlerce çalışmak kafa karışıklığı yaratır. Haftada 3 seans ayırmak fazlasıyla yeterlidir:
+                            Hergün 4 saat edebiyat çalışıp beynini çorba yapma. Edebiyat aralıklarla tekrar edildiğinde kalıcı hafızaya geçer:
                         </p>
                         <p>
-                            Pazartesi Divan edebiyatını çalışıp hemen ardından 30 soru çözün. Çarşamba Tanzimat ve Servet-i Fünun&apos;a bakın. Cuma günü Cumhuriyet dönemi yazarlarını gözden geçirin. Pazar günü ise mutlaka 24 soruluk bir AYT Edebiyat branş denemesi çözerek haftayı kapatın.
+                            Pazartesi Divan ve Halk edebiyatını tara, 30 soru çöz. Çarşamba Tanzimat ve Servet-i Fünun romanlarına bak. Cuma günü Cumhuriyet dönemi şiir ve roman topluluklarını gözden geçir. Pazar günü ise kronometreyi aç, 24 soruluk bir branş denemesi çöz.
                         </p>
                         <p>
-                            Bu tempoyu 1 ay sürdürdüğünüzde, netlerinizin 12-13 bandından 20&apos;nin üzerine çıktığını göreceksiniz.
+                            Bunu 4 hafta üst üste disiplinle yap; o çok korktuğun edebiyat netlerinin 12&apos;den 21-22 bandına nasıl fırladığını gözlerinle göreceksin.
                         </p>
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
