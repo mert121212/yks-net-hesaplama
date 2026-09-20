@@ -64,66 +64,96 @@ export default function TYTKesinCikanKonular() {
                     <AuthorProfile />
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
-                        <p className="text-lg leading-relaxed">
-                            Sınava hazırlanırken yapılan en klasik hata, 500 sayfalık konu anlatım kitabını 1. sayfadan açıp sırayla okumaya çalışmaktır.
+                        <p className="text-lg leading-relaxed font-medium text-gray-800">
+                            Masada 600 sayfalık kalın bir TYT konu anlatımı kitabı duruyor. Ön kapağını açıp 1. sayfadan itibaren satır satır okumaya çalışıyorsun. Akşam saat 22:00 olduğunda gözlerin yanıyor, kafan allak bullak ve içinde sadece kocaman bir suçluluk duygusu var: <em>&quot;Ben bu kadar konuyu sınava kadar nasıl yetiştireceğim?&quot;</em>
                         </p>
                         <p>
-                            Vicdan rahatlatır, evet. &quot;Ben her konuya baktım&quot; dersiniz. Ama verim açısından tam bir zaman kaybıdır.
+                            Sana çok net bir şey söyleyeyim: <strong>Yetiştirmek zorunda değilsin.</strong>
                         </p>
                         <p>
-                            Çünkü ÖSYM&apos;nin 120 soruluk sınavında bazı konular vardır ki son 7-8 yıldır istisnasız her Haziran ayında masaya konur. Bazı konular da vardır ki 3-4 yılda bir belki tek bir soru gelir.
+                            Çünkü ÖSYM&apos;nin soru hazırlama komisyonu her yıl müfredatın kuytu köşelerinden soru üretmek için pusuda beklemiyor. Son 8 yılın çıkmış sınav kitapçıklarını masaya yatırıp tek tek soru köklerini taradığında görüyorsun ki; ÖSYM&apos;nin asla vazgeçmediği, her Haziran ayında istisnasız sorduğu bir <strong>&quot;kemik soru omurgası&quot;</strong> var.
                         </p>
                         <p>
-                            Zamanınız kısıtlıysa veya netlerinizi hızlıca 60-70 bandına çekmek istiyorsanız, enerjinizi dağıtmayacaksınız. Önce ÖSYM&apos;nin asla vazgeçmediği bu kemik konuları cebe indireceksiniz:
+                            Eğer zamanın daralıyorsa ya da denemelerde bir türlü 65-70 net barajını aşamıyorsan, enerjini 5 yılda bir çıkan kıytırık detaylara harcamayı bırak. Önce masada duran şu garanti 40-50 neti cebe indireceğiz:
                         </p>
+
+                        <div className="bg-gradient-to-br from-indigo-900 to-slate-900 text-white p-6 rounded-2xl my-8">
+                            <span className="text-xs uppercase tracking-wider text-amber-400 font-bold block mb-1">
+                                Sınav Masası Stratejisi
+                            </span>
+                            <h3 className="text-lg font-bold text-white mb-2">
+                                80/20 Kuralı (Pareto Prensibi): Netlerin %80&apos;i Konuların %20&apos;sinden Gelir
+                            </h3>
+                            <p className="text-xs text-slate-300 leading-relaxed">
+                                TYT müfredatında yaklaşık 95 farklı alt kazanım başlığı vardır. Ancak sınavdaki 120 sorunun tam 75 tanesi sadece 18 temel konu başlığından çıkar. Bütün kitabı ezberlemeye çalışmak yerine bu 18 başlıkta soru tipi ezberlemek seni ilk 100 bine taşımaya yeter.
+                            </p>
+                        </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             TYT Türkçe: 40 Sorunun 30&apos;unu Sırtlayan 3 Başlık
                         </h2>
                         <p>
-                            Türkçe testinde başarının sırrı dil bilgisi kurallarını ezberlemekten değil, okuduğunu seri şekilde süzmekten geçer.
+                            Türkçe testinde başarının sırrı cilt cilt dil bilgisi ezberlemek değil, göz-beyin koordinasyonunu hızlandırmaktır.
                         </p>
-                        <p>
-                            <strong>Paragrafta Ana Düşünce ve Yardımcı Düşünceler (12-14 Soru):</strong> Sınavın en büyük soru bloğudur. Her gün aksatmadan 20 paragraf sorusu çözmek, bu soruları sınav anında rahatça yakalamanızı sağlar.
-                        </p>
-                        <p>
-                            <strong>Sözcükte ve Cümlede Anlam (6-8 Soru):</strong> Boşluk doldurma, altı çizili ifadenin anlamı ve cümle tamamlama. Ezber değil, tamamen mantık yürütme sorularıdır.
-                        </p>
-                        <p>
-                            <strong>Yazım Kuralları ve Noktalama İşaretleri (4 Soru):</strong> Dil bilgisinin en karlı bölümüdür. Virgülün kullanılmadığı yerler, &quot;de/da&quot; ve &quot;ki&quot; yazımı, büyük harf kuralları... Çalışması 1-2 akşam sürer ama sınavda 4 garanti net getirir.
-                        </p>
+                        <div className="space-y-3 my-4">
+                            <div className="bg-emerald-50 p-4 rounded-xl border-l-4 border-emerald-500">
+                                <h4 className="font-bold text-emerald-950 text-sm">1. Paragrafta Ana Düşünce &amp; Değinilmemiştir Soruları (14-16 Soru)</h4>
+                                <p className="text-xs text-emerald-900 mt-1">
+                                    Sınavın en büyük soru bloğudur. Her sabah aç karnına ilk iş 20 paragraf çözmeyen öğrencinin TYT&apos;de süresi kesinlikle yetmez. Bu sorular kural bilmeyi değil, odaklanmayı ölçer.
+                                </p>
+                            </div>
+                            <div className="bg-blue-50 p-4 rounded-xl border-l-4 border-blue-500">
+                                <h4 className="font-bold text-blue-950 text-sm">2. Cümlede ve Sözcükte Anlam (6-8 Soru)</h4>
+                                <p className="text-xs text-blue-900 mt-1">
+                                    Altı çizili sözün cümleye kattığı anlam, boşluk doldurma ve kesin yargı bulma. Tamamen okuduğunu anlama hızına bakar, 0 ezber gerektirir.
+                                </p>
+                            </div>
+                            <div className="bg-purple-50 p-4 rounded-xl border-l-4 border-purple-500">
+                                <h4 className="font-bold text-purple-950 text-sm">3. Yazım Kuralları ve Noktalama İşaretleri (4 Garanti Soru)</h4>
+                                <p className="text-xs text-purple-900 mt-1">
+                                    Dil bilgisinin en yüksek yatırım getirisine sahip yeridir. &quot;de/da&quot; yazımı, büyük harf kuralları, virgül ve noktalı virgül ayrımı. 2 akşamını verip 4 soruyu garantilersin.
+                                </p>
+                            </div>
+                        </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             TYT Matematik: 20 Netin Kapısını Açan Çekirdek Konular
                         </h2>
                         <p>
-                            Matematikte gözünüz korkmasın. 40 sorunun neredeyse yarısı şu 3 ana başlıktan toplanır:
+                            Matematikte gözün korkmasın. Kimse senden ilk turda olimpiyat sorusu çözmeni beklemiyor. Masada duran kemik 20 net şuradan toplanır:
                         </p>
-                        <p>
-                            <strong>Problemler (11-13 Soru):</strong> Sayı, kesir, yüzde, hız ve yaş problemleri. Matematiğin omurgasıdır. Günde en az 15 problem çözmeden TYT Matematikte 20 netin üzerine çıkamazsınız.
-                        </p>
-                        <p>
-                            <strong>Temel Kavramlar ve Sayı Basamakları (4-5 Soru):</strong> Tek-çift sayı yorumları, basamak kavramı ve temel bölünebilme kuralları. Soru tiplerini kavradığınızda kaçırılmayacak sorulardır.
-                        </p>
-                        <p>
-                            <strong>Üslü ve Köklü Sayılar (2-3 Soru):</strong> Kuralları standarttır; genelde günlük hayattan bir tartı veya cetvel görseli üzerinden yaklaşık değer bulmanız istenir.
-                        </p>
+                        <div className="space-y-3 my-4">
+                            <div className="bg-amber-50 p-4 rounded-xl border-l-4 border-amber-500">
+                                <h4 className="font-bold text-amber-950 text-sm">1. Problemler (11-13 Soru)</h4>
+                                <p className="text-xs text-amber-900 mt-1">
+                                    Sayı, kesir, yüzde ve grafik problemleri. Matematiğin kalbidir. Günde 15 problem çözme alışkanlığı edinmeyen birinin matematikte 20&apos;yi geçme şansı yoktur.
+                                </p>
+                            </div>
+                            <div className="bg-slate-100 p-4 rounded-xl border-l-4 border-slate-600">
+                                <h4 className="font-bold text-slate-900 text-sm">2. Temel Kavramlar &amp; Sayı Basamakları (4 Soru)</h4>
+                                <p className="text-xs text-slate-700 mt-1">
+                                    Tek-çift sayılar, ardışık sayılar ve basamak çözümleme. Soruları dikkatli okuduğunda ilkokul 4 işlem mantığıyla çözülebilecek kadar sadedir.
+                                </p>
+                            </div>
+                            <div className="bg-teal-50 p-4 rounded-xl border-l-4 border-teal-500">
+                                <h4 className="font-bold text-teal-950 text-sm">3. Üslü - Köklü Sayılar ve EBOB-EKOK (3-4 Soru)</h4>
+                                <p className="text-xs text-teal-900 mt-1">
+                                    Genelde cetvel, termometre veya tartı görseli verip &quot;x değeri hangi aralıktadır?&quot; şeklinde yaklaşık değer sorarlar. Standart kurallardır.
+                                </p>
+                            </div>
+                        </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            TYT Fen: Sayısalcı Olmasanız Bile Cepte 6-8 Net
+                            TYT Fen: Eşit Ağırlıkçı ve Sözelciler İçin Bedava 6-8 Net
                         </h2>
                         <p>
-                            Eşit Ağırlık ve Sözel öğrencileri için fen testindeki 9. sınıf soruları bulunmaz nimettir. Formül gerekmez, temel kavramı bilmek yeterlidir:
+                            Eşit Ağırlıkçı ve Sözelci arkadaşların yaptığı en büyük hata Fen testinin kapağını bile açmamaktır. Oysa 9. sınıf fen konuları, 4 işlem matematikten bile daha kolaydır:
                         </p>
-                        <p>
-                            <strong>Biyoloji - Hücre ve Canlıların Ortak Özellikleri (2 Soru):</strong> Organellerin görevleri, hücre zarı geçişleri ve temel sınıflandırma. 2-3 sayfalık bir özetle bu 2 net cebe konur.
-                        </p>
-                        <p>
-                            <strong>Kimya - Periyodik Tablo ve Maddenin Halleri (2 Soru):</strong> Fiziksel ve kimyasal değişimler, periyodik sistem özellikleri. Çok rahat toplanan netlerdir.
-                        </p>
-                        <p>
-                            <strong>Fizik - Isı, Sıcaklık ve Madde-Özkütle (2 Soru):</strong> Günlük hayat mantığıyla sorulur; ısı ile sıcaklık kavram farkı ve kaldırma kuvveti mantığı.
-                        </p>
+                        <ul className="list-disc pl-6 space-y-2 text-sm">
+                            <li><strong>Biyoloji - Hücre Zarından Madde Geçişleri ve Canlıların Ortak Özellikleri (2 Soru):</strong> 3 sayfalık bir özet oku, çıkmış 5 yıllık soruları çöz, 2 net cebinde.</li>
+                            <li><strong>Kimya - Periyodik Tablo ve Maddenin Fiziksel/Kimyasal Halleri (2 Soru):</strong> Metaller, ametaller ve kaynama-erime mantığı. Formülsüz, tamamen mantık.</li>
+                            <li><strong>Fizik - Isı, Sıcaklık ve Madde-Özkütle (2 Soru):</strong> Günlük hayat mantığı. Isı bir enerji midir, sıcaklık termometreyle nasıl ölçülür? İşte hepsi bu.</li>
+                        </ul>
 
                         <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl my-8">
                             <h3 className="font-bold text-slate-900 mb-2">Peki Diğer Konulara Hiç mi Bakılmayacak?</h3>

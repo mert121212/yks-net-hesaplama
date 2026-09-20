@@ -65,16 +65,29 @@ export default function TYTParagrafTeknikleri() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
 
-                        <p className="text-lg leading-relaxed">
-                            TYT Türkçe testinde 40 soru bulunur. Bu 40 sorunun yaklaşık 22-24 tanesi doğrudan paragraf okumanızı gerektiren sorulardır. Geri kalan 16-18 soru ise dil bilgisi, yazım-noktalama ve sözcük anlamı gibi daha kısa ve teknik sorulardan oluşur.
+                        <p className="text-lg leading-relaxed font-medium text-gray-800">
+                            Saat 10:48. Sınav başlayalı tam 33 dakika olmuş. 21. sorudasın; felsefi bir metin önünde duruyor. Gözlerin satırların üzerinde kayıyor ama kafanın içinde tek bir cümle yankılanıyor: <em>&quot;Az önce ben ne okudum ya?&quot;</em>
                         </p>
-
                         <p>
-                            Yani basit bir hesap yaparsak: Paragraf sorularını çözemeyen bir öğrenci, testin %60&apos;ını kaybetmiş olarak sınava girer. Dil bilgisinde kusursuza yakın yapsa bile tavanı 16-18 nettir. 30+ net hedefleyen herkes paragraf sorularını çözmek <strong>zorundadır</strong>.
+                            Aynı paragrafı baştan alıyorsun. Bir daha okuyorsun. Bir daha... Üçüncü okuyuşta saatin tik-takları beyninde davul gibi çalmaya başlıyor, avuç için terliyor ve arkada bekleyen 40 matematik sorusu gözünün önüne geliyor.
+                        </p>
+                        <p>
+                            İşte TYT Türkçe&apos;de öğrencilerin en büyük kabusu soruların zor olması değil; <strong>aynı metni defalarca okutan o zihinsel kilitlenmedir (brain freeze).</strong>
+                        </p>
+                        <p>
+                            40 soruluk Türkçe testinin en az 24&apos;ü doğrudan paragraftan gelir. Dil bilgisinden 10&apos;da 10 yapsan bile paragrafta hız kazanamadıysan, sınavın matematik ve fen kısmını görmeden süren biter. Bu yazıda &quot;bol kitap okuyun&quot; gibi içi boş klişeleri bir kenara bırakacağız; sınav masasında tek okuyuşta doğru şıkka götüren 5 somut mekanizmayı konuşacağız.
                         </p>
 
-                        <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg text-amber-950 text-sm my-6">
-                            <strong>Sık Yapılan Hata:</strong> Öğrenciler &quot;Türkçe zaten ana dilim, paragraf sorusu okuyunca anlıyorum&quot; diye düşünür. Oysa ÖSYM&apos;nin sorduğu şey &quot;anlamak&quot; değil, &quot;paragrafın iletisini doğru tespit etmek&quot;tir. Bu ikisi tamamen farklı becerilerdir.
+                        <div className="bg-gradient-to-r from-emerald-900 to-slate-900 text-white p-6 rounded-2xl my-6">
+                            <span className="text-xs uppercase tracking-wider text-emerald-400 font-bold block mb-1">
+                                Masadaki Altın Kural
+                            </span>
+                            <h3 className="text-lg font-bold text-white mb-2">
+                                Önce Soru Kökü, Sonra Paragraf (Asla Tersten Başlama!)
+                            </h3>
+                            <p className="text-xs text-slate-300 leading-relaxed">
+                                Beyin ne aradığını bilmeden bir metni okursa her cümleyi eşit önemde algılar ve yorulur. Önce soru kökünü oku: <em>&quot;Değinilmemiştir&quot;</em> mi diyor, <em>&quot;Asıl vurgulanmak istenen&quot;</em> mi? Hedefini bilerek metne giren bir göz, aradığı cevabı 35. saniyede radar gibi yakalar.
+                            </p>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">

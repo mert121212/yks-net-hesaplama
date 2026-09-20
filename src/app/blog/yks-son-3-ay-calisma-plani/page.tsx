@@ -228,7 +228,7 @@ export default function YksSon3AyCalismaPlani() {
                         <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-2xl p-8 text-center my-10 shadow-lg">
                             <h3 className="text-2xl font-bold mb-3">Güncel Netlerinizi ve Sıralamanızı Hesaplayın</h3>
                             <p className="text-blue-100 max-w-2xl mx-auto mb-6 text-sm md:text-base">
-                                Son denemenizdeki doğru-yanlış sayılarınızı girin; güncel katsayılar ve OBP puanınızla 2026/2027 tahmini YKS sıralamanızı anında görün.
+                                Son denemenizdeki doğru-yanlış sayılarınızı girin; güncel katsayılar ve OBP puanınızla 2027 tahmini YKS sıralamanızı anında görün.
                             </p>
                             <Link 
                                 href="/" 

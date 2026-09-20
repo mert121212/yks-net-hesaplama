@@ -83,7 +83,7 @@ export function calculateYDTNets(scores: YDTScores): NetScores['ydt'] {
     return { ydt: calculateNet(scores.ydt.dogru, scores.ydt.yanlis) }
 }
 
-// --- PUAN HESAPLAMA (2026 GÜNCEL KATSAYILAR) ---
+// --- PUAN HESAPLAMA (2027 GÜNCEL ÖSYM KATSAYILARI) ---
 // Formül: Puan = BazPuan(100) + Σ(TYT Net × TYT Katsayı) + Σ(AYT Net × AYT Katsayı) + OBP Katkısı
 // TYT'nin toplam puana etkisi %40, AYT'nin etkisi %60 oranındadır.
 // OBP = DiplomaNotu × 5, Katkı = OBP × 0.12 (veya daha önce yerleşenler için 0.06)
@@ -162,12 +162,12 @@ export function calculateUniversityScores(
 }
 
 // --- SIRALAMA TAHMİNİ (LOGARİTMİK İNTERPOLASYON) ---
-// 2026 ÖSYM resmi yığınsal dağılım verileri kullanılmaktadır.
+// 2027 YKS projeksiyonlu ÖSYM resmi yığınsal dağılım verileri kullanılmaktadır.
 // Logaritmik interpolasyon: yığılma bölgelerinde doğrusal yöntemden çok daha isabetli sonuç verir.
 export function estimateRank(score: number, field: 'tyt' | 'say' | 'ea' | 'soz' | 'dil'): number {
     if (score < 150) return 2500000
 
-    // 2026 ÖSYM resmi yığınsal dağılım tabloları
+    // 2027 YKS projeksiyonlu ÖSYM resmi yığınsal dağılım tabloları
     // Format: [puan, o puan ve üzerindeki toplam aday sayısı]
     const tables: Record<string, [number, number][]> = {
         tyt: [

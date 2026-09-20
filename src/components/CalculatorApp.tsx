@@ -42,6 +42,88 @@ const DEFAULT_AYT: AYTScores = {
     din: { dogru: 0, yanlis: 0 },
 }
 
+const PRESETS = [
+    {
+        id: 'tip',
+        title: '🩺 Tıp Fakültesi',
+        badge: 'SAY ~15.000',
+        tyt: {
+            turkce: { dogru: 35, yanlis: 4 },
+            matematik: { dogru: 34, yanlis: 3 },
+            sosyal: { dogru: 16, yanlis: 3 },
+            fen: { dogru: 17, yanlis: 2 },
+        },
+        ayt: {
+            ...DEFAULT_AYT,
+            matematik: { dogru: 36, yanlis: 2 },
+            fizik: { dogru: 12, yanlis: 2 },
+            kimya: { dogru: 12, yanlis: 1 },
+            biyoloji: { dogru: 11, yanlis: 2 },
+        },
+        obp: 95,
+    },
+    {
+        id: 'hukuk',
+        title: '⚖️ Hukuk Fakültesi',
+        badge: 'EA ~25.000',
+        tyt: {
+            turkce: { dogru: 33, yanlis: 5 },
+            matematik: { dogru: 27, yanlis: 4 },
+            sosyal: { dogru: 17, yanlis: 2 },
+            fen: { dogru: 8, yanlis: 4 },
+        },
+        ayt: {
+            ...DEFAULT_AYT,
+            matematik: { dogru: 31, yanlis: 3 },
+            edebiyat: { dogru: 21, yanlis: 2 },
+            tarih1: { dogru: 8, yanlis: 2 },
+            cografya1: { dogru: 5, yanlis: 1 },
+        },
+        obp: 88,
+    },
+    {
+        id: 'muhendislik',
+        title: '💻 Bilgisayar Müh.',
+        badge: 'SAY ~45.000',
+        tyt: {
+            turkce: { dogru: 32, yanlis: 5 },
+            matematik: { dogru: 30, yanlis: 4 },
+            sosyal: { dogru: 15, yanlis: 3 },
+            fen: { dogru: 14, yanlis: 4 },
+        },
+        ayt: {
+            ...DEFAULT_AYT,
+            matematik: { dogru: 32, yanlis: 3 },
+            fizik: { dogru: 10, yanlis: 3 },
+            kimya: { dogru: 10, yanlis: 2 },
+            biyoloji: { dogru: 9, yanlis: 3 },
+        },
+        obp: 90,
+    },
+    {
+        id: 'sozel-pdr',
+        title: '📚 Sözel / İletişim',
+        badge: 'SÖZ ~20.000',
+        tyt: {
+            turkce: { dogru: 34, yanlis: 4 },
+            matematik: { dogru: 14, yanlis: 4 },
+            sosyal: { dogru: 18, yanlis: 2 },
+            fen: { dogru: 4, yanlis: 2 },
+        },
+        ayt: {
+            ...DEFAULT_AYT,
+            edebiyat: { dogru: 22, yanlis: 2 },
+            tarih1: { dogru: 8, yanlis: 2 },
+            cografya1: { dogru: 5, yanlis: 1 },
+            tarih2: { dogru: 9, yanlis: 2 },
+            cografya2: { dogru: 9, yanlis: 2 },
+            felsefe: { dogru: 10, yanlis: 2 },
+            din: { dogru: 5, yanlis: 1 },
+        },
+        obp: 86,
+    },
+]
+
 const ResultsPanel = memo(function ResultsPanel({
     results, obpHalved = false,
 }: {
@@ -199,9 +281,52 @@ export default function CalculatorApp() {
 
     const results = hasInput ? calculateYKSScores(tytScores, aytScores, ydtScores, obp, obpHalved, obpMesleki) : null
 
+    const applyPreset = (preset: typeof PRESETS[0]) => {
+        setTytScores(preset.tyt)
+        setAytScores(preset.ayt)
+        setYdtScores({ ydt: { dogru: 0, yanlis: 0 } })
+        setObp(preset.obp)
+        setObpHalved(false)
+        setObpMesleki(false)
+    }
+
     return (
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-8" id="hesaplama">
+                {/* Hızlı Hedef Senaryoları */}
+                <div className="card bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 border border-blue-200/70 p-5">
+                    <div className="flex items-center justify-between mb-3">
+                        <div className="flex items-center gap-2">
+                            <span className="text-xl">🎯</span>
+                            <h3 className="font-bold text-gray-900 text-sm sm:text-base">
+                                Örnek Hedef Senaryoları
+                            </h3>
+                        </div>
+                        <span className="text-xs text-blue-700 bg-blue-100 font-semibold px-2 py-0.5 rounded-full">
+                            Tek Tıkla Doldur
+                        </span>
+                    </div>
+                    <p className="text-xs text-gray-600 mb-3">
+                        Hangi bölüm için kaç net gerektiğini merak ediyor musun? Aşağıdaki hazır hedeflerden birini seçerek simülasyonu anında başlat:
+                    </p>
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                        {PRESETS.map((p) => (
+                            <button
+                                key={p.id}
+                                onClick={() => applyPreset(p)}
+                                className="flex flex-col items-center justify-center p-2.5 bg-white hover:bg-blue-50 border border-gray-200 hover:border-blue-400 rounded-xl transition-all text-center shadow-xs hover:shadow-sm hover:scale-[1.02] active:scale-[0.98] group"
+                            >
+                                <span className="text-xs font-bold text-gray-800 group-hover:text-blue-700 leading-tight">
+                                    {p.title}
+                                </span>
+                                <span className="text-[10px] text-gray-500 mt-1 font-medium bg-gray-100 px-2 py-0.5 rounded-md">
+                                    {p.badge}
+                                </span>
+                            </button>
+                        ))}
+                    </div>
+                </div>
+
                 <TYTSection scores={tytScores} onScoreChange={handleTYT} onReset={resetTYT} />
                 <AYTSection scores={aytScores} onScoreChange={handleAYT} onReset={resetAYT} />
                 <YDTSection scores={ydtScores} onScoreChange={handleYDT} onReset={resetYDT} />

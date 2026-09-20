@@ -117,14 +117,59 @@ export default function YKSHazirlikProgrami() {
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            4. Gece Yatmadan Önce Yarının Masasını Hazırlayın
+                            4. Gece Yatmadan Önce Masayı Yarın İçin Kur (Sürtünmeyi Azalt)
                         </h2>
                         <p>
-                            Sabah masaya oturup &quot;Acaba bugün ne çalışsam?&quot; diye 20 dakika düşünmek, günün ilk enerjisini heba etmektir.
+                            Sabah masaya oturduğunda <em>&quot;Bugün acaba ne çalışsam?&quot;</em> diye düşünmeye başladığın an o günün verimi yarı yarıya çöker. Çünkü karar verme süreci beynin en değerli glikozunu tüketir; kendini bir anda YouTube Shorts veya Instagram Reels kaydırırken bulursun.
                         </p>
                         <p>
-                            Gece masadan kalkmadan önce yarın sabah çözeceğiniz ilk kitabı ve testi masanın üstüne açık bırakın. Sabah masaya geçtiğiniz saniye ne yapacağınız belli olsun.
+                            Gece yatmadan önce masanı topla. Sabah ilk çözeceğin 20 paragraf testini ve AYT matematik soru bankasını masanın ortasına açık bırak. Sabah uyandığında tek yapman gereken sandalyeye oturup kalemi eline almak olsun.
                         </p>
+
+                        <div className="bg-gradient-to-r from-slate-900 to-indigo-950 text-white rounded-2xl p-6 my-8">
+                            <span className="text-xs uppercase tracking-wider text-amber-400 font-bold block mb-1">
+                                Gerçekçi Günlük Görev Şablonu (Saat Değil, Eylem!)
+                            </span>
+                            <h3 className="text-lg font-bold text-white mb-3">
+                                Bir Mezunun veya 12. Sınıfın Sürdürülebilir Günlük Rotası
+                            </h3>
+                            <div className="space-y-2.5 text-xs text-slate-200 font-mono">
+                                <div className="bg-slate-800/80 p-3 rounded-xl border border-slate-700 flex flex-col sm:flex-row justify-between sm:items-center gap-1">
+                                    <span className="text-emerald-400 font-bold">Blok 1 (Sabah 08:30 - 10:30)</span>
+                                    <span>20 Paragraf + 15 Problem + 1 Türkçe Branş Denemesi</span>
+                                    <span className="text-slate-400 font-sans">Sınav kondisyonu</span>
+                                </div>
+                                <div className="bg-slate-800/80 p-3 rounded-xl border border-slate-700 flex flex-col sm:flex-row justify-between sm:items-center gap-1">
+                                    <span className="text-blue-400 font-bold">Blok 2 (Öğle 11:30 - 14:00)</span>
+                                    <span>AYT Ağır Sıklet Konu Çalışması (Türev / Organik / Edebiyat)</span>
+                                    <span className="text-slate-400 font-sans">%60 Puan Motoru</span>
+                                </div>
+                                <div className="bg-slate-800/80 p-3 rounded-xl border border-slate-700 flex flex-col sm:flex-row justify-between sm:items-center gap-1">
+                                    <span className="text-purple-400 font-bold">Blok 3 (İkindi 15:00 - 18:00)</span>
+                                    <span>Konu Pekiştirme: 2 Farklı Kaynaktan 60-80 Soru Çözümü</span>
+                                    <span className="text-slate-400 font-sans">Fire vermeme pratiği</span>
+                                </div>
+                                <div className="bg-slate-800/80 p-3 rounded-xl border border-slate-700 flex flex-col sm:flex-row justify-between sm:items-center gap-1">
+                                    <span className="text-amber-400 font-bold">Blok 4 (Akşam 19:30 - 21:30)</span>
+                                    <span>Hata Defteri Analizi + 1 Branş Denemesi (Sosyal veya Fen)</span>
+                                    <span className="text-slate-400 font-sans">Eksik kapatma saati</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            Plato Evresi: &quot;3 Aydır 65 Nette Takıldım, Ne Yapacağım?&quot;
+                        </h2>
+                        <p>
+                            Hazırlık sürecinin 4. veya 5. ayında hemen her öğrencinin başına gelen en sinir bozucu evre plato evresidir. Günde yüzlerce soru çözersin ama deneme sonucun hep aynı bantta (örneğin 65-68 net) çakılı kalır.
+                        </p>
+                        <p>
+                            Bu evrede panikleyip sıfırdan konu anlatımı videolarına dönmek yapılan en büyük hatadır. Plato evresi, konu bilmediğin için değil; <strong>soru çözerken zamanı yönetemediğin ve optikte gereksiz cesaretle yanlış işaretlediğin</strong> için oluşur.
+                        </p>
+                        <p className="bg-emerald-50 p-4 rounded-xl border-l-4 border-emerald-500 text-emerald-950 text-sm">
+                            <strong>Çözüm:</strong> Genel TYT denemelerini haftada 1&apos;e indir. Kalan günlerde sadece branş denemesi çöz ve her yanlış yaptığın soruyu makasla kesip bir &quot;Hata Defteri&quot;ne yapıştır. O defterdeki 100 yanlış soru, sana piyasadaki 10 konu anlatımı kitabından daha çok net kazandırır.
+                        </p>
+
 
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
                             <h3 className="text-2xl font-bold mb-3">Çalışmanızın Meyvesini Görün</h3>

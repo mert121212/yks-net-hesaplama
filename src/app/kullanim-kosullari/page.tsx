@@ -17,7 +17,7 @@ export default function KullanimKosullariPage() {
                         Kullanım Koşulları
                     </h1>
                     <p className="text-center text-gray-600 mb-8">
-                        Son Güncelleme: 19 Ağustos 2026
+                        Son Güncelleme: 20 Eylül 2026 (2027 YKS Dönemi)
                     </p>
 
                     {/* Resmi kurum değildir uyarısı */}
@@ -236,7 +236,7 @@ export default function KullanimKosullariPage() {
                         <section className="border-t pt-8 mt-8">
                             <div className="bg-blue-50 p-6 rounded-xl">
                                 <p className="text-center text-gray-700">
-                                    <strong>Son Güncelleme:</strong> 19 Ağustos 2026<br />
+                                    <strong>Son Güncelleme:</strong> 20 Eylül 2026 (2027 YKS Dönemi)<br />
                                     <span className="text-sm">Bu kullanım koşulları en son yukarıdaki tarihte güncellenmiştir.</span>
                                 </p>
                             </div>

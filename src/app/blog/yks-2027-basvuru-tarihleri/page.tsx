@@ -90,7 +90,7 @@ export default function YKSBasvuruTarihleri() {
                             <div className="p-5 bg-amber-50 border border-amber-200 rounded-xl">
                                 <h3 className="font-bold text-amber-900 text-lg mb-1">Mart Ortası: Geç Başvuru Günleri</h3>
                                 <p className="text-sm text-amber-800 leading-relaxed">
-                                    Normal süreyi kaçıran adaylar için açılan 2-3 günlük telafi penceresidir. Ancak sınav ücreti %50 zamlı ödenir ve sınav yeri açısından uzak merkezlere atanma riski doğar.
+                                    Normal süreyi kaçıran adaylar için açılan 2-3 günlük telafi penceresidir. Fakat sınav ücreti %50 zamlı ödenir ve sınav yeri açısından uzak merkezlere atanma riski doğar.
                                 </p>
                             </div>
 
