@@ -11,6 +11,7 @@ interface Props {
         }
         points: { say: number; ea: number; soz: number; dil: number; sayHam?: number; eaHam?: number; sozHam?: number; dilHam?: number; tyt?: number; tytHam?: number }
         estimatedRanks?: { say?: number; ea?: number; soz?: number; dil?: number; tyt?: number }
+        estimatedHamRanks?: { say?: number; ea?: number; soz?: number; dil?: number; tyt?: number }
         ydtHesaplandi: boolean
         obp?: number
     }
@@ -66,7 +67,7 @@ export default function PDFDownload({ results }: Props) {
             const tableHeader = (cols: { label: string; w: number }[]) => {
                 pdf.setFillColor(232, 237, 245)
                 pdf.rect(margin, y, colW, 6, 'F')
-                pdf.setFontSize(8.5)
+                pdf.setFontSize(8)
                 pdf.setFont('helvetica', 'bold')
                 let x = margin
                 cols.forEach(({ label, w }) => {
@@ -90,7 +91,7 @@ export default function PDFDownload({ results }: Props) {
                 cells.forEach(({ text, w, bold, color }, i) => {
                     if (i < cells.length - 1) pdf.line(x + w, y, x + w, y + 6)
                     pdf.setFont('helvetica', bold ? 'bold' : 'normal')
-                    pdf.setFontSize(8.5)
+                    pdf.setFontSize(8)
                     if (color) pdf.setTextColor(...color); else pdf.setTextColor(0, 0, 0)
                     pdf.text(text, x + 2, y + 4.2)
                     x += w
@@ -115,7 +116,7 @@ export default function PDFDownload({ results }: Props) {
             pdf.text(tr('Ölçme, Seçme ve Yerleştirme Merkezi'), margin, y + 12.5)
 
             pdf.setFontSize(8)
-            pdf.text(tr('YKS 2027 Tahmini Sonuç Belgesi'), W - margin, y + 8, { align: 'right' })
+            pdf.text(tr('YKS 2026 Tahmini Sonuç Belgesi'), W - margin, y + 8, { align: 'right' })
             pdf.text(tarih, W - margin, y + 12.5, { align: 'right' })
 
             y += 18
@@ -123,7 +124,7 @@ export default function PDFDownload({ results }: Props) {
             pdf.setFontSize(12)
             pdf.setFont('helvetica', 'bold')
             pdf.setTextColor(0, 48, 135)
-            pdf.text(tr('YKS 2027 — TAHMİNİ PUAN VE SIRALAMA RAPORU'), W / 2, y, { align: 'center' })
+            pdf.text(tr('YKS 2026 — TAHMİNİ PUAN VE SIRALAMA RAPORU'), W / 2, y, { align: 'center' })
             y += 5
 
             pdf.setFontSize(7.5)
@@ -175,30 +176,63 @@ export default function PDFDownload({ results }: Props) {
             aytData.forEach(([d, n], i) => tableRow([{ text: d, w: colW - 30 }, { text: n, w: 30, bold: true }], i % 2 !== 0))
             y += 6
 
-            // ── PUANLAR ────────────────────────────────────────────────────
-            sectionHeader(tr('Tahmini Yerleştirme Puanları ve Sıralamalar'))
-            const c1 = 50, c2 = 35, c3 = 40, c4 = colW - c1 - c2 - c3
+            // ── PUANLAR VE SIRALAMALAR ─────────────────────────────────────
+            sectionHeader(tr('Tahmini Yerleştirme ve Ham Puanlar / Sıralamalar'))
+            const c1 = 40, c2 = 32, c3 = 36, c4 = 36, c5 = 38
             tableHeader([
                 { label: tr('Puan Türü'), w: c1 },
                 { label: 'Ham Puan', w: c2 },
-                { label: tr('Yerleştirme Puanı'), w: c3 },
-                { label: tr('Tahmini Sıralama'), w: c4 },
+                { label: tr('Ham Sıralama'), w: c3 },
+                { label: tr('Yerl. Puanı'), w: c4 },
+                { label: tr('Tercih Sırası'), w: c5 },
             ])
             const scoreData = [
-                { label: tr('TYT (Temel Yeterlilik)'), ham: results.points.tytHam ?? results.points.tyt ?? 100, puan: results.points.tyt ?? 100, rank: results.estimatedRanks?.tyt },
-                { label: tr('SAY (Sayısal)'), ham: results.points.sayHam ?? results.points.say, puan: results.points.say, rank: results.estimatedRanks?.say },
-                { label: tr('EA (Esit Agirlik)'), ham: results.points.eaHam ?? results.points.ea, puan: results.points.ea, rank: results.estimatedRanks?.ea },
-                { label: tr('SOZ (Sozel)'), ham: results.points.sozHam ?? results.points.soz, puan: results.points.soz, rank: results.estimatedRanks?.soz },
-                { label: tr('DIL (Yabanci Dil)'), ham: results.points.dilHam ?? results.points.dil, puan: results.points.dil, rank: results.ydtHesaplandi ? results.estimatedRanks?.dil : undefined },
+                {
+                    label: tr('TYT'),
+                    ham: results.points.tytHam ?? results.points.tyt ?? 100,
+                    hamRank: results.estimatedHamRanks?.tyt,
+                    puan: results.points.tyt ?? 100,
+                    rank: results.estimatedRanks?.tyt,
+                },
+                {
+                    label: tr('SAY (Sayısal)'),
+                    ham: results.points.sayHam ?? results.points.say,
+                    hamRank: results.estimatedHamRanks?.say,
+                    puan: results.points.say,
+                    rank: results.estimatedRanks?.say,
+                },
+                {
+                    label: tr('EA (Eşit Ağırlık)'),
+                    ham: results.points.eaHam ?? results.points.ea,
+                    hamRank: results.estimatedHamRanks?.ea,
+                    puan: results.points.ea,
+                    rank: results.estimatedRanks?.ea,
+                },
+                {
+                    label: tr('SÖZ (Sözel)'),
+                    ham: results.points.sozHam ?? results.points.soz,
+                    hamRank: results.estimatedHamRanks?.soz,
+                    puan: results.points.soz,
+                    rank: results.estimatedRanks?.soz,
+                },
+                {
+                    label: tr('DİL (Yabancı Dil)'),
+                    ham: results.points.dilHam ?? results.points.dil,
+                    hamRank: results.ydtHesaplandi ? results.estimatedHamRanks?.dil : undefined,
+                    puan: results.points.dil,
+                    rank: results.ydtHesaplandi ? results.estimatedRanks?.dil : undefined,
+                },
             ]
-            scoreData.forEach(({ label, ham, puan, rank }, i) => {
-                const isDil = label.startsWith('DIL')
+            scoreData.forEach(({ label, ham, hamRank, puan, rank }, i) => {
+                const isDil = label.startsWith('DİL')
+                const hamRankStr = !results.ydtHesaplandi && isDil ? tr('Hesaplanmadı') : fRank(hamRank)
                 const rankStr = !results.ydtHesaplandi && isDil ? tr('Hesaplanmadı') : fRank(rank)
                 tableRow([
                     { text: label, w: c1, bold: true },
                     { text: f2(ham), w: c2 },
-                    { text: f2(puan), w: c3, bold: true, color: [0, 48, 135] },
-                    { text: rankStr, w: c4, color: [197, 48, 48] },
+                    { text: hamRankStr, w: c3, color: [80, 80, 80] },
+                    { text: f2(puan), w: c4, bold: true, color: [0, 48, 135] },
+                    { text: rankStr, w: c5, bold: true, color: [197, 48, 48] },
                 ], i % 2 !== 0)
             })
             y += 6

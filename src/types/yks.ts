@@ -81,6 +81,13 @@ export interface ScoreCalculationResult {
         soz?: number
         dil?: number
     }
+    estimatedHamRanks?: {
+        tyt?: number
+        say?: number
+        ea?: number
+        soz?: number
+        dil?: number
+    }
 }
 
 export interface UniversityProgram {

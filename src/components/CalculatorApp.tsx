@@ -182,55 +182,112 @@ const ResultsPanel = memo(function ResultsPanel({
             </div>
 
             <div className="mb-6">
-                <h3 className="subsection-title">Üniversite Puanları</h3>
+                <h3 className="subsection-title">Puanlar ve Sıralamalar</h3>
                 <div className="mb-3 p-2 bg-yellow-50 border border-yellow-200 rounded-lg">
-                    <p className="text-xs text-yellow-800">⚠️ Tahmini yerleştirme puanlarıdır. Kesin sonuçlar ÖSYM tarafından açıklanır.</p>
+                    <p className="text-xs text-yellow-800">⚠️ Sıralamalar ÖSYM resmi yerleştirme ve ham yığınsal dağılım raporlarına dayalı tahmindir.</p>
                 </div>
                 {obpHalved && (
                     <div className="mb-3 p-2.5 bg-amber-50 border border-amber-300 rounded-lg">
                         <p className="text-xs text-amber-900 font-semibold">⚠️ Kırık OBP uygulandı (Katsayı 0,06 olarak hesaplandı).</p>
                     </div>
                 )}
-                <div className="space-y-2 text-sm">
-                    <div className="flex justify-between border-b border-gray-100 pb-1.5">
-                        <span className="font-semibold text-gray-800">TYT:</span>
-                        <span className="font-bold text-blue-700">
-                            {(results.nets.tyt.turkce >= 0.5 || results.nets.tyt.matematik >= 0.5) && results.points.tyt
-                                ? results.points.tyt.toFixed(2)
-                                : 'Hesaplanmadı (Min 0.5 net)'}
-                        </span>
+
+                {/* YERLEŞTİRME PUANLARI VE SIRALAMALARI (TERCİHTE KULLANILAN) */}
+                <div className="mb-4">
+                    <div className="flex items-center justify-between mb-2">
+                        <span className="text-xs font-bold uppercase tracking-wider text-gray-700">🎯 Yerleştirme Sonuçları</span>
+                        <span className="text-[11px] bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded-full">Tercihte Geçerli (OBP Dahil)</span>
                     </div>
-                    <div className="flex justify-between"><span>SAY:</span><span className="font-semibold text-green-600">{results.points.say.toFixed(2)}</span></div>
-                    <div className="flex justify-between"><span>EA:</span><span className="font-semibold text-blue-600">{results.points.ea.toFixed(2)}</span></div>
-                    <div className="flex justify-between"><span>SÖZ:</span><span className="font-semibold text-purple-600">{results.points.soz.toFixed(2)}</span></div>
-                    <div className="flex justify-between"><span>DİL:</span>
-                        <span className="font-semibold text-orange-600">{results.ydtHesaplandi ? results.points.dil.toFixed(2) : 'Hesaplanmadı'}</span>
+                    <div className="space-y-2 text-sm bg-gray-50/80 p-3 rounded-xl border border-gray-200/70">
+                        {/* TYT */}
+                        <div className="flex justify-between items-center border-b border-gray-200/60 pb-1.5">
+                            <span className="font-semibold text-gray-800">TYT:</span>
+                            <div className="text-right">
+                                <span className="font-bold text-blue-700 block">
+                                    {(results.nets.tyt.turkce >= 0.5 || results.nets.tyt.matematik >= 0.5) && results.points.tyt
+                                        ? results.points.tyt.toFixed(2)
+                                        : 'Baraj Altı'}
+                                </span>
+                                {results.estimatedRanks?.tyt && (
+                                    <span className="text-xs text-gray-500 block">~{results.estimatedRanks.tyt.toLocaleString('tr-TR')}. sıra</span>
+                                )}
+                            </div>
+                        </div>
+                        {/* SAY */}
+                        <div className="flex justify-between items-center border-b border-gray-200/60 pb-1.5">
+                            <span className="font-semibold text-gray-800">SAY (Sayısal):</span>
+                            <div className="text-right">
+                                <span className="font-bold text-green-700 block">{results.points.say.toFixed(2)}</span>
+                                {results.estimatedRanks?.say && (
+                                    <span className="text-xs text-green-700/80 font-medium block">~{results.estimatedRanks.say.toLocaleString('tr-TR')}. sıra</span>
+                                )}
+                            </div>
+                        </div>
+                        {/* EA */}
+                        <div className="flex justify-between items-center border-b border-gray-200/60 pb-1.5">
+                            <span className="font-semibold text-gray-800">EA (Eşit Ağırlık):</span>
+                            <div className="text-right">
+                                <span className="font-bold text-blue-700 block">{results.points.ea.toFixed(2)}</span>
+                                {results.estimatedRanks?.ea && (
+                                    <span className="text-xs text-blue-700/80 font-medium block">~{results.estimatedRanks.ea.toLocaleString('tr-TR')}. sıra</span>
+                                )}
+                            </div>
+                        </div>
+                        {/* SÖZ */}
+                        <div className="flex justify-between items-center border-b border-gray-200/60 pb-1.5">
+                            <span className="font-semibold text-gray-800">SÖZ (Sözel):</span>
+                            <div className="text-right">
+                                <span className="font-bold text-purple-700 block">{results.points.soz.toFixed(2)}</span>
+                                {results.estimatedRanks?.soz && (
+                                    <span className="text-xs text-purple-700/80 font-medium block">~{results.estimatedRanks.soz.toLocaleString('tr-TR')}. sıra</span>
+                                )}
+                            </div>
+                        </div>
+                        {/* DİL */}
+                        <div className="flex justify-between items-center">
+                            <span className="font-semibold text-gray-800">DİL (Yabancı Dil):</span>
+                            <div className="text-right">
+                                <span className="font-bold text-orange-700 block">{results.ydtHesaplandi ? results.points.dil.toFixed(2) : 'Hesaplanmadı'}</span>
+                                {results.ydtHesaplandi && results.estimatedRanks?.dil && (
+                                    <span className="text-xs text-orange-700/80 font-medium block">~{results.estimatedRanks.dil.toLocaleString('tr-TR')}. sıra</span>
+                                )}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* HAM PUANLAR VE HAM SIRALAMALAR (OBP'SİZ) */}
+                <div>
+                    <div className="flex items-center justify-between mb-2">
+                        <span className="text-xs font-bold uppercase tracking-wider text-gray-600">📝 Ham Sınav Başarısı</span>
+                        <span className="text-[11px] bg-gray-200 text-gray-700 font-medium px-2 py-0.5 rounded-full">OBP Katkısız</span>
+                    </div>
+                    <div className="space-y-1.5 text-xs bg-gray-50/50 p-2.5 rounded-xl border border-gray-200/60 text-gray-600">
+                        <div className="flex justify-between">
+                            <span>TYT Ham:</span>
+                            <span><strong>{results.points.tytHam?.toFixed(2) ?? '-'}</strong> {results.estimatedHamRanks?.tyt ? `(~${results.estimatedHamRanks.tyt.toLocaleString('tr-TR')}. sıra)` : ''}</span>
+                        </div>
+                        <div className="flex justify-between">
+                            <span>SAY Ham:</span>
+                            <span><strong>{results.points.sayHam?.toFixed(2) ?? '-'}</strong> {results.estimatedHamRanks?.say ? `(~${results.estimatedHamRanks.say.toLocaleString('tr-TR')}. sıra)` : ''}</span>
+                        </div>
+                        <div className="flex justify-between">
+                            <span>EA Ham:</span>
+                            <span><strong>{results.points.eaHam?.toFixed(2) ?? '-'}</strong> {results.estimatedHamRanks?.ea ? `(~${results.estimatedHamRanks.ea.toLocaleString('tr-TR')}. sıra)` : ''}</span>
+                        </div>
+                        <div className="flex justify-between">
+                            <span>SÖZ Ham:</span>
+                            <span><strong>{results.points.sozHam?.toFixed(2) ?? '-'}</strong> {results.estimatedHamRanks?.soz ? `(~${results.estimatedHamRanks.soz.toLocaleString('tr-TR')}. sıra)` : ''}</span>
+                        </div>
+                        {results.ydtHesaplandi && (
+                            <div className="flex justify-between">
+                                <span>DİL Ham:</span>
+                                <span><strong>{results.points.dilHam?.toFixed(2) ?? '-'}</strong> {results.estimatedHamRanks?.dil ? `(~${results.estimatedHamRanks.dil.toLocaleString('tr-TR')}. sıra)` : ''}</span>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
-
-            {results.estimatedRanks && (
-                <div className="mb-6">
-                    <h3 className="subsection-title">Tahmini Sıralamalar</h3>
-                    <div className="mb-2 p-2 bg-yellow-50 border border-yellow-200 rounded-lg">
-                        <p className="text-xs text-yellow-800">⚠️ ÖSYM resmi dağılım raporlarına dayalı tahmindir, yığılma eğrilerine göre sapma gösterebilir.</p>
-                    </div>
-                    <div className="space-y-2 text-sm">
-                        <div className="flex justify-between border-b border-gray-100 pb-1.5">
-                            <span className="font-semibold text-gray-800">TYT Sıralaması:</span>
-                            <span className="font-bold text-blue-700">
-                                {results.estimatedRanks.tyt ? results.estimatedRanks.tyt.toLocaleString('tr-TR') : 'Hesaplanmadı'}
-                            </span>
-                        </div>
-                        <div className="flex justify-between"><span>SAY:</span><span className="font-semibold text-green-600">{results.estimatedRanks.say?.toLocaleString('tr-TR') ?? 'Hesaplanmadı'}</span></div>
-                        <div className="flex justify-between"><span>EA:</span><span className="font-semibold text-blue-600">{results.estimatedRanks.ea?.toLocaleString('tr-TR') ?? 'Hesaplanmadı'}</span></div>
-                        <div className="flex justify-between"><span>SÖZ:</span><span className="font-semibold text-purple-600">{results.estimatedRanks.soz?.toLocaleString('tr-TR') ?? 'Hesaplanmadı'}</span></div>
-                        <div className="flex justify-between"><span>DİL:</span>
-                            <span className="font-semibold text-orange-600">{results.ydtHesaplandi && results.estimatedRanks.dil ? results.estimatedRanks.dil.toLocaleString('tr-TR') : 'Hesaplanmadı'}</span>
-                        </div>
-                    </div>
-                </div>
-            )}
 
             <ShareResults tytNet={results.nets.tyt.toplam} aytNet={activeNet} ydtNet={results.nets.ydt.ydt} scoreType={scoreType} totalScore={maxScore} />
             <PDFDownload results={results} />

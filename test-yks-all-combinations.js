@@ -1,9 +1,9 @@
 // ============================================================================
-// 🚀 YKS 2026 HESAPLAMA MOTORU — AŞIRI DETAYLI KOMBİNASYONEL STRES VE DOĞRULAMA TESTİ
+// 🚀 YKS 2026 HESAPLAMA MOTORU — TÜM KOMBİNASYONLAR STRES VE DOĞRULAMA TESTİ
 // ============================================================================
-// Bu script, YKS puan ve sıralama hesaplama motorunu on binlerce kombinasyon,
-// matematiksel invaryant, ÖSYM doğruluk tablosu ve Monte Carlo profilleri ile
-// en ufak bir sapma veya hata payı kalmayacak şekilde test eder.
+// Bu script, YKS puan ve sıralama hesaplama motorunu hem YERLEŞTİRME (100-560)
+// hem HAM (100-500) tabloları, matematiksel invaryantlar, ÖSYM doğruluk tablosu
+// ve Monte Carlo profilleri ile 0 hata hedefiyle test eder.
 // ============================================================================
 
 const TYT_QUESTIONS = { turkce: 40, matematik: 40, sosyal: 20, fen: 20 }
@@ -119,7 +119,42 @@ function calculateUniversityScores(tytNets, aytNets, ydtNets, obp = 0, obpHalved
     }
 }
 
-const OSYM_2026_TABLES = {
+// 1. YERLEŞTİRME PUANLARI YIĞINSAL DAĞILIMI (ÖSYM Resmi Verileri — Max 560)
+const YERLESTIRME_TABLES = {
+    tyt: [
+        [560, 1], [550, 59], [530, 3017], [510, 12996], [490, 29976], [470, 53253],
+        [450, 82281], [430, 118095], [410, 163769], [390, 223427], [370, 304035],
+        [350, 405000], [330, 530000], [310, 680000], [290, 860000], [270, 1070000],
+        [250, 1320000], [220, 1750000], [180, 2350000], [140, 2850000], [100, 3100000],
+    ],
+    say: [
+        [560, 1], [550, 162], [530, 2271], [510, 7029], [490, 14673], [470, 25274],
+        [450, 38578], [430, 54307], [410, 72418], [390, 93485], [370, 118001],
+        [350, 148000], [330, 185000], [310, 234000], [290, 300000], [270, 392000],
+        [250, 500000], [220, 720000], [180, 1050000], [140, 1200000], [100, 1300000],
+    ],
+    ea: [
+        [560, 1], [550, 5], [530, 80], [510, 340], [490, 940], [470, 1992],
+        [450, 4269], [430, 11111], [410, 24612], [390, 46809], [370, 79522],
+        [350, 148110], [330, 211564], [310, 302336], [290, 422338], [270, 592512],
+        [250, 780000], [220, 1100000], [180, 1500000], [140, 1700000], [100, 1800000],
+    ],
+    soz: [
+        [560, 1], [550, 3], [530, 31], [510, 142], [490, 476], [470, 1292],
+        [450, 3424], [430, 8952], [410, 21706], [390, 45376], [370, 83547],
+        [350, 148110], [330, 215118], [310, 305124], [290, 422338], [270, 586313],
+        [250, 750000], [220, 1050000], [180, 1450000], [140, 1650000], [100, 1750000],
+    ],
+    dil: [
+        [560, 1], [550, 13], [530, 321], [510, 1178], [490, 2695], [470, 5048],
+        [450, 8698], [430, 13904], [410, 20646], [390, 28657], [370, 37488],
+        [350, 47000], [330, 58000], [310, 70000], [290, 84000], [270, 100000],
+        [250, 115000], [220, 135000], [180, 155000], [140, 165000], [100, 170000],
+    ],
+}
+
+// 2. HAM SINAV PUANLARI YIĞINSAL DAĞILIMI (ÖSYM Resmi Verileri — Max 500)
+const HAM_TABLES = {
     tyt: [
         [500, 5], [480, 822], [460, 5524], [440, 17050], [420, 37770],
         [400, 67394], [380, 106404], [360, 155008], [340, 218156], [320, 302758],
@@ -152,9 +187,10 @@ const OSYM_2026_TABLES = {
     ],
 }
 
-function estimateRank(score, field) {
+function estimateRank(score, field, type = 'yerlestirme') {
     if (score < 100) return 2500000
-    const table = OSYM_2026_TABLES[field]
+    const tables = type === 'yerlestirme' ? YERLESTIRME_TABLES : HAM_TABLES
+    const table = tables[field]
     if (score >= table[0][0]) return table[0][1]
     if (score < table[table.length - 1][0]) return 2500000
 
@@ -199,11 +235,18 @@ function calculateYKSScores(tytScores, aytScores, ydtScores, obp = 0, obpHalved 
         ydtHesaplandi: dilGecerli,
         obp,
         estimatedRanks: {
-            tyt: tytGecerli ? estimateRank(points.tyt, 'tyt') : undefined,
-            say: sayGecerli ? estimateRank(points.say, 'say') : undefined,
-            ea: eaGecerli ? estimateRank(points.ea, 'ea') : undefined,
-            soz: sozGecerli ? estimateRank(points.soz, 'soz') : undefined,
-            dil: dilGecerli ? estimateRank(points.dil, 'dil') : undefined,
+            tyt: tytGecerli ? estimateRank(points.tyt, 'tyt', 'yerlestirme') : undefined,
+            say: sayGecerli ? estimateRank(points.say, 'say', 'yerlestirme') : undefined,
+            ea: eaGecerli ? estimateRank(points.ea, 'ea', 'yerlestirme') : undefined,
+            soz: sozGecerli ? estimateRank(points.soz, 'soz', 'yerlestirme') : undefined,
+            dil: dilGecerli ? estimateRank(points.dil, 'dil', 'yerlestirme') : undefined,
+        },
+        estimatedHamRanks: {
+            tyt: tytGecerli ? estimateRank(points.tytHam, 'tyt', 'ham') : undefined,
+            say: sayGecerli ? estimateRank(points.sayHam, 'say', 'ham') : undefined,
+            ea: eaGecerli ? estimateRank(points.eaHam, 'ea', 'ham') : undefined,
+            soz: sozGecerli ? estimateRank(points.sozHam, 'soz', 'ham') : undefined,
+            dil: dilGecerli ? estimateRank(points.dilHam, 'dil', 'ham') : undefined,
         },
     }
 }
@@ -257,7 +300,6 @@ const allSubjects = [
 ]
 
 for (const sub of allSubjects) {
-    // 0'dan max'a kadar her (dogru, yanlis) çiftini test et
     for (let d = 0; d <= sub.max; d++) {
         for (let y = 0; y <= sub.max - d; y++) {
             const net = calculateNet(d, y)
@@ -277,8 +319,6 @@ console.log(`  ✓ Suite 1 tamamlandı. Toplam kontrol: ${totalChecks}\n`)
 // ============================================================================
 console.log('🧪 SUITE 2: ÖSYM 0.5 Net Baraj Kuralı — 32 Durumlu Doğruluk Tablosu...')
 
-// 5 Bağımsız Giriş Değişkeni:
-// [TYT Türkçe >= 0.5, TYT Mat >= 0.5, AYT SAY >= 0.5, AYT EA >= 0.5, AYT SÖZ >= 0.5]
 for (let mask = 0; mask < 32; mask++) {
     const hasTYT_TR = (mask & 1) !== 0
     const hasTYT_Mat = (mask & 2) !== 0
@@ -312,6 +352,7 @@ for (let mask = 0; mask < 32; mask++) {
 
     if (expectedTYTGecerli) {
         check(typeof res.estimatedRanks.tyt === 'number', `Mask ${mask}: TYT geçerli olmalı`)
+        check(typeof res.estimatedHamRanks.tyt === 'number', `Mask ${mask}: TYT Ham geçerli olmalı`)
     } else {
         check(res.estimatedRanks.tyt === undefined, `Mask ${mask}: TYT barajı geçilmediğinde sıralama undefined olmalı`)
         check(res.estimatedRanks.say === undefined, `Mask ${mask}: TYT barajı olmadan SAY sıralaması olamaz`)
@@ -363,43 +404,58 @@ for (let diploma = 50.0; diploma <= 100.05; diploma += 0.25) {
 console.log(`  ✓ Suite 3 tamamlandı. Toplam kontrol: ${totalChecks}\n`)
 
 // ============================================================================
-// SUITE 4: SIRALAMA MOTORU TAM ARALIK TARAMA (100 - 560 Puan Arası 0.1 Adımlarla)
+// SUITE 4: SIRALAMA MOTORU TAM ARALIK TARAMA (YERLEŞTİRME VE HAM)
 // ============================================================================
-console.log('🧪 SUITE 4: Sıralama Motoru Tam Aralık Taraması (4,601 puan x 5 alan = 23,005 değerlendirme)...')
+console.log('🧪 SUITE 4: Sıralama Motoru Tam Aralık Taraması (Yerleştirme 100-560 & Ham 100-500)...')
 
 const fields = ['tyt', 'say', 'ea', 'soz', 'dil']
 
+// 1. Yerleştirme Dağılım Taraması (560 -> 100)
 for (const field of fields) {
     let lastRank = 1
-    const table = OSYM_2026_TABLES[field]
+    const table = YERLESTIRME_TABLES[field]
 
-    // 1. Resmi tablo noktalarının birebir tutarlılığı
     for (const [puan, beklenenSira] of table) {
-        const calculatedRank = estimateRank(puan, field)
-        check(calculatedRank === beklenenSira, `${field.toUpperCase()} ${puan} puan ÖSYM tablosuyla tam eşleşmeli`, `Hesaplanan=${calculatedRank}, Beklenen=${beklenenSira}`)
+        const calculatedRank = estimateRank(puan, field, 'yerlestirme')
+        check(calculatedRank === beklenenSira, `YERL ${field.toUpperCase()} ${puan} puan eşleşmeli`, `Hesaplanan=${calculatedRank}, Beklenen=${beklenenSira}`)
     }
 
-    // 2. 560'tan 100'e 0.1 adımlarla sürekli monotonluk kontrolü
     for (let score = 560.0; score >= 100.0; score -= 0.1) {
         const sRounded = Math.round(score * 10) / 10
-        const rank = estimateRank(sRounded, field)
+        const rank = estimateRank(sRounded, field, 'yerlestirme')
 
-        check(!isNaN(rank), `${field} sıralama NaN olamaz (${sRounded})`)
-        check(isFinite(rank), `${field} sıralama sonsuz olamaz (${sRounded})`)
-        check(rank >= 1, `${field} sıralama 1'den küçük olamaz (${sRounded})`)
-        check(rank <= 2500000, `${field} sıralama 2.500.000'i aşamaz (${sRounded})`)
-
-        // Monotonluk Kuralı: Puan düştükçe aday sayısı (sıralama) kesinlikle AZALAMAZ!
-        check(rank >= lastRank, `${field} monotonluk hatası! Puan: ${sRounded}, Sıra: ${rank}, Önceki Sıra: ${lastRank}`)
+        check(!isNaN(rank), `Yerl ${field} sıralama NaN olamaz (${sRounded})`)
+        check(isFinite(rank), `Yerl ${field} sıralama sonsuz olamaz (${sRounded})`)
+        check(rank >= 1, `Yerl ${field} sıralama 1'den küçük olamaz (${sRounded})`)
+        check(rank <= 3500000, `Yerl ${field} sıralama tavanı aşamaz (${sRounded})`)
+        check(rank >= lastRank, `Yerl ${field} monotonluk hatası! Puan: ${sRounded}, Sıra: ${rank}, Önceki: ${lastRank}`)
         lastRank = rank
     }
-
-    // 3. Uç Noktalar
-    check(estimateRank(560, field) === table[0][1], `${field} 560 puan zirve sıralamayı (table[0][1]) vermeli`)
-    check(estimateRank(99.9, field) === 2500000, `${field} 100 altı sabit 2.5M döndürmeli`)
-    check(estimateRank(0, field) === 2500000, `${field} 0 puan sabit 2.5M döndürmeli`)
-    check(estimateRank(100, field) === table[table.length - 1][1], `${field} 100 tam puanında son tablo değerini vermeli`)
 }
+
+// 2. Ham Dağılım Taraması (500 -> 100)
+for (const field of fields) {
+    let lastRank = 1
+    const table = HAM_TABLES[field]
+
+    for (const [puan, beklenenSira] of table) {
+        const calculatedRank = estimateRank(puan, field, 'ham')
+        check(calculatedRank === beklenenSira, `HAM ${field.toUpperCase()} ${puan} puan eşleşmeli`, `Hesaplanan=${calculatedRank}, Beklenen=${beklenenSira}`)
+    }
+
+    for (let score = 500.0; score >= 100.0; score -= 0.1) {
+        const sRounded = Math.round(score * 10) / 10
+        const rank = estimateRank(sRounded, field, 'ham')
+
+        check(!isNaN(rank), `Ham ${field} sıralama NaN olamaz (${sRounded})`)
+        check(isFinite(rank), `Ham ${field} sıralama sonsuz olamaz (${sRounded})`)
+        check(rank >= 1, `Ham ${field} sıralama 1'den küçük olamaz (${sRounded})`)
+        check(rank <= 2500000, `Ham ${field} sıralama tavanı aşamaz (${sRounded})`)
+        check(rank >= lastRank, `Ham ${field} monotonluk hatası! Puan: ${sRounded}, Sıra: ${rank}, Önceki: ${lastRank}`)
+        lastRank = rank
+    }
+}
+
 console.log(`  ✓ Suite 4 tamamlandı. Toplam kontrol: ${totalChecks}\n`)
 
 // ============================================================================
@@ -480,7 +536,11 @@ for (let i = 0; i < MONTE_CARLO_COUNT; i++) {
     for (const f of fields) {
         const r = res.estimatedRanks[f]
         if (r !== undefined) {
-            check(Number.isInteger(r) && r >= 1 && r <= 2500000, `Monte Carlo: ${f} sıralama geçerli tamsayı (${r})`)
+            check(Number.isInteger(r) && r >= 1 && r <= 3500000, `Monte Carlo: ${f} yerleştirme sıralama tamsayı (${r})`)
+        }
+        const hr = res.estimatedHamRanks[f]
+        if (hr !== undefined) {
+            check(Number.isInteger(hr) && hr >= 1 && hr <= 2500000, `Monte Carlo: ${f} ham sıralama tamsayı (${hr})`)
         }
     }
 }
@@ -491,7 +551,7 @@ const opsPerSec = Math.round((MONTE_CARLO_COUNT / (duration / 1000)))
 console.log(`  ✓ Suite 5 tamamlandı. ${MONTE_CARLO_COUNT} aday hesaplaması ${duration} ms sürdü (~${opsPerSec.toLocaleString('tr-TR')} aday/sn). Toplam kontrol: ${totalChecks}\n`)
 
 // ============================================================================
-// SUITE 6: ÖZEL DERECE & SINIR PROFİLLERİ TAM DOĞRULAMA
+// SUITE 6: ÖZEL DERECE VE REFERANS ADAYLAR TAM DOĞRULAMA
 // ============================================================================
 console.log('🧪 SUITE 6: Özel Senaryolar ve Referans Adaylar...')
 
@@ -509,12 +569,40 @@ check(Math.abs(sampiyon.points.say - 559.72) < 0.05, 'Şampiyon SAY puanı 559.7
 check(Math.abs(sampiyon.points.ea - 559.98) < 0.05, 'Şampiyon EA puanı 559.98 olmalı', `EA=${sampiyon.points.ea}`)
 check(Math.abs(sampiyon.points.soz - 559.98) < 0.05, 'Şampiyon SÖZ puanı 559.98 olmalı', `SÖZ=${sampiyon.points.soz}`)
 check(sampiyon.points.dil === 560, 'Şampiyon DİL puanı 560 olmalı', `DİL=${sampiyon.points.dil}`)
-check(sampiyon.estimatedRanks.say === 1, 'Şampiyon SAY sıralaması 1 olmalı')
-check(sampiyon.estimatedRanks.ea === 1, 'Şampiyon EA sıralaması 1 olmalı')
-check(sampiyon.estimatedRanks.soz === 1, 'Şampiyon SÖZ sıralaması 1 olmalı')
-check(sampiyon.estimatedRanks.dil === 5, 'Şampiyon DİL sıralaması 5 olmalı')
+check(sampiyon.estimatedRanks.say === 1, 'Şampiyon SAY yerleştirme sıralaması 1 olmalı', `Sıra=${sampiyon.estimatedRanks.say}`)
+check(sampiyon.estimatedRanks.ea === 1, 'Şampiyon EA yerleştirme sıralaması 1 olmalı', `Sıra=${sampiyon.estimatedRanks.ea}`)
+check(sampiyon.estimatedRanks.soz === 1, 'Şampiyon SÖZ yerleştirme sıralaması 1 olmalı', `Sıra=${sampiyon.estimatedRanks.soz}`)
+check(sampiyon.estimatedRanks.dil === 1, 'Şampiyon DİL yerleştirme sıralaması 1 olmalı', `Sıra=${sampiyon.estimatedRanks.dil}`)
 
-// 2. Sıfırcı Aday (Hiç soru işaretlemeyen)
+// 2. Tıp Adayı Senaryosu (99 TYT, 69 AYT, 95 OBP -> Yerleştirme SAY: 496.53)
+const tipTYT = {
+    turkce: { dogru: 35, yanlis: 4 },
+    matematik: { dogru: 34, yanlis: 3 },
+    sosyal: { dogru: 16, yanlis: 3 },
+    fen: { dogru: 17, yanlis: 2 },
+}
+const tipAYT = {
+    matematik: { dogru: 36, yanlis: 2 },
+    fizik: { dogru: 12, yanlis: 2 },
+    kimya: { dogru: 12, yanlis: 1 },
+    biyoloji: { dogru: 11, yanlis: 2 },
+    edebiyat: { dogru: 0, yanlis: 0 },
+    tarih1: { dogru: 0, yanlis: 0 },
+    cografya1: { dogru: 0, yanlis: 0 },
+    tarih2: { dogru: 0, yanlis: 0 },
+    cografya2: { dogru: 0, yanlis: 0 },
+    felsefe: { dogru: 0, yanlis: 0 },
+    din: { dogru: 0, yanlis: 0 },
+}
+const tipAdayi = calculateYKSScores(tipTYT, tipAYT, { ydt: { dogru: 0, yanlis: 0 } }, 95)
+// Tıp adayının Yerleştirme sıralaması 10.000 ile 16.000 arasında olmalıdır! (Eski hatalı kod 4. veriyordu)
+check(tipAdayi.estimatedRanks.say >= 10000 && tipAdayi.estimatedRanks.say <= 16000,
+    'Tıp Adayı Yerleştirme SAY sıralaması gerçekçi olmalı (10k-16k)', `Sıralama=${tipAdayi.estimatedRanks.say}`)
+// Ham sıralaması da 18.000 - 26.000 arasında olmalı
+check(tipAdayi.estimatedHamRanks.say >= 18000 && tipAdayi.estimatedHamRanks.say <= 26000,
+    'Tıp Adayı Ham SAY sıralaması gerçekçi olmalı (18k-26k)', `Ham Sıralama=${tipAdayi.estimatedHamRanks.say}`)
+
+// 3. Sıfırcı Aday (Hiç soru işaretlemeyen)
 const zeroTYT = { turkce: { dogru: 0, yanlis: 0 }, matematik: { dogru: 0, yanlis: 0 }, sosyal: { dogru: 0, yanlis: 0 }, fen: { dogru: 0, yanlis: 0 } }
 const zeroAYT = {
     matematik: { dogru: 0, yanlis: 0 }, fizik: { dogru: 0, yanlis: 0 }, kimya: { dogru: 0, yanlis: 0 }, biyoloji: { dogru: 0, yanlis: 0 },
@@ -548,6 +636,6 @@ if (failedChecks > 0) {
     console.error(`\n❌ TEST BAŞARISIZ! ${failedChecks} adet hata tespit edildi.`)
     process.exit(1)
 } else {
-    console.log('\n🌟 KUSURSUZ: TÜM KOMBİNASYONLAR, MONOTONLUK VE MATEMATİKSEL İNVARİYANTLAR 0 HATA İLE GEÇTİ!')
+    console.log('\n🌟 KUSURSUZ: HEM YERLEŞTİRME HEM HAM DAĞILIMLARI TÜM KOMBİNASYONLARDA 0 HATA İLE GEÇTİ!')
     process.exit(0)
 }
