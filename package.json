@@ -9,6 +9,7 @@
         "start": "next start",
         "lint": "next lint",
         "type-check": "tsc --noEmit",
+        "test": "node test-yks-2026-exhaustive.js",
         "analyze": "ANALYZE=true next build",
         "build:production": "NODE_ENV=production next build"
     },

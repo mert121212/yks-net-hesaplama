@@ -30,16 +30,16 @@ const AYT_K = {
         matematik: 3.00,
         edebiyat: 3.00,
         tarih1: 2.80,
-        cografya1: 3.30,
+        cografya1: 3.33,
     },
     soz: {
         edebiyat: 3.00,
         tarih1: 2.80,
-        cografya1: 3.30,
-        tarih2: 2.90,
-        cografya2: 2.90,
+        cografya1: 3.33,
+        tarih2: 2.91,
+        cografya2: 2.91,
         felsefe: 3.00,
-        din: 3.30,
+        din: 3.33,
     },
 }
 
@@ -83,7 +83,7 @@ export function calculateYDTNets(scores: YDTScores): NetScores['ydt'] {
     return { ydt: calculateNet(scores.ydt.dogru, scores.ydt.yanlis) }
 }
 
-// --- PUAN HESAPLAMA (2027 GÜNCEL ÖSYM KATSAYILARI) ---
+// --- PUAN HESAPLAMA (2026 GÜNCEL ÖSYM KATSAYILARI) ---
 // Formül: Puan = BazPuan(100) + Σ(TYT Net × TYT Katsayı) + Σ(AYT Net × AYT Katsayı) + OBP Katkısı
 // TYT'nin toplam puana etkisi %40, AYT'nin etkisi %60 oranındadır.
 // OBP = DiplomaNotu × 5, Katkı = OBP × 0.12 (veya daha önce yerleşenler için 0.06)
@@ -162,116 +162,135 @@ export function calculateUniversityScores(
 }
 
 // --- SIRALAMA TAHMİNİ (LOGARİTMİK İNTERPOLASYON) ---
-// 2027 YKS projeksiyonlu ÖSYM resmi yığınsal dağılım verileri kullanılmaktadır.
+// 2026 YKS ÖSYM resmi yığınsal dağılım verileri kullanılmaktadır.
 // Logaritmik interpolasyon: yığılma bölgelerinde doğrusal yöntemden çok daha isabetli sonuç verir.
 export function estimateRank(score: number, field: 'tyt' | 'say' | 'ea' | 'soz' | 'dil'): number {
-    if (score < 150) return 2500000
+    if (score < 100) return 2500000
 
-    // 2027 YKS projeksiyonlu ÖSYM resmi yığınsal dağılım tabloları
+    // 2026 YKS ÖSYM resmi yığınsal dağılım tabloları
+    // Kaynak: ÖSYM 2026-YKS Sınav Sonuçlarına İlişkin Sayısal Bilgiler
     // Format: [puan, o puan ve üzerindeki toplam aday sayısı]
     const tables: Record<string, [number, number][]> = {
         tyt: [
-            [560, 1],
-            [540, 450],
-            [520, 2800],
-            [500, 8500],
-            [480, 21000],
-            [460, 45000],
-            [440, 82000],
-            [420, 135000],
-            [400, 210000],
-            [380, 310000],
-            [360, 435000],
-            [340, 595000],
-            [320, 785000],
-            [300, 1020000],
-            [280, 1310000],
-            [260, 1650000],
-            [220, 2250000],
-            [180, 2750000],
+            [500, 5],
+            [480, 822],
+            [460, 5524],
+            [440, 17050],
+            [420, 37770],
+            [400, 67394],
+            [380, 106404],
+            [360, 155008],
+            [340, 218156],
+            [320, 302758],
+            [300, 417935],
+            [280, 577094],
+            [260, 787244],
+            [240, 1045340],
+            [220, 1332391],
+            [200, 1630698],
+            [180, 1914717],
+            [160, 2125244],
+            [140, 2184873],
+            [120, 2187723],
+            [100, 2187743],
         ],
         say: [
-            [560, 1],
-            [550, 154],
-            [530, 3500],
-            [500, 12000],
-            [480, 25000],
-            [460, 42000],
-            [440, 65000],
-            [420, 95000],
-            [400, 130000],
-            [380, 170000],
-            [360, 210000],
-            [340, 260000],
-            [320, 320000],
-            [300, 390000],
-            [280, 480000],
-            [260, 590000],
-            [220, 850000],
-            [180, 1200000],
+            [500, 1],
+            [480, 1453],
+            [460, 8786],
+            [440, 22370],
+            [420, 39624],
+            [400, 58728],
+            [380, 78806],
+            [360, 100553],
+            [340, 125045],
+            [320, 153304],
+            [300, 187034],
+            [280, 228643],
+            [260, 279885],
+            [240, 344536],
+            [220, 430074],
+            [200, 549793],
+            [180, 721488],
+            [160, 923753],
+            [140, 1078515],
+            [120, 1134006],
+            [100, 1135718],
         ],
         ea: [
-            [560, 1],
-            [530, 400],
-            [500, 2500],
-            [480, 6000],
-            [460, 14000],
-            [440, 28000],
-            [420, 50000],
-            [400, 85000],
-            [380, 130000],
-            [360, 190000],
-            [340, 270000],
-            [320, 370000],
-            [300, 490000],
-            [280, 640000],
-            [260, 820000],
-            [220, 1250000],
-            [180, 1800000],
+            [500, 1],
+            [480, 52],
+            [460, 307],
+            [440, 874],
+            [420, 2097],
+            [400, 4545],
+            [380, 9486],
+            [360, 23452],
+            [340, 50608],
+            [320, 89520],
+            [300, 140784],
+            [280, 210499],
+            [260, 308127],
+            [240, 440752],
+            [220, 615366],
+            [200, 832251],
+            [180, 1069239],
+            [160, 1272506],
+            [140, 1391240],
+            [120, 1420558],
+            [100, 1421290],
         ],
         soz: [
-            [560, 1],
-            [530, 150],
-            [500, 1200],
-            [480, 3500],
-            [460, 9000],
-            [440, 20000],
-            [420, 42000],
-            [400, 75000],
-            [380, 120000],
-            [360, 180000],
-            [340, 260000],
-            [320, 360000],
-            [300, 480000],
-            [280, 620000],
-            [260, 790000],
-            [220, 1150000],
-            [180, 1600000],
+            [500, 1],
+            [480, 10],
+            [460, 74],
+            [440, 214],
+            [420, 560],
+            [400, 1418],
+            [380, 3936],
+            [360, 10259],
+            [340, 23653],
+            [320, 47292],
+            [300, 86560],
+            [280, 148959],
+            [260, 238848],
+            [240, 360487],
+            [220, 515916],
+            [200, 699304],
+            [180, 873860],
+            [160, 998826],
+            [140, 1065157],
+            [120, 1084720],
+            [100, 1085698],
         ],
         dil: [
-            [560, 1],
-            [530, 800],
-            [500, 3500],
-            [480, 7000],
-            [460, 13000],
-            [440, 22000],
-            [420, 34000],
-            [400, 49000],
-            [380, 67000],
-            [360, 88000],
-            [340, 112000],
-            [320, 140000],
-            [300, 172000],
-            [280, 208000],
-            [260, 250000],
-            [220, 350000],
-            [180, 480000],
+            [500, 5],
+            [480, 118],
+            [460, 628],
+            [440, 1795],
+            [420, 3632],
+            [400, 6683],
+            [380, 11576],
+            [360, 18265],
+            [340, 26469],
+            [320, 35020],
+            [300, 43883],
+            [280, 52590],
+            [260, 61992],
+            [240, 72025],
+            [220, 82982],
+            [200, 94735],
+            [180, 107579],
+            [160, 120099],
+            [140, 128950],
+            [120, 132443],
+            [100, 132826],
         ],
     }
 
     const table = tables[field]
     if (score >= table[0][0]) return table[0][1]
-    if (score <= table[table.length - 1][0]) return 2500000
+    if (score < table[table.length - 1][0]) return 2500000
 
     for (let i = 0; i < table.length - 1; i++) {
         const [x1, y1] = table[i]
@@ -353,14 +372,14 @@ export function calculateYKSScores(
 
 // --- VALİDASYON ---
 export function validateTYTScores(scores: TYTScores): boolean {
-    return Object.entries(scores).every(([subject, score]) => {
+    return (Object.entries(scores) as [keyof TYTScores, { dogru: number; yanlis: number }][]).every(([subject, score]) => {
         const max = TYT_QUESTIONS[subject as keyof typeof TYT_QUESTIONS]
         return score.dogru >= 0 && score.yanlis >= 0 && (score.dogru + score.yanlis) <= max
     })
 }
 
 export function validateAYTScores(scores: AYTScores): boolean {
-    return Object.entries(scores).every(([subject, score]) => {
+    return (Object.entries(scores) as [keyof AYTScores, { dogru: number; yanlis: number }][]).every(([subject, score]) => {
         const max = AYT_QUESTIONS[subject as keyof typeof AYT_QUESTIONS]
         return score.dogru >= 0 && score.yanlis >= 0 && (score.dogru + score.yanlis) <= max
     })
