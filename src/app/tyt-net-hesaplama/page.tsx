@@ -21,10 +21,10 @@ export default function TYTNetHesaplamaPage(): React.JSX.Element {
                         TYT Sınav Analizi
                     </span>
                     <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
-                        TYT Net Hesaplama ve Test Dinamikleri
+                        TYT Net Hesaplama
                     </h1>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6 leading-relaxed">
-                        120 soruya 165 dakika. Zaman su gibi akıp giderken hangi testten kaç net çıkarman gerektiğini, 4 yanlışın doğrularını nasıl erittiğini ve o meşhur 0,5 net tuzağını bilmeden masaya oturma.
+                        120 soru, 165 dakika. Hangi testten kaç net gerekir, 4 yanlış doğrularını nasıl eritir, 0,5 net şartı ne — bu sayfada topladım.
                     </p>
                     <Link
                         href="/"
@@ -36,93 +36,90 @@ export default function TYTNetHesaplamaPage(): React.JSX.Element {
                     </Link>
                 </div>
 
-                {/* TYT Testleri: Masadaki Gerçekler */}
+                {/* Testler */}
                 <div className="bg-white rounded-2xl shadow-sm border border-gray-200/80 p-6 sm:p-8 mb-8">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                        120 Sorunun Dağılımı: Hangi Teste Ne Kadar Asılmalısın?
+                        120 Sorunun Dağılımı
                     </h2>
                     <p className="text-gray-700 leading-relaxed mb-6">
-                        Çoğu öğrenci &quot;Sosyal kolaydır, sona bırakırım&quot; veya &quot;Matematikten 5 net yapsam bana yeter&quot; diyerek sınava giriyor. Oysa ÖSYM katsayılarında 1 Sosyal veya 1 Fen netinin puan getirisi, Türkçe ve Matematikle neredeyse kafa kafayadır.
+                        Çoğu öğrenci &quot;Sosyal kolay, sona bırakırım&quot; ya da &quot;Fen zaten yapamam&quot; diyor. Ama ÖSYM katsayılarında 1 Sosyal veya 1 Fen netinin puan getirisi Türkçe ve Matematikle neredeyse aynı.
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="border border-blue-200 rounded-xl p-5 bg-blue-50/40">
                             <h3 className="font-bold text-blue-900 text-lg mb-1">Türkçe (40 Soru)</h3>
-                            <p className="text-xs text-blue-700 font-semibold mb-2">Testin Kalbi: 24-26 Paragraf + Dil Bilgisi</p>
+                            <p className="text-xs text-blue-700 font-semibold mb-2">24-26 paragraf + dil bilgisi</p>
                             <p className="text-sm text-gray-700 leading-relaxed">
-                                Sınavın en büyük zaman öğütücüsü. Paragrafta iki şık arasında kalıp vakit kaybeden aday, arkadaki matematiğe bakmaya fırsat bulamaz. 30+ netin tek sırrı sabah masaya oturduğunda ilk iş 20 paragraf çözüp zihni diri tutmaktır.
+                                Sınavın en çok süre yiyen testi. Paragrafta iki şık arasında kalıp vakit kaybedersen arkadaki matematiğe süren kalmaz.
                             </p>
                         </div>
 
                         <div className="border border-emerald-200 rounded-xl p-5 bg-emerald-50/40">
-                            <h3 className="font-bold text-emerald-900 text-lg mb-1">Temel Matematik (40 Soru)</h3>
-                            <p className="text-xs text-emerald-700 font-semibold mb-2">30 Matematik + 10 Geometri</p>
+                            <h3 className="font-bold text-emerald-900 text-lg mb-1">Matematik (40 Soru)</h3>
+                            <p className="text-xs text-emerald-700 font-semibold mb-2">30 mat + 10 geometri</p>
                             <p className="text-sm text-gray-700 leading-relaxed">
-                                İlk 12 soru temel cebir ve sayılar, sonrasındaki 12-14 soru ise o uzun paragraflı yeni nesil problemler. Çoğu adayın bakmaya korktuğu 10 geometri sorusu ise seni yığılmadan çekip üst dilime fırlatan gizli kozdur.
+                                İlk 12 soru temel cebir, sonrakiler yeni nesil problemler. 10 geometri sorusu çoğu adayın atladığı ama sıralamada fark yaratan kısım.
                             </p>
                         </div>
 
                         <div className="border border-purple-200 rounded-xl p-5 bg-purple-50/40">
-                            <h3 className="font-bold text-purple-900 text-lg mb-1">Sosyal Bilimler (20 Soru)</h3>
+                            <h3 className="font-bold text-purple-900 text-lg mb-1">Sosyal (20 Soru)</h3>
                             <p className="text-xs text-purple-700 font-semibold mb-2">5 Tarih + 5 Coğrafya + 5 Felsefe + 5 Din</p>
                             <p className="text-sm text-gray-700 leading-relaxed">
-                                15-18 dakikada toplayabileceğin en bereketli 20 net kaynağı. Sayısalcıların çoğu 'Sosyal kolaydır' deyip geçiştirir ya da bakmaz; sonra o çözmediği 4-5 Tarih sorusu yüzünden ilk 30 bini kaçırır.
+                                15-18 dakikada toplanabilecek en verimli 20 soru. Sayısalcıların genelde ihmal ettiği ama sıralamada ciddi fark açan test.
                             </p>
                         </div>
 
                         <div className="border border-amber-200 rounded-xl p-5 bg-amber-50/40">
-                            <h3 className="font-bold text-amber-900 text-lg mb-1">Fen Bilimleri (20 Soru)</h3>
+                            <h3 className="font-bold text-amber-900 text-lg mb-1">Fen (20 Soru)</h3>
                             <p className="text-xs text-amber-700 font-semibold mb-2">7 Fizik + 7 Kimya + 6 Biyoloji</p>
                             <p className="text-sm text-gray-700 leading-relaxed">
-                                9. ve 10. sınıf müfredatının ana omurgası. Sayısalcının kesinlikle fire vermemesi gereken yer; Eşit Ağırlıkçının ise 'ben Fen yapamam' demeyip çözeceği 5-6 soruyla rakiplerine tur bindireceği yerdir.
+                                9-10. sınıf müfredatı. Sayısalcının fire vermemesi gereken yer. EA ve Sözelciler bile 5-6 soru alırsa fark yaratır.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                {/* 4 Yanlış 1 Doğruyu Nasıl Eritir? */}
+                {/* 4 Yanlış 1 Doğru */}
                 <div className="bg-white rounded-2xl shadow-sm border border-gray-200/80 p-6 sm:p-8 mb-8">
                     <h2 className="text-2xl font-bold text-gray-900 mb-3">
-                        TYT&apos;de 4 Yanlış 1 Doğruyu Nasıl Götürür?
+                        4 Yanlış 1 Doğru Kuralı
                     </h2>
                     <p className="text-gray-700 leading-relaxed mb-4 text-sm md:text-base">
-                        ÖSYM optik formunda işaretlediğin her yanlış seçenek, o testteki doğru sayından tam <strong>0,25 net</strong> siler.
+                        Her yanlış cevap o testteki doğru sayından <strong>0,25 net</strong> düşürür.
                     </p>
 
                     <div className="bg-slate-900 text-white rounded-xl p-5 text-center my-4">
                         <p className="font-mono text-xl font-bold text-emerald-400">
-                            TYT Neti = Doğru Sayısı − (Yanlış Sayısı ÷ 4)
+                            TYT Neti = Doğru − (Yanlış ÷ 4)
                         </p>
                     </div>
 
                     <div className="space-y-3 text-sm text-gray-700 leading-relaxed">
                         <p>
-                            • <strong>Somut Örnek:</strong> Türkçede 32 doğru, 8 yanlış işaretledin. 8&apos;i 4&apos;e böldüğümüzde 2 tam doğru cevabın silinir ve netin <strong>30,00</strong> olur.
+                            • <strong>Örnek:</strong> 32 doğru, 8 yanlış → 8 ÷ 4 = 2 → Net: <strong>30,00</strong>
                         </p>
                         <p>
-                            • <strong>Boş Bırakmanın Önemi:</strong> Emin olmadığın soruyu boş bırakırsan ne doğru ne de yanlış sayılır; netinden zerre eksilmez. Kafadan sallayıp yanlış çıkarmaktansa boş bırakmak çoğu zaman sıralamanı korur.
+                            • <strong>Boş bırakma:</strong> Emin olmadığın soruyu boş bırakırsan netinden bir şey eksilmez. Kafadan sallamak yerine boş bırakmak çoğu zaman daha iyi.
                         </p>
                     </div>
                 </div>
 
-                {/* 0,5 Net Kuralı */}
+                {/* 0,5 Net */}
                 <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 mb-8 text-amber-950">
                     <h3 className="font-bold text-lg mb-2 flex items-center gap-2">
-                        <span>⚠️</span> Hayati Kural: 0,5 Net Şartı
+                        <span>⚠️</span> 0,5 Net Şartı
                     </h3>
                     <p className="text-sm leading-relaxed mb-3">
-                        Baraj puanı kalktı ancak 0,5 net şartı aynen duruyor. TYT puanının hesaplanabilmesi için <strong>Türkçe veya Temel Matematik</strong> testlerinin en az birinden minimum yarım (0,5) ham net çıkarman şart.
-                    </p>
-                    <p className="text-xs text-amber-900">
-                        İki derste de 0 net çekersen veya yanlışların doğrularından fazla olup eksiye düşerse, Sosyal ve Fenden ful çıkarsan dahi TYT puanın hesaplanmaz, tercih ekranı açılmaz.
+                        Baraj puanı kalktı ama 0,5 net şartı duruyor. <strong>Türkçe veya Matematik</strong> testinin birinden en az 0,5 ham net lazım. İkisi de 0 veya eksiyse Fen ve Sosyal&apos;den full yapsan da TYT puanın hesaplanmaz.
                     </p>
                 </div>
 
                 {/* CTA */}
                 <div className="bg-gradient-to-r from-blue-700 to-indigo-800 rounded-2xl shadow-lg p-8 text-white text-center">
-                    <h2 className="text-2xl font-bold mb-3">Deneme Sonucunu Şimdi Hesapla</h2>
+                    <h2 className="text-2xl font-bold mb-3">Deneme Sonucunu Hesapla</h2>
                     <p className="text-blue-100 text-sm max-w-xl mx-auto mb-6">
-                        Son girdiğin TYT denemesindeki doğru ve yanlış sayılarını gir; güncel standart sapma ve OBP katkısıyla puanını hemen gör.
+                        Son TYT denemendeki doğru ve yanlış sayılarını gir, tahmini puanını ve sıralamanı gör.
                     </p>
                     <Link
                         href="/"

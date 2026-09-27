@@ -54,10 +54,10 @@ export default function SifirdanTytMatematikRehberi() {
                             <span className="text-gray-600">• 12 dk okuma</span>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                            Sıfırdan TYT Matematik Nasıl Çalışılır? Temelden 20+ Nete Yol Haritası
+                            Sıfırdan TYT Matematik: 0 Netten 20 Nete Çıkma Rehberi
                         </h1>
                         <p className="text-xl text-gray-600">
-                            &quot;Benim matematiğe kafam basmıyor&quot; cümlesi bir gerçek değil, sadece bir inançtır. Doğru sırayla ve doğru yöntemle çalışıldığında 0-3 net bandından 15-20 nete çıkmak herkes için mümkündür.
+                            Matematik yeteneği diye bir şey yok. Doğru sırayla, doğru seviyeden başlayınca 0-3 netten 15-20 nete çıkmak gayet mümkün. Burada nasıl yapılacağını anlattım.
                         </p>
                     </header>
 
@@ -65,62 +65,51 @@ export default function SifirdanTytMatematikRehberi() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Geçen sene rehberlik odasına ağlayarak gelen bir kız öğrenci vardı. Adı Elif. Deneme sınavında TYT Matematik: 2 doğru, 14 yanlış. Kağıdı masaya fırlattı ve dedi ki: &quot;Hocam ben bu hayatta matematik yapamayacağım, kabul ettim artık.&quot;
+                            Geçen sene bir öğrencim vardı, deneme sonucu TYT Matematik: 2 doğru, 14 yanlış. &quot;Ben matematik yapamam artık&quot; diyordu. Haziran&apos;da sınava girdi, 19 net yaptı.
                         </p>
 
                         <p>
-                            Elif&apos;e bir şey söyledim o gün. Aynı şeyi şimdi sana da söylüyorum.
-                        </p>
-
-                        <p>
-                            Matematik yeteneği diye bir şey yok. Ciddiyim. Var olan şey doğru sırayla, doğru seviyeden başlamak. Elif&apos;in tek problemi 9. sınıf matematiğindeki delik yüzünden 11. sınıf konularına dalmasıydı — tabii ki çözemezdi. Temeli olmayan bina çöker. Haziran&apos;da sınava girdiğinde 19 net yaptı. 2 netten 19 nete. Sihir değil, sıralama meselesi.
+                            Tek fark şuydu: 9. sınıf matematiğindeki delikleri kapatmadan 11. sınıf konularına dalıyordu. Temel yokken üst konu yapılmaz. Sıralama düzeltilince netler de geldi.
                         </p>
 
                         <div className="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-r-lg text-amber-950 text-sm my-6">
-                            <strong>Tanıdık geldi mi?</strong> Arkadaşın sana &quot;şu kitap çok iyi&quot; diye ileri seviye bir soru bankası verdi. Açtın, ilk testte 3 tanesini bile yapamadın. Kitabı kapattın, &quot;ben matematikten anlamıyorum&quot; dedin. Hata sende değil — o kitap senin seviyene uygun değildi. Hepsi bu.
+                            <strong>Yaygın hata:</strong> Arkadaşın ileri seviye soru bankası veriyor, açıyorsun, ilk testte 3 soruyu bile yapamıyorsun. Kitabı kapatıyorsun. Sorun sende değil — o kitap senin seviyene uygun değil.
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Sıfırdan Başlayanların Yaptığı 3 Klasik Hata
+                            Sıfırdan Başlayanların Yaptığı 3 Hata
                         </h2>
 
+                        <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-2">
+                            1. Video İzleyip &quot;Anladım&quot; Demek
+                        </h3>
                         <p>
-                            Bunları bilmezsen 3 ay boşa gider. Abartmıyorum, resmen 3 ay.
+                            Hocanın çözüm videosunu izliyorsun. Adam x&apos;i öbür tarafa atıyor, çarpanlarına ayırıyor, cevap C. Sen kafanla onaylıyorsun. Sonra kitabı açıyorsun, benzer soruyu çözmeye çalışıyorsun — hiçbir şey gelmiyor.
+                        </p>
+                        <p>
+                            Çünkü izlemek ile çözmek farklı. Kalemi eline almadan, kağıdı karalamadan matematik öğrenilmez.
                         </p>
 
                         <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-2">
-                            1. YouTube&apos;da Soru Çözümü İzleyip &quot;Anladım&quot; Demek
+                            2. İlk Hafta &quot;Yeni Nesil&quot; Soruya Dalmak
                         </h3>
                         <p>
-                            Koltuğa yaslanmışsın, elinde çay. Hocanın çözüm videosu açık. Adam x&apos;i öbür tarafa atıyor, çarpanlarına ayırıyor, cevap C şıkkı. Sen kafanla onaylıyorsun: &quot;He tamam, mantıklı.&quot;
-                        </p>
-                        <p>
-                            Sonra kitabı açıyorsun, benzer soruyu çözmeye çalışıyorsun. Kalem havada. Hiçbir şey gelmiyor. Niye? Çünkü izlerken beynin sadece &quot;evet doğru&quot; diyor, kendisi üretmiyor. Film izlemekle senaryo yazmak aynı şey mi? Değil.
-                        </p>
-                        <p>
-                            <strong>Kural basit: Kalemi eline almadan, kağıdı karalamadan, yanlış yapıp sinirlenip tekrar denemeden matematik öğrenilmez.</strong> Nokta.
+                            ÖSYM hikayeli, uzun metinli sorular soruyor — doğru. Ama <em>2x + 5 = 17</em> denklemini refleks gibi çözemiyorsan o 8 satırlık problemin karşısında donarsın. Önce klasik, sonra yeni nesil.
                         </p>
 
                         <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-2">
-                            2. Daha İlk Hafta &quot;Yeni Nesil&quot; Soruya Dalma
+                            3. &quot;Günde 100 Soru&quot; Hedefi
                         </h3>
                         <p>
-                            ÖSYM artık hikayeli, uzun metinli sorular soruyor — doğru. Ama daha <em>2x + 5 = 17</em> denklemini refleks gibi çözemiyorsan, o 8 satırlık problem sorusunun karşısında donarsin. Bina yapıyorsun düşün: temeli atmadan çatı mı koyarsın? Önce klasik soru, sonra yeni nesil. Sırayı bozma.
-                        </p>
-
-                        <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-2">
-                            3. &quot;Günde 100 Soru Çözeceğim&quot; Yalanı
-                        </h3>
-                        <p>
-                            Temeli sıfır olan biri günde 80 soru çözmeye kalkarsa ne olur? Üç gün dayanır, dördüncü gün masadan kalkar bir daha oturmaz. Başlangıçta <strong>15 soru yeter</strong>. Ama o 15 sorunun her birini anlayarak, niye yanlış yaptığını analiz ederek çöz. Göz ucuyla geçiştirilmiş 70 soru, dikkatlice çözülmüş 15 sorunun yanında hiçbir şeydir.
+                            Temeli sıfır olan biri 80 soru çözmeye kalkarsa 3 gün dayanır, 4. gün bırakır. Başlangıçta <strong>15 soru yeter</strong> — ama o 15 soruyu anlayarak çöz, neden yanlış yaptığını analiz et. Göz ucuyla geçiştirilmiş 70 soru, dikkatlice çözülmüş 15 sorunun yanında bir şey ifade etmez.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Hangi Konudan Başlamalı? (Sırayı Bozarsan Çökersin)
+                            Konu Sırası
                         </h2>
 
                         <p>
-                            Matematik birikimli bir ders — her konu bir öncekinin üstüne biner. Rasyonel sayıları bilmeden mutlak değer yapamazsın. Çarpanlara ayırmayı öğrenmeden fonksiyon çözemezsin. Bu yüzden &quot;en çok soru çıkan konudan başlayayım&quot; deme. Aşağıdaki sırayı takip et, atlama.
+                            Matematik birikimli bir ders. Her konu bir öncekinin üstüne biner. Rasyonel sayıları bilmeden mutlak değer yapılmaz, çarpanlara ayırmayı öğrenmeden fonksiyon çözülmez. &quot;En çok soru çıkan konudan başlayım&quot; deme, sırayı takip et.
                         </p>
 
                         <div className="overflow-x-auto my-6">
@@ -128,129 +117,121 @@ export default function SifirdanTytMatematikRehberi() {
                                 <thead className="bg-gray-100 text-gray-800 text-sm">
                                     <tr>
                                         <th className="p-3 border">Aşama</th>
-                                        <th className="p-3 border">Konu Başlıkları</th>
-                                        <th className="p-3 border">Hedef Net Aralığı</th>
-                                        <th className="p-3 border">Tahmini Süre</th>
+                                        <th className="p-3 border">Konular</th>
+                                        <th className="p-3 border">Hedef Net</th>
+                                        <th className="p-3 border">Süre</th>
                                     </tr>
                                 </thead>
                                 <tbody className="text-sm">
                                     <tr className="border-b">
-                                        <td className="p-3 font-semibold border">1. Adım: İşlem Temeli</td>
-                                        <td className="p-3 border">Dört işlem, İşaret kuralları, Harfli ifadeler, Basit denklem</td>
-                                        <td className="p-3 border">0 - 5 Net</td>
-                                        <td className="p-3 border">2 - 3 Hafta</td>
+                                        <td className="p-3 font-semibold border">1. İşlem Temeli</td>
+                                        <td className="p-3 border">Dört işlem, işaret kuralları, harfli ifadeler, basit denklem</td>
+                                        <td className="p-3 border">0-5 net</td>
+                                        <td className="p-3 border">2-3 hafta</td>
                                     </tr>
                                     <tr className="border-b bg-gray-50">
-                                        <td className="p-3 font-semibold border">2. Adım: Temel Sayı Teorisi</td>
-                                        <td className="p-3 border">Doğal-Tam Sayılar, Tek-Çift, Asal Sayılar, Ardışık Sayılar, Basamak Kavramı</td>
-                                        <td className="p-3 border">5 - 10 Net</td>
-                                        <td className="p-3 border">3 Hafta</td>
+                                        <td className="p-3 font-semibold border">2. Sayı Teorisi</td>
+                                        <td className="p-3 border">Doğal-tam sayılar, tek-çift, asal sayılar, ardışık, basamak</td>
+                                        <td className="p-3 border">5-10 net</td>
+                                        <td className="p-3 border">3 hafta</td>
                                     </tr>
                                     <tr className="border-b">
-                                        <td className="p-3 font-semibold border">3. Adım: Cebir Omurgası</td>
-                                        <td className="p-3 border">Rasyonel Sayılar, Basit Eşitsizlikler, Mutlak Değer, Üslü-Köklü Sayılar</td>
-                                        <td className="p-3 border">10 - 15 Net</td>
-                                        <td className="p-3 border">4 Hafta</td>
+                                        <td className="p-3 font-semibold border">3. Cebir</td>
+                                        <td className="p-3 border">Rasyonel sayılar, basit eşitsizlikler, mutlak değer, üslü-köklü</td>
+                                        <td className="p-3 border">10-15 net</td>
+                                        <td className="p-3 border">4 hafta</td>
                                     </tr>
                                     <tr className="border-b bg-gray-50">
-                                        <td className="p-3 font-semibold border">4. Adım: Problem Dünyası</td>
-                                        <td className="p-3 border">Oran-Orantı, Sayı-Kesir, Yaş, Yüzde-Kâr-Zarar, Grafik Problemleri</td>
-                                        <td className="p-3 border">15 - 22 Net</td>
-                                        <td className="p-3 border">Sürekli (Her gün rutin)</td>
+                                        <td className="p-3 font-semibold border">4. Problemler</td>
+                                        <td className="p-3 border">Oran-orantı, yaş, yüzde-kâr-zarar, grafik problemleri</td>
+                                        <td className="p-3 border">15-22 net</td>
+                                        <td className="p-3 border">Sürekli rutin</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
                         <p>
-                            Tüm konuların yıllara göre soru dağılımı için <Link href="/blog/tyt-matematik-konulari" className="text-blue-600 font-semibold hover:underline">TYT Matematik Konuları ve Soru Dağılımı</Link> kılavuzumuzu inceleyin.
+                            Konuların yıllara göre dağılımı için <Link href="/blog/tyt-matematik-konulari" className="text-blue-600 font-semibold hover:underline">TYT Matematik Konuları</Link> sayfasına bakabilirsin.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            3 Dakika Kuralı: Soruyu Çözemediğinde Ne Yapacaksın?
+                            3 Dakika Kuralı
                         </h2>
 
                         <p>
-                            Bir soruda takıldığınız an hemen soru çözüm videosuna tıklamak en yaygın alışkanlıktır. Bu alışkanlığı şu <strong>3 Dakika Kuralı</strong> ile değiştirin:
+                            Bir soruda takılınca hemen çözüm videosuna bakmak yaygın alışkanlık. Bunun yerine:
                         </p>
 
                         <ol className="list-decimal pl-6 space-y-2">
-                            <li><strong>1. Dakika (Okuma ve Not Alma):</strong> Soruyu acele etmeden okuyun. Verilenleri ve isteneni kağıdın kenarına sembollerle yazın (Örn: <em>Ahmet = x, Mehmet = x + 4</em>).</li>
-                            <li><strong>2. Dakika (Formül ve İlke Arama):</strong> Bu soru hangi konuya ait? Hangi kuralı bilmem gerekiyor? Bildiğiniz tüm formülleri veya benzer soru kalıplarını zihninizde tarayın.</li>
-                            <li><strong>3. Dakika (Deneme ve Karalama):</strong> Sonucu bulamasanız bile bir denklem kurmaya çalışın, farklı yollar deneyin.</li>
+                            <li><strong>1. dakika:</strong> Soruyu oku, verilenleri ve isteneni kağıda yaz.</li>
+                            <li><strong>2. dakika:</strong> Bu soru hangi konuya ait? Hangi formül/kural gerekiyor? Düşün.</li>
+                            <li><strong>3. dakika:</strong> Bir denklem kurmaya çalış, farklı yollar dene.</li>
                         </ol>
 
                         <p>
-                            3 dakikanın sonunda hala tıkandıysanız çözümü izleyin. Ama videoyu izlerken şunu sorun: <em>&quot;Hoca sorunun hangi cümlesini okuyup bu adımı attı? Ben neyi göremedim?&quot;</em> Çözümü anladıktan sonra videoyu kapatın ve o soruyu temiz bir kağıda <strong>kendi elinizle baştan çözün</strong>. Kendi elinizle çözemediğiniz hiçbir soru öğrenilmiş sayılmaz.
+                            3 dakika sonunda tıkandıysan çözümü izle. Ama izlerken &quot;hoca sorunun hangi cümlesinden bu adımı çıkardı, ben neyi göremedim?&quot; diye düşün. Sonra videoyu kapat, aynı soruyu sıfırdan kendin çöz. Kendin çözemediğin soru öğrenilmiş sayılmaz.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Problemler Nasıl Çalışılır? (12 Soruluk Altın Madeni)
+                            Problem Çalışma Yöntemi
                         </h2>
 
                         <p>
-                            TYT Matematik testinde 40 sorunun 10 ila 13 tanesi doğrudan problemlerden çıkar. Yani testin %30&apos;u problemlerdir.
+                            TYT&apos;de 40 sorunun 10-13&apos;ü doğrudan problem. Testin yaklaşık %30&apos;u.
                         </p>
 
                         <p>
-                            Problemler ayrı bir ders veya ayrı bir konu değildir; okuduğunu anlama (Türkçe) ve denklem kurma (Matematik) becerisinin birleşimidir. <Link href="/blog/tyt-turkce-paragraf-teknikleri" className="text-blue-600 font-semibold hover:underline">TYT paragraf çözme teknikleri</Link> ile okuma hızınızı artırdığınızda problemlerinizin de hızlandığını göreceksiniz.
+                            Problem ayrı bir ders değil — okuduğunu anlama (Türkçe) ve denklem kurma (Matematik) birleşimi. <Link href="/blog/tyt-turkce-paragraf-teknikleri" className="text-blue-600 font-semibold hover:underline">Paragraf çözme teknikleri</Link> ile okuma hızını artırdığında problemlerin de hızlanır.
                         </p>
 
                         <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 my-6">
-                            <h3 className="text-lg font-bold text-blue-900 mb-2">Günlük Problem Rutini (Sabit Alışkanlık)</h3>
+                            <h3 className="text-lg font-bold text-blue-900 mb-2">Günlük Problem Rutini</h3>
                             <p className="text-sm text-blue-800 mb-3">
-                                Temel cebir konularını (Rasyonel, Üslü, Köklü, Basit Denklem) bitirdiğiniz günden itibaren sınava kadar her gün istisnasız:
+                                Temel cebiri (rasyonel, üslü, köklü, denklem) bitirdikten sonra sınava kadar her gün:
                             </p>
                             <ul className="list-disc pl-5 space-y-1 text-sm text-blue-900">
-                                <li><strong>Her gün 15 problem sorusu çözün.</strong></li>
-                                <li>İlk ay süre tutmayın; denklemi doğru kurmaya odaklanın.</li>
-                                <li>2. aydan itibaren soru başına 2 dakika kronometre tutun.</li>
-                                <li>Çözemediğiniz soru tiplerini (özellikle karışım veya işçi gibi takıldığınız yerleri) işaretleyip hafta sonu tekrar çözün.</li>
+                                <li><strong>Her gün 15 problem çöz.</strong></li>
+                                <li>İlk ay süre tutma, denklemi doğru kurmaya odaklan.</li>
+                                <li>2. aydan itibaren soru başına 2 dk kronometre tut.</li>
+                                <li>Çözemediğin tipleri (karışım, işçi vb.) işaretle, hafta sonu tekrar çöz.</li>
                             </ul>
                         </div>
 
-                        {/* CTA Kutusu */}
+                        {/* CTA */}
                         <div className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-2xl p-8 text-center my-10 shadow-lg">
-                            <h3 className="text-2xl font-bold mb-3">Mevcut Matematik Netinizle Sıralamanızı Test Edin</h3>
+                            <h3 className="text-2xl font-bold mb-3">Matematik Netinle Sıralamanı Gör</h3>
                             <p className="text-emerald-100 max-w-2xl mx-auto mb-6 text-sm md:text-base">
-                                Matematik netinizi 5 artırdığınızda Türkiye sıralamanızın kaç bin kişi ileri fırladığını görmek için net hesaplayıcımızı kullanın.
+                                Matematik netini 5 artırınca sıralamanın kaç bin kişi değiştiğini görmek için hesaplayıcıyı kullan.
                             </p>
                             <Link 
                                 href="/" 
                                 className="inline-block bg-white text-teal-800 font-bold px-8 py-3 rounded-xl shadow-md hover:bg-emerald-50 transition transform hover:-translate-y-0.5"
                             >
-                                Sıralama Simülasyonu Yap →
+                                Net Hesaplayıcıya Git →
                             </Link>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Matematik Çalışma Programı: Haftalık Örnek
+                            Haftalık Program Örneği
                         </h2>
 
                         <p>
-                            Temeli zayıf bir öğrencinin haftalık çalışma dengesi nasıl olmalı? İşte günde 2-2.5 saat matematik ayıran bir öğrenci için gerçekçi şablon:
+                            Günde 2-2,5 saat matematik ayıran bir öğrenci için:
                         </p>
 
                         <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 my-6 text-sm text-gray-800 space-y-3">
-                            <p><strong>Pazartesi:</strong> Yeni Konu Anlatımı (Kısa özet + 20 temel kavrama sorusu)</p>
-                            <p><strong>Salı:</strong> Aynı konudan 25 pekiştirme sorusu (Temel seviye soru bankası)</p>
-                            <p><strong>Çarşamba:</strong> 15 Günlük Problem + Önceki haftanın konusundan 15 tekrar sorusu</p>
-                            <p><strong>Perşembe:</strong> Yeni Konunun 2. kısmı veya bir sonraki alt başlık (25 soru)</p>
-                            <p><strong>Cuma:</strong> 15 Problem + Konu kavrama testi (Zorluk bir tık artırılır)</p>
-                            <p><strong>Cumartesi:</strong> Haftalık Deneme veya 20 soruluk mini tarama testi</p>
-                            <p><strong>Pazar:</strong> Hafta boyunca çözülemeyen soruların video çözümlerinin incelenmesi ve yeniden çözümü</p>
+                            <p><strong>Pzt:</strong> Yeni konu anlatımı + 20 temel soru</p>
+                            <p><strong>Salı:</strong> Aynı konudan 25 pekiştirme sorusu</p>
+                            <p><strong>Çrş:</strong> 15 problem + geçen haftanın konusundan 15 tekrar</p>
+                            <p><strong>Prş:</strong> Yeni konunun 2. kısmı veya sonraki alt başlık (25 soru)</p>
+                            <p><strong>Cuma:</strong> 15 problem + konu kavrama testi (biraz daha zor)</p>
+                            <p><strong>Cts:</strong> Haftalık deneme veya 20 soruluk mini test</p>
+                            <p><strong>Paz:</strong> Hafta boyunca çözemediğin soruların video çözümü + tekrar çözmek</p>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Son Söz: Sabır ve Süreklilik
-                        </h2>
-
                         <p>
-                            Matematik netleri hemen yarın 15 nete çıkmaz. İlk 3-4 hafta boyunca çalıştığınız halde netlerinizin kıpırdamadığını görebilirsiniz. Bu çok doğaldır; çünkü zihniniz taşları yerine oturtmaktadır.
-                        </p>
-
-                        <p>
-                            Kritik eşik aşıldığında netler birden 5&apos;ten 12&apos;ye, ardından 18&apos;e sıçrar. Tek yapmanız gereken her gün masaya oturmak, kalemi elden bırakmamak ve kurallara sadık kalmaktır. Sınavda garanti net getiren başlıkları incelemek için <Link href="/blog/tyt-kesin-cikan-konular" className="text-blue-600 font-semibold hover:underline">TYT&apos;de Kesin Çıkan Konular</Link> yazımıza göz atın.
+                            İlk 3-4 hafta çalıştığın halde netlerin kıpırdamayabilir. Normal. Beyin taşları yerine oturtuyor. Kritik eşik aşılınca netler birden 5&apos;ten 12&apos;ye, sonra 18&apos;e sıçrar. Garanti net getiren konular için <Link href="/blog/tyt-kesin-cikan-konular" className="text-blue-600 font-semibold hover:underline">TYT Kesin Çıkan Konular</Link> yazısına göz at.
                         </p>
                     </div>
 
@@ -258,9 +239,7 @@ export default function SifirdanTytMatematikRehberi() {
                         <div className="flex flex-wrap gap-2 mb-6">
                             <span className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-md font-medium">#sifirdanMatematik</span>
                             <span className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-md font-medium">#tytMatematik</span>
-                            <span className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-md font-medium">#matematikCalismaYontemi</span>
                             <span className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-md font-medium">#problemCozme</span>
-                            <span className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-md font-medium">#yksRehberlik</span>
                         </div>
                         <div className="flex justify-between items-center text-sm">
                             <Link href="/blog" className="text-blue-600 hover:underline font-medium">← Blog Listesine Dön</Link>

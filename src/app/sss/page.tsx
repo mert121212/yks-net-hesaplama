@@ -55,69 +55,69 @@ export default function SSS() {
             questions: [
                 {
                     q: '4 yanlış 1 doğruyu nasıl götürüyor?',
-                    a: 'Her yanlış cevabınız doğru sayınızdan tam 0,25 net düşürür. Diyelim 30 doğru yaptınız ama 8 soruyu da yanlış işaretlediniz. 8\'i 4\'e bölüyoruz: 2 netiniz buharlaşıyor ve hanenize 28 net yazılıyor. Boş bıraktığınız sorular ise netinizi eksiltmez. Emin olmadığınız sorularda rastgele sallamayıp boş bırakmak bu yüzden çok daha kârlıdır.'
+                    a: 'Her yanlış 0,25 net düşürür. 30 doğru, 8 yanlış yaptıysan: 8 ÷ 4 = 2, yani 2 netin gider, 28 net kalır. Boş bıraktığın sorular neti etkilemez. Emin değilsen boş bırakmak daha mantıklı.'
                 },
                 {
                     q: 'Net eksiye düşer mi?',
-                    a: 'Evet, düşebilir. Örneğin 2 doğru yapıp 16 yanlış işaretlediysen: 2 - (16 / 4) = -2 net olur. Ancak ÖSYM puan hesabında negatif çıkan dersleri sıfır kabul eder, yani diğer derslerinin netini kesinlikle aşağı çekmez.'
+                    a: 'Düşebilir. 2 doğru 16 yanlışta: 2 - 4 = -2 net olur. Ama ÖSYM puanlama yaparken negatif olan dersleri sıfır kabul eder, diğer derslerini etkilemez.'
                 },
                 {
                     q: 'Zor soru daha çok puan kazandırır mı?',
-                    a: 'Hayır, bu en yaygın şehir efsanesidir. ÖSYM soruyu tek tek puanlamaz, testi bir bütün olarak değerlendirir. AYT Matematik\'teki en zor türev-integral sorusuyla ilk sayfadaki temel rasyonel sayı sorusu aynı standart puanı getirir. Puanı artıran şey sorunun zorluğu değil, o testin Türkiye genelinde düşük net ortalamasına sahip olmasıdır.'
+                    a: 'Hayır. ÖSYM soruyu tek tek puanlamaz. Aynı testteki ilk soru ile son soru eşit puan getirir. Puanı etkileyen şey o testin Türkiye geneli net ortalaması ve standart sapması.'
                 },
                 {
                     q: 'Diploma notu (OBP) sıralamayı çok etkiler mi?',
-                    a: 'Evet, fazlasıyla etkiler. Okul notun 5 ile çarpılıp OBP olur, sonra 0,12 katsayısıyla puanına eklenir. Notu 100 olan biri +60 puan alırken 70 olan +42 puan alır. Aradaki 18 puanlık fark yığılma bölgesinde 15-30 bin kişi geriye düşmek anlamına gelebilir. Okul sınavlarını asla hafife almayın.'
+                    a: 'Ciddi etkiler. Okul notu × 5 = OBP. 0,12 katsayısıyla puanına eklenir. Notu 100 olan +60 puan alırken 70 olan +42 puan alır. 18 puanlık fark yığılma bölgesinde 15-30 bin sıra demek olabilir.'
                 }
             ]
         },
         {
-            category: 'Baraj ve 0,5 Net Gerçeği',
+            category: 'Baraj ve 0,5 Net Kuralı',
             icon: '⚠️',
             questions: [
                 {
-                    q: 'TYT\'de baraj kalktıysa herkes tercih yapabiliyor mu?',
-                    a: 'Evet, 150 ve 180 puanlık barajlar kalktı. Puanı hesaplanan herkes tercih yapabilir. Ancak kritik bir kural var: Tıp için SAY\'da ilk 50 bin, Hukuk için EA\'da ilk 125 bin, Mühendislik için ilk 300 bin gibi "Başarı Sırası Barajı" aynen devam ediyor. Puanın yetse dahi bu sıralama sınırını geçemezsen o bölümü listene yazamıyorsun.'
+                    q: 'Baraj kalktıysa herkes tercih yapabiliyor mu?',
+                    a: 'Puanı hesaplanan herkes tercih yapabilir evet. Ama Tıp için SAY ilk 50 bin, Hukuk için EA ilk 125 bin, Mühendislik için SAY ilk 300 bin gibi başarı sırası barajları var. Puanın yetse bile sıralaman yetmezse o bölümü yazamazsın.'
                 },
                 {
-                    q: '0,5 net kuralı tam olarak nedir?',
-                    a: 'TYT puanının hesaplanabilmesi için Türkçe veya Temel Matematik testlerinin en az birinden minimum yarım (0,5) ham net çıkarman şarttır. "Ben Sayısalcıyım, sadece Fene bakarım" diyemezsin. Türkçe ve Matematik ikisi birden 0 veya eksi gelirse, Sosyal ve Feni fullesen dahi TYT puanın hesaplanmaz.'
+                    q: '0,5 net kuralı ne?',
+                    a: 'TYT puanı çıkması için Türkçe ya da Matematik testinin en az birinden 0,5 ham net gerekiyor. İkisi de 0 veya eksi ise Fen ve Sosyal\'den full yapsan da puan hesaplanmaz.'
                 },
                 {
-                    q: 'Kırık OBP tam olarak kimleri vurur?',
-                    a: 'Bir önceki yıl tercih yapıp herhangi bir ön lisans veya lisans programına yerleştirildiysen (açıköğretim kontenjanlı bölümler dahil) — ister kaydol ister hiç gitme — okul puanın yarı yarıya (0,12 yerine 0,06) kesilir. Tercih verip hiçbir yere yerleşemediysen veya mezuna kalıp hiç tercih yapmadıysan puanın kesinlikle kırılmaz.'
+                    q: 'Kırık OBP kimleri etkiler?',
+                    a: 'Geçen yıl bir programa yerleştiysen (açıköğretim dahil) — ister git ister gitme — OBP katsayın 0,12 yerine 0,06 olur. Tercih yapıp hiçbir yere yerleşemediysen veya hiç tercih yapmadıysan kırılma olmaz.'
                 }
             ]
         },
         {
-            category: 'Deneme ve Sıralama Tahmini',
+            category: 'Deneme ve Sıralama',
             icon: '🎯',
             questions: [
                 {
-                    q: 'Buradaki sıralama tahminine ne kadar güvenebilirim?',
-                    a: 'Açık konuşalım: Dünyadaki hiçbir algoritma gerçek sınav sonucunu birebir tutturamaz. Çünkü o yıl sınava kaç kişinin gireceği, soruların zorluk seviyesi ve Türkiye ortalaması ancak sınavdan sonra belli olur. Biz son yılların resmi ÖSYM yığınsal dağılımlarını baz alarak en gerçekçi tahmin bandını sunuyoruz. Kesin sonuç için her zaman ÖSYM sonuç belgesini bekleyin.'
+                    q: 'Sıralama tahminine ne kadar güvenebilirim?',
+                    a: 'Birebir tutturan bir algoritma yok çünkü o yılın sınav katılımı, soru zorluğu ve genel ortalama ancak sonradan belli oluyor. Biz son yılların ÖSYM verilerinden yola çıkarak tahmin bandı sunuyoruz. Kesin sonuç için ÖSYM sonuç belgesini bekle.'
                 },
                 {
                     q: 'AYT\'de hangi testleri çözmeliyim?',
-                    a: 'Kitapçıkta 160 soru var ama senin hedefin kendi alanındaki 80 soru. Sayısalcıysan Matematik (40) + Fen (40); EA\'cıysan Matematik (40) + Edebiyat-Sosyal-1 (40); Sözelciysen Edebiyat-Sosyal-1 (40) + Sosyal-2 (40) çözeceksin. Diğer testleri de çözebilirsin ama kendi puan türüne faydası olmaz, sadece süreni harcar.'
+                    a: 'Kitapçıkta 160 soru var ama senin hedefin kendi alanındaki 80 soru. Sayısalcıysan Mat (40) + Fen (40), EA\'cıysan Mat (40) + Edebiyat-Sos-1 (40), Sözelciysen Edebiyat-Sos-1 (40) + Sosyal-2 (40).'
                 },
                 {
-                    q: 'Son 2-3 ay kala konu çalışmayı bırakmalı mıyım?',
-                    a: 'Son 2-3 ay kala sıfırdan kalın konu kitaplarına gömülmek yerine branş denemelerine ve çıkmış sorulara ağırlık verilmeli. Eksikleri konu çalışarak değil, denemede yanlış yaptığın veya boş bıraktığın soruların analizine odaklanarak kapatmak çok daha hızlı net artırır.'
+                    q: 'Son 2-3 ayda konu çalışmayı bırakmalı mıyım?',
+                    a: 'Sıfırdan kalın kitaplarla konu çalışmak yerine branş denemelerine ve çıkmış sorulara ağırlık ver. Denemede yanlış yaptığın soruların analiziyle eksik kapatmak daha hızlı net artırır.'
                 }
             ]
         },
         {
-            category: 'Sitemiz ve Gizlilik',
+            category: 'Site ve Gizlilik',
             icon: '💻',
             questions: [
                 {
                     q: 'Girdiğim bilgiler kaydediliyor mu?',
-                    a: 'Hayır. Bütün hesaplamalar tamamen kendi cihazının tarayıcısında yapılır, sunucularımıza tek bir veri dahi iletilmez. Sayfayı yenilediğin veya kapattığın an girdiğin her şey silinir.'
+                    a: 'Hayır. Hesaplama tamamen tarayıcında çalışır, sunucuya veri gönderilmez. Sayfayı yenilediğinde veya kapattığında girdiğin her şey silinir.'
                 },
                 {
-                    q: 'Site ücretli mi olacak ileride?',
-                    a: 'Hayır. Sitemiz tamamen ücretsizdir. Ne üyelik, ne e-posta kaydı ne de herhangi bir ücret talep edilmez. Sayfayı aç, netlerini gir ve sonucunu gör; sistem daima böyle kalacak.'
+                    q: 'Site ücretli mi olacak?',
+                    a: 'Hayır. Üyelik, e-posta kaydı veya ücret yok. Aç, netlerini gir, sonucunu gör. Böyle kalacak.'
                 }
             ]
         }
@@ -133,19 +133,19 @@ export default function SSS() {
                         href="/"
                         className="inline-flex items-center gap-1.5 text-blue-600 hover:text-blue-800 text-sm font-medium transition-colors"
                     >
-                        ← Hesaplama Motoruna Dön
+                        ← Hesaplama Aracına Dön
                     </Link>
                 </div>
 
                 <header className="text-center mb-12">
                     <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full mb-3">
-                        Rehberlik &amp; Soru-Cevap
+                        Soru-Cevap
                     </span>
                     <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-3">
-                        Adayların En Çok Yanıldığı Konular
+                        Sık Sorulan Sorular
                     </h1>
                     <p className="text-slate-600 max-w-xl mx-auto text-sm md:text-base">
-                        ÖSYM kılavuzlarındaki karışık maddeleri, katsayıları ve yığılma kurallarını anlaşılır bir dille toparladık.
+                        ÖSYM kılavuzundaki kuralları, katsayıları ve net hesabını anlaşılır şekilde topladık.
                     </p>
                 </header>
 
@@ -176,20 +176,19 @@ export default function SSS() {
                     ))}
                 </div>
 
-                {/* Yardım & İletişim */}
                 <div className="mt-12 bg-white rounded-2xl p-8 border border-slate-200 text-center shadow-sm">
                     <h2 className="text-xl font-bold text-slate-900 mb-2">
-                        Aklına takılan başka bir detay mı var?
+                        Başka sorun mu var?
                     </h2>
                     <p className="text-slate-600 text-sm mb-6 max-w-lg mx-auto">
-                        Blogumuzdaki güncel taktikleri inceleyebilir ya da doğrudan ekibimize soru gönderebilirsin.
+                        Blog yazılarına göz at veya bize doğrudan yaz.
                     </p>
                     <div className="flex flex-wrap gap-3 justify-center">
                         <Link href="/blog" className="px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-xl hover:bg-blue-700 transition-colors shadow-sm">
-                            YKS Rehber Yazılarını Oku
+                            Blog Yazıları
                         </Link>
                         <Link href="/iletisim" className="px-5 py-2.5 bg-slate-100 text-slate-800 text-sm font-semibold rounded-xl hover:bg-slate-200 transition-colors">
-                            Bize Ulaşın
+                            İletişim
                         </Link>
                     </div>
                 </div>

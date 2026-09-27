@@ -54,10 +54,10 @@ export default function YksSon3AyCalismaPlani() {
                             <span className="text-gray-600">• 11 dk okuma</span>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                            YKS Son 3 Ay Çalışma Programı: Netleri Zirveye Taşıma Stratejisi
+                            YKS Son 3 Ay Çalışma Programı
                         </h1>
                         <p className="text-xl text-gray-600">
-                            Takvim Mart veya Nisan&apos;ı gösterdiğinde panik başlar: &quot;Yetişmeyecek, mezuna mı kalsam?&quot; Gerçek şu: YKS&apos;de sıralamaların asıl belirlendiği dönem tam olarak bu son 90 gündür.
+                            Mart-Haziran arası dönemde haftalık planı nasıl kurarsın, TYT-AYT dengesi ne olmalı, çıkmış sorular ne zaman devreye girer — bu yazıda bunları anlattım.
                         </p>
                     </header>
 
@@ -65,162 +65,142 @@ export default function YksSon3AyCalismaPlani() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Mart ortası geldi mi kütüphanelerin havası resmen değişir. Koridorlarda derin iç çekişler, masalarda yarım bırakılmış kahve bardakları, gözlerin altında mor halkalar... Herkes birbirine çaktırmadan yan masadakinin ne çözdüğüne bakar. En çok duyulan fısıltı da bellidir: <em>&quot;Kanka yetişmeyecek galiba ya, mezuna mı bıraksam?&quot;</em>
+                            Son 3 aya girince çoğu kişi panikler. &quot;Yetişmez artık&quot; denir, bazıları direkt mezuna kalmaya karar verir. Ben bunu her sene görüyorum.
                         </p>
 
                         <p>
-                            Dur hemen havlu atma. Dinle beni.
-                        </p>
-
-                        <p>
-                            9 yıldır YKS rehberliği yapıyorum; inan bana, dereceye giren öğrencilerin en az yarısı Mart ayında aynı bunalımı yaşadı. Neden biliyor musun? Çünkü son 90 gün, sınavın &quot;bilgi depolama&quot; evresinden &quot;psikolojik savaş&quot; evresine geçtiği yerdir. Şu an TYT&apos;de 60-65 net bandına çakılıp kalmış, AYT&apos;de 30&apos;u zor gören biriysen bile önünde dağ gibi 3 ay var. Ama bir şartla: Bugüne kadar çalıştığın o yavaş, dağınık tempoyu derhal çöpe atacaksın.
+                            Ama şöyle bir gerçek var: sıralama farkları asıl bu 90 günde açılıyor. Çünkü başvuran 3 milyonun büyük kısmı Nisan gibi temponu düşürüyor, hatta bırakıyor. Masada kalan kazanıyor. Basit.
                         </p>
 
                         <div className="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-r-lg text-amber-950 text-sm my-6">
-                            <strong>Acı gerçek ama bilmen şart:</strong> Son 3 ayda 500 sayfalık kalın konu anlatımı kitaplarını baştan sona okumaya çalışan öğrenci kaybeder. Konu çalışma dönemi bitti; artık nokta atışı hasar tespiti ve acil tamir dönemi. Denemede patladığın konuyu cımbızla çekeceksin, 2 gün üstüne basacaksın, kapatıp geçeceksin.
+                            <strong>Dikkat:</strong> Son 3 ayda 500 sayfalık konu kitabı açıp baştan okumaya çalışmayın. O dönem geçti. Şimdi denemede patladığın konuyu tespit edip ona odaklanma dönemi.
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Millet &quot;Artık Çok Geç&quot; Derken Sen Nasıl Fark Atacaksın?
+                            Son 3 Ayda Neden Net Artışı Hızlanır?
                         </h2>
 
                         <p>
-                            Çevrende &quot;bu saatten sonra çalışanla çalışmayan belli oldu zaten&quot; diyen akrabalar veya rehavete kapılan arkadaşlar olacaktır. Onları duyma bile. Son 3 ayda netlerin asıl roket gibi fırlamasının çok somut sebepleri var:
+                            Üç tane somut sebebi var:
                         </p>
 
                         <ul className="list-disc pl-6 space-y-2">
-                            <li><strong>AYT nankör değildir:</strong> TYT hız ister, refleks ister, bazen 2 ay uğraşırsın 3 net anca oynar. Ama AYT öyle mi? Hayır. AYT doğrudan bilgidir. Bugün oturup Logaritma veya Biyolojideki Fotosentez mekanizmasını kafana kazı, sınavda karşına çıktığı an banko +1.25 net cepte. 1 net için aylarca beklemene gerek yok.</li>
-                            <li><strong>Rakipler kendi kendini eliyor:</strong> İnanılmaz ama gerçek: YKS&apos;ye başvuran 3 milyon adayın en az 1 milyonu Nisan başında havlu atıp ders çalışmayı bırakıyor. &quot;Seneye daha iyi hazırlanırım&quot; yalanına sığınıyorlar. Sadece masada kalıp her gün düzenli 6 saat çalışan biriysen, hiçbir şey yapmasan bile yüz binlerce kişinin önüne geçiyorsun.</li>
-                            <li><strong>Taze bilgi etkisi:</strong> Eylül ayında ezberlediğin Divan Edebiyatı şairlerini şu an hatırlamıyorsun değil mi? Normal. Ama Mayıs&apos;ta tekrar edeceğin bilgiler Haziran sabahı zihninde ışıl ışıl parlayacak.</li>
+                            <li><strong>AYT bilgi bazlı:</strong> TYT&apos;de refleks lazım, 2 ayda 3 net zor oynar. AYT farklı — Logaritmayı bugün öğrenirsen yarınki denemede doğrudan +1 net. Bilgi = net.</li>
+                            <li><strong>Rakip azalıyor:</strong> 3 milyon adaydan tahminen 1 milyonu Nisan&apos;da çalışmayı bırakıyor. Sen devam edersen otomatik olarak yüz binlerce kişinin önüne geçersin.</li>
+                            <li><strong>Mayıs&apos;ta okuduğun kalıcı:</strong> Eylül&apos;de ezberlediğin Divan şairlerini muhtemelen unutmuşsundur. Ama sınava 3 hafta kala tekrar ettiğin bilgi sınav sabahı hâlâ taze.</li>
                         </ul>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            90 Günlük Acil Durum Yol Haritası
+                            90 Günlük Plan
                         </h2>
-
-                        <p>
-                            Gözünü seveyim &quot;her gün her dersten 50 soru&quot; gibi saçma sapan programlar yapma. Haftanı, ayını böl. Neyi ne zaman yapacağını bilmeyen adam kütüphanede boş boş kitaba bakar.
-                        </p>
 
                         <div className="overflow-x-auto my-6">
                             <table className="w-full text-left border-collapse border border-gray-200">
                                 <thead className="bg-gray-100 text-gray-800 text-sm">
                                     <tr>
                                         <th className="p-3 border">Dönem</th>
-                                        <th className="p-3 border">Odak Noktası</th>
+                                        <th className="p-3 border">Odak</th>
                                         <th className="p-3 border">TYT / AYT Dengesi</th>
-                                        <th className="p-3 border">Haftalık Deneme Ritmi</th>
+                                        <th className="p-3 border">Haftalık Deneme</th>
                                     </tr>
                                 </thead>
                                 <tbody className="text-sm">
                                     <tr className="border-b">
-                                        <td className="p-3 font-semibold border">1. Ay (Son 90 - 60 Gün)</td>
-                                        <td className="p-3 border">AYT Ağır Konuları Bitir + Branş Denemeleri</td>
+                                        <td className="p-3 font-semibold border">1. Ay (90-60 gün)</td>
+                                        <td className="p-3 border">AYT&apos;deki zayıf konuları bitir, branş denemeleri</td>
                                         <td className="p-3 border">%35 TYT — %65 AYT</td>
-                                        <td className="p-3 border">2 TYT Genel + 2 AYT Genel + Seri Branş</td>
+                                        <td className="p-3 border">2 TYT + 2 AYT + branş</td>
                                     </tr>
                                     <tr className="border-b bg-gray-50">
-                                        <td className="p-3 font-semibold border">2. Ay (Son 60 - 30 Gün)</td>
-                                        <td className="p-3 border">MEB Kitapları Satır Araları + Son 6 Yılın Çıkmışları</td>
+                                        <td className="p-3 font-semibold border">2. Ay (60-30 gün)</td>
+                                        <td className="p-3 border">MEB kitapları, son 6 yılın çıkmışları</td>
                                         <td className="p-3 border">%30 TYT — %70 AYT</td>
-                                        <td className="p-3 border">3 TYT Genel + 3 AYT Genel</td>
+                                        <td className="p-3 border">3 TYT + 3 AYT</td>
                                     </tr>
                                     <tr className="border-b">
-                                        <td className="p-3 font-semibold border">3. Ay (Son 30 Gün)</td>
-                                        <td className="p-3 border">Saat 10:15 Kondisyonu + Hata Defteri + Uyku Ayarı</td>
-                                        <td className="p-3 border">%20 TYT — %80 AYT Tekrar</td>
-                                        <td className="p-3 border">Neredeyse her sabah gerçek sınav provası</td>
+                                        <td className="p-3 font-semibold border">3. Ay (son 30 gün)</td>
+                                        <td className="p-3 border">Saat 10:15 provası, hata defteri, uyku düzeni</td>
+                                        <td className="p-3 border">%20 TYT — %80 AYT tekrar</td>
+                                        <td className="p-3 border">Her sabah sınav provası</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            1. Ay: AYT&apos;nin Belini Kırma Dönemi (Son 90-60 Gün)
+                            1. Ay: AYT&apos;deki Zayıf Konular (90-60 Gün Kala)
                         </h2>
 
                         <p>
-                            Şimdi dürüst olalım: AYT&apos;de en çok hangi konulardan korkuyorsun?
+                            Çoğu kişi bildiği konuları tekrar tekrar çözer, zayıf olduğu konudan kaçar. TYT Türkçe&apos;den 120 soru çözmek kolay geliyor çünkü zaten yapabiliyorsun. Ama AYT&apos;deki türev-integral veya organik kimya açık kalıyor.
                         </p>
 
                         <p>
-                            Birçok öğrenci türev-integral veya organik kimyadan korktuğu için sürekli bildiği TYT Türkçe testlerini çözüp kendi vicdanını rahatlatır. &quot;Bugün 120 soru çözdüm&quot; der ama çözdüğü sorular zaten yapabildikleridir. Kendini kandırma.
-                        </p>
-
-                        <p>
-                            Hemen boş bir kağıt çıkar. Her dersten <strong>&quot;ÖSYM&apos;nin her sene sorduğu ama benim elimi süremediğim&quot;</strong> 2 ya da 3 konu seç. Mesela:
+                            Bir kağıt al. Her dersten ÖSYM&apos;nin sık sorduğu ama senin elini süremediğin 2-3 konuyu yaz:
                         </p>
 
                         <ul className="list-disc pl-6 space-y-2">
-                            <li><strong>Matematik:</strong> Türevin geometrik yorumu, logaritma özellikleri veya trigonometride yarım açı formülleri. Hangi konunun kaç soru getirdiğini görmek için <Link href="/blog/ayt-matematik-konulari" className="text-blue-600 font-semibold hover:underline">AYT Matematik konu dağılımı</Link> tablomuza bir göz at.</li>
-                            <li><strong>Fizik:</strong> İndüksiyon akımı ve transformatörler (her sene banko gelir).</li>
-                            <li><strong>Biyoloji:</strong> Hücresel solunum basamakları veya bitki biyolojisi.</li>
+                            <li><strong>Matematik:</strong> Türevin geometrik yorumu, logaritma, trigonometride yarım açı. Konu dağılımı için <Link href="/blog/ayt-matematik-konulari" className="text-blue-600 font-semibold hover:underline">AYT Matematik konuları</Link> tablosuna bak.</li>
+                            <li><strong>Fizik:</strong> İndüksiyon ve transformatörler — her sene gelir.</li>
+                            <li><strong>Biyoloji:</strong> Hücresel solunum basamakları, bitki biyolojisi.</li>
                             <li><strong>Edebiyat:</strong> Milli Edebiyat ve Cumhuriyet dönemi romancıları.</li>
                         </ul>
 
                         <p>
-                            Önündeki 4 haftayı sadece bu kritik omurga konuları yok etmeye ada. Her biri için bir hocadan video izle, arkasından 150-200 soru çöz, olayı kapat.
+                            İlk 4 haftanı bu konulara ayır. Her biri için video izle, 150-200 soru çöz, kapat geç.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            2. Ay: MEB Kitapları ve Çıkmış Sorular (Son 60-30 Gün)
+                            2. Ay: MEB Kitapları ve Çıkmış Sorular (60-30 Gün Kala)
                         </h2>
 
                         <p>
-                            Mayıs ayında piyasadaki &quot;aşırı zor, fantastik&quot; denemelerle moralini sıfırlamayı bırak. Sınavı o yayınevi hazırlamıyor; ÖSYM hazırlıyor.
+                            Mayıs&apos;ta piyasadaki &quot;süper zor&quot; denemelerle uğraşmayı bırak. Sınavı o yayınevi değil ÖSYM hazırlıyor.
                         </p>
 
                         <p>
-                            ÖSYM soru havuzundaki hocaların elinde ne var biliyor musun? MEB ders kitapları. Özellikle Kimya, Biyoloji, Tarih ve Felsefe&apos;de MEB 11 ve 12. sınıf kitaplarının kenarındaki &quot;Biliyor musunuz?&quot; kutularından, deney görsellerinden soru devşirirler. MEB kitaplarını roman gibi baştan sona oku, altını çiz. Sınavda birebir aynı cümleyi görünce &quot;iyi ki okumuşum&quot; diyeceksin.
+                            ÖSYM soru hazırlayan hocalar MEB ders kitaplarından yararlanır. Kimya, Biyoloji, Tarih, Felsefe&apos;de 11-12. sınıf MEB kitaplarının kenarındaki kutucuklar, deney görselleri soru kaynağı. O kitapları roman gibi oku, altını çiz.
                         </p>
 
                         <div className="bg-emerald-50 border-l-4 border-emerald-600 p-5 rounded-r-lg text-emerald-950 text-sm my-6">
-                            <strong>Çıkmış soru taktiği:</strong> 2019-2026 arası tüm YKS sorularını PDF&apos;ten değil, kitapçık şeklinde önune al. Gerçek saat tut, masada çay kahve olmadan çöz. Yanlış yaptığın sorunun yanına &quot;Formülü mü unuttum, soruyu mu yanlış okudum, şıkka mı atladım?&quot; diye not al.
+                            <strong>Çıkmış sorular için:</strong> 2019-2026 arası tüm YKS sorularını kitapçık formatında çöz. Gerçek süre tut. Yanlış yaptığın sorunun yanına &quot;formülü mü unuttum, soruyu mu yanlış okudum, şıkka mı atladım&quot; diye not düş.
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            3. Ay: 10:15 Rutini ve Hata Defteri (Son 30 Gün)
+                            3. Ay: Ritim ve Psikoloji (Son 30 Gün)
                         </h2>
 
                         <p>
-                            Son aya girdiğinde artık yeni konu öğrenilmez. Beyin yeni konuyu sindiremez, eskileri de karıştırır. Son 30 günün olayı tamamen ritim ve psikolojidir:
+                            Son ayda yeni konu öğrenmek mantıksız. Beyin yeni bilgiyi sindirmeye çalışırken eskileri karıştırır. Bu dönem tamamen tekrar, ritim ve uyku düzeni meselesi.
                         </p>
 
                         <p>
-                            <strong>1. Sabah 10:15 kuralı:</strong> Sınav 10:15&apos;te başlıyor. Sen gece 3&apos;e kadar çalışıp sabah 11&apos;de uyanmaya devam edersen, sınav sabahı 10:15&apos;te beynin uykuda olur; paragrafı 3 kere okursun bir şey anlamazsın. Son bir ay her gün istisnasız saat 07:30&apos;da ayakta ol, 10:15&apos;te masaya oturup denemeni başlat.
+                            <strong>Sabah 10:15 kuralı:</strong> Sınav 10:15&apos;te başlıyor. Gece 3&apos;e kadar çalışıp 11&apos;de kalkarsan sınav sabahı beynin uykuda olur. Son bir ay her gün 07:30&apos;da kalk, 10:15&apos;te masaya otur, deneme başlat.
                         </p>
 
                         <p>
-                            <strong>2. Hata defteri mucizesi:</strong> Bugüne kadar girdiğin tüm denemelerin yanlışlarını kestin mi? Kesmediysen hemen başla. Bir defter al, yapamadığın soruları yapıştır. Akşam yatmadan önce yarım saat sadece o defteri karıştır. İnan, neti artıran şey bildiğin soruları çözmek değil; yapamadığın o tek sorunun mantığını çözmektir.
+                            <strong>Hata defteri:</strong> Bugüne kadar girdiğin denemelerin yanlışlarını kes-yapıştır yap. Akşam yatmadan yarım saat sadece o defteri karıştır. Neti artıran şey bildiğin soruyu çözmek değil, yapamadığın sorunun mantığını kavramak.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Denemeyi Çözüp Kenara Fırlatanlar Neden Kazanamaz?
+                            Deneme Sonrası Analiz
                         </h2>
 
                         <p>
-                            165 dakika masada ter döküyorsun, deneme bitiyor. Doğru yanlışını sayıyorsun: <em>&quot;Aman be, yine 68 geldi&quot;</em> deyip kitapçığı masanın altına atıyorsun.
-                        </p>
-
-                        <p>
-                            Tebrikler, az önce 3 saatini tamamen çöpe attın.
-                        </p>
-
-                        <p>
-                            Denemenin amacı puan görmek değildir; deneme senin röntgenindir. Neren kırık, neren ağrıyor onu gösterir. Deneme biter bitmez 1 saat mola ver, sonra o kitapçığı eline al:
+                            165 dakika masada ter döküyorsun, bitiyor. Doğru yanlışını sayıyorsun, &quot;yine aynı net&quot; deyip kitapçığı kenara atıyorsun. Ama asıl iş o kitapçıktaki yanlışları analiz etmek.
                         </p>
 
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>Yanlış yaptığın her sorunun video çözümünü izle, çözümü kapatıp aynı soruyu beyaz bir kağıda tek başına sıfırdan çöz.</li>
-                            <li>Turlama taktiğinde nerede takıldın? Hangi soruda 4 dakika inatlaştın? O inatlaştığın soru yüzünden arkadaki 3 tane kek soruyu kaçırdın mı? Kaçırdın. İşte bunu bir daha yapmayacaksın. Detaylar için <Link href="/blog/tyt-net-artirma-taktikleri" className="text-blue-600 hover:underline">TYT net artırma taktikleri</Link> yazımıza mutlaka bak.</li>
-                            <li>Sallayıp tutturduğun soruları da yanlış say. Sınavda şans her zaman yanında olmaz.</li>
+                            <li>Yanlış yaptığın sorunun video çözümünü izle, sonra videoyu kapat ve aynı soruyu sıfırdan tek başına çöz.</li>
+                            <li>Hangi soruda gereksiz inatlaştın? O yüzden arkadaki kolay soruları kaçırdın mı? <Link href="/blog/tyt-net-artirma-taktikleri" className="text-blue-600 hover:underline">TYT net artırma taktikleri</Link> yazısına da göz at.</li>
+                            <li>Sallayıp tutturduğun soruları da yanlış say. Sınav günü o şansı garanti edemezsin.</li>
                         </ul>
 
                         {/* CTA Kutusu */}
                         <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-2xl p-8 text-center my-10 shadow-lg">
-                            <h3 className="text-2xl font-bold mb-3">Şu Anki Durumunu Net Olarak Gör</h3>
+                            <h3 className="text-2xl font-bold mb-3">Mevcut Netlerini Hesapla</h3>
                             <p className="text-blue-100 max-w-2xl mx-auto mb-6 text-sm md:text-base">
-                                Hayal kurmayı bırak, gerçek rakamlarla konuşalım. Son deneme netlerini ve diploma notunu gir; güncel ÖSYM katsayılarıyla tahmini sıralamanı anında gör.
+                                Son deneme netlerini ve diploma notunu gir, güncel ÖSYM katsayılarına göre tahmini sıralamanı gör.
                             </p>
                             <Link 
                                 href="/" 
@@ -230,16 +210,8 @@ export default function YksSon3AyCalismaPlani() {
                             </Link>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Son Söz: Kafayı Rahat Tut, Masadan Kalkma
-                        </h2>
-
                         <p>
-                            Günde 4 saat uyuyup gözleri kan çanağı gezen arkadaşlarına özenme. Uykusuz beyin denemede dikkat hatası yaptırır, işlem hatası yaptırır, bildiğin soruyu yanlış okutur. Günde 7-8 saat tertemiz uyu.
-                        </p>
-
-                        <p>
-                            Ve unutma: Sınavı kazananlar en zekiler değil; Mart, Nisan ve Mayıs aylarının o ağır psikolojik baskısına dayanıp her sabah o masaya oturmaya devam edenlerdir. Hadi şimdi kalk, o yapamadığın konunun başına geç. Daha hiçbir şey bitmedi.
+                            Son 3 ay ağır bir dönem. Ama günde 7-8 saat uyumayı ihmal etme. Uykusuz beyin denemede dikkat hatası yapar, bildiğin soruyu yanlış okur. Düzenli uyku, düzenli çalışma — bu kadar.
                         </p>
                     </div>
 
@@ -249,7 +221,6 @@ export default function YksSon3AyCalismaPlani() {
                             <span className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-md font-medium">#calismaProgrami</span>
                             <span className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-md font-medium">#tytNetArtırma</span>
                             <span className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-md font-medium">#aytHazirlik</span>
-                            <span className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-md font-medium">#yksRehberlik</span>
                         </div>
                         <div className="flex justify-between items-center text-sm">
                             <Link href="/blog" className="text-blue-600 hover:underline font-medium">← Blog Listesine Dön</Link>

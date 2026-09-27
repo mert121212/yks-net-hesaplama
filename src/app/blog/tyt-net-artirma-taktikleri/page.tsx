@@ -4,13 +4,13 @@ import AuthorProfile from '@/components/AuthorProfile'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
-    title: 'TYT Net Artırma Taktikleri 2027 | 60-70 Bandında Sıkışanlar İçin',
-    description: 'TYT denemelerinde netler neden takılır kalır? 60-70 net platosundan kurtulma yolları, yanlış analizi defteri, paragraf-problem rutini ve hızlanma teknikleri.',
-    keywords: 'tyt net artırma, tyt netleri nasıl artar, tyt 70 net, tyt matematik hızlanma, yks deneme analizi',
+    title: 'TYT Net Artırma Taktikleri: 60-70 Bandından Çıkış',
+    description: 'TYT denemelerinde 60-70 bandında takılanlar için pratik analiz yöntemleri, branş denemesi kullanımı ve tur tekniği.',
+    keywords: 'tyt net artırma, tyt deneme analizi, tyt 70 net, tyt hızlanma, tyt tur tekniği',
     alternates: { canonical: 'https://yksnethesapla.com/blog/tyt-net-artirma-taktikleri' },
     openGraph: {
-        title: 'TYT Net Artırma: 60-70 Cehenneminden Çıkış Yolu',
-        description: 'Aylardır aynı netlerde takılı kalanlar için radikal değişiklikler ve deneme analizi yöntemleri.',
+        title: 'TYT Net Artırma Taktikleri: 60-70 Bandından Çıkış',
+        description: 'Deneme netleri neden belirli bir puanda takılır, analiz nasıl yapılır ve branş denemeleri nasıl kullanılır?',
         type: 'article',
         publishedTime: '2026-02-10',
         modifiedTime: '2026-02-13',
@@ -31,12 +31,12 @@ export default function TYTNetArtirma() {
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
                 <BlogArticleSchema 
-                    title="TYT Net Artırma Taktikleri 2027 | 60-70 Bandında Sıkışanlar İçin" 
-                    description="TYT denemelerinde netler neden takılır kalır? 60-70 net platosundan kurtulma yolları, yanlış analizi defteri, paragraf-problem rutini ve hızlanma teknikleri."
+                    title="TYT Net Artırma Taktikleri: 60-70 Bandından Çıkış" 
+                    description="TYT denemelerinde 60-70 bandında takılanlar için pratik analiz yöntemleri, branş denemesi kullanımı ve tur tekniği."
                     datePublished="2026-02-10"
                     dateModified="2026-02-13"
                     url="https://yksnethesapla.com/blog/tyt-net-artirma-taktikleri"
-                    keywords={['tyt net artırma', 'tyt netleri nasıl artar', 'tyt 70 net', 'tyt matematik hızlanma', 'yks deneme analizi']}
+                    keywords={['tyt net artırma', 'tyt deneme analizi', 'tyt 70 net', 'tyt hızlanma', 'tyt tur tekniği']}
                 />
                 <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
                     <nav className="mb-8 text-sm text-gray-600">
@@ -49,15 +49,15 @@ export default function TYTNetArtirma() {
 
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
-                            <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Taktik</span>
+                            <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Strateji</span>
                             <time className="text-gray-600" dateTime="2026-02-10">10 Şubat 2026</time>
-                            <span className="text-gray-600">• 8 dk okuma</span>
+                            <span className="text-gray-600">• 7 dk okuma</span>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                            60-70 Net Bandında Sıkışanlar İçin TYT Net Artırma Reçetesi
+                            TYT Net Artırma Yolları: 60-70 Bandını Aşmak
                         </h1>
                         <p className="text-xl text-gray-600">
-                            Aylardır her pazar denemeye girip yine 63-64 net görmek moralinizi bozabilir. Kabahat zekanızda değil; eski çalışma yönteminizin artık sınırına dayanmış olmasında.
+                            Aylarca haftalık denemelere girip hep 62-65 civarında kalmak sık rastlanan bir durum. 60 nete kadar sadece konu çalışarak gelinir, sonrası sınav yönetimiyle ilgilidir.
                         </p>
                     </header>
 
@@ -65,101 +65,85 @@ export default function TYTNetArtirma() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Buna camiada <strong>&quot;62 Net Laneti&quot;</strong> derler. Kasım&apos;da girersin 63 gelir. Ocak&apos;ta girersin 61 gelir. Mart&apos;ta girersin 64 gelir. Masanın başında günde 7 saat ders çalışıyorsundur, soru bankalarını bitirmişsindir ama o ibre bir türlü 75&apos;e vurmaz. İnsanın içini kemiren o hissi çok iyi bilirim: <em>&quot;Acaba bende mi bir gerizekalılık var?&quot;</em>
+                            TYT hazırlığında en sık görülen plato 60-70 net aralığıdır. Temel konuların çoğu bitmiştir, formüller bilinir ama sınav süresi yetmez veya dikkatsizlikten 8-10 yanlış çıkar.
                         </p>
 
                         <p>
-                            Yok kardeşim, sende hiçbir sorun yok.
-                        </p>
-
-                        <p>
-                            Sorun şurada: 30 netten 60 nete çıkarken kullandığın alet çantasıyla, 65&apos;ten 85&apos;e çıkamazsın. 60 nete kadar konu anlatımı dinleyip soru çözmek işe yarar çünkü bilgi eksiktir. Ama 65&apos;in üzerine çıktığın an oyunun adı değişir: Artık bilgi değil; hız, sınav psikolojisi ve turlama disiplini yarışır.
-                        </p>
-
-                        <p>
-                            Haftalardır aynı yerde patinaj çekmekten delirmek üzereysen şu 4 taktiği hemen yarın sabah hayatına sok:
+                            30 netten 60 nete çıkmakla 65 netten 80 nete çıkmak aynı şey değil. İlk aşamada konu eksiği kapatılır. İkinci aşamada ise hız, süre dağılımı ve soru eleme becerisi devreye girer.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            1. O Deneme Kitapçığını Masanın Altına Fırlatmayı Kes!
+                            1. Deneme Analizini Doğru Yapmak
                         </h2>
                         <p>
-                            Denemeden çıkıp optiği okutuyorsun. Sonuç: 64.25. Surat asılıyor, kitapçığı çantanın en dibine tıkıyorsun ve bir daha yüzüne bakmıyorsun.
+                            Çoğu aday deneme bittikten sonra sadece toplam nete bakar ve kitapçığı kenara koyar. Asıl gelişim yanlış yapılan veya boş bırakılan sorularda gizlidir.
                         </p>
                         <p>
-                            En büyük hatan bu işte.
-                        </p>
-                        <p>
-                            O denemede doğru yaptığın 65 soru seni üniversiteye sokmayacak; onlar zaten bildiğin şeyler. Seni dereceye sokacak olan şey, <strong>yapamadığın o 22 soru ile sallayıp tutturduğun o 6 soru</strong>.
-                        </p>
-                        <p>
-                            Hemen yarın kırtasiyeden telli kalın bir defter al. Yapamadığın soruları makasla kes, o deftere yapıştır. Altına video çözümünden hocanın kullandığı kilit cümleyi kendi el yazınla yaz. Her yeni denemeden önceki 30 dakikanı bu defteri karıştırarak geçir. İnan bana, soru tipleri uzaydan gelmiyor; ÖSYM dönüp dolaşıp aynı mantığı soruyor. Kendi hatalarınla yüzleştiğin an netlerin kendiliğinden 75&apos;e tırmanır.
-                        </p>
-
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            2. Sabah Rutini: 20 Paragraf + 15 Problem (Pazarlıksız)
-                        </h2>
-                        <p>
-                            TYT kitapçığında tam 120 soru var. Bunun neredeyse 45 tanesi ne biliyor musun? Uzun paragraflar ve hikayeli problemler. Yani sınavın neredeyse %40&apos;ı sadece okuduğunu hızlı anlama ve denklem kurma kondisyonudur.
-                        </p>
-                        <p>
-                            Bunu gece kafan kazan gibiyken yatakta çözdüğün 10 soruyla geliştiremezsin.
-                        </p>
-
-                        <div className="bg-slate-900 text-white p-6 rounded-xl my-6 not-prose border border-slate-800 shadow-md">
-                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Her Sabah İstisnasız Uygula:</h3>
-                            <p className="text-sm text-slate-300 leading-relaxed">
-                                Sabah gözünü açtın, kahveni aldın, masaya oturdun. Başka hiçbir derse bakmadan kronometreyi bas: <strong>20 paragraf + 15 problem</strong>. Süre sınırı: En geç 42 dakika. Bunu 21 gün aralıksız yap; denemede Türkçe ve Matematik sürenin nasıl 20 dakika kısaldığına inanamayacaksın.
-                            </p>
-                        </div>
-
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            3. Genel Deneme Yorgunluğu Yerine &quot;Nokta Atışı&quot; Branş Denemesi
-                        </h2>
-                        <p>
-                            Haftada 4 tane genel TYT denemesine giren öğrenciler görüyorum. Çocuk perişan, ruhunu teslim etmiş. Genel deneme çözmekten konu tekrarı yapmaya dermanı kalmamış.
-                        </p>
-                        <p>
-                            Genel denemeyi haftada 2 ile sınırla. Kalan günlerde branş denemesi çöz:
+                            Her denemeden sonra şu üç soruyu sormak gerekir:
                         </p>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>Sosyalde 9-10 nette misin? Aç bir Sosyal branş denemesi, 12 dakikada çöz, yanlışlarına bak. Günde 2 adet çözsen haftada 140 sosyal sorusu tararsın; netin anında 16&apos;ya fırlar.</li>
-                            <li>Fende fizik formüllerini mi karıştırıyorsun? Sadece Fen branş denemesiyle eksik konuları teşhis et.</li>
+                            <li>Bu soruyu konu eksiğinden mi kaçırdım?</li>
+                            <li>İşlem hatası veya soru kökünü yanlış okuma mı var?</li>
+                            <li>Soruyla inatlaşıp 4-5 dakika harcadım mı?</li>
+                        </ul>
+                        <p>
+                            Yapılamayan soruları bir dosyada toplayıp haftada bir tekrar çözmek, aynı tip soruda tekrar hata yapmayı engeller.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            2. Günlük Paragraf ve Problem Rutini
+                        </h2>
+                        <p>
+                            TYT&apos;de Türkçe ve Matematik testlerinin yaklaşık 40 sorusu doğrudan okuduğunu anlama ve denklem kurma becerisini ölçer.
+                        </p>
+                        <p>
+                            Bu iki alanı haftalık birkaç saatlik çalışmayla geliştirmek zordur. Günün ilk saatlerinde süre tutarak 20 paragraf ve 10-15 problem çözmek refleks kazandırır.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            3. Genel Deneme Yerine Branş Denemesi
+                        </h2>
+                        <p>
+                            Haftada 3-4 genel TYT denemesine girmek hem fiziksel olarak yorar hem de eksik kapatmaya zaman bırakmaz.
+                        </p>
+                        <p>
+                            Genel denemeyi haftada 1 veya 2 ile sınırlayıp aradaki günlerde branş denemesi çözmek daha verimlidir:
+                        </p>
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li><strong>Sosyal branş denemesi:</strong> 20 soruyu 12-15 dakikada çözüp kavram eksiklerini tek tek not alın. Kısa sürede 10 netten 15 nete çıkabilir.</li>
+                            <li><strong>Fen branş denemesi:</strong> TYT Fen&apos;de bilgi soruları hızlı çözülür. Eksik konu hemen belli olur.</li>
                         </ul>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            4. Sorularla İnatlaşma Egosunu Çöpe At
+                            4. Turlama Tekniği
                         </h2>
                         <p>
-                            &quot;Ben fonksiyonları 3 hafta boyunca çalıştım, bu soruyu çözmeden bu sayfayı çevirmem!&quot;
+                            Bir soruya takılıp 3-4 dakika harcamak sınavın sonundaki kolay soruları görmeyi engeller.
                         </p>
                         <p>
-                            İşte sınavı kaybettiren kafa yapısı bu. Bir soruyla 5 dakika inatlaştın mı bittin. Soru zor olabilir, tuzak olabilir veya o an senin kafan basmamış olabilir. Sınav masasında ego yapan adamı ÖSYM fena hırpalar.
-                        </p>
-                        <p>
-                            Kural çok net: Soruyu okudun, 35-40 saniye geçti ve hala kafanda bir ışık yanmadı mı? Yanına bir yuvarlak koy ve hemen sonraki soruya uç. Arkada seni bekleyen 15 saniyelik kek sorular var. Önce onları topla, puanları çantaya at; o uğraştırıcı soruya sınavın sonunda dönersin.
+                            İlk 40 saniyede çözüm yolu netleşmeyen sorunun yanına bir işaret koyup hemen sonrakine geçmek gerekir. Tüm testi bir tur gezdikten sonra kalan sürede işaretli sorulara dönülmelidir.
                         </p>
 
-                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
-                            <h3 className="text-2xl font-bold mb-3">Yeni Netlerinizi Simüle Edin</h3>
-                            <p className="text-blue-100 mb-6 max-w-xl mx-auto">
-                                Taktikleri uygulayıp netlerinizi 5-10 net yukarı taşıdığınızda sıralamanızın Türkiye genelinde kaç bin kişi ileri fırlayacağını hesaplama motorumuzda anında görün.
+                        <div className="bg-slate-900 text-white rounded-2xl p-6 my-8 not-prose">
+                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Netlerinizi Simüle Edin</h3>
+                            <p className="text-sm text-slate-300 mb-4">
+                                Farklı derslerdeki 2-3 netlik artışların toplam puanınıza ve sıralamanıza etkisini hesaplama aracımızda görebilirsiniz.
                             </p>
-                            <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
+                            <Link href="/" className="inline-block bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
                                 Net ve Sıralama Hesapla →
                             </Link>
                         </div>
 
                         <div className="border-t pt-8 mt-10">
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">İlginizi Çekebilecek Diğer Rehberler</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">İlgili Yazılar</h3>
                             <div className="grid md:grid-cols-2 gap-4">
                                 <Link href="/blog/tyt-net-hesaplama-rehberi" className="p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
-                                    <p className="font-semibold text-blue-900">TYT Net Hesaplama ve Katsayılar →</p>
-                                    <p className="text-xs text-gray-600 mt-1">Derslerin ağırlık oranları ve test bazında puan getirileri.</p>
+                                    <p className="font-semibold text-blue-900">TYT Net Hesaplama Rehberi →</p>
+                                    <p className="text-xs text-gray-600 mt-1">Derslerin katsayıları ve net hesaplama formülü.</p>
                                 </Link>
                                 <Link href="/blog/yks-yigilma-tehlikesi" className="p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
-                                    <p className="font-semibold text-purple-900">YKS Yığılma Tehlikesi →</p>
-                                    <p className="text-xs text-gray-600 mt-1">Orta puan bantlarında on binlerce rakibin arasından sıyrılma sanatı.</p>
+                                    <p className="font-semibold text-purple-900">YKS Yığılma Bölgeleri →</p>
+                                    <p className="text-xs text-gray-600 mt-1">Hangi puan aralıklarında yığılma olur, 1 netin etkisi nedir?</p>
                                 </Link>
                             </div>
                         </div>

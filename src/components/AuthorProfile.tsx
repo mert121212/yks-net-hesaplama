@@ -52,7 +52,7 @@ export default function AuthorProfile() {
                 </div>
 
                 <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                    Yıllardır ÖSYM yerleştirme verilerini, testlerin standart sapmalarını ve yığılma tablolarını inceliyorum. Ezbere tavsiyeler vermek yerine; doğrudan sınav istatistiklerine, çıkmış sorulara ve masa başındaki gerçek deneme deneyimlerine dayalı hesaplama araçları ve rehberler hazırlıyorum.
+                    ÖSYM yerleştirme verilerini, standart sapmaları ve yığılma tablolarını inceliyorum. Buradaki hesaplama araçlarını ve rehberleri bu verilere dayanarak hazırlıyorum.
                 </p>
 
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 text-xs">

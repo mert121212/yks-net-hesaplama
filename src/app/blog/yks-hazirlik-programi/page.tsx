@@ -4,13 +4,13 @@ import AuthorProfile from '@/components/AuthorProfile'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
-    title: 'YKS Hazırlık Programı 2027: Gerçekçi Günlük ve Haftalık Çalışma Planı',
-    description: 'YKS hazırlığında sahte verimlilik tuzağı, unutma eğrisini yenme yöntemleri, 50 dakikalık odak blokları ve kişiye özel çalışma mimarisi.',
-    keywords: 'yks hazırlık programı, yks ders çalışma programı, verimli ders çalışma, pomodoro yks, feynman tekniği',
+    title: 'YKS Hazırlık Programı 2027: Günlük ve Haftalık Çalışma Planı',
+    description: 'YKS hazırlığında görev odaklı çalışma, blok süre yönetimi, TYT-AYT dengesi ve haftalık ders programı oluşturma rehberi.',
+    keywords: 'yks hazırlık programı, yks ders çalışma programı, verimli ders çalışma, yks çalışma planı',
     alternates: { canonical: 'https://yksnethesapla.com/blog/yks-hazirlik-programi' },
     openGraph: {
-        title: 'YKS Hazırlık Programı 2027: Gerçekçi Çalışma Planı',
-        description: 'Bilimsel çalışma teknikleriyle YKS hazırlığı. Masada saatlerce oturup sıfır çekenler için çıkış rehberi.',
+        title: 'YKS Hazırlık Programı 2027: Günlük ve Haftalık Çalışma Planı',
+        description: 'Sürdürülebilir YKS hazırlık programı oluşturma adımları ve çalışma blokları.',
         type: 'article',
         publishedTime: '2026-02-20',
         modifiedTime: '2026-02-23',
@@ -31,12 +31,12 @@ export default function YKSHazirlikProgrami() {
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
                 <BlogArticleSchema 
-                    title="YKS Hazırlık Programı 2027: Gerçekçi Günlük ve Haftalık Çalışma Planı" 
-                    description="YKS hazırlığında sahte verimlilik tuzağı, unutma eğrisini yenme yöntemleri, 50 dakikalık odak blokları ve kişiye özel çalışma mimarisi."
+                    title="YKS Hazırlık Programı 2027: Günlük ve Haftalık Çalışma Planı" 
+                    description="YKS hazırlığında görev odaklı çalışma, blok süre yönetimi, TYT-AYT dengesi ve haftalık ders programı oluşturma rehberi."
                     datePublished="2026-02-20"
                     dateModified="2026-02-23"
                     url="https://yksnethesapla.com/blog/yks-hazirlik-programi"
-                    keywords={['yks hazırlık programı', 'yks ders çalışma programı', 'verimli ders çalışma', 'pomodoro yks', 'feynman tekniği']}
+                    keywords={['yks hazırlık programı', 'yks ders çalışma programı', 'verimli ders çalışma', 'yks çalışma planı']}
                 />
                 <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
                     <nav className="mb-8 text-sm text-gray-600">
@@ -49,15 +49,15 @@ export default function YKSHazirlikProgrami() {
 
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
-                            <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Hazırlık</span>
+                            <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Rehber</span>
                             <time className="text-gray-600" dateTime="2026-02-20">20 Şubat 2026</time>
-                            <span className="text-gray-600">• 9 dk okuma</span>
+                            <span className="text-gray-600">• 7 dk okuma</span>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                            &quot;Günde 10 Saat Çalışıyorum Ama Netlerim Artmıyor&quot; Diyenler İçin Gerçekçi Program
+                            YKS Hazırlık Programı: Günlük ve Haftalık Çalışma Düzeni
                         </h1>
                         <p className="text-xl text-gray-600">
-                            İnternetten indirilen şablon çizelgelerin neden 3. günde çöpe gittiğini ve saat doldurmak yerine net artıran gerçek çalışma mantığını konuşalım.
+                            Saat doldurmak yerine net kazandıran görev odaklı çalışma mantığı, odak blokları ve sürdürülebilir bir haftalık planın temel ilkeleri.
                         </p>
                     </header>
 
@@ -65,134 +65,71 @@ export default function YKSHazirlikProgrami() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            İnternette gördüğünüz o &quot;Günde 14 saat ders çalışan derece öğrencisi&quot; videolarını ya da askeri nizam hazırlanmış saat saat PDF çizelgelerini şimdilik bir kenara bırakın.
-                        </p>
-                        <p>
-                            Çünkü o şablon programlar genelde en fazla 3 gün sürer. 4. gün sabah alarm çaldığında yataktan kalkamazsınız ve içinizde derin bir yetersizlik hissi başlar: &quot;Ben disiplinsizim, yapamıyorum.&quot;
-                        </p>
-                        <p>
-                            Sorun sizde falan değil. Sorun, insanın biyolojik ritmine ve gerçek hayata uymayan hayali planlar kurmakta.
-                        </p>
-                        <p>
-                            Masa başında 10 saat oturup günün sonunda sadece 50 test sorusu çözebilen, her 10 dakikada bir elini telefona atan bir adayın yaptığı şey ders çalışmak değil; sadece sandalyede vakit öldürmektir.
-                        </p>
-                        <p>
-                            Gerçekten net artıran sürdürülebilir bir düzen kurmak istiyorsanız, şu 4 temel kuralı masanıza yapıştırın:
+                            YKS hazırlığında katı ve saatlik çizelgeler yerine görev odaklı, esnek ve ölçülebilir bir çalışma planı uygulamak daha uzun soluklu bir verim sağlar.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            1. Saat Değil, Görev Odaklı Çalışın
+                            1. Saat Odaklı Değil, Görev Odaklı Planlama
                         </h2>
                         <p>
-                            &quot;Bugün 8 saat çalışacağım&quot; demek zihne kaçamak alanı bırakır. Masada oturursunuz ama aklınız başka yerdedir.
+                            &quot;Günde 8 saat masada oturmak&quot; tek başına verim sağlamaz. Bunun yerine günün hedefleri net tanımlanmalıdır:
                         </p>
-                        <p>
-                            Bunun yerine net hedefler koyun: &quot;Bugün Logaritmadan 50 soru bitireceğim, 20 paragraf çözeceğim ve 1 tane Türkçe branş denemesini analiz edeceğim.&quot;
-                        </p>
-                        <p>
-                            Masadan ne zaman kalkacağınızı saate bakarak değil, önünüzdeki görevi tamamlayarak belirleyin. Bu yöntem zihninizi oyalanmaktan kurtarır ve bitirme disiplini kazandırır.
-                        </p>
+                        <ul className="list-disc pl-6 space-y-1 text-sm">
+                            <li>20 paragraf ve 15 problem sorusu çözmek.</li>
+                            <li>AYT Matematikte hedeflenen bir alt konuyu tamamlayıp 40 soru çözmek.</li>
+                            <li>Haftalık bir branş denemesini çözüp yanlış analizini yapmak.</li>
+                        </ul>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            2. 25 Dakikalık Pomodoro Tuzağı: 50+10 Kuralı
+                            2. 50+10 Odak Blokları
                         </h2>
                         <p>
-                            İnternette çok popüler olan &quot;25 dakika ders, 5 dakika mola&quot; kuralı genel işler için faydalı olabilir; ancak YKS için son derece sakıncalıdır.
-                        </p>
-                        <p>
-                            Unutmayın: TYT 165 dakika, AYT ise 180 dakikadır. Sınav salonunda her 25 dakikada bir kalemi bırakıp dinlenme şansınız yok. Beyninizi sürekli 25 dakikada bir ödüllendirilmeye alıştırırsanız, sınav sabahı 40. soruya geldiğinizde zihinsel olarak çökersiniz.
-                        </p>
-                        <p>
-                            Masada en az 50 dakikalık kesintisiz odak blokları kurun: 50 dakika ders, 10 dakika mola. Ancak o 10 dakikada asla sosyal medya ekranına bakmayın. Balkona çıkın, su için, hava alın ama beyninizi yeni görsel uyarıcılarla yormayın.
+                            TYT (165 dakika) ve AYT (180 dakika) uzun süreli odaklanma gerektirir. Çok kısa çalışma aralıkları yerine 50 dakika kesintisiz odaklanma ve 10 dakika zihinsel dinlenme blokları sınav kondisyonunu destekler.
                         </p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            3. Akşamları Yeni Konu Çalışmayın, Soru Çözün
-                        </h2>
-                        <p>
-                            Günün en zorlu dersini (AYT Matematik, Fizik ya da karmaşık bir Edebiyat dönemini) zihninizin en berrak olduğu saat dilimine yerleştirin.
-                        </p>
-                        <p>
-                            Akşama doğru zihinsel yorgunluk başladığında yeni bir konuyu kavramaya çalışmak akıntıya kürek çekmektir. Akşam saatlerini gün içinde çalıştığınız konulardan test çözmeye ya da branş denemesi atmaya ayırın.
-                        </p>
-
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            4. Gece Yatmadan Önce Masayı Yarın İçin Kur (Sürtünmeyi Azalt)
-                        </h2>
-                        <p>
-                            Sabah masaya oturduğunda <em>&quot;Bugün acaba ne çalışsam?&quot;</em> diye düşünmeye başladığın an o günün verimi yarı yarıya çöker. Çünkü karar verme süreci beynin en değerli glikozunu tüketir; kendini bir anda YouTube Shorts veya Instagram Reels kaydırırken bulursun.
-                        </p>
-                        <p>
-                            Gece yatmadan önce masanı topla. Sabah ilk çözeceğin 20 paragraf testini ve AYT matematik soru bankasını masanın ortasına açık bırak. Sabah uyandığında tek yapman gereken sandalyeye oturup kalemi eline almak olsun.
-                        </p>
-
-                        <div className="bg-gradient-to-r from-slate-900 to-indigo-950 text-white rounded-2xl p-6 my-8">
-                            <span className="text-xs uppercase tracking-wider text-amber-400 font-bold block mb-1">
-                                Gerçekçi Günlük Görev Şablonu (Saat Değil, Eylem!)
-                            </span>
-                            <h3 className="text-lg font-bold text-white mb-3">
-                                Bir Mezunun veya 12. Sınıfın Sürdürülebilir Günlük Rotası
+                        <div className="bg-slate-50 border border-gray-200 rounded-2xl p-6 my-6">
+                            <h3 className="text-base font-bold text-gray-900 mb-3">
+                                Örnek Günlük Çalışma Blokları
                             </h3>
-                            <div className="space-y-2.5 text-xs text-slate-200 font-mono">
-                                <div className="bg-slate-800/80 p-3 rounded-xl border border-slate-700 flex flex-col sm:flex-row justify-between sm:items-center gap-1">
-                                    <span className="text-emerald-400 font-bold">Blok 1 (Sabah 08:30 - 10:30)</span>
-                                    <span>20 Paragraf + 15 Problem + 1 Türkçe Branş Denemesi</span>
-                                    <span className="text-slate-400 font-sans">Sınav kondisyonu</span>
+                            <div className="space-y-2 text-xs font-mono text-gray-700">
+                                <div className="bg-white p-3 rounded-lg border flex flex-col sm:flex-row justify-between sm:items-center gap-1">
+                                    <span className="font-bold text-blue-700">Blok 1 (Sabah)</span>
+                                    <span>20 Paragraf + 15 Problem + Kısa Deneme</span>
+                                    <span className="text-gray-500 font-sans">Kondisyon</span>
                                 </div>
-                                <div className="bg-slate-800/80 p-3 rounded-xl border border-slate-700 flex flex-col sm:flex-row justify-between sm:items-center gap-1">
-                                    <span className="text-blue-400 font-bold">Blok 2 (Öğle 11:30 - 14:00)</span>
-                                    <span>AYT Ağır Sıklet Konu Çalışması (Türev / Organik / Edebiyat)</span>
-                                    <span className="text-slate-400 font-sans">%60 Puan Motoru</span>
+                                <div className="bg-white p-3 rounded-lg border flex flex-col sm:flex-row justify-between sm:items-center gap-1">
+                                    <span className="font-bold text-purple-700">Blok 2 (Öğle)</span>
+                                    <span>AYT Ana Konu Çalışması</span>
+                                    <span className="text-gray-500 font-sans">Ağırlıklı Ders</span>
                                 </div>
-                                <div className="bg-slate-800/80 p-3 rounded-xl border border-slate-700 flex flex-col sm:flex-row justify-between sm:items-center gap-1">
-                                    <span className="text-purple-400 font-bold">Blok 3 (İkindi 15:00 - 18:00)</span>
-                                    <span>Konu Pekiştirme: 2 Farklı Kaynaktan 60-80 Soru Çözümü</span>
-                                    <span className="text-slate-400 font-sans">Fire vermeme pratiği</span>
+                                <div className="bg-white p-3 rounded-lg border flex flex-col sm:flex-row justify-between sm:items-center gap-1">
+                                    <span className="font-bold text-emerald-700">Blok 3 (İkindi)</span>
+                                    <span>Konu Pekiştirme ve Soru Bankası Çözümleri</span>
+                                    <span className="text-gray-500 font-sans">Pratik</span>
                                 </div>
-                                <div className="bg-slate-800/80 p-3 rounded-xl border border-slate-700 flex flex-col sm:flex-row justify-between sm:items-center gap-1">
-                                    <span className="text-amber-400 font-bold">Blok 4 (Akşam 19:30 - 21:30)</span>
-                                    <span>Hata Defteri Analizi + 1 Branş Denemesi (Sosyal veya Fen)</span>
-                                    <span className="text-slate-400 font-sans">Eksik kapatma saati</span>
+                                <div className="bg-white p-3 rounded-lg border flex flex-col sm:flex-row justify-between sm:items-center gap-1">
+                                    <span className="font-bold text-amber-700">Blok 4 (Akşam)</span>
+                                    <span>Hatalı Soruların Tekrarı ve Eksik Kapatma</span>
+                                    <span className="text-gray-500 font-sans">Analiz</span>
                                 </div>
                             </div>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Plato Evresi: &quot;3 Aydır 65 Nette Takıldım, Ne Yapacağım?&quot;
+                            3. Deneme Analizinin Önemi
                         </h2>
                         <p>
-                            Hazırlık sürecinin 4. veya 5. ayında hemen her öğrencinin başına gelen en sinir bozucu evre plato evresidir. Günde yüzlerce soru çözersin ama deneme sonucun hep aynı bantta (örneğin 65-68 net) çakılı kalır.
-                        </p>
-                        <p>
-                            Bu evrede panikleyip sıfırdan konu anlatımı videolarına dönmek yapılan en büyük hatadır. Plato evresi, konu bilmediğin için değil; <strong>soru çözerken zamanı yönetemediğin ve optikte gereksiz cesaretle yanlış işaretlediğin</strong> için oluşur.
-                        </p>
-                        <p className="bg-emerald-50 p-4 rounded-xl border-l-4 border-emerald-500 text-emerald-950 text-sm">
-                            <strong>Çözüm:</strong> Genel TYT denemelerini haftada 1&apos;e indir. Kalan günlerde sadece branş denemesi çöz ve her yanlış yaptığın soruyu makasla kesip bir &quot;Hata Defteri&quot;ne yapıştır. O defterdeki 100 yanlış soru, sana piyasadaki 10 konu anlatımı kitabından daha çok net kazandırır.
+                            Çözülen denemelerde doğru sorular kadar yanlış yapılan ve boş bırakılan sorular incelenmelidir. Hatanın bilgi eksikliğinden mi, süre yetersizliğinden mi yoksa işlem hatasından mı kaynaklandığı not edilmelidir.
                         </p>
 
-
-                        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 my-10 text-center text-white">
-                            <h3 className="text-2xl font-bold mb-3">Çalışmanızın Meyvesini Görün</h3>
-                            <p className="text-blue-100 mb-6 max-w-xl mx-auto">
-                                Verimli programınızla yükselen haftalık netlerinizi hesaplayıcımıza girin; sıralamanızın her denemede nasıl basamak atladığını adım adım takip edin.
+                        <div className="bg-slate-900 text-white rounded-2xl p-6 my-8 not-prose">
+                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Netlerinizi ve Puanınızı Hesaplayın</h3>
+                            <p className="text-sm text-slate-300 mb-4">
+                                Haftalık deneme netlerinizle tahmini YKS puanınızı ve başarı sıranızı aracımızda takip edin.
                             </p>
-                            <Link href="/" className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors shadow-lg">
-                                Sıralama Hesapla →
+                            <Link href="/" className="inline-block bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
+                                Net Hesaplama Aracına Git →
                             </Link>
-                        </div>
-
-                        <div className="border-t pt-8 mt-10">
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Göz Atmanız Gereken Rehberler</h3>
-                            <div className="grid md:grid-cols-2 gap-4">
-                                <Link href="/blog/tyt-net-artirma-taktikleri" className="p-4 bg-emerald-50 rounded-lg hover:bg-emerald-100 transition-colors">
-                                    <p className="font-semibold text-emerald-900">TYT Net Artırma Taktikleri →</p>
-                                    <p className="text-xs text-gray-600 mt-1">Platoya takılan netleri kırmak için yanlış defteri ve PP rutini.</p>
-                                </Link>
-                                <Link href="/blog/yks-1-net-kac-kisi-atar" className="p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
-                                    <p className="font-semibold text-blue-900">1 Net Kaç Kişi Öne Atar? →</p>
-                                    <p className="text-xs text-gray-600 mt-1">Yığılma bölgelerinde tek bir fazladan netin devasa gücü.</p>
-                                </Link>
-                            </div>
                         </div>
                     </div>
                 </div>

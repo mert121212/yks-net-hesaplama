@@ -54,10 +54,10 @@ export default function TYTParagrafTeknikleri() {
                             <span className="text-gray-600">• 12 dk okuma</span>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                            TYT Türkçe Paragraf Çözme Teknikleri: 40 Sorunun 24&apos;ü Buradan Gelir
+                            TYT Türkçe Paragraf Çözme Teknikleri
                         </h1>
                         <p className="text-xl text-gray-600">
-                            Dil bilgisi kurallarını ezbere bilip paragraf sorularında batan öğrenci sayısı inanılmaz fazladır. 24 paragraf sorusunun çözüm mantığı ve 5 somut teknik.
+                            40 sorunun en az 24&apos;ü paragraftan geliyor. Dil bilgisinden 10&apos;da 10 yapsan bile paragrafta hız kazanamadıysan süren yetmez. 5 tekniği burada anlattım.
                         </p>
                     </header>
 
@@ -65,33 +65,28 @@ export default function TYTParagrafTeknikleri() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
 
-                        <p className="text-lg leading-relaxed font-medium text-gray-800">
-                            Saat 10:48. Sınav başlayalı tam 33 dakika olmuş. 21. sorudasın; felsefi bir metin önünde duruyor. Gözlerin satırların üzerinde kayıyor ama kafanın içinde tek bir cümle yankılanıyor: <em>&quot;Az önce ben ne okudum ya?&quot;</em>
+                        <p className="text-lg leading-relaxed">
+                            TYT Türkçe&apos;de en büyük sorun soruların zor olması değil. Asıl sorun aynı paragrafı 2-3 kere okumak zorunda kalmak. Her tekrar okuyuş süreyi eritiyor, arkadaki 40 matematik sorusu da bekliyor.
                         </p>
+
                         <p>
-                            Aynı paragrafı baştan alıyorsun. Bir daha okuyorsun. Bir daha... Üçüncü okuyuşta saatin tik-takları beyninde davul gibi çalmaya başlıyor, avuç için terliyor ve arkada bekleyen 40 matematik sorusu gözünün önüne geliyor.
-                        </p>
-                        <p>
-                            İşte TYT Türkçe&apos;de öğrencilerin en büyük kabusu soruların zor olması değil; <strong>aynı metni defalarca okutan o zihinsel kilitlenmedir (brain freeze).</strong>
-                        </p>
-                        <p>
-                            40 soruluk Türkçe testinin en az 24&apos;ü doğrudan paragraftan gelir. Dil bilgisinden 10&apos;da 10 yapsan bile paragrafta hız kazanamadıysan, sınavın matematik ve fen kısmını görmeden süren biter. Bu yazıda &quot;bol kitap okuyun&quot; gibi içi boş klişeleri bir kenara bırakacağız; sınav masasında tek okuyuşta doğru şıkka götüren 5 somut mekanizmayı konuşacağız.
+                            Bu yazıda &quot;bol kitap oku&quot; gibi genel tavsiyeler yok. Sınav masasında tek okuyuşta doğru şıkka giden 5 teknik var.
                         </p>
 
                         <div className="bg-gradient-to-r from-emerald-900 to-slate-900 text-white p-6 rounded-2xl my-6">
                             <span className="text-xs uppercase tracking-wider text-emerald-400 font-bold block mb-1">
-                                Masadaki Altın Kural
+                                Temel Kural
                             </span>
                             <h3 className="text-lg font-bold text-white mb-2">
-                                Önce Soru Kökü, Sonra Paragraf (Asla Tersten Başlama!)
+                                Önce Soru Kökünü Oku, Sonra Paragrafı
                             </h3>
                             <p className="text-xs text-slate-300 leading-relaxed">
-                                Beyin ne aradığını bilmeden bir metni okursa her cümleyi eşit önemde algılar ve yorulur. Önce soru kökünü oku: <em>&quot;Değinilmemiştir&quot;</em> mi diyor, <em>&quot;Asıl vurgulanmak istenen&quot;</em> mi? Hedefini bilerek metne giren bir göz, aradığı cevabı 35. saniyede radar gibi yakalar.
+                                Beyin ne aradığını bilmeden metni okursa her cümleyi eşit önemde algılar, yorulur. Soru kökünde &quot;değinilmemiştir&quot; mi yazıyor, &quot;vurgulanmak istenen&quot; mi? Hedefini bilerek okuyan göz, cevabı 30-40 saniyede bulur.
                             </p>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            TYT Türkçe Paragraf Soru Dağılımı (Son 5 Yıl Ortalaması)
+                            Paragraf Soru Dağılımı (Son 5 Yıl)
                         </h2>
 
                         <div className="overflow-x-auto my-6">
@@ -99,47 +94,47 @@ export default function TYTParagrafTeknikleri() {
                                 <thead className="bg-gray-100 text-gray-800 text-sm">
                                     <tr>
                                         <th className="p-3 border">Soru Tipi</th>
-                                        <th className="p-3 border">Ortalama Soru Sayısı</th>
+                                        <th className="p-3 border">Ort. Sayı</th>
                                         <th className="p-3 border">Zorluk</th>
-                                        <th className="p-3 border">Süre Tavsiyesi</th>
+                                        <th className="p-3 border">Süre</th>
                                     </tr>
                                 </thead>
                                 <tbody className="text-sm">
                                     <tr className="border-b">
                                         <td className="p-3 font-semibold border">Ana Fikir / Konu</td>
-                                        <td className="p-3 border">5-7 soru</td>
+                                        <td className="p-3 border">5-7</td>
                                         <td className="p-3 border">Orta</td>
-                                        <td className="p-3 border">1,5 dk/soru</td>
+                                        <td className="p-3 border">1,5 dk</td>
                                     </tr>
                                     <tr className="border-b bg-gray-50">
                                         <td className="p-3 font-semibold border">Yardımcı Düşünce</td>
-                                        <td className="p-3 border">3-4 soru</td>
+                                        <td className="p-3 border">3-4</td>
                                         <td className="p-3 border">Orta-Zor</td>
-                                        <td className="p-3 border">2 dk/soru</td>
+                                        <td className="p-3 border">2 dk</td>
                                     </tr>
                                     <tr className="border-b">
                                         <td className="p-3 font-semibold border">Başlık Bulma</td>
-                                        <td className="p-3 border">2-3 soru</td>
+                                        <td className="p-3 border">2-3</td>
                                         <td className="p-3 border">Kolay-Orta</td>
-                                        <td className="p-3 border">1 dk/soru</td>
+                                        <td className="p-3 border">1 dk</td>
                                     </tr>
                                     <tr className="border-b bg-gray-50">
                                         <td className="p-3 font-semibold border">Paragraf Tamamlama</td>
-                                        <td className="p-3 border">3-5 soru</td>
+                                        <td className="p-3 border">3-5</td>
                                         <td className="p-3 border">Orta-Zor</td>
-                                        <td className="p-3 border">2 dk/soru</td>
+                                        <td className="p-3 border">2 dk</td>
                                     </tr>
                                     <tr className="border-b">
-                                        <td className="p-3 font-semibold border">Paragrafta Anlam (Çıkarım)</td>
-                                        <td className="p-3 border">4-5 soru</td>
+                                        <td className="p-3 font-semibold border">Çıkarım</td>
+                                        <td className="p-3 border">4-5</td>
                                         <td className="p-3 border">Zor</td>
-                                        <td className="p-3 border">2-2,5 dk/soru</td>
+                                        <td className="p-3 border">2-2,5 dk</td>
                                     </tr>
                                     <tr className="border-b bg-gray-50">
-                                        <td className="p-3 font-semibold border">Anlatım Bozukluğu (Cümle)</td>
-                                        <td className="p-3 border">2-3 soru</td>
+                                        <td className="p-3 font-semibold border">Anlatım Bozukluğu</td>
+                                        <td className="p-3 border">2-3</td>
                                         <td className="p-3 border">Kolay</td>
-                                        <td className="p-3 border">45 sn/soru</td>
+                                        <td className="p-3 border">45 sn</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -149,113 +144,94 @@ export default function TYTParagrafTeknikleri() {
                             Teknik 1: İlk Cümle - Son Cümle Okuması
                         </h2>
                         <p>
-                            ÖSYM paragrafları genellikle klasik makale yapısında kurgulanır. Yazarın tezi veya ana fikrini taşıyan cümle çoğu zaman ya ilk cümlede ya da son cümlede bulunur. Ortadaki cümleler ise genellikle örnek, açıklama veya destekleyici bilgilerdir.
+                            ÖSYM paragraflarında yazarın tezi genelde ya ilk ya da son cümlede olur. Ortadaki cümleler çoğunlukla örnek ve açıklama.
                         </p>
                         <p>
-                            Ne yapacaksınız: Paragrafı okumaya başlamadan önce ilk cümleyi ve son cümleyi dikkatli okuyun. İkisi arasındaki mantıksal köprüyü kafanızda kurun. Çoğu &quot;ana fikir&quot; ve &quot;başlık bulma&quot; sorusunun cevabı bu iki cümlenin kesişiminde gizlidir.
-                        </p>
-                        <p>
-                            Paragrafın ortasını okumanıza gerek yok mu? Gerek var ama <strong>öncelik sıralamanızı</strong> bilmeniz lazım. İlk ve son cümleyle şıkları eşleştirip 2 şıkka indirgeyebildiğinizde, ortadaki cümleler yalnızca doğrulama aracı olarak devreye girer. Bu teknik soru başına ortalama 30-40 saniye kazandırır.
+                            Paragrafı okumaya başlamadan ilk ve son cümleyi dikkatli oku, ikisi arasındaki mantık bağını kur. &quot;Ana fikir&quot; ve &quot;başlık bulma&quot; sorularının cevabı çoğu zaman bu iki cümlenin kesişiminde. Ortadaki kısım sadece doğrulama aracı olarak devreye girer. Bu teknik soru başına 30-40 saniye kazandırır.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Teknik 2: Seçenek Odaklı Okuma (Reverse Reading)
+                            Teknik 2: Seçenek Odaklı Okuma
                         </h2>
                         <p>
-                            Çoğu öğrenci paragrafı okur, kafasında bir yorum oluşturur, sonra seçeneklere bakar. Bu doğal bir refleks ama ÖSYM&apos;nin tuzağına düşmenize neden olur. Çünkü ÖSYM, seçeneklerde çok benzer ifadeler kullanır ve paragrafta &quot;neredeyse söylenen ama tam söylenmeyen&quot; şıklar koyar.
+                            Çoğu öğrenci paragrafı okur, kafasında bir yorum oluşturur, seçeneklere bakar. Mantıklı görünüyor ama ÖSYM seçeneklerde çok benzer ifadeler kullanıyor, &quot;neredeyse doğru ama tam değil&quot; şıklar koyuyor.
                         </p>
                         <p>
-                            Alternatif yol: Paragrafı bir kez okuduktan sonra <strong>önce seçenekleri okuyun</strong>. Her seçeneği paragrafla karşılaştırıp &quot;bu paragrafta gerçekten söyleniyor mu?&quot; diye tek tek kontrol edin. Bu teknik özellikle &quot;Aşağıdakilerden hangisi paragraftan çıkarılamaz?&quot; tipi sorularda inanılmaz etkilidir.
+                            Paragrafı bir kez oku, sonra <strong>seçenekleri tek tek paragrafla karşılaştır</strong>. &quot;Bu paragrafta gerçekten söyleniyor mu?&quot; diye kontrol et. &quot;Hangisi çıkarılamaz?&quot; tipi sorularda çok işe yarar.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Teknik 3: Eleme ile Daraltma (En Az 2 Şıkkı An&apos;da Çöpe At)
+                            Teknik 3: Hızlı Eleme
                         </h2>
                         <p>
-                            5 şıklı bir paragraf sorusunda genellikle 2 şık &quot;açıkça yanlış&quot;tır. Bunları tespit etmek 15 saniye sürer:
+                            5 şıklı soruda genelde 2 şık açıkça yanlıştır. Bunları tespit etmek 15 saniye sürer:
                         </p>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li><strong>Aşırı genelleme yapan şık:</strong> &quot;Tüm insanlar...&quot;, &quot;Her zaman...&quot;, &quot;Hiçbir zaman...&quot; gibi kesinlik ifadeleri paragrafta çok nadir kullanılır. ÖSYM genelde &quot;bazı&quot;, &quot;çoğu&quot; gibi yumuşak ifadeleri tercih eder.</li>
-                            <li><strong>Paragrafta hiç değinilmeyen bir kavramı içeren şık:</strong> Paragraf eğitim teknolojilerinden bahsediyorsa ve bir şık &quot;ekonomik kalkınma&quot; diyorsa, direkt çöpe atın.</li>
+                            <li><strong>Aşırı genelleme:</strong> &quot;Tüm insanlar...&quot;, &quot;Hiçbir zaman...&quot; gibi kesinlik ifadeleri. ÖSYM genelde &quot;bazı&quot;, &quot;çoğu&quot; gibi yumuşak ifadeler tercih eder.</li>
+                            <li><strong>Paragrafta olmayan kavram:</strong> Paragraf eğitim teknolojisinden bahsediyorsa ve şıkta &quot;ekonomik kalkınma&quot; geçiyorsa direkt ele.</li>
                         </ul>
                         <p>
-                            Kalan 3 şık arasından 1 tanesi &quot;paragrafta var ama ana fikir değil, detay&quot; olan şıktır. Onu da tespit ettiğinizde elinizde 2 şık kalır. İşte ilk-son cümle kontrolünün devreye girdiği yer burasıdır.
+                            Kalan 3 şıktan 1&apos;i detay, 1&apos;i ana fikir, 1&apos;i de yakın ama farklı. İlk-son cümle kontrolüyle doğru cevabı bulursun.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Teknik 4: Paragraf Tamamlama Sorularında &quot;Akış Yönü&quot; Tespiti
+                            Teknik 4: Paragraf Tamamlamada Akış Yönü
                         </h2>
                         <p>
-                            Paragraf tamamlama sorularında sizden boş bırakılan yere uygun cümleyi bulmanız istenir. Burada en kritik ipucu, boşluktan <strong>önceki ve sonraki cümlelerin yönü</strong>dür.
+                            Boşluktan önceki ve sonraki cümlelerin yönüne bak. &quot;Ancak&quot;, &quot;Oysa&quot; gibi bağlaç varsa boşluğa zıt yönde bir cümle gelecek. &quot;Ayrıca&quot;, &quot;Üstelik&quot; gibi bağlaçlarda ise aynı yönde devam edecek.
                         </p>
                         <p>
-                            Paragraf bir fikri savunuyorken &quot;Ancak...&quot;, &quot;Oysa...&quot;, &quot;Buna karşın...&quot; gibi bir bağlaca geçiş yapıyorsa, boşluğa gelecek cümle <strong>zıt yönde</strong> bir ifade olacaktır.
-                        </p>
-                        <p>
-                            Paragraf destekleyici örnekler sıralıyorken &quot;Ayrıca...&quot;, &quot;Benzer biçimde...&quot;, &quot;Üstelik...&quot; gibi bağlaçlar geliyorsa, boşluğa gelecek cümle de <strong>aynı yönde</strong> devam edecektir.
-                        </p>
-                        <p>
-                            Bağlacı tespit edin → akış yönünü belirleyin → 5 şıktan yönü ters olan 2-3 şıkkı anında eleyin.
+                            Bağlacı bul → yönü belirle → yönü ters olan 2-3 şıkkı ele.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Teknik 5: Süre Yönetimi — 40 Soruyu 40 Dakikada Bitirme Hatası
+                            Teknik 5: Süre Yönetimi
                         </h2>
                         <p>
-                            TYT Türkçe testine ayrılan ideal süre <strong>40-45 dakikadır</strong> (165 dakikalık toplam TYT süresinden). Ancak burada çoğu öğrencinin düştüğü tuzak şudur: Her soruya eşit süre ayırmaya çalışmak.
-                        </p>
-                        <p>
-                            Doğru strateji, soruları süre açısından 3 katmana ayırmaktır:
+                            TYT Türkçe&apos;ye ideal süre 40-45 dakika. Her soruya eşit süre ayırmak yaygın hata. Soruları 3 katmana ayır:
                         </p>
 
                         <div className="space-y-3 my-6">
                             <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-xl">
-                                <h3 className="font-bold text-emerald-900 text-base mb-1">Hızlı Katman (12-15 soru, toplam 10-12 dk)</h3>
-                                <p className="text-sm text-emerald-800">Sözcük anlamı, deyim-atasözü, yazım-noktalama, anlatım bozukluğu. Biliyorsanız 30-45 saniyede çözülür.</p>
+                                <h3 className="font-bold text-emerald-900 text-base mb-1">Hızlı Katman (12-15 soru, 10-12 dk)</h3>
+                                <p className="text-sm text-emerald-800">Sözcük anlamı, deyim-atasözü, yazım-noktalama, anlatım bozukluğu. 30-45 sn/soru.</p>
                             </div>
                             <div className="p-4 bg-blue-50 border border-blue-200 rounded-xl">
-                                <h3 className="font-bold text-blue-900 text-base mb-1">Orta Katman (15-18 soru, toplam 22-25 dk)</h3>
-                                <p className="text-sm text-blue-800">Ana fikir, başlık bulma, yardımcı düşünce soruları. İlk-son cümle tekniği ile 1,5 dakikada çözülebilir.</p>
+                                <h3 className="font-bold text-blue-900 text-base mb-1">Orta Katman (15-18 soru, 22-25 dk)</h3>
+                                <p className="text-sm text-blue-800">Ana fikir, başlık bulma, yardımcı düşünce. İlk-son cümle tekniğiyle 1,5 dk/soru.</p>
                             </div>
                             <div className="p-4 bg-red-50 border border-red-200 rounded-xl">
-                                <h3 className="font-bold text-red-900 text-base mb-1">Ağır Katman (5-7 soru, toplam 10-12 dk)</h3>
-                                <p className="text-sm text-red-800">Çıkarım, paragraf tamamlama ve paragraf sıralama. 2+ dakika gerektirir. İlk turda çözemediyseniz işaretleyip geçin.</p>
+                                <h3 className="font-bold text-red-900 text-base mb-1">Ağır Katman (5-7 soru, 10-12 dk)</h3>
+                                <p className="text-sm text-red-800">Çıkarım, paragraf tamamlama, paragraf sıralama. 2+ dk/soru. İlk turda yapamadıysan işaretle, geç.</p>
                             </div>
                         </div>
 
-                        <p>
-                            Bu katmanlı yaklaşımı uygulayan öğrenciler, sınavda 40 sorunun tamamına vakit bulur. Eşit süre dağıtan öğrenciler ise genellikle son 5-6 soruya hiç bakamaz.
-                        </p>
-
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Paragraf Sorusunda Yanlış Yapıyorsanız Kontrol Listesi
+                            Yanlış Yapıyorsan Kontrol Listesi
                         </h2>
                         <p>
-                            Deneme sınavlarında paragraf sorularında sürekli 5-8 yanlış yapan öğrencilerin neredeyse tamamı aşağıdaki 4 hatadan en az birini yapmaktadır:
+                            Denemelerde paragrafta sürekli 5-8 yanlış yapan öğrencilerin neredeyse hepsi şu hatalardan en az birini yapıyor:
                         </p>
                         <ol className="list-decimal pl-6 space-y-3">
                             <li>
-                                <strong>Paragrafı okumadan seçeneklere atlıyor.</strong> Soru kökünü bile okumadan ilk şıktan başlayıp &quot;bu mantıklı&quot; deyip işaretliyor. ÖSYM A şıkkını genellikle tuzak olarak kurgular.
+                                <strong>Paragrafı okumadan şıklara atlıyor.</strong> Soru kökünü bile okumadan A şıkkını &quot;mantıklı&quot; deyip işaretliyor. ÖSYM A şıkkını genelde tuzak olarak kurgular.
                             </li>
                             <li>
-                                <strong>Kendi yorumunu paragrafın yerine koyuyor.</strong> Paragraf &quot;teknoloji eğitimi kolaylaştırabilir&quot; diyorsa ve seçenekte &quot;teknoloji eğitimi kesinlikle geliştirir&quot; yazıyorsa, bu iki ifade arasındaki &quot;ihtimal&quot; ve &quot;kesinlik&quot; farkını görmezden geliyor.
+                                <strong>Kendi yorumunu paragrafın yerine koyuyor.</strong> Paragraf &quot;kolaylaştırabilir&quot; diyorsa şıktaki &quot;kesinlikle geliştirir&quot; ifadesiyle arasındaki farkı görmezden geliyor.
                             </li>
                             <li>
-                                <strong>Detayı ana fikir sanıyor.</strong> Paragrafın ortasında verilen bir örneği ana fikir olarak seçiyor. Ana fikir örnekten daha genel ve kapsayıcıdır.
+                                <strong>Detayı ana fikir sanıyor.</strong> Paragrafın ortasındaki örneği ana fikir olarak seçiyor.
                             </li>
                             <li>
-                                <strong>Paragrafı 3 kez okuyor.</strong> 1 kez dikkatli okuma + seçenek karşılaştırması yeterlidir. 3 kez okumak sürenizi çalar ve sınavın geri kalanını riske atar.
+                                <strong>Aynı paragrafı 3 kere okuyor.</strong> 1 kez dikkatli okuma + şık karşılaştırması yeter.
                             </li>
                         </ol>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Günlük Paragraf Antrenmanı: Haftalık Program
+                            Günlük Paragraf Antrenmanı
                         </h2>
                         <p>
-                            TYT Türkçe paragraf sorusu çözmek kondisyon işidir. Bir gün 50 soru çözüp sonra 1 hafta hiç bakmamak, hiçbir şey çözmemekle neredeyse aynı etkiyi verir.
-                        </p>
-                        <p>
-                            Etkili olan yöntem: <strong>Her gün 12-15 paragraf sorusu çözmek.</strong> Haftanın 6 günü bu rutini uyguladığınızda, ayda yaklaşık 300-350 paragraf sorusu çözmüş olursunuz. 3 ayda 1000 paragraf sorusu gören bir beyin, sınav günü paragrafı okumaya başladığı an soru tipini tanır ve refleks olarak doğru tekniği uygular.
+                            Paragraf çözmek kondisyon işi. Bir gün 50 soru çözüp 1 hafta bakmamak işe yaramaz. Her gün 12-15 soru çöz, haftanın 6 günü. Ayda 300-350 soru eder. 3 ayda 1000 soru gören bir beyin, sınav günü soru tipini otomatik tanır.
                         </p>
 
                         <div className="overflow-x-auto my-6">
@@ -263,40 +239,40 @@ export default function TYTParagrafTeknikleri() {
                                 <thead className="bg-emerald-100 text-emerald-800 text-sm">
                                     <tr>
                                         <th className="p-3 border">Gün</th>
-                                        <th className="p-3 border">Paragraf Soru Sayısı</th>
-                                        <th className="p-3 border">Odak Alanı</th>
+                                        <th className="p-3 border">Soru Sayısı</th>
+                                        <th className="p-3 border">Odak</th>
                                     </tr>
                                 </thead>
                                 <tbody className="text-sm">
-                                    <tr className="border-b"><td className="p-3 border">Pazartesi</td><td className="p-3 border">15 soru</td><td className="p-3 border">Ana fikir + Başlık bulma</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="p-3 border">Salı</td><td className="p-3 border">12 soru</td><td className="p-3 border">Paragraf tamamlama</td></tr>
-                                    <tr className="border-b"><td className="p-3 border">Çarşamba</td><td className="p-3 border">15 soru</td><td className="p-3 border">Çıkarım + Yardımcı düşünce</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="p-3 border">Perşembe</td><td className="p-3 border">12 soru</td><td className="p-3 border">Karışık paragraf soruları (zamanlı)</td></tr>
-                                    <tr className="border-b"><td className="p-3 border">Cuma</td><td className="p-3 border">15 soru</td><td className="p-3 border">Yanlış analizi + tekrar çözüm</td></tr>
-                                    <tr className="border-b bg-gray-50"><td className="p-3 border">Cumartesi</td><td className="p-3 border">12 soru</td><td className="p-3 border">Deneme formatında zamanlı çözüm</td></tr>
+                                    <tr className="border-b"><td className="p-3 border">Pzt</td><td className="p-3 border">15</td><td className="p-3 border">Ana fikir + başlık</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="p-3 border">Salı</td><td className="p-3 border">12</td><td className="p-3 border">Paragraf tamamlama</td></tr>
+                                    <tr className="border-b"><td className="p-3 border">Çrş</td><td className="p-3 border">15</td><td className="p-3 border">Çıkarım + yardımcı düşünce</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="p-3 border">Prş</td><td className="p-3 border">12</td><td className="p-3 border">Karışık (zamanlı)</td></tr>
+                                    <tr className="border-b"><td className="p-3 border">Cuma</td><td className="p-3 border">15</td><td className="p-3 border">Yanlış analizi + tekrar</td></tr>
+                                    <tr className="border-b bg-gray-50"><td className="p-3 border">Cts</td><td className="p-3 border">12</td><td className="p-3 border">Deneme formatında zamanlı</td></tr>
                                 </tbody>
                             </table>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            35+ Türkçe Neti İçin Gereken Minimum Paragraf Doğrusu
+                            35+ Net İçin Gereken Denge
                         </h2>
                         <p>
-                            TYT Türkçe&apos;de 35 net hedefleyen bir öğrencinin dengesi kabaca şöyle olmalıdır:
+                            TYT Türkçe&apos;de 35 net hedefleyen birinin net dağılımı kabaca:
                         </p>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>Dil bilgisi + sözcük anlamı soruları: 14-16 doğru (16-18 sorudan)</li>
-                            <li>Paragraf soruları: <strong>En az 20-21 doğru</strong> (22-24 sorudan)</li>
-                            <li>Toplam yanlış: En fazla 4-5 yanlış (net kaybı: 1 - 1,25)</li>
+                            <li>Dil bilgisi + sözcük soruları: 14-16 doğru (16-18 sorudan)</li>
+                            <li>Paragraf soruları: <strong>en az 20-21 doğru</strong> (22-24 sorudan)</li>
+                            <li>Toplam yanlış: en fazla 4-5 (net kaybı: 1-1,25)</li>
                         </ul>
                         <p>
-                            Paragraf sorularında 20 doğruya ulaşmak, yukarıdaki 5 tekniği düzenli olarak uyguladığınızda 8-10 hafta içinde gerçekleştirilebilir bir hedeftir.
+                            Paragrafta 20 doğruya ulaşmak bu 5 tekniği düzenli uygulayınca 8-10 haftada gerçekleşebilir bir hedef.
                         </p>
 
                         <div className="bg-gradient-to-r from-emerald-600 to-teal-700 rounded-2xl p-8 my-10 text-center text-white shadow-lg">
-                            <h3 className="text-2xl font-bold mb-3">Paragraf Netleriyle TYT Puanınız Kaç Olur?</h3>
+                            <h3 className="text-2xl font-bold mb-3">Türkçe Netinle TYT Puanını Hesapla</h3>
                             <p className="text-emerald-100 mb-6 max-w-xl mx-auto text-sm">
-                                Türkçe, Matematik, Fen ve Sosyal netlerinizi girerek TYT puanınızı ve geçmiş yıl katsayılarına göre sıralama tahminlerinizi görün.
+                                Türkçe, Matematik, Fen ve Sosyal netlerini girerek tahmini TYT puanını ve sıralamanı gör.
                             </p>
                             <Link href="/" className="inline-block bg-white text-emerald-700 px-8 py-3.5 rounded-xl font-bold hover:bg-emerald-50 transition-colors shadow">
                                 TYT Puanını Hesapla →
@@ -304,15 +280,15 @@ export default function TYTParagrafTeknikleri() {
                         </div>
 
                         <div className="border-t pt-8 mt-10">
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Türkçe Netinizi Daha da Yükseltmek İçin</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">İlgili Yazılar</h3>
                             <div className="grid md:grid-cols-2 gap-4">
                                 <Link href="/blog/tyt-kesin-cikan-konular" className="p-4 bg-emerald-50 rounded-xl hover:bg-emerald-100 transition-colors border border-emerald-100">
                                     <p className="font-semibold text-emerald-900">TYT Kesin Çıkan Konular →</p>
-                                    <p className="text-xs text-gray-600 mt-1">ÖSYM&apos;nin her sene mutlaka sorduğu garanti Türkçe soru başlıkları.</p>
+                                    <p className="text-xs text-gray-600 mt-1">ÖSYM&apos;nin her sene sorduğu garanti Türkçe konuları.</p>
                                 </Link>
                                 <Link href="/blog/tyt-net-artirma-taktikleri" className="p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors border border-blue-100">
                                     <p className="font-semibold text-blue-900">TYT Net Artırma Taktikleri →</p>
-                                    <p className="text-xs text-gray-600 mt-1">60-70 bandında sıkışanlar için plato kırma stratejileri.</p>
+                                    <p className="text-xs text-gray-600 mt-1">60-70 bandında sıkışanlar için stratejiler.</p>
                                 </Link>
                             </div>
                         </div>
