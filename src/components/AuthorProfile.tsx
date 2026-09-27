@@ -52,18 +52,18 @@ export default function AuthorProfile() {
                 </div>
 
                 <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                    ÖSYM resmi yerleştirme verileri, standart sapma katsayıları ve sınav yığınsal dağılımları üzerine çalışan eğitim veri analistidir. YKS hazırlık sürecindeki adayların en doğru matematiksel modeller ve gerçekçi sıralama tahminleriyle hedeflerine ulaşmaları için bağımsız içerikler ve algoritmalar geliştirir.
+                    Yıllardır ÖSYM yerleştirme verilerini, testlerin standart sapmalarını ve yığılma tablolarını inceliyorum. Ezbere tavsiyeler vermek yerine; doğrudan sınav istatistiklerine, çıkmış sorulara ve masa başındaki gerçek deneme deneyimlerine dayalı hesaplama araçları ve rehberler hazırlıyorum.
                 </p>
 
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 text-xs">
                     <span className="px-2.5 py-1 bg-white border border-gray-200 text-gray-700 rounded-lg shadow-2xs font-medium">
-                        📊 YKS Veri Analitiği
+                        📊 ÖSYM Veri İncelemesi
                     </span>
                     <span className="px-2.5 py-1 bg-white border border-gray-200 text-gray-700 rounded-lg shadow-2xs font-medium">
-                        📐 Standart Sapma Modellemesi
+                        📐 Katsayı & Sapma Analizi
                     </span>
                     <span className="px-2.5 py-1 bg-white border border-gray-200 text-gray-700 rounded-lg shadow-2xs font-medium">
-                        🎓 Tercih & Sıralama Simülasyonu
+                        🎓 Sıralama & Tercih Rehberliği
                     </span>
                 </div>
             </div>

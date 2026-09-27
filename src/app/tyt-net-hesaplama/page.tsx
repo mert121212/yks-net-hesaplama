@@ -24,14 +24,14 @@ export default function TYTNetHesaplamaPage(): React.JSX.Element {
                         TYT Net Hesaplama ve Test Dinamikleri
                     </h1>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6 leading-relaxed">
-                        120 soru, 165 dakika ve saniyelerin yarıştığı bir maraton. Hangi testten kaç net çıkarmanız gerektiğini ve 4 yanlışın netlerinizi nasıl erittiğini adım adım inceleyin.
+                        120 soruya 165 dakika. Zaman su gibi akıp giderken hangi testten kaç net çıkarman gerektiğini, 4 yanlışın doğrularını nasıl erittiğini ve o meşhur 0,5 net tuzağını bilmeden masaya oturma.
                     </p>
                     <Link
                         href="/"
                         className="inline-flex items-center gap-2 bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-700 transition-all shadow-md hover:shadow-lg text-sm"
                     >
                         <Calculator className="h-5 w-5" />
-                        Doğrudan Net Hesaplayıcıyı Aç
+                        Net Hesaplayıcıyı Aç
                         <ArrowRight className="h-4 w-4" />
                     </Link>
                 </div>
@@ -39,18 +39,18 @@ export default function TYTNetHesaplamaPage(): React.JSX.Element {
                 {/* TYT Testleri: Masadaki Gerçekler */}
                 <div className="bg-white rounded-2xl shadow-sm border border-gray-200/80 p-6 sm:p-8 mb-8">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                        120 Sorunun Dağılımı: Nereye Ne Kadar Asılmalısınız?
+                        120 Sorunun Dağılımı: Hangi Teste Ne Kadar Asılmalısın?
                     </h2>
                     <p className="text-gray-700 leading-relaxed mb-6">
-                        Öğrencilerin çoğu &quot;Sosyal kolaydır, sona bırakırım&quot; veya &quot;Matematikten 5 net yapsam yeter&quot; diyerek sınava girer. Oysa ÖSYM katsayılarında Sosyal ve Fen netinin puan getirisi, Türkçe ve Matematikle neredeyse kafa kafayadır.
+                        Çoğu öğrenci &quot;Sosyal kolaydır, sona bırakırım&quot; veya &quot;Matematikten 5 net yapsam bana yeter&quot; diyerek sınava giriyor. Oysa ÖSYM katsayılarında 1 Sosyal veya 1 Fen netinin puan getirisi, Türkçe ve Matematikle neredeyse kafa kafayadır.
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="border border-blue-200 rounded-xl p-5 bg-blue-50/40">
                             <h3 className="font-bold text-blue-900 text-lg mb-1">Türkçe (40 Soru)</h3>
-                            <p className="text-xs text-blue-700 font-semibold mb-2">Testin Kalbi: 24 Paragraf + 16 Dil Bilgisi &amp; Anlam</p>
+                            <p className="text-xs text-blue-700 font-semibold mb-2">Testin Kalbi: 24-26 Paragraf + Dil Bilgisi</p>
                             <p className="text-sm text-gray-700 leading-relaxed">
-                                Sınavın en çok zaman çalan testidir. Paragraf sorularında hız kazanamayan aday, matematik sorularına bakmaya vakit bulamaz. Hedef 30+ net için günlük 20 paragraf çözümü şarttır.
+                                Sınavın en büyük zaman öğütücüsü. Paragrafta iki şık arasında kalıp vakit kaybeden aday, arkadaki matematiğe bakmaya fırsat bulamaz. 30+ netin tek sırrı sabah masaya oturduğunda ilk iş 20 paragraf çözüp zihni diri tutmaktır.
                             </p>
                         </div>
 
@@ -58,7 +58,7 @@ export default function TYTNetHesaplamaPage(): React.JSX.Element {
                             <h3 className="font-bold text-emerald-900 text-lg mb-1">Temel Matematik (40 Soru)</h3>
                             <p className="text-xs text-emerald-700 font-semibold mb-2">30 Matematik + 10 Geometri</p>
                             <p className="text-sm text-gray-700 leading-relaxed">
-                                İlk 12 soru temel kavramlar ve cebirden, sonraki 12-14 soru yeni nesil problemlerden oluşur. 10 geometri sorusu ise sıralamada doğrudan üst dilime geçiş biletidir.
+                                İlk 12 soru temel cebir ve sayılar, sonrasındaki 12-14 soru ise o uzun paragraflı yeni nesil problemler. Çoğu adayın bakmaya korktuğu 10 geometri sorusu ise seni yığılmadan çekip üst dilime fırlatan gizli kozdur.
                             </p>
                         </div>
 
@@ -66,7 +66,7 @@ export default function TYTNetHesaplamaPage(): React.JSX.Element {
                             <h3 className="font-bold text-purple-900 text-lg mb-1">Sosyal Bilimler (20 Soru)</h3>
                             <p className="text-xs text-purple-700 font-semibold mb-2">5 Tarih + 5 Coğrafya + 5 Felsefe + 5 Din</p>
                             <p className="text-sm text-gray-700 leading-relaxed">
-                                En hızlı çözülen ve en az zaman isteyen 20 net kaynağıdır. Sayısalcıların çoğu Sosyal&apos;e bakmayarak binlerce rakibine bedava avantaj hediye eder.
+                                15-18 dakikada toplayabileceğin en bereketli 20 net kaynağı. Sayısalcıların çoğu 'Sosyal kolaydır' deyip geçiştirir ya da bakmaz; sonra o çözmediği 4-5 Tarih sorusu yüzünden ilk 30 bini kaçırır.
                             </p>
                         </div>
 
@@ -74,7 +74,7 @@ export default function TYTNetHesaplamaPage(): React.JSX.Element {
                             <h3 className="font-bold text-amber-900 text-lg mb-1">Fen Bilimleri (20 Soru)</h3>
                             <p className="text-xs text-amber-700 font-semibold mb-2">7 Fizik + 7 Kimya + 6 Biyoloji</p>
                             <p className="text-sm text-gray-700 leading-relaxed">
-                                9. ve 10. sınıf müfredatının temel kavramlarını yoklar. Sayısalcı için garanti net, Eşit Ağırlıkçı için ise rakiplerine fark atma jokeridir.
+                                9. ve 10. sınıf müfredatının ana omurgası. Sayısalcının kesinlikle fire vermemesi gereken yer; Eşit Ağırlıkçının ise 'ben Fen yapamam' demeyip çözeceği 5-6 soruyla rakiplerine tur bindireceği yerdir.
                             </p>
                         </div>
                     </div>
@@ -86,7 +86,7 @@ export default function TYTNetHesaplamaPage(): React.JSX.Element {
                         TYT&apos;de 4 Yanlış 1 Doğruyu Nasıl Götürür?
                     </h2>
                     <p className="text-gray-700 leading-relaxed mb-4 text-sm md:text-base">
-                        ÖSYM optik formunda işaretlediğiniz her yanlış seçenek, o testteki doğru sayınızdan <strong>0,25 net</strong> siler.
+                        ÖSYM optik formunda işaretlediğin her yanlış seçenek, o testteki doğru sayından tam <strong>0,25 net</strong> siler.
                     </p>
 
                     <div className="bg-slate-900 text-white rounded-xl p-5 text-center my-4">
@@ -97,10 +97,10 @@ export default function TYTNetHesaplamaPage(): React.JSX.Element {
 
                     <div className="space-y-3 text-sm text-gray-700 leading-relaxed">
                         <p>
-                            • <strong>Örnek:</strong> Türkçede 32 doğru, 8 yanlış işaretlediniz. 8&apos;i 4&apos;e böldüğümüzde 2 doğru cevabınız silinir ve netiniz <strong>30,00</strong> olarak sisteme yansır.
+                            • <strong>Somut Örnek:</strong> Türkçede 32 doğru, 8 yanlış işaretledin. 8&apos;i 4&apos;e böldüğümüzde 2 tam doğru cevabın silinir ve netin <strong>30,00</strong> olur.
                         </p>
                         <p>
-                            • <strong>Boşlar:</strong> Cevabını bilmediğiniz soruyu boş bırakırsanız ne doğru ne de yanlış sayılır; netinizden hiçbir eksilme olmaz. Bu yüzden kafadan sallamak yerine boş bırakmak çoğu zaman sıralamanızı korur.
+                            • <strong>Boş Bırakmanın Önemi:</strong> Emin olmadığın soruyu boş bırakırsan ne doğru ne de yanlış sayılır; netinden zerre eksilmez. Kafadan sallayıp yanlış çıkarmaktansa boş bırakmak çoğu zaman sıralamanı korur.
                         </p>
                     </div>
                 </div>
@@ -111,10 +111,10 @@ export default function TYTNetHesaplamaPage(): React.JSX.Element {
                         <span>⚠️</span> Hayati Kural: 0,5 Net Şartı
                     </h3>
                     <p className="text-sm leading-relaxed mb-3">
-                        2022&apos;de baraj kalktı ancak 0,5 net şartı aynen duruyor. TYT puanınızın hesaplanabilmesi için <strong>Türkçe veya Temel Matematik</strong> testlerinin en az birinde minimum yarım (0,5) ham netinizin olması zorunludur.
+                        Baraj puanı kalktı ancak 0,5 net şartı aynen duruyor. TYT puanının hesaplanabilmesi için <strong>Türkçe veya Temel Matematik</strong> testlerinin en az birinden minimum yarım (0,5) ham net çıkarman şart.
                     </p>
                     <p className="text-xs text-amber-900">
-                        İki derste de 0 net çekerseniz veya yanlışlarınız doğrularınızdan fazla olup eksiye düşerse, Sosyal ve Fenden ful çıkarsanız bile TYT puanınız hesaplanmaz.
+                        İki derste de 0 net çekersen veya yanlışların doğrularından fazla olup eksiye düşerse, Sosyal ve Fenden ful çıkarsan dahi TYT puanın hesaplanmaz, tercih ekranı açılmaz.
                     </p>
                 </div>
 

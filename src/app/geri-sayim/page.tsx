@@ -33,7 +33,7 @@ export default function GeriSayimPage() {
             {
                 "@type": "Question",
                 "name": "YKS 2027'ye kaç gün kaldı?",
-                "acceptedAnswer": { "@type": "Answer", "text": `YKS 2027 sınavına yaklaşık ${days} gün bulunmaktadır.` }
+                "acceptedAnswer": { "@type": "Answer", "text": `YKS 2027 sınavına yaklaşık ${days} gün kaldı.` }
             }
         ]
     }
@@ -84,20 +84,20 @@ export default function GeriSayimPage() {
                     </h2>
                     <div className="space-y-4 text-sm text-gray-700 leading-relaxed">
                         <div className="p-4 rounded-xl bg-blue-50/60 border border-blue-100">
-                            <strong className="text-blue-950 block mb-1">1. Gün Saymayı Bırakıp Görev Saymaya Başlayın:</strong>
-                            Takvimdeki güne odaklanıp panik yapmak yerine masadaki somut hedefe odaklanın. &quot;Bugün 15 problem + 1 Fen branş denemesi&quot; gibi ölçülebilir görevler stresinizi azaltır.
+                            <strong className="text-blue-950 block mb-1">1. Günleri Sayıp Panik Olmayı Bırakın, Görev Sayın:</strong>
+                            Sayaca bakıp &quot;Eyvah şu kadar gün kaldı&quot; demek enerjinizi tüketir. Masaya oturduğunuzda &quot;Bugün 20 problem, 1 Fizik denemesi, 1 de Paragraf testi&quot; deyin. Görev bitti mi o gün görevinizi yapmışsınızdır, kafanız rahat uyursunuz.
                         </div>
                         <div className="p-4 rounded-xl bg-purple-50/60 border border-purple-100">
-                            <strong className="text-purple-950 block mb-1">2. 10:15 Rutinini Biyolojik Saatinize İşleyin:</strong>
-                            Hafta sonu denemelerinizi mutlaka gerçek sınav saati olan 10:15&apos;te başlatın. Beyninizin odaklanma eğrisi bu saat aralığına önceden şartlanmalıdır.
+                            <strong className="text-purple-950 block mb-1">2. Pazar Denemesini Mutlaka 10:15&apos;te Başlatın:</strong>
+                            Öğleden sonra 2&apos;de pijamayla deneme çözülmez. Biyolojik saatinizi gerçek sınava alıştırın. Saat 10:15 dedin mi telefon uçak modunda, masa temiz, kronometre devrede olsun. Sınav günü beyniniz o saatte tam uyanık kalsın.
                         </div>
                         <div className="p-4 rounded-xl bg-emerald-50/60 border border-emerald-100">
-                            <strong className="text-emerald-950 block mb-1">3. Deneme Analizini Asla Atlamayın:</strong>
-                            Denemeyi çözdükten sonra yanlış soruların çözümünü öğrenmeden masadan kalkmayın. Gerçek sınavda karşınıza çıkacak olanlar, daha önce yanlış yaptığınız soru kalıplarıdır.
+                            <strong className="text-emerald-950 block mb-1">3. Analiz Yapmayacaksanız Deneme Çözmeyin:</strong>
+                            Deneme bitti, neti hesapladınız, kapattınız... Bu hiçbir işe yaramaz. Sizi sınavda ileri fırlatacak olan doğru yaptıklarınız değil, boş bıraktığınız ya da yanlış yaptığınız o 15 sorudur. Video çözümünü açın, mantığını kavrayın, gerekirse deftere yapıştırın.
                         </div>
                         <div className="p-4 rounded-xl bg-amber-50/60 border border-amber-100">
-                            <strong className="text-amber-950 block mb-1">4. Net Artışı İçin AYT Omurgasını Kurun:</strong>
-                            TYT kondisyonunuzu korurken kalan enerjinizin en az %65&apos;ini doğrudan puan getiren AYT Matematik ve Fen/Edebiyat konularına yönlendirin.
+                            <strong className="text-amber-950 block mb-1">4. TYT&apos;ye Takılıp AYT&apos;yi Iskalama:</strong>
+                            TYT kondisyon ister ama yerleştirmede asıl darbeyi %60 ağırlığıyla AYT vurur. &quot;TYT netim 80 olsun öyle AYT&apos;ye başlarım&quot; diyen öğrenci sınav sonrasında çok üzülür. Masadaki mesainin en az yarısı doğrudan AYT&apos;ye ayrılmalı.
                         </div>
                     </div>
                 </div>

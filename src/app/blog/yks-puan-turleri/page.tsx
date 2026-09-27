@@ -5,7 +5,7 @@ import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
     title: 'YKS Puan Türleri (SAY, EA, SÖZ, DİL) ve Bölümleri 2027',
-    description: 'YKS puan türleri rehberi: SAY, EA, SÖZ ve DİL alanlarının test ağırlıkları, TYT\'nin %40 etkisi ve hangi bölümün hangi puanla aldığına dair kapsamlı analiz.',
+    description: 'SAY, EA, SÖZ ve DİL puan türlerinde testlerin yüzdelik katkısı, TYT\'nin %40 ağırlığı ve hangi bölümün hangi puanla aldığına dair kılavuz.',
     keywords: 'yks puan türleri, say bölümleri, ea bölümleri, söz bölümleri, tyt ile alan bölümler, ayt puan türleri',
     alternates: { canonical: 'https://yksnethesapla.com/blog/yks-puan-turleri' },
     openGraph: {
@@ -32,7 +32,7 @@ export default function YKSPuanTurleri() {
             <article className="max-w-4xl mx-auto">
                 <BlogArticleSchema 
                     title="YKS Puan Türleri (SAY, EA, SÖZ, DİL) ve Bölümleri 2027" 
-                    description="YKS puan türleri rehberi: SAY, EA, SÖZ ve DİL alanlarının test ağırlıkları, TYT'nin %40 etkisi ve hangi bölümün hangi puanla aldığına dair kapsamlı analiz."
+                    description="SAY, EA, SÖZ ve DİL puan türlerinde testlerin yüzdelik katkısı, TYT'nin %40 ağırlığı ve hangi bölümün hangi puanla aldığına dair kılavuz."
                     datePublished="2026-02-06"
                     dateModified="2026-02-09"
                     url="https://yksnethesapla.com/blog/yks-puan-turleri"

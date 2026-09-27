@@ -55,19 +55,19 @@ export default function SSS() {
             questions: [
                 {
                     q: '4 yanlış 1 doğruyu nasıl götürüyor?',
-                    a: 'Her yanlış cevabınız doğru sayınızdan tam 0,25 net düşürür. Diyelim 30 doğru yaptınız ama 8 soruyu da yanlış işaretlediniz. 8\'i 4\'e bölüyoruz: 2 netiniz buharlaşıyor ve hanenize 28 net yazılıyor. Boş bıraktığınız sorular ise netinizi eksiltmez. Emin olmadığınız sorularda rastgele sallamamak bu yüzden hayati önem taşır.'
+                    a: 'Her yanlış cevabınız doğru sayınızdan tam 0,25 net düşürür. Diyelim 30 doğru yaptınız ama 8 soruyu da yanlış işaretlediniz. 8\'i 4\'e bölüyoruz: 2 netiniz buharlaşıyor ve hanenize 28 net yazılıyor. Boş bıraktığınız sorular ise netinizi eksiltmez. Emin olmadığınız sorularda rastgele sallamayıp boş bırakmak bu yüzden çok daha kârlıdır.'
                 },
                 {
-                    q: 'Net eksiye düşer mi, eksi net ne anlama gelir?',
-                    a: 'Evet, bal gibi düşer. Eğer 2 doğru yapıp 16 soruyu yanlış işaretlediyseniz: 2 − (16 ÷ 4) = −2 net olur. Ancak ÖSYM puan hesaplarken testteki negatif netleri sıfır (0) kabul eder; eksi puanla diğer derslerinizin doğrusunu eksiltmez.'
+                    q: 'Net eksiye düşer mi?',
+                    a: 'Evet, düşebilir. Örneğin 2 doğru yapıp 16 yanlış işaretlediysen: 2 - (16 / 4) = -2 net olur. Ancak ÖSYM puan hesabında negatif çıkan dersleri sıfır kabul eder, yani diğer derslerinin netini kesinlikle aşağı çekmez.'
                 },
                 {
-                    q: 'Zor soruları çözen daha yüksek puan alır mı?',
-                    a: 'Bu YKS hazırlığındaki en büyük şehir efsanesidir. ÖSYM soru bazlı değil, test bazlı standart sapma hesaplar. AYT Matematik testindeki en zor türev sorusuyla ilk sayfadaki temel işlem sorusu aynı puandır. Önemli olan sorunun zorluğu değil, o dersin Türkiye ortalamasının düşük olmasıdır.'
+                    q: 'Zor soru daha çok puan kazandırır mı?',
+                    a: 'Hayır, bu en yaygın şehir efsanesidir. ÖSYM soruyu tek tek puanlamaz, testi bir bütün olarak değerlendirir. AYT Matematik\'teki en zor türev-integral sorusuyla ilk sayfadaki temel rasyonel sayı sorusu aynı standart puanı getirir. Puanı artıran şey sorunun zorluğu değil, o testin Türkiye genelinde düşük net ortalamasına sahip olmasıdır.'
                 },
                 {
-                    q: 'Diploma notu (OBP) sıralamayı ne kadar oynatır?',
-                    a: 'Okul notunuz 5 ile çarpılarak 250-500 aralığında OBP\'ye çevrilir ve 0,12 katsayısıyla çarpılır. Diploma notu 100 olan biri +60 puan alırken, 70 olan biri +42 puan alır. Aradaki 18 puanlık fark, yığılma bölgesinde 15 bin ila 30 bin adayın gerisine düşmenize yol açabilir.'
+                    q: 'Diploma notu (OBP) sıralamayı çok etkiler mi?',
+                    a: 'Evet, fazlasıyla etkiler. Okul notun 5 ile çarpılıp OBP olur, sonra 0,12 katsayısıyla puanına eklenir. Notu 100 olan biri +60 puan alırken 70 olan +42 puan alır. Aradaki 18 puanlık fark yığılma bölgesinde 15-30 bin kişi geriye düşmek anlamına gelebilir. Okul sınavlarını asla hafife almayın.'
                 }
             ]
         },
@@ -77,15 +77,15 @@ export default function SSS() {
             questions: [
                 {
                     q: 'TYT\'de baraj kalktıysa herkes tercih yapabiliyor mu?',
-                    a: 'Evet, eski 150 ve 180 puan barajları tamamen kalktı. Puanı hesaplanan her aday üniversite tercihi yapabilir. Ancak Tıp (ilk 50 bin), Hukuk (ilk 125 bin), Mühendislik (ilk 300 bin) gibi bölümlerdeki "Başarı Sırası Barajı" aynen devam ediyor.'
+                    a: 'Evet, 150 ve 180 puanlık barajlar kalktı. Puanı hesaplanan herkes tercih yapabilir. Ancak kritik bir kural var: Tıp için SAY\'da ilk 50 bin, Hukuk için EA\'da ilk 125 bin, Mühendislik için ilk 300 bin gibi "Başarı Sırası Barajı" aynen devam ediyor. Puanın yetse dahi bu sıralama sınırını geçemezsen o bölümü listene yazamıyorsun.'
                 },
                 {
                     q: '0,5 net kuralı tam olarak nedir?',
-                    a: 'TYT puanınızın hesaplanabilmesi için Türkçe veya Temel Matematik testlerinin en az birinden minimum 0,5 ham netinizin bulunması şarttır. Sayısalcı bir öğrenci "ben sadece Fen çözerim" diyemez. Türkçe veya Matematikten yarım net yoksa puan hesaplanmaz.'
+                    a: 'TYT puanının hesaplanabilmesi için Türkçe veya Temel Matematik testlerinin en az birinden minimum yarım (0,5) ham net çıkarman şarttır. "Ben Sayısalcıyım, sadece Fene bakarım" diyemezsin. Türkçe ve Matematik ikisi birden 0 veya eksi gelirse, Sosyal ve Feni fullesen dahi TYT puanın hesaplanmaz.'
                 },
                 {
                     q: 'Kırık OBP tam olarak kimleri vurur?',
-                    a: 'Bir önceki yıl YKS ile herhangi bir 2 yıllık veya 4 yıllık örgün/açıköğretim (kontenjanlı) programına yerleştirildiyseniz okul puanınız yarı yarıya (0,06) kesilir. Tercih listesi gönderip hiçbir yere yerleşemediyseniz veya mezuna kalıp hiç tercih vermediyseniz puanınız kesinlikle kırılmaz.'
+                    a: 'Bir önceki yıl tercih yapıp herhangi bir ön lisans veya lisans programına yerleştirildiysen (açıköğretim kontenjanlı bölümler dahil) — ister kaydol ister hiç gitme — okul puanın yarı yarıya (0,12 yerine 0,06) kesilir. Tercih verip hiçbir yere yerleşemediysen veya mezuna kalıp hiç tercih yapmadıysan puanın kesinlikle kırılmaz.'
                 }
             ]
         },
@@ -94,16 +94,16 @@ export default function SSS() {
             icon: '🎯',
             questions: [
                 {
-                    q: 'Burada hesaplanan sıralamama ne kadar güvenebilirim?',
-                    a: 'Hiçbir site sınav sonucunu nokta atışı tahmin edemez. Çünkü o yılın sınavının ne kadar zor olacağını ve kaç kişinin gireceğini sınavdan önce kimse bilemez. Bizim yaptığımız şey; ÖSYM\'nin son 3 yıldaki resmi yığınsal verilerini baz alarak gerçeğe en yakın simülasyonu sunmaktır.'
+                    q: 'Buradaki sıralama tahminine ne kadar güvenebilirim?',
+                    a: 'Açık konuşalım: Dünyadaki hiçbir algoritma gerçek sınav sonucunu birebir tutturamaz. Çünkü o yıl sınava kaç kişinin gireceği, soruların zorluk seviyesi ve Türkiye ortalaması ancak sınavdan sonra belli olur. Biz son yılların resmi ÖSYM yığınsal dağılımlarını baz alarak en gerçekçi tahmin bandını sunuyoruz. Kesin sonuç için her zaman ÖSYM sonuç belgesini bekleyin.'
                 },
                 {
-                    q: 'AYT\'de hangi testleri çözmek zorundayım?',
-                    a: 'AYT kitapçığında 160 soru vardır ama herkes kendi alanındaki 80 soruyu çözer. Sayısalcı Matematik (40) ve Fen (40); Eşit Ağırlıkçı Matematik (40) ve Edebiyat-Sosyal-1 (40); Sözelci ise Edebiyat-Sosyal-1 (40) ve Sosyal-2 (40) testlerini çözer. Fazladan çözdüğünüz test kendi alan puanınızı düşürmez ama sürenizi yer.'
+                    q: 'AYT\'de hangi testleri çözmeliyim?',
+                    a: 'Kitapçıkta 160 soru var ama senin hedefin kendi alanındaki 80 soru. Sayısalcıysan Matematik (40) + Fen (40); EA\'cıysan Matematik (40) + Edebiyat-Sosyal-1 (40); Sözelciysen Edebiyat-Sosyal-1 (40) + Sosyal-2 (40) çözeceksin. Diğer testleri de çözebilirsin ama kendi puan türüne faydası olmaz, sadece süreni harcar.'
                 },
                 {
-                    q: 'YKS\'ye kaç ay kala konu çalışmayı bırakmalıyım?',
-                    a: 'Son 2-3 ay kala konu anlatımı kitaplarını tamamen rafa kaldırıp branş denemelerine ve çıkmış sorulara geçmek gerekir. Eksikler artık konu çalışarak değil, deneme analizinde yanlış çıkan soruların üzerine gidilerek kapatılır.'
+                    q: 'Son 2-3 ay kala konu çalışmayı bırakmalı mıyım?',
+                    a: 'Son 2-3 ay kala sıfırdan kalın konu kitaplarına gömülmek yerine branş denemelerine ve çıkmış sorulara ağırlık verilmeli. Eksikleri konu çalışarak değil, denemede yanlış yaptığın veya boş bıraktığın soruların analizine odaklanarak kapatmak çok daha hızlı net artırır.'
                 }
             ]
         },
@@ -112,12 +112,12 @@ export default function SSS() {
             icon: '💻',
             questions: [
                 {
-                    q: 'Girdiğim netler ve okul notum bir yerde saklanıyor mu?',
-                    a: 'Kesinlikle hayır. Bu sitede tüm matematiksel işlemler doğrudan kendi tarayıcınızda çalışır. Veritabanımız yok, sunucuya aktarılan tek bir girdi bile bulunmuyor. Sayfayı yenilediğiniz an yazdığınız her şey silinir.'
+                    q: 'Girdiğim bilgiler kaydediliyor mu?',
+                    a: 'Hayır. Bütün hesaplamalar tamamen kendi cihazının tarayıcısında yapılır, sunucularımıza tek bir veri dahi iletilmez. Sayfayı yenilediğin veya kapattığın an girdiğin her şey silinir.'
                 },
                 {
-                    q: 'Site gerçekten tamamen ücretsiz mi, üyelik isteyecek misiniz?',
-                    a: 'Evet, tamamen ücretsizdir. Ne şimdi ne de gelecekte kayıt olma, e-posta verme veya şifre oluşturma gibi zorunluluklar olmayacak. Sayfayı açıp istediğiniz kadar net hesabı yapabilirsiniz.'
+                    q: 'Site ücretli mi olacak ileride?',
+                    a: 'Hayır. Sitemiz tamamen ücretsizdir. Ne üyelik, ne e-posta kaydı ne de herhangi bir ücret talep edilmez. Sayfayı aç, netlerini gir ve sonucunu gör; sistem daima böyle kalacak.'
                 }
             ]
         }

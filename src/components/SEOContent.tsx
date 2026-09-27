@@ -26,15 +26,15 @@ export default function SEOContent() {
                 <div className="flex items-center gap-3 mb-4">
                     <Icon d={ICONS.calc} className="h-8 w-8 text-blue-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
-                        Netleri Sayıya, Sayıları Gerçekçi Sıralamaya Dönüştürmek
+                        Net Hesabı Neden Bu Kadar Kafa Karıştırır?
                     </h2>
                 </div>
                 <div className="text-gray-700 space-y-4 leading-relaxed text-base">
                     <p>
-                        Deneme biter, optik formu kontrol edersiniz: 28 Türkçe doğrusu, 9 yanlış. Matematikte 18 doğru, 4 yanlış. Masanın başında ilk yaptığınız şey hemen elinize telefonu alıp netleri toplamak olur.
+                        Deneme bitti diyelim. Optik formu kontrol ettiniz: 28 Türkçe doğrusu var, 9 yanlış. Matematikte de 18 doğru, 4 yanlış. İnsanın ilk refleksi telefona sarılıp doğru-yanlışları toplamak oluyor tabii.
                     </p>
                     <p>
-                        Fakat asıl kafa karıştıran kısım tam burada başlar. Ham neti bilmek tek başına hiçbir işe yaramaz. Çünkü üniversite kapısını açan şey sadece soru sayısı değildir; o yılki test katsayıları, standart sapma dalgalanmaları ve lise diploma notunuzdan (OBP) gelen puandır. Sitemizdeki motoru tam olarak bu yüzden kurduk: Eski katsayılarla sizi yanıltmadan, ÖSYM&apos;nin son yayımladığı resmi veriler üzerinden tahmini yerinizi net biçimde göstermek.
+                        Ama asıl baş ağrısı tam burada başlıyor aslında. Ham neti bilmek tek başına hiçbir işe yaramıyor. Neden mi? Çünkü üniversiteye girip giremeyeceğinizi belirleyen sadece kaç soru çözdüğünüz değil. O yılın test katsayıları, standart sapma oranları, sınava giren kişi sayısı ve lise diploma notunuzdan gelen OBP puanı — hepsi bir araya gelip yerleştirme puanınızı çıkarıyor. Bu siteyi kurmamızın sebebi de tam olarak bu: Geçen yılın veya 3 yıl öncesinin katsayılarıyla sizi kandırmak yerine, ÖSYM&apos;nin en son yayımladığı resmi rakamlarla size gerçekçi bir tablo çizmek.
                     </p>
                     <div className="p-4 bg-emerald-50 border-l-4 border-emerald-500 rounded-r-lg text-emerald-950 text-sm">
                         🔒 <strong>Gizlilik notu:</strong> Girdiğiniz deneme sonuçları veya okul notunuz hiçbir sunucuya iletilmez. Sayfayı yenilediğiniz an veriler cihazınızın belleğinden silinir.
@@ -47,7 +47,7 @@ export default function SEOContent() {
                 <div className="card hover:shadow-lg transition-shadow border-t-4 border-blue-500">
                     <h3 className="text-lg font-bold text-gray-900 mb-2">TYT: Hız ve Kondisyon</h3>
                     <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                        120 soruya karşılık 165 dakika. Türkçe ve Matematik testlerinin her biri toplam TYT puanının yaklaşık %33&apos;ünü oluşturur. AYT&apos;ye girecekseniz yerleştirme puanınıza %40 doğrudan etki eder.
+                        120 soruya 165 dakika — yani soru başına 82 saniyeniz var. Türkçe ve Matematik testleri puanın yaklaşık üçte ikisini belirler. AYT&apos;ye girecekseniz bu puan yerleştirmede %40 ağırlık taşır.
                     </p>
                     <Link href="/blog/tyt-net-hesaplama-rehberi" className="text-blue-600 text-xs font-semibold hover:underline">
                         TYT katsayı mantığını oku →
@@ -57,7 +57,7 @@ export default function SEOContent() {
                 <div className="card hover:shadow-lg transition-shadow border-t-4 border-purple-500">
                     <h3 className="text-lg font-bold text-gray-900 mb-2">AYT: Asıl Sıralama Motoru</h3>
                     <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                        Yerleştirme puanının %60&apos;ı buradan gelir. Süre baskısı düşüktür (180 dakika), soru başına bilgi ağırlığı çok yüksektir. Sayısal, Eşit Ağırlık ve Sözel öğrencileri kendi 80 sorusuna odaklanır.
+                        Yerleştirme puanının %60&apos;ı buradan çıkıyor. Süre biraz daha rahat (180 dk) ama sorular bir hayli ağır. Sayısalcı, EA&apos;cı, Sözelci — herkes kendi 80 sorusuna odaklanıyor.
                     </p>
                     <Link href="/blog/ayt-puan-hesaplama" className="text-purple-600 text-xs font-semibold hover:underline">
                         AYT test ağırlıklarını incele →
@@ -67,7 +67,7 @@ export default function SEOContent() {
                 <div className="card hover:shadow-lg transition-shadow border-t-4 border-amber-500">
                     <h3 className="text-lg font-bold text-gray-900 mb-2">OBP: Sıralamayı Uçuran Güç</h3>
                     <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                        Diploma notunuz 5 ile çarpılarak 250-500 arası OBP&apos;ye çevrilir ve 0,12 ile çarpılıp hanenize 30 ila 60 puan eklenir. Geçen yıl yerleştiyseniz bu puan yarıya (0,06) iner.
+                        Okul notunuz 5 ile çarpılıp OBP oluyor, sonra 0,12 katsayısıyla puana ekleniyor. Kulağa az gibi gelse de, 90 notlu biriyle 75 notlu biri arasında 9 puanlık fark oluşuyor — yığılma bölgesinde bu 10-15 bin kişi demek. Geçen yıl bir yere yerleştiyseniz bu katsayı yarıya düşüyor.
                     </p>
                     <Link href="/blog/obp-hesaplama" className="text-amber-700 text-xs font-semibold hover:underline">
                         Kırık OBP hesabını gör →
@@ -85,13 +85,13 @@ export default function SEOContent() {
                 </div>
                 <div className="text-gray-700 space-y-3 text-sm md:text-base leading-relaxed">
                     <p>
-                        Evet, eski yıllardaki 150 veya 180 puanlık genel baraj uygulaması bitti. Artık puanınız hesaplandığı anda tercih hakkı kazanıyorsunuz. Ancak bu durum &quot;istediğim gibi sıfır çekebilirim&quot; anlamına gelmiyor.
+                        Evet, o meşhur 150 ve 180 puanlık baraj uygulaması bitti artık. Puanın hesaplandığı an tercih hakkın oluyor. Ama sakın &quot;E o zaman Türkçe&apos;de sıfır çeksem de olur&quot; demeyin.
                     </p>
                     <div className="bg-amber-100/70 border-l-4 border-amber-500 p-4 rounded-r-lg text-amber-950 font-medium text-sm my-3">
                         ⚠️ <strong>ÖSYM&apos;nin 0,5 Net Şartı:</strong> TYT puanınızın hesaplanabilmesi için <strong>Türkçe veya Temel Matematik</strong> testlerinin en az birinden minimum 0,5 ham netinizin olması şarttır. İki derste de 0 net veya eksiye düşerseniz, Sosyal ve Fen testlerinde ful çekseniz dahi TYT puanınız hesaplanmaz.
                     </div>
                     <p>
-                        Aynı kural AYT için de geçerli: Sayısal öğrencisi Matematik veya Fen&apos;den, Eşit Ağırlık öğrencisi Matematik veya Edebiyat-Sosyal-1&apos;den en az yarım net çıkarmak zorundadır.
+                        Bu kural AYT&apos;de de var bu arada. Sayısalcıysan Mat veya Fen&apos;den, EA&apos;cıysan Mat veya Edebiyat-Sos-1&apos;den yarım net çıkarmak zorundasın. Yoksa AYT puanın da hesaplanmaz.
                     </p>
                 </div>
             </section>
@@ -107,13 +107,13 @@ export default function SEOContent() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-gray-700 text-sm md:text-base">
                     <div>
                         <p className="mb-3 leading-relaxed">
-                            ÖSYM sınavlarında şans eseri işaretlemeleri engellemek için her yanlış cevap doğru hanenizden <strong>0,25 net</strong> siler. Yani 4 adet yanlış yaptığınızda, binbir emekle çözdüğünüz 1 tane doğru sorunuz tamamen yok sayılır.
+                            ÖSYM rastgele sallayanları cezalandırmak için basit ama acımasız bir sistem kurmuş: Her yanlış cevap doğru hanenizden <strong>0,25 net</strong> siliyor. 4 tane yanlış yaptıysan — hop, 1 doğrun gitti. Ter döküp çözdüğün o soru çöpe girdi resmen.
                         </p>
                         <div className="bg-gray-100 rounded-xl p-4 font-mono text-center font-bold text-gray-800 text-lg my-4">
                             Net = Doğru Sayısı − (Yanlış Sayısı ÷ 4)
                         </div>
                         <p className="text-xs text-gray-500">
-                            Boş bıraktığınız sorular puanınızı düşürmez. İki şık arasında kalıp emin olamadığınızda rastgele sallamak yerine boş bırakmanın taktiksel önemi buradan gelir.
+                            Boş bıraksan puanın düşmez. İki şık arasında kaldığında ve &quot;emin değilim ama belki B&apos;dir&quot; diye düşünüyorsan — bırak boş gitsin. O 0,25&apos;lik kayıp yığılma bölgesinde canını yakar.
                         </p>
                     </div>
 
@@ -194,23 +194,23 @@ export default function SEOContent() {
                     {[
                         {
                             q: 'Zor soruları çözünce daha çok puan gelir mi?',
-                            a: 'Hayır, ÖSYM soru bazlı standart sapma uygulamaz; test bazlı sapma uygular. Yani aynı test içindeki (örneğin AYT Matematik) en zor integral sorusu ile en basit denklem sorusunun puan değeri birbirine eşittir. Puanı artıran şey sorunun zorluğu değil, o testin Türkiye ortalamasının düşük olmasıdır.'
+                            a: 'Yok öyle bir şey. Bu en yaygın şehir efsanesi. ÖSYM soru soru puan vermiyor ki — bütün testi toplu değerlendiriyor. AYT Mat\'taki o kara kara düşündüğün integral sorusuyla ilk sayfadaki basit denklem sorusu aynı puanı veriyor. Puanını asıl artıran şey, o testin Türkiye genelinde düşük tutulması (yani herkesin zorlandığı sınav sana yarıyor).'
                         },
                         {
                             q: 'Hesapladığım sıralama sınav sonucumla birebir aynı mı gelir?',
-                            a: 'Hiçbir dijital araç sınav sonucunu virgülden sonra aynı çıkaramaz. Çünkü her yıl sınava giren öğrenci sayısı, soruların genel zorluk seviyesi ve Türkiye ortalaması değişir. Sitemizdeki sıralama motoru, ÖSYM\'nin son 3 yıldaki resmi yığınsal verilerini karşılaştırarak size en gerçekçi aralığı gösterir.'
+                            a: 'Dürüst olalım: Dünyanın en iyi algoritması bile sınav sonucunu tam tutturamaz. Her yıl sınava giren kişi sayısı farklı, soruların zorluk seviyesi farklı, herkesin ortalaması farklı. Biz burada ÖSYM\'nin son birkaç yılda yayınladığı resmi yığınsal verileri kullanarak sana en yakın tahmini vermeye çalışıyoruz. Tam sayı olmasa da bölge olarak güvenilir.'
                         },
                         {
-                            q: 'OBP kırılması (kırık OBP) tam olarak ne zaman başıma gelir?',
-                            a: 'Geçen yıl YKS ile bir üniversite programına (açıköğretim kontenjanlı bölümleri ve özel yetenek dahil) merkezi olarak yerleştiyseniz ve bu yıl tekrar sınava giriyorsanız OBP katsayınız 0,12 yerine 0,06 olarak uygulanır. Tercih yapıp yerleşemediyseniz veya hiç tercih vermediyseniz puanınız kırılmaz.'
+                            q: 'OBP kırılması ne zaman başıma gelir?',
+                            a: 'Geçen sene YKS\'yle bir yere yerleştiysen — açıköğretim de dahil — bu sene girdiğinde OBP katsayın 0,12\'den 0,06\'ya iniyor. Bu da şu demek: Diploma notundan gelen puan yarıya düşüyor. Ama dikkat, tercih yapıp kazanamadıysan veya hiç tercih vermeden mezuna kaldıysan puanın kırılmaz. Sadece bir yere yerleşip de gitmeyen veya bırakanlara uygulanan bir ceza bu.'
                         },
                         {
-                            q: 'Tıp veya Hukuk için sadece puan yetiyor mu?',
-                            a: 'Yetmez. ÖSYM bazı kritik bölümlere başarı sırası barajı koymuştur. Örneğin Tıp Fakültesi için SAY alanında ilk 50.000, Hukuk için EA alanında ilk 125.000, Mühendislikler için SAY alanında ilk 300.000 sıralamasına girmeniz zorunludur. Puanınız yetse bile bu sıralamanın gerisinde kalırsanız tercih listesine yazamazsınız.'
+                            q: 'Tıp veya Hukuk için sadece puan yeterli mi?',
+                            a: 'Maalesef yetmiyor. Puanın çok yüksek bile olsa, YÖK\'ün koyduğu sıralama barajını geçemen lazım. Tıp için SAY\'da ilk 50 bin, Hukuk için EA\'da ilk 125 bin, Mühendislikler için SAY\'da ilk 300 bin içinde olman şart. Puanın 500 bile gelse sıralaman tutmazsa o bölümü tercih listene ekleyemiyorsun bile.'
                         },
                         {
-                            q: 'Sitede yaptığım net hesaplamaları bir yere kaydediliyor mu?',
-                            a: 'Asla. Kodlarımız doğrudan tarayıcınızın kendi JavaScript motoru üzerinde çalışır. Ne doğru-yanlış sayılarınız ne de OBP notunuz herhangi bir sunucuya veya veri tabanına gitmez. Ekranı kapattığınız an tüm bilgiler kaybolur.'
+                            q: 'Sitede yaptığım hesaplamalar bir yere kaydediliyor mu?',
+                            a: 'Hayır, hiçbir yere gitmiyor. Her şey senin tarayıcında dönüyor, sunucuya tek bir veri bile gönderilmiyor. Sayfayı kapattın mı yazdığın her şey uçar gider. Kayıt falan yok yani, rahat olun.'
                         },
                     ].map((item, i) => (
                         <details key={i} className="group border border-gray-200 rounded-xl overflow-hidden">

@@ -31,7 +31,7 @@ export default function HomePage() {
                         YKS Net Hesaplama 2027
                     </h1>
                     <p className="text-base sm:text-lg text-blue-100 max-w-2xl mx-auto">
-                        TYT, AYT ve YDT netlerinizi güncel ÖSYM katsayıları, 0,5 net kuralı ve standart sapma projeksiyonlarıyla hesaplayın. Hızlı, doğru ve güvenilir.
+                        Optik formdaki doğru ve yanlışlarını gir; 4 yanlışın sildiği netleri, ÖSYM test katsayılarını ve OBP katkısıyla tahmini sıralamanı hemen gör.
                     </p>
                 </div>
             </section>

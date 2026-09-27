@@ -5,12 +5,12 @@ import BlogArticleSchema from '@/components/BlogArticleSchema'
 import QuickNetSimulator from '@/components/QuickNetSimulator'
 
 export const metadata: Metadata = {
-    title: 'TYT Matematik Konuları ve Soru Dağılımı 2027 | Kapsamlı Çalışma Rehberi',
+    title: 'TYT Matematik Konuları ve Soru Dağılımı 2027 | 30+ Net İçin Çalışma Rehberi',
     description: 'TYT Matematik sınavında hangi konudan kaç soru çıkıyor? 0-10, 10-20 ve 30+ net seviyelerine özel taktikler, süre yönetimi ve güncel soru dağılım analizi.',
     keywords: 'tyt matematik konuları, tyt matematik soru dağılımı 2027, tyt matematik nasıl çalışılır, yks matematik net artırma, tyt geometri',
     alternates: { canonical: 'https://yksnethesapla.com/blog/tyt-matematik-konulari' },
     openGraph: {
-        title: 'TYT Matematik Konuları ve Soru Dağılımı 2027 | Kapsamlı Rehber',
+        title: 'TYT Matematik Konuları ve Soru Dağılımı 2027 | 30+ Net Rehberi',
         description: 'TYT Matematik testini 30+ nete taşıyacak konu analizleri, seviyelere göre çalışma planı ve sınav süresi yönetimi rehberi.',
         type: 'article',
         publishedTime: '2026-02-19',
@@ -32,7 +32,7 @@ export default function TYTMatematikKonulari() {
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
                 <BlogArticleSchema 
-                    title="TYT Matematik Konuları ve Soru Dağılımı 2027 | Kapsamlı Çalışma Rehberi" 
+                    title="TYT Matematik Konuları ve Soru Dağılımı 2027 | 30+ Net İçin Çalışma Rehberi" 
                     description="TYT Matematik sınavında hangi konudan kaç soru çıkıyor? 0-10, 10-20 ve 30+ net seviyelerine özel taktikler, süre yönetimi ve güncel soru dağılım analizi."
                     datePublished="2026-02-19"
                     dateModified="2026-02-22"

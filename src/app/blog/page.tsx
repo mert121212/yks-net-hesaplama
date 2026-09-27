@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-    title: 'YKS Blog | YKS Hazırlık Rehberleri ve İpuçları',
-    description: 'YKS 2027 hazırlık rehberleri, üniversite tercih ipuçları, sınav stratejileri ve daha fazlası. TYT, AYT, YDT konularında detaylı makaleler.',
+    title: 'YKS Blog | Net Artırma Taktikleri ve Sınav Rehberleri',
+    description: '2027 YKS hazırlığında masada işe yarayan net taktikleri, güncel ÖSYM katsayıları, tercih rehberleri ve çalışma stratejileri.',
     keywords: 'yks blog, yks hazırlık, tyt hazırlık, ayt hazırlık, üniversite tercih, yks ipuçları',
 }
 
@@ -35,7 +35,7 @@ const blogPosts = [
     {
         id: 'obp-hesaplama',
         title: 'OBP (Diploma Notu) Sıralamanızı Nasıl Değiştirir? Kırık OBP ve Katsayı Analizi',
-        excerpt: 'Lise diploma notunun YKS yerleştirme puanına etkisi, kırık OBP kesintisi ve okul birinciliği kontenjanı hakkında kapsamlı analiz.',
+        excerpt: 'Lise diploma notunun YKS yerleştirme puanına etkisi, kırık OBP kesintisi ve okul birinciliği kontenjanı hakkında gerçekçi analiz.',
         date: '2026-02-24',
         category: 'Rehber',
         readTime: '9 dakika',
@@ -172,7 +172,7 @@ export default function BlogPage() {
                         YKS Blog & Rehberler
                     </h1>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
-                        YKS hazırlık sürecinizde size yardımcı olacak rehberler, ipuçları ve stratejiler
+                        Ezbere tavsiyeler yerine masa başında bizzat denenmiş taktikler, güncel katsayı analizleri ve net artıran rehberler.
                     </p>
                     <div className="flex flex-wrap justify-center gap-3 text-sm">
                         <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full font-medium">
@@ -316,23 +316,23 @@ export default function BlogPage() {
                 {/* SEO Content */}
                 <div className="mt-12 prose prose-lg max-w-none">
                     <div className="bg-white rounded-xl p-8 shadow-lg">
-                        <h2 className="text-2xl font-bold text-gray-900 mb-4">YKS Blog Hakkında</h2>
+                        <h2 className="text-2xl font-bold text-gray-900 mb-4">Bu Blog Neden Var?</h2>
                         <p className="text-gray-700 mb-4">
-                            YKS Net Hesaplama blog sayfamızda, YKS 2027 sınavına hazırlanan öğrenciler için
-                            hazırladığımız kapsamlı rehberler, ipuçları ve stratejileri bulabilirsiniz.
-                            TYT net hesaplama, AYT puan hesaplama, üniversite tercih stratejileri ve daha
-                            fazlası hakkında detaylı makaleler.
+                            Sınava hazırlanırken internette dolaşıyorsun, bir sürü site &quot;şunu yap, bunu yap&quot; diyor ama
+                            hiçbiri somut konuşmuyor. &quot;Bol soru çözün&quot; demek kolay da, hangi konudan başlayacaksın?
+                            Netin neden 3 haftadır kıpırdamıyor? AYT&apos;de 30 netten 45&apos;e nasıl çıkacaksın? İşte bu
+                            yazıları tam olarak bu sorulara cevap vermek için yazıyoruz.
                         </p>
                         <p className="text-gray-700 mb-4">
-                            Tüm içeriklerimiz ücretsiz ve 2027 YKS sınavı için günceldir. Düzenli olarak
-                            yeni makaleler ekliyoruz. YKS hazırlık sürecinizde başarılar dileriz!
+                            Buradaki her şey ücretsiz ve 2027 sınavına göre güncel. Yeni yazılar da eklemeye devam ediyoruz.
+                            Bir konuda takıldıysan veya &quot;şunu da yazın&quot; demek istiyorsan iletişim sayfasından bize yaz, gerçekten okuyoruz.
                         </p>
                         <div className="flex flex-wrap gap-2 mt-6">
-                            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">YKS Blog</span>
-                            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">YKS Rehberi</span>
-                            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">TYT Hazırlık</span>
-                            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">AYT Hazırlık</span>
-                            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Üniversite Tercih</span>
+                            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">YKS Hazırlık</span>
+                            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">TYT Taktikleri</span>
+                            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">AYT Strateji</span>
+                            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Tercih Rehberi</span>
+                            <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Net Hesaplama</span>
                         </div>
                     </div>
                 </div>

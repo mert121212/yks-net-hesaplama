@@ -17,9 +17,9 @@ export default function IletisimPage() {
                     <header className="text-center mb-12">
                         <h1 className="text-4xl font-bold text-gray-900 mb-4">İletişim</h1>
                         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                            Görüşleriniz geleceğimizi şekillendiriyor. 2027 YKS hazırlık sürecinde
-                            karşılaştığınız teknik sorunlar, içerik önerileri veya iş birliği talepleriniz
-                            için ekibimizle doğrudan iletişime geçebilirsiniz.
+                            Hesaplayıcıda bir hata mı buldunuz? Blog için konu öneriniz mi var?
+                            Ya da sadece "şu özelliği de ekleyin" demek istiyorsanız — buyrun yazın.
+                            Okuyoruz, cevaplıyoruz.
                         </p>
                     </header>
 

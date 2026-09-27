@@ -31,44 +31,44 @@ export default function HakkimizdaPage() {
                                 Biz Kimiz ve Neden Buradayız?
                             </h2>
                             <p className="mb-4">
-                                Sınava hazırlık zaten yeterince stresli bir süreç. Üstüne bir de "Acaba netlerimle nereye girerim?", "Şu 0,5 net kuralı beni vurur mu?" veya "OBP kırılırsa halim ne olur?" gibi kafa kurcalayan yüzlerce soruyla boğuştuğunuzu biliyoruz. Çünkü zamanında aynı yollardan biz de geçtik. 
+                                Sınava hazırlık zaten stresli bir süreç. Üstüne bir de "Kaç netim var, kaç puan yapar?", "Bu 0,5 net kuralı nedir ya?" veya "OBP kırılırsa ne olur?" soruları kafanızı kurcalıyor. Biz de aynı yollardan geçtik, o stresi yaşadık. 
                             </p>
                             <p className="mb-4">
-                                İnternette net hesaplama siteleri aradığınızda genelde karşınıza her yeri reklam dolu, güncellenmemiş, eski katsayılarla çalışan veya sadece tıklanma uğruna yalan yanlış sonuçlar gösteren siteler çıkıyor. İşte <strong>yksnethesapla.com</strong> tam olarak bu duruma sinirlenip kolları sıvadığımız bir projedir. 
+                                İnternette net hesaplama sitesi aradığınızda çoğu ya reklam bataklığı, ya eski katsayılarla çalışıyor ya da tıklanma peşinde abartılmış rakamlar gösteriyor. <strong>yksnethesapla.com</strong> bütün bu saçmalıklara kızıp "Biz düzgün bir şey yapalım" dediğimiz bir proje.
                             </p>
                             <p>
-                                Amacımız; 2027 sınav maratonuna uygun, arkasında gerçekten öğrencilerin halinden anlayan bir ekibin olduğu, sade, reklamsız (veya en azından sizi boğmayan) ve en önemlisi <strong>ÖSYM mantığına sadık</strong> bir hesaplama motorunu tamamen ücretsiz olarak sunmaktır.
+                                Ne yapmaya çalışıyoruz? ÖSYM mantığına sadık, güncel katsayılarla çalışan, seni gereksiz e-posta kayıtlarına zorlamayan, sade bir hesaplama motoru sunmak. Tamamen ücretsiz. Reklam olacak tabii (sunucu masrafları var çünkü) ama seni boğacak cinsten değil.
                             </p>
                         </section>
 
                         {/* Neden biz */}
                         <section>
                             <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                                Bizi Diğerlerinden Ayıran Şeyler Neler?
+                                Neden Biz?
                             </h2>
                             <div className="grid md:grid-cols-2 gap-4">
                                 <div className="bg-blue-50 p-5 rounded-xl border-l-4 border-blue-500">
-                                    <h3 className="font-bold text-blue-900 mb-2">📊 Gerçekçi Veriler</h3>
+                                    <h3 className="font-bold text-blue-900 mb-2">📊 Gerçekçi Rakamlar</h3>
                                     <p className="text-sm text-gray-700">
-                                        Eski yılların yığılma oranlarını ve son açıklanan YKS katsayılarını birebir baz alıyoruz. Sizi sahte umutlarla şişirmiyor, acı da olsa en gerçekçi tabloyu önünüze koyuyoruz.
+                                        Geçmiş yılların yığılma verilerini ve son açıklanan katsayıları baz alıyoruz. "400 puan yaparsın" deyip seni uçurmuyoruz; acı da olsa gerçeği söylüyoruz.
                                     </p>
                                 </div>
                                 <div className="bg-green-50 p-5 rounded-xl border-l-4 border-green-500">
-                                    <h3 className="font-bold text-green-900 mb-2">✅ Uyanık Algoritma</h3>
+                                    <h3 className="font-bold text-green-900 mb-2">✅ Kuralları Bilen Sistem</h3>
                                     <p className="text-sm text-gray-700">
-                                        "Türkçe veya Temel Matematik testinden en az 0,5 net çıkarma" gibi adayların puan hesaplamasını doğrudan etkileyen resmi ÖSYM kurallarını sistemimiz otomatik kontrol eder ve sizi uyarır.
+                                        0,5 net kuralını, kırık OBP hesabını, başarı sırası barajlarını sistem otomatik kontrol ediyor. Yanlış bir şey girersen seni uyarıyor.
                                     </p>
                                 </div>
                                 <div className="bg-purple-50 p-5 rounded-xl border-l-4 border-purple-500">
-                                    <h3 className="font-bold text-purple-900 mb-2">🔒 Netleriniz Sadece Sizde Kalır</h3>
+                                    <h3 className="font-bold text-purple-900 mb-2">🔒 Bilgilerin Sende Kalır</h3>
                                     <p className="text-sm text-gray-700">
-                                        Girdiğiniz netler, puanlar veya diploma notunuz hiçbir sunucumuza kaydedilmez. Her şey sadece o an kendi bilgisayarınızda veya telefonunuzda hesaplanır.
+                                        Girdiğin netler, okul notun — hiçbiri sunucumuza gitmiyor. Tarayıcında hesaplanıp orada kalıyor. Sayfayı kapattığında her şey siliniyor.
                                     </p>
                                 </div>
                                 <div className="bg-orange-50 p-5 rounded-xl border-l-4 border-orange-500">
-                                    <h3 className="font-bold text-orange-900 mb-2">📚 Öğrenci Dostu Rehberlik</h3>
+                                    <h3 className="font-bold text-orange-900 mb-2">📚 İnsan Gibi Yazıyoruz</h3>
                                     <p className="text-sm text-gray-700">
-                                        Blog yazılarımızı yazarken resmi ve sıkıcı bir dil kullanmıyoruz. Lise koridorlarında veya kütüphanede konuştuğunuz dilde, işinize yarayacak net taktikler veriyoruz.
+                                        Blog yazılarında resmi rapor dilinden kaçınıyoruz. Sanki kütüphanede yanında oturan bir arkadaşın sana anlatıyormuş gibi, sade ve net konuşuyoruz.
                                     </p>
                                 </div>
                             </div>
@@ -80,11 +80,11 @@ export default function HakkimizdaPage() {
                                 Puanları ve Sıralamaları Nasıl Hesaplıyoruz?
                             </h2>
                             <p className="mb-4">
-                                Sitemizde gördüğünüz puanlar rastgele sayılar değildir. ÖSYM'nin resmi yerleştirme raporlarındaki yığınsal dağılımları ve standart sapma eğrilerini baz alıyoruz. Geliştirdiğimiz motor; sınava giren kişi sayısındaki artışı, tahmini yığılma bölgelerini ve derslerin katsayılarını harmanlayarak logaritmik interpolasyonla en gerçekçi tahmini sonucu sunar.
+                                Puan hesaplamaları kafadan uydurma rakamlar değil. ÖSYM&apos;nin resmi yerleştirme raporlarındaki dağılımları, geçmiş yılların standart sapma eğrilerini ve o yıl sınava giren kişi sayısını baz alıyoruz. Tam isabet garantisi veremeyiz tabii — bunu hiç kimse veremez çünkü standart sapma ancak sınav olduktan sonra kesinleşiyor — ama elimizdeki veriyle mümkün olan en yakın tahmini sunmaya çalışıyoruz.
                             </p>
                             <div className="bg-gray-50 p-5 rounded-xl border-l-4 border-gray-400">
                                 <p className="text-sm text-gray-700">
-                                    <strong>Küçük Bir Uyarı:</strong> ÖSYM'nin puanları nasıl hesapladığını (o meşhur standart sapmayı) sınav bitip herkesin ortalaması belli olmadan dünyanın en iyi algoritması bile %100 bilemez. O yüzden sitemizin verdiği sonuçlara "Büyük ihtimalle böyle olacak" gözüyle bakın ama tercih yaparken mutlaka resmi ÖSYM sonuç belgenizi bekleyin.
+                                    <strong>Not:</strong> Sonuçlara &quot;büyük ihtimalle bu civarda olacak&quot; gözüyle bakın. Tercih listenizi yapmadan önce ÖSYM&apos;nin resmi sonuç belgesini mutlaka bekleyin. Biz bir tahmin aracıyız, ÖSYM&apos;nin yerini tutmayız.
                                 </p>
                             </div>
                         </section>
@@ -92,7 +92,7 @@ export default function HakkimizdaPage() {
                         {/* Editöryel Ekip ve E-E-A-T */}
                         <section>
                             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                                Künye ve İçerik Standartlarımız
+                                Arkamızda Kim Var?
                             </h2>
                             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 mb-6">
                                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-4">
@@ -101,16 +101,16 @@ export default function HakkimizdaPage() {
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-bold text-gray-900">Mert Çalışkan</h3>
-                                        <p className="text-sm text-blue-600 font-medium">Kurucu &amp; Eğitim Veri Analisti</p>
+                                        <p className="text-sm text-blue-600 font-medium">Kurucu</p>
                                     </div>
                                 </div>
                                 <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                                    ÖSYM resmi yerleştirme verileri, standart sapma katsayıları ve sınav yığınsal dağılımları üzerine bağımsız matematiksel simülasyon modelleri geliştirmektedir. Sitemizdeki tüm hesaplama algoritmaları ve rehberlik içerikleri doğrudan resmi ÖSYM verilerine dayandırılarak güncellenir ve test edilir.
+                                    ÖSYM yerleştirme verileri ve standart sapma katsayıları üzerinde çalışıyor. Sitedeki hesaplama motoru, rehber yazılar ve katsayı güncellemeleri doğrudan resmi ÖSYM verilerine dayanıyor. Bir hata gördüğünüzde veya katsayı değiştiğinde en kısa sürede güncellemeye çalışıyoruz.
                                 </p>
                                 <div className="flex flex-wrap gap-2 text-xs">
-                                    <span className="bg-white border border-gray-200 px-3 py-1 rounded-md text-gray-700 font-medium">✓ Resmi ÖSYM Kılavuzu Doğrulaması</span>
-                                    <span className="bg-white border border-gray-200 px-3 py-1 rounded-md text-gray-700 font-medium">✓ Bağımsız &amp; Ücretsiz Eğitim Aracı</span>
-                                    <span className="bg-white border border-gray-200 px-3 py-1 rounded-md text-gray-700 font-medium">✓ Client-Side Gizlilik Prensibi</span>
+                                    <span className="bg-white border border-gray-200 px-3 py-1 rounded-md text-gray-700 font-medium">✓ Resmi ÖSYM Kılavuzu Takibi</span>
+                                    <span className="bg-white border border-gray-200 px-3 py-1 rounded-md text-gray-700 font-medium">✓ Ücretsiz ve Bağımsız</span>
+                                    <span className="bg-white border border-gray-200 px-3 py-1 rounded-md text-gray-700 font-medium">✓ Veriler Sunucuya Gitmez</span>
                                 </div>
                             </div>
                         </section>
@@ -118,11 +118,10 @@ export default function HakkimizdaPage() {
                         {/* İletişim */}
                         <section>
                             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                                İletişim ve Şeffaflık
+                                Bize Ulaşın
                             </h2>
                             <p className="mb-4">
-                                Gelişim sürecimizde en büyük motivasyonumuz sizden gelen geri bildirimlerdir.
-                                Soru, öneri veya teknik destek talepleriniz için bize her zaman ulaşabilirsiniz.
+                                Bir hesaplama hatası gördüyseniz, yeni bir özellik istiyorsanız veya sadece merhaba demek istiyorsanız — yazın bize. Gerçekten okuyor ve cevaplıyoruz.
                             </p>
                             <div className="bg-gray-50 p-5 rounded-xl space-y-2 text-sm">
                                 <p><strong>Kurumsal E-posta:</strong> iletisim@yksnethesapla.com</p>
