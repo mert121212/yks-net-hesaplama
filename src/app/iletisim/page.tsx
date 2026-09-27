@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
     title: 'İletişim | YKS Net Hesaplama - yksnethesapla.com',
@@ -26,34 +27,7 @@ export default function IletisimPage() {
                     {/* İletişim Formu */}
                     <section className="mb-12">
                         <h2 className="text-2xl font-bold text-gray-900 mb-6">Bize Mesaj Gönderin</h2>
-                        <form action="mailto:iletisim@yksnethesapla.com" method="post" encType="text/plain" className="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                                <div>
-                                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Adınız Soyadınız</label>
-                                    <input type="text" id="name" name="name" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors" placeholder="Adınız" />
-                                </div>
-                                <div>
-                                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">E-Posta Adresiniz</label>
-                                    <input type="email" id="email" name="email" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors" placeholder="ornek@email.com" />
-                                </div>
-                            </div>
-                            <div className="mb-6">
-                                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">Konu</label>
-                                <select id="subject" name="subject" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors bg-white">
-                                    <option value="Teknik Destek / Hata Bildirimi">Teknik Destek / Hata Bildirimi</option>
-                                    <option value="İçerik Önerisi">İçerik Önerisi</option>
-                                    <option value="İş Birliği / Reklam">İş Birliği / Reklam</option>
-                                    <option value="Diğer">Diğer</option>
-                                </select>
-                            </div>
-                            <div className="mb-6">
-                                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Mesajınız</label>
-                                <textarea id="message" name="message" rows={5} required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors resize-y" placeholder="Mesajınızı buraya yazın..."></textarea>
-                            </div>
-                            <button type="submit" className="w-full md:w-auto px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-sm">
-                                Mesajı Gönder
-                            </button>
-                        </form>
+                        <ContactForm />
                     </section>
 
                     {/* İletişim kanalları tablosu */}
@@ -72,8 +46,11 @@ export default function IletisimPage() {
                                     <tr className="border-b">
                                         <td className="px-5 py-4 font-medium">📧 Genel İletişim</td>
                                         <td className="px-5 py-4">
-                                            <a href="mailto:iletisim@yksnethesapla.com" className="text-blue-600 hover:underline font-medium">
-                                                iletisim@yksnethesapla.com
+                                            <a
+                                                href="mailto:mertcaliskan36065d@gmail.com?subject=[Iletisim]%20YKS%20Net%20Hesaplama"
+                                                className="text-blue-600 hover:underline font-semibold inline-flex items-center gap-1"
+                                            >
+                                                E-posta Gönder →
                                             </a>
                                         </td>
                                         <td className="px-5 py-4 text-sm text-gray-600">24 – 48 Saat</td>
@@ -81,15 +58,25 @@ export default function IletisimPage() {
                                     <tr className="border-b bg-gray-50">
                                         <td className="px-5 py-4 font-medium">🐛 Teknik Destek</td>
                                         <td className="px-5 py-4">
-                                            <a href="mailto:destek@yksnethesapla.com" className="text-blue-600 hover:underline font-medium">
-                                                destek@yksnethesapla.com
+                                            <a
+                                                href="mailto:mertcaliskan36065d@gmail.com?subject=[HATA]%20Teknik%20Destek"
+                                                className="text-blue-600 hover:underline font-semibold inline-flex items-center gap-1"
+                                            >
+                                                Destek Bildirimi Yap →
                                             </a>
                                         </td>
                                         <td className="px-5 py-4 text-sm text-green-700 font-medium">Öncelikli Yanıt</td>
                                     </tr>
                                     <tr>
                                         <td className="px-5 py-4 font-medium">🤝 İş Birlikleri</td>
-                                        <td className="px-5 py-4 text-sm text-gray-700">Eğitim kurumları ve içerik ortaklıkları</td>
+                                        <td className="px-5 py-4">
+                                            <a
+                                                href="mailto:mertcaliskan36065d@gmail.com?subject=[IS%20BIRLIGI]%20Teklif"
+                                                className="text-blue-600 hover:underline font-semibold inline-flex items-center gap-1"
+                                            >
+                                                İş Birliği Talebi Gönder →
+                                            </a>
+                                        </td>
                                         <td className="px-5 py-4 text-sm text-gray-600">3 İş Günü</td>
                                     </tr>
                                 </tbody>
