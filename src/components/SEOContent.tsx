@@ -21,111 +21,111 @@ export default function SEOContent() {
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
             
-            {/* Giriş & Gerçeklik */}
+            {/* Giriş & Puanlama Mantığı */}
             <section className="card">
                 <div className="flex items-center gap-3 mb-4">
                     <Icon d={ICONS.calc} className="h-8 w-8 text-blue-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
-                        Net Hesabı Neden Bu Kadar Kafa Karıştırır?
+                        YKS Net Hesabı ve Yerleştirme Puanı Nasıl Hesaplanır?
                     </h2>
                 </div>
                 <div className="text-gray-700 space-y-4 leading-relaxed text-base">
                     <p>
-                        Deneme bitti diyelim. Optik formu kontrol ettiniz: 28 Türkçe doğrusu var, 9 yanlış. Matematikte de 18 doğru, 4 yanlış. İnsanın ilk refleksi telefona sarılıp doğru-yanlışları toplamak oluyor tabii.
+                        YKS hazırlığında deneme sınavı sonrasında yapılan ilk işlem, testlerdeki doğru ve yanlış sayıları üzerinden ham netleri hesaplamaktır. Ancak sınav sonuç belgesinde yer alan yerleştirme puanı, yalnızca testlerdeki net sayısıyla belirlenmez.
                     </p>
                     <p>
-                        Ama asıl baş ağrısı tam burada başlıyor aslında. Ham neti bilmek tek başına hiçbir işe yaramıyor. Neden mi? Çünkü üniversiteye girip giremeyeceğinizi belirleyen sadece kaç soru çözdüğünüz değil. O yılın test katsayıları, standart sapma oranları, sınava giren kişi sayısı ve lise diploma notunuzdan gelen OBP puanı — hepsi bir araya gelip yerleştirme puanınızı çıkarıyor. Bu siteyi kurmamızın sebebi de tam olarak bu: Geçen yılın veya 3 yıl öncesinin katsayılarıyla sizi kandırmak yerine, ÖSYM&apos;nin en son yayımladığı resmi rakamlarla size gerçekçi bir tablo çizmek.
+                        ÖSYM puan hesaplama sürecinde; her testin o yılki Türkiye ortalamasını, standart sapmasını ve adayın diploma notundan gelen Ortaöğretim Başarı Puanını (OBP) birlikte değerlendirir. Bu nedenle aynı net sayısı, sınavın genel zorluk derecesine ve derslerin ortalamasına bağlı olarak farklı yıllarda farklı puan ve sıralama sonuçları ortaya çıkarabilir.
                     </p>
                     <div className="p-4 bg-emerald-50 border-l-4 border-emerald-500 rounded-r-lg text-emerald-950 text-sm">
-                        🔒 <strong>Gizlilik notu:</strong> Girdiğiniz deneme sonuçları veya okul notunuz hiçbir sunucuya iletilmez. Sayfayı yenilediğiniz an veriler cihazınızın belleğinden silinir.
+                        🔒 <strong>Veri Güvenliği:</strong> Bu sayfadaki hesaplama aracı tamamen tarayıcınızda çalışır. Girdiğiniz deneme netleri veya diploma notu sunucuya aktarılmaz ve kaydedilmez.
                     </div>
                 </div>
             </section>
 
-            {/* Sınav Alanları: Ne Neyi Etkiliyor? */}
+            {/* Sınav Oturumları ve Ağırlıklar */}
             <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="card hover:shadow-lg transition-shadow border-t-4 border-blue-500">
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">TYT: Hız ve Kondisyon</h3>
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">TYT (Temel Yeterlilik Testi)</h3>
                     <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                        120 soruya 165 dakika — yani soru başına 82 saniyeniz var. Türkçe ve Matematik testleri puanın yaklaşık üçte ikisini belirler. AYT&apos;ye girecekseniz bu puan yerleştirmede %40 ağırlık taşır.
+                        120 sorudan oluşan TYT oturumunda adaylara 165 dakika süre tanınır. Testte Türkçe (40), Temel Matematik (40), Sosyal Bilimler (20) ve Fen Bilimleri (20) soruları yer alır. TYT puanı, lisans programlarına yerleştirmede %40 oranında ağırlığa sahiptir.
                     </p>
                     <Link href="/blog/tyt-net-hesaplama-rehberi" className="text-blue-600 text-xs font-semibold hover:underline">
-                        TYT katsayı mantığını oku →
+                        TYT testleri ve puan ağırlıkları →
                     </Link>
                 </div>
 
                 <div className="card hover:shadow-lg transition-shadow border-t-4 border-purple-500">
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">AYT: Asıl Sıralama Motoru</h3>
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">AYT (Alan Yeterlilik Testi)</h3>
                     <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                        Yerleştirme puanının %60&apos;ı buradan çıkıyor. Süre biraz daha rahat (180 dk) ama sorular bir hayli ağır. Sayısalcı, EA&apos;cı, Sözelci — herkes kendi 80 sorusuna odaklanıyor.
+                        AYT oturumu 160 sorudan oluşur ve adaylar hedefledikleri puan türüne (Sayısal, Eşit Ağırlık, Sözel) göre ilgili 80 soruyu çözer. Sınav süresi 180 dakikadır. Yerleştirme puanının %60&apos;ını oluşturması nedeniyle lisans tercihlerinde belirleyici rol oynar.
                     </p>
                     <Link href="/blog/ayt-puan-hesaplama" className="text-purple-600 text-xs font-semibold hover:underline">
-                        AYT test ağırlıklarını incele →
+                        AYT alanları ve katsayılar →
                     </Link>
                 </div>
 
                 <div className="card hover:shadow-lg transition-shadow border-t-4 border-amber-500">
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">OBP: Sıralamayı Uçuran Güç</h3>
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">OBP (Ortaöğretim Başarı Puanı)</h3>
                     <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                        Okul notunuz 5 ile çarpılıp OBP oluyor, sonra 0,12 katsayısıyla puana ekleniyor. Kulağa az gibi gelse de, 90 notlu biriyle 75 notlu biri arasında 9 puanlık fark oluşuyor — yığılma bölgesinde bu 10-15 bin kişi demek. Geçen yıl bir yere yerleştiyseniz bu katsayı yarıya düşüyor.
+                        Lise mezuniyet notunun 5 ile çarpılmasıyla 250 ile 500 arasında bir OBP hesaplanır. Bu değer genel kural olarak 0,12 katsayısıyla çarpılarak yerleştirme puanına eklenir. Bir önceki yıl üniversite programına yerleşen adaylarda bu katsayı 0,06&apos;ya düşer.
                     </p>
                     <Link href="/blog/obp-hesaplama" className="text-amber-700 text-xs font-semibold hover:underline">
-                        Kırık OBP hesabını gör →
+                        OBP hesaplama ve katsayı kuralları →
                     </Link>
                 </div>
             </section>
 
-            {/* Baraj Var mı? 0,5 Net Gerçeği */}
+            {/* Baraj Puanı ve 0,5 Net Kuralı */}
             <section className="card bg-gradient-to-r from-blue-50/70 to-indigo-50/70 border border-blue-100">
                 <div className="flex items-center gap-3 mb-4">
                     <Icon d={ICONS.award} className="h-8 w-8 text-blue-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
-                        YKS&apos;de Baraj Kalktı mı? 0,5 Net Kuralı Tuzağı Nedir?
+                        Baraj Puanı ve 0,5 Net Kuralı
                     </h2>
                 </div>
                 <div className="text-gray-700 space-y-3 text-sm md:text-base leading-relaxed">
                     <p>
-                        Evet, o meşhur 150 ve 180 puanlık baraj uygulaması bitti artık. Puanın hesaplandığı an tercih hakkın oluyor. Ama sakın &quot;E o zaman Türkçe&apos;de sıfır çeksem de olur&quot; demeyin.
+                        2022 yılı itibarıyla TYT&apos;deki 150 ve AYT&apos;deki 180 puanlık genel baraj uygulaması sonlandırılmıştır. Puanı hesaplanan tüm adaylar tercih yapma hakkına sahiptir.
                     </p>
                     <div className="bg-amber-100/70 border-l-4 border-amber-500 p-4 rounded-r-lg text-amber-950 font-medium text-sm my-3">
-                        ⚠️ <strong>ÖSYM&apos;nin 0,5 Net Şartı:</strong> TYT puanınızın hesaplanabilmesi için <strong>Türkçe veya Temel Matematik</strong> testlerinin en az birinden minimum 0,5 ham netinizin olması şarttır. İki derste de 0 net veya eksiye düşerseniz, Sosyal ve Fen testlerinde ful çekseniz dahi TYT puanınız hesaplanmaz.
+                        ⚠️ <strong>0,5 Net Koşulu:</strong> TYT puanının hesaplanabilmesi için adayın <strong>Türkçe veya Temel Matematik</strong> testlerinin en az birinden minimum 0,5 ham net elde etmesi zorunludur. Türkçe ve Matematik testlerinin her ikisinde de ham net sıfır veya negatif olursa, Sosyal ve Fen testlerindeki sonuçlara bakılmaksızın TYT puanı hesaplanmaz.
                     </div>
                     <p>
-                        Bu kural AYT&apos;de de var bu arada. Sayısalcıysan Mat veya Fen&apos;den, EA&apos;cıysan Mat veya Edebiyat-Sos-1&apos;den yarım net çıkarmak zorundasın. Yoksa AYT puanın da hesaplanmaz.
+                        Benzer kural AYT oturumunda da geçerlidir. Adayın SAY, EA veya SÖZ puanının üretilebilmesi için ilgili puan türünü oluşturan testlerin en az birinden 0,5 ham net çıkarması gerekmektedir.
                     </p>
                 </div>
             </section>
 
-            {/* 4 Yanlış 1 Doğruyu Nasıl Eritir? */}
+            {/* 4 Yanlış 1 Doğru Kuralı ve Formül */}
             <section className="card">
                 <div className="flex items-center gap-3 mb-4">
                     <Icon d={ICONS.calc} className="h-8 w-8 text-indigo-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
-                        Formülün Mantığı: 4 Yanlış 1 Doğruyu Nasıl Götürür?
+                        4 Yanlış 1 Doğru Kuralı ve Net Formülü
                     </h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-gray-700 text-sm md:text-base">
                     <div>
                         <p className="mb-3 leading-relaxed">
-                            ÖSYM rastgele sallayanları cezalandırmak için basit ama acımasız bir sistem kurmuş: Her yanlış cevap doğru hanenizden <strong>0,25 net</strong> siliyor. 4 tane yanlış yaptıysan — hop, 1 doğrun gitti. Ter döküp çözdüğün o soru çöpe girdi resmen.
+                            ÖSYM sınav sisteminde her yanlış cevap, ilgili testteki doğru sayısından <strong>0,25 net</strong> düşürür. Dört yanlış cevap, bir doğru cevabın getirdiği neti siler.
                         </p>
                         <div className="bg-gray-100 rounded-xl p-4 font-mono text-center font-bold text-gray-800 text-lg my-4">
-                            Net = Doğru Sayısı − (Yanlış Sayısı ÷ 4)
+                            Ham Net = Doğru Sayısı − (Yanlış Sayısı ÷ 4)
                         </div>
                         <p className="text-xs text-gray-500">
-                            Boş bıraksan puanın düşmez. İki şık arasında kaldığında ve &quot;emin değilim ama belki B&apos;dir&quot; diye düşünüyorsan — bırak boş gitsin. O 0,25&apos;lik kayıp yığılma bölgesinde canını yakar.
+                            Boş bırakılan sorular net hesabına dahil edilmez; doğru sayısını etkilemez ve net kaybına yol açmaz. Cevabından emin olunmayan sorularda tahmini işaretleme yapmak yerine soruyu boş bırakmak, yanlış cevap riskini ortadan kaldırır.
                         </p>
                     </div>
 
                     <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 space-y-3">
-                        <h3 className="font-bold text-slate-900 text-sm">Somut Örnekler:</h3>
+                        <h3 className="font-bold text-slate-900 text-sm">Hesaplama Örnekleri:</h3>
                         <div className="flex justify-between items-center border-b pb-2 text-sm">
                             <span>32 Doğru, 8 Yanlış:</span>
-                            <span className="font-mono font-bold text-blue-600">32 − 2 = 30,00 Net</span>
+                            <span className="font-mono font-bold text-blue-600">32 − (8 ÷ 4) = 30,00 Net</span>
                         </div>
                         <div className="flex justify-between items-center border-b pb-2 text-sm">
                             <span>27 Doğru, 13 Yanlış:</span>
-                            <span className="font-mono font-bold text-blue-600">27 − 3,25 = 23,75 Net</span>
+                            <span className="font-mono font-bold text-blue-600">27 − (13 ÷ 4) = 23,75 Net</span>
                         </div>
                         <div className="flex justify-between items-center text-sm">
                             <span>40 Doğru, 0 Yanlış:</span>
@@ -140,23 +140,23 @@ export default function SEOContent() {
                 <div className="flex items-center gap-3 mb-6">
                     <Icon d={ICONS.target} className="h-8 w-8 text-purple-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
-                        Hangi Puan Türü Hangi Kapıyı Açar?
+                        Puan Türleri ve Kapsadığı Alanlar
                     </h2>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div className="border border-emerald-200 rounded-2xl p-5 bg-emerald-50/50">
                         <div className="text-2xl font-black text-emerald-700 mb-1">SAY</div>
                         <div className="text-xs font-bold text-emerald-900 uppercase tracking-wide mb-3">Sayısal Puan</div>
-                        <p className="text-xs text-gray-600 mb-3">Tıp, Diş Hekimliği, Mühendislik, Eczacılık, Yazılım, Mimarlık.</p>
+                        <p className="text-xs text-gray-600 mb-3">Tıp, Diş Hekimliği, Mühendislik, Eczacılık, Mimarlık ve temel fen bilimleri programları.</p>
                         <span className="inline-block text-xs font-semibold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-md">
-                            AYT Mat + Fen
+                            AYT Mat + AYT Fen
                         </span>
                     </div>
 
                     <div className="border border-blue-200 rounded-2xl p-5 bg-blue-50/50">
                         <div className="text-2xl font-black text-blue-700 mb-1">EA</div>
-                        <div className="text-xs font-bold text-blue-900 uppercase tracking-wide mb-3">Eşit Ağırlık</div>
-                        <p className="text-xs text-gray-600 mb-3">Hukuk, Psikoloji, İşletme, İktisat, Siyaset Bilimi, PDR.</p>
+                        <div className="text-xs font-bold text-blue-900 uppercase tracking-wide mb-3">Eşit Ağırlık Puanı</div>
+                        <p className="text-xs text-gray-600 mb-3">Hukuk, Psikoloji, İşletme, İktisat, Siyaset Bilimi ve PDR programları.</p>
                         <span className="inline-block text-xs font-semibold bg-blue-100 text-blue-800 px-2.5 py-1 rounded-md">
                             AYT Mat + Edebiyat-Sos-1
                         </span>
@@ -165,16 +165,16 @@ export default function SEOContent() {
                     <div className="border border-purple-200 rounded-2xl p-5 bg-purple-50/50">
                         <div className="text-2xl font-black text-purple-700 mb-1">SÖZ</div>
                         <div className="text-xs font-bold text-purple-900 uppercase tracking-wide mb-3">Sözel Puan</div>
-                        <p className="text-xs text-gray-600 mb-3">Özel Eğitim, İletişim, Gastronomi, Tarih, Türkçe Öğretmenliği.</p>
+                        <p className="text-xs text-gray-600 mb-3">Özel Eğitim, İletişim, Gastronomi, Tarih, Coğrafya ve Türkçe Öğretmenliği.</p>
                         <span className="inline-block text-xs font-semibold bg-purple-100 text-purple-800 px-2.5 py-1 rounded-md">
-                            Edebiyat-Sos-1 + Sos-2
+                            Edebiyat-Sos-1 + Sosyal-2
                         </span>
                     </div>
 
                     <div className="border border-amber-200 rounded-2xl p-5 bg-amber-50/50">
                         <div className="text-2xl font-black text-amber-700 mb-1">DİL</div>
-                        <div className="text-xs font-bold text-amber-900 uppercase tracking-wide mb-3">Yabancı Dil</div>
-                        <p className="text-xs text-gray-600 mb-3">İngilizce Öğretmenliği, Mütercim Tercümanlık, Dilbilim.</p>
+                        <div className="text-xs font-bold text-amber-900 uppercase tracking-wide mb-3">Yabancı Dil Puanı</div>
+                        <p className="text-xs text-gray-600 mb-3">İngilizce Öğretmenliği, Mütercim Tercümanlık ve Dilbilim programları.</p>
                         <span className="inline-block text-xs font-semibold bg-amber-100 text-amber-800 px-2.5 py-1 rounded-md">
                             TYT + 80 Soru YDT
                         </span>
@@ -182,35 +182,35 @@ export default function SEOContent() {
                 </div>
             </section>
 
-            {/* Sıkça Sorulan Sorular (Detaylı & Doğal) */}
+            {/* Sıkça Sorulan Sorular */}
             <section className="card">
                 <div className="flex items-center gap-3 mb-6">
                     <Icon d={ICONS.help} className="h-8 w-8 text-blue-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
-                        Adayların En Çok Takıldığı Sorular
+                        Sıkça Sorulan Sorular
                     </h2>
                 </div>
                 <div className="space-y-4">
                     {[
                         {
-                            q: 'Zor soruları çözünce daha çok puan gelir mi?',
-                            a: 'Yok öyle bir şey. Bu en yaygın şehir efsanesi. ÖSYM soru soru puan vermiyor ki — bütün testi toplu değerlendiriyor. AYT Mat\'taki o kara kara düşündüğün integral sorusuyla ilk sayfadaki basit denklem sorusu aynı puanı veriyor. Puanını asıl artıran şey, o testin Türkiye genelinde düşük tutulması (yani herkesin zorlandığı sınav sana yarıyor).'
+                            q: 'Aynı test içindeki zor ve kolay soruların puan değeri farklı mıdır?',
+                            a: 'Hayır. Aynı test içinde yer alan tüm sorular eşit ham puan değerine sahiptir. Örneğin Temel Matematik testindeki ilk soru ile son sorunun getirdiği net katkısı ve standart puan değeri aynıdır. Soru bazında ayrı bir zorluk katsayısı uygulanmaz; testin genel standart sapması tüm test soruları için ortak olarak hesaplanır.'
                         },
                         {
-                            q: 'Hesapladığım sıralama sınav sonucumla birebir aynı mı gelir?',
-                            a: 'Dürüst olalım: Dünyanın en iyi algoritması bile sınav sonucunu tam tutturamaz. Her yıl sınava giren kişi sayısı farklı, soruların zorluk seviyesi farklı, herkesin ortalaması farklı. Biz burada ÖSYM\'nin son birkaç yılda yayınladığı resmi yığınsal verileri kullanarak sana en yakın tahmini vermeye çalışıyoruz. Tam sayı olmasa da bölge olarak güvenilir.'
+                            q: 'Hesaplama sonucundaki sıralama resmi sonuçla birebir aynı olur mu?',
+                            a: 'Burada sunulan sıralamalar, ÖSYM\'nin geçmiş yıllardaki resmi yığınsal dağılım verileri ve standart sapma eğrileri üzerinden yapılan istatistiksel tahminlerdir. Her yıl sınava katılan aday sayısı, testlerin genel başarı ortalaması ve soruların ayırt ediciliği değiştiğinden kesin sıralamalar yalnızca ÖSYM sonuç belgesinde kesinleşir.'
                         },
                         {
-                            q: 'OBP kırılması ne zaman başıma gelir?',
-                            a: 'Geçen sene YKS\'yle bir yere yerleştiysen — açıköğretim de dahil — bu sene girdiğinde OBP katsayın 0,12\'den 0,06\'ya iniyor. Bu da şu demek: Diploma notundan gelen puan yarıya düşüyor. Ama dikkat, tercih yapıp kazanamadıysan veya hiç tercih vermeden mezuna kaldıysan puanın kırılmaz. Sadece bir yere yerleşip de gitmeyen veya bırakanlara uygulanan bir ceza bu.'
+                            q: 'Kırık OBP kesintisi hangi durumlarda gerçekleşir?',
+                            a: 'Bir önceki yıl merkezi yerleştirme veya ek yerleştirme sonucunda bir yükseköğretim programına (ön lisans, lisans veya açıköğretimin kontenjan sınırlı programları) yerleşen adayların OBP katsayısı bir sonraki sınavda 0,12 yerine 0,06 olarak uygulanır. Tercih yapıp herhangi bir programa yerleşemeyen veya mezuna kalarak tercih yapmayan adayların puanında herhangi bir kesinti olmaz.'
                         },
                         {
-                            q: 'Tıp veya Hukuk için sadece puan yeterli mi?',
-                            a: 'Maalesef yetmiyor. Puanın çok yüksek bile olsa, YÖK\'ün koyduğu sıralama barajını geçemen lazım. Tıp için SAY\'da ilk 50 bin, Hukuk için EA\'da ilk 125 bin, Mühendislikler için SAY\'da ilk 300 bin içinde olman şart. Puanın 500 bile gelse sıralaman tutmazsa o bölümü tercih listene ekleyemiyorsun bile.'
+                            q: 'Belirli bölümlerde başarı sırası barajı var mıdır?',
+                            a: 'Evet. Yükseköğretim Kurulu (YÖK) kararıyla bazı lisans programlarında taban başarı sırası şartı uygulanmaktadır. Örneğin Tıp Fakültesi için SAY alanında ilk 50 bin, Diş Hekimliği için ilk 80 bin, Eczacılık için ilk 100 bin, Hukuk için EA alanında ilk 125 bin ve Mühendislik bölümleri için SAY alanında ilk 300 bin içinde yer alma zorunluluğu bulunmaktadır.'
                         },
                         {
-                            q: 'Sitede yaptığım hesaplamalar bir yere kaydediliyor mu?',
-                            a: 'Hayır, hiçbir yere gitmiyor. Her şey senin tarayıcında dönüyor, sunucuya tek bir veri bile gönderilmiyor. Sayfayı kapattın mı yazdığın her şey uçar gider. Kayıt falan yok yani, rahat olun.'
+                            q: 'Hesaplama aracına girilen veriler sistemde saklanıyor mu?',
+                            a: 'Hayır. Hesaplama aracı tamamen kullanıcının tarayıcısında (istemci tarafında) çalışır. Girilen doğru, yanlış veya diploma notu gibi veriler herhangi bir sunucuya iletilmez veya veritabanında depolanmaz. Sayfa yenilendiğinde ya da kapatıldığında tüm girdiler sıfırlanır.'
                         },
                     ].map((item, i) => (
                         <details key={i} className="group border border-gray-200 rounded-xl overflow-hidden">
@@ -226,22 +226,22 @@ export default function SEOContent() {
                 </div>
             </section>
 
-            {/* Öne Çıkan Rehberler */}
+            {/* İlgili Rehberler */}
             <section className="card">
                 <div className="flex items-center gap-3 mb-6">
                     <Icon d={ICONS.trend} className="h-8 w-8 text-indigo-600" />
                     <h2 className="text-2xl font-bold text-gray-900">
-                        Doğrudan Masada İşe Yarayan YKS Rehberleri
+                        YKS Hazırlık Rehberleri ve Konu İncelemeleri
                     </h2>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {[
-                        { href: '/blog/tyt-turkce-paragraf-teknikleri', title: 'TYT Türkçe Paragraf Teknikleri', desc: '40 sorunun 24\'ünde süreyi yarıya indiren 5 somut taktik' },
-                        { href: '/blog/yks-son-3-ay-calisma-plani', title: 'YKS Son 3 Ay Çalışma Programı', desc: 'Sınava son 90 gün kala netleri zirveye taşıma stratejisi' },
-                        { href: '/blog/sifirdan-tyt-matematik-calisma-rehberi', title: 'Sıfırdan TYT Matematik Rehberi', desc: 'Temeli olmayanlar için 0 netten 20 nete adım adım plan' },
-                        { href: '/blog/tyt-kesin-cikan-konular', title: 'TYT\'de Kesin Çıkan Konular', desc: 'Son 7 yılın ÖSYM analizlerine göre garanti soru listesi' },
-                        { href: '/blog/tyt-net-artirma-taktikleri', title: 'TYT Net Artırma Taktikleri', desc: 'Plato evresini kırmak için 3 radikal rehberlik adımı' },
-                        { href: '/blog/obp-hesaplama', title: 'OBP ve Katsayı Analizi', desc: 'Diploma notunuzun YKS sıralamasına etkisi ve kırık OBP' },
+                        { href: '/blog/tyt-turkce-paragraf-teknikleri', title: 'TYT Türkçe Paragraf Teknikleri', desc: 'Paragraf sorularında süre yönetimi ve soru kökü analiz yöntemleri.' },
+                        { href: '/blog/yks-son-3-ay-calisma-plani', title: 'YKS Son 3 Ay Çalışma Programı', desc: 'Sınava son 90 gün kala deneme sıklığı ve konu tekrar planlaması.' },
+                        { href: '/blog/sifirdan-tyt-matematik-calisma-rehberi', title: 'Sıfırdan TYT Matematik Rehberi', desc: 'Temel işlem becerisinden problem çözme aşamasına çalışma adımları.' },
+                        { href: '/blog/tyt-kesin-cikan-konular', title: 'TYT Soru Dağılımı ve Önemli Konular', desc: 'Geçmiş yılların sınav verilerine göre testlerde öne çıkan konu başlıkları.' },
+                        { href: '/blog/tyt-net-artirma-taktikleri', title: 'TYT Net Artırma Yöntemleri', desc: 'Deneme analizleri üzerinden eksik tespiti ve net gelişimi.' },
+                        { href: '/blog/obp-hesaplama', title: 'OBP ve Katsayı Analizi', desc: 'Diploma notunun yerleştirme puanına etkisi ve kırık OBP koşulları.' },
                     ].map((item, i) => (
                         <Link key={i} href={item.href} className="p-4 border border-gray-200 rounded-xl hover:border-blue-300 hover:bg-blue-50 transition-all group">
                             <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 mb-1 text-sm">{item.title}</h3>
@@ -254,17 +254,17 @@ export default function SEOContent() {
             {/* CTA Kutusu */}
             <section className="card bg-gradient-to-r from-blue-700 to-indigo-800 text-white text-center py-10 px-6">
                 <h2 className="text-2xl md:text-3xl font-extrabold mb-3">
-                    Bugünkü Netlerinle Türkiye Sıralaman Kaç?
+                    Netlerinizi ve Tahmini Puanınızı Hesaplayın
                 </h2>
                 <p className="text-blue-100 text-sm md:text-base mb-6 max-w-xl mx-auto">
-                    Yukarıdaki hesaplayıcıya doğru-yanlış sayılarını yaz; güncel standart sapma ve OBP katkısıyla sonucunu anında incele.
+                    Sayfanın üst kısmında yer alan hesaplama aracına doğru ve yanlış sayılarınızı girerek tahmini ham puanınızı ve OBP katkılı yerleştirme sonucunuzu inceleyebilirsiniz.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                     <a href="#hesaplama" className="bg-white text-blue-900 px-6 py-3 rounded-xl font-bold hover:bg-blue-50 transition-colors shadow-md text-sm">
-                        Netleri Gir ve Hesapla ↑
+                        Hesaplama Aracına Git ↑
                     </a>
                     <Link href="/sss" className="bg-blue-900/60 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-900 transition-colors border border-blue-400/40 text-sm">
-                        Merak Edilen Sorular →
+                        Sıkça Sorulan Sorular →
                     </Link>
                 </div>
             </section>
