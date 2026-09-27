@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import dynamic from 'next/dynamic'
@@ -18,6 +18,12 @@ const inter = Inter({
     variable: '--font-inter',
     fallback: ['system-ui', 'arial']
 })
+
+export const viewport: Viewport = {
+    themeColor: '#3b82f6',
+    width: 'device-width',
+    initialScale: 1,
+}
 
 export const metadata: Metadata = {
     title: {
@@ -118,9 +124,6 @@ export default function RootLayout({
                 <link rel="icon" href="/favicon.ico" sizes="any" />
                 <link rel="icon" href="/icon.svg" type="image/svg+xml" />
                 <link rel="manifest" href="/site.webmanifest" />
-                <meta name="theme-color" content="#3b82f6" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="google-adsense-account" content="ca-pub-5194383766905175" />
             </head>
             <body className={`${inter.className} antialiased`}>
                 <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col">

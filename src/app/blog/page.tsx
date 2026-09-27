@@ -5,6 +5,7 @@ export const metadata: Metadata = {
     title: 'YKS Blog | Net Artırma Taktikleri ve Sınav Rehberleri',
     description: '2027 YKS hazırlığında masada işe yarayan net taktikleri, güncel ÖSYM katsayıları, tercih rehberleri ve çalışma stratejileri.',
     keywords: 'yks blog, yks hazırlık, tyt hazırlık, ayt hazırlık, üniversite tercih, yks ipuçları',
+    alternates: { canonical: 'https://yksnethesapla.com/blog' },
 }
 
 const blogPosts = [
