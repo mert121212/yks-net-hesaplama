@@ -11,6 +11,7 @@
         "type-check": "tsc --noEmit",
         "test": "node test-all-features.js",
         "test:features": "node test-all-features.js",
+        "test:audit": "node test-yok-atlas-audit.js",
         "test:exhaustive": "node test-yks-2026-exhaustive.js",
         "test:combinations": "node test-yks-all-combinations.js",
         "analyze": "ANALYZE=true next build",

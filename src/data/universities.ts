@@ -212,7 +212,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "ESKİŞEHİR TEKNİK ÜNİVERSİTESİ",
     "program": "Pilotaj",
-    "city": "Eski̇şehi̇r",
+    "city": "Eskişehir",
     "field": "SAY",
     "minScore": 529.12,
     "minRank": 2090,
@@ -518,7 +518,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "EGE ÜNİVERSİTESİ",
     "program": "Tıp",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "SAY",
     "minScore": 516.36,
     "minRank": 5118,
@@ -734,7 +734,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
     "program": "Tıp",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "SAY",
     "minScore": 508.97,
     "minRank": 7447,
@@ -860,7 +860,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
     "program": "Tıp",
-    "city": "Eski̇şehi̇r",
+    "city": "Eskişehir",
     "field": "SAY",
     "minScore": 505.24,
     "minRank": 8855,
@@ -1049,7 +1049,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
     "program": "Tıp",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "SAY",
     "minScore": 499.2,
     "minRank": 11420,
@@ -1085,7 +1085,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
     "program": "Tıp",
-    "city": "Kocaeli̇",
+    "city": "Kocaeli",
     "field": "SAY",
     "minScore": 497.91,
     "minRank": 12009,
@@ -1175,7 +1175,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
     "program": "Tıp",
-    "city": "Kayseri̇",
+    "city": "Kayseri",
     "field": "SAY",
     "minScore": 495.94,
     "minRank": 12983,
@@ -1193,7 +1193,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "MERSİN ÜNİVERSİTESİ",
     "program": "Tıp",
-    "city": "Mersi̇n",
+    "city": "Mersin",
     "field": "SAY",
     "minScore": 495.82,
     "minRank": 13043,
@@ -1211,7 +1211,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "PAMUKKALE ÜNİVERSİTESİ",
     "program": "Tıp",
-    "city": "Deni̇zli̇",
+    "city": "Denizli",
     "field": "SAY",
     "minScore": 495.2,
     "minRank": 13350,
@@ -1337,7 +1337,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
     "program": "Uçak Mühendisliği",
-    "city": "Kocaeli̇",
+    "city": "Kocaeli",
     "field": "SAY",
     "minScore": 490.99,
     "minRank": 15576,
@@ -1355,7 +1355,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
     "program": "Bilgisayar Mühendisliği",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "SAY",
     "minScore": 490.61,
     "minRank": 15791,
@@ -1409,7 +1409,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "İZMİR TINAZTEPE ÜNİVERSİTESİ",
     "program": "Tıp",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "SAY",
     "minScore": 488.26,
     "minRank": 17128,
@@ -1571,7 +1571,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
     "program": "Bilgisayar Mühendisliği",
-    "city": "Kocaeli̇",
+    "city": "Kocaeli",
     "field": "SAY",
     "minScore": 480,
     "minRank": 22294,
@@ -1751,7 +1751,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
     "program": "Bilgisayar Mühendisliği",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "SAY",
     "minScore": 469.47,
     "minRank": 29827,
@@ -2012,7 +2012,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "EGE ÜNİVERSİTESİ",
     "program": "İngilizce Mütercim ve Tercümanlık",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "DIL",
     "minScore": 457.63,
     "minRank": 5276,
@@ -2075,7 +2075,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "ANADOLU ÜNİVERSİTESİ",
     "program": "İngilizce Öğretmenliği",
-    "city": "Eski̇şehi̇r",
+    "city": "Eskişehir",
     "field": "DIL",
     "minScore": 450.9,
     "minRank": 6386,
@@ -2147,7 +2147,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
     "program": "İngilizce Mütercim ve Tercümanlık",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "DIL",
     "minScore": 448.09,
     "minRank": 6910,
@@ -2165,7 +2165,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
     "program": "İngilizce Öğretmenliği",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "DIL",
     "minScore": 446.84,
     "minRank": 7159,
@@ -2237,7 +2237,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "EGE ÜNİVERSİTESİ",
     "program": "İngiliz Dili ve Edebiyatı",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "DIL",
     "minScore": 444.25,
     "minRank": 7712,
@@ -2381,7 +2381,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
     "program": "Ekonomi",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "EA",
     "minScore": 437.57,
     "minRank": 5684,
@@ -2480,7 +2480,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "EGE ÜNİVERSİTESİ",
     "program": "Amerikan Kültürü ve Edebiyatı",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "DIL",
     "minScore": 435.09,
     "minRank": 9852,
@@ -2552,7 +2552,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
     "program": "İngilizce Öğretmenliği",
-    "city": "Kocaeli̇",
+    "city": "Kocaeli",
     "field": "DIL",
     "minScore": 432.94,
     "minRank": 10415,
@@ -2660,7 +2660,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
     "program": "Hukuk",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "EA",
     "minScore": 430.22,
     "minRank": 8056,
@@ -2759,7 +2759,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "EGE ÜNİVERSİTESİ",
     "program": "Almanca Mütercim ve Tercümanlık",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "DIL",
     "minScore": 427.01,
     "minRank": 12124,
@@ -2804,7 +2804,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
     "program": "Hukuk",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "EA",
     "minScore": 426.37,
     "minRank": 9715,
@@ -2831,7 +2831,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "ANADOLU ÜNİVERSİTESİ",
     "program": "Hukuk",
-    "city": "Eski̇şehi̇r",
+    "city": "Eskişehir",
     "field": "EA",
     "minScore": 425.96,
     "minRank": 9923,
@@ -2840,7 +2840,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "MERSİN ÜNİVERSİTESİ",
     "program": "İngilizce Öğretmenliği",
-    "city": "Mersi̇n",
+    "city": "Mersin",
     "field": "DIL",
     "minScore": 425.71,
     "minRank": 12542,
@@ -2867,7 +2867,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "PAMUKKALE ÜNİVERSİTESİ",
     "program": "İngilizce Öğretmenliği",
-    "city": "Deni̇zli̇",
+    "city": "Denizli",
     "field": "DIL",
     "minScore": 425.32,
     "minRank": 12663,
@@ -2876,7 +2876,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "İZMİR DEMOKRASİ ÜNİVERSİTESİ",
     "program": "İngilizce Öğretmenliği",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "DIL",
     "minScore": 425.28,
     "minRank": 12676,
@@ -2894,7 +2894,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
     "program": "İngilizce Öğretmenliği",
-    "city": "Kayseri̇",
+    "city": "Kayseri",
     "field": "DIL",
     "minScore": 424.55,
     "minRank": 12950,
@@ -2912,7 +2912,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "BALIKESİR ÜNİVERSİTESİ",
     "program": "İngilizce Öğretmenliği",
-    "city": "Balikesi̇r",
+    "city": "Balıkesir",
     "field": "DIL",
     "minScore": 424.11,
     "minRank": 13081,
@@ -2921,7 +2921,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
     "program": "Amerikan Kültürü ve Edebiyatı",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "DIL",
     "minScore": 423.97,
     "minRank": 13130,
@@ -2984,7 +2984,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
     "program": "Hukuk",
-    "city": "Eski̇şehi̇r",
+    "city": "Eskişehir",
     "field": "EA",
     "minScore": 422.81,
     "minRank": 11550,
@@ -2993,7 +2993,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "AYDIN ADNAN MENDERES ÜNİVERSİTESİ",
     "program": "İngilizce Öğretmenliği",
-    "city": "Aydin",
+    "city": "Aydın",
     "field": "DIL",
     "minScore": 422.49,
     "minRank": 13619,
@@ -3164,7 +3164,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "DİCLE ÜNİVERSİTESİ",
     "program": "İngilizce Öğretmenliği",
-    "city": "Di̇yarbakir",
+    "city": "Diyarbakır",
     "field": "DIL",
     "minScore": 419.33,
     "minRank": 14592,
@@ -3191,7 +3191,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
     "program": "İşletme",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "EA",
     "minScore": 418.66,
     "minRank": 14062,
@@ -3236,7 +3236,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "GAZİANTEP ÜNİVERSİTESİ",
     "program": "İngilizce Öğretmenliği",
-    "city": "Gazi̇antep",
+    "city": "Gaziantep",
     "field": "DIL",
     "minScore": 418.26,
     "minRank": 14915,
@@ -3245,7 +3245,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
     "program": "Hukuk",
-    "city": "Kocaeli̇",
+    "city": "Kocaeli",
     "field": "EA",
     "minScore": 417.88,
     "minRank": 14522,
@@ -3317,7 +3317,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
     "program": "Hukuk",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "EA",
     "minScore": 416.98,
     "minRank": 15132,
@@ -3335,7 +3335,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
     "program": "Psikoloji",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "EA",
     "minScore": 416.59,
     "minRank": 15352,
@@ -3371,7 +3371,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "TRAKYA ÜNİVERSİTESİ",
     "program": "İngilizce Öğretmenliği",
-    "city": "Edi̇rne",
+    "city": "Edirne",
     "field": "DIL",
     "minScore": 415.8,
     "minRank": 15765,
@@ -3425,7 +3425,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
     "program": "Hukuk",
-    "city": "Kayseri̇",
+    "city": "Kayseri",
     "field": "EA",
     "minScore": 414.4,
     "minRank": 16883,
@@ -3479,7 +3479,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "NEVŞEHİR HACI BEKTAŞ VELİ ÜNİVERSİTESİ",
     "program": "İngilizce Öğretmenliği",
-    "city": "Nevşehi̇r",
+    "city": "Nevşehir",
     "field": "DIL",
     "minScore": 412.74,
     "minRank": 16823,
@@ -3488,7 +3488,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "BALIKESİR ÜNİVERSİTESİ",
     "program": "Hukuk",
-    "city": "Balikesi̇r",
+    "city": "Balıkesir",
     "field": "EA",
     "minScore": 412.61,
     "minRank": 18185,
@@ -3506,7 +3506,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "AFYON KOCATEPE ÜNİVERSİTESİ",
     "program": "İngilizce Öğretmenliği",
-    "city": "Afyonkarahi̇sar",
+    "city": "Afyonkarahisar",
     "field": "DIL",
     "minScore": 412.38,
     "minRank": 16954,
@@ -3515,7 +3515,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "EGE ÜNİVERSİTESİ",
     "program": "Psikoloji",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "EA",
     "minScore": 412.11,
     "minRank": 18557,
@@ -3551,7 +3551,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "PAMUKKALE ÜNİVERSİTESİ",
     "program": "Hukuk",
-    "city": "Deni̇zli̇",
+    "city": "Denizli",
     "field": "EA",
     "minScore": 411.31,
     "minRank": 19177,
@@ -3560,7 +3560,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "MANİSA CELÂL BAYAR ÜNİVERSİTESİ",
     "program": "İngilizce Mütercim ve Tercümanlık",
-    "city": "Mani̇sa",
+    "city": "Manisa",
     "field": "DIL",
     "minScore": 411.2,
     "minRank": 17416,
@@ -3587,7 +3587,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "İZMİR DEMOKRASİ ÜNİVERSİTESİ",
     "program": "Hukuk",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "EA",
     "minScore": 410.78,
     "minRank": 19599,
@@ -3605,7 +3605,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
     "program": "İngiliz Dili ve Edebiyatı",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "DIL",
     "minScore": 410.42,
     "minRank": 17674,
@@ -3632,7 +3632,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "İZMİR BAKIRÇAY ÜNİVERSİTESİ",
     "program": "Hukuk",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "EA",
     "minScore": 409.64,
     "minRank": 20547,
@@ -3677,7 +3677,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "YAŞAR ÜNİVERSİTESİ",
     "program": "Yönetim Bilişim Sistemleri",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "EA",
     "minScore": 408.45,
     "minRank": 21596,
@@ -3695,7 +3695,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "KIRIKKALE ÜNİVERSİTESİ",
     "program": "Hukuk",
-    "city": "Kirikkale",
+    "city": "Kırıkkale",
     "field": "EA",
     "minScore": 407.05,
     "minRank": 22837,
@@ -3722,7 +3722,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "İZMİR DEMOKRASİ ÜNİVERSİTESİ",
     "program": "İngiliz Dili ve Edebiyatı",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "DIL",
     "minScore": 405.57,
     "minRank": 19483,
@@ -3749,7 +3749,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "GAZİANTEP ÜNİVERSİTESİ",
     "program": "Hukuk",
-    "city": "Gazi̇antep",
+    "city": "Gaziantep",
     "field": "EA",
     "minScore": 404.43,
     "minRank": 25313,
@@ -3803,7 +3803,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "TEKİRDAĞ NAMIK KEMAL ÜNİVERSİTESİ",
     "program": "Hukuk",
-    "city": "Teki̇rdağ",
+    "city": "Tekirdağ",
     "field": "EA",
     "minScore": 402.35,
     "minRank": 27449,
@@ -3830,7 +3830,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
     "program": "Psikoloji",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "EA",
     "minScore": 400.98,
     "minRank": 28901,
@@ -3848,7 +3848,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
     "program": "Yönetim Bilişim Sistemleri",
-    "city": "İzmi̇r",
+    "city": "İzmir",
     "field": "EA",
     "minScore": 397.27,
     "minRank": 33065,
@@ -3875,7 +3875,7 @@ export const universityPrograms: UniversityProgram[] = [
   {
     "university": "ANADOLU ÜNİVERSİTESİ",
     "program": "Psikoloji",
-    "city": "Eski̇şehi̇r",
+    "city": "Eskişehir",
     "field": "EA",
     "minScore": 395.87,
     "minRank": 34764,
