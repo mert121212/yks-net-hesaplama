@@ -11,6 +11,7 @@ import TYTSection from '@/components/TYTSection'
 import AYTSection from '@/components/AYTSection'
 import YDTSection from '@/components/YDTSection'
 import OBPInput from '@/components/OBPInput'
+import UniversityMatches from '@/components/UniversityMatches'
 
 const PDFDownload = dynamic(() => import('@/components/PDFDownload'), { ssr: false })
 
@@ -287,6 +288,12 @@ const ResultsPanel = memo(function ResultsPanel({
 
             <ShareResults tytNet={results.nets.tyt.toplam} aytNet={activeNet} ydtNet={results.nets.ydt.ydt} scoreType={scoreType} totalScore={maxScore} />
             <PDFDownload results={results} />
+            <a
+                href="#kazanabilecegin-universiteler"
+                className="w-full mt-3 flex items-center justify-center gap-2 py-3 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-extrabold rounded-xl shadow-md hover:from-blue-700 hover:to-indigo-700 transition-all text-xs sm:text-sm text-center"
+            >
+                🎯 Kazanabileceğin Üniversiteleri Gör ↓
+            </a>
         </div>
     )
 })
@@ -428,6 +435,12 @@ export default function CalculatorApp() {
                     </div>
                 )}
             </div>
+            {/* Üniversite Eşleşmeleri — tam genişlikte, sonuç panelinin altında */}
+            {results && results.estimatedRanks && (
+                <div className="lg:col-span-3">
+                    <UniversityMatches results={results} />
+                </div>
+            )}
         </div>
     )
 }
