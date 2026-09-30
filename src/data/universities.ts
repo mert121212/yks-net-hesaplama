@@ -3907,6 +3907,726 @@ export const universityPrograms: UniversityProgram[] = [
     "minScore": 392.49,
     "minRank": 39174,
     "quota": 60
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Özel Eğitim Öğretmenliği",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 472.15,
+    "minRank": 780,
+    "quota": 52
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Okul Öncesi Öğretmenliği (İngilizce)",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 468.90,
+    "minRank": 1120,
+    "quota": 52
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Türk Dili ve Edebiyatı",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 478.60,
+    "minRank": 420,
+    "quota": 62
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Tarih (İngilizce)",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 475.20,
+    "minRank": 590,
+    "quota": 62
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Okul Öncesi Öğretmenliği (İngilizce)",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 461.35,
+    "minRank": 2150,
+    "quota": 57
+  },
+  {
+    "university": "GALATASARAY ÜNİVERSİTESİ",
+    "program": "İletişim (Fransızca)",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 465.80,
+    "minRank": 1540,
+    "quota": 36
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Özel Eğitim Öğretmenliği",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 442.10,
+    "minRank": 6850,
+    "quota": 62
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Türkçe Öğretmenliği",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 435.40,
+    "minRank": 9420,
+    "quota": 62
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Okul Öncesi Öğretmenliği",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 438.90,
+    "minRank": 8100,
+    "quota": 62
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Tarih",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 422.30,
+    "minRank": 17400,
+    "quota": 72
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Türk Dili ve Edebiyatı",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 418.50,
+    "minRank": 20100,
+    "quota": 72
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Sanat Tarihi",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 395.20,
+    "minRank": 43200,
+    "quota": 52
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Radyo, Televizyon ve Sinema",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 412.80,
+    "minRank": 25400,
+    "quota": 82
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Gazetecilik",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 388.90,
+    "minRank": 52100,
+    "quota": 82
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Halkla İlişkiler ve Tanıtım",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 396.40,
+    "minRank": 41800,
+    "quota": 82
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Türkçe Öğretmenliği",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 425.60,
+    "minRank": 14800,
+    "quota": 62
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Özel Eğitim Öğretmenliği",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 431.20,
+    "minRank": 11900,
+    "quota": 62
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "İlahiyat",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 410.50,
+    "minRank": 27800,
+    "quota": 257
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Coğrafya",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 380.60,
+    "minRank": 64200,
+    "quota": 82
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Tarih",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 394.10,
+    "minRank": 44600,
+    "quota": 93
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Özel Eğitim Öğretmenliği",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 436.80,
+    "minRank": 8850,
+    "quota": 62
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Türkçe Öğretmenliği",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 428.40,
+    "minRank": 13200,
+    "quota": 62
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Okul Öncesi Öğretmenliği",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 432.10,
+    "minRank": 11400,
+    "quota": 62
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "İlahiyat",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 415.20,
+    "minRank": 23600,
+    "quota": 205
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Halkla İlişkiler ve Tanıtım",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 398.50,
+    "minRank": 39500,
+    "quota": 82
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Radyo, Televizyon ve Sinema",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 408.10,
+    "minRank": 29800,
+    "quota": 82
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Gazetecilik",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 385.70,
+    "minRank": 56900,
+    "quota": 72
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Tarih",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 389.20,
+    "minRank": 51700,
+    "quota": 82
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Gazetecilik",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 395.10,
+    "minRank": 43500,
+    "quota": 72
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Halkla İlişkiler ve Tanıtım",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 402.30,
+    "minRank": 35400,
+    "quota": 72
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Radyo, Televizyon ve Sinema",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 409.60,
+    "minRank": 28400,
+    "quota": 72
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Özel Eğitim Öğretmenliği",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 439.50,
+    "minRank": 7800,
+    "quota": 62
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "İlahiyat",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 408.20,
+    "minRank": 29700,
+    "quota": 205
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Coğrafya",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 382.40,
+    "minRank": 61500,
+    "quota": 72
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Tarih",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 392.80,
+    "minRank": 46500,
+    "quota": 82
+  },
+  {
+    "university": "GAZİ ÜNİVERSİTESİ",
+    "program": "Özel Eğitim Öğretmenliği",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 434.70,
+    "minRank": 9950,
+    "quota": 62
+  },
+  {
+    "university": "GAZİ ÜNİVERSİTESİ",
+    "program": "Türkçe Öğretmenliği",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 426.30,
+    "minRank": 14400,
+    "quota": 62
+  },
+  {
+    "university": "GAZİ ÜNİVERSİTESİ",
+    "program": "Okul Öncesi Öğretmenliği",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 429.80,
+    "minRank": 12600,
+    "quota": 62
+  },
+  {
+    "university": "GAZİ ÜNİVERSİTESİ",
+    "program": "Gastronomi ve Mutfak Sanatları",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 420.10,
+    "minRank": 18900,
+    "quota": 62
+  },
+  {
+    "university": "GAZİ ÜNİVERSİTESİ",
+    "program": "Görsel İletişim Tasarımı",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 398.20,
+    "minRank": 39900,
+    "quota": 62
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Türkçe Öğretmenliği",
+    "city": "İzmir",
+    "field": "SOZ",
+    "minScore": 424.10,
+    "minRank": 15800,
+    "quota": 62
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Özel Eğitim Öğretmenliği",
+    "city": "İzmir",
+    "field": "SOZ",
+    "minScore": 432.50,
+    "minRank": 11100,
+    "quota": 62
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Okul Öncesi Öğretmenliği",
+    "city": "İzmir",
+    "field": "SOZ",
+    "minScore": 427.60,
+    "minRank": 13700,
+    "quota": 62
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Radyo, Televizyon ve Sinema",
+    "city": "İzmir",
+    "field": "SOZ",
+    "minScore": 404.90,
+    "minRank": 32900,
+    "quota": 72
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Gazetecilik",
+    "city": "İzmir",
+    "field": "SOZ",
+    "minScore": 387.40,
+    "minRank": 54300,
+    "quota": 72
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Halkla İlişkiler ve Tanıtım",
+    "city": "İzmir",
+    "field": "SOZ",
+    "minScore": 397.60,
+    "minRank": 40600,
+    "quota": 72
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Tarih",
+    "city": "İzmir",
+    "field": "SOZ",
+    "minScore": 388.50,
+    "minRank": 52700,
+    "quota": 82
+  },
+  {
+    "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
+    "program": "Türkçe Öğretmenliği",
+    "city": "İzmir",
+    "field": "SOZ",
+    "minScore": 421.80,
+    "minRank": 17500,
+    "quota": 62
+  },
+  {
+    "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
+    "program": "Özel Eğitim Öğretmenliği",
+    "city": "İzmir",
+    "field": "SOZ",
+    "minScore": 430.20,
+    "minRank": 12400,
+    "quota": 62
+  },
+  {
+    "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
+    "program": "Okul Öncesi Öğretmenliği",
+    "city": "İzmir",
+    "field": "SOZ",
+    "minScore": 425.10,
+    "minRank": 15100,
+    "quota": 62
+  },
+  {
+    "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
+    "program": "İlahiyat",
+    "city": "İzmir",
+    "field": "SOZ",
+    "minScore": 401.30,
+    "minRank": 36600,
+    "quota": 205
+  },
+  {
+    "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
+    "program": "Gastronomi ve Mutfak Sanatları",
+    "city": "İzmir",
+    "field": "SOZ",
+    "minScore": 414.20,
+    "minRank": 24100,
+    "quota": 52
+  },
+  {
+    "university": "ANADOLU ÜNİVERSİTESİ",
+    "program": "Çizgi Film ve Animasyon",
+    "city": "Eskişehir",
+    "field": "SOZ",
+    "minScore": 428.90,
+    "minRank": 12900,
+    "quota": 41
+  },
+  {
+    "university": "ANADOLU ÜNİVERSİTESİ",
+    "program": "Özel Eğitim Öğretmenliği",
+    "city": "Eskişehir",
+    "field": "SOZ",
+    "minScore": 433.40,
+    "minRank": 10600,
+    "quota": 62
+  },
+  {
+    "university": "ANADOLU ÜNİVERSİTESİ",
+    "program": "Türkçe Öğretmenliği",
+    "city": "Eskişehir",
+    "field": "SOZ",
+    "minScore": 422.50,
+    "minRank": 16900,
+    "quota": 62
+  },
+  {
+    "university": "ANADOLU ÜNİVERSİTESİ",
+    "program": "Gastronomi ve Mutfak Sanatları",
+    "city": "Eskişehir",
+    "field": "SOZ",
+    "minScore": 418.70,
+    "minRank": 20200,
+    "quota": 62
+  },
+  {
+    "university": "ANADOLU ÜNİVERSİTESİ",
+    "program": "İletişim Tasarımı ve Yönetimi",
+    "city": "Eskişehir",
+    "field": "SOZ",
+    "minScore": 389.40,
+    "minRank": 51400,
+    "quota": 62
+  },
+  {
+    "university": "AKDENİZ ÜNİVERSİTESİ",
+    "program": "Gastronomi ve Mutfak Sanatları",
+    "city": "Antalya",
+    "field": "SOZ",
+    "minScore": 415.80,
+    "minRank": 22800,
+    "quota": 62
+  },
+  {
+    "university": "AKDENİZ ÜNİVERSİTESİ",
+    "program": "Özel Eğitim Öğretmenliği",
+    "city": "Antalya",
+    "field": "SOZ",
+    "minScore": 429.10,
+    "minRank": 13000,
+    "quota": 62
+  },
+  {
+    "university": "AKDENİZ ÜNİVERSİTESİ",
+    "program": "Radyo, Televizyon ve Sinema",
+    "city": "Antalya",
+    "field": "SOZ",
+    "minScore": 396.10,
+    "minRank": 42200,
+    "quota": 72
+  },
+  {
+    "university": "AKDENİZ ÜNİVERSİTESİ",
+    "program": "Türkçe Öğretmenliği",
+    "city": "Antalya",
+    "field": "SOZ",
+    "minScore": 420.30,
+    "minRank": 18700,
+    "quota": 62
+  },
+  {
+    "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
+    "program": "Özel Eğitim Öğretmenliği",
+    "city": "Bursa",
+    "field": "SOZ",
+    "minScore": 428.50,
+    "minRank": 13400,
+    "quota": 62
+  },
+  {
+    "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
+    "program": "Türkçe Öğretmenliği",
+    "city": "Bursa",
+    "field": "SOZ",
+    "minScore": 419.60,
+    "minRank": 19400,
+    "quota": 62
+  },
+  {
+    "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
+    "program": "İlahiyat",
+    "city": "Bursa",
+    "field": "SOZ",
+    "minScore": 398.90,
+    "minRank": 39100,
+    "quota": 205
+  },
+  {
+    "university": "ANKARA HACI BAYRAM VELİ ÜNİVERSİTESİ",
+    "program": "Gastronomi ve Mutfak Sanatları",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 416.30,
+    "minRank": 22300,
+    "quota": 62
+  },
+  {
+    "university": "ANKARA HACI BAYRAM VELİ ÜNİVERSİTESİ",
+    "program": "Gazetecilik",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 386.20,
+    "minRank": 56100,
+    "quota": 72
+  },
+  {
+    "university": "ANKARA HACI BAYRAM VELİ ÜNİVERSİTESİ",
+    "program": "Halkla İlişkiler ve Tanıtım",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 393.50,
+    "minRank": 45600,
+    "quota": 72
+  },
+  {
+    "university": "MİMAR SİNAN GÜZEL SANATLAR ÜNİVERSİTESİ",
+    "program": "Sanat Tarihi",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 398.10,
+    "minRank": 40050,
+    "quota": 62
+  },
+  {
+    "university": "MİMAR SİNAN GÜZEL SANATLAR ÜNİVERSİTESİ",
+    "program": "Türk Dili ve Edebiyatı",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 402.70,
+    "minRank": 35000,
+    "quota": 62
+  },
+  {
+    "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
+    "program": "Türkçe Öğretmenliği",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 427.10,
+    "minRank": 14100,
+    "quota": 62
+  },
+  {
+    "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
+    "program": "Okul Öncesi Öğretmenliği",
+    "city": "İstanbul",
+    "field": "SOZ",
+    "minScore": 430.80,
+    "minRank": 12050,
+    "quota": 62
+  },
+  {
+    "university": "NECMETTİN ERBAKAN ÜNİVERSİTESİ",
+    "program": "Özel Eğitim Öğretmenliği",
+    "city": "Konya",
+    "field": "SOZ",
+    "minScore": 425.30,
+    "minRank": 15000,
+    "quota": 62
+  },
+  {
+    "university": "ÇUKUROVA ÜNİVERSİTESİ",
+    "program": "Türkçe Öğretmenliği",
+    "city": "Adana",
+    "field": "SOZ",
+    "minScore": 416.80,
+    "minRank": 21800,
+    "quota": 62
+  },
+  {
+    "university": "ÇUKUROVA ÜNİVERSİTESİ",
+    "program": "Özel Eğitim Öğretmenliği",
+    "city": "Adana",
+    "field": "SOZ",
+    "minScore": 427.40,
+    "minRank": 13900,
+    "quota": 62
+  },
+  {
+    "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
+    "program": "Türkçe Öğretmenliği",
+    "city": "Samsun",
+    "field": "SOZ",
+    "minScore": 415.20,
+    "minRank": 23300,
+    "quota": 62
+  },
+  {
+    "university": "TRABZON ÜNİVERSİTESİ",
+    "program": "Türkçe Öğretmenliği",
+    "city": "Trabzon",
+    "field": "SOZ",
+    "minScore": 411.60,
+    "minRank": 26800,
+    "quota": 62
+  },
+  {
+    "university": "KOCAELİ ÜNİVERSİTESİ",
+    "program": "Gazetecilik",
+    "city": "Kocaeli",
+    "field": "SOZ",
+    "minScore": 374.20,
+    "minRank": 75300,
+    "quota": 72
+  },
+  {
+    "university": "KOCAELİ ÜNİVERSİTESİ",
+    "program": "Radyo, Televizyon ve Sinema",
+    "city": "Kocaeli",
+    "field": "SOZ",
+    "minScore": 388.10,
+    "minRank": 53200,
+    "quota": 72
+  },
+  {
+    "university": "SAKARYA ÜNİVERSİTESİ",
+    "program": "İlahiyat",
+    "city": "Sakarya",
+    "field": "SOZ",
+    "minScore": 392.10,
+    "minRank": 47200,
+    "quota": 205
+  },
+  {
+    "university": "VAN YÜZÜNCÜ YIL ÜNİVERSİTESİ",
+    "program": "İlahiyat",
+    "city": "Van",
+    "field": "SOZ",
+    "minScore": 358.40,
+    "minRank": 108400,
+    "quota": 155
   }
 ]
 
