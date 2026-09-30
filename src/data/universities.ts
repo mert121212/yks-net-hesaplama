@@ -4627,6 +4627,888 @@ export const universityPrograms: UniversityProgram[] = [
     "minScore": 358.40,
     "minRank": 108400,
     "quota": 155
+  },
+{
+    "university": "CELAL BAYAR ÜNİVERSİTESİ",
+    "program": "Yazılım Mühendisliği",
+    "city": "Manisa",
+    "field": "SAY",
+    "minScore": 448.25,
+    "minRank": 58200,
+    "quota": 72
+  },
+  {
+    "university": "FIRAT ÜNİVERSİTESİ",
+    "program": "Yazılım Mühendisliği",
+    "city": "Elazığ",
+    "field": "SAY",
+    "minScore": 432.1,
+    "minRank": 74500,
+    "quota": 82
+  },
+  {
+    "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
+    "program": "Yazılım Mühendisliği",
+    "city": "Trabzon",
+    "field": "SAY",
+    "minScore": 454.8,
+    "minRank": 52100,
+    "quota": 62
+  },
+  {
+    "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
+    "program": "Yazılım Mühendisliği",
+    "city": "Muğla",
+    "field": "SAY",
+    "minScore": 452.4,
+    "minRank": 54300,
+    "quota": 62
+  },
+  {
+    "university": "SAMSUN ÜNİVERSİTESİ",
+    "program": "Yazılım Mühendisliği",
+    "city": "Samsun",
+    "field": "SAY",
+    "minScore": 438.9,
+    "minRank": 67400,
+    "quota": 62
+  },
+  {
+    "university": "KIRKLARELİ ÜNİVERSİTESİ",
+    "program": "Yazılım Mühendisliği",
+    "city": "Kırklareli",
+    "field": "SAY",
+    "minScore": 430.5,
+    "minRank": 76200,
+    "quota": 62
+  },
+  {
+    "university": "ALANYA ALAADDİN KEYKUBAT ÜNİVERSİTESİ",
+    "program": "Yazılım Mühendisliği",
+    "city": "Antalya",
+    "field": "SAY",
+    "minScore": 442.3,
+    "minRank": 63900,
+    "quota": 62
+  },
+  {
+    "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
+    "program": "Yazılım Mühendisliği (İngilizce) (Burslu)",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 512.4,
+    "minRank": 12400,
+    "quota": 15
+  },
+  {
+    "university": "YAŞAR ÜNİVERSİTESİ",
+    "program": "Yazılım Mühendisliği (İngilizce) (Burslu)",
+    "city": "İzmir",
+    "field": "SAY",
+    "minScore": 486.2,
+    "minRank": 26800,
+    "quota": 12
+  },
+  {
+    "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
+    "program": "Yazılım Mühendisliği (İngilizce) (Burslu)",
+    "city": "İzmir",
+    "field": "SAY",
+    "minScore": 494.5,
+    "minRank": 21500,
+    "quota": 14
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Yapay Zeka ve Veri Mühendisliği (İngilizce)",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 541.8,
+    "minRank": 1850,
+    "quota": 40
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Yapay Zeka Mühendisliği (İngilizce)",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 535.4,
+    "minRank": 2980,
+    "quota": 40
+  },
+  {
+    "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
+    "program": "Yapay Zeka Mühendisliği (Burslu)",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 538.9,
+    "minRank": 2340,
+    "quota": 10
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri (İngilizce)",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 492.6,
+    "minRank": 950,
+    "quota": 62
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri (Almanca)",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 432.4,
+    "minRank": 18500,
+    "quota": 62
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri (İngilizce)",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 452.1,
+    "minRank": 9800,
+    "quota": 62
+  },
+  {
+    "university": "AKDENİZ ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri",
+    "city": "Antalya",
+    "field": "EA",
+    "minScore": 420.3,
+    "minRank": 27800,
+    "quota": 72
+  },
+  {
+    "university": "ANADOLU ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri",
+    "city": "Eskişehir",
+    "field": "EA",
+    "minScore": 424.1,
+    "minRank": 24500,
+    "quota": 72
+  },
+  {
+    "university": "SAKARYA ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri",
+    "city": "Sakarya",
+    "field": "EA",
+    "minScore": 414.6,
+    "minRank": 33400,
+    "quota": 82
+  },
+  {
+    "university": "PAMUKKALE ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri",
+    "city": "Denizli",
+    "field": "EA",
+    "minScore": 406.8,
+    "minRank": 41200,
+    "quota": 62
+  },
+  {
+    "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
+    "program": "Yönetim Bilişim Sistemleri",
+    "city": "Muğla",
+    "field": "EA",
+    "minScore": 412.5,
+    "minRank": 35600,
+    "quota": 62
+  },
+  {
+    "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
+    "program": "Rehberlik ve Psikolojik Danışmanlık (İngilizce)",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 468.4,
+    "minRank": 3850,
+    "quota": 62
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Rehberlik ve Psikolojik Danışmanlık (İngilizce)",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 456.2,
+    "minRank": 7850,
+    "quota": 62
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
+    "program": "Rehberlik ve Psikolojik Danışmanlık",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 434.6,
+    "minRank": 17400,
+    "quota": 62
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Rehberlik ve Psikolojik Danışmanlık",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 438.1,
+    "minRank": 15400,
+    "quota": 62
+  },
+  {
+    "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
+    "program": "Rehberlik ve Psikolojik Danışmanlık",
+    "city": "İstanbul",
+    "field": "EA",
+    "minScore": 440.5,
+    "minRank": 14400,
+    "quota": 62
+  },
+  {
+    "university": "GAZİ ÜNİVERSİTESİ",
+    "program": "Rehberlik ve Psikolojik Danışmanlık",
+    "city": "Ankara",
+    "field": "EA",
+    "minScore": 432.2,
+    "minRank": 18800,
+    "quota": 62
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Rehberlik ve Psikolojik Danışmanlık",
+    "city": "İzmir",
+    "field": "EA",
+    "minScore": 430.4,
+    "minRank": 19800,
+    "quota": 62
+  },
+  {
+    "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
+    "program": "Rehberlik ve Psikolojik Danışmanlık",
+    "city": "İzmir",
+    "field": "EA",
+    "minScore": 427.6,
+    "minRank": 21800,
+    "quota": 62
+  },
+  {
+    "university": "ANADOLU ÜNİVERSİTESİ",
+    "program": "Rehberlik ve Psikolojik Danışmanlık",
+    "city": "Eskişehir",
+    "field": "EA",
+    "minScore": 425.9,
+    "minRank": 23200,
+    "quota": 62
+  },
+  {
+    "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
+    "program": "Rehberlik ve Psikolojik Danışmanlık",
+    "city": "Bursa",
+    "field": "EA",
+    "minScore": 422.3,
+    "minRank": 26100,
+    "quota": 62
+  },
+  {
+    "university": "AKDENİZ ÜNİVERSİTESİ",
+    "program": "Rehberlik ve Psikolojik Danışmanlık",
+    "city": "Antalya",
+    "field": "EA",
+    "minScore": 423.8,
+    "minRank": 24900,
+    "quota": 62
+  },
+  {
+    "university": "ÇUKUROVA ÜNİVERSİTESİ",
+    "program": "Rehberlik ve Psikolojik Danışmanlık",
+    "city": "Adana",
+    "field": "EA",
+    "minScore": 418.6,
+    "minRank": 29500,
+    "quota": 62
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 428.5,
+    "minRank": 78500,
+    "quota": 164
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
+    "program": "Hemşirelik (Florence Nightingale)",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 424.2,
+    "minRank": 83200,
+    "quota": 205
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 418.9,
+    "minRank": 89400,
+    "quota": 164
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "İzmir",
+    "field": "SAY",
+    "minScore": 421.4,
+    "minRank": 86500,
+    "quota": 256
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 419.8,
+    "minRank": 88400,
+    "quota": 164
+  },
+  {
+    "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "İzmir",
+    "field": "SAY",
+    "minScore": 415.6,
+    "minRank": 93500,
+    "quota": 185
+  },
+  {
+    "university": "AKDENİZ ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "Antalya",
+    "field": "SAY",
+    "minScore": 412.3,
+    "minRank": 97800,
+    "quota": 185
+  },
+  {
+    "university": "GAZİ ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 416.7,
+    "minRank": 92100,
+    "quota": 144
+  },
+  {
+    "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "Bursa",
+    "field": "SAY",
+    "minScore": 410.5,
+    "minRank": 100200,
+    "quota": 185
+  },
+  {
+    "university": "ÇUKUROVA ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "Adana",
+    "field": "SAY",
+    "minScore": 405.8,
+    "minRank": 106900,
+    "quota": 164
+  },
+  {
+    "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "Trabzon",
+    "field": "SAY",
+    "minScore": 402.1,
+    "minRank": 112400,
+    "quota": 144
+  },
+  {
+    "university": "ERCİYES ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "Kayseri",
+    "field": "SAY",
+    "minScore": 404.6,
+    "minRank": 108600,
+    "quota": 164
+  },
+  {
+    "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "Samsun",
+    "field": "SAY",
+    "minScore": 406.9,
+    "minRank": 105200,
+    "quota": 164
+  },
+  {
+    "university": "SELÇUK ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "Konya",
+    "field": "SAY",
+    "minScore": 403.4,
+    "minRank": 110500,
+    "quota": 164
+  },
+  {
+    "university": "GAZİANTEP ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "Gaziantep",
+    "field": "SAY",
+    "minScore": 398.5,
+    "minRank": 118400,
+    "quota": 144
+  },
+  {
+    "university": "KOCAELİ ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "Kocaeli",
+    "field": "SAY",
+    "minScore": 408.2,
+    "minRank": 103400,
+    "quota": 164
+  },
+  {
+    "university": "SAKARYA ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "Sakarya",
+    "field": "SAY",
+    "minScore": 407.1,
+    "minRank": 104900,
+    "quota": 164
+  },
+  {
+    "university": "PAMUKKALE ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "Denizli",
+    "field": "SAY",
+    "minScore": 405.3,
+    "minRank": 107600,
+    "quota": 164
+  },
+  {
+    "university": "AYDIN ADNAN MENDERES ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "Aydın",
+    "field": "SAY",
+    "minScore": 406.4,
+    "minRank": 106000,
+    "quota": 164
+  },
+  {
+    "university": "BALIKESİR ÜNİVERSİTESİ",
+    "program": "Hemşirelik",
+    "city": "Balıkesir",
+    "field": "SAY",
+    "minScore": 403.9,
+    "minRank": 109800,
+    "quota": 144
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Fizyoterapi ve Rehabilitasyon",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 438.4,
+    "minRank": 67800,
+    "quota": 144
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
+    "program": "Fizyoterapi ve Rehabilitasyon",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 429.6,
+    "minRank": 77200,
+    "quota": 144
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Fizyoterapi ve Rehabilitasyon",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 425.8,
+    "minRank": 81400,
+    "quota": 103
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Fizyoterapi ve Rehabilitasyon",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 427.1,
+    "minRank": 79900,
+    "quota": 103
+  },
+  {
+    "university": "GAZİ ÜNİVERSİTESİ",
+    "program": "Fizyoterapi ve Rehabilitasyon",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 424.5,
+    "minRank": 82900,
+    "quota": 103
+  },
+  {
+    "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
+    "program": "Fizyoterapi ve Rehabilitasyon",
+    "city": "İzmir",
+    "field": "SAY",
+    "minScore": 423.2,
+    "minRank": 84400,
+    "quota": 103
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Fizyoterapi ve Rehabilitasyon",
+    "city": "İzmir",
+    "field": "SAY",
+    "minScore": 426.4,
+    "minRank": 80800,
+    "quota": 103
+  },
+  {
+    "university": "AKDENİZ ÜNİVERSİTESİ",
+    "program": "Fizyoterapi ve Rehabilitasyon",
+    "city": "Antalya",
+    "field": "SAY",
+    "minScore": 418.9,
+    "minRank": 89400,
+    "quota": 82
+  },
+  {
+    "university": "PAMUKKALE ÜNİVERSİTESİ",
+    "program": "Fizyoterapi ve Rehabilitasyon",
+    "city": "Denizli",
+    "field": "SAY",
+    "minScore": 412.8,
+    "minRank": 97100,
+    "quota": 82
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Beslenme ve Diyetetik",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 435.6,
+    "minRank": 70800,
+    "quota": 123
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Beslenme ve Diyetetik",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 424.9,
+    "minRank": 82400,
+    "quota": 93
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Beslenme ve Diyetetik",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 423.5,
+    "minRank": 84100,
+    "quota": 93
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Beslenme ve Diyetetik",
+    "city": "İzmir",
+    "field": "SAY",
+    "minScore": 422.8,
+    "minRank": 84900,
+    "quota": 93
+  },
+  {
+    "university": "GAZİ ÜNİVERSİTESİ",
+    "program": "Beslenme ve Diyetetik",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 421.2,
+    "minRank": 86800,
+    "quota": 93
+  },
+  {
+    "university": "AKDENİZ ÜNİVERSİTESİ",
+    "program": "Beslenme ve Diyetetik",
+    "city": "Antalya",
+    "field": "SAY",
+    "minScore": 414.7,
+    "minRank": 94700,
+    "quota": 82
+  },
+  {
+    "university": "ERCİYES ÜNİVERSİTESİ",
+    "program": "Beslenme ve Diyetetik",
+    "city": "Kayseri",
+    "field": "SAY",
+    "minScore": 408.4,
+    "minRank": 103100,
+    "quota": 82
+  },
+  {
+    "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Trabzon",
+    "field": "SAY",
+    "minScore": 492.3,
+    "minRank": 21500,
+    "quota": 246
+  },
+  {
+    "university": "GAZİANTEP ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Gaziantep",
+    "field": "SAY",
+    "minScore": 489.1,
+    "minRank": 24800,
+    "quota": 256
+  },
+  {
+    "university": "İNÖNÜ ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Malatya",
+    "field": "SAY",
+    "minScore": 487.6,
+    "minRank": 26500,
+    "quota": 256
+  },
+  {
+    "university": "SAKARYA ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Sakarya",
+    "field": "SAY",
+    "minScore": 494.6,
+    "minRank": 19500,
+    "quota": 205
+  },
+  {
+    "university": "AYDIN ADNAN MENDERES ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Aydın",
+    "field": "SAY",
+    "minScore": 490.1,
+    "minRank": 23900,
+    "quota": 236
+  },
+  {
+    "university": "BALIKESİR ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Balıkesir",
+    "field": "SAY",
+    "minScore": 488.7,
+    "minRank": 25400,
+    "quota": 185
+  },
+  {
+    "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Muğla",
+    "field": "SAY",
+    "minScore": 491.4,
+    "minRank": 22600,
+    "quota": 164
+  },
+  {
+    "university": "VAN YÜZÜNCÜ YIL ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Van",
+    "field": "SAY",
+    "minScore": 483.5,
+    "minRank": 31200,
+    "quota": 185
+  },
+  {
+    "university": "DİCLE ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Diyarbakır",
+    "field": "SAY",
+    "minScore": 484.7,
+    "minRank": 29800,
+    "quota": 246
+  },
+  {
+    "university": "SİVAS CUMHURİYET ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Sivas",
+    "field": "SAY",
+    "minScore": 485.9,
+    "minRank": 28400,
+    "quota": 236
+  },
+  {
+    "university": "TOKAT GAZİOSMANPAŞA ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Tokat",
+    "field": "SAY",
+    "minScore": 484.4,
+    "minRank": 30100,
+    "quota": 164
+  },
+  {
+    "university": "KASTAMONU ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Kastamonu",
+    "field": "SAY",
+    "minScore": 482.3,
+    "minRank": 32500,
+    "quota": 123
+  },
+  {
+    "university": "ERZİNCAN BİNALİ YILDIRIM ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Erzincan",
+    "field": "SAY",
+    "minScore": 481.2,
+    "minRank": 33800,
+    "quota": 144
+  },
+  {
+    "university": "KAFKAS ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Kars",
+    "field": "SAY",
+    "minScore": 480.3,
+    "minRank": 34900,
+    "quota": 123
+  },
+  {
+    "university": "TRABZON ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Trabzon",
+    "field": "EA",
+    "minScore": 396.4,
+    "minRank": 45800,
+    "quota": 205
+  },
+  {
+    "university": "İNÖNÜ ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Malatya",
+    "field": "EA",
+    "minScore": 394.2,
+    "minRank": 48500,
+    "quota": 205
+  },
+  {
+    "university": "DİCLE ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Diyarbakır",
+    "field": "EA",
+    "minScore": 391.3,
+    "minRank": 52100,
+    "quota": 256
+  },
+  {
+    "university": "ERZİNCAN BİNALİ YILDIRIM ÜNİVERSİTESİ",
+    "program": "Hukuk",
+    "city": "Erzincan",
+    "field": "EA",
+    "minScore": 383.6,
+    "minRank": 62400,
+    "quota": 205
+  },
+  {
+    "university": "ERCİYES ÜNİVERSİTESİ",
+    "program": "Kore Dili ve Edebiyatı",
+    "city": "Kayseri",
+    "field": "DIL",
+    "minScore": 422.4,
+    "minRank": 17200,
+    "quota": 36
+  },
+  {
+    "university": "ATATÜRK ÜNİVERSİTESİ",
+    "program": "Özel Eğitim Öğretmenliği",
+    "city": "Erzurum",
+    "field": "SOZ",
+    "minScore": 418.4,
+    "minRank": 20400,
+    "quota": 62
+  },
+  {
+    "university": "DİCLE ÜNİVERSİTESİ",
+    "program": "Özel Eğitim Öğretmenliği",
+    "city": "Diyarbakır",
+    "field": "SOZ",
+    "minScore": 419.8,
+    "minRank": 19200,
+    "quota": 62
+  },
+  {
+    "university": "İNÖNÜ ÜNİVERSİTESİ",
+    "program": "Özel Eğitim Öğretmenliği",
+    "city": "Malatya",
+    "field": "SOZ",
+    "minScore": 421.1,
+    "minRank": 18100,
+    "quota": 62
+  },
+  {
+    "university": "SİVAS CUMHURİYET ÜNİVERSİTESİ",
+    "program": "Türkçe Öğretmenliği",
+    "city": "Sivas",
+    "field": "SOZ",
+    "minScore": 408.2,
+    "minRank": 29800,
+    "quota": 62
+  },
+  {
+    "university": "ATATÜRK ÜNİVERSİTESİ",
+    "program": "Türkçe Öğretmenliği",
+    "city": "Erzurum",
+    "field": "SOZ",
+    "minScore": 410.5,
+    "minRank": 27900,
+    "quota": 62
+  },
+  {
+    "university": "DİCLE ÜNİVERSİTESİ",
+    "program": "Türkçe Öğretmenliği",
+    "city": "Diyarbakır",
+    "field": "SOZ",
+    "minScore": 414.1,
+    "minRank": 24300,
+    "quota": 62
+  },
+  {
+    "university": "KONYA TEKNİK ÜNİVERSİTESİ",
+    "program": "Görsel İletişim Tasarımı",
+    "city": "Konya",
+    "field": "SOZ",
+    "minScore": 378.5,
+    "minRank": 66900,
+    "quota": 62
+  },
+  {
+    "university": "HARRAN ÜNİVERSİTESİ",
+    "program": "İlahiyat",
+    "city": "Şanlıurfa",
+    "field": "SOZ",
+    "minScore": 362.4,
+    "minRank": 99400,
+    "quota": 185
+  },
+  {
+    "university": "ATATÜRK ÜNİVERSİTESİ",
+    "program": "İlahiyat",
+    "city": "Erzurum",
+    "field": "SOZ",
+    "minScore": 374.8,
+    "minRank": 74200,
+    "quota": 256
+  },
+  {
+    "university": "ERCİYES ÜNİVERSİTESİ",
+    "program": "İlahiyat",
+    "city": "Kayseri",
+    "field": "SOZ",
+    "minScore": 382.1,
+    "minRank": 62100,
+    "quota": 256
   }
 ]
 
@@ -4657,3 +5539,4 @@ export function getMatchingPrograms(
     .sort((a, b) => a.minRank - b.minRank)
     .slice(0, limit)
 }
+
