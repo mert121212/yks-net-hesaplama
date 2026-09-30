@@ -7,11 +7,12 @@ import { TYTScores, AYTScores, YDTScores } from '@/types/yks'
 import { calculateYKSScores } from '@/utils/yksCalculator'
 import ShareResults from '@/components/ShareResults'
 
+import TYTSection from '@/components/TYTSection'
+import AYTSection from '@/components/AYTSection'
+import YDTSection from '@/components/YDTSection'
+import OBPInput from '@/components/OBPInput'
+
 const PDFDownload = dynamic(() => import('@/components/PDFDownload'), { ssr: false })
-const TYTSection = dynamic(() => import('@/components/TYTSection'), { loading: () => <div className="card animate-pulse h-64 bg-gray-200 rounded-xl" />, ssr: false })
-const AYTSection = dynamic(() => import('@/components/AYTSection'), { loading: () => <div className="card animate-pulse h-64 bg-gray-200 rounded-xl" />, ssr: false })
-const YDTSection = dynamic(() => import('@/components/YDTSection'), { loading: () => <div className="card animate-pulse h-64 bg-gray-200 rounded-xl" />, ssr: false })
-const OBPInput = dynamic(() => import('@/components/OBPInput'), { loading: () => <div className="card animate-pulse h-32 bg-gray-200 rounded-xl" />, ssr: false })
 
 // localStorage
 const STORAGE_KEY = 'yks_scores_v1'
@@ -19,13 +20,8 @@ function loadSaved() {
     if (typeof window === 'undefined') return null
     try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null') } catch { return null }
 }
-// Sadece bir kez okur — tüm state'ler bu değeri paylaşır
-let _cachedSave: ReturnType<typeof loadSaved> = undefined as unknown as ReturnType<typeof loadSaved>
-function getCachedSave() {
-    if (_cachedSave === undefined) _cachedSave = loadSaved()
-    return _cachedSave
-}
 function persist(data: object) {
+    if (typeof window === 'undefined') return
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)) } catch { }
 }
 
@@ -296,21 +292,36 @@ const ResultsPanel = memo(function ResultsPanel({
 })
 
 export default function CalculatorApp() {
-    // lazy initializer — sadece ilk render'da localStorage okur, TBT'yi etkilemez
-    const [tytScores, setTytScores] = useState<TYTScores>(() => getCachedSave()?.tyt ?? DEFAULT_TYT)
-    const [aytScores, setAytScores] = useState<AYTScores>(() => getCachedSave()?.ayt ?? DEFAULT_AYT)
-    const [ydtScores, setYdtScores] = useState<YDTScores>(() => getCachedSave()?.ydt ?? { ydt: { dogru: 0, yanlis: 0 } })
-    const [obp, setObp] = useState<number>(() => getCachedSave()?.obp ?? 0)
-    const [obpHalved, setObpHalved] = useState<boolean>(() => getCachedSave()?.obpHalved ?? false)
-    const [obpMesleki, setObpMesleki] = useState<boolean>(() => getCachedSave()?.obpMesleki ?? false)
+    const [tytScores, setTytScores] = useState<TYTScores>(DEFAULT_TYT)
+    const [aytScores, setAytScores] = useState<AYTScores>(DEFAULT_AYT)
+    const [ydtScores, setYdtScores] = useState<YDTScores>({ ydt: { dogru: 0, yanlis: 0 } })
+    const [obp, setObp] = useState<number>(0)
+    const [obpHalved, setObpHalved] = useState<boolean>(false)
+    const [obpMesleki, setObpMesleki] = useState<boolean>(false)
+    const [isLoaded, setIsLoaded] = useState(false)
 
-    // Debounced persist — her tuş vuruşunda değil, 500ms sonra kaydeder
+    // Client mount olunca localStorage'dan oku
     useEffect(() => {
+        const saved = loadSaved()
+        if (saved) {
+            if (saved.tyt) setTytScores(saved.tyt)
+            if (saved.ayt) setAytScores(saved.ayt)
+            if (saved.ydt) setYdtScores(saved.ydt)
+            if (saved.obp !== undefined) setObp(saved.obp)
+            if (saved.obpHalved !== undefined) setObpHalved(saved.obpHalved)
+            if (saved.obpMesleki !== undefined) setObpMesleki(saved.obpMesleki)
+        }
+        setIsLoaded(true)
+    }, [])
+
+    // Debounced persist — sadece veri yüklendikten sonra kaydet
+    useEffect(() => {
+        if (!isLoaded) return
         const id = setTimeout(() => {
             persist({ tyt: tytScores, ayt: aytScores, ydt: ydtScores, obp, obpHalved, obpMesleki })
         }, 500)
         return () => clearTimeout(id)
-    }, [tytScores, aytScores, ydtScores, obp, obpHalved, obpMesleki])
+    }, [tytScores, aytScores, ydtScores, obp, obpHalved, obpMesleki, isLoaded])
 
     const handleTYT = (s: keyof TYTScores, f: 'dogru' | 'yanlis', v: number) =>
         setTytScores(p => ({ ...p, [s]: { ...p[s], [f]: v } }))

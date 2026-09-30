@@ -27,7 +27,8 @@ export default function Navbar() {
                     {/* Desktop links — static */}
                     <div className="hidden md:flex items-center space-x-8">
                         {[
-                            { href: '/', label: 'Ana Sayfa' },
+                            { href: '/', label: 'Hesaplama' },
+                            { href: '/universiteler', label: 'Üniversiteler' },
                             { href: '/blog', label: 'Blog' },
                             { href: '/yks-rehberi', label: 'YKS Rehberi' },
                             { href: '/sss', label: 'SSS' },

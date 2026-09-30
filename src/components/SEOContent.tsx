@@ -179,6 +179,93 @@ export default function SEOContent() {
                 </div>
             </section>
 
+            {/* ÖSYM Resmi Test İstatistikleri ve Türkiye Ortalamaları */}
+            <section className="card space-y-6">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div className="flex items-center gap-3">
+                        <Icon d={ICONS.trend} className="h-8 w-8 text-blue-600" />
+                        <div>
+                            <h2 className="text-2xl font-bold text-gray-900">
+                                ÖSYM Resmi YKS Test Ortalamaları ve İstatistikleri
+                            </h2>
+                            <p className="text-xs text-gray-500">
+                                Kaynak: ÖSYM YKS Sayısal Bilgiler Raporu (~3.1 Milyon Aday)
+                            </p>
+                        </div>
+                    </div>
+                    <Link
+                        href="/universiteler"
+                        className="inline-flex items-center gap-2 text-xs font-bold text-blue-600 hover:text-blue-800 bg-blue-50 px-3 py-2 rounded-lg border border-blue-200 transition-colors whitespace-nowrap self-start sm:self-auto"
+                    >
+                        🎓 Taban Puanları Atlası →
+                    </Link>
+                </div>
+
+                <div className="text-gray-700 text-sm leading-relaxed space-y-3">
+                    <p>
+                        Sınavda aldığınız ham puanın standart sapması ve katsayısı, o testin Türkiye genelindeki doğru yanıtlanma ortalamasına bağlıdır. Ortalama ne kadar düşük olursa, o testte yapacağınız 1 netin standart sapma puan getirisi o kadar yüksek olur.
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {/* TYT İstatistikleri */}
+                    <div className="border border-gray-200 rounded-2xl overflow-hidden">
+                        <div className="bg-gray-50 px-4 py-3 border-b border-gray-200 font-bold text-gray-800 text-sm flex justify-between">
+                            <span>TYT Testleri (120 Soru)</span>
+                            <span className="text-xs text-blue-600">Türkiye Ham Net Ort.</span>
+                        </div>
+                        <div className="divide-y divide-gray-100 text-sm">
+                            <div className="px-4 py-2.5 flex justify-between">
+                                <span className="text-gray-700 font-medium">Türkçe (40 Soru)</span>
+                                <span className="font-mono font-bold text-gray-900">~21.4 Net</span>
+                            </div>
+                            <div className="px-4 py-2.5 flex justify-between">
+                                <span className="text-gray-700 font-medium">Temel Matematik (40 Soru)</span>
+                                <span className="font-mono font-bold text-red-600">~7.9 Net</span>
+                            </div>
+                            <div className="px-4 py-2.5 flex justify-between">
+                                <span className="text-gray-700 font-medium">Sosyal Bilimler (20 Soru)</span>
+                                <span className="font-mono font-bold text-gray-900">~8.5 Net</span>
+                            </div>
+                            <div className="px-4 py-2.5 flex justify-between">
+                                <span className="text-gray-700 font-medium">Fen Bilimleri (20 Soru)</span>
+                                <span className="font-mono font-bold text-red-600">~3.8 Net</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* AYT İstatistikleri */}
+                    <div className="border border-gray-200 rounded-2xl overflow-hidden">
+                        <div className="bg-gray-50 px-4 py-3 border-b border-gray-200 font-bold text-gray-800 text-sm flex justify-between">
+                            <span>AYT Testleri (80 Soru)</span>
+                            <span className="text-xs text-purple-600">Türkiye Ham Net Ort.</span>
+                        </div>
+                        <div className="divide-y divide-gray-100 text-sm">
+                            <div className="px-4 py-2.5 flex justify-between">
+                                <span className="text-gray-700 font-medium">AYT Matematik (40 Soru)</span>
+                                <span className="font-mono font-bold text-red-600">~7.2 Net</span>
+                            </div>
+                            <div className="px-4 py-2.5 flex justify-between">
+                                <span className="text-gray-700 font-medium">Fizik (14 Soru)</span>
+                                <span className="font-mono font-bold text-red-600">~2.4 Net</span>
+                            </div>
+                            <div className="px-4 py-2.5 flex justify-between">
+                                <span className="text-gray-700 font-medium">Kimya (13 Soru)</span>
+                                <span className="font-mono font-bold text-red-600">~1.9 Net</span>
+                            </div>
+                            <div className="px-4 py-2.5 flex justify-between">
+                                <span className="text-gray-700 font-medium">T. Dili ve Edebiyatı (24 Soru)</span>
+                                <span className="font-mono font-bold text-gray-900">~6.8 Net</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="p-4 bg-blue-50 border-l-4 border-blue-500 rounded-r-xl text-xs sm:text-sm text-blue-950">
+                    💡 <strong>Stratejik İpucu:</strong> Matematik ve Fen ortalamalarının çok düşük olması sebebiyle, bu testlerde yapılan her 1 netin standart sapma çarpanı sınav sıralamasında binlerce adayın önüne geçmenizi sağlar.
+                </div>
+            </section>
+
             {/* SSS */}
             <section className="card">
                 <div className="flex items-center gap-3 mb-6">

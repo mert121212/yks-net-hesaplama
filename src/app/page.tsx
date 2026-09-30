@@ -3,19 +3,7 @@ import dynamic from 'next/dynamic'
 import StructuredData from '@/components/StructuredData'
 import SEOContent from '@/components/SEOContent'
 
-// Sadece client gerektiren bileşen lazy load
-const CalculatorApp = dynamic(() => import('@/components/CalculatorApp'), {
-    loading: () => (
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-2 space-y-8">
-                <div className="card animate-pulse h-64 bg-gray-200 rounded-xl" />
-                <div className="card animate-pulse h-64 bg-gray-200 rounded-xl" />
-            </div>
-            <div className="card animate-pulse h-64 bg-gray-200 rounded-xl" />
-        </div>
-    ),
-    ssr: false,
-})
+import CalculatorApp from '@/components/CalculatorApp'
 
 export default function HomePage() {
     return (
@@ -36,19 +24,9 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* Hesaplama aracı — client-side, lazy */}
+            {/* Hesaplama aracı — Server Rendered */}
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-                <Suspense fallback={
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                        <div className="lg:col-span-2 space-y-8">
-                            <div className="card animate-pulse h-64 bg-gray-200 rounded-xl" />
-                            <div className="card animate-pulse h-64 bg-gray-200 rounded-xl" />
-                        </div>
-                        <div className="card animate-pulse h-64 bg-gray-200 rounded-xl" />
-                    </div>
-                }>
-                    <CalculatorApp />
-                </Suspense>
+                <CalculatorApp />
             </section>
 
             {/* SEO içeriği — static, direct import */}

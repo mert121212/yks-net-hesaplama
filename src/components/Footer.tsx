@@ -44,9 +44,9 @@ export default function Footer() {
                         <ul className="space-y-2 text-sm">
                             {[
                                 { href: '/tyt-net-hesaplama', label: 'TYT Net Hesaplama' },
-                                { href: '/#hesaplama', label: 'AYT Net Hesaplama' },
-                                { href: '/#hesaplama', label: 'YDT Net Hesaplama' },
-                                { href: '/#sonuclar', label: 'Puan Hesaplama' },
+                                { href: '/ayt-net-hesaplama', label: 'AYT Net Hesaplama' },
+                                { href: '/yks-puan-hesaplama', label: 'YKS Puan Hesaplama' },
+                                { href: '/universiteler', label: 'Üniversite Taban Puanları' },
                             ].map(({ href, label }) => (
                                 <li key={label}><Link href={href} className="text-gray-400 hover:text-white transition-colors">{label}</Link></li>
                             ))}
