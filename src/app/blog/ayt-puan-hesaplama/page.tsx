@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/ayt-puan-hesaplama',
         images: [
             {
-                url: '/og-image.jpg',
+                url: '/images/blog/ayt-puan-hesaplama.svg',
                 width: 1200,
                 height: 630,
                 alt: 'AYT Puan Hesaplama ve Katsayılar'
@@ -62,6 +63,11 @@ export default function AYTPuanHesaplama() {
                     </header>
 
                     <AuthorProfile />
+
+                    <BlogHeroBanner
+                        src="/images/blog/ayt-puan-hesaplama.svg"
+                        alt="AYT Puan Hesaplama: Test Katsayıları ve Ağırlıklar"
+                    />
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">

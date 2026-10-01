@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/tyt-net-artirma-taktikleri',
         images: [
             {
-                url: '/og-image.jpg',
+                url: '/images/blog/tyt-net-artirma-taktikleri.svg',
                 width: 1200,
                 height: 630,
                 alt: 'TYT Net Artırma Taktikleri'
@@ -62,6 +63,11 @@ export default function TYTNetArtirma() {
                     </header>
 
                     <AuthorProfile />
+
+                    <BlogHeroBanner
+                        src="/images/blog/tyt-net-artirma-taktikleri.svg"
+                        alt="TYT Net Artırma Yolları: 60-70 Bandını Aşmak"
+                    />
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">

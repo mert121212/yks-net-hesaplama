@@ -32,10 +32,10 @@ export default function NotFound() {
                     </Link>
 
                     <Link
-                        href="/tyt-net-hesaplama"
+                        href="/universiteler"
                         className="w-full flex items-center justify-center gap-2 px-5 py-3 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold rounded-xl transition-colors text-sm"
                     >
-                        TYT Net Hesaplama
+                        Üniversite Taban Puanları & Sıralamalar
                     </Link>
 
                     <Link

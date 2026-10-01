@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/ayt-matematik-konulari',
         images: [
             {
-                url: '/og-image.jpg',
+                url: '/images/blog/ayt-matematik-konulari.svg',
                 width: 1200,
                 height: 630,
                 alt: 'AYT Matematik Konuları ve Stratejisi'
@@ -62,6 +63,11 @@ export default function AYTMatematikKonulari() {
                     </header>
 
                     <AuthorProfile />
+
+                    <BlogHeroBanner
+                        src="/images/blog/ayt-matematik-konulari.svg"
+                        alt="AYT Matematik Konuları, Soru Dağılımı ve Çalışma Sırası"
+                    />
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">

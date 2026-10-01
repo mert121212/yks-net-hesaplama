@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 import InteractiveOBPCalculator from '@/components/InteractiveOBPCalculator'
 
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/obp-hesaplama',
         images: [
             {
-                url: '/og-image.jpg',
+                url: '/images/blog/obp-hesaplama.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'OBP Nedir ve Nasıl Hesaplanır? Kırık OBP Rehberi'
@@ -63,6 +64,11 @@ export default function OBPHesaplamaRehberi() {
                     </header>
 
                     <AuthorProfile />
+
+                    <BlogHeroBanner
+                        src="/images/blog/obp-hesaplama.jpg"
+                        alt="OBP (Ortaöğretim Başarı Puanı) Nedir, Nasıl Hesaplanır?"
+                    />
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">

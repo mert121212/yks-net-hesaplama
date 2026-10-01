@@ -60,6 +60,24 @@
   to = "/sitemap.xml"
   status = 200
 
+[[redirects]]
+  from = "/tyt-net-hesaplama"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ayt-net-hesaplama"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/yks-puan-hesaplama"
+  to = "/"
+  status = 301
+  force = true
+
 # SPA fallback
 [[redirects]]
   from = "/*"

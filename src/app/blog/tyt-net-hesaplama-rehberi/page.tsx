@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 import QuickNetSimulator from '@/components/QuickNetSimulator'
 
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/tyt-net-hesaplama-rehberi',
         images: [
             {
-                url: '/og-image.jpg',
+                url: '/images/blog/tyt-net-hesaplama-rehberi.svg',
                 width: 1200,
                 height: 630,
                 alt: 'TYT Net Hesaplama Rehberi 2027'
@@ -63,6 +64,11 @@ export default function TYTNetHesaplamaRehberi() {
                     </header>
 
                     <AuthorProfile />
+
+                    <BlogHeroBanner
+                        src="/images/blog/tyt-net-hesaplama-rehberi.svg"
+                        alt="TYT Net Hesaplama: Test Ağırlıkları ve Puan Mantığı"
+                    />
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
@@ -134,8 +140,8 @@ export default function TYTNetHesaplamaRehberi() {
                             <p className="text-sm text-slate-300 mb-4">
                                 Doğru ve yanlış sayılarınızı girerek standart katsayılarla hesaplanan TYT puanınızı hemen görün.
                             </p>
-                            <Link href="/tyt-net-hesaplama" className="inline-block bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
-                                TYT Hesaplayıcıya Git →
+                            <Link href="/#hesaplama" className="inline-block bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
+                                Net Hesaplayıcıya Git →
                             </Link>
                         </div>
 

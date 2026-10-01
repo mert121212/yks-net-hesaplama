@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 import YigilmaChart from '@/components/YigilmaChart'
 
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/yks-yigilma-tehlikesi',
         images: [
             {
-                url: '/og-image.jpg',
+                url: '/images/blog/yks-yigilma-tehlikesi.svg',
                 width: 1200,
                 height: 630,
                 alt: 'YKS Yığılma Rehberi'
@@ -63,6 +64,11 @@ export default function YKSYigilmaTehlikesi() {
                     </header>
 
                     <AuthorProfile />
+
+                    <BlogHeroBanner
+                        src="/images/blog/yks-yigilma-tehlikesi.svg"
+                        alt="YKS&apos;de Yığılma Nedir, Sıralamayı Nasıl Etkiler?"
+                    />
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">

@@ -163,6 +163,28 @@ const blogPosts = [
     },
 ]
 
+const blogImageMap: Record<string, string> = {
+    'tyt-turkce-paragraf-teknikleri': '/images/blog/tyt-turkce-paragraf-teknikleri.jpg',
+    'yks-son-3-ay-calisma-plani': '/images/blog/yks-son-3-ay-calisma-plani.jpg',
+    'sifirdan-tyt-matematik-calisma-rehberi': '/images/blog/sifirdan-tyt-matematik-calisma-rehberi.jpg',
+    'obp-hesaplama': '/images/blog/obp-hesaplama.jpg',
+    'yks-kac-net-kac-puan': '/images/blog/yks-kac-net-kac-puan.svg',
+    'yks-hazirlik-programi': '/images/blog/yks-hazirlik-programi.jpg',
+    'tyt-matematik-konulari': '/images/blog/tyt-matematik-konulari.jpg',
+    'ayt-matematik-konulari': '/images/blog/ayt-matematik-konulari.svg',
+    'yks-edebiyat-konulari': '/images/blog/yks-edebiyat-konulari.svg',
+    'yks-net-hesaplama-nasil-yapilir': '/images/blog/yks-net-hesaplama-nasil-yapilir.svg',
+    'yks-2027-basvuru-tarihleri': '/images/blog/yks-2027-basvuru-tarihleri.svg',
+    'yks-1-net-kac-kisi-atar': '/images/blog/yks-1-net-kac-kisi-atar.svg',
+    'tyt-net-hesaplama-rehberi': '/images/blog/tyt-net-hesaplama-rehberi.svg',
+    'tyt-kesin-cikan-konular': '/images/blog/tyt-kesin-cikan-konular.svg',
+    'ayt-puan-hesaplama': '/images/blog/ayt-puan-hesaplama.svg',
+    'universite-tercih-stratejileri': '/images/blog/universite-tercih-stratejileri.svg',
+    'tyt-net-artirma-taktikleri': '/images/blog/tyt-net-artirma-taktikleri.svg',
+    'yks-yigilma-tehlikesi': '/images/blog/yks-yigilma-tehlikesi.svg',
+    'yks-puan-turleri': '/images/blog/yks-puan-turleri.svg',
+}
+
 export default function BlogPage() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
@@ -191,33 +213,45 @@ export default function BlogPage() {
                 {/* Featured Post */}
                 <div className="mb-12">
                     <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-2xl overflow-hidden">
-                        <div className="p-8 md:p-12 text-white">
-                            <span className="inline-block px-3 py-1 bg-white/20 rounded-full text-sm font-medium mb-4">
-                                ⭐ Öne Çıkan
-                            </span>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                                {blogPosts[0].title}
-                            </h2>
-                            <p className="text-blue-100 text-lg mb-6">
-                                {blogPosts[0].excerpt}
-                            </p>
-                            <div className="flex items-center space-x-4 mb-6">
-                                <span className="text-sm text-blue-200">
-                                    {new Date(blogPosts[0].date).toLocaleDateString('tr-TR', {
-                                        year: 'numeric',
-                                        month: 'long',
-                                        day: 'numeric',
-                                    })}
+                        <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
+                            <div className="p-8 md:p-12 text-white lg:col-span-7">
+                                <span className="inline-block px-3 py-1 bg-white/20 rounded-full text-sm font-medium mb-4">
+                                    ⭐ Öne Çıkan Rehber
                                 </span>
-                                <span className="text-sm text-blue-200">•</span>
-                                <span className="text-sm text-blue-200">{blogPosts[0].readTime}</span>
+                                <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
+                                    {blogPosts[0].title}
+                                </h2>
+                                <p className="text-blue-100 text-base md:text-lg mb-6 leading-relaxed">
+                                    {blogPosts[0].excerpt}
+                                </p>
+                                <div className="flex items-center space-x-4 mb-6">
+                                    <span className="text-sm text-blue-200">
+                                        {new Date(blogPosts[0].date).toLocaleDateString('tr-TR', {
+                                            year: 'numeric',
+                                            month: 'long',
+                                            day: 'numeric',
+                                        })}
+                                    </span>
+                                    <span className="text-sm text-blue-200">•</span>
+                                    <span className="text-sm text-blue-200">{blogPosts[0].readTime}</span>
+                                </div>
+                                <Link
+                                    href={`/blog/${blogPosts[0].id}`}
+                                    className="inline-block bg-white text-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-colors shadow-lg text-sm md:text-base"
+                                >
+                                    Hemen Oku →
+                                </Link>
                             </div>
-                            <Link
-                                href={`/blog/${blogPosts[0].id}`}
-                                className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg"
-                            >
-                                Hemen Oku →
-                            </Link>
+                            <div className="p-6 lg:p-8 lg:col-span-5 flex justify-center">
+                                <div className="rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 max-w-md w-full">
+                                    <img
+                                        src={blogImageMap[blogPosts[0].id] || '/og-image.jpg'}
+                                        alt={blogPosts[0].title}
+                                        className="w-full h-auto object-cover aspect-video hover:scale-105 transition-transform duration-500"
+                                        loading="eager"
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -230,32 +264,42 @@ export default function BlogPage() {
                             <Link
                                 key={post.id}
                                 href={`/blog/${post.id}`}
-                                className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group"
+                                className="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group flex flex-col"
                             >
-                                <div className="p-6">
-                                    <div className="flex items-center justify-between mb-4">
-                                        <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+                                <div className="relative aspect-video w-full overflow-hidden bg-slate-900">
+                                    <img
+                                        src={blogImageMap[post.id] || '/og-image.jpg'}
+                                        alt={post.title}
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                        loading="lazy"
+                                    />
+                                    <div className="absolute top-3 left-3">
+                                        <span className="px-3 py-1 bg-white/95 backdrop-blur-md text-gray-900 rounded-full text-xs font-bold shadow-sm">
                                             {post.category}
                                         </span>
-                                        <span className="text-sm text-gray-500">{post.readTime}</span>
                                     </div>
-                                    <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors line-clamp-2">
-                                        {post.title}
-                                    </h3>
-                                    <p className="text-gray-600 text-sm mb-4 line-clamp-3">
-                                        {post.excerpt}
-                                    </p>
-                                    <div className="flex items-center justify-between">
-                                        <span className="text-xs text-gray-500">
-                                            {new Date(post.date).toLocaleDateString('tr-TR', {
-                                                year: 'numeric',
-                                                month: 'long',
-                                                day: 'numeric',
-                                            })}
-                                        </span>
-                                        <span className="text-blue-600 font-medium text-sm group-hover:translate-x-1 transition-transform">
-                                            Devamını Oku →
-                                        </span>
+                                </div>
+                                <div className="p-6 flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <div className="flex items-center justify-between text-xs text-gray-500 mb-2">
+                                            <span>
+                                                {new Date(post.date).toLocaleDateString('tr-TR', {
+                                                    year: 'numeric',
+                                                    month: 'short',
+                                                    day: 'numeric',
+                                                })}
+                                            </span>
+                                            <span>{post.readTime}</span>
+                                        </div>
+                                        <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-2">
+                                            {post.title}
+                                        </h3>
+                                        <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                                            {post.excerpt}
+                                        </p>
+                                    </div>
+                                    <div className="text-blue-600 font-semibold text-sm group-hover:translate-x-1 transition-transform flex items-center gap-1">
+                                        Rehberi İncele <span>→</span>
                                     </div>
                                 </div>
                             </Link>

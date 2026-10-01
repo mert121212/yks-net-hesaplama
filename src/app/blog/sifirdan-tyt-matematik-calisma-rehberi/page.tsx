@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/sifirdan-tyt-matematik-calisma-rehberi',
         images: [
             {
-                url: '/og-image.jpg',
+                url: '/images/blog/sifirdan-tyt-matematik-calisma-rehberi.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'Sıfırdan TYT Matematik Çalışma Rehberi'
@@ -62,6 +63,11 @@ export default function SifirdanTytMatematikRehberi() {
                     </header>
 
                     <AuthorProfile />
+
+                    <BlogHeroBanner
+                        src="/images/blog/sifirdan-tyt-matematik-calisma-rehberi.jpg"
+                        alt="Sıfırdan TYT Matematik: 0 Netten 20 Nete Çıkma Rehberi"
+                    />
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">

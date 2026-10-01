@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 import QuickNetSimulator from '@/components/QuickNetSimulator'
 
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/yks-1-net-kac-kisi-atar',
         images: [
             {
-                url: '/og-image.jpg',
+                url: '/images/blog/yks-1-net-kac-kisi-atar.svg',
                 width: 1200,
                 height: 630,
                 alt: 'YKS Net Hesaplama Blog'
@@ -63,6 +64,11 @@ export default function YKSBirNetKacKisiAtar() {
                     </header>
 
                     <AuthorProfile />
+
+                    <BlogHeroBanner
+                        src="/images/blog/yks-1-net-kac-kisi-atar.svg"
+                        alt="YKS&apos;de 1 Net Sıralamayı Ne Kadar Değiştirir?"
+                    />
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">

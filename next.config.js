@@ -17,6 +17,26 @@ const nextConfig = {
     compiler: {
         removeConsole: process.env.NODE_ENV === 'production',
     },
+    // 301 Kalıcı Yönlendirmeler: Zayıf doorway sayfaları kaldırılıp ana sayfaya yönlendirilir
+    async redirects() {
+        return [
+            {
+                source: '/tyt-net-hesaplama',
+                destination: '/',
+                permanent: true,
+            },
+            {
+                source: '/ayt-net-hesaplama',
+                destination: '/',
+                permanent: true,
+            },
+            {
+                source: '/yks-puan-hesaplama',
+                destination: '/',
+                permanent: true,
+            },
+        ]
+    },
     // Bundle analyzer ve optimizasyon için
     webpack: (config, { isServer, dev }) => {
         if (!isServer) {

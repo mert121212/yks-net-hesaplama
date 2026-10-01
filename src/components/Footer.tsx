@@ -43,10 +43,10 @@ export default function Footer() {
                         </h3>
                         <ul className="space-y-2 text-sm">
                             {[
-                                { href: '/tyt-net-hesaplama', label: 'TYT Net Hesaplama' },
-                                { href: '/ayt-net-hesaplama', label: 'AYT Net Hesaplama' },
-                                { href: '/yks-puan-hesaplama', label: 'YKS Puan Hesaplama' },
+                                { href: '/', label: 'YKS Net & Puan Hesaplama' },
                                 { href: '/universiteler', label: 'Üniversite Taban Puanları' },
+                                { href: '/blog/tyt-net-hesaplama-rehberi', label: 'TYT Net Hesaplama Rehberi' },
+                                { href: '/blog/ayt-puan-hesaplama', label: 'AYT Puan Katsayıları' },
                             ].map(({ href, label }) => (
                                 <li key={label}><Link href={href} className="text-gray-400 hover:text-white transition-colors">{label}</Link></li>
                             ))}

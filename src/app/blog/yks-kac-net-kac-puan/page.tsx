@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 import QuickNetSimulator from '@/components/QuickNetSimulator'
 
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/yks-kac-net-kac-puan',
         images: [
             {
-                url: '/og-image.jpg',
+                url: '/images/blog/yks-kac-net-kac-puan.svg',
                 width: 1200,
                 height: 630,
                 alt: 'YKS Kaç Net Kaç Puan Analizi'
@@ -63,6 +64,11 @@ export default function YKSKacNetKacPuan() {
                     </header>
 
                     <AuthorProfile />
+
+                    <BlogHeroBanner
+                        src="/images/blog/yks-kac-net-kac-puan.svg"
+                        alt="YKS&apos;de Kaç Net Kaç Puan Eder?"
+                    />
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">

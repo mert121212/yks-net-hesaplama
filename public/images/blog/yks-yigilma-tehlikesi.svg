@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#0f172a;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="yigilmaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e11d48" />
+      <stop offset="50%" stop-color="#be123c" />
+      <stop offset="100%" stop-color="#9f1239" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.18)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0.04)" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e11d48" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#9f1239" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="24" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base with Gradient Wave -->
+  <rect width="1200" height="675" fill="#090d16" />
+  <circle cx="200" cy="150" r="320" fill="#e11d48" opacity="0.18" filter="url(#glow)" />
+  <circle cx="1050" cy="500" r="380" fill="#be123c" opacity="0.22" filter="url(#glow)" />
+  
+  <!-- Subtle Grid Pattern -->
+  <g opacity="0.06" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="75" x2="1200" y2="75" />
+    <line x1="0" y1="150" x2="1200" y2="150" />
+    <line x1="0" y1="225" x2="1200" y2="225" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="375" x2="1200" y2="375" />
+    <line x1="0" y1="450" x2="1200" y2="450" />
+    <line x1="0" y1="525" x2="1200" y2="525" />
+    <line x1="0" y1="600" x2="1200" y2="600" />
+    <line x1="150" y1="0" x2="150" y2="675" />
+    <line x1="300" y1="0" x2="300" y2="675" />
+    <line x1="450" y1="0" x2="450" y2="675" />
+    <line x1="600" y1="0" x2="600" y2="675" />
+    <line x1="750" y1="0" x2="750" y2="675" />
+    <line x1="900" y1="0" x2="900" y2="675" />
+    <line x1="1050" y1="0" x2="1050" y2="675" />
+  </g>
+
+  <!-- Left Content Box -->
+  <g transform="translate(80, 100)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="340" height="42" rx="21" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" />
+    <circle cx="21" cy="21" r="7" fill="#e11d48" />
+    <text x="42" y="27" fill="#e2e8f0" font-size="14" font-weight="700" letter-spacing="1.5">İSTATİSTİKSEL ANALİZ</text>
+
+    <!-- Main Title -->
+    <text x="0" y="110" fill="#ffffff" font-size="44" font-weight="800" line-height="1.2">
+      <tspan x="0" dy="0">YKS Yığılma Nedir?</tspan><tspan x="0" dy="54">Nasıl Önlem Alınır?</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="250" fill="#94a3b8" font-size="20" font-weight="400">
+      <tspan x="0" dy="0">50 bin - 150 bin bandındaki aday yoğunluğu,</tspan><tspan x="0" dy="30">kolay sınav etkisi ve OBP kırıcıları</tspan>
+    </text>
+
+    <!-- Brand Footer -->
+    <g transform="translate(0, 420)">
+      <rect x="0" y="0" width="48" height="48" rx="14" fill="url(#yigilmaGrad)" />
+      <path d="M16 16h16M24 16v16" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+      <text x="64" y="25" fill="#f8fafc" font-size="18" font-weight="700">YKS Net Hesaplama</text>
+      <text x="64" y="44" fill="#64748b" font-size="13" font-weight="500">yksnethesapla.com • Resmi Kılavuz Verileri</text>
+    </g>
+  </g>
+
+  <!-- Right Visual Area -->
+  <g transform="translate(680, 80)" filter="url(#shadow)">
+    
+      <rect x="0" y="20" width="440" height="460" rx="32" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+      <!-- Gaussian Bell Curve with high peak -->
+      <path d="M 40 380 Q 140 380 180 280 Q 220 80 260 280 Q 300 380 400 380" fill="none" stroke="#f43f5e" stroke-width="4" filter="url(#glow)" />
+      <!-- Shaded Yığılma Zone -->
+      <path d="M 180 280 Q 220 80 260 280 L 260 380 L 180 380 Z" fill="rgba(244,63,94,0.3)" />
+      <!-- Danger Alert Tag -->
+      <g transform="translate(145, 110)">
+        <rect width="150" height="44" rx="12" fill="rgba(15,23,42,0.9)" stroke="#fb7185" stroke-width="2" />
+        <text x="75" y="28" text-anchor="middle" fill="#fda4af" font-size="14" font-weight="bold">⚠️ YIĞILMA BÖLGESİ</text>
+      </g>
+      <text x="220" y="220" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold">~350.000 Aday</text>
+      <text x="220" y="245" text-anchor="middle" fill="#fca5a5" font-size="13">0.5 Net Fark = 15.000 Sıra</text>
+    
+  </g>
+</svg>

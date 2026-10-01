@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/yks-net-hesaplama-nasil-yapilir',
         images: [
             {
-                url: '/og-image.jpg',
+                url: '/images/blog/yks-net-hesaplama-nasil-yapilir.svg',
                 width: 1200,
                 height: 630,
                 alt: 'YKS Net Hesaplama Rehberi'
@@ -62,6 +63,11 @@ export default function YKSNetHesaplama() {
                     </header>
 
                     <AuthorProfile />
+
+                    <BlogHeroBanner
+                        src="/images/blog/yks-net-hesaplama-nasil-yapilir.svg"
+                        alt="YKS Net Hesaplama: 4 Yanlış Kuralı ve Puan Mantığı"
+                    />
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">

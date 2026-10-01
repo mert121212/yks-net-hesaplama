@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
+import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 import QuickNetSimulator from '@/components/QuickNetSimulator'
 
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/tyt-matematik-konulari',
         images: [
             {
-                url: '/og-image.jpg',
+                url: '/images/blog/tyt-matematik-konulari.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'TYT Matematik Konuları ve Soru Dağılımı 2027'
@@ -63,6 +64,11 @@ export default function TYTMatematikKonulari() {
                     </header>
 
                     <AuthorProfile />
+
+                    <BlogHeroBanner
+                        src="/images/blog/tyt-matematik-konulari.jpg"
+                        alt="TYT Matematik Konuları ve Soru Dağılımı (2027)"
+                    />
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
