@@ -1945,5 +1945,365 @@ export const sayisalPrograms: UniversityProgram[] = [
     "minScore": 480.3,
     "minRank": 34900,
     "quota": 123
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
+    "program": "Diş Hekimliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 493.5,
+    "minRank": 24500,
+    "quota": 100
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 494.8,
+    "minRank": 23500,
+    "quota": 150
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "İzmir",
+    "field": "SAY",
+    "minScore": 492.2,
+    "minRank": 25500,
+    "quota": 150
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 490.1,
+    "minRank": 27000,
+    "quota": 140
+  },
+  {
+    "university": "GAZİ ÜNİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 491.5,
+    "minRank": 26000,
+    "quota": 130
+  },
+  {
+    "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "İzmir",
+    "field": "SAY",
+    "minScore": 486.8,
+    "minRank": 29500,
+    "quota": 100
+  },
+  {
+    "university": "AKDENİZ ÜNİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "Antalya",
+    "field": "SAY",
+    "minScore": 482.4,
+    "minRank": 33000,
+    "quota": 110
+  },
+  {
+    "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "Bursa",
+    "field": "SAY",
+    "minScore": 480.6,
+    "minRank": 34500,
+    "quota": 100
+  },
+  {
+    "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "Eskişehir",
+    "field": "SAY",
+    "minScore": 478.9,
+    "minRank": 36000,
+    "quota": 100
+  },
+  {
+    "university": "ÇUKUROVA ÜNİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "Adana",
+    "field": "SAY",
+    "minScore": 477.1,
+    "minRank": 37500,
+    "quota": 110
+  },
+  {
+    "university": "SELÇUK ÜNİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "Konya",
+    "field": "SAY",
+    "minScore": 475.3,
+    "minRank": 39000,
+    "quota": 120
+  },
+  {
+    "university": "ERCİYES ÜNİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "Kayseri",
+    "field": "SAY",
+    "minScore": 473.6,
+    "minRank": 40500,
+    "quota": 110
+  },
+  {
+    "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "Samsun",
+    "field": "SAY",
+    "minScore": 473,
+    "minRank": 41000,
+    "quota": 110
+  },
+  {
+    "university": "PAMUKKALE ÜNİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "Denizli",
+    "field": "SAY",
+    "minScore": 471.2,
+    "minRank": 42500,
+    "quota": 90
+  },
+  {
+    "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "Trabzon",
+    "field": "SAY",
+    "minScore": 469.5,
+    "minRank": 44000,
+    "quota": 110
+  },
+  {
+    "university": "HACETTEPE ÜNİVERSİTESİ",
+    "program": "Eczacılık",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 481.5,
+    "minRank": 33000,
+    "quota": 120
+  },
+  {
+    "university": "İSTANBUL ÜNİVERSİTESİ",
+    "program": "Eczacılık",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 474.2,
+    "minRank": 38000,
+    "quota": 160
+  },
+  {
+    "university": "ANKARA ÜNİVERSİTESİ",
+    "program": "Eczacılık",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 472.1,
+    "minRank": 39500,
+    "quota": 140
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Eczacılık",
+    "city": "İzmir",
+    "field": "SAY",
+    "minScore": 467.5,
+    "minRank": 43000,
+    "quota": 130
+  },
+  {
+    "university": "GAZİ ÜNİVERSİTESİ",
+    "program": "Eczacılık",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 464.8,
+    "minRank": 45000,
+    "quota": 120
+  },
+  {
+    "university": "MARMARA ÜNİVERSİTESİ",
+    "program": "Eczacılık",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 462.9,
+    "minRank": 46500,
+    "quota": 130
+  },
+  {
+    "university": "ANADOLU ÜNİVERSİTESİ",
+    "program": "Eczacılık",
+    "city": "Eskişehir",
+    "field": "SAY",
+    "minScore": 455.3,
+    "minRank": 52000,
+    "quota": 130
+  },
+  {
+    "university": "AKDENİZ ÜNİVERSİTESİ",
+    "program": "Eczacılık",
+    "city": "Antalya",
+    "field": "SAY",
+    "minScore": 451.6,
+    "minRank": 55000,
+    "quota": 80
+  },
+  {
+    "university": "ÇUKUROVA ÜNİVERSİTESİ",
+    "program": "Eczacılık",
+    "city": "Adana",
+    "field": "SAY",
+    "minScore": 447.1,
+    "minRank": 59000,
+    "quota": 90
+  },
+  {
+    "university": "ERCİYES ÜNİVERSİTESİ",
+    "program": "Eczacılık",
+    "city": "Kayseri",
+    "field": "SAY",
+    "minScore": 443.8,
+    "minRank": 62000,
+    "quota": 100
+  },
+  {
+    "university": "SELÇUK ÜNİVERSİTESİ",
+    "program": "Eczacılık",
+    "city": "Konya",
+    "field": "SAY",
+    "minScore": 441.7,
+    "minRank": 64000,
+    "quota": 100
+  },
+  {
+    "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
+    "program": "Eczacılık",
+    "city": "Trabzon",
+    "field": "SAY",
+    "minScore": 439.4,
+    "minRank": 66000,
+    "quota": 90
+  },
+  {
+    "university": "ATATÜRK ÜNİVERSİTESİ",
+    "program": "Eczacılık",
+    "city": "Erzurum",
+    "field": "SAY",
+    "minScore": 437.1,
+    "minRank": 68000,
+    "quota": 110
+  },
+  {
+    "university": "İNÖNÜ ÜNİVERSİTESİ",
+    "program": "Eczacılık",
+    "city": "Malatya",
+    "field": "SAY",
+    "minScore": 434.5,
+    "minRank": 71000,
+    "quota": 100
+  },
+  {
+    "university": "DİCLE ÜNİVERSİTESİ",
+    "program": "Eczacılık",
+    "city": "Diyarbakır",
+    "field": "SAY",
+    "minScore": 430.2,
+    "minRank": 75000,
+    "quota": 80
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Mimarlık",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 495.2,
+    "minRank": 18500,
+    "quota": 150
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "Mimarlık",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 497.1,
+    "minRank": 22000,
+    "quota": 110
+  },
+  {
+    "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
+    "program": "Mimarlık",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 476.8,
+    "minRank": 38000,
+    "quota": 180
+  },
+  {
+    "university": "GAZİ ÜNİVERSİTESİ",
+    "program": "Mimarlık",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 449.1,
+    "minRank": 62000,
+    "quota": 120
+  },
+  {
+    "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
+    "program": "Mimarlık",
+    "city": "İzmir",
+    "field": "SAY",
+    "minScore": 445.6,
+    "minRank": 65000,
+    "quota": 100
+  },
+  {
+    "university": "EGE ÜNİVERSİTESİ",
+    "program": "Mimarlık",
+    "city": "İzmir",
+    "field": "SAY",
+    "minScore": 440.2,
+    "minRank": 70000,
+    "quota": 80
+  },
+  {
+    "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
+    "program": "Mimarlık",
+    "city": "Kocaeli",
+    "field": "SAY",
+    "minScore": 432.5,
+    "minRank": 78000,
+    "quota": 80
+  },
+  {
+    "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
+    "program": "Mimarlık",
+    "city": "Eskişehir",
+    "field": "SAY",
+    "minScore": 420.1,
+    "minRank": 95000,
+    "quota": 90
+  },
+  {
+    "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
+    "program": "Mimarlık",
+    "city": "Bursa",
+    "field": "SAY",
+    "minScore": 412.3,
+    "minRank": 105000,
+    "quota": 90
+  },
+  {
+    "university": "AKDENİZ ÜNİVERSİTESİ",
+    "program": "Mimarlık",
+    "city": "Antalya",
+    "field": "SAY",
+    "minScore": 405.4,
+    "minRank": 115000,
+    "quota": 80
   }
 ]

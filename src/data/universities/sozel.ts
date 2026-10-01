@@ -811,5 +811,14 @@ export const sozelPrograms: UniversityProgram[] = [
     "minScore": 382.1,
     "minRank": 62100,
     "quota": 256
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Arkeoloji",
+    "city": "Ankara",
+    "field": "SOZ",
+    "minScore": 396.28,
+    "minRank": 34253,
+    "quota": 5
   }
 ]

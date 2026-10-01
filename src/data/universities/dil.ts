@@ -883,5 +883,383 @@ export const dilPrograms: UniversityProgram[] = [
     "minScore": 422.4,
     "minRank": 17200,
     "quota": 36
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Karşılaştırmalı Edebiyat (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 526.13,
+    "minRank": 209,
+    "quota": 3
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "İngilizce, Fransızca Mütercim ve Tercümanlık (Burslu)",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 507.63,
+    "minRank": 680,
+    "quota": 7
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı (Burslu)",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 501.56,
+    "minRank": 946,
+    "quota": 7
+  },
+  {
+    "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
+    "program": "Amerikan Kültürü ve Edebiyatı (Burslu)",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 489.56,
+    "minRank": 1642,
+    "quota": 5
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Çeviribilimi (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 484,
+    "minRank": 2071,
+    "quota": 11
+  },
+  {
+    "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı (Burslu)",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 486.37,
+    "minRank": 1875,
+    "quota": 5
+  },
+  {
+    "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği (%50 İndirimli)",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 479.6,
+    "minRank": 2437,
+    "quota": 1
+  },
+  {
+    "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık (Burslu)",
+    "city": "İzmir",
+    "field": "DIL",
+    "minScore": 476.96,
+    "minRank": 2719,
+    "quota": 9
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 471.7,
+    "minRank": 3302,
+    "quota": 9
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 477,
+    "minRank": 2713,
+    "quota": 8
+  },
+  {
+    "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
+    "program": "Karşılaştırmalı Edebiyat (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 471.22,
+    "minRank": 3362,
+    "quota": 4
+  },
+  {
+    "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 468.94,
+    "minRank": 3658,
+    "quota": 7
+  },
+  {
+    "university": "KOÇ ÜNİVERSİTESİ",
+    "program": "Karşılaştırmalı Edebiyat (%50 İndirimli)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 459.33,
+    "minRank": 5004,
+    "quota": 3
+  },
+  {
+    "university": "TED ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği (Burslu)",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 466.33,
+    "minRank": 3994,
+    "quota": 7
+  },
+  {
+    "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 459.28,
+    "minRank": 5011,
+    "quota": 10
+  },
+  {
+    "university": "YEDİTEPE ÜNİVERSİTESİ",
+    "program": "Rus Dili ve Edebiyatı (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 456.57,
+    "minRank": 5443,
+    "quota": 4
+  },
+  {
+    "university": "İSTANBUL 29 MAYIS ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 436.84,
+    "minRank": 9427,
+    "quota": 9
+  },
+  {
+    "university": "TED ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı (Burslu)",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 459.84,
+    "minRank": 4927,
+    "quota": 8
+  },
+  {
+    "university": "BAŞKENT ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık (Burslu)",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 455.93,
+    "minRank": 5534,
+    "quota": 6
+  },
+  {
+    "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 459.89,
+    "minRank": 4911,
+    "quota": 7
+  },
+  {
+    "university": "YAŞAR ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık (Burslu)",
+    "city": "İzmir",
+    "field": "DIL",
+    "minScore": 448.59,
+    "minRank": 6815,
+    "quota": 7
+  },
+  {
+    "university": "ÇANKAYA ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık (Burslu)",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 444.09,
+    "minRank": 7739,
+    "quota": 6
+  },
+  {
+    "university": "HALİÇ ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 436.75,
+    "minRank": 9443,
+    "quota": 9
+  },
+  {
+    "university": "BAŞKENT ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği (Burslu)",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 449.63,
+    "minRank": 6617,
+    "quota": 7
+  },
+  {
+    "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 440.71,
+    "minRank": 8491,
+    "quota": 7
+  },
+  {
+    "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
+    "program": "Çince Mütercim ve Tercümanlık (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 436.18,
+    "minRank": 9568,
+    "quota": 6
+  },
+  {
+    "university": "İSTİNYE ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 430.01,
+    "minRank": 11266,
+    "quota": 9
+  },
+  {
+    "university": "YAŞAR ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı (Burslu)",
+    "city": "İzmir",
+    "field": "DIL",
+    "minScore": 439.71,
+    "minRank": 8719,
+    "quota": 7
+  },
+  {
+    "university": "ATILIM ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık (Burslu)",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 441.4,
+    "minRank": 8342,
+    "quota": 4
+  },
+  {
+    "university": "ÇANKAYA ÜNİVERSİTESİ",
+    "program": "İngiliz Dili ve Edebiyatı (Burslu)",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 439.08,
+    "minRank": 8878,
+    "quota": 7
+  },
+  {
+    "university": "BAŞKENT ÜNİVERSİTESİ",
+    "program": "Amerikan Kültürü ve Edebiyatı (Burslu)",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 432.77,
+    "minRank": 10465,
+    "quota": 6
+  },
+  {
+    "university": "UFUK ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği (Burslu)",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 431.87,
+    "minRank": 10726,
+    "quota": 6
+  },
+  {
+    "university": "ANKARA BİLİM ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık (Burslu)",
+    "city": "Ankara",
+    "field": "DIL",
+    "minScore": 428.96,
+    "minRank": 11553,
+    "quota": 7
+  },
+  {
+    "university": "İSTANBUL SABAHATTİN ZAİM ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 431.96,
+    "minRank": 10693,
+    "quota": 8
+  },
+  {
+    "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 432.42,
+    "minRank": 10554,
+    "quota": 7
+  },
+  {
+    "university": "FATİH SULTAN MEHMET VAKIF ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 424.55,
+    "minRank": 12947,
+    "quota": 7
+  },
+  {
+    "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 426.34,
+    "minRank": 12337,
+    "quota": 11
+  },
+  {
+    "university": "İSTANBUL 29 MAYIS ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 426.6,
+    "minRank": 12255,
+    "quota": 8
+  },
+  {
+    "university": "MALTEPE ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 426.75,
+    "minRank": 12210,
+    "quota": 7
+  },
+  {
+    "university": "İSTANBUL KÜLTÜR ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 426.6,
+    "minRank": 12257,
+    "quota": 7
+  },
+  {
+    "university": "BİRUNİ ÜNİVERSİTESİ",
+    "program": "İngilizce Öğretmenliği (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 428.68,
+    "minRank": 11634,
+    "quota": 8
+  },
+  {
+    "university": "ÜSKÜDAR ÜNİVERSİTESİ",
+    "program": "İngilizce Mütercim ve Tercümanlık (Burslu)",
+    "city": "İstanbul",
+    "field": "DIL",
+    "minScore": 424.95,
+    "minRank": 12809,
+    "quota": 9
   }
 ]
