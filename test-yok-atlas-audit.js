@@ -22,17 +22,35 @@ const fs = require('fs')
 const path = require('path')
 const ts = require('typescript')
 
-// universities.ts dosyasını transpiled olarak yükle
-const uniFilePath = path.resolve(__dirname, 'src/data/universities.ts')
-const rawUniCode = fs.readFileSync(uniFilePath, 'utf8')
-const transResult = ts.transpileModule(rawUniCode, {
-    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 }
-})
-const uniMod = { exports: {} }
-const runModule = new Function('exports', 'module', transResult.outputText)
-runModule(uniMod.exports, uniMod)
+// universities.ts ve modüler dosyaları transpile ederek yükle
+function loadTsModule(filePath) {
+    const code = fs.readFileSync(filePath, 'utf8')
+    const res = ts.transpileModule(code, {
+        compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 }
+    })
+    const mod = { exports: {} }
+    const run = new Function('exports', 'module', res.outputText)
+    run(mod.exports, mod)
+    return mod.exports
+}
 
-const programs = uniMod.exports.universityPrograms
+const uniDir = path.resolve(__dirname, 'src/data/universities')
+const sayisalMod = loadTsModule(path.join(uniDir, 'sayisal.ts'))
+const esitAgirlikMod = loadTsModule(path.join(uniDir, 'esitAgirlik.ts'))
+const sozelMod = loadTsModule(path.join(uniDir, 'sozel.ts'))
+const dilMod = loadTsModule(path.join(uniDir, 'dil.ts'))
+
+const sayisalPrograms = sayisalMod.sayisalPrograms || []
+const esitAgirlikPrograms = esitAgirlikMod.esitAgirlikPrograms || []
+const sozelPrograms = sozelMod.sozelPrograms || []
+const dilPrograms = dilMod.dilPrograms || []
+
+const programs = [
+    ...sayisalPrograms,
+    ...esitAgirlikPrograms,
+    ...sozelPrograms,
+    ...dilPrograms
+]
 
 if (!Array.isArray(programs) || programs.length === 0) {
     console.error('HATA: Üniversite veritabanı yüklenemedi!')

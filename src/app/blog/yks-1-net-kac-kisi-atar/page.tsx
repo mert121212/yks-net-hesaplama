@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/yks-1-net-kac-kisi-atar',
         images: [
             {
-                url: '/images/blog/yks-1-net-kac-kisi-atar.svg',
+                url: '/images/blog/yks-1-net-kac-kisi-atar.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'YKS Net Hesaplama Blog'
@@ -66,7 +66,7 @@ export default function YKSBirNetKacKisiAtar() {
                     <AuthorProfile />
 
                     <BlogHeroBanner
-                        src="/images/blog/yks-1-net-kac-kisi-atar.svg"
+                        src="/images/blog/yks-1-net-kac-kisi-atar.jpg"
                         alt="YKS&apos;de 1 Net Sıralamayı Ne Kadar Değiştirir?"
                     />
 

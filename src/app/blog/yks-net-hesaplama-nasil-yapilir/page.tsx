@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/yks-net-hesaplama-nasil-yapilir',
         images: [
             {
-                url: '/images/blog/yks-net-hesaplama-nasil-yapilir.svg',
+                url: '/images/blog/yks-net-hesaplama-nasil-yapilir.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'YKS Net Hesaplama Rehberi'
@@ -65,7 +65,7 @@ export default function YKSNetHesaplama() {
                     <AuthorProfile />
 
                     <BlogHeroBanner
-                        src="/images/blog/yks-net-hesaplama-nasil-yapilir.svg"
+                        src="/images/blog/yks-net-hesaplama-nasil-yapilir.jpg"
                         alt="YKS Net Hesaplama: 4 Yanlış Kuralı ve Puan Mantığı"
                     />
 

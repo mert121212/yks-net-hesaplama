@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/yks-2027-basvuru-tarihleri',
         images: [
             {
-                url: '/images/blog/yks-2027-basvuru-tarihleri.svg',
+                url: '/images/blog/yks-2027-basvuru-tarihleri.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'YKS 2027 Başvuru Rehberi'
@@ -65,7 +65,7 @@ export default function YKSBasvuruTarihleri() {
                     <AuthorProfile />
 
                     <BlogHeroBanner
-                        src="/images/blog/yks-2027-basvuru-tarihleri.svg"
+                        src="/images/blog/yks-2027-basvuru-tarihleri.jpg"
                         alt="YKS 2027 Başvuru Tarihleri ve AİS Kayıt Adımları"
                     />
 

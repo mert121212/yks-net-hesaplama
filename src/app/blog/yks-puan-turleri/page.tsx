@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/yks-puan-turleri',
         images: [
             {
-                url: '/images/blog/yks-puan-turleri.svg',
+                url: '/images/blog/yks-puan-turleri.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'YKS Puan Türleri Rehberi'
@@ -65,7 +65,7 @@ export default function YKSPuanTurleri() {
                     <AuthorProfile />
 
                     <BlogHeroBanner
-                        src="/images/blog/yks-puan-turleri.svg"
+                        src="/images/blog/yks-puan-turleri.jpg"
                         alt="YKS Puan Türleri: Hangi Test Hangi Bölüm İçin Çözülür?"
                     />
 

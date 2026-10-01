@@ -21,20 +21,9 @@ export default function HomePage() {
                     <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-4 tracking-tight leading-tight">
                         YKS Net & Puan Hesaplama 2027
                     </h1>
-                    <p className="text-base sm:text-lg text-blue-100 max-w-2xl mx-auto leading-relaxed mb-6 font-normal">
+                    <p className="text-base sm:text-lg text-blue-100 max-w-2xl mx-auto leading-relaxed font-normal">
                         TYT, AYT ve YDT optik formundaki doğru ve yanlışlarını gir; 4 yanlışın sildiği netleri, ÖSYM standart sapma katsayılarını ve OBP katkısıyla tahmini yerleştirme puanını hemen gör.
                     </p>
-                    <div className="flex flex-wrap items-center justify-center gap-2.5 text-xs sm:text-sm font-medium">
-                        <span className="px-3 py-1 bg-emerald-500/20 text-emerald-200 border border-emerald-400/30 rounded-lg">
-                            ✓ 0,5 Net Kuralı Denetimi
-                        </span>
-                        <span className="px-3 py-1 bg-blue-500/20 text-blue-200 border border-blue-400/30 rounded-lg">
-                            ✓ 570+ Bölüm Başarı Sırası
-                        </span>
-                        <span className="px-3 py-1 bg-purple-500/20 text-purple-200 border border-purple-400/30 rounded-lg">
-                            ✓ %100 Tarayıcıda Gizli Hesaplama
-                        </span>
-                    </div>
                 </div>
             </section>
 

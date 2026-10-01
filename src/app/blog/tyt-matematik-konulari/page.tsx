@@ -149,35 +149,35 @@ export default function TYTMatematikKonulari() {
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Seviyeye Göre Çalışma Yaklaşımı
+                            Mevcut Netine Göre Nasıl Bir Yol İzlemelisin?
                         </h2>
 
                         <div className="space-y-4 my-6">
                             <div className="p-4 bg-gray-50 border rounded-xl">
-                                <h3 className="font-bold text-gray-900 text-base mb-1">0 - 10 Net Aralığı</h3>
+                                <h3 className="font-bold text-gray-900 text-base mb-1">0 - 10 Net Bandındaysan</h3>
                                 <p className="text-sm text-gray-700">
-                                    Öncelik dört işlem hızını artırmak ve temel cebirsel kuralları (rasyonel sayılar, basit eşitsizlik, mutlak değer) kavramaktır. Ağır problemlerden önce klasik soru tipleri çözülmelidir.
+                                    İlk hedefin yeni nesil uzun paragraflı sorularla boğuşmak olmasın. Dört işlem hatasını sıfırlayıp rasyonel sayılar, mutlak değer ve basit eşitsizlik gibi banko net getiren konuları cebine koy. Klasik soruları elin alışana kadar tara, ardından günlük 5 tane temel problem çözerek sürece ısın.
                                 </p>
                             </div>
 
                             <div className="p-4 bg-gray-50 border rounded-xl">
-                                <h3 className="font-bold text-gray-900 text-base mb-1">10 - 20 Net Aralığı</h3>
+                                <h3 className="font-bold text-gray-900 text-base mb-1">10 - 20 Net Bandındaysan</h3>
                                 <p className="text-sm text-gray-700">
-                                    Konu temeli oluşmuştur ancak problem kurma refleksinde yavaşlık vardır. Günlük 15-20 problem sorusu çözerek denklem kurma süresi kısaltılmalıdır.
+                                    Konuları biliyorsun ama süre seni sıkıştırıyor. Problemlerde denklem kurarken fazlaca oyalanıyorsun. Çözüm gayet net: Her gün masaya oturduğunda kronometre açıp 15 tane karışık problem çöz. Süre baskısıyla düşünmeye alıştığında bu baremi 2-3 haftada rahatça aşarsın.
                                 </p>
                             </div>
 
                             <div className="p-4 bg-gray-50 border rounded-xl">
-                                <h3 className="font-bold text-gray-900 text-base mb-1">20 - 30 Net Aralığı</h3>
+                                <h3 className="font-bold text-gray-900 text-base mb-1">20 - 30 Net Bandındaysan</h3>
                                 <p className="text-sm text-gray-700">
-                                    Netlerin 30 üzerine çıkabilmesi için geometriye odaklanmak gerekir. Üçgende açılar, özel üçgenler ve benzerlik konuları düzenli pratikle net kazandırır.
+                                    Buradaki tavanı kıran asıl koz geometri. Geometriyi pas geçen bir adayın 30 netin üstünü stabil görmesi neredeyse imkansız. Üçgende alan, benzerlik ve özel üçgenleri her gün 10 soruyla sıcak tutarsan netlerinin hızla yukarı tırmandığını göreceksin.
                                 </p>
                             </div>
 
                             <div className="p-4 bg-gray-50 border rounded-xl">
                                 <h3 className="font-bold text-gray-900 text-base mb-1">30+ Net Hedefleyenler</h3>
                                 <p className="text-sm text-gray-700">
-                                    Konu eksiğinden çok süre yönetimi ve branş denemeleri öne çıkar. Hatalı sorular ve turlama disiplini analiz edilmelidir.
+                                    Artık konu eksiğin kalmadı, iş tamamen turlama tekniği ve branş denemesi disiplinine bakıyor. Zor bir soruya 4-5 dakika kilitlenip sınavı riske atmak yerine hemen işaret koyup geçmeli, ikinci turda sakin kafayla geri dönmelisin.
                                 </p>
                             </div>
                         </div>

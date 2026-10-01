@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/tyt-kesin-cikan-konular',
         images: [
             {
-                url: '/images/blog/tyt-kesin-cikan-konular.svg',
+                url: '/images/blog/tyt-kesin-cikan-konular.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'TYT Kesin Çıkan Konular 2027'
@@ -65,7 +65,7 @@ export default function TYTKesinCikanKonular() {
                     <AuthorProfile />
 
                     <BlogHeroBanner
-                        src="/images/blog/tyt-kesin-cikan-konular.svg"
+                        src="/images/blog/tyt-kesin-cikan-konular.jpg"
                         alt="TYT&apos;de Her Yıl En Çok Soru Gelen Konular"
                     />
 

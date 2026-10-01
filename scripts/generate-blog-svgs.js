@@ -343,7 +343,7 @@ const illustrations = [
         <rect width="340" height="150" rx="20" fill="rgba(15,23,42,0.9)" stroke="rgba(255,255,255,0.15)" />
         <text x="25" y="38" fill="#4ade80" font-size="14" font-weight="bold">✓ Paragraf Ana Düşünce (24 Soru)</text>
         <text x="25" y="72" fill="#4ade80" font-size="14" font-weight="bold">✓ Problemler (Sayı-Kesir-Hız) (12 Soru)</text>
-        <text x="25" y="106" fill="#4ade80" font-size="14" font-weight="bold">✓ Hücre & Kalıtım (Biyoloji) (3 Soru)</text>
+        <text x="25" y="106" fill="#4ade80" font-size="14" font-weight="bold">✓ Hücre ve Kalıtım (Biyoloji) (3 Soru)</text>
         <text x="25" y="136" fill="#38bdf8" font-size="12">Yılda ortalama garanti ~45 net</text>
       </g>
     `

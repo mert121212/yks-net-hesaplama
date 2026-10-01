@@ -71,26 +71,26 @@ export default function YKSHazirlikProgrami() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            YKS hazırlığında katı ve saatlik çizelgeler yerine görev odaklı, esnek ve ölçülebilir bir çalışma planı uygulamak daha uzun soluklu bir verim sağlar.
+                            YKS sürecinde öğrencilerin yaptığı en yaygın hata, duvara sabah 08:00 - akşam 22:00 arası robotik saat çizelgeleri asmak. İkinci gün ilk aksilikte o çizelge bozulur, üçüncü gün suçluluk başlar ve dördüncü gün plan tamamen çöpe gider. Masada saat doldurmak yerine &quot;görev kapatma&quot; mantığına geçtiğin an çalışma disiplinin kalıcı hale gelir.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             1. Saat Odaklı Değil, Görev Odaklı Planlama
                         </h2>
                         <p>
-                            &quot;Günde 8 saat masada oturmak&quot; tek başına verim sağlamaz. Bunun yerine günün hedefleri net tanımlanmalıdır:
+                            Günde 8 saat sandalyede oturup hayal kurmak kimseye derece kazandırmaz. Önemli olan masadan kalktığında hangi somut eksikleri kapattığındır. Sabah otururken önüne şu tarz net hedefler koymalısın:
                         </p>
                         <ul className="list-disc pl-6 space-y-1 text-sm">
-                            <li>20 paragraf ve 15 problem sorusu çözmek.</li>
-                            <li>AYT Matematikte hedeflenen bir alt konuyu tamamlayıp 40 soru çözmek.</li>
-                            <li>Haftalık bir branş denemesini çözüp yanlış analizini yapmak.</li>
+                            <li>20 paragraf ve 15 problem sorusunu süre tutarak çözüp bitirmek.</li>
+                            <li>AYT Matematikte hedeflenen bir alt konuyu tarayıp 40 soruyla pekiştirmek.</li>
+                            <li>Haftalık branş denemesini çözüp yanlış soruların çözüm videolarını izlemek.</li>
                         </ul>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             2. 50+10 Odak Blokları
                         </h2>
                         <p>
-                            TYT (165 dakika) ve AYT (180 dakika) uzun süreli odaklanma gerektirir. Çok kısa çalışma aralıkları yerine 50 dakika kesintisiz odaklanma ve 10 dakika zihinsel dinlenme blokları sınav kondisyonunu destekler.
+                            TYT 165 dakika, AYT 180 dakika sürüyor. Sınavda aralıksız zihin kondisyonu gerektiği için 25 dakikalık kısa pomodorolar YKS pratiğine bazen hafif kalır. 50 dakika telefon ve bildirimlerden tamamen izole odaklanma, ardından 10 dakika ekrandan uzak temiz bir dinlenme beynini sınava hazırlar.
                         </p>
 
                         <div className="bg-slate-50 border border-gray-200 rounded-2xl p-6 my-6">
@@ -122,10 +122,10 @@ export default function YKSHazirlikProgrami() {
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            3. Deneme Analizinin Önemi
+                            3. Deneme Analizini Asla Atlama
                         </h2>
                         <p>
-                            Çözülen denemelerde doğru sorular kadar yanlış yapılan ve boş bırakılan sorular incelenmelidir. Hatanın bilgi eksikliğinden mi, süre yetersizliğinden mi yoksa işlem hatasından mı kaynaklandığı not edilmelidir.
+                            Denemeyi çözüp kenara fırlatan bir adayın netleri yerinde saymaya mahkumdur. Asıl gelişim deneme bittiğinde başlar. Boş bıraktığın ve yanlış işaretlediğin her soruyu tek tek inceleyip: &quot;Ben bu soruyu formülü unuttuğum için mi kaçırdım, yoksa işlem hatası mı yaptım?&quot; ayrımını yapmalısın. Yanlış soruları kestiğin veya telefonla fotoğrafladığın bir soru havuzu oluşturmak sana haftalar kazandırır.
                         </p>
 
                         <div className="bg-slate-900 text-white rounded-2xl p-6 my-8 not-prose">

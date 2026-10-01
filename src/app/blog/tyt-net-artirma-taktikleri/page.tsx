@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/tyt-net-artirma-taktikleri',
         images: [
             {
-                url: '/images/blog/tyt-net-artirma-taktikleri.svg',
+                url: '/images/blog/tyt-net-artirma-taktikleri.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'TYT Net Artırma Taktikleri'
@@ -65,7 +65,7 @@ export default function TYTNetArtirma() {
                     <AuthorProfile />
 
                     <BlogHeroBanner
-                        src="/images/blog/tyt-net-artirma-taktikleri.svg"
+                        src="/images/blog/tyt-net-artirma-taktikleri.jpg"
                         alt="TYT Net Artırma Yolları: 60-70 Bandını Aşmak"
                     />
 

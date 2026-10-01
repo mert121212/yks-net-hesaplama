@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/yks-yigilma-tehlikesi',
         images: [
             {
-                url: '/images/blog/yks-yigilma-tehlikesi.svg',
+                url: '/images/blog/yks-yigilma-tehlikesi.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'YKS Yığılma Rehberi'
@@ -66,7 +66,7 @@ export default function YKSYigilmaTehlikesi() {
                     <AuthorProfile />
 
                     <BlogHeroBanner
-                        src="/images/blog/yks-yigilma-tehlikesi.svg"
+                        src="/images/blog/yks-yigilma-tehlikesi.jpg"
                         alt="YKS&apos;de Yığılma Nedir, Sıralamayı Nasıl Etkiler?"
                     />
 

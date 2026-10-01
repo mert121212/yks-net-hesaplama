@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/ayt-matematik-konulari',
         images: [
             {
-                url: '/images/blog/ayt-matematik-konulari.svg',
+                url: '/images/blog/ayt-matematik-konulari.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'AYT Matematik Konuları ve Stratejisi'
@@ -65,7 +65,7 @@ export default function AYTMatematikKonulari() {
                     <AuthorProfile />
 
                     <BlogHeroBanner
-                        src="/images/blog/ayt-matematik-konulari.svg"
+                        src="/images/blog/ayt-matematik-konulari.jpg"
                         alt="AYT Matematik Konuları, Soru Dağılımı ve Çalışma Sırası"
                     />
 

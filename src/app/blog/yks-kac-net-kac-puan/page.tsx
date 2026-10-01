@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/yks-kac-net-kac-puan',
         images: [
             {
-                url: '/images/blog/yks-kac-net-kac-puan.svg',
+                url: '/images/blog/yks-kac-net-kac-puan.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'YKS Kaç Net Kaç Puan Analizi'
@@ -66,7 +66,7 @@ export default function YKSKacNetKacPuan() {
                     <AuthorProfile />
 
                     <BlogHeroBanner
-                        src="/images/blog/yks-kac-net-kac-puan.svg"
+                        src="/images/blog/yks-kac-net-kac-puan.jpg"
                         alt="YKS&apos;de Kaç Net Kaç Puan Eder?"
                     />
 

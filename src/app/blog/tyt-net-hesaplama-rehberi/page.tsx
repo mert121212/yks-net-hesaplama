@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/tyt-net-hesaplama-rehberi',
         images: [
             {
-                url: '/images/blog/tyt-net-hesaplama-rehberi.svg',
+                url: '/images/blog/tyt-net-hesaplama-rehberi.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'TYT Net Hesaplama Rehberi 2027'
@@ -66,7 +66,7 @@ export default function TYTNetHesaplamaRehberi() {
                     <AuthorProfile />
 
                     <BlogHeroBanner
-                        src="/images/blog/tyt-net-hesaplama-rehberi.svg"
+                        src="/images/blog/tyt-net-hesaplama-rehberi.jpg"
                         alt="TYT Net Hesaplama: Test Ağırlıkları ve Puan Mantığı"
                     />
 

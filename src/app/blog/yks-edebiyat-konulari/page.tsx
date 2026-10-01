@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/yks-edebiyat-konulari',
         images: [
             {
-                url: '/images/blog/yks-edebiyat-konulari.svg',
+                url: '/images/blog/yks-edebiyat-konulari.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'AYT Edebiyat Konuları ve Taktikleri'
@@ -65,7 +65,7 @@ export default function YKSEdebiyatKonulari() {
                     <AuthorProfile />
 
                     <BlogHeroBanner
-                        src="/images/blog/yks-edebiyat-konulari.svg"
+                        src="/images/blog/yks-edebiyat-konulari.jpg"
                         alt="AYT Edebiyat Konuları ve Soru Dağılımı (2027)"
                     />
 

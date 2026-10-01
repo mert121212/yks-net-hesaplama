@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/ayt-puan-hesaplama',
         images: [
             {
-                url: '/images/blog/ayt-puan-hesaplama.svg',
+                url: '/images/blog/ayt-puan-hesaplama.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'AYT Puan Hesaplama ve Katsayılar'
@@ -65,7 +65,7 @@ export default function AYTPuanHesaplama() {
                     <AuthorProfile />
 
                     <BlogHeroBanner
-                        src="/images/blog/ayt-puan-hesaplama.svg"
+                        src="/images/blog/ayt-puan-hesaplama.jpg"
                         alt="AYT Puan Hesaplama: Test Katsayıları ve Ağırlıklar"
                     />
 

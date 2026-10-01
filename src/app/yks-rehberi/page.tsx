@@ -277,27 +277,27 @@ export default function YKSRehberiPage() {
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
                         <div className="bg-blue-50/60 p-4 rounded-xl border border-blue-200">
-                            <h3 className="font-bold text-blue-900 mb-1">1. Turlama Yöntemi</h3>
+                            <h3 className="font-bold text-blue-900 mb-1">1. Soruyla İnatlaşma, Turlama Yap</h3>
                             <p>
-                                Çözüm yolu 40 saniye içinde netleşmeyen soruların yanına işaret koyup sonraki soruya geçmek sınav süresini verimli kullanmayı sağlar.
+                                İlk 40 saniyede gidiş yolunu göremediğin sorunun yanına hemen bir işaret koyup diğer soruya geç. Tek bir soruya 4-5 dakika harcayıp arkadaki 3 kolay soruyu görememek en tehlikeli sınav tuzağıdır. İkinci turda döndüğünde zihnin çok daha berrak olacak.
                             </p>
                         </div>
                         <div className="bg-purple-50/60 p-4 rounded-xl border border-purple-200">
-                            <h3 className="font-bold text-purple-900 mb-1">2. AYT Ağırlığı</h3>
+                            <h3 className="font-bold text-purple-900 mb-1">2. TYT Yarışa Sokar, AYT Kazandırır</h3>
                             <p>
-                                Lisans puanında AYT&apos;nin payı %60 olduğundan hazırlık sürecinde alan derslerine yeterli zaman ayrılmalıdır.
+                                Lisans puanında AYT&apos;nin ağırlığı %60&apos;tır. TYT netlerine kafayı takıp AYT&apos;yi bahar aylarına erteleyen adaylar her yıl büyük hüsran yaşıyor. Masadaki vaktinin en az %65-70&apos;ini doğrudan AYT konularına ayırmalısın.
                             </p>
                         </div>
                         <div className="bg-emerald-50/60 p-4 rounded-xl border border-emerald-200">
-                            <h3 className="font-bold text-emerald-900 mb-1">3. Yanlış Analizi</h3>
+                            <h3 className="font-bold text-emerald-900 mb-1">3. Deneme Sonrası Yanlış Avı</h3>
                             <p>
-                                Deneme sonrasında yanlış yapılan konuları tespit edip eksik kazanımlara yönelik soru çözmek net artışını hızlandırır.
+                                Denemeyi çözüp kenara atan adayın netleri asla yükselmez. Yanlış yaptığın ve boş bıraktığın soruların video çözümünü izleyip konuyu pekiştirmezsen bir sonraki denemede aynı tuzağa yine düşersin.
                             </p>
                         </div>
                         <div className="bg-amber-50/60 p-4 rounded-xl border border-amber-200">
-                            <h3 className="font-bold text-amber-900 mb-1">4. Günlük Paragraf ve Problem Pratiği</h3>
+                            <h3 className="font-bold text-amber-900 mb-1">4. Her Sabah Paragraf ve Problem Rutini</h3>
                             <p>
-                                TYT&apos;de Türkçe ve Matematik testlerinde metin anlama ve problem kurma becerisi süre kazanımında temel rol oynar.
+                                TYT&apos;nin omurgası 40 Türkçe sorusu ve 12 civarı matematik problemidir. Sınav sabahına kadar her gün masaya oturduğunda ilk işin 20 paragraf ve 15 problem çözerek zihnini ısıtmak olsun.
                             </p>
                         </div>
                     </div>

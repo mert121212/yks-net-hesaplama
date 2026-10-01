@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://yksnethesapla.com/blog/universite-tercih-stratejileri',
         images: [
             {
-                url: '/images/blog/universite-tercih-stratejileri.svg',
+                url: '/images/blog/universite-tercih-stratejileri.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'Üniversite Tercih Stratejileri'
@@ -65,33 +65,33 @@ export default function UniversiteTercihStratejileri() {
                     <AuthorProfile />
 
                     <BlogHeroBanner
-                        src="/images/blog/universite-tercih-stratejileri.svg"
+                        src="/images/blog/universite-tercih-stratejileri.jpg"
                         alt="Üniversite Tercih Rehberi: 24 Tercih Listesi Nasıl Yapılır?"
                     />
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            YKS sonuçları açıklandıktan sonra başlayan tercih dönemi, sınav süreci kadar stratejik bir adımdır. ÖSYM yerleştirme sistemi adayları başarı sırasına göre ve listedeki sırasıyla yerleştirir.
+                            YKS sonuçları açıklandığında asıl maraton başlar: Tercih dönemi. Birçok aday sınavda çok iyi sıralama yapmasına rağmen hatalı tercih listesi yüzünden açıkta kalabiliyor ya da hiç istemediği bir bölüme yerleşip sonraki sene kırık OBP kabusuyla yüzleşiyor.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             1. Tercih Puanla Değil, Sıralamayla Yapılır
                         </h2>
                         <p>
-                            Sınavın zorluk düzeyine göre taban puanlar her yıl onlarca puan değişebilir. Ancak bölümlerin başarı sıralamaları kontenjan değişiklikleri dışında çok daha kararlıdır.
+                            Sınavın zor veya kolay olmasına göre taban puanlar her yıl 20-30 puan yukarı ya da aşağı savrulabilir. Fakat bölümlerin başarı sıralamaları kolay kolay radikal oynamaz.
                         </p>
                         <p>
-                            Bu yüzden geçmiş yılların YÖK Atlas verilerini incelerken puanlara değil, son giren adayın genel başarı sırasına odaklanılmalıdır.
+                            YÖK Atlas verilerini masaya yatırdığında puan hanesine bakmayı tamamen bırakmalısın. Odaklanman gereken tek gerçek veri: Geçen yıl o bölüme en son yerleşen öğrencinin Türkiye başarı sırasıdır.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            2. Ölü Tercih Kavramı ve İstek Sırası
+                            2. &quot;Ölü Tercih&quot; Efsanesi ve Asıl Gerçek
                         </h2>
                         <p>
-                            Sıkça dile getirilen &quot;daha düşük puanlı yeri üst sıraya yazarsan tercih ölür&quot; iddiası yanlıştır. Tercih listesi tamamen adayın okumak istediği önceliğe göre sıralanmalıdır.
+                            Kulaktan kulağa yayılan &quot;düşük sıralamalı yeri üste yazarsan tercih puanın düşer, tercihin ölür&quot; hurafesini aklından çıkar. ÖSYM algoritması tamamen senin yazdığın istek sırasına göre çalışır.
                         </p>
                         <p>
-                            Sistem adayın ilk tercihinden başlar; puanı yetiyorsa oraya yerleştirir, yetmiyorsa bir sonraki sıraya geçer. Gerçek anlamda hata, sıralaması yüksek ve çok istenen bir bölümü, daha az istenen ama garanti görülen bir bölümün altına yazmaktır; çünkü sistem üst sıradaki yere yerleşildiği anda alt sıraya bakmaz.
+                            Sistem 1. sıradan başlar; sıran yetiyorsa yerleştirir, yetmiyorsa 2. sıraya bakar. Buradaki tek ölümcül hata: Gitmeyi çok istediğin bir bölümü, &quot;bunun puanı daha düşük&quot; diyerek istemediğin bir bölümün altına yazmandır. Çünkü sistem üsttekine seni yerleştirdiği an alttaki rüya bölümün yüzüne dahi bakmaz.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">

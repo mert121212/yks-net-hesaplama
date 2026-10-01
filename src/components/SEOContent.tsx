@@ -56,7 +56,7 @@ const featuredGuides = [
         title: 'TYT Kesin Çıkan Konular Analizi',
         category: 'ÖSYM Analizi',
         readTime: '10 dk',
-        image: '/images/blog/tyt-kesin-cikan-konular.svg',
+        image: '/images/blog/tyt-kesin-cikan-konular.jpg',
         excerpt: 'Son 7 yılın ÖSYM soru dağılımına göre her yıl garanti çıkan konu başlıkları.',
     },
     {
@@ -64,7 +64,7 @@ const featuredGuides = [
         title: 'Üniversite Tercih Stratejileri',
         category: 'YÖK Atlas',
         readTime: '11 dk',
-        image: '/images/blog/universite-tercih-stratejileri.svg',
+        image: '/images/blog/universite-tercih-stratejileri.jpg',
         excerpt: '%20 güvenli aralık kuralı, TBS takibi ve 24 tercih listesi oluşturma metodolojisi.',
     },
 ]
