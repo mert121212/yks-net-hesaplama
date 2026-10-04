@@ -71,76 +71,202 @@ export default function YKSHazirlikProgrami() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Bu yazıyı pazar gecesi masanın başına geçip renkli post-it’lerle <em>&ldquo;07.00 kalkış, 07.30 paragraf, 08.30 problem&rdquo;</em> diye tablo çizen ama salı günü öğlen o kağıdı buruşturup atanlar için yazıyorum. Çünkü ben de o duvara asılan saatli çizelgeler yüzünden kaç haftamı çöpe attığımı çok iyi hatırlıyorum.
+                            Pazar akşamı masaya oturuyorsun. Renkli kalemler çıkıyor, defter açılıyor. &ldquo;Yarın kesin başlıyorum&rdquo; diyerek saat saat program hazırlanıyor:
+                        </p>
+
+                        <div className="bg-slate-50 border-l-4 border-blue-500 p-4 rounded-r-xl font-mono text-sm space-y-1 text-slate-800">
+                            <p>07.00 kalkış.</p>
+                            <p>07.30 paragraf.</p>
+                            <p>08.30 problem.</p>
+                            <p>10.00 matematik...</p>
+                        </div>
+
+                        <p>
+                            Pazartesi güzel gidiyor. Salı sabahı alarmı biraz erteliyorsun. Bir bakmışsın saat 09.30 olmuş. Programın geri kalanı da domino taşı gibi devriliyor.
                         </p>
 
                         <p>
-                            Mesele iradesiz olman falan değil. İnsan makine değil ki her gün aynı dakikada aynı hevesle masaya otursun. Sabah alarmı 15 dakika ertelediğin an bütün o saatli sistem çöküyor; arkasından gelen o meşhur &ldquo;bugün battı zaten, pazartesi baştan başlarım&rdquo; kafası da haftanın kalan günlerini yiyip bitiriyor.
+                            Sonra insanın aklına şu geliyor:
+                        </p>
+
+                        <blockquote className="border-l-4 border-amber-400 pl-4 italic text-gray-800 my-3">
+                            &ldquo;Bugün zaten bozuldu. Haftaya pazartesi yeniden başlarım.&rdquo;
+                        </blockquote>
+
+                        <p>
+                            Benim de yaptığım şey buydu. Saat saat hazırlanmış programlara uyamadığım dönemler oldu. Asıl sorun ders çalışmak istememem değildi. Sorun, günün her dakikasını önceden planlayıp en ufak sapmada bütün programı çöpe atmamdı.
                         </p>
 
                         <p>
-                            Saatleri çöpe atıp işi görevlere bağlamadığın sürece bu kısır döngü hazirana kadar sürer.
+                            Bu yüzden YKS çalışırken artık saate değil, yapılacak işe bakmanın daha mantıklı olduğunu düşünüyorum.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Masaya 10 Kitap Değil, Sadece 3 Parça İş Koy
+                            Masaya 10 Ders Değil, 3 İş Koy
                         </h2>
                         <p>
-                            Sabah masaya oturduğunda önünde 8 farklı ders ve 10 tane kalın test kitabı görünce beyin daha başlamadan kontak kapatıyor. &ldquo;Bugün fonksiyonlar bitecek, üstüne 80 geometri, araya 40 paragraf, akşam da kimya...&rdquo; Gerçekleşme ihtimali yok denecek kadar az. Akşama sadece paragrafı çözmüş oluyorsun, geri kalan maddeler de vicdan azabı olarak üstüne biniyor.
+                            Sabah deftere 10 tane hedef yazınca insan kendini başarılı hissediyor. Daha ders başlamadan liste dolu.
+                        </p>
+                        <p className="italic text-gray-600">
+                            &ldquo;Fonksiyonları bitireceğim, 80 geometri çözeceğim, 50 paragraf yapacağım, kimya çalışacağım...&rdquo;
                         </p>
                         <p>
-                            Bunun yerine güne başlarken önüne sadece üç parça net iş koymak lazım:
+                            Akşam olunca ise listenin yarısı duruyor.
                         </p>
-                        <ul className="list-disc pl-6 space-y-2 text-sm text-gray-800">
-                            <li><strong>Sabah zihnin açıkken:</strong> Kronometreyi açıp 20 paragraf ile 12 problemi masadan kalkmadan bitirmek.</li>
-                            <li><strong>Öğleden sonra ana ders:</strong> Eyüp B veya Mert Hoca&apos;dan konunun videosunu izleyip arkasından Bilgi Sarmal ya da 3D&apos;den 3 test taramak.</li>
-                            <li><strong>Akşam analiz:</strong> Geçen pazar girdiğin denemede boş bıraktığın o 5-6 soruya video çözümünden bakıp sonra kapatıp sıfırdan kendin çözmek.</li>
+                        <p>
+                            Sonra insan yaptığı 4 işi değil, yapamadığı 6 işi düşünüyor. Bence burada sistem yanlış kuruluyor.
+                        </p>
+                        <p>
+                            Ben olsam günü üç ana işe bölerdim.
+                        </p>
+                        <ul className="list-none space-y-2 pl-0 text-gray-800">
+                            <li className="p-3 bg-blue-50/60 rounded-xl border border-blue-100">
+                                <strong>1. Sabah:</strong> 20 paragraf ve 12 problem.
+                            </li>
+                            <li className="p-3 bg-indigo-50/60 rounded-xl border border-indigo-100">
+                                <strong>2. Öğleden sonra:</strong> Çalışılacak bir AYT konusu + o konuyla ilgili testler.
+                            </li>
+                            <li className="p-3 bg-emerald-50/60 rounded-xl border border-emerald-100">
+                                <strong>3. Akşam:</strong> Denemede boş veya yanlış yapılan sorulara tekrar bakmak.
+                            </li>
                         </ul>
                         <p>
-                            Bu kadar. İster öğlen 3&apos;te bitir, ister akşam 9&apos;da. Bu üçü bitti mi o gün senin için tamamdır. Çiz üstünü, vicdan azabı çekmeden kalk o masadan.
+                            Hepsinin saatini baştan belirlemek zorunda değilsin.
+                        </p>
+                        <p>
+                            Sabah 10&apos;da da bitebilir, öğlen 2&apos;de de.
+                        </p>
+                        <p>
+                            Önemli olan günün sonunda &ldquo;Bugün ne yaptım?&rdquo; sorusuna cevap verebilmek.
+                        </p>
+                        <p>
+                            Üç iş bittiyse, gerçekten bitmiştir. Daha fazla çalışabilecek durumdaysan devam edersin. Ama sırf hazırladığın listede 14 madde var diye gece 11&apos;e kadar kendini masaya zincirlemenin de çok anlamı yok.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Pomodoro Tuzağı: TYT 165 Dakika Sürüyor
+                            Pomodoro Her Şeyin İlacı Değil
                         </h2>
                         <p>
-                            25 dakika ders, 5 dakika mola düzeni masa başına hiç oturamayan biri için ilk birkaç gün kurtarıcı olabilir. Ama YKS hazırlığında bütün seneyi 25 dakikalık periyotlarla geçirmeye çalışırsan denemede fena çuvallarsın.
+                            25 dakika ders, 5 dakika mola.
                         </p>
                         <p>
-                            TYT tek oturumda tam 165 dakika. AYT ise 180 dakika. Evde her 25 dakikada bir su almaya, mutfağa gitmeye, telefona bakmaya alışmış bir kafa; gerçek denemenin 50. dakikasında &ldquo;ben yoruldum&rdquo; alarmı verir. Türkçe paragraflarını üçer kez okur, matematikte en basit dört işlemi toparlayamaz hale gelirsin.
+                            Pomodoro&apos;yu kötü bulmuyorum. Özellikle ders çalışmaya başlamakta zorlanan biri için işe yarayabilir. &ldquo;Sadece 25 dakika oturacağım&rdquo; demek bazen gerçekten masaya oturmayı kolaylaştırıyor.
                         </p>
                         <p>
-                            O yüzden masa başındaki süreyi adım adım uzatmak şart. Önce 40 dakika, sonra 50, kasım-aralık gibi 70-80 dakikalık bloklar... Telefonu başka odaya bırakacaksın. Masadan su içmek için bile kalkmayacaksın. Sınav kondisyonu dediğin şey tam olarak bu dayanıklılıkla kazanılıyor.
+                            Ama bütün hazırlığı böyle götürmek bana pek mantıklı gelmiyor.
+                        </p>
+                        <p>
+                            Sonuçta TYT&apos;de 165 dakika, AYT&apos;de 180 dakika boyunca sınavın başındasın. Gerçek sınavda 25 dakikada bir kalkıp mutfağa gitme şansın yok.
+                        </p>
+                        <p>
+                            Bu yüzden çalışma süresini zamanla uzatmak daha mantıklı.
+                        </p>
+                        <ul className="list-disc pl-6 space-y-1 text-gray-800">
+                            <li>Önce 25 dakika.</li>
+                            <li>Sonra 40 dakika.</li>
+                            <li>Sonra 50 dakika.</li>
+                        </ul>
+                        <p>
+                            Daha sonra bir deneme veya uzun bir soru çözümü sırasında daha uzun süre masada kalabilecek hale gelirsin.
+                        </p>
+                        <p>
+                            Benim burada asıl dikkat edeceğim şey süreyi bir anda uzatmak değil. Her hafta biraz daha uzun süre dikkati dağıtmadan çalışabilmek.
+                        </p>
+                        <p>
+                            Telefon da mümkünse başka odada olsun. Çünkü telefon masanın üzerindeyken &ldquo;Bir dakika bakayım&rdquo; diye başlayan şeyin nereye gittiğini hepimiz biliyoruz.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Sosyal Medyadaki &ldquo;Günde 14 Saat Bastım&rdquo; Masalları
+                            &ldquo;Günde 14 Saat Çalışıyorum&rdquo; Diyenlere Fazla Takılma
                         </h2>
                         <p>
-                            Her sene YouTube&apos;a düşen o meşhur &ldquo;Günde 14 saat çalışarak derece yaptım&rdquo; videoları yüzünden millet kendini yetersiz hissediyor. Açık konuşalım: O 14 saatin en az yarısı masada boş boş oturup hayal kurmakla, masayı düzenlemekle ya da videoyu dizi izler gibi izlemekle geçiyor.
+                            YouTube veya Instagram&apos;da &ldquo;günde 12 saat çalışıyorum&rdquo;, &ldquo;14 saat çalışarak derece yaptım&rdquo; tarzı videolar görmek mümkün.
                         </p>
                         <p>
-                            Telefonu eline almadan, masada saf odakla geçirilen 5 saatlik soru çözümü; sandalyede pinekleyerek geçirilen 12 saatten çok daha fazla net getirir. Sıralamayı masada kaç saat oturduğun değil, o sürede kaç tane konu açığını kapattığın belirler.
+                            Bunları görünce insan ister istemez kendi çalışma süresini kıyaslıyor.
+                        </p>
+                        <p>
+                            Ama masada 10 saat oturmakla 10 saat verimli çalışmak aynı şey değil.
+                        </p>
+                        <p>
+                            Bir soruya bakıp 15 dakika düşünüyorsan, arada telefona giriyorsan, masayı düzenliyorsan veya ders videosunu açıp başka şeylerle uğraşıyorsan o sürenin tamamını çalışma olarak saymak pek doğru değil.
+                        </p>
+                        <p>
+                            Beş saat gerçekten odaklanarak çalıştığın bir gün, sadece &ldquo;bugün 10 saat masadaydım&rdquo; diyebilmek için geçirilen daha uzun bir günden daha verimli olabilir.
+                        </p>
+                        <p>
+                            O yüzden başkasının çalışma saatini kopyalamaya çalışmak yerine kendi yaptığın işe bak.
+                        </p>
+                        <ul className="list-disc pl-6 space-y-1 text-gray-800">
+                            <li>Bugün kaç soru çözdün?</li>
+                            <li>Hangi konuyu gerçekten öğrendin?</li>
+                            <li>Geçen denemede yaptığın hatalardan hangisini düzelttin?</li>
+                        </ul>
+                        <p>
+                            Bence asıl bakılması gereken yer burası.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Kendi Seviyene Göre Kaynak Seç, Fantezi Arama
+                            Kaynak Seçerken Kendini Kanıtlama Yarışına Girme
                         </h2>
                         <p>
-                            Sık yapılan hatalardan biri de şu: Temel matematikte henüz 15 nete ulaşamamışken gidip Orijinal ya da Apotemi fasikülleriyle boğuşmak. Soruya 15 dakika bakıp çözemeyince moral sıfıra iniyor, sonra da &ldquo;benden matematikçi olmaz&rdquo; deyip kitap kapatılıyor.
+                            Bir de kaynak meselesi var.
                         </p>
                         <p>
-                            Önce temeli sağlam tutmak lazım. Aktif ya da Mikroorijinal gibi öğretici kaynaklarla netini belli bir seviyeye taşırsın; ardından Bilgi Sarmal ve 3D gibi sınav ayarı kitaplara geçersin. Egonu tatmin etmek için zor kaynak çözülmez, net artırmak için doğru kaynak çözülür.
+                            Temel matematikte zorlanırken gidip en zor kitaptan başlamanın pek anlamı yok. Soruya uzun süre bakıp çözemeyince insanın morali bozuluyor. Birkaç gün sonra kitap rafa kalkıyor.
+                        </p>
+                        <p>
+                            Kaynak seçerken &ldquo;Bu kitap ne kadar zor?&rdquo; sorusundan önce &ldquo;Benim şu anki seviyeme uygun mu?&rdquo; diye bakmak daha mantıklı.
+                        </p>
+                        <p>
+                            Temelin eksikse daha öğretici bir kaynakla başlarsın. Konular oturmaya başlayınca daha seçici ve zor sorulara geçersin.
+                        </p>
+                        <p>
+                            Örneğin Orijinal veya Apotemi gibi kaynaklara sırf zor oldukları için başlamanın bir anlamı yok. Seviyene uygunsa kullanırsın, değilse daha sonra dönersin.
+                        </p>
+                        <p>
+                            Kitabın zor olması seni otomatik olarak daha iyi öğrenci yapmıyor.
+                        </p>
+                        <p>
+                            Ama doğru zamanda doğru soruları çözmek netlerini gerçekten geliştirebilir.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Pazar Gününü Kendine Ayırmayan Ocak Ayında Patlar
+                            Pazar Gününü Tamamen Dersle Doldurma
                         </h2>
                         <p>
-                            Haftanın yedi günü günde 10 saat aralıksız ders çalışmayı hiçbir insan bünyesi aylarca kaldıramaz. Aralıkta, ocakta &ldquo;artık kitap kapağı görmek istemiyorum&rdquo; deyip havlu atanların neredeyse hepsi eylülde soluksuz koşanlar.
+                            YKS uzun bir süreç.
                         </p>
                         <p>
-                            Haftada bir gün, tercihen pazar öğleden sonrasını kendine ayır. Sabah denemeni çöz, otur analizini yap, yanlışlarına bak. Öğleden sonra oldu mu kapat o kitapları. Git hava al, arkadaşlarınla otur, uyu. O zihinsel dinlenme olmadan pazartesi sabahı aynı motivasyonla masaya oturamazsın.
+                            Bu yüzden haftanın yedi gününü aynı tempoda geçirmek bana çok mantıklı gelmiyor.
+                        </p>
+                        <p>
+                            Mesela pazar sabahı denemeni çözersin. Sonra oturup yanlışlarını incelersin. Buraya kadar tamam.
+                        </p>
+                        <p>
+                            Ama öğleden sonra hâlâ &ldquo;biraz daha çalışayım, bir test daha çözeyim&rdquo; diye kendini zorlamak yerine bırakabilirsin.
+                        </p>
+                        <div className="flex flex-wrap gap-2 py-2">
+                            <span className="px-3 py-1 bg-gray-100 rounded-lg text-sm text-gray-700">Dışarı çık.</span>
+                            <span className="px-3 py-1 bg-gray-100 rounded-lg text-sm text-gray-700">Arkadaşlarınla görüş.</span>
+                            <span className="px-3 py-1 bg-gray-100 rounded-lg text-sm text-gray-700">Oyun oyna.</span>
+                            <span className="px-3 py-1 bg-gray-100 rounded-lg text-sm text-gray-700">Film izle.</span>
+                            <span className="px-3 py-1 bg-gray-100 rounded-lg text-sm text-gray-700">Uyu.</span>
+                        </div>
+                        <p>
+                            Kısacası biraz ders düşünme.
+                        </p>
+                        <p>
+                            Ertesi gün masaya oturduğunda hâlâ ders görmek istemiyorsan zaten bir şeylerin ters gittiğini anlarsın.
+                        </p>
+                        <p>
+                            YKS hazırlığı birkaç haftalık bir yarış değil. Aylarca devam eden bir süreç. Bu yüzden programın seni bir hafta çok çalıştırıp sonraki hafta tamamen bıraktırıyorsa, kusursuz bir program değildir.
+                        </p>
+                        <p className="text-lg">
+                            Bence iyi program şu: <strong className="text-blue-700 font-bold">Uyabildiğin program.</strong>
+                        </p>
+                        <p>
+                            Saat saat hazırlanmış mükemmel bir tabloya değil, ertesi gün tekrar oturabileceğin bir düzene ihtiyacın var.
                         </p>
 
                         <div className="bg-slate-900 text-white rounded-2xl p-6 my-8 not-prose">
