@@ -5,13 +5,13 @@ import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
-    title: 'YKS Hazırlık Programı 2027: Veri Odaklı Çalışma Düzeni',
-    description: 'YKS ders çalışma programı nasıl olmalı? 300+ öğrenci takip verisiyle saat odaklı programların neden %80 oranında çöktüğü, 50+10 blok süresi ve görev tamamlama analizi.',
-    keywords: 'yks hazırlık programı, yks ders çalışma programı, verimli ders çalışma, yks çalışma planı, yks derece programı',
+    title: 'YKS Hazırlık Programı 2027: Patlamayan Çalışma Düzeni',
+    description: 'YKS ders çalışma programı nasıl yapılır? Duvara saat çizelgesi asıp 3. gün pes edenler için görev odaklı çalışma ve süre yönetimi rehberi.',
+    keywords: 'yks hazırlık programı, yks ders çalışma programı, verimli ders çalışma, yks çalışma planı',
     alternates: { canonical: 'https://yksnethesapla.com/blog/yks-hazirlik-programi' },
     openGraph: {
-        title: 'YKS Hazırlık Programı 2027: Veri Odaklı Çalışma Düzeni',
-        description: 'Öğrenci deneme takip verilerine dayalı sürdürülebilir YKS hazırlık stratejisi. Pomodoro neden yetersiz, saf odak nasıl ölçülür?',
+        title: 'YKS Hazırlık Programı 2027: Patlamayan Çalışma Düzeni',
+        description: 'Saatli çizelgeler neden çöp olur? Masada saat doldurmak yerine gerçek net kazandıran günlük düzen.',
         type: 'article',
         publishedTime: '2026-02-20',
         modifiedTime: '2026-03-01',
@@ -32,7 +32,7 @@ export default function YKSHazirlikProgrami() {
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
                 <BlogArticleSchema 
-                    title="YKS Hazırlık Programı 2027: Veri Odaklı Çalışma Düzeni" 
+                    title="YKS Hazırlık Programı 2027: Patlamayan Çalışma Düzeni" 
                     description="YKS hazırlığında görev odaklı çalışma, blok süre yönetimi, TYT-AYT dengesi ve haftalık ders programı oluşturma rehberi."
                     datePublished="2026-02-20"
                     dateModified="2026-03-01"
@@ -50,15 +50,15 @@ export default function YKSHazirlikProgrami() {
 
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
-                            <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Veri Analizi</span>
+                            <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Rehber</span>
                             <time className="text-gray-600" dateTime="2026-02-20">20 Şubat 2026</time>
-                            <span className="text-gray-600">• 9 dk okuma</span>
+                            <span className="text-gray-600">• 6 dk okuma</span>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                            YKS Ders Çalışma Programı: Saat Çizelgeleri Neden %80 Oranında Çöküyor?
+                            YKS Ders Çalışma Programı: O Duvara Asılan Saatli Çizelgeler Neden Hep Patlıyor?
                         </h1>
                         <p className="text-xl text-gray-600">
-                            Takip ettiğimiz yüzlerce öğrencinin deneme loglarını ve çalışma saatlerini incelediğimizde gördüğümüz net bir tablo var: Masada geçirilen süre ile net artışı arasında doğrusal bir bağ yok.
+                            Pazar akşamı hevesle oturup renkli kalemlerle saat saat program yapıyorsun, salı günü öğleden sonra o program çoktan çöpe gitmiş oluyor. Kaç kere yaşadın bunu?
                         </p>
                     </header>
 
@@ -71,91 +71,75 @@ export default function YKSHazirlikProgrami() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Rehberlik servislerinin panolarına ya da çalışma masalarının duvarlarına yapıştırılan o meşhur saat tablolarını bilirsin: <em>&ldquo;07:30 Uyanış, 08:00-09:30 Matematik, 09:45-11:15 Fizik...&rdquo;</em>
+                            Yıllardır YKS&apos;ye hazırlanan tayfada gördüğüm en büyük saçmalık şu duvara asılan saatli programlar.
                         </p>
 
                         <p>
-                            Geçtiğimiz iki yılda sınava hazırlanan 340 adayın haftalık çalışma takip çizelgelerini geriye dönük incelediğimizde şunu tespit ettik: Saat bazlı katı çizelge uygulayan öğrencilerin <strong>%82&apos;si ilk 10 gün içinde programı tamamen terk ediyor.</strong> Sebep iradesizlik değil; planlama modelinin sahadaki gerçek hayat dinamikleriyle örtüşmemesi.
+                            Sabah 07:00 kalkış, 07:30 paragraf, 08:30 problem, 10:00 geometri... Kardeşim sen kışladaki asker misin? Değilsin. İkinci gün alarmı erteleyip 9&apos;da uyanıyorsun. Ne oluyor peki? <em>&ldquo;Hah, bugünkü program da çöp oldu&rdquo;</em> deyip bütün gün vicdan azabıyla telefona sarılıyorsun. Akşam olunca da o meşhur yalan: <em>&ldquo;Aman pazartesi baştan başlarım.&rdquo;</em>
+                        </p>
+
+                        <p>
+                            Masanın başında 10 saat oturup duvara bakmak kimseye üniversite kazandırmaz. Önemli olan masada kaç saat oturduğun değil; o masadan kalktığında neyi bitirdiğindir. O yüzden o katı saat çizelgelerini çöpe at, işin mantığını değiştirelim.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Geniş Yapılacaklar Listesi Neden İşe Yaramıyor?
+                            Günde 10 Tane Hedef Koyma, Sadece 3 Tane Koy
                         </h2>
                         <p>
-                            Günde 8-10 farklı alt başlığı listesine yazan öğrencilerde gün sonu görev tamamlama oranı ortalama <strong>%31</strong> seviyesinde kalıyor. Kalan %69&apos;luk bitmemiş görev yükü ise ertesi güne &ldquo;başarısızlık hissi&rdquo; olarak devrediyor.
+                            Öğrencilerin en büyük hatası sabah oturup bir deftere 12 maddelik destan yazmak. Fizik biter, kimyaya geçerim, oradan da 50 paragraf patlatırım... Akşam bir bakıyorsun sadece 2 tanesi yapılmış. Sonuç? Koca bir yetersizlik hissi.
                         </p>
                         <p>
-                            Buna karşılık günlük hedefini <strong>tam 3 ana görevle</strong> (en fazla 4) sınırlayan grupta tamamlama oranı <strong>%84&apos;e yükseliyor.</strong> Bilişsel psikolojide aşırı yüklenme etkisi (cognitive overload) olarak tanımlanan bu durum, hedefler daraltıldığında odak kalitesini doğrudan artırıyor. Masaya otururken yazılacak gerçekçi şablon şuna benzer olmalı:
+                            Ben kendi öğrencilerime de hep aynısını söylüyorum: Önüne taş çatlasa 3 tane somut görev yaz. Mesela ne?
                         </p>
                         <ul className="list-disc pl-6 space-y-2 text-sm text-gray-800">
-                            <li><strong>Görev 1 (Kondisyon):</strong> 20 paragraf + 12 problem (kronometreyle, bölünmeden).</li>
-                            <li><strong>Görev 2 (Konu İlerlemesi):</strong> AYT Matematikte hedeflenen bir alt kazanımdan 40 soru çözümü.</li>
-                            <li><strong>Görev 3 (Analiz):</strong> Hafta içi çözülen branş denemesindeki boş/yanlış 6 sorunun video çözümünü inceleyip benzer 10 soru çözmek.</li>
+                            <li><strong>1. Görev:</strong> Sabah aç kronometreni, 20 paragraf ile 12 problemi mola vermeden çöz.</li>
+                            <li><strong>2. Görev:</strong> AYT matematikten belirlediğin konunun videosunu izleyip arkasından 40 soru çöz.</li>
+                            <li><strong>3. Görev:</strong> Hafta sonu girdiğin denemede boş bıraktığın ya da yanlış yaptığın soruların video çözümüne bak, sonra aynı soruları kapatıp sıfırdan kendin çöz.</li>
                         </ul>
-
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Klasik 25 Dakikalık Pomodoro YKS İçin Neden Yetersiz?
-                        </h2>
                         <p>
-                            İnternette sıkça tavsiye edilen 25 dakika çalışma + 5 dakika mola (Pomodoro tekniği) yazılım veya ezber işlerinde faydalı olabilir; fakat YKS pratiğinde ciddi bir kondisyon açığı yaratıyor.
-                        </p>
-                        <p>
-                            Ölçüm verileri bize şunu gösteriyor: TYT 165 dakika (120 soru) ve AYT 180 dakika (80 soru) sürüyor. Sürekli 25 dakikada bir mola vermeye alışmış zihinlerde, 165 dakikalık denemenin <strong>70. dakikasından sonra (genelde 50-60. sorular civarında) dikkat dağılması ve işlem hatası sıklığı %38 oranında artıyor.</strong> Çünkü beyin 25. dakikada dopamin ve dinlenme uyarısına şartlanmış durumda.
-                        </p>
-                        <p>
-                            Bu yüzden blok süreleri kademeli olarak <strong>50 dakika çalışma + 10 dakika mola</strong> bandına çekmek gerekir. 50 dakikalık odak, sınavın yaklaşık üçte birlik bölümünü kesintisiz simüle eder.
-                        </p>
-
-                        <div className="bg-slate-50 border border-gray-200 rounded-2xl p-6 my-6">
-                            <h3 className="text-base font-bold text-gray-900 mb-3">
-                                340 Öğrenci Takip Verisinden Çıkan Odak Dağılımı
-                            </h3>
-                            <div className="space-y-2 text-xs font-mono text-gray-700">
-                                <div className="bg-white p-3 rounded-lg border flex flex-col sm:flex-row justify-between sm:items-center gap-1">
-                                    <span className="font-bold text-blue-700">Blok 1 (Sabah)</span>
-                                    <span>20 Paragraf + 12 Problem (Süre baskısıyla)</span>
-                                    <span className="text-gray-500 font-sans">Okuma Hızı & Refleks</span>
-                                </div>
-                                <div className="bg-white p-3 rounded-lg border flex flex-col sm:flex-row justify-between sm:items-center gap-1">
-                                    <span className="font-bold text-purple-700">Blok 2 & 3 (Öğle)</span>
-                                    <span>AYT Ağır Konu Çalışması ve Soru Taraması</span>
-                                    <span className="text-gray-500 font-sans">Puanın %60&apos;lık Kısmı</span>
-                                </div>
-                                <div className="bg-white p-3 rounded-lg border flex flex-col sm:flex-row justify-between sm:items-center gap-1">
-                                    <span className="font-bold text-amber-700">Blok 4 (Akşam)</span>
-                                    <span>Günlük Hata Analizi ve Yanlış Soru Tekrarı</span>
-                                    <span className="text-gray-500 font-sans">Kalıcı Öğrenme</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            &ldquo;Günde 10 Saat Çalıştım&rdquo; Efsanesinin Perde Arkası
-                        </h2>
-                        <p>
-                            Derece yapan adaylarla yaptığımız mülakatlarda &ldquo;günde 10-12 saat masadaydım&rdquo; ifadesini sıkça duyarız. Fakat bu adayların dijital kronometre verileri ve gerçek soru çözme süreleri filtrelendiğinde, telefon veya dikkat dağıtıcı unsurlar hariç <strong>aktif odaklanma süresinin ortalama 5 saat ile 5 saat 45 dakika aralığında</strong> olduğu görülür.
-                        </p>
-                        <p>
-                            Masanın başında geçirilip verim alınamayan 4 saatlik &ldquo;pasif oturma süresi&rdquo;, adaya yalnızca fiziksel yorgunluk ve sahte bir tatmin duygusu verir. Günde 5 saatlik saf odaklanma, ortalama 140 ile 170 arası nitelikli soru çözümüne ve eksik kapatmaya denk gelir.
+                            Bitti mi? İster öğlen 2&apos;de bitir, ister akşam 8&apos;de. Bu üçü bittiği an çiz üstünü, vicdanın rahat bir şekilde kalk o masadan. Kafanı dinle.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Haftalık Dinlenme Günü Neden Akademik Bir Gereklilik?
+                            Pomodoro YKS&apos;de Neden Yarı Yolda Bırakır?
                         </h2>
                         <p>
-                            Haftanın yedi günü istisnasız yüksek tempoda çalışan öğrenci kohortlarında, 6. haftadan itibaren deneme netlerinde düşüş veya plato oluşma sıklığı <strong>%64</strong> olarak kaydedilmiştir (mental tükenmişlik etkisi).
+                            Şu meşhur 25 dakika ders, 5 dakika mola taktiği... Yazılımcıysan veya bilgisayar başında proje yapıyorsan harika yöntem. Ama YKS&apos;ye hazırlanıyorsan seni sınav salonunda yakar.
                         </p>
                         <p>
-                            Haftada 1 günü (örneğin pazar öğleden sonrayı) sadece deneme analizi yapıp ardından zihni tamamen serbest bırakmaya ayıran adaylarda ise pazartesi günkü odaklanma süresi ortalama %22 daha yüksek seyretmektedir. Uyku ve toparlanma periyotları, öğrenilen algoritmaların uzun süreli belleğe transferi (konsolidasyon) için biyolojik bir zorunluluktur.
+                            Neden mi? TYT sınavı tam 165 dakika sürüyor, AYT ise 180 dakika. Sen evde her 25 dakikada bir çay almaya, telefona bakmaya alışırsan; gerçek sınavın 60. dakikasında beynin şalteri indirir. Türkçe bittiğinde kafan kazan gibi olur, matematikte 2 ile 3&apos;ü toplayamaz hale gelirsin.
+                        </p>
+                        <p>
+                            O yüzden o süreyi yavaş yavaş 50 dakikaya çıkarman lazım. Telefonu diğer odaya koyacaksın. Masaya oturup kronometreyi 50 dakikaya kuracaksın; su içmek için bile kalkmayacaksın. 50 dakika soruyla baş başa kal, sonra ver 10 dakika molanı. Sınav kondisyonu böyle kazanılır.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            &ldquo;Günde 12 Saat Çalıştım&rdquo; Diyenlere Prim Verme
+                        </h2>
+                        <p>
+                            YouTube&apos;da, Instagram&apos;da görüyorsun: <em>&ldquo;Günde 14 saat çalışarak derece yaptım!&rdquo;</em> İnanmayın şunlara gözünüzü seveyim. O 14 saatin en az 5 saati masada Reels kaydırmakla, 3 saati de hayal kurmakla geçiyor. 
+                        </p>
+                        <p>
+                            Masanın başında safi odaklanarak, telefonu eline almadan günde 5 saat çalışan bir adamın bu sınavda dereceye girememesi imkansıza yakındır. Önemli olan masada geçirdiğin saat değil, odaklandığın dakikalardır.
+                        </p>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            Haftada 1 Gün Kendine İzin Vermezsen Patlarsın
+                        </h2>
+                        <p>
+                            Haftanın yedi günü soluksuz ders çalışmaya çalışanların hepsi en geç 1 ay sonra duvara tosluyor. Sabah kalkacak mecalin kalmıyor, kitap kapağı görmek istemiyorsun.
+                        </p>
+                        <p>
+                            Pazar sabahı genel denemeni çöz, oturup yanlışlarına bak; öğleden sonrayı ise tamamen kendine ayır. Git arkadaşlarınla buluş, dizi izle, uyu. Beyin dinlenmeden öğrendiğin hiçbir formülü yerine oturtamaz.
                         </p>
 
                         <div className="bg-slate-900 text-white rounded-2xl p-6 my-8 not-prose">
-                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Netlerinizdeki İlerlemeyi Verilerle Takip Edin</h3>
+                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Netlerin Ne Durumda? Hemen Test Et</h3>
                             <p className="text-sm text-slate-300 mb-4">
-                                Haftalık deneme sonuçlarınızı sistemimize girerek test katsayılarına göre puan ve sıralama eğrinizi anlık olarak inceleyin.
+                                Deneme netlerini hesaplama motorumuza gir; TYT ve AYT puanını, Türkiye sıralamanı saniyeler içinde öğren.
                             </p>
                             <Link href="/" className="inline-block bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
-                                Net ve Sıralama Takibini Başlat →
+                                Puan ve Sıralama Hesaplayıcıyı Aç →
                             </Link>
                         </div>
                     </div>
