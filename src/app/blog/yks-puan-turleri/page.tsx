@@ -5,16 +5,16 @@ import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
-    title: 'YKS Puan Türleri (SAY, EA, SÖZ, DİL) ve Bölümleri 2027',
-    description: 'SAY, EA, SÖZ ve DİL puan türlerinde testlerin ağırlıkları, TYT\'nin %40 katkısı, puan türlerine göre bölümler ve başarı sırası barajları.',
+    title: 'YKS Puan Türleri (SAY, EA, SÖZ, DİL) ve Bölümleri 2027: Baraj Tehlikesi',
+    description: 'Hangi test hangi bölümü kazandırır? SAY, EA, SÖZ katsayıları, TYT\'nin %40 etkisi ve 50.001 olsan bile Tıp yazdırtmayan YÖK barajları.',
     keywords: 'yks puan türleri, say bölümleri, ea bölümleri, söz bölümleri, tyt ile alan bölümler, ayt puan türleri, yks barajları',
     alternates: { canonical: 'https://yksnethesapla.com/blog/yks-puan-turleri' },
     openGraph: {
         title: 'YKS Puan Türleri: Hangi Test Hangi Bölümü Etkiler?',
-        description: 'SAY, EA, SÖZ ve DİL puan türleri, test ağırlıkları ve sıralama barajları.',
+        description: 'SAY, EA, SÖZ ve DİL puan türleri, test ağırlıkları ve resmi sıralama barajları.',
         type: 'article',
         publishedTime: '2026-02-06',
-        modifiedTime: '2026-02-09',
+        modifiedTime: '2026-03-01',
         url: 'https://yksnethesapla.com/blog/yks-puan-turleri',
         images: [
             {
@@ -35,7 +35,7 @@ export default function YKSPuanTurleri() {
                     title="YKS Puan Türleri (SAY, EA, SÖZ, DİL) ve Bölümleri 2027" 
                     description="SAY, EA, SÖZ ve DİL puan türlerinde testlerin ağırlıkları, TYT'nin %40 katkısı, puan türlerine göre bölümler ve başarı sırası barajları."
                     datePublished="2026-02-06"
-                    dateModified="2026-02-09"
+                    dateModified="2026-03-01"
                     url="https://yksnethesapla.com/blog/yks-puan-turleri"
                     keywords={['yks puan türleri', 'say bölümleri', 'ea bölümleri', 'söz bölümleri', 'tyt ile alan bölümler', 'ayt puan türleri', 'yks barajları']}
                 />
@@ -52,13 +52,13 @@ export default function YKSPuanTurleri() {
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium">Rehber</span>
                             <time className="text-gray-600" dateTime="2026-02-06">6 Şubat 2026</time>
-                            <span className="text-gray-600">• 7 dk okuma</span>
+                            <span className="text-gray-600">• 8 dk okuma</span>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                            YKS Puan Türleri: Hangi Test Hangi Bölüm İçin Çözülür?
+                            YKS Puan Türleri: Hangi Test Seni Hangi Mesleğe Götürür?
                         </h1>
                         <p className="text-xl text-gray-600">
-                            YKS&apos;de lisans programları SAY, EA, SÖZ ve DİL olmak üzere 4 temel puan türüyle öğrenci alır. Her puan türünde hangi testlerin geçerli olduğu ve resmi sıralama barajları.
+                            Sınav sabahı hangi kitapçığı çözeceğini bilmeden masaya oturursan 1 yılın boşa gider. Hangi puan türü nereden puan toplar, acımasız YÖK barajları nerede başlar?
                         </p>
                     </header>
 
@@ -71,108 +71,122 @@ export default function YKSPuanTurleri() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Üniversite tercihlerinde 4 yıllık lisans programları için hesaplanan puanlarda TYT genel ağırlığı %40, ilgili alanın AYT ağırlığı ise %60&apos;tır.
+                            YKS sisteminde yapılan en büyük acemiliklerden biri şudur: Öğrenci Yönetim Bilişim Sistemleri (YBS) okumak ister ama aylarca Fizik, Kimya çözüp Sayısal kasar. Oysa YBS Eşit Ağırlıkla alır! 
+                        </p>
+
+                        <p>
+                            Boş yere enerji tüketmemek için hedefin hangi puan türündeyse onun testine asılmak zorundasın. Genel kuralı unutma: 4 yıllık fakültelerde <strong>TYT %40, AYT %60 ağırlığa sahiptir.</strong>
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Puan Türlerinin Kapsamı ve İlgili Bölümler
+                            4 Büyük Puan Türü ve Sorumlu Olduğun Testler
                         </h2>
 
-                        <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-2">1. Sayısal (SAY)</h3>
-                        <p>
-                            TYT&apos;ye ek olarak AYT Matematik (40 soru) ve AYT Fen Bilimleri (40 soru: Fizik, Kimya, Biyoloji) testleri dikkate alınır.
-                        </p>
-                        <ul className="list-disc pl-6 space-y-1">
-                            <li><strong>Öne çıkan bölümler:</strong> Tıp, Diş Hekimliği, Eczacılık, Bilgisayar Mühendisliği, Elektrik-Elektronik Mühendisliği, Mimarlık, Hemşirelik.</li>
-                        </ul>
+                        <div className="space-y-4 my-6">
+                            <div className="p-5 bg-blue-50 border border-blue-200 rounded-xl">
+                                <h3 className="font-bold text-blue-950 text-lg mb-1">1. Sayısal (SAY): Mühendislik & Sağlık Ordusu</h3>
+                                <p className="text-sm text-blue-900 mb-2">
+                                    TYT (120 soru) + AYT Matematik (40 soru) + AYT Fen (14 Fizik, 13 Kimya, 13 Biyoloji).
+                                </p>
+                                <p className="text-xs text-blue-800">
+                                    <strong>Başlıca Bölümler:</strong> Tıp, Diş Hekimliği, Eczacılık, Bilgisayar / Yazılım / Elektrik Mühendisliği, Mimarlık, Hemşirelik, Moleküler Biyoloji.
+                                </p>
+                            </div>
 
-                        <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-2">2. Eşit Ağırlık (EA)</h3>
-                        <p>
-                            TYT&apos;ye ek olarak AYT Matematik (40 soru) ve AYT Türk Dili ve Edebiyatı - Sosyal-1 (40 soru: 24 Edebiyat, 10 Tarih-1, 6 Coğrafya-1) testleri dikkate alınır.
-                        </p>
-                        <ul className="list-disc pl-6 space-y-1">
-                            <li><strong>Öne çıkan bölümler:</strong> Hukuk, Psikoloji, Yönetim Bilişim Sistemleri (YBS), Rehberlik ve Psikolojik Danışmanlık (PDR), İktisat, İşletme, Sınıf Öğretmenliği.</li>
-                        </ul>
+                            <div className="p-5 bg-emerald-50 border border-emerald-200 rounded-xl">
+                                <h3 className="font-bold text-emerald-950 text-lg mb-1">2. Eşit Ağırlık (EA): Adalet, Yönetim & İnsan</h3>
+                                <p className="text-sm text-emerald-900 mb-2">
+                                    TYT (120 soru) + AYT Matematik (40 soru) + Edebiyat-Sosyal-1 (24 Edebiyat, 10 Tarih-1, 6 Coğrafya-1).
+                                </p>
+                                <p className="text-xs text-emerald-800">
+                                    <strong>Başlıca Bölümler:</strong> Hukuk, Psikoloji, Yönetim Bilişim Sistemleri (YBS), PDR, İktisat, İşletme, Uluslararası İlişkiler, Sınıf Öğretmenliği.
+                                </p>
+                            </div>
 
-                        <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-2">3. Sözel (SÖZ)</h3>
-                        <p>
-                            TYT&apos;ye ek olarak Edebiyat-Sosyal-1 (40 soru) ve Sosyal-2 (40 soru: Tarih-2, Coğrafya-2, Felsefe Grubu, Din Kültürü) testleri değerlendirilir.
-                        </p>
-                        <ul className="list-disc pl-6 space-y-1">
-                            <li><strong>Öne çıkan bölümler:</strong> Özel Eğitim Öğretmenliği, Türkçe Öğretmenliği, Tarih, Coğrafya, İletişim, Gastronomi, Radyo-Televizyon ve Sinema.</li>
-                        </ul>
+                            <div className="p-5 bg-purple-50 border border-purple-200 rounded-xl">
+                                <h3 className="font-bold text-purple-950 text-lg mb-1">3. Sözel (SÖZ): Medya, Sanat & Toplum</h3>
+                                <p className="text-sm text-purple-900 mb-2">
+                                    TYT (120 soru) + Edebiyat-Sosyal-1 (40 soru) + Sosyal-2 (40 soru: Tarih-2, Coğrafya-2, Felsefe, Din).
+                                </p>
+                                <p className="text-xs text-purple-800">
+                                    <strong>Başlıca Bölümler:</strong> Özel Eğitim Öğretmenliği, Türkçe Öğretmenliği, Gastronomi, Radyo-Televizyon ve Sinema, İletişim Fakülteleri, Tarih, Coğrafya.
+                                </p>
+                            </div>
 
-                        <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-2">4. Dil (DİL)</h3>
-                        <p>
-                            TYT&apos;ye ek olarak Pazar öğleden sonra düzenlenen 80 soruluk YDT (Yabancı Dil Testi) ile hesaplanır.
-                        </p>
-                        <ul className="list-disc pl-6 space-y-1">
-                            <li><strong>Öne çıkan bölümler:</strong> İngilizce Öğretmenliği, Mütercim-Tercümanlık, İngiliz Dili ve Edebiyatı.</li>
-                        </ul>
+                            <div className="p-5 bg-amber-50 border border-amber-200 rounded-xl">
+                                <h3 className="font-bold text-amber-950 text-lg mb-1">4. Dil (DİL): Dünya Kapısı</h3>
+                                <p className="text-sm text-amber-900 mb-2">
+                                    TYT (120 soru) + Pazar öğleden sonra yapılan 80 soruluk Yabancı Dil Testi (YDT).
+                                </p>
+                                <p className="text-xs text-amber-800">
+                                    <strong>Başlıca Bölümler:</strong> İngilizce Öğretmenliği, Mütercim ve Tercümanlık, İngiliz/Alman Dili ve Edebiyatı.
+                                </p>
+                            </div>
+                        </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Zorunlu Başarı Sırası Barajları
+                            Acımasız YÖK Sıralama Barajları (Paran Olsa Bile Yazamazsın!)
                         </h2>
                         <p>
-                            YÖK tarafından belirlenen kurallara göre bazı programları tercih edebilmek için asgari başarı sırasına sahip olmak zorunludur:
+                            İşte en kritik kural: Vakıf (özel) üniversitelerinde %100 ücretli okumak istesen dahi YÖK&apos;ün belirlediği resmi başarı sırası barajının gerisindeysen tercih ekranında sistem o bölümü yazmana izin vermez!
                         </p>
 
                         <div className="overflow-x-auto my-6">
                             <table className="w-full text-left border-collapse border border-gray-200 text-sm">
                                 <thead className="bg-gray-100 text-gray-800">
                                     <tr>
-                                        <th className="p-3 border">Program</th>
+                                        <th className="p-3 border">Bölüm</th>
                                         <th className="p-3 border">Puan Türü</th>
-                                        <th className="p-3 border">Gereken En Düşük Sıralama</th>
+                                        <th className="p-3 border font-bold text-red-700">Aşılması Gereken Asgari Sıralama</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr className="border-b">
                                         <td className="p-3 font-medium border">Tıp Fakültesi</td>
                                         <td className="p-3 border">SAY</td>
-                                        <td className="p-3 border font-semibold text-red-600">İlk 50.000</td>
+                                        <td className="p-3 border font-bold text-red-600">İlk 50.000 (50.001 olursan tercih edemezsin!)</td>
                                     </tr>
                                     <tr className="border-b bg-gray-50">
                                         <td className="p-3 font-medium border">Diş Hekimliği</td>
                                         <td className="p-3 border">SAY</td>
-                                        <td className="p-3 border font-semibold text-red-600">İlk 80.000</td>
+                                        <td className="p-3 border font-bold text-red-600">İlk 80.000</td>
                                     </tr>
                                     <tr className="border-b">
                                         <td className="p-3 font-medium border">Eczacılık</td>
                                         <td className="p-3 border">SAY</td>
-                                        <td className="p-3 border font-semibold text-red-600">İlk 100.000</td>
+                                        <td className="p-3 border font-bold text-red-600">İlk 100.000</td>
                                     </tr>
                                     <tr className="border-b bg-gray-50">
                                         <td className="p-3 font-medium border">Hukuk</td>
                                         <td className="p-3 border">EA</td>
-                                        <td className="p-3 border font-semibold text-red-600">İlk 125.000</td>
+                                        <td className="p-3 border font-bold text-red-600">İlk 125.000</td>
                                     </tr>
                                     <tr className="border-b">
                                         <td className="p-3 font-medium border">Mimarlık</td>
                                         <td className="p-3 border">SAY</td>
-                                        <td className="p-3 border font-semibold text-red-600">İlk 250.000</td>
+                                        <td className="p-3 border font-bold text-red-600">İlk 250.000</td>
                                     </tr>
                                     <tr className="border-b bg-gray-50">
                                         <td className="p-3 font-medium border">Mühendislik Programları</td>
                                         <td className="p-3 border">SAY</td>
-                                        <td className="p-3 border font-semibold text-red-600">İlk 300.000</td>
+                                        <td className="p-3 border font-bold text-red-600">İlk 300.000 (Ziraat ve Orman hariç)</td>
                                     </tr>
                                     <tr className="border-b">
                                         <td className="p-3 font-medium border">Öğretmenlik Programları</td>
-                                        <td className="p-3 border">İlgili Puan Türü</td>
-                                        <td className="p-3 border font-semibold text-red-600">İlk 300.000</td>
+                                        <td className="p-3 border">İlgili Puan</td>
+                                        <td className="p-3 border font-bold text-red-600">İlk 300.000</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
                         <div className="bg-slate-900 text-white rounded-2xl p-6 my-8 not-prose">
-                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Puanınızı ve Sıralamanızı Hesaplayın</h3>
+                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Barajı Aşıyor musun? Hemen Test Et</h3>
                             <p className="text-sm text-slate-300 mb-4">
-                                Netlerinizi girerek SAY, EA ve SÖZ puanlarınızı ve baraj sıralaması durumunuzu anında görüntüleyin.
+                                Deneme netlerini gir; Tıp, Hukuk ve Mühendislik baraj sıralamalarını geçip geçemediğini ÖSYM motoruyla test et.
                             </p>
                             <Link href="/" className="inline-block bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
-                                Net Hesaplama Aracına Git →
+                                Puan ve Baraj Simülatörünü Aç →
                             </Link>
                         </div>
                     </div>

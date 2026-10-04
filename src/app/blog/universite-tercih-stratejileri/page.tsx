@@ -5,16 +5,16 @@ import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
-    title: 'Üniversite Tercih Stratejileri 2027 | Tercih Listesi Hazırlama Rehberi',
-    description: 'YKS tercih listesi nasıl hazırlanır? Sıralama aralıkları, ölü tercih kavramı, 24 tercih hakkının dağılımı ve kırık OBP uyarısı.',
+    title: 'Üniversite Tercih Stratejileri 2027: 24 Tercih Listesi Nasıl Yapılır?',
+    description: 'YKS tercih listesi hazırlama rehberi: Puana değil sıralamaya bakma kuralı, uydurma ölü tercih efsanesi ve 24 tercihi dengeli dağıtma sanatı.',
     keywords: 'üniversite tercihleri, yks tercih nasıl yapılır, ölü tercih nedir, tercih listesi hazırlama, yök atlas tercih',
     alternates: { canonical: 'https://yksnethesapla.com/blog/universite-tercih-stratejileri' },
     openGraph: {
         title: 'Üniversite Tercih Stratejileri: 24 Tercih Listesi Rehberi',
-        description: 'Sıralamaya göre tercih listesi oluşturma mantığı, ölü tercihler ve YÖK Atlas analizleri.',
+        description: 'Derece yapıp açıkta kalmamak için: Tercih dönemi taktikleri, YÖK Atlas okuma ve sıralama aralıkları.',
         type: 'article',
         publishedTime: '2026-02-08',
-        modifiedTime: '2026-02-11',
+        modifiedTime: '2026-03-01',
         url: 'https://yksnethesapla.com/blog/universite-tercih-stratejileri',
         images: [
             {
@@ -35,7 +35,7 @@ export default function UniversiteTercihStratejileri() {
                     title="Üniversite Tercih Stratejileri 2027 | Tercih Listesi Hazırlama Rehberi" 
                     description="YKS tercih listesi nasıl hazırlanır? Sıralama aralıkları, ölü tercih kavramı, 24 tercih hakkının dağılımı ve kırık OBP uyarısı."
                     datePublished="2026-02-08"
-                    dateModified="2026-02-11"
+                    dateModified="2026-03-01"
                     url="https://yksnethesapla.com/blog/universite-tercih-stratejileri"
                     keywords={['üniversite tercihleri', 'yks tercih nasıl yapılır', 'ölü tercih nedir', 'tercih listesi hazırlama', 'yök atlas tercih']}
                 />
@@ -50,15 +50,15 @@ export default function UniversiteTercihStratejileri() {
 
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
-                            <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm font-medium">Rehber</span>
+                            <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm font-medium">Tercih Masası</span>
                             <time className="text-gray-600" dateTime="2026-02-08">8 Şubat 2026</time>
-                            <span className="text-gray-600">• 7 dk okuma</span>
+                            <span className="text-gray-600">• 8 dk okuma</span>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                            Üniversite Tercih Rehberi: 24 Tercih Listesi Nasıl Yapılır?
+                            Üniversite Tercih Stratejileri: 24 Tercihi Heba Etmeme Rehberi
                         </h1>
                         <p className="text-xl text-gray-600">
-                            Tercih listesi hazırlarken puana değil başarı sırasına bakmak, istek sırasını doğru kurmak ve liste dengesini sağlamak gerekir. Temel tercih stratejileri.
+                            Sınavda 30 bin yapıp hatalı tercih yüzünden açıkta kalanları da gördük, 80 bin yapıp akıllı tercihle hayalindeki bölüme girenleri de. Savaş sınav salonunda bitmez.
                         </p>
                     </header>
 
@@ -71,73 +71,86 @@ export default function UniversiteTercihStratejileri() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            YKS sonuçları açıklandığında asıl maraton başlar: Tercih dönemi. Birçok aday sınavda çok iyi sıralama yapmasına rağmen hatalı tercih listesi yüzünden açıkta kalabiliyor ya da hiç istemediği bir bölüme yerleşip sonraki sene kırık OBP kabusuyla yüzleşiyor.
+                            YKS puanın açıklandığında derin bir nefes alırsın ama asıl satranç maçı o gün başlar: <strong>Tercih Dönemi.</strong>
+                        </p>
+
+                        <p>
+                            Önünde 24 tane boş kutucuk var. Yanlış kurulan bir tercih listesi, bir yıllık emeğini tek bir tıkla çöpe atabilir. Ya açıkta kalır ağlarsın, ya da &ldquo;kazandım ama asla gitmem&rdquo; dediğin bir şehirde kendini bulup seneye kırık OBP felaketiyle baş başa kalırsın. Gel, şu listeyi bir profesyonel gibi kuralım.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            1. Tercih Puanla Değil, Sıralamayla Yapılır
+                            1. Kural: Puana Bakmayı Derhal Bırak, Tek Gerçek Sıralamadır!
                         </h2>
                         <p>
-                            Sınavın zor veya kolay olmasına göre taban puanlar her yıl 20-30 puan yukarı ya da aşağı savrulabilir. Fakat bölümlerin başarı sıralamaları kolay kolay radikal oynamaz.
+                            Her sene rehberlik servislerinde aynı hata tekrarlanır: <em>&ldquo;Hocam benim puanım 420, geçen sene bu bölüm 410&apos;la kapatmış, kesin girerim!&rdquo;</em>
                         </p>
                         <p>
-                            YÖK Atlas verilerini masaya yatırdığında puan hanesine bakmayı tamamen bırakmalısın. Odaklanman gereken tek gerçek veri: Geçen yıl o bölüme en son yerleşen öğrencinin Türkiye başarı sırasıdır.
+                            Giremezsin. Çünkü sınav zor geçerse 420 puanla ilk 20 bine girersin; sınav kolay geçerse 420 puanla 80 bininci olursun! Puan dediğin şey bir yıldan diğerine 30-40 puan havada uçuşur.
+                        </p>
+                        <p>
+                            YÖK Atlas&apos;ı açtığında bakacağın tek sütun vardır: <strong>&ldquo;Geçen yıl en son yerleşen adayın başarı sırası&rdquo;.</strong> Kararlarını sadece ve sadece bu sıralamaya göre vereceksin.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            2. &quot;Ölü Tercih&quot; Efsanesi ve Asıl Gerçek
+                            2. &ldquo;Ölü Tercih&rdquo; Şehir Efsanesini Çöpe At
                         </h2>
                         <p>
-                            Kulaktan kulağa yayılan &quot;düşük sıralamalı yeri üste yazarsan tercih puanın düşer, tercihin ölür&quot; hurafesini aklından çıkar. ÖSYM algoritması tamamen senin yazdığın istek sırasına göre çalışır.
+                            Dershane koridorlarında dolaşan meşhur bir yalan vardır: <em>&ldquo;Düşük sıralamalı yeri üste yazarsan tercihin ölür, puanın yanar.&rdquo;</em>
                         </p>
                         <p>
-                            Sistem 1. sıradan başlar; sıran yetiyorsa yerleştirir, yetmiyorsa 2. sıraya bakar. Buradaki tek ölümcül hata: Gitmeyi çok istediğin bir bölümü, &quot;bunun puanı daha düşük&quot; diyerek istemediğin bir bölümün altına yazmandır. Çünkü sistem üsttekine seni yerleştirdiği an alttaki rüya bölümün yüzüne dahi bakmaz.
+                            ÖSYM&apos;nin yerleştirme algoritması böyle çalışmaz. Sistem senin 1. tercihinden başlar: Sıralaman o bölümün kapattığı yere yetiyor mu? Yetiyorsa seni yerleştirir ve bilgisayar işlemi bitirir. Yetmiyorsa 2. sıraya geçer.
+                        </p>
+                        <p>
+                            Buradaki tek tehlike şudur: <strong>Gitmeyi daha çok istediğin bir yeri, sırf sıralaması biraz daha düşük diye istemediğin bir yerin altına yazarsan yanarsın.</strong> Çünkü sistem üstteki istemediğin bölüme seni yerleştirdiği an alt sıradaki rüya bölümüne dönüp bakmaz bile! Liste sırası senin &ldquo;gerçek istek sıran&rdquo; olmalıdır.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            3. 24 Tercih Hakkının Dağılımı
+                            3. 24 Tercihi İdeal Dağıtma Formülü
                         </h2>
                         <p>
-                            Örneğin Sayısalda 60.000 sıralamaya sahip bir aday için dengeli liste dağılımı şöyle kurulabilir:
+                            Diyelim ki Sayısalda <strong>50.000</strong> sıralama yaptın. Listenin 24 kutucuğunu şöyle paylaştır:
                         </p>
 
                         <div className="space-y-4 my-6">
+                            <div className="p-5 bg-purple-50 border border-purple-200 rounded-xl">
+                                <h3 className="font-bold text-purple-950 text-lg mb-1">Hayal Bölgesi: 1 - 5. Tercihler (35.000 - 45.000)</h3>
+                                <p className="text-sm text-purple-900 leading-relaxed">
+                                    Gelmesi zor ama imkansız değil. Kontenjan artabilir, o yıl o bölüme talep düşebilir. İçinde kalmasın, en çok istediğin o 5 yeri en başa yaz.
+                                </p>
+                            </div>
+
                             <div className="p-5 bg-blue-50 border border-blue-200 rounded-xl">
-                                <h3 className="font-bold text-blue-950 text-lg mb-1">Üst Aralık (1 - 5. Tercihler)</h3>
+                                <h3 className="font-bold text-blue-950 text-lg mb-1">Gerçekçi Merkez: 6 - 18. Tercihler (45.000 - 65.000)</h3>
                                 <p className="text-sm text-blue-900 leading-relaxed">
-                                    Sıralamanın %20-30 üstündeki yerler (40.000 - 52.000 aralığı). Kontenjan artışları veya talep kaymalarından faydalanma ihtimali için yazılabilir.
+                                    Listenin omurgası burasıdır. Sıralamanın hemen üstü, tam hizası ve biraz altı. %80 ihtimalle bu 12 tercihten birine yerleşeceksin. Gitmekten mutlu olacağın üniversiteleri buraya diz.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-emerald-50 border border-emerald-200 rounded-xl">
-                                <h3 className="font-bold text-emerald-950 text-lg mb-1">Kendi Başarı Dilimi (6 - 18. Tercihler)</h3>
+                                <h3 className="font-bold text-emerald-950 text-lg mb-1">Cankurtaran Sigortası: 19 - 24. Tercihler (65.000 - 80.000)</h3>
                                 <p className="text-sm text-emerald-900 leading-relaxed">
-                                    Adayın kendi sıralamasına en yakın yerler (52.000 - 75.000 aralığı). Yerleşme ihtimalinin en yüksek olduğu ana tercihler bu gruptadır.
-                                </p>
-                            </div>
-
-                            <div className="p-5 bg-gray-50 border border-gray-200 rounded-xl">
-                                <h3 className="font-bold text-gray-900 text-lg mb-1">Güvenlik Aralığı (19 - 24. Tercihler)</h3>
-                                <p className="text-sm text-gray-700 leading-relaxed">
-                                    Mezuna kalmak istemeyen adaylar için kendi sıralamasının %30-40 gerisine inen bölümler (80.000 - 95.000 aralığı).
+                                    &ldquo;Ben mezuna kalamam, bu sene ne olursa olsun gideceğim&rdquo; diyorsan kendi sıranın %30-40 altına inen yerleri yazmak zorundasın. Ama dikkat: Kazanırsan bavulunu toplayıp gideceğin yerler olsun.
                                 </p>
                             </div>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            4. Kırık OBP Uyarısı
+                            En Büyük Hata: &ldquo;Açıkta Kalmayayım Diye Yazmak&rdquo;
                         </h2>
                         <p>
-                            Listenize gitmek istemediğiniz bir bölümü kesinlikle eklemeyin. Merkezi yerleştirmede bir programa yerleştiğiniz takdirde, kayıt yaptırmasanız dahi ertesi yıl OBP katsayınız yarı yarıya kesilir.
+                            Listenin 24. sırasına sırf boş kalmasın diye hiç gitmeyeceğin bir şehri veya bölümü yazıp gönderirsen ve orası çıkarsa; gitmesen dahi bir sonraki yıl OBP puanın yarı yarıya kırılır. 30 puanın buharlaşır. 
+                        </p>
+                        <p>
+                            <strong>İçine sinmeyen, kapısından içeri girmeyeceğin hiçbir bölümü listene yazma.</strong> 18 tercih yap ama arkasında dur.
                         </p>
 
                         <div className="bg-slate-900 text-white rounded-2xl p-6 my-8 not-prose">
-                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Netlerinizle Sıralamanızı Görün</h3>
+                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Sıralamanı Şimdiden Gör</h3>
                             <p className="text-sm text-slate-300 mb-4">
-                                Tercih dönemi öncesinde deneme netlerinizin hangi başarı sırası aralığına karşılık geldiğini hesaplama aracımızda inceleyin.
+                                Deneme netlerini simülatörümüze gir; hangi başarı diliminde olduğunu ve geçen seneki taban sıralamalara göre nereye yerleşebileceğini hesapla.
                             </p>
                             <Link href="/" className="inline-block bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
-                                Sıralama Hesapla →
+                                Net ve Sıralama Hesapla →
                             </Link>
                         </div>
                     </div>

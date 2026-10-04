@@ -5,16 +5,16 @@ import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 
 export const metadata: Metadata = {
-    title: 'AYT Edebiyat Konuları ve Soru Dağılımı 2027 | Çalışma Rehberi',
-    description: 'AYT Edebiyat sınavında 24 sorunun konu dağılımı: Şiir bilgisi, edebi sanatlar, Divan edebiyatı, Tanzimat ve Cumhuriyet dönemi analizi.',
+    title: 'AYT Edebiyat Konuları ve Soru Dağılımı 2027: 24 Soruda 20+ Net Stratejisi',
+    description: 'AYT Edebiyat ezber batağına batmadan nasıl çalışılır? 24 sorunun dağılımı: 6 bedava paragraf, şiir bilgisi şifreleri, Divan ve Cumhuriyet taktikleri.',
     keywords: 'yks edebiyat konuları, ayt edebiyat soru dağılımı, edebiyat nasıl çalışılır, divan edebiyatı, cumhuriyet edebiyatı',
     alternates: { canonical: 'https://yksnethesapla.com/blog/yks-edebiyat-konulari' },
     openGraph: {
         title: 'AYT Edebiyat Konuları ve Soru Dağılımı 2027',
-        description: 'AYT Edebiyat testinde soru dağılımı, dönemlerin ağırlığı ve çalışma yöntemleri.',
+        description: 'Edebiyatı 500 yazar ezberlemeden 20+ nete taşıma rehberi. Kodlamalar, dönem mantığı ve banko yazarlar.',
         type: 'article',
         publishedTime: '2026-02-17',
-        modifiedTime: '2026-02-20',
+        modifiedTime: '2026-03-01',
         url: 'https://yksnethesapla.com/blog/yks-edebiyat-konulari',
         images: [
             {
@@ -35,7 +35,7 @@ export default function YKSEdebiyatKonulari() {
                     title="AYT Edebiyat Konuları ve Soru Dağılımı 2027 | Çalışma Rehberi" 
                     description="AYT Edebiyat sınavında 24 sorunun konu dağılımı: Şiir bilgisi, edebi sanatlar, Divan edebiyatı, Tanzimat ve Cumhuriyet dönemi analizi."
                     datePublished="2026-02-17"
-                    dateModified="2026-02-20"
+                    dateModified="2026-03-01"
                     url="https://yksnethesapla.com/blog/yks-edebiyat-konulari"
                     keywords={['yks edebiyat konuları', 'ayt edebiyat soru dağılımı', 'edebiyat nasıl çalışılır', 'divan edebiyatı', 'cumhuriyet edebiyatı']}
                 />
@@ -50,15 +50,15 @@ export default function YKSEdebiyatKonulari() {
 
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
-                            <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">AYT</span>
+                            <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">EA & SÖZ Rehberi</span>
                             <time className="text-gray-600" dateTime="2026-02-17">17 Şubat 2026</time>
-                            <span className="text-gray-600">• 7 dk okuma</span>
+                            <span className="text-gray-600">• 8 dk okuma</span>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                            AYT Edebiyat Konuları ve Soru Dağılımı (2027)
+                            AYT Edebiyat Konuları ve Soru Dağılımı: Ezber Batağından Kurtulma Yolu
                         </h1>
                         <p className="text-xl text-gray-600">
-                            Eşit Ağırlık ve Sözel adayları için AYT Türk Dili ve Edebiyatı testindeki 24 sorunun dağılımı, dönemlerin ağırlığı ve çalışma stratejisi.
+                            Binlerce yazar ve eseri körü körüne ezberlemeye kalkarsan 2 hafta sonra kafan çorbaya döner. Oysa 24 soruluk sınavın arkasında inanılmaz kurallı bir sistem var.
                         </p>
                     </header>
 
@@ -71,59 +71,63 @@ export default function YKSEdebiyatKonulari() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            AYT Türk Dili ve Edebiyatı - Sosyal-1 testi içindeki 24 edebiyat sorusu, yalnızca yazar-eser ezberini değil; metin tahlili, şiir bilgisi ve edebi akımları da kapsar.
+                            Eşit Ağırlık ve Sözel öğrencilerini masanın başında en çok ağlatan derslerden biri Edebiyattır. <em>&ldquo;Hocam hangi birini aklımda tutayım? Recaizade&apos;nin araba sevdasından girdim, Yakup Kadri&apos;nin Yaban&apos;ından çıktım, birbirine girdi her şey!&rdquo;</em>
+                        </p>
+
+                        <p>
+                            Sakin ol. ÖSYM soru yazarları senin ansiklopedi yutmanı beklemiyor. Önce 24 sorunun röntgenini çekelim; göreceksin ki aslında korktuğun kadar çok ezber yok.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            24 Sorunun Konu Bazında Dağılımı
+                            24 Sorunun Röntgeni: Nereden Ne Geliyor?
                         </h2>
 
                         <div className="space-y-4 my-6">
-                            <div className="p-5 bg-purple-50 border border-purple-200 rounded-xl">
-                                <h3 className="font-bold text-purple-950 text-lg mb-1">1. Paragraf ve Anlam Soruları (5 - 6 Soru)</h3>
-                                <p className="text-sm text-purple-900 leading-relaxed">
-                                    Testin başındaki ilk 5-6 soru doğrudan okuduğunu anlama, sözcükte ve cümlede anlam sorularından oluşur. Bu sorular TYT Türkçe paragraf becerisiyle çözülür.
-                                </p>
-                            </div>
-
-                            <div className="p-5 bg-amber-50 border border-amber-200 rounded-xl">
-                                <h3 className="font-bold text-amber-950 text-lg mb-1">2. Şiir Bilgisi ve Edebi Sanatlar (3 - 4 Soru)</h3>
-                                <p className="text-sm text-amber-900 leading-relaxed">
-                                    Nazım birimi, kafiye ve redif, ölçü, teşbih, istiare, tenasüp, tezat gibi söz sanatları. Kuralları düzenli öğrenildiğinde fire vermeden çözülebilen bir alandır.
-                                </p>
-                            </div>
-
                             <div className="p-5 bg-blue-50 border border-blue-200 rounded-xl">
-                                <h3 className="font-bold text-blue-950 text-lg mb-1">3. İslamiyet Öncesi, Halk ve Divan Edebiyatı (5 - 6 Soru)</h3>
+                                <h3 className="font-bold text-blue-950 text-lg mb-1">1. Bedava Paragraf & Anlam: İlk 5 - 6 Soru</h3>
                                 <p className="text-sm text-blue-900 leading-relaxed">
-                                    Koşuk, sagu, destanlar; Halk edebiyatında aşık ve tekke geleneği; Divan edebiyatında gazel, kaside, mesnevi ve Fuzuli, Baki, Nedim, Şeyh Galip gibi ana şairler.
+                                    Evet, yanlış duymadın! Edebiyat testini açtığında karşına çıkan ilk 5-6 soru sıradan TYT Türkçe paragraf ve sözcükte anlam sorusudur. Edebiyat bilgisi gerektirmez. TYT Türkçesi iyi olan bir öğrenci teste zaten 6 netle başlar.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-emerald-50 border border-emerald-200 rounded-xl">
-                                <h3 className="font-bold text-emerald-950 text-lg mb-1">4. Tanzimat, Servet-i Fünun, Milli Edebiyat ve Cumhuriyet (7 - 9 Soru)</h3>
+                                <h3 className="font-bold text-emerald-950 text-lg mb-1">2. Şiir Bilgisi & Edebi Sanatlar: 3 - 4 Soru (Matematik Gibidir)</h3>
                                 <p className="text-sm text-emerald-900 leading-relaxed">
-                                    Dönemlerin temel anlayışları, roman karakterleri, edebi topluluklar (Beş Hececiler, Yedi Meşaleciler, Garip, İkinci Yeni, Toplumcu Gerçekçiler) ve önemli eserler.
+                                    Kafiye, redif, aruz/hece ölçüsü, teşbih, istiare, tenasüp, tezat. Burası edebiyatın en kurallı, en formüle dayalı kısmıdır. 3 gününü ayırıp kuralları öğrenen biri bu 4 soruyu 3 dakikada sıfır hatayla çözer.
+                                </p>
+                            </div>
+
+                            <div className="p-5 bg-amber-50 border border-amber-200 rounded-xl">
+                                <h3 className="font-bold text-amber-950 text-lg mb-1">3. Divan ve Halk Edebiyatı: 5 - 6 Soru (Korkulan Kale)</h3>
+                                <p className="text-sm text-amber-900 leading-relaxed">
+                                    Öğrencilerin en çok ürktüğü Divan edebiyatında ÖSYM her sene aynı 5-6 ismi döndürüp durur: Fuzuli, Baki, Nedim, Şeyh Galip, Nabi. Gazelin ilk beytine matla, son beytine makta dendiğini bilmek bile her yıl 1 net kazandırır.
+                                </p>
+                            </div>
+
+                            <div className="p-5 bg-purple-50 border border-purple-200 rounded-xl">
+                                <h3 className="font-bold text-purple-950 text-lg mb-1">4. Tanzimat&apos;tan Cumhuriyet&apos;e Roman & Akımlar: 8 - 9 Soru</h3>
+                                <p className="text-sm text-purple-900 leading-relaxed">
+                                    Asıl ezber yükü buradadır ama burada da kilit nokta roman özetleri ve ana karakterlerdir (Bihruz Bey, Ahmet Celal, Ali Rıza Bey). Dönemlerin genel havasını bilmek seçenekleri yarı yarıya eletir.
                                 </p>
                             </div>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Verimli Çalışma Yöntemleri
+                            Unutmamak İçin 3 Altın Taktik
                         </h2>
-                        <ul className="list-disc pl-6 space-y-2 text-sm">
-                            <li><strong>Eser-özet kartları:</strong> Önemli romanların ana karakterlerini ve temel çatışmalarını not etmek sınavdaki olay örgüsü sorularını kolaylaştırır.</li>
-                            <li><strong>Dönem mantığını kavramak:</strong> Bir yazarın hangi dönemde ve hangi toplulukta olduğunu bilmek, soru kökündeki ipuçlarından doğru şıkkı bulmayı sağlar.</li>
-                            <li><strong>Düzenli branş denemesi:</strong> Bilgilerin unutulmasını engellemek için haftada 1-2 edebiyat branş denemesi çözülmelidir.</li>
+                        <ul className="list-disc pl-6 space-y-3 text-sm text-gray-800">
+                            <li><strong>Post-it ve Yazar-Eser Kartları:</strong> Masana, dolabına 100 tane kart hazırla. Ön yüzüne yazar, arka yüzüne en meşhur 3 eseri ve karakterleri. Günde 10 dakika bakmak, ezber baskısını tamamen yok eder.</li>
+                            <li><strong>Şifreleme (Akrostiş) Kullan:</strong> Örneğin Garipçileri O-M-H (Orhan Veli, Melih Cevdet, Oktay Rifat) diye kodlamak gibi klasik ama etkili yöntemleri kullan.</li>
+                            <li><strong>Haftalık Edebiyat Branş Denemesi:</strong> Edebiyat bilgi dersidir; soru çözmezsen 3 haftada unutursun. Her pazar 1 branş denemesi çözüp yanlış yaptığın yazara 5 dakika göz atmak bilgiyi taze tutar.</li>
                         </ul>
 
                         <div className="bg-slate-900 text-white rounded-2xl p-6 my-8 not-prose">
-                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Eşit Ağırlık ve Sözel Puanınızı Hesaplayın</h3>
+                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Edebiyat Netinle EA/SÖZ Sıralamanı Gör</h3>
                             <p className="text-sm text-slate-300 mb-4">
-                                Edebiyat doğru ve yanlış sayılarınızı girerek AYT EA ve SÖZ puanlarınızı anında hesaplayın.
+                                Edebiyat ve Matematik netlerini hesaplama motorumuza gir; AYT Eşit Ağırlık puanını ve hedeflediğin Hukuk/İktisat fakültelerine yetip yetmediğini hemen öğren.
                             </p>
                             <Link href="/" className="inline-block bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
-                                Puan Hesaplama Aracına Git →
+                                Eşit Ağırlık Puanı Hesapla →
                             </Link>
                         </div>
                     </div>
