@@ -89,7 +89,7 @@ export default function YKSHazirlikProgrami() {
                             Sabah oturup bir deftere 12 maddelik destan yazınca insan baştan pes ediyor. Fizik biter, kimyaya geçerim, oradan da 50 paragraf patlatırım... Akşam bir bakıyorsun sadece 2 tanesi yapılmış. Sonuç? Koca bir yetersizlik hissi.
                         </p>
                         <p>
-                            Kendi hazırlık senemden de biliyorum, etrafımdaki arkadaşlardan da gördüm: Güne başlarken önüne sadece 3 tane net iş koymak çok daha mantıklı. Mesela ne?
+                            Hem kendi sınav sürecimden hem de sitemizde netlerini takip ettiğimiz binlerce adayın çalışma düzenlerinden çok net gördüğüm bir şey var: Güne başlarken önüne sadece 3 tane somut iş koymak çok daha sürdürülebilir. Mesela ne?
                         </p>
                         <ul className="list-disc pl-6 space-y-2 text-sm text-gray-800">
                             <li><strong>1. Görev:</strong> Sabah aç kronometreni, 20 paragraf ile 12 problemi mola vermeden çöz.</li>
@@ -107,7 +107,7 @@ export default function YKSHazirlikProgrami() {
                             Şu meşhur 25 dakika ders, 5 dakika mola taktiği... Yazılımcıysan veya bilgisayar başında proje yapıyorsan harika yöntem. Ama YKS gibi uzun soluklu bir maratonda tek başına yeterli bir kondisyon sağlamayabilir.
                         </p>
                         <p>
-                            Neden mi? TYT sınavı tam 165 dakika sürüyor, AYT ise 180 dakika. Sen evde her 25 dakikada bir çay almaya, telefona bakmaya alışırsan; gerçek sınavın 60. dakikasında beynin şalteri indirir. Türkçe bittiğinde kafan kazan gibi olur, matematikte 2 ile 3&apos;ü toplayamaz hale gelirsin.
+                            Neden mi? TYT sınavı tam 165 dakika sürüyor, AYT ise 180 dakika. ÖSYM&apos;nin yayınladığı sınav raporlarını incelediğimizde, adayların en büyük kaybı bilgi eksikliğinden ziyade süreyi yetiştirememekten ve son 40 dakikada zihinsel yorgunluktan kaynaklanan dikkat hatalarından yaşadığını görüyoruz. Sen evde her 25 dakikada bir çay almaya, telefona bakmaya alışırsan; gerçek sınavın 60. dakikasında zihnin dağılmaya başlar. Türkçe bittiğinde kafan kazan gibi olur, matematikte basit işlem hatası yaparsın.
                         </p>
                         <p>
                             O yüzden o süreyi yavaş yavaş 50 dakikaya çıkarman lazım. Telefonu diğer odaya koyacaksın. Masaya oturup kronometreyi 50 dakikaya kuracaksın; su içmek için bile kalkmayacaksın. 50 dakika soruyla baş başa kal, sonra ver 10 dakika molanı. Sınav kondisyonu böyle kazanılır.
@@ -120,7 +120,7 @@ export default function YKSHazirlikProgrami() {
                             YouTube&apos;da, Instagram&apos;da görüyorsun: <em>&ldquo;Günde 14 saat çalışarak derece yaptım!&rdquo;</em> İnanmayın şunlara gözünüzü seveyim. O 14 saatin en az 5 saati masada Reels kaydırmakla, 3 saati de hayal kurmakla geçiyor. 
                         </p>
                         <p>
-                            Telefonu eline almadan, masada safi odakla 5 saat geçirebilen birinin alacağı verim; 12 saat sandalyede oturup dikkati darmadağın olan birinden katbekat fazla oluyor. Oturduğun saatin çokluğu değil, o sürede kafanın ne kadar masada kaldığı işi çözüyor.
+                            Telefonu eline almadan, masada gerçekten odaklanarak geçirilen 5 saat; dikkati sürekli dağılan 12 saatlik bir çalışma gününden çok daha verimli olabilir. Oturduğun saatin çokluğu değil, o sürede kafanın ne kadar masada kaldığı işi çözüyor.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
