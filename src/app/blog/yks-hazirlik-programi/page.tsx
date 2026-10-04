@@ -101,10 +101,10 @@ export default function YKSHazirlikProgrami() {
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Pomodoro YKS&apos;de Neden Yarı Yolda Bırakır?
+                            Pomodoro YKS&apos;ye Hazırlanırken Neden Tek Başına Yetmeyebilir?
                         </h2>
                         <p>
-                            Şu meşhur 25 dakika ders, 5 dakika mola taktiği... Yazılımcıysan veya bilgisayar başında proje yapıyorsan harika yöntem. Ama YKS&apos;ye hazırlanıyorsan seni sınav salonunda yakar.
+                            Şu meşhur 25 dakika ders, 5 dakika mola taktiği... Yazılımcıysan veya bilgisayar başında proje yapıyorsan harika yöntem. Ama YKS gibi uzun soluklu bir maratonda tek başına yeterli bir kondisyon sağlamayabilir.
                         </p>
                         <p>
                             Neden mi? TYT sınavı tam 165 dakika sürüyor, AYT ise 180 dakika. Sen evde her 25 dakikada bir çay almaya, telefona bakmaya alışırsan; gerçek sınavın 60. dakikasında beynin şalteri indirir. Türkçe bittiğinde kafan kazan gibi olur, matematikte 2 ile 3&apos;ü toplayamaz hale gelirsin.
@@ -127,10 +127,10 @@ export default function YKSHazirlikProgrami() {
                             Haftada 1 Gün Kendine İzin Vermezsen Patlarsın
                         </h2>
                         <p>
-                            Haftanın yedi günü soluksuz ders çalışmaya çalışanların hepsi en geç 1 ay sonra duvara tosluyor. Sabah kalkacak mecalin kalmıyor, kitap kapağı görmek istemiyorsun.
+                            Haftanın yedi günü soluksuz ders çalışmaya çalışanların önemli bir kısmı bir süre sonra duvara tosluyor. Sabah kalkacak mecalin kalmıyor, kitap kapağı görmek istemiyorsun.
                         </p>
                         <p>
-                            Pazar sabahı genel denemeni çöz, oturup yanlışlarına bak; öğleden sonrayı ise tamamen kendine ayır. Git arkadaşlarınla buluş, dizi izle, uyu. Uykusuz ve mola vermeden çalıştığında ertesi günkü denemede dikkat hataları tavan yapıyor; bildiğin soruları bile yanlış okuyup geçiyorsun.
+                            Pazar sabahı genel denemeni çöz, oturup yanlışlarına bak; öğleden sonrayı ise tamamen kendine ayır. Git arkadaşlarınla buluş, dizi izle, uyu. Uykusuz ve mola vermeden çalıştığında ertesi günkü denemede dikkatinin dağıldığını, bildiğin sorularda bile hata yaptığını fark edebilirsin.
                         </p>
 
                         <div className="bg-slate-900 text-white rounded-2xl p-6 my-8 not-prose">
