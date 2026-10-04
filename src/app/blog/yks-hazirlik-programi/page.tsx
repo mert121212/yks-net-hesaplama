@@ -79,17 +79,17 @@ export default function YKSHazirlikProgrami() {
                         </p>
 
                         <p>
-                            Masanın başında 10 saat oturup duvara bakmak kimseye üniversite kazandırmaz. Önemli olan masada kaç saat oturduğun değil; o masadan kalktığında neyi bitirdiğindir. O yüzden o katı saat çizelgelerini çöpe at, işin mantığını değiştirelim.
+                            Masanın başında akşama kadar oturup duvara bakınca kimse sana madalya takmıyor. Gün bittiğinde cebinde ne kaldı? 20 paragraf çözüp 2 test bitirdin mi, yoksa 4 saat hayal kurup bir şey yapmadan mı kalktın? Bütün olay bu.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             Günde 10 Tane Hedef Koyma, Sadece 3 Tane Koy
                         </h2>
                         <p>
-                            Öğrencilerin en büyük hatası sabah oturup bir deftere 12 maddelik destan yazmak. Fizik biter, kimyaya geçerim, oradan da 50 paragraf patlatırım... Akşam bir bakıyorsun sadece 2 tanesi yapılmış. Sonuç? Koca bir yetersizlik hissi.
+                            Sabah oturup bir deftere 12 maddelik destan yazınca insan baştan pes ediyor. Fizik biter, kimyaya geçerim, oradan da 50 paragraf patlatırım... Akşam bir bakıyorsun sadece 2 tanesi yapılmış. Sonuç? Koca bir yetersizlik hissi.
                         </p>
                         <p>
-                            Ben kendi öğrencilerime de hep aynısını söylüyorum: Önüne taş çatlasa 3 tane somut görev yaz. Mesela ne?
+                            Kendi hazırlık senemden de biliyorum, etrafımdaki arkadaşlardan da gördüm: Güne başlarken önüne sadece 3 tane net iş koymak çok daha mantıklı. Mesela ne?
                         </p>
                         <ul className="list-disc pl-6 space-y-2 text-sm text-gray-800">
                             <li><strong>1. Görev:</strong> Sabah aç kronometreni, 20 paragraf ile 12 problemi mola vermeden çöz.</li>
@@ -120,7 +120,7 @@ export default function YKSHazirlikProgrami() {
                             YouTube&apos;da, Instagram&apos;da görüyorsun: <em>&ldquo;Günde 14 saat çalışarak derece yaptım!&rdquo;</em> İnanmayın şunlara gözünüzü seveyim. O 14 saatin en az 5 saati masada Reels kaydırmakla, 3 saati de hayal kurmakla geçiyor. 
                         </p>
                         <p>
-                            Masanın başında safi odaklanarak, telefonu eline almadan günde 5 saat çalışan bir adamın bu sınavda dereceye girememesi imkansıza yakındır. Önemli olan masada geçirdiğin saat değil, odaklandığın dakikalardır.
+                            Telefonu eline almadan, masada safi odakla 5 saat geçirebilen birinin alacağı verim; 12 saat sandalyede oturup dikkati darmadağın olan birinden katbekat fazla oluyor. Oturduğun saatin çokluğu değil, o sürede kafanın ne kadar masada kaldığı işi çözüyor.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
@@ -130,7 +130,7 @@ export default function YKSHazirlikProgrami() {
                             Haftanın yedi günü soluksuz ders çalışmaya çalışanların hepsi en geç 1 ay sonra duvara tosluyor. Sabah kalkacak mecalin kalmıyor, kitap kapağı görmek istemiyorsun.
                         </p>
                         <p>
-                            Pazar sabahı genel denemeni çöz, oturup yanlışlarına bak; öğleden sonrayı ise tamamen kendine ayır. Git arkadaşlarınla buluş, dizi izle, uyu. Beyin dinlenmeden öğrendiğin hiçbir formülü yerine oturtamaz.
+                            Pazar sabahı genel denemeni çöz, oturup yanlışlarına bak; öğleden sonrayı ise tamamen kendine ayır. Git arkadaşlarınla buluş, dizi izle, uyu. Uykusuz ve mola vermeden çalıştığında ertesi günkü denemede dikkat hataları tavan yapıyor; bildiğin soruları bile yanlış okuyup geçiyorsun.
                         </p>
 
                         <div className="bg-slate-900 text-white rounded-2xl p-6 my-8 not-prose">
