@@ -150,11 +150,11 @@ export default function YKSBirNetKacKisiAtar() {
                         </h2>
 
                         <p>
-                            Bunu kafandan sil: ÖSYM soru bazlı katsayı vermez. O çözemediğin, tüm Türkiye&apos;nin ağladığı kabus geometri sorusu ile testin ilk sayfasındaki &ldquo;aşağıdakilerden hangisi asal sayıdır?&rdquo; sorusu puan olarak kuruşu kuruşuna aynı getiriyi sağlar.
+                            ÖSYM soru bazlı değil, test bazlı standart sapma uygular. Çözmekte en çok zorlanılan karmaşık bir geometri sorusu ile testin ilk sayfasındaki temel bir kavram sorusu, ham net hanene tam olarak aynı değeri (+1,00 net) katar.
                         </p>
 
                         <p>
-                            Dolayısıyla derece yapan akıllı öğrencilerin yaptığı şey şudur: Zor soruyla inatlaşıp 4 dakikayı heba etmek yerine, diğer derslerdeki kolay ve orta soruları avlayıp toplam net sayısını şişirirler. Çünkü yığılmayı yaran tek şey sorunun havalı olması değil, <strong>toplam net hanendir.</strong>
+                            Bu nedenle sınav tecrübesi yüksek adaylar zor tekil sorularla dakikalarca inatlaşmak yerine, testteki tüm kolay ve orta düzey soruları firesiz çözerek toplam netini yükseltir. Sıralama yığılmasında farkı yaratan şey tek bir sorunun zorluğu değil, testteki <strong>toplam net sayısıdır.</strong>
                         </p>
 
                         <div className="bg-slate-900 text-white rounded-2xl p-6 my-8 not-prose">

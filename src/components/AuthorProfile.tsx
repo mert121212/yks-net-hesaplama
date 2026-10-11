@@ -65,8 +65,8 @@ export default function AuthorProfile() {
                         <span>Program Verisi</span>
                     </div>
                     <div className="flex items-center gap-1.5 text-xs text-gray-600 bg-white border border-gray-200 rounded-lg px-2.5 py-1 shadow-2xs">
-                        <span className="text-purple-500 font-bold">2027</span>
-                        <span>Güncel Kılavuz</span>
+                        <span className="text-purple-500 font-bold">ÖSYM</span>
+                        <span>Resmi Kılavuz Verileri</span>
                     </div>
                 </div>
 
