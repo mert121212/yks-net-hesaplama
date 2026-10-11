@@ -216,7 +216,7 @@ export default function YKSKacNetKacPuan() {
                             </table>
                         </div>
                         <p>
-                            Bu netlerin sıralamanıza yansımasını görmek için <Link href="/blog/yks-1-net-kac-kisi-atar" className="text-blue-600 font-semibold hover:underline">1 Net Kaç Kişi Atar?</Link> analizimizi okuyabilir, diploma notunuzun oluşturacağı katkıyı <Link href="/blog/obp-hesaplama" className="text-blue-600 font-semibold hover:underline">OBP Hesaplama Rehberi</Link> üzerinden hesaplayabilirsiniz. Tercih stratejileri için <Link href="/blog/universite-tercih-stratejileri" className="text-blue-600 font-semibold hover:underline">Üniversite Tercih Rehberi</Link> yazımıza göz atın.
+                            Bu netlerin gerçek sınavda seni hangi sıralama dilimine fırlatacağını merak ediyorsan <Link href="/blog/yks-1-net-kac-kisi-atar" className="text-blue-600 font-semibold hover:underline">1 Net Kaç Kişi Atar?</Link> analizimize bak. Okul puanının getirisini de <Link href="/blog/obp-hesaplama" className="text-blue-600 font-semibold hover:underline">OBP Hesaplama Rehberi</Link>&apos;nde hesapla. Tercih dönemi geldiğinde hata yapmamak için <Link href="/blog/universite-tercih-stratejileri" className="text-blue-600 font-semibold hover:underline">Üniversite Tercih Rehberi</Link> elinin altında olsun.
                         </p>
 
                         <ArticleFeedback />

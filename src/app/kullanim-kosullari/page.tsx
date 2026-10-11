@@ -50,7 +50,7 @@ export default function KullanimKosullariPage() {
                                 2. Hizmet Kapsamı
                             </h2>
                             <p className="mb-4">
-                                Platform aşağıdaki hizmetleri sunmaktadır:
+                                Platformda sunulan başlıca araç ve içerikler şunlardır:
                             </p>
                             <ul className="list-disc list-inside space-y-2 ml-4">
                                 <li>YKS net hesaplama ve puan tahmini</li>
@@ -74,7 +74,7 @@ export default function KullanimKosullariPage() {
                             </div>
                             <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
                                 <li>
-                                    Puan ve sıralama tahminleri geçmiş yıl verilerine dayanmaktadır ve
+                                    Puan ve sıralama tahminleri geçmiş yıl verilerine dayanır ve
                                     gerçek sonuçlardan farklılık gösterebilir
                                 </li>
                                 <li>
@@ -91,7 +91,7 @@ export default function KullanimKosullariPage() {
                                 <p className="font-semibold text-gray-800 mb-1">Teknik Not — Hesaplama Doğruluğu</p>
                                 <p className="text-gray-700">
                                     Puan hesaplamaları, ÖSYM tarafından geçmiş yıllarda yayınlanan katsayılar ve
-                                    standart sapma verileri kullanılarak simüle edilmektedir. Gerçek sınav sonuçları;
+                                    standart sapma verileri temel alınarak simüle edilir. Gerçek sınav sonuçları;
                                     o yıl sınava giren aday sayısı, soruların zorluk katsayısı ve genel başarı
                                     ortalamasına göre değişkenlik gösterebilir.
                                 </p>
@@ -120,7 +120,7 @@ export default function KullanimKosullariPage() {
                             </h2>
                             <p className="mb-4">
                                 Platform üzerindeki tüm içerik, tasarım, logo, yazılım ve diğer materyaller
-                                YKS Net Hesaplama'ya aittir ve telif hakkı yasaları ile korunmaktadır.
+                                YKS Net Hesaplama'ya aittir ve telif hakkı mevzuatıyla korunur.
                             </p>
                             <p>
                                 İçeriğin izinsiz kopyalanması, çoğaltılması, dağıtılması veya ticari amaçla
@@ -174,7 +174,7 @@ export default function KullanimKosullariPage() {
                                 9. Garanti Reddi
                             </h2>
                             <p className="mb-4">
-                                Platform "olduğu gibi" sunulmaktadır. Aşağıdaki garantileri vermemekteyiz:
+                                Platform "olduğu gibi" esasıyla sunulur. Aşağıdaki durumlara dair garanti verilmez:
                             </p>
                             <ul className="list-disc list-inside space-y-2 ml-4">
                                 <li>Hizmetin kesintisiz veya hatasız olacağı</li>
@@ -221,7 +221,7 @@ export default function KullanimKosullariPage() {
                                 13. İletişim
                             </h2>
                             <p className="mb-4">
-                                Kullanım koşulları hakkında sorularınız için bizimle iletişime geçebilirsiniz:
+                                Kullanım koşulları hakkındaki tüm sorularınızı doğrudan bize iletin:
                             </p>
                             <div className="bg-gray-50 p-4 rounded-lg">
                                 <p><strong>E-posta:</strong> iletisim@yksnethesapla.com</p>

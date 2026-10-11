@@ -253,7 +253,7 @@ export default function SEOContent() {
                 </div>
 
                 <div className="p-4 bg-indigo-50/80 border-l-4 border-indigo-500 rounded-r-xl text-xs sm:text-sm text-indigo-950">
-                    💡 <strong>Stratejik Not:</strong> Matematik ve Fen testlerinin Türkiye ortalaması çok düşük olduğundan, bu testlerde yapılacak her 1 ek net adayı yığılma bölgelerinde binlerce rakibinin önüne geçirmektedir.
+                    💡 <strong>Stratejik Not:</strong> Matematik ve Fen testlerinin Türkiye ortalaması çok düşük olduğu için, bu testlerde yapacağın her 1 ek net seni yığılma bölgesinde binlerce rakibinin önüne fırlatır.
                 </div>
             </section>
 
@@ -401,7 +401,7 @@ export default function SEOContent() {
                     YKS Net Hesaplama Platformu • Bağımsız Eğitim ve Sınav Portalı
                 </p>
                 <p>
-                    yksnethesapla.com bağımsız bir platform olup ÖSYM (Öğrenci Seçme ve Yerleştirme Merkezi) veya YÖK ile doğrudan kurumsal bağı bulunmamaktadır. Tüm sınav kuralları ve katsayılar ilgili kurumların resmi kılavuzları doğrultusunda periyodik olarak güncellenir.
+                    yksnethesapla.com bağımsız bir platformdur; ÖSYM (Öğrenci Seçme ve Yerleştirme Merkezi) veya YÖK ile resmi bir bağı yoktur. Tüm sınav kuralları ve katsayılar ilgili kurumların güncel kılavuzları doğrultusunda düzenli olarak güncellenir.
                 </p>
             </section>
 

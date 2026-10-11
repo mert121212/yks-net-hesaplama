@@ -240,7 +240,7 @@ export default function YKSPuanTurleri() {
                             </table>
                         </div>
                         <p>
-                            AYT net hesaplama prensipleri için <Link href="/blog/ayt-puan-hesaplama" className="text-blue-600 font-semibold hover:underline">AYT Puan Hesaplama Rehberi</Link> içeriğimizi, Sayısal ve EA alanında kritik rol oynayan matematik konuları için <Link href="/blog/ayt-matematik-konulari" className="text-blue-600 font-semibold hover:underline">AYT Matematik Konuları</Link> çalışma planını inceleyebilirsiniz. Lise okul notu hesabı için <Link href="/blog/obp-hesaplama" className="text-blue-600 font-semibold hover:underline">OBP Hesaplama</Link> yazımıza göz atın.
+                            AYT netlerinin puanına etkisini adım adım görmek için <Link href="/blog/ayt-puan-hesaplama" className="text-blue-600 font-semibold hover:underline">AYT Puan Hesaplama Rehberi</Link>&apos;ne geç. Sayısal ve Eşit Ağırlıkta asıl farkı yaratan konuları <Link href="/blog/ayt-matematik-konulari" className="text-blue-600 font-semibold hover:underline">AYT Matematik Konuları</Link> listesinde bulabilirsin. Lise diploma notunun net puanına etkisini de <Link href="/blog/obp-hesaplama" className="text-blue-600 font-semibold hover:underline">OBP Hesaplama</Link> rehberimizden anında gör.
                         </p>
 
                         <ArticleFeedback />

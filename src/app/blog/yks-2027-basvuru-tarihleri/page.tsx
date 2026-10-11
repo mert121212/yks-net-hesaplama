@@ -189,7 +189,7 @@ export default function YKSBasvuruTarihleri() {
                             </table>
                         </div>
                         <p>
-                            Kalan günleri en yüksek verimle değerlendirmek için <Link href="/blog/yks-son-3-ay-calisma-plani" className="text-blue-600 font-semibold hover:underline">YKS Son 3 Ay Çalışma Programı</Link> rehberimizi inceleyebilir, sınav hazırlık sürecinizi baştan sona planlamak için <Link href="/yks-rehberi" className="text-blue-600 font-semibold hover:underline">Kapsamlı YKS Rehberi</Link> sayfamızdan destek alabilirsiniz.
+                            Sınav takvimine bakıp paniklemek yerine kalan günleri en yüksek verimle geçirmek istiyorsan <Link href="/blog/yks-son-3-ay-calisma-plani" className="text-blue-600 font-semibold hover:underline">YKS Son 3 Ay Çalışma Programı</Link>&apos;na sarıl. Sıfırdan zirveye tüm yol haritasını ise <Link href="/yks-rehberi" className="text-blue-600 font-semibold hover:underline">Kapsamlı YKS Rehberi</Link> sayfamızda derli toplu bulacaksın.
                         </p>
 
                         <ArticleFeedback />

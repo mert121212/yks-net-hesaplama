@@ -258,7 +258,7 @@ export default function PDFDownload({ results }: Props) {
             pdf.line(margin, y, W - margin, y)
             y += 4
             pdf.setFont('helvetica', 'normal'); pdf.setFontSize(7); pdf.setTextColor(120, 120, 120)
-            pdf.text(tr('Bu belge yksnethesapla.com tarafından üretilmiştir. ÖSYM ile resmi bir bağı bulunmamaktadır.'), W / 2, y, { align: 'center' })
+            pdf.text(tr('Bu belge yksnethesapla.com tarafından üretilmiştir. ÖSYM ile resmi bir bağı yoktur.'), W / 2, y, { align: 'center' })
             y += 4
             pdf.text(tr('Tahmini sonuclar ÖSYM resmi verilerine dayali logaritmik interpolasyon ile hesaplanmistir.  |  Resmi sonuclar icin: osym.gov.tr'), W / 2, y, { align: 'center' })
 

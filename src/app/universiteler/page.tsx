@@ -114,7 +114,7 @@ export default function UniversitelerPage() {
                             <strong>Veri Kaynağı:</strong> Bu sayfadaki taban puanı, kontenjan ve taban başarı sırası (TBS) verileri Yükseköğretim Kurulu (YÖK Atlas) ve ÖSYM tarafından yayımlanan resmi YKS Yükseköğretim Programları ve Kontenjanları Kılavuzlarından derlenmiştir.
                         </p>
                         <p>
-                            <strong>Yasal Uyarı:</strong> Sayfadaki veriler adaylara tercih hazırlığı sürecinde rehberlik sağlamak amacıyla sunulmaktadır. Kesin yerleştirme işlemleri ÖSYM&apos;nin o yıl yayımlayacağı resmi tercih kılavuzu esas alınarak yürütülür.
+                            <strong>Yasal Uyarı:</strong> Sayfadaki veriler adaylara tercih hazırlığı sürecinde rehberlik sağlamak amacıyla hazırlanmıştır. Kesin yerleştirme işlemleri ÖSYM&apos;nin o yıl yayımlayacağı resmi tercih kılavuzu esas alınarak yürütülür.
                         </p>
                     </section>
                 </div>

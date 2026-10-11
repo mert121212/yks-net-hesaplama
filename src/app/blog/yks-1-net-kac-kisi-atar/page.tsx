@@ -212,7 +212,7 @@ export default function YKSBirNetKacKisiAtar() {
                             </table>
                         </div>
                         <p>
-                            Bu yığılmanın tercih döneminde nasıl riskler oluşturduğunu <Link href="/blog/yks-yigilma-tehlikesi" className="text-blue-600 font-semibold hover:underline">YKS Yığılma Tehlikesi</Link> yazımızda inceledik. Hangi bölüm için toplam kaç nete ihtiyacınız olduğunu öğrenmek için <Link href="/blog/yks-kac-net-kac-puan" className="text-blue-600 font-semibold hover:underline">YKS Net-Puan Tablosu</Link> rehberimizi kullanabilirsiniz.
+                            Bu devasa aday kalabalığının tercih döneminde başına nasıl çoraplar örebileceğini <Link href="/blog/yks-yigilma-tehlikesi" className="text-blue-600 font-semibold hover:underline">YKS Yığılma Tehlikesi</Link> yazımızda konuştuk. Hayalindeki üniversite bölümü için masada kaç net bırakman gerektiğini de <Link href="/blog/yks-kac-net-kac-puan" className="text-blue-600 font-semibold hover:underline">YKS Kaç Net Kaç Puan?</Link> tablosundan hemen kontrol et.
                         </p>
 
                         <ArticleFeedback />

@@ -88,8 +88,8 @@ export default function IletisimPage() {
                     <section className="mb-12">
                         <h2 className="text-2xl font-bold text-gray-900 mb-4">Çalışma Saatleri</h2>
                         <p className="text-gray-700 mb-4">
-                            Dijital tabanlı bir eğitim platformu olarak Türkiye genelinde tüm öğrencilere
-                            hizmet veriyoruz. Teknik ekibimiz aşağıdaki saatlerde aktif destek sunmaktadır:
+                            Dijital tabanlı bir eğitim platformu olarak Türkiye genelinde tüm adaylara
+                            ulaşıyoruz. Ekibimiz şu saat aralıklarında mesajlara ve e-postalara dönüş yapıyor:
                         </p>
                         <div className="grid md:grid-cols-3 gap-4">
                             <div className="bg-green-50 p-4 rounded-xl border-l-4 border-green-500 text-center">
@@ -157,9 +157,9 @@ export default function IletisimPage() {
                     <div className="border-t pt-8">
                         <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
                             <p className="text-sm text-amber-900">
-                                <strong>Yasal Uyarı:</strong> yksnethesapla.com bağımsız bir platformdur ve
-                                ÖSYM (Öğrenci Seçme ve Yerleştirme Merkezi) ile resmi bir bağı bulunmamaktadır.
-                                Resmi sınav bilgileri ve sonuçlar için{' '}
+                                <strong>Yasal Uyarı:</strong> yksnethesapla.com bağımsız bir platformdur;
+                                ÖSYM (Öğrenci Seçme ve Yerleştirme Merkezi) ile resmi ya da kurumsal bir bağı yoktur.
+                                Resmi sınav duyuruları ve sonuçlar için doğrudan{' '}
                                 <a href="https://www.osym.gov.tr" target="_blank" rel="noopener noreferrer" className="text-amber-700 hover:underline font-medium">
                                     osym.gov.tr
                                 </a>

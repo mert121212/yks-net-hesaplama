@@ -36,7 +36,7 @@ export default function CookieConsent() {
             <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div className="flex-1 text-sm text-gray-600 leading-relaxed">
                     <p>
-                        Sitemizde kullanıcı deneyimini iyileştirmek, site trafiğini analiz etmek ve temel işlevleri sunmak amacıyla çerezler kullanılmaktadır.{' '}
+                        Sitemizde kullanıcı deneyimini iyileştirmek, site trafiğini analiz etmek ve temel işlevleri sunmak amacıyla çerezlerden faydalanıyoruz.{' '}
                         <Link href="/privacy" className="text-blue-600 hover:underline font-medium">
                             Gizlilik ve Çerez Politikası
                         </Link>

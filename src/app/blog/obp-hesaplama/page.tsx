@@ -236,7 +236,7 @@ export default function OBPHesaplamaRehberi() {
                             </table>
                         </div>
                         <p>
-                            Yığılma bölgesinde 10 puanlık bir OBP farkının sıralamayı nasıl 20-30 bin kişi ileri veya geri attığını görmek için <Link href="/blog/yks-yigilma-tehlikesi" className="text-blue-600 font-semibold hover:underline">YKS Yığılma Analizi</Link> makalemize göz atabilir, 1 netin değerini <Link href="/blog/yks-1-net-kac-kisi-atar" className="text-blue-600 font-semibold hover:underline">YKS'de 1 Net Kaç Kişi Atar?</Link> yazımızdan öğrenebilirsiniz.
+                            Yığılmanın tam göbeğinde 10 puanlık bir diploma farkının seni nasıl bir anda 25 bin kişi geriye fırlatabileceğini <Link href="/blog/yks-yigilma-tehlikesi" className="text-blue-600 font-semibold hover:underline">YKS Yığılma Analizi</Link> sayfasında somut sayılarla anlattık. Tek bir netin bile hayat kurtardığı o eşiği anlamak için de <Link href="/blog/yks-1-net-kac-kisi-atar" className="text-blue-600 font-semibold hover:underline">YKS&apos;de 1 Net Kaç Kişi Atar?</Link> yazımıza kesinlikle bir göz at derim.
                         </p>
 
                         <ArticleFeedback />

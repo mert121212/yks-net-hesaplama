@@ -104,7 +104,7 @@ export default function HakkimizdaPage() {
                                     </div>
                                 </div>
                                 <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                                    ÖSYM yerleştirme verileri ve sınav istatistikleri doğrultusunda sitemizdeki hesaplama araçlarının doğruluğunu ve rehber içeriklerinin güncelliğini düzenli olarak denetlemektedir.
+                                    ÖSYM yerleştirme verileri ve sınav istatistikleri ışığında sitemizdeki hesaplama motorunun doğruluğunu ve rehber yazıların güncelliğini bizzat kendisi test edip denetliyor.
                                 </p>
                                 <div className="flex flex-wrap gap-2 text-xs">
                                     <span className="bg-white border border-gray-200 px-3 py-1 rounded-md text-gray-700 font-medium">✓ Güncel ÖSYM Kılavuzu Takibi</span>
@@ -119,7 +119,7 @@ export default function HakkimizdaPage() {
                                 İletişim
                             </h2>
                             <p className="mb-4">
-                                Soru, öneri veya hata bildirimleriniz için bizimle doğrudan iletişime geçebilirsiniz.
+                                Aklına takılan bir soru, öneri veya hata bildirimi için bize dilediğin an yazabilirsin:
                             </p>
                             <div className="bg-gray-50 p-5 rounded-xl space-y-2 text-sm">
                                 <p><strong>E-posta:</strong> iletisim@yksnethesapla.com</p>
@@ -136,7 +136,7 @@ export default function HakkimizdaPage() {
                         <section className="border-t pt-8">
                             <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
                                 <p className="text-sm text-amber-900">
-                                    <strong>Yasal Uyarı:</strong> yksnethesapla.com bağımsız bir eğitim platformudur ve ÖSYM (Öğrenci Seçme ve Yerleştirme Merkezi) ile doğrudan kurumsal veya resmi bir bağı bulunmamaktadır.
+                                    <strong>Yasal Uyarı:</strong> yksnethesapla.com bağımsız bir eğitim platformudur; ÖSYM (Öğrenci Seçme ve Yerleştirme Merkezi) ile resmi ya da kurumsal bir bağı yoktur.
                                 </p>
                             </div>
                         </section>

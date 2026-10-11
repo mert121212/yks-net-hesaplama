@@ -90,7 +90,7 @@ export default function TYTKesinCikanKonular() {
                             <div className="bg-blue-50 p-5 rounded-xl border-l-4 border-blue-500">
                                 <h3 className="font-bold text-blue-950 text-base">Paragrafta Anlam ve Ana Düşünce (24-26 Soru)</h3>
                                 <p className="text-sm text-blue-900 mt-1">
-                                    Sınavın neredeyse dörtte biri! &ldquo;Hangi cümle akışı bozmaktadır?&rdquo;, &ldquo;Bu parçadan hangisine ulaşılamaz?&rdquo;. Her sabah 20 paragraf çözmeyen bir adayın sınav sabahı Türkçede 30 net görmesi mucizedir.
+                                    Sınavın neredeyse dörtte biri! &ldquo;Hangi cümle düşüncenin akışını bozuyor?&rdquo; veya &ldquo;Parçadan hangisi çıkarılamaz?&rdquo; tarzı klasik tuzaklar. Her sabah aksatmadan 20 paragraf çözmeyen bir adayın sınav sabahı Türkçede 30 neti devirmesi hayalden ibaret.
                                 </p>
                             </div>
                             <div className="bg-emerald-50 p-5 rounded-xl border-l-4 border-emerald-500">
@@ -200,7 +200,7 @@ export default function TYTKesinCikanKonular() {
                             </table>
                         </div>
                         <p>
-                            Paragraf sorularında hızlanmak için <Link href="/blog/tyt-turkce-paragraf-teknikleri" className="text-blue-600 font-semibold hover:underline">TYT Paragraf Çözme Teknikleri</Link> yazımıza göz atabilir, matematik temelinizi güçlendirmek için <Link href="/blog/sifirdan-tyt-matematik-calisma-rehberi" className="text-blue-600 font-semibold hover:underline">Sıfırdan TYT Matematik Rehberi</Link> adımlarını uygulayabilirsiniz. Genel net artışı için <Link href="/blog/tyt-net-artirma-taktikleri" className="text-blue-600 font-semibold hover:underline">TYT Net Artırma Taktikleri</Link> rehberimizi inceleyin.
+                            Paragrafta süre canavarını yenmek istiyorsan <Link href="/blog/tyt-turkce-paragraf-teknikleri" className="text-blue-600 font-semibold hover:underline">TYT Paragraf Çözme Teknikleri</Link> yazımız tam sana göre. Matematikte sıfırdan 15-20 nete tırmanmanın reçetesini <Link href="/blog/sifirdan-tyt-matematik-calisma-rehberi" className="text-blue-600 font-semibold hover:underline">Sıfırdan TYT Matematik Rehberi</Link>&apos;nde paylaştık. Hepsini toparlayıp genel netini zıplatmak içinse <Link href="/blog/tyt-net-artirma-taktikleri" className="text-blue-600 font-semibold hover:underline">TYT Net Artırma Taktikleri</Link> adımlarını sakın kaçırma.
                         </p>
 
                         <ArticleFeedback />

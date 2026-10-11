@@ -180,7 +180,7 @@ export default function YKSYigilmaTehlikesi() {
                             </table>
                         </div>
                         <p>
-                            Yığılma bölgesinde 1 netin ne kadar büyük fark yarattığını anlamak için <Link href="/blog/yks-1-net-kac-kisi-atar" className="text-blue-600 font-semibold hover:underline">1 Net Kaç Kişi Atar?</Link> yazımızı inceleyebilir, lise notunuzun yığılmadaki koruyucu etkisini <Link href="/blog/obp-hesaplama" className="text-blue-600 font-semibold hover:underline">OBP Hesaplama Rehberi</Link> üzerinden görebilirsiniz. Tercih döneminde boşta kalmamak için <Link href="/blog/universite-tercih-stratejileri" className="text-blue-600 font-semibold hover:underline">Üniversite Tercih Stratejileri</Link> kılavuzuna mutlaka göz atın.
+                            Yığılma bölgesinde tek bir doğru sorunun binlerce adayı nasıl arkana attığını merak ediyorsan <Link href="/blog/yks-1-net-kac-kisi-atar" className="text-blue-600 font-semibold hover:underline">1 Net Kaç Kişi Atar?</Link> analizimize mutlaka uğra. Okul puanının seni bu kalabalıkta nasıl koruyacağını <Link href="/blog/obp-hesaplama" className="text-blue-600 font-semibold hover:underline">OBP Hesaplama Rehberi</Link>&apos;nde anlattık. Tercih listeni sağlam kurmak için de <Link href="/blog/universite-tercih-stratejileri" className="text-blue-600 font-semibold hover:underline">Üniversite Tercih Stratejileri</Link> kılavuzu elinin altında olsun.
                         </p>
 
                         <ArticleFeedback />

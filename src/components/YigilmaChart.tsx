@@ -59,7 +59,7 @@ export default function YigilmaChart() {
             </div>
 
             <p className="text-sm text-slate-300 mb-6 leading-relaxed">
-                Aşağıdaki grafik, sınavın kolay veya orta geldiği senelerde adayların hangi sıralama bantlarında kümelendiğini ve o bantta <strong>tek bir netin</strong> kaç bin adayı geride bıraktığını göstermektedir:
+                Aşağıdaki grafik, sınavın kolay veya orta geldiği senelerde adayların hangi sıralama bantlarında kümelendiğini ve o bantta <strong>tek bir netin</strong> kaç bin adayı geride bıraktığını açıkça gösteriyor:
             </p>
 
             <div className="space-y-4">

@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
     title: '404 - Sayfa Bulunamadı | YKS Net Hesaplama',
-    description: 'Aradığınız sayfa bulunamadı. YKS Net Hesaplama ana sayfasına veya diğer rehber içeriklerimize göz atabilirsiniz.',
+    description: 'Aradığınız sayfa bulunamadı. YKS Net Hesaplama ana sayfasına veya rehber içeriklerimize hemen dönün.',
 }
 
 export default function NotFound() {
@@ -17,7 +17,7 @@ export default function NotFound() {
                     Sayfa Bulunamadı
                 </h1>
                 <p className="text-gray-600 text-sm leading-relaxed mb-8">
-                    Aradığınız sayfa taşınmış, adı değiştirilmiş veya geçici olarak erişilemiyor olabilir. Aşağıdaki bağlantıları kullanarak hedefinize ulaşabilirsiniz.
+                    Aradığınız sayfa taşınmış, link değişmiş ya da kaldırılmış olabilir. Aşağıdaki bağlantılardan dilediğin içeriğe anında geçebilirsin.
                 </p>
 
                 <div className="space-y-3">

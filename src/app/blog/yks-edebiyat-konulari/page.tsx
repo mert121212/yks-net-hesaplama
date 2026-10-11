@@ -187,7 +187,7 @@ export default function YKSEdebiyatKonulari() {
                             </table>
                         </div>
                         <p>
-                            Eşit Ağırlık ve Sözel alanında doğru bölüm seçimi yapmak için <Link href="/blog/yks-puan-turleri" className="text-blue-600 font-semibold hover:underline">YKS Puan Türleri</Link> içeriğimizi ve tercih yaparken sıralama analizini incelemek için <Link href="/blog/universite-tercih-stratejileri" className="text-blue-600 font-semibold hover:underline">Üniversite Tercih Stratejileri</Link> rehberimizi okuyabilirsiniz.
+                            Eşit Ağırlık ya da Sözelciysen, ders katsayılarının sıralamana yapacağı sürprizleri <Link href="/blog/yks-puan-turleri" className="text-blue-600 font-semibold hover:underline">YKS Puan Türleri</Link> sayfasında paylaştık. Tercih listeni oluştururken açıkta kalmamak içinse <Link href="/blog/universite-tercih-stratejileri" className="text-blue-600 font-semibold hover:underline">Üniversite Tercih Stratejileri</Link> rehberine mutlaka göz at derim.
                         </p>
 
                         <ArticleFeedback />

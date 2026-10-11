@@ -217,7 +217,7 @@ export default function AYTPuanHesaplama() {
                             </table>
                         </div>
                         <p>
-                            Alan seçiminize göre puan türleri detayları için <Link href="/blog/yks-puan-turleri" className="text-blue-600 font-semibold hover:underline">YKS Puan Türleri Rehberi</Link> sayfamızı, lise notunuzun puana etkisini öğrenmek için ise <Link href="/blog/obp-hesaplama" className="text-blue-600 font-semibold hover:underline">OBP Hesaplama Rehberi</Link> içeriğimizi inceleyebilirsiniz. Matematik netlerinizi artırmak için <Link href="/blog/ayt-matematik-konulari" className="text-blue-600 font-semibold hover:underline">AYT Matematik Konuları</Link> planını takip edebilirsiniz.
+                            Hangi puan türünün senin hedefine daha çok yaradığını merak ediyorsan <Link href="/blog/yks-puan-turleri" className="text-blue-600 font-semibold hover:underline">YKS Puan Türleri Rehberi</Link>&apos;ne mutlaka uğra. Lise diploma notunun net puanına katacağı değeri <Link href="/blog/obp-hesaplama" className="text-blue-600 font-semibold hover:underline">OBP Hesaplama Rehberi</Link> üzerinden kuruşu kuruşuna gör. AYT&apos;de en çok net kazandıran konuları da <Link href="/blog/ayt-matematik-konulari" className="text-blue-600 font-semibold hover:underline">AYT Matematik Konuları</Link> listemizden tek tek işaretle.
                         </p>
 
                         <ArticleFeedback />

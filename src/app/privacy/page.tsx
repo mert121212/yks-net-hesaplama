@@ -25,10 +25,10 @@ export default function PrivacyPage() {
                         <section>
                             <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Veri Sorumlusu ve Giriş</h2>
                             <p className="mb-4">
-                                <strong>yksnethesapla.com</strong> (&quot;Sitemiz&quot;), kullanıcılarımızın gizliliğine en üst
-                                düzeyde önem vermektedir. 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve
-                                uluslararası veri koruma standartlarına (GDPR) uygun olarak hazırlanan bu politika,
-                                sitemizi ziyaret eden adayların verilerinin nasıl işlendiğini şeffaf bir şekilde açıklar.
+                                <strong>yksnethesapla.com</strong> (&quot;Sitemiz&quot;), kullanıcılarımızın gizliliğine tam
+                                hassasiyet gösterir. 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve
+                                uluslararası veri koruma standartlarına (GDPR) uygun olarak hazırlanan bu metin,
+                                sitemizi ziyaret eden adayların verilerinin nasıl korunduğunu açıkça belirtir.
                             </p>
                             <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded-lg text-sm">
                                 <p className="font-semibold text-green-800 mb-1">✅ Temel İlkemiz</p>
@@ -49,8 +49,8 @@ export default function PrivacyPage() {
                                     <h3 className="font-semibold text-blue-900 mb-2">Hesaplama Verileri (Sunucuya Gönderilmez)</h3>
                                     <p className="text-sm text-gray-700">
                                         Girdiğiniz doğru/yanlış sayıları, net değerleri ve OBP bilgileri yalnızca
-                                        tarayıcınızda işlenir. Bu veriler kişisel veri olarak saklanmamaktadır.
-                                        Sayfayı kapattığınızda tüm veriler silinir.
+                                        tarayıcınızda işlenir. Bu bilgiler hiçbir sunucuda saklanmaz.
+                                        Sayfayı kapattığınız an tüm veriler silinir.
                                     </p>
                                 </div>
                                 <div className="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
@@ -67,7 +67,7 @@ export default function PrivacyPage() {
                         <section>
                             <h2 className="text-2xl font-semibold text-gray-900 mb-4">3. Çerezler (Cookies) ve Google DART Çerezi</h2>
                             <p className="mb-4">
-                                Sitemiz, reklam sunumu ve trafik analizi için çerezler kullanmaktadır.
+                                Sitemiz, reklam deneyimini iyileştirmek ve ziyaretçi trafiğini ölçmek adına çerezlerden faydalanır.
                             </p>
                             <div className="overflow-x-auto mb-4">
                                 <table className="min-w-full bg-white border border-gray-200 rounded-lg text-sm">
@@ -125,7 +125,7 @@ export default function PrivacyPage() {
                                 <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                                     Google Reklam Ayarları
                                 </a>
-                                {' '}sayfasını ziyaret edebilirsiniz.
+                                {' '}sayfasını ziyaret edin.
                             </p>
                         </section>
 
@@ -135,14 +135,14 @@ export default function PrivacyPage() {
                             <p className="mb-4">
                                 Sitemizde Google Analytics kullanıyoruz. Bu hizmet anonim kullanım verilerini toplar
                                 ve site trafiğini analiz etmemize yardımcı olur. IP anonimleştirme aktif olup
-                                kişisel kimlik bilgisi işlenmemektedir.
+                                hiçbir kişisel kimlik bilgisi işlenmez.
                             </p>
                             <p className="text-sm text-gray-600">
                                 Detaylar için{' '}
                                 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                                     Google Gizlilik Politikası
                                 </a>
-                                {' '}sayfasını inceleyebilirsiniz.
+                                {' '}sayfasına göz atın.
                             </p>
                         </section>
 
@@ -165,9 +165,9 @@ export default function PrivacyPage() {
                         <section>
                             <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. Veri Güvenliği</h2>
                             <p>
-                                Hesaplama verileriniz sunucularımıza iletilmediğinden veri ihlali riski minimaldır.
-                                Analitik veriler için Google&apos;ın endüstri standardı güvenlik altyapısı kullanılmaktadır.
-                                Sitemiz HTTPS protokolü ile şifreli bağlantı sağlar.
+                                Hesaplama verileriniz sunucularımıza iletilmediğinden herhangi bir veri sızıntısı riski yoktur.
+                                Analitik veriler için Google&apos;ın küresel güvenlik altyapısı devrededir.
+                                Sitemiz tüm bağlantıları HTTPS protokolü ile şifreler.
                             </p>
                         </section>
 

@@ -210,7 +210,7 @@ export default function TYTNetHesaplamaRehberi() {
                             </table>
                         </div>
                         <p>
-                            Emin olmadığınız sorularda rastgele sallamak yerine boş bırakmanın stratejik önemini <Link href="/blog/tyt-net-artirma-taktikleri" className="text-blue-600 font-semibold hover:underline">TYT Net Artırma Taktikleri</Link> içeriğimizden öğrenebilir, genel puan mekanizmasını <Link href="/blog/yks-net-hesaplama-nasil-yapilir" className="text-blue-600 font-semibold hover:underline">YKS Net Hesaplama Nasıl Yapılır?</Link> kılavuzumuzdan detaylıca okuyabilirsiniz.
+                            Kafanın karıştığı sorularda rastgele sallamayıp boş bırakmanın neden hayat kurtardığını <Link href="/blog/tyt-net-artirma-taktikleri" className="text-blue-600 font-semibold hover:underline">TYT Net Artırma Taktikleri</Link> yazımızda tek tek anlattık. TYT ve AYT puanlarının nasıl harmanlandığını adım adım görmek için de <Link href="/blog/yks-net-hesaplama-nasil-yapilir" className="text-blue-600 font-semibold hover:underline">YKS Net Hesaplama Nasıl Yapılır?</Link> rehberine hemen göz at.
                         </p>
 
                         <ArticleFeedback />

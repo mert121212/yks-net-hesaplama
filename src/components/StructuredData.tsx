@@ -178,7 +178,7 @@ export default function StructuredData() {
                 "name": "YKS'ye kaç gün kaldı?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "YKS 2027 sınavına kalan süreyi canlı olarak yksnethesapla.com/geri-sayim adresindeki geri sayım sayfamızdan takip edebilirsiniz. TYT 19 Haziran 2027, AYT 20 Haziran 2027 tarihinde yapılacaktır."
+                    "text": "YKS 2027 sınavına kalan gün ve saati yksnethesapla.com/geri-sayim adresindeki canlı sayaçtan saniyesi saniyesine izleyin. TYT oturumu 19 Haziran 2027 Cumartesi, AYT oturumu ise 20 Haziran 2027 Pazar günü uygulanacak."
                 }
             }
         ]
