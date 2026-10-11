@@ -148,6 +148,61 @@ export default function TYTKesinCikanKonular() {
                                 Puan ve Sıralama Hesaplayıcıyı Aç →
                             </Link>
                         </div>
+                        
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            TYT Garanti Soru Çıkan Konular Özeti
+                        </h2>
+                        <p>
+                            Sınava hazırlanırken her konunun ağırlığı aynı değildir. ÖSYM'nin son 6 yıllık sınav karnesi incelendiğinde bazı konuların istisnasız her yıl soru getirdiği görülür:
+                        </p>
+                        <div className="overflow-x-auto my-6">
+                            <table className="w-full text-left border-collapse border border-gray-200 text-sm">
+                                <thead className="bg-emerald-50 text-emerald-950 font-semibold">
+                                    <tr>
+                                        <th className="p-3 border">Ders</th>
+                                        <th className="p-3 border">Garanti Konu</th>
+                                        <th className="p-3 border">Ort. Soru Sayısı</th>
+                                        <th className="p-3 border">Zorluk Seviyesi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">Türkçe</td>
+                                        <td className="p-3 border">Paragrafta Anlam & Ana Düşünce</td>
+                                        <td className="p-3 border font-bold text-emerald-600">22-26 Soru</td>
+                                        <td className="p-3 border">Orta (Hız Gerekir)</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">Matematik</td>
+                                        <td className="p-3 border">Temel Kavramlar & Sayı Kümeleri</td>
+                                        <td className="p-3 border font-bold text-emerald-600">3-4 Soru</td>
+                                        <td className="p-3 border">Kolay-Orta</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">Matematik</td>
+                                        <td className="p-3 border">Problemler (Sayı, Kesir, Yüzde)</td>
+                                        <td className="p-3 border font-bold text-emerald-600">10-12 Soru</td>
+                                        <td className="p-3 border">Orta-Zor</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">Fizik</td>
+                                        <td className="p-3 border">Isı ve Sıcaklık & Optik</td>
+                                        <td className="p-3 border font-bold text-emerald-600">2-3 Soru</td>
+                                        <td className="p-3 border">Orta</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">Biyoloji</td>
+                                        <td className="p-3 border">Hücre ve Organeller & Kalıtım</td>
+                                        <td className="p-3 border font-bold text-emerald-600">2-3 Soru</td>
+                                        <td className="p-3 border">Kolay-Orta</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>
+                            Paragraf sorularında hızlanmak için <Link href="/blog/tyt-turkce-paragraf-teknikleri" className="text-blue-600 font-semibold hover:underline">TYT Paragraf Çözme Teknikleri</Link> yazımıza göz atabilir, matematik temelinizi güçlendirmek için <Link href="/blog/sifirdan-tyt-matematik-calisma-rehberi" className="text-blue-600 font-semibold hover:underline">Sıfırdan TYT Matematik Rehberi</Link> adımlarını uygulayabilirsiniz. Genel net artışı için <Link href="/blog/tyt-net-artirma-taktikleri" className="text-blue-600 font-semibold hover:underline">TYT Net Artırma Taktikleri</Link> rehberimizi inceleyin.
+                        </p>
+
                         <ArticleFeedback />
                     </div>
                 </div>

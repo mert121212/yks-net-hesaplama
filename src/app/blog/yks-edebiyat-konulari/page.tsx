@@ -135,6 +135,61 @@ export default function YKSEdebiyatKonulari() {
                                 Eşit Ağırlık Puanı Hesapla →
                             </Link>
                         </div>
+                        
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            Son 5 Yılın AYT Edebiyat Soru Dağılım Tablosu
+                        </h2>
+                        <p>
+                            AYT Edebiyat testinde 24 soru sorulur ve bunların yaklaşık 4-6 tanesi anlam/paragraf, geri kalan 18-20 tanesi ise doğrudan dönemler ve eser-yazar bilgisinden gelir:
+                        </p>
+                        <div className="overflow-x-auto my-6">
+                            <table className="w-full text-left border-collapse border border-gray-200 text-sm">
+                                <thead className="bg-pink-50 text-pink-950 font-semibold">
+                                    <tr>
+                                        <th className="p-3 border">Konu / Edebi Dönem</th>
+                                        <th className="p-3 border">Ortalama Soru</th>
+                                        <th className="p-3 border">Önem Derecesi</th>
+                                        <th className="p-3 border">Kritik İpucu</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">Divan Edebiyatı</td>
+                                        <td className="p-3 border font-bold text-pink-700">4 - 6 Soru</td>
+                                        <td className="p-3 border text-red-600">En Çok Çıkan</td>
+                                        <td className="p-3 border">Nazım biçimleri (Gazel, Kaside, Mesnevi) ve şairler.</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">Cumhuriyet Dönemi</td>
+                                        <td className="p-3 border font-bold text-pink-700">4 - 5 Soru</td>
+                                        <td className="p-3 border text-red-600">Çok Yüksek</td>
+                                        <td className="p-3 border">Romancı toplulukları, saf şiir ve garip akımı.</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">Şiir Bilgisi & Edebi Sanatlar</td>
+                                        <td className="p-3 border font-bold text-pink-700">2 - 3 Soru</td>
+                                        <td className="p-3 border text-emerald-600">Garanti Net</td>
+                                        <td className="p-3 border">Kafiye, redif ve teşhis, tezat, hüsnütalil sanatları.</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">Tanzimat Edebiyatı</td>
+                                        <td className="p-3 border">1 - 2 Soru</td>
+                                        <td className="p-3 border">Orta</td>
+                                        <td className="p-3 border">1. ve 2. dönem sanatçıları ve ilk romanlar.</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">Milli Edebiyat</td>
+                                        <td className="p-3 border">1 - 2 Soru</td>
+                                        <td className="p-3 border">Orta</td>
+                                        <td className="p-3 border">Genç Kalemler, Ömer Seyfettin, Ziya Gökalp.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>
+                            Eşit Ağırlık ve Sözel alanında doğru bölüm seçimi yapmak için <Link href="/blog/yks-puan-turleri" className="text-blue-600 font-semibold hover:underline">YKS Puan Türleri</Link> içeriğimizi ve tercih yaparken sıralama analizini incelemek için <Link href="/blog/universite-tercih-stratejileri" className="text-blue-600 font-semibold hover:underline">Üniversite Tercih Stratejileri</Link> rehberimizi okuyabilirsiniz.
+                        </p>
+
                         <ArticleFeedback />
                     </div>
                 </div>

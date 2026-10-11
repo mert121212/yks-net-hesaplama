@@ -134,6 +134,55 @@ export default function YKSYigilmaTehlikesi() {
                                 Yığılma Simülatörünü Aç →
                             </Link>
                         </div>
+                        
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            YKS Yığılma Yoğunluk ve Sıralama Risk Haritası
+                        </h2>
+                        <p>
+                            Sınav kolay olduğunda adayların netleri yükselir ama sıralamalar geriye düşer. Zor sınavlarda ise düşük netlerle çok daha yüksek başarı sıraları elde edilir. İşte tipik bir sınavda yığılma dağılımı:
+                        </p>
+                        <div className="overflow-x-auto my-6">
+                            <table className="w-full text-left border-collapse border border-gray-200 text-sm">
+                                <thead className="bg-red-50 text-red-950 font-semibold">
+                                    <tr>
+                                        <th className="p-3 border">Sıralama Aralığı</th>
+                                        <th className="p-3 border">Puan Aralığı</th>
+                                        <th className="p-3 border">1 Puan Başına Düşen Aday</th>
+                                        <th className="p-3 border">Risk Derecesi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">İlk 20.000</td>
+                                        <td className="p-3 border">470 - 520 Puan</td>
+                                        <td className="p-3 border font-bold text-blue-700">300 - 500 Kişi</td>
+                                        <td className="p-3 border text-emerald-600">Düşük Risk</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">20.000 - 60.000</td>
+                                        <td className="p-3 border">420 - 470 Puan</td>
+                                        <td className="p-3 border font-bold text-amber-700">700 - 1.200 Kişi</td>
+                                        <td className="p-3 border text-amber-600">Orta Risk</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">60.000 - 150.000</td>
+                                        <td className="p-3 border">340 - 420 Puan</td>
+                                        <td className="p-3 border font-bold text-red-600">1.800 - 3.500 Kişi</td>
+                                        <td className="p-3 border font-bold text-red-600">Aşırı Yüksek Risk</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">150.000 - 300.000</td>
+                                        <td className="p-3 border">260 - 340 Puan</td>
+                                        <td className="p-3 border font-bold text-red-600">2.000 - 4.000 Kişi</td>
+                                        <td className="p-3 border font-bold text-red-600">Maksimum Yığılma</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>
+                            Yığılma bölgesinde 1 netin ne kadar büyük fark yarattığını anlamak için <Link href="/blog/yks-1-net-kac-kisi-atar" className="text-blue-600 font-semibold hover:underline">1 Net Kaç Kişi Atar?</Link> yazımızı inceleyebilir, lise notunuzun yığılmadaki koruyucu etkisini <Link href="/blog/obp-hesaplama" className="text-blue-600 font-semibold hover:underline">OBP Hesaplama Rehberi</Link> üzerinden görebilirsiniz. Tercih döneminde boşta kalmamak için <Link href="/blog/universite-tercih-stratejileri" className="text-blue-600 font-semibold hover:underline">Üniversite Tercih Stratejileri</Link> kılavuzuna mutlaka göz atın.
+                        </p>
+
                         <ArticleFeedback />
                     </div>
                 </div>

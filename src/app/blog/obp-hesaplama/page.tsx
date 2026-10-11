@@ -178,6 +178,67 @@ export default function OBPHesaplamaRehberi() {
                                 Yerleştirme Puanı Hesaplayıcıyı Aç →
                             </Link>
                         </div>
+                        
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            OBP Puan Katkısı ve Sıralama Etki Tablosu
+                        </h2>
+                        <p>
+                            Adayların en çok merak ettiği konulardan biri de farklı diploma notlarının YKS yerleştirme puanına net olarak kaç puan eklediğidir. Aşağıdaki tabloda diploma notunun hem normal (0,12) hem de kırık OBP (0,06) durumundaki getirileri karşılaştırılmıştır:
+                        </p>
+                        <div className="overflow-x-auto my-6">
+                            <table className="w-full text-left border-collapse border border-gray-200 text-sm">
+                                <thead className="bg-indigo-50 text-indigo-950 font-semibold">
+                                    <tr>
+                                        <th className="p-3 border">Lise Diploma Notu</th>
+                                        <th className="p-3 border">OBP Değeri (× 5)</th>
+                                        <th className="p-3 border">Normal Katkı (0,12)</th>
+                                        <th className="p-3 border text-amber-700">Kırık OBP Katkısı (0,06)</th>
+                                        <th className="p-3 border text-red-600">Kayıp Puan Farkı</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">100 (Tam Puan)</td>
+                                        <td className="p-3 border">500</td>
+                                        <td className="p-3 border font-bold text-emerald-600">+60,0 Puan</td>
+                                        <td className="p-3 border">+30,0 Puan</td>
+                                        <td className="p-3 border text-red-600">-30,0 Puan</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">90</td>
+                                        <td className="p-3 border">450</td>
+                                        <td className="p-3 border font-bold text-emerald-600">+54,0 Puan</td>
+                                        <td className="p-3 border">+27,0 Puan</td>
+                                        <td className="p-3 border text-red-600">-27,0 Puan</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">80</td>
+                                        <td className="p-3 border">400</td>
+                                        <td className="p-3 border font-bold text-emerald-600">+48,0 Puan</td>
+                                        <td className="p-3 border">+24,0 Puan</td>
+                                        <td className="p-3 border text-red-600">-24,0 Puan</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">70</td>
+                                        <td className="p-3 border">350</td>
+                                        <td className="p-3 border font-bold text-emerald-600">+42,0 Puan</td>
+                                        <td className="p-3 border">+21,0 Puan</td>
+                                        <td className="p-3 border text-red-600">-21,0 Puan</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">60</td>
+                                        <td className="p-3 border">300</td>
+                                        <td className="p-3 border font-bold text-emerald-600">+36,0 Puan</td>
+                                        <td className="p-3 border">+18,0 Puan</td>
+                                        <td className="p-3 border text-red-600">-18,0 Puan</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>
+                            Yığılma bölgesinde 10 puanlık bir OBP farkının sıralamayı nasıl 20-30 bin kişi ileri veya geri attığını görmek için <Link href="/blog/yks-yigilma-tehlikesi" className="text-blue-600 font-semibold hover:underline">YKS Yığılma Analizi</Link> makalemize göz atabilir, 1 netin değerini <Link href="/blog/yks-1-net-kac-kisi-atar" className="text-blue-600 font-semibold hover:underline">YKS'de 1 Net Kaç Kişi Atar?</Link> yazımızdan öğrenebilirsiniz.
+                        </p>
+
                         <ArticleFeedback />
                     </div>
                 </div>

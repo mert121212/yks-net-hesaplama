@@ -137,6 +137,61 @@ export default function YKSBasvuruTarihleri() {
                                 Puan ve Sıralama Hesaplayıcıyı Aç →
                             </Link>
                         </div>
+                        
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            YKS 2027 Sınav ve Tercih Takvimi Süreç Tablosu
+                        </h2>
+                        <p>
+                            Sınava hazırlık kadar başvuru ve tercih takvimini kaçırmamak da hayati önemdedir. Geç başvuru ücretleri iki katına çıktığından tarihleri önceden ajandanıza not edin:
+                        </p>
+                        <div className="overflow-x-auto my-6">
+                            <table className="w-full text-left border-collapse border border-gray-200 text-sm">
+                                <thead className="bg-amber-50 text-amber-950 font-semibold">
+                                    <tr>
+                                        <th className="p-3 border">Aşama</th>
+                                        <th className="p-3 border">Tahmini Tarih Aralığı</th>
+                                        <th className="p-3 border">Önem Derecesi</th>
+                                        <th className="p-3 border">Açıklama</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">Normal Başvuru</td>
+                                        <td className="p-3 border font-bold text-blue-700">Şubat - Mart 2027</td>
+                                        <td className="p-3 border text-emerald-600">Kritik</td>
+                                        <td className="p-3 border">ÖSYM AİS üzerinden standart oturum ücretiyle kayıt.</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">Geç Başvuru Günü</td>
+                                        <td className="p-3 border font-bold text-amber-700">Mart 2027 Sonu</td>
+                                        <td className="p-3 border text-amber-600">Son Fırsat</td>
+                                        <td className="p-3 border">%50 artırımlı oturum ücreti uygulanır.</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">Sınav Giriş Belgeleri</td>
+                                        <td className="p-3 border">Haziran 2027 Başı</td>
+                                        <td className="p-3 border">Zorunlu</td>
+                                        <td className="p-3 border">Sınava gireceğiniz okul ve salon bilgisi ilan edilir.</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">YKS Oturumları (TYT-AYT)</td>
+                                        <td className="p-3 border font-bold text-red-600">Haziran 2027 Ortası</td>
+                                        <td className="p-3 border text-red-600">Sınav Günü</td>
+                                        <td className="p-3 border">Cumartesi TYT (10:15), Pazar AYT ve YDT oturumları.</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">Sonuç ve Tercihler</td>
+                                        <td className="p-3 border">Temmuz - Ağustos 2027</td>
+                                        <td className="p-3 border text-emerald-600">Yerleştirme</td>
+                                        <td className="p-3 border">YÖK Atlas üzerinden tercih listesi teslimi.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>
+                            Kalan günleri en yüksek verimle değerlendirmek için <Link href="/blog/yks-son-3-ay-calisma-plani" className="text-blue-600 font-semibold hover:underline">YKS Son 3 Ay Çalışma Programı</Link> rehberimizi inceleyebilir, sınav hazırlık sürecinizi baştan sona planlamak için <Link href="/yks-rehberi" className="text-blue-600 font-semibold hover:underline">Kapsamlı YKS Rehberi</Link> sayfamızdan destek alabilirsiniz.
+                        </p>
+
                         <ArticleFeedback />
                     </div>
                 </div>

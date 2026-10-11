@@ -194,6 +194,55 @@ export default function YKSPuanTurleri() {
                                 Puan ve Baraj Simülatörünü Aç →
                             </Link>
                         </div>
+                        
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            Puan Türlerine Göre Testlerin Yüzdelik Ağırlıkları
+                        </h2>
+                        <p>
+                            Her puan türünde hangi dersin puanınızı ne kadar artırdığını bilmek, ders çalışma planınızı doğrudan optimize etmenizi sağlar:
+                        </p>
+                        <div className="overflow-x-auto my-6">
+                            <table className="w-full text-left border-collapse border border-gray-200 text-sm">
+                                <thead className="bg-emerald-50 text-emerald-950 font-semibold">
+                                    <tr>
+                                        <th className="p-3 border">Puan Türü</th>
+                                        <th className="p-3 border">TYT Toplamı</th>
+                                        <th className="p-3 border">AYT 1. Test Katkısı</th>
+                                        <th className="p-3 border">AYT 2. Test Katkısı</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">Sayısal (SAY)</td>
+                                        <td className="p-3 border">%40 TYT</td>
+                                        <td className="p-3 border">%30 Matematik (40 soru)</td>
+                                        <td className="p-3 border">%30 Fen Bilimleri (Fiz-Kim-Biyo)</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">Eşit Ağırlık (EA)</td>
+                                        <td className="p-3 border">%40 TYT</td>
+                                        <td className="p-3 border">%30 Matematik (40 soru)</td>
+                                        <td className="p-3 border">%30 Edebiyat-Sosyal-1 (40 soru)</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">Sözel (SÖZ)</td>
+                                        <td className="p-3 border">%40 TYT</td>
+                                        <td className="p-3 border">%30 Edebiyat-Sosyal-1 (40 soru)</td>
+                                        <td className="p-3 border">%30 Sosyal-2 (40 soru)</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">Dil (DİL)</td>
+                                        <td className="p-3 border">%40 TYT</td>
+                                        <td className="p-3 border">%60 YDT Yabancı Dil Testi (80 soru)</td>
+                                        <td className="p-3 border">-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>
+                            AYT net hesaplama prensipleri için <Link href="/blog/ayt-puan-hesaplama" className="text-blue-600 font-semibold hover:underline">AYT Puan Hesaplama Rehberi</Link> içeriğimizi, Sayısal ve EA alanında kritik rol oynayan matematik konuları için <Link href="/blog/ayt-matematik-konulari" className="text-blue-600 font-semibold hover:underline">AYT Matematik Konuları</Link> çalışma planını inceleyebilirsiniz. Lise okul notu hesabı için <Link href="/blog/obp-hesaplama" className="text-blue-600 font-semibold hover:underline">OBP Hesaplama</Link> yazımıza göz atın.
+                        </p>
+
                         <ArticleFeedback />
                     </div>
                 </div>

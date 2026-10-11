@@ -154,6 +154,65 @@ export default function TYTNetHesaplamaRehberi() {
                             </Link>
                         </div>
 
+                        
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            4 Yanlış 1 Doğruyu Nasıl Götürür? Örnek Net Tablosu
+                        </h2>
+                        <p>
+                            ÖSYM sınavlarında yapılan her yanlış cevap, doğru sayınızdan tam 0,25 net düşürür. Boş bırakılan sorular ise net sayınızı etkilemez. Aşağıdaki senaryo tablosunda rastgele işaretlemenin ve net kaybının sonuçları net şekilde gösterilmiştir:
+                        </p>
+                        <div className="overflow-x-auto my-6">
+                            <table className="w-full text-left border-collapse border border-gray-200 text-sm">
+                                <thead className="bg-slate-100 text-slate-900 font-semibold">
+                                    <tr>
+                                        <th className="p-3 border">Toplam Soru</th>
+                                        <th className="p-3 border">Doğru</th>
+                                        <th className="p-3 border">Yanlış</th>
+                                        <th className="p-3 border">Boş</th>
+                                        <th className="p-3 border">Kaybedilen Net</th>
+                                        <th className="p-3 border font-bold text-blue-700">Kalan Net</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b">
+                                        <td className="p-3 border">40 Türkçe</td>
+                                        <td className="p-3 border">34</td>
+                                        <td className="p-3 border">6</td>
+                                        <td className="p-3 border">0</td>
+                                        <td className="p-3 border text-red-600">-1,50 Net</td>
+                                        <td className="p-3 border font-bold text-emerald-600">32,50 Net</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 border">40 Matematik</td>
+                                        <td className="p-3 border">28</td>
+                                        <td className="p-3 border">4</td>
+                                        <td className="p-3 border">8</td>
+                                        <td className="p-3 border text-red-600">-1,00 Net</td>
+                                        <td className="p-3 border font-bold text-emerald-600">27,00 Net</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="p-3 border">20 Sosyal</td>
+                                        <td className="p-3 border">15</td>
+                                        <td className="p-3 border">5</td>
+                                        <td className="p-3 border">0</td>
+                                        <td className="p-3 border text-red-600">-1,25 Net</td>
+                                        <td className="p-3 border font-bold text-emerald-600">13,75 Net</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 border">20 Fen</td>
+                                        <td className="p-3 border">12</td>
+                                        <td className="p-3 border">8</td>
+                                        <td className="p-3 border">0</td>
+                                        <td className="p-3 border text-red-600">-2,00 Net</td>
+                                        <td className="p-3 border font-bold text-emerald-600">10,00 Net</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>
+                            Emin olmadığınız sorularda rastgele sallamak yerine boş bırakmanın stratejik önemini <Link href="/blog/tyt-net-artirma-taktikleri" className="text-blue-600 font-semibold hover:underline">TYT Net Artırma Taktikleri</Link> içeriğimizden öğrenebilir, genel puan mekanizmasını <Link href="/blog/yks-net-hesaplama-nasil-yapilir" className="text-blue-600 font-semibold hover:underline">YKS Net Hesaplama Nasıl Yapılır?</Link> kılavuzumuzdan detaylıca okuyabilirsiniz.
+                        </p>
+
                         <ArticleFeedback />
 
                         <div className="border-t pt-8 mt-10">

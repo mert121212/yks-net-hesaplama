@@ -159,6 +159,67 @@ export default function AYTPuanHesaplama() {
                                 Hesaplama Motoruna Git →
                             </Link>
                         </div>
+                        
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            AYT Katsayı ve Test Ağırlıkları Matrisi
+                        </h2>
+                        <p>
+                            AYT puanı hesaplanırken sadece sınav anında yaptığınız netler değil, TYT'nin %40'lık temel katkısı da hesaplamaya doğrudan dahil edilir. Alanınıza göre testlerin net katkı katsayıları aşağıda özetlenmiştir:
+                        </p>
+                        <div className="overflow-x-auto my-6">
+                            <table className="w-full text-left border-collapse border border-gray-200 text-sm">
+                                <thead className="bg-blue-50 text-blue-900 font-semibold">
+                                    <tr>
+                                        <th className="p-3 border">Test Adı</th>
+                                        <th className="p-3 border">Soru Sayısı</th>
+                                        <th className="p-3 border">SAY Ağırlığı</th>
+                                        <th className="p-3 border">EA Ağırlığı</th>
+                                        <th className="p-3 border">SÖZ Ağırlığı</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">TYT Toplamı</td>
+                                        <td className="p-3 border">120</td>
+                                        <td className="p-3 border">%40</td>
+                                        <td className="p-3 border">%40</td>
+                                        <td className="p-3 border">%40</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">AYT Matematik</td>
+                                        <td className="p-3 border">40</td>
+                                        <td className="p-3 border">%30</td>
+                                        <td className="p-3 border">%30</td>
+                                        <td className="p-3 border">-</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">AYT Fizik - Kimya - Biyo</td>
+                                        <td className="p-3 border">40</td>
+                                        <td className="p-3 border">%30</td>
+                                        <td className="p-3 border">-</td>
+                                        <td className="p-3 border">-</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">AYT Edebiyat - Tarih-1 - Coğ-1</td>
+                                        <td className="p-3 border">40</td>
+                                        <td className="p-3 border">-</td>
+                                        <td className="p-3 border">%30</td>
+                                        <td className="p-3 border">%30</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">AYT Sosyal-2 Testi</td>
+                                        <td className="p-3 border">40</td>
+                                        <td className="p-3 border">-</td>
+                                        <td className="p-3 border">-</td>
+                                        <td className="p-3 border">%30</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>
+                            Alan seçiminize göre puan türleri detayları için <Link href="/blog/yks-puan-turleri" className="text-blue-600 font-semibold hover:underline">YKS Puan Türleri Rehberi</Link> sayfamızı, lise notunuzun puana etkisini öğrenmek için ise <Link href="/blog/obp-hesaplama" className="text-blue-600 font-semibold hover:underline">OBP Hesaplama Rehberi</Link> içeriğimizi inceleyebilirsiniz. Matematik netlerinizi artırmak için <Link href="/blog/ayt-matematik-konulari" className="text-blue-600 font-semibold hover:underline">AYT Matematik Konuları</Link> planını takip edebilirsiniz.
+                        </p>
+
                         <ArticleFeedback />
                     </div>
                 </div>

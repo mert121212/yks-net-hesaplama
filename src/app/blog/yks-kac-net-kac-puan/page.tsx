@@ -158,6 +158,67 @@ export default function YKSKacNetKacPuan() {
                                 Net ve Sıralama Hesapla →
                             </Link>
                         </div>
+                        
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            Hedef Bölümlere Göre Ortalama Net İhtiyacı
+                        </h2>
+                        <p>
+                            Adayların en sık sorduğu soru <em>"İstediğim bölüme girmek için TYT ve AYT'de kaçar net yapmalıyım?"</em> sorusudur. Geçmiş yılların ÖSYM yerleştirme verilerine göre popüler bölümlerin ortalama net barajları aşağıda listelenmiştir:
+                        </p>
+                        <div className="overflow-x-auto my-6">
+                            <table className="w-full text-left border-collapse border border-gray-200 text-sm">
+                                <thead className="bg-teal-50 text-teal-950 font-semibold">
+                                    <tr>
+                                        <th className="p-3 border">Hedef Bölüm</th>
+                                        <th className="p-3 border">Puan Türü</th>
+                                        <th className="p-3 border">Gereken TYT Neti</th>
+                                        <th className="p-3 border">Gereken AYT Neti</th>
+                                        <th className="p-3 border">Ortalama Sıralama</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">Tıp Fakültesi (Devlet)</td>
+                                        <td className="p-3 border">SAY</td>
+                                        <td className="p-3 border font-bold text-teal-700">95 - 105 Net</td>
+                                        <td className="p-3 border font-bold text-teal-700">68 - 74 Net</td>
+                                        <td className="p-3 border">İlk 25.000</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">Diş Hekimliği</td>
+                                        <td className="p-3 border">SAY</td>
+                                        <td className="p-3 border font-bold text-teal-700">85 - 95 Net</td>
+                                        <td className="p-3 border font-bold text-teal-700">58 - 65 Net</td>
+                                        <td className="p-3 border">İlk 45.000</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">Hukuk Fakültesi</td>
+                                        <td className="p-3 border">EA</td>
+                                        <td className="p-3 border font-bold text-teal-700">75 - 85 Net</td>
+                                        <td className="p-3 border font-bold text-teal-700">50 - 58 Net</td>
+                                        <td className="p-3 border">İlk 70.000</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">Bilgisayar Mühendisliği</td>
+                                        <td className="p-3 border">SAY</td>
+                                        <td className="p-3 border font-bold text-teal-700">80 - 100 Net</td>
+                                        <td className="p-3 border font-bold text-teal-700">55 - 72 Net</td>
+                                        <td className="p-3 border">5.000 - 90.000 (Geniş)</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">Yönetim Bilişim (YBS)</td>
+                                        <td className="p-3 border">EA</td>
+                                        <td className="p-3 border font-bold text-teal-700">65 - 80 Net</td>
+                                        <td className="p-3 border font-bold text-teal-700">42 - 52 Net</td>
+                                        <td className="p-3 border">İlk 120.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>
+                            Bu netlerin sıralamanıza yansımasını görmek için <Link href="/blog/yks-1-net-kac-kisi-atar" className="text-blue-600 font-semibold hover:underline">1 Net Kaç Kişi Atar?</Link> analizimizi okuyabilir, diploma notunuzun oluşturacağı katkıyı <Link href="/blog/obp-hesaplama" className="text-blue-600 font-semibold hover:underline">OBP Hesaplama Rehberi</Link> üzerinden hesaplayabilirsiniz. Tercih stratejileri için <Link href="/blog/universite-tercih-stratejileri" className="text-blue-600 font-semibold hover:underline">Üniversite Tercih Rehberi</Link> yazımıza göz atın.
+                        </p>
+
                         <ArticleFeedback />
                     </div>
                 </div>

@@ -166,6 +166,55 @@ export default function YKSBirNetKacKisiAtar() {
                                 Canlı Net Simülatörüne Git →
                             </Link>
                         </div>
+                        
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            Başarı Sıralamasına Göre 1 Netin Attığı Kişi Sayısı
+                        </h2>
+                        <p>
+                            1 netin sınav sıralamasına etkisi her puan aralığında eşit değildir. Aday sayısının yoğunlaştığı bölgelerde (yığılma alanları) tek bir soru binlerce adayın önüne geçmenizi sağlar:
+                        </p>
+                        <div className="overflow-x-auto my-6">
+                            <table className="w-full text-left border-collapse border border-gray-200 text-sm">
+                                <thead className="bg-purple-50 text-purple-950 font-semibold">
+                                    <tr>
+                                        <th className="p-3 border">Sıralama Bandı</th>
+                                        <th className="p-3 border">TYT 1 Netin Katkısı</th>
+                                        <th className="p-3 border">AYT 1 Netin Katkısı</th>
+                                        <th className="p-3 border">Yığılma Derecesi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">İlk 10.000 (Zirve)</td>
+                                        <td className="p-3 border">150 - 350 Kişi</td>
+                                        <td className="p-3 border font-bold text-purple-700">400 - 800 Kişi</td>
+                                        <td className="p-3 border">Düşük (Puanlar Ayrışık)</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">10.000 - 50.000</td>
+                                        <td className="p-3 border">600 - 1.200 Kişi</td>
+                                        <td className="p-3 border font-bold text-purple-700">1.500 - 3.000 Kişi</td>
+                                        <td className="p-3 border">Orta</td>
+                                    </tr>
+                                    <tr className="border-b">
+                                        <td className="p-3 font-medium border">50.000 - 150.000 (Kritik Bölge)</td>
+                                        <td className="p-3 border font-bold text-red-600">2.500 - 5.000 Kişi</td>
+                                        <td className="p-3 border font-bold text-red-600">6.000 - 12.000 Kişi</td>
+                                        <td className="p-3 border font-bold text-red-600">Aşırı Yüksek Yığılma</td>
+                                    </tr>
+                                    <tr className="border-b bg-gray-50">
+                                        <td className="p-3 font-medium border">150.000 - 300.000</td>
+                                        <td className="p-3 border">3.000 - 6.000 Kişi</td>
+                                        <td className="p-3 border font-bold text-purple-700">7.000 - 14.000 Kişi</td>
+                                        <td className="p-3 border">Yüksek</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>
+                            Bu yığılmanın tercih döneminde nasıl riskler oluşturduğunu <Link href="/blog/yks-yigilma-tehlikesi" className="text-blue-600 font-semibold hover:underline">YKS Yığılma Tehlikesi</Link> yazımızda inceledik. Hangi bölüm için toplam kaç nete ihtiyacınız olduğunu öğrenmek için <Link href="/blog/yks-kac-net-kac-puan" className="text-blue-600 font-semibold hover:underline">YKS Net-Puan Tablosu</Link> rehberimizi kullanabilirsiniz.
+                        </p>
+
                         <ArticleFeedback />
                     </div>
                 </div>
