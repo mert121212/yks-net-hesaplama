@@ -108,7 +108,7 @@ export default function YKSYigilmaTehlikesi() {
                         </p>
 
                         <p>
-                            TYT&apos;de 65-75 net, AYT&apos;de 35-45 net yapan yüz binlerce öğrenci aynı daracık puan havuzuna balık istifi dizilir. Bu aralıkta masadaki her 1 net altın değerindedir.
+                            TYT&apos;de 65-75 net, AYT&apos;de 35-45 net yapan yüz binlerce öğrenci aynı daracık puan havuzuna balık istifi dizilir. Bu aralıkta masadaki tek bir ekstra net bile seni 4-5 bin kişi birden öne fırlatır.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
