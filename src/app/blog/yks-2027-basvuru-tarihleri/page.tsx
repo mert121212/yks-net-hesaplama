@@ -3,6 +3,9 @@ import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
+import ArticleFeedback from '@/components/ArticleFeedback'
+import ReadingProgress from '@/components/ReadingProgress'
+import LastUpdatedBadge from '@/components/LastUpdatedBadge'
 
 export const metadata: Metadata = {
     title: 'YKS 2027 Başvuru Tarihleri ve AİS Başvuru Adımları: 1 Yılını Yakma!',
@@ -13,8 +16,8 @@ export const metadata: Metadata = {
         title: 'YKS 2027 Başvuru Tarihleri ve AİS Başvuru Adımları',
         description: 'Her yıl binlerce adayın başvuru yapıp parayı yatırmadığı için sınava giremediğini biliyor musun? Adım adım başvuru kılavuzu.',
         type: 'article',
-        publishedTime: '2026-02-14',
-        modifiedTime: '2026-03-01',
+        publishedTime: '2026-05-12',
+        modifiedTime: '2026-08-22',
         url: 'https://yksnethesapla.com/blog/yks-2027-basvuru-tarihleri',
         images: [
             {
@@ -31,11 +34,12 @@ export default function YKSBasvuruTarihleri() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <ReadingProgress />
                 <BlogArticleSchema 
                     title="YKS 2027 Başvuru Tarihleri ve AİS Başvuru Adımları" 
                     description="2027 YKS (TYT-AYT) başvuru takvimi, ÖSYM AİS üzerinden e-Devlet ile kayıt aşamaları, geç başvuru koşulları ve ödeme süreci."
-                    datePublished="2026-02-14"
-                    dateModified="2026-03-01"
+                    datePublished="2026-05-12"
+                    dateModified="2026-08-22"
                     url="https://yksnethesapla.com/blog/yks-2027-basvuru-tarihleri"
                     keywords={['yks 2027 başvuru tarihleri', 'yks başvuru nasıl yapılır', 'yks ücreti 2027', 'geç başvuru yks', 'yks ne zaman']}
                 />
@@ -51,8 +55,9 @@ export default function YKSBasvuruTarihleri() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Kritik Süreç</span>
-                            <time className="text-gray-600" dateTime="2026-02-14">14 Şubat 2026</time>
+                            <time className="text-gray-600" dateTime="2026-05-12">12 Mayıs 2026</time>
                             <span className="text-gray-600">• 6 dk okuma</span>
+                            <LastUpdatedBadge date="2026-08-22" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             YKS 2027 Başvuru Rehberi: Bir Hata Yüzünden 1 Yılın Çöpe Gitmesin
@@ -132,6 +137,7 @@ export default function YKSBasvuruTarihleri() {
                                 Puan ve Sıralama Hesaplayıcıyı Aç →
                             </Link>
                         </div>
+                        <ArticleFeedback />
                     </div>
                 </div>
             </article>

@@ -4,6 +4,9 @@ import AuthorProfile from '@/components/AuthorProfile'
 import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 import QuickNetSimulator from '@/components/QuickNetSimulator'
+import ArticleFeedback from '@/components/ArticleFeedback'
+import ReadingProgress from '@/components/ReadingProgress'
+import LastUpdatedBadge from '@/components/LastUpdatedBadge'
 
 export const metadata: Metadata = {
     title: 'TYT Matematik Konuları ve Soru Dağılımı 2027: Netlere Göre Çalışma Planı',
@@ -14,8 +17,8 @@ export const metadata: Metadata = {
         title: 'TYT Matematik Konuları ve Soru Dağılımı 2027',
         description: 'ÖSYM ne soruyor, hangi konular banko net getiriyor? Net seviyene göre nokta atışı stratejiler.',
         type: 'article',
-        publishedTime: '2026-02-19',
-        modifiedTime: '2026-03-01',
+        publishedTime: '2026-07-14',
+        modifiedTime: '2026-09-15',
         url: 'https://yksnethesapla.com/blog/tyt-matematik-konulari',
         images: [
             {
@@ -32,11 +35,12 @@ export default function TYTMatematikKonulari() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <ReadingProgress />
                 <BlogArticleSchema 
                     title="TYT Matematik Konuları ve Soru Dağılımı 2027 | Çalışma Rehberi" 
                     description="TYT Matematik testinde hangi konudan kaç soru çıkıyor? Konu analizi, seviyelere göre çalışma planı ve net artırma stratejileri."
-                    datePublished="2026-02-19"
-                    dateModified="2026-03-01"
+                    datePublished="2026-07-14"
+                    dateModified="2026-09-15"
                     url="https://yksnethesapla.com/blog/tyt-matematik-konulari"
                     keywords={['tyt matematik konuları', 'tyt matematik soru dağılımı 2027', 'tyt matematik nasıl çalışılır', 'yks matematik net artırma', 'tyt geometri']}
                 />
@@ -52,8 +56,9 @@ export default function TYTMatematikKonulari() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Rehber</span>
-                            <time className="text-gray-600" dateTime="2026-02-19">19 Şubat 2026</time>
+                            <time className="text-gray-600" dateTime="2026-07-14">14 Temmuz 2026</time>
                             <span className="text-gray-600">• 9 dk okuma</span>
+                            <LastUpdatedBadge date="2026-09-15" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             TYT Matematik Konuları ve Soru Dağılımı: 40 Sorunun Şifresi
@@ -187,6 +192,7 @@ export default function TYTMatematikKonulari() {
                                 Puan Hesaplama Motoruna Git →
                             </Link>
                         </div>
+                        <ArticleFeedback />
                     </div>
                 </div>
             </article>

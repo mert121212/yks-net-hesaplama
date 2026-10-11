@@ -4,6 +4,9 @@ import AuthorProfile from '@/components/AuthorProfile'
 import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 import YigilmaChart from '@/components/YigilmaChart'
+import ArticleFeedback from '@/components/ArticleFeedback'
+import ReadingProgress from '@/components/ReadingProgress'
+import LastUpdatedBadge from '@/components/LastUpdatedBadge'
 
 export const metadata: Metadata = {
     title: 'YKS\'de Yığılma Nedir ve Nasıl Oluşur? 2027 Yığılma Tuzağı Rehberi',
@@ -14,8 +17,8 @@ export const metadata: Metadata = {
         title: 'YKS\'de Yığılma Nedir ve Nasıl Oluşur?',
         description: 'Sınav kolay olduğunda neden sevinmemelisin? Puanların şişip sıralamaların çöktüğü o meşhur yığılma gerçeği.',
         type: 'article',
-        publishedTime: '2026-02-07',
-        modifiedTime: '2026-03-01',
+        publishedTime: '2026-01-30',
+        modifiedTime: '2026-06-15',
         url: 'https://yksnethesapla.com/blog/yks-yigilma-tehlikesi',
         images: [
             {
@@ -32,11 +35,12 @@ export default function YKSYigilmaTehlikesi() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <ReadingProgress />
                 <BlogArticleSchema 
                     title="YKS'de Yığılma Nedir ve Nasıl Oluşur?"
                     description="YKS sınavında yığılma kavramı, sınav zorluğunun sıralamalara etkisi ve orta başarı dilimlerinde puan dağılımı."
-                    datePublished="2026-02-07"
-                    dateModified="2026-03-01"
+                    datePublished="2026-01-30"
+                    dateModified="2026-06-15"
                     url="https://yksnethesapla.com/blog/yks-yigilma-tehlikesi"
                     keywords={['yks yığılma nedir', 'yks sıralama yığılması', 'tyt yığılma', 'ayt yığılma', 'yks puan dağılımı']}
                 />
@@ -52,8 +56,9 @@ export default function YKSYigilmaTehlikesi() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Saha Analizi</span>
-                            <time className="text-gray-600" dateTime="2026-02-07">7 Şubat 2026</time>
+                            <time className="text-gray-600" dateTime="2026-01-30">30 Ocak 2026</time>
                             <span className="text-gray-600">• 8 dk okuma</span>
+                            <LastUpdatedBadge date="2026-06-15" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             YKS&apos;de Yığılma Nedir? Neden Kolay Sınavdan Korkmalısın?
@@ -129,6 +134,7 @@ export default function YKSYigilmaTehlikesi() {
                                 Yığılma Simülatörünü Aç →
                             </Link>
                         </div>
+                        <ArticleFeedback />
                     </div>
                 </div>
             </article>

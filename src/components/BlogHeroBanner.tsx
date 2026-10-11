@@ -8,7 +8,7 @@ interface BlogHeroBannerProps {
 
 export default function BlogHeroBanner({ src, alt, caption }: BlogHeroBannerProps) {
     return (
-        <figure className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-slate-900">
+        <figure className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-gradient-to-br from-slate-100 to-blue-50">
             <img
                 src={src}
                 alt={alt}

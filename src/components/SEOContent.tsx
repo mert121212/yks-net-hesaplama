@@ -309,7 +309,7 @@ export default function SEOContent() {
                             href={`/blog/${guide.id}`}
                             className="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group flex flex-col"
                         >
-                            <div className="relative aspect-video w-full overflow-hidden bg-slate-900">
+                            <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
                                 <img
                                     src={guide.image}
                                     alt={guide.title}

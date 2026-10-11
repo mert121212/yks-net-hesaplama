@@ -3,6 +3,9 @@ import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
+import ArticleFeedback from '@/components/ArticleFeedback'
+import ReadingProgress from '@/components/ReadingProgress'
+import LastUpdatedBadge from '@/components/LastUpdatedBadge'
 
 export const metadata: Metadata = {
     title: 'AYT Puan Hesaplama 2027: SAY, EA ve SÖZ Katsayıları ve Net Değeri',
@@ -13,8 +16,8 @@ export const metadata: Metadata = {
         title: 'AYT Puan Hesaplama 2027: Katsayılar ve Gerçek Ağırlıklar',
         description: 'TYT kötü geçti diye havlu atanlar bu hesabı bilmiyor: AYT puanının %60 ağırlığı nasıl hayat kurtarır?',
         type: 'article',
-        publishedTime: '2026-02-09',
-        modifiedTime: '2026-03-01',
+        publishedTime: '2026-02-27',
+        modifiedTime: '2026-07-10',
         url: 'https://yksnethesapla.com/blog/ayt-puan-hesaplama',
         images: [
             {
@@ -31,11 +34,12 @@ export default function AYTPuanHesaplama() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <ReadingProgress />
                 <BlogArticleSchema 
                     title="AYT Puan Hesaplama 2027 | SAY, EA, SÖZ Katsayıları ve Ağırlıklar" 
                     description="AYT puan hesaplama yöntemi: SAY, EA ve SÖZ puan türlerinde test ağırlıkları, 1 AYT netinin puan değeri ve yerleştirmeye etkisi."
-                    datePublished="2026-02-09"
-                    dateModified="2026-03-01"
+                    datePublished="2026-02-27"
+                    dateModified="2026-07-10"
                     url="https://yksnethesapla.com/blog/ayt-puan-hesaplama"
                     keywords={['ayt puan hesaplama', 'ayt katsayıları', 'say katsayıları', 'ea katsayıları', 'söz katsayıları', 'yks yerleştirme puanı']}
                 />
@@ -51,8 +55,9 @@ export default function AYTPuanHesaplama() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Hesap Masası</span>
-                            <time className="text-gray-600" dateTime="2026-02-09">9 Şubat 2026</time>
+                            <time className="text-gray-600" dateTime="2026-02-27">27 Şubat 2026</time>
                             <span className="text-gray-600">• 7 dk okuma</span>
+                            <LastUpdatedBadge date="2026-07-10" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             AYT Puan Hesaplama: 1 Net Kaç Puan Getirir, Masayı Nasıl Dağıtır?
@@ -154,6 +159,7 @@ export default function AYTPuanHesaplama() {
                                 Hesaplama Motoruna Git →
                             </Link>
                         </div>
+                        <ArticleFeedback />
                     </div>
                 </div>
             </article>

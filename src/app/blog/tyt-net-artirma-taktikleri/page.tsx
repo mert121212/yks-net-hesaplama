@@ -3,6 +3,9 @@ import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
+import ArticleFeedback from '@/components/ArticleFeedback'
+import ReadingProgress from '@/components/ReadingProgress'
+import LastUpdatedBadge from '@/components/LastUpdatedBadge'
 
 export const metadata: Metadata = {
     title: 'TYT Net Artırma Taktikleri: 60-70 Bandından Çıkış Rehberi',
@@ -13,8 +16,8 @@ export const metadata: Metadata = {
         title: 'TYT Net Artırma Taktikleri: 60-70 Bandından Çıkış Rehberi',
         description: 'Haftalardır aynı netlerde sayıklayanlara gerçekçi çıkış planı. Analiz, branş denemesi ve süre yönetimi tüyoları.',
         type: 'article',
-        publishedTime: '2026-02-10',
-        modifiedTime: '2026-03-01',
+        publishedTime: '2026-03-14',
+        modifiedTime: '2026-07-18',
         url: 'https://yksnethesapla.com/blog/tyt-net-artirma-taktikleri',
         images: [
             {
@@ -31,11 +34,12 @@ export default function TYTNetArtirma() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <ReadingProgress />
                 <BlogArticleSchema 
                     title="TYT Net Artırma Taktikleri: 60-70 Bandından Çıkış Rehberi" 
                     description="Denemelerde 60-70 net aralığında sıkışıp kaldın mı? Netlerini 80 üzerine taşıyacak analiz yöntemleri, branş denemesi stratejileri ve turlama taktiği."
-                    datePublished="2026-02-10"
-                    dateModified="2026-03-01"
+                    datePublished="2026-03-14"
+                    dateModified="2026-07-18"
                     url="https://yksnethesapla.com/blog/tyt-net-artirma-taktikleri"
                     keywords={['tyt net artırma', 'tyt deneme analizi', 'tyt 70 net', 'tyt hızlanma', 'tyt tur tekniği']}
                 />
@@ -51,8 +55,9 @@ export default function TYTNetArtirma() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Saha Taktikleri</span>
-                            <time className="text-gray-600" dateTime="2026-02-10">10 Şubat 2026</time>
+                            <time className="text-gray-600" dateTime="2026-03-14">14 Mart 2026</time>
                             <span className="text-gray-600">• 8 dk okuma</span>
+                            <LastUpdatedBadge date="2026-07-18" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             TYT Net Artırma Yolları: 60-70 Bandındaki O Kör Düğümü Çözmek
@@ -147,6 +152,8 @@ export default function TYTNetArtirma() {
                                 Net ve Sıralama Simülatörünü Aç →
                             </Link>
                         </div>
+
+                        <ArticleFeedback />
 
                         <div className="border-t pt-8 mt-10">
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Göz Atman Gereken Diğer Rehberler</h3>

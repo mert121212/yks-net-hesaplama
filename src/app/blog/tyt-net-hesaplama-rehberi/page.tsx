@@ -4,6 +4,9 @@ import AuthorProfile from '@/components/AuthorProfile'
 import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 import QuickNetSimulator from '@/components/QuickNetSimulator'
+import ArticleFeedback from '@/components/ArticleFeedback'
+import ReadingProgress from '@/components/ReadingProgress'
+import LastUpdatedBadge from '@/components/LastUpdatedBadge'
 
 export const metadata: Metadata = {
     title: 'TYT Net Hesaplama Rehberi 2027: Test Katsayıları ve Puan Mantığı',
@@ -14,8 +17,8 @@ export const metadata: Metadata = {
         title: 'TYT Net Hesaplama Rehberi 2027: Test Ağırlıkları ve Katsayılar',
         description: 'Aynı neti yapıp farklı puan almanın sırrı: TYT test ağırlıkları ve 0,5 net kuralının perde arkası.',
         type: 'article',
-        publishedTime: '2026-02-12',
-        modifiedTime: '2026-03-01',
+        publishedTime: '2026-04-10',
+        modifiedTime: '2026-08-08',
         url: 'https://yksnethesapla.com/blog/tyt-net-hesaplama-rehberi',
         images: [
             {
@@ -32,11 +35,12 @@ export default function TYTNetHesaplamaRehberi() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <ReadingProgress />
                 <BlogArticleSchema 
                     title="TYT Net Hesaplama Rehberi 2027 | Test Ağırlıkları ve Katsayılar" 
                     description="TYT net hesabı nasıl yapılır? Türkçe, Matematik, Fen ve Sosyal testlerinin puan ağırlıkları, standart sapma ve 0,5 net kuralı."
-                    datePublished="2026-02-12"
-                    dateModified="2026-03-01"
+                    datePublished="2026-04-10"
+                    dateModified="2026-08-08"
                     url="https://yksnethesapla.com/blog/tyt-net-hesaplama-rehberi"
                     keywords={['tyt net hesaplama', 'tyt katsayıları', 'tyt puan hesaplama 2027', 'tyt matematik katsayısı', 'yks net hesaplama']}
                 />
@@ -52,8 +56,9 @@ export default function TYTNetHesaplamaRehberi() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Rehber</span>
-                            <time className="text-gray-600" dateTime="2026-02-12">12 Şubat 2026</time>
+                            <time className="text-gray-600" dateTime="2026-04-10">10 Nisan 2026</time>
                             <span className="text-gray-600">• 7 dk okuma</span>
+                            <LastUpdatedBadge date="2026-08-08" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             TYT Net Hesaplama: Aynı Neti Yapan İki Arkadaş Neden Farklı Puan Alır?
@@ -148,6 +153,8 @@ export default function TYTNetHesaplamaRehberi() {
                                 Net Hesaplayıcıya Git →
                             </Link>
                         </div>
+
+                        <ArticleFeedback />
 
                         <div className="border-t pt-8 mt-10">
                             <h3 className="text-xl font-bold text-gray-900 mb-4">İlgili Rehberler</h3>

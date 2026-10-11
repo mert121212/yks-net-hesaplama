@@ -3,6 +3,10 @@ import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
+import ArticleFeedback from '@/components/ArticleFeedback'
+import ReadingProgress from '@/components/ReadingProgress'
+import LastUpdatedBadge from '@/components/LastUpdatedBadge'
+import TableOfContents from '@/components/TableOfContents'
 
 export const metadata: Metadata = {
     title: 'Sıfırdan TYT Matematik Nasıl Çalışılır? Temelden 20+ Nete Yol Haritası',
@@ -13,8 +17,8 @@ export const metadata: Metadata = {
         title: 'Sıfırdan TYT Matematik Nasıl Çalışılır: 0 Netten 20 Nete Çıkış',
         description: 'Matematik fobisini kırma rehberi: Konu sırası, işlem pratikleri ve yeni nesil soru çözme mantığı.',
         type: 'article',
-        publishedTime: '2026-09-10',
-        modifiedTime: '2026-09-10',
+        publishedTime: '2026-09-08',
+        modifiedTime: '2026-10-03',
         url: 'https://yksnethesapla.com/blog/sifirdan-tyt-matematik-calisma-rehberi',
         images: [
             {
@@ -31,11 +35,12 @@ export default function SifirdanTytMatematikRehberi() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <ReadingProgress />
                 <BlogArticleSchema 
                     title="Sıfırdan TYT Matematik Nasıl Çalışılır? Temelden 20+ Nete Yol Haritası" 
                     description="Matematik temeli olmayanlar için adım adım TYT çalışma rehberi. İşlem yeteneğinden problemlere, konu sırası, soru çözüm taktikleri ve kaynak seçimi."
-                    datePublished="2026-09-10"
-                    dateModified="2026-09-10"
+                    datePublished="2026-09-08"
+                    dateModified="2026-10-03"
                     url="https://yksnethesapla.com/blog/sifirdan-tyt-matematik-calisma-rehberi"
                     keywords={['sıfırdan matematik nasıl çalışılır', 'tyt matematik sıfırdan', 'matematik çalışma yöntemleri', 'temel matematik nasıl geliştirilir', 'tyt matematik 15 net']}
                 />
@@ -51,8 +56,9 @@ export default function SifirdanTytMatematikRehberi() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">TYT Matematik</span>
-                            <time className="text-gray-600" dateTime="2026-09-10">10 Eylül 2026</time>
+                            <time className="text-gray-600" dateTime="2026-09-08">8 Eylül 2026</time>
                             <span className="text-gray-600">• 12 dk okuma</span>
+                            <LastUpdatedBadge date="2026-10-03" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             Sıfırdan TYT Matematik: 0 Netten 20 Nete Çıkma Rehberi
@@ -69,6 +75,14 @@ export default function SifirdanTytMatematikRehberi() {
                         alt="Sıfırdan TYT Matematik: 0 Netten 20 Nete Çıkma Rehberi"
                     />
 
+                    <TableOfContents items={[
+                        { id: 'yaygin-hatalar', title: 'Sıfırdan Başlayanların Yaptığı 3 Hata' },
+                        { id: 'konu-sirasi', title: 'Doğru Konu Sırası ve Hedef Netler' },
+                        { id: '3-dakika-kurali', title: '3 Dakika Kuralı' },
+                        { id: 'problem-yontemi', title: 'Problem Çalışma Yöntemi ve Günlük Rutin' },
+                        { id: 'haftalik-program', title: 'Haftalık Çalışma Programı Örneği' },
+                    ]} />
+
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
                             Geçen sene bir öğrencim vardı, deneme sonucu TYT Matematik: 2 doğru, 14 yanlış. &quot;Ben matematik yapamam artık&quot; diyordu. Haziran&apos;da sınava girdi, 19 net yaptı.
@@ -82,7 +96,7 @@ export default function SifirdanTytMatematikRehberi() {
                             <strong>Yaygın hata:</strong> Arkadaşın ileri seviye soru bankası veriyor, açıyorsun, ilk testte 3 soruyu bile yapamıyorsun. Kitabı kapatıyorsun. Sorun sende değil — o kitap senin seviyene uygun değil.
                         </div>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="yaygin-hatalar" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             Sıfırdan Başlayanların Yaptığı 3 Hata
                         </h2>
 
@@ -110,7 +124,7 @@ export default function SifirdanTytMatematikRehberi() {
                             Temeli sıfır olan biri 80 soru çözmeye kalkarsa 3 gün dayanır, 4. gün bırakır. Başlangıçta <strong>15 soru yeter</strong> — ama o 15 soruyu anlayarak çöz, neden yanlış yaptığını analiz et. Göz ucuyla geçiştirilmiş 70 soru, dikkatlice çözülmüş 15 sorunun yanında bir şey ifade etmez.
                         </p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="konu-sirasi" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             Konu Sırası
                         </h2>
 
@@ -161,7 +175,7 @@ export default function SifirdanTytMatematikRehberi() {
                             Konuların yıllara göre dağılımı için <Link href="/blog/tyt-matematik-konulari" className="text-blue-600 font-semibold hover:underline">TYT Matematik Konuları</Link> sayfasına bakabilirsin.
                         </p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="3-dakika-kurali" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             3 Dakika Kuralı
                         </h2>
 
@@ -179,7 +193,7 @@ export default function SifirdanTytMatematikRehberi() {
                             3 dakika sonunda tıkandıysan çözümü izle. Ama izlerken &quot;hoca sorunun hangi cümlesinden bu adımı çıkardı, ben neyi göremedim?&quot; diye düşün. Sonra videoyu kapat, aynı soruyu sıfırdan kendin çöz. Kendin çözemediğin soru öğrenilmiş sayılmaz.
                         </p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="problem-yontemi" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             Problem Çalışma Yöntemi
                         </h2>
 
@@ -218,7 +232,7 @@ export default function SifirdanTytMatematikRehberi() {
                             </Link>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="haftalik-program" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             Haftalık Program Örneği
                         </h2>
 
@@ -251,6 +265,7 @@ export default function SifirdanTytMatematikRehberi() {
                             <Link href="/blog" className="text-blue-600 hover:underline font-medium">← Blog Listesine Dön</Link>
                             <Link href="/blog/yks-son-3-ay-calisma-plani" className="text-blue-600 hover:underline font-medium">YKS Son 3 Ay Planı →</Link>
                         </div>
+                        <ArticleFeedback />
                     </div>
                 </div>
             </article>

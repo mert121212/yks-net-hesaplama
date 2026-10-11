@@ -3,6 +3,9 @@ import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
+import ArticleFeedback from '@/components/ArticleFeedback'
+import ReadingProgress from '@/components/ReadingProgress'
+import LastUpdatedBadge from '@/components/LastUpdatedBadge'
 
 export const metadata: Metadata = {
     title: 'Üniversite Tercih Stratejileri 2027: 24 Tercih Listesi Nasıl Yapılır?',
@@ -13,8 +16,8 @@ export const metadata: Metadata = {
         title: 'Üniversite Tercih Stratejileri: 24 Tercih Listesi Rehberi',
         description: 'Derece yapıp açıkta kalmamak için: Tercih dönemi taktikleri, YÖK Atlas okuma ve sıralama aralıkları.',
         type: 'article',
-        publishedTime: '2026-02-08',
-        modifiedTime: '2026-03-01',
+        publishedTime: '2026-02-14',
+        modifiedTime: '2026-06-28',
         url: 'https://yksnethesapla.com/blog/universite-tercih-stratejileri',
         images: [
             {
@@ -31,11 +34,12 @@ export default function UniversiteTercihStratejileri() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <ReadingProgress />
                 <BlogArticleSchema 
                     title="Üniversite Tercih Stratejileri 2027 | Tercih Listesi Hazırlama Rehberi" 
                     description="YKS tercih listesi nasıl hazırlanır? Sıralama aralıkları, ölü tercih kavramı, 24 tercih hakkının dağılımı ve kırık OBP uyarısı."
-                    datePublished="2026-02-08"
-                    dateModified="2026-03-01"
+                    datePublished="2026-02-14"
+                    dateModified="2026-06-28"
                     url="https://yksnethesapla.com/blog/universite-tercih-stratejileri"
                     keywords={['üniversite tercihleri', 'yks tercih nasıl yapılır', 'ölü tercih nedir', 'tercih listesi hazırlama', 'yök atlas tercih']}
                 />
@@ -51,8 +55,9 @@ export default function UniversiteTercihStratejileri() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm font-medium">Tercih Masası</span>
-                            <time className="text-gray-600" dateTime="2026-02-08">8 Şubat 2026</time>
+                            <time className="text-gray-600" dateTime="2026-02-14">14 Şubat 2026</time>
                             <span className="text-gray-600">• 8 dk okuma</span>
+                            <LastUpdatedBadge date="2026-06-28" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             Üniversite Tercih Stratejileri: 24 Tercihi Heba Etmeme Rehberi
@@ -153,6 +158,7 @@ export default function UniversiteTercihStratejileri() {
                                 Net ve Sıralama Hesapla →
                             </Link>
                         </div>
+                        <ArticleFeedback />
                     </div>
                 </div>
             </article>

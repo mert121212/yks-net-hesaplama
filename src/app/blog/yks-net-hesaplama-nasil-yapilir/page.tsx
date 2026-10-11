@@ -3,6 +3,9 @@ import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
+import ArticleFeedback from '@/components/ArticleFeedback'
+import ReadingProgress from '@/components/ReadingProgress'
+import LastUpdatedBadge from '@/components/LastUpdatedBadge'
 
 export const metadata: Metadata = {
     title: 'YKS Net Hesaplama Nasıl Yapılır? 4 Yanlış 1 Doğruyu Nasıl Götürür?',
@@ -13,8 +16,8 @@ export const metadata: Metadata = {
         title: 'YKS Net Hesaplama Nasıl Yapılır? 4 Yanlış 1 Doğruyu Nasıl Götürür?',
         description: 'ÖSYM net hesaplama formülü, eksi net durumu ve test katsayılarının puana yansıması.',
         type: 'article',
-        publishedTime: '2026-02-15',
-        modifiedTime: '2026-03-01',
+        publishedTime: '2026-05-28',
+        modifiedTime: '2026-08-30',
         url: 'https://yksnethesapla.com/blog/yks-net-hesaplama-nasil-yapilir',
         images: [
             {
@@ -31,11 +34,12 @@ export default function YKSNetHesaplama() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <ReadingProgress />
                 <BlogArticleSchema 
                     title="YKS Net Hesaplama Nasıl Yapılır? 4 Yanlış 1 Doğru Kuralı" 
                     description="YKS net hesaplama formülü, 4 yanlışın bir doğruyu götürmesi mantığı, test bazlı net dağılımı ve standart sapmanın puana etkisi."
-                    datePublished="2026-02-15"
-                    dateModified="2026-03-01"
+                    datePublished="2026-05-28"
+                    dateModified="2026-08-30"
                     url="https://yksnethesapla.com/blog/yks-net-hesaplama-nasil-yapilir"
                     keywords={['yks net hesaplama', 'tyt net hesaplama', '4 yanlış 1 doğruyu götürür mü', 'standart sapma yks', 'yks katsayılar 2027']}
                 />
@@ -51,8 +55,9 @@ export default function YKSNetHesaplama() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Rehber</span>
-                            <time className="text-gray-600" dateTime="2026-02-15">15 Şubat 2026</time>
+                            <time className="text-gray-600" dateTime="2026-05-28">28 Mayıs 2026</time>
                             <span className="text-gray-600">• 6 dk okuma</span>
+                            <LastUpdatedBadge date="2026-08-30" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             YKS Net Hesaplama: 4 Yanlış Kuralı, Eksi Netler ve Şehir Efsaneleri
@@ -179,6 +184,7 @@ export default function YKSNetHesaplama() {
                                 Puan ve Sıralama Hesaplayıcıyı Aç →
                             </Link>
                         </div>
+                        <ArticleFeedback />
                     </div>
                 </div>
             </article>

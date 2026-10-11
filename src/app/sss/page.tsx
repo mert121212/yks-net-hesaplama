@@ -14,34 +14,98 @@ const sssFaqSchema = {
     "mainEntity": [
         {
             "@type": "Question",
-            "name": "TYT'de baraj puanı kalktı mı?",
+            "name": "4 yanlış 1 doğruyu nasıl götürüyor?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Evet. 150 veya 180 puanlık baraj artık yok. Ancak puanınızın hesaplanması için Türkçe veya Temel Matematik testinden en az 0,5 net çıkarmanız şart."
+                "text": "Her yanlış 0,25 net düşürür. 30 doğru, 8 yanlış yaptıysan: 8 ÷ 4 = 2, yani 2 netin gider, 28 net kalır. Boş bıraktığın sorular neti etkilemez. Emin değilsen boş bırakmak daha mantıklı."
             }
         },
         {
             "@type": "Question",
-            "name": "0,5 net kuralını sağlayamazsam ne olur?",
+            "name": "Net eksiye düşer mi?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Türkçe ve Matematik testlerinin ikisinde de 0 veya eksi net yaparsanız, Fen veya Sosyal'de ne yapmış olursanız olun TYT puanınız hiç hesaplanmaz."
+                "text": "Düşebilir. 2 doğru 16 yanlışta: 2 - 4 = -2 net olur. Ama ÖSYM puanlama yaparken negatif olan dersleri sıfır kabul eder, diğer derslerini etkilemez."
             }
         },
         {
             "@type": "Question",
-            "name": "OBP kırılması kimleri kapsar?",
+            "name": "Zor soru daha çok puan kazandırır mı?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Geçen yıl merkezi yerleştirmeyle bir üniversite programına yerleştiyseniz katsayınız 0,12'den 0,06'ya düşer. Tercih yapıp kazanamayanların puanı kırılmaz."
+                "text": "Hayır. ÖSYM soruyu tek tek puanlamaz. Aynı testteki ilk soru ile son soru eşit puan getirir. Puanı etkileyen şey o testin Türkiye geneli net ortalaması ve standart sapması."
             }
         },
         {
             "@type": "Question",
-            "name": "Zor soru çözmek daha çok puan getirir mi?",
+            "name": "Diploma notu (OBP) sıralamayı çok etkiler mi?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Hayır. ÖSYM test bazlı standart sapma uygular. Matematik testindeki en zor soru ile en kolay soru aynı ham puana sahiptir."
+                "text": "Ciddi etkiler. Okul notu × 5 = OBP. 0,12 katsayısıyla puanına eklenir. Notu 100 olan +60 puan alırken 70 olan +42 puan alır. 18 puanlık fark yığılma bölgesinde 15-30 bin sıra demek olabilir."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Baraj kalktıysa herkes tercih yapabiliyor mu?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Puanı hesaplanan herkes tercih yapabilir evet. Ama Tıp için SAY ilk 50 bin, Hukuk için EA ilk 125 bin, Mühendislik için SAY ilk 300 bin gibi başarı sırası barajları var. Puanın yetse bile sıralaman yetmezse o bölümü yazamazsın."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "0,5 net kuralı ne?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "TYT puanı çıkması için Türkçe ya da Matematik testinin en az birinden 0,5 ham net gerekiyor. İkisi de 0 veya eksi ise Fen ve Sosyal'den full yapsan da puan hesaplanmaz."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Kırık OBP kimleri etkiler?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Geçen yıl bir programa yerleştiysen (açıköğretim dahil) — ister git ister gitme — OBP katsayın 0,12 yerine 0,06 olur. Tercih yapıp hiçbir yere yerleşemediysen veya hiç tercih yapmadıysan kırılma olmaz."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Sıralama tahminine ne kadar güvenebilirim?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Birebir tutturan bir algoritma yok çünkü o yılın sınav katılımı, soru zorluğu ve genel ortalama ancak sonradan belli oluyor. Biz son yılların ÖSYM verilerinden yola çıkarak tahmin bandı sunuyoruz. Kesin sonuç için ÖSYM sonuç belgesini bekle."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "AYT'de hangi testleri çözmeliyim?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Kitapçıkta 160 soru var ama senin hedefin kendi alanındaki 80 soru. Sayısalcıysan Mat (40) + Fen (40), EA'cıysan Mat (40) + Edebiyat-Sos-1 (40), Sözelciysen Edebiyat-Sos-1 (40) + Sosyal-2 (40)."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Son 2-3 ayda konu çalışmayı bırakmalı mıyım?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sıfırdan kalın kitaplarla konu çalışmak yerine branş denemelerine ve çıkmış sorulara ağırlık ver. Denemede yanlış yaptığın soruların analiziyle eksik kapatmak daha hızlı net artırır."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Girdiğim bilgiler kaydediliyor mu?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hayır. Hesaplama tamamen tarayıcında çalışır, sunucuya veri gönderilmez. Sayfayı yenilediğinde veya kapattığında girdiğin her şey silinir."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Site ücretli mi olacak?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hayır. Üyelik, e-posta kaydı veya ücret yok. Aç, netlerini gir, sonucunu gör. Böyle kalacak."
             }
         }
     ]

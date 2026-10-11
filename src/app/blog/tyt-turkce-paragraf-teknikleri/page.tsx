@@ -3,6 +3,10 @@ import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
+import ArticleFeedback from '@/components/ArticleFeedback'
+import ReadingProgress from '@/components/ReadingProgress'
+import LastUpdatedBadge from '@/components/LastUpdatedBadge'
+import TableOfContents from '@/components/TableOfContents'
 
 export const metadata: Metadata = {
     title: 'TYT Türkçe Paragraf Çözme Teknikleri 2027 | 20+ Paragraf Sorusunda Full Yapma Rehberi',
@@ -13,8 +17,8 @@ export const metadata: Metadata = {
         title: 'TYT Türkçe Paragraf Çözme Teknikleri: 20+ Soruyu Doğru Yapmanın Yolu',
         description: 'Paragraf sorularında süre yönetimi, eleme tekniği ve seçenek odaklı okuma stratejisi.',
         type: 'article',
-        publishedTime: '2026-09-10',
-        modifiedTime: '2026-09-10',
+        publishedTime: '2026-10-05',
+        modifiedTime: '2026-10-11',
         url: 'https://yksnethesapla.com/blog/tyt-turkce-paragraf-teknikleri',
         images: [
             {
@@ -31,11 +35,12 @@ export default function TYTParagrafTeknikleri() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <ReadingProgress />
                 <BlogArticleSchema 
                     title="TYT Türkçe Paragraf Çözme Teknikleri 2027" 
                     description="TYT Türkçe paragraf soruları nasıl çözülür? Ana fikir, yardımcı düşünce, başlık ve paragraf tamamlama sorularında 5 somut teknik ve süre yönetimi."
-                    datePublished="2026-09-10"
-                    dateModified="2026-09-10"
+                    datePublished="2026-10-05"
+                    dateModified="2026-10-11"
                     url="https://yksnethesapla.com/blog/tyt-turkce-paragraf-teknikleri"
                     keywords={['tyt türkçe paragraf çözme teknikleri', 'paragraf soruları nasıl çözülür', 'tyt türkçe 35 net', 'ana fikir soruları', 'paragraf tamamlama']}
                 />
@@ -51,8 +56,9 @@ export default function TYTParagrafTeknikleri() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium">TYT Türkçe</span>
-                            <time className="text-gray-600" dateTime="2026-09-10">10 Eylül 2026</time>
+                            <time className="text-gray-600" dateTime="2026-10-05">5 Ekim 2026</time>
                             <span className="text-gray-600">• 12 dk okuma</span>
+                            <LastUpdatedBadge date="2026-10-11" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             TYT Türkçe Paragraf Çözme Teknikleri
@@ -68,6 +74,17 @@ export default function TYTParagrafTeknikleri() {
                         src="/images/blog/tyt-turkce-paragraf-teknikleri.jpg"
                         alt="TYT Türkçe Paragraf Çözme Teknikleri"
                     />
+
+                    <TableOfContents items={[
+                        { id: 'soru-dagilimi', title: 'Paragraf Soru Dağılımı (Son 5 Yıl)' },
+                        { id: 'teknik-1', title: 'Teknik 1: İlk Cümle - Son Cümle Okuması' },
+                        { id: 'teknik-2', title: 'Teknik 2: Seçenek Odaklı Okuma' },
+                        { id: 'teknik-3', title: 'Teknik 3: Hızlı Eleme' },
+                        { id: 'teknik-4', title: 'Teknik 4: Paragraf Tamamlamada Akış Yönü' },
+                        { id: 'teknik-5', title: 'Teknik 5: Süre Yönetimi ve Katmanlar' },
+                        { id: 'kontrol-listesi', title: 'Yanlış Yapıyorsan Kontrol Listesi' },
+                        { id: 'gunluk-antrenman', title: 'Günlük Paragraf Antrenmanı' },
+                    ]} />
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
 
@@ -91,7 +108,7 @@ export default function TYTParagrafTeknikleri() {
                             </p>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="soru-dagilimi" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             Paragraf Soru Dağılımı (Son 5 Yıl)
                         </h2>
 
@@ -146,7 +163,7 @@ export default function TYTParagrafTeknikleri() {
                             </table>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="teknik-1" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             Teknik 1: İlk Cümle - Son Cümle Okuması
                         </h2>
                         <p>
@@ -156,7 +173,7 @@ export default function TYTParagrafTeknikleri() {
                             Paragrafı okumaya başlamadan ilk ve son cümleyi dikkatli oku, ikisi arasındaki mantık bağını kur. &quot;Ana fikir&quot; ve &quot;başlık bulma&quot; sorularının cevabı çoğu zaman bu iki cümlenin kesişiminde. Ortadaki kısım sadece doğrulama aracı olarak devreye girer. Bu teknik soru başına 30-40 saniye kazandırır.
                         </p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="teknik-2" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             Teknik 2: Seçenek Odaklı Okuma
                         </h2>
                         <p>
@@ -166,7 +183,7 @@ export default function TYTParagrafTeknikleri() {
                             Paragrafı bir kez oku, sonra <strong>seçenekleri tek tek paragrafla karşılaştır</strong>. &quot;Bu paragrafta gerçekten söyleniyor mu?&quot; diye kontrol et. &quot;Hangisi çıkarılamaz?&quot; tipi sorularda çok işe yarar.
                         </p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="teknik-3" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             Teknik 3: Hızlı Eleme
                         </h2>
                         <p>
@@ -180,7 +197,7 @@ export default function TYTParagrafTeknikleri() {
                             Kalan 3 şıktan 1&apos;i detay, 1&apos;i ana fikir, 1&apos;i de yakın ama farklı. İlk-son cümle kontrolüyle doğru cevabı bulursun.
                         </p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="teknik-4" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             Teknik 4: Paragraf Tamamlamada Akış Yönü
                         </h2>
                         <p>
@@ -190,7 +207,7 @@ export default function TYTParagrafTeknikleri() {
                             Bağlacı bul → yönü belirle → yönü ters olan 2-3 şıkkı ele.
                         </p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="teknik-5" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             Teknik 5: Süre Yönetimi
                         </h2>
                         <p>
@@ -212,7 +229,7 @@ export default function TYTParagrafTeknikleri() {
                             </div>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="kontrol-listesi" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             Yanlış Yapıyorsan Kontrol Listesi
                         </h2>
                         <p>
@@ -233,7 +250,7 @@ export default function TYTParagrafTeknikleri() {
                             </li>
                         </ol>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="gunluk-antrenman" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             Günlük Paragraf Antrenmanı
                         </h2>
                         <p>
@@ -284,6 +301,8 @@ export default function TYTParagrafTeknikleri() {
                                 TYT Puanını Hesapla →
                             </Link>
                         </div>
+
+                        <ArticleFeedback />
 
                         <div className="border-t pt-8 mt-10">
                             <h3 className="text-xl font-bold text-gray-900 mb-4">İlgili Yazılar</h3>

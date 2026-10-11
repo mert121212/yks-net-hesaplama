@@ -3,6 +3,9 @@ import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
+import ArticleFeedback from '@/components/ArticleFeedback'
+import ReadingProgress from '@/components/ReadingProgress'
+import LastUpdatedBadge from '@/components/LastUpdatedBadge'
 
 export const metadata: Metadata = {
     title: 'YKS Puan Türleri (SAY, EA, SÖZ, DİL) ve Bölümleri 2027: Baraj Tehlikesi',
@@ -13,8 +16,8 @@ export const metadata: Metadata = {
         title: 'YKS Puan Türleri: Hangi Test Hangi Bölümü Etkiler?',
         description: 'SAY, EA, SÖZ ve DİL puan türleri, test ağırlıkları ve resmi sıralama barajları.',
         type: 'article',
-        publishedTime: '2026-02-06',
-        modifiedTime: '2026-03-01',
+        publishedTime: '2026-01-15',
+        modifiedTime: '2026-06-05',
         url: 'https://yksnethesapla.com/blog/yks-puan-turleri',
         images: [
             {
@@ -31,11 +34,12 @@ export default function YKSPuanTurleri() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <ReadingProgress />
                 <BlogArticleSchema 
                     title="YKS Puan Türleri (SAY, EA, SÖZ, DİL) ve Bölümleri 2027" 
                     description="SAY, EA, SÖZ ve DİL puan türlerinde testlerin ağırlıkları, TYT'nin %40 katkısı, puan türlerine göre bölümler ve başarı sırası barajları."
-                    datePublished="2026-02-06"
-                    dateModified="2026-03-01"
+                    datePublished="2026-01-15"
+                    dateModified="2026-06-05"
                     url="https://yksnethesapla.com/blog/yks-puan-turleri"
                     keywords={['yks puan türleri', 'say bölümleri', 'ea bölümleri', 'söz bölümleri', 'tyt ile alan bölümler', 'ayt puan türleri', 'yks barajları']}
                 />
@@ -51,8 +55,9 @@ export default function YKSPuanTurleri() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium">Rehber</span>
-                            <time className="text-gray-600" dateTime="2026-02-06">6 Şubat 2026</time>
+                            <time className="text-gray-600" dateTime="2026-01-15">15 Ocak 2026</time>
                             <span className="text-gray-600">• 8 dk okuma</span>
+                            <LastUpdatedBadge date="2026-06-05" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             YKS Puan Türleri: Hangi Test Seni Hangi Mesleğe Götürür?
@@ -189,6 +194,7 @@ export default function YKSPuanTurleri() {
                                 Puan ve Baraj Simülatörünü Aç →
                             </Link>
                         </div>
+                        <ArticleFeedback />
                     </div>
                 </div>
             </article>

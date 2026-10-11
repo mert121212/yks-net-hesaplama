@@ -3,6 +3,9 @@ import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
+import ArticleFeedback from '@/components/ArticleFeedback'
+import ReadingProgress from '@/components/ReadingProgress'
+import LastUpdatedBadge from '@/components/LastUpdatedBadge'
 
 export const metadata: Metadata = {
     title: 'AYT Matematik Konuları ve Soru Dağılımı 2027: LTİ ve Trigonometriyi Fethetme Rehberi',
@@ -13,8 +16,8 @@ export const metadata: Metadata = {
         title: 'AYT Matematik Konuları ve Soru Dağılımı 2027',
         description: 'AYT Matematik şakaya gelmez; sıralamanın kralını belirler. Konu zinciri ve net kurtarma rehberi.',
         type: 'article',
-        publishedTime: '2026-02-18',
-        modifiedTime: '2026-03-01',
+        publishedTime: '2026-06-30',
+        modifiedTime: '2026-09-10',
         url: 'https://yksnethesapla.com/blog/ayt-matematik-konulari',
         images: [
             {
@@ -31,11 +34,12 @@ export default function AYTMatematikKonulari() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <ReadingProgress />
                 <BlogArticleSchema 
                     title="AYT Matematik Konuları ve Soru Dağılımı 2027 | Çalışma Planı" 
                     description="AYT Matematik konuları, LTİ (Limit, Türev, İntegral) ve Trigonometri soru dağılımı, SAY ve EA puanına etkisi ve çalışma sırası."
-                    datePublished="2026-02-18"
-                    dateModified="2026-03-01"
+                    datePublished="2026-06-30"
+                    dateModified="2026-09-10"
                     url="https://yksnethesapla.com/blog/ayt-matematik-konulari"
                     keywords={['ayt matematik konuları', 'ayt matematik soru dağılımı', 'lti nasıl çalışılır', 'trigonometri', 'ayt matematik 2027']}
                 />
@@ -51,8 +55,9 @@ export default function AYTMatematikKonulari() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">AYT Masası</span>
-                            <time className="text-gray-600" dateTime="2026-02-18">18 Şubat 2026</time>
+                            <time className="text-gray-600" dateTime="2026-06-30">30 Haziran 2026</time>
                             <span className="text-gray-600">• 9 dk okuma</span>
+                            <LastUpdatedBadge date="2026-09-10" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             AYT Matematik Konuları ve Soru Dağılımı: Sıralamanın Kaderini Çizen 40 Soru
@@ -145,6 +150,7 @@ export default function AYTMatematikKonulari() {
                                 AYT Sıralama Hesaplayıcıyı Aç →
                             </Link>
                         </div>
+                        <ArticleFeedback />
                     </div>
                 </div>
             </article>

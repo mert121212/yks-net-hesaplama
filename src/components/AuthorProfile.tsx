@@ -5,13 +5,8 @@ export default function AuthorProfile() {
         <div className="bg-gradient-to-br from-white to-blue-50/50 border border-blue-100 rounded-3xl p-6 sm:p-7 shadow-sm mb-10 mt-8 flex flex-col md:flex-row items-center md:items-start gap-6">
             {/* Profesyonel Avatar & Rozet */}
             <div className="flex-shrink-0 relative">
-                <div className="w-20 h-20 bg-gradient-to-tr from-blue-600 via-indigo-600 to-sky-400 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-500/20 ring-4 ring-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
-                        <path d="M6 6h10" />
-                        <path d="M6 10h10" />
-                        <path d="M9 18l3-3 3 3" />
-                    </svg>
+                <div className="w-20 h-20 bg-gradient-to-tr from-blue-600 via-indigo-600 to-sky-400 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-500/20 ring-4 ring-white overflow-hidden">
+                    <span className="text-3xl font-black tracking-tight">MÇ</span>
                 </div>
                 <div className="absolute -bottom-1 -right-1 w-7 h-7 bg-emerald-500 rounded-full border-2 border-white flex items-center justify-center text-white shadow" title="Doğrulanmış Yazar">
                     <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" viewBox="0 0 20 20" fill="currentColor">
@@ -28,7 +23,7 @@ export default function AuthorProfile() {
                             Mert Çalışkan
                         </h3>
                         <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-100 text-blue-800">
-                            Eğitim Veri Analisti
+                            Eğitim İçerik Editörü & Veri Analisti
                         </span>
                     </div>
 
@@ -45,15 +40,35 @@ export default function AuthorProfile() {
                             <span>GitHub</span>
                         </a>
                         <span>•</span>
+                        <Link href="/hakkimizda" className="hover:text-blue-600 transition-colors">
+                            Hakkında
+                        </Link>
+                        <span>•</span>
                         <Link href="/iletisim" className="hover:text-blue-600 transition-colors">
-                            Doğrudan İletişim
+                            İletişim
                         </Link>
                     </div>
                 </div>
 
                 <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                    ÖSYM yerleştirme verilerini, standart sapmaları ve yığılma tablolarını inceliyorum. Buradaki hesaplama araçlarını ve rehberleri bu verilere dayanarak hazırlıyorum.
+                    ÖSYM yerleştirme verilerini, standart sapma tablolarını ve yığılma dağılımlarını inceleyerek hesaplama araçlarımızın doğruluğunu kontrol ediyorum. 2025 ve 2026 YKS sonuçlarını referans alarak blog içeriklerini ve katsayı tablolarını düzenli olarak güncelliyorum.
                 </p>
+
+                {/* Sosyal Kanıt Metrikleri */}
+                <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-3">
+                    <div className="flex items-center gap-1.5 text-xs text-gray-600 bg-white border border-gray-200 rounded-lg px-2.5 py-1 shadow-2xs">
+                        <span className="text-blue-500 font-bold">19+</span>
+                        <span>Rehber Yazısı</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 text-xs text-gray-600 bg-white border border-gray-200 rounded-lg px-2.5 py-1 shadow-2xs">
+                        <span className="text-emerald-500 font-bold">570+</span>
+                        <span>Program Verisi</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 text-xs text-gray-600 bg-white border border-gray-200 rounded-lg px-2.5 py-1 shadow-2xs">
+                        <span className="text-purple-500 font-bold">2027</span>
+                        <span>Güncel Kılavuz</span>
+                    </div>
+                </div>
 
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 text-xs">
                     <span className="px-2.5 py-1 bg-white border border-gray-200 text-gray-700 rounded-lg shadow-2xs font-medium">

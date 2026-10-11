@@ -3,6 +3,10 @@ import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
+import ArticleFeedback from '@/components/ArticleFeedback'
+import ReadingProgress from '@/components/ReadingProgress'
+import LastUpdatedBadge from '@/components/LastUpdatedBadge'
+import TableOfContents from '@/components/TableOfContents'
 
 export const metadata: Metadata = {
     title: 'YKS Son 3 Ay Çalışma Programı: Netleri Zirveye Taşıma Rehberi 2027',
@@ -13,8 +17,8 @@ export const metadata: Metadata = {
         title: 'YKS Son 3 Ay Çalışma Programı: Netleri Zirveye Taşıma Stratejisi',
         description: 'Sınava 3 ay kala konu çalışma bırakılıp deneme sistemine nasıl geçilir? Haftalık görev planı ve son 90 gün yol haritası.',
         type: 'article',
-        publishedTime: '2026-09-10',
-        modifiedTime: '2026-09-10',
+        publishedTime: '2026-09-22',
+        modifiedTime: '2026-10-08',
         url: 'https://yksnethesapla.com/blog/yks-son-3-ay-calisma-plani',
         images: [
             {
@@ -31,11 +35,12 @@ export default function YksSon3AyCalismaPlani() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <ReadingProgress />
                 <BlogArticleSchema 
                     title="YKS Son 3 Ay Çalışma Programı: Netleri Zirveye Taşıma Rehberi 2027" 
                     description="YKS'ye 3 ay kala net artar mı? Mart-Haziran arası haftalık çalışma programı, TYT-AYT deneme sıklığı, branş tekrarları ve çıkmış soru stratejisi."
-                    datePublished="2026-09-10"
-                    dateModified="2026-09-10"
+                    datePublished="2026-09-22"
+                    dateModified="2026-10-08"
                     url="https://yksnethesapla.com/blog/yks-son-3-ay-calisma-plani"
                     keywords={['yks son 3 ay çalışma programı', 'yks son 100 gün', 'sınava 3 ay kala program', 'yks son 3 ay net artar mı', 'ayt son 3 ay yetişir mi']}
                 />
@@ -51,8 +56,9 @@ export default function YksSon3AyCalismaPlani() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-sm font-medium">Strateji & Plan</span>
-                            <time className="text-gray-600" dateTime="2026-09-10">10 Eylül 2026</time>
+                            <time className="text-gray-600" dateTime="2026-09-22">22 Eylül 2026</time>
                             <span className="text-gray-600">• 11 dk okuma</span>
+                            <LastUpdatedBadge date="2026-10-08" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             YKS Son 3 Ay Çalışma Programı
@@ -69,6 +75,15 @@ export default function YksSon3AyCalismaPlani() {
                         alt="YKS Son 3 Ay Çalışma Programı"
                     />
 
+                    <TableOfContents items={[
+                        { id: 'neden-hizlanir', title: 'Son 3 Ayda Neden Net Artışı Hızlanır?' },
+                        { id: '90-gunluk-plan', title: '90 Günlük Dönemsel Plan Tablosu' },
+                        { id: '1-ay-plan', title: '1. Ay: AYT Zayıf Konular (90-60 Gün Kala)' },
+                        { id: '2-ay-plan', title: '2. Ay: MEB Kitapları ve Çıkmış Sorular' },
+                        { id: '3-ay-plan', title: '3. Ay: Ritim, Saat 10:15 ve Psikoloji' },
+                        { id: 'deneme-analizi', title: 'Deneme Sonrası Analiz ve Hata Defteri' },
+                    ]} />
+
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
                             Son 3 aya girince çoğu kişi panikler. &quot;Yetişmez artık&quot; denir, bazıları direkt mezuna kalmaya karar verir. Ben bunu her sene görüyorum.
@@ -82,7 +97,7 @@ export default function YksSon3AyCalismaPlani() {
                             <strong>Dikkat:</strong> Son 3 ayda 500 sayfalık konu kitabı açıp baştan okumaya çalışmayın. O dönem geçti. Şimdi denemede patladığın konuyu tespit edip ona odaklanma dönemi.
                         </div>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="neden-hizlanir" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             Son 3 Ayda Neden Net Artışı Hızlanır?
                         </h2>
 
@@ -96,7 +111,7 @@ export default function YksSon3AyCalismaPlani() {
                             <li><strong>Mayıs&apos;ta okuduğun kalıcı:</strong> Eylül&apos;de ezberlediğin Divan şairlerini muhtemelen unutmuşsundur. Ama sınava 3 hafta kala tekrar ettiğin bilgi sınav sabahı hâlâ taze.</li>
                         </ul>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="90-gunluk-plan" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             90 Günlük Plan
                         </h2>
 
@@ -133,7 +148,7 @@ export default function YksSon3AyCalismaPlani() {
                             </table>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="1-ay-plan" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             1. Ay: AYT&apos;deki Zayıf Konular (90-60 Gün Kala)
                         </h2>
 
@@ -156,7 +171,7 @@ export default function YksSon3AyCalismaPlani() {
                             İlk 4 haftanı bu konulara ayır. Her biri için video izle, 150-200 soru çöz, kapat geç.
                         </p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="2-ay-plan" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             2. Ay: MEB Kitapları ve Çıkmış Sorular (60-30 Gün Kala)
                         </h2>
 
@@ -172,7 +187,7 @@ export default function YksSon3AyCalismaPlani() {
                             <strong>Çıkmış sorular için:</strong> 2019-2026 arası tüm YKS sorularını kitapçık formatında çöz. Gerçek süre tut. Yanlış yaptığın sorunun yanına &quot;formülü mü unuttum, soruyu mu yanlış okudum, şıkka mı atladım&quot; diye not düş.
                         </div>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="3-ay-plan" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             3. Ay: Ritim ve Psikoloji (Son 30 Gün)
                         </h2>
 
@@ -188,7 +203,7 @@ export default function YksSon3AyCalismaPlani() {
                             <strong>Hata defteri:</strong> Bugüne kadar girdiğin denemelerin yanlışlarını kes-yapıştır yap. Akşam yatmadan yarım saat sadece o defteri karıştır. Neti artıran şey bildiğin soruyu çözmek değil, yapamadığın sorunun mantığını kavramak.
                         </p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                        <h2 id="deneme-analizi" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
                             Deneme Sonrası Analiz
                         </h2>
 
@@ -232,6 +247,7 @@ export default function YksSon3AyCalismaPlani() {
                             <Link href="/blog" className="text-blue-600 hover:underline font-medium">← Blog Listesine Dön</Link>
                             <Link href="/blog/tyt-turkce-paragraf-teknikleri" className="text-blue-600 hover:underline font-medium">TYT Türkçe Paragraf Teknikleri →</Link>
                         </div>
+                        <ArticleFeedback />
                     </div>
                 </div>
             </article>

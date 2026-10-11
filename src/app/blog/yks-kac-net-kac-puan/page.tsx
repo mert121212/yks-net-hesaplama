@@ -4,6 +4,9 @@ import AuthorProfile from '@/components/AuthorProfile'
 import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
 import QuickNetSimulator from '@/components/QuickNetSimulator'
+import ArticleFeedback from '@/components/ArticleFeedback'
+import ReadingProgress from '@/components/ReadingProgress'
+import LastUpdatedBadge from '@/components/LastUpdatedBadge'
 
 export const metadata: Metadata = {
     title: 'YKS\'de Kaç Net Kaç Puan Getirir? Net-Puan Karşılaştırması 2027',
@@ -14,8 +17,8 @@ export const metadata: Metadata = {
         title: 'YKS\'de Kaç Net Kaç Puan Getirir? Net-Puan Karşılaştırması 2027',
         description: 'Deneme netlerinin gerçek hayattaki karşılığı. Hedefindeki fakülte için kaç net yapman gerekiyor?',
         type: 'article',
-        publishedTime: '2026-02-22',
-        modifiedTime: '2026-03-01',
+        publishedTime: '2026-08-10',
+        modifiedTime: '2026-09-28',
         url: 'https://yksnethesapla.com/blog/yks-kac-net-kac-puan',
         images: [
             {
@@ -32,11 +35,12 @@ export default function YKSKacNetKacPuan() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <ReadingProgress />
                 <BlogArticleSchema 
                     title="YKS'de Kaç Net Kaç Puan Getirir? Net-Puan Karşılaştırması 2027" 
                     description="TYT ve AYT netleri kaç puana denk gelir? Ham puan ile yerleştirme puanı farkı, OBP etkisi ve bölüm hedefleri için net aralıkları."
-                    datePublished="2026-02-22"
-                    dateModified="2026-03-01"
+                    datePublished="2026-08-10"
+                    dateModified="2026-09-28"
                     url="https://yksnethesapla.com/blog/yks-kac-net-kac-puan"
                     keywords={['kaç net kaç puan', 'yks net puan tablosu', 'tyt kaç net kaç puan', 'ayt kaç net kaç puan', 'tıp kaç net', 'hukuk kaç net']}
                 />
@@ -52,8 +56,9 @@ export default function YKSKacNetKacPuan() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Hedef Masası</span>
-                            <time className="text-gray-600" dateTime="2026-02-22">22 Şubat 2026</time>
+                            <time className="text-gray-600" dateTime="2026-08-10">10 Ağustos 2026</time>
                             <span className="text-gray-600">• 8 dk okuma</span>
+                            <LastUpdatedBadge date="2026-09-28" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             YKS&apos;de Kaç Net Kaç Puan Getirir? Hedefine Kaç Net Kaldı?
@@ -153,6 +158,7 @@ export default function YKSKacNetKacPuan() {
                                 Net ve Sıralama Hesapla →
                             </Link>
                         </div>
+                        <ArticleFeedback />
                     </div>
                 </div>
             </article>

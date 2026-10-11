@@ -3,6 +3,9 @@ import Link from 'next/link'
 import AuthorProfile from '@/components/AuthorProfile'
 import BlogHeroBanner from '@/components/BlogHeroBanner'
 import BlogArticleSchema from '@/components/BlogArticleSchema'
+import ArticleFeedback from '@/components/ArticleFeedback'
+import ReadingProgress from '@/components/ReadingProgress'
+import LastUpdatedBadge from '@/components/LastUpdatedBadge'
 
 export const metadata: Metadata = {
     title: 'AYT Edebiyat Konuları ve Soru Dağılımı 2027: 24 Soruda 20+ Net Stratejisi',
@@ -13,8 +16,8 @@ export const metadata: Metadata = {
         title: 'AYT Edebiyat Konuları ve Soru Dağılımı 2027',
         description: 'Edebiyatı 500 yazar ezberlemeden 20+ nete taşıma rehberi. Kodlamalar, dönem mantığı ve banko yazarlar.',
         type: 'article',
-        publishedTime: '2026-02-17',
-        modifiedTime: '2026-03-01',
+        publishedTime: '2026-06-15',
+        modifiedTime: '2026-09-05',
         url: 'https://yksnethesapla.com/blog/yks-edebiyat-konulari',
         images: [
             {
@@ -31,11 +34,12 @@ export default function YKSEdebiyatKonulari() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 px-4">
             <article className="max-w-4xl mx-auto">
+                <ReadingProgress />
                 <BlogArticleSchema 
                     title="AYT Edebiyat Konuları ve Soru Dağılımı 2027 | Çalışma Rehberi" 
                     description="AYT Edebiyat sınavında 24 sorunun konu dağılımı: Şiir bilgisi, edebi sanatlar, Divan edebiyatı, Tanzimat ve Cumhuriyet dönemi analizi."
-                    datePublished="2026-02-17"
-                    dateModified="2026-03-01"
+                    datePublished="2026-06-15"
+                    dateModified="2026-09-05"
                     url="https://yksnethesapla.com/blog/yks-edebiyat-konulari"
                     keywords={['yks edebiyat konuları', 'ayt edebiyat soru dağılımı', 'edebiyat nasıl çalışılır', 'divan edebiyatı', 'cumhuriyet edebiyatı']}
                 />
@@ -51,8 +55,9 @@ export default function YKSEdebiyatKonulari() {
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">EA & SÖZ Rehberi</span>
-                            <time className="text-gray-600" dateTime="2026-02-17">17 Şubat 2026</time>
+                            <time className="text-gray-600" dateTime="2026-06-15">15 Haziran 2026</time>
                             <span className="text-gray-600">• 8 dk okuma</span>
+                            <LastUpdatedBadge date="2026-09-05" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             AYT Edebiyat Konuları ve Soru Dağılımı: Ezber Batağından Kurtulma Yolu
@@ -130,6 +135,7 @@ export default function YKSEdebiyatKonulari() {
                                 Eşit Ağırlık Puanı Hesapla →
                             </Link>
                         </div>
+                        <ArticleFeedback />
                     </div>
                 </div>
             </article>
