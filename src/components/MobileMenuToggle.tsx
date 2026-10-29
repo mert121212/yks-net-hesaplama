@@ -4,7 +4,10 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 const links = [
-    { href: '/', label: 'Hesaplama' },
+    { href: '/', label: 'YKS Net Hesaplama' },
+    { href: '/tyt-net-hesaplama', label: 'TYT Net Hesaplama' },
+    { href: '/ayt-net-hesaplama', label: 'AYT Net Hesaplama' },
+    { href: '/yks-puan-hesaplama', label: 'YKS Puan Hesaplama' },
     { href: '/universiteler', label: 'Üniversiteler' },
     { href: '/blog', label: 'Blog' },
     { href: '/yks-rehberi', label: 'YKS Rehberi' },
@@ -20,7 +23,7 @@ export default function MobileMenuToggle() {
         <>
             <button
                 onClick={() => setOpen(!open)}
-                className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
+                className="lg:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
                 aria-label="Menü"
             >
                 {open ? (
@@ -35,21 +38,21 @@ export default function MobileMenuToggle() {
             </button>
 
             {open && (
-                <div className="md:hidden absolute top-16 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-40 py-4 px-4">
-                    <div className="flex flex-col space-y-3">
+                <div className="lg:hidden absolute top-16 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-40 py-4 px-4">
+                    <div className="flex flex-col space-y-2">
                         {links.map(({ href, label }) => (
                             <Link key={href} href={href}
-                                className="px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors font-medium"
+                                className="px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors font-medium text-sm"
                                 onClick={() => setOpen(false)}
                             >
                                 {label}
                             </Link>
                         ))}
                         <Link href="/geri-sayim"
-                            className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium"
+                            className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium text-sm text-center"
                             onClick={() => setOpen(false)}
                         >
-                            ⏰ Geri Sayım
+                            ⏰ YKS Geri Sayım
                         </Link>
                     </div>
                 </div>

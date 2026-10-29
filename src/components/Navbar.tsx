@@ -25,21 +25,22 @@ export default function Navbar() {
                     </Link>
 
                     {/* Desktop links — static */}
-                    <div className="hidden md:flex items-center space-x-8">
+                    <div className="hidden lg:flex items-center space-x-6 text-sm">
                         {[
-                            { href: '/', label: 'Hesaplama' },
+                            { href: '/', label: 'YKS Net' },
+                            { href: '/tyt-net-hesaplama', label: 'TYT Net' },
+                            { href: '/ayt-net-hesaplama', label: 'AYT Net' },
                             { href: '/universiteler', label: 'Üniversiteler' },
                             { href: '/blog', label: 'Blog' },
-                            { href: '/yks-rehberi', label: 'YKS Rehberi' },
+                            { href: '/yks-rehberi', label: 'Rehber' },
                             { href: '/sss', label: 'SSS' },
-                            { href: '/hakkimizda', label: 'Hakkımızda' },
                             { href: '/iletisim', label: 'İletişim' },
                         ].map(({ href, label }) => (
                             <Link key={href} href={href} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
                                 {label}
                             </Link>
                         ))}
-                        <Link href="/geri-sayim" className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all font-medium shadow-md">
+                        <Link href="/geri-sayim" className="px-3.5 py-1.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all font-medium shadow-md text-xs sm:text-sm">
                             ⏰ Geri Sayım
                         </Link>
                     </div>

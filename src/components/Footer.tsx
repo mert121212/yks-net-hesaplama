@@ -39,14 +39,15 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold mb-4 flex items-center">
                             <Icon d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                            Hesaplama
+                            Hesaplama Araçları
                         </h3>
                         <ul className="space-y-2 text-sm">
                             {[
                                 { href: '/', label: 'YKS Net & Puan Hesaplama' },
+                                { href: '/tyt-net-hesaplama', label: 'TYT Net Hesaplama' },
+                                { href: '/ayt-net-hesaplama', label: 'AYT Net Hesaplama' },
+                                { href: '/yks-puan-hesaplama', label: 'YKS Puan & Sıralama' },
                                 { href: '/universiteler', label: 'Üniversite Taban Puanları' },
-                                { href: '/blog/tyt-net-hesaplama-rehberi', label: 'TYT Net Hesaplama Rehberi' },
-                                { href: '/blog/ayt-puan-hesaplama', label: 'AYT Puan Katsayıları' },
                             ].map(({ href, label }) => (
                                 <li key={label}><Link href={href} className="text-gray-400 hover:text-white transition-colors">{label}</Link></li>
                             ))}
@@ -57,14 +58,15 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold mb-4 flex items-center">
                             <Icon d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                            YKS 2027
+                            YKS 2027 Rehberi
                         </h3>
                         <ul className="space-y-2 text-sm">
                             {[
-                                { href: '/blog', label: 'Blog & Rehberler' },
-                                { href: '/geri-sayim', label: 'YKS Geri Sayım' },
-                                { href: '/yks-rehberi', label: 'YKS Rehberi' },
-                                { href: '/sss', label: 'Sık Sorulan Sorular' },
+                                { href: '/geri-sayim', label: 'YKS 2027 Geri Sayım' },
+                                { href: '/blog/tyt-kesin-cikan-konular', label: 'TYT Banko Konular' },
+                                { href: '/blog/ayt-matematik-konulari', label: 'AYT Matematik Konuları' },
+                                { href: '/blog/yks-1-net-kac-kisi-atar', label: '1 Net Kaç Kişi Atar?' },
+                                { href: '/blog/obp-hesaplama', label: 'OBP Hesaplama' },
                             ].map(({ href, label }) => (
                                 <li key={label}><Link href={href} className="text-gray-400 hover:text-white transition-colors">{label}</Link></li>
                             ))}
@@ -74,33 +76,26 @@ export default function Footer() {
                     {/* Kurumsal */}
                     <div>
                         <h3 className="text-lg font-semibold mb-4 flex items-center">
-                            <Icon d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            <Icon d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                             Kurumsal
                         </h3>
                         <ul className="space-y-2 text-sm">
                             {[
                                 { href: '/hakkimizda', label: 'Hakkımızda' },
                                 { href: '/iletisim', label: 'İletişim' },
-                                { href: '/kullanim-kosullari', label: 'Kullanım Koşulları' },
                                 { href: '/privacy', label: 'Gizlilik Politikası' },
+                                { href: '/kullanim-kosullari', label: 'Kullanım Koşulları' },
+                                { href: '/sss', label: 'Sıkça Sorulan Sorular' },
                             ].map(({ href, label }) => (
                                 <li key={label}><Link href={href} className="text-gray-400 hover:text-white transition-colors">{label}</Link></li>
                             ))}
                         </ul>
                     </div>
+
                 </div>
 
-                <div className="border-t border-gray-800 pt-8">
-                    <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                        <p className="text-sm text-gray-400">© {new Date().getFullYear()} YKS Net Hesaplama. Tüm hakları saklıdır.</p>
-                        <p className="text-xs text-gray-500 mt-1">Geliştirici: <a href="https://github.com/mert121212" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Mert Çalışkan</a></p>
-                        <div className="flex flex-wrap justify-center gap-4 text-xs text-gray-500">
-                            <span>YKS Net Hesaplama</span><span>•</span><span>TYT AYT YDT</span><span>•</span><span>Puan Hesaplama</span>
-                        </div>
-                    </div>
-                    <p className="text-xs text-gray-600 text-center mt-4">
-                        Bu site ÖSYM&apos;nin resmi sitesi değildir. Hesaplamalar tahmini olup, resmi sonuçlar için ÖSYM&apos;nin sitesini ziyaret edin.
-                    </p>
+                <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+                    <p>&copy; 2027 YKS Net Hesaplama. Tüm hakları saklıdır. Bu site ÖSYM ile resmi bir bağlantıya sahip değildir.</p>
                 </div>
             </div>
         </footer>

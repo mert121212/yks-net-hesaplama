@@ -1,4 +1,5 @@
 import { Suspense } from 'react'
+import Link from 'next/link'
 import StructuredData from '@/components/StructuredData'
 import SEOContent from '@/components/SEOContent'
 import CalculatorApp from '@/components/CalculatorApp'
@@ -24,6 +25,19 @@ export default function HomePage() {
                     <p className="text-base sm:text-lg text-blue-100 max-w-2xl mx-auto leading-relaxed font-normal">
                         TYT, AYT ve YDT optik formundaki doğru ve yanlışlarını gir; 4 yanlışın sildiği netleri, ÖSYM standart sapma katsayılarını ve OBP katkısıyla tahmini yerleştirme puanını hemen gör.
                     </p>
+
+                    {/* Hızlı Erişim Butonları */}
+                    <div className="flex flex-wrap items-center justify-center gap-2.5 mt-6">
+                        <Link href="/tyt-net-hesaplama" className="px-4 py-2 rounded-xl bg-white/15 hover:bg-white/25 backdrop-blur-md text-xs sm:text-sm font-bold text-white border border-white/20 transition shadow-sm hover:scale-[1.02]">
+                            ⚡ Sadece TYT Net Hesapla →
+                        </Link>
+                        <Link href="/ayt-net-hesaplama" className="px-4 py-2 rounded-xl bg-white/15 hover:bg-white/25 backdrop-blur-md text-xs sm:text-sm font-bold text-white border border-white/20 transition shadow-sm hover:scale-[1.02]">
+                            📐 Sadece AYT Net Hesapla →
+                        </Link>
+                        <Link href="/yks-puan-hesaplama" className="px-4 py-2 rounded-xl bg-white/15 hover:bg-white/25 backdrop-blur-md text-xs sm:text-sm font-bold text-white border border-white/20 transition shadow-sm hover:scale-[1.02]">
+                            🎯 YKS Puan & Sıralama →
+                        </Link>
+                    </div>
                 </div>
             </section>
 

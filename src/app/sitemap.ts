@@ -36,6 +36,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 1,
         },
         {
+            url: `${baseUrl}/tyt-net-hesaplama`,
+            lastModified: new Date('2026-10-29'),
+            changeFrequency: 'daily',
+            priority: 0.95,
+        },
+        {
+            url: `${baseUrl}/ayt-net-hesaplama`,
+            lastModified: new Date('2026-10-29'),
+            changeFrequency: 'daily',
+            priority: 0.95,
+        },
+        {
+            url: `${baseUrl}/yks-puan-hesaplama`,
+            lastModified: new Date('2026-10-29'),
+            changeFrequency: 'daily',
+            priority: 0.95,
+        },
+        {
             url: `${baseUrl}/universiteler`,
             lastModified: new Date('2026-10-29'),
             changeFrequency: 'daily',

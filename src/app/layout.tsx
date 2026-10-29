@@ -27,10 +27,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
     title: {
-        default: 'YKS Net Hesaplama 2027 | TYT AYT YDT Puan Hesaplama Aracı',
+        default: 'YKS Net Hesaplama 2027 [ÖSYM & YÖK Uyumlu] ⚡ Puan ve Sıralama Hesapla',
         template: '%s | YKS Net Hesaplama'
     },
-    description: 'YKS 2027 net ve puan hesaplama aracı. TYT, AYT, YDT netlerinizi hesaplayın, SAY EA SÖZ DİL puanlarınızı öğrenin. Ücretsiz, hızlı ve doğru hesaplama.',
+    description: '🎯 2027 ÖSYM katsayılarıyla TYT, AYT ve YDT netlerini 1 saniyede hesapla! 4 yanlış 1 doğru kuralı, OBP katkısı ve tahmini Türkiye sıralamanı hemen öğren.',
     keywords: [
         'YKS net hesaplama',
         'YKS 2027',
@@ -65,8 +65,8 @@ export const metadata: Metadata = {
         canonical: '/',
     },
     openGraph: {
-        title: 'YKS Net Hesaplama 2027 | TYT AYT YDT Puan Hesaplama Aracı',
-        description: 'YKS 2027 net hesaplama aracı ile TYT, AYT ve YDT netlerinizi hesaplayın. Üniversite puanlarınızı öğrenin. Ücretsiz ve hızlı hesaplama sistemi.',
+        title: 'YKS Net Hesaplama 2027 [ÖSYM & YÖK Uyumlu] ⚡ Puan ve Sıralama Hesapla',
+        description: '2027 ÖSYM katsayılarıyla TYT, AYT ve YDT netlerini 1 saniyede hesapla! 4 yanlış 1 doğru kuralı, OBP katkısı ve tahmini sıralamanı hemen öğren.',
         url: 'https://yksnethesapla.com',
         siteName: 'YKS Net Hesaplama',
         locale: 'tr_TR',
@@ -82,8 +82,8 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'YKS Net Hesaplama 2027 | TYT AYT YDT Puan Hesaplama',
-        description: 'YKS net hesaplama aracı ile TYT, AYT ve YDT netlerinizi hesaplayın. Üniversite puanlarınızı öğrenin.',
+        title: 'YKS Net Hesaplama 2027 [ÖSYM & YÖK Uyumlu] ⚡ Puan ve Sıralama Hesapla',
+        description: '2027 ÖSYM katsayılarıyla TYT, AYT ve YDT netlerini 1 saniyede hesapla! 4 yanlış 1 doğru kuralı, OBP katkısı ve tahmini sıralamanı hemen öğren.',
         images: ['/og-image.jpg'],
     },
     robots: {

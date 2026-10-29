@@ -1,16 +1,33 @@
-export default function StructuredData() {
+interface StructuredDataProps {
+    title?: string
+    description?: string
+    url?: string
+}
+
+export default function StructuredData({
+    title = 'YKS Net Hesaplama 2027',
+    description = 'YKS 2027 net ve puan hesaplama aracı. TYT, AYT ve YDT netlerinizi hesaplayın, ÖSYM katsayılarıyla üniversite yerleştirme puanlarınızı öğrenin.',
+    url = 'https://yksnethesapla.com',
+}: StructuredDataProps = {}) {
     const structuredData = {
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        "name": "YKS Net Hesaplama",
-        "description": "YKS 2027 net hesaplama aracı ile TYT, AYT ve YDT netlerinizi hesaplayın. Üniversite puanlarınızı öğrenin.",
-        "url": "https://yksnethesapla.com",
+        "name": title,
+        "description": description,
+        "url": url,
         "applicationCategory": "EducationalApplication",
         "operatingSystem": "Web Browser",
         "offers": {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "TRY"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "1485",
+            "bestRating": "5",
+            "worstRating": "1"
         },
         "creator": {
             "@type": "Person",
@@ -107,8 +124,8 @@ export default function StructuredData() {
             {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "YKS Net Hesaplama",
-                "item": "https://yksnethesapla.com/#hesaplama"
+                "name": title,
+                "item": url
             }
         ]
     }

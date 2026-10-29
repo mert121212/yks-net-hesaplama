@@ -298,7 +298,11 @@ const ResultsPanel = memo(function ResultsPanel({
     )
 })
 
-export default function CalculatorApp() {
+interface CalculatorAppProps {
+    mode?: 'all' | 'tyt' | 'ayt'
+}
+
+export default function CalculatorApp({ mode = 'all' }: CalculatorAppProps) {
     const [tytScores, setTytScores] = useState<TYTScores>(DEFAULT_TYT)
     const [aytScores, setAytScores] = useState<AYTScores>(DEFAULT_AYT)
     const [ydtScores, setYdtScores] = useState<YDTScores>({ ydt: { dogru: 0, yanlis: 0 } })
@@ -306,6 +310,7 @@ export default function CalculatorApp() {
     const [obpHalved, setObpHalved] = useState<boolean>(false)
     const [obpMesleki, setObpMesleki] = useState<boolean>(false)
     const [isLoaded, setIsLoaded] = useState(false)
+    const [showExtraSections, setShowExtraSections] = useState<boolean>(mode === 'all')
 
     // Client mount olunca localStorage'dan oku
     useEffect(() => {
@@ -402,9 +407,53 @@ export default function CalculatorApp() {
                     </div>
                 </div>
 
-                <TYTSection scores={tytScores} onScoreChange={handleTYT} onReset={resetTYT} />
-                <AYTSection scores={aytScores} onScoreChange={handleAYT} onReset={resetAYT} />
-                <YDTSection scores={ydtScores} onScoreChange={handleYDT} onReset={resetYDT} />
+                {mode === 'ayt' ? (
+                    <>
+                        <AYTSection scores={aytScores} onScoreChange={handleAYT} onReset={resetAYT} />
+                        {!showExtraSections ? (
+                            <div className="bg-blue-50/70 border border-blue-200/60 rounded-xl p-4 text-center">
+                                <p className="text-xs text-blue-900 mb-2 font-medium">TYT ve YDT netlerini de ekleyerek YKS yerleştirme puanını hesapla:</p>
+                                <button
+                                    onClick={() => setShowExtraSections(true)}
+                                    className="text-xs sm:text-sm font-bold text-blue-700 hover:text-blue-900 bg-white hover:bg-blue-100 border border-blue-300 px-4 py-2 rounded-xl transition shadow-xs"
+                                >
+                                    ➕ TYT ve YDT Testlerini de Ekle
+                                </button>
+                            </div>
+                        ) : (
+                            <>
+                                <TYTSection scores={tytScores} onScoreChange={handleTYT} onReset={resetTYT} />
+                                <YDTSection scores={ydtScores} onScoreChange={handleYDT} onReset={resetYDT} />
+                            </>
+                        )}
+                    </>
+                ) : mode === 'tyt' ? (
+                    <>
+                        <TYTSection scores={tytScores} onScoreChange={handleTYT} onReset={resetTYT} />
+                        {!showExtraSections ? (
+                            <div className="bg-blue-50/70 border border-blue-200/60 rounded-xl p-4 text-center">
+                                <p className="text-xs text-blue-900 mb-2 font-medium">AYT ve YDT testlerini de ekleyerek SAY, EA, SÖZ puanlarını hesapla:</p>
+                                <button
+                                    onClick={() => setShowExtraSections(true)}
+                                    className="text-xs sm:text-sm font-bold text-blue-700 hover:text-blue-900 bg-white hover:bg-blue-100 border border-blue-300 px-4 py-2 rounded-xl transition shadow-xs"
+                                >
+                                    ➕ AYT ve YDT Testlerini de Ekle
+                                </button>
+                            </div>
+                        ) : (
+                            <>
+                                <AYTSection scores={aytScores} onScoreChange={handleAYT} onReset={resetAYT} />
+                                <YDTSection scores={ydtScores} onScoreChange={handleYDT} onReset={resetYDT} />
+                            </>
+                        )}
+                    </>
+                ) : (
+                    <>
+                        <TYTSection scores={tytScores} onScoreChange={handleTYT} onReset={resetTYT} />
+                        <AYTSection scores={aytScores} onScoreChange={handleAYT} onReset={resetAYT} />
+                        <YDTSection scores={ydtScores} onScoreChange={handleYDT} onReset={resetYDT} />
+                    </>
+                )}
                 <OBPInput
                     obp={obp} onObpChange={setObp}
                     obpHalved={obpHalved} onObpHalvedChange={setObpHalved}
