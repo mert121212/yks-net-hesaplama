@@ -7,18 +7,19 @@ import YigilmaChart from '@/components/YigilmaChart'
 import ArticleFeedback from '@/components/ArticleFeedback'
 import ReadingProgress from '@/components/ReadingProgress'
 import LastUpdatedBadge from '@/components/LastUpdatedBadge'
+import TableOfContents from '@/components/TableOfContents'
 
 export const metadata: Metadata = {
-    title: 'YKS\'de Yığılma Nedir ve Nasıl Oluşur? 2027 Yığılma Tuzağı Rehberi',
-    description: 'YKS yığılması nedir? Aynı puanı alan binlerce adayın üst üste binmesi, kolay sınavın getirdiği felaket ve yığılmayı yarma taktikleri.',
-    keywords: 'yks yığılma nedir, yks sıralama yığılması, tyt yığılma, ayt yığılma, yks puan dağılımı',
+    title: 'YKS\'de Yığılma Nedir ve Nasıl Oluşur? 2027 Sıralama Tuzağı Rehberi',
+    description: 'YKS yığılması nedir? Kolay sınavların sıralamaları çökertme mekanizması, 60k-150k kritik yığılma bölgesi ve yığılmayı delip geçme taktikleri.',
+    keywords: 'yks yığılma nedir, yks sıralama yığılması, tyt yığılma, ayt yığılma, yks puan dağılımı 2027',
     alternates: { canonical: 'https://yksnethesapla.com/blog/yks-yigilma-tehlikesi' },
     openGraph: {
-        title: 'YKS\'de Yığılma Nedir ve Nasıl Oluşur?',
+        title: 'YKS\'de Yığılma Nedir ve Nasıl Oluşur? 2027 Sıralama Tuzağı',
         description: 'Sınav kolay olduğunda neden sevinmemelisin? Puanların şişip sıralamaların çöktüğü o meşhur yığılma gerçeği.',
         type: 'article',
         publishedTime: '2026-01-30',
-        modifiedTime: '2026-06-15',
+        modifiedTime: '2026-10-29',
         url: 'https://yksnethesapla.com/blog/yks-yigilma-tehlikesi',
         images: [
             {
@@ -37,12 +38,12 @@ export default function YKSYigilmaTehlikesi() {
             <article className="max-w-4xl mx-auto">
                 <ReadingProgress />
                 <BlogArticleSchema 
-                    title="YKS'de Yığılma Nedir ve Nasıl Oluşur?"
-                    description="YKS sınavında yığılma kavramı, sınav zorluğunun sıralamalara etkisi ve orta başarı dilimlerinde puan dağılımı."
+                    title="YKS'de Yığılma Nedir ve Nasıl Oluşur? 2027 Sıralama Tuzağı Rehberi"
+                    description="YKS yığılması nedir? Kolay sınavların sıralamaları çökertme mekanizması, 60k-150k kritik yığılma bölgesi ve yığılmayı delip geçme taktikleri."
                     datePublished="2026-01-30"
-                    dateModified="2026-06-15"
+                    dateModified="2026-10-29"
                     url="https://yksnethesapla.com/blog/yks-yigilma-tehlikesi"
-                    keywords={['yks yığılma nedir', 'yks sıralama yığılması', 'tyt yığılma', 'ayt yığılma', 'yks puan dağılımı']}
+                    keywords={['yks yığılma nedir', 'yks sıralama yığılması', 'tyt yığılma', 'ayt yığılma', 'yks puan dağılımı 2027']}
                 />
                 <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
                     <nav className="mb-8 text-sm text-gray-600">
@@ -55,16 +56,16 @@ export default function YKSYigilmaTehlikesi() {
 
                     <header className="mb-8">
                         <div className="flex items-center gap-4 mb-4">
-                            <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Saha Analizi</span>
+                            <span className="px-3 py-1 bg-rose-100 text-rose-800 rounded-full text-sm font-medium">Saha Analizi</span>
                             <time className="text-gray-600" dateTime="2026-01-30">30 Ocak 2026</time>
-                            <span className="text-gray-600">• 8 dk okuma</span>
-                            <LastUpdatedBadge date="2026-06-15" />
+                            <span className="text-gray-600">• 9 dk okuma</span>
+                            <LastUpdatedBadge date="2026-10-29" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             YKS&apos;de Yığılma Nedir? Neden Kolay Sınavdan Korkmalısın?
                         </h1>
                         <p className="text-xl text-gray-600">
-                            Sınavdan çıkıp <em>&ldquo;Oley be sorular çok kolaydı, 430 puan alıyorum!&rdquo;</em> diye sevinen öğrencilerin sonuç günü 80 bininci olup ağladığı o kabusa YKS&apos;de &ldquo;yığılma&rdquo; denir.
+                            Sınav salonundan çıkıp <em>&ldquo;Sorular su gibi kolaydı, 430 puan garanti!&rdquo;</em> diye sevinen adayların sonuç günü 85 bininci olup ağladığı o kabusa YKS terminolojisinde <strong>yığılma</strong> denir.
                         </p>
                     </header>
 
@@ -75,78 +76,80 @@ export default function YKSYigilmaTehlikesi() {
                         alt="YKS&apos;de Yığılma Nedir, Sıralamayı Nasıl Etkiler?"
                     />
 
+                    <TableOfContents items={[
+                        { id: 'yigilma-nedir', title: 'YKS\'de Yığılma Nasıl Meydana Gelir?' },
+                        { id: 'zor-sinav-neden-dosttur', title: 'Zor Sınav Neden Öğrencinin En Büyük Dostudur?' },
+                        { id: 'yigilma-grafigi', title: 'YKS Yığılma Dağılım Grafiği' },
+                        { id: 'risk-haritasi', title: 'Hangi Başarı Sıralamasında Kaç Bin Aday Sıkışır?' },
+                        { id: 'yigilmadan-kurtulma', title: 'Yığılma Tuzağını Yarıp Geçmenin 3 Somut Yolu' },
+                        { id: 'sikca-sorulanlar', title: 'Sıkça Sorulan Sorular' },
+                    ]} />
+
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Her yıl temmuz ayında sonuç belgeleri açıklandığında aynı çığlığı duyarız: <em>&ldquo;Hocam geçen sene 410 puan alan arkadaşım 45 bininci olmuştu, ben bu sene 425 puan aldım ama 72 bininciyim, bu nasıl olur?!&rdquo;</em>
+                            Her yıl temmuz ayı ortasında ÖSYM sonuç ekranı açıldığında aynı yakınmayı duyarız: <em>&ldquo;Hocam geçen sene 410 puan alan arkadaşım 45 bininci oldu. Ben bu sene 428 puan aldım ama 74 bininciyim, sınav sistemi çöktü mü?!&rdquo;</em>
                         </p>
 
                         <p>
-                            İşte buna <strong>Yığılma</strong> denir. Üniversite kapıları puanla değil, koltuk sayısı (kontenjan) ile dolar. Herkesin yüksek puan aldığı bir sınavda puanın hiçbir kıymeti harbiyesi kalmaz; sıralamalar yerle bir olur.
+                            Sistem çökmedi; tam aksine matematiksel olarak kusursuz çalıştı. Üniversite kapıları puanla değil, <strong>kontenjan koltuklarıyla</strong> dolar. Herkesin yüksek net yaptığı kolay bir sınavda puanların hiçbir değeri kalmaz; çünkü binlerce kişi aynı virgüllü puan aralığına sıkışır.
                         </p>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Zor Sınav Neden Öğrencinin Dostudur?
+                        <h2 id="yigilma-nedir" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            YKS&apos;de Yığılma Nasıl Meydana Gelir?
                         </h2>
 
                         <p>
-                            Öğrenciler genellikle zor sınavdan nefret eder ama aslında çalışan öğrenciyi kurtaran tek şey sınavın seçici ve zor olmasıdır:
+                            ÖSYM sınavı hazırlarken çan eğrisi modelini hedefler. Ancak sorular olması gerekenden kolay sorulduğunda; 4-5 ay çalışan ortalama bir adayla 11 ay boyunca günde 7 saat çalışan derece adayı benzer netleri yapar. Sonuç olarak:
                         </p>
 
-                        <ul className="list-disc pl-6 space-y-2">
-                            <li><strong>Zor Sınavda (Örn. 2021 YKS):</strong> Sorular ayırt edicidir. Çalışanla çalışmayan anında ayrışır. Netler geniş bir alana yayılır. Puanlar düşer ama sıralamalar şahlanır! 60 TYT netiyle tıp kazanılan efsanevi yıl tam olarak böyle gerçekleşti.</li>
-                            <li><strong>Kolay Sınavda (Örn. 2020 & 2022 YKS):</strong> Sorular herkesin yapabileceği kıvamda gelince çalışanla çalışmayan birbirine karışır. 400 ile 430 puan arasına tam 300 bin aday sıkışır! Virgülden sonraki 0,1 puan farkla 4 bin kişi geriye düşersin.</li>
+                        <ul className="list-disc pl-6 space-y-2 text-sm text-gray-700">
+                            <li>360 ile 420 puan arasına yüz binlerce aday üst üste yığılır.</li>
+                            <li>0,25 netlik tek bir yanlış işaretleme, adayı bir anda 4.000 kişinin arkasına fırlatır.</li>
+                            <li>Puanlar yükselirken sıralamalar dibe doğru çöker.</li>
                         </ul>
 
-                        <YigilmaChart />
-
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Yığılma En Çok Hangi Aralıkta Can Yakar?
+                        <h2 id="zor-sinav-neden-dosttur" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            Zor Sınav Neden Öğrencinin En Büyük Dostudur?
                         </h2>
 
                         <p>
-                            İlk 10 binde yığılma pek olmaz; çünkü fulle yakın yapan aday sayısı zaten bir elin parmakları kadardır. Asıl cehennem <strong>60.000 ile 140.000 başarı diliminde</strong> yaşanır.
+                            Öğrenciler genellikle zor sınavlardan nefret eder ama gerçek şudur: <strong>Gerçekten emek veren öğrenciyi sadece zor ve seçici sınav kurtarır.</strong>
                         </p>
 
-                        <p>
-                            TYT&apos;de 65-75 net, AYT&apos;de 35-45 net yapan yüz binlerce öğrenci aynı daracık puan havuzuna balık istifi dizilir. Bu aralıkta masadaki tek bir ekstra net bile seni 4-5 bin kişi birden öne fırlatır.
-                        </p>
+                        <div className="space-y-4 my-6">
+                            <div className="bg-emerald-50 p-5 rounded-xl border border-emerald-200">
+                                <h3 className="font-bold text-emerald-950 text-base mb-1">Zor Sınav Yılı (Örn. 2021 YKS):</h3>
+                                <p className="text-sm text-emerald-900">
+                                    Matematik soruları çok zordu. Çalışmayanlar 3-5 nette kaldı; çalışanlar ise 22-25 netle bile zirveye yerleşti. Puanlar 50 puan birden düştü ama sıralamalar uçtu! 62 TYT netiyle Tıp Fakültesi kazanılan efsanevi yıl tam olarak böyle gerçekleşti.
+                                </p>
+                            </div>
 
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Yığılmayı Delip Geçmenin 3 Yolu
-                        </h2>
-
-                        <p>
-                            Sınavın zorluğunu sen belirleyemezsin ama yığılma dalgasının üstünden atlayacak can simitlerini cebine koyabilirsin:
-                        </p>
-
-                        <ul className="list-disc pl-6 space-y-3">
-                            <li><strong>OBP (Diploma Notun):</strong> Yığılma bölgesinde 200 bin adayın ham puanı birbirine çok yakındır. Burada devreye lise diploma notun girer. 95 OBP seni tek hamlede 15 bin kişinin üstüne zıplatırken, 70 OBP seni batırır.</li>
-                            <li><strong>Rakiplerin Kaçtığı Dersler:</strong> Sayısalcı mısın? Herkes TYT Sosyali çöpe atarken senin yapacağın 16 Sosyal neti seni yığılmadan roket gibi fırlatır. Eşit Ağırlıkçı mısın? AYT Matematikte yapacağın her 1 net 2 bin kişiyi arkana alır.</li>
-                            <li><strong>Denemelerde Puana Değil Yüzdelik Dilime Bak:</strong> Girdiğin Türkiye geneli denemelerde &ldquo;Kaç puan aldım?&rdquo; diye sorma. &ldquo;100 bin kişi içinde ilk yüzde kaça girdim?&rdquo; diye sor. Tek gerçek kılavuz yüzdelik dilimindir.</li>
-                        </ul>
-
-                        <div className="bg-slate-900 text-white rounded-2xl p-6 my-8 not-prose">
-                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Netlerin Yığılmayı Yarıyor mu?</h3>
-                            <p className="text-sm text-slate-300 mb-4">
-                                Netlerini simülatörümüze gir; farklı sınav zorluklarına göre başarı sıranın nasıl değiştiğini ve yığılmanın neresinde kaldığını gör.
-                            </p>
-                            <Link href="/" className="inline-block bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
-                                Yığılma Simülatörünü Aç →
-                            </Link>
+                            <div className="bg-red-50 p-5 rounded-xl border border-red-200">
+                                <h3 className="font-bold text-red-950 text-base mb-1">Kolay Sınav Yılı (Örn. 2020 ve 2022 YKS):</h3>
+                                <p className="text-sm text-red-900">
+                                    Sorular herkesin yapabileceği kıvamda gelince çalışanla çalışmayan birbirine karıştı. 420 puan alan bir sayısalcı hayalindeki mühendisliğe giremedi; çünkü o puan aralığında 150 bin kişi balık istifi dizildi.
+                                </p>
+                            </div>
                         </div>
-                        
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            YKS Yığılma Yoğunluk ve Sıralama Risk Haritası
+
+                        <div id="yigilma-grafigi">
+                            <YigilmaChart />
+                        </div>
+
+                        <h2 id="risk-haritasi" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            Hangi Başarı Sıralamasında Kaç Bin Aday Sıkışır?
                         </h2>
+
                         <p>
-                            Sınav kolay olduğunda adayların netleri yükselir ama sıralamalar geriye düşer. Zor sınavlarda ise düşük netlerle çok daha yüksek başarı sıraları elde edilir. İşte tipik bir sınavda yığılma dağılımı:
+                            İlk 10 binde yığılma pek hissedilmez; çünkü fulle yakın yapan aday sayısı sınırlıdır. Asıl yıkım <strong>60.000 ile 160.000 diliminde</strong> gerçekleşir:
                         </p>
+
                         <div className="overflow-x-auto my-6">
                             <table className="w-full text-left border-collapse border border-gray-200 text-sm">
-                                <thead className="bg-red-50 text-red-950 font-semibold">
+                                <thead className="bg-rose-50 text-rose-950 font-semibold">
                                     <tr>
                                         <th className="p-3 border">Sıralama Aralığı</th>
-                                        <th className="p-3 border">Puan Aralığı</th>
+                                        <th className="p-3 border">Ortalama Puan</th>
                                         <th className="p-3 border">1 Puan Başına Düşen Aday</th>
                                         <th className="p-3 border">Risk Derecesi</th>
                                     </tr>
@@ -154,35 +157,116 @@ export default function YKSYigilmaTehlikesi() {
                                 <tbody>
                                     <tr className="border-b">
                                         <td className="p-3 font-medium border">İlk 20.000</td>
-                                        <td className="p-3 border">470 - 520 Puan</td>
-                                        <td className="p-3 border font-bold text-blue-700">300 - 500 Kişi</td>
+                                        <td className="p-3 border">475 - 530 Puan</td>
+                                        <td className="p-3 border font-bold text-blue-700">250 - 450 Kişi</td>
                                         <td className="p-3 border text-emerald-600">Düşük Risk</td>
                                     </tr>
                                     <tr className="border-b bg-gray-50">
                                         <td className="p-3 font-medium border">20.000 - 60.000</td>
-                                        <td className="p-3 border">420 - 470 Puan</td>
-                                        <td className="p-3 border font-bold text-amber-700">700 - 1.200 Kişi</td>
+                                        <td className="p-3 border">425 - 475 Puan</td>
+                                        <td className="p-3 border font-bold text-amber-700">800 - 1.400 Kişi</td>
                                         <td className="p-3 border text-amber-600">Orta Risk</td>
                                     </tr>
                                     <tr className="border-b">
                                         <td className="p-3 font-medium border">60.000 - 150.000</td>
-                                        <td className="p-3 border">340 - 420 Puan</td>
-                                        <td className="p-3 border font-bold text-red-600">1.800 - 3.500 Kişi</td>
+                                        <td className="p-3 border">340 - 425 Puan</td>
+                                        <td className="p-3 border font-bold text-red-600">2.200 - 3.800 Kişi</td>
                                         <td className="p-3 border font-bold text-red-600">Aşırı Yüksek Risk</td>
                                     </tr>
                                     <tr className="border-b bg-gray-50">
                                         <td className="p-3 font-medium border">150.000 - 300.000</td>
                                         <td className="p-3 border">260 - 340 Puan</td>
-                                        <td className="p-3 border font-bold text-red-600">2.000 - 4.000 Kişi</td>
-                                        <td className="p-3 border font-bold text-red-600">Maksimum Yığılma</td>
+                                        <td className="p-3 border font-bold text-red-700">2.500 - 4.200 Kişi</td>
+                                        <td className="p-3 border font-bold text-red-700">Maksimum Yığılma</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
+
+                        <h2 id="yigilmadan-kurtulma" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            Yığılma Tuzağını Yarıp Geçmenin 3 Somut Yolu
+                        </h2>
+
                         <p>
-                            Yığılma bölgesinde tek bir doğru sorunun binlerce adayı nasıl arkana attığını merak ediyorsan <Link href="/blog/yks-1-net-kac-kisi-atar" className="text-blue-600 font-semibold hover:underline">1 Net Kaç Kişi Atar?</Link> analizimize mutlaka uğra. Okul puanının seni bu kalabalıkta nasıl koruyacağını <Link href="/blog/obp-hesaplama" className="text-blue-600 font-semibold hover:underline">OBP Hesaplama Rehberi</Link>&apos;nde anlattık. Tercih listeni sağlam kurmak için de <Link href="/blog/universite-tercih-stratejileri" className="text-blue-600 font-semibold hover:underline">Üniversite Tercih Stratejileri</Link> kılavuzu elinin altında olsun.
+                            Sınavın zorluk derecesini değiştiremezsin; ancak yığılmanın içinden sıyrılacak stratejileri uygulayabilirsin:
                         </p>
 
+                        <div className="space-y-4 my-6">
+                            <div className="bg-blue-50 p-4 rounded-xl border border-blue-200">
+                                <h4 className="font-bold text-blue-950 mb-1">1. AYT Farkı Yarat (Tek Kurtarıcı)</h4>
+                                <p className="text-xs text-blue-900">
+                                    TYT&apos;de herkes 60-70 net aralığına sıkışır; asıl ayrışma AYT&apos;de gerçekleşir. AYT Matematikte yapacağın fazladan 4 net, seni 15 bin kişilik yığılma kütlesinin doğrudan üzerine fırlatır.
+                                </p>
+                            </div>
+
+                            <div className="bg-purple-50 p-4 rounded-xl border border-purple-200">
+                                <h4 className="font-bold text-purple-950 mb-1">2. OBP Güvencesi (Lise Diploma Notu)</h4>
+                                <p className="text-xs text-purple-900">
+                                    Yığılma bölgesinde 200 bin kişinin ham puanı birbirine eşittir. Burada devreye OBP girer. 95 OBP seni bir hamlede 10 bin kişinin önüne taşırken, 70 OBP seni geriye çeker. Detaylar için <Link href="/blog/obp-hesaplama" className="text-purple-950 font-bold underline">OBP Hesaplama Rehberimize</Link> bakabilirsin.
+                                </p>
+                            </div>
+
+                            <div className="bg-amber-50 p-4 rounded-xl border border-amber-200">
+                                <h4 className="font-bold text-amber-950 mb-1">3. Rakiplerin İhmal Ettiği Yan Testler</h4>
+                                <p className="text-xs text-amber-900">
+                                    Sayısal öğrencisiysen TYT Sosyalden yapacağın 16 net, eşit ağırlık öğrencisiysen TYT Fenden yapacağın 8 net yığılma dalgasını delip geçmenin en ucuz yoludur.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* CTA */}
+                        <div className="bg-slate-900 text-white rounded-2xl p-6 my-8 not-prose">
+                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Netlerin Yığılmayı Yarıyor mu?</h3>
+                            <p className="text-sm text-slate-300 mb-4">
+                                Netlerini simülatörümüze gir; güncel ÖSYM standart katsayılarıyla puanını hesapla ve yığılmanın hangi güvenli diliminde kaldığını gör.
+                            </p>
+                            <Link href="/tyt-net-hesaplama" className="inline-block bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
+                                Net Hesaplayıcıya Git →
+                            </Link>
+                        </div>
+
+                        <p>
+                            Yığılma bölgesinde 1 netin kaç bin adayı geride bıraktığını somut verilerle görmek için <Link href="/blog/yks-1-net-kac-kisi-atar" className="text-blue-600 font-semibold hover:underline">1 Net Kaç Kişi Atar?</Link> analizimize mutlaka göz at. Tercih döneminde açıkta kalmamak için <Link href="/blog/universite-tercih-stratejileri" className="text-blue-600 font-semibold hover:underline">Üniversite Tercih Stratejileri</Link> yazımızı inceleyebilirsin.
+                        </p>
+
+                        <h2 id="sikca-sorulanlar" className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            Sıkça Sorulan Sorular
+                        </h2>
+
+                        <div className="space-y-4 my-6">
+                            <div className="border border-gray-200 rounded-xl p-5">
+                                <h3 className="font-bold text-gray-900 text-base mb-2">Yığılma sınavdan sınava değişir mi?</h3>
+                                <p className="text-sm text-gray-600">
+                                    Evet. ÖSYM sorularının zorluk derecesine göre yığılma bölgesi kayar. Sınav zorsa yığılma 280-340 puan arasına iner; sınav kolaysa 380-440 puan aralığına tırmanır.
+                                </p>
+                            </div>
+
+                            <div className="border border-gray-200 rounded-xl p-5">
+                                <h3 className="font-bold text-gray-900 text-base mb-2">Sıralama tahmini yaparken hangi yılın verilerini baz almalıyım?</h3>
+                                <p className="text-sm text-gray-600">
+                                    Tek bir yılı baz almak yanıltıcıdır. Sınavın zorluk düzeyini değerlendirip; zor sınavlar için 2021 ve 2024 verilerini, orta-kolay sınavlar için 2022 ve 2023 verilerini karşılaştırarak bir sıralama koridoru oluşturmalısın.
+                                </p>
+                            </div>
+
+                            <div className="border border-gray-200 rounded-xl p-5">
+                                <h3 className="font-bold text-gray-900 text-base mb-2">Yığılmanın olduğu aralıkta tercih nasıl yapılmalı?</h3>
+                                <p className="text-sm text-gray-600">
+                                    60 bin ile 150 bin bandında olan adaylar tercih koridorunu çok geniş tutmalıdır. Kendi sırasının %25 üstünden başlayıp en az %40 altına kadar inen 24 tercihi dengeli dağıtmalıdır.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="mt-12 pt-6 border-t border-gray-200">
+                        <div className="flex flex-wrap gap-2 mb-6">
+                            <span className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-md font-medium">#yksYigilma</span>
+                            <span className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-md font-medium">#siralamalar</span>
+                            <span className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-md font-medium">#yks2027</span>
+                        </div>
+                        <div className="flex justify-between items-center text-sm">
+                            <Link href="/blog" className="text-blue-600 hover:underline font-medium">← Blog Listesine Dön</Link>
+                            <Link href="/blog/yks-1-net-kac-kisi-atar" className="text-blue-600 hover:underline font-medium">1 Net Kaç Kişi Atar? →</Link>
+                        </div>
                         <ArticleFeedback />
                     </div>
                 </div>

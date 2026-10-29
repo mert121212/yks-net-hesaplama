@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         description: 'Orta başarı dilimlerinde tek bir netin kaderini nasıl değiştirdiği: Gerçek ÖSYM yığılma verileri.',
         type: 'article',
         publishedTime: '2026-04-25',
-        modifiedTime: '2026-08-15',
+        modifiedTime: '2026-10-29',
         url: 'https://yksnethesapla.com/blog/yks-1-net-kac-kisi-atar',
         images: [
             {
@@ -40,7 +40,7 @@ export default function YKSBirNetKacKisiAtar() {
                     title="YKS'de 1 Net Kaç Kişi Öne Atar? (Yığılma ve Puan Analizi)"
                     description="YKS sınavında 1 netin sıralamaya etkisi nedir? Farklı başarı aralıklarında TYT ve AYT netlerinin sıralama değişimi."
                     datePublished="2026-04-25"
-                    dateModified="2026-08-15"
+                    dateModified="2026-10-29"
                     url="https://yksnethesapla.com/blog/yks-1-net-kac-kisi-atar"
                     keywords={['1 net kaç kişi atar', 'yks 1 netin etkisi', 'tyt 1 net kaç kişi atar', 'ayt 1 net kaç kişi atar', 'yks yığılma']}
                 />
@@ -57,14 +57,14 @@ export default function YKSBirNetKacKisiAtar() {
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Saha Analizi</span>
                             <time className="text-gray-600" dateTime="2026-04-25">25 Nisan 2026</time>
-                            <span className="text-gray-600">• 7 dk okuma</span>
-                            <LastUpdatedBadge date="2026-08-15" />
+                            <span className="text-gray-600">• 9 dk okuma</span>
+                            <LastUpdatedBadge date="2026-10-29" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                            YKS&apos;de 1 Net Kaç Kişi Öne Fırlatır? Yığılma Cehennemi
+                            YKS&apos;de 1 Net Kaç Kişi Öne Fırlatır? Yığılma Gerçeği
                         </h1>
                         <p className="text-xl text-gray-600">
-                            Masada çalışırken &ldquo;Aman 1 netten ne çıkar&rdquo; deyip boş bıraktığın o tek bir soru, sınav sonuç gününde seni 6 bin kişinin arkasına gömebilir.
+                            Masada çalışırken &ldquo;Aman 1 netten ne çıkar&rdquo; deyip boş bıraktığın o tek bir soru, sınav sonuç gününde seni 6 bin kişinin arkasına düşürebilir.
                         </p>
                     </header>
 
@@ -72,7 +72,7 @@ export default function YKSBirNetKacKisiAtar() {
 
                     <BlogHeroBanner
                         src="/images/blog/yks-1-net-kac-kisi-atar.jpg"
-                        alt="YKS&apos;de 1 Net Sıralamayı Ne Kadar Değiştirir?"
+                        alt="YKS'de 1 Net Sıralamayı Ne Kadar Değiştirir?"
                     />
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
@@ -81,7 +81,7 @@ export default function YKSBirNetKacKisiAtar() {
                         </p>
 
                         <p>
-                            Eğer Türkiye ilk 200&apos;ündeysen haklısın; 1 net seni 15-20 kişi oynatır. Ama eğer 3 milyon adayın kalabalık sürüsüyle birlikte <strong>60.000 - 150.000 bandında</strong> nefes alıp veriyorsan, o tek bir net resmen bir stadyum dolusu insanı ezip geçmek ya da onların altında ezilmek demektir.
+                            Eğer Türkiye ilk 200&apos;ündeysen haklısın; orada puanlar çok ayrıktır ve 1 net seni 15-20 kişi oynatır. Ama eğer 3 milyon adayın kalabalık sürüsüyle birlikte <strong>60.000 - 150.000 bandında</strong> nefes alıp veriyorsan, o tek bir net resmen koca bir stadyum dolusu insanı geride bırakmak demektir.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
@@ -89,43 +89,43 @@ export default function YKSBirNetKacKisiAtar() {
                         </h2>
 
                         <p>
-                            ÖSYM&apos;nin yığınsal grafiklerine baktığımızda ortaya çıkan acı gerçek şudur:
+                            ÖSYM&apos;nin yığınsal frekans dağılımı verilerine baktığımızda ortaya çıkan net tablo şudur:
                         </p>
 
                         <div className="overflow-x-auto my-6">
                             <table className="w-full text-sm text-left border border-gray-200">
-                                <thead className="bg-gray-100 text-gray-800">
+                                <thead className="bg-slate-100 text-gray-800 font-semibold border-b">
                                     <tr>
                                         <th className="p-3 border">Bulunduğun Sıralama Bandı</th>
-                                        <th className="p-3 border text-center text-blue-700">+1 TYT Neti</th>
-                                        <th className="p-3 border text-center text-purple-700 font-bold">+1 AYT Neti</th>
-                                        <th className="p-3 border">Sahadaki Durum</th>
+                                        <th className="p-3 border text-center text-blue-700">+1 TYT Netinin Etkisi</th>
+                                        <th className="p-3 border text-center text-purple-700 font-bold">+1 AYT Netinin Etkisi</th>
+                                        <th className="p-3 border">Aday Yoğunluğu & Yorum</th>
                                     </tr>
                                 </thead>
                                 <tbody className="divide-y divide-gray-200">
                                     <tr>
                                         <td className="p-3 border font-semibold">İlk 5.000 (Zirve)</td>
-                                        <td className="p-3 border text-center">40 - 70 kişi</td>
-                                        <td className="p-3 border text-center font-bold">150 - 300 kişi</td>
-                                        <td className="p-3 border text-gray-600">Adaylar seyrek, puan farkları açıktır.</td>
+                                        <td className="p-3 border text-center">50 - 100 kişi</td>
+                                        <td className="p-3 border text-center font-bold">150 - 350 kişi</td>
+                                        <td className="p-3 border text-gray-600">Adaylar seyrektir, her puanın değeri büyüktür.</td>
                                     </tr>
                                     <tr className="bg-gray-50">
                                         <td className="p-3 border font-semibold">20.000 - 50.000</td>
-                                        <td className="p-3 border text-center">400 - 800 kişi</td>
-                                        <td className="p-3 border text-center font-bold">1.200 - 2.500 kişi</td>
-                                        <td className="p-3 border text-gray-600">Tıp ve popüler mühendislikler için kıran kırana mücadele.</td>
+                                        <td className="p-3 border text-center">500 - 1.000 kişi</td>
+                                        <td className="p-3 border text-center font-bold">1.500 - 3.000 kişi</td>
+                                        <td className="p-3 border text-gray-600">Tıp, Diş ve popüler mühendislikler için kıran kırana mücadele.</td>
                                     </tr>
                                     <tr className="bg-amber-50">
-                                        <td className="p-3 border font-semibold text-amber-900">70.000 - 130.000 (Büyük Yığılma)</td>
-                                        <td className="p-3 border text-center font-bold text-amber-900">1.800 - 3.200 kişi</td>
-                                        <td className="p-3 border text-center font-black text-red-600">4.500 - 7.000 kişi</td>
-                                        <td className="p-3 border text-amber-900 font-medium">Tam bir can pazarı! 0,5 puan içinde 5 bin kişi üst üste biner.</td>
+                                        <td className="p-3 border font-semibold text-amber-950">60.000 - 150.000 (Büyük Yığılma)</td>
+                                        <td className="p-3 border text-center font-bold text-amber-900">2.000 - 4.500 kişi</td>
+                                        <td className="p-3 border text-center font-black text-red-600">5.000 - 9.500 kişi</td>
+                                        <td className="p-3 border text-amber-950 font-medium">Tam bir can pazarı! 0,5 puanlık daracık aralıkta binlerce kişi birikir.</td>
                                     </tr>
                                     <tr>
                                         <td className="p-3 border font-semibold">150.000 - 300.000</td>
-                                        <td className="p-3 border text-center">2.200 - 4.500 kişi</td>
-                                        <td className="p-3 border text-center font-bold">5.500 - 9.000 kişi</td>
-                                        <td className="p-3 border text-gray-600">En yoğun aday kümesi; küçük bir net sıçraması binlerce adayı eler.</td>
+                                        <td className="p-3 border text-center">3.000 - 6.000 kişi</td>
+                                        <td className="p-3 border text-center font-bold">7.000 - 12.000 kişi</td>
+                                        <td className="p-3 border text-gray-600">En yoğun aday kümesi; tek bir doğru yanıt binlerce adayı eler.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -134,31 +134,31 @@ export default function YKSBirNetKacKisiAtar() {
                         <QuickNetSimulator />
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Neden AYT Neti TYT&apos;yi İkiye Katlar?
+                            Neden AYT Neti TYT&apos;yi Neredeyse İkiye Katlar?
                         </h2>
 
                         <p>
-                            Çok basit bir matematik: TYT&apos;de 120 soru varken, AYT&apos;de sadece 80 soru çözersin. Üstelik genel yerleştirme puanına AYT %60, TYT ise sadece %40 etki eder.
+                            Mesele çok basit bir sınav matematiğine dayanır: TYT&apos;de 120 soru varken, AYT&apos;de yalnızca 80 soru çözersin. Üstelik lisans yerleştirme puanının %60&apos;ı AYT&apos;den, yalnızca %40&apos;ı TYT&apos;den gelir.
                         </p>
 
                         <p>
-                            Daha az soru + daha yüksek ağırlık = <strong>Devasa net değeri.</strong> Yani 80 bininci sırada sıkışıp kalmış bir adayın pazar günü AYT&apos;de fazladan çıkaracağı 2 tane Matematik veya Fen neti, onu tek hamlede 12 bin kişinin önüne fırlatır! Bu fark bir devlet üniversitesi kazanmakla mezuna kalmak arasındaki çizgidir.
+                            Daha az soru + daha yüksek ağırlık = <strong>Devasa net katsayısı.</strong> Yani 90 bininci sırada sıkışıp kalmış bir adayın pazar günkü AYT&apos;de çıkaracağı fazladan 2 adet Matematik veya Fen neti, onu tek hamlede 10-12 bin kişinin önüne fırlatır! Bu fark bir devlet üniversitesine yerleşmek ile mezuna kalmak arasındaki ince çizgidir.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            &ldquo;Zor Soru Daha Çok Kişi Attırır&rdquo; Yanılgısı
+                            &ldquo;Zor Soru Daha Çok Puan Getirir&rdquo; Şehir Efsanesi
                         </h2>
 
                         <p>
-                            ÖSYM soru bazlı değil, test bazlı standart sapma uygular. Çözmekte en çok zorlanılan karmaşık bir geometri sorusu ile testin ilk sayfasındaki temel bir kavram sorusu, ham net hanene tam olarak aynı değeri (+1,00 net) katar.
+                            ÖSYM soru bazlı değil, test bazlı standart sapma uygular. Sınavdaki en zor geometri sorusu ile ilk sayfadaki en basit temel kavram sorusu, ham net hanene tam olarak aynı değeri (+1,00 net) katar.
                         </p>
 
                         <p>
-                            Bu nedenle sınav tecrübesi yüksek adaylar zor tekil sorularla dakikalarca inatlaşmak yerine, testteki tüm kolay ve orta düzey soruları firesiz çözerek toplam netini yükseltir. Sıralama yığılmasında farkı yaratan şey tek bir sorunun zorluğu değil, testteki <strong>toplam net sayısıdır.</strong>
+                            Bu yüzden sınav tecrübesi olan başarılı adaylar zor tekil sorularla dakikalarca inatlaşmaz. Kolay ve orta soruları firesiz toplayıp toplam netini maksimize eder. Sıralama yığılmasında farkı yaratan şey tek bir sorunun zorluğu değil, testteki <strong>toplam netindir.</strong>
                         </p>
 
                         <div className="bg-slate-900 text-white rounded-2xl p-6 my-8 not-prose">
-                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Netlerinle Kaç Kişiyi Geçeceğini Gör</h3>
+                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Netlerinle Kaç Kişiyi Geçeceğini Simüle Et</h3>
                             <p className="text-sm text-slate-300 mb-4">
                                 Doğru ve yanlışlarını hesaplama motorumuza gir; hedefindeki 2-3 netlik artışın sıralamanı nasıl yukarı taşıyacağını canlı simülasyonda incele.
                             </p>
@@ -166,53 +166,28 @@ export default function YKSBirNetKacKisiAtar() {
                                 Canlı Net Simülatörüne Git →
                             </Link>
                         </div>
-                        
+
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Başarı Sıralamasına Göre 1 Netin Attığı Kişi Sayısı
+                            YKS Yığılması Hakkında Sıkça Sorulan Sorular
                         </h2>
-                        <p>
-                            1 netin sınav sıralamasına etkisi her puan aralığında eşit değildir. Aday sayısının yoğunlaştığı bölgelerde (yığılma alanları) tek bir soru binlerce adayın önüne geçmenizi sağlar:
-                        </p>
-                        <div className="overflow-x-auto my-6">
-                            <table className="w-full text-left border-collapse border border-gray-200 text-sm">
-                                <thead className="bg-purple-50 text-purple-950 font-semibold">
-                                    <tr>
-                                        <th className="p-3 border">Sıralama Bandı</th>
-                                        <th className="p-3 border">TYT 1 Netin Katkısı</th>
-                                        <th className="p-3 border">AYT 1 Netin Katkısı</th>
-                                        <th className="p-3 border">Yığılma Derecesi</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b">
-                                        <td className="p-3 font-medium border">İlk 10.000 (Zirve)</td>
-                                        <td className="p-3 border">150 - 350 Kişi</td>
-                                        <td className="p-3 border font-bold text-purple-700">400 - 800 Kişi</td>
-                                        <td className="p-3 border">Düşük (Puanlar Ayrışık)</td>
-                                    </tr>
-                                    <tr className="border-b bg-gray-50">
-                                        <td className="p-3 font-medium border">10.000 - 50.000</td>
-                                        <td className="p-3 border">600 - 1.200 Kişi</td>
-                                        <td className="p-3 border font-bold text-purple-700">1.500 - 3.000 Kişi</td>
-                                        <td className="p-3 border">Orta</td>
-                                    </tr>
-                                    <tr className="border-b">
-                                        <td className="p-3 font-medium border">50.000 - 150.000 (Kritik Bölge)</td>
-                                        <td className="p-3 border font-bold text-red-600">2.500 - 5.000 Kişi</td>
-                                        <td className="p-3 border font-bold text-red-600">6.000 - 12.000 Kişi</td>
-                                        <td className="p-3 border font-bold text-red-600">Aşırı Yüksek Yığılma</td>
-                                    </tr>
-                                    <tr className="border-b bg-gray-50">
-                                        <td className="p-3 font-medium border">150.000 - 300.000</td>
-                                        <td className="p-3 border">3.000 - 6.000 Kişi</td>
-                                        <td className="p-3 border font-bold text-purple-700">7.000 - 14.000 Kişi</td>
-                                        <td className="p-3 border">Yüksek</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+
+                        <div className="space-y-4 my-6">
+                            <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                                <h3 className="font-bold text-gray-900 text-base mb-1">Kolay sınavda mı yığılma çok olur, zor sınavda mı?</h3>
+                                <p className="text-sm text-gray-700">
+                                    Kesinlikle kolay sınavda! Sınav kolay olduğunda adayların netleri birbirine yaklaşır ve belirli puan aralıklarında yüz binlerce öğrenci üst üste biner. Zor sınavlarda ise bilenle bilmeyen net şekilde ayrışır ve puanlar dağılır.
+                                </p>
+                            </div>
+                            <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                                <h3 className="font-bold text-gray-900 text-base mb-1">OBP yığılmada nasıl bir rol oynar?</h3>
+                                <p className="text-sm text-gray-700">
+                                    Orta sıralarda (özellikle 50k - 150k aralığında) diploma notu yüksek olan adaylar tek bir hamlede 4-5 bin kişiyi geride bırakırken, OBP&apos;si düşük olan adaylar sınavda iyi net yapsalar dahi geriye düşebilir.
+                                </p>
+                            </div>
                         </div>
-                        <p>
-                            Bu devasa aday kalabalığının tercih döneminde başına nasıl çoraplar örebileceğini <Link href="/blog/yks-yigilma-tehlikesi" className="text-blue-600 font-semibold hover:underline">YKS Yığılma Tehlikesi</Link> yazımızda konuştuk. Hayalindeki üniversite bölümü için masada kaç net bırakman gerektiğini de <Link href="/blog/yks-kac-net-kac-puan" className="text-blue-600 font-semibold hover:underline">YKS Kaç Net Kaç Puan?</Link> tablosundan hemen kontrol et.
+
+                        <p className="mt-8">
+                            Yığılma tehlikesini aşmak ve tercih listeni sağlama almak için <Link href="/blog/yks-yigilma-tehlikesi" className="text-blue-600 font-semibold hover:underline">YKS Yığılma Tehlikesi ve Çözüm Yolları</Link> rehberimizi inceleyebilir, diploma notunun gücünü görmek için <Link href="/blog/obp-hesaplama" className="text-blue-600 font-semibold hover:underline">OBP Hesaplama</Link> aracımızı kullanabilirsin.
                         </p>
 
                         <ArticleFeedback />

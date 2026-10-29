@@ -122,8 +122,8 @@ export default function HakkimizdaPage() {
                                 Aklına takılan bir soru, öneri veya hata bildirimi için bize dilediğin an yazabilirsin:
                             </p>
                             <div className="bg-gray-50 p-5 rounded-xl space-y-2 text-sm">
-                                <p><strong>E-posta:</strong> iletisim@yksnethesapla.com</p>
-                                <p><strong>Destek:</strong> destek@yksnethesapla.com</p>
+                                <p><strong>E-posta:</strong> yksnethesaplacom@gmail.com</p>
+                                <p><strong>Destek:</strong> yksnethesaplacom@gmail.com</p>
                                 <p><strong>Konum:</strong> Ankara, Türkiye</p>
                                 <p>
                                     <Link href="/iletisim" className="text-blue-600 hover:underline font-medium">

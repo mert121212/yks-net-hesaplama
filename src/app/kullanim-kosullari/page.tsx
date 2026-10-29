@@ -224,7 +224,7 @@ export default function KullanimKosullariPage() {
                                 Kullanım koşulları hakkındaki tüm sorularınızı doğrudan bize iletin:
                             </p>
                             <div className="bg-gray-50 p-4 rounded-lg">
-                                <p><strong>E-posta:</strong> iletisim@yksnethesapla.com</p>
+                                <p><strong>E-posta:</strong> yksnethesaplacom@gmail.com</p>
                                 <p className="mt-2">
                                     <Link href="/iletisim" className="text-blue-600 hover:text-blue-800 underline">
                                         İletişim sayfasını ziyaret edin →

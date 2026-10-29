@@ -298,7 +298,7 @@ export default function SEOContent() {
                         href="/blog"
                         className="text-sm font-bold text-blue-600 hover:text-blue-800 transition-colors inline-flex items-center gap-1 self-start sm:self-auto"
                     >
-                        Tüm Makaleleri Gör ({19}) →
+                        Tüm Makaleleri Gör (22) →
                     </Link>
                 </div>
 

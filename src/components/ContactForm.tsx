@@ -9,7 +9,7 @@ export default function ContactForm() {
     const [message, setMessage] = useState('')
     const [copied, setCopied] = useState(false)
 
-    const recipient = 'mertcaliskan36065d@gmail.com'
+    const recipient = 'yksnethesaplacom@gmail.com'
 
     // Form içeriğini e-posta gövdesine dönüştür
     const buildEmailContent = () => {

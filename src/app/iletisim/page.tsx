@@ -47,7 +47,7 @@ export default function IletisimPage() {
                                         <td className="px-5 py-4 font-medium">📧 Genel İletişim</td>
                                         <td className="px-5 py-4">
                                             <a
-                                                href="mailto:mertcaliskan36065d@gmail.com?subject=[Iletisim]%20YKS%20Net%20Hesaplama"
+                                                href="mailto:yksnethesaplacom@gmail.com?subject=[Iletisim]%20YKS%20Net%20Hesaplama"
                                                 className="text-blue-600 hover:underline font-semibold inline-flex items-center gap-1"
                                             >
                                                 E-posta Gönder →
@@ -59,7 +59,7 @@ export default function IletisimPage() {
                                         <td className="px-5 py-4 font-medium">🐛 Teknik Destek</td>
                                         <td className="px-5 py-4">
                                             <a
-                                                href="mailto:mertcaliskan36065d@gmail.com?subject=[HATA]%20Teknik%20Destek"
+                                                href="mailto:yksnethesaplacom@gmail.com?subject=[HATA]%20Teknik%20Destek"
                                                 className="text-blue-600 hover:underline font-semibold inline-flex items-center gap-1"
                                             >
                                                 Destek Bildirimi Yap →
@@ -71,7 +71,7 @@ export default function IletisimPage() {
                                         <td className="px-5 py-4 font-medium">🤝 İş Birlikleri</td>
                                         <td className="px-5 py-4">
                                             <a
-                                                href="mailto:mertcaliskan36065d@gmail.com?subject=[IS%20BIRLIGI]%20Teklif"
+                                                href="mailto:yksnethesaplacom@gmail.com?subject=[IS%20BIRLIGI]%20Teklif"
                                                 className="text-blue-600 hover:underline font-semibold inline-flex items-center gap-1"
                                             >
                                                 İş Birliği Talebi Gönder →

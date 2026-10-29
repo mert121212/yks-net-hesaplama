@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         description: 'TYT kötü geçti diye havlu atanlar bu hesabı bilmiyor: AYT puanının %60 ağırlığı nasıl hayat kurtarır?',
         type: 'article',
         publishedTime: '2026-02-27',
-        modifiedTime: '2026-07-10',
+        modifiedTime: '2026-10-29',
         url: 'https://yksnethesapla.com/blog/ayt-puan-hesaplama',
         images: [
             {
@@ -39,7 +39,7 @@ export default function AYTPuanHesaplama() {
                     title="AYT Puan Hesaplama 2027 | SAY, EA, SÖZ Katsayıları ve Ağırlıklar" 
                     description="AYT puan hesaplama yöntemi: SAY, EA ve SÖZ puan türlerinde test ağırlıkları, 1 AYT netinin puan değeri ve yerleştirmeye etkisi."
                     datePublished="2026-02-27"
-                    dateModified="2026-07-10"
+                    dateModified="2026-10-29"
                     url="https://yksnethesapla.com/blog/ayt-puan-hesaplama"
                     keywords={['ayt puan hesaplama', 'ayt katsayıları', 'say katsayıları', 'ea katsayıları', 'söz katsayıları', 'yks yerleştirme puanı']}
                 />
@@ -56,14 +56,14 @@ export default function AYTPuanHesaplama() {
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Hesap Masası</span>
                             <time className="text-gray-600" dateTime="2026-02-27">27 Şubat 2026</time>
-                            <span className="text-gray-600">• 7 dk okuma</span>
-                            <LastUpdatedBadge date="2026-07-10" />
+                            <span className="text-gray-600">• 9 dk okuma</span>
+                            <LastUpdatedBadge date="2026-10-29" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             AYT Puan Hesaplama: 1 Net Kaç Puan Getirir, Masayı Nasıl Dağıtır?
                         </h1>
                         <p className="text-xl text-gray-600">
-                            TYT&apos;den çıkıp &ldquo;Sınavım berbat geçti, mezuna kaldım&rdquo; diye ağlayan öğrencilerin ertesi gün AYT&apos;de yazdığı destanları her sene görüyoruz. Çünkü formülün kralı pazar günkü oturumda saklı.
+                            TYT&apos;den çıkıp &ldquo;Sınavım berbat geçti, mezuna kaldım&rdquo; diye karalar bağlayan öğrencilerin ertesi gün AYT&apos;de yazdığı geri dönüş hikâyelerini her sene görüyoruz. Çünkü sıralamanın asıl lokomotifi pazar günkü oturumdur.
                         </p>
                     </header>
 
@@ -76,96 +76,31 @@ export default function AYTPuanHesaplama() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            Her yıl binlerce aday cumartesi günkü TYT sonrasında moral çöküntüsü yaşayıp pazar sabahı AYT&apos;ye sanki formalite icabı giriyormuş gibi gidiyor. Yapılabilecek en büyük intihar budur.
+                            Her yıl binlerce aday cumartesi günkü TYT sonrasında moral çöküntüsü yaşayıp pazar sabahı AYT&apos;ye sanki formalite icabı giriyormuş gibi isteksizce gidiyor. Bir YKS öğrencisinin yapabileceği en büyük hata budur.
                         </p>
 
                         <p>
-                            4 yıllık bir fakülteye (Tıp, Hukuk, Mühendislik, Psikoloji, Öğretmenlik) gitmek istiyorsan, cebindeki yerleştirme puanının <strong>tam %60&apos;ını pazar günkü AYT belirler.</strong> TYT&apos;nin payı sadece %40&apos;tır.
+                            4 yıllık bir lisans programına (Tıp, Hukuk, Mühendislik, Psikoloji, Öğretmenlik vb.) yerleşmek istiyorsan, cebindeki yerleştirme puanının <strong>tam %60&apos;ını pazar günkü AYT belirler.</strong> TYT&apos;nin katkısı yalnızca %40 ile sınırlıdır.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Acı Gerçek: 1 AYT Neti = 2,3 TYT Neti
+                            Matematiksel Gerçek: 1 AYT Neti = 2,3 TYT Neti
                         </h2>
                         <p>
-                            ÖSYM&apos;nin soru ve katsayı matematiğini yan yana koyduğunda ortaya çıkan tablo çok çarpıcıdır:
+                            ÖSYM&apos;nin katsayı ve soru sayısı oranlarını yan yana koyduğunda ortaya çıkan tablo son derece nettir:
                         </p>
                         <ul className="list-disc pl-6 space-y-2">
                             <li><strong>TYT&apos;de 1 Net:</strong> Yaklaşık <strong>1,32 - 1,35 puan</strong> kazandırır.</li>
-                            <li><strong>AYT&apos;de 1 Net:</strong> Tamı tamına <strong>3,00 puan</strong> civarında getirir.</li>
+                            <li><strong>AYT&apos;de 1 Net:</strong> Tam olarak <strong>2,90 - 3,10 puan</strong> civarında getirir.</li>
                         </ul>
                         <p>
-                            Bu ne anlama geliyor biliyor musun? Cumartesi günü TYT&apos;de rakibinden 10 net geriye mi düştün? Pazar günü AYT&apos;de fazladan 4-5 net yaptığın an rakibini ezip geçiyorsun demektir! O yüzden AYT hiçbir zaman bırakılmaz.
+                            Bu ne anlama geliyor? Cumartesi günü TYT&apos;de rakibinden 10 net geriye mi düştün? Pazar günü AYT&apos;de fazladan çıkaracağın yalnızca 4-5 net, o farkı tamamen kapatıp seni rakibinin önüne geçirir! Bu yüzden AYT asla bırakılmaz.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Puan Türlerine Göre Masadaki Test Ağırlıkları
+                            Puan Türlerine Göre AYT Test Katsayıları ve Ağırlıkları
                         </h2>
 
-                        <div className="space-y-4 my-6">
-                            <div className="p-5 bg-blue-50 border border-blue-200 rounded-xl">
-                                <h3 className="font-bold text-blue-950 text-lg mb-2">1. Sayısal (SAY) Puanı: 80 Soru</h3>
-                                <p className="text-sm text-blue-900 mb-2">
-                                    Sayısal öğrencisi 40 Matematik + 40 Fen (14 Fizik, 13 Kimya, 13 Biyoloji) çözer.
-                                </p>
-                                <ul className="text-sm text-blue-900 space-y-1 list-disc pl-5">
-                                    <li><strong>AYT Matematik (40 Soru):</strong> Toplam puanın %30&apos;u (~3,00 puan/net)</li>
-                                    <li><strong>AYT Fizik (14 Soru):</strong> Toplam puanın %10&apos;u (~2,85 puan/net)</li>
-                                    <li><strong>AYT Kimya (13 Soru):</strong> Toplam puanın %10&apos;u (~3,05 puan/net)</li>
-                                    <li><strong>AYT Biyoloji (13 Soru):</strong> Toplam puanın %10&apos;u (~3,00 puan/net)</li>
-                                </ul>
-                            </div>
-
-                            <div className="p-5 bg-emerald-50 border border-emerald-200 rounded-xl">
-                                <h3 className="font-bold text-emerald-950 text-lg mb-2">2. Eşit Ağırlık (EA) Puanı: 80 Soru</h3>
-                                <p className="text-sm text-emerald-900 mb-2">
-                                    Eşit Ağırlıkçı 40 Matematik + 40 Edebiyat-Sosyal-1 çözer.
-                                </p>
-                                <ul className="text-sm text-emerald-900 space-y-1 list-disc pl-5">
-                                    <li><strong>AYT Matematik (40 Soru):</strong> Puanın %30&apos;u (~3,00 puan/net)</li>
-                                    <li><strong>Edebiyat (24 Soru):</strong> Puanın %18&apos;i (~3,00 puan/net)</li>
-                                    <li><strong>Tarih-1 (10 Soru):</strong> Puanın %7&apos;si (~2,80 puan/net)</li>
-                                    <li><strong>Coğrafya-1 (6 Soru):</strong> Puanın %5&apos;i (~3,30 puan/net)</li>
-                                </ul>
-                            </div>
-
-                            <div className="p-5 bg-purple-50 border border-purple-200 rounded-xl">
-                                <h3 className="font-bold text-purple-950 text-lg mb-2">3. Sözel (SÖZ) Puanı: 80 Soru</h3>
-                                <p className="text-sm text-purple-900 mb-2">
-                                    Sözel öğrencisi Edebiyat-Sosyal-1 (40) ve Sosyal-2 (40) testlerini çözer.
-                                </p>
-                                <ul className="text-sm text-purple-900 space-y-1 list-disc pl-5">
-                                    <li><strong>Edebiyat-Sosyal-1 (40 Soru):</strong> Puanın %30&apos;u.</li>
-                                    <li><strong>Sosyal-2 (40 Soru - Tarih-2, Coğrafya-2, Felsefe, Din):</strong> Puanın %30&apos;u.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            Peki Başka Testi Çözsem Puanım Düşer mi?
-                        </h2>
-                        <p>
-                            Sınav anında en çok tereddüt edilen konu: <em>&ldquo;Hocam ben Eşit Ağırlıkçıyım, sürem arttı, Sosyal-2&apos;yi de çözsem EA puanım düşer mi?&rdquo;</em>
-                        </p>
-                        <p>
-                            <strong>Asla düşmez.</strong> AYT&apos;de sana tek bir 160 soruluk dev kitapçık verilir. Kendi alanını bitirip fazladan çözdüğün hiçbir test senin asıl alan puanını zerre kadar aşağı çekmez. Aksine; fazladan çözdüğün Sosyal-2 testi senin Sözel puanını da hesaplatır, eline bedavadan ikinci bir tercih alternatifi geçer.
-                        </p>
-
-                        <div className="bg-slate-900 text-white rounded-2xl p-6 my-8 not-prose">
-                            <h3 className="text-lg font-bold text-emerald-400 mb-2">AYT Puanını ve Sıralamanı Simüle Et</h3>
-                            <p className="text-sm text-slate-300 mb-4">
-                                Testlerdeki netlerini gir; SAY, EA ve SÖZ puanlarını ÖSYM katsayılarıyla anında hesaplayalım.
-                            </p>
-                            <Link href="/" className="inline-block bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
-                                Hesaplama Motoruna Git →
-                            </Link>
-                        </div>
-                        
-                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            AYT Katsayı ve Test Ağırlıkları Matrisi
-                        </h2>
-                        <p>
-                            AYT puanı hesaplanırken sadece sınav anında yaptığınız netler değil, TYT'nin %40'lık temel katkısı da hesaplamaya doğrudan dahil edilir. Alanınıza göre testlerin net katkı katsayıları aşağıda özetlenmiştir:
-                        </p>
                         <div className="overflow-x-auto my-6">
                             <table className="w-full text-left border-collapse border border-gray-200 text-sm">
                                 <thead className="bg-blue-50 text-blue-900 font-semibold">
@@ -179,45 +114,85 @@ export default function AYTPuanHesaplama() {
                                 </thead>
                                 <tbody>
                                     <tr className="border-b">
-                                        <td className="p-3 font-medium border">TYT Toplamı</td>
-                                        <td className="p-3 border">120</td>
+                                        <td className="p-3 font-semibold border">TYT Toplam Katkısı</td>
+                                        <td className="p-3 border">120 Soru</td>
                                         <td className="p-3 border">%40</td>
                                         <td className="p-3 border">%40</td>
                                         <td className="p-3 border">%40</td>
                                     </tr>
                                     <tr className="border-b bg-gray-50">
-                                        <td className="p-3 font-medium border">AYT Matematik</td>
-                                        <td className="p-3 border">40</td>
-                                        <td className="p-3 border">%30</td>
-                                        <td className="p-3 border">%30</td>
-                                        <td className="p-3 border">-</td>
+                                        <td className="p-3 font-semibold border">AYT Matematik</td>
+                                        <td className="p-3 border">40 Soru</td>
+                                        <td className="p-3 border font-bold text-blue-700">%30 (~3,0 Puan)</td>
+                                        <td className="p-3 border font-bold text-emerald-700">%30 (~3,0 Puan)</td>
+                                        <td className="p-3 border text-gray-400">-</td>
                                     </tr>
                                     <tr className="border-b">
-                                        <td className="p-3 font-medium border">AYT Fizik - Kimya - Biyo</td>
-                                        <td className="p-3 border">40</td>
-                                        <td className="p-3 border">%30</td>
-                                        <td className="p-3 border">-</td>
-                                        <td className="p-3 border">-</td>
+                                        <td className="p-3 font-semibold border">AYT Fen Bilimleri (Fiz-Kim-Biyo)</td>
+                                        <td className="p-3 border">40 Soru</td>
+                                        <td className="p-3 border font-bold text-blue-700">%30 (~3,0 Puan)</td>
+                                        <td className="p-3 border text-gray-400">-</td>
+                                        <td className="p-3 border text-gray-400">-</td>
                                     </tr>
                                     <tr className="border-b bg-gray-50">
-                                        <td className="p-3 font-medium border">AYT Edebiyat - Tarih-1 - Coğ-1</td>
-                                        <td className="p-3 border">40</td>
-                                        <td className="p-3 border">-</td>
-                                        <td className="p-3 border">%30</td>
-                                        <td className="p-3 border">%30</td>
+                                        <td className="p-3 font-semibold border">AYT Edebiyat - Sosyal-1</td>
+                                        <td className="p-3 border">40 Soru</td>
+                                        <td className="p-3 border text-gray-400">-</td>
+                                        <td className="p-3 border font-bold text-emerald-700">%30 (~3,0 Puan)</td>
+                                        <td className="p-3 border font-bold text-purple-700">%30 (~3,0 Puan)</td>
                                     </tr>
                                     <tr className="border-b">
-                                        <td className="p-3 font-medium border">AYT Sosyal-2 Testi</td>
-                                        <td className="p-3 border">40</td>
-                                        <td className="p-3 border">-</td>
-                                        <td className="p-3 border">-</td>
-                                        <td className="p-3 border">%30</td>
+                                        <td className="p-3 font-semibold border">AYT Sosyal-2 Testi</td>
+                                        <td className="p-3 border">40 Soru</td>
+                                        <td className="p-3 border text-gray-400">-</td>
+                                        <td className="p-3 border text-gray-400">-</td>
+                                        <td className="p-3 border font-bold text-purple-700">%30 (~3,0 Puan)</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            Peki Alanım Dışındaki Testi Çözsem Puanım Düşer mi?
+                        </h2>
                         <p>
-                            Hangi puan türünün senin hedefine daha çok yaradığını merak ediyorsan <Link href="/blog/yks-puan-turleri" className="text-blue-600 font-semibold hover:underline">YKS Puan Türleri Rehberi</Link>&apos;ne mutlaka uğra. Lise diploma notunun net puanına katacağı değeri <Link href="/blog/obp-hesaplama" className="text-blue-600 font-semibold hover:underline">OBP Hesaplama Rehberi</Link> üzerinden kuruşu kuruşuna gör. AYT&apos;de en çok net kazandıran konuları da <Link href="/blog/ayt-matematik-konulari" className="text-blue-600 font-semibold hover:underline">AYT Matematik Konuları</Link> listemizden tek tek işaretle.
+                            Sınav esnasında öğrencilerin en çok tereddüt ettiği soru: <em>&ldquo;Hocam ben Eşit Ağırlıkçıyım, sürem arttı; Sosyal-2&apos;yi veya Fen&apos;i de çözsem EA puanım düşer mi?&rdquo;</em>
+                        </p>
+                        <p>
+                            <strong>Kesinlikle düşmez!</strong> AYT sınavında sana 160 soruluk tek bir kitapçık verilir. Kendi alanın dışındaki testleri çözmen asıl puan türünü zerre kadar etkilemez veya puanını kırmaz. Aksine; fazladan çözdüğün Sosyal-2 testi senin Sözel puanını da hesaplatır ve tercih döneminde eline ikinci bir alternatif puan türü verir.
+                        </p>
+
+                        <div className="bg-slate-900 text-white rounded-2xl p-6 my-8 not-prose">
+                            <h3 className="text-lg font-bold text-emerald-400 mb-2">AYT Puanını ve Sıralamanı Simüle Et</h3>
+                            <p className="text-sm text-slate-300 mb-4">
+                                Testlerdeki netlerini gir; SAY, EA ve SÖZ puanlarını güncel ÖSYM katsayılarıyla anında hesaplayalım.
+                            </p>
+                            <Link href="/" className="inline-block bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
+                                Puan Hesaplama Motoruna Git →
+                            </Link>
+                        </div>
+
+                        <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
+                            AYT Puanı Hakkında Sıkça Sorulan Sorular
+                        </h2>
+
+                        <div className="space-y-4 my-6">
+                            <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                                <h3 className="font-bold text-gray-900 text-base mb-1">Standart sapma her yıl puanları nasıl etkiler?</h3>
+                                <p className="text-sm text-gray-700">
+                                    Türkiye genelinde ortalaması düşük olan ve adayların zorlandığı testlerin (genellikle AYT Matematik ve Fizik) standart sapma değeri yükselir ve o testten çıkarılan 1 net, ortalaması yüksek testlere göre biraz daha fazla puan getirebilir.
+                                </p>
+                            </div>
+                            <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                                <h3 className="font-bold text-gray-900 text-base mb-1">AYT baraj puanı kalktı mı?</h3>
+                                <p className="text-sm text-gray-700">
+                                    Evet, YÖK kararıyla TYT&apos;deki 150 ve AYT&apos;deki 180 puanlık genel baraj uygulaması kaldırılmıştır. Artık ilgili testten 0,5 net çıkaran her adayın puanı hesaplanır. Ancak Tıp, Hukuk, Mühendislik gibi bölümlerdeki başarı sırası barajları hâlâ geçerlidir.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p className="mt-8">
+                            Hangi puan türünün senin hayalindeki mesleğe kapı açtığını görmek için <Link href="/blog/yks-puan-turleri" className="text-blue-600 font-semibold hover:underline">YKS Puan Türleri Rehberi</Link>&apos;ne göz atabilir, AYT&apos;de en çok soru getiren konuları <Link href="/blog/ayt-matematik-konulari" className="text-blue-600 font-semibold hover:underline">AYT Matematik Konuları</Link> listemizden takip edebilirsin.
                         </p>
 
                         <ArticleFeedback />

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         description: 'Her yıl binlerce adayın başvuru yapıp parayı yatırmadığı için sınava giremediğini biliyor musun? Adım adım başvuru kılavuzu.',
         type: 'article',
         publishedTime: '2026-05-12',
-        modifiedTime: '2026-08-22',
+        modifiedTime: '2026-10-29',
         url: 'https://yksnethesapla.com/blog/yks-2027-basvuru-tarihleri',
         images: [
             {
@@ -39,7 +39,7 @@ export default function YKSBasvuruTarihleri() {
                     title="YKS 2027 Başvuru Tarihleri ve AİS Başvuru Adımları" 
                     description="2027 YKS (TYT-AYT) başvuru takvimi, ÖSYM AİS üzerinden e-Devlet ile kayıt aşamaları, geç başvuru koşulları ve ödeme süreci."
                     datePublished="2026-05-12"
-                    dateModified="2026-08-22"
+                    dateModified="2026-10-29"
                     url="https://yksnethesapla.com/blog/yks-2027-basvuru-tarihleri"
                     keywords={['yks 2027 başvuru tarihleri', 'yks başvuru nasıl yapılır', 'yks ücreti 2027', 'geç başvuru yks', 'yks ne zaman']}
                 />
@@ -56,14 +56,14 @@ export default function YKSBasvuruTarihleri() {
                         <div className="flex items-center gap-4 mb-4">
                             <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Kritik Süreç</span>
                             <time className="text-gray-600" dateTime="2026-05-12">12 Mayıs 2026</time>
-                            <span className="text-gray-600">• 6 dk okuma</span>
-                            <LastUpdatedBadge date="2026-08-22" />
+                            <span className="text-gray-600">• 10 dk okuma</span>
+                            <LastUpdatedBadge date="2026-10-29" />
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
                             YKS 2027 Başvuru Rehberi: Bir Hata Yüzünden 1 Yılın Çöpe Gitmesin
                         </h1>
                         <p className="text-xl text-gray-600">
-                            Aylarca soru çözüp sabahlayan öğrencilerin &ldquo;Ben formu doldurmuştum ama param çekilmemiş&rdquo; diyerek sınava alınmadığı trajedileri her sene haberlerde izliyoruz.
+                            Aylarca sabahlayıp soru çözen adayların &ldquo;Ben formu kaydettim sanmıştım ama ücret ödenmemiş&rdquo; diyerek sınava alınmadığı acı hikâyeleri her sene görüyoruz. İşte başvuru adımları ve dikkat edilmesi gereken hayati detaylar.
                         </p>
                     </header>
 
@@ -76,11 +76,11 @@ export default function YKSBasvuruTarihleri() {
 
                     <div className="prose prose-lg max-w-none text-gray-700 space-y-6 mt-8">
                         <p className="text-lg leading-relaxed">
-                            YKS süreci sadece masada soru çözmekten ibaret değil; bürokrasiyi de hatasız yönetmek zorundasın. ÖSYM&apos;nin şakası yoktur. Başvuru süresini 1 dakika kaçırsan kapılar yüzüne kapanır.
+                            YKS hazırlığı sadece ders çalışmaktan ibaret değildir; bürokratik süreci de kusursuz tamamlamak zorundasın. ÖSYM sisteminde mazeret kabul edilmez. Başvuru süresini 1 dakika dahi geciktirsen sistem kapanır ve koskoca 1 yılın heba olur.
                         </p>
 
                         <p>
-                            Gözünü seveyim şu adımları hafife alma. Telefonuna alarmları kur, takvimi işaretle ve başvurunu son güne bırakmadan aradan çıkar.
+                            İşleri son güne bırakmadan, sistem yoğunluğundan sunucular çökmeden başvurunu tamamlaman için adımları tek tek derledik.
                         </p>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
@@ -89,107 +89,82 @@ export default function YKSBasvuruTarihleri() {
 
                         <div className="space-y-4 my-6">
                             <div className="p-5 bg-blue-50 border border-blue-200 rounded-xl">
-                                <h3 className="font-bold text-blue-950 text-lg mb-1">1. Ana Başvuru Dönemi (Şubat - Mart)</h3>
+                                <h3 className="font-bold text-blue-950 text-lg mb-1">1. Ana Başvuru Dönemi (Şubat Başı - Mart Başı)</h3>
                                 <p className="text-sm text-blue-900 leading-relaxed">
-                                    ais.osym.gov.tr üzerinden başvuruların açıldığı yaklaşık 3-4 haftalık ana dönemdir. Oturumlarını seçtiğin, sınav merkezini belirlediğin ve standart sınav ücretini yatırdığın asıl pencere burası.
+                                    ÖSYM AİS (ais.osym.gov.tr) üzerinden başvuruların açıldığı yaklaşık 3-4 haftalık ana penceredir. Hangi oturumlara gireceğini seçtiğin, sınav merkezini belirlediğin ve standart oturum ücretini yatırdığın dönemdir.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-amber-50 border border-amber-200 rounded-xl">
-                                <h3 className="font-bold text-amber-950 text-lg mb-1">2. Geç Başvuru Günü (Mart Sonu)</h3>
+                                <h3 className="font-bold text-amber-950 text-lg mb-1">2. Geç Başvuru Günleri (Mart Sonu)</h3>
                                 <p className="text-sm text-amber-900 leading-relaxed">
-                                    Ana dönemi unutanlar için ÖSYM&apos;nin açtığı 2 günlük &ldquo;son şans&rdquo; kapısı. Ama burada sınav ücreti yaklaşık <strong>%50 zamlı</strong> ödenir. Cüzdanına yazık etme.
+                                    Ana dönemi herhangi bir sebeple kaçıran adaylar için ÖSYM&apos;nin açtığı 2-3 günlük son telafi şansıdır. Ancak burada sınav ücreti yaklaşık <strong>%50 artırımlı (zamlı)</strong> olarak ödenir. Cebine yazık etmemek için ana dönemi kaçırmamalısın.
                                 </p>
                             </div>
 
                             <div className="p-5 bg-emerald-50 border border-emerald-200 rounded-xl">
                                 <h3 className="font-bold text-emerald-950 text-lg mb-1">3. Büyük Sınav Hafta Sonu (Haziran)</h3>
                                 <p className="text-sm text-emerald-900 leading-relaxed">
-                                    Cumartesi 10:15 TYT, Pazar 10:15 AYT, Pazar 15:45 YDT. Unutma: <strong>Saat 10:00&apos;dan sonra sınav binasına tek bir kişi dahi alınmaz!</strong> 10:01&apos;de kapıda ağlayan öğrencilerden biri olmamak için sınav yerine en az 1 saat önce git.
+                                    Cumartesi sabahı 10:15&apos;te TYT, Pazar sabahı 10:15&apos;te AYT ve Pazar öğleden sonra 15:45&apos;te YDT oturumları yapılır. <strong>Unutulmaması gereken en katı kural: Saat 10:00&apos;dan sonra bina kapıları kilitlenir ve tek bir aday bile içeri alınmaz!</strong>
                                 </p>
                             </div>
                         </div>
 
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            e-Devlet ile AİS Başvurusu Nasıl Yapılır? (5 Adım)
+                            e-Devlet ile AİS Başvurusu Nasıl Yapılır? (Adım Adım)
                         </h2>
                         <ol className="list-decimal pl-6 space-y-3 text-sm text-gray-800">
-                            <li><strong>Giriş Yap:</strong> ais.osym.gov.tr adresine girip &ldquo;e-Devlet ile Kayıt Ol / Giriş Yap&rdquo; butonuna tıkla. Artık eskisi gibi ÖSYM merkezlerine gidip sıra bekleme derdi yok, kimlik kartın çipliyse her şey evden 3 dakikada halloluyor.</li>
-                            <li><strong>Fotoğrafını Kontrol Et:</strong> Kimlik kartındaki fotoğrafın son 50 ay içinde güncellenmiş olması gerekir. Çok eskiyse sistem uyarı verir, o zaman nüfus müdürlüğünden kimliğini yenilemen gerekir.</li>
-                            <li><strong>Oturumları Eksiksiz Seç:</strong> TYT herkes için zorunlu. 4 yıllık fakülte hedefleyen herkes mutlaka <strong>AYT</strong> kutucuğunu da işaretlemek zorundadır. &ldquo;Sonra eklerim&rdquo; deme, aynı anda seç.</li>
-                            <li><strong>Sınav Merkezini Dikkatli Yaz:</strong> İkamet ettiğin yere en yakın ilçeyi 1. tercih yap. Sınav sabahı 2 saat trafik çekmek istemezsin.</li>
-                            <li><strong>Ödemeyi Yap ve Onayı Gör:</strong> Başvuru formunu doldurup kaydetmek işin sadece yarısıdır!</li>
+                            <li><strong>ÖSYM AİS Girişi:</strong> ais.osym.gov.tr adresine girerek &ldquo;e-Devlet ile Giriş Yap&rdquo; seçeneğini kullan. Eğer yeni çipli kimlik kartın varsa doğrudan sisteme bağlanabilirsin.</li>
+                            <li><strong>Fotoğraf Geçerliliği Kontrolü:</strong> Kimlik kartındaki fotoğrafının son 50 ay içinde çekilmiş olması gerekir. Fotoğraf süresi dolmuşsa sistem uyarı verir; bu durumda en yakın Nüfus Müdürlüğü&apos;nden kimlik fotoğrafını güncellemen gerekir.</li>
+                            <li><strong>Oturum Seçimi:</strong> TYT oturumu tüm adaylar için zorunludur. Eğer 4 yıllık lisans programı hedefliyorsan mutlaka <strong>AYT</strong> oturumunu da işaretlemelisin. Dil puanı isteyenler ise YDT kutucuğunu işaretlemelidir.</li>
+                            <li><strong>Sınav Merkezi Tercihi:</strong> İkamet ettiğin adrese en yakın il/ilçe merkezini 1. tercih olarak belirle. Sınav günü sabah trafiğinde stres yaşamamak için mesafeyi iyi hesapla.</li>
+                            <li><strong>Ödemeyi Yap ve Onayı Gör:</strong> Sadece formu onaylamak başvurunun bittiği anlamına gelmez! Mutlaka sınav ücretini yatırmalısın.</li>
                         </ol>
 
                         <div className="bg-red-50 border-l-4 border-red-600 p-5 rounded-r-xl my-6">
-                            <h3 className="font-bold text-red-950 text-base mb-1">ÖLÜMCÜL TUZAK: Ücret Ödenmeden Başvuru Geçersizdir!</h3>
+                            <h3 className="font-bold text-red-950 text-base mb-1">Hayati Uyarı: Ücreti Yatırmazsan Başvurun İptal Olur!</h3>
                             <p className="text-sm text-red-900">
-                                Formu onaylayıp çıktın mı? Hemen ÖSYM Ödemeler sayfasına (odeme.osym.gov.tr) gir ve banka/kredi kartınla ücreti yatır. Ardından AİS&apos;e tekrar girip durumun <strong>&ldquo;Başvuru İşlemi ÖSYM&apos;ye Bildirilmiştir ve Ücreti Ödenmiştir&rdquo;</strong> yazdığını yeşil tik ile gör. Bu yazıyı görmeden sakın rahat uyuma.
+                                Formu kaydettikten sonra ÖSYM Ödeme Sistemi (odeme.osym.gov.tr) üzerinden banka veya kredi kartıyla ödemeni tamamla. Ardından tekrar AİS ekranına dönerek durumun <strong>&ldquo;Başvuru İşlemi ÖSYM&apos;ye Bildirilmiştir ve Ücreti Ödenmiştir&rdquo;</strong> yeşil onayıyla tamamlandığını kendi gözlerinle gör.
                             </p>
                         </div>
 
                         <div className="bg-slate-900 text-white rounded-2xl p-6 my-8 not-prose">
-                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Başvurudan Sonra Netlerini Hesapla</h3>
+                            <h3 className="text-lg font-bold text-emerald-400 mb-2">Başvurunu Tamamladın mı? Hedef Netlerini Belirle</h3>
                             <p className="text-sm text-slate-300 mb-4">
-                                Sınav başvurunu tamamladıktan sonra hedefin için gereken TYT ve AYT netlerini hesaplama motorumuzda planla.
+                                İstediğin üniversite ve bölüm için hangi testten kaç net yapman gerektiğini merak ediyorsan, güncel ÖSYM katsayılarıyla çalışan hesaplayıcımızı hemen dene.
                             </p>
                             <Link href="/" className="inline-block bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
                                 Puan ve Sıralama Hesaplayıcıyı Aç →
                             </Link>
                         </div>
-                        
+
                         <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4 border-b pb-2">
-                            YKS 2027 Sınav ve Tercih Takvimi Süreç Tablosu
+                            YKS 2027 Başvuru Süreci Hakkında Sıkça Sorulan Sorular
                         </h2>
-                        <p>
-                            Sınava hazırlık kadar başvuru ve tercih takvimini kaçırmamak da hayati önemdedir. Geç başvuru ücretleri iki katına çıktığından tarihleri önceden ajandanıza not edin:
-                        </p>
-                        <div className="overflow-x-auto my-6">
-                            <table className="w-full text-left border-collapse border border-gray-200 text-sm">
-                                <thead className="bg-amber-50 text-amber-950 font-semibold">
-                                    <tr>
-                                        <th className="p-3 border">Aşama</th>
-                                        <th className="p-3 border">Tahmini Tarih Aralığı</th>
-                                        <th className="p-3 border">Önem Derecesi</th>
-                                        <th className="p-3 border">Açıklama</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b">
-                                        <td className="p-3 font-medium border">Normal Başvuru</td>
-                                        <td className="p-3 border font-bold text-blue-700">Şubat - Mart 2027</td>
-                                        <td className="p-3 border text-emerald-600">Kritik</td>
-                                        <td className="p-3 border">ÖSYM AİS üzerinden standart oturum ücretiyle kayıt.</td>
-                                    </tr>
-                                    <tr className="border-b bg-gray-50">
-                                        <td className="p-3 font-medium border">Geç Başvuru Günü</td>
-                                        <td className="p-3 border font-bold text-amber-700">Mart 2027 Sonu</td>
-                                        <td className="p-3 border text-amber-600">Son Fırsat</td>
-                                        <td className="p-3 border">%50 artırımlı oturum ücreti uygulanır.</td>
-                                    </tr>
-                                    <tr className="border-b">
-                                        <td className="p-3 font-medium border">Sınav Giriş Belgeleri</td>
-                                        <td className="p-3 border">Haziran 2027 Başı</td>
-                                        <td className="p-3 border">Zorunlu</td>
-                                        <td className="p-3 border">Sınava gireceğiniz okul ve salon bilgisi ilan edilir.</td>
-                                    </tr>
-                                    <tr className="border-b bg-gray-50">
-                                        <td className="p-3 font-medium border">YKS Oturumları (TYT-AYT)</td>
-                                        <td className="p-3 border font-bold text-red-600">Haziran 2027 Ortası</td>
-                                        <td className="p-3 border text-red-600">Sınav Günü</td>
-                                        <td className="p-3 border">Cumartesi TYT (10:15), Pazar AYT ve YDT oturumları.</td>
-                                    </tr>
-                                    <tr className="border-b">
-                                        <td className="p-3 font-medium border">Sonuç ve Tercihler</td>
-                                        <td className="p-3 border">Temmuz - Ağustos 2027</td>
-                                        <td className="p-3 border text-emerald-600">Yerleştirme</td>
-                                        <td className="p-3 border">YÖK Atlas üzerinden tercih listesi teslimi.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+
+                        <div className="space-y-4 my-6">
+                            <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                                <h3 className="font-bold text-gray-900 text-base mb-1">Mezun adayların liseye veya ÖSYM merkezine gitmesi gerekir mi?</h3>
+                                <p className="text-sm text-gray-700">
+                                    Hayır. e-Devlet şifresi ve çipli kimlik kartı olan her aday (ister mezun ister 12. sınıf olsun) başvurularını internetten tek başına tamamlayabilir.
+                                </p>
+                            </div>
+                            <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                                <h3 className="font-bold text-gray-900 text-base mb-1">Sınav giriş belgesi ne zaman yayımlanır?</h3>
+                                <p className="text-sm text-gray-700">
+                                    ÖSYM genellikle sınav tarihinden yaklaşık 10-12 gün önce sınav giriş belgelerini AİS üzerinden erişime açar. Renkli veya siyah-beyaz çıktı alıp üzerinde hiçbir karalama olmadan sınava götürmek zorunludur.
+                                </p>
+                            </div>
+                            <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                                <h3 className="font-bold text-gray-900 text-base mb-1">TYT&apos;ye girip AYT&apos;ye girmesem olur mu?</h3>
+                                <p className="text-sm text-gray-700">
+                                    Sadece 2 yıllık ön lisans bölümlerini veya özel yetenek programlarını düşünüyorsan yalnızca TYT&apos;ye başvurabilirsin. Ancak 4 yıllık bir fakülte istiyorsan AYT&apos;ye girmek zorunludur.
+                                </p>
+                            </div>
                         </div>
-                        <p>
-                            Sınav takvimine bakıp paniklemek yerine kalan günleri en yüksek verimle geçirmek istiyorsan <Link href="/blog/yks-son-3-ay-calisma-plani" className="text-blue-600 font-semibold hover:underline">YKS Son 3 Ay Çalışma Programı</Link>&apos;na sarıl. Sıfırdan zirveye tüm yol haritasını ise <Link href="/yks-rehberi" className="text-blue-600 font-semibold hover:underline">Kapsamlı YKS Rehberi</Link> sayfamızda derli toplu bulacaksın.
+
+                        <p className="mt-8">
+                            Kalan çalışma süreni en iyi şekilde planlamak için <Link href="/blog/yks-son-3-ay-calisma-plani" className="text-blue-600 font-semibold hover:underline">YKS Son 3 Ay Çalışma Programı</Link>&apos;na göz atabilir, puan türleri hakkında ayrıntılı bilgi için <Link href="/blog/yks-puan-turleri" className="text-blue-600 font-semibold hover:underline">YKS Puan Türleri</Link> sayfamızı ziyaret edebilirsin.
                         </p>
 
                         <ArticleFeedback />
