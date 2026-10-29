@@ -4,10 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 const links = [
-    { href: '/', label: 'YKS Net Hesaplama' },
-    { href: '/tyt-net-hesaplama', label: 'TYT Net Hesaplama' },
-    { href: '/ayt-net-hesaplama', label: 'AYT Net Hesaplama' },
-    { href: '/yks-puan-hesaplama', label: 'YKS Puan Hesaplama' },
+    { href: '/', label: 'Hesaplama' },
     { href: '/universiteler', label: 'Üniversiteler' },
     { href: '/blog', label: 'Blog' },
     { href: '/yks-rehberi', label: 'YKS Rehberi' },
@@ -23,7 +20,7 @@ export default function MobileMenuToggle() {
         <>
             <button
                 onClick={() => setOpen(!open)}
-                className="lg:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
+                className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
                 aria-label="Menü"
             >
                 {open ? (
@@ -38,7 +35,7 @@ export default function MobileMenuToggle() {
             </button>
 
             {open && (
-                <div className="lg:hidden absolute top-16 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-40 py-4 px-4">
+                <div className="md:hidden absolute top-16 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-40 py-4 px-4">
                     <div className="flex flex-col space-y-2">
                         {links.map(({ href, label }) => (
                             <Link key={href} href={href}

@@ -25,15 +25,14 @@ export default function Navbar() {
                     </Link>
 
                     {/* Desktop links — static */}
-                    <div className="hidden lg:flex items-center space-x-6 text-sm">
+                    <div className="hidden md:flex items-center space-x-6 text-sm">
                         {[
-                            { href: '/', label: 'YKS Net' },
-                            { href: '/tyt-net-hesaplama', label: 'TYT Net' },
-                            { href: '/ayt-net-hesaplama', label: 'AYT Net' },
+                            { href: '/', label: 'Hesaplama' },
                             { href: '/universiteler', label: 'Üniversiteler' },
                             { href: '/blog', label: 'Blog' },
                             { href: '/yks-rehberi', label: 'Rehber' },
                             { href: '/sss', label: 'SSS' },
+                            { href: '/hakkimizda', label: 'Hakkımızda' },
                             { href: '/iletisim', label: 'İletişim' },
                         ].map(({ href, label }) => (
                             <Link key={href} href={href} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
@@ -45,7 +44,7 @@ export default function Navbar() {
                         </Link>
                     </div>
 
-                    {/* Mobil toggle — tek client component */}
+                    {/* Mobil toggle */}
                     <MobileMenuToggle />
                 </div>
             </div>
