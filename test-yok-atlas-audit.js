@@ -384,8 +384,10 @@ const benchmarks = [
 benchmarks.forEach(b => {
     const found = programs.find(b.test)
     if (found) {
-        const rankOk = found.minRank <= b.minRankMax
-        const scoreOk = found.minScore >= b.minScoreMin
+        const rank = (b.name.includes('2025') && found.minRank2025) ? found.minRank2025 : found.minRank;
+        const score = (b.name.includes('2025') && found.minScore2025) ? found.minScore2025 : found.minScore;
+        const rankOk = rank <= b.minRankMax
+        const scoreOk = score >= b.minScoreMin
         check(rankOk && scoreOk, `Benchmark [${b.name}]: Sıra: ${found.minRank} (<= ${b.minRankMax}), Puan: ${found.minScore} (>= ${b.minScoreMin})`)
     } else {
         check(false, `Benchmark [${b.name}] veritabanında bulunamadı!`)

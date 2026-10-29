@@ -27,6 +27,7 @@ export default function UniversityDirectory() {
     const [searchQuery, setSearchQuery] = useState('')
     const [selectedField, setSelectedField] = useState<'ALL' | FieldType>('ALL')
     const [selectedCity, setSelectedCity] = useState('Tümü')
+    const [selectedYear, setSelectedYear] = useState<'2026' | '2025' | 'compare'>('2026')
     const [maxRank, setMaxRank] = useState<number | ''>('')
     const [page, setPage] = useState(1)
     const itemsPerPage = 25
@@ -37,7 +38,13 @@ export default function UniversityDirectory() {
         return universityPrograms.filter(prog => {
             if (selectedField !== 'ALL' && prog.field !== selectedField) return false
             if (selectedCity !== 'Tümü' && prog.city !== selectedCity) return false
-            if (maxRank !== '' && prog.minRank > maxRank) return false
+
+            const currentRank = selectedYear === '2025'
+                ? (prog.minRank2025 || prog.minRank)
+                : (prog.minRank2026 || prog.minRank)
+
+            if (maxRank !== '' && currentRank > maxRank) return false
+
             if (query) {
                 const matchUni = prog.university.toLowerCase().includes(query)
                 const matchProg = prog.program.toLowerCase().includes(query)
@@ -46,12 +53,12 @@ export default function UniversityDirectory() {
             }
             return true
         })
-    }, [searchQuery, selectedField, selectedCity, maxRank])
+    }, [searchQuery, selectedField, selectedCity, selectedYear, maxRank])
 
     // Filtre değiştiğinde 1. sayfaya dön
     useEffect(() => {
         setPage(1)
-    }, [searchQuery, selectedField, selectedCity, maxRank])
+    }, [searchQuery, selectedField, selectedCity, selectedYear, maxRank])
 
     const totalPages = Math.ceil(filtered.length / itemsPerPage)
     const paginated = useMemo(() => {
@@ -80,9 +87,9 @@ export default function UniversityDirectory() {
                 </div>
                 <div className="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm text-center">
                     <span className="text-2xl md:text-3xl font-extrabold text-emerald-600 block mb-1">
-                        2025/2026
+                        2026 & 2025
                     </span>
-                    <span className="text-xs md:text-sm text-gray-600 font-medium">YÖK Atlas Güncel</span>
+                    <span className="text-xs md:text-sm text-gray-600 font-medium">YÖK Atlas Çift Yıl</span>
                 </div>
                 <div className="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm text-center">
                     <span className="text-2xl md:text-3xl font-extrabold text-purple-600 block mb-1">
@@ -94,12 +101,63 @@ export default function UniversityDirectory() {
                     <span className="text-2xl md:text-3xl font-extrabold text-amber-600 block mb-1">
                         Ücretsiz
                     </span>
-                    <span className="text-xs md:text-sm text-gray-600 font-medium">Tercih Sıralama Atlası</span>
+                    <span className="text-xs md:text-sm text-gray-600 font-medium">Karşılaştırmalı Atlas</span>
                 </div>
             </div>
 
             {/* Arama & Filtreleme Paneli */}
             <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 shadow-sm space-y-6">
+                
+                {/* Yıl Seçim Sekmeleri */}
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-4 border-b border-gray-100">
+                    <div>
+                        <span className="text-xs font-bold text-gray-500 uppercase tracking-wider block mb-1">
+                            YÖK ATLAS VERİ DÖNEMİ
+                        </span>
+                        <div className="flex flex-wrap items-center gap-2 p-1.5 bg-gray-100 rounded-xl">
+                            <button
+                                onClick={() => setSelectedYear('2026')}
+                                className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                                    selectedYear === '2026'
+                                        ? 'bg-blue-600 text-white shadow-sm'
+                                        : 'text-gray-600 hover:text-gray-900'
+                                }`}
+                            >
+                                ⚡ 2026 YKS (En Güncel)
+                            </button>
+                            <button
+                                onClick={() => setSelectedYear('2025')}
+                                className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                                    selectedYear === '2025'
+                                        ? 'bg-blue-600 text-white shadow-sm'
+                                        : 'text-gray-600 hover:text-gray-900'
+                                }`}
+                            >
+                                📅 2025 YKS
+                            </button>
+                            <button
+                                onClick={() => setSelectedYear('compare')}
+                                className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                                    selectedYear === 'compare'
+                                        ? 'bg-blue-600 text-white shadow-sm'
+                                        : 'text-gray-600 hover:text-gray-900'
+                                }`}
+                            >
+                                🔄 2025 vs 2026 Karşılaştır
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="text-xs text-gray-500 text-left sm:text-right">
+                        <span>Aktif Görünüm: </span>
+                        <strong className="text-gray-800">
+                            {selectedYear === '2026' && '2026 Taban Sıralamaları (En Güncel)'}
+                            {selectedYear === '2025' && '2025 Yerleştirme Sıralamaları'}
+                            {selectedYear === 'compare' && '2025 vs 2026 Sıralama Trendi'}
+                        </strong>
+                    </div>
+                </div>
+
                 <div>
                     <label htmlFor="uni-search" className="block text-sm font-bold text-gray-900 mb-2">
                         🔍 Üniversite, Bölüm veya Şehir Ara
@@ -170,7 +228,9 @@ export default function UniversityDirectory() {
                     </div>
 
                     <div>
-                        <label className="block text-xs font-semibold text-gray-700 mb-1.5">Maksimum Başarı Sırası (TBS)</label>
+                        <label className="block text-xs font-semibold text-gray-700 mb-1.5">
+                            Maksimum Sıralama ({selectedYear === '2025' ? '2025 TBS' : '2026 TBS'})
+                        </label>
                         <input
                             type="number"
                             value={maxRank}
@@ -229,39 +289,116 @@ export default function UniversityDirectory() {
                                     <th className="py-4 px-4">Program / Bölüm</th>
                                     <th className="py-4 px-3 text-center">Alan</th>
                                     <th className="py-4 px-3 text-center">Şehir</th>
-                                    <th className="py-4 px-3 text-right">Kontenjan</th>
-                                    <th className="py-4 px-4 text-right">Taban Puan</th>
-                                    <th className="py-4 px-4 sm:px-6 text-right">Başarı Sırası (TBS)</th>
+                                    {selectedYear !== 'compare' ? (
+                                        <>
+                                            <th className="py-4 px-3 text-right">Kontenjan</th>
+                                            <th className="py-4 px-4 text-right">
+                                                {selectedYear === '2026' ? '2026 Puan' : '2025 Puan'}
+                                            </th>
+                                            <th className="py-4 px-4 sm:px-6 text-right">
+                                                {selectedYear === '2026' ? '2026 Başarı Sırası (TBS)' : '2025 Başarı Sırası (TBS)'}
+                                            </th>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <th className="py-4 px-4 text-right bg-blue-50/50">2026 Sıra & Puan</th>
+                                            <th className="py-4 px-4 text-right bg-gray-50">2025 Sıra & Puan</th>
+                                            <th className="py-4 px-4 sm:px-6 text-center">Sıralama Trendi</th>
+                                        </>
+                                    )}
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-gray-100 text-sm">
-                                {paginated.map((prog, idx) => (
-                                    <tr key={`${prog.university}-${prog.program}-${idx}`} className="hover:bg-blue-50/40 transition-colors">
-                                        <td className="py-3.5 px-4 sm:px-6 font-semibold text-gray-900">
-                                            {prog.university}
-                                        </td>
-                                        <td className="py-3.5 px-4 text-gray-800 font-medium">
-                                            {prog.program}
-                                        </td>
-                                        <td className="py-3.5 px-3 text-center">
-                                            <span className={`inline-block px-2.5 py-0.5 rounded-full text-xs font-bold border ${fieldBadgeColor(prog.field)}`}>
-                                                {prog.field}
-                                            </span>
-                                        </td>
-                                        <td className="py-3.5 px-3 text-center text-gray-600">
-                                            {prog.city}
-                                        </td>
-                                        <td className="py-3.5 px-3 text-right text-gray-600 font-mono">
-                                            {prog.quota}
-                                        </td>
-                                        <td className="py-3.5 px-4 text-right font-bold text-gray-900 font-mono">
-                                            {prog.minScore ? prog.minScore.toFixed(2) : '-'}
-                                        </td>
-                                        <td className="py-3.5 px-4 sm:px-6 text-right font-extrabold text-blue-700 font-mono">
-                                            {prog.minRank ? prog.minRank.toLocaleString('tr-TR') : 'Dolmadı'}
-                                        </td>
-                                    </tr>
-                                ))}
+                                {paginated.map((prog, idx) => {
+                                    const r26 = prog.minRank2026 || prog.minRank
+                                    const s26 = prog.minScore2026 || prog.minScore
+                                    const r25 = prog.minRank2025 || prog.minRank
+                                    const s25 = prog.minScore2025 || prog.minScore
+                                    const q = (selectedYear === '2025' ? prog.quota2025 : prog.quota2026) || prog.quota
+
+                                    // Sıralama değişimi (Önceki yıl - Şimdiki yıl): Pozitif = Yükseldi (İyileşti), Negatif = Düştü
+                                    const hasBoth = prog.minRank2026 && prog.minRank2025
+                                    const diff = hasBoth ? (prog.minRank2025! - prog.minRank2026!) : null
+
+                                    return (
+                                        <tr key={`${prog.university}-${prog.program}-${idx}`} className="hover:bg-blue-50/40 transition-colors">
+                                            <td className="py-3.5 px-4 sm:px-6 font-semibold text-gray-900">
+                                                {prog.university}
+                                            </td>
+                                            <td className="py-3.5 px-4 text-gray-800 font-medium">
+                                                {prog.program}
+                                            </td>
+                                            <td className="py-3.5 px-3 text-center">
+                                                <span className={`inline-block px-2.5 py-0.5 rounded-full text-xs font-bold border ${fieldBadgeColor(prog.field)}`}>
+                                                    {prog.field}
+                                                </span>
+                                            </td>
+                                            <td className="py-3.5 px-3 text-center text-gray-600">
+                                                {prog.city}
+                                            </td>
+                                            {selectedYear !== 'compare' ? (
+                                                <>
+                                                    <td className="py-3.5 px-3 text-right text-gray-600 font-mono">
+                                                        {q}
+                                                    </td>
+                                                    <td className="py-3.5 px-4 text-right font-bold text-gray-900 font-mono">
+                                                        {selectedYear === '2026' 
+                                                            ? (s26 ? s26.toFixed(2) : '-')
+                                                            : (s25 ? s25.toFixed(2) : '-')}
+                                                    </td>
+                                                    <td className="py-3.5 px-4 sm:px-6 text-right font-extrabold text-blue-700 font-mono">
+                                                        <div>
+                                                            {selectedYear === '2026'
+                                                                ? (r26 ? r26.toLocaleString('tr-TR') : 'Dolmadı')
+                                                                : (r25 ? r25.toLocaleString('tr-TR') : 'Dolmadı')}
+                                                        </div>
+                                                        {selectedYear === '2026' && prog.minRank2025 && (
+                                                            <div className="text-[11px] font-normal text-gray-400">
+                                                                2025: {prog.minRank2025.toLocaleString('tr-TR')}
+                                                            </div>
+                                                        )}
+                                                    </td>
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <td className="py-3.5 px-4 text-right font-mono bg-blue-50/30">
+                                                        <div className="font-extrabold text-blue-700">
+                                                            {prog.minRank2026 ? prog.minRank2026.toLocaleString('tr-TR') : '-'}
+                                                        </div>
+                                                        <div className="text-xs text-gray-500 font-medium">
+                                                            {prog.minScore2026 ? `${prog.minScore2026.toFixed(2)} p.` : '-'}
+                                                        </div>
+                                                    </td>
+                                                    <td className="py-3.5 px-4 text-right font-mono bg-gray-50/40">
+                                                        <div className="font-bold text-gray-800">
+                                                            {prog.minRank2025 ? prog.minRank2025.toLocaleString('tr-TR') : '-'}
+                                                        </div>
+                                                        <div className="text-xs text-gray-500 font-medium">
+                                                            {prog.minScore2025 ? `${prog.minScore2025.toFixed(2)} p.` : '-'}
+                                                        </div>
+                                                    </td>
+                                                    <td className="py-3.5 px-4 sm:px-6 text-center">
+                                                        {diff !== null ? (
+                                                            diff > 0 ? (
+                                                                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">
+                                                                    ▲ +{diff.toLocaleString('tr-TR')} yükseldi
+                                                                </span>
+                                                            ) : diff < 0 ? (
+                                                                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold bg-rose-100 text-rose-800">
+                                                                    ▼ {Math.abs(diff).toLocaleString('tr-TR')} geriledi
+                                                                </span>
+                                                            ) : (
+                                                                <span className="text-xs text-gray-400 font-medium">Sabit</span>
+                                                            )
+                                                        ) : (
+                                                            <span className="text-xs text-gray-400">Yeni Program</span>
+                                                        )}
+                                                    </td>
+                                                </>
+                                            )}
+                                        </tr>
+                                    )
+                                })}
                             </tbody>
                         </table>
                     </div>

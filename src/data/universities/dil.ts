@@ -1,6 +1,6 @@
 import { UniversityProgram } from '@/types/yks'
 
-// 2025 YKS Yabancı Dil (DİL) Taban Puanları ve Başarı Sıraları - YÖK Atlas
+// 2025 ve 2026 YKS Yabancı Dil (DİL) Taban Puanları ve Başarı Sıraları - YÖK Atlas
 export const dilPrograms: UniversityProgram[] = [
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -9,7 +9,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 526.13,
     "minRank": 209,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 526.13,
+    "minRank2025": 209,
+    "quota2025": 3
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -18,7 +21,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 526.13,
     "minRank": 209,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 526.13,
+    "minRank2025": 209,
+    "quota2025": 3,
+    "minScore2026": 514.61,
+    "minRank2026": 710,
+    "quota2026": 3
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -27,7 +36,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 507.63,
     "minRank": 680,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 507.63,
+    "minRank2025": 680,
+    "quota2025": 7
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -36,7 +48,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 507.63,
     "minRank": 680,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 507.63,
+    "minRank2025": 680,
+    "quota2025": 7,
+    "minScore2026": 517.17,
+    "minRank2026": 595,
+    "quota2026": 7
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -45,7 +63,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 501.56,
     "minRank": 946,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 501.56,
+    "minRank2025": 946,
+    "quota2025": 7
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -54,7 +75,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 501.56,
     "minRank": 946,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 501.56,
+    "minRank2025": 946,
+    "quota2025": 7,
+    "minScore2026": 512.43,
+    "minRank2026": 813,
+    "quota2026": 7
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -63,7 +90,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 496.55,
     "minRank": 1220,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 496.55,
+    "minRank2025": 1220,
+    "quota2025": 40
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -72,7 +102,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 496.55,
     "minRank": 1220,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 496.55,
+    "minRank2025": 1220,
+    "quota2025": 40,
+    "minScore2026": 495.97,
+    "minRank2026": 1823,
+    "quota2026": 40
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -81,7 +117,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 489.63,
     "minRank": 1636,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 489.63,
+    "minRank2025": 1636,
+    "quota2025": 40
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -90,7 +129,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 489.63,
     "minRank": 1636,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 489.63,
+    "minRank2025": 1636,
+    "quota2025": 40,
+    "minScore2026": 487.82,
+    "minRank2026": 2435,
+    "quota2026": 40
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -99,7 +144,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 489.56,
     "minRank": 1642,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 489.56,
+    "minRank2025": 1642,
+    "quota2025": 5
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -108,7 +156,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 489.56,
     "minRank": 1642,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 489.56,
+    "minRank2025": 1642,
+    "quota2025": 5,
+    "minScore2026": 497.26,
+    "minRank2026": 1724,
+    "quota2026": 5
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -117,7 +171,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 489.52,
     "minRank": 1646,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 489.52,
+    "minRank2025": 1646,
+    "quota2025": 40
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -126,7 +183,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 489.52,
     "minRank": 1646,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 489.52,
+    "minRank2025": 1646,
+    "quota2025": 40,
+    "minScore2026": 486.22,
+    "minRank2026": 2580,
+    "quota2026": 40
   },
   {
     "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -135,7 +198,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 486.37,
     "minRank": 1875,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 486.37,
+    "minRank2025": 1875,
+    "quota2025": 5
   },
   {
     "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -144,7 +210,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 486.37,
     "minRank": 1875,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 486.37,
+    "minRank2025": 1875,
+    "quota2025": 6,
+    "minScore2026": 481.16,
+    "minRank2026": 3032,
+    "quota2026": 6
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -153,7 +225,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 484.34,
     "minRank": 2042,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 484.34,
+    "minRank2025": 2042,
+    "quota2025": 40
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -162,7 +237,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 484.34,
     "minRank": 2042,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 484.34,
+    "minRank2025": 2042,
+    "quota2025": 36,
+    "minScore2026": 482.77,
+    "minRank2026": 2892,
+    "quota2026": 36
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -171,7 +252,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 484,
     "minRank": 2071,
-    "quota": 11
+    "quota": 11,
+    "minScore2025": 484,
+    "minRank2025": 2071,
+    "quota2025": 11
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -180,7 +264,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 484,
     "minRank": 2071,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 484,
+    "minRank2025": 2071,
+    "quota2025": 9,
+    "minScore2026": 473.3,
+    "minRank2026": 3854,
+    "quota2026": 9
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -189,7 +279,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 479.73,
     "minRank": 2426,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 479.73,
+    "minRank2025": 2426,
+    "quota2025": 50
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -198,7 +291,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 479.73,
     "minRank": 2426,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 479.73,
+    "minRank2025": 2426,
+    "quota2025": 45,
+    "minScore2026": 405.75,
+    "minRank2026": 20122,
+    "quota2026": 35
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -207,7 +306,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 479.6,
     "minRank": 2437,
-    "quota": 1
+    "quota": 1,
+    "minScore2025": 479.6,
+    "minRank2025": 2437,
+    "quota2025": 1
   },
   {
     "university": "GALATASARAY ÜNİVERSİTESİ",
@@ -216,7 +318,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 478.45,
     "minRank": 2565,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 478.45,
+    "minRank2025": 2565,
+    "quota2025": 35
   },
   {
     "university": "GALATASARAY ÜNİVERSİTESİ",
@@ -225,7 +330,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 478.45,
     "minRank": 2565,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 478.45,
+    "minRank2025": 2565,
+    "quota2025": 25,
+    "minScore2026": 479.89,
+    "minRank2026": 3164,
+    "quota2026": 25
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -234,7 +345,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 477.56,
     "minRank": 2659,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 477.56,
+    "minRank2025": 2659,
+    "quota2025": 60,
+    "minScore2026": 470.56,
+    "minRank2026": 4184,
+    "quota2026": 60
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -243,7 +360,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 477,
     "minRank": 2713,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 477,
+    "minRank2025": 2713,
+    "quota2025": 8
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -252,7 +372,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 477,
     "minRank": 2713,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 477,
+    "minRank2025": 2713,
+    "quota2025": 5,
+    "minScore2026": 470.92,
+    "minRank2026": 4140,
+    "quota2026": 5
   },
   {
     "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
@@ -261,7 +387,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 476.96,
     "minRank": 2719,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 476.96,
+    "minRank2025": 2719,
+    "quota2025": 9
   },
   {
     "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
@@ -270,7 +399,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 476.96,
     "minRank": 2719,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 476.96,
+    "minRank2025": 2719,
+    "quota2025": 9,
+    "minScore2026": 460.9,
+    "minRank2026": 5556,
+    "quota2026": 9
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -279,7 +414,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 474.67,
     "minRank": 2968,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 474.67,
+    "minRank2025": 2968,
+    "quota2025": 40
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -288,7 +426,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 474.67,
     "minRank": 2968,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 474.67,
+    "minRank2025": 2968,
+    "quota2025": 36,
+    "minScore2026": 470.54,
+    "minRank2026": 4187,
+    "quota2026": 36
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -297,7 +441,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 471.7,
     "minRank": 3302,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 471.7,
+    "minRank2025": 3302,
+    "quota2025": 9
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -306,7 +453,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 471.7,
     "minRank": 3302,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 471.7,
+    "minRank2025": 3302,
+    "quota2025": 7,
+    "minScore2026": 462.88,
+    "minRank2026": 5258,
+    "quota2026": 7
   },
   {
     "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
@@ -315,7 +468,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 471.22,
     "minRank": 3362,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 471.22,
+    "minRank2025": 3362,
+    "quota2025": 4
   },
   {
     "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
@@ -324,7 +480,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 471.22,
     "minRank": 3362,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 471.22,
+    "minRank2025": 3362,
+    "quota2025": 9,
+    "minScore2026": 453.64,
+    "minRank2026": 6786,
+    "quota2026": 9
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -333,7 +495,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 470.82,
     "minRank": 3410,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 470.82,
+    "minRank2025": 3410,
+    "quota2025": 60
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -342,7 +507,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 470.82,
     "minRank": 3410,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 470.82,
+    "minRank2025": 3410,
+    "quota2025": 40,
+    "minScore2026": 467.28,
+    "minRank2026": 4614,
+    "quota2026": 40
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -351,7 +522,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 468.94,
     "minRank": 3658,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 468.94,
+    "minRank2025": 3658,
+    "quota2025": 7
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -360,7 +534,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 468.94,
     "minRank": 3658,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 468.94,
+    "minRank2025": 3658,
+    "quota2025": 6,
+    "minScore2026": 466.54,
+    "minRank2026": 4709,
+    "quota2026": 6
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -369,7 +549,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 468.29,
     "minRank": 3742,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 468.29,
+    "minRank2025": 3742,
+    "quota2025": 40,
+    "minScore2026": 467.3,
+    "minRank2026": 4612,
+    "quota2026": 36
   },
   {
     "university": "TED ÜNİVERSİTESİ",
@@ -378,7 +564,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 466.33,
     "minRank": 3994,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 466.33,
+    "minRank2025": 3994,
+    "quota2025": 7
   },
   {
     "university": "TED ÜNİVERSİTESİ",
@@ -387,7 +576,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 466.33,
     "minRank": 3994,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 466.33,
+    "minRank2025": 3994,
+    "quota2025": 6,
+    "minScore2026": 460.77,
+    "minRank2026": 5573,
+    "quota2026": 6
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -396,7 +591,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 464.54,
     "minRank": 4210,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 464.54,
+    "minRank2025": 4210,
+    "quota2025": 60,
+    "minScore2026": 460.89,
+    "minRank2026": 5558,
+    "quota2026": 60
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -405,7 +606,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 461.56,
     "minRank": 4651,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 461.56,
+    "minRank2025": 4651,
+    "quota2025": 60,
+    "minScore2026": 459.38,
+    "minRank2026": 5804,
+    "quota2026": 54
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -414,7 +621,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 461.02,
     "minRank": 4739,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 461.02,
+    "minRank2025": 4739,
+    "quota2025": 65
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -423,7 +633,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 461.02,
     "minRank": 4739,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 461.02,
+    "minRank2025": 4739,
+    "quota2025": 40,
+    "minScore2026": 459.79,
+    "minRank2026": 5741,
+    "quota2026": 40
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -432,7 +648,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 460.29,
     "minRank": 4858,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 460.29,
+    "minRank2025": 4858,
+    "quota2025": 50,
+    "minScore2026": 456.59,
+    "minRank2026": 6302,
+    "quota2026": 50
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -441,7 +663,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 459.89,
     "minRank": 4911,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 459.89,
+    "minRank2025": 4911,
+    "quota2025": 7
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -450,7 +675,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 459.89,
     "minRank": 4911,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 459.89,
+    "minRank2025": 4911,
+    "quota2025": 6,
+    "minScore2026": 461.69,
+    "minRank2026": 5432,
+    "quota2026": 6
   },
   {
     "university": "TED ÜNİVERSİTESİ",
@@ -459,7 +690,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 459.84,
     "minRank": 4927,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 459.84,
+    "minRank2025": 4927,
+    "quota2025": 8
   },
   {
     "university": "TED ÜNİVERSİTESİ",
@@ -468,7 +702,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 459.84,
     "minRank": 4927,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 459.84,
+    "minRank2025": 4927,
+    "quota2025": 8,
+    "minScore2026": 454.75,
+    "minRank2026": 6592,
+    "quota2026": 8
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -477,7 +717,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 459.33,
     "minRank": 5004,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 459.33,
+    "minRank2025": 5004,
+    "quota2025": 3
   },
   {
     "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
@@ -486,7 +729,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 459.28,
     "minRank": 5011,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 459.28,
+    "minRank2025": 5011,
+    "quota2025": 10
   },
   {
     "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
@@ -495,7 +741,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 459.28,
     "minRank": 5011,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 459.28,
+    "minRank2025": 5011,
+    "quota2025": 4,
+    "minScore2026": 447.65,
+    "minRank2026": 7928,
+    "quota2026": 4
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -504,7 +756,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 457.63,
     "minRank": 5276,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 457.63,
+    "minRank2025": 5276,
+    "quota2025": 70,
+    "minScore2026": 447.94,
+    "minRank2026": 7861,
+    "quota2026": 70
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -513,7 +771,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 457.02,
     "minRank": 5373,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 457.02,
+    "minRank2025": 5373,
+    "quota2025": 50
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -522,7 +783,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 457.02,
     "minRank": 5373,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 457.02,
+    "minRank2025": 5373,
+    "quota2025": 45,
+    "minScore2026": 454.83,
+    "minRank2026": 6578,
+    "quota2026": 45
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -531,7 +798,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 456.57,
     "minRank": 5443,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 456.57,
+    "minRank2025": 5443,
+    "quota2025": 4
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -540,7 +810,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 456.57,
     "minRank": 5443,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 456.57,
+    "minRank2025": 5443,
+    "quota2025": 5,
+    "minScore2026": 457.37,
+    "minRank2026": 6149,
+    "quota2026": 5
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -549,7 +825,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 456.43,
     "minRank": 5465,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 456.43,
+    "minRank2025": 5465,
+    "quota2025": 65
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -558,7 +837,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 456.43,
     "minRank": 5465,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 456.43,
+    "minRank2025": 5465,
+    "quota2025": 50,
+    "minScore2026": 454.08,
+    "minRank2026": 6711,
+    "quota2026": 50
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -567,7 +852,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 455.93,
     "minRank": 5534,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 455.93,
+    "minRank2025": 5534,
+    "quota2025": 6
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -576,7 +864,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 455.93,
     "minRank": 5534,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 455.93,
+    "minRank2025": 5534,
+    "quota2025": 6,
+    "minScore2026": 444.25,
+    "minRank2026": 8642,
+    "quota2026": 6
   },
   {
     "university": "ANADOLU ÜNİVERSİTESİ",
@@ -585,7 +879,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 450.9,
     "minRank": 6386,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 450.9,
+    "minRank2025": 6386,
+    "quota2025": 50,
+    "minScore2026": 452.02,
+    "minRank2026": 7086,
+    "quota2026": 45
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -594,7 +894,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 450.82,
     "minRank": 6399,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 450.82,
+    "minRank2025": 6399,
+    "quota2025": 70
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -603,7 +906,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 450.82,
     "minRank": 6399,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 450.82,
+    "minRank2025": 6399,
+    "quota2025": 60,
+    "minScore2026": 449.77,
+    "minRank2026": 7516,
+    "quota2026": 60
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -612,7 +921,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 450.3,
     "minRank": 6487,
-    "quota": 90
+    "quota": 90,
+    "minScore2025": 450.3,
+    "minRank2025": 6487,
+    "quota2025": 90
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -621,7 +933,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 450.3,
     "minRank": 6487,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 450.3,
+    "minRank2025": 6487,
+    "quota2025": 60,
+    "minScore2026": 450.69,
+    "minRank2026": 7341,
+    "quota2026": 60
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -630,7 +948,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 450.09,
     "minRank": 6525,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 450.09,
+    "minRank2025": 6525,
+    "quota2025": 55,
+    "minScore2026": 459.65,
+    "minRank2026": 5756,
+    "quota2026": 40
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -639,7 +963,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 449.63,
     "minRank": 6617,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 449.63,
+    "minRank2025": 6617,
+    "quota2025": 7
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -648,7 +975,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 449.63,
     "minRank": 6617,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 449.63,
+    "minRank2025": 6617,
+    "quota2025": 7,
+    "minScore2026": 447.06,
+    "minRank2026": 8061,
+    "quota2026": 7
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -657,7 +990,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 449,
     "minRank": 6736,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 449,
+    "minRank2025": 6736,
+    "quota2025": 65,
+    "minScore2026": 451.05,
+    "minRank2026": 7271,
+    "quota2026": 40
   },
   {
     "university": "YAŞAR ÜNİVERSİTESİ",
@@ -666,7 +1005,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 448.59,
     "minRank": 6815,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 448.59,
+    "minRank2025": 6815,
+    "quota2025": 7
   },
   {
     "university": "YAŞAR ÜNİVERSİTESİ",
@@ -675,7 +1017,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 448.59,
     "minRank": 6815,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 448.59,
+    "minRank2025": 6815,
+    "quota2025": 7,
+    "minScore2026": 438.77,
+    "minRank2026": 9938,
+    "quota2026": 7
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -684,7 +1032,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 448.09,
     "minRank": 6910,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 448.09,
+    "minRank2025": 6910,
+    "quota2025": 60,
+    "minScore2026": 441.32,
+    "minRank2026": 9343,
+    "quota2026": 50
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -693,7 +1047,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 446.84,
     "minRank": 7159,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 446.84,
+    "minRank2025": 7159,
+    "quota2025": 50
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -702,7 +1059,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 446.84,
     "minRank": 7159,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 446.84,
+    "minRank2025": 7159,
+    "quota2025": 45,
+    "minScore2026": 447.49,
+    "minRank2026": 7965,
+    "quota2026": 45
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -711,7 +1074,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 445.09,
     "minRank": 7545,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 445.09,
+    "minRank2025": 7545,
+    "quota2025": 40,
+    "minScore2026": 446.53,
+    "minRank2026": 8150,
+    "quota2026": 36
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -720,7 +1089,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 445.01,
     "minRank": 7559,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 445.01,
+    "minRank2025": 7559,
+    "quota2025": 30,
+    "minScore2026": 445.91,
+    "minRank2026": 8272,
+    "quota2026": 30
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -729,7 +1104,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 444.59,
     "minRank": 7651,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 444.59,
+    "minRank2025": 7651,
+    "quota2025": 30,
+    "minScore2026": 456.22,
+    "minRank2026": 6357,
+    "quota2026": 30
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -738,7 +1119,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 444.44,
     "minRank": 7678,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 444.44,
+    "minRank2025": 7678,
+    "quota2025": 50
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -747,7 +1131,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 444.44,
     "minRank": 7678,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 444.44,
+    "minRank2025": 7678,
+    "quota2025": 45,
+    "minScore2026": 445.88,
+    "minRank2026": 8281,
+    "quota2026": 45
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -756,7 +1146,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 444.25,
     "minRank": 7712,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 444.25,
+    "minRank2025": 7712,
+    "quota2025": 80
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -765,7 +1158,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 444.25,
     "minRank": 7712,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 444.25,
+    "minRank2025": 7712,
+    "quota2025": 80,
+    "minScore2026": 438.42,
+    "minRank2026": 10037,
+    "quota2026": 80
   },
   {
     "university": "ÇANKAYA ÜNİVERSİTESİ",
@@ -774,7 +1173,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 444.09,
     "minRank": 7739,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 444.09,
+    "minRank2025": 7739,
+    "quota2025": 6
   },
   {
     "university": "ÇANKAYA ÜNİVERSİTESİ",
@@ -783,7 +1185,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 444.09,
     "minRank": 7739,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 444.09,
+    "minRank2025": 7739,
+    "quota2025": 6,
+    "minScore2026": 439.38,
+    "minRank2026": 9804,
+    "quota2026": 6
   },
   {
     "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
@@ -792,7 +1200,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 442.61,
     "minRank": 8079,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 442.61,
+    "minRank2025": 8079,
+    "quota2025": 36,
+    "minScore2026": 443.44,
+    "minRank2026": 8834,
+    "quota2026": 36
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -801,7 +1215,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 441.59,
     "minRank": 8297,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 441.59,
+    "minRank2025": 8297,
+    "quota2025": 65,
+    "minScore2026": 443.19,
+    "minRank2026": 8900,
+    "quota2026": 50
   },
   {
     "university": "ATILIM ÜNİVERSİTESİ",
@@ -810,7 +1230,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 441.4,
     "minRank": 8342,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 441.4,
+    "minRank2025": 8342,
+    "quota2025": 4
   },
   {
     "university": "ATILIM ÜNİVERSİTESİ",
@@ -819,7 +1242,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 441.4,
     "minRank": 8342,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 441.4,
+    "minRank2025": 8342,
+    "quota2025": 3,
+    "minScore2026": 437.89,
+    "minRank2026": 10175,
+    "quota2026": 3
   },
   {
     "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -828,7 +1257,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 440.71,
     "minRank": 8491,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 440.71,
+    "minRank2025": 8491,
+    "quota2025": 7
   },
   {
     "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -837,7 +1269,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 440.71,
     "minRank": 8491,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 440.71,
+    "minRank2025": 8491,
+    "quota2025": 6,
+    "minScore2026": 445.49,
+    "minRank2026": 8370,
+    "quota2026": 6
   },
   {
     "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
@@ -846,7 +1284,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 440.36,
     "minRank": 8567,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 440.36,
+    "minRank2025": 8567,
+    "quota2025": 50,
+    "minScore2026": 442.46,
+    "minRank2026": 9072,
+    "quota2026": 45
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -855,7 +1299,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 439.8,
     "minRank": 8695,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 439.8,
+    "minRank2025": 8695,
+    "quota2025": 65
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -864,7 +1311,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 439.8,
     "minRank": 8695,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 439.8,
+    "minRank2025": 8695,
+    "quota2025": 50,
+    "minScore2026": 439.85,
+    "minRank2026": 9688,
+    "quota2026": 50
   },
   {
     "university": "YAŞAR ÜNİVERSİTESİ",
@@ -873,7 +1326,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 439.71,
     "minRank": 8719,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 439.71,
+    "minRank2025": 8719,
+    "quota2025": 7
   },
   {
     "university": "YAŞAR ÜNİVERSİTESİ",
@@ -882,7 +1338,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 439.71,
     "minRank": 8719,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 439.71,
+    "minRank2025": 8719,
+    "quota2025": 7,
+    "minScore2026": 430.81,
+    "minRank2026": 12048,
+    "quota2026": 7
   },
   {
     "university": "ÇANKAYA ÜNİVERSİTESİ",
@@ -891,7 +1353,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 439.08,
     "minRank": 8878,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 439.08,
+    "minRank2025": 8878,
+    "quota2025": 7
   },
   {
     "university": "ÇANKAYA ÜNİVERSİTESİ",
@@ -900,7 +1365,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 439.08,
     "minRank": 8878,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 439.08,
+    "minRank2025": 8878,
+    "quota2025": 5,
+    "minScore2026": 433.24,
+    "minRank2026": 11390,
+    "quota2026": 5
   },
   {
     "university": "İSTANBUL 29 MAYIS ÜNİVERSİTESİ",
@@ -909,7 +1380,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 436.84,
     "minRank": 9427,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 436.84,
+    "minRank2025": 9427,
+    "quota2025": 9
   },
   {
     "university": "İSTANBUL 29 MAYIS ÜNİVERSİTESİ",
@@ -918,7 +1392,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 436.84,
     "minRank": 9427,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 436.84,
+    "minRank2025": 9427,
+    "quota2025": 9,
+    "minScore2026": 436.18,
+    "minRank2026": 10609,
+    "quota2026": 9
   },
   {
     "university": "HALİÇ ÜNİVERSİTESİ",
@@ -927,7 +1407,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 436.75,
     "minRank": 9443,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 436.75,
+    "minRank2025": 9443,
+    "quota2025": 9
   },
   {
     "university": "HALİÇ ÜNİVERSİTESİ",
@@ -936,7 +1419,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 436.75,
     "minRank": 9443,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 436.75,
+    "minRank2025": 9443,
+    "quota2025": 9,
+    "minScore2026": 432.89,
+    "minRank2026": 11472,
+    "quota2026": 9
   },
   {
     "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
@@ -945,7 +1434,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 440.71,
     "minRank": 9484,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 440.71,
+    "minRank2025": 9484,
+    "quota2025": 30,
+    "minScore2026": 406.22,
+    "minRank2026": 19956,
+    "quota2026": 8
   },
   {
     "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
@@ -954,7 +1449,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 436.18,
     "minRank": 9568,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 436.18,
+    "minRank2025": 9568,
+    "quota2025": 6
   },
   {
     "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
@@ -963,7 +1461,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 436.18,
     "minRank": 9568,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 436.18,
+    "minRank2025": 9568,
+    "quota2025": 6,
+    "minScore2026": 449.03,
+    "minRank2026": 7650,
+    "quota2026": 6
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -972,7 +1476,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 435.9,
     "minRank": 9639,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 435.9,
+    "minRank2025": 9639,
+    "quota2025": 50,
+    "minScore2026": 445.16,
+    "minRank2026": 8445,
+    "quota2026": 40
   },
   {
     "university": "ÇANAKKALE ONSEKİZ MART ÜNİVERSİTESİ",
@@ -981,7 +1491,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 435.81,
     "minRank": 9664,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 435.81,
+    "minRank2025": 9664,
+    "quota2025": 50,
+    "minScore2026": 438.67,
+    "minRank2026": 9970,
+    "quota2026": 45
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -990,7 +1506,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 435.32,
     "minRank": 9789,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 435.32,
+    "minRank2025": 9789,
+    "quota2025": 65,
+    "minScore2026": 442.21,
+    "minRank2026": 9138,
+    "quota2026": 40
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -999,7 +1521,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 435.09,
     "minRank": 9852,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 435.09,
+    "minRank2025": 9852,
+    "quota2025": 60
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -1008,7 +1533,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 435.09,
     "minRank": 9852,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 435.09,
+    "minRank2025": 9852,
+    "quota2025": 50,
+    "minScore2026": 433.79,
+    "minRank2026": 11263,
+    "quota2026": 50
   },
   {
     "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
@@ -1017,7 +1548,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 433.55,
     "minRank": 10238,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 433.55,
+    "minRank2025": 10238,
+    "quota2025": 50,
+    "minScore2026": 437.7,
+    "minRank2026": 10225,
+    "quota2026": 45
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -1026,7 +1563,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 433.38,
     "minRank": 10298,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 433.38,
+    "minRank2025": 10298,
+    "quota2025": 40
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -1035,7 +1575,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 433.38,
     "minRank": 10298,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 433.38,
+    "minRank2025": 10298,
+    "quota2025": 30,
+    "minScore2026": 452.47,
+    "minRank2026": 6992,
+    "quota2026": 30
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -1044,7 +1590,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 432.94,
     "minRank": 10410,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 432.94,
+    "minRank2025": 10410,
+    "quota2025": 45
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -1053,7 +1602,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 432.94,
     "minRank": 10410,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 432.94,
+    "minRank2025": 10410,
+    "quota2025": 35,
+    "minScore2026": 437.9,
+    "minRank2026": 10174,
+    "quota2026": 35
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -1062,7 +1617,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 432.94,
     "minRank": 10415,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 432.94,
+    "minRank2025": 10415,
+    "quota2025": 40,
+    "minScore2026": 433.17,
+    "minRank2026": 11410,
+    "quota2026": 36
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -1071,7 +1632,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 432.93,
     "minRank": 10420,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 432.93,
+    "minRank2025": 10420,
+    "quota2025": 85
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -1080,7 +1644,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 432.93,
     "minRank": 10420,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 432.93,
+    "minRank2025": 10420,
+    "quota2025": 50,
+    "minScore2026": 438.74,
+    "minRank2026": 9947,
+    "quota2026": 50
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -1089,7 +1659,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 432.77,
     "minRank": 10465,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 432.77,
+    "minRank2025": 10465,
+    "quota2025": 6
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -1098,7 +1671,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 432.77,
     "minRank": 10465,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 432.77,
+    "minRank2025": 10465,
+    "quota2025": 6,
+    "minScore2026": 431.62,
+    "minRank2026": 11812,
+    "quota2026": 6
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -1107,7 +1686,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 432.46,
     "minRank": 10543,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 432.46,
+    "minRank2025": 10543,
+    "quota2025": 55,
+    "minScore2026": 439.02,
+    "minRank2026": 9882,
+    "quota2026": 40
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -1116,7 +1701,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 432.42,
     "minRank": 10554,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 432.42,
+    "minRank2025": 10554,
+    "quota2025": 7
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -1125,7 +1713,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 432.42,
     "minRank": 10554,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 432.42,
+    "minRank2025": 10554,
+    "quota2025": 7,
+    "minScore2026": 440.28,
+    "minRank2026": 9596,
+    "quota2026": 7
   },
   {
     "university": "İSTANBUL SABAHATTİN ZAİM ÜNİVERSİTESİ",
@@ -1134,7 +1728,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 431.96,
     "minRank": 10693,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 431.96,
+    "minRank2025": 10693,
+    "quota2025": 8
   },
   {
     "university": "İSTANBUL SABAHATTİN ZAİM ÜNİVERSİTESİ",
@@ -1143,7 +1740,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 431.96,
     "minRank": 10693,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 431.96,
+    "minRank2025": 10693,
+    "quota2025": 8,
+    "minScore2026": 432.43,
+    "minRank2026": 11596,
+    "quota2026": 8
   },
   {
     "university": "UFUK ÜNİVERSİTESİ",
@@ -1152,7 +1755,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 431.87,
     "minRank": 10726,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 431.87,
+    "minRank2025": 10726,
+    "quota2025": 6
   },
   {
     "university": "UFUK ÜNİVERSİTESİ",
@@ -1161,7 +1767,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 431.87,
     "minRank": 10726,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 431.87,
+    "minRank2025": 10726,
+    "quota2025": 6,
+    "minScore2026": 432.49,
+    "minRank2026": 11581,
+    "quota2026": 6
   },
   {
     "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
@@ -1170,7 +1782,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 431.55,
     "minRank": 10808,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 431.55,
+    "minRank2025": 10808,
+    "quota2025": 60,
+    "minScore2026": 430.2,
+    "minRank2026": 12198,
+    "quota2026": 60
   },
   {
     "university": "ATILIM ÜNİVERSİTESİ",
@@ -1179,7 +1797,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 431.4,
     "minRank": 10853,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 431.4,
+    "minRank2025": 10853,
+    "quota2025": 3,
+    "minScore2026": 428.12,
+    "minRank2026": 12764,
+    "quota2026": 3
   },
   {
     "university": "BURSA TEKNİK ÜNİVERSİTESİ",
@@ -1188,7 +1812,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 430.78,
     "minRank": 11044,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 430.78,
+    "minRank2025": 11044,
+    "quota2025": 30,
+    "minScore2026": 429.32,
+    "minRank2026": 12445,
+    "quota2026": 30
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -1197,7 +1827,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 430.69,
     "minRank": 11070,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 430.69,
+    "minRank2025": 11070,
+    "quota2025": 70
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -1206,7 +1839,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 430.69,
     "minRank": 11070,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 430.69,
+    "minRank2025": 11070,
+    "quota2025": 50,
+    "minScore2026": 432.66,
+    "minRank2026": 11532,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -1215,7 +1854,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 430.6,
     "minRank": 11099,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 430.6,
+    "minRank2025": 11099,
+    "quota2025": 55
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -1224,7 +1866,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 430.6,
     "minRank": 11099,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 430.6,
+    "minRank2025": 11099,
+    "quota2025": 50,
+    "minScore2026": 437.46,
+    "minRank2026": 10288,
+    "quota2026": 50
   },
   {
     "university": "İSTİNYE ÜNİVERSİTESİ",
@@ -1233,7 +1881,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 430.01,
     "minRank": 11266,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 430.01,
+    "minRank2025": 11266,
+    "quota2025": 9
   },
   {
     "university": "İSTİNYE ÜNİVERSİTESİ",
@@ -1242,7 +1893,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 430.01,
     "minRank": 11266,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 430.01,
+    "minRank2025": 11266,
+    "quota2025": 8,
+    "minScore2026": 432.2,
+    "minRank2026": 11646,
+    "quota2026": 8
   },
   {
     "university": "ANKARA SOSYAL BİLİMLER ÜNİVERSİTESİ",
@@ -1251,7 +1908,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 429.54,
     "minRank": 11389,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 429.54,
+    "minRank2025": 11389,
+    "quota2025": 60
   },
   {
     "university": "ANKARA SOSYAL BİLİMLER ÜNİVERSİTESİ",
@@ -1260,7 +1920,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 429.54,
     "minRank": 11389,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 429.54,
+    "minRank2025": 11389,
+    "quota2025": 50,
+    "minScore2026": 430.36,
+    "minRank2026": 12150,
+    "quota2026": 50
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -1269,7 +1935,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 429.48,
     "minRank": 11412,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 429.48,
+    "minRank2025": 11412,
+    "quota2025": 50,
+    "minScore2026": 435.45,
+    "minRank2026": 10790,
+    "quota2026": 50
   },
   {
     "university": "ÇUKUROVA ÜNİVERSİTESİ",
@@ -1278,7 +1950,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 429.43,
     "minRank": 11430,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 429.43,
+    "minRank2025": 11430,
+    "quota2025": 50,
+    "minScore2026": 433.1,
+    "minRank2026": 11422,
+    "quota2026": 45
   },
   {
     "university": "ANKARA BİLİM ÜNİVERSİTESİ",
@@ -1287,7 +1965,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 428.96,
     "minRank": 11553,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 428.96,
+    "minRank2025": 11553,
+    "quota2025": 7
   },
   {
     "university": "ANKARA BİLİM ÜNİVERSİTESİ",
@@ -1296,7 +1977,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 428.96,
     "minRank": 11553,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 428.96,
+    "minRank2025": 11553,
+    "quota2025": 8,
+    "minScore2026": 425.39,
+    "minRank2026": 13528,
+    "quota2026": 8
   },
   {
     "university": "BİRUNİ ÜNİVERSİTESİ",
@@ -1305,7 +1992,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 428.68,
     "minRank": 11634,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 428.68,
+    "minRank2025": 11634,
+    "quota2025": 8
   },
   {
     "university": "BİRUNİ ÜNİVERSİTESİ",
@@ -1314,7 +2004,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 428.68,
     "minRank": 11634,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 428.68,
+    "minRank2025": 11634,
+    "quota2025": 7,
+    "minScore2026": 433.95,
+    "minRank2026": 11224,
+    "quota2026": 7
   },
   {
     "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
@@ -1323,7 +2019,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 427.3,
     "minRank": 12042,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 427.3,
+    "minRank2025": 12042,
+    "quota2025": 50
   },
   {
     "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
@@ -1332,7 +2031,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 427.3,
     "minRank": 12042,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 427.3,
+    "minRank2025": 12042,
+    "quota2025": 45,
+    "minScore2026": 427.46,
+    "minRank2026": 12934,
+    "quota2026": 45
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -1341,7 +2046,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 427.01,
     "minRank": 12124,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 427.01,
+    "minRank2025": 12124,
+    "quota2025": 65,
+    "minScore2026": 424.27,
+    "minRank2026": 13902,
+    "quota2026": 65
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -1350,7 +2061,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 426.92,
     "minRank": 12150,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 426.92,
+    "minRank2025": 12150,
+    "quota2025": 40,
+    "minScore2026": 436.56,
+    "minRank2026": 10515,
+    "quota2026": 30
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -1359,7 +2076,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 426.79,
     "minRank": 12187,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 426.79,
+    "minRank2025": 12187,
+    "quota2025": 65,
+    "minScore2026": 436.16,
+    "minRank2026": 10616,
+    "quota2026": 50
   },
   {
     "university": "MALTEPE ÜNİVERSİTESİ",
@@ -1368,7 +2091,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 426.75,
     "minRank": 12210,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 426.75,
+    "minRank2025": 12210,
+    "quota2025": 7
   },
   {
     "university": "MALTEPE ÜNİVERSİTESİ",
@@ -1377,7 +2103,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 426.75,
     "minRank": 12210,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 426.75,
+    "minRank2025": 12210,
+    "quota2025": 6,
+    "minScore2026": 435.25,
+    "minRank2026": 10848,
+    "quota2026": 6
   },
   {
     "university": "İSTANBUL 29 MAYIS ÜNİVERSİTESİ",
@@ -1386,7 +2118,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 426.6,
     "minRank": 12255,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 426.6,
+    "minRank2025": 12255,
+    "quota2025": 8
   },
   {
     "university": "İSTANBUL 29 MAYIS ÜNİVERSİTESİ",
@@ -1395,7 +2130,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 426.6,
     "minRank": 12255,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 426.6,
+    "minRank2025": 12255,
+    "quota2025": 7,
+    "minScore2026": 430.59,
+    "minRank2026": 12092,
+    "quota2026": 7
   },
   {
     "university": "İSTANBUL KÜLTÜR ÜNİVERSİTESİ",
@@ -1404,7 +2145,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 426.6,
     "minRank": 12257,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 426.6,
+    "minRank2025": 12257,
+    "quota2025": 7
   },
   {
     "university": "İSTANBUL KÜLTÜR ÜNİVERSİTESİ",
@@ -1413,7 +2157,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 426.6,
     "minRank": 12257,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 426.6,
+    "minRank2025": 12257,
+    "quota2025": 6,
+    "minScore2026": 438.51,
+    "minRank2026": 10018,
+    "quota2026": 6
   },
   {
     "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
@@ -1422,7 +2172,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 426.34,
     "minRank": 12337,
-    "quota": 11
+    "quota": 11,
+    "minScore2025": 426.34,
+    "minRank2025": 12337,
+    "quota2025": 11
   },
   {
     "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
@@ -1431,7 +2184,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 426.34,
     "minRank": 12337,
-    "quota": 11
+    "quota": 11,
+    "minScore2025": 426.34,
+    "minRank2025": 12337,
+    "quota2025": 11,
+    "minScore2026": 423.31,
+    "minRank2026": 14167,
+    "quota2026": 11
   },
   {
     "university": "ANKARA HACI BAYRAM VELİ ÜNİVERSİTESİ",
@@ -1440,7 +2199,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 426.06,
     "minRank": 12433,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 426.06,
+    "minRank2025": 12433,
+    "quota2025": 70
   },
   {
     "university": "ANKARA HACI BAYRAM VELİ ÜNİVERSİTESİ",
@@ -1449,7 +2211,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 426.06,
     "minRank": 12433,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 426.06,
+    "minRank2025": 12433,
+    "quota2025": 60,
+    "minScore2026": 425.98,
+    "minRank2026": 13368,
+    "quota2026": 60
   },
   {
     "university": "MERSİN ÜNİVERSİTESİ",
@@ -1458,7 +2226,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 425.71,
     "minRank": 12542,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 425.71,
+    "minRank2025": 12542,
+    "quota2025": 50
   },
   {
     "university": "MERSİN ÜNİVERSİTESİ",
@@ -1467,7 +2238,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 425.71,
     "minRank": 12542,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 425.71,
+    "minRank2025": 12542,
+    "quota2025": 45,
+    "minScore2026": 428.59,
+    "minRank2026": 12635,
+    "quota2026": 45
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -1476,7 +2253,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 425.42,
     "minRank": 12631,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 425.42,
+    "minRank2025": 12631,
+    "quota2025": 30
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -1485,7 +2265,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 425.42,
     "minRank": 12631,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 425.42,
+    "minRank2025": 12631,
+    "quota2025": 25,
+    "minScore2026": 433.84,
+    "minRank2026": 11246,
+    "quota2026": 25
   },
   {
     "university": "PAMUKKALE ÜNİVERSİTESİ",
@@ -1494,7 +2280,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 425.32,
     "minRank": 12663,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 425.32,
+    "minRank2025": 12663,
+    "quota2025": 50,
+    "minScore2026": 426.3,
+    "minRank2026": 13283,
+    "quota2026": 45
   },
   {
     "university": "İZMİR DEMOKRASİ ÜNİVERSİTESİ",
@@ -1503,7 +2295,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 425.28,
     "minRank": 12676,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 425.28,
+    "minRank2025": 12676,
+    "quota2025": 30
   },
   {
     "university": "İZMİR DEMOKRASİ ÜNİVERSİTESİ",
@@ -1512,7 +2307,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 425.28,
     "minRank": 12676,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 425.28,
+    "minRank2025": 12676,
+    "quota2025": 27,
+    "minScore2026": 427,
+    "minRank2026": 13065,
+    "quota2026": 27
   },
   {
     "university": "ÜSKÜDAR ÜNİVERSİTESİ",
@@ -1521,7 +2322,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 424.95,
     "minRank": 12809,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 424.95,
+    "minRank2025": 12809,
+    "quota2025": 9
   },
   {
     "university": "ÜSKÜDAR ÜNİVERSİTESİ",
@@ -1530,7 +2334,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 424.95,
     "minRank": 12809,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 424.95,
+    "minRank2025": 12809,
+    "quota2025": 9,
+    "minScore2026": 423.09,
+    "minRank2026": 14230,
+    "quota2026": 9
   },
   {
     "university": "FATİH SULTAN MEHMET VAKIF ÜNİVERSİTESİ",
@@ -1539,7 +2349,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 424.55,
     "minRank": 12947,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 424.55,
+    "minRank2025": 12947,
+    "quota2025": 7
   },
   {
     "university": "FATİH SULTAN MEHMET VAKIF ÜNİVERSİTESİ",
@@ -1548,7 +2361,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 424.55,
     "minRank": 12947,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 424.55,
+    "minRank2025": 12947,
+    "quota2025": 6,
+    "minScore2026": 421.34,
+    "minRank2026": 14802,
+    "quota2026": 6
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -1557,7 +2376,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 424.55,
     "minRank": 12950,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 424.55,
+    "minRank2025": 12950,
+    "quota2025": 40,
+    "minScore2026": 427.59,
+    "minRank2026": 12888,
+    "quota2026": 36
   },
   {
     "university": "BALIKESİR ÜNİVERSİTESİ",
@@ -1566,7 +2391,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 424.11,
     "minRank": 13081,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 424.11,
+    "minRank2025": 13081,
+    "quota2025": 40,
+    "minScore2026": 425.71,
+    "minRank2026": 13440,
+    "quota2026": 36
   },
   {
     "university": "İSTANBUL KÜLTÜR ÜNİVERSİTESİ",
@@ -1575,7 +2406,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 424.03,
     "minRank": 13113,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 424.03,
+    "minRank2025": 13113,
+    "quota2025": 8,
+    "minScore2026": 430.4,
+    "minRank2026": 12143,
+    "quota2026": 8
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -1584,7 +2421,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 423.97,
     "minRank": 13130,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 423.97,
+    "minRank2025": 13130,
+    "quota2025": 85
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -1593,7 +2433,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 423.97,
     "minRank": 13130,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 423.97,
+    "minRank2025": 13130,
+    "quota2025": 50,
+    "minScore2026": 423.26,
+    "minRank2026": 14182,
+    "quota2026": 50
   },
   {
     "university": "NECMETTİN ERBAKAN ÜNİVERSİTESİ",
@@ -1602,7 +2448,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 423.94,
     "minRank": 13145,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 423.94,
+    "minRank2025": 13145,
+    "quota2025": 40,
+    "minScore2026": 422.31,
+    "minRank2026": 14491,
+    "quota2026": 36
   },
   {
     "university": "KTO KARATAY ÜNİVERSİTESİ",
@@ -1611,7 +2463,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 423.81,
     "minRank": 13183,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 423.81,
+    "minRank2025": 13183,
+    "quota2025": 9,
+    "minScore2026": 408.59,
+    "minRank2026": 19045,
+    "quota2026": 9
   },
   {
     "university": "İSTANBUL 29 MAYIS ÜNİVERSİTESİ",
@@ -1620,7 +2478,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 423.26,
     "minRank": 13362,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 423.26,
+    "minRank2025": 13362,
+    "quota2025": 5,
+    "minScore2026": 431.8,
+    "minRank2026": 11762,
+    "quota2026": 5
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -1629,7 +2493,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 422.86,
     "minRank": 13498,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 422.86,
+    "minRank2025": 13498,
+    "quota2025": 60
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -1638,7 +2505,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 422.86,
     "minRank": 13498,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 422.86,
+    "minRank2025": 13498,
+    "quota2025": 55,
+    "minScore2026": 427.47,
+    "minRank2026": 12927,
+    "quota2026": 55
   },
   {
     "university": "İSTANBUL BEYKENT ÜNİVERSİTESİ",
@@ -1647,7 +2520,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 422.77,
     "minRank": 13536,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 422.77,
+    "minRank2025": 13536,
+    "quota2025": 10,
+    "minScore2026": 418.47,
+    "minRank2026": 15713,
+    "quota2026": 10
   },
   {
     "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
@@ -1656,7 +2535,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 422.71,
     "minRank": 13549,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 422.71,
+    "minRank2025": 13549,
+    "quota2025": 4,
+    "minScore2026": 430.38,
+    "minRank2026": 12146,
+    "quota2026": 4
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -1665,7 +2550,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 422.52,
     "minRank": 13610,
-    "quota": 16
+    "quota": 16,
+    "minScore2025": 422.52,
+    "minRank2025": 13610,
+    "quota2025": 16,
+    "minScore2026": 419.79,
+    "minRank2026": 15286,
+    "quota2026": 16
   },
   {
     "university": "AYDIN ADNAN MENDERES ÜNİVERSİTESİ",
@@ -1674,7 +2565,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 422.49,
     "minRank": 13619,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 422.49,
+    "minRank2025": 13619,
+    "quota2025": 50
   },
   {
     "university": "AYDIN ADNAN MENDERES ÜNİVERSİTESİ",
@@ -1683,7 +2577,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 422.49,
     "minRank": 13619,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 422.49,
+    "minRank2025": 13619,
+    "quota2025": 45,
+    "minScore2026": 422.28,
+    "minRank2026": 14508,
+    "quota2026": 45
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -1692,7 +2592,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 422.48,
     "minRank": 13621,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 422.48,
+    "minRank2025": 13621,
+    "quota2025": 45,
+    "minScore2026": 430.51,
+    "minRank2026": 12110,
+    "quota2026": 30
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -1701,7 +2607,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 422.05,
     "minRank": 13760,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 422.05,
+    "minRank2025": 13760,
+    "quota2025": 60,
+    "minScore2026": 432.51,
+    "minRank2026": 11570,
+    "quota2026": 45
   },
   {
     "university": "SÜLEYMAN DEMİREL ÜNİVERSİTESİ",
@@ -1710,7 +2622,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 421.83,
     "minRank": 13826,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 421.83,
+    "minRank2025": 13826,
+    "quota2025": 30,
+    "minScore2026": 422.9,
+    "minRank2026": 14297,
+    "quota2026": 27
   },
   {
     "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
@@ -1719,7 +2637,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 421.38,
     "minRank": 13961,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 421.38,
+    "minRank2025": 13961,
+    "quota2025": 50,
+    "minScore2026": 419.16,
+    "minRank2026": 15479,
+    "quota2026": 50
   },
   {
     "university": "İSTİNYE ÜNİVERSİTESİ",
@@ -1728,7 +2652,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 421.18,
     "minRank": 14017,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 421.18,
+    "minRank2025": 14017,
+    "quota2025": 4,
+    "minScore2026": 429.69,
+    "minRank2026": 12342,
+    "quota2026": 4
   },
   {
     "university": "ALANYA ALAADDİN KEYKUBAT ÜNİVERSİTESİ",
@@ -1737,7 +2667,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 420.74,
     "minRank": 14144,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 420.74,
+    "minRank2025": 14144,
+    "quota2025": 40,
+    "minScore2026": 421.69,
+    "minRank2026": 14705,
+    "quota2026": 36
   },
   {
     "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
@@ -1746,7 +2682,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 420.29,
     "minRank": 14270,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 420.29,
+    "minRank2025": 14270,
+    "quota2025": 6,
+    "minScore2026": 432.05,
+    "minRank2026": 11701,
+    "quota2026": 6
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -1755,7 +2697,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 420.07,
     "minRank": 14344,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 420.07,
+    "minRank2025": 14344,
+    "quota2025": 60
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -1764,7 +2709,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 420.07,
     "minRank": 14344,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 420.07,
+    "minRank2025": 14344,
+    "quota2025": 60,
+    "minScore2026": 423.45,
+    "minRank2026": 14127,
+    "quota2026": 60
   },
   {
     "university": "BOLU ABANT İZZET BAYSAL ÜNİVERSİTESİ",
@@ -1773,7 +2724,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 419.9,
     "minRank": 14400,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 419.9,
+    "minRank2025": 14400,
+    "quota2025": 40,
+    "minScore2026": 420.87,
+    "minRank2026": 14975,
+    "quota2026": 36
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -1782,7 +2739,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 419.68,
     "minRank": 14471,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 419.68,
+    "minRank2025": 14471,
+    "quota2025": 50,
+    "minScore2026": 427.39,
+    "minRank2026": 12953,
+    "quota2026": 40
   },
   {
     "university": "DİCLE ÜNİVERSİTESİ",
@@ -1791,7 +2754,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 419.33,
     "minRank": 14592,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 419.33,
+    "minRank2025": 14592,
+    "quota2025": 30,
+    "minScore2026": 425.05,
+    "minRank2026": 13634,
+    "quota2026": 27
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -1800,7 +2769,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 419.01,
     "minRank": 14683,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 419.01,
+    "minRank2025": 14683,
+    "quota2025": 9,
+    "minScore2026": 428.41,
+    "minRank2026": 12695,
+    "quota2026": 9
   },
   {
     "university": "ANKARA SOSYAL BİLİMLER ÜNİVERSİTESİ",
@@ -1809,7 +2784,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 419,
     "minRank": 14685,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 419,
+    "minRank2025": 14685,
+    "quota2025": 45,
+    "minScore2026": 423.91,
+    "minRank2026": 14003,
+    "quota2026": 40
   },
   {
     "university": "DOĞUŞ ÜNİVERSİTESİ",
@@ -1818,7 +2799,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 418.95,
     "minRank": 14702,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 418.95,
+    "minRank2025": 14702,
+    "quota2025": 9,
+    "minScore2026": 415.1,
+    "minRank2026": 16786,
+    "quota2026": 9
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -1827,7 +2814,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 418.89,
     "minRank": 14709,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 418.89,
+    "minRank2025": 14709,
+    "quota2025": 55,
+    "minScore2026": 424.82,
+    "minRank2026": 13713,
+    "quota2026": 50
   },
   {
     "university": "SAKARYA ÜNİVERSİTESİ",
@@ -1836,7 +2829,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 418.62,
     "minRank": 14797,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 418.62,
+    "minRank2025": 14797,
+    "quota2025": 40
   },
   {
     "university": "SAKARYA ÜNİVERSİTESİ",
@@ -1845,7 +2841,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 418.62,
     "minRank": 14797,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 418.62,
+    "minRank2025": 14797,
+    "quota2025": 36,
+    "minScore2026": 418.57,
+    "minRank2026": 15679,
+    "quota2026": 36
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -1854,7 +2856,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 418.59,
     "minRank": 14809,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 418.59,
+    "minRank2025": 14809,
+    "quota2025": 40,
+    "minScore2026": 418.79,
+    "minRank2026": 15598,
+    "quota2026": 40
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -1863,7 +2871,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 418.57,
     "minRank": 14817,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 418.57,
+    "minRank2025": 14817,
+    "quota2025": 55
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -1872,7 +2883,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 418.57,
     "minRank": 14817,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 418.57,
+    "minRank2025": 14817,
+    "quota2025": 50,
+    "minScore2026": 423.84,
+    "minRank2026": 14024,
+    "quota2026": 50
   },
   {
     "university": "ANKARA HACI BAYRAM VELİ ÜNİVERSİTESİ",
@@ -1881,7 +2898,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 418.56,
     "minRank": 14821,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 418.56,
+    "minRank2025": 14821,
+    "quota2025": 35,
+    "minScore2026": 433.04,
+    "minRank2026": 11439,
+    "quota2026": 35
   },
   {
     "university": "GAZİANTEP ÜNİVERSİTESİ",
@@ -1890,7 +2913,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 418.26,
     "minRank": 14915,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 418.26,
+    "minRank2025": 14915,
+    "quota2025": 45
   },
   {
     "university": "GAZİANTEP ÜNİVERSİTESİ",
@@ -1899,7 +2925,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 418.26,
     "minRank": 14915,
-    "quota": 41
+    "quota": 41,
+    "minScore2025": 418.26,
+    "minRank2025": 14915,
+    "quota2025": 41,
+    "minScore2026": 417.89,
+    "minRank2026": 15897,
+    "quota2026": 41
   },
   {
     "university": "BİRUNİ ÜNİVERSİTESİ",
@@ -1908,7 +2940,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 417.74,
     "minRank": 15102,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 417.74,
+    "minRank2025": 15102,
+    "quota2025": 7,
+    "minScore2026": 421.59,
+    "minRank2026": 14738,
+    "quota2026": 7
   },
   {
     "university": "ÇANAKKALE ONSEKİZ MART ÜNİVERSİTESİ",
@@ -1917,7 +2955,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 417.18,
     "minRank": 15285,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 417.18,
+    "minRank2025": 15285,
+    "quota2025": 30,
+    "minScore2026": 428.51,
+    "minRank2026": 12660,
+    "quota2026": 20
   },
   {
     "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
@@ -1926,7 +2970,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 416.96,
     "minRank": 15362,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 416.96,
+    "minRank2025": 15362,
+    "quota2025": 40,
+    "minScore2026": 422.21,
+    "minRank2026": 14535,
+    "quota2026": 40
   },
   {
     "university": "YAŞAR ÜNİVERSİTESİ",
@@ -1935,7 +2985,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 416.83,
     "minRank": 15408,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 416.83,
+    "minRank2025": 15408,
+    "quota2025": 3,
+    "minScore2026": 432.28,
+    "minRank2026": 11631,
+    "quota2026": 3
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -1944,7 +3000,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 416.52,
     "minRank": 15520,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 416.52,
+    "minRank2025": 15520,
+    "quota2025": 40,
+    "minScore2026": 425.26,
+    "minRank2026": 13567,
+    "quota2026": 30
   },
   {
     "university": "TRAKYA ÜNİVERSİTESİ",
@@ -1953,7 +3015,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 415.8,
     "minRank": 15765,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 415.8,
+    "minRank2025": 15765,
+    "quota2025": 50
   },
   {
     "university": "TRAKYA ÜNİVERSİTESİ",
@@ -1962,7 +3027,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 415.8,
     "minRank": 15765,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 415.8,
+    "minRank2025": 15765,
+    "quota2025": 45,
+    "minScore2026": 417.39,
+    "minRank2026": 16051,
+    "quota2026": 45
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -1971,7 +3042,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 415.44,
     "minRank": 15890,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 415.44,
+    "minRank2025": 15890,
+    "quota2025": 55
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -1980,7 +3054,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 415.44,
     "minRank": 15890,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 415.44,
+    "minRank2025": 15890,
+    "quota2025": 50,
+    "minScore2026": 422.22,
+    "minRank2026": 14529,
+    "quota2026": 50
   },
   {
     "university": "ANKARA SOSYAL BİLİMLER ÜNİVERSİTESİ",
@@ -1989,7 +3069,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 415.44,
     "minRank": 15892,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 415.44,
+    "minRank2025": 15892,
+    "quota2025": 30,
+    "minScore2026": 431.72,
+    "minRank2026": 11786,
+    "quota2026": 30
   },
   {
     "university": "İSTANBUL BEYKENT ÜNİVERSİTESİ",
@@ -1998,7 +3084,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 415.29,
     "minRank": 15941,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 415.29,
+    "minRank2025": 15941,
+    "quota2025": 5,
+    "minScore2026": 425.23,
+    "minRank2026": 13578,
+    "quota2026": 5
   },
   {
     "university": "MUDANYA ÜNİVERSİTESİ",
@@ -2007,7 +3099,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 415.06,
     "minRank": 16008,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 415.06,
+    "minRank2025": 16008,
+    "quota2025": 4,
+    "minScore2026": 422.42,
+    "minRank2026": 14454,
+    "quota2026": 4
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -2016,7 +3114,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 415.03,
     "minRank": 16028,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 415.03,
+    "minRank2025": 16028,
+    "quota2025": 50,
+    "minScore2026": 420.71,
+    "minRank2026": 15008,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -2025,7 +3129,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 414.71,
     "minRank": 16118,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 414.71,
+    "minRank2025": 16118,
+    "quota2025": 55,
+    "minScore2026": 421.45,
+    "minRank2026": 14771,
+    "quota2026": 55
   },
   {
     "university": "İSTANBUL ATLAS ÜNİVERSİTESİ",
@@ -2034,7 +3144,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 414.49,
     "minRank": 16202,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 414.49,
+    "minRank2025": 16202,
+    "quota2025": 4,
+    "minScore2026": 418.65,
+    "minRank2026": 15649,
+    "quota2026": 4
   },
   {
     "university": "ÇANAKKALE ONSEKİZ MART ÜNİVERSİTESİ",
@@ -2043,7 +3159,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 414.4,
     "minRank": 16238,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 414.4,
+    "minRank2025": 16238,
+    "quota2025": 40,
+    "minScore2026": 419.7,
+    "minRank2026": 15316,
+    "quota2026": 40
   },
   {
     "university": "ANKARA SOSYAL BİLİMLER ÜNİVERSİTESİ",
@@ -2052,7 +3174,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 414.14,
     "minRank": 16335,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 414.14,
+    "minRank2025": 16335,
+    "quota2025": 30,
+    "minScore2026": 422.47,
+    "minRank2026": 14437,
+    "quota2026": 30
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -2061,7 +3189,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 414.14,
     "minRank": 16336,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 414.14,
+    "minRank2025": 16336,
+    "quota2025": 35
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -2070,7 +3201,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 414.14,
     "minRank": 16336,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 414.14,
+    "minRank2025": 16336,
+    "quota2025": 30,
+    "minScore2026": 419.71,
+    "minRank2026": 15310,
+    "quota2026": 30
   },
   {
     "university": "İSTANBUL YENİ YÜZYIL ÜNİVERSİTESİ",
@@ -2079,7 +3216,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 413.92,
     "minRank": 16412,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 413.92,
+    "minRank2025": 16412,
+    "quota2025": 7,
+    "minScore2026": 409.28,
+    "minRank2026": 18793,
+    "quota2026": 7
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -2088,7 +3231,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 413.68,
     "minRank": 16490,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 413.68,
+    "minRank2025": 16490,
+    "quota2025": 55
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -2097,7 +3243,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 413.68,
     "minRank": 16490,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 413.68,
+    "minRank2025": 16490,
+    "quota2025": 50,
+    "minScore2026": 416.59,
+    "minRank2026": 16301,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL ATLAS ÜNİVERSİTESİ",
@@ -2106,7 +3258,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 413.26,
     "minRank": 16640,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 413.26,
+    "minRank2025": 16640,
+    "quota2025": 3,
+    "minScore2026": 418.72,
+    "minRank2026": 15621,
+    "quota2026": 3
   },
   {
     "university": "NEVŞEHİR HACI BEKTAŞ VELİ ÜNİVERSİTESİ",
@@ -2115,7 +3273,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 412.74,
     "minRank": 16823,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 412.74,
+    "minRank2025": 16823,
+    "quota2025": 50
   },
   {
     "university": "NEVŞEHİR HACI BEKTAŞ VELİ ÜNİVERSİTESİ",
@@ -2124,7 +3285,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 412.74,
     "minRank": 16823,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 412.74,
+    "minRank2025": 16823,
+    "quota2025": 45,
+    "minScore2026": 412.84,
+    "minRank2026": 17600,
+    "quota2026": 45
   },
   {
     "university": "İSTANBUL SAĞLIK VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -2133,7 +3300,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 412.42,
     "minRank": 16936,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 412.42,
+    "minRank2025": 16936,
+    "quota2025": 4,
+    "minScore2026": 417.51,
+    "minRank2026": 16019,
+    "quota2026": 4
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -2142,7 +3315,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 412.39,
     "minRank": 16948,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 412.39,
+    "minRank2025": 16948,
+    "quota2025": 65,
+    "minScore2026": 414.58,
+    "minRank2026": 16960,
+    "quota2026": 65
   },
   {
     "university": "AFYON KOCATEPE ÜNİVERSİTESİ",
@@ -2151,7 +3330,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 412.38,
     "minRank": 16954,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 412.38,
+    "minRank2025": 16954,
+    "quota2025": 40
   },
   {
     "university": "AFYON KOCATEPE ÜNİVERSİTESİ",
@@ -2160,7 +3342,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 412.38,
     "minRank": 16954,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 412.38,
+    "minRank2025": 16954,
+    "quota2025": 36,
+    "minScore2026": 414.95,
+    "minRank2026": 16835,
+    "quota2026": 36
   },
   {
     "university": "SAKARYA ÜNİVERSİTESİ",
@@ -2169,7 +3357,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 411.95,
     "minRank": 17103,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 411.95,
+    "minRank2025": 17103,
+    "quota2025": 60
   },
   {
     "university": "SAKARYA ÜNİVERSİTESİ",
@@ -2178,7 +3369,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 411.95,
     "minRank": 17103,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 411.95,
+    "minRank2025": 17103,
+    "quota2025": 60,
+    "minScore2026": 414.19,
+    "minRank2026": 17112,
+    "quota2026": 60
   },
   {
     "university": "HALİÇ ÜNİVERSİTESİ",
@@ -2187,7 +3384,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 411.91,
     "minRank": 17122,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 411.91,
+    "minRank2025": 17122,
+    "quota2025": 9,
+    "minScore2026": 419.39,
+    "minRank2026": 15414,
+    "quota2026": 9
   },
   {
     "university": "DÜZCE ÜNİVERSİTESİ",
@@ -2196,7 +3399,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 411.73,
     "minRank": 17187,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 411.73,
+    "minRank2025": 17187,
+    "quota2025": 40
   },
   {
     "university": "DÜZCE ÜNİVERSİTESİ",
@@ -2205,7 +3411,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 411.73,
     "minRank": 17187,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 411.73,
+    "minRank2025": 17187,
+    "quota2025": 36,
+    "minScore2026": 413.66,
+    "minRank2026": 17312,
+    "quota2026": 36
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -2214,7 +3426,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 422.4,
     "minRank": 17200,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 422.4,
+    "minRank2025": 17200,
+    "quota2025": 36,
+    "minScore2026": 399.4,
+    "minRank2026": 22545,
+    "quota2026": 40
   },
   {
     "university": "İSTANBUL GELİŞİM ÜNİVERSİTESİ",
@@ -2223,7 +3441,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 411.67,
     "minRank": 17216,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 411.67,
+    "minRank2025": 17216,
+    "quota2025": 5,
+    "minScore2026": 415.75,
+    "minRank2026": 16581,
+    "quota2026": 5
   },
   {
     "university": "FENERBAHÇE ÜNİVERSİTESİ",
@@ -2232,7 +3456,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 411.62,
     "minRank": 17239,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 411.62,
+    "minRank2025": 17239,
+    "quota2025": 6,
+    "minScore2026": 419.59,
+    "minRank2026": 15343,
+    "quota2026": 6
   },
   {
     "university": "DOĞUŞ ÜNİVERSİTESİ",
@@ -2241,7 +3471,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 411.46,
     "minRank": 17292,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 411.46,
+    "minRank2025": 17292,
+    "quota2025": 5,
+    "minScore2026": 418.46,
+    "minRank2026": 15723,
+    "quota2026": 5
   },
   {
     "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
@@ -2250,7 +3486,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 411.34,
     "minRank": 17350,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 411.34,
+    "minRank2025": 17350,
+    "quota2025": 70,
+    "minScore2026": 413.86,
+    "minRank2026": 17227,
+    "quota2026": 40
   },
   {
     "university": "MANİSA CELÂL BAYAR ÜNİVERSİTESİ",
@@ -2259,7 +3501,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 411.2,
     "minRank": 17416,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 411.2,
+    "minRank2025": 17416,
+    "quota2025": 50,
+    "minScore2026": 411.25,
+    "minRank2026": 18150,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL GELİŞİM ÜNİVERSİTESİ",
@@ -2268,7 +3516,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 410.87,
     "minRank": 17526,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 410.87,
+    "minRank2025": 17526,
+    "quota2025": 7,
+    "minScore2026": 410.31,
+    "minRank2026": 18470,
+    "quota2026": 7
   },
   {
     "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
@@ -2277,7 +3531,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 410.42,
     "minRank": 17674,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 410.42,
+    "minRank2025": 17674,
+    "quota2025": 40
   },
   {
     "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
@@ -2286,7 +3543,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 410.42,
     "minRank": 17674,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 410.42,
+    "minRank2025": 17674,
+    "quota2025": 30,
+    "minScore2026": 418.15,
+    "minRank2026": 15807,
+    "quota2026": 30
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -2295,7 +3558,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 410.42,
     "minRank": 17675,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 410.42,
+    "minRank2025": 17675,
+    "quota2025": 6,
+    "minScore2026": 417.28,
+    "minRank2026": 16088,
+    "quota2026": 6
   },
   {
     "university": "SELÇUK ÜNİVERSİTESİ",
@@ -2304,7 +3573,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 410.09,
     "minRank": 17799,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 410.09,
+    "minRank2025": 17799,
+    "quota2025": 60,
+    "minScore2026": 410.28,
+    "minRank2026": 18481,
+    "quota2026": 60
   },
   {
     "university": "TRABZON ÜNİVERSİTESİ",
@@ -2313,7 +3588,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 409.98,
     "minRank": 17837,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 409.98,
+    "minRank2025": 17837,
+    "quota2025": 50,
+    "minScore2026": 410.61,
+    "minRank2026": 18342,
+    "quota2026": 45
   },
   {
     "university": "VAN YÜZÜNCÜ YIL ÜNİVERSİTESİ",
@@ -2322,7 +3603,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 409.64,
     "minRank": 17966,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 409.64,
+    "minRank2025": 17966,
+    "quota2025": 27,
+    "minScore2026": 408.54,
+    "minRank2026": 19066,
+    "quota2026": 27
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -2331,7 +3618,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 409.2,
     "minRank": 18134,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 409.2,
+    "minRank2025": 18134,
+    "quota2025": 45
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -2340,7 +3630,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 409.2,
     "minRank": 18134,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 409.2,
+    "minRank2025": 18134,
+    "quota2025": 45,
+    "minScore2026": 415.32,
+    "minRank2026": 16718,
+    "quota2026": 45
   },
   {
     "university": "BURDUR MEHMET AKİF ERSOY ÜNİVERSİTESİ",
@@ -2349,7 +3645,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 408.92,
     "minRank": 18229,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 408.92,
+    "minRank2025": 18229,
+    "quota2025": 50,
+    "minScore2026": 408.98,
+    "minRank2026": 18902,
+    "quota2026": 45
   },
   {
     "university": "SİNOP ÜNİVERSİTESİ",
@@ -2358,7 +3660,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 408.26,
     "minRank": 18479,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 408.26,
+    "minRank2025": 18479,
+    "quota2025": 27,
+    "minScore2026": 410.07,
+    "minRank2026": 18550,
+    "quota2026": 27
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -2367,7 +3675,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 408.07,
     "minRank": 18539,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 408.07,
+    "minRank2025": 18539,
+    "quota2025": 60,
+    "minScore2026": 413.39,
+    "minRank2026": 17428,
+    "quota2026": 60
   },
   {
     "university": "ANKARA HACI BAYRAM VELİ ÜNİVERSİTESİ",
@@ -2376,7 +3690,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 407.58,
     "minRank": 18706,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 407.58,
+    "minRank2025": 18706,
+    "quota2025": 30,
+    "minScore2026": 413.86,
+    "minRank2026": 17228,
+    "quota2026": 30
   },
   {
     "university": "İSTANBUL MEDENİYET ÜNİVERSİTESİ",
@@ -2385,7 +3705,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 407.41,
     "minRank": 18788,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 407.41,
+    "minRank2025": 18788,
+    "quota2025": 35,
+    "minScore2026": 416.46,
+    "minRank2026": 16345,
+    "quota2026": 35
   },
   {
     "university": "AMASYA ÜNİVERSİTESİ",
@@ -2394,7 +3720,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 407.11,
     "minRank": 18904,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 407.11,
+    "minRank2025": 18904,
+    "quota2025": 36,
+    "minScore2026": 405.48,
+    "minRank2026": 20224,
+    "quota2026": 36
   },
   {
     "university": "İSTANBUL YENİ YÜZYIL ÜNİVERSİTESİ",
@@ -2403,7 +3735,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 406.95,
     "minRank": 18964,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 406.95,
+    "minRank2025": 18964,
+    "quota2025": 7,
+    "minScore2026": 410.21,
+    "minRank2026": 18507,
+    "quota2026": 7
   },
   {
     "university": "HASAN KALYONCU ÜNİVERSİTESİ",
@@ -2412,7 +3750,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 406.61,
     "minRank": 19085,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 406.61,
+    "minRank2025": 19085,
+    "quota2025": 7,
+    "minScore2026": 410.26,
+    "minRank2026": 18489,
+    "quota2026": 7
   },
   {
     "university": "İSTANBUL TOPKAPI ÜNİVERSİTESİ",
@@ -2421,7 +3765,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 406.07,
     "minRank": 19292,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 406.07,
+    "minRank2025": 19292,
+    "quota2025": 6,
+    "minScore2026": 410.83,
+    "minRank2026": 18267,
+    "quota2026": 6
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -2430,7 +3780,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 406.06,
     "minRank": 19296,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 406.06,
+    "minRank2025": 19296,
+    "quota2025": 50,
+    "minScore2026": 409.01,
+    "minRank2026": 18895,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL AREL ÜNİVERSİTESİ",
@@ -2439,7 +3795,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 405.73,
     "minRank": 19419,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 405.73,
+    "minRank2025": 19419,
+    "quota2025": 4,
+    "minScore2026": 409.07,
+    "minRank2026": 18880,
+    "quota2026": 4
   },
   {
     "university": "İNÖNÜ ÜNİVERSİTESİ",
@@ -2448,7 +3810,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 405.69,
     "minRank": 19430,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 405.69,
+    "minRank2025": 19430,
+    "quota2025": 36,
+    "minScore2026": 406.44,
+    "minRank2026": 19868,
+    "quota2026": 36
   },
   {
     "university": "İZMİR DEMOKRASİ ÜNİVERSİTESİ",
@@ -2457,7 +3825,10 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 405.57,
     "minRank": 19483,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 405.57,
+    "minRank2025": 19483,
+    "quota2025": 50
   },
   {
     "university": "İZMİR DEMOKRASİ ÜNİVERSİTESİ",
@@ -2466,7 +3837,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 405.57,
     "minRank": 19483,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 405.57,
+    "minRank2025": 19483,
+    "quota2025": 30,
+    "minScore2026": 411.52,
+    "minRank2026": 18057,
+    "quota2026": 30
   },
   {
     "university": "SİVAS CUMHURİYET ÜNİVERSİTESİ",
@@ -2475,7 +3852,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 405.55,
     "minRank": 19490,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 405.55,
+    "minRank2025": 19490,
+    "quota2025": 27,
+    "minScore2026": 404.56,
+    "minRank2026": 20573,
+    "quota2026": 27
   },
   {
     "university": "İSTANBUL BEYKENT ÜNİVERSİTESİ",
@@ -2484,7 +3867,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 405.44,
     "minRank": 19534,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 405.44,
+    "minRank2025": 19534,
+    "quota2025": 4,
+    "minScore2026": 414.2,
+    "minRank2026": 17107,
+    "quota2026": 4
   },
   {
     "university": "AKSARAY ÜNİVERSİTESİ",
@@ -2493,7 +3882,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 404.99,
     "minRank": 19714,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 404.99,
+    "minRank2025": 19714,
+    "quota2025": 27,
+    "minScore2026": 405.07,
+    "minRank2026": 20364,
+    "quota2026": 27
   },
   {
     "university": "TRAKYA ÜNİVERSİTESİ",
@@ -2502,7 +3897,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 404.51,
     "minRank": 19896,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 404.51,
+    "minRank2025": 19896,
+    "quota2025": 60,
+    "minScore2026": 405.07,
+    "minRank2026": 20363,
+    "quota2026": 60
   },
   {
     "university": "BARTIN ÜNİVERSİTESİ",
@@ -2511,7 +3912,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 404.25,
     "minRank": 19997,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 404.25,
+    "minRank2025": 19997,
+    "quota2025": 27,
+    "minScore2026": 407.41,
+    "minRank2026": 19509,
+    "quota2026": 27
   },
   {
     "university": "ANKARA SOSYAL BİLİMLER ÜNİVERSİTESİ",
@@ -2520,7 +3927,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 404.08,
     "minRank": 20048,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 404.08,
+    "minRank2025": 20048,
+    "quota2025": 40,
+    "minScore2026": 413.55,
+    "minRank2026": 17360,
+    "quota2026": 40
   },
   {
     "university": "GİRESUN ÜNİVERSİTESİ",
@@ -2529,7 +3942,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 403.38,
     "minRank": 20301,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 403.38,
+    "minRank2025": 20301,
+    "quota2025": 27,
+    "minScore2026": 405.9,
+    "minRank2026": 20077,
+    "quota2026": 27
   },
   {
     "university": "İSTANBUL GELİŞİM ÜNİVERSİTESİ",
@@ -2538,7 +3957,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 403.13,
     "minRank": 20390,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 403.13,
+    "minRank2025": 20390,
+    "quota2025": 5,
+    "minScore2026": 413.65,
+    "minRank2026": 17315,
+    "quota2026": 5
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -2547,7 +3972,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 403.1,
     "minRank": 20409,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 403.1,
+    "minRank2025": 20409,
+    "quota2025": 55,
+    "minScore2026": 380.5,
+    "minRank2026": 30188,
+    "quota2026": 60
   },
   {
     "university": "ATATÜRK ÜNİVERSİTESİ",
@@ -2556,7 +3987,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 403.09,
     "minRank": 20410,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 403.09,
+    "minRank2025": 20410,
+    "quota2025": 45,
+    "minScore2026": 404.25,
+    "minRank2026": 20686,
+    "quota2026": 45
   },
   {
     "university": "AYDIN ADNAN MENDERES ÜNİVERSİTESİ",
@@ -2565,7 +4002,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 402.96,
     "minRank": 20460,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 402.96,
+    "minRank2025": 20460,
+    "quota2025": 70,
+    "minScore2026": 405.02,
+    "minRank2026": 20387,
+    "quota2026": 70
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -2574,7 +4017,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 402.94,
     "minRank": 20475,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 402.94,
+    "minRank2025": 20475,
+    "quota2025": 50,
+    "minScore2026": 411.23,
+    "minRank2026": 18155,
+    "quota2026": 50
   },
   {
     "university": "NİĞDE ÖMER HALİSDEMİR ÜNİVERSİTESİ",
@@ -2583,7 +4032,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 402.93,
     "minRank": 20482,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 402.93,
+    "minRank2025": 20482,
+    "quota2025": 36,
+    "minScore2026": 402.81,
+    "minRank2026": 21211,
+    "quota2026": 36
   },
   {
     "university": "İSTANBUL NİŞANTAŞI ÜNİVERSİTESİ",
@@ -2592,7 +4047,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 402.79,
     "minRank": 20528,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 402.79,
+    "minRank2025": 20528,
+    "quota2025": 9,
+    "minScore2026": 408.73,
+    "minRank2026": 18996,
+    "quota2026": 9
   },
   {
     "university": "BOLU ABANT İZZET BAYSAL ÜNİVERSİTESİ",
@@ -2601,7 +4062,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 402.76,
     "minRank": 20542,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 402.76,
+    "minRank2025": 20542,
+    "quota2025": 50,
+    "minScore2026": 402.6,
+    "minRank2026": 21298,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL MEDENİYET ÜNİVERSİTESİ",
@@ -2610,7 +4077,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 402.73,
     "minRank": 20555,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 402.73,
+    "minRank2025": 20555,
+    "quota2025": 35,
+    "minScore2026": 407.9,
+    "minRank2026": 19313,
+    "quota2026": 35
   },
   {
     "university": "BANDIRMA ONYEDİ EYLÜL ÜNİVERSİTESİ",
@@ -2619,7 +4092,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 402.71,
     "minRank": 20559,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 402.71,
+    "minRank2025": 20559,
+    "quota2025": 40,
+    "minScore2026": 403.6,
+    "minRank2026": 20931,
+    "quota2026": 40
   },
   {
     "university": "İSTANBUL TOPKAPI ÜNİVERSİTESİ",
@@ -2628,7 +4107,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 402.68,
     "minRank": 20571,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 402.68,
+    "minRank2025": 20571,
+    "quota2025": 8,
+    "minScore2026": 409.1,
+    "minRank2026": 18865,
+    "quota2026": 8
   },
   {
     "university": "FIRAT ÜNİVERSİTESİ",
@@ -2637,7 +4122,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 402.6,
     "minRank": 20594,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 402.6,
+    "minRank2025": 20594,
+    "quota2025": 36,
+    "minScore2026": 402.48,
+    "minRank2026": 21335,
+    "quota2026": 36
   },
   {
     "university": "İSTANBUL AREL ÜNİVERSİTESİ",
@@ -2646,7 +4137,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 402.6,
     "minRank": 20598,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 402.6,
+    "minRank2025": 20598,
+    "quota2025": 3,
+    "minScore2026": 407.21,
+    "minRank2026": 19596,
+    "quota2026": 3
   },
   {
     "university": "SAMSUN ÜNİVERSİTESİ",
@@ -2655,7 +4152,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 402.26,
     "minRank": 20727,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 402.26,
+    "minRank2025": 20727,
+    "quota2025": 40,
+    "minScore2026": 403.16,
+    "minRank2026": 21106,
+    "quota2026": 40
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -2664,7 +4167,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 401.09,
     "minRank": 21199,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 401.09,
+    "minRank2025": 21199,
+    "quota2025": 50,
+    "minScore2026": 407.4,
+    "minRank2026": 19510,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL 29 MAYIS ÜNİVERSİTESİ",
@@ -2673,7 +4182,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 400.99,
     "minRank": 21238,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 400.99,
+    "minRank2025": 21238,
+    "quota2025": 8,
+    "minScore2026": 418.48,
+    "minRank2026": 15707,
+    "quota2026": 8
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -2682,7 +4197,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 400.94,
     "minRank": 21252,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 400.94,
+    "minRank2025": 21252,
+    "quota2025": 30,
+    "minScore2026": 409.28,
+    "minRank2026": 18795,
+    "quota2026": 30
   },
   {
     "university": "TOKAT GAZİOSMANPAŞA ÜNİVERSİTESİ",
@@ -2691,7 +4212,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 400.61,
     "minRank": 21363,
-    "quota": 41
+    "quota": 41,
+    "minScore2025": 400.61,
+    "minRank2025": 21363,
+    "quota2025": 41,
+    "minScore2026": 401.28,
+    "minRank2026": 21832,
+    "quota2026": 41
   },
   {
     "university": "İSTANBUL GALATA ÜNİVERSİTESİ",
@@ -2700,7 +4227,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 400.51,
     "minRank": 21406,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 400.51,
+    "minRank2025": 21406,
+    "quota2025": 4,
+    "minScore2026": 409.19,
+    "minRank2026": 18829,
+    "quota2026": 4
   },
   {
     "university": "PAMUKKALE ÜNİVERSİTESİ",
@@ -2709,7 +4242,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 400.13,
     "minRank": 21556,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 400.13,
+    "minRank2025": 21556,
+    "quota2025": 70,
+    "minScore2026": 405.65,
+    "minRank2026": 20157,
+    "quota2026": 70
   },
   {
     "university": "ANADOLU ÜNİVERSİTESİ",
@@ -2718,7 +4257,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 400.06,
     "minRank": 21589,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 400.06,
+    "minRank2025": 21589,
+    "quota2025": 45,
+    "minScore2026": 404.58,
+    "minRank2026": 20569,
+    "quota2026": 45
   },
   {
     "university": "HARRAN ÜNİVERSİTESİ",
@@ -2727,7 +4272,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 400.04,
     "minRank": 21596,
-    "quota": 18
+    "quota": 18,
+    "minScore2025": 400.04,
+    "minRank2025": 21596,
+    "quota2025": 18,
+    "minScore2026": 402.07,
+    "minRank2026": 21510,
+    "quota2026": 18
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -2736,7 +4287,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 399.95,
     "minRank": 21628,
-    "quota": 32
+    "quota": 32,
+    "minScore2025": 399.95,
+    "minRank2025": 21628,
+    "quota2025": 32,
+    "minScore2026": 411.49,
+    "minRank2026": 18073,
+    "quota2026": 32
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -2745,7 +4302,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 399.87,
     "minRank": 21664,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 399.87,
+    "minRank2025": 21664,
+    "quota2025": 40,
+    "minScore2026": 406.52,
+    "minRank2026": 19833,
+    "quota2026": 40
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -2754,7 +4317,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 399.85,
     "minRank": 21673,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 399.85,
+    "minRank2025": 21673,
+    "quota2025": 40,
+    "minScore2026": 415.12,
+    "minRank2026": 16779,
+    "quota2026": 40
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -2763,7 +4332,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 399.79,
     "minRank": 21694,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 399.79,
+    "minRank2025": 21694,
+    "quota2025": 60,
+    "minScore2026": 404.69,
+    "minRank2026": 20518,
+    "quota2026": 60
   },
   {
     "university": "İSTANBUL NİŞANTAŞI ÜNİVERSİTESİ",
@@ -2772,7 +4347,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 399.31,
     "minRank": 21887,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 399.31,
+    "minRank2025": 21887,
+    "quota2025": 9,
+    "minScore2026": 408.27,
+    "minRank2026": 19170,
+    "quota2026": 9
   },
   {
     "university": "ANADOLU ÜNİVERSİTESİ",
@@ -2781,7 +4362,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 399.3,
     "minRank": 21891,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 399.3,
+    "minRank2025": 21891,
+    "quota2025": 50,
+    "minScore2026": 403.35,
+    "minRank2026": 21032,
+    "quota2026": 50
   },
   {
     "university": "KAHRAMANMARAŞ SÜTÇÜ İMAM ÜNİVERSİTESİ",
@@ -2790,7 +4377,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 399.2,
     "minRank": 21926,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 399.2,
+    "minRank2025": 21926,
+    "quota2025": 27,
+    "minScore2026": 401.14,
+    "minRank2026": 21887,
+    "quota2026": 27
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -2799,7 +4392,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 398.72,
     "minRank": 22128,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 398.72,
+    "minRank2025": 22128,
+    "quota2025": 35,
+    "minScore2026": 403.93,
+    "minRank2026": 20802,
+    "quota2026": 35
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -2808,7 +4407,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 398.5,
     "minRank": 22219,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 398.5,
+    "minRank2025": 22219,
+    "quota2025": 40,
+    "minScore2026": 411.95,
+    "minRank2026": 17905,
+    "quota2026": 40
   },
   {
     "university": "BOLU ABANT İZZET BAYSAL ÜNİVERSİTESİ",
@@ -2817,7 +4422,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 398.42,
     "minRank": 22247,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 398.42,
+    "minRank2025": 22247,
+    "quota2025": 40,
+    "minScore2026": 401.78,
+    "minRank2026": 21618,
+    "quota2026": 40
   },
   {
     "university": "MANİSA CELÂL BAYAR ÜNİVERSİTESİ",
@@ -2826,7 +4437,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 397.47,
     "minRank": 22622,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 397.47,
+    "minRank2025": 22622,
+    "quota2025": 80,
+    "minScore2026": 400.58,
+    "minRank2026": 22098,
+    "quota2026": 80
   },
   {
     "university": "SELÇUK ÜNİVERSİTESİ",
@@ -2835,7 +4452,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 397.28,
     "minRank": 22704,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 397.28,
+    "minRank2025": 22704,
+    "quota2025": 80,
+    "minScore2026": 400.42,
+    "minRank2026": 22158,
+    "quota2026": 80
   },
   {
     "university": "HATAY MUSTAFA KEMAL ÜNİVERSİTESİ",
@@ -2844,7 +4467,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 397.17,
     "minRank": 22743,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 397.17,
+    "minRank2025": 22743,
+    "quota2025": 27,
+    "minScore2026": 401.9,
+    "minRank2026": 21580,
+    "quota2026": 27
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -2853,7 +4482,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 396.88,
     "minRank": 22858,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 396.88,
+    "minRank2025": 22858,
+    "quota2025": 30,
+    "minScore2026": 410.55,
+    "minRank2026": 18361,
+    "quota2026": 30
   },
   {
     "university": "TRABZON ÜNİVERSİTESİ",
@@ -2862,7 +4497,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 396.54,
     "minRank": 22984,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 396.54,
+    "minRank2025": 22984,
+    "quota2025": 30,
+    "minScore2026": 396.77,
+    "minRank2026": 23563,
+    "quota2026": 30
   },
   {
     "university": "ÇAĞ ÜNİVERSİTESİ",
@@ -2871,7 +4512,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 395.93,
     "minRank": 23216,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 395.93,
+    "minRank2025": 23216,
+    "quota2025": 12,
+    "minScore2026": 399.85,
+    "minRank2026": 22354,
+    "quota2026": 12
   },
   {
     "university": "ANKARA HACI BAYRAM VELİ ÜNİVERSİTESİ",
@@ -2880,7 +4527,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 395.45,
     "minRank": 23401,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 395.45,
+    "minRank2025": 23401,
+    "quota2025": 55,
+    "minScore2026": 403.67,
+    "minRank2026": 20907,
+    "quota2026": 55
   },
   {
     "university": "ERZİNCAN BİNALİ YILDIRIM ÜNİVERSİTESİ",
@@ -2889,7 +4542,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 395.36,
     "minRank": 23440,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 395.36,
+    "minRank2025": 23440,
+    "quota2025": 36,
+    "minScore2026": 398.51,
+    "minRank2026": 22879,
+    "quota2026": 36
   },
   {
     "university": "ANADOLU ÜNİVERSİTESİ",
@@ -2898,7 +4557,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 395.33,
     "minRank": 23451,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 395.33,
+    "minRank2025": 23451,
+    "quota2025": 45,
+    "minScore2026": 399.31,
+    "minRank2026": 22584,
+    "quota2026": 45
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -2907,7 +4572,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 395.26,
     "minRank": 23477,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 395.26,
+    "minRank2025": 23477,
+    "quota2025": 40,
+    "minScore2026": 407.09,
+    "minRank2026": 19635,
+    "quota2026": 40
   },
   {
     "university": "KÜTAHYA DUMLUPINAR ÜNİVERSİTESİ",
@@ -2916,7 +4587,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 394.32,
     "minRank": 23841,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 394.32,
+    "minRank2025": 23841,
+    "quota2025": 50,
+    "minScore2026": 394.54,
+    "minRank2026": 24447,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL NİŞANTAŞI ÜNİVERSİTESİ",
@@ -2925,7 +4602,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 394.31,
     "minRank": 23848,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 394.31,
+    "minRank2025": 23848,
+    "quota2025": 3,
+    "minScore2026": 403.67,
+    "minRank2026": 20908,
+    "quota2026": 3
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -2934,7 +4617,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 394.23,
     "minRank": 23884,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 394.23,
+    "minRank2025": 23884,
+    "quota2025": 100,
+    "minScore2026": 399.52,
+    "minRank2026": 22484,
+    "quota2026": 100
   },
   {
     "university": "YOZGAT BOZOK ÜNİVERSİTESİ",
@@ -2943,7 +4632,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 394.16,
     "minRank": 23912,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 394.16,
+    "minRank2025": 23912,
+    "quota2025": 36,
+    "minScore2026": 396.12,
+    "minRank2026": 23796,
+    "quota2026": 36
   },
   {
     "university": "MERSİN ÜNİVERSİTESİ",
@@ -2952,7 +4647,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 393.6,
     "minRank": 24128,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 393.6,
+    "minRank2025": 24128,
+    "quota2025": 60,
+    "minScore2026": 399.83,
+    "minRank2026": 22361,
+    "quota2026": 60
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -2961,7 +4662,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 393.09,
     "minRank": 24350,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 393.09,
+    "minRank2025": 24350,
+    "quota2025": 55,
+    "minScore2026": 399.65,
+    "minRank2026": 22433,
+    "quota2026": 55
   },
   {
     "university": "TEKİRDAĞ NAMIK KEMAL ÜNİVERSİTESİ",
@@ -2970,7 +4677,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 392.59,
     "minRank": 24587,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 392.59,
+    "minRank2025": 24587,
+    "quota2025": 60,
+    "minScore2026": 398.57,
+    "minRank2026": 22853,
+    "quota2026": 60
   },
   {
     "university": "SÜLEYMAN DEMİREL ÜNİVERSİTESİ",
@@ -2979,7 +4692,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 392.5,
     "minRank": 24620,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 392.5,
+    "minRank2025": 24620,
+    "quota2025": 30,
+    "minScore2026": 398.77,
+    "minRank2026": 22769,
+    "quota2026": 30
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -2988,7 +4707,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 392.14,
     "minRank": 24752,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 392.14,
+    "minRank2025": 24752,
+    "quota2025": 50,
+    "minScore2026": 399.51,
+    "minRank2026": 22488,
+    "quota2026": 50
   },
   {
     "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -2997,7 +4722,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 391.88,
     "minRank": 24858,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 391.88,
+    "minRank2025": 24858,
+    "quota2025": 80,
+    "minScore2026": 397.24,
+    "minRank2026": 23396,
+    "quota2026": 80
   },
   {
     "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
@@ -3006,7 +4737,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 391.48,
     "minRank": 25044,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 391.48,
+    "minRank2025": 25044,
+    "quota2025": 50,
+    "minScore2026": 397.02,
+    "minRank2026": 23467,
+    "quota2026": 50
   },
   {
     "university": "AFYON KOCATEPE ÜNİVERSİTESİ",
@@ -3015,7 +4752,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 391.17,
     "minRank": 25180,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 391.17,
+    "minRank2025": 25180,
+    "quota2025": 30,
+    "minScore2026": 393.93,
+    "minRank2026": 24702,
+    "quota2026": 30
   },
   {
     "university": "ANADOLU ÜNİVERSİTESİ",
@@ -3024,7 +4767,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 391.15,
     "minRank": 25188,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 391.15,
+    "minRank2025": 25188,
+    "quota2025": 30,
+    "minScore2026": 399.23,
+    "minRank2026": 22610,
+    "quota2026": 30
   },
   {
     "university": "SİİRT ÜNİVERSİTESİ",
@@ -3033,7 +4782,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 390.89,
     "minRank": 25296,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 390.89,
+    "minRank2025": 25296,
+    "quota2025": 36,
+    "minScore2026": 392.62,
+    "minRank2026": 25272,
+    "quota2026": 36
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -3042,7 +4797,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 390.56,
     "minRank": 25451,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 390.56,
+    "minRank2025": 25451,
+    "quota2025": 60,
+    "minScore2026": 394.69,
+    "minRank2026": 24384,
+    "quota2026": 60
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -3051,7 +4812,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 390.43,
     "minRank": 25510,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 390.43,
+    "minRank2025": 25510,
+    "quota2025": 40,
+    "minScore2026": 398.41,
+    "minRank2026": 22926,
+    "quota2026": 40
   },
   {
     "university": "NEVŞEHİR HACI BEKTAŞ VELİ ÜNİVERSİTESİ",
@@ -3060,7 +4827,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 390.15,
     "minRank": 25648,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 390.15,
+    "minRank2025": 25648,
+    "quota2025": 30,
+    "minScore2026": 406.8,
+    "minRank2026": 19732,
+    "quota2026": 30
   },
   {
     "university": "ADANA ALPARSLAN TÜRKEŞ BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -3069,7 +4842,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 388.9,
     "minRank": 26143,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 388.9,
+    "minRank2025": 26143,
+    "quota2025": 60,
+    "minScore2026": 389.56,
+    "minRank2026": 26520,
+    "quota2026": 60
   },
   {
     "university": "BAYBURT ÜNİVERSİTESİ",
@@ -3078,7 +4857,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 388.84,
     "minRank": 26174,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 388.84,
+    "minRank2025": 26174,
+    "quota2025": 36,
+    "minScore2026": 391.94,
+    "minRank2026": 25566,
+    "quota2026": 36
   },
   {
     "university": "TOROS ÜNİVERSİTESİ",
@@ -3087,7 +4872,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 388.82,
     "minRank": 26187,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 388.82,
+    "minRank2025": 26187,
+    "quota2025": 5,
+    "minScore2026": 399.49,
+    "minRank2026": 22493,
+    "quota2026": 5
   },
   {
     "university": "ANKARA HACI BAYRAM VELİ ÜNİVERSİTESİ",
@@ -3096,7 +4887,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 388.8,
     "minRank": 26196,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 388.8,
+    "minRank2025": 26196,
+    "quota2025": 55,
+    "minScore2026": 401.45,
+    "minRank2026": 21755,
+    "quota2026": 55
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -3105,7 +4902,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 388.15,
     "minRank": 26461,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 388.15,
+    "minRank2025": 26461,
+    "quota2025": 40,
+    "minScore2026": 397.2,
+    "minRank2026": 23414,
+    "quota2026": 40
   },
   {
     "university": "MUŞ ALPARSLAN ÜNİVERSİTESİ",
@@ -3114,7 +4917,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 387.5,
     "minRank": 26734,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 387.5,
+    "minRank2025": 26734,
+    "quota2025": 36,
+    "minScore2026": 389.25,
+    "minRank2026": 26640,
+    "quota2026": 36
   },
   {
     "university": "KAPADOKYA ÜNİVERSİTESİ",
@@ -3123,7 +4932,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 387.27,
     "minRank": 26834,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 387.27,
+    "minRank2025": 26834,
+    "quota2025": 10,
+    "minScore2026": 393.25,
+    "minRank2026": 25014,
+    "quota2026": 10
   },
   {
     "university": "KIRKLARELİ ÜNİVERSİTESİ",
@@ -3132,7 +4947,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 386.25,
     "minRank": 27273,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 386.25,
+    "minRank2025": 27273,
+    "quota2025": 60,
+    "minScore2026": 387.15,
+    "minRank2026": 27507,
+    "quota2026": 60
   },
   {
     "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
@@ -3141,7 +4962,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 386.24,
     "minRank": 27278,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 386.24,
+    "minRank2025": 27278,
+    "quota2025": 30,
+    "minScore2026": 391.78,
+    "minRank2026": 25637,
+    "quota2026": 30
   },
   {
     "university": "KÜTAHYA DUMLUPINAR ÜNİVERSİTESİ",
@@ -3150,7 +4977,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 386.13,
     "minRank": 27310,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 386.13,
+    "minRank2025": 27310,
+    "quota2025": 50,
+    "minScore2026": 393.71,
+    "minRank2026": 24808,
+    "quota2026": 50
   },
   {
     "university": "KAPADOKYA ÜNİVERSİTESİ",
@@ -3159,7 +4992,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 386.08,
     "minRank": 27334,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 386.08,
+    "minRank2025": 27334,
+    "quota2025": 8,
+    "minScore2026": 392.71,
+    "minRank2026": 25231,
+    "quota2026": 8
   },
   {
     "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
@@ -3168,7 +5007,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 385.56,
     "minRank": 27563,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 385.56,
+    "minRank2025": 27563,
+    "quota2025": 30,
+    "minScore2026": 394.54,
+    "minRank2026": 24450,
+    "quota2026": 30
   },
   {
     "university": "NEVŞEHİR HACI BEKTAŞ VELİ ÜNİVERSİTESİ",
@@ -3177,7 +5022,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 385.21,
     "minRank": 27711,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 385.21,
+    "minRank2025": 27711,
+    "quota2025": 35,
+    "minScore2026": 402.66,
+    "minRank2026": 21266,
+    "quota2026": 35
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -3186,7 +5037,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 384.4,
     "minRank": 28061,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 384.4,
+    "minRank2025": 28061,
+    "quota2025": 45,
+    "minScore2026": 389.21,
+    "minRank2026": 26655,
+    "quota2026": 45
   },
   {
     "university": "ORDU ÜNİVERSİTESİ",
@@ -3195,7 +5052,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 384.25,
     "minRank": 28130,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 384.25,
+    "minRank2025": 28130,
+    "quota2025": 35,
+    "minScore2026": 393.18,
+    "minRank2026": 25035,
+    "quota2026": 35
   },
   {
     "university": "KIRIKKALE ÜNİVERSİTESİ",
@@ -3204,7 +5067,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 383.44,
     "minRank": 28472,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 383.44,
+    "minRank2025": 28472,
+    "quota2025": 60,
+    "minScore2026": 386.9,
+    "minRank2026": 27614,
+    "quota2026": 60
   },
   {
     "university": "SAKARYA ÜNİVERSİTESİ",
@@ -3213,7 +5082,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 383.09,
     "minRank": 28606,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 383.09,
+    "minRank2025": 28606,
+    "quota2025": 55,
+    "minScore2026": 394.06,
+    "minRank2026": 24662,
+    "quota2026": 55
   },
   {
     "university": "GAZİANTEP ÜNİVERSİTESİ",
@@ -3222,7 +5097,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 383.03,
     "minRank": 28635,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 383.03,
+    "minRank2025": 28635,
+    "quota2025": 40,
+    "minScore2026": 395.9,
+    "minRank2026": 23879,
+    "quota2026": 40
   },
   {
     "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
@@ -3231,7 +5112,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 382.77,
     "minRank": 28749,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 382.77,
+    "minRank2025": 28749,
+    "quota2025": 60,
+    "minScore2026": 388.12,
+    "minRank2026": 27099,
+    "quota2026": 60
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -3240,7 +5127,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 381.72,
     "minRank": 29208,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 381.72,
+    "minRank2025": 29208,
+    "quota2025": 3,
+    "minScore2026": 401.61,
+    "minRank2026": 21698,
+    "quota2026": 3
   },
   {
     "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
@@ -3249,7 +5142,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 381.67,
     "minRank": 29225,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 381.67,
+    "minRank2025": 29225,
+    "quota2025": 65,
+    "minScore2026": 387.72,
+    "minRank2026": 27263,
+    "quota2026": 65
   },
   {
     "university": "DİCLE ÜNİVERSİTESİ",
@@ -3258,7 +5157,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 381.53,
     "minRank": 29266,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 381.53,
+    "minRank2025": 29266,
+    "quota2025": 30,
+    "minScore2026": 391.75,
+    "minRank2026": 25654,
+    "quota2026": 30
   },
   {
     "university": "BURDUR MEHMET AKİF ERSOY ÜNİVERSİTESİ",
@@ -3267,7 +5172,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 381.42,
     "minRank": 29309,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 381.42,
+    "minRank2025": 29309,
+    "quota2025": 50,
+    "minScore2026": 387.55,
+    "minRank2026": 27337,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL GELİŞİM ÜNİVERSİTESİ",
@@ -3276,7 +5187,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 381.03,
     "minRank": 29476,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 381.03,
+    "minRank2025": 29476,
+    "quota2025": 4,
+    "minScore2026": 400.61,
+    "minRank2026": 22091,
+    "quota2026": 4
   },
   {
     "university": "BARTIN ÜNİVERSİTESİ",
@@ -3285,7 +5202,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 380.91,
     "minRank": 29531,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 380.91,
+    "minRank2025": 29531,
+    "quota2025": 60,
+    "minScore2026": 383.36,
+    "minRank2026": 29048,
+    "quota2026": 60
   },
   {
     "university": "HAKKARİ ÜNİVERSİTESİ",
@@ -3294,7 +5217,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 379.48,
     "minRank": 30121,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 379.48,
+    "minRank2025": 30121,
+    "quota2025": 27,
+    "minScore2026": 382.58,
+    "minRank2026": 29351,
+    "quota2026": 27
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -3303,7 +5232,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 378.7,
     "minRank": 30453,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 378.7,
+    "minRank2025": 30453,
+    "quota2025": 30,
+    "minScore2026": 390.43,
+    "minRank2026": 26174,
+    "quota2026": 30
   },
   {
     "university": "AMASYA ÜNİVERSİTESİ",
@@ -3312,7 +5247,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 378.19,
     "minRank": 30648,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 378.19,
+    "minRank2025": 30648,
+    "quota2025": 60,
+    "minScore2026": 380.1,
+    "minRank2026": 30327,
+    "quota2026": 60
   },
   {
     "university": "KIRKLARELİ ÜNİVERSİTESİ",
@@ -3321,7 +5262,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 376.94,
     "minRank": 31171,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 376.94,
+    "minRank2025": 31171,
+    "quota2025": 40,
+    "minScore2026": 386.13,
+    "minRank2026": 27935,
+    "quota2026": 40
   },
   {
     "university": "FATİH SULTAN MEHMET VAKIF ÜNİVERSİTESİ",
@@ -3330,7 +5277,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 376.89,
     "minRank": 31190,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 376.89,
+    "minRank2025": 31190,
+    "quota2025": 4,
+    "minScore2026": 386.62,
+    "minRank2026": 27742,
+    "quota2026": 4
   },
   {
     "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
@@ -3339,7 +5292,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 376.45,
     "minRank": 31388,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 376.45,
+    "minRank2025": 31388,
+    "quota2025": 40,
+    "minScore2026": 387.87,
+    "minRank2026": 27199,
+    "quota2026": 40
   },
   {
     "university": "UŞAK ÜNİVERSİTESİ",
@@ -3348,7 +5307,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 376.25,
     "minRank": 31462,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 376.25,
+    "minRank2025": 31462,
+    "quota2025": 30,
+    "minScore2026": 388.29,
+    "minRank2026": 27020,
+    "quota2026": 30
   },
   {
     "university": "ATATÜRK ÜNİVERSİTESİ",
@@ -3357,7 +5322,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 376.01,
     "minRank": 31560,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 376.01,
+    "minRank2025": 31560,
+    "quota2025": 60,
+    "minScore2026": 379.92,
+    "minRank2026": 30410,
+    "quota2026": 60
   },
   {
     "university": "HATAY MUSTAFA KEMAL ÜNİVERSİTESİ",
@@ -3366,7 +5337,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 375.26,
     "minRank": 31869,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 375.26,
+    "minRank2025": 31869,
+    "quota2025": 20,
+    "minScore2026": 387.34,
+    "minRank2026": 27430,
+    "quota2026": 20
   },
   {
     "university": "AYDIN ADNAN MENDERES ÜNİVERSİTESİ",
@@ -3375,7 +5352,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 375.24,
     "minRank": 31880,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 375.24,
+    "minRank2025": 31880,
+    "quota2025": 50,
+    "minScore2026": 381.27,
+    "minRank2026": 29852,
+    "quota2026": 50
   },
   {
     "university": "ZONGULDAK BÜLENT ECEVİT ÜNİVERSİTESİ",
@@ -3384,7 +5367,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 373.43,
     "minRank": 32652,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 373.43,
+    "minRank2025": 32652,
+    "quota2025": 70,
+    "minScore2026": 382.49,
+    "minRank2026": 29393,
+    "quota2026": 70
   },
   {
     "university": "İSTANBUL 29 MAYIS ÜNİVERSİTESİ",
@@ -3393,7 +5382,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 373.31,
     "minRank": 32715,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 373.31,
+    "minRank2025": 32715,
+    "quota2025": 8,
+    "minScore2026": 386.55,
+    "minRank2026": 27778,
+    "quota2026": 8
   },
   {
     "university": "İSTANBUL SABAHATTİN ZAİM ÜNİVERSİTESİ",
@@ -3402,7 +5397,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 372.56,
     "minRank": 33012,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 372.56,
+    "minRank2025": 33012,
+    "quota2025": 5,
+    "minScore2026": 383.97,
+    "minRank2026": 28822,
+    "quota2026": 5
   },
   {
     "university": "AVRASYA ÜNİVERSİTESİ",
@@ -3411,7 +5412,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 372.36,
     "minRank": 33109,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 372.36,
+    "minRank2025": 33109,
+    "quota2025": 8,
+    "minScore2026": 381.66,
+    "minRank2026": 29710,
+    "quota2026": 8
   },
   {
     "university": "ATATÜRK ÜNİVERSİTESİ",
@@ -3420,7 +5427,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 372.21,
     "minRank": 33175,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 372.21,
+    "minRank2025": 33175,
+    "quota2025": 50,
+    "minScore2026": 383.73,
+    "minRank2026": 28910,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -3429,7 +5442,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 372.18,
     "minRank": 33193,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 372.18,
+    "minRank2025": 33193,
+    "quota2025": 50,
+    "minScore2026": 379.97,
+    "minRank2026": 30391,
+    "quota2026": 50
   },
   {
     "university": "GAZİANTEP İSLAM BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -3438,7 +5457,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 372.14,
     "minRank": 33208,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 372.14,
+    "minRank2025": 33208,
+    "quota2025": 30,
+    "minScore2026": 380.37,
+    "minRank2026": 30230,
+    "quota2026": 30
   },
   {
     "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
@@ -3447,7 +5472,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 371.63,
     "minRank": 33433,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 371.63,
+    "minRank2025": 33433,
+    "quota2025": 50,
+    "minScore2026": 382.92,
+    "minRank2026": 29221,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -3456,7 +5487,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 371.03,
     "minRank": 33701,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 371.03,
+    "minRank2025": 33701,
+    "quota2025": 60,
+    "minScore2026": 392.87,
+    "minRank2026": 25164,
+    "quota2026": 60
   },
   {
     "university": "SİVAS CUMHURİYET ÜNİVERSİTESİ",
@@ -3465,7 +5502,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 370.81,
     "minRank": 33796,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 370.81,
+    "minRank2025": 33796,
+    "quota2025": 40,
+    "minScore2026": 381.47,
+    "minRank2026": 29783,
+    "quota2026": 40
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -3474,7 +5517,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 370.67,
     "minRank": 33846,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 370.67,
+    "minRank2025": 33846,
+    "quota2025": 40,
+    "minScore2026": 385.82,
+    "minRank2026": 28074,
+    "quota2026": 40
   },
   {
     "university": "İNÖNÜ ÜNİVERSİTESİ",
@@ -3483,7 +5532,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 370.39,
     "minRank": 33975,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 370.39,
+    "minRank2025": 33975,
+    "quota2025": 30,
+    "minScore2026": 382.17,
+    "minRank2026": 29513,
+    "quota2026": 30
   },
   {
     "university": "GİRESUN ÜNİVERSİTESİ",
@@ -3492,7 +5547,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 369.64,
     "minRank": 34302,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 369.64,
+    "minRank2025": 34302,
+    "quota2025": 60,
+    "minScore2026": 378.58,
+    "minRank2026": 30973,
+    "quota2026": 60
   },
   {
     "university": "PAMUKKALE ÜNİVERSİTESİ",
@@ -3501,7 +5562,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 369.62,
     "minRank": 34313,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 369.62,
+    "minRank2025": 34313,
+    "quota2025": 60,
+    "minScore2026": 376.71,
+    "minRank2026": 31751,
+    "quota2026": 60
   },
   {
     "university": "NİĞDE ÖMER HALİSDEMİR ÜNİVERSİTESİ",
@@ -3510,7 +5577,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 368.56,
     "minRank": 34790,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 368.56,
+    "minRank2025": 34790,
+    "quota2025": 30,
+    "minScore2026": 381.54,
+    "minRank2026": 29762,
+    "quota2026": 30
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -3519,7 +5592,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 368.5,
     "minRank": 34809,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 368.5,
+    "minRank2025": 34809,
+    "quota2025": 25,
+    "minScore2026": 375.76,
+    "minRank2026": 32158,
+    "quota2026": 25
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -3528,7 +5607,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 368.08,
     "minRank": 34997,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 368.08,
+    "minRank2025": 34997,
+    "quota2025": 30,
+    "minScore2026": 380.24,
+    "minRank2026": 30279,
+    "quota2026": 30
   },
   {
     "university": "VAN YÜZÜNCÜ YIL ÜNİVERSİTESİ",
@@ -3537,7 +5622,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 367.23,
     "minRank": 35417,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 367.23,
+    "minRank2025": 35417,
+    "quota2025": 60,
+    "minScore2026": 375.47,
+    "minRank2026": 32297,
+    "quota2026": 60
   },
   {
     "university": "KAHRAMANMARAŞ SÜTÇÜ İMAM ÜNİVERSİTESİ",
@@ -3546,7 +5637,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 367.08,
     "minRank": 35469,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 367.08,
+    "minRank2025": 35469,
+    "quota2025": 50,
+    "minScore2026": 374.17,
+    "minRank2026": 32816,
+    "quota2026": 50
   },
   {
     "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -3555,7 +5652,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 366.44,
     "minRank": 35785,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 366.44,
+    "minRank2025": 35785,
+    "quota2025": 30,
+    "minScore2026": 381.25,
+    "minRank2026": 29860,
+    "quota2026": 30
   },
   {
     "university": "AKSARAY ÜNİVERSİTESİ",
@@ -3564,7 +5667,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 366.2,
     "minRank": 35905,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 366.2,
+    "minRank2025": 35905,
+    "quota2025": 30,
+    "minScore2026": 379.95,
+    "minRank2026": 30395,
+    "quota2026": 30
   },
   {
     "university": "KTO KARATAY ÜNİVERSİTESİ",
@@ -3573,7 +5682,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 365.99,
     "minRank": 35987,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 365.99,
+    "minRank2025": 35987,
+    "quota2025": 3,
+    "minScore2026": 396.27,
+    "minRank2026": 23739,
+    "quota2026": 3
   },
   {
     "university": "ANKARA HACI BAYRAM VELİ ÜNİVERSİTESİ",
@@ -3582,7 +5697,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 365.9,
     "minRank": 36032,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 365.9,
+    "minRank2025": 36032,
+    "quota2025": 65,
+    "minScore2026": 380.77,
+    "minRank2026": 30064,
+    "quota2026": 65
   },
   {
     "university": "TRAKYA ÜNİVERSİTESİ",
@@ -3591,7 +5712,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 365.52,
     "minRank": 36205,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 365.52,
+    "minRank2025": 36205,
+    "quota2025": 55,
+    "minScore2026": 382.18,
+    "minRank2026": 29511,
+    "quota2026": 55
   },
   {
     "university": "MERSİN ÜNİVERSİTESİ",
@@ -3600,7 +5727,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 364.88,
     "minRank": 36500,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 364.88,
+    "minRank2025": 36500,
+    "quota2025": 55,
+    "minScore2026": 386.91,
+    "minRank2026": 27607,
+    "quota2026": 55
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -3609,7 +5742,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 364.15,
     "minRank": 36843,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 364.15,
+    "minRank2025": 36843,
+    "quota2025": 3,
+    "minScore2026": 391.86,
+    "minRank2026": 25604,
+    "quota2026": 3
   },
   {
     "university": "AYDIN ADNAN MENDERES ÜNİVERSİTESİ",
@@ -3618,7 +5757,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 364.1,
     "minRank": 36863,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 364.1,
+    "minRank2025": 36863,
+    "quota2025": 65,
+    "minScore2026": 376.43,
+    "minRank2026": 31869,
+    "quota2026": 65
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -3627,7 +5772,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 364,
     "minRank": 36906,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 364,
+    "minRank2025": 36906,
+    "quota2025": 40,
+    "minScore2026": 372.15,
+    "minRank2026": 33688,
+    "quota2026": 40
   },
   {
     "university": "MALATYA TURGUT ÖZAL ÜNİVERSİTESİ",
@@ -3636,7 +5787,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 363.49,
     "minRank": 37137,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 363.49,
+    "minRank2025": 37137,
+    "quota2025": 30,
+    "minScore2026": 369.85,
+    "minRank2026": 34638,
+    "quota2026": 30
   },
   {
     "university": "BALIKESİR ÜNİVERSİTESİ",
@@ -3645,7 +5802,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 363.12,
     "minRank": 37301,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 363.12,
+    "minRank2025": 37301,
+    "quota2025": 65,
+    "minScore2026": 370.46,
+    "minRank2026": 34387,
+    "quota2026": 65
   },
   {
     "university": "MERSİN ÜNİVERSİTESİ",
@@ -3654,7 +5817,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 363,
     "minRank": 37347,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 363,
+    "minRank2025": 37347,
+    "quota2025": 35,
+    "minScore2026": 380.68,
+    "minRank2026": 30106,
+    "quota2026": 35
   },
   {
     "university": "TOKAT GAZİOSMANPAŞA ÜNİVERSİTESİ",
@@ -3663,7 +5832,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 362.81,
     "minRank": 37423,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 362.81,
+    "minRank2025": 37423,
+    "quota2025": 40,
+    "minScore2026": 376.92,
+    "minRank2026": 31672,
+    "quota2026": 40
   },
   {
     "university": "RECEP TAYYİP ERDOĞAN ÜNİVERSİTESİ",
@@ -3672,7 +5847,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 361.97,
     "minRank": 37799,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 361.97,
+    "minRank2025": 37799,
+    "quota2025": 30,
+    "minScore2026": 375.96,
+    "minRank2026": 32078,
+    "quota2026": 30
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -3681,7 +5862,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 361.55,
     "minRank": 37954,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 361.55,
+    "minRank2025": 37954,
+    "quota2025": 100,
+    "minScore2026": 366.49,
+    "minRank2026": 36104,
+    "quota2026": 100
   },
   {
     "university": "FIRAT ÜNİVERSİTESİ",
@@ -3690,7 +5877,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 361.31,
     "minRank": 38060,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 361.31,
+    "minRank2025": 38060,
+    "quota2025": 50,
+    "minScore2026": 373.28,
+    "minRank2026": 33210,
+    "quota2026": 50
   },
   {
     "university": "MERSİN ÜNİVERSİTESİ",
@@ -3699,7 +5892,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 361.26,
     "minRank": 38084,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 361.26,
+    "minRank2025": 38084,
+    "quota2025": 60,
+    "minScore2026": 372.29,
+    "minRank2026": 33623,
+    "quota2026": 60
   },
   {
     "university": "BURDUR MEHMET AKİF ERSOY ÜNİVERSİTESİ",
@@ -3708,7 +5907,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 361.08,
     "minRank": 38160,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 361.08,
+    "minRank2025": 38160,
+    "quota2025": 30,
+    "minScore2026": 379.48,
+    "minRank2026": 30607,
+    "quota2026": 30
   },
   {
     "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
@@ -3717,7 +5922,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 360.67,
     "minRank": 38341,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 360.67,
+    "minRank2025": 38341,
+    "quota2025": 40,
+    "minScore2026": 372.49,
+    "minRank2026": 33543,
+    "quota2026": 40
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -3726,7 +5937,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 360.16,
     "minRank": 38591,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 360.16,
+    "minRank2025": 38591,
+    "quota2025": 100,
+    "minScore2026": 364.28,
+    "minRank2026": 36995,
+    "quota2026": 100
   },
   {
     "university": "ÇUKUROVA ÜNİVERSİTESİ",
@@ -3735,7 +5952,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 359.87,
     "minRank": 38717,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 359.87,
+    "minRank2025": 38717,
+    "quota2025": 50,
+    "minScore2026": 369.37,
+    "minRank2026": 34859,
+    "quota2026": 50
   },
   {
     "university": "AYDIN ADNAN MENDERES ÜNİVERSİTESİ",
@@ -3744,7 +5967,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 359.56,
     "minRank": 38852,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 359.56,
+    "minRank2025": 38852,
+    "quota2025": 55,
+    "minScore2026": 373.52,
+    "minRank2026": 33114,
+    "quota2026": 55
   },
   {
     "university": "AVRASYA ÜNİVERSİTESİ",
@@ -3753,7 +5982,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 359.26,
     "minRank": 38979,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 359.26,
+    "minRank2025": 38979,
+    "quota2025": 8,
+    "minScore2026": 379.29,
+    "minRank2026": 30694,
+    "quota2026": 8
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -3762,7 +5997,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 359.06,
     "minRank": 39082,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 359.06,
+    "minRank2025": 39082,
+    "quota2025": 50,
+    "minScore2026": 380.26,
+    "minRank2026": 30273,
+    "quota2026": 50
   },
   {
     "university": "ÇANKIRI KARATEKİN ÜNİVERSİTESİ",
@@ -3771,7 +6012,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 359.01,
     "minRank": 39109,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 359.01,
+    "minRank2025": 39109,
+    "quota2025": 30,
+    "minScore2026": 374.54,
+    "minRank2026": 32678,
+    "quota2026": 30
   },
   {
     "university": "TRAKYA ÜNİVERSİTESİ",
@@ -3780,7 +6027,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 359,
     "minRank": 39114,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 359,
+    "minRank2025": 39114,
+    "quota2025": 50,
+    "minScore2026": 371.24,
+    "minRank2026": 34057,
+    "quota2026": 50
   },
   {
     "university": "KARAMANOĞLU MEHMETBEY ÜNİVERSİTESİ",
@@ -3789,7 +6042,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 358.69,
     "minRank": 39262,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 358.69,
+    "minRank2025": 39262,
+    "quota2025": 60,
+    "minScore2026": 372.93,
+    "minRank2026": 33364,
+    "quota2026": 60
   },
   {
     "university": "BOLU ABANT İZZET BAYSAL ÜNİVERSİTESİ",
@@ -3798,7 +6057,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 356.45,
     "minRank": 40202,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 356.45,
+    "minRank2025": 40202,
+    "quota2025": 40,
+    "minScore2026": 365.53,
+    "minRank2026": 36470,
+    "quota2026": 40
   },
   {
     "university": "PAMUKKALE ÜNİVERSİTESİ",
@@ -3807,7 +6072,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 356.33,
     "minRank": 40250,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 356.33,
+    "minRank2025": 40250,
+    "quota2025": 60,
+    "minScore2026": 369.64,
+    "minRank2026": 34732,
+    "quota2026": 60
   },
   {
     "university": "ERZİNCAN BİNALİ YILDIRIM ÜNİVERSİTESİ",
@@ -3816,7 +6087,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 356.7,
     "minRank": 40266,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 356.7,
+    "minRank2025": 40266,
+    "quota2025": 30,
+    "minScore2026": 356.7,
+    "minRank2026": 40266,
+    "quota2026": 30
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -3825,7 +6102,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 355.55,
     "minRank": 40617,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 355.55,
+    "minRank2025": 40617,
+    "quota2025": 50,
+    "minScore2026": 367.32,
+    "minRank2026": 35770,
+    "quota2026": 50
   },
   {
     "university": "SİVAS CUMHURİYET ÜNİVERSİTESİ",
@@ -3834,7 +6117,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 354.81,
     "minRank": 40960,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 354.81,
+    "minRank2025": 40960,
+    "quota2025": 30,
+    "minScore2026": 374.35,
+    "minRank2026": 32742,
+    "quota2026": 30
   },
   {
     "university": "ERZİNCAN BİNALİ YILDIRIM ÜNİVERSİTESİ",
@@ -3843,7 +6132,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 354.55,
     "minRank": 41085,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 354.55,
+    "minRank2025": 41085,
+    "quota2025": 30,
+    "minScore2026": 362.58,
+    "minRank2026": 37678,
+    "quota2026": 30
   },
   {
     "university": "KARABÜK ÜNİVERSİTESİ",
@@ -3852,7 +6147,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 354.46,
     "minRank": 41127,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 354.46,
+    "minRank2025": 41127,
+    "quota2025": 70,
+    "minScore2026": 368.6,
+    "minRank2026": 35222,
+    "quota2026": 70
   },
   {
     "university": "MARDİN ARTUKLU ÜNİVERSİTESİ",
@@ -3861,7 +6162,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 353.04,
     "minRank": 41763,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 353.04,
+    "minRank2025": 41763,
+    "quota2025": 30,
+    "minScore2026": 369.66,
+    "minRank2026": 34715,
+    "quota2026": 30
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -3870,7 +6177,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 352.85,
     "minRank": 41862,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 352.85,
+    "minRank2025": 41862,
+    "quota2025": 100,
+    "minScore2026": 368.46,
+    "minRank2026": 35283,
+    "quota2026": 100
   },
   {
     "university": "ERZURUM TEKNİK ÜNİVERSİTESİ",
@@ -3879,7 +6192,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 352.8,
     "minRank": 41890,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 352.8,
+    "minRank2025": 41890,
+    "quota2025": 60,
+    "minScore2026": 366.74,
+    "minRank2026": 35991,
+    "quota2026": 60
   },
   {
     "university": "ANKARA SOSYAL BİLİMLER ÜNİVERSİTESİ",
@@ -3888,7 +6207,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 352.43,
     "minRank": 42134,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 352.43,
+    "minRank2025": 42134,
+    "quota2025": 30,
+    "minScore2026": 352.43,
+    "minRank2026": 42134,
+    "quota2026": 30
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -3897,7 +6222,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 351.44,
     "minRank": 42519,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 351.44,
+    "minRank2025": 42519,
+    "quota2025": 30,
+    "minScore2026": 370.69,
+    "minRank2026": 34290,
+    "quota2026": 30
   },
   {
     "university": "TEKİRDAĞ NAMIK KEMAL ÜNİVERSİTESİ",
@@ -3906,7 +6237,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 351.12,
     "minRank": 42654,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 351.12,
+    "minRank2025": 42654,
+    "quota2025": 70,
+    "minScore2026": 370.59,
+    "minRank2026": 34329,
+    "quota2026": 70
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -3915,7 +6252,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 350.42,
     "minRank": 42956,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 350.42,
+    "minRank2025": 42956,
+    "quota2025": 20,
+    "minScore2026": 376.7,
+    "minRank2026": 31755,
+    "quota2026": 20
   },
   {
     "university": "KAPADOKYA ÜNİVERSİTESİ",
@@ -3924,7 +6267,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 350.31,
     "minRank": 43018,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 350.31,
+    "minRank2025": 43018,
+    "quota2025": 5,
+    "minScore2026": 361.68,
+    "minRank2026": 38075,
+    "quota2026": 5
   },
   {
     "university": "OSMANİYE KORKUT ATA ÜNİVERSİTESİ",
@@ -3933,7 +6282,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 348.95,
     "minRank": 43634,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 348.95,
+    "minRank2025": 43634,
+    "quota2025": 60,
+    "minScore2026": 360.59,
+    "minRank2026": 38536,
+    "quota2026": 60
   },
   {
     "university": "NEVŞEHİR HACI BEKTAŞ VELİ ÜNİVERSİTESİ",
@@ -3942,7 +6297,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 348.23,
     "minRank": 43924,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 348.23,
+    "minRank2025": 43924,
+    "quota2025": 50,
+    "minScore2026": 358.33,
+    "minRank2026": 39555,
+    "quota2026": 50
   },
   {
     "university": "SELÇUK ÜNİVERSİTESİ",
@@ -3951,7 +6312,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 347.6,
     "minRank": 44192,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 347.6,
+    "minRank2025": 44192,
+    "quota2025": 30,
+    "minScore2026": 330.9,
+    "minRank2026": 51390,
+    "quota2026": 40
   },
   {
     "university": "SAKARYA UYGULAMALI BİLİMLER ÜNİVERSİTESİ",
@@ -3960,7 +6327,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 347.3,
     "minRank": 44335,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 347.3,
+    "minRank2025": 44335,
+    "quota2025": 65,
+    "minScore2026": 360.41,
+    "minRank2026": 38617,
+    "quota2026": 65
   },
   {
     "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
@@ -3969,7 +6342,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 347.05,
     "minRank": 44445,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 347.05,
+    "minRank2025": 44445,
+    "quota2025": 50,
+    "minScore2026": 356.53,
+    "minRank2026": 40341,
+    "quota2026": 50
   },
   {
     "university": "ATATÜRK ÜNİVERSİTESİ",
@@ -3978,7 +6357,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 346.78,
     "minRank": 44586,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 346.78,
+    "minRank2025": 44586,
+    "quota2025": 40,
+    "minScore2026": 365.65,
+    "minRank2026": 36430,
+    "quota2026": 40
   },
   {
     "university": "YOZGAT BOZOK ÜNİVERSİTESİ",
@@ -3987,7 +6372,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 346.3,
     "minRank": 44798,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 346.3,
+    "minRank2025": 44798,
+    "quota2025": 70,
+    "minScore2026": 361.54,
+    "minRank2026": 38143,
+    "quota2026": 70
   },
   {
     "university": "SELÇUK ÜNİVERSİTESİ",
@@ -3996,7 +6387,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 344.81,
     "minRank": 45489,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 344.81,
+    "minRank2025": 45489,
+    "quota2025": 60,
+    "minScore2026": 363.54,
+    "minRank2026": 37294,
+    "quota2026": 60
   },
   {
     "university": "ADIYAMAN ÜNİVERSİTESİ",
@@ -4005,7 +6402,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 344.77,
     "minRank": 45504,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 344.77,
+    "minRank2025": 45504,
+    "quota2025": 30,
+    "minScore2026": 365.89,
+    "minRank2026": 36337,
+    "quota2026": 30
   },
   {
     "university": "OSMANİYE KORKUT ATA ÜNİVERSİTESİ",
@@ -4014,7 +6417,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 344.49,
     "minRank": 45630,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 344.49,
+    "minRank2025": 45630,
+    "quota2025": 40,
+    "minScore2026": 364.46,
+    "minRank2026": 36919,
+    "quota2026": 40
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -4023,7 +6432,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 343.93,
     "minRank": 45924,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 343.93,
+    "minRank2025": 45924,
+    "quota2025": 20,
+    "minScore2026": 366.73,
+    "minRank2026": 35996,
+    "quota2026": 20
   },
   {
     "university": "TEKİRDAĞ NAMIK KEMAL ÜNİVERSİTESİ",
@@ -4032,7 +6447,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 343.8,
     "minRank": 45986,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 343.8,
+    "minRank2025": 45986,
+    "quota2025": 70,
+    "minScore2026": 364.28,
+    "minRank2026": 36990,
+    "quota2026": 70
   },
   {
     "university": "ARTVİN ÇORUH ÜNİVERSİTESİ",
@@ -4041,7 +6462,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 342.12,
     "minRank": 46744,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 342.12,
+    "minRank2025": 46744,
+    "quota2025": 40,
+    "minScore2026": 360.11,
+    "minRank2026": 38744,
+    "quota2026": 40
   },
   {
     "university": "MARDİN ARTUKLU ÜNİVERSİTESİ",
@@ -4050,7 +6477,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 342.09,
     "minRank": 46752,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 342.09,
+    "minRank2025": 46752,
+    "quota2025": 60,
+    "minScore2026": 353.67,
+    "minRank2026": 41546,
+    "quota2026": 60
   },
   {
     "university": "NECMETTİN ERBAKAN ÜNİVERSİTESİ",
@@ -4059,7 +6492,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 341.82,
     "minRank": 46874,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 341.82,
+    "minRank2025": 46874,
+    "quota2025": 50,
+    "minScore2026": 357.51,
+    "minRank2026": 39911,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -4068,7 +6507,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 341.5,
     "minRank": 47031,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 341.5,
+    "minRank2025": 47031,
+    "quota2025": 20,
+    "minScore2026": 370.12,
+    "minRank2026": 34538,
+    "quota2026": 20
   },
   {
     "university": "NEVŞEHİR HACI BEKTAŞ VELİ ÜNİVERSİTESİ",
@@ -4077,7 +6522,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 339.98,
     "minRank": 47746,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 339.98,
+    "minRank2025": 47746,
+    "quota2025": 45,
+    "minScore2026": 353.01,
+    "minRank2026": 41857,
+    "quota2026": 45
   },
   {
     "university": "GÜMÜŞHANE ÜNİVERSİTESİ",
@@ -4086,7 +6537,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 338.83,
     "minRank": 48268,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 338.83,
+    "minRank2025": 48268,
+    "quota2025": 80,
+    "minScore2026": 353.58,
+    "minRank2026": 41592,
+    "quota2026": 80
   },
   {
     "university": "NEVŞEHİR HACI BEKTAŞ VELİ ÜNİVERSİTESİ",
@@ -4095,7 +6552,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 338.78,
     "minRank": 48284,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 338.78,
+    "minRank2025": 48284,
+    "quota2025": 35,
+    "minScore2026": 362.36,
+    "minRank2026": 37760,
+    "quota2026": 35
   },
   {
     "university": "ISPARTA UYGULAMALI BİLİMLER ÜNİVERSİTESİ",
@@ -4104,7 +6567,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 337.98,
     "minRank": 48663,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 337.98,
+    "minRank2025": 48663,
+    "quota2025": 45,
+    "minScore2026": 352.24,
+    "minRank2026": 42232,
+    "quota2026": 45
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -4113,7 +6582,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 337.29,
     "minRank": 48979,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 337.29,
+    "minRank2025": 48979,
+    "quota2025": 60,
+    "minScore2026": 355.78,
+    "minRank2026": 40643,
+    "quota2026": 60
   },
   {
     "university": "ANKARA HACI BAYRAM VELİ ÜNİVERSİTESİ",
@@ -4122,7 +6597,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 337.23,
     "minRank": 49004,
-    "quota": 59
+    "quota": 59,
+    "minScore2025": 337.23,
+    "minRank2025": 49004,
+    "quota2025": 59,
+    "minScore2026": 363.03,
+    "minRank2026": 37491,
+    "quota2026": 59
   },
   {
     "university": "BATMAN ÜNİVERSİTESİ",
@@ -4131,7 +6612,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 337.18,
     "minRank": 49024,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 337.18,
+    "minRank2025": 49024,
+    "quota2025": 60,
+    "minScore2026": 353.56,
+    "minRank2026": 41603,
+    "quota2026": 60
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -4140,7 +6627,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 337,
     "minRank": 49097,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 337,
+    "minRank2025": 49097,
+    "quota2025": 60,
+    "minScore2026": 349.72,
+    "minRank2026": 43239,
+    "quota2026": 60
   },
   {
     "university": "SELÇUK ÜNİVERSİTESİ",
@@ -4149,7 +6642,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 336.83,
     "minRank": 49161,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 336.83,
+    "minRank2025": 49161,
+    "quota2025": 60,
+    "minScore2026": 357.61,
+    "minRank2026": 39871,
+    "quota2026": 60
   },
   {
     "university": "ÇUKUROVA ÜNİVERSİTESİ",
@@ -4158,7 +6657,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 335.27,
     "minRank": 49890,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 335.27,
+    "minRank2025": 49890,
+    "quota2025": 40,
+    "minScore2026": 359.12,
+    "minRank2026": 39215,
+    "quota2026": 40
   },
   {
     "university": "KIRKLARELİ ÜNİVERSİTESİ",
@@ -4167,7 +6672,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 334.41,
     "minRank": 50319,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 334.41,
+    "minRank2025": 50319,
+    "quota2025": 50,
+    "minScore2026": 349.26,
+    "minRank2026": 43449,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL MEDENİYET ÜNİVERSİTESİ",
@@ -4176,7 +6687,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 333.11,
     "minRank": 50935,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 333.11,
+    "minRank2025": 50935,
+    "quota2025": 20,
+    "minScore2026": 345.3,
+    "minRank2026": 45111,
+    "quota2026": 20
   },
   {
     "university": "SELÇUK ÜNİVERSİTESİ",
@@ -4185,7 +6702,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 332.95,
     "minRank": 51011,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 332.95,
+    "minRank2025": 51011,
+    "quota2025": 65,
+    "minScore2026": 354.21,
+    "minRank2026": 41307,
+    "quota2026": 65
   },
   {
     "university": "MUNZUR ÜNİVERSİTESİ",
@@ -4194,7 +6717,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 332.62,
     "minRank": 51170,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 332.62,
+    "minRank2025": 51170,
+    "quota2025": 50,
+    "minScore2026": 348.28,
+    "minRank2026": 43872,
+    "quota2026": 50
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -4203,7 +6732,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 332.2,
     "minRank": 51382,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 332.2,
+    "minRank2025": 51382,
+    "quota2025": 50,
+    "minScore2026": 360.08,
+    "minRank2026": 38757,
+    "quota2026": 50
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -4212,7 +6747,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 331.35,
     "minRank": 51789,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 331.35,
+    "minRank2025": 51789,
+    "quota2025": 30,
+    "minScore2026": 358.96,
+    "minRank2026": 39291,
+    "quota2026": 30
   },
   {
     "university": "AFYON KOCATEPE ÜNİVERSİTESİ",
@@ -4221,7 +6762,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 330.4,
     "minRank": 52214,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 330.4,
+    "minRank2025": 52214,
+    "quota2025": 50,
+    "minScore2026": 343.36,
+    "minRank2026": 45959,
+    "quota2026": 50
   },
   {
     "university": "KIRIKKALE ÜNİVERSİTESİ",
@@ -4230,7 +6777,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 329.95,
     "minRank": 52444,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 329.95,
+    "minRank2025": 52444,
+    "quota2025": 35,
+    "minScore2026": 352.53,
+    "minRank2026": 42101,
+    "quota2026": 35
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -4239,7 +6792,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 329.63,
     "minRank": 52603,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 329.63,
+    "minRank2025": 52603,
+    "quota2025": 20,
+    "minScore2026": 360.26,
+    "minRank2026": 38688,
+    "quota2026": 20
   },
   {
     "university": "BİNGÖL ÜNİVERSİTESİ",
@@ -4248,7 +6807,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 329.1,
     "minRank": 52846,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 329.1,
+    "minRank2025": 52846,
+    "quota2025": 30,
+    "minScore2026": 341.79,
+    "minRank2026": 46589,
+    "quota2026": 30
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -4257,7 +6822,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 328.86,
     "minRank": 52983,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 328.86,
+    "minRank2025": 52983,
+    "quota2025": 25,
+    "minScore2026": 354.24,
+    "minRank2026": 41295,
+    "quota2026": 25
   },
   {
     "university": "KAFKAS ÜNİVERSİTESİ",
@@ -4266,7 +6837,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 328.42,
     "minRank": 53193,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 328.42,
+    "minRank2025": 53193,
+    "quota2025": 60,
+    "minScore2026": 341.99,
+    "minRank2026": 46522,
+    "quota2026": 60
   },
   {
     "university": "ANADOLU ÜNİVERSİTESİ",
@@ -4275,7 +6852,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 327.51,
     "minRank": 53647,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 327.51,
+    "minRank2025": 53647,
+    "quota2025": 27,
+    "minScore2026": 366.62,
+    "minRank2026": 36038,
+    "quota2026": 27
   },
   {
     "university": "NECMETTİN ERBAKAN ÜNİVERSİTESİ",
@@ -4284,7 +6867,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 325.83,
     "minRank": 54454,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 325.83,
+    "minRank2025": 54454,
+    "quota2025": 40,
+    "minScore2026": 344.37,
+    "minRank2026": 45518,
+    "quota2026": 40
   },
   {
     "university": "BİNGÖL ÜNİVERSİTESİ",
@@ -4293,7 +6882,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 325.4,
     "minRank": 54653,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 325.4,
+    "minRank2025": 54653,
+    "quota2025": 60,
+    "minScore2026": 341.17,
+    "minRank2026": 46860,
+    "quota2026": 60
   },
   {
     "university": "NECMETTİN ERBAKAN ÜNİVERSİTESİ",
@@ -4302,7 +6897,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 325.38,
     "minRank": 54661,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 325.38,
+    "minRank2025": 54661,
+    "quota2025": 50,
+    "minScore2026": 341.64,
+    "minRank2026": 46642,
+    "quota2026": 50
   },
   {
     "university": "ZONGULDAK BÜLENT ECEVİT ÜNİVERSİTESİ",
@@ -4311,7 +6912,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 324.23,
     "minRank": 55186,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 324.23,
+    "minRank2025": 55186,
+    "quota2025": 40,
+    "minScore2026": 341.02,
+    "minRank2026": 46940,
+    "quota2026": 40
   },
   {
     "university": "MUŞ ALPARSLAN ÜNİVERSİTESİ",
@@ -4320,7 +6927,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 323.33,
     "minRank": 55626,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 323.33,
+    "minRank2025": 55626,
+    "quota2025": 40,
+    "minScore2026": 337.31,
+    "minRank2026": 48578,
+    "quota2026": 40
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -4329,7 +6942,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 321.8,
     "minRank": 56381,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 321.8,
+    "minRank2025": 56381,
+    "quota2025": 20,
+    "minScore2026": 343.85,
+    "minRank2026": 45755,
+    "quota2026": 20
   },
   {
     "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
@@ -4338,7 +6957,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 320.82,
     "minRank": 56872,
-    "quota": 59
+    "quota": 59,
+    "minScore2025": 320.82,
+    "minRank2025": 56872,
+    "quota2025": 59,
+    "minScore2026": 344.45,
+    "minRank2026": 45478,
+    "quota2026": 59
   },
   {
     "university": "BİTLİS EREN ÜNİVERSİTESİ",
@@ -4347,7 +6972,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 320.63,
     "minRank": 56959,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 320.63,
+    "minRank2025": 56959,
+    "quota2025": 45,
+    "minScore2026": 337.43,
+    "minRank2026": 48525,
+    "quota2026": 45
   },
   {
     "university": "BİLECİK ŞEYH EDEBALİ ÜNİVERSİTESİ",
@@ -4356,7 +6987,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 319.86,
     "minRank": 57357,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 319.86,
+    "minRank2025": 57357,
+    "quota2025": 40,
+    "minScore2026": 336.28,
+    "minRank2026": 49028,
+    "quota2026": 40
   },
   {
     "university": "SİNOP ÜNİVERSİTESİ",
@@ -4365,7 +7002,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 319.1,
     "minRank": 57745,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 319.1,
+    "minRank2025": 57745,
+    "quota2025": 65,
+    "minScore2026": 336.63,
+    "minRank2026": 48871,
+    "quota2026": 65
   },
   {
     "university": "AĞRI İBRAHİM ÇEÇEN ÜNİVERSİTESİ",
@@ -4374,7 +7017,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 318.9,
     "minRank": 57838,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 318.9,
+    "minRank2025": 57838,
+    "quota2025": 50,
+    "minScore2026": 331.55,
+    "minRank2026": 51105,
+    "quota2026": 50
   },
   {
     "university": "ATATÜRK ÜNİVERSİTESİ",
@@ -4383,7 +7032,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 318.9,
     "minRank": 57840,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 318.9,
+    "minRank2025": 57840,
+    "quota2025": 50,
+    "minScore2026": 338.97,
+    "minRank2026": 47868,
+    "quota2026": 50
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -4392,7 +7047,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 316.68,
     "minRank": 58916,
-    "quota": 24
+    "quota": 24,
+    "minScore2025": 316.68,
+    "minRank2025": 58916,
+    "quota2025": 24,
+    "minScore2026": 338.66,
+    "minRank2026": 47978,
+    "quota2026": 24
   },
   {
     "university": "SELÇUK ÜNİVERSİTESİ",
@@ -4401,7 +7062,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 315.49,
     "minRank": 59480,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 315.49,
+    "minRank2025": 59480,
+    "quota2025": 45,
+    "minScore2026": 334.95,
+    "minRank2026": 49609,
+    "quota2026": 45
   },
   {
     "university": "DİCLE ÜNİVERSİTESİ",
@@ -4410,7 +7077,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 315.46,
     "minRank": 59495,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 315.46,
+    "minRank2025": 59495,
+    "quota2025": 30,
+    "minScore2026": 332.05,
+    "minRank2026": 50892,
+    "quota2026": 30
   },
   {
     "university": "ARDAHAN ÜNİVERSİTESİ",
@@ -4419,7 +7092,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 313.52,
     "minRank": 60438,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 313.52,
+    "minRank2025": 60438,
+    "quota2025": 40,
+    "minScore2026": 327.12,
+    "minRank2026": 53102,
+    "quota2026": 40
   },
   {
     "university": "NECMETTİN ERBAKAN ÜNİVERSİTESİ",
@@ -4428,7 +7107,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 311.48,
     "minRank": 61457,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 311.48,
+    "minRank2025": 61457,
+    "quota2025": 40,
+    "minScore2026": 328.17,
+    "minRank2026": 52623,
+    "quota2026": 40
   },
   {
     "university": "IĞDIR ÜNİVERSİTESİ",
@@ -4437,7 +7122,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 310.17,
     "minRank": 62127,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 310.17,
+    "minRank2025": 62127,
+    "quota2025": 60,
+    "minScore2026": 324.05,
+    "minRank2026": 54546,
+    "quota2026": 60
   },
   {
     "university": "SİİRT ÜNİVERSİTESİ",
@@ -4446,7 +7137,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 309.57,
     "minRank": 62437,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 309.57,
+    "minRank2025": 62437,
+    "quota2025": 70,
+    "minScore2026": 321.59,
+    "minRank2026": 55590,
+    "quota2026": 70
   },
   {
     "university": "İSKENDERUN TEKNİK ÜNİVERSİTESİ",
@@ -4455,7 +7152,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 309.19,
     "minRank": 62620,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 309.19,
+    "minRank2025": 62620,
+    "quota2025": 35,
+    "minScore2026": 326.6,
+    "minRank2026": 53362,
+    "quota2026": 35
   },
   {
     "university": "KARABÜK ÜNİVERSİTESİ",
@@ -4464,7 +7167,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 308.07,
     "minRank": 63211,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 308.07,
+    "minRank2025": 63211,
+    "quota2025": 35,
+    "minScore2026": 327.15,
+    "minRank2026": 53093,
+    "quota2026": 35
   },
   {
     "university": "AKSARAY ÜNİVERSİTESİ",
@@ -4473,7 +7182,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 307.9,
     "minRank": 63292,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 307.9,
+    "minRank2025": 63292,
+    "quota2025": 45,
+    "minScore2026": 321.39,
+    "minRank2026": 55675,
+    "quota2026": 45
   },
   {
     "university": "AĞRI İBRAHİM ÇEÇEN ÜNİVERSİTESİ",
@@ -4482,7 +7197,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 305.61,
     "minRank": 64425,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 305.61,
+    "minRank2025": 64425,
+    "quota2025": 60,
+    "minScore2026": 318.49,
+    "minRank2026": 56992,
+    "quota2026": 60
   },
   {
     "university": "KARAMANOĞLU MEHMETBEY ÜNİVERSİTESİ",
@@ -4491,7 +7212,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 305.53,
     "minRank": 64466,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 305.53,
+    "minRank2025": 64466,
+    "quota2025": 20,
+    "minScore2026": 339.11,
+    "minRank2026": 47791,
+    "quota2026": 20
   },
   {
     "university": "KARAMANOĞLU MEHMETBEY ÜNİVERSİTESİ",
@@ -4500,7 +7227,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 302.95,
     "minRank": 65771,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 302.95,
+    "minRank2025": 65771,
+    "quota2025": 40,
+    "minScore2026": 335.83,
+    "minRank2026": 49235,
+    "quota2026": 40
   },
   {
     "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
@@ -4509,7 +7242,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 302.95,
     "minRank": 65774,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 302.95,
+    "minRank2025": 65774,
+    "quota2025": 45,
+    "minScore2026": 333,
+    "minRank2026": 50472,
+    "quota2026": 45
   },
   {
     "university": "ATATÜRK ÜNİVERSİTESİ",
@@ -4518,7 +7257,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 302.56,
     "minRank": 65945,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 302.56,
+    "minRank2025": 65945,
+    "quota2025": 50,
+    "minScore2026": 332.2,
+    "minRank2026": 50817,
+    "quota2026": 50
   },
   {
     "university": "SİVAS CUMHURİYET ÜNİVERSİTESİ",
@@ -4527,7 +7272,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 301.7,
     "minRank": 66380,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 301.7,
+    "minRank2025": 66380,
+    "quota2025": 35,
+    "minScore2026": 324.99,
+    "minRank2026": 54085,
+    "quota2026": 35
   },
   {
     "university": "ATATÜRK ÜNİVERSİTESİ",
@@ -4536,7 +7287,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 299.47,
     "minRank": 67501,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 299.47,
+    "minRank2025": 67501,
+    "quota2025": 45,
+    "minScore2026": 327.03,
+    "minRank2026": 53152,
+    "quota2026": 45
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -4545,7 +7302,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 299.41,
     "minRank": 67530,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 299.41,
+    "minRank2025": 67530,
+    "quota2025": 35,
+    "minScore2026": 326.88,
+    "minRank2026": 53231,
+    "quota2026": 35
   },
   {
     "university": "KAFKAS ÜNİVERSİTESİ",
@@ -4554,7 +7317,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 299.06,
     "minRank": 67710,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 299.06,
+    "minRank2025": 67710,
+    "quota2025": 60,
+    "minScore2026": 314.77,
+    "minRank2026": 58696,
+    "quota2026": 60
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -4563,7 +7332,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 299,
     "minRank": 67737,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 299,
+    "minRank2025": 67737,
+    "quota2025": 50,
+    "minScore2026": 330.52,
+    "minRank2026": 51559,
+    "quota2026": 50
   },
   {
     "university": "SÜLEYMAN DEMİREL ÜNİVERSİTESİ",
@@ -4572,7 +7347,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 298.63,
     "minRank": 67940,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 298.63,
+    "minRank2025": 67940,
+    "quota2025": 25,
+    "minScore2026": 313.91,
+    "minRank2026": 59105,
+    "quota2026": 25
   },
   {
     "university": "KASTAMONU ÜNİVERSİTESİ",
@@ -4581,7 +7362,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 297.95,
     "minRank": 68239,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 297.95,
+    "minRank2025": 68239,
+    "quota2025": 65,
+    "minScore2026": 321.8,
+    "minRank2026": 55513,
+    "quota2026": 65
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -4590,7 +7377,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 297.87,
     "minRank": 68276,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 297.87,
+    "minRank2025": 68276,
+    "quota2025": 20,
+    "minScore2026": 337.38,
+    "minRank2026": 48543,
+    "quota2026": 20
   },
   {
     "university": "SELÇUK ÜNİVERSİTESİ",
@@ -4599,7 +7392,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 296.35,
     "minRank": 69042,
-    "quota": 59
+    "quota": 59,
+    "minScore2025": 296.35,
+    "minRank2025": 69042,
+    "quota2025": 59,
+    "minScore2026": 327.78,
+    "minRank2026": 52809,
+    "quota2026": 59
   },
   {
     "university": "SİVAS CUMHURİYET ÜNİVERSİTESİ",
@@ -4608,7 +7407,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 295.66,
     "minRank": 69407,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 295.66,
+    "minRank2025": 69407,
+    "quota2025": 60,
+    "minScore2026": 327.68,
+    "minRank2026": 52858,
+    "quota2026": 60
   },
   {
     "university": "MARDİN ARTUKLU ÜNİVERSİTESİ",
@@ -4617,7 +7422,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 289.54,
     "minRank": 72560,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 289.54,
+    "minRank2025": 72560,
+    "quota2025": 40,
+    "minScore2026": 308.34,
+    "minRank2026": 61725,
+    "quota2026": 40
   },
   {
     "university": "ATATÜRK ÜNİVERSİTESİ",
@@ -4626,7 +7437,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 287.18,
     "minRank": 73805,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 287.18,
+    "minRank2025": 73805,
+    "quota2025": 100,
+    "minScore2026": 310.73,
+    "minRank2026": 60618,
+    "quota2026": 100
   },
   {
     "university": "TRAKYA ÜNİVERSİTESİ",
@@ -4635,7 +7452,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 285.46,
     "minRank": 74729,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 285.46,
+    "minRank2025": 74729,
+    "quota2025": 35,
+    "minScore2026": 319.57,
+    "minRank2026": 56527,
+    "quota2026": 35
   },
   {
     "university": "FIRAT ÜNİVERSİTESİ",
@@ -4644,7 +7467,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 284.62,
     "minRank": 75171,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 284.62,
+    "minRank2025": 75171,
+    "quota2025": 30,
+    "minScore2026": 319.13,
+    "minRank2026": 56701,
+    "quota2026": 30
   },
   {
     "university": "ÇANKIRI KARATEKİN ÜNİVERSİTESİ",
@@ -4653,7 +7482,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 283.55,
     "minRank": 75747,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 283.55,
+    "minRank2025": 75747,
+    "quota2025": 55,
+    "minScore2026": 305.15,
+    "minRank2026": 63265,
+    "quota2026": 55
   },
   {
     "university": "ATATÜRK ÜNİVERSİTESİ",
@@ -4662,7 +7497,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 281.57,
     "minRank": 76855,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 281.57,
+    "minRank2025": 76855,
+    "quota2025": 50,
+    "minScore2026": 312.01,
+    "minRank2026": 59997,
+    "quota2026": 50
   },
   {
     "university": "KARAMANOĞLU MEHMETBEY ÜNİVERSİTESİ",
@@ -4671,7 +7512,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 280.21,
     "minRank": 77514,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 280.21,
+    "minRank2025": 77514,
+    "quota2025": 35,
+    "minScore2026": 302.8,
+    "minRank2026": 64451,
+    "quota2026": 35
   },
   {
     "university": "ADIYAMAN ÜNİVERSİTESİ",
@@ -4680,7 +7527,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 274.16,
     "minRank": 80798,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 274.16,
+    "minRank2025": 80798,
+    "quota2025": 30,
+    "minScore2026": 300.61,
+    "minRank2026": 65505,
+    "quota2026": 30
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -4689,7 +7542,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 272.78,
     "minRank": 81572,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 272.78,
+    "minRank2025": 81572,
+    "quota2025": 45,
+    "minScore2026": 422.87,
+    "minRank2026": 14311,
+    "quota2026": 45
   },
   {
     "university": "GÜMÜŞHANE ÜNİVERSİTESİ",
@@ -4698,7 +7557,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 272.33,
     "minRank": 81832,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 272.33,
+    "minRank2025": 81832,
+    "quota2025": 55,
+    "minScore2026": 295.2,
+    "minRank2026": 68175,
+    "quota2026": 55
   },
   {
     "university": "SELÇUK ÜNİVERSİTESİ",
@@ -4707,7 +7572,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 271.85,
     "minRank": 82120,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 271.85,
+    "minRank2025": 82120,
+    "quota2025": 50,
+    "minScore2026": 307.46,
+    "minRank2026": 62170,
+    "quota2026": 50
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -4716,7 +7587,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 271.54,
     "minRank": 82300,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 271.54,
+    "minRank2025": 82300,
+    "quota2025": 40,
+    "minScore2026": 320.18,
+    "minRank2026": 56232,
+    "quota2026": 40
   },
   {
     "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
@@ -4725,7 +7602,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 271.3,
     "minRank": 82434,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 271.3,
+    "minRank2025": 82434,
+    "quota2025": 25,
+    "minScore2026": 304.96,
+    "minRank2026": 63364,
+    "quota2026": 25
   },
   {
     "university": "HARRAN ÜNİVERSİTESİ",
@@ -4734,7 +7617,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 269.18,
     "minRank": 83618,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 269.18,
+    "minRank2025": 83618,
+    "quota2025": 45,
+    "minScore2026": 293.84,
+    "minRank2026": 68829,
+    "quota2026": 45
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -4743,7 +7632,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 269.08,
     "minRank": 83667,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 269.08,
+    "minRank2025": 83667,
+    "quota2025": 30,
+    "minScore2026": 296.81,
+    "minRank2026": 67349,
+    "quota2026": 30
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -4752,7 +7647,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 266.06,
     "minRank": 85383,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 266.06,
+    "minRank2025": 85383,
+    "quota2025": 50,
+    "minScore2026": 410.7,
+    "minRank2026": 18311,
+    "quota2026": 50
   },
   {
     "university": "HAKKARİ ÜNİVERSİTESİ",
@@ -4761,7 +7662,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 264.4,
     "minRank": 86352,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 264.4,
+    "minRank2025": 86352,
+    "quota2025": 30,
+    "minScore2026": 282.46,
+    "minRank2026": 74542,
+    "quota2026": 30
   },
   {
     "university": "ARTVİN ÇORUH ÜNİVERSİTESİ",
@@ -4770,7 +7677,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 263.52,
     "minRank": 86870,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 263.52,
+    "minRank2025": 86870,
+    "quota2025": 35,
+    "minScore2026": 300.25,
+    "minRank2026": 65682,
+    "quota2026": 35
   },
   {
     "university": "TRAKYA ÜNİVERSİTESİ",
@@ -4779,7 +7692,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 262.2,
     "minRank": 87593,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 262.2,
+    "minRank2025": 87593,
+    "quota2025": 30,
+    "minScore2026": 294.35,
+    "minRank2026": 68592,
+    "quota2026": 30
   },
   {
     "university": "ADIYAMAN ÜNİVERSİTESİ",
@@ -4788,7 +7707,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 261.67,
     "minRank": 87881,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 261.67,
+    "minRank2025": 87881,
+    "quota2025": 45,
+    "minScore2026": 286.91,
+    "minRank2026": 72226,
+    "quota2026": 45
   },
   {
     "university": "KIRIKKALE ÜNİVERSİTESİ",
@@ -4797,7 +7722,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 261.66,
     "minRank": 87883,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 261.66,
+    "minRank2025": 87883,
+    "quota2025": 50,
+    "minScore2026": 295.26,
+    "minRank2026": 68142,
+    "quota2026": 50
   },
   {
     "university": "BATMAN ÜNİVERSİTESİ",
@@ -4806,7 +7737,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 261.61,
     "minRank": 87924,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 261.61,
+    "minRank2025": 87924,
+    "quota2025": 40,
+    "minScore2026": 282.61,
+    "minRank2026": 74469,
+    "quota2026": 40
   },
   {
     "university": "GAZİANTEP İSLAM BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -4815,7 +7752,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 260.18,
     "minRank": 88728,
-    "quota": 32
+    "quota": 32,
+    "minScore2025": 260.18,
+    "minRank2025": 88728,
+    "quota2025": 32,
+    "minScore2026": 311.51,
+    "minRank2026": 60247,
+    "quota2026": 32
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -4824,7 +7767,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 254.71,
     "minRank": 91942,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 254.71,
+    "minRank2025": 91942,
+    "quota2025": 40,
+    "minScore2026": 284.3,
+    "minRank2026": 73601,
+    "quota2026": 40
   },
   {
     "university": "DİCLE ÜNİVERSİTESİ",
@@ -4833,7 +7782,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 254.65,
     "minRank": 91967,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 254.65,
+    "minRank2025": 91967,
+    "quota2025": 50,
+    "minScore2026": 273.63,
+    "minRank2026": 79175,
+    "quota2026": 50
   },
   {
     "university": "KAFKAS ÜNİVERSİTESİ",
@@ -4842,7 +7797,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 250.84,
     "minRank": 94276,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 250.84,
+    "minRank2025": 94276,
+    "quota2025": 35,
+    "minScore2026": 288.58,
+    "minRank2026": 71377,
+    "quota2026": 35
   },
   {
     "university": "BARTIN ÜNİVERSİTESİ",
@@ -4851,7 +7812,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 249.69,
     "minRank": 94915,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 249.69,
+    "minRank2025": 94915,
+    "quota2025": 27,
+    "minScore2026": 296.64,
+    "minRank2026": 67449,
+    "quota2026": 27
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -4860,7 +7827,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 248.67,
     "minRank": 95554,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 248.67,
+    "minRank2025": 95554,
+    "quota2025": 20,
+    "minScore2026": 272.84,
+    "minRank2026": 79559,
+    "quota2026": 20
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -4869,7 +7842,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 241.08,
     "minRank": 100293,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 241.08,
+    "minRank2025": 100293,
+    "quota2025": 30,
+    "minScore2026": 279.3,
+    "minRank2026": 76209,
+    "quota2026": 30
   },
   {
     "university": "ÇANKIRI KARATEKİN ÜNİVERSİTESİ",
@@ -4878,7 +7857,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 231.86,
     "minRank": 103063,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 231.86,
+    "minRank2025": 103063,
+    "quota2025": 30,
+    "minScore2026": 231.86,
+    "minRank2026": 103063,
+    "quota2026": 30
   },
   {
     "university": "SELÇUK ÜNİVERSİTESİ",
@@ -4887,7 +7872,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 236.08,
     "minRank": 103394,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 236.08,
+    "minRank2025": 103394,
+    "quota2025": 25,
+    "minScore2026": 259.84,
+    "minRank2026": 86727,
+    "quota2026": 25
   },
   {
     "university": "HARRAN ÜNİVERSİTESİ",
@@ -4896,7 +7887,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 232.65,
     "minRank": 105623,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 232.65,
+    "minRank2025": 105623,
+    "quota2025": 35,
+    "minScore2026": 253.26,
+    "minRank2026": 90409,
+    "quota2026": 35
   },
   {
     "university": "ATATÜRK ÜNİVERSİTESİ",
@@ -4905,7 +7902,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 232.18,
     "minRank": 105911,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 232.18,
+    "minRank2025": 105911,
+    "quota2025": 50,
+    "minScore2026": 261.58,
+    "minRank2026": 85740,
+    "quota2026": 50
   },
   {
     "university": "KARAMANOĞLU MEHMETBEY ÜNİVERSİTESİ",
@@ -4914,7 +7917,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 231.34,
     "minRank": 106447,
-    "quota": 59
+    "quota": 59,
+    "minScore2025": 231.34,
+    "minRank2025": 106447,
+    "quota2025": 59,
+    "minScore2026": 271.54,
+    "minRank2026": 80277,
+    "quota2026": 59
   },
   {
     "university": "ARDAHAN ÜNİVERSİTESİ",
@@ -4923,7 +7932,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 226.97,
     "minRank": 109330,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 226.97,
+    "minRank2025": 109330,
+    "quota2025": 25,
+    "minScore2026": 265.59,
+    "minRank2026": 83488,
+    "quota2026": 25
   },
   {
     "university": "TRAKYA ÜNİVERSİTESİ",
@@ -4932,7 +7947,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 223.67,
     "minRank": 111534,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 223.67,
+    "minRank2025": 111534,
+    "quota2025": 20,
+    "minScore2026": 261.2,
+    "minRank2026": 85962,
+    "quota2026": 20
   },
   {
     "university": "MARDİN ARTUKLU ÜNİVERSİTESİ",
@@ -4941,7 +7962,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 219.18,
     "minRank": 114669,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 219.18,
+    "minRank2025": 114669,
+    "quota2025": 50,
+    "minScore2026": 244.24,
+    "minRank2026": 95606,
+    "quota2026": 50
   },
   {
     "university": "AĞRI İBRAHİM ÇEÇEN ÜNİVERSİTESİ",
@@ -4950,7 +7977,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 216.98,
     "minRank": 116203,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 216.98,
+    "minRank2025": 116203,
+    "quota2025": 25,
+    "minScore2026": 251.61,
+    "minRank2026": 91369,
+    "quota2026": 25
   },
   {
     "university": "TRAKYA ÜNİVERSİTESİ",
@@ -4959,7 +7992,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 214.54,
     "minRank": 117820,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 214.54,
+    "minRank2025": 117820,
+    "quota2025": 20,
+    "minScore2026": 259.24,
+    "minRank2026": 87079,
+    "quota2026": 20
   },
   {
     "university": "BİNGÖL ÜNİVERSİTESİ",
@@ -4968,7 +8007,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 212.77,
     "minRank": 119059,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 212.77,
+    "minRank2025": 119059,
+    "quota2025": 27,
+    "minScore2026": 247.44,
+    "minRank2026": 93744,
+    "quota2026": 27
   },
   {
     "university": "KAFKAS ÜNİVERSİTESİ",
@@ -4977,7 +8022,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 192.44,
     "minRank": 131145,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 192.44,
+    "minRank2025": 131145,
+    "quota2025": 40,
+    "minScore2026": 209.57,
+    "minRank2026": 116367,
+    "quota2026": 40
   },
   {
     "university": "BİTLİS EREN ÜNİVERSİTESİ",
@@ -4986,7 +8037,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 191.46,
     "minRank": 131599,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 191.46,
+    "minRank2025": 131599,
+    "quota2025": 35,
+    "minScore2026": 207.17,
+    "minRank2026": 117713,
+    "quota2026": 35
   },
   {
     "university": "KIRIKKALE ÜNİVERSİTESİ",
@@ -4995,7 +8052,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 190.97,
     "minRank": 131829,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 190.97,
+    "minRank2025": 131829,
+    "quota2025": 25,
+    "minScore2026": 234.27,
+    "minRank2026": 101563,
+    "quota2026": 25
   },
   {
     "university": "BİNGÖL ÜNİVERSİTESİ",
@@ -5004,7 +8067,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 189.44,
     "minRank": 132535,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 189.44,
+    "minRank2025": 132535,
+    "quota2025": 55,
+    "minScore2026": 205.8,
+    "minRank2026": 118403,
+    "quota2026": 55
   },
   {
     "university": "VAN YÜZÜNCÜ YIL ÜNİVERSİTESİ",
@@ -5013,7 +8082,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 188.95,
     "minRank": 132752,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 188.95,
+    "minRank2025": 132752,
+    "quota2025": 20,
+    "minScore2026": 209.2,
+    "minRank2026": 116595,
+    "quota2026": 20
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -5022,7 +8097,13 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 183.68,
     "minRank": 134837,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 183.68,
+    "minRank2025": 134837,
+    "quota2025": 30,
+    "minScore2026": 217.67,
+    "minRank2026": 111569,
+    "quota2026": 30
   },
   {
     "university": "KİLİS 7 ARALIK ÜNİVERSİTESİ",
@@ -5031,6 +8112,12 @@ export const dilPrograms: UniversityProgram[] = [
     "field": "DIL",
     "minScore": 181.58,
     "minRank": 135567,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 181.58,
+    "minRank2025": 135567,
+    "quota2025": 85,
+    "minScore2026": 201.98,
+    "minRank2026": 120409,
+    "quota2026": 85
   }
 ]

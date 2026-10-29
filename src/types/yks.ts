@@ -98,6 +98,14 @@ export interface UniversityProgram {
     minScore: number
     minRank: number
     quota: number
+    // 2026 YKS Resmi YÖK Atlas Verileri
+    minScore2026?: number
+    minRank2026?: number
+    quota2026?: number
+    // 2025 YKS Resmi YÖK Atlas Verileri
+    minScore2025?: number
+    minRank2025?: number
+    quota2025?: number
 }
 
 export type ExamType = 'TYT' | 'AYT' | 'YDT'

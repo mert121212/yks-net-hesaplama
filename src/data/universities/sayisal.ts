@@ -1,6 +1,6 @@
 import { UniversityProgram } from '@/types/yks'
 
-// 2025 YKS Sayısal (SAY) Taban Puanları ve Başarı Sıraları - YÖK Atlas
+// 2025 ve 2026 YKS Sayısal (SAY) Taban Puanları ve Başarı Sıraları - YÖK Atlas
 export const sayisalPrograms: UniversityProgram[] = [
   {
     "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -9,7 +9,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 551.13,
     "minRank": 38,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 551.13,
+    "minRank2025": 38,
+    "quota2025": 10,
+    "minScore2026": 546.21,
+    "minRank2026": 382,
+    "quota2026": 26
   },
   {
     "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -18,7 +24,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 551.13,
     "minRank": 38,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 551.13,
+    "minRank2025": 38,
+    "quota2025": 3,
+    "minScore2026": 545,
+    "minRank2026": 489,
+    "quota2026": 10
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -27,7 +39,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 550.89,
     "minRank": 43,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 550.89,
+    "minRank2025": 43,
+    "quota2025": 6
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -36,7 +51,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 550.89,
     "minRank": 43,
-    "quota": 11
+    "quota": 11,
+    "minScore2025": 550.89,
+    "minRank2025": 43,
+    "quota2025": 11,
+    "minScore2026": 552.86,
+    "minRank2026": 65,
+    "quota2026": 11
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -45,7 +66,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 547.69,
     "minRank": 113,
-    "quota": 18
+    "quota": 18,
+    "minScore2025": 547.69,
+    "minRank2025": 113,
+    "quota2025": 18
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -54,7 +78,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 547.69,
     "minRank": 113,
-    "quota": 18
+    "quota": 18,
+    "minScore2025": 547.69,
+    "minRank2025": 113,
+    "quota2025": 18,
+    "minScore2026": 544.75,
+    "minRank2026": 520,
+    "quota2026": 18
   },
   {
     "university": "ACIBADEM MEHMET ALİ AYDINLAR ÜNİVERSİTESİ",
@@ -63,7 +93,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 545.27,
     "minRank": 210,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 545.27,
+    "minRank2025": 210,
+    "quota2025": 6
   },
   {
     "university": "ACIBADEM MEHMET ALİ AYDINLAR ÜNİVERSİTESİ",
@@ -72,7 +105,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 545.27,
     "minRank": 210,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 545.27,
+    "minRank2025": 210,
+    "quota2025": 6,
+    "minScore2026": 550.54,
+    "minRank2026": 133,
+    "quota2026": 6
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -81,7 +120,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 544.03,
     "minRank": 281,
-    "quota": 15
+    "quota": 15,
+    "minScore2025": 544.03,
+    "minRank2025": 281,
+    "quota2025": 15
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -90,7 +132,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 544.03,
     "minRank": 281,
-    "quota": 15
+    "quota": 15,
+    "minScore2025": 544.03,
+    "minRank2025": 281,
+    "quota2025": 15,
+    "minScore2026": 550.97,
+    "minRank2026": 123,
+    "quota2026": 15
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -99,7 +147,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 543.7,
     "minRank": 299,
-    "quota": 42
+    "quota": 42,
+    "minScore2025": 543.7,
+    "minRank2025": 299,
+    "quota2025": 42
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -108,7 +159,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 543.7,
     "minRank": 299,
-    "quota": 42
+    "quota": 42,
+    "minScore2025": 543.7,
+    "minRank2025": 299,
+    "quota2025": 42,
+    "minScore2026": 533.06,
+    "minRank2026": 2646,
+    "quota2026": 42
   },
   {
     "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -117,7 +174,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 543.17,
     "minRank": 337,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 543.17,
+    "minRank2025": 337,
+    "quota2025": 3,
+    "minScore2026": 549.43,
+    "minRank2026": 182,
+    "quota2026": 3
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -126,7 +189,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 542.69,
     "minRank": 373,
-    "quota": 42
+    "quota": 42,
+    "minScore2025": 542.69,
+    "minRank2025": 373,
+    "quota2025": 42
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -135,7 +201,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 542.69,
     "minRank": 373,
-    "quota": 42
+    "quota": 42,
+    "minScore2025": 542.69,
+    "minRank2025": 373,
+    "quota2025": 42,
+    "minScore2026": 547.57,
+    "minRank2026": 288,
+    "quota2026": 42
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -144,7 +216,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 538.55,
     "minRank": 708,
-    "quota": 17
+    "quota": 17,
+    "minScore2025": 538.55,
+    "minRank2025": 708,
+    "quota2025": 17
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -153,7 +228,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 538.55,
     "minRank": 708,
-    "quota": 13
+    "quota": 13,
+    "minScore2025": 538.55,
+    "minRank2025": 708,
+    "quota2025": 13,
+    "minScore2026": 544.9,
+    "minRank2026": 497,
+    "quota2026": 13
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -162,7 +243,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 537.68,
     "minRank": 809,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 537.68,
+    "minRank2025": 809,
+    "quota2025": 7
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -171,7 +255,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 537.51,
     "minRank": 823,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 537.51,
+    "minRank2025": 823,
+    "quota2025": 8,
+    "minScore2026": 540.01,
+    "minRank2026": 1163,
+    "quota2026": 8
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -180,7 +270,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 535.06,
     "minRank": 1137,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 535.06,
+    "minRank2025": 1137,
+    "quota2025": 6
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -189,7 +282,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 535.06,
     "minRank": 1137,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 535.06,
+    "minRank2025": 1137,
+    "quota2025": 7,
+    "minScore2026": 533.81,
+    "minRank2026": 2476,
+    "quota2026": 7
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -198,7 +297,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 534.82,
     "minRank": 1169,
-    "quota": 175
+    "quota": 175,
+    "minScore2025": 534.82,
+    "minRank2025": 1169,
+    "quota2025": 175,
+    "minScore2026": 537.81,
+    "minRank2026": 1586,
+    "quota2026": 230
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -207,7 +312,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 534.82,
     "minRank": 1169,
-    "quota": 175
+    "quota": 175,
+    "minScore2025": 534.82,
+    "minRank2025": 1169,
+    "quota2025": 175,
+    "minScore2026": 541.38,
+    "minRank2026": 965,
+    "quota2026": 175
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -216,7 +327,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 534.57,
     "minRank": 1204,
-    "quota": 110
+    "quota": 110,
+    "minScore2025": 534.57,
+    "minRank2025": 1204,
+    "quota2025": 110
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -225,7 +339,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 534.57,
     "minRank": 1204,
-    "quota": 105
+    "quota": 105,
+    "minScore2025": 534.57,
+    "minRank2025": 1204,
+    "quota2025": 105,
+    "minScore2026": 418.28,
+    "minRank2026": 96050,
+    "quota2026": 65
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -234,7 +354,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 534.45,
     "minRank": 1226,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 534.45,
+    "minRank2025": 1226,
+    "quota2025": 12
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -243,7 +366,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 534.45,
     "minRank": 1226,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 534.45,
+    "minRank2025": 1226,
+    "quota2025": 10,
+    "minScore2026": 539.69,
+    "minRank2026": 1231,
+    "quota2026": 10
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -252,7 +381,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 533.47,
     "minRank": 1391,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 533.47,
+    "minRank2025": 1391,
+    "quota2025": 65,
+    "minScore2026": 535.36,
+    "minRank2026": 2067,
+    "quota2026": 270
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -261,7 +396,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 533.47,
     "minRank": 1391,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 533.47,
+    "minRank2025": 1391,
+    "quota2025": 65,
+    "minScore2026": 542.97,
+    "minRank2026": 728,
+    "quota2026": 65
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -270,7 +411,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 533.14,
     "minRank": 1435,
-    "quota": 105
+    "quota": 105,
+    "minScore2025": 533.14,
+    "minRank2025": 1435,
+    "quota2025": 105
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -279,7 +423,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 533.14,
     "minRank": 1435,
-    "quota": 105
+    "quota": 105,
+    "minScore2025": 533.14,
+    "minRank2025": 1435,
+    "quota2025": 105,
+    "minScore2026": 464.67,
+    "minRank2026": 49801,
+    "quota2026": 6
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -288,7 +438,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 533.05,
     "minRank": 1448,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 533.05,
+    "minRank2025": 1448,
+    "quota2025": 80
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -297,7 +450,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 533.05,
     "minRank": 1448,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 533.05,
+    "minRank2025": 1448,
+    "quota2025": 80,
+    "minScore2026": 526.75,
+    "minRank2026": 4560,
+    "quota2026": 80
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -306,7 +465,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 532.88,
     "minRank": 1484,
-    "quota": 150
+    "quota": 150,
+    "minScore2025": 532.88,
+    "minRank2025": 1484,
+    "quota2025": 150
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -315,7 +477,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 532.88,
     "minRank": 1484,
-    "quota": 150
+    "quota": 150,
+    "minScore2025": 532.88,
+    "minRank2025": 1484,
+    "quota2025": 150,
+    "minScore2026": 452.1,
+    "minRank2026": 61734,
+    "quota2026": 45
   },
   {
     "university": "ÖZYEĞİN ÜNİVERSİTESİ",
@@ -324,7 +492,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 531.76,
     "minRank": 1657,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 531.76,
+    "minRank2025": 1657,
+    "quota2025": 7
   },
   {
     "university": "ÖZYEĞİN ÜNİVERSİTESİ",
@@ -333,7 +504,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 531.76,
     "minRank": 1657,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 531.76,
+    "minRank2025": 1657,
+    "quota2025": 7,
+    "minScore2026": 535.99,
+    "minRank2026": 1941,
+    "quota2026": 7
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -342,7 +519,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 541.8,
     "minRank": 1850,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 541.8,
+    "minRank2025": 1850,
+    "quota2025": 40,
+    "minScore2026": 530.13,
+    "minRank2026": 3460,
+    "quota2026": 20
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -351,7 +534,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 529.88,
     "minRank": 1947,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 529.88,
+    "minRank2025": 1947,
+    "quota2025": 30
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -360,7 +546,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 529.6,
     "minRank": 1993,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 529.6,
+    "minRank2025": 1993,
+    "quota2025": 75
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -369,7 +558,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 529.6,
     "minRank": 1993,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 529.6,
+    "minRank2025": 1993,
+    "quota2025": 75,
+    "minScore2026": 533.59,
+    "minRank2026": 2530,
+    "quota2026": 75
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -378,7 +573,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 529.37,
     "minRank": 2045,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 529.37,
+    "minRank2025": 2045,
+    "quota2025": 6
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -387,7 +585,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 529.37,
     "minRank": 2045,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 529.37,
+    "minRank2025": 2045,
+    "quota2025": 7,
+    "minScore2026": 536.09,
+    "minRank2026": 1919,
+    "quota2026": 7
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -396,7 +600,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 529.36,
     "minRank": 2047,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 529.36,
+    "minRank2025": 2047,
+    "quota2025": 5
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -405,7 +612,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 529.36,
     "minRank": 2047,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 529.36,
+    "minRank2025": 2047,
+    "quota2025": 5,
+    "minScore2026": 538.25,
+    "minRank2026": 1501,
+    "quota2026": 5
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -414,7 +627,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 529.35,
     "minRank": 2050,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 529.35,
+    "minRank2025": 2050,
+    "quota2025": 50
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -423,7 +639,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 529.35,
     "minRank": 2050,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 529.35,
+    "minRank2025": 2050,
+    "quota2025": 50,
+    "minScore2026": 534.83,
+    "minRank2026": 2197,
+    "quota2026": 50
   },
   {
     "university": "ESKİŞEHİR TEKNİK ÜNİVERSİTESİ",
@@ -432,7 +654,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 529.12,
     "minRank": 2090,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 529.12,
+    "minRank2025": 2090,
+    "quota2025": 5,
+    "minScore2026": 532.26,
+    "minRank2026": 2849,
+    "quota2026": 5
   },
   {
     "university": "SABANCI ÜNİVERSİTESİ",
@@ -441,7 +669,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 529.12,
     "minRank": 2093,
-    "quota": 81
+    "quota": 81,
+    "minScore2025": 529.12,
+    "minRank2025": 2093,
+    "quota2025": 81
   },
   {
     "university": "SABANCI ÜNİVERSİTESİ",
@@ -450,7 +681,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 529.12,
     "minRank": 2093,
-    "quota": 81
+    "quota": 81,
+    "minScore2025": 529.12,
+    "minRank2025": 2093,
+    "quota2025": 81,
+    "minScore2026": 525.14,
+    "minRank2026": 5121,
+    "quota2026": 81
   },
   {
     "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -459,7 +696,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 529.04,
     "minRank": 2106,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 529.04,
+    "minRank2025": 2106,
+    "quota2025": 7,
+    "minScore2026": 538.7,
+    "minRank2026": 1411,
+    "quota2026": 7
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -468,7 +711,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 528.92,
     "minRank": 2126,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 528.92,
+    "minRank2025": 2126,
+    "quota2025": 50,
+    "minScore2026": 532.42,
+    "minRank2026": 2802,
+    "quota2026": 80
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -477,7 +726,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 528.92,
     "minRank": 2126,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 528.92,
+    "minRank2025": 2126,
+    "quota2025": 50,
+    "minScore2026": 536.53,
+    "minRank2026": 1832,
+    "quota2026": 50
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -486,7 +741,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 528.59,
     "minRank": 2189,
-    "quota": 42
+    "quota": 42,
+    "minScore2025": 528.59,
+    "minRank2025": 2189,
+    "quota2025": 42
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -495,7 +753,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 528.59,
     "minRank": 2189,
-    "quota": 42
+    "quota": 42,
+    "minScore2025": 528.59,
+    "minRank2025": 2189,
+    "quota2025": 42,
+    "minScore2026": 529.41,
+    "minRank2026": 3686,
+    "quota2026": 42
   },
   {
     "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -504,7 +768,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 528.36,
     "minRank": 2225,
-    "quota": 13
+    "quota": 13,
+    "minScore2025": 528.36,
+    "minRank2025": 2225,
+    "quota2025": 13,
+    "minScore2026": 524.8,
+    "minRank2026": 5244,
+    "quota2026": 13
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -513,7 +783,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 528.31,
     "minRank": 2235,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 528.31,
+    "minRank2025": 2235,
+    "quota2025": 50,
+    "minScore2026": 536.08,
+    "minRank2026": 1920,
+    "quota2026": 50
   },
   {
     "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -522,7 +798,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 538.9,
     "minRank": 2340,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 538.9,
+    "minRank2025": 2340,
+    "quota2025": 10
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -531,7 +810,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 527.65,
     "minRank": 2358,
-    "quota": 26
+    "quota": 26,
+    "minScore2025": 527.65,
+    "minRank2025": 2358,
+    "quota2025": 26
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -540,7 +822,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 527.65,
     "minRank": 2358,
-    "quota": 26
+    "quota": 26,
+    "minScore2025": 527.65,
+    "minRank2025": 2358,
+    "quota2025": 26,
+    "minScore2026": 532.96,
+    "minRank2026": 2669,
+    "quota2026": 26
   },
   {
     "university": "TÜRK HAVA KURUMU ÜNİVERSİTESİ",
@@ -549,7 +837,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 527.54,
     "minRank": 2387,
-    "quota": 2
+    "quota": 2,
+    "minScore2025": 527.54,
+    "minRank2025": 2387,
+    "quota2025": 2
   },
   {
     "university": "TÜRK HAVA KURUMU ÜNİVERSİTESİ",
@@ -558,7 +849,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 527.54,
     "minRank": 2387,
-    "quota": 2
+    "quota": 2,
+    "minScore2025": 527.54,
+    "minRank2025": 2387,
+    "quota2025": 2,
+    "minScore2026": 530.36,
+    "minRank2026": 3397,
+    "quota2026": 2
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -567,7 +864,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 527.45,
     "minRank": 2406,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 527.45,
+    "minRank2025": 2406,
+    "quota2025": 70
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -576,7 +876,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 527.45,
     "minRank": 2406,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 527.45,
+    "minRank2025": 2406,
+    "quota2025": 70,
+    "minScore2026": 458.29,
+    "minRank2026": 55837,
+    "quota2026": 40
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -585,7 +891,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 526.79,
     "minRank": 2548,
-    "quota": 11
+    "quota": 11,
+    "minScore2025": 526.79,
+    "minRank2025": 2548,
+    "quota2025": 11
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -594,7 +903,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 526.79,
     "minRank": 2548,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 526.79,
+    "minRank2025": 2548,
+    "quota2025": 12,
+    "minScore2026": 534.04,
+    "minRank2026": 2414,
+    "quota2026": 12
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -603,7 +918,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 526.7,
     "minRank": 2562,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 526.7,
+    "minRank2025": 2562,
+    "quota2025": 65,
+    "minScore2026": 531.8,
+    "minRank2026": 2982,
+    "quota2026": 335
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -612,7 +933,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 526.7,
     "minRank": 2562,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 526.7,
+    "minRank2025": 2562,
+    "quota2025": 65,
+    "minScore2026": 533.31,
+    "minRank2026": 2600,
+    "quota2026": 65
   },
   {
     "university": "ÖZYEĞİN ÜNİVERSİTESİ",
@@ -621,7 +948,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 526.43,
     "minRank": 2615,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 526.43,
+    "minRank2025": 2615,
+    "quota2025": 10
   },
   {
     "university": "ÖZYEĞİN ÜNİVERSİTESİ",
@@ -630,7 +960,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 526.43,
     "minRank": 2615,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 526.43,
+    "minRank2025": 2615,
+    "quota2025": 10,
+    "minScore2026": 520.29,
+    "minRank2026": 7241,
+    "quota2026": 10
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -639,7 +975,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 525.78,
     "minRank": 2741,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 525.78,
+    "minRank2025": 2741,
+    "quota2025": 55
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -648,7 +987,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 525.78,
     "minRank": 2741,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 525.78,
+    "minRank2025": 2741,
+    "quota2025": 55,
+    "minScore2026": 413.54,
+    "minRank2026": 101198,
+    "quota2026": 40
   },
   {
     "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -657,7 +1002,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 525.57,
     "minRank": 2772,
-    "quota": 13
+    "quota": 13,
+    "minScore2025": 525.57,
+    "minRank2025": 2772,
+    "quota2025": 13,
+    "minScore2026": 529.85,
+    "minRank2026": 3554,
+    "quota2026": 13
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -666,7 +1017,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 525.14,
     "minRank": 2876,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 525.14,
+    "minRank2025": 2876,
+    "quota2025": 5
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -675,7 +1029,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 525.14,
     "minRank": 2876,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 525.14,
+    "minRank2025": 2876,
+    "quota2025": 3,
+    "minScore2026": 533.68,
+    "minRank2026": 2501,
+    "quota2026": 3
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -684,7 +1044,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 535.4,
     "minRank": 2980,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 535.4,
+    "minRank2025": 2980,
+    "quota2025": 40
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -693,7 +1056,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 523.84,
     "minRank": 3146,
-    "quota": 2
+    "quota": 2,
+    "minScore2025": 523.84,
+    "minRank2025": 3146,
+    "quota2025": 2
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -702,7 +1068,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 523.84,
     "minRank": 3146,
-    "quota": 2
+    "quota": 2,
+    "minScore2025": 523.84,
+    "minRank2025": 3146,
+    "quota2025": 2,
+    "minScore2026": 528.5,
+    "minRank2026": 3980,
+    "quota2026": 2
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -711,7 +1083,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 523.3,
     "minRank": 3264,
-    "quota": 120
+    "quota": 120,
+    "minScore2025": 523.3,
+    "minRank2025": 3264,
+    "quota2025": 120
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -720,7 +1095,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 523.3,
     "minRank": 3264,
-    "quota": 120
+    "quota": 120,
+    "minScore2025": 523.3,
+    "minRank2025": 3264,
+    "quota2025": 120,
+    "minScore2026": 406.71,
+    "minRank2026": 108900,
+    "quota2026": 40
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -729,7 +1110,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 522.49,
     "minRank": 3456,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 522.49,
+    "minRank2025": 3456,
+    "quota2025": 65,
+    "minScore2026": 530.37,
+    "minRank2026": 3392,
+    "quota2026": 285
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -738,7 +1125,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 522.49,
     "minRank": 3456,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 522.49,
+    "minRank2025": 3456,
+    "quota2025": 65,
+    "minScore2026": 533.04,
+    "minRank2026": 2651,
+    "quota2026": 65
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -747,7 +1140,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 522.39,
     "minRank": 3490,
-    "quota": 19
+    "quota": 19,
+    "minScore2025": 522.39,
+    "minRank2025": 3490,
+    "quota2025": 19
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -756,7 +1152,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 522.39,
     "minRank": 3490,
-    "quota": 19
+    "quota": 19,
+    "minScore2025": 522.39,
+    "minRank2025": 3490,
+    "quota2025": 19,
+    "minScore2026": 519.7,
+    "minRank2026": 7517,
+    "quota2026": 19
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -765,7 +1167,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 522.36,
     "minRank": 3495,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 522.36,
+    "minRank2025": 3495,
+    "quota2025": 40,
+    "minScore2026": 529.92,
+    "minRank2026": 3525,
+    "quota2026": 40
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -774,7 +1182,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 521.95,
     "minRank": 3596,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 521.95,
+    "minRank2025": 3596,
+    "quota2025": 65
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -783,7 +1194,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 521.95,
     "minRank": 3596,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 521.95,
+    "minRank2025": 3596,
+    "quota2025": 65,
+    "minScore2026": 523.67,
+    "minRank2026": 5729,
+    "quota2026": 65
   },
   {
     "university": "KTO KARATAY ÜNİVERSİTESİ",
@@ -792,7 +1209,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 521.56,
     "minRank": 3704,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 521.56,
+    "minRank2025": 3704,
+    "quota2025": 5,
+    "minScore2026": 527.75,
+    "minRank2026": 4216,
+    "quota2026": 5
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -801,7 +1224,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 521.49,
     "minRank": 3730,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 521.49,
+    "minRank2025": 3730,
+    "quota2025": 50,
+    "minScore2026": 525.06,
+    "minRank2026": 5146,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -810,7 +1239,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 521.49,
     "minRank": 3730,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 521.49,
+    "minRank2025": 3730,
+    "quota2025": 50,
+    "minScore2026": 474.68,
+    "minRank2026": 40688,
+    "quota2026": 6
   },
   {
     "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -819,7 +1254,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 521.22,
     "minRank": 3795,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 521.22,
+    "minRank2025": 3795,
+    "quota2025": 9
   },
   {
     "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -828,7 +1266,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 521.22,
     "minRank": 3795,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 521.22,
+    "minRank2025": 3795,
+    "quota2025": 6,
+    "minScore2026": 519.79,
+    "minRank2026": 7478,
+    "quota2026": 6
   },
   {
     "university": "ATILIM ÜNİVERSİTESİ",
@@ -837,7 +1281,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 520.9,
     "minRank": 3862,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 520.9,
+    "minRank2025": 3862,
+    "quota2025": 3
   },
   {
     "university": "ATILIM ÜNİVERSİTESİ",
@@ -846,7 +1293,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 520.9,
     "minRank": 3862,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 520.9,
+    "minRank2025": 3862,
+    "quota2025": 3,
+    "minScore2026": 522.2,
+    "minRank2026": 6377,
+    "quota2026": 3
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -855,7 +1308,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 520.37,
     "minRank": 3988,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 520.37,
+    "minRank2025": 3988,
+    "quota2025": 50
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -864,7 +1320,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 520.37,
     "minRank": 3988,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 520.37,
+    "minRank2025": 3988,
+    "quota2025": 50,
+    "minScore2026": 526.85,
+    "minRank2026": 4525,
+    "quota2026": 50
   },
   {
     "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -873,7 +1335,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 520.06,
     "minRank": 4068,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 520.06,
+    "minRank2025": 4068,
+    "quota2025": 10,
+    "minScore2026": 520.75,
+    "minRank2026": 7007,
+    "quota2026": 10
   },
   {
     "university": "BEZM-İ ÂLEM VAKIF ÜNİVERSİTESİ",
@@ -882,7 +1350,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 527.38,
     "minRank": 4340,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 527.38,
+    "minRank2025": 4340,
+    "quota2025": 10,
+    "minScore2026": 527.38,
+    "minRank2026": 4340,
+    "quota2026": 10
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -891,7 +1365,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 518.52,
     "minRank": 4489,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 518.52,
+    "minRank2025": 4489,
+    "quota2025": 35,
+    "minScore2026": 525.72,
+    "minRank2026": 4918,
+    "quota2026": 35
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -900,7 +1380,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 518.51,
     "minRank": 4492,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 518.51,
+    "minRank2025": 4492,
+    "quota2025": 30
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -909,7 +1392,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 518.51,
     "minRank": 4492,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 518.51,
+    "minRank2025": 4492,
+    "quota2025": 20,
+    "minScore2026": 523.19,
+    "minRank2026": 5943,
+    "quota2026": 20
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -918,7 +1407,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 517.75,
     "minRank": 4731,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 517.75,
+    "minRank2025": 4731,
+    "quota2025": 35,
+    "minScore2026": 526.21,
+    "minRank2026": 4742,
+    "quota2026": 35
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -927,7 +1422,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 517.64,
     "minRank": 4766,
-    "quota": 300
+    "quota": 300,
+    "minScore2025": 517.64,
+    "minRank2025": 4766,
+    "quota2025": 300,
+    "minScore2026": 527.97,
+    "minRank2026": 4138,
+    "quota2026": 300
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -936,7 +1437,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 517.61,
     "minRank": 4773,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 517.61,
+    "minRank2025": 4773,
+    "quota2025": 12
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -945,7 +1449,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 517.61,
     "minRank": 4773,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 517.61,
+    "minRank2025": 4773,
+    "quota2025": 12,
+    "minScore2026": 513.38,
+    "minRank2026": 10836,
+    "quota2026": 12
   },
   {
     "university": "ÖZYEĞİN ÜNİVERSİTESİ",
@@ -954,7 +1464,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 517.59,
     "minRank": 4778,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 517.59,
+    "minRank2025": 4778,
+    "quota2025": 6
   },
   {
     "university": "ÖZYEĞİN ÜNİVERSİTESİ",
@@ -963,7 +1476,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 517.59,
     "minRank": 4778,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 517.59,
+    "minRank2025": 4778,
+    "quota2025": 6,
+    "minScore2026": 513.37,
+    "minRank2026": 10849,
+    "quota2026": 6
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -972,7 +1491,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 516.36,
     "minRank": 5118,
-    "quota": 320
+    "quota": 320,
+    "minScore2025": 516.36,
+    "minRank2025": 5118,
+    "quota2025": 320,
+    "minScore2026": 526.98,
+    "minRank2026": 4481,
+    "quota2026": 320
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -981,7 +1506,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 515.52,
     "minRank": 5367,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 515.52,
+    "minRank2025": 5367,
+    "quota2025": 100,
+    "minScore2026": 525.88,
+    "minRank2026": 4872,
+    "quota2026": 100
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -990,7 +1521,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 515.29,
     "minRank": 5442,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 515.29,
+    "minRank2025": 5442,
+    "quota2025": 8
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -999,7 +1533,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 515.29,
     "minRank": 5442,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 515.29,
+    "minRank2025": 5442,
+    "quota2025": 10,
+    "minScore2026": 521.87,
+    "minRank2026": 6497,
+    "quota2026": 10
   },
   {
     "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -1008,7 +1548,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 515.26,
     "minRank": 5452,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 515.26,
+    "minRank2025": 5452,
+    "quota2025": 10,
+    "minScore2026": 520.65,
+    "minRank2026": 7070,
+    "quota2026": 10
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -1017,7 +1563,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 514.15,
     "minRank": 5805,
-    "quota": 19
+    "quota": 19,
+    "minScore2025": 514.15,
+    "minRank2025": 5805,
+    "quota2025": 19
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -1026,7 +1575,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 514.15,
     "minRank": 5805,
-    "quota": 19
+    "quota": 19,
+    "minScore2025": 514.15,
+    "minRank2025": 5805,
+    "quota2025": 19,
+    "minScore2026": 495.71,
+    "minRank2026": 22913,
+    "quota2026": 19
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -1035,7 +1590,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 514.08,
     "minRank": 5821,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 514.08,
+    "minRank2025": 5821,
+    "quota2025": 65
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -1044,7 +1602,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 514.08,
     "minRank": 5821,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 514.08,
+    "minRank2025": 5821,
+    "quota2025": 60,
+    "minScore2026": 521.52,
+    "minRank2026": 6657,
+    "quota2026": 60
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -1053,7 +1617,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 513.72,
     "minRank": 5916,
-    "quota": 13
+    "quota": 13,
+    "minScore2025": 513.72,
+    "minRank2025": 5916,
+    "quota2025": 13,
+    "minScore2026": 523.72,
+    "minRank2026": 5708,
+    "quota2026": 13
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -1062,7 +1632,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 513.7,
     "minRank": 5923,
-    "quota": 120
+    "quota": 120,
+    "minScore2025": 513.7,
+    "minRank2025": 5923,
+    "quota2025": 120
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -1071,7 +1644,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 513.7,
     "minRank": 5923,
-    "quota": 120
+    "quota": 120,
+    "minScore2025": 513.7,
+    "minRank2025": 5923,
+    "quota2025": 120
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -1080,7 +1656,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 513.15,
     "minRank": 6078,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 513.15,
+    "minRank2025": 6078,
+    "quota2025": 9,
+    "minScore2026": 522.81,
+    "minRank2026": 6108,
+    "quota2026": 9
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -1089,7 +1671,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 513.12,
     "minRank": 6086,
-    "quota": 220
+    "quota": 220,
+    "minScore2025": 513.12,
+    "minRank2025": 6086,
+    "quota2025": 220
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -1098,7 +1683,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 513.12,
     "minRank": 6086,
-    "quota": 220
+    "quota": 220,
+    "minScore2025": 513.12,
+    "minRank2025": 6086,
+    "quota2025": 220,
+    "minScore2026": 525.2,
+    "minRank2026": 5101,
+    "quota2026": 220
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -1107,7 +1698,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 513.03,
     "minRank": 6106,
-    "quota": 150
+    "quota": 150,
+    "minScore2025": 513.03,
+    "minRank2025": 6106,
+    "quota2025": 150,
+    "minScore2026": 520.66,
+    "minRank2026": 7060,
+    "quota2026": 140
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -1116,7 +1713,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 512.97,
     "minRank": 6124,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 512.97,
+    "minRank2025": 6124,
+    "quota2025": 40,
+    "minScore2026": 518.12,
+    "minRank2026": 8326,
+    "quota2026": 60
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -1125,7 +1728,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 512.97,
     "minRank": 6124,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 512.97,
+    "minRank2025": 6124,
+    "quota2025": 40,
+    "minScore2026": 520.6,
+    "minRank2026": 7087,
+    "quota2026": 40
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -1134,7 +1743,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 512.92,
     "minRank": 6141,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 512.92,
+    "minRank2025": 6141,
+    "quota2025": 85
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -1143,7 +1755,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 512.92,
     "minRank": 6141,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 512.92,
+    "minRank2025": 6141,
+    "quota2025": 85,
+    "minScore2026": 517.24,
+    "minRank2026": 8761,
+    "quota2026": 85
   },
   {
     "university": "İSTANBUL NİŞANTAŞI ÜNİVERSİTESİ",
@@ -1152,7 +1770,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 512.77,
     "minRank": 6191,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 512.77,
+    "minRank2025": 6191,
+    "quota2025": 6
   },
   {
     "university": "İSTANBUL NİŞANTAŞI ÜNİVERSİTESİ",
@@ -1161,7 +1782,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 512.77,
     "minRank": 6191,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 512.77,
+    "minRank2025": 6191,
+    "quota2025": 6,
+    "minScore2026": 514.39,
+    "minRank2026": 10287,
+    "quota2026": 6
   },
   {
     "university": "BEZM-İ ÂLEM VAKIF ÜNİVERSİTESİ",
@@ -1170,7 +1797,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 512.65,
     "minRank": 6232,
-    "quota": 17
+    "quota": 17,
+    "minScore2025": 512.65,
+    "minRank2025": 6232,
+    "quota2025": 17,
+    "minScore2026": 526.04,
+    "minRank2026": 4815,
+    "quota2026": 17
   },
   {
     "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
@@ -1179,7 +1812,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 511.82,
     "minRank": 6494,
-    "quota": 195
+    "quota": 195,
+    "minScore2025": 511.82,
+    "minRank2025": 6494,
+    "quota2025": 195,
+    "minScore2026": 524.02,
+    "minRank2026": 5590,
+    "quota2026": 190
   },
   {
     "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
@@ -1188,7 +1827,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 511.54,
     "minRank": 6589,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 511.54,
+    "minRank2025": 6589,
+    "quota2025": 9
   },
   {
     "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
@@ -1197,7 +1839,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 511.54,
     "minRank": 6589,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 511.54,
+    "minRank2025": 6589,
+    "quota2025": 9,
+    "minScore2026": 510.73,
+    "minRank2026": 12436,
+    "quota2026": 9
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -1206,7 +1854,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 511.46,
     "minRank": 6620,
-    "quota": 11
+    "quota": 11,
+    "minScore2025": 511.46,
+    "minRank2025": 6620,
+    "quota2025": 11
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -1215,7 +1866,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 511.46,
     "minRank": 6620,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 511.46,
+    "minRank2025": 6620,
+    "quota2025": 10,
+    "minScore2026": 523.44,
+    "minRank2026": 5833,
+    "quota2026": 10
   },
   {
     "university": "ÖZYEĞİN ÜNİVERSİTESİ",
@@ -1224,7 +1881,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 511.12,
     "minRank": 6715,
-    "quota": 11
+    "quota": 11,
+    "minScore2025": 511.12,
+    "minRank2025": 6715,
+    "quota2025": 11
   },
   {
     "university": "ÖZYEĞİN ÜNİVERSİTESİ",
@@ -1233,7 +1893,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 511.12,
     "minRank": 6715,
-    "quota": 11
+    "quota": 11,
+    "minScore2025": 511.12,
+    "minRank2025": 6715,
+    "quota2025": 11,
+    "minScore2026": 506.94,
+    "minRank2026": 14879,
+    "quota2026": 11
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -1242,7 +1908,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 510.26,
     "minRank": 7000,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 510.26,
+    "minRank2025": 7000,
+    "quota2025": 60
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -1251,7 +1920,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 510.26,
     "minRank": 7000,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 510.26,
+    "minRank2025": 7000,
+    "quota2025": 60,
+    "minScore2026": 513.62,
+    "minRank2026": 10693,
+    "quota2026": 60
   },
   {
     "university": "İSTİNYE ÜNİVERSİTESİ",
@@ -1260,7 +1935,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 510.2,
     "minRank": 7019,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 510.2,
+    "minRank2025": 7019,
+    "quota2025": 9,
+    "minScore2026": 532.27,
+    "minRank2026": 2847,
+    "quota2026": 13
   },
   {
     "university": "İSTİNYE ÜNİVERSİTESİ",
@@ -1269,7 +1950,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 510.2,
     "minRank": 7019,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 510.2,
+    "minRank2025": 7019,
+    "quota2025": 9,
+    "minScore2026": 542.66,
+    "minRank2026": 779,
+    "quota2026": 9
   },
   {
     "university": "GALATASARAY ÜNİVERSİTESİ",
@@ -1278,7 +1965,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 509.93,
     "minRank": 7113,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 509.93,
+    "minRank2025": 7113,
+    "quota2025": 30
   },
   {
     "university": "GALATASARAY ÜNİVERSİTESİ",
@@ -1287,7 +1977,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 509.93,
     "minRank": 7113,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 509.93,
+    "minRank2025": 7113,
+    "quota2025": 25
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -1296,7 +1989,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 509.8,
     "minRank": 7158,
-    "quota": 11
+    "quota": 11,
+    "minScore2025": 509.8,
+    "minRank2025": 7158,
+    "quota2025": 11
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -1305,7 +2001,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 509.8,
     "minRank": 7158,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 509.8,
+    "minRank2025": 7158,
+    "quota2025": 9,
+    "minScore2026": 527.21,
+    "minRank2026": 4402,
+    "quota2026": 9
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -1314,7 +2016,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 509.2,
     "minRank": 7346,
-    "quota": 90
+    "quota": 90,
+    "minScore2025": 509.2,
+    "minRank2025": 7346,
+    "quota2025": 90,
+    "minScore2026": 507.84,
+    "minRank2026": 14281,
+    "quota2026": 60
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -1323,7 +2031,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 509.09,
     "minRank": 7395,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 509.09,
+    "minRank2025": 7395,
+    "quota2025": 100,
+    "minScore2026": 506.82,
+    "minRank2026": 14954,
+    "quota2026": 100
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -1332,7 +2046,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 508.97,
     "minRank": 7447,
-    "quota": 280
+    "quota": 280,
+    "minScore2025": 508.97,
+    "minRank2025": 7447,
+    "quota2025": 280,
+    "minScore2026": 521.51,
+    "minRank2026": 6661,
+    "quota2026": 280
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -1341,7 +2061,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 508.72,
     "minRank": 7540,
-    "quota": 150
+    "quota": 150,
+    "minScore2025": 508.72,
+    "minRank2025": 7540,
+    "quota2025": 150,
+    "minScore2026": 521.23,
+    "minRank2026": 6781,
+    "quota2026": 150
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -1350,7 +2076,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 508.72,
     "minRank": 7542,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 508.72,
+    "minRank2025": 7542,
+    "quota2025": 30
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -1359,7 +2088,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 508.72,
     "minRank": 7542,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 508.72,
+    "minRank2025": 7542,
+    "quota2025": 40,
+    "minScore2026": 515.24,
+    "minRank2026": 9840,
+    "quota2026": 40
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -1368,7 +2103,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 519.19,
     "minRank": 7783,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 519.19,
+    "minRank2025": 7783,
+    "quota2025": 50,
+    "minScore2026": 519.19,
+    "minRank2026": 7783,
+    "quota2026": 50
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -1377,7 +2118,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 507.94,
     "minRank": 7818,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 507.94,
+    "minRank2025": 7818,
+    "quota2025": 50
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -1386,7 +2130,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 507.94,
     "minRank": 7818,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 507.94,
+    "minRank2025": 7818,
+    "quota2025": 50,
+    "minScore2026": 512.91,
+    "minRank2026": 11093,
+    "quota2026": 50
   },
   {
     "university": "GALATASARAY ÜNİVERSİTESİ",
@@ -1395,7 +2145,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 507.59,
     "minRank": 7934,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 507.59,
+    "minRank2025": 7934,
+    "quota2025": 35
   },
   {
     "university": "GALATASARAY ÜNİVERSİTESİ",
@@ -1404,7 +2157,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 507.59,
     "minRank": 7934,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 507.59,
+    "minRank2025": 7934,
+    "quota2025": 35,
+    "minScore2026": 512.12,
+    "minRank2026": 11570,
+    "quota2026": 35
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -1413,7 +2172,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 507.5,
     "minRank": 7972,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 507.5,
+    "minRank2025": 7972,
+    "quota2025": 8
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -1422,7 +2184,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 507.5,
     "minRank": 7972,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 507.5,
+    "minRank2025": 7972,
+    "quota2025": 7,
+    "minScore2026": 513.6,
+    "minRank2026": 10708,
+    "quota2026": 7
   },
   {
     "university": "LOKMAN HEKİM ÜNİVERSİTESİ",
@@ -1431,7 +2199,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 507.49,
     "minRank": 7975,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 507.49,
+    "minRank2025": 7975,
+    "quota2025": 8,
+    "minScore2026": 519.41,
+    "minRank2026": 7657,
+    "quota2026": 8
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -1440,7 +2214,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 507.48,
     "minRank": 7981,
-    "quota": 310
+    "quota": 310,
+    "minScore2025": 507.48,
+    "minRank2025": 7981,
+    "quota2025": 310,
+    "minScore2026": 520.72,
+    "minRank2026": 7022,
+    "quota2026": 300
   },
   {
     "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
@@ -1449,7 +2229,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 506.77,
     "minRank": 8250,
-    "quota": 130
+    "quota": 130,
+    "minScore2025": 506.77,
+    "minRank2025": 8250,
+    "quota2025": 130,
+    "minScore2026": 519.89,
+    "minRank2026": 7428,
+    "quota2026": 130
   },
   {
     "university": "ANKARA MEDİPOL ÜNİVERSİTESİ",
@@ -1458,7 +2244,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 506.61,
     "minRank": 8321,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 506.61,
+    "minRank2025": 8321,
+    "quota2025": 12,
+    "minScore2026": 520.6,
+    "minRank2026": 7084,
+    "quota2026": 12
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -1467,7 +2259,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 506.34,
     "minRank": 8423,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 506.34,
+    "minRank2025": 8423,
+    "quota2025": 35
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -1476,7 +2271,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 506.34,
     "minRank": 8423,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 506.34,
+    "minRank2025": 8423,
+    "quota2025": 35
   },
   {
     "university": "ÖZYEĞİN ÜNİVERSİTESİ",
@@ -1485,7 +2283,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 506.26,
     "minRank": 8463,
-    "quota": 14
+    "quota": 14,
+    "minScore2025": 506.26,
+    "minRank2025": 8463,
+    "quota2025": 14
   },
   {
     "university": "ÖZYEĞİN ÜNİVERSİTESİ",
@@ -1494,7 +2295,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 506.26,
     "minRank": 8463,
-    "quota": 14
+    "quota": 14,
+    "minScore2025": 506.26,
+    "minRank2025": 8463,
+    "quota2025": 14,
+    "minScore2026": 509.43,
+    "minRank2026": 13259,
+    "quota2026": 14
   },
   {
     "university": "LOKMAN HEKİM ÜNİVERSİTESİ",
@@ -1503,7 +2310,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 505.74,
     "minRank": 8662,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 505.74,
+    "minRank2025": 8662,
+    "quota2025": 8,
+    "minScore2026": 518.73,
+    "minRank2026": 8020,
+    "quota2026": 8
   },
   {
     "university": "ANKARA MEDİPOL ÜNİVERSİTESİ",
@@ -1512,7 +2325,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 505.64,
     "minRank": 8696,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 505.64,
+    "minRank2025": 8696,
+    "quota2025": 12,
+    "minScore2026": 519.09,
+    "minRank2026": 7830,
+    "quota2026": 12
   },
   {
     "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -1521,7 +2340,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 505.62,
     "minRank": 8704,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 505.62,
+    "minRank2025": 8704,
+    "quota2025": 6,
+    "minScore2026": 507.19,
+    "minRank2026": 14708,
+    "quota2026": 6
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -1530,7 +2355,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 505.29,
     "minRank": 8836,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 505.29,
+    "minRank2025": 8836,
+    "quota2025": 45
   },
   {
     "university": "UFUK ÜNİVERSİTESİ",
@@ -1539,7 +2367,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 505.27,
     "minRank": 8842,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 505.27,
+    "minRank2025": 8842,
+    "quota2025": 7,
+    "minScore2026": 518.39,
+    "minRank2026": 8179,
+    "quota2026": 7
   },
   {
     "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
@@ -1548,7 +2382,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 505.24,
     "minRank": 8855,
-    "quota": 260
+    "quota": 260,
+    "minScore2025": 505.24,
+    "minRank2025": 8855,
+    "quota2025": 260,
+    "minScore2026": 518.75,
+    "minRank2026": 8009,
+    "quota2026": 260
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -1557,7 +2397,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 505.07,
     "minRank": 8924,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 505.07,
+    "minRank2025": 8924,
+    "quota2025": 60
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -1566,7 +2409,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 505.07,
     "minRank": 8924,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 505.07,
+    "minRank2025": 8924,
+    "quota2025": 60,
+    "minScore2026": 509.84,
+    "minRank2026": 12990,
+    "quota2026": 60
   },
   {
     "university": "BİTLİS EREN ÜNİVERSİTESİ",
@@ -1575,7 +2424,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 515.76,
     "minRank": 9552,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 515.76,
+    "minRank2025": 9552,
+    "quota2025": 30,
+    "minScore2026": 515.76,
+    "minRank2026": 9552,
+    "quota2026": 30
   },
   {
     "university": "ÇUKUROVA ÜNİVERSİTESİ",
@@ -1584,7 +2439,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 503.36,
     "minRank": 9624,
-    "quota": 210
+    "quota": 210,
+    "minScore2025": 503.36,
+    "minRank2025": 9624,
+    "quota2025": 210,
+    "minScore2026": 517.51,
+    "minRank2026": 8629,
+    "quota2026": 210
   },
   {
     "university": "ANKARA BİLİM ÜNİVERSİTESİ",
@@ -1593,7 +2454,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 515.45,
     "minRank": 9730,
-    "quota": 2
+    "quota": 2,
+    "minScore2025": 515.45,
+    "minRank2025": 9730,
+    "quota2025": 2,
+    "minScore2026": 515.45,
+    "minRank2026": 9730,
+    "quota2026": 2
   },
   {
     "university": "İSTANBUL MEDENİYET ÜNİVERSİTESİ",
@@ -1602,7 +2469,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 502.98,
     "minRank": 9787,
-    "quota": 198
+    "quota": 198,
+    "minScore2025": 502.98,
+    "minRank2025": 9787,
+    "quota2025": 198,
+    "minScore2026": 518.97,
+    "minRank2026": 7888,
+    "quota2026": 198
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -1611,7 +2484,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 502.97,
     "minRank": 9793,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 502.97,
+    "minRank2025": 9793,
+    "quota2025": 40
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -1620,7 +2496,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 502.97,
     "minRank": 9793,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 502.97,
+    "minRank2025": 9793,
+    "quota2025": 40,
+    "minScore2026": 498.24,
+    "minRank2026": 20940,
+    "quota2026": 40
   },
   {
     "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
@@ -1629,7 +2511,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 502.94,
     "minRank": 9803,
-    "quota": 230
+    "quota": 230,
+    "minScore2025": 502.94,
+    "minRank2025": 9803,
+    "quota2025": 230,
+    "minScore2026": 516.94,
+    "minRank2026": 8920,
+    "quota2026": 230
   },
   {
     "university": "UFUK ÜNİVERSİTESİ",
@@ -1638,7 +2526,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 502.73,
     "minRank": 9892,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 502.73,
+    "minRank2025": 9892,
+    "quota2025": 8,
+    "minScore2026": 517.21,
+    "minRank2026": 8780,
+    "quota2026": 8
   },
   {
     "university": "TÜRK HAVA KURUMU ÜNİVERSİTESİ",
@@ -1647,7 +2541,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 502.5,
     "minRank": 9999,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 502.5,
+    "minRank2025": 9999,
+    "quota2025": 7
   },
   {
     "university": "TÜRK HAVA KURUMU ÜNİVERSİTESİ",
@@ -1656,7 +2553,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 502.5,
     "minRank": 9999,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 502.5,
+    "minRank2025": 9999,
+    "quota2025": 7,
+    "minScore2026": 516.73,
+    "minRank2026": 9019,
+    "quota2026": 7
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -1665,7 +2568,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 502.16,
     "minRank": 10143,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 502.16,
+    "minRank2025": 10143,
+    "quota2025": 75
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -1674,7 +2580,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 502.16,
     "minRank": 10143,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 502.16,
+    "minRank2025": 10143,
+    "quota2025": 75,
+    "minScore2026": 508.78,
+    "minRank2026": 13670,
+    "quota2026": 75
   },
   {
     "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
@@ -1683,7 +2595,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 502.01,
     "minRank": 10218,
-    "quota": 170
+    "quota": 170,
+    "minScore2025": 502.01,
+    "minRank2025": 10218,
+    "quota2025": 170,
+    "minScore2026": 516.24,
+    "minRank2026": 9288,
+    "quota2026": 170
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -1692,7 +2610,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 501.91,
     "minRank": 10264,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 501.91,
+    "minRank2025": 10264,
+    "quota2025": 55
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -1701,7 +2622,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 501.91,
     "minRank": 10264,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 501.91,
+    "minRank2025": 10264,
+    "quota2025": 55
   },
   {
     "university": "ÖZYEĞİN ÜNİVERSİTESİ",
@@ -1710,7 +2634,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 501.87,
     "minRank": 10287,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 501.87,
+    "minRank2025": 10287,
+    "quota2025": 10
   },
   {
     "university": "ÖZYEĞİN ÜNİVERSİTESİ",
@@ -1719,7 +2646,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 501.87,
     "minRank": 10287,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 501.87,
+    "minRank2025": 10287,
+    "quota2025": 10,
+    "minScore2026": 491.65,
+    "minRank2026": 26062,
+    "quota2026": 10
   },
   {
     "university": "YÜKSEK İHTİSAS ÜNİVERSİTESİ",
@@ -1728,7 +2661,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 501.69,
     "minRank": 10350,
-    "quota": 13
+    "quota": 13,
+    "minScore2025": 501.69,
+    "minRank2025": 10350,
+    "quota2025": 13,
+    "minScore2026": 516.57,
+    "minRank2026": 9102,
+    "quota2026": 13
   },
   {
     "university": "ANTALYA BİLİM ÜNİVERSİTESİ",
@@ -1737,7 +2676,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 501.64,
     "minRank": 10365,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 501.64,
+    "minRank2025": 10365,
+    "quota2025": 3,
+    "minScore2026": 510.55,
+    "minRank2026": 12545,
+    "quota2026": 3
   },
   {
     "university": "ATILIM ÜNİVERSİTESİ",
@@ -1746,7 +2691,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 501.53,
     "minRank": 10409,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 501.53,
+    "minRank2025": 10409,
+    "quota2025": 8
   },
   {
     "university": "ATILIM ÜNİVERSİTESİ",
@@ -1755,7 +2703,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 501.53,
     "minRank": 10409,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 501.53,
+    "minRank2025": 10409,
+    "quota2025": 8,
+    "minScore2026": 515.7,
+    "minRank2026": 9575,
+    "quota2026": 8
   },
   {
     "university": "YÜKSEK İHTİSAS ÜNİVERSİTESİ",
@@ -1764,7 +2718,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 501.04,
     "minRank": 10611,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 501.04,
+    "minRank2025": 10611,
+    "quota2025": 7,
+    "minScore2026": 515.88,
+    "minRank2026": 9487,
+    "quota2026": 7
   },
   {
     "university": "BİRUNİ ÜNİVERSİTESİ",
@@ -1773,7 +2733,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 500.16,
     "minRank": 10981,
-    "quota": 13
+    "quota": 13,
+    "minScore2025": 500.16,
+    "minRank2025": 10981,
+    "quota2025": 13,
+    "minScore2026": 518.53,
+    "minRank2026": 8117,
+    "quota2026": 13
   },
   {
     "university": "BİRUNİ ÜNİVERSİTESİ",
@@ -1782,7 +2748,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 500.16,
     "minRank": 10981,
-    "quota": 13
+    "quota": 13,
+    "minScore2025": 500.16,
+    "minRank2025": 10981,
+    "quota2025": 13,
+    "minScore2026": 517.1,
+    "minRank2026": 8839,
+    "quota2026": 13
   },
   {
     "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
@@ -1791,7 +2763,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 500.11,
     "minRank": 11004,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 500.11,
+    "minRank2025": 11004,
+    "quota2025": 9,
+    "minScore2026": 514.98,
+    "minRank2026": 9958,
+    "quota2026": 9
   },
   {
     "university": "MALTEPE ÜNİVERSİTESİ",
@@ -1800,7 +2778,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 499.51,
     "minRank": 11280,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 499.51,
+    "minRank2025": 11280,
+    "quota2025": 3,
+    "minScore2026": 515.21,
+    "minRank2026": 9855,
+    "quota2026": 5
   },
   {
     "university": "MALTEPE ÜNİVERSİTESİ",
@@ -1809,7 +2793,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 499.51,
     "minRank": 11280,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 499.51,
+    "minRank2025": 11280,
+    "quota2025": 3,
+    "minScore2026": 512.78,
+    "minRank2026": 11175,
+    "quota2026": 3
   },
   {
     "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
@@ -1818,7 +2808,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 499.2,
     "minRank": 11420,
-    "quota": 215
+    "quota": 215,
+    "minScore2025": 499.2,
+    "minRank2025": 11420,
+    "quota2025": 215,
+    "minScore2026": 514.92,
+    "minRank2026": 9985,
+    "quota2026": 215
   },
   {
     "university": "SELÇUK ÜNİVERSİTESİ",
@@ -1827,7 +2823,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 498.92,
     "minRank": 11536,
-    "quota": 230
+    "quota": 230,
+    "minScore2025": 498.92,
+    "minRank2025": 11536,
+    "quota2025": 230,
+    "minScore2026": 514.43,
+    "minRank2026": 10263,
+    "quota2026": 230
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -1836,7 +2838,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 498.73,
     "minRank": 11623,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 498.73,
+    "minRank2025": 11623,
+    "quota2025": 45,
+    "minScore2026": 508.08,
+    "minRank2026": 14138,
+    "quota2026": 45
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -1845,7 +2853,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 498.73,
     "minRank": 11623,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 498.73,
+    "minRank2025": 11623,
+    "quota2025": 45,
+    "minScore2026": 509.47,
+    "minRank2026": 13230,
+    "quota2026": 45
   },
   {
     "university": "ÜSKÜDAR ÜNİVERSİTESİ",
@@ -1854,7 +2868,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 498.42,
     "minRank": 11775,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 498.42,
+    "minRank2025": 11775,
+    "quota2025": 8,
+    "minScore2026": 515.33,
+    "minRank2026": 9794,
+    "quota2026": 8
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -1863,7 +2883,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 497.91,
     "minRank": 12009,
-    "quota": 260
+    "quota": 260,
+    "minScore2025": 497.91,
+    "minRank2025": 12009,
+    "quota2025": 260,
+    "minScore2026": 513.86,
+    "minRank2026": 10565,
+    "quota2026": 260
   },
   {
     "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
@@ -1872,7 +2898,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 497.83,
     "minRank": 12046,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 497.83,
+    "minRank2025": 12046,
+    "quota2025": 65,
+    "minScore2026": 512.66,
+    "minRank2026": 11259,
+    "quota2026": 65
   },
   {
     "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
@@ -1881,7 +2913,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 497.78,
     "minRank": 12073,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 497.78,
+    "minRank2025": 12073,
+    "quota2025": 55
   },
   {
     "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
@@ -1890,7 +2925,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 497.78,
     "minRank": 12073,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 497.78,
+    "minRank2025": 12073,
+    "quota2025": 50,
+    "minScore2026": 472.43,
+    "minRank2026": 42684,
+    "quota2026": 10
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -1899,7 +2940,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 497.39,
     "minRank": 12260,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 497.39,
+    "minRank2025": 12260,
+    "quota2025": 100
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -1908,7 +2952,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 497.34,
     "minRank": 12288,
-    "quota": 15
+    "quota": 15,
+    "minScore2025": 497.34,
+    "minRank2025": 12288,
+    "quota2025": 15,
+    "minScore2026": 513.37,
+    "minRank2026": 10851,
+    "quota2026": 15
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -1917,7 +2967,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 512.4,
     "minRank": 12400,
-    "quota": 15
+    "quota": 15,
+    "minScore2025": 512.4,
+    "minRank2025": 12400,
+    "quota2025": 15
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -1926,7 +2979,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 497.1,
     "minRank": 12408,
-    "quota": 14
+    "quota": 14,
+    "minScore2025": 497.1,
+    "minRank2025": 12408,
+    "quota2025": 14
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -1935,7 +2991,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 497.1,
     "minRank": 12408,
-    "quota": 14
+    "quota": 14,
+    "minScore2025": 497.1,
+    "minRank2025": 12408,
+    "quota2025": 14,
+    "minScore2026": 494.04,
+    "minRank2026": 24214,
+    "quota2026": 14
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -1944,7 +3006,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 497.01,
     "minRank": 12452,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 497.01,
+    "minRank2025": 12452,
+    "quota2025": 50
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -1953,7 +3018,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 497.01,
     "minRank": 12452,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 497.01,
+    "minRank2025": 12452,
+    "quota2025": 50,
+    "minScore2026": 499.8,
+    "minRank2026": 19834,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -1962,7 +3033,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 496.82,
     "minRank": 12541,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 496.82,
+    "minRank2025": 12541,
+    "quota2025": 50,
+    "minScore2026": 507.05,
+    "minRank2026": 14792,
+    "quota2026": 50
   },
   {
     "university": "ÜSKÜDAR ÜNİVERSİTESİ",
@@ -1971,7 +3048,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 496.49,
     "minRank": 12711,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 496.49,
+    "minRank2025": 12711,
+    "quota2025": 8,
+    "minScore2026": 511.46,
+    "minRank2026": 11971,
+    "quota2026": 8
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -1980,7 +3063,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 495.95,
     "minRank": 12980,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 495.95,
+    "minRank2025": 12980,
+    "quota2025": 20,
+    "minScore2026": 494.43,
+    "minRank2026": 23903,
+    "quota2026": 90
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -1989,7 +3078,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 495.95,
     "minRank": 12980,
-    "quota": 18
+    "quota": 18,
+    "minScore2025": 495.95,
+    "minRank2025": 12980,
+    "quota2025": 18,
+    "minScore2026": 499.27,
+    "minRank2026": 20226,
+    "quota2026": 18
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -1998,7 +3093,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 495.94,
     "minRank": 12983,
-    "quota": 280
+    "quota": 280,
+    "minScore2025": 495.94,
+    "minRank2025": 12983,
+    "quota2025": 280,
+    "minScore2026": 511.3,
+    "minRank2026": 12073,
+    "quota2026": 280
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -2007,7 +3108,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 495.88,
     "minRank": 13012,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 495.88,
+    "minRank2025": 13012,
+    "quota2025": 40,
+    "minScore2026": 509.38,
+    "minRank2026": 13287,
+    "quota2026": 40
   },
   {
     "university": "MERSİN ÜNİVERSİTESİ",
@@ -2016,7 +3123,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 495.82,
     "minRank": 13043,
-    "quota": 230
+    "quota": 230,
+    "minScore2025": 495.82,
+    "minRank2025": 13043,
+    "quota2025": 230,
+    "minScore2026": 511.76,
+    "minRank2026": 11789,
+    "quota2026": 230
   },
   {
     "university": "PAMUKKALE ÜNİVERSİTESİ",
@@ -2025,7 +3138,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 495.2,
     "minRank": 13350,
-    "quota": 250
+    "quota": 250,
+    "minScore2025": 495.2,
+    "minRank2025": 13350,
+    "quota2025": 250,
+    "minScore2026": 511.72,
+    "minRank2026": 11819,
+    "quota2026": 250
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -2034,7 +3153,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 495.11,
     "minRank": 13388,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 495.11,
+    "minRank2025": 13388,
+    "quota2025": 10,
+    "minScore2026": 511.88,
+    "minRank2026": 11707,
+    "quota2026": 10
   },
   {
     "university": "ÇANAKKALE ONSEKİZ MART ÜNİVERSİTESİ",
@@ -2043,7 +3168,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 494.95,
     "minRank": 13467,
-    "quota": 180
+    "quota": 180,
+    "minScore2025": 494.95,
+    "minRank2025": 13467,
+    "quota2025": 180,
+    "minScore2026": 511.29,
+    "minRank2026": 12086,
+    "quota2026": 170
   },
   {
     "university": "İSTANBUL ATLAS ÜNİVERSİTESİ",
@@ -2052,7 +3183,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 494.23,
     "minRank": 13830,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 494.23,
+    "minRank2025": 13830,
+    "quota2025": 10,
+    "minScore2026": 515.01,
+    "minRank2026": 9939,
+    "quota2026": 10
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -2061,7 +3198,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 493.86,
     "minRank": 14037,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 493.86,
+    "minRank2025": 14037,
+    "quota2025": 55,
+    "minScore2026": 499.02,
+    "minRank2026": 20390,
+    "quota2026": 60
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -2070,7 +3213,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 493.86,
     "minRank": 14037,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 493.86,
+    "minRank2025": 14037,
+    "quota2025": 55
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -2079,7 +3225,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 493.68,
     "minRank": 14114,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 493.68,
+    "minRank2025": 14114,
+    "quota2025": 75
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -2088,7 +3237,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 493.68,
     "minRank": 14114,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 493.68,
+    "minRank2025": 14114,
+    "quota2025": 70
   },
   {
     "university": "İSTANBUL ATLAS ÜNİVERSİTESİ",
@@ -2097,7 +3249,28 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 493.65,
     "minRank": 14134,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 493.65,
+    "minRank2025": 14134,
+    "quota2025": 4,
+    "minScore2026": 511.91,
+    "minRank2026": 11683,
+    "quota2026": 4
+  },
+  {
+    "university": "ATATÜRK ÜNİVERSİTESİ",
+    "program": "Tıp",
+    "city": "Erzurum",
+    "field": "SAY",
+    "minScore": 508.05,
+    "minRank": 14150,
+    "quota": 120,
+    "minScore2026": 508.05,
+    "minRank2026": 14150,
+    "quota2026": 120,
+    "minScore2025": 488.98,
+    "minRank2025": 16727,
+    "quota2025": 120
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -2106,7 +3279,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 493.44,
     "minRank": 14236,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 493.44,
+    "minRank2025": 14236,
+    "quota2025": 75
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -2115,7 +3291,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 493.44,
     "minRank": 14236,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 493.44,
+    "minRank2025": 14236,
+    "quota2025": 75,
+    "minScore2026": 497.89,
+    "minRank2026": 21192,
+    "quota2026": 75
   },
   {
     "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
@@ -2124,7 +3306,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 493.17,
     "minRank": 14380,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 493.17,
+    "minRank2025": 14380,
+    "quota2025": 10,
+    "minScore2026": 512.85,
+    "minRank2026": 11138,
+    "quota2026": 9
   },
   {
     "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
@@ -2133,7 +3321,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 492.62,
     "minRank": 14694,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 492.62,
+    "minRank2025": 14694,
+    "quota2025": 50
   },
   {
     "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
@@ -2142,7 +3333,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 492.62,
     "minRank": 14694,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 492.62,
+    "minRank2025": 14694,
+    "quota2025": 50,
+    "minScore2026": 482.76,
+    "minRank2026": 33536,
+    "quota2026": 10
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -2151,7 +3348,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 492.49,
     "minRank": 14762,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 492.49,
+    "minRank2025": 14762,
+    "quota2025": 40
   },
   {
     "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
@@ -2160,7 +3360,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 492.25,
     "minRank": 14883,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 492.25,
+    "minRank2025": 14883,
+    "quota2025": 8,
+    "minScore2026": 510.23,
+    "minRank2026": 12755,
+    "quota2026": 8
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -2169,7 +3375,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 492.08,
     "minRank": 14967,
-    "quota": 15
+    "quota": 15,
+    "minScore2025": 492.08,
+    "minRank2025": 14967,
+    "quota2025": 15
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -2178,7 +3387,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 492.08,
     "minRank": 14967,
-    "quota": 11
+    "quota": 11,
+    "minScore2025": 492.08,
+    "minRank2025": 14967,
+    "quota2025": 11,
+    "minScore2026": 489.19,
+    "minRank2026": 28086,
+    "quota2026": 11
   },
   {
     "university": "İZMİR BAKIRÇAY ÜNİVERSİTESİ",
@@ -2187,7 +3402,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 491.95,
     "minRank": 15038,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 491.95,
+    "minRank2025": 15038,
+    "quota2025": 80,
+    "minScore2026": 509.09,
+    "minRank2026": 13466,
+    "quota2026": 80
   },
   {
     "university": "SAMSUN ÜNİVERSİTESİ",
@@ -2196,7 +3417,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 491.81,
     "minRank": 15112,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 491.81,
+    "minRank2025": 15112,
+    "quota2025": 80,
+    "minScore2026": 508.87,
+    "minRank2026": 13609,
+    "quota2026": 80
   },
   {
     "university": "ESKİŞEHİR TEKNİK ÜNİVERSİTESİ",
@@ -2205,7 +3432,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 491.16,
     "minRank": 15461,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 491.16,
+    "minRank2025": 15461,
+    "quota2025": 20,
+    "minScore2026": 510.56,
+    "minRank2026": 12539,
+    "quota2026": 20
   },
   {
     "university": "NECMETTİN ERBAKAN ÜNİVERSİTESİ",
@@ -2214,7 +3447,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 491.04,
     "minRank": 15537,
-    "quota": 240
+    "quota": 240,
+    "minScore2025": 491.04,
+    "minRank2025": 15537,
+    "quota2025": 240,
+    "minScore2026": 509.07,
+    "minRank2026": 13482,
+    "quota2026": 240
   },
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
@@ -2223,7 +3462,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 490.99,
     "minRank": 15576,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 490.99,
+    "minRank2025": 15576,
+    "quota2025": 65
   },
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
@@ -2232,7 +3474,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 490.99,
     "minRank": 15576,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 490.99,
+    "minRank2025": 15576,
+    "quota2025": 50
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -2241,7 +3486,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 490.66,
     "minRank": 15756,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 490.66,
+    "minRank2025": 15756,
+    "quota2025": 80
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -2250,7 +3498,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 490.66,
     "minRank": 15756,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 490.66,
+    "minRank2025": 15756,
+    "quota2025": 80,
+    "minScore2026": 490.16,
+    "minRank2026": 27271,
+    "quota2026": 80
   },
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -2259,7 +3513,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 490.61,
     "minRank": 15791,
-    "quota": 95
+    "quota": 95,
+    "minScore2025": 490.61,
+    "minRank2025": 15791,
+    "quota2025": 95
   },
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -2268,7 +3525,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 490.61,
     "minRank": 15791,
-    "quota": 95
+    "quota": 95,
+    "minScore2025": 490.61,
+    "minRank2025": 15791,
+    "quota2025": 95,
+    "minScore2026": 483.79,
+    "minRank2026": 32699,
+    "quota2026": 95
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -2277,7 +3540,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 490.55,
     "minRank": 15834,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 490.55,
+    "minRank2025": 15834,
+    "quota2025": 9
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -2286,7 +3552,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 490.55,
     "minRank": 15834,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 490.55,
+    "minRank2025": 15834,
+    "quota2025": 8,
+    "minScore2026": 489.16,
+    "minRank2026": 28108,
+    "quota2026": 8
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -2295,7 +3567,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 490.45,
     "minRank": 15895,
-    "quota": 90
+    "quota": 90,
+    "minScore2025": 490.45,
+    "minRank2025": 15895,
+    "quota2025": 90,
+    "minScore2026": 493.5,
+    "minRank2026": 24599,
+    "quota2026": 81
   },
   {
     "university": "SÜLEYMAN DEMİREL ÜNİVERSİTESİ",
@@ -2304,7 +3582,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 490.4,
     "minRank": 15923,
-    "quota": 220
+    "quota": 220,
+    "minScore2025": 490.4,
+    "minRank2025": 15923,
+    "quota2025": 220,
+    "minScore2026": 507.57,
+    "minRank2026": 14468,
+    "quota2026": 220
   },
   {
     "university": "MANİSA CELÂL BAYAR ÜNİVERSİTESİ",
@@ -2313,7 +3597,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 490.35,
     "minRank": 15963,
-    "quota": 240
+    "quota": 240,
+    "minScore2025": 490.35,
+    "minRank2025": 15963,
+    "quota2025": 240,
+    "minScore2026": 507.94,
+    "minRank2026": 14227,
+    "quota2026": 240
   },
   {
     "university": "TRAKYA ÜNİVERSİTESİ",
@@ -2322,7 +3612,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 489.03,
     "minRank": 16703,
-    "quota": 230
+    "quota": 230,
+    "minScore2025": 489.03,
+    "minRank2025": 16703,
+    "quota2025": 230
   },
   {
     "university": "ATATÜRK ��NİVERSİTESİ",
@@ -2331,7 +3624,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 488.98,
     "minRank": 16727,
-    "quota": 120
+    "quota": 120,
+    "minScore2025": 488.98,
+    "minRank2025": 16727,
+    "quota2025": 120
   },
   {
     "university": "KIRIKKALE ÜNİVERSİTESİ",
@@ -2340,7 +3636,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 488.66,
     "minRank": 16897,
-    "quota": 160
+    "quota": 160,
+    "minScore2025": 488.66,
+    "minRank2025": 16897,
+    "quota2025": 160
   },
   {
     "university": "BANDIRMA ONYEDİ EYLÜL ÜNİVERSİTESİ",
@@ -2349,7 +3648,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 488.51,
     "minRank": 16998,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 488.51,
+    "minRank2025": 16998,
+    "quota2025": 55
   },
   {
     "university": "İZMİR TINAZTEPE ÜNİVERSİTESİ",
@@ -2358,7 +3660,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 488.26,
     "minRank": 17128,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 488.26,
+    "minRank2025": 17128,
+    "quota2025": 10
   },
   {
     "university": "İSTANBUL SAĞLIK VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -2367,7 +3672,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 488.03,
     "minRank": 17252,
-    "quota": 16
+    "quota": 16,
+    "minScore2025": 488.03,
+    "minRank2025": 17252,
+    "quota2025": 16,
+    "minScore2026": 507.81,
+    "minRank2026": 14307,
+    "quota2026": 16
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -2376,7 +3687,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 487.92,
     "minRank": 17323,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 487.92,
+    "minRank2025": 17323,
+    "quota2025": 50
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -2385,7 +3699,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 487.92,
     "minRank": 17323,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 487.92,
+    "minRank2025": 17323,
+    "quota2025": 50,
+    "minScore2026": 492.09,
+    "minRank2026": 25716,
+    "quota2026": 50
   },
   {
     "university": "SANKO ÜNİVERSİTESİ",
@@ -2394,7 +3714,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 487.82,
     "minRank": 17384,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 487.82,
+    "minRank2025": 17384,
+    "quota2025": 12
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -2403,7 +3726,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 487.32,
     "minRank": 17686,
-    "quota": 125
+    "quota": 125,
+    "minScore2025": 487.32,
+    "minRank2025": 17686,
+    "quota2025": 125,
+    "minScore2026": 498.06,
+    "minRank2026": 21066,
+    "quota2026": 125
   },
   {
     "university": "KTO KARATAY ÜNİVERSİTESİ",
@@ -2412,7 +3741,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 487.28,
     "minRank": 17712,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 487.28,
+    "minRank2025": 17712,
+    "quota2025": 8,
+    "minScore2026": 507.59,
+    "minRank2026": 14452,
+    "quota2026": 8
   },
   {
     "university": "BOLU ABANT İZZET BAYSAL ÜNİVERSİTESİ",
@@ -2421,7 +3756,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 486.96,
     "minRank": 17908,
-    "quota": 170
+    "quota": 170,
+    "minScore2025": 486.96,
+    "minRank2025": 17908,
+    "quota2025": 170
   },
   {
     "university": "TEKİRDAĞ NAMIK KEMAL ÜNİVERSİTESİ",
@@ -2430,7 +3768,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 486.8,
     "minRank": 18007,
-    "quota": 130
+    "quota": 130,
+    "minScore2025": 486.8,
+    "minRank2025": 18007,
+    "quota2025": 130
   },
   {
     "university": "DEMİROĞLU BİLİM ÜNİVERSİTESİ",
@@ -2439,7 +3780,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 486.68,
     "minRank": 18101,
-    "quota": 11
+    "quota": 11,
+    "minScore2025": 486.68,
+    "minRank2025": 18101,
+    "quota2025": 11,
+    "minScore2026": 511.07,
+    "minRank2026": 12204,
+    "quota2026": 8
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -2448,7 +3795,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 486.39,
     "minRank": 18260,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 486.39,
+    "minRank2025": 18260,
+    "quota2025": 6,
+    "minScore2026": 461.2,
+    "minRank2026": 53119,
+    "quota2026": 6
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -2457,7 +3810,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 486.37,
     "minRank": 18272,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 486.37,
+    "minRank2025": 18272,
+    "quota2025": 85,
+    "minScore2026": 425.48,
+    "minRank2026": 88193,
+    "quota2026": 19
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -2466,7 +3825,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 486.37,
     "minRank": 18272,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 486.37,
+    "minRank2025": 18272,
+    "quota2025": 85,
+    "minScore2026": 483.05,
+    "minRank2026": 33303,
+    "quota2026": 85
   },
   {
     "university": "YALOVA ÜNİVERSİTESİ",
@@ -2475,7 +3840,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 486.33,
     "minRank": 18294,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 486.33,
+    "minRank2025": 18294,
+    "quota2025": 50
   },
   {
     "university": "İSTANBUL SAĞLIK VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -2484,7 +3852,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 486.33,
     "minRank": 18296,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 486.33,
+    "minRank2025": 18296,
+    "quota2025": 8,
+    "minScore2026": 507.24,
+    "minRank2026": 14677,
+    "quota2026": 8
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -2493,7 +3867,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 486.14,
     "minRank": 18425,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 486.14,
+    "minRank2025": 18425,
+    "quota2025": 40,
+    "minScore2026": 496.55,
+    "minRank2026": 22253,
+    "quota2026": 40
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -2502,7 +3882,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 486.06,
     "minRank": 18481,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 486.06,
+    "minRank2025": 18481,
+    "quota2025": 30
   },
   {
     "university": "ALTINBAŞ ÜNİVERSİTESİ",
@@ -2511,7 +3894,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 486.04,
     "minRank": 18493,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 486.04,
+    "minRank2025": 18493,
+    "quota2025": 7,
+    "minScore2026": 507.47,
+    "minRank2026": 14531,
+    "quota2026": 7
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -2520,7 +3909,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 495.2,
     "minRank": 18500,
-    "quota": 150
+    "quota": 150,
+    "minScore2025": 495.2,
+    "minRank2025": 18500,
+    "quota2025": 150,
+    "minScore2026": 468.3,
+    "minRank2026": 46389,
+    "quota2026": 60
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -2529,7 +3924,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 485.81,
     "minRank": 18650,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 485.81,
+    "minRank2025": 18650,
+    "quota2025": 55,
+    "minScore2026": 495.57,
+    "minRank2026": 23006,
+    "quota2026": 55
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -2538,7 +3939,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 485.49,
     "minRank": 18856,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 485.49,
+    "minRank2025": 18856,
+    "quota2025": 50
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -2547,7 +3951,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 485.49,
     "minRank": 18856,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 485.49,
+    "minRank2025": 18856,
+    "quota2025": 50,
+    "minScore2026": 489.25,
+    "minRank2026": 28046,
+    "quota2026": 50
   },
   {
     "university": "ALANYA ALAADDİN KEYKUBAT ÜNİVERSİTESİ",
@@ -2556,7 +3966,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 485.25,
     "minRank": 18994,
-    "quota": 130
+    "quota": 130,
+    "minScore2025": 485.25,
+    "minRank2025": 18994,
+    "quota2025": 130
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -2565,7 +3978,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 484.94,
     "minRank": 19192,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 484.94,
+    "minRank2025": 19192,
+    "quota2025": 80,
+    "minScore2026": 466.25,
+    "minRank2026": 48345,
+    "quota2026": 85
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -2574,7 +3993,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 484.94,
     "minRank": 19192,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 484.94,
+    "minRank2025": 19192,
+    "quota2025": 80,
+    "minScore2026": 479.21,
+    "minRank2026": 36633,
+    "quota2026": 80
   },
   {
     "university": "İSTANBUL YENİ YÜZYIL ÜNİVERSİTESİ",
@@ -2583,7 +4008,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 484.91,
     "minRank": 19210,
-    "quota": 16
+    "quota": 16,
+    "minScore2025": 484.91,
+    "minRank2025": 19210,
+    "quota2025": 16
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -2592,7 +4020,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 484.91,
     "minRank": 19211,
-    "quota": 15
+    "quota": 15,
+    "minScore2025": 484.91,
+    "minRank2025": 19211,
+    "quota2025": 15
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -2601,7 +4032,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 484.91,
     "minRank": 19211,
-    "quota": 14
+    "quota": 14,
+    "minScore2025": 484.91,
+    "minRank2025": 19211,
+    "quota2025": 14,
+    "minScore2026": 496.07,
+    "minRank2026": 22646,
+    "quota2026": 14
   },
   {
     "university": "AFYONKARAHİSAR SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -2610,7 +4047,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 484.91,
     "minRank": 19216,
-    "quota": 205
+    "quota": 205,
+    "minScore2025": 484.91,
+    "minRank2025": 19216,
+    "quota2025": 205
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -2619,7 +4059,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 484.84,
     "minRank": 19260,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 484.84,
+    "minRank2025": 19260,
+    "quota2025": 80,
+    "minScore2026": 488.15,
+    "minRank2026": 29015,
+    "quota2026": 80
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -2628,7 +4074,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 484.62,
     "minRank": 19418,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 484.62,
+    "minRank2025": 19418,
+    "quota2025": 60,
+    "minScore2026": 497.22,
+    "minRank2026": 21704,
+    "quota2026": 60
   },
   {
     "university": "SAKARYA ÜNİVERSİTESİ",
@@ -2637,7 +4089,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 494.6,
     "minRank": 19500,
-    "quota": 205
+    "quota": 205,
+    "minScore2025": 494.6,
+    "minRank2025": 19500,
+    "quota2025": 205,
+    "minScore2026": 508.04,
+    "minRank2026": 14160,
+    "quota2026": 170
   },
   {
     "university": "TRABZON ÜNİVERSİTESİ",
@@ -2646,7 +4104,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 484.36,
     "minRank": 19571,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 484.36,
+    "minRank2025": 19571,
+    "quota2025": 60
   },
   {
     "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
@@ -2655,7 +4116,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 484.16,
     "minRank": 19704,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 484.16,
+    "minRank2025": 19704,
+    "quota2025": 55
   },
   {
     "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
@@ -2664,7 +4128,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 484.16,
     "minRank": 19704,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 484.16,
+    "minRank2025": 19704,
+    "quota2025": 55,
+    "minScore2026": 470.84,
+    "minRank2026": 44179,
+    "quota2026": 10
   },
   {
     "university": "DÜZCE ÜNİVERSİTESİ",
@@ -2673,7 +4143,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 484,
     "minRank": 19814,
-    "quota": 140
+    "quota": 140,
+    "minScore2025": 484,
+    "minRank2025": 19814,
+    "quota2025": 140
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -2682,7 +4155,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 483.77,
     "minRank": 19937,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 483.77,
+    "minRank2025": 19937,
+    "quota2025": 40
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -2691,7 +4167,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 483.77,
     "minRank": 19937,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 483.77,
+    "minRank2025": 19937,
+    "quota2025": 40,
+    "minScore2026": 491.85,
+    "minRank2026": 25905,
+    "quota2026": 40
   },
   {
     "university": "İSTANBUL AREL ÜNİVERSİTESİ",
@@ -2700,7 +4182,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 483.74,
     "minRank": 19954,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 483.74,
+    "minRank2025": 19954,
+    "quota2025": 6
   },
   {
     "university": "GAZİANTEP ÜNİVERSİTESİ",
@@ -2709,7 +4194,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 483.53,
     "minRank": 20088,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 483.53,
+    "minRank2025": 20088,
+    "quota2025": 60
   },
   {
     "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
@@ -2718,7 +4206,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 483.39,
     "minRank": 20174,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 483.39,
+    "minRank2025": 20174,
+    "quota2025": 50,
+    "minScore2026": 469.28,
+    "minRank2026": 45539,
+    "quota2026": 10
   },
   {
     "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
@@ -2727,7 +4221,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 483.22,
     "minRank": 20269,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 483.22,
+    "minRank2025": 20269,
+    "quota2025": 7,
+    "minScore2026": 496.79,
+    "minRank2026": 22047,
+    "quota2026": 7
   },
   {
     "university": "KÜTAHYA SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -2736,7 +4236,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 483.03,
     "minRank": 20380,
-    "quota": 165
+    "quota": 165,
+    "minScore2025": 483.03,
+    "minRank2025": 20380,
+    "quota2025": 165
   },
   {
     "university": "ZONGULDAK BÜLENT ECEVİT ÜNİVERSİTESİ",
@@ -2745,7 +4248,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 482.83,
     "minRank": 20489,
-    "quota": 170
+    "quota": 170,
+    "minScore2025": 482.83,
+    "minRank2025": 20489,
+    "quota2025": 170
   },
   {
     "university": "FIRAT ÜNİVERSİTESİ",
@@ -2754,7 +4260,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 482.79,
     "minRank": 20515,
-    "quota": 210
+    "quota": 210,
+    "minScore2025": 482.79,
+    "minRank2025": 20515,
+    "quota2025": 210
   },
   {
     "university": "ORDU ÜNİVERSİTESİ",
@@ -2763,7 +4272,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 482.52,
     "minRank": 20695,
-    "quota": 125
+    "quota": 125,
+    "minScore2025": 482.52,
+    "minRank2025": 20695,
+    "quota2025": 125
   },
   {
     "university": "UŞAK ÜNİVERSİTESİ",
@@ -2772,7 +4284,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 481.69,
     "minRank": 21199,
-    "quota": 125
+    "quota": 125,
+    "minScore2025": 481.69,
+    "minRank2025": 21199,
+    "quota2025": 125
   },
   {
     "university": "ATATÜRK ÜNİVERSİTESİ",
@@ -2781,7 +4296,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 481.27,
     "minRank": 21464,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 481.27,
+    "minRank2025": 21464,
+    "quota2025": 40
   },
   {
     "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
@@ -2790,7 +4308,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 494.5,
     "minRank": 21500,
-    "quota": 14
+    "quota": 14,
+    "minScore2025": 494.5,
+    "minRank2025": 21500,
+    "quota2025": 14
   },
   {
     "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -2799,7 +4320,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 492.3,
     "minRank": 21500,
-    "quota": 246
+    "quota": 246,
+    "minScore2025": 492.3,
+    "minRank2025": 21500,
+    "quota2025": 246,
+    "minScore2026": 510.7,
+    "minRank2026": 12455,
+    "quota2026": 120
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -2808,7 +4335,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 481.03,
     "minRank": 21622,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 481.03,
+    "minRank2025": 21622,
+    "quota2025": 50
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -2817,7 +4347,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 481.03,
     "minRank": 21622,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 481.03,
+    "minRank2025": 21622,
+    "quota2025": 40,
+    "minScore2026": 492.29,
+    "minRank2026": 25567,
+    "quota2026": 40
   },
   {
     "university": "İZMİR DEMOKRASİ ÜNİVERSİTESİ",
@@ -2826,7 +4362,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 481.01,
     "minRank": 21636,
-    "quota": 90
+    "quota": 90,
+    "minScore2025": 481.01,
+    "minRank2025": 21636,
+    "quota2025": 90
   },
   {
     "university": "İSTANBUL BEYKENT ÜNİVERSİTESİ",
@@ -2835,7 +4374,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 480.9,
     "minRank": 21716,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 480.9,
+    "minRank2025": 21716,
+    "quota2025": 8
   },
   {
     "university": "AMASYA ÜNİVERSİTESİ",
@@ -2844,7 +4386,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 480.83,
     "minRank": 21751,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 480.83,
+    "minRank2025": 21751,
+    "quota2025": 80
   },
   {
     "university": "KIRKLARELİ ÜNİVERSİTESİ",
@@ -2853,7 +4398,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 480.83,
     "minRank": 21757,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 480.83,
+    "minRank2025": 21757,
+    "quota2025": 50
   },
   {
     "university": "BİLECİK ŞEYH EDEBALİ ÜNİVERSİTESİ",
@@ -2862,7 +4410,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 480.64,
     "minRank": 21876,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 480.64,
+    "minRank2025": 21876,
+    "quota2025": 70
   },
   {
     "university": "İNÖNÜ ÜNİVERSİTESİ",
@@ -2871,7 +4422,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 480.61,
     "minRank": 21897,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 480.61,
+    "minRank2025": 21897,
+    "quota2025": 70
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -2880,7 +4434,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 480.6,
     "minRank": 21906,
-    "quota": 18
+    "quota": 18,
+    "minScore2025": 480.6,
+    "minRank2025": 21906,
+    "quota2025": 18,
+    "minScore2026": 490.73,
+    "minRank2026": 26817,
+    "quota2026": 18
   },
   {
     "university": "HALİÇ ÜNİVERSİTESİ",
@@ -2889,7 +4449,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 480.54,
     "minRank": 21942,
-    "quota": 15
+    "quota": 15,
+    "minScore2025": 480.54,
+    "minRank2025": 21942,
+    "quota2025": 15
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -2898,7 +4461,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 480.46,
     "minRank": 21993,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 480.46,
+    "minRank2025": 21993,
+    "quota2025": 65,
+    "minScore2026": 491.26,
+    "minRank2026": 26401,
+    "quota2026": 65
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -2907,7 +4476,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 497.1,
     "minRank": 22000,
-    "quota": 110
+    "quota": 110,
+    "minScore2025": 497.1,
+    "minRank2025": 22000,
+    "quota2025": 110
   },
   {
     "university": "NİĞDE ÖMER HALİSDEMİR ÜNİVERSİTESİ",
@@ -2916,7 +4488,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 480.44,
     "minRank": 22005,
-    "quota": 115
+    "quota": 115,
+    "minScore2025": 480.44,
+    "minRank2025": 22005,
+    "quota2025": 115
   },
   {
     "university": "HALİÇ ÜNİVERSİTESİ",
@@ -2925,7 +4500,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 480.27,
     "minRank": 22118,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 480.27,
+    "minRank2025": 22118,
+    "quota2025": 5
   },
   {
     "university": "İSTANBUL NİŞANTAŞI ÜNİVERSİTESİ",
@@ -2934,7 +4512,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 480.07,
     "minRank": 22248,
-    "quota": 13
+    "quota": 13,
+    "minScore2025": 480.07,
+    "minRank2025": 22248,
+    "quota2025": 13
   },
   {
     "university": "TÜRK-JAPON BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -2943,7 +4524,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 496.5,
     "minRank": 22288,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 496.5,
+    "minRank2025": 22288,
+    "quota2025": 20,
+    "minScore2026": 496.5,
+    "minRank2026": 22288,
+    "quota2026": 20
   },
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
@@ -2952,7 +4539,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 480,
     "minRank": 22294,
-    "quota": 95
+    "quota": 95,
+    "minScore2025": 480,
+    "minRank2025": 22294,
+    "quota2025": 95
   },
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
@@ -2961,7 +4551,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 480,
     "minRank": 22294,
-    "quota": 95
+    "quota": 95,
+    "minScore2025": 480,
+    "minRank2025": 22294,
+    "quota2025": 95,
+    "minScore2026": 481.16,
+    "minRank2026": 34900,
+    "quota2026": 95
   },
   {
     "university": "HATAY MUSTAFA KEMAL ÜNİVERSİTESİ",
@@ -2970,7 +4566,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 479.58,
     "minRank": 22561,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 479.58,
+    "minRank2025": 22561,
+    "quota2025": 100,
+    "minScore2026": 499.83,
+    "minRank2026": 19806,
+    "quota2026": 100
   },
   {
     "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
@@ -2979,7 +4581,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 491.4,
     "minRank": 22600,
-    "quota": 164
+    "quota": 164,
+    "minScore2025": 491.4,
+    "minRank2025": 22600,
+    "quota2025": 164,
+    "minScore2026": 507.4,
+    "minRank2026": 14582,
+    "quota2026": 150
   },
   {
     "university": "KARAMANOĞLU MEHMETBEY ÜNİVERSİTESİ",
@@ -2988,7 +4596,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 479.43,
     "minRank": 22666,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 479.43,
+    "minRank2025": 22666,
+    "quota2025": 60
   },
   {
     "university": "AKSARAY ÜNİVERSİTESİ",
@@ -2997,7 +4608,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 479.43,
     "minRank": 22669,
-    "quota": 110
+    "quota": 110,
+    "minScore2025": 479.43,
+    "minRank2025": 22669,
+    "quota2025": 110,
+    "minScore2026": 499.77,
+    "minRank2026": 19856,
+    "quota2026": 110
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -3006,7 +4623,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 479.08,
     "minRank": 22884,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 479.08,
+    "minRank2025": 22884,
+    "quota2025": 25,
+    "minScore2026": 479.11,
+    "minRank2026": 36734,
+    "quota2026": 25
   },
   {
     "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
@@ -3015,7 +4638,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 479.04,
     "minRank": 22916,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 479.04,
+    "minRank2025": 22916,
+    "quota2025": 30,
+    "minScore2026": 496.97,
+    "minRank2026": 21903,
+    "quota2026": 30
   },
   {
     "university": "GAZİANTEP İSLAM BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -3024,7 +4653,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 478.68,
     "minRank": 23162,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 478.68,
+    "minRank2025": 23162,
+    "quota2025": 70,
+    "minScore2026": 499.75,
+    "minRank2026": 19870,
+    "quota2026": 70
   },
   {
     "university": "KAHRAMANMARAŞ SÜTÇÜ İMAM ÜNİVERSİTESİ",
@@ -3033,7 +4668,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 478.66,
     "minRank": 23175,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 478.66,
+    "minRank2025": 23175,
+    "quota2025": 100,
+    "minScore2026": 499.9,
+    "minRank2026": 19740,
+    "quota2026": 100
   },
   {
     "university": "BEZM-İ ÂLEM VAKIF ÜNİVERSİTESİ",
@@ -3042,7 +4683,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 478.55,
     "minRank": 23252,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 478.55,
+    "minRank2025": 23252,
+    "quota2025": 12,
+    "minScore2026": 493.04,
+    "minRank2026": 24966,
+    "quota2026": 12
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -3051,7 +4698,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 495.24,
     "minRank": 23269,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 495.24,
+    "minRank2025": 23269,
+    "quota2025": 40,
+    "minScore2026": 495.24,
+    "minRank2026": 23269,
+    "quota2026": 40
   },
   {
     "university": "KIRŞEHİR AHİ EVRAN ÜNİVERSİTESİ",
@@ -3060,7 +4713,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 478.48,
     "minRank": 23301,
-    "quota": 140
+    "quota": 140,
+    "minScore2025": 478.48,
+    "minRank2025": 23301,
+    "quota2025": 140,
+    "minScore2026": 499.36,
+    "minRank2026": 20159,
+    "quota2026": 140
   },
   {
     "university": "ESKİŞEHİR TEKNİK ÜNİVERSİTESİ",
@@ -3069,7 +4728,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 478.23,
     "minRank": 23441,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 478.23,
+    "minRank2025": 23441,
+    "quota2025": 20,
+    "minScore2026": 497.04,
+    "minRank2026": 21849,
+    "quota2026": 20
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -3078,7 +4743,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 494.8,
     "minRank": 23500,
-    "quota": 150
+    "quota": 150,
+    "minScore2025": 494.8,
+    "minRank2025": 23500,
+    "quota2025": 150
   },
   {
     "university": "MALATYA TURGUT ÖZAL ÜNİVERSİTESİ",
@@ -3087,7 +4755,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 477.94,
     "minRank": 23636,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 477.94,
+    "minRank2025": 23636,
+    "quota2025": 100,
+    "minScore2026": 498.96,
+    "minRank2026": 20433,
+    "quota2026": 100
   },
   {
     "university": "HARRAN ÜNİVERSİTESİ",
@@ -3096,7 +4770,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 477.84,
     "minRank": 23716,
-    "quota": 140
+    "quota": 140,
+    "minScore2025": 477.84,
+    "minRank2025": 23716,
+    "quota2025": 140,
+    "minScore2026": 498.78,
+    "minRank2026": 20553,
+    "quota2026": 140
   },
   {
     "university": "RECEP TAYYİP ERDOĞAN ÜNİVERSİTESİ",
@@ -3105,7 +4785,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 477.75,
     "minRank": 23795,
-    "quota": 150
+    "quota": 150,
+    "minScore2025": 477.75,
+    "minRank2025": 23795,
+    "quota2025": 150,
+    "minScore2026": 499.08,
+    "minRank2026": 20352,
+    "quota2026": 150
   },
   {
     "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -3114,7 +4800,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 477.69,
     "minRank": 23836,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 477.69,
+    "minRank2025": 23836,
+    "quota2025": 10,
+    "minScore2026": 491.75,
+    "minRank2026": 25985,
+    "quota2026": 10
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -3123,7 +4815,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 477.66,
     "minRank": 23852,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 477.66,
+    "minRank2025": 23852,
+    "quota2025": 50,
+    "minScore2026": 492.31,
+    "minRank2026": 25560,
+    "quota2026": 50
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -3132,7 +4830,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 477.66,
     "minRank": 23855,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 477.66,
+    "minRank2025": 23855,
+    "quota2025": 12,
+    "minScore2026": 487.52,
+    "minRank2026": 29536,
+    "quota2026": 12
   },
   {
     "university": "AYDIN ADNAN MENDERES ÜNİVERSİTESİ",
@@ -3141,7 +4845,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 490.1,
     "minRank": 23900,
-    "quota": 236
+    "quota": 236,
+    "minScore2025": 490.1,
+    "minRank2025": 23900,
+    "quota2025": 236,
+    "minScore2026": 508.9,
+    "minRank2026": 13581,
+    "quota2026": 230
   },
   {
     "university": "TED ÜNİVERSİTESİ",
@@ -3150,7 +4860,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 477.46,
     "minRank": 23985,
-    "quota": 11
+    "quota": 11,
+    "minScore2025": 477.46,
+    "minRank2025": 23985,
+    "quota2025": 11,
+    "minScore2026": 484.66,
+    "minRank2026": 31910,
+    "quota2026": 11
   },
   {
     "university": "GİRESUN ÜNİVERSİTESİ",
@@ -3159,7 +4875,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 477.34,
     "minRank": 24066,
-    "quota": 140
+    "quota": 140,
+    "minScore2025": 477.34,
+    "minRank2025": 24066,
+    "quota2025": 140,
+    "minScore2026": 498.53,
+    "minRank2026": 20747,
+    "quota2026": 140
   },
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -3168,7 +4890,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 477.3,
     "minRank": 24094,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 477.3,
+    "minRank2025": 24094,
+    "quota2025": 55,
+    "minScore2026": 488.15,
+    "minRank2026": 29020,
+    "quota2026": 55
   },
   {
     "university": "HİTİT ÜNİVERSİTESİ",
@@ -3177,7 +4905,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 477.15,
     "minRank": 24188,
-    "quota": 120
+    "quota": 120,
+    "minScore2025": 477.15,
+    "minRank2025": 24188,
+    "quota2025": 120,
+    "minScore2026": 498.15,
+    "minRank2026": 20998,
+    "quota2026": 120
   },
   {
     "university": "MARDİN ARTUKLU ÜNİVERSİTESİ",
@@ -3186,7 +4920,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 477.05,
     "minRank": 24261,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 477.05,
+    "minRank2025": 24261,
+    "quota2025": 60,
+    "minScore2026": 498.39,
+    "minRank2026": 20844,
+    "quota2026": 60
   },
   {
     "university": "SİİRT ÜNİVERSİTESİ",
@@ -3195,7 +4935,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 476.99,
     "minRank": 24302,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 476.99,
+    "minRank2025": 24302,
+    "quota2025": 40,
+    "minScore2026": 497.93,
+    "minRank2026": 21153,
+    "quota2026": 40
   },
   {
     "university": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -3204,7 +4950,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 476.89,
     "minRank": 24378,
-    "quota": 19
+    "quota": 19,
+    "minScore2025": 476.89,
+    "minRank2025": 24378,
+    "quota2025": 19,
+    "minScore2026": 472.44,
+    "minRank2026": 42670,
+    "quota2026": 19
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -3213,7 +4965,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 476.85,
     "minRank": 24412,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 476.85,
+    "minRank2025": 24412,
+    "quota2025": 100,
+    "minScore2026": 492.87,
+    "minRank2026": 25095,
+    "quota2026": 100
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -3222,7 +4980,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 493.5,
     "minRank": 24500,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 493.5,
+    "minRank2025": 24500,
+    "quota2025": 100
   },
   {
     "university": "YOZGAT BOZOK ÜNİVERSİTESİ",
@@ -3231,7 +4992,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 476.47,
     "minRank": 24709,
-    "quota": 120
+    "quota": 120,
+    "minScore2025": 476.47,
+    "minRank2025": 24709,
+    "quota2025": 120,
+    "minScore2026": 497.81,
+    "minRank2026": 21251,
+    "quota2026": 120
   },
   {
     "university": "GAZİANTEP ÜNİVERSİTESİ",
@@ -3240,7 +5007,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 489.1,
     "minRank": 24800,
-    "quota": 256
+    "quota": 256,
+    "minScore2025": 489.1,
+    "minRank2025": 24800,
+    "quota2025": 256,
+    "minScore2026": 508.55,
+    "minRank2026": 13806,
+    "quota2026": 170
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -3249,7 +5022,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 476.22,
     "minRank": 24907,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 476.22,
+    "minRank2025": 24907,
+    "quota2025": 27,
+    "minScore2026": 493.62,
+    "minRank2026": 24508,
+    "quota2026": 27
   },
   {
     "university": "ADIYAMAN ÜNİVERSİTESİ",
@@ -3258,7 +5037,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 476.21,
     "minRank": 24911,
-    "quota": 90
+    "quota": 90,
+    "minScore2025": 476.21,
+    "minRank2025": 24911,
+    "quota2025": 90,
+    "minScore2026": 497.83,
+    "minRank2026": 21229,
+    "quota2026": 90
   },
   {
     "university": "KARABÜK ÜNİVERSİTESİ",
@@ -3267,7 +5052,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 476.16,
     "minRank": 24950,
-    "quota": 130
+    "quota": 130,
+    "minScore2025": 476.16,
+    "minRank2025": 24950,
+    "quota2025": 130,
+    "minScore2026": 497.74,
+    "minRank2026": 21291,
+    "quota2026": 130
   },
   {
     "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
@@ -3276,7 +5067,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 475.9,
     "minRank": 25128,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 475.9,
+    "minRank2025": 25128,
+    "quota2025": 55,
+    "minScore2026": 461.77,
+    "minRank2026": 52603,
+    "quota2026": 10
   },
   {
     "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -3285,7 +5082,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 475.8,
     "minRank": 25188,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 475.8,
+    "minRank2025": 25188,
+    "quota2025": 12,
+    "minScore2026": 490.01,
+    "minRank2026": 27396,
+    "quota2026": 12
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -3294,7 +5097,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 475.66,
     "minRank": 25286,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 475.66,
+    "minRank2025": 25286,
+    "quota2025": 35,
+    "minScore2026": 479.07,
+    "minRank2026": 36765,
+    "quota2026": 35
   },
   {
     "university": "BALIKESİR ÜNİVERSİTESİ",
@@ -3303,7 +5112,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 488.7,
     "minRank": 25400,
-    "quota": 185
+    "quota": 185,
+    "minScore2025": 488.7,
+    "minRank2025": 25400,
+    "quota2025": 185
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -3312,7 +5124,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 475.44,
     "minRank": 25444,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 475.44,
+    "minRank2025": 25444,
+    "quota2025": 7,
+    "minScore2026": 490.33,
+    "minRank2026": 27134,
+    "quota2026": 7
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -3321,7 +5139,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 475.42,
     "minRank": 25461,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 475.42,
+    "minRank2025": 25461,
+    "quota2025": 10,
+    "minScore2026": 471.51,
+    "minRank2026": 43559,
+    "quota2026": 10
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -3330,7 +5154,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 492.2,
     "minRank": 25500,
-    "quota": 150
+    "quota": 150,
+    "minScore2025": 492.2,
+    "minRank2025": 25500,
+    "quota2025": 150,
+    "minScore2026": 494.33,
+    "minRank2026": 23988,
+    "quota2026": 108
   },
   {
     "university": "AĞRI İBRAHİM ÇEÇEN ÜNİVERSİTESİ",
@@ -3339,7 +5169,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 475.37,
     "minRank": 25500,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 475.37,
+    "minRank2025": 25500,
+    "quota2025": 60,
+    "minScore2026": 497.25,
+    "minRank2026": 21679,
+    "quota2026": 60
   },
   {
     "university": "TÜRK-JAPON BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -3348,7 +5184,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 492.19,
     "minRank": 25642,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 492.19,
+    "minRank2025": 25642,
+    "quota2025": 20,
+    "minScore2026": 492.19,
+    "minRank2026": 25642,
+    "quota2026": 20
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -3357,7 +5199,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 475.04,
     "minRank": 25740,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 475.04,
+    "minRank2025": 25740,
+    "quota2025": 7,
+    "minScore2026": 488.76,
+    "minRank2026": 28450,
+    "quota2026": 7
   },
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -3366,7 +5214,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 474.88,
     "minRank": 25843,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 474.88,
+    "minRank2025": 25843,
+    "quota2025": 55,
+    "minScore2026": 486.41,
+    "minRank2026": 30445,
+    "quota2026": 55
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -3375,7 +5229,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 474.73,
     "minRank": 25955,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 474.73,
+    "minRank2025": 25955,
+    "quota2025": 35,
+    "minScore2026": 485.62,
+    "minRank2026": 31111,
+    "quota2026": 35
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -3384,7 +5244,28 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 491.5,
     "minRank": 26000,
-    "quota": 130
+    "quota": 130,
+    "minScore2025": 491.5,
+    "minRank2025": 26000,
+    "quota2025": 130,
+    "minScore2026": 494.78,
+    "minRank2026": 23632,
+    "quota2026": 90
+  },
+  {
+    "university": "ANKARA ��NİVERSİTESİ",
+    "program": "Diş Hekimliği",
+    "city": "Ankara",
+    "field": "SAY",
+    "minScore": 491.55,
+    "minRank": 26152,
+    "quota": 110,
+    "minScore2026": 491.55,
+    "minRank2026": 26152,
+    "quota2026": 110,
+    "minScore2025": 481.02,
+    "minRank2025": 21629,
+    "quota2025": 110
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -3393,7 +5274,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 474.41,
     "minRank": 26185,
-    "quota": 72
+    "quota": 72,
+    "minScore2025": 474.41,
+    "minRank2025": 26185,
+    "quota2025": 72,
+    "minScore2026": 491.52,
+    "minRank2026": 26174,
+    "quota2026": 72
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -3402,7 +5289,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 474.18,
     "minRank": 26348,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 474.18,
+    "minRank2025": 26348,
+    "quota2025": 4,
+    "minScore2026": 488.89,
+    "minRank2026": 28338,
+    "quota2026": 4
   },
   {
     "university": "ANKARA MEDİPOL ÜNİVERSİTESİ",
@@ -3411,7 +5304,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 474.11,
     "minRank": 26384,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 474.11,
+    "minRank2025": 26384,
+    "quota2025": 10,
+    "minScore2026": 490.41,
+    "minRank2026": 27074,
+    "quota2026": 10
   },
   {
     "university": "İNÖNÜ ÜNİVERSİTESİ",
@@ -3420,7 +5319,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 487.6,
     "minRank": 26500,
-    "quota": 256
+    "quota": 256,
+    "minScore2025": 487.6,
+    "minRank2025": 26500,
+    "quota2025": 256
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -3429,7 +5331,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 473.79,
     "minRank": 26634,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 473.79,
+    "minRank2025": 26634,
+    "quota2025": 45,
+    "minScore2026": 480.78,
+    "minRank2026": 35237,
+    "quota2026": 45
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -3438,7 +5346,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 473.73,
     "minRank": 26683,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 473.73,
+    "minRank2025": 26683,
+    "quota2025": 3,
+    "minScore2026": 496.43,
+    "minRank2026": 22342,
+    "quota2026": 3
   },
   {
     "university": "YAŞAR ÜNİVERSİTESİ",
@@ -3447,7 +5361,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 486.2,
     "minRank": 26800,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 486.2,
+    "minRank2025": 26800,
+    "quota2025": 12
   },
   {
     "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
@@ -3456,7 +5373,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 473.4,
     "minRank": 26870,
-    "quota": 63
+    "quota": 63,
+    "minScore2025": 473.4,
+    "minRank2025": 26870,
+    "quota2025": 63,
+    "minScore2026": 491.74,
+    "minRank2026": 25989,
+    "quota2026": 63
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -3465,7 +5388,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 490.1,
     "minRank": 27000,
-    "quota": 140
+    "quota": 140,
+    "minScore2025": 490.1,
+    "minRank2025": 27000,
+    "quota2025": 140
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -3474,7 +5400,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 472.91,
     "minRank": 27259,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 472.91,
+    "minRank2025": 27259,
+    "quota2025": 8,
+    "minScore2026": 487.91,
+    "minRank2026": 29235,
+    "quota2026": 8
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -3483,7 +5415,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 472.88,
     "minRank": 27282,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 472.88,
+    "minRank2025": 27282,
+    "quota2025": 5,
+    "minScore2026": 488.95,
+    "minRank2026": 28293,
+    "quota2026": 5
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -3492,7 +5430,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 472.75,
     "minRank": 27384,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 472.75,
+    "minRank2025": 27384,
+    "quota2025": 54,
+    "minScore2026": 490.68,
+    "minRank2026": 26864,
+    "quota2026": 54
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -3501,7 +5445,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 472.6,
     "minRank": 27485,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 472.6,
+    "minRank2025": 27485,
+    "quota2025": 54,
+    "minScore2026": 489.68,
+    "minRank2026": 27692,
+    "quota2026": 54
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -3510,7 +5460,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 472.54,
     "minRank": 27538,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 472.54,
+    "minRank2025": 27538,
+    "quota2025": 10,
+    "minScore2026": 495.75,
+    "minRank2026": 22876,
+    "quota2026": 10
   },
   {
     "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
@@ -3519,7 +5475,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 472.26,
     "minRank": 27709,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 472.26,
+    "minRank2025": 27709,
+    "quota2025": 36,
+    "minScore2026": 490.84,
+    "minRank2026": 26746,
+    "quota2026": 36
   },
   {
     "university": "LOKMAN HEKİM ÜNİVERSİTESİ",
@@ -3528,7 +5490,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 471.95,
     "minRank": 27930,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 471.95,
+    "minRank2025": 27930,
+    "quota2025": 6,
+    "minScore2026": 488.7,
+    "minRank2026": 28512,
+    "quota2026": 6
   },
   {
     "university": "TÜRK HAVA KURUMU ÜNİVERSİTESİ",
@@ -3537,7 +5505,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 471.85,
     "minRank": 28003,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 471.85,
+    "minRank2025": 28003,
+    "quota2025": 8,
+    "minScore2026": 486.05,
+    "minRank2026": 30763,
+    "quota2026": 8
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -3546,7 +5520,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 471.79,
     "minRank": 28040,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 471.79,
+    "minRank2025": 28040,
+    "quota2025": 45,
+    "minScore2026": 483.9,
+    "minRank2026": 32590,
+    "quota2026": 45
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -3555,7 +5535,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 471.61,
     "minRank": 28195,
-    "quota": 13
+    "quota": 13,
+    "minScore2025": 471.61,
+    "minRank2025": 28195,
+    "quota2025": 13,
+    "minScore2026": 494.94,
+    "minRank2026": 23508,
+    "quota2026": 13
   },
   {
     "university": "GALATASARAY ÜNİVERSİTESİ",
@@ -3564,7 +5550,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 471.58,
     "minRank": 28217,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 471.58,
+    "minRank2025": 28217,
+    "quota2025": 25,
+    "minScore2026": 485.38,
+    "minRank2026": 31317,
+    "quota2026": 25
   },
   {
     "university": "ANKARA MEDİPOL ÜNİVERSİTESİ",
@@ -3573,7 +5565,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 471.49,
     "minRank": 28292,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 471.49,
+    "minRank2025": 28292,
+    "quota2025": 10,
+    "minScore2026": 488.28,
+    "minRank2026": 28898,
+    "quota2026": 10
   },
   {
     "university": "BİRUNİ ÜNİVERSİTESİ",
@@ -3582,7 +5580,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 471.45,
     "minRank": 28323,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 471.45,
+    "minRank2025": 28323,
+    "quota2025": 10,
+    "minScore2026": 489.32,
+    "minRank2026": 27999,
+    "quota2026": 10
   },
   {
     "university": "BİRUNİ ÜNİVERSİTESİ",
@@ -3591,7 +5595,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 471.41,
     "minRank": 28350,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 471.41,
+    "minRank2025": 28350,
+    "quota2025": 8,
+    "minScore2026": 485.99,
+    "minRank2026": 30810,
+    "quota2026": 8
   },
   {
     "university": "SİVAS CUMHURİYET ÜNİVERSİTESİ",
@@ -3600,7 +5610,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 485.9,
     "minRank": 28400,
-    "quota": 236
+    "quota": 236,
+    "minScore2025": 485.9,
+    "minRank2025": 28400,
+    "quota2025": 236
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -3609,7 +5622,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 471.09,
     "minRank": 28588,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 471.09,
+    "minRank2025": 28588,
+    "quota2025": 85,
+    "minScore2026": 485.63,
+    "minRank2026": 31107,
+    "quota2026": 85
   },
   {
     "university": "LOKMAN HEKİM ÜNİVERSİTESİ",
@@ -3618,7 +5637,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 471.01,
     "minRank": 28652,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 471.01,
+    "minRank2025": 28652,
+    "quota2025": 4,
+    "minScore2026": 487.27,
+    "minRank2026": 29740,
+    "quota2026": 4
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -3627,7 +5652,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 471.01,
     "minRank": 28653,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 471.01,
+    "minRank2025": 28653,
+    "quota2025": 36,
+    "minScore2026": 488.53,
+    "minRank2026": 28662,
+    "quota2026": 36
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -3636,7 +5667,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 470.97,
     "minRank": 28682,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 470.97,
+    "minRank2025": 28682,
+    "quota2025": 8
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -3645,7 +5679,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 470.97,
     "minRank": 28682,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 470.97,
+    "minRank2025": 28682,
+    "quota2025": 8,
+    "minScore2026": 480.69,
+    "minRank2026": 35315,
+    "quota2026": 8
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -3654,7 +5694,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 470.94,
     "minRank": 28698,
-    "quota": 1
+    "quota": 1,
+    "minScore2025": 470.94,
+    "minRank2025": 28698,
+    "quota2025": 1,
+    "minScore2026": 495.06,
+    "minRank2026": 23420,
+    "quota2026": 1
   },
   {
     "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -3663,7 +5709,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 470.76,
     "minRank": 28826,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 470.76,
+    "minRank2025": 28826,
+    "quota2025": 6,
+    "minScore2026": 491.47,
+    "minRank2026": 26215,
+    "quota2026": 6
   },
   {
     "university": "İZMİR TINAZTEPE ÜNİVERSİTESİ",
@@ -3672,7 +5724,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 470.71,
     "minRank": 28870,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 470.71,
+    "minRank2025": 28870,
+    "quota2025": 5,
+    "minScore2026": 484.37,
+    "minRank2026": 32182,
+    "quota2026": 5
   },
   {
     "university": "İSTİNYE ÜNİVERSİTESİ",
@@ -3681,7 +5739,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 470.63,
     "minRank": 28918,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 470.63,
+    "minRank2025": 28918,
+    "quota2025": 5,
+    "minScore2026": 488.42,
+    "minRank2026": 28778,
+    "quota2026": 5
   },
   {
     "university": "MERSİN ÜNİVERSİTESİ",
@@ -3690,7 +5754,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 470.61,
     "minRank": 28938,
-    "quota": 59
+    "quota": 59,
+    "minScore2025": 470.61,
+    "minRank2025": 28938,
+    "quota2025": 59,
+    "minScore2026": 489.28,
+    "minRank2026": 28033,
+    "quota2026": 59
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -3699,7 +5769,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 470.15,
     "minRank": 29301,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 470.15,
+    "minRank2025": 29301,
+    "quota2025": 60,
+    "minScore2026": 463.5,
+    "minRank2026": 50863,
+    "quota2026": 7
   },
   {
     "university": "TED ÜNİVERSİTESİ",
@@ -3708,7 +5784,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 470.07,
     "minRank": 29359,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 470.07,
+    "minRank2025": 29359,
+    "quota2025": 5
   },
   {
     "university": "TED ÜNİVERSİTESİ",
@@ -3717,7 +5796,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 470.07,
     "minRank": 29359,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 470.07,
+    "minRank2025": 29359,
+    "quota2025": 5,
+    "minScore2026": 463.59,
+    "minRank2026": 50763,
+    "quota2026": 5
   },
   {
     "university": "ÇANAKKALE ONSEKİZ MART ÜNİVERSİTESİ",
@@ -3726,7 +5811,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 470.05,
     "minRank": 29370,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 470.05,
+    "minRank2025": 29370,
+    "quota2025": 54,
+    "minScore2026": 487.73,
+    "minRank2026": 29385,
+    "quota2026": 54
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -3735,7 +5826,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 470.05,
     "minRank": 29371,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 470.05,
+    "minRank2025": 29371,
+    "quota2025": 50,
+    "minScore2026": 477.3,
+    "minRank2026": 38338,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -3744,7 +5841,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 470.03,
     "minRank": 29386,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 470.03,
+    "minRank2025": 29386,
+    "quota2025": 50,
+    "minScore2026": 484.82,
+    "minRank2026": 31773,
+    "quota2026": 50
   },
   {
     "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
@@ -3753,7 +5856,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.99,
     "minRank": 29416,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 469.99,
+    "minRank2025": 29416,
+    "quota2025": 36,
+    "minScore2026": 487.92,
+    "minRank2026": 29227,
+    "quota2026": 36
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -3762,7 +5871,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.89,
     "minRank": 29485,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 469.89,
+    "minRank2025": 29485,
+    "quota2025": 10,
+    "minScore2026": 480.48,
+    "minRank2026": 35499,
+    "quota2026": 10
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -3771,7 +5886,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.89,
     "minRank": 29487,
-    "quota": 120
+    "quota": 120,
+    "minScore2025": 469.89,
+    "minRank2025": 29487,
+    "quota2025": 120,
+    "minScore2026": 470.38,
+    "minRank2026": 44589,
+    "quota2026": 120
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -3780,7 +5901,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 486.8,
     "minRank": 29500,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 486.8,
+    "minRank2025": 29500,
+    "quota2025": 100,
+    "minScore2026": 493.15,
+    "minRank2026": 24882,
+    "quota2026": 54
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -3789,7 +5916,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.82,
     "minRank": 29530,
-    "quota": 14
+    "quota": 14,
+    "minScore2025": 469.82,
+    "minRank2025": 29530,
+    "quota2025": 14,
+    "minScore2026": 489.65,
+    "minRank2026": 27722,
+    "quota2026": 14
   },
   {
     "university": "DİCLE ÜNİVERSİTESİ",
@@ -3798,7 +5931,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 484.7,
     "minRank": 29800,
-    "quota": 246
+    "quota": 246,
+    "minScore2025": 484.7,
+    "minRank2025": 29800,
+    "quota2025": 246
   },
   {
     "university": "İSTİNYE ÜNİVERSİTESİ",
@@ -3807,7 +5943,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.5,
     "minRank": 29810,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 469.5,
+    "minRank2025": 29810,
+    "quota2025": 7,
+    "minScore2026": 487.12,
+    "minRank2026": 29865,
+    "quota2026": 7
   },
   {
     "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
@@ -3816,7 +5958,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.47,
     "minRank": 29827,
-    "quota": 11
+    "quota": 11,
+    "minScore2025": 469.47,
+    "minRank2025": 29827,
+    "quota2025": 11
   },
   {
     "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
@@ -3825,7 +5970,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.47,
     "minRank": 29827,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 469.47,
+    "minRank2025": 29827,
+    "quota2025": 10,
+    "minScore2026": 460.39,
+    "minRank2026": 53861,
+    "quota2026": 10
   },
   {
     "university": "SÜLEYMAN DEMİREL ÜNİVERSİTESİ",
@@ -3834,7 +5985,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.46,
     "minRank": 29843,
-    "quota": 63
+    "quota": 63,
+    "minScore2025": 469.46,
+    "minRank2025": 29843,
+    "quota2025": 63,
+    "minScore2026": 487.32,
+    "minRank2026": 29709,
+    "quota2026": 63
   },
   {
     "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -3843,7 +6000,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.39,
     "minRank": 29897,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 469.39,
+    "minRank2025": 29897,
+    "quota2025": 10
   },
   {
     "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -3852,7 +6012,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.39,
     "minRank": 29897,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 469.39,
+    "minRank2025": 29897,
+    "quota2025": 3,
+    "minScore2026": 481.2,
+    "minRank2026": 34861,
+    "quota2026": 3
   },
   {
     "university": "İSTANBUL MEDENİYET ÜNİVERSİTESİ",
@@ -3861,7 +6027,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.35,
     "minRank": 29925,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 469.35,
+    "minRank2025": 29925,
+    "quota2025": 54,
+    "minScore2026": 486.3,
+    "minRank2026": 30545,
+    "quota2026": 54
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -3870,7 +6042,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.31,
     "minRank": 29948,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 469.31,
+    "minRank2025": 29948,
+    "quota2025": 60,
+    "minScore2026": 489.68,
+    "minRank2026": 27694,
+    "quota2026": 60
   },
   {
     "university": "SAKARYA ÜNİVERSİTESİ",
@@ -3879,7 +6057,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.24,
     "minRank": 30014,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 469.24,
+    "minRank2025": 30014,
+    "quota2025": 36,
+    "minScore2026": 486.41,
+    "minRank2026": 30451,
+    "quota2026": 36
   },
   {
     "university": "AYDIN ADNAN MENDERES ÜNİVERSİTESİ",
@@ -3888,7 +6072,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.17,
     "minRank": 30058,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 469.17,
+    "minRank2025": 30058,
+    "quota2025": 54,
+    "minScore2026": 486.43,
+    "minRank2026": 30428,
+    "quota2026": 54
   },
   {
     "university": "TOKAT GAZİOSMANPAŞA ÜNİVERSİTESİ",
@@ -3897,7 +6087,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 484.4,
     "minRank": 30100,
-    "quota": 164
+    "quota": 164,
+    "minScore2025": 484.4,
+    "minRank2025": 30100,
+    "quota2025": 164,
+    "minScore2026": 499.56,
+    "minRank2026": 20012,
+    "quota2026": 150
   },
   {
     "university": "GAZİANTEP ÜNİVERSİTESİ",
@@ -3906,7 +6102,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.1,
     "minRank": 30117,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 469.1,
+    "minRank2025": 30117,
+    "quota2025": 45,
+    "minScore2026": 487.38,
+    "minRank2026": 29658,
+    "quota2026": 45
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -3915,7 +6117,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.05,
     "minRank": 30158,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 469.05,
+    "minRank2025": 30158,
+    "quota2025": 60,
+    "minScore2026": 484.86,
+    "minRank2026": 31740,
+    "quota2026": 60
   },
   {
     "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
@@ -3924,7 +6132,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.05,
     "minRank": 30160,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 469.05,
+    "minRank2025": 30160,
+    "quota2025": 45,
+    "minScore2026": 485.75,
+    "minRank2026": 31002,
+    "quota2026": 45
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -3933,7 +6147,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.01,
     "minRank": 30176,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 469.01,
+    "minRank2025": 30176,
+    "quota2025": 50,
+    "minScore2026": 486.76,
+    "minRank2026": 30169,
+    "quota2026": 50
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -3942,7 +6162,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 468.66,
     "minRank": 30427,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 468.66,
+    "minRank2025": 30427,
+    "quota2025": 55,
+    "minScore2026": 484.77,
+    "minRank2026": 31809,
+    "quota2026": 55
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -3951,7 +6177,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 468.62,
     "minRank": 30452,
-    "quota": 95
+    "quota": 95,
+    "minScore2025": 468.62,
+    "minRank2025": 30452,
+    "quota2025": 95,
+    "minScore2026": 403.54,
+    "minRank2026": 112582,
+    "quota2026": 25
   },
   {
     "university": "ACIBADEM MEHMET ALİ AYDINLAR ÜNİVERSİTESİ",
@@ -3960,7 +6192,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 468.55,
     "minRank": 30504,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 468.55,
+    "minRank2025": 30504,
+    "quota2025": 7,
+    "minScore2026": 490.88,
+    "minRank2026": 26717,
+    "quota2026": 7
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -3969,7 +6207,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 468.48,
     "minRank": 30563,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 468.48,
+    "minRank2025": 30563,
+    "quota2025": 12,
+    "minScore2026": 486,
+    "minRank2026": 30801,
+    "quota2026": 12
   },
   {
     "university": "NECMETTİN ERBAKAN ÜNİVERSİTESİ",
@@ -3978,7 +6222,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 468.4,
     "minRank": 30610,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 468.4,
+    "minRank2025": 30610,
+    "quota2025": 54,
+    "minScore2026": 486.74,
+    "minRank2026": 30184,
+    "quota2026": 54
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -3987,7 +6237,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 468.36,
     "minRank": 30632,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 468.36,
+    "minRank2025": 30632,
+    "quota2025": 30,
+    "minScore2026": 472.57,
+    "minRank2026": 42563,
+    "quota2026": 30
   },
   {
     "university": "İZMİR DEMOKRASİ ÜNİVERSİTESİ",
@@ -3996,7 +6252,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 467.96,
     "minRank": 30950,
-    "quota": 23
+    "quota": 23,
+    "minScore2025": 467.96,
+    "minRank2025": 30950,
+    "quota2025": 23,
+    "minScore2026": 486.13,
+    "minRank2026": 30693,
+    "quota2026": 23
   },
   {
     "university": "BOLU ABANT İZZET BAYSAL ÜNİVERSİTESİ",
@@ -4005,7 +6267,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 467.63,
     "minRank": 31172,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 467.63,
+    "minRank2025": 31172,
+    "quota2025": 54,
+    "minScore2026": 484.95,
+    "minRank2026": 31658,
+    "quota2026": 54
   },
   {
     "university": "VAN YÜZÜNCÜ YIL ÜNİVERSİTESİ",
@@ -4014,7 +6282,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 483.5,
     "minRank": 31200,
-    "quota": 185
+    "quota": 185,
+    "minScore2025": 483.5,
+    "minRank2025": 31200,
+    "quota2025": 185
   },
   {
     "university": "KIRIKKALE ÜNİVERSİTESİ",
@@ -4023,7 +6294,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 467.59,
     "minRank": 31212,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 467.59,
+    "minRank2025": 31212,
+    "quota2025": 45,
+    "minScore2026": 484.15,
+    "minRank2026": 32382,
+    "quota2026": 45
   },
   {
     "university": "ANTALYA BİLİM ÜNİVERSİTESİ",
@@ -4032,7 +6309,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 467.41,
     "minRank": 31367,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 467.41,
+    "minRank2025": 31367,
+    "quota2025": 5,
+    "minScore2026": 485.9,
+    "minRank2026": 30878,
+    "quota2026": 5
   },
   {
     "university": "ÜSKÜDAR ÜNİVERSİTESİ",
@@ -4041,7 +6324,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 467.3,
     "minRank": 31458,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 467.3,
+    "minRank2025": 31458,
+    "quota2025": 6,
+    "minScore2026": 484.8,
+    "minRank2026": 31796,
+    "quota2026": 6
   },
   {
     "university": "DİCLE ÜNİVERSİTESİ",
@@ -4050,7 +6339,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 467.29,
     "minRank": 31463,
-    "quota": 81
+    "quota": 81,
+    "minScore2025": 467.29,
+    "minRank2025": 31463,
+    "quota2025": 81,
+    "minScore2026": 485.81,
+    "minRank2026": 30958,
+    "quota2026": 81
   },
   {
     "university": "TRAKYA ÜNİVERSİTESİ",
@@ -4059,7 +6354,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 467.18,
     "minRank": 31536,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 467.18,
+    "minRank2025": 31536,
+    "quota2025": 36,
+    "minScore2026": 483.97,
+    "minRank2026": 32546,
+    "quota2026": 36
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -4068,7 +6369,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 467.03,
     "minRank": 31639,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 467.03,
+    "minRank2025": 31639,
+    "quota2025": 50,
+    "minScore2026": 488.46,
+    "minRank2026": 28742,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -4077,7 +6384,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 466.98,
     "minRank": 31683,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 466.98,
+    "minRank2025": 31683,
+    "quota2025": 5,
+    "minScore2026": 484.62,
+    "minRank2026": 31947,
+    "quota2026": 5
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -4086,7 +6399,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 466.87,
     "minRank": 31771,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 466.87,
+    "minRank2025": 31771,
+    "quota2025": 30,
+    "minScore2026": 487.82,
+    "minRank2026": 29296,
+    "quota2026": 30
   },
   {
     "university": "ALANYA ALAADDİN KEYKUBAT ÜNİVERSİTESİ",
@@ -4095,7 +6414,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 466.86,
     "minRank": 31778,
-    "quota": 38
+    "quota": 38,
+    "minScore2025": 466.86,
+    "minRank2025": 31778,
+    "quota2025": 38,
+    "minScore2026": 484.73,
+    "minRank2026": 31846,
+    "quota2026": 38
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -4104,7 +6429,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 466.7,
     "minRank": 31913,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 466.7,
+    "minRank2025": 31913,
+    "quota2025": 65,
+    "minScore2026": 485.23,
+    "minRank2026": 31448,
+    "quota2026": 65
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -4113,7 +6444,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 466.66,
     "minRank": 31952,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 466.66,
+    "minRank2025": 31952,
+    "quota2025": 50,
+    "minScore2026": 483.51,
+    "minRank2026": 32897,
+    "quota2026": 50
   },
   {
     "university": "ORDU ÜNİVERSİTESİ",
@@ -4122,7 +6459,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 466.38,
     "minRank": 32164,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 466.38,
+    "minRank2025": 32164,
+    "quota2025": 45,
+    "minScore2026": 484.2,
+    "minRank2026": 32333,
+    "quota2026": 45
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -4131,7 +6474,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 466.34,
     "minRank": 32197,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 466.34,
+    "minRank2025": 32197,
+    "quota2025": 10,
+    "minScore2026": 489.77,
+    "minRank2026": 27598,
+    "quota2026": 10
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -4140,7 +6489,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 466.12,
     "minRank": 32358,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 466.12,
+    "minRank2025": 32358,
+    "quota2025": 10,
+    "minScore2026": 480.81,
+    "minRank2026": 35219,
+    "quota2026": 10
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -4149,7 +6504,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 466.1,
     "minRank": 32370,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 466.1,
+    "minRank2025": 32370,
+    "quota2025": 50,
+    "minScore2026": 483.58,
+    "minRank2026": 32854,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
@@ -4158,7 +6519,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 466.09,
     "minRank": 32382,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 466.09,
+    "minRank2025": 32382,
+    "quota2025": 10,
+    "minScore2026": 483.57,
+    "minRank2026": 32859,
+    "quota2026": 10
   },
   {
     "university": "KADİR HAS ÜNİVERSİTESİ",
@@ -4167,7 +6534,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 466.05,
     "minRank": 32420,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 466.05,
+    "minRank2025": 32420,
+    "quota2025": 9,
+    "minScore2026": 477.34,
+    "minRank2026": 38306,
+    "quota2026": 9
   },
   {
     "university": "ATATÜRK ÜNİVERSİTESİ",
@@ -4176,7 +6549,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 466.05,
     "minRank": 32421,
-    "quota": 68
+    "quota": 68,
+    "minScore2025": 466.05,
+    "minRank2025": 32421,
+    "quota2025": 68,
+    "minScore2026": 483.87,
+    "minRank2026": 32619,
+    "quota2026": 68
   },
   {
     "university": "TED ÜNİVERSİTESİ",
@@ -4185,7 +6564,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 466.03,
     "minRank": 32438,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 466.03,
+    "minRank2025": 32438,
+    "quota2025": 7,
+    "minScore2026": 488.75,
+    "minRank2026": 28463,
+    "quota2026": 7
   },
   {
     "university": "İSTANBUL BEYKENT ÜNİVERSİTESİ",
@@ -4194,7 +6579,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 466.02,
     "minRank": 32446,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 466.02,
+    "minRank2025": 32446,
+    "quota2025": 6,
+    "minScore2026": 482.42,
+    "minRank2026": 33820,
+    "quota2026": 6
   },
   {
     "university": "KASTAMONU ÜNİVERSİTESİ",
@@ -4203,7 +6594,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 482.3,
     "minRank": 32500,
-    "quota": 123
+    "quota": 123,
+    "minScore2025": 482.3,
+    "minRank2025": 32500,
+    "quota2025": 123,
+    "minScore2026": 499.12,
+    "minRank2026": 20323,
+    "quota2026": 110
   },
   {
     "university": "İNÖNÜ ÜNİVERSİTESİ",
@@ -4212,7 +6609,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 465.62,
     "minRank": 32824,
-    "quota": 68
+    "quota": 68,
+    "minScore2025": 465.62,
+    "minRank2025": 32824,
+    "quota2025": 68,
+    "minScore2026": 483.62,
+    "minRank2026": 32820,
+    "quota2026": 68
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -4221,7 +6624,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 465.57,
     "minRank": 32862,
-    "quota": 14
+    "quota": 14,
+    "minScore2025": 465.57,
+    "minRank2025": 32862,
+    "quota2025": 14
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -4230,7 +6636,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 465.57,
     "minRank": 32862,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 465.57,
+    "minRank2025": 32862,
+    "quota2025": 8,
+    "minScore2026": 474.04,
+    "minRank2026": 41275,
+    "quota2026": 8
   },
   {
     "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
@@ -4239,7 +6651,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 465.55,
     "minRank": 32883,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 465.55,
+    "minRank2025": 32883,
+    "quota2025": 60,
+    "minScore2026": 483.79,
+    "minRank2026": 32705,
+    "quota2026": 60
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -4248,7 +6666,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 465.48,
     "minRank": 32938,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 465.48,
+    "minRank2025": 32938,
+    "quota2025": 3,
+    "minScore2026": 489.71,
+    "minRank2026": 27665,
+    "quota2026": 3
   },
   {
     "university": "NUH NACİ YAZGAN ÜNİVERSİTESİ",
@@ -4257,7 +6681,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 465.42,
     "minRank": 32985,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 465.42,
+    "minRank2025": 32985,
+    "quota2025": 7,
+    "minScore2026": 484.04,
+    "minRank2026": 32497,
+    "quota2026": 7
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -4266,7 +6696,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 482.4,
     "minRank": 33000,
-    "quota": 110
+    "quota": 110,
+    "minScore2025": 482.4,
+    "minRank2025": 33000,
+    "quota2025": 110,
+    "minScore2026": 493.68,
+    "minRank2026": 24464,
+    "quota2026": 75
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -4275,7 +6711,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 481.5,
     "minRank": 33000,
-    "quota": 120
+    "quota": 120,
+    "minScore2025": 481.5,
+    "minRank2025": 33000,
+    "quota2025": 120,
+    "minScore2026": 486.11,
+    "minRank2026": 30718,
+    "quota2026": 72
   },
   {
     "university": "İSTANBUL ATLAS ÜNİVERSİTESİ",
@@ -4284,7 +6726,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 465.39,
     "minRank": 33005,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 465.39,
+    "minRank2025": 33005,
+    "quota2025": 10,
+    "minScore2026": 482.65,
+    "minRank2026": 33622,
+    "quota2026": 10
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -4293,7 +6741,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 465.38,
     "minRank": 33014,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 465.38,
+    "minRank2025": 33014,
+    "quota2025": 55,
+    "minScore2026": 476.41,
+    "minRank2026": 39128,
+    "quota2026": 55
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -4302,7 +6756,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 465.29,
     "minRank": 33091,
-    "quota": 110
+    "quota": 110,
+    "minScore2025": 465.29,
+    "minRank2025": 33091,
+    "quota2025": 110,
+    "minScore2026": 478.83,
+    "minRank2026": 36994,
+    "quota2026": 110
   },
   {
     "university": "ÜSKÜDAR ÜNİVERSİTESİ",
@@ -4311,7 +6771,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 465.21,
     "minRank": 33138,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 465.21,
+    "minRank2025": 33138,
+    "quota2025": 4,
+    "minScore2026": 481.59,
+    "minRank2026": 34522,
+    "quota2026": 4
   },
   {
     "university": "İSTANBUL GELİŞİM ÜNİVERSİTESİ",
@@ -4320,7 +6786,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 465.16,
     "minRank": 33175,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 465.16,
+    "minRank2025": 33175,
+    "quota2025": 7,
+    "minScore2026": 486.18,
+    "minRank2026": 30648,
+    "quota2026": 7
   },
   {
     "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -4329,7 +6801,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 465.04,
     "minRank": 33256,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 465.04,
+    "minRank2025": 33256,
+    "quota2025": 5,
+    "minScore2026": 470.19,
+    "minRank2026": 44767,
+    "quota2026": 5
   },
   {
     "university": "AFYONKARAHİSAR SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -4338,7 +6816,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 465,
     "minRank": 33296,
-    "quota": 56
+    "quota": 56,
+    "minScore2025": 465,
+    "minRank2025": 33296,
+    "quota2025": 56,
+    "minScore2026": 482.52,
+    "minRank2026": 33735,
+    "quota2026": 56
   },
   {
     "university": "İSTANBUL SAĞLIK VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -4347,7 +6831,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 464.97,
     "minRank": 33322,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 464.97,
+    "minRank2025": 33322,
+    "quota2025": 10,
+    "minScore2026": 482.11,
+    "minRank2026": 34068,
+    "quota2026": 10
   },
   {
     "university": "SİVAS CUMHURİYET ÜNİVERSİTESİ",
@@ -4356,7 +6846,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 464.89,
     "minRank": 33380,
-    "quota": 81
+    "quota": 81,
+    "minScore2025": 464.89,
+    "minRank2025": 33380,
+    "quota2025": 81,
+    "minScore2026": 481.77,
+    "minRank2026": 34356,
+    "quota2026": 81
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -4365,7 +6861,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 464.88,
     "minRank": 33390,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 464.88,
+    "minRank2025": 33390,
+    "quota2025": 45,
+    "minScore2026": 483.27,
+    "minRank2026": 33104,
+    "quota2026": 45
   },
   {
     "university": "İSTANBUL KENT ÜNİVERSİTESİ",
@@ -4374,7 +6876,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 464.78,
     "minRank": 33471,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 464.78,
+    "minRank2025": 33471,
+    "quota2025": 10,
+    "minScore2026": 480.58,
+    "minRank2026": 35419,
+    "quota2026": 10
   },
   {
     "university": "ZONGULDAK BÜLENT ECEVİT ÜNİVERSİTESİ",
@@ -4383,7 +6891,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 464.61,
     "minRank": 33585,
-    "quota": 63
+    "quota": 63,
+    "minScore2025": 464.61,
+    "minRank2025": 33585,
+    "quota2025": 63,
+    "minScore2026": 481.5,
+    "minRank2026": 34606,
+    "quota2026": 63
   },
   {
     "university": "VAN YÜZÜNCÜ YIL ÜNİVERSİTESİ",
@@ -4392,7 +6906,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 464.54,
     "minRank": 33664,
-    "quota": 63
+    "quota": 63,
+    "minScore2025": 464.54,
+    "minRank2025": 33664,
+    "quota2025": 63,
+    "minScore2026": 482.35,
+    "minRank2026": 33873,
+    "quota2026": 63
   },
   {
     "university": "FIRAT ÜNİVERSİTESİ",
@@ -4401,7 +6921,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 464.4,
     "minRank": 33783,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 464.4,
+    "minRank2025": 33783,
+    "quota2025": 54,
+    "minScore2026": 482.36,
+    "minRank2026": 33863,
+    "quota2026": 54
   },
   {
     "university": "ERZİNCAN BİNALİ YILDIRIM ÜNİVERSİTESİ",
@@ -4410,7 +6936,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 481.2,
     "minRank": 33800,
-    "quota": 144
+    "quota": 144,
+    "minScore2025": 481.2,
+    "minRank2025": 33800,
+    "quota2025": 144,
+    "minScore2026": 497.58,
+    "minRank2026": 21416,
+    "quota2026": 140
   },
   {
     "university": "İSTANBUL ATLAS ÜNİVERSİTESİ",
@@ -4419,7 +6951,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 464.34,
     "minRank": 33832,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 464.34,
+    "minRank2025": 33832,
+    "quota2025": 4,
+    "minScore2026": 481.21,
+    "minRank2026": 34851,
+    "quota2026": 4
   },
   {
     "university": "KÜTAHYA SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -4428,7 +6966,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 464.17,
     "minRank": 33961,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 464.17,
+    "minRank2025": 33961,
+    "quota2025": 45,
+    "minScore2026": 481.7,
+    "minRank2026": 34415,
+    "quota2026": 45
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -4437,7 +6981,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 464.15,
     "minRank": 33974,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 464.15,
+    "minRank2025": 33974,
+    "quota2025": 36,
+    "minScore2026": 482.86,
+    "minRank2026": 33453,
+    "quota2026": 36
   },
   {
     "university": "UŞAK ÜNİVERSİTESİ",
@@ -4446,7 +6996,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 463.83,
     "minRank": 34245,
-    "quota": 59
+    "quota": 59,
+    "minScore2025": 463.83,
+    "minRank2025": 34245,
+    "quota2025": 59,
+    "minScore2026": 480.28,
+    "minRank2026": 35681,
+    "quota2026": 59
   },
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
@@ -4455,7 +7011,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 463.82,
     "minRank": 34246,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 463.82,
+    "minRank2025": 34246,
+    "quota2025": 45,
+    "minScore2026": 481.06,
+    "minRank2026": 34996,
+    "quota2026": 45
   },
   {
     "university": "ATILIM ÜNİVERSİTESİ",
@@ -4464,7 +7026,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 463.73,
     "minRank": 34314,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 463.73,
+    "minRank2025": 34314,
+    "quota2025": 4,
+    "minScore2026": 477.63,
+    "minRank2026": 38058,
+    "quota2026": 4
   },
   {
     "university": "KADİR HAS ÜNİVERSİTESİ",
@@ -4473,7 +7041,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 463.66,
     "minRank": 34370,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 463.66,
+    "minRank2025": 34370,
+    "quota2025": 4,
+    "minScore2026": 480.07,
+    "minRank2026": 35905,
+    "quota2026": 4
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -4482,7 +7056,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 463.54,
     "minRank": 34465,
-    "quota": 18
+    "quota": 18,
+    "minScore2025": 463.54,
+    "minRank2025": 34465,
+    "quota2025": 18,
+    "minScore2026": 483.06,
+    "minRank2026": 33288,
+    "quota2026": 18
   },
   {
     "university": "NİĞDE ÖMER HALİSDEMİR ÜNİVERSİTESİ",
@@ -4491,7 +7071,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 463.52,
     "minRank": 34482,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 463.52,
+    "minRank2025": 34482,
+    "quota2025": 27,
+    "minScore2026": 481.25,
+    "minRank2026": 34818,
+    "quota2026": 27
   },
   {
     "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
@@ -4500,7 +7086,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 480.6,
     "minRank": 34500,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 480.6,
+    "minRank2025": 34500,
+    "quota2025": 100,
+    "minScore2026": 491.07,
+    "minRank2026": 26562,
+    "quota2026": 45
   },
   {
     "university": "MEF ÜNİVERSİTESİ",
@@ -4509,7 +7101,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 463.34,
     "minRank": 34636,
-    "quota": 11
+    "quota": 11,
+    "minScore2025": 463.34,
+    "minRank2025": 34636,
+    "quota2025": 11,
+    "minScore2026": 471.95,
+    "minRank2026": 43132,
+    "quota2026": 11
   },
   {
     "university": "ALTINBAŞ ÜNİVERSİTESİ",
@@ -4518,7 +7116,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 463.21,
     "minRank": 34738,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 463.21,
+    "minRank2025": 34738,
+    "quota2025": 6,
+    "minScore2026": 481.82,
+    "minRank2026": 34312,
+    "quota2026": 6
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -4527,7 +7131,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 463.15,
     "minRank": 34796,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 463.15,
+    "minRank2025": 34796,
+    "quota2025": 60,
+    "minScore2026": 482.31,
+    "minRank2026": 33897,
+    "quota2026": 60
   },
   {
     "university": "KOCAELİ SAĞLIK VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -4536,7 +7146,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 463.13,
     "minRank": 34807,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 463.13,
+    "minRank2025": 34807,
+    "quota2025": 10,
+    "minScore2026": 480.07,
+    "minRank2026": 35897,
+    "quota2026": 10
   },
   {
     "university": "KAFKAS ÜNİVERSİTESİ",
@@ -4545,7 +7161,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 480.3,
     "minRank": 34900,
-    "quota": 123
+    "quota": 123,
+    "minScore2025": 480.3,
+    "minRank2025": 34900,
+    "quota2025": 123,
+    "minScore2026": 497.37,
+    "minRank2026": 21583,
+    "quota2026": 100
   },
   {
     "university": "İSTANBUL SAĞLIK VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -4554,7 +7176,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 462.98,
     "minRank": 34922,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 462.98,
+    "minRank2025": 34922,
+    "quota2025": 5,
+    "minScore2026": 478.49,
+    "minRank2026": 37291,
+    "quota2026": 5
   },
   {
     "university": "BURDUR MEHMET AKİF ERSOY ÜNİVERSİTESİ",
@@ -4563,7 +7191,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 462.96,
     "minRank": 34933,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 462.96,
+    "minRank2025": 34933,
+    "quota2025": 54,
+    "minScore2026": 480.93,
+    "minRank2026": 35116,
+    "quota2026": 54
   },
   {
     "university": "NEVŞEHİR HACI BEKTAŞ VELİ ÜNİVERSİTESİ",
@@ -4572,7 +7206,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 462.93,
     "minRank": 34968,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 462.93,
+    "minRank2025": 34968,
+    "quota2025": 54,
+    "minScore2026": 479.58,
+    "minRank2026": 36309,
+    "quota2026": 54
   },
   {
     "university": "HATAY MUSTAFA KEMAL ÜNİVERSİTESİ",
@@ -4581,7 +7221,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 462.92,
     "minRank": 34978,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 462.92,
+    "minRank2025": 34978,
+    "quota2025": 36,
+    "minScore2026": 479.98,
+    "minRank2026": 35977,
+    "quota2026": 36
   },
   {
     "university": "BİLECİK ŞEYH EDEBALİ ÜNİVERSİTESİ",
@@ -4590,7 +7236,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 462.61,
     "minRank": 35222,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 462.61,
+    "minRank2025": 35222,
+    "quota2025": 27,
+    "minScore2026": 480.49,
+    "minRank2026": 35494,
+    "quota2026": 27
   },
   {
     "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
@@ -4599,7 +7251,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 462.46,
     "minRank": 35325,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 462.46,
+    "minRank2025": 35325,
+    "quota2025": 9,
+    "minScore2026": 481.61,
+    "minRank2026": 34506,
+    "quota2026": 9
   },
   {
     "university": "GAZİANTEP İSLAM BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -4608,7 +7266,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 480.59,
     "minRank": 35410,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 480.59,
+    "minRank2025": 35410,
+    "quota2025": 30,
+    "minScore2026": 480.59,
+    "minRank2026": 35410,
+    "quota2026": 30
   },
   {
     "university": "İSTANBUL YENİ YÜZYIL ÜNİVERSİTESİ",
@@ -4617,7 +7281,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 462.35,
     "minRank": 35434,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 462.35,
+    "minRank2025": 35434,
+    "quota2025": 8,
+    "minScore2026": 480.1,
+    "minRank2026": 35864,
+    "quota2026": 8
   },
   {
     "university": "KAHRAMANMARAŞ SÜTÇÜ İMAM ÜNİVERSİTESİ",
@@ -4626,7 +7296,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 462.32,
     "minRank": 35451,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 462.32,
+    "minRank2025": 35451,
+    "quota2025": 36,
+    "minScore2026": 480.63,
+    "minRank2026": 35373,
+    "quota2026": 36
   },
   {
     "university": "RECEP TAYYİP ERDOĞAN ÜNİVERSİTESİ",
@@ -4635,7 +7311,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 462.3,
     "minRank": 35475,
-    "quota": 63
+    "quota": 63,
+    "minScore2025": 462.3,
+    "minRank2025": 35475,
+    "quota2025": 63,
+    "minScore2026": 479.36,
+    "minRank2026": 36493,
+    "quota2026": 63
   },
   {
     "university": "GİRESUN ÜNİVERSİTESİ",
@@ -4644,7 +7326,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 462.23,
     "minRank": 35517,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 462.23,
+    "minRank2025": 35517,
+    "quota2025": 36,
+    "minScore2026": 478.48,
+    "minRank2026": 37294,
+    "quota2026": 36
   },
   {
     "university": "AKSARAY ÜNİVERSİTESİ",
@@ -4653,7 +7341,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 462.21,
     "minRank": 35542,
-    "quota": 19
+    "quota": 19,
+    "minScore2025": 462.21,
+    "minRank2025": 35542,
+    "quota2025": 19,
+    "minScore2026": 479.66,
+    "minRank2026": 36243,
+    "quota2026": 19
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -4662,7 +7356,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 462.13,
     "minRank": 35613,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 462.13,
+    "minRank2025": 35613,
+    "quota2025": 50,
+    "minScore2026": 415.93,
+    "minRank2026": 98552,
+    "quota2026": 6
   },
   {
     "university": "TOKAT GAZİOSMANPAŞA ÜNİVERSİTESİ",
@@ -4671,7 +7371,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 461.95,
     "minRank": 35764,
-    "quota": 72
+    "quota": 72,
+    "minScore2025": 461.95,
+    "minRank2025": 35764,
+    "quota2025": 72,
+    "minScore2026": 477.72,
+    "minRank2026": 37952,
+    "quota2026": 72
   },
   {
     "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
@@ -4680,7 +7386,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 478.9,
     "minRank": 36000,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 478.9,
+    "minRank2025": 36000,
+    "quota2025": 100,
+    "minScore2026": 491.98,
+    "minRank2026": 25812,
+    "quota2026": 54
   },
   {
     "university": "İSTANBUL KENT ÜNİVERSİTESİ",
@@ -4689,7 +7401,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 461.56,
     "minRank": 36094,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 461.56,
+    "minRank2025": 36094,
+    "quota2025": 5,
+    "minScore2026": 478.62,
+    "minRank2026": 37179,
+    "quota2026": 5
   },
   {
     "university": "KARABÜK ÜNİVERSİTESİ",
@@ -4698,7 +7416,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 461.47,
     "minRank": 36163,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 461.47,
+    "minRank2025": 36163,
+    "quota2025": 27,
+    "minScore2026": 477.78,
+    "minRank2026": 37903,
+    "quota2026": 27
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -4707,7 +7431,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 461.37,
     "minRank": 36251,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 461.37,
+    "minRank2025": 36251,
+    "quota2025": 50,
+    "minScore2026": 480.01,
+    "minRank2026": 35950,
+    "quota2026": 50
   },
   {
     "university": "ERZİNCAN BİNALİ YILDIRIM ÜNİVERSİTESİ",
@@ -4716,7 +7446,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 461.18,
     "minRank": 36398,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 461.18,
+    "minRank2025": 36398,
+    "quota2025": 36,
+    "minScore2026": 477.87,
+    "minRank2026": 37824,
+    "quota2026": 36
   },
   {
     "university": "HARRAN ÜNİVERSİTESİ",
@@ -4725,7 +7461,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 461.17,
     "minRank": 36403,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 461.17,
+    "minRank2025": 36403,
+    "quota2025": 54,
+    "minScore2026": 478.89,
+    "minRank2026": 36942,
+    "quota2026": 54
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -4734,7 +7476,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 461.13,
     "minRank": 36435,
-    "quota": 95
+    "quota": 95,
+    "minScore2025": 461.13,
+    "minRank2025": 36435,
+    "quota2025": 95,
+    "minScore2026": 462.29,
+    "minRank2026": 52071,
+    "quota2026": 95
   },
   {
     "university": "KARAMANOĞLU MEHMETBEY ÜNİVERSİTESİ",
@@ -4743,7 +7491,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 461.13,
     "minRank": 36440,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 461.13,
+    "minRank2025": 36440,
+    "quota2025": 45,
+    "minScore2026": 477.97,
+    "minRank2026": 37734,
+    "quota2026": 45
   },
   {
     "university": "ÇANKAYA ÜNİVERSİTESİ",
@@ -4752,7 +7506,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 461.06,
     "minRank": 36495,
-    "quota": 11
+    "quota": 11,
+    "minScore2025": 461.06,
+    "minRank2025": 36495,
+    "quota2025": 11,
+    "minScore2026": 472.63,
+    "minRank2026": 42500,
+    "quota2026": 11
   },
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
@@ -4761,7 +7521,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 460.96,
     "minRank": 36572,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 460.96,
+    "minRank2025": 36572,
+    "quota2025": 60,
+    "minScore2026": 480.38,
+    "minRank2026": 35603,
+    "quota2026": 60
   },
   {
     "university": "ÇANKIRI KARATEKİN ÜNİVERSİTESİ",
@@ -4770,7 +7536,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 460.94,
     "minRank": 36589,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 460.94,
+    "minRank2025": 36589,
+    "quota2025": 45,
+    "minScore2026": 477.39,
+    "minRank2026": 38271,
+    "quota2026": 45
   },
   {
     "university": "ADIYAMAN ÜNİVERSİTESİ",
@@ -4779,7 +7551,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 460.92,
     "minRank": 36609,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 460.92,
+    "minRank2025": 36609,
+    "quota2025": 30,
+    "minScore2026": 478.36,
+    "minRank2026": 37411,
+    "quota2026": 30
   },
   {
     "university": "İSTANBUL NİŞANTAŞI ÜNİVERSİTESİ",
@@ -4788,7 +7566,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 460.9,
     "minRank": 36632,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 460.9,
+    "minRank2025": 36632,
+    "quota2025": 7,
+    "minScore2026": 479.96,
+    "minRank2026": 36004,
+    "quota2026": 7
   },
   {
     "university": "BATMAN ÜNİVERSİTESİ",
@@ -4797,7 +7581,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 460.67,
     "minRank": 36819,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 460.67,
+    "minRank2025": 36819,
+    "quota2025": 27,
+    "minScore2026": 477.93,
+    "minRank2026": 37764,
+    "quota2026": 27
   },
   {
     "university": "İSTANBUL GELİŞİM ÜNİVERSİTESİ",
@@ -4806,7 +7596,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 460.66,
     "minRank": 36824,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 460.66,
+    "minRank2025": 36824,
+    "quota2025": 9,
+    "minScore2026": 480.23,
+    "minRank2026": 35741,
+    "quota2026": 9
   },
   {
     "university": "YOZGAT BOZOK ÜNİVERSİTESİ",
@@ -4815,7 +7611,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 460.55,
     "minRank": 36922,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 460.55,
+    "minRank2025": 36922,
+    "quota2025": 45,
+    "minScore2026": 477.04,
+    "minRank2026": 38554,
+    "quota2026": 45
   },
   {
     "university": "TÜRK-JAPON BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -4824,7 +7626,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 478.89,
     "minRank": 36936,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 478.89,
+    "minRank2025": 36936,
+    "quota2025": 20,
+    "minScore2026": 478.89,
+    "minRank2026": 36936,
+    "quota2026": 20
   },
   {
     "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
@@ -4833,7 +7641,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 460.5,
     "minRank": 36959,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 460.5,
+    "minRank2025": 36959,
+    "quota2025": 8,
+    "minScore2026": 478.62,
+    "minRank2026": 37181,
+    "quota2026": 8
   },
   {
     "university": "İSTANBUL GALATA ÜNİVERSİTESİ",
@@ -4842,7 +7656,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 460.44,
     "minRank": 37032,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 460.44,
+    "minRank2025": 37032,
+    "quota2025": 4,
+    "minScore2026": 478.19,
+    "minRank2026": 37562,
+    "quota2026": 4
   },
   {
     "university": "KAPADOKYA ÜNİVERSİTESİ",
@@ -4851,7 +7671,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 460.42,
     "minRank": 37048,
-    "quota": 11
+    "quota": 11,
+    "minScore2025": 460.42,
+    "minRank2025": 37048,
+    "quota2025": 11,
+    "minScore2026": 479.09,
+    "minRank2026": 36750,
+    "quota2026": 11
   },
   {
     "university": "İSTANBUL GALATA ÜNİVERSİTESİ",
@@ -4860,7 +7686,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 460.39,
     "minRank": 37068,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 460.39,
+    "minRank2025": 37068,
+    "quota2025": 10,
+    "minScore2026": 478.79,
+    "minRank2026": 37037,
+    "quota2026": 10
   },
   {
     "university": "KAFKAS ÜNİVERSİTESİ",
@@ -4869,7 +7701,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 460.29,
     "minRank": 37150,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 460.29,
+    "minRank2025": 37150,
+    "quota2025": 27,
+    "minScore2026": 476.91,
+    "minRank2026": 38683,
+    "quota2026": 27
   },
   {
     "university": "PİRİ REİS ÜNİVERSİTESİ",
@@ -4878,7 +7716,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 460.26,
     "minRank": 37170,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 460.26,
+    "minRank2025": 37170,
+    "quota2025": 12,
+    "minScore2026": 479.69,
+    "minRank2026": 36201,
+    "quota2026": 12
   },
   {
     "university": "KASTAMONU ÜNİVERSİTESİ",
@@ -4887,7 +7731,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 478.53,
     "minRank": 37257,
-    "quota": 32
+    "quota": 32,
+    "minScore2025": 478.53,
+    "minRank2025": 37257,
+    "quota2025": 32,
+    "minScore2026": 478.53,
+    "minRank2026": 37257,
+    "quota2026": 32
   },
   {
     "university": "İSTANBUL GELİŞİM ÜNİVERSİTESİ",
@@ -4896,7 +7746,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 459.99,
     "minRank": 37385,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 459.99,
+    "minRank2025": 37385,
+    "quota2025": 4,
+    "minScore2026": 478.62,
+    "minRank2026": 37178,
+    "quota2026": 4
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -4905,7 +7761,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 459.97,
     "minRank": 37405,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 459.97,
+    "minRank2025": 37405,
+    "quota2025": 5,
+    "minScore2026": 480.28,
+    "minRank2026": 35692,
+    "quota2026": 5
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -4914,7 +7776,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 459.93,
     "minRank": 37442,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 459.93,
+    "minRank2025": 37442,
+    "quota2025": 50,
+    "minScore2026": 470.4,
+    "minRank2026": 44568,
+    "quota2026": 50
   },
   {
     "university": "ÇUKUROVA ÜNİVERSİTESİ",
@@ -4923,7 +7791,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 477.1,
     "minRank": 37500,
-    "quota": 110
+    "quota": 110,
+    "minScore2025": 477.1,
+    "minRank2025": 37500,
+    "quota2025": 110,
+    "minScore2026": 490.52,
+    "minRank2026": 26984,
+    "quota2026": 72
   },
   {
     "university": "ÇANKAYA ÜNİVERSİTESİ",
@@ -4932,7 +7806,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 459.64,
     "minRank": 37692,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 459.64,
+    "minRank2025": 37692,
+    "quota2025": 12
   },
   {
     "university": "ÇANKAYA ÜNİVERSİTESİ",
@@ -4941,7 +7818,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 459.64,
     "minRank": 37692,
-    "quota": 13
+    "quota": 13,
+    "minScore2025": 459.64,
+    "minRank2025": 37692,
+    "quota2025": 13,
+    "minScore2026": 456.06,
+    "minRank2026": 57882,
+    "quota2026": 13
   },
   {
     "university": "BİNGÖL ÜNİVERSİTESİ",
@@ -4950,7 +7833,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 459.59,
     "minRank": 37729,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 459.59,
+    "minRank2025": 37729,
+    "quota2025": 36,
+    "minScore2026": 476.72,
+    "minRank2026": 38847,
+    "quota2026": 36
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -4959,7 +7848,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 459.43,
     "minRank": 37874,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 459.43,
+    "minRank2025": 37874,
+    "quota2025": 8,
+    "minScore2026": 475.07,
+    "minRank2026": 40300,
+    "quota2026": 8
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -4968,7 +7863,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 474.2,
     "minRank": 38000,
-    "quota": 160
+    "quota": 160,
+    "minScore2025": 474.2,
+    "minRank2025": 38000,
+    "quota2025": 160,
+    "minScore2026": 478.21,
+    "minRank2026": 37534,
+    "quota2026": 77
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -4977,7 +7878,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 476.8,
     "minRank": 38000,
-    "quota": 180
+    "quota": 180,
+    "minScore2025": 476.8,
+    "minRank2025": 38000,
+    "quota2025": 180,
+    "minScore2026": 448.45,
+    "minRank2026": 65201,
+    "quota2026": 70
   },
   {
     "university": "İSTANBUL NİŞANTAŞI ÜNİVERSİTESİ",
@@ -4986,7 +7893,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 458.87,
     "minRank": 38393,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 458.87,
+    "minRank2025": 38393,
+    "quota2025": 4,
+    "minScore2026": 478.24,
+    "minRank2026": 37505,
+    "quota2026": 4
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -4995,7 +7908,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 458.81,
     "minRank": 38439,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 458.81,
+    "minRank2025": 38439,
+    "quota2025": 3,
+    "minScore2026": 481.86,
+    "minRank2026": 34270,
+    "quota2026": 3
   },
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
@@ -5004,7 +7923,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 458.67,
     "minRank": 38560,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 458.67,
+    "minRank2025": 38560,
+    "quota2025": 80,
+    "minScore2026": 478.42,
+    "minRank2026": 37353,
+    "quota2026": 80
   },
   {
     "university": "MEF ÜNİVERSİTESİ",
@@ -5013,7 +7938,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 458.6,
     "minRank": 38604,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 458.6,
+    "minRank2025": 38604,
+    "quota2025": 4,
+    "minScore2026": 478.49,
+    "minRank2026": 37292,
+    "quota2026": 4
   },
   {
     "university": "IĞDIR ÜNİVERSİTESİ",
@@ -5022,7 +7953,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 458.58,
     "minRank": 38634,
-    "quota": 18
+    "quota": 18,
+    "minScore2025": 458.58,
+    "minRank2025": 38634,
+    "quota2025": 18,
+    "minScore2026": 476.62,
+    "minRank2026": 38944,
+    "quota2026": 18
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -5031,7 +7968,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 458.39,
     "minRank": 38784,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 458.39,
+    "minRank2025": 38784,
+    "quota2025": 6,
+    "minScore2026": 443.79,
+    "minRank2026": 69717,
+    "quota2026": 6
   },
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -5040,7 +7983,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 458.13,
     "minRank": 38989,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 458.13,
+    "minRank2025": 38989,
+    "quota2025": 45,
+    "minScore2026": 474.4,
+    "minRank2026": 40950,
+    "quota2026": 45
   },
   {
     "university": "SELÇUK ÜNİVERSİTESİ",
@@ -5049,7 +7998,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 475.3,
     "minRank": 39000,
-    "quota": 120
+    "quota": 120,
+    "minScore2025": 475.3,
+    "minRank2025": 39000,
+    "quota2025": 120,
+    "minScore2026": 488.87,
+    "minRank2026": 28364,
+    "quota2026": 72
   },
   {
     "university": "ESKİŞEHİR TEKNİK ÜNİVERSİTESİ",
@@ -5058,7 +8013,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 458.11,
     "minRank": 39003,
-    "quota": 95
+    "quota": 95,
+    "minScore2025": 458.11,
+    "minRank2025": 39003,
+    "quota2025": 95,
+    "minScore2026": 460.3,
+    "minRank2026": 53950,
+    "quota2026": 95
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -5067,7 +8028,28 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 457.88,
     "minRank": 39190,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 457.88,
+    "minRank2025": 39190,
+    "quota2025": 70,
+    "minScore2026": 476.97,
+    "minRank2026": 38626,
+    "quota2026": 70
+  },
+  {
+    "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
+    "program": "Deniz Ulaştırma İşletme Mühendisliği",
+    "city": "İstanbul",
+    "field": "SAY",
+    "minScore": 476.14,
+    "minRank": 39344,
+    "quota": 55,
+    "minScore2026": 476.14,
+    "minRank2026": 39344,
+    "quota2026": 55,
+    "minScore2025": 452.99,
+    "minRank2025": 43430,
+    "quota2025": 55
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -5076,7 +8058,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 457.67,
     "minRank": 39358,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 457.67,
+    "minRank2025": 39358,
+    "quota2025": 50,
+    "minScore2026": 482.5,
+    "minRank2026": 33761,
+    "quota2026": 50
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -5085,7 +8073,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 472.1,
     "minRank": 39500,
-    "quota": 140
+    "quota": 140,
+    "minScore2025": 472.1,
+    "minRank2025": 39500,
+    "quota2025": 140,
+    "minScore2026": 480.9,
+    "minRank2026": 35139,
+    "quota2026": 72
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -5094,7 +8088,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 457.34,
     "minRank": 39630,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 457.34,
+    "minRank2025": 39630,
+    "quota2025": 40,
+    "minScore2026": 472.6,
+    "minRank2026": 42536,
+    "quota2026": 40
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -5103,7 +8103,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 457.31,
     "minRank": 39658,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 457.31,
+    "minRank2025": 39658,
+    "quota2025": 30,
+    "minScore2026": 466.38,
+    "minRank2026": 48214,
+    "quota2026": 30
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -5112,7 +8118,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 456.99,
     "minRank": 39903,
-    "quota": 160
+    "quota": 160,
+    "minScore2025": 456.99,
+    "minRank2025": 39903,
+    "quota2025": 160,
+    "minScore2026": 483.89,
+    "minRank2026": 32602,
+    "quota2026": 160
   },
   {
     "university": "ANKARA MEDİPOL ÜNİVERSİTESİ",
@@ -5121,7 +8133,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 456.94,
     "minRank": 39947,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 456.94,
+    "minRank2025": 39947,
+    "quota2025": 8,
+    "minScore2026": 476.8,
+    "minRank2026": 38776,
+    "quota2026": 8
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -5130,7 +8148,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 456.9,
     "minRank": 39976,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 456.9,
+    "minRank2025": 39976,
+    "quota2025": 65,
+    "minScore2026": 477.78,
+    "minRank2026": 37907,
+    "quota2026": 65
   },
   {
     "university": "ACIBADEM MEHMET ALİ AYDINLAR ÜNİVERSİTESİ",
@@ -5139,7 +8163,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 456.8,
     "minRank": 40069,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 456.8,
+    "minRank2025": 40069,
+    "quota2025": 8,
+    "minScore2026": 466.37,
+    "minRank2026": 48221,
+    "quota2026": 8
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -5148,7 +8178,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 473.6,
     "minRank": 40500,
-    "quota": 110
+    "quota": 110,
+    "minScore2025": 473.6,
+    "minRank2025": 40500,
+    "quota2025": 110,
+    "minScore2026": 488.8,
+    "minRank2026": 28416,
+    "quota2026": 63
   },
   {
     "university": "MEF ÜNİVERSİTESİ",
@@ -5157,7 +8193,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 456.14,
     "minRank": 40634,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 456.14,
+    "minRank2025": 40634,
+    "quota2025": 4,
+    "minScore2026": 469.19,
+    "minRank2026": 45613,
+    "quota2026": 4
   },
   {
     "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
@@ -5166,7 +8208,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 473,
     "minRank": 41000,
-    "quota": 110
+    "quota": 110,
+    "minScore2025": 473,
+    "minRank2025": 41000,
+    "quota2025": 110,
+    "minScore2026": 490.06,
+    "minRank2026": 27361,
+    "quota2026": 68
   },
   {
     "university": "MEF ÜNİVERSİTESİ",
@@ -5175,7 +8223,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 455.67,
     "minRank": 41041,
-    "quota": 13
+    "quota": 13,
+    "minScore2025": 455.67,
+    "minRank2025": 41041,
+    "quota2025": 13,
+    "minScore2026": 476.66,
+    "minRank2026": 38905,
+    "quota2026": 13
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -5184,7 +8238,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 455.66,
     "minRank": 41051,
-    "quota": 95
+    "quota": 95,
+    "minScore2025": 455.66,
+    "minRank2025": 41051,
+    "quota2025": 95,
+    "minScore2026": 462.28,
+    "minRank2026": 52074,
+    "quota2026": 95
   },
   {
     "university": "ACIBADEM MEHMET ALİ AYDINLAR ÜNİVERSİTESİ",
@@ -5193,7 +8253,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 455.56,
     "minRank": 41119,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 455.56,
+    "minRank2025": 41119,
+    "quota2025": 7,
+    "minScore2026": 464.49,
+    "minRank2026": 49980,
+    "quota2026": 7
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -5202,7 +8268,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 455.4,
     "minRank": 41290,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 455.4,
+    "minRank2025": 41290,
+    "quota2025": 9,
+    "minScore2026": 476.86,
+    "minRank2026": 38729,
+    "quota2026": 9
   },
   {
     "university": "ESKİŞEHİR TEKNİK ÜNİVERSİTESİ",
@@ -5211,7 +8283,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 455.36,
     "minRank": 41319,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 455.36,
+    "minRank2025": 41319,
+    "quota2025": 60,
+    "minScore2026": 477.77,
+    "minRank2026": 37914,
+    "quota2026": 60
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -5220,7 +8298,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 455.2,
     "minRank": 41457,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 455.2,
+    "minRank2025": 41457,
+    "quota2025": 36,
+    "minScore2026": 475.77,
+    "minRank2026": 39662,
+    "quota2026": 36
   },
   {
     "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
@@ -5229,7 +8313,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 455.07,
     "minRank": 41581,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 455.07,
+    "minRank2025": 41581,
+    "quota2025": 10,
+    "minScore2026": 474.33,
+    "minRank2026": 41005,
+    "quota2026": 10
   },
   {
     "university": "BEZM-İ ÂLEM VAKIF ÜNİVERSİTESİ",
@@ -5238,7 +8328,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 454.8,
     "minRank": 41814,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 454.8,
+    "minRank2025": 41814,
+    "quota2025": 12,
+    "minScore2026": 475.32,
+    "minRank2026": 40108,
+    "quota2026": 12
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -5247,7 +8343,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 454.79,
     "minRank": 41820,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 454.79,
+    "minRank2025": 41820,
+    "quota2025": 5,
+    "minScore2026": 472.44,
+    "minRank2026": 42669,
+    "quota2026": 5
   },
   {
     "university": "ANKARA MEDİPOL ÜNİVERSİTESİ",
@@ -5256,7 +8358,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 454.7,
     "minRank": 41895,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 454.7,
+    "minRank2025": 41895,
+    "quota2025": 9,
+    "minScore2026": 452.54,
+    "minRank2026": 61308,
+    "quota2026": 9
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -5265,7 +8373,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 454.66,
     "minRank": 41938,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 454.66,
+    "minRank2025": 41938,
+    "quota2025": 40,
+    "minScore2026": 478.72,
+    "minRank2026": 37105,
+    "quota2026": 40
   },
   {
     "university": "KADİR HAS ÜNİVERSİTESİ",
@@ -5274,7 +8388,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 454.63,
     "minRank": 41956,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 454.63,
+    "minRank2025": 41956,
+    "quota2025": 12,
+    "minScore2026": 476.88,
+    "minRank2026": 38702,
+    "quota2026": 12
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -5283,7 +8403,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 454.62,
     "minRank": 41975,
-    "quota": 120
+    "quota": 120,
+    "minScore2025": 454.62,
+    "minRank2025": 41975,
+    "quota2025": 120,
+    "minScore2026": 474.13,
+    "minRank2026": 41203,
+    "quota2026": 120
   },
   {
     "university": "İSTANBUL GELİŞİM ÜNİVERSİTESİ",
@@ -5292,7 +8418,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 454.56,
     "minRank": 42019,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 454.56,
+    "minRank2025": 42019,
+    "quota2025": 7,
+    "minScore2026": 476.2,
+    "minRank2026": 39301,
+    "quota2026": 7
   },
   {
     "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -5301,7 +8433,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 454.52,
     "minRank": 42051,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 454.52,
+    "minRank2025": 42051,
+    "quota2025": 8,
+    "minScore2026": 476.93,
+    "minRank2026": 38660,
+    "quota2026": 8
   },
   {
     "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
@@ -5310,7 +8448,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 454.48,
     "minRank": 42086,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 454.48,
+    "minRank2025": 42086,
+    "quota2025": 60,
+    "minScore2026": 475.19,
+    "minRank2026": 40221,
+    "quota2026": 60
   },
   {
     "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
@@ -5319,7 +8463,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 454.45,
     "minRank": 42108,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 454.45,
+    "minRank2025": 42108,
+    "quota2025": 85,
+    "minScore2026": 458.98,
+    "minRank2026": 55158,
+    "quota2026": 85
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -5328,7 +8478,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 454.36,
     "minRank": 42202,
-    "quota": 90
+    "quota": 90,
+    "minScore2025": 454.36,
+    "minRank2025": 42202,
+    "quota2025": 90,
+    "minScore2026": 478.31,
+    "minRank2026": 37451,
+    "quota2026": 90
   },
   {
     "university": "TED ÜNİVERSİTESİ",
@@ -5337,7 +8493,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 454.24,
     "minRank": 42314,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 454.24,
+    "minRank2025": 42314,
+    "quota2025": 7,
+    "minScore2026": 478.19,
+    "minRank2026": 37564,
+    "quota2026": 7
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -5346,7 +8508,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 454.24,
     "minRank": 42319,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 454.24,
+    "minRank2025": 42319,
+    "quota2025": 45,
+    "minScore2026": 462.9,
+    "minRank2026": 51446,
+    "quota2026": 45
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -5355,7 +8523,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 472.73,
     "minRank": 42397,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 472.73,
+    "minRank2025": 42397,
+    "quota2025": 40,
+    "minScore2026": 472.73,
+    "minRank2026": 42397,
+    "quota2026": 40
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -5364,7 +8538,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 454.1,
     "minRank": 42435,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 454.1,
+    "minRank2025": 42435,
+    "quota2025": 4,
+    "minScore2026": 470.87,
+    "minRank2026": 44147,
+    "quota2026": 4
   },
   {
     "university": "PAMUKKALE ÜNİVERSİTESİ",
@@ -5373,7 +8553,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 471.2,
     "minRank": 42500,
-    "quota": 90
+    "quota": 90,
+    "minScore2025": 471.2,
+    "minRank2025": 42500,
+    "quota2025": 90,
+    "minScore2026": 485.24,
+    "minRank2026": 31442,
+    "quota2026": 63
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -5382,7 +8568,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 454.02,
     "minRank": 42501,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 454.02,
+    "minRank2025": 42501,
+    "quota2025": 54,
+    "minScore2026": 448.73,
+    "minRank2026": 64931,
+    "quota2026": 6
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -5391,7 +8583,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 454,
     "minRank": 42514,
-    "quota": 95
+    "quota": 95,
+    "minScore2025": 454,
+    "minRank2025": 42514,
+    "quota2025": 95,
+    "minScore2026": 474.43,
+    "minRank2026": 40922,
+    "quota2026": 95
   },
   {
     "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
@@ -5400,7 +8598,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 453.94,
     "minRank": 42574,
-    "quota": 41
+    "quota": 41,
+    "minScore2025": 453.94,
+    "minRank2025": 42574,
+    "quota2025": 41,
+    "minScore2026": 474.29,
+    "minRank2026": 41053,
+    "quota2026": 41
   },
   {
     "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
@@ -5409,7 +8613,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 453.78,
     "minRank": 42709,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 453.78,
+    "minRank2025": 42709,
+    "quota2025": 6,
+    "minScore2026": 472.95,
+    "minRank2026": 42207,
+    "quota2026": 6
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -5418,7 +8628,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 453.76,
     "minRank": 42735,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 453.76,
+    "minRank2025": 42735,
+    "quota2025": 54,
+    "minScore2026": 474.58,
+    "minRank2026": 40785,
+    "quota2026": 54
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -5427,7 +8643,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 453.64,
     "minRank": 42836,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 453.64,
+    "minRank2025": 42836,
+    "quota2025": 35,
+    "minScore2026": 470.41,
+    "minRank2026": 44564,
+    "quota2026": 35
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -5436,7 +8658,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 453.61,
     "minRank": 42857,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 453.61,
+    "minRank2025": 42857,
+    "quota2025": 70,
+    "minScore2026": 471.97,
+    "minRank2026": 43109,
+    "quota2026": 70
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -5445,7 +8673,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 453.58,
     "minRank": 42895,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 453.58,
+    "minRank2025": 42895,
+    "quota2025": 8,
+    "minScore2026": 482.2,
+    "minRank2026": 33981,
+    "quota2026": 8
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -5454,7 +8688,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 467.5,
     "minRank": 43000,
-    "quota": 130
+    "quota": 130,
+    "minScore2025": 467.5,
+    "minRank2025": 43000,
+    "quota2025": 130,
+    "minScore2026": 479.83,
+    "minRank2026": 36092,
+    "quota2026": 68
   },
   {
     "university": "ANKARA BİLİM ÜNİVERSİTESİ",
@@ -5463,7 +8703,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 472.01,
     "minRank": 43078,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 472.01,
+    "minRank2025": 43078,
+    "quota2025": 4,
+    "minScore2026": 472.01,
+    "minRank2026": 43078,
+    "quota2026": 4
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -5472,7 +8718,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 471.99,
     "minRank": 43093,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 471.99,
+    "minRank2025": 43093,
+    "quota2025": 30,
+    "minScore2026": 471.99,
+    "minRank2026": 43093,
+    "quota2026": 30
   },
   {
     "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -5481,7 +8733,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 453.24,
     "minRank": 43209,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 453.24,
+    "minRank2025": 43209,
+    "quota2025": 12,
+    "minScore2026": 475.47,
+    "minRank2026": 39948,
+    "quota2026": 12
   },
   {
     "university": "ANKARA MEDİPOL ÜNİVERSİTESİ",
@@ -5490,7 +8748,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 453.07,
     "minRank": 43357,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 453.07,
+    "minRank2025": 43357,
+    "quota2025": 8,
+    "minScore2026": 474.64,
+    "minRank2026": 40725,
+    "quota2026": 8
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERS��TESİ",
@@ -5499,7 +8763,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 452.99,
     "minRank": 43430,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 452.99,
+    "minRank2025": 43430,
+    "quota2025": 55
   },
   {
     "university": "TED ÜNİVERSİTESİ",
@@ -5508,7 +8775,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 452.66,
     "minRank": 43715,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 452.66,
+    "minRank2025": 43715,
+    "quota2025": 6,
+    "minScore2026": 477.67,
+    "minRank2026": 38024,
+    "quota2026": 6
   },
   {
     "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
@@ -5517,7 +8790,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 452.45,
     "minRank": 43888,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 452.45,
+    "minRank2025": 43888,
+    "quota2025": 36,
+    "minScore2026": 471.81,
+    "minRank2026": 43290,
+    "quota2026": 36
   },
   {
     "university": "LOKMAN HEKİM ÜNİVERSİTESİ",
@@ -5526,7 +8805,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 452.43,
     "minRank": 43908,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 452.43,
+    "minRank2025": 43908,
+    "quota2025": 7,
+    "minScore2026": 473.86,
+    "minRank2026": 41437,
+    "quota2026": 7
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -5535,7 +8820,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 452.39,
     "minRank": 43959,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 452.39,
+    "minRank2025": 43959,
+    "quota2025": 40,
+    "minScore2026": 469.05,
+    "minRank2026": 45722,
+    "quota2026": 40
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -5544,7 +8835,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 452.35,
     "minRank": 43986,
-    "quota": 13
+    "quota": 13,
+    "minScore2025": 452.35,
+    "minRank2025": 43986,
+    "quota2025": 13,
+    "minScore2026": 452.02,
+    "minRank2026": 61804,
+    "quota2026": 13
   },
   {
     "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -5553,7 +8850,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 469.5,
     "minRank": 44000,
-    "quota": 110
+    "quota": 110,
+    "minScore2025": 469.5,
+    "minRank2025": 44000,
+    "quota2025": 110,
+    "minScore2026": 486.07,
+    "minRank2026": 30749,
+    "quota2026": 54
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -5562,7 +8865,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 452.24,
     "minRank": 44092,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 452.24,
+    "minRank2025": 44092,
+    "quota2025": 9,
+    "minScore2026": 471,
+    "minRank2026": 44013,
+    "quota2026": 9
   },
   {
     "university": "SÜLEYMAN DEMİREL ÜNİVERSİTESİ",
@@ -5571,7 +8880,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 452.04,
     "minRank": 44272,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 452.04,
+    "minRank2025": 44272,
+    "quota2025": 27,
+    "minScore2026": 472.91,
+    "minRank2026": 42251,
+    "quota2026": 27
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -5580,7 +8895,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 451.92,
     "minRank": 44369,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 451.92,
+    "minRank2025": 44369,
+    "quota2025": 80,
+    "minScore2026": 455.46,
+    "minRank2026": 58483,
+    "quota2026": 80
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -5589,7 +8910,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 451.85,
     "minRank": 44440,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 451.85,
+    "minRank2025": 44440,
+    "quota2025": 54,
+    "minScore2026": 474.24,
+    "minRank2026": 41096,
+    "quota2026": 54
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -5598,7 +8925,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 451.79,
     "minRank": 44514,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 451.79,
+    "minRank2025": 44514,
+    "quota2025": 20,
+    "minScore2026": 474.08,
+    "minRank2026": 41235,
+    "quota2026": 20
   },
   {
     "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
@@ -5607,7 +8940,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 451.68,
     "minRank": 44638,
-    "quota": 15
+    "quota": 15,
+    "minScore2025": 451.68,
+    "minRank2025": 44638,
+    "quota2025": 15,
+    "minScore2026": 464.79,
+    "minRank2026": 49706,
+    "quota2026": 15
   },
   {
     "university": "SİVAS BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -5616,7 +8955,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 451.35,
     "minRank": 44944,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 451.35,
+    "minRank2025": 44944,
+    "quota2025": 30,
+    "minScore2026": 473.45,
+    "minRank2026": 41794,
+    "quota2026": 30
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -5625,7 +8970,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 464.8,
     "minRank": 45000,
-    "quota": 120
+    "quota": 120,
+    "minScore2025": 464.8,
+    "minRank2025": 45000,
+    "quota2025": 120,
+    "minScore2026": 478.13,
+    "minRank2026": 37607,
+    "quota2026": 54
   },
   {
     "university": "MERSİN ÜNİVERSİTESİ",
@@ -5634,7 +8985,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 451.18,
     "minRank": 45083,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 451.18,
+    "minRank2025": 45083,
+    "quota2025": 54,
+    "minScore2026": 472.42,
+    "minRank2026": 42691,
+    "quota2026": 54
   },
   {
     "university": "BİRUNİ ÜNİVERSİTESİ",
@@ -5643,7 +9000,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 451.14,
     "minRank": 45116,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 451.14,
+    "minRank2025": 45116,
+    "quota2025": 10,
+    "minScore2026": 473.4,
+    "minRank2026": 41826,
+    "quota2026": 10
   },
   {
     "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -5652,7 +9015,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 451.06,
     "minRank": 45191,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 451.06,
+    "minRank2025": 45191,
+    "quota2025": 3
   },
   {
     "university": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -5661,7 +9027,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 451.05,
     "minRank": 45204,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 451.05,
+    "minRank2025": 45204,
+    "quota2025": 6,
+    "minScore2026": 465.27,
+    "minRank2026": 49260,
+    "quota2026": 6
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -5670,7 +9042,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 451.04,
     "minRank": 45213,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 451.04,
+    "minRank2025": 45213,
+    "quota2025": 60,
+    "minScore2026": 465.68,
+    "minRank2026": 48897,
+    "quota2026": 60
   },
   {
     "university": "BİRUNİ ÜNİVERSİTESİ",
@@ -5679,7 +9057,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 451.02,
     "minRank": 45229,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 451.02,
+    "minRank2025": 45229,
+    "quota2025": 6,
+    "minScore2026": 473.47,
+    "minRank2026": 41774,
+    "quota2026": 6
   },
   {
     "university": "İSTİNYE ÜNİVERSİTESİ",
@@ -5688,7 +9072,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 450.79,
     "minRank": 45437,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 450.79,
+    "minRank2025": 45437,
+    "quota2025": 6,
+    "minScore2026": 472.83,
+    "minRank2026": 42321,
+    "quota2026": 6
   },
   {
     "university": "MEF ÜNİVERSİTESİ",
@@ -5697,7 +9087,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 450.79,
     "minRank": 45443,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 450.79,
+    "minRank2025": 45443,
+    "quota2025": 9,
+    "minScore2026": 474.03,
+    "minRank2026": 41292,
+    "quota2026": 9
   },
   {
     "university": "LOKMAN HEKİM ÜNİVERSİTESİ",
@@ -5706,7 +9102,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 450.78,
     "minRank": 45453,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 450.78,
+    "minRank2025": 45453,
+    "quota2025": 4,
+    "minScore2026": 473.63,
+    "minRank2026": 41619,
+    "quota2026": 4
   },
   {
     "university": "ANKARA MEDİPOL ÜNİVERSİTESİ",
@@ -5715,7 +9117,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 450.67,
     "minRank": 45536,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 450.67,
+    "minRank2025": 45536,
+    "quota2025": 6,
+    "minScore2026": 470.02,
+    "minRank2026": 44900,
+    "quota2026": 6
   },
   {
     "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
@@ -5724,7 +9132,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 450.52,
     "minRank": 45671,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 450.52,
+    "minRank2025": 45671,
+    "quota2025": 5,
+    "minScore2026": 471.94,
+    "minRank2026": 43137,
+    "quota2026": 5
   },
   {
     "university": "ÖZYEĞİN ÜNİVERSİTESİ",
@@ -5733,7 +9147,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 450.49,
     "minRank": 45698,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 450.49,
+    "minRank2025": 45698,
+    "quota2025": 6,
+    "minScore2026": 463.62,
+    "minRank2026": 50746,
+    "quota2026": 6
   },
   {
     "university": "KOCAELİ SAĞLIK VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -5742,7 +9162,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 450.43,
     "minRank": 45754,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 450.43,
+    "minRank2025": 45754,
+    "quota2025": 6,
+    "minScore2026": 471.54,
+    "minRank2026": 43538,
+    "quota2026": 6
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -5751,7 +9177,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 450.05,
     "minRank": 46094,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 450.05,
+    "minRank2025": 46094,
+    "quota2025": 55,
+    "minScore2026": 471.85,
+    "minRank2026": 43226,
+    "quota2026": 55
   },
   {
     "university": "İSTİNYE ÜNİVERSİTESİ",
@@ -5760,7 +9192,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 450.02,
     "minRank": 46120,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 450.02,
+    "minRank2025": 46120,
+    "quota2025": 3,
+    "minScore2026": 473.2,
+    "minRank2026": 41978,
+    "quota2026": 3
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -5769,7 +9207,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.98,
     "minRank": 46156,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 449.98,
+    "minRank2025": 46156,
+    "quota2025": 65,
+    "minScore2026": 451.6,
+    "minRank2026": 62224,
+    "quota2026": 65
   },
   {
     "university": "TRAKYA ÜNİVERSİTESİ",
@@ -5778,7 +9222,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.9,
     "minRank": 46238,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 449.9,
+    "minRank2025": 46238,
+    "quota2025": 36,
+    "minScore2026": 470.93,
+    "minRank2026": 44078,
+    "quota2026": 36
   },
   {
     "university": "AFYONKARAHİSAR SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -5787,7 +9237,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.86,
     "minRank": 46271,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 449.86,
+    "minRank2025": 46271,
+    "quota2025": 36,
+    "minScore2026": 470.95,
+    "minRank2026": 44057,
+    "quota2026": 36
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -5796,7 +9252,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.84,
     "minRank": 46297,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 449.84,
+    "minRank2025": 46297,
+    "quota2025": 3,
+    "minScore2026": 481.8,
+    "minRank2026": 34330,
+    "quota2026": 3
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -5805,7 +9267,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.73,
     "minRank": 46403,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 449.73,
+    "minRank2025": 46403,
+    "quota2025": 30,
+    "minScore2026": 484.4,
+    "minRank2026": 32147,
+    "quota2026": 30
   },
   {
     "university": "İSTANBUL SAĞLIK VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -5814,7 +9282,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.66,
     "minRank": 46454,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 449.66,
+    "minRank2025": 46454,
+    "quota2025": 10,
+    "minScore2026": 472.03,
+    "minRank2026": 43059,
+    "quota2026": 10
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -5823,7 +9297,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 462.9,
     "minRank": 46500,
-    "quota": 130
+    "quota": 130,
+    "minScore2025": 462.9,
+    "minRank2025": 46500,
+    "quota2025": 130,
+    "minScore2026": 475.83,
+    "minRank2026": 39602,
+    "quota2026": 72
   },
   {
     "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
@@ -5832,7 +9312,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.46,
     "minRank": 46655,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 449.46,
+    "minRank2025": 46655,
+    "quota2025": 10,
+    "minScore2026": 455.38,
+    "minRank2026": 58568,
+    "quota2026": 10
   },
   {
     "university": "OSTİM TEKNİK ÜNİVERSİTESİ",
@@ -5841,7 +9327,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.33,
     "minRank": 46792,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 449.33,
+    "minRank2025": 46792,
+    "quota2025": 9,
+    "minScore2026": 457.66,
+    "minRank2026": 56432,
+    "quota2026": 9
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -5850,7 +9342,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.28,
     "minRank": 46835,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 449.28,
+    "minRank2025": 46835,
+    "quota2025": 4,
+    "minScore2026": 473.81,
+    "minRank2026": 41476,
+    "quota2026": 4
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -5859,7 +9357,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.24,
     "minRank": 46877,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 449.24,
+    "minRank2025": 46877,
+    "quota2025": 75,
+    "minScore2026": 469.77,
+    "minRank2026": 45099,
+    "quota2026": 75
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -5868,7 +9372,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.2,
     "minRank": 46928,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 449.2,
+    "minRank2025": 46928,
+    "quota2025": 3,
+    "minScore2026": 469.64,
+    "minRank2026": 45216,
+    "quota2026": 3
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -5877,7 +9387,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.17,
     "minRank": 46952,
-    "quota": 2
+    "quota": 2,
+    "minScore2025": 449.17,
+    "minRank2025": 46952,
+    "quota2025": 2,
+    "minScore2026": 469.9,
+    "minRank2026": 44998,
+    "quota2026": 2
   },
   {
     "university": "ESKİŞEHİR TEKNİK ÜNİVERSİTESİ",
@@ -5886,7 +9402,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.05,
     "minRank": 47064,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 449.05,
+    "minRank2025": 47064,
+    "quota2025": 45,
+    "minScore2026": 468.49,
+    "minRank2026": 46219,
+    "quota2026": 45
   },
   {
     "university": "OSTİM TEKNİK ÜNİVERSİTESİ",
@@ -5895,7 +9417,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.04,
     "minRank": 47077,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 449.04,
+    "minRank2025": 47077,
+    "quota2025": 9,
+    "minScore2026": 470.98,
+    "minRank2026": 44034,
+    "quota2026": 9
   },
   {
     "university": "ATILIM ÜNİVERSİTESİ",
@@ -5904,7 +9432,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.03,
     "minRank": 47084,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 449.03,
+    "minRank2025": 47084,
+    "quota2025": 7,
+    "minScore2026": 453.21,
+    "minRank2026": 60652,
+    "quota2026": 7
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -5913,7 +9447,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.02,
     "minRank": 47099,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 449.02,
+    "minRank2025": 47099,
+    "quota2025": 60,
+    "minScore2026": 472.49,
+    "minRank2026": 42633,
+    "quota2026": 60
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -5922,7 +9462,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.02,
     "minRank": 47100,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 449.02,
+    "minRank2025": 47100,
+    "quota2025": 20,
+    "minScore2026": 468.95,
+    "minRank2026": 45805,
+    "quota2026": 20
   },
   {
     "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
@@ -5931,7 +9477,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 448.98,
     "minRank": 47130,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 448.98,
+    "minRank2025": 47130,
+    "quota2025": 70,
+    "minScore2026": 471.42,
+    "minRank2026": 43628,
+    "quota2026": 70
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -5940,7 +9492,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 448.9,
     "minRank": 47206,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 448.9,
+    "minRank2025": 47206,
+    "quota2025": 6,
+    "minScore2026": 470.06,
+    "minRank2026": 44875,
+    "quota2026": 6
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -5949,7 +9507,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 448.43,
     "minRank": 47611,
-    "quota": 17
+    "quota": 17,
+    "minScore2025": 448.43,
+    "minRank2025": 47611,
+    "quota2025": 17,
+    "minScore2026": 418.32,
+    "minRank2026": 96004,
+    "quota2026": 2
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -5958,7 +9522,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 448.42,
     "minRank": 47616,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 448.42,
+    "minRank2025": 47616,
+    "quota2025": 5,
+    "minScore2026": 480.67,
+    "minRank2026": 35339,
+    "quota2026": 5
   },
   {
     "university": "YAŞAR ÜNİVERSİTESİ",
@@ -5967,7 +9537,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 448.33,
     "minRank": 47673,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 448.33,
+    "minRank2025": 47673,
+    "quota2025": 9,
+    "minScore2026": 467.01,
+    "minRank2026": 47644,
+    "quota2026": 9
   },
   {
     "university": "ÖZYEĞİN ÜNİVERSİTESİ",
@@ -5976,7 +9552,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 448.15,
     "minRank": 47828,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 448.15,
+    "minRank2025": 47828,
+    "quota2025": 5,
+    "minScore2026": 466.15,
+    "minRank2026": 48449,
+    "quota2026": 5
   },
   {
     "university": "İSTANBUL SAĞLIK VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -5985,7 +9567,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 448.14,
     "minRank": 47842,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 448.14,
+    "minRank2025": 47842,
+    "quota2025": 6,
+    "minScore2026": 471.21,
+    "minRank2026": 43818,
+    "quota2026": 6
   },
   {
     "university": "DÜZCE ÜNİVERSİTESİ",
@@ -5994,7 +9582,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 448.13,
     "minRank": 47844,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 448.13,
+    "minRank2025": 47844,
+    "quota2025": 27,
+    "minScore2026": 470.37,
+    "minRank2026": 44601,
+    "quota2026": 27
   },
   {
     "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
@@ -6003,7 +9597,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 447.99,
     "minRank": 47966,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 447.99,
+    "minRank2025": 47966,
+    "quota2025": 6,
+    "minScore2026": 453.11,
+    "minRank2026": 60752,
+    "quota2026": 6
   },
   {
     "university": "ZONGULDAK BÜLENT ECEVİT ÜNİVERSİTESİ",
@@ -6012,7 +9612,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 447.76,
     "minRank": 48147,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 447.76,
+    "minRank2025": 48147,
+    "quota2025": 36,
+    "minScore2026": 468.99,
+    "minRank2026": 45768,
+    "quota2026": 36
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -6021,7 +9627,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 447.68,
     "minRank": 48213,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 447.68,
+    "minRank2025": 48213,
+    "quota2025": 40,
+    "minScore2026": 463.87,
+    "minRank2026": 50523,
+    "quota2026": 40
   },
   {
     "university": "NECMETTİN ERBAKAN ÜNİVERSİTESİ",
@@ -6030,7 +9642,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 447.55,
     "minRank": 48333,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 447.55,
+    "minRank2025": 48333,
+    "quota2025": 40,
+    "minScore2026": 470.95,
+    "minRank2026": 44059,
+    "quota2026": 40
   },
   {
     "university": "SİVAS CUMHURİYET ÜNİVERSİTESİ",
@@ -6039,7 +9657,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 447.53,
     "minRank": 48355,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 447.53,
+    "minRank2025": 48355,
+    "quota2025": 45,
+    "minScore2026": 468.78,
+    "minRank2026": 45950,
+    "quota2026": 45
   },
   {
     "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
@@ -6048,7 +9672,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 447.45,
     "minRank": 48442,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 447.45,
+    "minRank2025": 48442,
+    "quota2025": 3,
+    "minScore2026": 471.41,
+    "minRank2026": 43636,
+    "quota2026": 3
   },
   {
     "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
@@ -6057,7 +9687,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 447.39,
     "minRank": 48491,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 447.39,
+    "minRank2025": 48491,
+    "quota2025": 40,
+    "minScore2026": 442.68,
+    "minRank2026": 70730,
+    "quota2026": 8
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -6066,7 +9702,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 447.38,
     "minRank": 48502,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 447.38,
+    "minRank2025": 48502,
+    "quota2025": 75,
+    "minScore2026": 470.87,
+    "minRank2026": 44144,
+    "quota2026": 75
   },
   {
     "university": "ALTINBAŞ ÜNİVERSİTESİ",
@@ -6075,7 +9717,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 447.32,
     "minRank": 48545,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 447.32,
+    "minRank2025": 48545,
+    "quota2025": 4,
+    "minScore2026": 472.21,
+    "minRank2026": 42871,
+    "quota2026": 4
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -6084,7 +9732,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 447.32,
     "minRank": 48550,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 447.32,
+    "minRank2025": 48550,
+    "quota2025": 45,
+    "minScore2026": 466.29,
+    "minRank2026": 48312,
+    "quota2026": 45
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -6093,7 +9747,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 447.3,
     "minRank": 48566,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 447.3,
+    "minRank2025": 48566,
+    "quota2025": 27,
+    "minScore2026": 469.78,
+    "minRank2026": 45090,
+    "quota2026": 27
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -6102,7 +9762,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 447.2,
     "minRank": 48641,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 447.2,
+    "minRank2025": 48641,
+    "quota2025": 50,
+    "minScore2026": 467.56,
+    "minRank2026": 47116,
+    "quota2026": 50
   },
   {
     "university": "KADİR HAS ÜNİVERSİTESİ",
@@ -6111,7 +9777,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 465.95,
     "minRank": 48649,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 465.95,
+    "minRank2025": 48649,
+    "quota2025": 9,
+    "minScore2026": 465.95,
+    "minRank2026": 48649,
+    "quota2026": 9
   },
   {
     "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
@@ -6120,7 +9792,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 446.92,
     "minRank": 48904,
-    "quota": 105
+    "quota": 105,
+    "minScore2025": 446.92,
+    "minRank2025": 48904,
+    "quota2025": 105,
+    "minScore2026": 447.61,
+    "minRank2026": 65974,
+    "quota2026": 105
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -6129,7 +9807,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 446.79,
     "minRank": 49042,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 446.79,
+    "minRank2025": 49042,
+    "quota2025": 9,
+    "minScore2026": 465.89,
+    "minRank2026": 48694,
+    "quota2026": 9
   },
   {
     "university": "VAN YÜZÜNCÜ YIL ÜNİVERSİTESİ",
@@ -6138,7 +9822,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 446.66,
     "minRank": 49144,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 446.66,
+    "minRank2025": 49144,
+    "quota2025": 36,
+    "minScore2026": 468.01,
+    "minRank2026": 46666,
+    "quota2026": 36
   },
   {
     "university": "ATILIM ÜNİVERSİTESİ",
@@ -6147,7 +9837,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 446.62,
     "minRank": 49177,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 446.62,
+    "minRank2025": 49177,
+    "quota2025": 6,
+    "minScore2026": 468.8,
+    "minRank2026": 45924,
+    "quota2026": 6
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -6156,7 +9852,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 446.55,
     "minRank": 49229,
-    "quota": 63
+    "quota": 63,
+    "minScore2025": 446.55,
+    "minRank2025": 49229,
+    "quota2025": 63,
+    "minScore2026": 441.91,
+    "minRank2026": 71463,
+    "quota2026": 7
   },
   {
     "university": "TÜRK HAVA KURUMU ÜNİVERSİTESİ",
@@ -6165,7 +9867,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 446.43,
     "minRank": 49338,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 446.43,
+    "minRank2025": 49338,
+    "quota2025": 10,
+    "minScore2026": 450.67,
+    "minRank2026": 63039,
+    "quota2026": 10
   },
   {
     "university": "İSTANBUL KENT ÜNİVERSİTESİ",
@@ -6174,7 +9882,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 446.42,
     "minRank": 49360,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 446.42,
+    "minRank2025": 49360,
+    "quota2025": 4,
+    "minScore2026": 471.68,
+    "minRank2026": 43417,
+    "quota2026": 4
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -6183,7 +9897,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 446.37,
     "minRank": 49412,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 446.37,
+    "minRank2025": 49412,
+    "quota2025": 6,
+    "minScore2026": 420.17,
+    "minRank2026": 93883,
+    "quota2026": 6
   },
   {
     "university": "FENERBAHÇE ÜNİVERSİTESİ",
@@ -6192,7 +9912,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 446.33,
     "minRank": 49447,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 446.33,
+    "minRank2025": 49447,
+    "quota2025": 3,
+    "minScore2026": 470.95,
+    "minRank2026": 44060,
+    "quota2026": 3
   },
   {
     "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -6201,7 +9927,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 446.3,
     "minRank": 49477,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 446.3,
+    "minRank2025": 49477,
+    "quota2025": 12,
+    "minScore2026": 466.53,
+    "minRank2026": 48076,
+    "quota2026": 12
   },
   {
     "university": "TOKAT GAZİOSMANPAŞA ÜNİVERSİTESİ",
@@ -6210,7 +9942,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 446.2,
     "minRank": 49600,
-    "quota": 32
+    "quota": 32,
+    "minScore2025": 446.2,
+    "minRank2025": 49600,
+    "quota2025": 32,
+    "minScore2026": 467.92,
+    "minRank2026": 46748,
+    "quota2026": 32
   },
   {
     "university": "FIRAT ÜNİVERSİTESİ",
@@ -6219,7 +9957,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 446.01,
     "minRank": 49762,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 446.01,
+    "minRank2025": 49762,
+    "quota2025": 27,
+    "minScore2026": 467.79,
+    "minRank2026": 46889,
+    "quota2026": 27
   },
   {
     "university": "YAŞAR ÜNİVERSİTESİ",
@@ -6228,7 +9972,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 445.9,
     "minRank": 49880,
-    "quota": 12
+    "quota": 12,
+    "minScore2025": 445.9,
+    "minRank2025": 49880,
+    "quota2025": 12,
+    "minScore2026": 464.42,
+    "minRank2026": 50040,
+    "quota2026": 12
   },
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -6237,7 +9987,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 445.86,
     "minRank": 49914,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 445.86,
+    "minRank2025": 49914,
+    "quota2025": 40,
+    "minScore2026": 457.4,
+    "minRank2026": 56652,
+    "quota2026": 40
   },
   {
     "university": "ÇANKAYA ÜNİVERSİTESİ",
@@ -6246,7 +10002,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 445.63,
     "minRank": 50114,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 445.63,
+    "minRank2025": 50114,
+    "quota2025": 10,
+    "minScore2026": 466.17,
+    "minRank2026": 48422,
+    "quota2026": 10
   },
   {
     "university": "OSTİM TEKNİK ÜNİVERSİTESİ",
@@ -6255,7 +10017,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 445.61,
     "minRank": 50139,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 445.61,
+    "minRank2025": 50139,
+    "quota2025": 9,
+    "minScore2026": 470.61,
+    "minRank2026": 44397,
+    "quota2026": 9
   },
   {
     "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
@@ -6264,7 +10032,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 445.58,
     "minRank": 50170,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 445.58,
+    "minRank2025": 50170,
+    "quota2025": 8,
+    "minScore2026": 466.5,
+    "minRank2026": 48104,
+    "quota2026": 8
   },
   {
     "university": "FENERBAHÇE ÜNİVERSİTESİ",
@@ -6273,7 +10047,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 445.57,
     "minRank": 50174,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 445.57,
+    "minRank2025": 50174,
+    "quota2025": 3,
+    "minScore2026": 468.63,
+    "minRank2026": 46085,
+    "quota2026": 3
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -6282,7 +10062,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 445.53,
     "minRank": 50219,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 445.53,
+    "minRank2025": 50219,
+    "quota2025": 40,
+    "minScore2026": 459.87,
+    "minRank2026": 54307,
+    "quota2026": 40
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -6291,7 +10077,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 445.5,
     "minRank": 50252,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 445.5,
+    "minRank2025": 50252,
+    "quota2025": 70,
+    "minScore2026": 465.09,
+    "minRank2026": 49408,
+    "quota2026": 70
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -6300,7 +10092,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 445.24,
     "minRank": 50495,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 445.24,
+    "minRank2025": 50495,
+    "quota2025": 50,
+    "minScore2026": 462.35,
+    "minRank2026": 52014,
+    "quota2026": 50
   },
   {
     "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
@@ -6309,7 +10107,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 445.2,
     "minRank": 50537,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 445.2,
+    "minRank2025": 50537,
+    "quota2025": 65,
+    "minScore2026": 446.33,
+    "minRank2026": 67228,
+    "quota2026": 65
   },
   {
     "university": "HARRAN ÜNİVERSİTESİ",
@@ -6318,7 +10122,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 445.14,
     "minRank": 50593,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 445.14,
+    "minRank2025": 50593,
+    "quota2025": 27,
+    "minScore2026": 467.84,
+    "minRank2026": 46837,
+    "quota2026": 27
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -6327,7 +10137,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 445.03,
     "minRank": 50688,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 445.03,
+    "minRank2025": 50688,
+    "quota2025": 9,
+    "minScore2026": 451.65,
+    "minRank2026": 62177,
+    "quota2026": 9
   },
   {
     "university": "İSTANBUL YENİ YÜZYIL ÜNİVERSİTESİ",
@@ -6336,7 +10152,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 444.98,
     "minRank": 50734,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 444.98,
+    "minRank2025": 50734,
+    "quota2025": 8,
+    "minScore2026": 469.45,
+    "minRank2026": 45380,
+    "quota2026": 8
   },
   {
     "university": "TÜRK HAVA KURUMU ÜNİVERSİTESİ",
@@ -6345,7 +10167,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 444.73,
     "minRank": 50969,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 444.73,
+    "minRank2025": 50969,
+    "quota2025": 6,
+    "minScore2026": 469.19,
+    "minRank2026": 45607,
+    "quota2026": 6
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -6354,7 +10182,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 444.68,
     "minRank": 51029,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 444.68,
+    "minRank2025": 51029,
+    "quota2025": 10,
+    "minScore2026": 463.76,
+    "minRank2026": 50612,
+    "quota2026": 10
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -6363,7 +10197,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 444.59,
     "minRank": 51124,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 444.59,
+    "minRank2025": 51124,
+    "quota2025": 40,
+    "minScore2026": 466.06,
+    "minRank2026": 48538,
+    "quota2026": 40
   },
   {
     "university": "ERZİNCAN BİNALİ YILDIRIM ÜNİVERSİTESİ",
@@ -6372,7 +10212,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 444.37,
     "minRank": 51327,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 444.37,
+    "minRank2025": 51327,
+    "quota2025": 54,
+    "minScore2026": 466.64,
+    "minRank2026": 47962,
+    "quota2026": 54
   },
   {
     "university": "ADIYAMAN ÜNİVERSİTESİ",
@@ -6381,7 +10227,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 444.34,
     "minRank": 51361,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 444.34,
+    "minRank2025": 51361,
+    "quota2025": 36,
+    "minScore2026": 466.56,
+    "minRank2026": 48040,
+    "quota2026": 36
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -6390,7 +10242,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 444.25,
     "minRank": 51452,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 444.25,
+    "minRank2025": 51452,
+    "quota2025": 4,
+    "minScore2026": 460.66,
+    "minRank2026": 53632,
+    "quota2026": 4
   },
   {
     "university": "ESKİŞEHİR TEKNİK ÜNİVERSİTESİ",
@@ -6399,7 +10257,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 444.13,
     "minRank": 51551,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 444.13,
+    "minRank2025": 51551,
+    "quota2025": 65,
+    "minScore2026": 470.93,
+    "minRank2026": 44077,
+    "quota2026": 65
   },
   {
     "university": "ÇANKAYA ÜNİVERSİTESİ",
@@ -6408,7 +10272,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 443.98,
     "minRank": 51683,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 443.98,
+    "minRank2025": 51683,
+    "quota2025": 9,
+    "minScore2026": 461,
+    "minRank2026": 53310,
+    "quota2026": 9
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -6417,7 +10287,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 443.95,
     "minRank": 51706,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 443.95,
+    "minRank2025": 51706,
+    "quota2025": 70,
+    "minScore2026": 461.88,
+    "minRank2026": 52492,
+    "quota2026": 70
   },
   {
     "university": "TÜRK HAVA KURUMU ÜNİVERSİTESİ",
@@ -6426,7 +10302,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 443.76,
     "minRank": 51880,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 443.76,
+    "minRank2025": 51880,
+    "quota2025": 3,
+    "minScore2026": 469.18,
+    "minRank2026": 45615,
+    "quota2026": 3
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -6435,7 +10317,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 462.4,
     "minRank": 51952,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 462.4,
+    "minRank2025": 51952,
+    "quota2025": 40,
+    "minScore2026": 462.4,
+    "minRank2026": 51952,
+    "quota2026": 40
   },
   {
     "university": "ANADOLU ÜNİVERSİTESİ",
@@ -6444,7 +10332,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 455.3,
     "minRank": 52000,
-    "quota": 130
+    "quota": 130,
+    "minScore2025": 455.3,
+    "minRank2025": 52000,
+    "quota2025": 130,
+    "minScore2026": 475.11,
+    "minRank2026": 40271,
+    "quota2026": 81
   },
   {
     "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -6453,7 +10347,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 454.8,
     "minRank": 52100,
-    "quota": 62
+    "quota": 62,
+    "minScore2025": 454.8,
+    "minRank2025": 52100,
+    "quota2025": 62
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -6462,7 +10359,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 443.45,
     "minRank": 52191,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 443.45,
+    "minRank2025": 52191,
+    "quota2025": 20,
+    "minScore2026": 469.61,
+    "minRank2026": 45240,
+    "quota2026": 20
   },
   {
     "university": "İSTANBUL KENT ÜNİVERSİTESİ",
@@ -6471,7 +10374,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 443.38,
     "minRank": 52264,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 443.38,
+    "minRank2025": 52264,
+    "quota2025": 3,
+    "minScore2026": 470.79,
+    "minRank2026": 44233,
+    "quota2026": 3
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -6480,7 +10389,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 443.16,
     "minRank": 52481,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 443.16,
+    "minRank2025": 52481,
+    "quota2025": 60,
+    "minScore2026": 455.96,
+    "minRank2026": 57974,
+    "quota2026": 60
   },
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
@@ -6489,7 +10404,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 443.15,
     "minRank": 52495,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 443.15,
+    "minRank2025": 52495,
+    "quota2025": 50,
+    "minScore2026": 467.36,
+    "minRank2026": 47303,
+    "quota2026": 50
   },
   {
     "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
@@ -6498,7 +10419,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 442.9,
     "minRank": 52724,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 442.9,
+    "minRank2025": 52724,
+    "quota2025": 70,
+    "minScore2026": 465.81,
+    "minRank2026": 48782,
+    "quota2026": 70
   },
   {
     "university": "İSTİNYE ÜNİVERSİTESİ",
@@ -6507,7 +10434,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 442.83,
     "minRank": 52787,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 442.83,
+    "minRank2025": 52787,
+    "quota2025": 7,
+    "minScore2026": 456.07,
+    "minRank2026": 57871,
+    "quota2026": 7
   },
   {
     "university": "ATILIM ÜNİVERSİTESİ",
@@ -6516,7 +10449,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 442.67,
     "minRank": 52947,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 442.67,
+    "minRank2025": 52947,
+    "quota2025": 3,
+    "minScore2026": 465.14,
+    "minRank2026": 49359,
+    "quota2026": 3
   },
   {
     "university": "ESKİŞEHİR TEKNİK ÜNİVERSİTESİ",
@@ -6525,7 +10464,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 442.67,
     "minRank": 52949,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 442.67,
+    "minRank2025": 52949,
+    "quota2025": 35,
+    "minScore2026": 467.28,
+    "minRank2026": 47381,
+    "quota2026": 35
   },
   {
     "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
@@ -6534,7 +10479,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 442.64,
     "minRank": 52974,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 442.64,
+    "minRank2025": 52974,
+    "quota2025": 50,
+    "minScore2026": 423.68,
+    "minRank2026": 89984,
+    "quota2026": 10
   },
   {
     "university": "PİRİ REİS ÜNİVERSİTESİ",
@@ -6543,7 +10494,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 442.56,
     "minRank": 53057,
-    "quota": 14
+    "quota": 14,
+    "minScore2025": 442.56,
+    "minRank2025": 53057,
+    "quota2025": 14,
+    "minScore2026": 466.84,
+    "minRank2026": 47801,
+    "quota2026": 14
   },
   {
     "university": "ABDULLAH GÜL ÜNİVERSİTESİ",
@@ -6552,7 +10509,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 442.53,
     "minRank": 53079,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 442.53,
+    "minRank2025": 53079,
+    "quota2025": 80,
+    "minScore2026": 443.23,
+    "minRank2026": 70217,
+    "quota2026": 80
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -6561,7 +10524,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 442.47,
     "minRank": 53155,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 442.47,
+    "minRank2025": 53155,
+    "quota2025": 45,
+    "minScore2026": 462.36,
+    "minRank2026": 51997,
+    "quota2026": 45
   },
   {
     "university": "AĞRI İBRAHİM ÇEÇEN ÜNİVERSİTESİ",
@@ -6570,7 +10539,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 442.45,
     "minRank": 53170,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 442.45,
+    "minRank2025": 53170,
+    "quota2025": 36,
+    "minScore2026": 465.8,
+    "minRank2026": 48795,
+    "quota2026": 36
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -6579,7 +10554,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 442.19,
     "minRank": 53428,
-    "quota": 95
+    "quota": 95,
+    "minScore2025": 442.19,
+    "minRank2025": 53428,
+    "quota2025": 95,
+    "minScore2026": 442.58,
+    "minRank2026": 70832,
+    "quota2026": 95
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -6588,7 +10569,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 442.1,
     "minRank": 53512,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 442.1,
+    "minRank2025": 53512,
+    "quota2025": 65,
+    "minScore2026": 460.92,
+    "minRank2026": 53375,
+    "quota2026": 65
   },
   {
     "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
@@ -6597,7 +10584,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 441.88,
     "minRank": 53689,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 441.88,
+    "minRank2025": 53689,
+    "quota2025": 20,
+    "minScore2026": 444.3,
+    "minRank2026": 69205,
+    "quota2026": 20
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -6606,7 +10599,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 441.83,
     "minRank": 53735,
-    "quota": 44
+    "quota": 44,
+    "minScore2025": 441.83,
+    "minRank2025": 53735,
+    "quota2025": 44,
+    "minScore2026": 468.78,
+    "minRank2026": 45948,
+    "quota2026": 44
   },
   {
     "university": "KADİR HAS ÜNİVERSİTESİ",
@@ -6615,7 +10614,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 441.81,
     "minRank": 53755,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 441.81,
+    "minRank2025": 53755,
+    "quota2025": 5,
+    "minScore2026": 466.1,
+    "minRank2026": 48494,
+    "quota2026": 5
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -6624,7 +10629,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 441.49,
     "minRank": 54049,
-    "quota": 95
+    "quota": 95,
+    "minScore2025": 441.49,
+    "minRank2025": 54049,
+    "quota2025": 95,
+    "minScore2026": 460.7,
+    "minRank2026": 53587,
+    "quota2026": 95
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -6633,7 +10644,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 441.49,
     "minRank": 54055,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 441.49,
+    "minRank2025": 54055,
+    "quota2025": 40,
+    "minScore2026": 459.26,
+    "minRank2026": 54889,
+    "quota2026": 40
   },
   {
     "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
@@ -6642,7 +10659,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 441.28,
     "minRank": 54254,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 441.28,
+    "minRank2025": 54254,
+    "quota2025": 70,
+    "minScore2026": 466.62,
+    "minRank2026": 47986,
+    "quota2026": 70
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -6651,7 +10674,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 441.24,
     "minRank": 54297,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 441.24,
+    "minRank2025": 54297,
+    "quota2025": 60,
+    "minScore2026": 464.3,
+    "minRank2026": 50131,
+    "quota2026": 60
   },
   {
     "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
@@ -6660,7 +10689,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 452.4,
     "minRank": 54300,
-    "quota": 62
+    "quota": 62,
+    "minScore2025": 452.4,
+    "minRank2025": 54300,
+    "quota2025": 62
   },
   {
     "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
@@ -6669,7 +10701,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 441.1,
     "minRank": 54422,
-    "quota": 90
+    "quota": 90,
+    "minScore2025": 441.1,
+    "minRank2025": 54422,
+    "quota2025": 90,
+    "minScore2026": 442.09,
+    "minRank2026": 71304,
+    "quota2026": 90
   },
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -6678,7 +10716,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 441.05,
     "minRank": 54477,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 441.05,
+    "minRank2025": 54477,
+    "quota2025": 40,
+    "minScore2026": 455.73,
+    "minRank2026": 58208,
+    "quota2026": 40
   },
   {
     "university": "MALTEPE ÜNİVERSİTESİ",
@@ -6687,7 +10731,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 441.04,
     "minRank": 54488,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 441.04,
+    "minRank2025": 54488,
+    "quota2025": 4,
+    "minScore2026": 457.56,
+    "minRank2026": 56538,
+    "quota2026": 4
   },
   {
     "university": "OSTİM TEKNİK ÜNİVERSİTESİ",
@@ -6696,7 +10746,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 440.95,
     "minRank": 54552,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 440.95,
+    "minRank2025": 54552,
+    "quota2025": 8,
+    "minScore2026": 466.49,
+    "minRank2026": 48108,
+    "quota2026": 8
   },
   {
     "university": "ANKARA MEDİPOL ÜNİVERSİTESİ",
@@ -6705,7 +10761,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 440.8,
     "minRank": 54681,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 440.8,
+    "minRank2025": 54681,
+    "quota2025": 8,
+    "minScore2026": 463.54,
+    "minRank2026": 50827,
+    "quota2026": 8
   },
   {
     "university": "PİRİ REİS ÜNİVERSİTESİ",
@@ -6714,7 +10776,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 440.61,
     "minRank": 54833,
-    "quota": 16
+    "quota": 16,
+    "minScore2025": 440.61,
+    "minRank2025": 54833,
+    "quota2025": 16,
+    "minScore2026": 464.03,
+    "minRank2026": 50367,
+    "quota2026": 16
   },
   {
     "university": "ANADOLU ÜNİVERSİTESİ",
@@ -6723,7 +10791,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 440.6,
     "minRank": 54848,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 440.6,
+    "minRank2025": 54848,
+    "quota2025": 65,
+    "minScore2026": 462.95,
+    "minRank2026": 51394,
+    "quota2026": 65
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -6732,7 +10806,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 440.59,
     "minRank": 54861,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 440.59,
+    "minRank2025": 54861,
+    "quota2025": 6,
+    "minScore2026": 421.74,
+    "minRank2026": 92192,
+    "quota2026": 6
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -6741,7 +10821,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 440.44,
     "minRank": 54996,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 440.44,
+    "minRank2025": 54996,
+    "quota2025": 50,
+    "minScore2026": 453,
+    "minRank2026": 60854,
+    "quota2026": 50
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -6750,7 +10836,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 451.6,
     "minRank": 55000,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 451.6,
+    "minRank2025": 55000,
+    "quota2025": 80
   },
   {
     "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
@@ -6759,7 +10848,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 440.4,
     "minRank": 55042,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 440.4,
+    "minRank2025": 55042,
+    "quota2025": 85,
+    "minScore2026": 459.05,
+    "minRank2026": 55095,
+    "quota2026": 85
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -6768,7 +10863,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 440.31,
     "minRank": 55112,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 440.31,
+    "minRank2025": 55112,
+    "quota2025": 40,
+    "minScore2026": 460.71,
+    "minRank2026": 53578,
+    "quota2026": 40
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -6777,7 +10878,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 440.16,
     "minRank": 55244,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 440.16,
+    "minRank2025": 55244,
+    "quota2025": 5,
+    "minScore2026": 456.62,
+    "minRank2026": 57367,
+    "quota2026": 5
   },
   {
     "university": "ATILIM ÜNİVERSİTESİ",
@@ -6786,7 +10893,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 440.04,
     "minRank": 55348,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 440.04,
+    "minRank2025": 55348,
+    "quota2025": 6,
+    "minScore2026": 457.13,
+    "minRank2026": 56894,
+    "quota2026": 6
   },
   {
     "university": "OSTİM TEKNİK ÜNİVERSİTESİ",
@@ -6795,7 +10908,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 440.03,
     "minRank": 55366,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 440.03,
+    "minRank2025": 55366,
+    "quota2025": 9,
+    "minScore2026": 450.24,
+    "minRank2026": 63442,
+    "quota2026": 9
   },
   {
     "university": "ACIBADEM MEHMET ALİ AYDINLAR ÜNİVERSİTESİ",
@@ -6804,7 +10923,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 439.91,
     "minRank": 55486,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 439.91,
+    "minRank2025": 55486,
+    "quota2025": 5,
+    "minScore2026": 457.03,
+    "minRank2026": 56984,
+    "quota2026": 5
   },
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -6813,7 +10938,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 439.56,
     "minRank": 55851,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 439.56,
+    "minRank2025": 55851,
+    "quota2025": 45,
+    "minScore2026": 452.16,
+    "minRank2026": 61674,
+    "quota2026": 45
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -6822,7 +10953,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 439.44,
     "minRank": 55967,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 439.44,
+    "minRank2025": 55967,
+    "quota2025": 9,
+    "minScore2026": 454.2,
+    "minRank2026": 59642,
+    "quota2026": 9
   },
   {
     "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
@@ -6831,7 +10968,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 439.29,
     "minRank": 56121,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 439.29,
+    "minRank2025": 56121,
+    "quota2025": 8,
+    "minScore2026": 458.96,
+    "minRank2026": 55187,
+    "quota2026": 8
   },
   {
     "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -6840,7 +10983,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 457.87,
     "minRank": 56214,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 457.87,
+    "minRank2025": 56214,
+    "quota2025": 5,
+    "minScore2026": 457.87,
+    "minRank2026": 56214,
+    "quota2026": 5
   },
   {
     "university": "İSTANBUL MEDENİYET ÜNİVERSİTESİ",
@@ -6849,7 +10998,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 438.79,
     "minRank": 56616,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 438.79,
+    "minRank2025": 56616,
+    "quota2025": 75,
+    "minScore2026": 447.48,
+    "minRank2026": 66119,
+    "quota2026": 75
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -6858,7 +11013,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 438.78,
     "minRank": 56627,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 438.78,
+    "minRank2025": 56627,
+    "quota2025": 45,
+    "minScore2026": 464.02,
+    "minRank2026": 50380,
+    "quota2026": 45
   },
   {
     "university": "ATILIM ÜNİVERSİTESİ",
@@ -6867,7 +11028,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 438.73,
     "minRank": 56689,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 438.73,
+    "minRank2025": 56689,
+    "quota2025": 3,
+    "minScore2026": 461.09,
+    "minRank2026": 53231,
+    "quota2026": 3
   },
   {
     "university": "ESKİŞEHİR TEKNİK ÜNİVERSİTESİ",
@@ -6876,7 +11043,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 438.64,
     "minRank": 56784,
-    "quota": 34
+    "quota": 34,
+    "minScore2025": 438.64,
+    "minRank2025": 56784,
+    "quota2025": 34,
+    "minScore2026": 468.56,
+    "minRank2026": 46150,
+    "quota2026": 34
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -6885,7 +11058,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 438.61,
     "minRank": 56823,
-    "quota": 58
+    "quota": 58,
+    "minScore2025": 438.61,
+    "minRank2025": 56823,
+    "quota2025": 58,
+    "minScore2026": 411.99,
+    "minRank2026": 102973,
+    "quota2026": 20
   },
   {
     "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
@@ -6894,7 +11073,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 438.45,
     "minRank": 56980,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 438.45,
+    "minRank2025": 56980,
+    "quota2025": 80,
+    "minScore2026": 441.52,
+    "minRank2026": 71833,
+    "quota2026": 80
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -6903,7 +11088,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 438.3,
     "minRank": 57117,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 438.3,
+    "minRank2025": 57117,
+    "quota2025": 80,
+    "minScore2026": 460.79,
+    "minRank2026": 53487,
+    "quota2026": 80
   },
   {
     "university": "OSTİM TEKNİK ÜNİVERSİTESİ",
@@ -6912,7 +11103,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 438.3,
     "minRank": 57119,
-    "quota": 13
+    "quota": 13,
+    "minScore2025": 438.3,
+    "minRank2025": 57119,
+    "quota2025": 13,
+    "minScore2026": 459.19,
+    "minRank2026": 54977,
+    "quota2026": 13
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -6921,7 +11118,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 438.01,
     "minRank": 57396,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 438.01,
+    "minRank2025": 57396,
+    "quota2025": 20,
+    "minScore2026": 446.02,
+    "minRank2026": 67535,
+    "quota2026": 20
   },
   {
     "university": "MALTEPE ÜNİVERSİTESİ",
@@ -6930,7 +11133,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 438,
     "minRank": 57404,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 438,
+    "minRank2025": 57404,
+    "quota2025": 4,
+    "minScore2026": 456.09,
+    "minRank2026": 57846,
+    "quota2026": 4
   },
   {
     "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
@@ -6939,7 +11148,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 437.99,
     "minRank": 57412,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 437.99,
+    "minRank2025": 57412,
+    "quota2025": 85,
+    "minScore2026": 458.2,
+    "minRank2026": 55927,
+    "quota2026": 85
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -6948,7 +11163,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 437.94,
     "minRank": 57462,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 437.94,
+    "minRank2025": 57462,
+    "quota2025": 50,
+    "minScore2026": 460.11,
+    "minRank2026": 54110,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -6957,7 +11178,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 437.54,
     "minRank": 57889,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 437.54,
+    "minRank2025": 57889,
+    "quota2025": 9,
+    "minScore2026": 466.21,
+    "minRank2026": 48387,
+    "quota2026": 9
   },
   {
     "university": "SAMSUN ÜNİVERSİTESİ",
@@ -6966,7 +11193,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 437.47,
     "minRank": 57943,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 437.47,
+    "minRank2025": 57943,
+    "quota2025": 50,
+    "minScore2026": 462.37,
+    "minRank2026": 51977,
+    "quota2026": 50
   },
   {
     "university": "ÇUKUROVA ÜNİVERSİTESİ",
@@ -6975,7 +11208,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 437.28,
     "minRank": 58125,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 437.28,
+    "minRank2025": 58125,
+    "quota2025": 75,
+    "minScore2026": 432.75,
+    "minRank2026": 80695,
+    "quota2026": 75
   },
   {
     "university": "PİRİ REİS ÜNİVERSİTESİ",
@@ -6984,7 +11223,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 437.24,
     "minRank": 58161,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 437.24,
+    "minRank2025": 58161,
+    "quota2025": 6,
+    "minScore2026": 453.43,
+    "minRank2026": 60423,
+    "quota2026": 6
   },
   {
     "university": "CELAL BAYAR ÜNİVERSİTESİ",
@@ -6993,7 +11238,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 448.25,
     "minRank": 58200,
-    "quota": 72
+    "quota": 72,
+    "minScore2025": 448.25,
+    "minRank2025": 58200,
+    "quota2025": 72
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -7002,7 +11250,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 437.17,
     "minRank": 58241,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 437.17,
+    "minRank2025": 58241,
+    "quota2025": 60,
+    "minScore2026": 457.28,
+    "minRank2026": 56760,
+    "quota2026": 60
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -7011,7 +11265,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 436.8,
     "minRank": 58578,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 436.8,
+    "minRank2025": 58578,
+    "quota2025": 20,
+    "minScore2026": 455.52,
+    "minRank2026": 58425,
+    "quota2026": 20
   },
   {
     "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
@@ -7020,7 +11280,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 455.27,
     "minRank": 58674,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 455.27,
+    "minRank2025": 58674,
+    "quota2025": 5,
+    "minScore2026": 455.27,
+    "minRank2026": 58674,
+    "quota2026": 5
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -7029,7 +11295,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 436.67,
     "minRank": 58719,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 436.67,
+    "minRank2025": 58719,
+    "quota2025": 65,
+    "minScore2026": 457.56,
+    "minRank2026": 56535,
+    "quota2026": 65
   },
   {
     "university": "LOKMAN HEKİM ÜNİVERSİTESİ",
@@ -7038,7 +11310,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 436.6,
     "minRank": 58791,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 436.6,
+    "minRank2025": 58791,
+    "quota2025": 7,
+    "minScore2026": 459.1,
+    "minRank2026": 55055,
+    "quota2026": 7
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -7047,7 +11325,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 436.56,
     "minRank": 58826,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 436.56,
+    "minRank2025": 58826,
+    "quota2025": 60,
+    "minScore2026": 452.65,
+    "minRank2026": 61176,
+    "quota2026": 60
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -7056,7 +11340,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 436.54,
     "minRank": 58840,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 436.54,
+    "minRank2025": 58840,
+    "quota2025": 25,
+    "minScore2026": 464.91,
+    "minRank2026": 49576,
+    "quota2026": 25
   },
   {
     "university": "ÇUKUROVA ÜNİVERSİTESİ",
@@ -7065,7 +11355,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 447.1,
     "minRank": 59000,
-    "quota": 90
+    "quota": 90,
+    "minScore2025": 447.1,
+    "minRank2025": 59000,
+    "quota2025": 90,
+    "minScore2026": 473.73,
+    "minRank2026": 41541,
+    "quota2026": 36
   },
   {
     "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
@@ -7074,7 +11370,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 436.35,
     "minRank": 59030,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 436.35,
+    "minRank2025": 59030,
+    "quota2025": 65,
+    "minScore2026": 458.67,
+    "minRank2026": 55478,
+    "quota2026": 65
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -7083,7 +11385,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 436.25,
     "minRank": 59128,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 436.25,
+    "minRank2025": 59128,
+    "quota2025": 20,
+    "minScore2026": 456.48,
+    "minRank2026": 57500,
+    "quota2026": 20
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -7092,7 +11400,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 436.23,
     "minRank": 59147,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 436.23,
+    "minRank2025": 59147,
+    "quota2025": 50,
+    "minScore2026": 459.26,
+    "minRank2026": 54898,
+    "quota2026": 50
   },
   {
     "university": "SAKARYA ÜNİVERSİTESİ",
@@ -7101,7 +11415,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 436.02,
     "minRank": 59347,
-    "quota": 105
+    "quota": 105,
+    "minScore2025": 436.02,
+    "minRank2025": 59347,
+    "quota2025": 105,
+    "minScore2026": 436.78,
+    "minRank2026": 76601,
+    "quota2026": 105
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -7110,7 +11430,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 435.97,
     "minRank": 59397,
-    "quota": 120
+    "quota": 120,
+    "minScore2025": 435.97,
+    "minRank2025": 59397,
+    "quota2025": 120,
+    "minScore2026": 455.36,
+    "minRank2026": 58581,
+    "quota2026": 120
   },
   {
     "university": "TÜRK HAVA KURUMU ÜNİVERSİTESİ",
@@ -7119,7 +11445,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 435.5,
     "minRank": 59834,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 435.5,
+    "minRank2025": 59834,
+    "quota2025": 5,
+    "minScore2026": 456.92,
+    "minRank2026": 57077,
+    "quota2026": 5
   },
   {
     "university": "ATILIM ÜNİVERSİTESİ",
@@ -7128,7 +11460,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 435.39,
     "minRank": 59941,
-    "quota": 2
+    "quota": 2,
+    "minScore2025": 435.39,
+    "minRank2025": 59941,
+    "quota2025": 2,
+    "minScore2026": 454.39,
+    "minRank2026": 59472,
+    "quota2026": 2
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -7137,7 +11475,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 434.74,
     "minRank": 60599,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 434.74,
+    "minRank2025": 60599,
+    "quota2025": 50,
+    "minScore2026": 458.58,
+    "minRank2026": 55578,
+    "quota2026": 50
   },
   {
     "university": "İZMİR EKONOMİ ÜNİVERSİTESİ",
@@ -7146,7 +11490,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 434.63,
     "minRank": 60691,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 434.63,
+    "minRank2025": 60691,
+    "quota2025": 6,
+    "minScore2026": 453.22,
+    "minRank2026": 60633,
+    "quota2026": 6
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -7155,7 +11505,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 434.58,
     "minRank": 60730,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 434.58,
+    "minRank2025": 60730,
+    "quota2025": 30,
+    "minScore2026": 432.21,
+    "minRank2026": 81245,
+    "quota2026": 30
   },
   {
     "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -7164,7 +11520,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 434.55,
     "minRank": 60765,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 434.55,
+    "minRank2025": 60765,
+    "quota2025": 30,
+    "minScore2026": 444.92,
+    "minRank2026": 68578,
+    "quota2026": 30
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -7173,7 +11535,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 434.54,
     "minRank": 60780,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 434.54,
+    "minRank2025": 60780,
+    "quota2025": 5,
+    "minScore2026": 461.95,
+    "minRank2026": 52409,
+    "quota2026": 5
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -7182,7 +11550,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 434.47,
     "minRank": 60840,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 434.47,
+    "minRank2025": 60840,
+    "quota2025": 40,
+    "minScore2026": 451.78,
+    "minRank2026": 62040,
+    "quota2026": 40
   },
   {
     "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
@@ -7191,7 +11565,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 434.46,
     "minRank": 60857,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 434.46,
+    "minRank2025": 60857,
+    "quota2025": 50,
+    "minScore2026": 460.58,
+    "minRank2026": 53699,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -7200,7 +11580,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 434.37,
     "minRank": 60960,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 434.37,
+    "minRank2025": 60960,
+    "quota2025": 9,
+    "minScore2026": 457.22,
+    "minRank2026": 56820,
+    "quota2026": 9
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -7209,7 +11595,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 434.32,
     "minRank": 61006,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 434.32,
+    "minRank2025": 61006,
+    "quota2025": 6,
+    "minScore2026": 452.87,
+    "minRank2026": 60965,
+    "quota2026": 6
   },
   {
     "university": "OSTİM TEKNİK ÜNİVERSİTESİ",
@@ -7218,7 +11610,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 434.19,
     "minRank": 61137,
-    "quota": 9
+    "quota": 9,
+    "minScore2025": 434.19,
+    "minRank2025": 61137,
+    "quota2025": 9,
+    "minScore2026": 457.56,
+    "minRank2026": 56531,
+    "quota2026": 9
   },
   {
     "university": "ATILIM ÜNİVERSİTESİ",
@@ -7227,7 +11625,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 434.13,
     "minRank": 61201,
-    "quota": 2
+    "quota": 2,
+    "minScore2025": 434.13,
+    "minRank2025": 61201,
+    "quota2025": 2,
+    "minScore2026": 450.5,
+    "minRank2026": 63204,
+    "quota2026": 2
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -7236,7 +11640,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 433.96,
     "minRank": 61358,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 433.96,
+    "minRank2025": 61358,
+    "quota2025": 80,
+    "minScore2026": 453.62,
+    "minRank2026": 60254,
+    "quota2026": 80
   },
   {
     "university": "FATİH SULTAN MEHMET VAKIF ÜNİVERSİTESİ",
@@ -7245,7 +11655,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 433.91,
     "minRank": 61412,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 433.91,
+    "minRank2025": 61412,
+    "quota2025": 4,
+    "minScore2026": 449.72,
+    "minRank2026": 63940,
+    "quota2026": 4
   },
   {
     "university": "ÇUKUROVA ÜNİVERSİTESİ",
@@ -7254,7 +11670,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 433.83,
     "minRank": 61493,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 433.83,
+    "minRank2025": 61493,
+    "quota2025": 50,
+    "minScore2026": 457.6,
+    "minRank2026": 56491,
+    "quota2026": 50
   },
   {
     "university": "TÜRK-JAPON BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -7263,7 +11685,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 452.11,
     "minRank": 61731,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 452.11,
+    "minRank2025": 61731,
+    "quota2025": 20,
+    "minScore2026": 452.11,
+    "minRank2026": 61731,
+    "quota2026": 20
   },
   {
     "university": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
@@ -7272,7 +11700,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 433.57,
     "minRank": 61791,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 433.57,
+    "minRank2025": 61791,
+    "quota2025": 5,
+    "minScore2026": 455.96,
+    "minRank2026": 57977,
+    "quota2026": 5
   },
   {
     "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
@@ -7281,7 +11715,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 433.39,
     "minRank": 61962,
-    "quota": 105
+    "quota": 105,
+    "minScore2025": 433.39,
+    "minRank2025": 61962,
+    "quota2025": 105,
+    "minScore2026": 452.59,
+    "minRank2026": 61246,
+    "quota2026": 105
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -7290,7 +11730,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 443.8,
     "minRank": 62000,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 443.8,
+    "minRank2025": 62000,
+    "quota2025": 100,
+    "minScore2026": 472.88,
+    "minRank2026": 42284,
+    "quota2026": 45
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -7299,7 +11745,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 449.1,
     "minRank": 62000,
-    "quota": 120
+    "quota": 120,
+    "minScore2025": 449.1,
+    "minRank2025": 62000,
+    "quota2025": 120,
+    "minScore2026": 428.28,
+    "minRank2026": 85300,
+    "quota2026": 70
   },
   {
     "university": "YAŞAR ÜNİVERSİTESİ",
@@ -7308,7 +11760,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 433.27,
     "minRank": 62079,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 433.27,
+    "minRank2025": 62079,
+    "quota2025": 8,
+    "minScore2026": 452.43,
+    "minRank2026": 61424,
+    "quota2026": 8
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -7317,7 +11775,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 433.01,
     "minRank": 62352,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 433.01,
+    "minRank2025": 62352,
+    "quota2025": 60,
+    "minScore2026": 457.35,
+    "minRank2026": 56690,
+    "quota2026": 60
   },
   {
     "university": "İSTANBUL OKAN ÜNİVERSİTESİ",
@@ -7326,7 +11790,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 433.01,
     "minRank": 62353,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 433.01,
+    "minRank2025": 62353,
+    "quota2025": 4,
+    "minScore2026": 453.68,
+    "minRank2026": 60194,
+    "quota2026": 4
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -7335,7 +11805,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 432.99,
     "minRank": 62394,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 432.99,
+    "minRank2025": 62394,
+    "quota2025": 40,
+    "minScore2026": 456.73,
+    "minRank2026": 57254,
+    "quota2026": 40
   },
   {
     "university": "BURSA TEKNİK ÜNİVERSİTESİ",
@@ -7344,7 +11820,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 432.93,
     "minRank": 62441,
-    "quota": 90
+    "quota": 90,
+    "minScore2025": 432.93,
+    "minRank2025": 62441,
+    "quota2025": 90,
+    "minScore2026": 434.99,
+    "minRank2026": 78396,
+    "quota2026": 90
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -7353,7 +11835,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 432.76,
     "minRank": 62592,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 432.76,
+    "minRank2025": 62592,
+    "quota2025": 50,
+    "minScore2026": 456.7,
+    "minRank2026": 57298,
+    "quota2026": 50
   },
   {
     "university": "İSTİNYE ÜNİVERSİTESİ",
@@ -7362,7 +11850,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 432.65,
     "minRank": 62707,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 432.65,
+    "minRank2025": 62707,
+    "quota2025": 3,
+    "minScore2026": 461.95,
+    "minRank2026": 52405,
+    "quota2026": 3
   },
   {
     "university": "ATILIM ÜNİVERSİTESİ",
@@ -7371,7 +11865,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 432.61,
     "minRank": 62760,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 432.61,
+    "minRank2025": 62760,
+    "quota2025": 3,
+    "minScore2026": 462.87,
+    "minRank2026": 51480,
+    "quota2026": 3
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -7380,7 +11880,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 432.59,
     "minRank": 62782,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 432.59,
+    "minRank2025": 62782,
+    "quota2025": 40,
+    "minScore2026": 446.84,
+    "minRank2026": 66722,
+    "quota2026": 40
   },
   {
     "university": "PİRİ REİS ÜNİVERSİTESİ",
@@ -7389,7 +11895,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 432.06,
     "minRank": 63294,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 432.06,
+    "minRank2025": 63294,
+    "quota2025": 7,
+    "minScore2026": 459.43,
+    "minRank2026": 54739,
+    "quota2026": 7
   },
   {
     "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
@@ -7398,7 +11910,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 431.97,
     "minRank": 63398,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 431.97,
+    "minRank2025": 63398,
+    "quota2025": 85,
+    "minScore2026": 425.23,
+    "minRank2026": 88452,
+    "quota2026": 85
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -7407,7 +11925,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 431.86,
     "minRank": 63528,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 431.86,
+    "minRank2025": 63528,
+    "quota2025": 50,
+    "minScore2026": 443.24,
+    "minRank2026": 70209,
+    "quota2026": 50
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -7416,7 +11940,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 431.82,
     "minRank": 63563,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 431.82,
+    "minRank2025": 63563,
+    "quota2025": 45,
+    "minScore2026": 461.27,
+    "minRank2026": 53062,
+    "quota2026": 45
   },
   {
     "university": "OSTİM TEKNİK ÜNİVERSİTESİ",
@@ -7425,7 +11955,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 431.7,
     "minRank": 63670,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 431.7,
+    "minRank2025": 63670,
+    "quota2025": 8,
+    "minScore2026": 455.63,
+    "minRank2026": 58320,
+    "quota2026": 8
   },
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -7434,7 +11970,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 431.65,
     "minRank": 63728,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 431.65,
+    "minRank2025": 63728,
+    "quota2025": 45,
+    "minScore2026": 450.43,
+    "minRank2026": 63259,
+    "quota2026": 45
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -7443,7 +11985,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 431.57,
     "minRank": 63804,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 431.57,
+    "minRank2025": 63804,
+    "quota2025": 40,
+    "minScore2026": 455.7,
+    "minRank2026": 58243,
+    "quota2026": 40
   },
   {
     "university": "ALANYA ALAADDİN KEYKUBAT ÜNİVERSİTESİ",
@@ -7452,7 +12000,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 442.3,
     "minRank": 63900,
-    "quota": 62
+    "quota": 62,
+    "minScore2025": 442.3,
+    "minRank2025": 63900,
+    "quota2025": 62
   },
   {
     "university": "SELÇUK ÜNİVERSİTESİ",
@@ -7461,7 +12012,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 441.7,
     "minRank": 64000,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 441.7,
+    "minRank2025": 64000,
+    "quota2025": 100,
+    "minScore2026": 473.56,
+    "minRank2026": 41685,
+    "quota2026": 45
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -7470,7 +12027,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 431.25,
     "minRank": 64136,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 431.25,
+    "minRank2025": 64136,
+    "quota2025": 40,
+    "minScore2026": 450.02,
+    "minRank2026": 63647,
+    "quota2026": 40
   },
   {
     "university": "ANKARA BİLİM ÜNİVERSİTESİ",
@@ -7479,7 +12042,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 431.15,
     "minRank": 64242,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 431.15,
+    "minRank2025": 64242,
+    "quota2025": 4,
+    "minScore2026": 459.22,
+    "minRank2026": 54946,
+    "quota2026": 4
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -7488,7 +12057,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 431.1,
     "minRank": 64296,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 431.1,
+    "minRank2025": 64296,
+    "quota2025": 30,
+    "minScore2026": 453.05,
+    "minRank2026": 60816,
+    "quota2026": 30
   },
   {
     "university": "ÇANKAYA ÜNİVERSİTESİ",
@@ -7497,7 +12072,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 430.83,
     "minRank": 64570,
-    "quota": 8
+    "quota": 8,
+    "minScore2025": 430.83,
+    "minRank2025": 64570,
+    "quota2025": 8,
+    "minScore2026": 447.97,
+    "minRank2026": 65640,
+    "quota2026": 8
   },
   {
     "university": "ABDULLAH GÜL ÜNİVERSİTESİ",
@@ -7506,7 +12087,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 430.68,
     "minRank": 64728,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 430.68,
+    "minRank2025": 64728,
+    "quota2025": 50,
+    "minScore2026": 459.09,
+    "minRank2026": 55057,
+    "quota2026": 50
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -7515,7 +12102,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 445.6,
     "minRank": 65000,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 445.6,
+    "minRank2025": 65000,
+    "quota2025": 100,
+    "minScore2026": 408.33,
+    "minRank2026": 106963,
+    "quota2026": 70
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -7524,7 +12117,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 430.23,
     "minRank": 65168,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 430.23,
+    "minRank2025": 65168,
+    "quota2025": 60,
+    "minScore2026": 453.59,
+    "minRank2026": 60281,
+    "quota2026": 60
   },
   {
     "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
@@ -7533,7 +12132,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 430.21,
     "minRank": 65205,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 430.21,
+    "minRank2025": 65205,
+    "quota2025": 65,
+    "minScore2026": 454.12,
+    "minRank2026": 59725,
+    "quota2026": 65
   },
   {
     "university": "ATILIM ÜNİVERSİTESİ",
@@ -7542,7 +12147,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 430.18,
     "minRank": 65240,
-    "quota": 2
+    "quota": 2,
+    "minScore2025": 430.18,
+    "minRank2025": 65240,
+    "quota2025": 2,
+    "minScore2026": 452.19,
+    "minRank2026": 61648,
+    "quota2026": 2
   },
   {
     "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
@@ -7551,7 +12162,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 429.9,
     "minRank": 65550,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 429.9,
+    "minRank2025": 65550,
+    "quota2025": 80,
+    "minScore2026": 455.87,
+    "minRank2026": 58072,
+    "quota2026": 80
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -7560,7 +12177,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 429.84,
     "minRank": 65614,
-    "quota": 2
+    "quota": 2,
+    "minScore2025": 429.84,
+    "minRank2025": 65614,
+    "quota2025": 2,
+    "minScore2026": 461.92,
+    "minRank2026": 52446,
+    "quota2026": 2
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -7569,7 +12192,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 429.56,
     "minRank": 65896,
-    "quota": 27
+    "quota": 27,
+    "minScore2025": 429.56,
+    "minRank2025": 65896,
+    "quota2025": 27,
+    "minScore2026": 453.57,
+    "minRank2026": 60301,
+    "quota2026": 27
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -7578,7 +12207,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 429.5,
     "minRank": 65955,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 429.5,
+    "minRank2025": 65955,
+    "quota2025": 70,
+    "minScore2026": 449.49,
+    "minRank2026": 64164,
+    "quota2026": 70
   },
   {
     "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -7587,7 +12222,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 439.4,
     "minRank": 66000,
-    "quota": 90
+    "quota": 90,
+    "minScore2025": 439.4,
+    "minRank2025": 66000,
+    "quota2025": 90,
+    "minScore2026": 471.32,
+    "minRank2026": 43727,
+    "quota2026": 36
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -7596,7 +12237,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 429.4,
     "minRank": 66079,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 429.4,
+    "minRank2025": 66079,
+    "quota2025": 85,
+    "minScore2026": 450.23,
+    "minRank2026": 63454,
+    "quota2026": 85
   },
   {
     "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -7605,7 +12252,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 429.3,
     "minRank": 66179,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 429.3,
+    "minRank2025": 66179,
+    "quota2025": 50,
+    "minScore2026": 455.52,
+    "minRank2026": 58415,
+    "quota2026": 50
   },
   {
     "university": "ANKARA BİLİM ÜNİVERSİTESİ",
@@ -7614,7 +12267,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 429.19,
     "minRank": 66266,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 429.19,
+    "minRank2025": 66266,
+    "quota2025": 4,
+    "minScore2026": 452.08,
+    "minRank2026": 61749,
+    "quota2026": 4
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -7623,7 +12282,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 428.75,
     "minRank": 66687,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 428.75,
+    "minRank2025": 66687,
+    "quota2025": 40,
+    "minScore2026": 439.11,
+    "minRank2026": 74260,
+    "quota2026": 40
   },
   {
     "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
@@ -7632,7 +12297,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 428.38,
     "minRank": 67047,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 428.38,
+    "minRank2025": 67047,
+    "quota2025": 40,
+    "minScore2026": 425.55,
+    "minRank2026": 88121,
+    "quota2026": 8
   },
   {
     "university": "ESKİŞEHİR TEKNİK ÜNİVERSİTESİ",
@@ -7641,7 +12312,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 428.19,
     "minRank": 67245,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 428.19,
+    "minRank2025": 67245,
+    "quota2025": 65,
+    "minScore2026": 449.37,
+    "minRank2026": 64303,
+    "quota2026": 65
   },
   {
     "university": "SAMSUN ÜNİVERSİTESİ",
@@ -7650,7 +12327,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 438.9,
     "minRank": 67400,
-    "quota": 62
+    "quota": 62,
+    "minScore2025": 438.9,
+    "minRank2025": 67400,
+    "quota2025": 62
   },
   {
     "university": "KOÇ ÜNİVERSİTESİ",
@@ -7659,7 +12339,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 428.01,
     "minRank": 67424,
-    "quota": 39
+    "quota": 39,
+    "minScore2025": 428.01,
+    "minRank2025": 67424,
+    "quota2025": 39,
+    "minScore2026": 459.02,
+    "minRank2026": 55118,
+    "quota2026": 39
   },
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
@@ -7668,7 +12354,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 428,
     "minRank": 67432,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 428,
+    "minRank2025": 67432,
+    "quota2025": 40,
+    "minScore2026": 446.38,
+    "minRank2026": 67180,
+    "quota2026": 40
   },
   {
     "university": "YÜKSEK İHTİSAS ÜNİVERSİTESİ",
@@ -7677,7 +12369,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 427.96,
     "minRank": 67470,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 427.96,
+    "minRank2025": 67470,
+    "quota2025": 7,
+    "minScore2026": 451.57,
+    "minRank2026": 62253,
+    "quota2026": 7
   },
   {
     "university": "İSTANBUL MEDENİYET ÜNİVERSİTESİ",
@@ -7686,7 +12384,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 427.69,
     "minRank": 67761,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 427.69,
+    "minRank2025": 67761,
+    "quota2025": 60,
+    "minScore2026": 454.43,
+    "minRank2026": 59417,
+    "quota2026": 60
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -7695,7 +12399,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 438.4,
     "minRank": 67800,
-    "quota": 144
+    "quota": 144,
+    "minScore2025": 438.4,
+    "minRank2025": 67800,
+    "quota2025": 144,
+    "minScore2026": 415.31,
+    "minRank2026": 99184,
+    "quota2026": 60
   },
   {
     "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -7704,7 +12414,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 427.59,
     "minRank": 67890,
-    "quota": 95
+    "quota": 95,
+    "minScore2025": 427.59,
+    "minRank2025": 67890,
+    "quota2025": 95,
+    "minScore2026": 427.82,
+    "minRank2026": 85774,
+    "quota2026": 95
   },
   {
     "university": "ATATÜRK ÜNİVERSİTESİ",
@@ -7713,7 +12429,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 437.1,
     "minRank": 68000,
-    "quota": 110
+    "quota": 110,
+    "minScore2025": 437.1,
+    "minRank2025": 68000,
+    "quota2025": 110,
+    "minScore2026": 468.56,
+    "minRank2026": 46157,
+    "quota2026": 45
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -7722,7 +12444,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 427.43,
     "minRank": 68048,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 427.43,
+    "minRank2025": 68048,
+    "quota2025": 30,
+    "minScore2026": 440,
+    "minRank2026": 73360,
+    "quota2026": 30
   },
   {
     "university": "BURSA TEKNİK ÜNİVERSİTESİ",
@@ -7731,7 +12459,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 427.29,
     "minRank": 68203,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 427.29,
+    "minRank2025": 68203,
+    "quota2025": 25,
+    "minScore2026": 455.77,
+    "minRank2026": 58169,
+    "quota2026": 25
   },
   {
     "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
@@ -7740,7 +12474,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 427.11,
     "minRank": 68391,
-    "quota": 90
+    "quota": 90,
+    "minScore2025": 427.11,
+    "minRank2025": 68391,
+    "quota2025": 90,
+    "minScore2026": 451.64,
+    "minRank2026": 62188,
+    "quota2026": 90
   },
   {
     "university": "İSTANBUL MEDENİYET ÜNİVERSİTESİ",
@@ -7749,7 +12489,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 426.78,
     "minRank": 68739,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 426.78,
+    "minRank2025": 68739,
+    "quota2025": 55,
+    "minScore2026": 448.48,
+    "minRank2026": 65169,
+    "quota2026": 55
   },
   {
     "university": "SAKARYA ÜNİVERSİTESİ",
@@ -7758,7 +12504,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 426.72,
     "minRank": 68803,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 426.72,
+    "minRank2025": 68803,
+    "quota2025": 80,
+    "minScore2026": 421.24,
+    "minRank2026": 92740,
+    "quota2026": 80
   },
   {
     "university": "MANİSA CELÂL BAYAR ÜNİVERSİTESİ",
@@ -7767,7 +12519,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 426.6,
     "minRank": 68937,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 426.6,
+    "minRank2025": 68937,
+    "quota2025": 80,
+    "minScore2026": 422.23,
+    "minRank2026": 91623,
+    "quota2026": 80
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -7776,7 +12534,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 426.57,
     "minRank": 68963,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 426.57,
+    "minRank2025": 68963,
+    "quota2025": 70,
+    "minScore2026": 441.23,
+    "minRank2026": 72124,
+    "quota2026": 70
   },
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
@@ -7785,7 +12549,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 426.56,
     "minRank": 68977,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 426.56,
+    "minRank2025": 68977,
+    "quota2025": 40,
+    "minScore2026": 438.29,
+    "minRank2026": 75105,
+    "quota2026": 40
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -7794,7 +12564,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 426.5,
     "minRank": 69043,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 426.5,
+    "minRank2025": 69043,
+    "quota2025": 30,
+    "minScore2026": 454.84,
+    "minRank2026": 59054,
+    "quota2026": 30
   },
   {
     "university": "YEDİTEPE ÜNİVERSİTESİ",
@@ -7803,7 +12579,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 426.4,
     "minRank": 69145,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 426.4,
+    "minRank2025": 69145,
+    "quota2025": 4,
+    "minScore2026": 449.02,
+    "minRank2026": 64654,
+    "quota2026": 4
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -7812,7 +12594,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 426.39,
     "minRank": 69164,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 426.39,
+    "minRank2025": 69164,
+    "quota2025": 70,
+    "minScore2026": 419.1,
+    "minRank2026": 95107,
+    "quota2026": 70
   },
   {
     "university": "BURSA TEKNİK ÜNİVERSİTESİ",
@@ -7821,7 +12609,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 426.29,
     "minRank": 69260,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 426.29,
+    "minRank2025": 69260,
+    "quota2025": 60,
+    "minScore2026": 455.07,
+    "minRank2026": 58860,
+    "quota2026": 60
   },
   {
     "university": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -7830,7 +12624,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 426.14,
     "minRank": 69439,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 426.14,
+    "minRank2025": 69439,
+    "quota2025": 10,
+    "minScore2026": 451.22,
+    "minRank2026": 62550,
+    "quota2026": 10
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -7839,7 +12639,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 440.2,
     "minRank": 70000,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 440.2,
+    "minRank2025": 70000,
+    "quota2025": 80
   },
   {
     "university": "MİMAR SİNAN GÜZEL SANATLAR ÜNİVERSİTESİ",
@@ -7848,7 +12651,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 425.62,
     "minRank": 70004,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 425.62,
+    "minRank2025": 70004,
+    "quota2025": 60,
+    "minScore2026": 440.54,
+    "minRank2026": 72789,
+    "quota2026": 60
   },
   {
     "university": "SAKARYA ÜNİVERSİTESİ",
@@ -7857,7 +12666,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 425.45,
     "minRank": 70153,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 425.45,
+    "minRank2025": 70153,
+    "quota2025": 85,
+    "minScore2026": 452.35,
+    "minRank2026": 61508,
+    "quota2026": 85
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -7866,7 +12681,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 425.17,
     "minRank": 70456,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 425.17,
+    "minRank2025": 70456,
+    "quota2025": 5,
+    "minScore2026": 449.27,
+    "minRank2026": 64407,
+    "quota2026": 5
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -7875,7 +12696,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 425.1,
     "minRank": 70529,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 425.1,
+    "minRank2025": 70529,
+    "quota2025": 65,
+    "minScore2026": 454.34,
+    "minRank2026": 59517,
+    "quota2026": 65
   },
   {
     "university": "BAŞKENT ÜNİVERSİTESİ",
@@ -7884,7 +12711,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 425.08,
     "minRank": 70560,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 425.08,
+    "minRank2025": 70560,
+    "quota2025": 3,
+    "minScore2026": 458.54,
+    "minRank2026": 55613,
+    "quota2026": 3
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -7893,7 +12726,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 425.01,
     "minRank": 70625,
-    "quota": 31
+    "quota": 31,
+    "minScore2025": 425.01,
+    "minRank2025": 70625,
+    "quota2025": 31,
+    "minScore2026": 437.11,
+    "minRank2026": 76269,
+    "quota2026": 31
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -7902,7 +12741,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 435.6,
     "minRank": 70800,
-    "quota": 123
+    "quota": 123,
+    "minScore2025": 435.6,
+    "minRank2025": 70800,
+    "quota2025": 123,
+    "minScore2026": 429.66,
+    "minRank2026": 83881,
+    "quota2026": 20
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -7911,7 +12756,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 424.86,
     "minRank": 70808,
-    "quota": 63
+    "quota": 63,
+    "minScore2025": 424.86,
+    "minRank2025": 70808,
+    "quota2025": 63,
+    "minScore2026": 450.5,
+    "minRank2026": 63196,
+    "quota2026": 63
   },
   {
     "university": "ESKİŞEHİR TEKNİK ÜNİVERSİTESİ",
@@ -7920,7 +12771,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 424.7,
     "minRank": 70989,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 424.7,
+    "minRank2025": 70989,
+    "quota2025": 30,
+    "minScore2026": 432.92,
+    "minRank2026": 80534,
+    "quota2026": 30
   },
   {
     "university": "İNÖNÜ ÜNİVERSİTESİ",
@@ -7929,7 +12786,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 434.5,
     "minRank": 71000,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 434.5,
+    "minRank2025": 71000,
+    "quota2025": 100,
+    "minScore2026": 468.21,
+    "minRank2026": 46473,
+    "quota2026": 63
   },
   {
     "university": "İSTANBUL SABAHATTİN ZAİM ÜNİVERSİTESİ",
@@ -7938,7 +12801,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 424.33,
     "minRank": 71379,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 424.33,
+    "minRank2025": 71379,
+    "quota2025": 5,
+    "minScore2026": 456.63,
+    "minRank2026": 57356,
+    "quota2026": 5
   },
   {
     "university": "İSTİNYE ÜNİVERSİTESİ",
@@ -7947,7 +12816,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 424.32,
     "minRank": 71391,
-    "quota": 7
+    "quota": 7,
+    "minScore2025": 424.32,
+    "minRank2025": 71391,
+    "quota2025": 7,
+    "minScore2026": 449.51,
+    "minRank2026": 64151,
+    "quota2026": 7
   },
   {
     "university": "BURSA TEKNİK ÜNİVERSİTESİ",
@@ -7956,7 +12831,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 424.25,
     "minRank": 71462,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 424.25,
+    "minRank2025": 71462,
+    "quota2025": 65,
+    "minScore2026": 446.03,
+    "minRank2026": 67529,
+    "quota2026": 65
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -7965,7 +12846,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 424.08,
     "minRank": 71643,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 424.08,
+    "minRank2025": 71643,
+    "quota2025": 40,
+    "minScore2026": 449.92,
+    "minRank2026": 63747,
+    "quota2026": 40
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -7974,7 +12861,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 424.03,
     "minRank": 71684,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 424.03,
+    "minRank2025": 71684,
+    "quota2025": 60,
+    "minScore2026": 442.22,
+    "minRank2026": 71180,
+    "quota2026": 60
   },
   {
     "university": "AYDIN ADNAN MENDERES ÜNİVERSİTESİ",
@@ -7983,7 +12876,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 423.46,
     "minRank": 72295,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 423.46,
+    "minRank2025": 72295,
+    "quota2025": 80,
+    "minScore2026": 411.91,
+    "minRank2026": 103047,
+    "quota2026": 80
   },
   {
     "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
@@ -7992,7 +12891,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 423.41,
     "minRank": 72347,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 423.41,
+    "minRank2025": 72347,
+    "quota2025": 10,
+    "minScore2026": 453.21,
+    "minRank2026": 60649,
+    "quota2026": 10
   },
   {
     "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
@@ -8001,7 +12906,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 423.11,
     "minRank": 72664,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 423.11,
+    "minRank2025": 72664,
+    "quota2025": 70,
+    "minScore2026": 446.01,
+    "minRank2026": 67551,
+    "quota2026": 70
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -8010,7 +12921,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 423.1,
     "minRank": 72680,
-    "quota": 34
+    "quota": 34,
+    "minScore2025": 423.1,
+    "minRank2025": 72680,
+    "quota2025": 34,
+    "minScore2026": 456.91,
+    "minRank2026": 57083,
+    "quota2026": 34
   },
   {
     "university": "GAZİANTEP ÜNİVERSİTESİ",
@@ -8019,7 +12936,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 422.99,
     "minRank": 72785,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 422.99,
+    "minRank2025": 72785,
+    "quota2025": 30,
+    "minScore2026": 453.4,
+    "minRank2026": 60465,
+    "quota2026": 30
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -8028,7 +12951,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 422.98,
     "minRank": 72799,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 422.98,
+    "minRank2025": 72799,
+    "quota2025": 55,
+    "minScore2026": 444.82,
+    "minRank2026": 68681,
+    "quota2026": 55
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -8037,7 +12966,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 422.3,
     "minRank": 73504,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 422.3,
+    "minRank2025": 73504,
+    "quota2025": 20,
+    "minScore2026": 449.76,
+    "minRank2026": 63893,
+    "quota2026": 20
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -8046,7 +12981,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 421.95,
     "minRank": 73889,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 421.95,
+    "minRank2025": 73889,
+    "quota2025": 40,
+    "minScore2026": 434.88,
+    "minRank2026": 78513,
+    "quota2026": 40
   },
   {
     "university": "TÜRK HAVA KURUMU ÜNİVERSİTESİ",
@@ -8055,7 +12996,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 421.85,
     "minRank": 73995,
-    "quota": 5
+    "quota": 5,
+    "minScore2025": 421.85,
+    "minRank2025": 73995,
+    "quota2025": 5,
+    "minScore2026": 455.64,
+    "minRank2026": 58312,
+    "quota2026": 5
   },
   {
     "university": "ÇANAKKALE ONSEKİZ MART ÜNİVERSİTESİ",
@@ -8064,7 +13011,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 421.59,
     "minRank": 74285,
-    "quota": 90
+    "quota": 90,
+    "minScore2025": 421.59,
+    "minRank2025": 74285,
+    "quota2025": 90,
+    "minScore2026": 415.28,
+    "minRank2026": 99219,
+    "quota2026": 90
   },
   {
     "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -8073,7 +13026,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 421.5,
     "minRank": 74397,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 421.5,
+    "minRank2025": 74397,
+    "quota2025": 50,
+    "minScore2026": 409.23,
+    "minRank2026": 105947,
+    "quota2026": 50
   },
   {
     "university": "FIRAT ÜNİVERSİTESİ",
@@ -8082,7 +13041,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 432.1,
     "minRank": 74500,
-    "quota": 82
+    "quota": 82,
+    "minScore2025": 432.1,
+    "minRank2025": 74500,
+    "quota2025": 82
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -8091,7 +13053,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 421.3,
     "minRank": 74635,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 421.3,
+    "minRank2025": 74635,
+    "quota2025": 20,
+    "minScore2026": 433.48,
+    "minRank2026": 79955,
+    "quota2026": 20
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -8100,7 +13068,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 421.2,
     "minRank": 74731,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 421.2,
+    "minRank2025": 74731,
+    "quota2025": 40,
+    "minScore2026": 432.32,
+    "minRank2026": 81138,
+    "quota2026": 40
   },
   {
     "university": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -8109,7 +13083,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 420.99,
     "minRank": 74955,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 420.99,
+    "minRank2025": 74955,
+    "quota2025": 3,
+    "minScore2026": 448.55,
+    "minRank2026": 65092,
+    "quota2026": 3
   },
   {
     "university": "DİCLE ÜNİVERSİTESİ",
@@ -8118,7 +13098,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 430.2,
     "minRank": 75000,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 430.2,
+    "minRank2025": 75000,
+    "quota2025": 80,
+    "minScore2026": 470.38,
+    "minRank2026": 44592,
+    "quota2026": 45
   },
   {
     "university": "SAKARYA ÜNİVERSİTESİ",
@@ -8127,7 +13113,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 420.77,
     "minRank": 75167,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 420.77,
+    "minRank2025": 75167,
+    "quota2025": 35,
+    "minScore2026": 434.64,
+    "minRank2026": 78769,
+    "quota2026": 35
   },
   {
     "university": "TÜRK-ALMAN ÜNİVERSİTESİ",
@@ -8136,7 +13128,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 420.43,
     "minRank": 75525,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 420.43,
+    "minRank2025": 75525,
+    "quota2025": 40,
+    "minScore2026": 415.97,
+    "minRank2026": 98503,
+    "quota2026": 8
   },
   {
     "university": "ANTALYA BİLİM ÜNİVERSİTESİ",
@@ -8145,7 +13143,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 420.18,
     "minRank": 75790,
-    "quota": 6
+    "quota": 6,
+    "minScore2025": 420.18,
+    "minRank2025": 75790,
+    "quota2025": 6,
+    "minScore2026": 447.89,
+    "minRank2026": 65710,
+    "quota2026": 6
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -8154,7 +13158,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 420.12,
     "minRank": 75854,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 420.12,
+    "minRank2025": 75854,
+    "quota2025": 40,
+    "minScore2026": 436.38,
+    "minRank2026": 76995,
+    "quota2026": 40
   },
   {
     "university": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -8163,7 +13173,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 420.11,
     "minRank": 75866,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 420.11,
+    "minRank2025": 75866,
+    "quota2025": 3,
+    "minScore2026": 456.43,
+    "minRank2026": 57539,
+    "quota2026": 3
   },
   {
     "university": "KIRKLARELİ ÜNİVERSİTESİ",
@@ -8172,7 +13188,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 430.5,
     "minRank": 76200,
-    "quota": 62
+    "quota": 62,
+    "minScore2025": 430.5,
+    "minRank2025": 76200,
+    "quota2025": 62
   },
   {
     "university": "SAKARYA ÜNİVERSİTESİ",
@@ -8181,7 +13200,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 419.82,
     "minRank": 76206,
-    "quota": 95
+    "quota": 95,
+    "minScore2025": 419.82,
+    "minRank2025": 76206,
+    "quota2025": 95,
+    "minScore2026": 442.06,
+    "minRank2026": 71339,
+    "quota2026": 95
   },
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -8190,7 +13215,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 419.61,
     "minRank": 76469,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 419.61,
+    "minRank2025": 76469,
+    "quota2025": 40,
+    "minScore2026": 420.06,
+    "minRank2026": 94012,
+    "quota2026": 40
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -8199,7 +13230,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 419.18,
     "minRank": 76933,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 419.18,
+    "minRank2025": 76933,
+    "quota2025": 30,
+    "minScore2026": 449.42,
+    "minRank2026": 64251,
+    "quota2026": 30
   },
   {
     "university": "ABDULLAH GÜL ÜNİVERSİTESİ",
@@ -8208,7 +13245,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 419.17,
     "minRank": 76943,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 419.17,
+    "minRank2025": 76943,
+    "quota2025": 75,
+    "minScore2026": 437.98,
+    "minRank2026": 75428,
+    "quota2026": 75
   },
   {
     "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
@@ -8217,7 +13260,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 419.15,
     "minRank": 76956,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 419.15,
+    "minRank2025": 76956,
+    "quota2025": 50,
+    "minScore2026": 440.31,
+    "minRank2026": 73026,
+    "quota2026": 50
   },
   {
     "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
@@ -8226,7 +13275,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 418.98,
     "minRank": 77163,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 418.98,
+    "minRank2025": 77163,
+    "quota2025": 85,
+    "minScore2026": 417.02,
+    "minRank2026": 97359,
+    "quota2026": 85
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -8235,7 +13290,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 429.6,
     "minRank": 77200,
-    "quota": 144
+    "quota": 144,
+    "minScore2025": 429.6,
+    "minRank2025": 77200,
+    "quota2025": 144
   },
   {
     "university": "GAZİANTEP ÜNİVERSİTESİ",
@@ -8244,7 +13302,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 418.54,
     "minRank": 77686,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 418.54,
+    "minRank2025": 77686,
+    "quota2025": 30,
+    "minScore2026": 423.55,
+    "minRank2026": 90149,
+    "quota2026": 30
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -8253,7 +13317,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 418.51,
     "minRank": 77708,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 418.51,
+    "minRank2025": 77708,
+    "quota2025": 85,
+    "minScore2026": 444.69,
+    "minRank2026": 68810,
+    "quota2026": 85
   },
   {
     "university": "BURSA TEKNİK ÜNİVERSİTESİ",
@@ -8262,7 +13332,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 418.45,
     "minRank": 77776,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 418.45,
+    "minRank2025": 77776,
+    "quota2025": 60,
+    "minScore2026": 446.96,
+    "minRank2026": 66597,
+    "quota2026": 60
   },
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
@@ -8271,7 +13347,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 432.5,
     "minRank": 78000,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 432.5,
+    "minRank2025": 78000,
+    "quota2025": 80,
+    "minScore2026": 406.45,
+    "minRank2026": 109197,
+    "quota2026": 60
   },
   {
     "university": "DİCLE ÜNİVERSİTESİ",
@@ -8280,7 +13362,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 418.2,
     "minRank": 78028,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 418.2,
+    "minRank2025": 78028,
+    "quota2025": 75,
+    "minScore2026": 450.35,
+    "minRank2026": 63349,
+    "quota2026": 75
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -8289,7 +13377,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 418.1,
     "minRank": 78153,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 418.1,
+    "minRank2025": 78153,
+    "quota2025": 100,
+    "minScore2026": 444.5,
+    "minRank2026": 69007,
+    "quota2026": 100
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -8298,7 +13392,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 418.01,
     "minRank": 78249,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 418.01,
+    "minRank2025": 78249,
+    "quota2025": 40,
+    "minScore2026": 439.21,
+    "minRank2026": 74176,
+    "quota2026": 40
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -8307,7 +13407,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 417.86,
     "minRank": 78409,
-    "quota": 48
+    "quota": 48,
+    "minScore2025": 417.86,
+    "minRank2025": 78409,
+    "quota2025": 48,
+    "minScore2026": 438.51,
+    "minRank2026": 74873,
+    "quota2026": 48
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -8316,7 +13422,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 428.5,
     "minRank": 78500,
-    "quota": 164
+    "quota": 164,
+    "minScore2025": 428.5,
+    "minRank2025": 78500,
+    "quota2025": 164,
+    "minScore2026": 458.89,
+    "minRank2026": 55247,
+    "quota2026": 150
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -8325,7 +13437,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 417.76,
     "minRank": 78523,
-    "quota": 58
+    "quota": 58,
+    "minScore2025": 417.76,
+    "minRank2025": 78523,
+    "quota2025": 58,
+    "minScore2026": 441.33,
+    "minRank2026": 72035,
+    "quota2026": 58
   },
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
@@ -8334,7 +13452,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 417.74,
     "minRank": 78548,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 417.74,
+    "minRank2025": 78548,
+    "quota2025": 40,
+    "minScore2026": 435.95,
+    "minRank2026": 77469,
+    "quota2026": 40
   },
   {
     "university": "İZMİR BAKIRÇAY ÜNİVERSİTESİ",
@@ -8343,7 +13467,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 417.35,
     "minRank": 78975,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 417.35,
+    "minRank2025": 78975,
+    "quota2025": 75,
+    "minScore2026": 406.33,
+    "minRank2026": 109331,
+    "quota2026": 75
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -8352,7 +13482,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 417.13,
     "minRank": 79199,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 417.13,
+    "minRank2025": 79199,
+    "quota2025": 75,
+    "minScore2026": 449.07,
+    "minRank2026": 64610,
+    "quota2026": 75
   },
   {
     "university": "ÇANAKKALE ONSEKİZ MART ÜNİVERSİTESİ",
@@ -8361,7 +13497,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 416.96,
     "minRank": 79422,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 416.96,
+    "minRank2025": 79422,
+    "quota2025": 30,
+    "minScore2026": 412.57,
+    "minRank2026": 102283,
+    "quota2026": 30
   },
   {
     "university": "İSTANBUL BEYKENT ÜNİVERSİTESİ",
@@ -8370,7 +13512,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 416.95,
     "minRank": 79431,
-    "quota": 3
+    "quota": 3,
+    "minScore2025": 416.95,
+    "minRank2025": 79431,
+    "quota2025": 3,
+    "minScore2026": 449.14,
+    "minRank2026": 64538,
+    "quota2026": 3
   },
   {
     "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
@@ -8379,7 +13527,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 416.92,
     "minRank": 79465,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 416.92,
+    "minRank2025": 79465,
+    "quota2025": 60,
+    "minScore2026": 443.75,
+    "minRank2026": 69752,
+    "quota2026": 60
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -8388,7 +13542,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 416.69,
     "minRank": 79722,
-    "quota": 34
+    "quota": 34,
+    "minScore2025": 416.69,
+    "minRank2025": 79722,
+    "quota2025": 34,
+    "minScore2026": 449.89,
+    "minRank2026": 63773,
+    "quota2026": 34
   },
   {
     "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
@@ -8397,7 +13557,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 416.56,
     "minRank": 79873,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 416.56,
+    "minRank2025": 79873,
+    "quota2025": 45,
+    "minScore2026": 442.87,
+    "minRank2026": 70557,
+    "quota2026": 45
   },
   {
     "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
@@ -8406,7 +13572,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 416.54,
     "minRank": 79891,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 416.54,
+    "minRank2025": 79891,
+    "quota2025": 60,
+    "minScore2026": 441.24,
+    "minRank2026": 72118,
+    "quota2026": 60
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -8415,7 +13587,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 427.1,
     "minRank": 79900,
-    "quota": 103
+    "quota": 103,
+    "minScore2025": 427.1,
+    "minRank2025": 79900,
+    "quota2025": 103
   },
   {
     "university": "KONYA TEKNİK ÜNİVERSİTESİ",
@@ -8424,7 +13599,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 416.38,
     "minRank": 80077,
-    "quota": 95
+    "quota": 95,
+    "minScore2025": 416.38,
+    "minRank2025": 80077,
+    "quota2025": 95,
+    "minScore2026": 413.04,
+    "minRank2026": 101732,
+    "quota2026": 95
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -8433,7 +13614,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 416.14,
     "minRank": 80344,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 416.14,
+    "minRank2025": 80344,
+    "quota2025": 60,
+    "minScore2026": 429.91,
+    "minRank2026": 83595,
+    "quota2026": 60
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -8442,7 +13629,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 415.76,
     "minRank": 80749,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 415.76,
+    "minRank2025": 80749,
+    "quota2025": 40,
+    "minScore2026": 448.52,
+    "minRank2026": 65125,
+    "quota2026": 40
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -8451,7 +13644,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 426.4,
     "minRank": 80800,
-    "quota": 103
+    "quota": 103,
+    "minScore2025": 426.4,
+    "minRank2025": 80800,
+    "quota2025": 103
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -8460,7 +13656,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 425.8,
     "minRank": 81400,
-    "quota": 103
+    "quota": 103,
+    "minScore2025": 425.8,
+    "minRank2025": 81400,
+    "quota2025": 103
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -8469,7 +13668,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 414.94,
     "minRank": 81712,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 414.94,
+    "minRank2025": 81712,
+    "quota2025": 50,
+    "minScore2026": 439.33,
+    "minRank2026": 74029,
+    "quota2026": 50
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -8478,7 +13683,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 414.75,
     "minRank": 81919,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 414.75,
+    "minRank2025": 81919,
+    "quota2025": 50,
+    "minScore2026": 429.74,
+    "minRank2026": 83793,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -8487,7 +13698,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 414.45,
     "minRank": 82283,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 414.45,
+    "minRank2025": 82283,
+    "quota2025": 40,
+    "minScore2026": 441.15,
+    "minRank2026": 72199,
+    "quota2026": 40
   },
   {
     "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -8496,7 +13713,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 414.42,
     "minRank": 82319,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 414.42,
+    "minRank2025": 82319,
+    "quota2025": 70,
+    "minScore2026": 446.12,
+    "minRank2026": 67434,
+    "quota2026": 70
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -8505,7 +13728,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 414.39,
     "minRank": 82339,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 414.39,
+    "minRank2025": 82339,
+    "quota2025": 35,
+    "minScore2026": 407.91,
+    "minRank2026": 107470,
+    "quota2026": 35
   },
   {
     "university": "SAKARYA UYGULAMALI BİLİMLER ÜNİVERSİTESİ",
@@ -8514,7 +13743,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 431.14,
     "minRank": 82348,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 431.14,
+    "minRank2025": 82348,
+    "quota2025": 20,
+    "minScore2026": 431.14,
+    "minRank2026": 82348,
+    "quota2026": 20
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -8523,7 +13758,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 424.9,
     "minRank": 82400,
-    "quota": 93
+    "quota": 93,
+    "minScore2025": 424.9,
+    "minRank2025": 82400,
+    "quota2025": 93,
+    "minScore2026": 409.71,
+    "minRank2026": 105414,
+    "quota2026": 20
   },
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -8532,7 +13773,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 414.16,
     "minRank": 82599,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 414.16,
+    "minRank2025": 82599,
+    "quota2025": 70,
+    "minScore2026": 417.15,
+    "minRank2026": 97226,
+    "quota2026": 70
   },
   {
     "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -8541,7 +13788,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 414,
     "minRank": 82768,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 414,
+    "minRank2025": 82768,
+    "quota2025": 30,
+    "minScore2026": 443.04,
+    "minRank2026": 70402,
+    "quota2026": 30
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -8550,7 +13803,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 424.5,
     "minRank": 82900,
-    "quota": 103
+    "quota": 103,
+    "minScore2025": 424.5,
+    "minRank2025": 82900,
+    "quota2025": 103
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -8559,7 +13815,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 413.83,
     "minRank": 82932,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 413.83,
+    "minRank2025": 82932,
+    "quota2025": 20,
+    "minScore2026": 431.08,
+    "minRank2026": 82397,
+    "quota2026": 20
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -8568,7 +13830,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 424.2,
     "minRank": 83200,
-    "quota": 205
+    "quota": 205,
+    "minScore2025": 424.2,
+    "minRank2025": 83200,
+    "quota2025": 205
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -8577,7 +13842,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 413.48,
     "minRank": 83296,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 413.48,
+    "minRank2025": 83296,
+    "quota2025": 60,
+    "minScore2026": 437.93,
+    "minRank2026": 75470,
+    "quota2026": 60
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -8586,7 +13857,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 413.07,
     "minRank": 83746,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 413.07,
+    "minRank2025": 83746,
+    "quota2025": 30,
+    "minScore2026": 424.34,
+    "minRank2026": 89308,
+    "quota2026": 30
   },
   {
     "university": "PAMUKKALE ÜNİVERSİTESİ",
@@ -8595,7 +13872,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 412.77,
     "minRank": 84074,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 412.77,
+    "minRank2025": 84074,
+    "quota2025": 85,
+    "minScore2026": 403.68,
+    "minRank2026": 112400,
+    "quota2026": 85
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -8604,7 +13887,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 423.5,
     "minRank": 84100,
-    "quota": 93
+    "quota": 93,
+    "minScore2025": 423.5,
+    "minRank2025": 84100,
+    "quota2025": 93
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -8613,7 +13899,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 423.2,
     "minRank": 84400,
-    "quota": 103
+    "quota": 103,
+    "minScore2025": 423.2,
+    "minRank2025": 84400,
+    "quota2025": 103
   },
   {
     "university": "BURSA TEKNİK ÜNİVERSİTESİ",
@@ -8622,7 +13911,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 412.39,
     "minRank": 84495,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 412.39,
+    "minRank2025": 84495,
+    "quota2025": 30,
+    "minScore2026": 405.49,
+    "minRank2026": 110297,
+    "quota2026": 30
   },
   {
     "university": "AYDIN ADNAN MENDERES ÜNİVERSİTESİ",
@@ -8631,7 +13926,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 412.27,
     "minRank": 84637,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 412.27,
+    "minRank2025": 84637,
+    "quota2025": 60,
+    "minScore2026": 437.07,
+    "minRank2026": 76307,
+    "quota2026": 60
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -8640,7 +13941,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 422.8,
     "minRank": 84900,
-    "quota": 93
+    "quota": 93,
+    "minScore2025": 422.8,
+    "minRank2025": 84900,
+    "quota2025": 93
   },
   {
     "university": "SAKARYA UYGULAMALI BİLİMLER ÜNİVERSİTESİ",
@@ -8649,7 +13953,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 411.81,
     "minRank": 85121,
-    "quota": 61
+    "quota": 61,
+    "minScore2025": 411.81,
+    "minRank2025": 85121,
+    "quota2025": 61,
+    "minScore2026": 411.31,
+    "minRank2026": 103691,
+    "quota2026": 61
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -8658,7 +13968,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 411.44,
     "minRank": 85524,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 411.44,
+    "minRank2025": 85524,
+    "quota2025": 20,
+    "minScore2026": 427.32,
+    "minRank2026": 86256,
+    "quota2026": 20
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -8667,7 +13983,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 411.25,
     "minRank": 85761,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 411.25,
+    "minRank2025": 85761,
+    "quota2025": 20,
+    "minScore2026": 429.35,
+    "minRank2026": 84207,
+    "quota2026": 20
   },
   {
     "university": "FIRAT ÜNİVERSİTESİ",
@@ -8676,7 +13998,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 410.65,
     "minRank": 86403,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 410.65,
+    "minRank2025": 86403,
+    "quota2025": 35,
+    "minScore2026": 419.12,
+    "minRank2026": 95084,
+    "quota2026": 35
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -8685,7 +14013,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 421.4,
     "minRank": 86500,
-    "quota": 256
+    "quota": 256,
+    "minScore2025": 421.4,
+    "minRank2025": 86500,
+    "quota2025": 256,
+    "minScore2026": 428.79,
+    "minRank2026": 84784,
+    "quota2026": 250
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -8694,7 +14028,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 410.46,
     "minRank": 86608,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 410.46,
+    "minRank2025": 86608,
+    "quota2025": 35,
+    "minScore2026": 412.69,
+    "minRank2026": 102133,
+    "quota2026": 35
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -8703,7 +14043,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 421.2,
     "minRank": 86800,
-    "quota": 93
+    "quota": 93,
+    "minScore2025": 421.2,
+    "minRank2025": 86800,
+    "quota2025": 93
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -8712,7 +14055,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 410.18,
     "minRank": 86921,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 410.18,
+    "minRank2025": 86921,
+    "quota2025": 60,
+    "minScore2026": 424.15,
+    "minRank2026": 89507,
+    "quota2026": 60
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -8721,7 +14070,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 410.1,
     "minRank": 87004,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 410.1,
+    "minRank2025": 87004,
+    "quota2025": 40,
+    "minScore2026": 437.34,
+    "minRank2026": 76062,
+    "quota2026": 40
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -8730,7 +14085,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 410.05,
     "minRank": 87058,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 410.05,
+    "minRank2025": 87058,
+    "quota2025": 60,
+    "minScore2026": 433.96,
+    "minRank2026": 79451,
+    "quota2026": 60
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -8739,7 +14100,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 409.91,
     "minRank": 87211,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 409.91,
+    "minRank2025": 87211,
+    "quota2025": 20,
+    "minScore2026": 440.49,
+    "minRank2026": 72848,
+    "quota2026": 20
   },
   {
     "university": "İZMİR BAKIRÇAY ÜNİVERSİTESİ",
@@ -8748,7 +14115,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 409.74,
     "minRank": 87396,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 409.74,
+    "minRank2025": 87396,
+    "quota2025": 75,
+    "minScore2026": 442.47,
+    "minRank2026": 70948,
+    "quota2026": 75
   },
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
@@ -8757,7 +14130,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 409.62,
     "minRank": 87542,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 409.62,
+    "minRank2025": 87542,
+    "quota2025": 40,
+    "minScore2026": 441.78,
+    "minRank2026": 71594,
+    "quota2026": 40
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -8766,7 +14145,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 425.98,
     "minRank": 87655,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 425.98,
+    "minRank2025": 87655,
+    "quota2025": 30,
+    "minScore2026": 425.98,
+    "minRank2026": 87655,
+    "quota2026": 30
   },
   {
     "university": "SELÇUK ÜNİVERSİTESİ",
@@ -8775,7 +14160,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 409.51,
     "minRank": 87677,
-    "quota": 76
+    "quota": 76,
+    "minScore2025": 409.51,
+    "minRank2025": 87677,
+    "quota2025": 76,
+    "minScore2026": 436.59,
+    "minRank2026": 76769,
+    "quota2026": 76
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -8784,7 +14175,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 409.5,
     "minRank": 87683,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 409.5,
+    "minRank2025": 87683,
+    "quota2025": 35,
+    "minScore2026": 423.13,
+    "minRank2026": 90584,
+    "quota2026": 35
   },
   {
     "university": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -8793,7 +14190,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 409.17,
     "minRank": 88066,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 409.17,
+    "minRank2025": 88066,
+    "quota2025": 20,
+    "minScore2026": 423.08,
+    "minRank2026": 90645,
+    "quota2026": 20
   },
   {
     "university": "AYDIN ADNAN MENDERES ÜNİVERSİTESİ",
@@ -8802,7 +14205,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 409.02,
     "minRank": 88244,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 409.02,
+    "minRank2025": 88244,
+    "quota2025": 50,
+    "minScore2026": 435.19,
+    "minRank2026": 78208,
+    "quota2026": 50
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -8811,7 +14220,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 419.8,
     "minRank": 88400,
-    "quota": 164
+    "quota": 164,
+    "minScore2025": 419.8,
+    "minRank2025": 88400,
+    "quota2025": 164,
+    "minScore2026": 416.64,
+    "minRank2026": 97783,
+    "quota2026": 180
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -8820,7 +14235,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 408.8,
     "minRank": 88473,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 408.8,
+    "minRank2025": 88473,
+    "quota2025": 40,
+    "minScore2026": 428.12,
+    "minRank2026": 85476,
+    "quota2026": 40
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -8829,7 +14250,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 408.65,
     "minRank": 88646,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 408.65,
+    "minRank2025": 88646,
+    "quota2025": 30,
+    "minScore2026": 436.87,
+    "minRank2026": 76508,
+    "quota2026": 30
   },
   {
     "university": "NECMETTİN ERBAKAN ÜNİVERSİTESİ",
@@ -8838,7 +14265,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 424.72,
     "minRank": 88941,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 424.72,
+    "minRank2025": 88941,
+    "quota2025": 20,
+    "minScore2026": 424.72,
+    "minRank2026": 88941,
+    "quota2026": 20
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -8847,7 +14280,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 408.12,
     "minRank": 89236,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 408.12,
+    "minRank2025": 89236,
+    "quota2025": 75,
+    "minScore2026": 431.53,
+    "minRank2026": 81931,
+    "quota2026": 75
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -8856,7 +14295,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 408.07,
     "minRank": 89301,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 408.07,
+    "minRank2025": 89301,
+    "quota2025": 75,
+    "minScore2026": 432.79,
+    "minRank2026": 80654,
+    "quota2026": 75
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -8865,7 +14310,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 418.9,
     "minRank": 89400,
-    "quota": 164
+    "quota": 164,
+    "minScore2025": 418.9,
+    "minRank2025": 89400,
+    "quota2025": 164,
+    "minScore2026": 451.97,
+    "minRank2026": 61851,
+    "quota2026": 160
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -8874,7 +14325,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 418.9,
     "minRank": 89400,
-    "quota": 82
+    "quota": 82,
+    "minScore2025": 418.9,
+    "minRank2025": 89400,
+    "quota2025": 82
   },
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -8883,7 +14337,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 407.72,
     "minRank": 89697,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 407.72,
+    "minRank2025": 89697,
+    "quota2025": 40,
+    "minScore2026": 422.17,
+    "minRank2026": 91706,
+    "quota2026": 40
   },
   {
     "university": "BURSA TEKNİK ÜNİVERSİTESİ",
@@ -8892,7 +14352,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 407.58,
     "minRank": 89844,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 407.58,
+    "minRank2025": 89844,
+    "quota2025": 55,
+    "minScore2026": 430.84,
+    "minRank2026": 82650,
+    "quota2026": 55
   },
   {
     "university": "ÇANAKKALE ONSEKİZ MART ÜNİVERSİTESİ",
@@ -8901,7 +14367,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 407.41,
     "minRank": 90028,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 407.41,
+    "minRank2025": 90028,
+    "quota2025": 20,
+    "minScore2026": 433.76,
+    "minRank2026": 79655,
+    "quota2026": 20
   },
   {
     "university": "ÇANAKKALE ONSEKİZ MART ÜNİVERSİTESİ",
@@ -8910,7 +14382,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 407.34,
     "minRank": 90121,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 407.34,
+    "minRank2025": 90121,
+    "quota2025": 20,
+    "minScore2026": 439.34,
+    "minRank2026": 74012,
+    "quota2026": 20
   },
   {
     "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
@@ -8919,7 +14397,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 407.32,
     "minRank": 90143,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 407.32,
+    "minRank2025": 90143,
+    "quota2025": 50,
+    "minScore2026": 437.9,
+    "minRank2026": 75488,
+    "quota2026": 50
   },
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -8928,7 +14412,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 406.76,
     "minRank": 90785,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 406.76,
+    "minRank2025": 90785,
+    "quota2025": 40,
+    "minScore2026": 407.12,
+    "minRank2026": 108380,
+    "quota2026": 40
   },
   {
     "university": "MANİSA CELÂL BAYAR ÜNİVERSİTESİ",
@@ -8937,7 +14427,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 406.74,
     "minRank": 90815,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 406.74,
+    "minRank2025": 90815,
+    "quota2025": 75,
+    "minScore2026": 427.89,
+    "minRank2026": 85705,
+    "quota2026": 75
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -8946,7 +14442,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 406.48,
     "minRank": 91096,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 406.48,
+    "minRank2025": 91096,
+    "quota2025": 60,
+    "minScore2026": 415.1,
+    "minRank2026": 99457,
+    "quota2026": 60
   },
   {
     "university": "SAKARYA ÜNİVERSİTESİ",
@@ -8955,7 +14457,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 406.33,
     "minRank": 91278,
-    "quota": 105
+    "quota": 105,
+    "minScore2025": 406.33,
+    "minRank2025": 91278,
+    "quota2025": 105,
+    "minScore2026": 435.56,
+    "minRank2026": 77840,
+    "quota2026": 105
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -8964,7 +14472,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 416.7,
     "minRank": 92100,
-    "quota": 144
+    "quota": 144,
+    "minScore2025": 416.7,
+    "minRank2025": 92100,
+    "quota2025": 144,
+    "minScore2026": 444.71,
+    "minRank2026": 68786,
+    "quota2026": 200
   },
   {
     "university": "NECMETTİN ERBAKAN ÜNİVERSİTESİ",
@@ -8973,7 +14487,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 405.59,
     "minRank": 92139,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 405.59,
+    "minRank2025": 92139,
+    "quota2025": 40,
+    "minScore2026": 441.05,
+    "minRank2026": 72297,
+    "quota2026": 40
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -8982,7 +14502,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 405.21,
     "minRank": 92601,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 405.21,
+    "minRank2025": 92601,
+    "quota2025": 55,
+    "minScore2026": 428.24,
+    "minRank2026": 85355,
+    "quota2026": 55
   },
   {
     "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
@@ -8991,7 +14517,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 405.2,
     "minRank": 92605,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 405.2,
+    "minRank2025": 92605,
+    "quota2025": 65,
+    "minScore2026": 438.31,
+    "minRank2026": 75069,
+    "quota2026": 65
   },
   {
     "university": "BANDIRMA ONYEDİ EYLÜL ÜNİVERSİTESİ",
@@ -9000,7 +14532,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 404.97,
     "minRank": 92896,
-    "quota": 24
+    "quota": 24,
+    "minScore2025": 404.97,
+    "minRank2025": 92896,
+    "quota2025": 24,
+    "minScore2026": 435.52,
+    "minRank2026": 77892,
+    "quota2026": 24
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -9009,7 +14547,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 404.94,
     "minRank": 92945,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 404.94,
+    "minRank2025": 92945,
+    "quota2025": 45,
+    "minScore2026": 403.14,
+    "minRank2026": 113083,
+    "quota2026": 50
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -9018,7 +14562,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 404.94,
     "minRank": 92948,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 404.94,
+    "minRank2025": 92948,
+    "quota2025": 50,
+    "minScore2026": 430.94,
+    "minRank2026": 82551,
+    "quota2026": 50
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -9027,7 +14577,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 404.79,
     "minRank": 93115,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 404.79,
+    "minRank2025": 93115,
+    "quota2025": 20,
+    "minScore2026": 418.04,
+    "minRank2026": 96318,
+    "quota2026": 20
   },
   {
     "university": "MANİSA CELÂL BAYAR ÜNİVERSİTESİ",
@@ -9036,7 +14592,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 404.62,
     "minRank": 93314,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 404.62,
+    "minRank2025": 93314,
+    "quota2025": 50,
+    "minScore2026": 434.76,
+    "minRank2026": 78623,
+    "quota2026": 50
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -9045,7 +14607,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 404.61,
     "minRank": 93326,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 404.61,
+    "minRank2025": 93326,
+    "quota2025": 50,
+    "minScore2026": 421.97,
+    "minRank2026": 91931,
+    "quota2026": 50
   },
   {
     "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
@@ -9054,7 +14622,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 404.51,
     "minRank": 93442,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 404.51,
+    "minRank2025": 93442,
+    "quota2025": 100,
+    "minScore2026": 436.18,
+    "minRank2026": 77216,
+    "quota2026": 100
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -9063,7 +14637,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 404.49,
     "minRank": 93463,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 404.49,
+    "minRank2025": 93463,
+    "quota2025": 60,
+    "minScore2026": 413.32,
+    "minRank2026": 101421,
+    "quota2026": 60
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -9072,7 +14652,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 415.6,
     "minRank": 93500,
-    "quota": 185
+    "quota": 185,
+    "minScore2025": 415.6,
+    "minRank2025": 93500,
+    "quota2025": 185,
+    "minScore2026": 421.44,
+    "minRank2026": 92518,
+    "quota2026": 210
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -9081,7 +14667,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 404.36,
     "minRank": 93598,
-    "quota": 200
+    "quota": 200,
+    "minScore2025": 404.36,
+    "minRank2025": 93598,
+    "quota2025": 200,
+    "minScore2026": 435.22,
+    "minRank2026": 78178,
+    "quota2026": 200
   },
   {
     "university": "DOĞUŞ ÜNİVERSİTESİ",
@@ -9090,7 +14682,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 404.11,
     "minRank": 93900,
-    "quota": 2
+    "quota": 2,
+    "minScore2025": 404.11,
+    "minRank2025": 93900,
+    "quota2025": 2,
+    "minScore2026": 448.97,
+    "minRank2026": 64695,
+    "quota2026": 2
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -9099,7 +14697,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 404.08,
     "minRank": 93933,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 404.08,
+    "minRank2025": 93933,
+    "quota2025": 20,
+    "minScore2026": 428.06,
+    "minRank2026": 85528,
+    "quota2026": 20
   },
   {
     "university": "EGE ÜNİVERSİTESİ",
@@ -9108,7 +14712,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 404.02,
     "minRank": 93997,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 404.02,
+    "minRank2025": 93997,
+    "quota2025": 30,
+    "minScore2026": 422.71,
+    "minRank2026": 91089,
+    "quota2026": 30
   },
   {
     "university": "MİMAR SİNAN GÜZEL SANATLAR ÜNİVERSİTESİ",
@@ -9117,7 +14727,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 403.65,
     "minRank": 94456,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 403.65,
+    "minRank2025": 94456,
+    "quota2025": 30,
+    "minScore2026": 429.14,
+    "minRank2026": 84409,
+    "quota2026": 30
   },
   {
     "university": "ABDULLAH GÜL ÜNİVERSİTESİ",
@@ -9126,7 +14742,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 403.54,
     "minRank": 94595,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 403.54,
+    "minRank2025": 94595,
+    "quota2025": 50,
+    "minScore2026": 432.07,
+    "minRank2026": 81391,
+    "quota2026": 50
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -9135,7 +14757,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 414.7,
     "minRank": 94700,
-    "quota": 82
+    "quota": 82,
+    "minScore2025": 414.7,
+    "minRank2025": 94700,
+    "quota2025": 82
   },
   {
     "university": "BALIKESİR ÜNİVERSİTESİ",
@@ -9144,7 +14769,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 403.41,
     "minRank": 94733,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 403.41,
+    "minRank2025": 94733,
+    "quota2025": 36,
+    "minScore2026": 429.48,
+    "minRank2026": 84063,
+    "quota2026": 36
   },
   {
     "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
@@ -9153,7 +14784,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 420.1,
     "minRank": 95000,
-    "quota": 90
+    "quota": 90,
+    "minScore2025": 420.1,
+    "minRank2025": 95000,
+    "quota2025": 90
   },
   {
     "university": "MUDANYA ÜNİVERSİTESİ",
@@ -9162,7 +14796,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 402.98,
     "minRank": 95290,
-    "quota": 4
+    "quota": 4,
+    "minScore2025": 402.98,
+    "minRank2025": 95290,
+    "quota2025": 4,
+    "minScore2026": 448.49,
+    "minRank2026": 65149,
+    "quota2026": 4
   },
   {
     "university": "İNÖNÜ ÜNİVERSİTESİ",
@@ -9171,7 +14811,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 402.37,
     "minRank": 96023,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 402.37,
+    "minRank2025": 96023,
+    "quota2025": 35,
+    "minScore2026": 438.23,
+    "minRank2026": 75187,
+    "quota2026": 35
   },
   {
     "university": "BURSA TEKNİK ÜNİVERSİTESİ",
@@ -9180,7 +14826,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 402.2,
     "minRank": 96250,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 402.2,
+    "minRank2025": 96250,
+    "quota2025": 65,
+    "minScore2026": 424.43,
+    "minRank2026": 89215,
+    "quota2026": 65
   },
   {
     "university": "KONYA TEKNİK ÜNİVERSİTESİ",
@@ -9189,7 +14841,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 402.17,
     "minRank": 96291,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 402.17,
+    "minRank2025": 96291,
+    "quota2025": 70,
+    "minScore2026": 434.84,
+    "minRank2026": 78546,
+    "quota2026": 70
   },
   {
     "university": "ÇANAKKALE ONSEKİZ MART ÜNİVERSİTESİ",
@@ -9198,7 +14856,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 401.91,
     "minRank": 96620,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 401.91,
+    "minRank2025": 96620,
+    "quota2025": 25,
+    "minScore2026": 425.7,
+    "minRank2026": 87961,
+    "quota2026": 25
   },
   {
     "university": "ÇUKUROVA ÜNİVERSİTESİ",
@@ -9207,7 +14871,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 401.9,
     "minRank": 96632,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 401.9,
+    "minRank2025": 96632,
+    "quota2025": 60,
+    "minScore2026": 428.93,
+    "minRank2026": 84608,
+    "quota2026": 60
   },
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
@@ -9216,7 +14886,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 401.54,
     "minRank": 97068,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 401.54,
+    "minRank2025": 97068,
+    "quota2025": 30,
+    "minScore2026": 416.52,
+    "minRank2026": 97910,
+    "quota2026": 30
   },
   {
     "university": "PAMUKKALE ÜNİVERSİTESİ",
@@ -9225,7 +14901,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 412.8,
     "minRank": 97100,
-    "quota": 82
+    "quota": 82,
+    "minScore2025": 412.8,
+    "minRank2025": 97100,
+    "quota2025": 82
   },
   {
     "university": "TARSUS ÜNİVERSİTESİ",
@@ -9234,7 +14913,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 401.5,
     "minRank": 97118,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 401.5,
+    "minRank2025": 97118,
+    "quota2025": 35,
+    "minScore2026": 432.86,
+    "minRank2026": 80590,
+    "quota2026": 35
   },
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -9243,7 +14928,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 401.37,
     "minRank": 97297,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 401.37,
+    "minRank2025": 97297,
+    "quota2025": 40,
+    "minScore2026": 416.51,
+    "minRank2026": 97925,
+    "quota2026": 40
   },
   {
     "university": "PAMUKKALE ÜNİVERSİTESİ",
@@ -9252,7 +14943,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 401.35,
     "minRank": 97317,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 401.35,
+    "minRank2025": 97317,
+    "quota2025": 65,
+    "minScore2026": 418.52,
+    "minRank2026": 95760,
+    "quota2026": 65
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -9261,7 +14958,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 401.24,
     "minRank": 97467,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 401.24,
+    "minRank2025": 97467,
+    "quota2025": 35,
+    "minScore2026": 432.83,
+    "minRank2026": 80615,
+    "quota2026": 35
   },
   {
     "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
@@ -9270,7 +14973,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 401.19,
     "minRank": 97526,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 401.19,
+    "minRank2025": 97526,
+    "quota2025": 65,
+    "minScore2026": 419.56,
+    "minRank2026": 94597,
+    "quota2026": 65
   },
   {
     "university": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -9279,7 +14988,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 401.13,
     "minRank": 97610,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 401.13,
+    "minRank2025": 97610,
+    "quota2025": 20,
+    "minScore2026": 414.39,
+    "minRank2026": 100229,
+    "quota2026": 20
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -9288,7 +15003,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 412.3,
     "minRank": 97800,
-    "quota": 185
+    "quota": 185,
+    "minScore2025": 412.3,
+    "minRank2025": 97800,
+    "quota2025": 185,
+    "minScore2026": 429.67,
+    "minRank2026": 83872,
+    "quota2026": 180
   },
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -9297,7 +15018,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 400.82,
     "minRank": 97963,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 400.82,
+    "minRank2025": 97963,
+    "quota2025": 35,
+    "minScore2026": 427.04,
+    "minRank2026": 86587,
+    "quota2026": 35
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -9306,7 +15033,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 400.69,
     "minRank": 98121,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 400.69,
+    "minRank2025": 98121,
+    "quota2025": 60,
+    "minScore2026": 433.07,
+    "minRank2026": 80369,
+    "quota2026": 60
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -9315,7 +15048,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 400.52,
     "minRank": 98346,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 400.52,
+    "minRank2025": 98346,
+    "quota2025": 75,
+    "minScore2026": 429.89,
+    "minRank2026": 83615,
+    "quota2026": 75
   },
   {
     "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -9324,7 +15063,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 400.41,
     "minRank": 98506,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 400.41,
+    "minRank2025": 98506,
+    "quota2025": 65,
+    "minScore2026": 427.32,
+    "minRank2026": 86257,
+    "quota2026": 65
   },
   {
     "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -9333,7 +15078,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 400.29,
     "minRank": 98653,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 400.29,
+    "minRank2025": 98653,
+    "quota2025": 65,
+    "minScore2026": 419.57,
+    "minRank2026": 94576,
+    "quota2026": 65
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -9342,7 +15093,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 400.22,
     "minRank": 98736,
-    "quota": 160
+    "quota": 160,
+    "minScore2025": 400.22,
+    "minRank2025": 98736,
+    "quota2025": 160,
+    "minScore2026": 432.77,
+    "minRank2026": 80673,
+    "quota2026": 160
   },
   {
     "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
@@ -9351,7 +15108,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 400.04,
     "minRank": 98943,
-    "quota": 10
+    "quota": 10,
+    "minScore2025": 400.04,
+    "minRank2025": 98943,
+    "quota2025": 10,
+    "minScore2026": 426.61,
+    "minRank2026": 86993,
+    "quota2026": 10
   },
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -9360,7 +15123,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 399.91,
     "minRank": 99095,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 399.91,
+    "minRank2025": 99095,
+    "quota2025": 40,
+    "minScore2026": 416.09,
+    "minRank2026": 98393,
+    "quota2026": 40
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ",
@@ -9369,7 +15138,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 399.7,
     "minRank": 99350,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 399.7,
+    "minRank2025": 99350,
+    "quota2025": 60,
+    "minScore2026": 431.34,
+    "minRank2026": 82149,
+    "quota2026": 60
   },
   {
     "university": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -9378,7 +15153,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 399.68,
     "minRank": 99375,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 399.68,
+    "minRank2025": 99375,
+    "quota2025": 40,
+    "minScore2026": 415.26,
+    "minRank2026": 99248,
+    "quota2026": 40
   },
   {
     "university": "SAKARYA UYGULAMALI BİLİMLER ÜNİVERSİTESİ",
@@ -9387,7 +15168,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 399.58,
     "minRank": 99502,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 399.58,
+    "minRank2025": 99502,
+    "quota2025": 54,
+    "minScore2026": 407.28,
+    "minRank2026": 108208,
+    "quota2026": 6
   },
   {
     "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
@@ -9396,7 +15183,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 410.5,
     "minRank": 100200,
-    "quota": 185
+    "quota": 185,
+    "minScore2025": 410.5,
+    "minRank2025": 100200,
+    "quota2025": 185,
+    "minScore2026": 426.8,
+    "minRank2026": 86830,
+    "quota2026": 100
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -9405,7 +15198,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 398.95,
     "minRank": 100206,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 398.95,
+    "minRank2025": 100206,
+    "quota2025": 70,
+    "minScore2026": 429.71,
+    "minRank2026": 83829,
+    "quota2026": 70
   },
   {
     "university": "KÜTAHYA SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -9414,7 +15213,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 398.49,
     "minRank": 100770,
-    "quota": 55
+    "quota": 55,
+    "minScore2025": 398.49,
+    "minRank2025": 100770,
+    "quota2025": 55,
+    "minScore2026": 431.52,
+    "minRank2026": 81944,
+    "quota2026": 55
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -9423,7 +15228,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 398.22,
     "minRank": 101121,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 398.22,
+    "minRank2025": 101121,
+    "quota2025": 60,
+    "minScore2026": 414.34,
+    "minRank2026": 100281,
+    "quota2026": 60
   },
   {
     "university": "İSTANBUL MEDENİYET ÜNİVERSİTESİ",
@@ -9432,7 +15243,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 397.88,
     "minRank": 101532,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 397.88,
+    "minRank2025": 101532,
+    "quota2025": 40,
+    "minScore2026": 410.29,
+    "minRank2026": 104790,
+    "quota2026": 40
   },
   {
     "university": "GAZİANTEP ÜNİVERSİTESİ",
@@ -9441,7 +15258,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 397.78,
     "minRank": 101652,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 397.78,
+    "minRank2025": 101652,
+    "quota2025": 60,
+    "minScore2026": 428.07,
+    "minRank2026": 85513,
+    "quota2026": 60
   },
   {
     "university": "ESKİŞEHİR TEKNİK ÜNİVERSİTESİ",
@@ -9450,7 +15273,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 397.73,
     "minRank": 101726,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 397.73,
+    "minRank2025": 101726,
+    "quota2025": 30,
+    "minScore2026": 407.17,
+    "minRank2026": 108327,
+    "quota2026": 30
   },
   {
     "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -9459,7 +15288,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 397.11,
     "minRank": 102444,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 397.11,
+    "minRank2025": 102444,
+    "quota2025": 85,
+    "minScore2026": 422.01,
+    "minRank2026": 91890,
+    "quota2026": 85
   },
   {
     "university": "ÇANAKKALE ONSEKİZ MART ÜNİVERSİTESİ",
@@ -9468,7 +15303,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 397.03,
     "minRank": 102540,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 397.03,
+    "minRank2025": 102540,
+    "quota2025": 20,
+    "minScore2026": 411.56,
+    "minRank2026": 103426,
+    "quota2026": 20
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -9477,7 +15318,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 396.69,
     "minRank": 102957,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 396.69,
+    "minRank2025": 102957,
+    "quota2025": 40,
+    "minScore2026": 404.38,
+    "minRank2026": 111582,
+    "quota2026": 40
   },
   {
     "university": "SAMSUN ÜNİVERSİTESİ",
@@ -9486,7 +15333,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 396.58,
     "minRank": 103076,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 396.58,
+    "minRank2025": 103076,
+    "quota2025": 30,
+    "minScore2026": 411.07,
+    "minRank2026": 103969,
+    "quota2026": 30
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -9495,7 +15348,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 408.4,
     "minRank": 103100,
-    "quota": 82
+    "quota": 82,
+    "minScore2025": 408.4,
+    "minRank2025": 103100,
+    "quota2025": 82
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -9504,7 +15360,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 408.2,
     "minRank": 103400,
-    "quota": 164
+    "quota": 164,
+    "minScore2025": 408.2,
+    "minRank2025": 103400,
+    "quota2025": 164,
+    "minScore2026": 413.76,
+    "minRank2026": 100929,
+    "quota2026": 90
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -9513,7 +15375,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 396.19,
     "minRank": 103572,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 396.19,
+    "minRank2025": 103572,
+    "quota2025": 40,
+    "minScore2026": 419.68,
+    "minRank2026": 94451,
+    "quota2026": 40
   },
   {
     "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
@@ -9522,7 +15390,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 395.64,
     "minRank": 104236,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 395.64,
+    "minRank2025": 104236,
+    "quota2025": 75,
+    "minScore2026": 414.58,
+    "minRank2026": 100016,
+    "quota2026": 75
   },
   {
     "university": "SELÇUK ÜNİVERSİTESİ",
@@ -9531,7 +15405,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 395.24,
     "minRank": 104745,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 395.24,
+    "minRank2025": 104745,
+    "quota2025": 40,
+    "minScore2026": 434.62,
+    "minRank2026": 78790,
+    "quota2026": 40
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -9540,7 +15420,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 395.2,
     "minRank": 104800,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 395.2,
+    "minRank2025": 104800,
+    "quota2025": 70,
+    "minScore2026": 424.6,
+    "minRank2026": 89047,
+    "quota2026": 70
   },
   {
     "university": "PAMUKKALE ÜNİVERSİTESİ",
@@ -9549,7 +15435,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 395.19,
     "minRank": 104806,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 395.19,
+    "minRank2025": 104806,
+    "quota2025": 80,
+    "minScore2026": 422.13,
+    "minRank2026": 91744,
+    "quota2026": 80
   },
   {
     "university": "SAKARYA ÜNİVERSİTESİ",
@@ -9558,7 +15450,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 407.1,
     "minRank": 104900,
-    "quota": 164
+    "quota": 164,
+    "minScore2025": 407.1,
+    "minRank2025": 104900,
+    "quota2025": 164,
+    "minScore2026": 408.09,
+    "minRank2026": 107258,
+    "quota2026": 110
   },
   {
     "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
@@ -9567,7 +15465,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 412.3,
     "minRank": 105000,
-    "quota": 90
+    "quota": 90,
+    "minScore2025": 412.3,
+    "minRank2025": 105000,
+    "quota2025": 90
   },
   {
     "university": "SAMSUN ÜNİVERSİTESİ",
@@ -9576,7 +15477,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 394.9,
     "minRank": 105193,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 394.9,
+    "minRank2025": 105193,
+    "quota2025": 45,
+    "minScore2026": 437.81,
+    "minRank2026": 75578,
+    "quota2026": 45
   },
   {
     "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
@@ -9585,7 +15492,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 406.9,
     "minRank": 105200,
-    "quota": 164
+    "quota": 164,
+    "minScore2025": 406.9,
+    "minRank2025": 105200,
+    "quota2025": 164,
+    "minScore2026": 431.22,
+    "minRank2026": 82276,
+    "quota2026": 110
   },
   {
     "university": "PAMUKKALE ÜNİVERSİTESİ",
@@ -9594,7 +15507,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 409.72,
     "minRank": 105408,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 409.72,
+    "minRank2025": 105408,
+    "quota2025": 30,
+    "minScore2026": 409.72,
+    "minRank2026": 105408,
+    "quota2026": 30
   },
   {
     "university": "ÇUKUROVA ÜNİVERSİTESİ",
@@ -9603,7 +15522,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 394.32,
     "minRank": 105952,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 394.32,
+    "minRank2025": 105952,
+    "quota2025": 75,
+    "minScore2026": 415.18,
+    "minRank2026": 99334,
+    "quota2026": 75
   },
   {
     "university": "AYDIN ADNAN MENDERES ÜNİVERSİTESİ",
@@ -9612,7 +15537,10 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 406.4,
     "minRank": 106000,
-    "quota": 164
+    "quota": 164,
+    "minScore2025": 406.4,
+    "minRank2025": 106000,
+    "quota2025": 164
   },
   {
     "university": "GAZİ ÜNİVERSİTESİ",
@@ -9621,7 +15549,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 394.16,
     "minRank": 106135,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 394.16,
+    "minRank2025": 106135,
+    "quota2025": 50,
+    "minScore2026": 414.73,
+    "minRank2026": 99845,
+    "quota2026": 50
   },
   {
     "university": "SELÇUK ÜNİVERSİTESİ",
@@ -9630,7 +15564,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 394.03,
     "minRank": 106301,
-    "quota": 54
+    "quota": 54,
+    "minScore2025": 394.03,
+    "minRank2025": 106301,
+    "quota2025": 54,
+    "minScore2026": 405.89,
+    "minRank2026": 109853,
+    "quota2026": 6
   },
   {
     "university": "İZMİR BAKIRÇAY ÜNİVERSİTESİ",
@@ -9639,7 +15579,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 393.89,
     "minRank": 106459,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 393.89,
+    "minRank2025": 106459,
+    "quota2025": 75,
+    "minScore2026": 413.4,
+    "minRank2026": 101344,
+    "quota2026": 75
   },
   {
     "university": "ÇUKUROVA ÜNİVERSİTESİ",
@@ -9648,7 +15594,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 405.8,
     "minRank": 106900,
-    "quota": 164
+    "quota": 164,
+    "minScore2025": 405.8,
+    "minRank2025": 106900,
+    "quota2025": 164,
+    "minScore2026": 429.26,
+    "minRank2026": 84285,
+    "quota2026": 120
   },
   {
     "university": "BANDIRMA ONYEDİ EYLÜL ÜNİVERSİTESİ",
@@ -9657,7 +15609,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 393.47,
     "minRank": 106983,
-    "quota": 18
+    "quota": 18,
+    "minScore2025": 393.47,
+    "minRank2025": 106983,
+    "quota2025": 18,
+    "minScore2026": 426.44,
+    "minRank2026": 87196,
+    "quota2026": 18
   },
   {
     "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
@@ -9666,7 +15624,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 393.38,
     "minRank": 107077,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 393.38,
+    "minRank2025": 107077,
+    "quota2025": 45,
+    "minScore2026": 418.33,
+    "minRank2026": 95992,
+    "quota2026": 45
   },
   {
     "university": "BURSA ULUDAĞ ÜNİVERSİTESİ",
@@ -9675,7 +15639,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 393.11,
     "minRank": 107406,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 393.11,
+    "minRank2025": 107406,
+    "quota2025": 70,
+    "minScore2026": 415,
+    "minRank2026": 99548,
+    "quota2026": 70
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -9684,7 +15654,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 393.02,
     "minRank": 107523,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 393.02,
+    "minRank2025": 107523,
+    "quota2025": 40,
+    "minScore2026": 428.7,
+    "minRank2026": 84885,
+    "quota2026": 40
   },
   {
     "university": "PAMUKKALE ÜNİVERSİTESİ",
@@ -9693,7 +15669,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 405.3,
     "minRank": 107600,
-    "quota": 164
+    "quota": 164,
+    "minScore2025": 405.3,
+    "minRank2025": 107600,
+    "quota2025": 164,
+    "minScore2026": 412.07,
+    "minRank2026": 102872,
+    "quota2026": 150
   },
   {
     "university": "ESKİŞEHİR TEKNİK ÜNİVERSİTESİ",
@@ -9702,7 +15684,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 392.5,
     "minRank": 108202,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 392.5,
+    "minRank2025": 108202,
+    "quota2025": 75,
+    "minScore2026": 421.29,
+    "minRank2026": 92674,
+    "quota2026": 75
   },
   {
     "university": "VAN YÜZÜNCÜ YIL ÜNİVERSİTESİ",
@@ -9711,7 +15699,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 392.45,
     "minRank": 108266,
-    "quota": 85
+    "quota": 85,
+    "minScore2025": 392.45,
+    "minRank2025": 108266,
+    "quota2025": 85,
+    "minScore2026": 422.95,
+    "minRank2026": 90785,
+    "quota2026": 85
   },
   {
     "university": "İSTANBUL ÜNİVERSİTESİ-CERRAHPAŞA",
@@ -9720,7 +15714,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 392.38,
     "minRank": 108366,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 392.38,
+    "minRank2025": 108366,
+    "quota2025": 60,
+    "minScore2026": 417.27,
+    "minRank2026": 97107,
+    "quota2026": 60
   },
   {
     "university": "BANDIRMA ONYEDİ EYLÜL ÜNİVERSİTESİ",
@@ -9729,7 +15729,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 392.23,
     "minRank": 108561,
-    "quota": 18
+    "quota": 18,
+    "minScore2025": 392.23,
+    "minRank2025": 108561,
+    "quota2025": 18,
+    "minScore2026": 428.48,
+    "minRank2026": 85088,
+    "quota2026": 18
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -9738,7 +15744,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 404.6,
     "minRank": 108600,
-    "quota": 164
+    "quota": 164,
+    "minScore2025": 404.6,
+    "minRank2025": 108600,
+    "quota2025": 164,
+    "minScore2026": 419.2,
+    "minRank2026": 94991,
+    "quota2026": 160
   },
   {
     "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
@@ -9747,7 +15759,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 392.15,
     "minRank": 108676,
-    "quota": 150
+    "quota": 150,
+    "minScore2025": 392.15,
+    "minRank2025": 108676,
+    "quota2025": 150,
+    "minScore2026": 422.86,
+    "minRank2026": 90900,
+    "quota2026": 150
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -9756,7 +15774,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 392.13,
     "minRank": 108699,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 392.13,
+    "minRank2025": 108699,
+    "quota2025": 35,
+    "minScore2026": 418.97,
+    "minRank2026": 95225,
+    "quota2026": 35
   },
   {
     "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -9765,7 +15789,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 391.87,
     "minRank": 109069,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 391.87,
+    "minRank2025": 109069,
+    "quota2025": 80,
+    "minScore2026": 423.92,
+    "minRank2026": 89745,
+    "quota2026": 80
   },
   {
     "university": "BURDUR MEHMET AKİF ERSOY ÜNİVERSİTESİ",
@@ -9774,7 +15804,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 391.74,
     "minRank": 109248,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 391.74,
+    "minRank2025": 109248,
+    "quota2025": 70,
+    "minScore2026": 419.11,
+    "minRank2026": 95096,
+    "quota2026": 70
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -9783,7 +15819,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 391.58,
     "minRank": 109455,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 391.58,
+    "minRank2025": 109455,
+    "quota2025": 35,
+    "minScore2026": 410.19,
+    "minRank2026": 104892,
+    "quota2026": 35
   },
   {
     "university": "SAKARYA ÜNİVERSİTESİ",
@@ -9792,7 +15834,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 391.54,
     "minRank": 109510,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 391.54,
+    "minRank2025": 109510,
+    "quota2025": 35,
+    "minScore2026": 421.89,
+    "minRank2026": 92015,
+    "quota2026": 35
   },
   {
     "university": "BALIKESİR ÜNİVERSİTESİ",
@@ -9801,7 +15849,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 403.9,
     "minRank": 109800,
-    "quota": 144
+    "quota": 144,
+    "minScore2025": 403.9,
+    "minRank2025": 109800,
+    "quota2025": 144,
+    "minScore2026": 403.06,
+    "minRank2026": 113186,
+    "quota2026": 80
   },
   {
     "university": "ANKARA ÜNİVERSİTESİ",
@@ -9810,7 +15864,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 391.16,
     "minRank": 110003,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 391.16,
+    "minRank2025": 110003,
+    "quota2025": 30,
+    "minScore2026": 413.01,
+    "minRank2026": 101768,
+    "quota2026": 30
   },
   {
     "university": "İZMİR DEMOKRASİ ÜNİVERSİTESİ",
@@ -9819,7 +15879,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 391.1,
     "minRank": 110062,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 391.1,
+    "minRank2025": 110062,
+    "quota2025": 50,
+    "minScore2026": 418.79,
+    "minRank2026": 95454,
+    "quota2026": 50
   },
   {
     "university": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -9828,7 +15894,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 391.06,
     "minRank": 110109,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 391.06,
+    "minRank2025": 110109,
+    "quota2025": 30,
+    "minScore2026": 414.45,
+    "minRank2026": 100172,
+    "quota2026": 30
   },
   {
     "university": "MİMAR SİNAN GÜZEL SANATLAR ÜNİVERSİTESİ",
@@ -9837,7 +15909,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 390.99,
     "minRank": 110185,
-    "quota": 34
+    "quota": 34,
+    "minScore2025": 390.99,
+    "minRank2025": 110185,
+    "quota2025": 34,
+    "minScore2026": 404.74,
+    "minRank2026": 111176,
+    "quota2026": 34
   },
   {
     "university": "TEKİRDAĞ NAMIK KEMAL ÜNİVERSİTESİ",
@@ -9846,7 +15924,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 390.93,
     "minRank": 110264,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 390.93,
+    "minRank2025": 110264,
+    "quota2025": 36,
+    "minScore2026": 418.38,
+    "minRank2026": 95929,
+    "quota2026": 36
   },
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
@@ -9855,7 +15939,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 390.84,
     "minRank": 110377,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 390.84,
+    "minRank2025": 110377,
+    "quota2025": 40,
+    "minScore2026": 418.28,
+    "minRank2026": 96053,
+    "quota2026": 40
   },
   {
     "university": "SELÇUK ÜNİVERSİTESİ",
@@ -9864,7 +15954,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 403.4,
     "minRank": 110500,
-    "quota": 164
+    "quota": 164,
+    "minScore2025": 403.4,
+    "minRank2025": 110500,
+    "quota2025": 164,
+    "minScore2026": 422.93,
+    "minRank2026": 90815,
+    "quota2026": 130
   },
   {
     "university": "ERCİYES ÜNİVERSİTESİ",
@@ -9873,7 +15969,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 390.45,
     "minRank": 110886,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 390.45,
+    "minRank2025": 110886,
+    "quota2025": 30,
+    "minScore2026": 425.94,
+    "minRank2026": 87689,
+    "quota2026": 30
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -9882,7 +15984,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 389.98,
     "minRank": 111517,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 389.98,
+    "minRank2025": 111517,
+    "quota2025": 30,
+    "minScore2026": 409.97,
+    "minRank2026": 105150,
+    "quota2026": 30
   },
   {
     "university": "MERSİN ÜNİVERSİTESİ",
@@ -9891,7 +15999,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 389.95,
     "minRank": 111562,
-    "quota": 160
+    "quota": 160,
+    "minScore2025": 389.95,
+    "minRank2025": 111562,
+    "quota2025": 160,
+    "minScore2026": 422.27,
+    "minRank2026": 91586,
+    "quota2026": 160
   },
   {
     "university": "DOKUZ EYLÜL ÜNİVERSİTESİ",
@@ -9900,7 +16014,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 389.45,
     "minRank": 112204,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 389.45,
+    "minRank2025": 112204,
+    "quota2025": 70,
+    "minScore2026": 414.02,
+    "minRank2026": 100636,
+    "quota2026": 70
   },
   {
     "university": "BOLU ABANT İZZET BAYSAL ÜNİVERSİTESİ",
@@ -9909,7 +16029,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 389.43,
     "minRank": 112238,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 389.43,
+    "minRank2025": 112238,
+    "quota2025": 40,
+    "minScore2026": 420.04,
+    "minRank2026": 94042,
+    "quota2026": 40
   },
   {
     "university": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -9918,7 +16044,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 402.1,
     "minRank": 112400,
-    "quota": 144
+    "quota": 144,
+    "minScore2025": 402.1,
+    "minRank2025": 112400,
+    "quota2025": 144,
+    "minScore2026": 408.28,
+    "minRank2026": 107025,
+    "quota2026": 140
   },
   {
     "university": "İZMİR BAKIRÇAY ÜNİVERSİTESİ",
@@ -9927,7 +16059,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 389.19,
     "minRank": 112540,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 389.19,
+    "minRank2025": 112540,
+    "quota2025": 60,
+    "minScore2026": 413.01,
+    "minRank2026": 101760,
+    "quota2026": 60
   },
   {
     "university": "AYDIN ADNAN MENDERES ÜNİVERSİTESİ",
@@ -9936,7 +16074,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 389.04,
     "minRank": 112751,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 389.04,
+    "minRank2025": 112751,
+    "quota2025": 60,
+    "minScore2026": 412.39,
+    "minRank2026": 102482,
+    "quota2026": 60
   },
   {
     "university": "AFYON KOCATEPE ÜNİVERSİTESİ",
@@ -9945,7 +16089,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 388.79,
     "minRank": 113089,
-    "quota": 63
+    "quota": 63,
+    "minScore2025": 388.79,
+    "minRank2025": 113089,
+    "quota2025": 63,
+    "minScore2026": 414.45,
+    "minRank2026": 100171,
+    "quota2026": 63
   },
   {
     "university": "BALIKESİR ÜNİVERSİTESİ",
@@ -9954,7 +16104,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 388.63,
     "minRank": 113292,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 388.63,
+    "minRank2025": 113292,
+    "quota2025": 65,
+    "minScore2026": 404.86,
+    "minRank2026": 111030,
+    "quota2026": 65
   },
   {
     "university": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -9963,7 +16119,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 388.53,
     "minRank": 113421,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 388.53,
+    "minRank2025": 113421,
+    "quota2025": 35,
+    "minScore2026": 413.79,
+    "minRank2026": 100877,
+    "quota2026": 35
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -9972,7 +16134,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 388.36,
     "minRank": 113649,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 388.36,
+    "minRank2025": 113649,
+    "quota2025": 40,
+    "minScore2026": 409.46,
+    "minRank2026": 105691,
+    "quota2026": 40
   },
   {
     "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
@@ -9981,7 +16149,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 387.42,
     "minRank": 114897,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 387.42,
+    "minRank2025": 114897,
+    "quota2025": 60,
+    "minScore2026": 418.55,
+    "minRank2026": 95741,
+    "quota2026": 60
   },
   {
     "university": "AKDENİZ ÜNİVERSİTESİ",
@@ -9990,7 +16164,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 405.4,
     "minRank": 115000,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 405.4,
+    "minRank2025": 115000,
+    "quota2025": 80,
+    "minScore2026": 405.23,
+    "minRank2026": 110598,
+    "quota2026": 40
   },
   {
     "university": "ABDULLAH GÜL ÜNİVERSİTESİ",
@@ -9999,7 +16179,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 386.7,
     "minRank": 115817,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 386.7,
+    "minRank2025": 115817,
+    "quota2025": 20,
+    "minScore2026": 413.47,
+    "minRank2026": 101285,
+    "quota2026": 20
   },
   {
     "university": "MARDİN ARTUKLU ÜNİVERSİTESİ",
@@ -10008,7 +16194,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 386.59,
     "minRank": 115993,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 386.59,
+    "minRank2025": 115993,
+    "quota2025": 60,
+    "minScore2026": 420.72,
+    "minRank2026": 93299,
+    "quota2026": 60
   },
   {
     "university": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
@@ -10017,7 +16209,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 386.56,
     "minRank": 116032,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 386.56,
+    "minRank2025": 116032,
+    "quota2025": 40,
+    "minScore2026": 405.82,
+    "minRank2026": 109940,
+    "quota2026": 40
   },
   {
     "university": "MANİSA CELÂL BAYAR ÜNİVERSİTESİ",
@@ -10026,7 +16224,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 386.51,
     "minRank": 116102,
-    "quota": 62
+    "quota": 62,
+    "minScore2025": 386.51,
+    "minRank2025": 116102,
+    "quota2025": 62,
+    "minScore2026": 415.51,
+    "minRank2026": 98995,
+    "quota2026": 62
   },
   {
     "university": "ORDU ÜNİVERSİTESİ",
@@ -10035,7 +16239,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 386.28,
     "minRank": 116403,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 386.28,
+    "minRank2025": 116403,
+    "quota2025": 25,
+    "minScore2026": 418.95,
+    "minRank2026": 95257,
+    "quota2026": 25
   },
   {
     "university": "BALIKESİR ÜNİVERSİTESİ",
@@ -10044,7 +16254,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 385.68,
     "minRank": 117249,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 385.68,
+    "minRank2025": 117249,
+    "quota2025": 50,
+    "minScore2026": 414.6,
+    "minRank2026": 99989,
+    "quota2026": 50
   },
   {
     "university": "MARMARA ÜNİVERSİTESİ",
@@ -10053,7 +16269,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 384.89,
     "minRank": 118316,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 384.89,
+    "minRank2025": 118316,
+    "quota2025": 50,
+    "minScore2026": 402.96,
+    "minRank2026": 113299,
+    "quota2026": 50
   },
   {
     "university": "KOCAELİ ÜNİVERSİTESİ",
@@ -10062,7 +16284,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 384.88,
     "minRank": 118331,
-    "quota": 61
+    "quota": 61,
+    "minScore2025": 384.88,
+    "minRank2025": 118331,
+    "quota2025": 61,
+    "minScore2026": 403.42,
+    "minRank2026": 112748,
+    "quota2026": 61
   },
   {
     "university": "MERSİN ÜNİVERSİTESİ",
@@ -10071,7 +16299,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 384.87,
     "minRank": 118342,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 384.87,
+    "minRank2025": 118342,
+    "quota2025": 60,
+    "minScore2026": 415.78,
+    "minRank2026": 98705,
+    "quota2026": 60
   },
   {
     "university": "GAZİANTEP ÜNİVERSİTESİ",
@@ -10080,7 +16314,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 398.5,
     "minRank": 118400,
-    "quota": 144
+    "quota": 144,
+    "minScore2025": 398.5,
+    "minRank2025": 118400,
+    "quota2025": 144,
+    "minScore2026": 420.87,
+    "minRank2026": 93138,
+    "quota2026": 150
   },
   {
     "university": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -10089,7 +16329,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 384.56,
     "minRank": 118738,
-    "quota": 120
+    "quota": 120,
+    "minScore2025": 384.56,
+    "minRank2025": 118738,
+    "quota2025": 120,
+    "minScore2026": 417.77,
+    "minRank2026": 96567,
+    "quota2026": 120
   },
   {
     "university": "ADANA ALPARSLAN TÜRKEŞ BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -10098,7 +16344,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 384.55,
     "minRank": 118752,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 384.55,
+    "minRank2025": 118752,
+    "quota2025": 60,
+    "minScore2026": 412.41,
+    "minRank2026": 102464,
+    "quota2026": 60
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -10107,7 +16359,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 384.51,
     "minRank": 118819,
-    "quota": 49
+    "quota": 49,
+    "minScore2025": 384.51,
+    "minRank2025": 118819,
+    "quota2025": 49,
+    "minScore2026": 409.02,
+    "minRank2026": 106169,
+    "quota2026": 49
   },
   {
     "university": "MERSİN ÜNİVERSİTESİ",
@@ -10116,7 +16374,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 384.48,
     "minRank": 118849,
-    "quota": 25
+    "quota": 25,
+    "minScore2025": 384.48,
+    "minRank2025": 118849,
+    "quota2025": 25,
+    "minScore2026": 420.6,
+    "minRank2026": 93419,
+    "quota2026": 25
   },
   {
     "university": "GEBZE TEKNİK ÜNİVERSİTESİ",
@@ -10125,7 +16389,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 384.33,
     "minRank": 119074,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 384.33,
+    "minRank2025": 119074,
+    "quota2025": 50,
+    "minScore2026": 406.34,
+    "minRank2026": 109326,
+    "quota2026": 50
   },
   {
     "university": "KIRIKKALE ÜNİVERSİTESİ",
@@ -10134,7 +16404,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 383.85,
     "minRank": 119724,
-    "quota": 72
+    "quota": 72,
+    "minScore2025": 383.85,
+    "minRank2025": 119724,
+    "quota2025": 72,
+    "minScore2026": 409.67,
+    "minRank2026": 105455,
+    "quota2026": 72
   },
   {
     "university": "ÇANAKKALE ONSEKİZ MART ÜNİVERSİTESİ",
@@ -10143,7 +16419,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 383.33,
     "minRank": 120439,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 383.33,
+    "minRank2025": 120439,
+    "quota2025": 100,
+    "minScore2026": 416.06,
+    "minRank2026": 98423,
+    "quota2026": 100
   },
   {
     "university": "SAKARYA UYGULAMALI BİLİMLER ÜNİVERSİTESİ",
@@ -10152,7 +16434,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 382.77,
     "minRank": 121195,
-    "quota": 56
+    "quota": 56,
+    "minScore2025": 382.77,
+    "minRank2025": 121195,
+    "quota2025": 56,
+    "minScore2026": 416.14,
+    "minRank2026": 98336,
+    "quota2026": 56
   },
   {
     "university": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
@@ -10161,7 +16449,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 382.43,
     "minRank": 121636,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 382.43,
+    "minRank2025": 121636,
+    "quota2025": 65,
+    "minScore2026": 407.98,
+    "minRank2026": 107396,
+    "quota2026": 65
   },
   {
     "university": "BATMAN ÜNİVERSİTESİ",
@@ -10170,7 +16464,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 382.29,
     "minRank": 121853,
-    "quota": 65
+    "quota": 65,
+    "minScore2025": 382.29,
+    "minRank2025": 121853,
+    "quota2025": 65,
+    "minScore2026": 411.25,
+    "minRank2026": 103765,
+    "quota2026": 65
   },
   {
     "university": "FIRAT ÜNİVERSİTESİ",
@@ -10179,7 +16479,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 382.21,
     "minRank": 121958,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 382.21,
+    "minRank2025": 121958,
+    "quota2025": 100,
+    "minScore2026": 413.87,
+    "minRank2026": 100790,
+    "quota2026": 100
   },
   {
     "university": "ÇUKUROVA ÜNİVERSİTESİ",
@@ -10188,7 +16494,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 382.19,
     "minRank": 121981,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 382.19,
+    "minRank2025": 121981,
+    "quota2025": 20,
+    "minScore2026": 414.86,
+    "minRank2026": 99715,
+    "quota2026": 20
   },
   {
     "university": "HACETTEPE ÜNİVERSİTESİ",
@@ -10197,7 +16509,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 382.16,
     "minRank": 122043,
-    "quota": 40
+    "quota": 40,
+    "minScore2025": 382.16,
+    "minRank2025": 122043,
+    "quota2025": 40,
+    "minScore2026": 408.63,
+    "minRank2026": 106626,
+    "quota2026": 40
   },
   {
     "university": "ONDOKUZ MAYIS ÜNİVERSİTESİ",
@@ -10206,7 +16524,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 381.74,
     "minRank": 122548,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 381.74,
+    "minRank2025": 122548,
+    "quota2025": 60,
+    "minScore2026": 410.6,
+    "minRank2026": 104442,
+    "quota2026": 60
   },
   {
     "university": "ADANA ALPARSLAN TÜRKEŞ BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -10215,7 +16539,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 381.43,
     "minRank": 123007,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 381.43,
+    "minRank2025": 123007,
+    "quota2025": 50,
+    "minScore2026": 411.01,
+    "minRank2026": 104014,
+    "quota2026": 50
   },
   {
     "university": "TRAKYA ÜNİVERSİTESİ",
@@ -10224,7 +16554,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 381.11,
     "minRank": 123446,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 381.11,
+    "minRank2025": 123446,
+    "quota2025": 50,
+    "minScore2026": 409.61,
+    "minRank2026": 105539,
+    "quota2026": 50
   },
   {
     "university": "ORDU ÜNİVERSİTESİ",
@@ -10233,7 +16569,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 380.87,
     "minRank": 123816,
-    "quota": 35
+    "quota": 35,
+    "minScore2025": 380.87,
+    "minRank2025": 123816,
+    "quota2025": 35,
+    "minScore2026": 410.24,
+    "minRank2026": 104840,
+    "quota2026": 35
   },
   {
     "university": "NECMETTİN ERBAKAN ÜNİVERSİTESİ",
@@ -10242,7 +16584,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 379.55,
     "minRank": 125624,
-    "quota": 130
+    "quota": 130,
+    "minScore2025": 379.55,
+    "minRank2025": 125624,
+    "quota2025": 130,
+    "minScore2026": 410.94,
+    "minRank2026": 104093,
+    "quota2026": 130
   },
   {
     "university": "HARRAN ÜNİVERSİTESİ",
@@ -10251,7 +16599,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 379.13,
     "minRank": 126243,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 379.13,
+    "minRank2025": 126243,
+    "quota2025": 100,
+    "minScore2026": 407.82,
+    "minRank2026": 107592,
+    "quota2026": 100
   },
   {
     "university": "TARSUS ÜNİVERSİTESİ",
@@ -10260,7 +16614,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 379.07,
     "minRank": 126322,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 379.07,
+    "minRank2025": 126322,
+    "quota2025": 50,
+    "minScore2026": 408.17,
+    "minRank2026": 107176,
+    "quota2026": 50
   },
   {
     "university": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
@@ -10269,7 +16629,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 378.48,
     "minRank": 127172,
-    "quota": 160
+    "quota": 160,
+    "minScore2025": 378.48,
+    "minRank2025": 127172,
+    "quota2025": 160,
+    "minScore2026": 407.9,
+    "minRank2026": 107495,
+    "quota2026": 160
   },
   {
     "university": "SÜLEYMAN DEMİREL ÜNİVERSİTESİ",
@@ -10278,7 +16644,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 378.13,
     "minRank": 127655,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 378.13,
+    "minRank2025": 127655,
+    "quota2025": 50,
+    "minScore2026": 408.1,
+    "minRank2026": 107253,
+    "quota2026": 50
   },
   {
     "university": "AKSARAY ÜNİVERSİTESİ",
@@ -10287,7 +16659,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 378.08,
     "minRank": 127721,
-    "quota": 36
+    "quota": 36,
+    "minScore2025": 378.08,
+    "minRank2025": 127721,
+    "quota2025": 36,
+    "minScore2026": 403.75,
+    "minRank2026": 112317,
+    "quota2026": 36
   },
   {
     "university": "BOLU ABANT İZZET BAYSAL ÜNİVERSİTESİ",
@@ -10296,7 +16674,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 378.08,
     "minRank": 127722,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 378.08,
+    "minRank2025": 127722,
+    "quota2025": 20,
+    "minScore2026": 408.23,
+    "minRank2026": 107094,
+    "quota2026": 20
   },
   {
     "university": "ATATÜRK ÜNİVERSİTESİ",
@@ -10305,7 +16689,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 377.57,
     "minRank": 128519,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 377.57,
+    "minRank2025": 128519,
+    "quota2025": 50,
+    "minScore2026": 407.29,
+    "minRank2026": 108190,
+    "quota2026": 50
   },
   {
     "university": "İSTANBUL MEDENİYET ÜNİVERSİTESİ",
@@ -10314,7 +16704,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 377.13,
     "minRank": 129134,
-    "quota": 90
+    "quota": 90,
+    "minScore2025": 377.13,
+    "minRank2025": 129134,
+    "quota2025": 90,
+    "minScore2026": 408.06,
+    "minRank2026": 107297,
+    "quota2026": 90
   },
   {
     "university": "İZMİR DEMOKRASİ ÜNİVERSİTESİ",
@@ -10323,7 +16719,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 376.92,
     "minRank": 129436,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 376.92,
+    "minRank2025": 129436,
+    "quota2025": 20,
+    "minScore2026": 404.92,
+    "minRank2026": 110964,
+    "quota2026": 20
   },
   {
     "university": "PAMUKKALE ÜNİVERSİTESİ",
@@ -10332,7 +16734,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 376.73,
     "minRank": 129712,
-    "quota": 75
+    "quota": 75,
+    "minScore2025": 376.73,
+    "minRank2025": 129712,
+    "quota2025": 75,
+    "minScore2026": 403.08,
+    "minRank2026": 113151,
+    "quota2026": 75
   },
   {
     "university": "MUĞLA SITKI KOÇMAN ÜNİVERSİTESİ",
@@ -10341,7 +16749,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 376.23,
     "minRank": 130406,
-    "quota": 100
+    "quota": 100,
+    "minScore2025": 376.23,
+    "minRank2025": 130406,
+    "quota2025": 100,
+    "minScore2026": 408.26,
+    "minRank2026": 107052,
+    "quota2026": 100
   },
   {
     "university": "ALANYA ALAADDİN KEYKUBAT ÜNİVERSİTESİ",
@@ -10350,7 +16764,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 375.63,
     "minRank": 131268,
-    "quota": 60
+    "quota": 60,
+    "minScore2025": 375.63,
+    "minRank2025": 131268,
+    "quota2025": 60,
+    "minScore2026": 407.17,
+    "minRank2026": 108326,
+    "quota2026": 60
   },
   {
     "university": "SÜLEYMAN DEMİREL ÜNİVERSİTESİ",
@@ -10359,7 +16779,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 375.31,
     "minRank": 131753,
-    "quota": 140
+    "quota": 140,
+    "minScore2025": 375.31,
+    "minRank2025": 131753,
+    "quota2025": 140,
+    "minScore2026": 405,
+    "minRank2026": 110868,
+    "quota2026": 140
   },
   {
     "university": "NECMETTİN ERBAKAN ÜNİVERSİTESİ",
@@ -10368,7 +16794,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 375.31,
     "minRank": 131757,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 375.31,
+    "minRank2025": 131757,
+    "quota2025": 50,
+    "minScore2026": 408.97,
+    "minRank2026": 106230,
+    "quota2026": 50
   },
   {
     "university": "BANDIRMA ONYEDİ EYLÜL ÜNİVERSİTESİ",
@@ -10377,7 +16809,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 375.15,
     "minRank": 131984,
-    "quota": 30
+    "quota": 30,
+    "minScore2025": 375.15,
+    "minRank2025": 131984,
+    "quota2025": 30,
+    "minScore2026": 404.47,
+    "minRank2026": 111493,
+    "quota2026": 30
   },
   {
     "university": "İNÖNÜ ÜNİVERSİTESİ",
@@ -10386,7 +16824,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 374.69,
     "minRank": 132644,
-    "quota": 180
+    "quota": 180,
+    "minScore2025": 374.69,
+    "minRank2025": 132644,
+    "quota2025": 180,
+    "minScore2026": 407.67,
+    "minRank2026": 107784,
+    "quota2026": 180
   },
   {
     "university": "ORDU ÜNİVERSİTESİ",
@@ -10395,7 +16839,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 374.08,
     "minRank": 133571,
-    "quota": 90
+    "quota": 90,
+    "minScore2025": 374.08,
+    "minRank2025": 133571,
+    "quota2025": 90,
+    "minScore2026": 405.87,
+    "minRank2026": 109877,
+    "quota2026": 90
   },
   {
     "university": "SAMSUN ÜNİVERSİTESİ",
@@ -10404,7 +16854,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 372.63,
     "minRank": 135637,
-    "quota": 45
+    "quota": 45,
+    "minScore2025": 372.63,
+    "minRank2025": 135637,
+    "quota2025": 45,
+    "minScore2026": 403.56,
+    "minRank2026": 112555,
+    "quota2026": 45
   },
   {
     "university": "ADIYAMAN ÜNİVERSİTESİ",
@@ -10413,7 +16869,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 371.93,
     "minRank": 136635,
-    "quota": 50
+    "quota": 50,
+    "minScore2025": 371.93,
+    "minRank2025": 136635,
+    "quota2025": 50,
+    "minScore2026": 403.94,
+    "minRank2026": 112073,
+    "quota2026": 50
   },
   {
     "university": "FIRAT ÜNİVERSİTESİ",
@@ -10422,7 +16884,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 371.27,
     "minRank": 137646,
-    "quota": 72
+    "quota": 72,
+    "minScore2025": 371.27,
+    "minRank2025": 137646,
+    "quota2025": 72,
+    "minScore2026": 403.75,
+    "minRank2026": 112325,
+    "quota2026": 72
   },
   {
     "university": "GAZİANTEP İSLAM BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -10431,7 +16899,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 370.9,
     "minRank": 138188,
-    "quota": 70
+    "quota": 70,
+    "minScore2025": 370.9,
+    "minRank2025": 138188,
+    "quota2025": 70,
+    "minScore2026": 404.25,
+    "minRank2026": 111750,
+    "quota2026": 70
   },
   {
     "university": "İSKENDERUN TEKNİK ÜNİVERSİTESİ",
@@ -10440,7 +16914,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 367.32,
     "minRank": 143797,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 367.32,
+    "minRank2025": 143797,
+    "quota2025": 20,
+    "minScore2026": 407.22,
+    "minRank2026": 108259,
+    "quota2026": 20
   },
   {
     "university": "İSKENDERUN TEKNİK ÜNİVERSİTESİ",
@@ -10449,7 +16929,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 365.7,
     "minRank": 146357,
-    "quota": 20
+    "quota": 20,
+    "minScore2025": 365.7,
+    "minRank2025": 146357,
+    "quota2025": 20,
+    "minScore2026": 403.69,
+    "minRank2026": 112399,
+    "quota2026": 20
   },
   {
     "university": "ATATÜRK ÜNİVERSİTESİ",
@@ -10458,7 +16944,13 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 365.35,
     "minRank": 146924,
-    "quota": 80
+    "quota": 80,
+    "minScore2025": 365.35,
+    "minRank2025": 146924,
+    "quota2025": 80,
+    "minScore2026": 406.5,
+    "minRank2026": 109140,
+    "quota2026": 80
   },
   {
     "university": "ERZİNCAN BİNALİ YILDIRIM ÜNİVERSİTESİ",
@@ -10467,6 +16959,12 @@ export const sayisalPrograms: UniversityProgram[] = [
     "field": "SAY",
     "minScore": 345.36,
     "minRank": 183375,
-    "quota": 15
+    "quota": 15,
+    "minScore2025": 345.36,
+    "minRank2025": 183375,
+    "quota2025": 15,
+    "minScore2026": 403.93,
+    "minRank2026": 112087,
+    "quota2026": 15
   }
 ]
